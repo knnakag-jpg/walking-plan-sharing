@@ -1,0 +1,610 @@
+<!-- File: リサーチ_立川BBQ.html -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>立川BBQ飲み会リサーチ（6名・10:00–16:00想定）</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+<style>
+  :root{
+    --ink:#1c2430; --sub:#5b6875; --line:#d8dee6; --bg:#f6f8fa;
+    --accent:#1f5f8b; --accent2:#0e7c6b; --warn:#b3541e; --ng:#a02c2c;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;padding:0;font-family:"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;color:var(--ink);background:var(--bg);line-height:1.8;font-size:15px;}
+  .wrap{max-width:1080px;margin:0 auto;padding:32px 20px 80px;background:#fff;}
+  header.cover{border-bottom:4px solid var(--accent);padding-bottom:20px;margin-bottom:32px;}
+  header.cover .eyebrow{color:var(--accent);font-size:13px;letter-spacing:.18em;margin:0 0 6px;}
+  header.cover h1{font-size:26px;margin:0 0 10px;line-height:1.5;}
+  header.cover .meta{color:var(--sub);font-size:13px;}
+  h2{font-size:20px;margin:48px 0 14px;padding:8px 0 8px 12px;border-left:6px solid var(--accent);background:linear-gradient(90deg,#eef4f9,#fff);}
+  h3{font-size:17px;margin:28px 0 10px;padding-bottom:4px;border-bottom:1px dashed var(--line);}
+  h4{font-size:15px;margin:18px 0 6px;color:var(--accent);}
+  p{margin:8px 0;}
+  table{width:100%;border-collapse:collapse;margin:14px 0 20px;font-size:13.5px;background:#fff;}
+  th,td{border:1px solid var(--line);padding:7px 9px;vertical-align:top;text-align:left;}
+  th{background:#eef2f6;font-weight:600;white-space:nowrap;}
+  td.c,th.c{text-align:center;white-space:nowrap;}
+  .note{background:#fffaf0;border:1px solid #e8d8b0;padding:12px 14px;margin:16px 0;font-size:13.5px;}
+  .caution{background:#fdf1ee;border:1px solid #eec9bd;padding:12px 14px;margin:16px 0;font-size:13.5px;}
+  .info{background:#eef6f5;border:1px solid #bcdcd6;padding:12px 14px;margin:16px 0;font-size:13.5px;}
+  .grade{display:inline-block;min-width:22px;text-align:center;border-radius:4px;color:#fff;font-weight:700;padding:1px 7px;font-size:12.5px;}
+  .gA{background:#0e7c6b;} .gB{background:#2f7fb8;} .gC{background:#b28c1e;} .gD{background:#b3541e;} .gF{background:#a02c2c;}
+  .tag{display:inline-block;border:1px solid var(--line);background:#f2f5f8;color:var(--sub);border-radius:12px;padding:1px 9px;font-size:12px;margin:2px 4px 2px 0;}
+  .card{border:1px solid var(--line);border-radius:6px;padding:18px 20px;margin:22px 0;background:#fff;box-shadow:0 1px 2px rgba(0,0,0,.04);}
+  .card h3{margin-top:0;border-bottom:2px solid var(--accent);}
+  .kv{display:flex;flex-wrap:wrap;gap:0 18px;font-size:13px;color:var(--sub);margin-bottom:10px;}
+  .kv span b{color:var(--ink);}
+  ul,ol{margin:8px 0 8px 1.4em;padding:0;}
+  li{margin:4px 0;}
+  .route{background:#f4f7fa;border-left:4px solid var(--accent2);padding:10px 14px;font-size:13px;margin:12px 0;}
+  footer{margin-top:60px;padding-top:16px;border-top:1px solid var(--line);color:var(--sub);font-size:12.5px;}
+  .toc{background:#f4f7fa;border:1px solid var(--line);padding:16px 22px;font-size:13.5px;}
+  .toc ol{margin:0 0 0 1.2em;}
+  .toc a{color:var(--accent);text-decoration:none;}
+  .toc a:hover{text-decoration:underline;}
+  .small{font-size:12.5px;color:var(--sub);}
+  .map-cta{margin:0 0 20px;}
+  .map-cta a{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;font-weight:700;font-size:14px;padding:11px 18px;border-radius:6px;box-shadow:0 1px 3px rgba(0,0,0,.15);}
+  .map-cta a:hover{background:var(--accent2);}
+  @media print{ body{background:#fff;} .wrap{max-width:none;} }
+
+  /* ===== 候補会場マップ用 ===== */
+  #map{height:540px;width:100%;border:1px solid var(--line);border-radius:6px;margin:14px 0;z-index:1;}
+  .map-wrap{max-width:1080px;margin:0 auto;}
+  .map-series-controls,.map-course-controls{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0;}
+  .map-btn{padding:7px 13px;border-radius:18px;border:1px solid var(--line);background:#fff;color:var(--ink);font-size:12.5px;font-weight:600;cursor:pointer;transition:all .15s;}
+  .map-btn:hover{border-color:var(--accent);}
+  .map-btn.on{background:var(--accent);color:#fff;border-color:var(--accent);}
+  .map-btn.series-on{background:var(--accent2);color:#fff;border-color:var(--accent2);}
+  .map-legend{display:flex;flex-wrap:wrap;gap:14px;margin:8px 0 4px;font-size:12px;color:var(--sub);}
+  .map-legend .dot{width:11px;height:11px;border-radius:50%;display:inline-block;margin-right:5px;vertical-align:middle;}
+  .map-note{font-size:12px;color:var(--sub);margin-top:6px;}
+  .map-detail{margin:16px 0 0;padding:16px 18px;border:1px solid var(--line);border-radius:6px;background:#fbfcfe;}
+  .map-detail-label{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.05em;color:#fff;background:var(--accent);border-radius:4px;padding:3px 10px;margin-bottom:12px;}
+  .map-detail-empty{color:var(--sub);font-size:13px;}
+  @media (max-width:680px){
+    body{font-size:14px;}
+    .wrap{padding:20px 12px 64px;}
+    header.cover h1{font-size:20px;}
+    h2{font-size:18px;}
+    #map{height:400px;}
+    table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;}
+    .map-cta a{display:block;text-align:center;box-sizing:border-box;}
+  }
+</style>
+</head>
+<body id="top">
+<div class="wrap">
+<header class="cover">
+  <p class="eyebrow">BBQ PARTY RESEARCH / AUTUMN 2026</p>
+  <h1>立川BBQ飲み会リサーチ<br>（6名・10:00–16:00想定）</h1>
+  <p class="meta">
+    候補日：2026年9月27日(日)／10月4日(日)／10月18日(日)／10月25日(日)｜調査日：2026年8月23日<br>
+    対象：案内の2プラン（国営昭和記念公園・ルミネ立川 SKY GARDEN）＋立川近辺および東京都内の野外代替会場<br>
+    本資料は、飲み会の会場選定を目的に、公式・X（旧Twitter）・食べログ・Yahooマップ・東京都公園協会を横断して整理した検討用資料である。価格・営業時間・会期は調査時点の目安であり、実施前に公式情報の再確認を推奨する。
+  </p>
+</header>
+
+<p class="map-cta"><a href="#sec-8" target="_blank" rel="noopener">🗺 候補会場のマップはこちら →</a></p>
+
+<div class="toc">
+  <b>目次</b>
+  <ol>
+    <li><a href="#sec-1">結論（先に）</a></li>
+    <li><a href="#sec-2">国営昭和記念公園バーベキューガーデン</a></li>
+    <li><a href="#sec-3">ルミネ立川 SKY GARDEN BBQ</a></li>
+    <li><a href="#sec-4">2案の比較（今回の条件）</a></li>
+    <li><a href="#sec-5">これを上回る野外プラン</a></li>
+    <li><a href="#sec-6">おすすめの出し方</a></li>
+    <li><a href="#sec-7">東京都内・駅徒歩限定（追記）</a></li>
+    <li><a href="#sec-8">候補会場マップ</a></li>
+    <li><a href="#sec-9">出典</a></li>
+  </ol>
+</div>
+<!-- ===================== 1 ===================== -->
+<h2 id="sec-1">1. 結論（先に）</h2>
+<ul>
+  <li><b>ルミネ屋上は、今回の時間帯（10–16時）には合わない。</b>開店11時、利用は2〜3時間、延長不可。野外感も弱い。</li>
+  <li><b>昭和記念公園は「いつもの」として完成度が高い。</b>時間帯がそのまま合い、コスモスまつり期間と全候補日が重なる。ただし手ぶらセットは薄切り輸入肉、飲み放題は4時間中3時間、日曜は混む。</li>
+  <li><b>これを上回る満足を狙うなら、会場を変えるより「肉と酒の自由度」を上げる方が効く。</b>本命は次の2つ。
+    <ol>
+      <li><b>小金井公園</b>（サイト無料・入園無料・10–16時・器材レンタル可・酒持込可）</li>
+      <li><b>昭和公園のまま器材レンタル＋持ち込み肉・酒</b>（手ぶらセット禁止事項を回避）</li>
+    </ol>
+  </li>
+</ul>
+<div class="note">X上の個人レビューは少なく、公式宣伝が多い。以下はX＋食べログ＋Yahooマップ＋公式を横断した整理。</div>
+<!-- ===================== 2 ===================== -->
+<h2 id="sec-2">2. 国営昭和記念公園バーベキューガーデン</h2>
+<p class="small">公式：<a href="https://www.herofield.com/bbq/showa/" target="_blank" rel="noopener">https://www.herofield.com/bbq/showa/</a> ／ 公園公式：<a href="https://www.showakinen-koen.jp/facility/facility-1539/" target="_blank" rel="noopener">https://www.showakinen-koen.jp/facility/facility-1539/</a></p>
+
+<div class="card" id="venue-showa">
+  <h3>国営昭和記念公園 バーベキューガーデン</h3>
+  <div class="kv">
+    <span>利用時間：<b>全日 10:00–16:00（内4時間）</b></span>
+    <span>予約：<b>完全予約制・2か月前から</b></span>
+    <span>アクセス：<b>西立川口から徒歩約8分</b></span>
+  </div>
+  <p><span class="tag">手ぶら完結</span><span class="tag">コスモス</span><span class="tag">雨でも営業</span></p>
+
+  <h4>案内プランの中身</h4>
+  <table>
+    <tr><th style="width:40%">項目</th><th>内容</th></tr>
+    <tr><td>海老と野菜のアヒージョ付きBBQセット</td><td>5,480円（会場・器材込）</td></tr>
+    <tr><td>オールドリンク飲み放題 3時間</td><td>2,200円</td></tr>
+    <tr><td>入園料</td><td>450円（10/25は無料）</td></tr>
+    <tr><td><b>合計</b></td><td><b>8,130円</b></td></tr>
+    <tr><td>タープテント（任意）</td><td>2,750円／6人なら約458円</td></tr>
+  </table>
+  <p class="small">セット食材（1人）：外国産牛肩ローススライス60g、外国産豚バラ70g、味付けチキン75g、フランク、アヒージョ、ガーリックバケット、焼きそば。肉は薄切り中心。</p>
+  <p class="small">利用：全日10:00–16:00（内4時間）。手ぶらプランはグリル1台＝6人。完全予約制、2か月前から。西立川口から徒歩約8分。</p>
+
+  <div class="caution">
+    <b>重要な制約</b>
+    <ul>
+      <li>手ぶらプランは<b>持込食材との併用不可</b></li>
+      <li>飲み放題は3時間（4時間枠の途中で切れる）</li>
+      <li>利用後の居残り不可。16時完全撤収</li>
+      <li>通常席にテントなし。雨天時のみ手ぶら客へ4本脚テント無料</li>
+      <li>瓶類持込禁止</li>
+      <li>土日祝は混雑。キャンセル待ちなし</li>
+    </ul>
+  </div>
+
+  <div class="note">
+    <b>2026年の加点・注意</b>
+    <ul>
+      <li><b>コスモスまつり2026：9/12–10/25</b> → 候補4日すべて期間中</li>
+      <li>無料入園日：<b>10/24(土)・10/25(日)</b>が一般無料。案内の9/21は<b>65歳以上のみ無料</b>（敬老の日）</li>
+      <li>10月の閉園は17:00。BBQ後に園内を少し歩ける</li>
+    </ul>
+  </div>
+
+  <div class="info">
+    <b>X（旧Twitter）の空気</b>
+    <p class="small">公開検索で拾えた個人投稿は「行った・美味かった」系が中心。詳細な批判スレは少ない。</p>
+    <ul>
+      <li>「昭和記念公園でBBQ。シャトーブリアンうめー」（@Bluesky2world）</li>
+      <li>「昨日は昭和記念公園でバーベキューしてきました! めっちゃ美味かった」（@sirontoyamafood）</li>
+      <li>会社・団体イベント利用の報告が複数（「健康的な飲み会」「仲間と集まれた」）</li>
+      <li>公式@showakinenparkは手ぶら・冬限定ランチ・テント付き少人数プランの宣伝が主</li>
+    </ul>
+    <p class="small"><b>傾向：</b>ロケーションと「手ぶらで楽」は高評価。料理の質を語る投稿はほぼない。いつもの場所として定着している分、X上では「特別だった」より「また行った」が多い。</p>
+  </div>
+
+  <div class="note">
+    <b>食べログ・その他口コミ</b>
+    <ul>
+      <li>食べログ 約3.1。会社イベント利用が多い</li>
+      <li>「自然に囲まれた素晴らしいロケーション」</li>
+      <li>「システムがしっかりしていて使い勝手が極めて良い。食材は持ち込めない」</li>
+      <li><b>「BBQの設営場所とドリンクコーナーが離れていた」</b>（飲み放題運用の弱点）</li>
+      <li>「ひろびろ開放的。仲間とワイワイビール」（Yahooマップ）</li>
+      <li>いこーよは家族目線で高評価だが、BBQ単体の味評は薄い</li>
+    </ul>
+  </div>
+
+  <h4>この会への向き不向き</h4>
+  <p><b>向く：</b>10–16時ぴったり／手ぶら完結／コスモス／10/25は入園無料／雨でも営業</p>
+  <p><b>弱い：</b>いつもの感／薄切り輸入肉／飲み放題3時間／日曜混雑／16時追い出し／ドリンク受け取りが遠い</p>
+</div>
+<!-- ===================== 3 ===================== -->
+<h2 id="sec-3">3. ルミネ立川 SKY GARDEN BBQ</h2>
+<p class="small">公式：<a href="https://www.tokyobarbecueservice.co.jp/skygarden-bbq/" target="_blank" rel="noopener">https://www.tokyobarbecueservice.co.jp/skygarden-bbq/</a> ／ 食べログ：<a href="https://tabelog.com/tokyo/A1329/A132901/13310776/" target="_blank" rel="noopener">https://tabelog.com/tokyo/A1329/A132901/13310776/</a></p>
+
+<div class="card" id="venue-lumi">
+  <h3>ルミネ立川 SKY GARDEN BBQ</h3>
+  <div class="kv">
+    <span>営業：<b>2026/3/24–11/30、11:00–22:00</b></span>
+    <span>利用：<b>2時間 or 3時間（延長不可）</b></span>
+    <span>1サイト：<b>最大7人</b></span>
+  </div>
+  <p><span class="tag">駅直結</span><span class="tag">和牛A4</span><span class="tag">テント付き</span></p>
+
+  <h4>案内プランの中身</h4>
+  <table>
+    <tr><th style="width:40%">項目</th><th>内容</th></tr>
+    <tr><td>オールドリンク飲み放題（会場・器材込）3時間</td><td>5,060円</td></tr>
+    <tr><td>デラックスセット</td><td>2,970円</td></tr>
+    <tr><td><b>合計</b></td><td><b>8,030円</b></td></tr>
+  </table>
+  <p class="small">デラックス：和牛A4サーロイン100g、国産ハーブ豚ロース100g、ハーブフランク、野菜3種。肉質は昭和セットより上。グリルはWeber Q3200。</p>
+
+  <div class="caution">
+    <b>制約</b>
+    <ul>
+      <li>館外からの食材・飲料持込不可（ルミネ館内購入＋レシート確認）</li>
+      <li>火器持込不可、ペット不可、マイク不可</li>
+      <li>サイト指定不可</li>
+      <li>雨天も営業。荒天は中止の場合あり</li>
+    </ul>
+  </div>
+
+  <div class="info">
+    <b>X / SNSの空気</b>
+    <p class="small">施設が2025年4月開業のため、X上の個人投稿はほぼ見つからない。公式・ニュース・予約サイトが検索結果の大半。Instagram公式あり。</p>
+  </div>
+
+  <div class="note">
+    <b>食べログ・Yahoo</b>
+    <ul>
+      <li>食べログ 3.02／口コミ2件のみ。評価の母数が足りない</li>
+      <li>2026/7訪問：雰囲気3.6、<b>コスパ2.5</b>。「南側の多摩丘陵の景色が素晴らしい」。スタンダード＋2時間飲み放題で利用</li>
+      <li>Yahooマップ：「立地便利、設備きれい、店員親切。食材は地下で購入」</li>
+    </ul>
+  </div>
+
+  <h4>この会への向き不向き</h4>
+  <p><b>向く：</b>駅直結／和牛A4／トイレ・設備が百貨店級／二次会が楽／雨に強い</p>
+  <p><b>向かない：</b>10時開始不可、最長3時間、16時までのダラ飲み不可、屋上なので野外BBQ感が弱い、持込不可で酒のコスパが落ちる</p>
+  <p class="small">案内の「ビアガーデンでBBQ飲み会」には近いが、<b>想定タイムテーブルとは噛み合わない。</b></p>
+</div>
+<!-- ===================== 4 ===================== -->
+<h2 id="sec-4">4. 2案の比較（今回の条件）</h2>
+<table>
+  <tr><th style="width:26%">観点</th><th>昭和公園</th><th>ルミネ屋上</th><th class="c">今回の優先度</th></tr>
+  <tr><td>10:00開始</td><td>○</td><td>×（11:00）</td><td class="c"><span class="grade gA">高</span></td></tr>
+  <tr><td>16:00まで居られる</td><td>○（ちょうど撤収）</td><td>×（3時間で終了）</td><td class="c"><span class="grade gA">高</span></td></tr>
+  <tr><td>野外感</td><td>◎ 広大な国営公園</td><td>△ 駅屋上</td><td class="c"><span class="grade gA">高</span></td></tr>
+  <tr><td>肉の質</td><td>△ 薄切り輸入</td><td>◎ 和牛A4</td><td class="c"><span class="grade gC">中</span></td></tr>
+  <tr><td>酒</td><td>3時間飲み放題 2,200円</td><td>3時間込み 5,060円</td><td class="c"><span class="grade gA">高</span></td></tr>
+  <tr><td>手ぶら</td><td>◎</td><td>◎</td><td class="c"><span class="grade gC">中</span></td></tr>
+  <tr><td>雨</td><td>手ぶらならテント無料</td><td>テント標準</td><td class="c"><span class="grade gC">中</span></td></tr>
+  <tr><td>混雑（日曜）</td><td>大</td><td>サイト少なく取り合い</td><td class="c"><span class="grade gC">中</span></td></tr>
+  <tr><td>二次会</td><td>駅まで移動</td><td>◎ 直結</td><td class="c"><span class="grade gD">低</span></td></tr>
+  <tr><td>1人あたり</td><td>約8,130円＋テント</td><td>約8,030円</td><td class="c">—</td></tr>
+</table>
+<p><b>案内の2択なら昭和公園。</b>ルミネは「夜の短いビアガーデン」向き。</p>
+<p class="small">ただし昭和の手ぶらセットは、運営元Hero自身が他店宣伝で否定している「家庭の焼肉と同じ薄切り」に近い。味で勝ちにいく設計ではない。</p>
+<!-- ===================== 5 ===================== -->
+<h2 id="sec-5">5. これを上回る野外プラン</h2>
+<p class="small">条件：立川近辺／6人／酒あり／10–16時／野外／満足が案内案より上。</p>
+<p class="small">よみうりランド「JU-JU」は調べたが非推奨。入園料が別途、遊園地の端のBBQで、飲みながら乗り物、という組み合わせがこの会に合わない。</p>
+
+<div class="card" id="venue-koganei">
+  <h3>本命A．都立小金井公園バーベキュー広場</h3>
+  <div class="kv">
+    <span>利用時間：<b>10:00–16:00</b></span>
+    <span>サイト・入園：<b>無料</b></span>
+    <span>酒：<b>持込可</b></span>
+    <span>1サイト：<b>20人まで</b></span>
+  </div>
+  <p class="small">公式：<a href="https://www.tokyo-park.or.jp/special/bbq/koganei.html" target="_blank" rel="noopener">https://www.tokyo-park.or.jp/special/bbq/koganei.html</a></p>
+  <p><b>なぜ上回るか</b></p>
+  <ul>
+    <li><b>利用時間 10:00–16:00</b> がそのまま合う</li>
+    <li><b>サイト利用無料、公園入園無料</b></li>
+    <li>器材レンタルも手ぶらセットも予約時に付けられる</li>
+    <li><b>酒の持込可</b>（泥酔・一気飲みは禁止と明記＝飲んでよい前提）</li>
+    <li>手ぶらセット利用なら雨天時タープ無料。持込利用でも視界を遮らないタープ可</li>
+    <li>立川から中央線で武蔵小金井まで約10分＋バス</li>
+    <li>10/25は小金井公園でもコスモスまつり開催</li>
+  </ul>
+  <h4>概算（6人、器材レンタル＋持込の場合）</h4>
+  <table>
+    <tr><th style="width:44%">項目</th><th>目安</th></tr>
+    <tr><td>サイト・入園</td><td>0円</td></tr>
+    <tr><td>器材レンタル</td><td>予約時の公式料金（要確認。昭和の1,980円/人より安くなることが多い）</td></tr>
+    <tr><td>精肉（国産厚切り 300–350g/人）</td><td>2,000–2,500円</td></tr>
+    <tr><td>酒（缶ビール・チューハイケース）</td><td>1,200–1,800円</td></tr>
+    <tr><td>野菜・締め</td><td>400–600円</td></tr>
+    <tr><td><b>合計目安</b></td><td><b>4,000–6,500円</b></td></tr>
+  </table>
+  <p class="small">案内の8,130円より安く、肉は厚切り国産、酒は4時間好きなだけ、という勝ち方。</p>
+  <div class="note"><b>弱点：</b>手ぶら完結にすると肉の質は昭和と同程度に戻りがち。ゴミは持帰か有料回収。日曜はここも混む。予約は利用月の前月5日から。</div>
+  <div class="route"><b>買い物例：</b>立川駅（キラリナ・ルミネ地下の柿安／ニュークイック／成城石井）で仕入れて中央線で移動。</div>
+</div>
+
+<div class="card" id="venue-showa-jimuzai">
+  <h3>本命B．昭和公園のまま「器材レンタル＋持込」に切り替える</h3>
+  <p>いつもの場所を維持したまま、案内プランの弱点だけ潰す。</p>
+  <table>
+    <tr><th style="width:44%">項目</th><th>目安</th></tr>
+    <tr><td>器材レンタル</td><td>1,980円</td></tr>
+    <tr><td>入園料</td><td>450円（10/25は0円）</td></tr>
+    <tr><td>テント</td><td>2,750円 ÷6 ≒ 458円</td></tr>
+    <tr><td>国産厚切り・海鮮など</td><td>2,000–2,800円</td></tr>
+    <tr><td>酒持込</td><td>1,200–1,800円</td></tr>
+    <tr><td><b>合計目安</b></td><td><b>6,100–7,500円</b></td></tr>
+  </table>
+  <p>手ぶらプランと違い<b>持込可</b>。飲み放題3時間の切れ目がなく、4時間飲める。コスモスも西立川の近さも残る。</p>
+  <p class="small">手ぶらにこだわるなら、同じ5,480円の<b>ステーキ肉付きBBQセット</b>（肉総量450g超、牛肩ロースステーキ150g）の方がアヒージョセットより「肉の飲み会」向き。ただし持込併用は不可のまま。</p>
+</div>
+
+<div class="card" id="venue-akirudai">
+  <h3>対抗C．都立秋留台公園（あきる野）— 貸切感</h3>
+  <p class="small">公式：<a href="https://www.tokyo-park.or.jp/special/bbq/akirudai.html" target="_blank" rel="noopener">https://www.tokyo-park.or.jp/special/bbq/akirudai.html</a></p>
+  <ul>
+    <li>10:00–16:00、4–11月</li>
+    <li><b>1日10組まで、1組10人まで</b> → 6人にちょうどいい希少枠</li>
+    <li>立川から五日市線で秋川駅周辺、約25分</li>
+    <li>タープ可、酒持込可</li>
+    <li>食材・器材・燃料は全持込。洗い場なし。ゴミ持帰り</li>
+  </ul>
+  <p class="small">車があるグループなら、昭和の「大衆BBQ会場」より明らかに特別感が出る。電車＋手ぶら希望なら不向き。</p>
+</div>
+
+<div class="caution">
+  <b>見送り</b>
+  <ul>
+    <li><b>野川公園／武蔵野公園：</b>ヒマラヤスギの木漏れ日は美しいが、器材貸出なし・テント/タープ禁止・ゴミ持帰り。手ぶら飲み会向きではない</li>
+    <li><b>よみうりランド JU-JU：</b>座席1,300＋レギュラー2,600＋飲み放題1,800＋入園料。10–16のダラ飲み会場ではない</li>
+    <li><b>ルミネ館内購入＋屋上：</b>肉は良いが時間制約で今回は負け</li>
+  </ul>
+</div>
+<!-- ===================== 6 ===================== -->
+<h2 id="sec-6">6. おすすめの出し方</h2>
+<ol>
+  <li><b>楽さ最優先・いつものでよい</b><br>昭和公園の案内プラン。日付は <b>10/25</b>（入園無料＋コスモス最終日）。ただし混雑最大。テントは予約時に付ける。</li>
+  <li><b>同じ場所でも満足を一段上げる</b><br>昭和公園を器材レンタル＋持込に変更。立川で肉と酒を買って西立川へ。1人6,500円前後、酒は4時間。</li>
+  <li><b>「いつもの昭和」を超えたい</b><br><b>小金井公園</b>。入園・サイト無料、10–16時、酒持込、タープ可。肉を自分たちで選ぶので案内プランより満腹感と味が上に行きやすい。</li>
+</ol>
+<p class="small">ルミネは二次会重視の夜枠ならあり。今回の午前始まり・夕方終わりには使わない方がよい。</p>
+
+<!-- ===================== 7 ===================== -->
+<h2 id="sec-7">7. 東京都内・駅徒歩限定（追記）</h2>
+<p class="small">条件：駅から徒歩約15分以内／野外／6人／酒可／できれば10:00–16:00。バス必須・器材持込必須のみの公園は除外。</p>
+
+<h3>7-1. 10–16時が成立する駅近会場</h3>
+<table>
+  <tr><th>会場</th><th>最寄り</th><th>徒歩</th><th>時間</th><th>手ぶら</th><th>酒</th><th>1人目安</th><th>勝ち筋</th></tr>
+  <tr><td>潮風公園</td><td>ゆりかもめ台場／テレコムセンター</td><td>8–12分</td><td>10–16（4h）</td><td>Heroセット</td><td>持込＋生ビール回数券</td><td>5,500–8,000</td><td><b>海。景色で昭和を超える</b></td></tr>
+  <tr><td>葛西臨海公園（Zetton）</td><td>葛西臨海公園駅</td><td>園内10–15分</td><td>10–16（最大5h）</td><td>3,900円〜</td><td>飲料持込可</td><td>4,500–7,000</td><td><b>海＋観覧車。席料無料</b></td></tr>
+  <tr><td>新木場公園</td><td>新木場駅</td><td>5–8分</td><td>10–16</td><td>Hero＋テント込</td><td>飲み放題あり</td><td>6,000–8,000</td><td>駅近・雨対策・運河</td></tr>
+  <tr><td>木場公園</td><td>木場駅</td><td>5分</td><td>10–16</td><td>Hero</td><td>持込</td><td>5,500–8,000</td><td>スカイツリー。都市公園</td></tr>
+  <tr><td>舎人公園</td><td>舎人公園駅</td><td>園内5–10分</td><td>10–16</td><td>レンタル可</td><td>持込可</td><td>4,000–6,500</td><td>サイト無料。広い緑</td></tr>
+  <tr><td>昭和公園（参考）</td><td>西立川駅</td><td>改札→口2分＋8分</td><td>10–16</td><td>Hero＋飲み放題</td><td>3h飲み放題</td><td>8,130</td><td>いつもの。コスモス</td></tr>
+</table>
+<p class="small">Hero系（潮風・木場・新木場・昭和・そなエリア）の食材はほぼ同じ薄切り輸入肉。場所を変えても味は上がらない。</p>
+
+<h3>7-2. 駅近だが10–16時に使えない</h3>
+<ul>
+  <li><b>TACHIHI BEACH</b>（立飛駅徒歩1分）：砂浜・持込可・飲み放題あり。ただし午前午後通し予約不可。立川なのにビーチ、という点では強いが今回の6時間枠には不向き</li>
+  <li><b>THE BBQ BEACH in TOYOSU</b>（市場前 徒歩圏）：レインボーブリッジ、持込可、ソファー席。土日は3時間制が基本</li>
+  <li><b>そなエリア東京</b>（国際展示場／有明 徒歩圏）：3–10月は10–13時と14–17時の2部制</li>
+  <li>ルミネ屋上：前述の通り最長3時間</li>
+</ul>
+
+<h3>7-3. 駅徒歩でも非推奨</h3>
+<ul>
+  <li>光が丘公園：光が丘駅から歩けるが、タープ禁止・テーブルなし・完全持込</li>
+  <li>和田堀公園：浜田山方面徒歩約15分、器材持込必須</li>
+  <li>水元公園：金町から徒歩圏外</li>
+  <li>よみうりランド／若洲：バスまたは園内移動が必要</li>
+</ul>
+
+<h3>7-4. 都内に広げた場合の本命</h3>
+<ol>
+  <li><b>潮風公園</b> — 「いつもの昭和」を景色で超える最短ルート。運用は昭和と同じ手ぶら。台場の海風。護岸工事で一部景観が欠ける点だけ確認</li>
+  <li><b>葛西臨海公園（Zetton側）</b> — 海＋観覧車、10–16で最大5時間、席料無料、飲料持込可。SORAMIDO BBQと別施設なので予約先を間違えない</li>
+  <li><b>新木場公園</b> — 新木場駅から一番近い部類。手ぶらにテント込み、飲み放題あり。近隣スーパーが弱いので手ぶら向き</li>
+</ol>
+<div class="note"><b>立川出発の所要目安：</b>潮風・木場・新木場・有明・豊洲はおおむね60–75分。舎人はさらに遠い。景色で勝たせるなら潮風か葛西。楽さだけなら昭和のまま持込変更の方が移動コストは低い。</div>
+<!-- ===================== 8 ===================== -->
+<h2 id="sec-8">8. 候補会場マップ</h2>
+<p class="small">本資料で取り上げたBBQ会場を、カテゴリごとに色分けして1枚の地図に表示する。「カテゴリ → 会場」の2段切り替えでズームでき、マーカーをクリックすると会場名と要点（1人目安・勝ち筋／却下理由）を表示する。</p>
+<p class="small">※ 座標は会場・公園の代表地点の概略値であり、正確な入口や受付位置とは一致しない。実施時は公式サイトのアクセス案内・地図アプリで確認すること。地図タイルは OpenStreetMap（Leaflet・インターネット接続必須）。</p>
+
+<div class="map-wrap">
+  <div class="map-series-controls" id="series-controls"></div>
+  <div class="map-course-controls" id="course-controls"></div>
+  <div id="map"></div>
+  <div class="map-legend">
+    <span><span class="dot" style="background:#0e7c6b;"></span>本命・立川近辺</span>
+    <span><span class="dot" style="background:#1f5f8b;"></span>都内駅近・海ベイ</span>
+    <span><span class="dot" style="background:#b3541e;"></span>時間制約で使えない</span>
+    <span><span class="dot" style="background:#a02c2c;"></span>非推奨・見送り</span>
+  </div>
+  <div class="map-note">※ 各マーカー＝候補会場。カテゴリボタンでその分類にズーム、会場ボタンで個別ズーム＋ポップアップ表示。会場カードの詳細は下に転記される。</div>
+  <div id="map-detail" class="map-detail"></div>
+</div>
+
+<!-- ===================== 9 ===================== -->
+<h2 id="sec-9">9. 出典</h2>
+<ul>
+  <li>国営昭和記念公園BBQ公式／FAQ／公園料金・カレンダー／コスモスまつり2026</li>
+  <li>SKY GARDEN BBQ公式・ご利用案内</li>
+  <li>食べログ（昭和BBQ、ルミネSKY GARDEN）</li>
+  <li>Yahooマップ口コミ</li>
+  <li>X公開検索（site:x.com）</li>
+  <li>東京都公園協会 手ぶらBBQ（小金井・秋留台）</li>
+  <li>むさしのの都立公園（野川・武蔵野）</li>
+  <li>よみうりランド バーベキューパークJU-JU</li>
+</ul>
+
+<div class="caution">
+  <b>本資料の取扱いについて</b><br>
+  記載の営業時間・料金・会期・催事日程は、作成時点（2026年8月23日）およびX・口コミ検索で確認可能な範囲の情報に基づく目安である。X上の告知・訪問記録は公式サイトの確定情報に代わるものではない。特に屋外BBQ会場は天候・季節・予約状況で運用が変わりやすいため、<b>実施2週間前および前日に公式情報での再確認を必須</b>とする。料金は税込・1人あたり表記を基本とし、当日の人数割りで増減する。
+</div>
+
+<footer>
+  立川BBQ飲み会リサーチ（6名・10:00–16:00想定）｜検討用資料（2026年8月23日調査）<br>
+  案内の2プラン（昭和記念公園・ルミネ立川）に加え、立川近辺の野外代替（小金井・秋留台）と東京都内駅徒歩圏（潮風・葛西臨海・新木場ほか）を横断比較した会場選定資料である。結論は「昭和のまま肉・酒を持ち込む」か「小金井公園」を本命とし、ルミネは時間制約で見送る方針を示す。
+</footer>
+</div>
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script>
+(function () {
+  // 候補会場マップ：4カテゴリ × 18会場（ポイント表示）
+  var GROUPS = [
+    {
+      id: 'honmei', name: '本命・立川近辺', color: '#0e7c6b',
+      places: [
+        { id: 'showa', name: '国営昭和記念公園BBQガーデン', c: [35.6955, 139.4020], verdict: 'いつもの・手ぶら完結', desc: '手ぶら8,130円。コスモス。10–16時。「いつもの」として完成度が高い。' },
+        { id: 'lumi', name: 'ルミネ立川 SKY GARDEN BBQ', c: [35.6980, 139.4130], verdict: '時間が合わない', desc: '和牛A4。11時～・最長3時間。10–16時のダラ飲みには不向き。' },
+        { id: 'koganei', name: '都立小金井公園BBQ広場', c: [35.7120, 139.4920], verdict: '本命A', desc: 'サイト無料・酒持込・10–16時。肉と酒の自由度で上回る。' },
+        { id: 'akirudai', name: '都立秋留台公園（あきる野）', c: [35.7250, 139.2850], verdict: '対抗C・貸切感', desc: '1日10組の希少枠。全持込。車あり向き。' }
+      ]
+    },
+    {
+      id: 'tokyo', name: '都内駅近・海ベイ', color: '#1f5f8b',
+      places: [
+        { id: 'shiokaze', name: '潮風公園', c: [35.6260, 139.7700], verdict: '勝ち筋：海で昭和を超える', desc: '台場の海風。運用は昭和と同じ手ぶら。護岸工事で一部景観が欠ける点を確認。', fields: [['最寄り','ゆりかもめ台場／テレコムセンター'],['徒歩','8–12分'],['利用時間','10–16（4h）'],['手ぶら','Heroセット'],['酒','持込＋生ビール回数券'],['1人目安','5,500–8,000円']] },
+        { id: 'kasai', name: '葛西臨海公園（Zetton）', c: [35.6410, 139.8540], verdict: '勝ち筋：海＋観覧車・席料無料', desc: 'SORAMIDO BBQと別施設なので予約先を間違えない。', fields: [['最寄り','葛西臨海公園駅'],['徒歩','園内10–15分'],['利用時間','10–16（最大5h）'],['手ぶら','3,900円〜'],['酒','飲料持込可'],['1人目安','4,500–7,000円']] },
+        { id: 'shinkiba', name: '新木場公園', c: [35.6450, 139.8150], verdict: '勝ち筋：駅近・雨対策・運河', desc: '近隣スーパーが弱いので手ぶら向き。', fields: [['最寄り','新木場駅'],['徒歩','5–8分'],['利用時間','10–16'],['手ぶら','Hero＋テント込'],['酒','飲み放題あり'],['1人目安','6,000–8,000円']] },
+        { id: 'kiba', name: '木場公園', c: [35.6710, 139.8060], verdict: '勝ち筋：スカイツリー・都市公園', desc: 'Hero系の手ぶら運用。場所を変えても味は上がらない。', fields: [['最寄り','木場駅'],['徒歩','5分'],['利用時間','10–16'],['手ぶら','Hero'],['酒','持込'],['1人目安','5,500–8,000円']] },
+        { id: 'toneri', name: '舎人公園', c: [35.7980, 139.7680], verdict: '勝ち筋：サイト無料・広い緑', desc: '立川からは遠め。レンタル可・酒持込可。', fields: [['最寄り','舎人公園駅'],['徒歩','園内5–10分'],['利用時間','10–16'],['手ぶら','レンタル可'],['酒','持込可'],['1人目安','4,000–6,500円']] }
+      ]
+    },
+    {
+      id: 'ngtime', name: '時間制約で使えない', color: '#b3541e',
+      places: [
+        { id: 'tachihi', name: 'TACHIHI BEACH（立飛）', c: [35.7110, 139.4150], verdict: '却下：6時間枠に不向き', desc: '砂浜・持込可・飲み放題あり。ただし午前午後通し予約不可。', fields: [['最寄り','立飛駅'],['徒歩','1分']] },
+        { id: 'toyosu', name: 'THE BBQ BEACH in TOYOSU', c: [35.6560, 139.7890], verdict: '却下：土日3時間制', desc: 'レインボーブリッジ、持込可、ソファー席。土日は3時間制が基本。', fields: [['最寄り','市場前 徒歩圏']] },
+        { id: 'sonarea', name: 'そなエリア東京（有明）', c: [35.6280, 139.7930], verdict: '却下：2部制', desc: '3–10月は10–13時と14–17時の2部制。', fields: [['最寄り','国際展示場／有明 徒歩圏']] }
+      ]
+    },
+    {
+      id: 'ng', name: '非推奨・見送り', color: '#a02c2c',
+      places: [
+        { id: 'hikarigaoka', name: '光が丘公園', c: [35.7580, 139.6330], verdict: '非推奨：タープ禁止・完全持込', desc: '光が丘駅から歩けるが、タープ禁止・テーブルなし・完全持込。' },
+        { id: 'wadabori', name: '和田堀公園', c: [35.6620, 139.6450], verdict: '非推奨：器材持込必須', desc: '浜田山方面徒歩約15分、器材持込必須。' },
+        { id: 'mizumoto', name: '水元公園', c: [35.7930, 139.8650], verdict: '非推奨：駅から遠い', desc: '金町から徒歩圏外。' },
+        { id: 'nogawa', name: '野川公園', c: [35.6840, 139.5350], verdict: '見送り：器材貸出なし・タープ禁止', desc: 'ヒマラヤスギの木漏れ日は美しいが、器材貸出なし・タープ禁止・ゴミ持帰り。' },
+        { id: 'musashino', name: '武蔵野公園', c: [35.7010, 139.5250], verdict: '見送り：器材貸出なし・タープ禁止', desc: '器材貸出なし・タープ禁止・ゴミ持帰り。手ぶら飲み会向きではない。' },
+        { id: 'yomiuri', name: 'よみうりランド JU-JU', c: [35.6250, 139.5320], verdict: '見送り：遊園地の端・入園料別', desc: '座席1,300＋レギュラー2,600＋飲み放題1,800＋入園料。10–16のダラ飲み会場ではない。' }
+      ]
+    }
+  ];
+
+  var map, markerLayer, markersById = {};
+  var currentGroup = -1; // -1 = 全表示
+  var currentPlace = -1;
+  function escapeHtml(s) {
+    return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  }
+
+  function renderMarkers() {
+    GROUPS.forEach(function (g) {
+      g.places.forEach(function (p) {
+        p._group = g.name;
+        var m = L.circleMarker(p.c, { radius: 9, color: '#fff', weight: 2, fillColor: g.color, fillOpacity: 0.92 });
+        m.bindPopup('<b>' + escapeHtml(p.name) + '</b><br><span style="font-size:12px;color:#5b6875">' + escapeHtml(g.name) + '</span><br>' + escapeHtml(p.desc));
+        m.on('click', function () { selectPlace(p); });
+        m.addTo(markerLayer);
+        markersById[p.id] = m;
+      });
+    });
+  }
+
+  function buildButtons() {
+    var gc = document.getElementById('series-controls');
+    var pc = document.getElementById('course-controls');
+    gc.innerHTML = '';
+    pc.innerHTML = '';
+
+    var allBtn = document.createElement('button');
+    allBtn.type = 'button';
+    allBtn.className = 'map-btn' + (currentGroup === -1 ? ' on' : '');
+    allBtn.textContent = '全表示';
+    allBtn.onclick = function () { currentGroup = -1; currentPlace = -1; buildButtons(); zoomAll(); renderDetail(null); };
+    gc.appendChild(allBtn);
+
+    GROUPS.forEach(function (g, gi) {
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'map-btn' + (gi === currentGroup ? ' series-on' : '');
+      b.textContent = g.name;
+      b.onclick = function () { currentGroup = gi; currentPlace = -1; buildButtons(); zoomGroup(g); renderDetail(null); };
+      gc.appendChild(b);
+    });
+
+    if (currentGroup === -1) {
+      var hint = document.createElement('span');
+      hint.className = 'map-note';
+      hint.textContent = 'カテゴリを選ぶと会場ボタンが表示されます。';
+      pc.appendChild(hint);
+      return;
+    }
+
+    GROUPS[currentGroup].places.forEach(function (p, pi) {
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'map-btn' + (pi === currentPlace ? ' on' : '');
+      b.textContent = p.name;
+      b.onclick = function () { selectPlace(p); };
+      pc.appendChild(b);
+    });
+  }
+
+  function zoomAll() {
+    var all = [];
+    GROUPS.forEach(function (g) { g.places.forEach(function (p) { all.push(p.c); }); });
+    map.fitBounds(L.latLngBounds(all).pad(0.15));
+  }
+
+  function zoomGroup(g) {
+    var pts = g.places.map(function (p) { return p.c; });
+    map.fitBounds(L.latLngBounds(pts).pad(0.25));
+  }
+
+  function selectPlace(p) {
+    // マーカークリック／会場ボタン共通の選択処理
+    var gi = -1, pi = -1;
+    GROUPS.forEach(function (g, i) {
+      var idx = g.places.indexOf(p);
+      if (idx >= 0) { gi = i; pi = idx; }
+    });
+    if (gi >= 0) { currentGroup = gi; currentPlace = pi; }
+    buildButtons();
+    map.setView(p.c, 15);
+    var m = markersById[p.id];
+    if (m) m.openPopup();
+    renderDetail(p);
+  }
+
+  function renderDetail(p) {
+    var el = document.getElementById('map-detail');
+    if (!el) return;
+    if (!p) {
+      el.innerHTML = '<div class="map-detail-empty">カテゴリまたは会場を選ぶと、対応する会場の詳細プランがここに表示されます。</div>';
+      return;
+    }
+    var card = document.getElementById('venue-' + p.id);
+    if (card) {
+      el.innerHTML = '<div class="map-detail-label">選択中会場の詳細</div>' + card.innerHTML;
+      return;
+    }
+    // 専用カードが無い会場は、データから構造化した詳細を組み立てる
+    var html = '<div class="map-detail-label">選択中会場の詳細</div>';
+    html += '<h4 style="margin-top:0;font-size:16px;">' + escapeHtml(p.name) + ' <span class="small">（' + escapeHtml(p._group) + '）</span></h4>';
+    html += '<p><b>' + escapeHtml(p.verdict || '') + '</b></p>';
+    html += '<p class="small">' + escapeHtml(p.desc) + '</p>';
+    if (p.fields && p.fields.length) {
+      html += '<table><tr><th style="width:30%">項目</th><th>内容</th></tr>';
+      p.fields.forEach(function (f) {
+        html += '<tr><td>' + escapeHtml(f[0]) + '</td><td>' + escapeHtml(f[1]) + '</td></tr>';
+      });
+      html += '</table>';
+    }
+    el.innerHTML = html;
+  }
+
+  function init() {
+    map = L.map('map', { zoomControl: true });
+    map.setView([35.66, 139.6], 10);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+    markerLayer = L.layerGroup().addTo(map);
+    renderMarkers();
+    buildButtons();
+    zoomAll();
+    renderDetail(null);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>
+
+</body>
+</html>
