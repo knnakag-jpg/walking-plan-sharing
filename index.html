@@ -1,0 +1,1904 @@
+<!-- File: walking-plan-2026-autumn.html -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026年 秋季 4名歩行会 統合企画書（第6版V3・全45コース6km前後化＋インタラクティブマップ）</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+<style>
+  :root{
+    --ink:#1c2430;
+    --sub:#5b6875;
+    --line:#d8dee6;
+    --bg:#f6f8fa;
+    --accent:#1f5f8b;
+    --accent2:#0e7c6b;
+    --warn:#b3541e;
+    --ng:#a02c2c;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;padding:0;
+    font-family:"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;
+    color:var(--ink);background:var(--bg);line-height:1.8;
+    font-size:15px;
+  }
+  .wrap{max-width:1080px;margin:0 auto;padding:32px 20px 80px;background:#fff;}
+  header.cover{
+    border-bottom:4px solid var(--accent);
+    padding-bottom:20px;margin-bottom:32px;
+  }
+  header.cover .eyebrow{color:var(--accent);font-size:13px;letter-spacing:.18em;margin:0 0 6px;}
+  header.cover h1{font-size:26px;margin:0 0 10px;line-height:1.5;}
+  header.cover .meta{color:var(--sub);font-size:13px;}
+  h2{
+    font-size:20px;margin:48px 0 14px;padding:8px 0 8px 12px;
+    border-left:6px solid var(--accent);background:linear-gradient(90deg,#eef4f9,#fff);
+  }
+  h3{font-size:17px;margin:28px 0 10px;padding-bottom:4px;border-bottom:1px dashed var(--line);}
+  h4{font-size:15px;margin:18px 0 6px;color:var(--accent);}
+  p{margin:8px 0;}
+  table{
+    width:100%;border-collapse:collapse;margin:14px 0 20px;font-size:13.5px;background:#fff;
+  }
+  th,td{border:1px solid var(--line);padding:7px 9px;vertical-align:top;text-align:left;}
+  th{background:#eef2f6;font-weight:600;white-space:nowrap;}
+  td.c,th.c{text-align:center;white-space:nowrap;}
+  .note{
+    background:#fffaf0;border:1px solid #e8d8b0;padding:12px 14px;margin:16px 0;font-size:13.5px;
+  }
+  .caution{
+    background:#fdf1ee;border:1px solid #eec9bd;padding:12px 14px;margin:16px 0;font-size:13.5px;
+  }
+  .info{
+    background:#eef6f5;border:1px solid #bcdcd6;padding:12px 14px;margin:16px 0;font-size:13.5px;
+  }
+  .v3note{
+    background:#faf0fc;border:1px solid #e3b8ec;padding:12px 14px;margin:16px 0;font-size:13.5px;
+  }
+  .v3note b{color:#c026d3;}
+  .grade{
+    display:inline-block;min-width:22px;text-align:center;border-radius:4px;
+    color:#fff;font-weight:700;padding:1px 7px;font-size:12.5px;
+  }
+  .gA{background:#0e7c6b;} .gB{background:#2f7fb8;} .gC{background:#b28c1e;}
+  .gD{background:#b3541e;} .gF{background:#a02c2c;}
+  .tag{
+    display:inline-block;border:1px solid var(--line);background:#f2f5f8;color:var(--sub);
+    border-radius:12px;padding:1px 9px;font-size:12px;margin:2px 4px 2px 0;
+  }
+  .card{
+    border:1px solid var(--line);border-radius:6px;padding:18px 20px;margin:22px 0;background:#fff;
+    box-shadow:0 1px 2px rgba(0,0,0,.04);
+  }
+  .card h3{margin-top:0;border-bottom:2px solid var(--accent);}
+  .kv{display:flex;flex-wrap:wrap;gap:0 18px;font-size:13px;color:var(--sub);margin-bottom:10px;}
+  .kv span b{color:var(--ink);}
+  ul,ol{margin:8px 0 8px 1.4em;padding:0;}
+  li{margin:4px 0;}
+  .route{
+    background:#f4f7fa;border-left:4px solid var(--accent2);padding:10px 14px;font-size:13px;margin:12px 0;
+  }
+  .route code{background:none;font-family:inherit;}
+  footer{margin-top:60px;padding-top:16px;border-top:1px solid var(--line);color:var(--sub);font-size:12.5px;}
+  .toc{background:#f4f7fa;border:1px solid var(--line);padding:16px 22px;font-size:13.5px;}
+  .toc ol{margin:0 0 0 1.2em;}
+  .small{font-size:12.5px;color:var(--sub);}
+  .rank{font-weight:700;color:var(--accent);}
+  @media print{ body{background:#fff;} .wrap{max-width:none;} }
+
+  /* ===== 統合インタラクティブマップ用 ===== */
+  #map{height:540px;width:100%;border:1px solid var(--line);border-radius:6px;margin:14px 0;z-index:1;}
+  .map-wrap{max-width:1080px;margin:0 auto;}
+  .map-series-controls,.map-course-controls{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0;}
+  .map-btn{padding:7px 13px;border-radius:18px;border:1px solid var(--line);background:#fff;color:var(--ink);font-size:12.5px;font-weight:600;cursor:pointer;transition:all .15s;}
+  .map-btn:hover{border-color:var(--accent);}
+  .map-btn.on{background:var(--accent);color:#fff;border-color:var(--accent);}
+  .map-btn.series-on{background:var(--accent2);color:#fff;border-color:var(--accent2);}
+  .map-legend{display:flex;flex-wrap:wrap;gap:14px;margin:8px 0 4px;font-size:12px;color:var(--sub);}
+  .map-legend .dot{width:11px;height:11px;border-radius:50%;display:inline-block;margin-right:5px;vertical-align:middle;}
+  .map-note{font-size:12px;color:var(--sub);margin-top:6px;}
+  .map-detail{margin:16px 0 0;padding:16px 18px;border:1px solid var(--line);border-radius:6px;background:#fbfcfe;}
+  .map-detail-label{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.05em;color:#fff;background:var(--accent);border-radius:4px;padding:3px 10px;margin-bottom:12px;}
+  .map-detail-empty{color:var(--sub);font-size:13px;}
+  /* ===== マップCTA・ジャンプナビ ===== */
+  .map-cta{margin:0 0 20px;}
+  .map-cta a{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;font-weight:700;font-size:14px;padding:11px 18px;border-radius:6px;box-shadow:0 1px 3px rgba(0,0,0,.15);}
+  .map-cta a:hover{background:var(--accent2);}
+  .map-nav{margin:16px 0;padding:12px 14px;border:1px solid var(--line);border-radius:6px;background:#f4f7fa;font-size:12.5px;}
+  .map-nav-top{display:inline-block;margin-bottom:8px;color:var(--accent);font-weight:700;text-decoration:none;}
+  .map-nav-details{margin:6px 0;}
+  .map-nav-details summary{cursor:pointer;font-weight:700;color:var(--accent);font-size:13px;}
+  .map-nav-links{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px;}
+  .map-nav-group{flex-basis:100%;margin-top:8px;font-weight:700;color:var(--sub);font-size:12px;border-top:1px dashed var(--line);padding-top:6px;}
+  .map-nav-link{display:inline-block;padding:3px 9px;border:1px solid var(--line);border-radius:12px;background:#fff;color:var(--ink);text-decoration:none;font-size:12px;}
+  .map-nav-link:hover{border-color:var(--accent);color:var(--accent);}
+  @media (max-width:680px){
+    body{font-size:14px;}
+    .wrap{padding:20px 12px 64px;}
+    header.cover h1{font-size:20px;}
+    h2{font-size:18px;}
+    #map{height:400px;}
+    table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;}
+    .map-cta a{display:block;text-align:center;box-sizing:border-box;}
+  }
+</style>
+</head>
+<body id="top">
+<div class="wrap">
+
+<header class="cover">
+  <p class="eyebrow">WALKING PROJECT / AUTUMN 2026</p>
+  <h1>2026年 秋季 4名歩行会<br>コース選定・企画総合資料（第6版・統合企画書｜V3：全45コース6km前後化版）</h1>
+  <p class="meta">
+    作成日：2026年8月22日｜更新日：2026年8月23日（第6版：第5版までに蓄積したA〜Z評価に、坂道／地下／河川敷／ベイエリアの4シリーズを統合し、全45コースのインタラクティブマップを付加）｜<b>V3更新日：2026年8月25日</b>（V3：全45コースの実歩行距離を6km前後に引き上げ、駅to駅旅程・見どころ・地図データを更新。アップダウンの大きいコースは例外的に据置）｜実施想定：2026年9月下旬〜10月の土日いずれか1日<br>
+    行動時間：10:00 集合／16:00 解散（実歩行 約6km前後・総工程 約3時間の歩行を含む一日行程）<br>
+    参加人数：4名｜本資料は複数の立案案（採用案・保留案・却下案）と4シリーズ企画を全件収録した検討用マスタ資料である。V2からの変更点はページ各所に紫色の「V3更新」注記として明示した。
+  </p>
+</header>
+
+<p class="map-cta"><a href="#sec-14" target="_blank" rel="noopener">🗺 各案のマップ付き紹介はこちら →</a></p>
+
+<div class="v3note">
+  <b>V2→V3 変更点サマリー（2026-08-25）</b><br>
+  ① <b>距離目標の引き上げ：</b>全45コースのうち大半で実歩行距離を約6km前後（本編は原則6.0km、シリーズ③河川敷・④ベイエリア橋は6.0〜6.5km）へ拡張し、駅to駅の旅程・経由地・見どころを合わせて再設計した。<br>
+  ② <b>例外コース（距離を伸ばさない）：</b>D（調布飛行場、起伏を意図的に採用済み）・I（高尾山、約2.5〜3.0kmに明確化のうえ据置）・Q（麻布台ヒルズ、スキップフロア構造の階段誤進入リスクのため据置）・シリーズ①坂道・崖線No.27〜32（高低差ありきの設計思想を維持。距離未記載だった4コースには目安距離のみ新規明記）・No.43（既に6〜7kmに到達済みのため現状維持）。<br>
+  ③ <b>各コースの変更箇所：</b>この版で内容が変わったコースには、そのカード内に本ボックスと同じ紫系の「V3更新」注記を個別に配置し、旧距離→新距離・延伸方向・新規の見どころを明記した。<br>
+  ④ <b>地図・付録との同期：</b>統合インタラクティブマップ（第14章）のルート線データと、第13章の経路ノード一覧（13-1：本編A〜Z／13-2：シリーズNo.27〜45を新設）を、旅程表の変更と一致するよう更新した。<br>
+  ⑤ <b>経路の注意点：</b>分かりにくい分岐・迷いやすい地点は各コースのV3注記に加え、第3章末に新設した「3-3. 旅程で特に注意すべき経路・分かりにくい分岐」に一覧化した。<br>
+  ⑥ <b>据置事項：</b>既存のX（Twitter）裏取り情報・催事日程・雨天時対応等のボックスは一切削除・改変していない。現地の最新状況確認は引き続き実施2週間前を目安に行うこと。
+</div>
+
+<div class="toc">
+  <b>目次</b>
+  <ol>
+    <li>本企画の設計条件とコース選定基準</li>
+    <li>難易度スケールの定義</li>
+    <li>コース総合評価マトリクス（全26案）／8月22日豪雨の閉鎖有無／X検索裏取り（3-3：旅程要注意ポイント早見表 新設）</li>
+    <li>推奨ランキング（2026年9〜10月実施時）</li>
+    <li>コース詳細①：最優先推奨群（詳細旅程付）</li>
+    <li>コース詳細②：既存提案群（再掲・再評価）</li>
+    <li>コース詳細③：新規追加案（最新の開業・改修情報を反映）</li>
+    <li>時期別 催事・シーズン要素マトリクス（2026年確定分）</li>
+    <li>保留・却下案の一覧とその判断理由</li>
+    <li>上位グレード（判定D〜F）への復帰マイルストーン</li>
+    <li>当日運用・リスク管理・持ち物</li>
+    <li>実施前チェックリストと意思決定フロー</li>
+    <li>付録：地図アプリ用 経路ノード一覧（13-1：本編A〜Z／13-2：シリーズNo.27〜45 新設）</li>
+    <li>統合インタラクティブマップ（全45コース・シリーズ／コース切替）</li>
+    <li>シリーズ①：坂道・崖線ハイキング（No.27〜32）</li>
+    <li>シリーズ②：首都圏地下ダンジョン周回（No.33〜35）</li>
+    <li>シリーズ③：河川敷開放感ウォーク（No.36〜41）</li>
+    <li>シリーズ④：ベイエリア橋ウォーキング（No.42〜45）</li>
+  </ol>
+</div>
+
+<!-- ===================== 1 ===================== -->
+<h2 id="sec-1">1. 本企画の設計条件とコース選定基準</h2>
+
+<h3>1-1. 行程条件</h3>
+<table>
+  <tr><th style="width:22%">項目</th><th>設定値</th></tr>
+  <tr><td>集合</td><td>10:00（各方面から余裕をもって到達可能な時刻設定）</td></tr>
+  <tr><td>解散</td><td>16:00 前後（帰路の混雑・日没前を確保）</td></tr>
+  <tr><td>実歩行距離</td><td>4.5〜6.5km前後（標高差の大きいコース〈D・I・Q・坂道シリーズNo.27〜32〉は3.0〜5.0kmに短縮可。分割歩行とし、連続歩行は1区間1.5km以内）</td></tr>
+  <tr><td>歩行ペース</td><td>時速3.0km前後（会話が続く速度。写真撮影の停止時間を含む）</td></tr>
+  <tr><td>休憩</td><td>60〜75分ごとに着席休憩（ベンチではなく背もたれ付き椅子を優先）</td></tr>
+  <tr><td>昼食</td><td>12:00〜13:30の90分枠。椅子席・待ち時間の少ない店舗を事前確保</td></tr>
+  <tr><td>設備要件</td><td>ルート上に洋式トイレが1.5km以内間隔で存在すること／途中離脱可能な駅が2箇所以上</td></tr>
+</table>
+
+<h3>1-2. 歩行設計の基本方針（バイオメカニクス上の前提）</h3>
+<p>
+本企画のコース設計は、<b>高体重域にあり、かつ膝関節の深屈曲（膝を深く折る動作）に制限を持つ歩行者</b>を基準線として全ルートを評価する。全員が同一のペース・同一の負荷で歩ける設計とすることで、特定の一人に配慮が集中しない自然な行程とする。
+</p>
+<ul>
+  <li><b>平地歩行時</b>の膝関節荷重は体重の約2〜3倍。舗装された平坦路であれば、5km程度の分割歩行は有酸素運動として適切な範囲に収まる。</li>
+  <li><b>下降動作（下り階段・急な下り坂）</b>では、大腿四頭筋の遠心性収縮により瞬間荷重が体重の4〜5倍に達する。<u>本企画で最も回避すべきは「登り」ではなく「下り」である。</u></li>
+  <li><b>登り坂・登り階段</b>は求心性収縮が主体で関節衝撃が小さい。したがって<b>「緩い登りは積極採用、下りは機械（EV・エスカレーター・ケーブル）に任せる」</b>を原則とする。</li>
+  <li>階段は絶対禁止ではない。回避可能なら回避し、不可避の場合は<b>手すりの利用・一段ずつの揃え足・斜め横向き下降</b>で通過する。</li>
+  <li>砂利・玉砂利・不整地・木道の濡れ面は、足首の微調整が膝に伝播するため優先度を下げる。</li>
+</ul>
+
+<div class="note">
+<b>2026年9〜10月 特有の追加条件</b><br>
+① <b>残暑リスク</b>：9月中〜下旬は依然として真夏日となる年が多い。日陰のない湾岸プロムナード系（B・K・O）は10月以降推奨。<br>
+② <b>直近の歩行量低下</b>：5月連休以降、天候不順により継続的な歩行機会が減少している。本番の3〜4週間前から「平地30分×週2回」の準備歩行を推奨し、当日は<b>5.5kmを上限</b>とする運用に切り替えることも想定する。<br>
+③ <b>撤退容易性</b>：どの地点からも30分以内に着席して帰路につけることを、景観価値より優先する。
+</div>
+
+<h3>1-3. アクセス評価軸（メタ化）</h3>
+<p>参集は都心を挟む<b>4方面（北西・北東・西・南西）</b>から行われる。各コースは「4方面からの乗換回数」「帰路に着席できる可能性」の2軸で評価する。個別の乗車駅・路線は本資料では扱わず、方面区分のみで記載する。</p>
+<table>
+  <tr><th class="c">評価</th><th>定義</th></tr>
+  <tr><td class="c">◎</td><td>4方面すべてが乗換0〜1回で到達。所要はいずれも概ね60分以内。</td></tr>
+  <tr><td class="c">◯</td><td>3方面が乗換1回以内。残り1方面が乗換2回または所要75分程度。</td></tr>
+  <tr><td class="c">△</td><td>2方面以上で乗換2回以上、またはバス区間を含む。</td></tr>
+</table>
+
+<h3>1-4. テーマタグ（本会が扱う関心領域）</h3>
+<p>本会の企画は、以下のテーマタグの組み合わせで評価する。1コースにつき3タグ以上をカバーすることを目標とする。</p>
+<p>
+<span class="tag">鉄道</span><span class="tag">航空</span><span class="tag">ミリタリー／近代遺構</span><span class="tag">馬事・スポーツ</span>
+<span class="tag">テック／先端建築</span><span class="tag">美術・工芸</span><span class="tag">クラシック音楽</span><span class="tag">歴史・城郭</span>
+<span class="tag">IP／ゲーム・アニメ文化</span><span class="tag">フォトジェニック景観</span><span class="tag">港湾・船舶</span><span class="tag">自然・庭園</span>
+<span class="tag">ガジェット／オーディオ</span>
+</p>
+
+<!-- ===================== 2 ===================== -->
+<h2 id="sec-2">2. 難易度スケールの定義</h2>
+<table>
+  <tr><th class="c" style="width:70px">判定</th><th style="width:26%">路面・高低差の性質</th><th>採否の考え方</th></tr>
+  <tr><td class="c"><span class="grade gA">A</span></td><td>完全舗装・実質フラット。階段は全区間で迂回可能。</td><td>常時採用可。準備不足でも実施できる基準線。</td></tr>
+  <tr><td class="c"><span class="grade gB">B</span></td><td>微起伏・緩斜面あり。短い階段が数箇所あるが迂回路またはEV/ESが併設。</td><td>採用可。事前に迂回ポイントを地図で確定しておく。</td></tr>
+  <tr><td class="c"><span class="grade gC">C</span></td><td>歩道橋・デッキ等で段差が不可避。迂回に大きな遠回りを要する。</td><td>条件付き採用。体調良好時・涼しい時期のみ。</td></tr>
+  <tr><td class="c"><span class="grade gD">D</span></td><td>明確な高低差を含む。下り主体の区間が存在するが、機械下降で回避可能。</td><td>今季は保留。下降を機械に完全代替できる場合のみ検討。</td></tr>
+  <tr><td class="c"><span class="grade gF">F</span></td><td>不整地・連続する不規則段差・長時間の下降。</td><td>今季は実施しない。将来の目標枠（第10章参照）。</td></tr>
+</table>
+
+<!-- ===================== 3 ===================== -->
+<h2 id="sec-3">3. コース総合評価マトリクス（全26案）</h2>
+<p class="small">※「着席」＝ルート上で背もたれ付きの椅子に座って休める機会の多さ。「雨天」＝雨天決行時の快適性。</p>
+<table>
+  <tr>
+    <th style="width:24%">コース</th><th class="c">難易度</th><th class="c">推定歩行</th><th class="c">階段回避</th>
+    <th class="c">着席・休憩</th><th class="c">トイレ密度</th><th class="c">アクセス</th><th>テーマ</th><th class="c">雨天</th>
+  </tr>
+  <tr><td><b>E</b> 東京競馬場・府中</td><td class="c"><span class="grade gA">A</span></td><td class="c">約6.0km</td><td class="c">◎完全回避可</td><td class="c">◎最良</td><td class="c">◎</td><td class="c">◯</td><td>馬事／機械／庭園／歴史</td><td class="c">◯屋内多</td></tr>
+  <tr><td><b>G</b> 高輪ゲートウェイ〜品川</td><td class="c"><span class="grade gA">A</span></td><td class="c">約6.0km</td><td class="c">◎完全回避可</td><td class="c">◎</td><td class="c">◎</td><td class="c">◎</td><td>テック／鉄道／新規性</td><td class="c">◯</td></tr>
+  <tr><td><b>C</b> 横浜・汽車道〜開港記念会館</td><td class="c"><span class="grade gA">A</span></td><td class="c">約6.0km</td><td class="c">◎</td><td class="c">◯</td><td class="c">◎</td><td class="c">◯</td><td>建築／港湾／景観</td><td class="c">△</td></tr>
+  <tr><td><b>J</b> 羽田イノベーションシティ〜多摩川スカイブリッジ<span class="small">（新規）</span></td><td class="c"><span class="grade gA">A</span></td><td class="c">約6.0km</td><td class="c">◎</td><td class="c">◎</td><td class="c">◎</td><td class="c">◯</td><td>航空／テック／景観</td><td class="c">◯</td></tr>
+  <tr><td><b>K</b> 豊洲・千客万来〜ぐるり公園<span class="small">（新規）</span></td><td class="c"><span class="grade gA">A</span></td><td class="c">約6.0km</td><td class="c">◎</td><td class="c">◎</td><td class="c">◎</td><td class="c">◯</td><td>食／アート／港湾／景観</td><td class="c">◯</td></tr>
+  <tr><td><b>L</b> 立川 GREEN SPRINGS〜多摩モノレール<span class="small">（新規）</span></td><td class="c"><span class="grade gA">A</span></td><td class="c">約6.0km</td><td class="c">◎</td><td class="c">◎</td><td class="c">◎</td><td class="c">◯</td><td>アート／建築／テック</td><td class="c">◎</td></tr>
+  <tr><td><b>O</b> 天王洲アイル・水辺アート<span class="small">（新規）</span></td><td class="c"><span class="grade gA">A</span></td><td class="c">約6.0km</td><td class="c">◎</td><td class="c">◯</td><td class="c">◯</td><td class="c">◯</td><td>アート／水辺／建築</td><td class="c">△</td></tr>
+  <tr><td><b>V</b> 浜離宮〜竹芝・水上バス<span class="small">（新規）</span></td><td class="c"><span class="grade gA">A</span></td><td class="c">約5.7km</td><td class="c">◯</td><td class="c">◎着席移動有</td><td class="c">◎</td><td class="c">◎</td><td>庭園／港湾／歴史／景観</td><td class="c">△</td></tr>
+  <tr><td><b>T</b> 二子玉川・多摩川水辺<span class="small">（南西ハブ）</span></td><td class="c"><span class="grade gA">A</span></td><td class="c">約6.0km</td><td class="c">◎</td><td class="c">◎</td><td class="c">◎</td><td class="c">◯</td><td>河川景観／商業建築／庭園</td><td class="c">◯</td></tr>
+  <tr><td><b>W</b> 葛西臨海公園<span class="small">（北東ハブ）</span></td><td class="c"><span class="grade gA">A</span></td><td class="c">約6.0km</td><td class="c">◎</td><td class="c">◎着席展望有</td><td class="c">◎</td><td class="c">◯</td><td>海景／展望／生物・科学</td><td class="c">△</td></tr>
+  <tr><td><b>X</b> 東京ミッドタウン〜檜町公園<span class="small">（第4版追加）</span></td><td class="c"><span class="grade gA">A</span></td><td class="c">約6.0km</td><td class="c">◎</td><td class="c">◎</td><td class="c">◎</td><td class="c">◎</td><td>デザイン／美術／建築／庭園</td><td class="c">◎</td></tr>
+  <tr><td><b>Y</b> 日本橋〜茅場町〜水天宮前<span class="small">（第4版追加）</span></td><td class="c"><span class="grade gA">A</span></td><td class="c">約6.0km</td><td class="c">◎</td><td class="c">◎</td><td class="c">◎</td><td class="c">◎</td><td>歴史／再開発／食／水辺</td><td class="c">◯</td></tr>
+  <tr><td><b>F</b> ところざわサクラタウン</td><td class="c"><span class="grade gB">B</span></td><td class="c">約6.0km</td><td class="c">◯ほぼ回避可</td><td class="c">◎</td><td class="c">◎</td><td class="c">△</td><td>アート／IP／建築／航空</td><td class="c">◎最良</td></tr>
+  <tr><td><b>H</b> 上野ミュージアム</td><td class="c"><span class="grade gB">B</span></td><td class="c">約6.0km</td><td class="c">◯（不忍池を除く）</td><td class="c">◎</td><td class="c">◎</td><td class="c">◎</td><td>芸術／音楽／科学／歴史</td><td class="c">◎</td></tr>
+  <tr><td><b>A</b> 皇居東御苑・三の丸尚蔵館</td><td class="c"><span class="grade gB">B</span></td><td class="c">約6.0km</td><td class="c">◯迂回前提</td><td class="c">△園内少</td><td class="c">◯</td><td class="c">◎</td><td>歴史／文化／近代建築</td><td class="c">×</td></tr>
+  <tr><td><b>M</b> 飛鳥山・アスカルゴ〜音無親水公園<span class="small">（新規）</span></td><td class="c"><span class="grade gB">B</span></td><td class="c">約6.0km</td><td class="c">◎機械昇降</td><td class="c">◯</td><td class="c">◯</td><td class="c">◯</td><td>鉄道／産業史／庭園／展望</td><td class="c">◯</td></tr>
+  <tr><td><b>Z</b> 旧古河庭園〜駒込<span class="small">（第4版追加）</span></td><td class="c"><span class="grade gB">B</span></td><td class="c">約5.8km</td><td class="c">◯主要園路のみ</td><td class="c">◯</td><td class="c">◯</td><td class="c">◯</td><td>庭園／洋館／秋バラ／歴史</td><td class="c">△</td></tr>
+  <tr><td><b>N</b> 大宮・鉄道博物館〜大宮公園<span class="small">（新規）</span></td><td class="c"><span class="grade gB">B</span></td><td class="c">約6.0km</td><td class="c">◯</td><td class="c">◎</td><td class="c">◎</td><td class="c">△</td><td>鉄道／歴史／自然</td><td class="c">◎</td></tr>
+  <tr><td><b>R</b> 小石川後楽園〜東京ドームシティ<span class="small">（新規）</span></td><td class="c"><span class="grade gB">B</span></td><td class="c">約6.0km</td><td class="c">△園内に段差</td><td class="c">◎</td><td class="c">◎</td><td class="c">◎</td><td>庭園／歴史／IP／屋内娯楽</td><td class="c">◎</td></tr>
+  <tr><td><b>S</b> 神宮外苑〜国立競技場外周<span class="small">（新規）</span></td><td class="c"><span class="grade gB">B</span></td><td class="c">約6.0km</td><td class="c">◯</td><td class="c">◯</td><td class="c">◯</td><td class="c">◎</td><td>スポーツ建築／並木景観</td><td class="c">△</td></tr>
+  <tr><td><b>P</b> 横須賀 ヴェルニー公園〜三笠公園<span class="small">（新規）</span></td><td class="c"><span class="grade gB">B</span></td><td class="c">約5.7km</td><td class="c">◯</td><td class="c">◯</td><td class="c">◯</td><td class="c">△</td><td>ミリタリー／港湾／近代史</td><td class="c">△</td></tr>
+  <tr><td><b>U</b> 川越・蔵造りの町並み<span class="small">（新規）</span></td><td class="c"><span class="grade gB">B</span></td><td class="c">約6.0km</td><td class="c">◯</td><td class="c">◯</td><td class="c">◯</td><td class="c">△</td><td>歴史／街並み／食</td><td class="c">△</td></tr>
+  <tr><td><b>B</b> お台場・有明</td><td class="c"><span class="grade gC">C</span></td><td class="c">約6.0km</td><td class="c">△陸橋あり</td><td class="c">◯</td><td class="c">◎</td><td class="c">◯</td><td>メカ／テック／景観</td><td class="c">△</td></tr>
+  <tr><td><b>Q</b> 麻布台ヒルズ〜東京タワー<span class="small">（新規）</span></td><td class="c"><span class="grade gC">C</span></td><td class="c">約4.2km</td><td class="c">△坂多数</td><td class="c">◎</td><td class="c">◎</td><td class="c">◯</td><td>先端建築／デジタルアート</td><td class="c">◎</td></tr>
+  <tr><td><b>D</b> 調布飛行場・武蔵野の森公園</td><td class="c"><span class="grade gC">C</span></td><td class="c">約5.0〜5.2km</td><td class="c">△起伏あえて採用</td><td class="c">△</td><td class="c">△</td><td class="c">△</td><td>ミリタリー／航空／自然</td><td class="c">×</td></tr>
+  <tr><td><b>I</b> 高尾山（ケーブルカー下山）</td><td class="c"><span class="grade gD">D</span></td><td class="c">約2.5〜3.0km</td><td class="c">△女坂選択必須</td><td class="c">△</td><td class="c">△</td><td class="c">◯</td><td>登山／信仰／紅葉</td><td class="c">×</td></tr>
+  <tr><td><b>Z1</b> 陣馬山（相模湖起点）</td><td class="c"><span class="grade gF">F</span></td><td class="c">─</td><td class="c">×</td><td class="c">×</td><td class="c">×</td><td class="c">△</td><td>本格登山</td><td class="c">×</td></tr>
+  <tr><td><b>Z2</b> 大多摩ウォーキングトレイル</td><td class="c"><span class="grade gF">F</span></td><td class="c">─</td><td class="c">×</td><td class="c">×</td><td class="c">×</td><td class="c">△</td><td>本格自然歩道</td><td class="c">×</td></tr>
+</table>
+<p class="small">※ 第4版で <b>T／W</b>（既存カードのマトリクス未掲載分）と <b>X／Y／Z</b>（追加推奨）を計上。Z1／Z2は却下案のため「全26案」には含めない。</p>
+
+<h3>3-1. 2026-08-22／23 豪雨：施設閉鎖の有無（調査メモ）</h3>
+<p>調査日：2026年8月23日。対象は「資料掲載コースの施設・遊歩道が、8月22日夕方の記録的短時間豪雨で<b>閉鎖・運休・通行止め</b>になったかどうか」のみ。代替ルートの提案は行わない。公式サイトの一部は取得不能だったため、報道見出し・交通情報で施設名が明示されたものだけを「確認」、明示がなければ「閉鎖報道なし」とする。</p>
+<div class="info">
+  <b>気象の事実（閉鎖判定の前提）：</b>8月22日夕方、東京都9区（新宿・板橋・練馬・文京・中央・台東・荒川および関連する豊島・北）と埼玉県和光市に大雨特別警報級の警戒（警戒レベル4）が発表。板橋で約120mm/h、北区・戸田で約100–120mm/h。練馬・白子川は子安橋付近で氾濫発生情報（レベル5、約17:00）。神田川は氾濫危険の報道あり。東京都のレベル4は同日20:49にすべて解除。台風18号は8月26日前後に沖縄接近見込み（本企画実施時期とは別件）。
+</div>
+<table>
+  <tr><th style="width:8%">コース</th><th style="width:28%">対象エリア</th><th class="c" style="width:16%">閉鎖報道</th><th>確認できた事象／注記</th></tr>
+  <tr><td class="c"><b>J</b></td><td>羽田イノベーションシティ／スカイブリッジ</td><td class="c">なし</td><td>施設・橋梁の閉鎖報道なし。空の便の欠航・ダイバートはあったが歩行ルート対象外。</td></tr>
+  <tr><td class="c"><b>T</b></td><td>二子玉川・多摩川水辺</td><td class="c">なし</td><td>河川敷・商業街区の閉鎖報道なし。東急世田谷線は落雷で17:40–18:40運休（二子玉川は田園都市線／大井町線だが、同夜の東急グループ擾乱として記録）。</td></tr>
+  <tr><td class="c"><b>C</b></td><td>横浜・汽車道</td><td class="c">なし</td><td>横浜北部・川崎にレベル4。汽車道・赤レンガの閉鎖報道なし。</td></tr>
+  <tr><td class="c"><b>V</b></td><td>浜離宮〜竹芝</td><td class="c">なし</td><td>庭園・水上バスの運休報道なし（荒天時は便欠の可能性はあるが、当該夕刻の運休名指しなし）。</td></tr>
+  <tr><td class="c"><b>W</b></td><td>葛西臨海公園</td><td class="c">なし</td><td>園路・観覧車・水族施設の閉鎖報道なし。</td></tr>
+  <tr><td class="c"><b>K</b></td><td>豊洲・千客万来</td><td class="c">なし</td><td>千客万来・ぐるり公園の閉鎖報道なし。</td></tr>
+  <tr><td class="c"><b>M</b></td><td>飛鳥山・音無親水公園・石神井川</td><td class="c">施設名なし</td><td><b>地理的最近傍</b>。北区・板橋・練馬が警戒対象。白子川氾濫は練馬（コース圏外）。音無親水公園・石神井川遊歩道の通行止め名指しはなし。実施前に園路を再確認。</td></tr>
+  <tr><td class="c"><b>A</b></td><td>皇居東御苑〜東京駅</td><td class="c">施設名なし</td><td>千代田のアンダーパス冠水、東京駅近くの道路陥没の報道あり。東御苑・三の丸尚蔵館の閉鎖報道なし。</td></tr>
+  <tr><td class="c"><b>R</b></td><td>小石川後楽園〜東京ドームシティ</td><td class="c">なし</td><td>文京区はレベル4対象。庭園・ドームシティ施設の閉鎖報道なし。神田川は氾濫危険の見出しあり（遊歩道は実施前再確認）。</td></tr>
+  <tr><td class="c"><b>N</b></td><td>大宮・鉄道博物館</td><td class="c">なし</td><td>さいたま市で日中110mm級の記録。鉄道博物館・氷川参道の閉鎖報道なし。</td></tr>
+  <tr><td class="c"><b>G／E／F／L／H</b></td><td>高輪／府中／所沢／立川／上野</td><td class="c">なし</td><td>当該夕刻の施設閉鎖・運休の名指しなし。</td></tr>
+</table>
+<div class="note">
+  <b>調査結論（2026-08-23）：</b>資料掲載の主要施設・遊歩道について、「閉鎖・運休」を公式・報道で確認できたものは<b>ない</b>。確認できたのは白子川氾濫（練馬・子安橋）、神田川氾濫危険、千代田アンダーパス冠水、北区西が丘の車両停滞、和光・戸田の道路冠水、杉並・荻窪の道路冠水、墨田のマンホール噴出、東京駅近くの道路陥没、東急世田谷線の一時運休（17:40–18:40再開）、空の便欠航、花火中止、埼玉・千葉で東電停電約960件。コースMは地理的最近傍のため、実施前に園路・親水公園の通行止めだけ再確認する。本調査は代替ルートの提案を含まない。
+</div>
+
+<h3>3-2. X検索による裏取り（調査日：2026年8月23日）</h3>
+<p>各案の施設稼働・開業時期・会期について、X（公式アカウント・現地投稿・報道転載）で裏取りした。投稿は告知・訪問記録であり、公式サイトの確定情報に代わるものではない。実施2週間前に公式再確認を必須とする。</p>
+<div class="info">
+<b>稼働が確認できたもの（2026年8月中旬〜下旬の公式／訪問投稿）：</b>高輪ゲートウェイシティ（イベント告知継続）、羽田イノベーションシティ足湯スカイデッキ（8/20–21の訪問・撮影投稿）、ところざわサクラタウン／角川武蔵野ミュージアム（公式週次案内）、GREEN SPRINGS／PLAY! MUSEUM（9月分チケット販売開始）、豊洲千客万来（365日イベント告知）、横浜赤レンガ倉庫（公式が秋催事を告知）、東京国立博物館（空海展10万人到達）、葛西臨海水族園（公式が4/29開園を告知、8月も来園投稿あり）、旧古河庭園（公式が秋バラフェスを告知）、東京ドームシティ（アトラクション公式が秋コラボを告知）。8/22豪雨後もこれら施設の閉鎖を示す投稿は見当たらない。
+</div>
+<table>
+  <tr><th style="width:18%">訂正・更新点</th><th style="width:14%">対象</th><th>第4版までの記載</th><th>X検索で確認した内容（2026-08-23）</th></tr>
+  <tr><td>全面開館の時期</td><td>A 三の丸尚蔵館</td><td>2023年11月開館</td><td>2023年11月は<b>部分開館</b>。全面開館（グランドオープン）は<b>2026年秋</b>予定。記念特別展3本が発表済み。実施時期と重なれば「今行く」価値が跳ね上がる一方、初日〜初週は争奪戦・立位待機リスク。</td></tr>
+  <tr><td>街区の開業段階</td><td>G 高輪GW</td><td>2025年3月まちびらき以降の拡張期</td><td>まちびらき（2025年3月）に続き、<b>2026年3月28日前後に全面開業</b>（THE LINKPILLAR 2等）。本企画は全面開業後の初秋。9/4–6に「KANPAI GATEWAY」（Gateway Park、酒蔵24・キッチンカー）。</td></tr>
+  <tr><td>水族園の開園状況</td><td>W 葛西</td><td>新施設整備計画が進行、営業形態が変わりうる</td><td><b>新・葛西臨海水族園は2026年4月29日開園済み</b>。8月も来園投稿あり。ガイドツアー実施中。一部投稿は2028年のさらなる更新に言及。既存注記は更新する。</td></tr>
+  <tr><td>商業棟の閉館</td><td>Y 日本橋</td><td>コレド群で着席・昼食が密</td><td><b>コレド日本橋は2026年10月15日に一旦閉館</b>（2027年秋、東京ミッドタウン日本橋へ改装）。<b>コレド室町は別棟で継続</b>。経路は室町側を主とし、日本橋棟に依存しない。</td></tr>
+  <tr><td>開催カレンダー</td><td>E 東京競馬場</td><td>G1開催日は回避、非開催日または平常開催日</td><td>2026年は<b>9月に東京開催なし</b>（6月最終後、10月再開）。10月は毎日王冠（10/4）等の重賞週。G1は<b>天皇賞・秋 11/1、ジャパンカップ 11/29</b>（本企画の9月下旬〜10月枠の外）。9月実施ならパークウインズ運用。</td></tr>
+  <tr><td>いちょう並木</td><td>S 神宮外苑</td><td>再開発で通行止めの可能性が高い</td><td>事業Q&amp;A転載（8/20）は「<b>現時点で工事による通行止めは予定していない</b>。発生時は事前周知」と回答。工事状況による一時規制は残るため、実施2週間前の再確認は維持。</td></tr>
+</table>
+<div class="note"><b>Xに出てこなかった／未発表のもの：</b>川越大祭2026の公式日程（例年第3土日前後）、鉄道博物館の「鉄道の日」2026企画、三の丸尚蔵館の正確な開館日と各展会期、調布飛行場の秋イベント、飛鳥山・天王洲の9–10月大型催事。これらは例年ベースのまま、実施前に公式確認する。</div>
+
+<h3>3-3. 旅程で特に注意すべき経路・分かりにくい分岐（V3新設）</h3>
+<p class="small">距離延伸に伴い各コースで新設・拡張した区間を中心に、道が分岐して迷いやすい地点・駅の取り違えリスク等をコース横断でまとめた。各コース詳細は当該カードの「V3更新」注記も参照。</p>
+<table>
+  <tr><th style="width:14%">コース</th><th style="width:22%">地点</th><th>注意内容</th></tr>
+  <tr><td>A 皇居東御苑</td><td>北桔橋門を出た直後の代官町通り横断</td><td>横断歩道の位置がやや分かりにくく、直進すると気づかずに濠沿いを北上してしまう。田安門寄りの横断歩道を渡って北の丸公園に入り、竹橋駅方面（南東側）の出口を事前確認。</td></tr>
+  <tr><td>B お台場・有明</td><td>シンボルプロムナード公園のゆりかもめ高架沿い分岐</td><td>案内標識が少ないため、事前に進路を確認しておくこと。</td></tr>
+  <tr><td>C 横浜・汽車道</td><td>山下公園通り沿いの交差点</td><td>横断歩道の位置が分かりにくい交差点があるため、海側の歩道を選んで車道を渡る回数を減らすとよい。</td></tr>
+  <tr><td>D 調布飛行場</td><td>武蔵野の森公園の南北連絡通路（地下通路）入口</td><td>公園は飛行場を挟んで南北に分かれており、連絡口の位置を事前に確認しておくとよい。</td></tr>
+  <tr><td>E 東京競馬場・府中</td><td>府中崖線（ハケ）を下る区間</td><td>台地から低地へ下る区間があるため、最も緩やかな道を地図で確認し急な階段状の坂道は避ける。公園内も分岐が多く案内板確認要。</td></tr>
+  <tr><td>F ところざわサクラタウン</td><td>東川遊歩道の類似橋（加美橋・中橋・長栄橋・あけぼの橋）／航空記念公園の出入口</td><td>類似した橋が連続し、公園も出入口が複数あるため、案内板を見落とすと航空公園駅と反対側の出口に出てしまう可能性がある。</td></tr>
+  <tr><td>G 高輪ゲートウェイ</td><td>高輪二丁目・高輪皇族邸周辺</td><td>邸の外周へ直登する急坂（桂坂）があるため、先頭は坂道方向へ誤って進まないよう誘導を。</td></tr>
+  <tr><td>H 上野ミュージアム</td><td>谷中霊園から日暮里駅へ下る箇所</td><td>駅前デッキへのエスカレーターと、別ルートの急坂石段（三崎坂・夕やけだんだん等）が近接。案内なしで進むと誤って石段ルートに入る恐れ。解散地点が上野駅から日暮里駅に変わる点にも注意。</td></tr>
+  <tr><td>I 高尾山</td><td>薬王院境内入口（山門）</td><td>境内に入りさらに奥（山頂方面）へ進むと石段が始まるため、折り返し地点は山門手前に明確に設定する。</td></tr>
+  <tr><td>J 羽田イノベーションシティ</td><td>大師橋のたもと</td><td>橋を渡る歩道と京急大師橋駅へ向かう分岐が近接しており、案内なしだと誤って橋を渡りかけやすい。</td></tr>
+  <tr><td>K 豊洲・ぐるり公園</td><td>辰巳方面の周回路</td><td>同じような水辺の景色が続き折り返し地点が分かりにくいため、辰巳の森海浜公園付近を目印に引き返す。</td></tr>
+  <tr><td>L 立川GREEN SPRINGS</td><td>モノレール高架沿いの道</td><td>途中で反対側の側道に移る箇所があり方向感覚を失いやすいため、案内板で進行方向を随時確認する。</td></tr>
+  <tr><td>M 飛鳥山・音無親水公園</td><td>音無親水公園と石神井川本流（王子駅北側）の位置関係</td><td>旧流路（親水公園）と現在の本流は別物のため、両者を混同して逆方向（旧流路沿い）に進んでしまう可能性がある。</td></tr>
+  <tr><td>N 大宮・鉄道博物館</td><td>大宮公園内の分岐</td><td>氷川神社参道・野球場・小動物園へ向かう分岐が複数あり案内板確認が必要。参道は砂利敷きで足元がやや不安定。</td></tr>
+  <tr><td>O 天王洲アイル</td><td>延伸区間のゴール駅</td><td>JR品川駅と京急北品川駅は別の駅のため、どちらをゴールにするか当日の案内を明確にする。</td></tr>
+  <tr><td>P 横須賀・三笠公園</td><td>どぶ板通り入口</td><td>並行する本通りと似た雰囲気の商店街のため、入口を間違えないよう当日案内を。</td></tr>
+  <tr><td>Q 麻布台ヒルズ</td><td>解散駅（芝公園駅／御成門駅）</td><td>2駅併記のため、当日どちらへ向かうか事前に一本化しておくと迷いにくい。</td></tr>
+  <tr><td>R 小石川後楽園</td><td>神田川沿い遊歩道</td><td>区間により一般道と合流するため、川沿いを直進できると思い込まないよう声かけを。</td></tr>
+  <tr><td>S 神宮外苑</td><td>権田原交差点</td><td>複数の道が交わる変則的な交差点のため、信号待ちで隊列がはぐれないよう声かけを。</td></tr>
+  <tr><td>T 二子玉川・多摩川</td><td>二子橋・新二子橋</td><td>2つの橋が並んで架かるため、目印にする橋を事前に共有しておくと迷いにくい。</td></tr>
+  <tr><td>U 川越蔵造りの町並み</td><td>川越駅と本川越駅</td><td>川越駅（JR・東武）と本川越駅（西武）は700m以上離れた別の駅のため、集合・解散場所を「本川越駅」と明確に共有する。</td></tr>
+  <tr><td>V 浜離宮〜竹芝</td><td>汐留駅の出口</td><td>「ゆりかもめ」「都営大江戸線」で出口の位置が離れているため、大手門口に最も近い出口を事前に共有する。</td></tr>
+  <tr><td>W 葛西臨海公園</td><td>西なぎさ・鳥類園分岐</td><td>西なぎさへ渡る橋の分岐と鳥類園方面への分岐が近接しており、案内板を見落とすと反対方向へ進みやすい。</td></tr>
+  <tr><td>X 東京ミッドタウン</td><td>ミッドタウン出入口</td><td>出入口が多いため、檜町公園・乃木神社方面へ向かう出口を事前に確認しておく。</td></tr>
+  <tr><td>Y 日本橋〜茅場町</td><td>鎧橋周辺</td><td>日本橋川テラスと地上道路が交差し道が入り組むため、案内表示を確認しながら進む。</td></tr>
+  <tr><td>Z 旧古河庭園〜駒込</td><td>駒込駅〜巣鴨地蔵通り</td><td>複数のルートがあるため、往路と復路で違う道を通ると合流地点が分かりにくい。</td></tr>
+  <tr><td>No.33 東京駅ダンジョン</td><td>丸の内・八重洲の地下街連続部</td><td>出口番号が似た地下街が連続するため、経由する出口番号をあらかじめメモしておく。</td></tr>
+  <tr><td>No.34 新宿駅ダンジョン</td><td>各通路の合流部</td><td>通路名（京王モール・メトロプロムナード等）での案内が多く、出口番号よりも通路名を目印にした方が迷いにくい。</td></tr>
+  <tr><td>No.35 池袋駅ダンジョン</td><td>サンシャインシティ周辺</td><td>地下と地上の出入口が複数あるため、サンシャインシティ方面の案内表示を目印にする。</td></tr>
+  <tr><td>No.36 丸子橋・浅間神社</td><td>蒲田駅・京急蒲田駅</td><td>JR蒲田駅と京急蒲田駅は約500m離れた別駅扱いのため、解散駅をあらかじめ明確にしておく。</td></tr>
+  <tr><td>No.37 多摩水道橋・登戸</td><td>登戸駅周辺</td><td>踏切・地下道が入り組んでいるため、案内標識に沿って進むこと。</td></tr>
+  <tr><td>No.38 万願寺ふれあい橋</td><td>高幡不動尊 境内</td><td>境内奥は石段があるため、参道の平坦エリアまでに留めること。</td></tr>
+  <tr><td>No.39 千住大土手</td><td>堀切橋周辺</td><td>土手上と土手下の道が分岐するため、標識で現在地を確認する。</td></tr>
+  <tr><td>No.40 赤水門・岩淵</td><td>新荒川大橋</td><td>歩道が狭いため、一列で進むこと。</td></tr>
+  <tr><td>No.41 矢切の渡し・柴又</td><td>矢切の渡し（渡船）</td><td>天候・水位により運休する場合があるため、実施前に運航状況を要確認（渡し船区間は歩行距離に含めていない）。</td></tr>
+  <tr><td>No.42 横浜 女神橋・大さん橋</td><td>臨港パーク周辺</td><td>歩道橋・地下通路が入り組んでいるため、新高島方面の案内表示に沿って進む。</td></tr>
+  <tr><td>No.45 木更津 中の島大橋</td><td>中の島大橋 螺旋スロープ</td><td>往路・復路がすれ違うため、通行時は端に寄ること。</td></tr>
+</table>
+
+<!-- ===================== 4 ===================== -->
+<h2 id="sec-4">4. 推奨ランキング（2026年9〜10月実施時）</h2>
+<table>
+  <tr><th class="c" style="width:60px">順位</th><th style="width:28%">コース</th><th>推奨理由</th></tr>
+  <tr>
+    <td class="c"><span class="rank">1位</span></td>
+    <td><b>G</b> 高輪ゲートウェイ〜品川</td>
+    <td>2025年3月まちびらき、2026年3月28日前後の全面開業を経た初秋。全面が新設計のバリアフリー動線で階段は完全回避可能。4方面すべてから乗換1回以内。雨天でも屋内比率が高く、暑熱時も屋内退避が容易。</td>
+  </tr>
+  <tr>
+    <td class="c"><span class="rank">2位</span></td>
+    <td><b>E</b> 東京競馬場・府中</td>
+    <td>着席環境が国内屈指（指定席・スタンド・芝生・庭園）。動線はほぼ完全フラットで、園内に長距離動く歩道・EVが完備。歩行と休憩を任意の比率で切り替えられるため、当日の体調に合わせた可変運用が可能。<b>2026年9月は東京開催なし（パークウインズ）。G1は11月のため本企画枠外。</b></td>
+  </tr>
+  <tr>
+    <td class="c"><span class="rank">3位</span></td>
+    <td><b>J</b> 羽田イノベーションシティ〜多摩川スカイブリッジ</td>
+    <td>滑走路に離着陸する機体を至近で眺めながら、完全平坦の遊歩道を歩ける。足湯（無料・水着不要／要タオル）で膝周りを温められる点が本企画と極めて相性が良い。飲食・屋内展示・トイレが集約。</td>
+  </tr>
+  <tr>
+    <td class="c"><span class="rank">4位</span></td>
+    <td><b>L</b> 立川 GREEN SPRINGS 周辺</td>
+    <td>デッキ・広場・水景で構成された完全フラットな複合街区。美術館／音楽ホール／ショップが徒歩圏に密集し、雨天耐性が最も高い部類。西方面からのアクセスが極めて容易で、他方面も乗換1回。</td>
+  </tr>
+  <tr>
+    <td class="c"><span class="rank">5位</span></td>
+    <td><b>K</b> 豊洲・千客万来〜ぐるり公園</td>
+    <td>2024年開業の食のエリアと、湾岸の広大な平坦遊歩道の組み合わせ。10月以降推奨（日陰が少ないため）。屋上足湯庭園から東京湾とゲートブリッジを望む。</td>
+  </tr>
+</table>
+<p class="small">※ 6位以下は <b>C（横浜）→ H（上野）→ F（所沢）→ M（飛鳥山）→ N（大宮）</b> の順。時期・天候・当日のコンディションにより上位と入れ替えて運用する。</p>
+<div class="info"><b>第4版・追加推奨（順位は動かさない）：</b>既存1–5位（G→E→J→L→K）は維持。<b>X</b>（ミッドタウン〜21_21、デザイン特化・港区平坦）／<b>Y</b>（日本橋川テラス、都心に薄い川沿い商業）／<b>Z</b>（旧古河庭園の秋バラ、北東ハブ補強）は、新規性・テーマ密度・膝適合・4方面アクセス・9–10月の催事価値で既存案を補完するストック。雨天退避先としての追加ではない。</div>
+<div class="note"><b>第5版・時期の補正：</b>A（三の丸尚蔵館の2026年秋・全面開館）は会期発表後に「今季限定で順位を上げうる」例外。Hはルーブル展（9/9〜）で混雑が跳ね上がるため、日時指定が取れない週はF／Lへ振る。Cは赤レンガのオクトーバーフェスト（9/18–10/4）期間、Bはa-nation（10/3–4）を回避。</div>
+
+<!-- ===================== 5 ===================== -->
+<h2 id="sec-5">5. コース詳細①：最優先推奨群（詳細旅程付）</h2>
+
+<!-- G -->
+<div class="card">
+  <h3 id="course-7">No.7｜コースG：高輪ゲートウェイ〜泉岳寺〜品川 新街区ウォーク</h3>
+  <div class="kv">
+    <span>難易度：<b><span class="grade gA">A</span></b></span>
+    <span>歩行：<b>約6.0km</b></span>
+    <span>アクセス：<b>◎</b></span>
+    <span>雨天：<b>◯</b></span>
+    <span>費用目安：<b>昼食＋施設入場で3,000〜4,500円</b></span>
+  </div>
+  <p><span class="tag">テック</span><span class="tag">鉄道</span><span class="tag">先端建築</span><span class="tag">フォトジェニック</span><span class="tag">ガジェット</span></p>
+  <p><b>コンセプト：</b>都心最後の大規模鉄道用地転換地に生まれた新街区を、開業間もないタイミングで通しで歩く。全面が最新のバリアフリー基準で設計されており、駅からデッキ、デッキから広場まで段差ゼロで接続する。線路際の眺望デッキからは在来線・新幹線が連続して見え、鉄道関連の見どころが濃い。泉岳寺門前から第一京浜沿い・高輪二丁目の平坦な道をたどり、高輪皇族邸の緑を麓から望む、静かな街歩きも新たに加わった。</p>
+
+  <h4>旅程</h4>
+  <table>
+    <tr><th class="c" style="width:110px">時刻</th><th style="width:26%">行動</th><th class="c" style="width:70px">距離</th><th>ポイント・設備</th></tr>
+    <tr><td class="c">10:00</td><td>高輪ゲートウェイ駅 改札外コンコースで集合</td><td class="c">─</td><td>大屋根の下、広く平坦。多機能トイレ複数。ベンチあり。</td></tr>
+    <tr><td class="c">10:10-11:00</td><td>新街区の低層部・デッキを一周</td><td class="c">1.2km</td><td>屋根付きデッキ主体。全区間EV・ES併設。線路側の眺望スポットで撮影休憩。</td></tr>
+    <tr><td class="c">11:00-11:40</td><td>高輪大木戸跡〜泉岳寺方面へ緩やかに移動</td><td class="c">1.0km</td><td>旧街道の遺構。歩道は平坦。境内は<b>石段があるため山門前で折返し</b>、無理はしない。</td></tr>
+    <tr><td class="c">11:40-11:55</td><td>泉岳寺門前から第一京浜（旧東海道・国道15号）沿いを南へ</td><td class="c">0.5km</td><td>平坦な幹線道路沿い、歩道あり</td></tr>
+    <tr><td class="c">11:55-12:15</td><td>高輪二丁目の平坦な区画を巡り、高輪皇族邸の木々を麓から見上げる（邸のある高台へは上らず、平坦な道のみを選択）</td><td class="c">0.4km</td><td>平坦。坂道（桂坂等）には入らないルート取りが必須</td></tr>
+    <tr><td class="c">12:15-12:30</td><td>街区へ戻り昼食会場へ</td><td class="c">0.6km</td><td>─</td></tr>
+    <tr><td class="c">12:30-14:00</td><td><b>昼食（要予約）</b></td><td class="c">─</td><td>商業棟のレストランフロア。椅子席・テーブル間隔広め。90分確保。</td></tr>
+    <tr><td class="c">14:00-14:40</td><td>屋内展示・ショップ巡り（テック系ストア／ギャラリー）</td><td class="c">0.7km</td><td>空調下。ここで体力を回復させる設計。</td></tr>
+    <tr><td class="c">14:40-15:30</td><td>品川方面へ南下、駅前広場・水景を経由</td><td class="c">1.5km</td><td>幅員の広い歩道で4人並列可。信号待ちが休憩を兼ねる。</td></tr>
+    <tr><td class="c">15:30-16:00</td><td>カフェで反省会 → 解散</td><td class="c">─</td><td>駅直結。各方面へ着席帰宅しやすい時間帯。</td></tr>
+  </table>
+  <div class="route"><b>経路ノード：</b>高輪ゲートウェイ駅 → 新街区デッキ（線路側展望） → 高輪大木戸跡 → 泉岳寺 山門前 → 第一京浜沿いを南下 → 高輪二丁目（高輪皇族邸を麓から望む、邸へは上らない） → 街区レストラン棟 → 屋内ギャラリー／ストア → 品川駅 港南口広場 → 品川駅</div>
+  <div class="v3note"><b>V3更新（2026-08-25）：</b>距離を約5.0km→約6.0kmに拡張。泉岳寺門前から第一京浜沿い・高輪二丁目の平坦な区画を延伸し、高輪皇族邸の木々を麓から望むルートを追加。<b>設計変更の理由：</b>邸の外周（尾根筋の二本榎通り）へ直登する経路は「桂坂」（高低差約15m、坂学会分類でも「やや急坂」）を上り下りする必要があり、下りが膝への負担（急な下りは避ける本計画の方針）に反するため、あえて高台までは上らず麓の平坦路のみを歩く設計とした。先頭は坂道方向へ誤って進まないよう誘導を。</div>
+  <div class="note"><b>要事前確認（SNS最新情報に基づく更新 2026年8月時点）：</b>街区は段階的に開業・拡張が続いているため、実施2週間前に「開業済み区画」「営業中の飲食店」「屋内展示の会期」を公式サイトおよびX/Instagramで再確認。2026年6-7月の情報では大規模閉鎖・サービス終了の報告はなし。会期制の展示・イベントが入ると想定より混雑する。</div>
+  <div class="info"><b>X裏取り（2026-08-23）：</b>2026年3月28日前後の全面開業後、公式・エリアマネジメントがイベントを継続告知。訪問・再開発記録の投稿もあり稼働を確認。<b>KANPAI GATEWAY 9/4(金)–9/6(日)</b>（Gateway Park、酒蔵24・キッチンカー）は本企画の「9月下旬〜」枠より前だが、直後の土日は余波の混雑がありうる。10月の大型催事はX上では未確認。8/22–23の高輪横丁縁日は実施想定より前。</div>
+  <div class="info"><b>X検索追加情報（景観・散歩配慮・注意点）</b><br>
+  ・展望デッキ（Mon Takanawaなど）から富士山頭・夜景・列車連続眺望が好評。散歩・撮影スポットとしてポジティブ投稿多数。<br>
+  ・雨天時は空中庭園出られずの報告あり。代替で屋内動線・プールエリアを活用する声。<br>
+  ・階段デザインが見づらく膝を痛めかけた事例（段差注意）。周辺（青山方面）坂が多いエリア。<br>
+  ・再開発・京急高架工事中を散歩しながら観察する投稿多数。新ルート増加を歓迎する声強い。<br>
+  ・迂回・大規模混雑の報告は少なく、全体として散歩コース拡大をポジティブに評価。</div>
+  <div class="note"><b>【V3更新・新経路追加情報（フォトジェニック・ついでスポット・イベント・注意点）】</b><br>
+  <b>フォトジェニック話題：</b>高輪皇族邸の緑豊かな森のような敷地（麓から望む平坦ルートでOK）。夜の電車ライトや竹林ライトアップが「流れ星のような」と撮影向き。旧街道（第一京浜沿い）や高輪二丁目の情緒ある路地・火の見櫓周辺もエモい。<br>
+  <b>ついでに見れるいい場所：</b>泉岳寺（山門前まで）、保安寺、松島屋周辺の歴史散歩。伊皿子坂方面は坂のため回避推奨。<br>
+  <b>2026年開催イベント：</b>高輪辻広場で縁日（射的・輪投げ・駄菓子・グルメ、8/22-23など）、コスメイベント（小田切ヒロ展など）、ひみつ基地イベント（雨天中止・返金事例あり）。秋はKANPAI GATEWAY余波や新イベントを要確認。<br>
+  <b>気を付ける点：</b>イベント時は迷子多発（南改札左折直進などナビ注意）。雨天キャンセル・返金対応あり。桂坂など急坂は完全回避（平坦ルート厳守）。新街区はレイアウト複雑で初回は地図必須。</div>
+  <p><b>雨天プランB：</b>駅直結の屋内動線のみで完結。屋内歩行＋展示鑑賞に切り替え、歩行距離を3km程度に短縮。</p>
+</div>
+
+<!-- E -->
+<div class="card">
+  <h3 id="course-5">No.5｜コースE：東京競馬場・府中 フラット＆着席ウォーク</h3>
+  <div class="kv">
+    <span>難易度：<b><span class="grade gA">A</span></b></span>
+    <span>歩行：<b>約6.0km</b></span>
+    <span>アクセス：<b>◯</b></span>
+    <span>雨天：<b>◯</b></span>
+    <span>費用目安：<b>入場料＋昼食で2,500〜4,000円</b></span>
+  </div>
+  <p><span class="tag">馬事・スポーツ</span><span class="tag">庭園</span><span class="tag">歴史</span><span class="tag">機械・産業</span><span class="tag">フォトジェニック</span></p>
+  <p><b>コンセプト：</b>「歩く」と「座る」を自由に切り替えられる、本企画の安全牌。場内は全面バリアフリーで、長距離の動く歩道・エレベーターが整備され、階段を一段も使わずに一周できる。日本庭園、馬場、パドック、競馬博物館（機械式の展示や名馬の資料）と見どころが分散しており、自然に歩数が伸びる。さらに歩を延ばし、府中崖線を緩やかに下って府中市郷土の森公園の緑と多摩川の開けた土手道を歩くルートも新たに加わった。</p>
+
+  <h4>旅程</h4>
+  <table>
+    <tr><th class="c" style="width:110px">時刻</th><th style="width:26%">行動</th><th class="c" style="width:70px">距離</th><th>ポイント・設備</th></tr>
+    <tr><td class="c">10:00</td><td>最寄駅にて集合、専用歩道橋（EVあり）で入場</td><td class="c">0.6km</td><td>屋根付き。段差なし。</td></tr>
+    <tr><td class="c">10:20-11:10</td><td>場内 日本庭園を散策</td><td class="c">1.0km</td><td>池と樹木の落ち着いた空間。ベンチ多数。<b>飛石・砂利部は迂回</b>。</td></tr>
+    <tr><td class="c">11:10-12:00</td><td>競馬博物館・パドック周辺</td><td class="c">0.8km</td><td>屋内展示で休憩を兼ねる。シアター上映は着席。</td></tr>
+    <tr><td class="c">12:00-13:15</td><td><b>昼食</b>（場内フードコートまたは指定席エリア）</td><td class="c">─</td><td>座席数が非常に多く、待ち時間リスクが最小。</td></tr>
+    <tr><td class="c">13:15-14:15</td><td>スタンド前〜馬場沿いを移動、レース観戦</td><td class="c">1.5km</td><td>本馬場入場・返し馬を至近で。立位が続かないよう15分ごとに着席。</td></tr>
+    <tr><td class="c">14:15-14:55</td><td>けやき並木・大鳥居方面へ場外へ出て街歩き</td><td class="c">1.2km</td><td>完全平坦の並木道。神社の参道はフラット。</td></tr>
+    <tr><td class="c">14:55-15:05</td><td>並木沿いのカフェで小休止</td><td class="c">─</td><td>着席休憩</td></tr>
+    <tr><td class="c">15:05-15:25</td><td>けやき並木から府中崖線（ハケ）沿いの緩やかな道を選び、府中市郷土の森公園方面へ下る</td><td class="c">0.6km</td><td>台地から低地への下り区間あり。最も緩やかな道を選び、急な階段状の坂は避ける。ゆっくりしたペースで</td></tr>
+    <tr><td class="c">15:25-15:45</td><td>郷土の森公園内を散策（梅林・あじさい通りなどのエリアを歩く）</td><td class="c">0.4km</td><td>園内はフラットな遊歩道、ベンチ多数</td></tr>
+    <tr><td class="c">15:45-16:00</td><td>多摩川河川敷沿いを是政駅方面へ、到着・解散</td><td class="c">0.3km</td><td>土手道はほぼ平坦、川風あり。西武多摩川線（武蔵境方面）</td></tr>
+  </table>
+  <div class="route"><b>経路ノード：</b>最寄駅 → 専用歩道橋 → 東京競馬場 日本庭園 → JRA競馬博物館 → パドック → スタンド／馬場前 → 場外へ → 大國魂神社 参道・けやき並木 → 府中崖線沿いを下り府中市郷土の森公園（梅林・あじさい通り） → 多摩川河川敷 → 是政駅</div>
+  <div class="v3note"><b>V3更新（2026-08-25）：</b>距離を約4.5km→約6.0kmに拡張。けやき並木（台地上）から府中市郷土の森公園・多摩川河川敷方面（低地）へ延伸し、新たな解散地点を西武多摩川線・是政駅に設定。<b>要確認：</b>台地から低地へは「府中崖線（ハケ）」と呼ばれる段丘崖を下る区間が入るため、実際の道順選定時は最も緩やかな道を地図で確認し、急な階段状の坂道は避けること（本ドラフトは緩やかな道の存在を前提としているが現地未確認）。公園内も園路の分岐が多く、案内板で本館・あじさい通り方向を確認しながら進むと迷いにくい。</div>
+  <div class="caution"><b>回避条件：</b>秋のG1開催日（天皇賞・秋、ジャパンカップ等）は入場者数が桁違いとなり、<u>超混雑＋長時間の立位＋帰路の入場規制</u>が発生する。膝への負荷という観点では今季最大級のリスク。<b>非開催日（パークウインズ）または平常開催日を選ぶこと。</b>非開催日は入場無料の日が多く、静かに庭園と博物館を楽しめる。</div>
+  <div class="info"><b>X検索追加情報（景観・散歩配慮・注意点）</b><br>
+  ・入場時の景色が「感動する」と高評価。庭園・馬場からの開放的な眺望が散歩向き。<br>
+  ・雨天時は雨宿りしながら散歩する投稿あり。非開催日中心に静かな散策報告多数。<br>
+  ・イベント時（花火・ダービー等）に駅が大混雑する事例あり。非開催日推奨で混雑回避可能。<br>
+  ・膝関連の直接報告は少なく、フラット設計を活かした着席多めの利用が好評。</div>
+  <div class="info"><b>X裏取り（2026-08-23）：</b>ファン・カレンダー系投稿が<b>天皇賞・秋 11/1（日）、ジャパンカップ 11/29（日）</b>と明記（JRA発表の転載）。いずれも本企画の9月下旬〜10月枠の外。東京開催は6月終了後、<b>9月は非開催→10月再開</b>（毎日王冠10/4、ロイヤルカップ10/10、アイルランドT10/11、富士S10/17等）。9月実施はパークウインズで着席自由度が最大。けやき並木側は<b>大國魂神社くり祭 9/27–28</b>（地元イベント帳に掲載、例年どおり灯籠・神楽）。祭当日は参道の立位が増えるため、場内完結に切り替える。</div>
+  <p><b>雨天プランB：</b>スタンド内は全天候型。屋内のみで博物館・フードコート・観戦を巡回する構成に変更可能。</p>
+</div>
+
+<!-- J -->
+<div class="card">
+  <h3 id="course-10">No.10｜コースJ：羽田イノベーションシティ〜天空橋〜多摩川スカイブリッジ（新規追加）</h3>
+  <div class="kv">
+    <span>難易度：<b><span class="grade gA">A</span></b></span>
+    <span>歩行：<b>約6.0km</b></span>
+    <span>アクセス：<b>◯</b></span>
+    <span>雨天：<b>◯</b></span>
+    <span>費用目安：<b>昼食中心で2,500〜3,500円</b></span>
+  </div>
+  <p><span class="tag">航空</span><span class="tag">テック</span><span class="tag">港湾・河川景観</span><span class="tag">フォトジェニック</span><span class="tag">ミリタリー／近代史</span></p>
+  <p><b>コンセプト：</b>空港跡地に整備された複合施設と、多摩川河口に架かる歩行者通行可能な橋を組み合わせた「離着陸を眺め続ける」平坦ルート。全区間が新しい舗装で、路面の凹凸が極めて少ない。<b>無料の足湯</b>があり、歩行後の膝周辺のクーリング／ウォーミングに使える点が本企画独自の価値。さらに多摩川緑地の遊歩道を大師橋方面へたどり、川風を感じながら京急線の駅へ向かうルートも新たに加わった。</p>
+
+  <h4>旅程</h4>
+  <table>
+    <tr><th class="c" style="width:110px">時刻</th><th style="width:26%">行動</th><th class="c" style="width:70px">距離</th><th>ポイント・設備</th></tr>
+    <tr><td class="c">10:00</td><td>天空橋駅 改札付近で集合</td><td class="c">─</td><td>駅直結で施設に入れる。トイレ充実。</td></tr>
+    <tr><td class="c">10:15-11:00</td><td>複合施設内の展示・ショップ・アートを見学</td><td class="c">0.8km</td><td>屋内。先端技術系の展示や体験型コンテンツが入替制で展開。</td></tr>
+    <tr><td class="c">11:00-12:00</td><td>河川沿いプロムナードを南下、多摩川スカイブリッジへ</td><td class="c">1.6km</td><td>完全平坦。橋上は歩道が広く風が抜ける。着陸機を正面に捉える撮影ポイント。</td></tr>
+    <tr><td class="c">12:00-13:30</td><td><b>昼食</b>（施設内フードホール）</td><td class="c">0.6km</td><td>席数多数。窓側から滑走路方向を望む席あり。</td></tr>
+    <tr><td class="c">13:30-14:00</td><td><b>足湯</b>で休憩</td><td class="c">─</td><td>タオル持参。膝周囲の血流改善に有効。着席のまま景色を楽しめる。</td></tr>
+    <tr><td class="c">14:00-14:40</td><td>旧穴守稲荷 大鳥居〜空港側プロムナード</td><td class="c">1.4km</td><td>戦後接収の歴史を伝える遺構。平坦な公園路。ベンチ点在。</td></tr>
+    <tr><td class="c">14:40-15:10</td><td>空港ターミナルの展望デッキへ移動（一駅移動可）</td><td class="c">0.4km</td><td>移動は着席可能。展望デッキは椅子あり。</td></tr>
+    <tr><td class="c">15:10-15:30</td><td>多摩川緑地沿いを大師橋方面へ北上</td><td class="c">0.6km</td><td>河川敷の遊歩道、平坦・見晴らし良好・ベンチあり</td></tr>
+    <tr><td class="c">15:30-15:50</td><td>緑地内をさらに大師橋方面へ</td><td class="c">0.5km</td><td>平坦、川風が心地よい</td></tr>
+    <tr><td class="c">15:50-16:00</td><td>大師橋のたもとを経て京急大師橋駅へ、到着・解散</td><td class="c">0.1km</td><td>橋は渡らず手前で駅方面へ、平坦。京急空港線、羽田空港方面・京急蒲田方面いずれも利用可</td></tr>
+  </table>
+  <div class="route"><b>経路ノード：</b>天空橋駅 → HANEDA INNOVATION CITY 館内 → 多摩川沿いプロムナード → 多摩川スカイブリッジ（往復） → フードホール（昼食） → 足湯庭園 → 旧穴守稲荷 大鳥居 → 空港ターミナル 展望デッキ → 多摩川緑地（大師橋方面） → 大師橋たもと → 京急大師橋駅</div>
+  <div class="v3note"><b>V3更新（2026-08-25）：</b>距離を約4.8km→約6.0kmに拡張。多摩川緑地の遊歩道を大師橋方面へ延伸し、京急大師橋駅（旧・産業道路駅）を新たな解散地点に設定。橋のたもとは橋を渡る歩道と駅へ向かう分岐が近接しているため、案内なしだと誤って橋を渡りかけやすい点に注意。</div>
+  <div class="note"><b>要事前確認：</b>足湯の営業時間・休止有無、施設内展示の会期、フードホールの定休。強風日は橋上が体感的に厳しいため、風速予報を確認。</div>
+  <div class="info"><b>X裏取り（2026-08-23）：</b>足湯スカイデッキは8/20–21に訪問・撮影投稿があり<b>営業中を確認</b>（無料・飛行機撮影の穴場として紹介）。大田区公式・大田まちづくり公社が8/21–23「羽田夏遊」を告知（本企画枠より前）。秋の確定催事は <b>羽田空港「空の日フェスティバル」9/26</b>（無料、格納庫・管制塔等は事前申込）、近傍の<b>羽田スカイウォーク2026秋 10/3</b>、<b>SpringWave × TOKYOMONSOON 10/31–11/1</b>（HICity × Zepp Haneda）。9/26と10/31–11/1は混雑増。空の日はターミナル側が主で、HICity歩行自体は屋内中心に組めば低〜中リスク。</div>
+  <div class="info"><b>X検索追加情報（景観・散歩配慮・注意点）</b><br>
+  ・多摩川スカイブリッジからの眺め・下からの眺めが「良い眺め」「気持ちの良い景色」と高評価。ランナー・散歩利用多し。<br>
+  ・足湯庭園（無料・水着不要）と橋の組み合わせが好評。夜景・レインボーブリッジビューも言及。<br>
+  ・混雑・デメリット・迂回の報告は少なく、ナビゲーション注意程度。風が強い日は橋上体感厳しい可能性（事前確認推奨）。<br>
+  ・全体として平坦で景色を楽しむ散歩コースとしてポジティブ。</div>
+  <div class="note"><b>【V3更新・新経路追加情報（フォトジェニック・ついでスポット・イベント・注意点）】</b><br>
+  <b>フォトジェニック話題：</b>足湯スカイデッキでの飛行機撮影（SkyMark最終機など翼端なし機のラストワン）。橋上・緑地からの川・空港眺望。アイドル撮影会向きの明るい屋外スペース。<br>
+  <b>ついでに見れるいい場所：</b>空港ターミナル展望デッキ、Zepp Haneda周辺（イベント時）、大師橋たもとの分岐（橋誤進入注意）。多摩川緑地遊歩道は川風と開放感が魅力。<br>
+  <b>2026年開催イベント：</b>羽田夏遊（家族向け体験・ヒーローショー）、LONDON BLUE撮影会、Juice=Juiceバースデーイベント（Zepp）、空の日フェスティバル（9/26・事前申込）、羽田スカイウォーク秋（10/3）、SpringWaveコラボ（10/31-11/1）。<br>
+  <b>気を付ける点：</b>大師橋方面延伸で「橋を渡りかけやすい」分岐注意（案内板確認必須）。強風・雨天時は橋上厳しい。イベント時は撮影会・コンサートで人流増。写真ルール（静止画のみ・三脚禁止の場合あり）。</div>
+  <p><b>雨天プランB：</b>橋往復を省略し、施設内＋空港ターミナル（屋内＋展望デッキ）に振り替え。屋内歩行だけで3km程度は確保できる。</p>
+</div>
+
+<!-- L -->
+<div class="card">
+  <h3 id="course-12">No.12｜コースL：立川 GREEN SPRINGS〜モノレール沿い アート＆デッキウォーク（新規追加）</h3>
+  <div class="kv">
+    <span>難易度：<b><span class="grade gA">A</span></b></span>
+    <span>歩行：<b>約6.0km</b></span>
+    <span>アクセス：<b>◯</b></span>
+    <span>雨天：<b>◎</b></span>
+    <span>費用目安：<b>展覧会＋昼食で3,000〜4,500円</b></span>
+  </div>
+  <p><span class="tag">美術・イラストレーション</span><span class="tag">先端建築</span><span class="tag">クラシック音楽</span><span class="tag">テック</span><span class="tag">フォトジェニック</span></p>
+  <p><b>コンセプト：</b>駅からデッキが縦横に伸び、地上に降りずに街区を回遊できる完全フラットな都市空間。水景・広場・現代アートが点在し、絵画／イラストレーション系の企画展を行う美術館、音楽ホール、独立系ショップが徒歩数分に集約する。日陰と屋内退避が多く、残暑期でも安定運用できる。GREEN SPRINGS周辺からモノレール沿いに高松方面まで足を延ばす街区歩きも新たに加わった。</p>
+  <h4>旅程</h4>
+  <table>
+    <tr><th class="c" style="width:110px">時刻</th><th style="width:26%">行動</th><th class="c" style="width:70px">距離</th><th>ポイント・設備</th></tr>
+    <tr><td class="c">10:00</td><td>駅 改札前集合、デッキ経由で街区へ</td><td class="c">0.6km</td><td>全区間デッキ・EV完備。段差ゼロ。</td></tr>
+    <tr><td class="c">10:20-11:30</td><td>美術館の企画展を鑑賞</td><td class="c">0.5km</td><td>館内は平坦・椅子あり。会期は要確認。</td></tr>
+    <tr><td class="c">11:30-12:00</td><td>屋上庭園・水景広場を散策</td><td class="c">0.6km</td><td>芝生と水盤。撮影スポット。</td></tr>
+    <tr><td class="c">12:00-13:30</td><td><b>昼食</b>（街区内レストラン）</td><td class="c">─</td><td>テラス席・屋内席とも豊富。</td></tr>
+    <tr><td class="c">13:30-14:20</td><td>デッキ沿いに旧市街方向へ、書店・ガジェット系ショップ巡り</td><td class="c">1.8km</td><td>デッキ→歩道はスロープ接続。</td></tr>
+    <tr><td class="c">14:20-14:50</td><td>GREEN SPRINGS北口からモノレール沿いを高松方面へ北上</td><td class="c">1.3km</td><td>高架下は日陰あり、平坦</td></tr>
+    <tr><td class="c">14:50-15:10</td><td>街区を抜けさらに高松町方面へ</td><td class="c">0.8km</td><td>平坦な街路、ベンチあり</td></tr>
+    <tr><td class="c">15:10-15:30</td><td>高松駅周辺に到着、解散準備</td><td class="c">0.4km</td><td>多摩都市モノレールで立川北駅・立川駅へ1駅</td></tr>
+    <tr><td class="c">15:30-16:00</td><td>カフェで休憩 → 解散</td><td class="c">─</td><td>─</td></tr>
+  </table>
+  <div class="route"><b>経路ノード：</b>立川駅 → 北口デッキ → GREEN SPRINGS（美術館・広場・屋上庭園） → 昼食 → デッキ経由で駅南側商業エリア → モノレール沿い北上 → 高松町方面 → 高松駅</div>
+  <div class="v3note"><b>V3更新（2026-08-25）：</b>距離を約4.5km→約6.0kmに拡張。GREEN SPRINGS北口からモノレール沿いに高松方面へ延伸し、街区歩きを追加。高松駅からはモノレールで立川駅まですぐ戻れるため、疲労時はそこで打ち切ることも可能。モノレール高架沿いの道は途中で反対側の側道に移る箇所があり方向感覚を失いやすいため、案内板で進行方向を随時確認するとよい。</div>
+  <div class="caution"><b>設計上の注記：</b>近隣の大規模国営公園は、既往の企画との重複回避のため本コースには組み込まない（第9章参照）。街区とデッキのみで完結させる。</div>
+  <div class="info"><b>X裏取り（2026-08-23）：</b>PLAY! MUSEUM公式が2026年ラインナップを告知。<b>ノンタン展（誕生50周年）7/18–9/27</b>（日時指定・当日券なし、9月分販売開始済み）、<b>絵本作家きくちちき展 いきものRhapsody 10/7–12/13</b>。街区イベントは<b>妖怪盆踊り2026 10/10–12</b>（GREEN SPRINGS 2F中央広場、有料・仮装）。盆踊り3日間は広場混雑・音量増のため、美術館＋デッキ完結に切り替えるか実施日を外す。昭和記念公園ウォーキング9/12は本コース対象外。</div>
+  <div class="info"><b>X検索追加情報（景観・散歩配慮・注意点）</b><br>
+  ・屋上庭園・水景・芝生・四季の植栽が調和した空間が高評価。富士山眺望も。<br>
+  ・雨水管理設計（植栽帯への導水）が雨天時も快適。イベントは雨天決行の報告あり。<br>
+  ・混雑時は場所変更の可能性あり（イベント主催者注記）。日常散歩ではデメリット報告少なくポジティブ。<br>
+  ・親子・散歩利用に適した「街の縁側」ベンチなど休憩設備好評。</div>
+  <p><b>雨天プランB：</b>デッキと屋内で全行程が成立する。ほぼ濡れずに4km歩ける稀有なコース。</p>
+</div>
+
+<!-- K -->
+<div class="card">
+  <h3 id="course-11">No.11｜コースK：豊洲 千客万来〜ぐるり公園〜デジタルアート（新規追加）</h3>
+  <div class="kv">
+    <span>難易度：<b><span class="grade gA">A</span></b></span>
+    <span>歩行：<b>約6.0km</b></span>
+    <span>アクセス：<b>◯</b></span>
+    <span>雨天：<b>◯</b></span>
+    <span>費用目安：<b>食＋展示で4,000〜6,000円</b></span>
+  </div>
+  <p><span class="tag">食文化</span><span class="tag">デジタルアート</span><span class="tag">港湾・船舶</span><span class="tag">フォトジェニック</span><span class="tag">テック</span></p>
+  <p><b>コンセプト：</b>2024年に開業した江戸情緒の食のエリアと、湾岸を縁取る完全平坦の周回公園を組み合わせる。屋上の足湯庭園から東京湾を一望でき、着席と歩行の切替が容易。近隣の没入型デジタルアート施設を組み合わせれば、屋内比率を大きく高められる。ぐるり公園の周回をさらに辰巳方面へ延ばし、水際の開放的な遊歩道を歩く時間も新たに加わった。</p>
+  <h4>旅程</h4>
+  <table>
+    <tr><th class="c" style="width:110px">時刻</th><th style="width:26%">行動</th><th class="c" style="width:70px">距離</th><th>ポイント・設備</th></tr>
+    <tr><td class="c">10:00</td><td>市場前駅 集合（駅から施設まで屋根付きデッキ）</td><td class="c">0.3km</td><td>段差なし。</td></tr>
+    <tr><td class="c">10:15-11:15</td><td>食のエリアを散策・食べ歩き</td><td class="c">0.7km</td><td>通路は平坦だが混雑時は立ち止まりが多い。休憩ベンチあり。</td></tr>
+    <tr><td class="c">11:15-12:00</td><td>屋上の足湯庭園・展望テラス</td><td class="c">0.3km</td><td>EVで昇降。着席で東京湾・ゲートブリッジを望む。</td></tr>
+    <tr><td class="c">12:00-13:15</td><td><b>昼食</b>（海鮮系／和食）</td><td class="c">─</td><td>混雑を避けるため12時前入店を推奨。</td></tr>
+    <tr><td class="c">13:15-14:35</td><td>豊洲ぐるり公園の水際プロムナード</td><td class="c">2.2km</td><td>完全フラット・幅員大。ベンチ多数。日陰が少ないため10月以降推奨。</td></tr>
+    <tr><td class="c">14:35-14:55</td><td>ぐるり公園をさらに有明・辰巳方面へ周回</td><td class="c">0.8km</td><td>水際の遊歩道、平坦で見晴らし良好</td></tr>
+    <tr><td class="c">14:55-15:15</td><td>辰巳の森海浜公園付近まで進み、折り返し</td><td class="c">0.7km</td><td>ベンチ・トイレあり、休憩に適す</td></tr>
+    <tr><td class="c">15:15-15:35</td><td>来た道を戻り豊洲駅方面へ</td><td class="c">0.3km</td><td>平坦、水辺の眺めを楽しみながら</td></tr>
+    <tr><td class="c">15:35-15:50</td><td>デジタルアート施設 または 商業施設で休憩</td><td class="c">0.6km</td><td>没入型展示は<b>裸足・水に入る展示があるため、当日の可否は事前に確認</b>。</td></tr>
+    <tr><td class="c">15:50-16:00</td><td>解散</td><td class="c">─</td><td>─</td></tr>
+  </table>
+  <div class="route"><b>経路ノード：</b>市場前駅 → 豊洲 千客万来（食エリア・屋上足湯） → 豊洲市場 見学者デッキ → 豊洲ぐるり公園（水際遊歩道） → ぐるり公園（辰巳方面延伸・折返し） → デジタルアート施設 → 豊洲駅／市場前駅</div>
+  <div class="v3note"><b>V3更新（2026-08-25）：</b>距離を約4.3〜4.5km→約6.0kmに拡張。ぐるり公園の周回を辰巳方面へ延伸し、水際の遊歩道歩きを追加。同じような水辺の景色が続き折り返し地点が分かりにくいため、辰巳の森海浜公園付近を目印に引き返すとよい。</div>
+  <div class="note"><b>要事前確認：</b>没入型アート施設は日時指定チケット制で、会期・展示内容の入替が頻繁。段差や暗所での歩行が含まれるため、<u>参加可否は当日の膝の状態で判断できるよう、購入は前日までに可否確定できるプランを選ぶ</u>。</div>
+  <div class="info"><b>X裏取り（2026-08-23）：</b>江東区観光公式が「千客万来は365日イベント開催」とし、9月カレンダーを8月中旬に公開。施設の閉鎖・長期休止を示す投稿はなし。teamLab Planetsの2026年9–10月限定プログラムはX上で確認できず（常設前提）。10月の湾岸系は残暑が和らぎ本コースの適期。週末昼の食エリアは立ち止まりが多いため、12時前入店の方針は維持。</div>
+  <div class="info"><b>X検索追加情報（景観・散歩配慮・注意点）</b><br>
+  ・ぐるり公園散歩＋千客万来足湯庭園の組み合わせが好評。レインボーブリッジ夜景・湾岸眺望が魅力。<br>
+  ・無料足湯で景色を楽しみながら休憩できる点が高評価。散歩がてらランチ利用の声多数。<br>
+  ・混雑・雨天・迂回の具体的なデメリット報告は少なく、全体ポジティブ。足湯は22時頃まで営業の投稿あり。<br>
+  ・デジタルアート施設との組み合わせで屋内比率を高めやすい。</div>
+</div>
+
+<!-- ===================== 6 ===================== -->
+<h2 id="sec-6">6. コース詳細②：既存提案群（再掲・再評価）</h2>
+
+<div class="card">
+  <h3 id="course-1">No.1｜コースA：皇居東御苑と皇居三の丸尚蔵館 歴史的坂道ルート</h3>
+  <div class="kv"><span>難易度：<b><span class="grade gB">B</span></b></span><span>歩行：<b>約6.0km</b></span><span>アクセス：<b>◎</b></span><span>雨天：<b>×</b></span></div>
+  <p><span class="tag">歴史・城郭</span><span class="tag">美術・工芸</span><span class="tag">近代建築</span><span class="tag">庭園</span></p>
+  <p><b>特徴：</b>4方面すべてから最も集まりやすい都心中枢。入園無料の広大な旧城郭庭園と、2023年11月に部分開館し、<b>2026年秋に全面開館予定</b>の文化施設（一般1,000円前後／国宝級の皇室ゆかりの品を最新のバリアフリー空間で鑑賞）を組み合わせる。鑑賞後は近代建築群を巡る。さらに北桔橋門・平川門から足を延ばし、皇居の北に広がる北の丸公園（科学技術館・日本武道館周辺、平坦な園路）まで周遊することで、都心にいながら緑陰の長い直線区間を確保できる。</p>
+  <p><b>膝への配慮：</b>大手門から本丸へ向かう経路は、城郭の防衛機構に由来する<b>緩やかな上り坂</b>で、登り主体のため関節衝撃は小さく有酸素運動として好適。<u>復路は急勾配の汐見坂を完全に迂回</u>し、平坦路で北桔橋門または大手門へ戻る。</p>
+  <p><b>弱点：</b>園内はベンチが少なく、雨天時に退避できる屋根がほぼない。また月曜・金曜が休園日となることが多く、実施曜日の制約が大きい。砂利敷きの区間があり、足元への注意が必要。</p>
+  <h4>旅程</h4>
+  <table>
+    <tr><th class="c" style="width:110px">時刻</th><th style="width:30%">行動</th><th class="c">距離</th><th>備考</th></tr>
+    <tr><td class="c">10:00</td><td>大手門前 集合</td><td class="c">─</td><td>皇居東御苑の入園口。手荷物検査後に入園。トイレあり。</td></tr>
+    <tr><td class="c">10:10-10:40</td><td>同心番所・百人番所を経て三の丸尚蔵館へ</td><td class="c">0.6km</td><td>平坦な園路。百人番所は屋根付きで小休止可。</td></tr>
+    <tr><td class="c">10:40-11:30</td><td>三の丸尚蔵館 見学</td><td class="c">─</td><td>屋内・空調あり。着席鑑賞できる区画あり。</td></tr>
+    <tr><td class="c">11:30-12:00</td><td>二の丸庭園 散策</td><td class="c">1.0km</td><td>平坦な回遊式庭園。あずまやで着席休憩可。</td></tr>
+    <tr><td class="c">12:00-13:30</td><td><b>昼食</b>（大手町方面・要予約）</td><td class="c">─</td><td>90分確保。</td></tr>
+    <tr><td class="c">13:30-14:20</td><td>本丸大芝生・天守台（外周）</td><td class="c">1.3km</td><td>二の丸から本丸への上りは緩勾配のみ。天守台は登らず外周を通過。芝生広場で着席休憩可。</td></tr>
+    <tr><td class="c">14:20-15:20</td><td>北桔橋門・平川門を経て、<b>北の丸公園</b>（科学技術館・日本武道館前、中池周辺）を平坦に周遊</td><td class="c">2.6km</td><td>汐見坂は使用しない。代官町通りは横断歩道を利用。園内ベンチで一度着席休憩を挟む。段差のある展望箇所は避ける。</td></tr>
+    <tr><td class="c">15:20-16:00</td><td>竹橋駅へ（平坦）→ 解散</td><td class="c">0.5km</td><td>平川門からも至近。各方面へ乗換の良い駅。</td></tr>
+  </table>
+  <div class="route"><b>経路ノード：</b>大手門 → 三の丸尚蔵館 → 二の丸庭園（平坦） → 本丸大芝生（緩い登り） → 天守台下（登らず外周） → 北桔橋門 → 平川門 → 北の丸公園（科学技術館・日本武道館前・中池周辺、平坦に周遊） → 竹橋駅（新終着。丸の内・東京駅方面へ続ける場合は選択可）</div>
+  <div class="v3note"><b>V3更新（2026-08-25）：</b>距離を約5.0km→約6.0kmに拡張。北桔橋門・平川門から北の丸公園（科学技術館・日本武道館前、中池周辺）方面へ延伸し、竹橋駅を新たな終着に追加(東京駅ルートも選択可)。汐見坂・天守台への昇段は引き続き回避し、延伸区間もすべて平坦・緩勾配路のみを使用。<b>北桔橋門を出た直後の代官町通り横断は横断歩道の位置がやや分かりにくく、直進すると気づかずに濠沿いを北上してしまう。北の丸公園には田安門寄りの横断歩道を渡って入り、竹橋駅方面（南東側）の出口を事前に確認しておくとよい。</b></div>
+  <div class="note"><b>8/22豪雨（閉鎖調査）：</b>東御苑・三の丸尚蔵館の閉鎖報道なし。同夜、千代田のアンダーパス冠水と東京駅近くの道路陥没が報じられた。園路そのものの通行止め名指しはなし。</div>
+  <div class="info"><b>X裏取り（2026-08-23）：</b>2023年11月は部分開館。X上の公式ニュース転載・来館者投稿は<b>2026年秋の全面開館（グランドオープン）</b>と記念特別展3本を前提にしている。若冲「動植綵絵」を含む開館記念展への期待投稿あり。正確な開館日・各展会期は公式PDF発表済みだがX上では日付が確定していない。全面開館直後はチケット争奪と立位待機が予想されるため、<u>開館発表後に日時指定が取れる週だけ採用、取れなければAは見送り</u>。</div>
+</div>
+
+<div class="card">
+  <h3 id="course-2">No.2｜コースB：お台場・有明 近未来テック＆メカニカルルート</h3>
+  <div class="kv"><span>難易度：<b><span class="grade gC">C</span></b></span><span>歩行：<b>約6.0km</b></span><span>アクセス：<b>◯</b></span><span>雨天：<b>△</b></span></div>
+  <p><span class="tag">メカ／IP</span><span class="tag">テック</span><span class="tag">景観</span><span class="tag">フォトジェニック</span></p>
+  <p><b>特徴：</b>広大な完全舗装のシンボルプロムナードを海風の中で歩く。道幅が極めて広く4人並列可能。無料で巡れるパブリックスペースが連続し、費用効率が高い。さらにシンボルプロムナード公園を有明方面へ歩を進め、有明北緑道公園や東京ビッグサイト周辺まで足を延ばすことで、視界の開けた湾岸プロムナード区間を長く確保できる。</p>
+  <p><b>膝への配慮：</b>陸橋・デッキによる人工的な起伏と短い階段が随所にあるが、大型商業施設のEV／ESで多くは回避可能。回避に遠回りを要する箇所があるため判定はCとした。</p>
+  <h4>旅程（原案どおり）</h4>
+  <table>
+    <tr><th class="c" style="width:110px">時刻</th><th style="width:30%">行動</th><th class="c">距離</th><th>備考</th></tr>
+    <tr><td class="c">10:00</td><td>東京テレポート駅 改札外で集合</td><td class="c">─</td><td>広い構内。洋式トイレ利用後に出発。</td></tr>
+    <tr><td class="c">10:15-11:00</td><td>シンボルプロムナード〜実物大立像見学</td><td class="c">1.5km</td><td>短い階段は迂回スロープを使用。</td></tr>
+    <tr><td class="c">11:00-12:00</td><td>放送局社屋を眺めつつ海浜公園方面へ</td><td class="c">1.5km</td><td>デッキの起伏で心拍を上げる。</td></tr>
+    <tr><td class="c">12:00-13:30</td><td>昼食（商業施設内レストラン）</td><td class="c">─</td><td>椅子席豊富・海の見える席多数。</td></tr>
+    <tr><td class="c">13:30-14:30</td><td>自由の女神像〜台場公園方面</td><td class="c">2.0km</td><td>台場公園は<b>未舗装・起伏あり</b>。無理なら省略。</td></tr>
+    <tr><td class="c">14:30-14:45</td><td>着席休憩</td><td class="c">─</td><td>お台場海浜公園のベンチで海を眺めながら小休止。</td></tr>
+    <tr><td class="c">14:45-15:20</td><td>シンボルプロムナード公園を有明方面へ延伸</td><td class="c">0.7km</td><td>完全平坦・広幅の海沿いプロムナード。</td></tr>
+    <tr><td class="c">15:20-15:45</td><td>有明北緑道公園を経て東京ビッグサイト方面へ</td><td class="c">0.3km</td><td>平坦。外観を眺めながら進む。</td></tr>
+    <tr><td class="c">15:45-16:00</td><td>国際展示場駅／有明駅 到着・解散</td><td class="c">─</td><td>各方面へのアクセスは東京テレポート駅に準ずる。</td></tr>
+  </table>
+  <div class="route"><b>経路ノード：</b>東京テレポート駅 → ダイバーシティ東京プラザ（実物大立像） → 放送局社屋（外観） → アクアシティお台場（昼食） → 自由の女神像 → お台場海浜公園 → お台場海浜公園駅 → シンボルプロムナード公園（有明方面へ延伸） → 有明北緑道公園 → 東京ビッグサイト（外観） → 国際展示場駅／有明駅</div>
+  <div class="v3note"><b>V3更新（2026-08-25）：</b>距離を約5.0km→約6.0kmに拡張。既存の解散時刻（15:00）を16:00に延長し、シンボルプロムナード公園を有明方面へ延伸。有明北緑道公園・東京ビッグサイト外観を経て国際展示場駅／有明駅を新たな終着に追加。<b>プロムナードがゆりかもめ高架沿いで分岐する箇所は案内標識が少ないため、事前に進路を確認しておくこと。</b></div>
+  <div class="caution"><b>今季の注意：</b>日陰が乏しく、9月実施では暑熱負荷が高い。第三台場（台場公園）は土の起伏と段差があるため、今季は<u>省略を前提</u>とし、体調良好時のみオプション扱いとする。</div>
+  <div class="info"><b>X裏取り（2026-08-23）：</b><b>a-nation 2026 が10/3–4にお台場特設会場</b>（浜崎あゆみ出演告知が高拡散）。当該土日は湾岸の人流・交通が跳ね上がるため<b>実施回避</b>。ほか JoJo上映イベント9/5（アクアシティ）、Super American Festival 10/25。実物大立像・プロムナード自体の閉鎖投稿はなし。</div>
+</div>
+
+<div class="card">
+  <h3 id="course-3">No.3｜コースC：横浜・汽車道と開港記念会館 海風プロムナードルート</h3>
+  <div class="kv"><span>難易度：<b><span class="grade gA">A</span></b></span><span>歩行：<b>約6.0km</b></span><span>アクセス：<b>◯</b></span><span>雨天：<b>△</b></span></div>
+  <p><span class="tag">近代建築</span><span class="tag">港湾・船舶</span><span class="tag">景観</span><span class="tag">歴史</span></p>
+  <p><b>特徴：</b>桜木町駅を起点に、旧鉄道橋の遺構を残す海上遊歩道「汽車道」を歩く。<b>2024年4月に大規模保存改修を終えて再開館した歴史的建造物（愛称：ジャックの塔）</b>を見学（一部無料公開）。大さん橋に大型客船が入港していれば、屋上デッキ（フラット・全面木製）から至近距離で見られる。さらに大さん橋から海沿いの遊歩道を山下公園方面へ延伸することで、港の眺めを楽しめる平坦な区間を長く確保できる。</p>
+  <p><b>膝への配慮：</b>歩行路に階段・段差が実質存在せず、平坦路歩行で筋持久力を養える理想形。さらに、みなとみらいのロープウェイを使えば桜木町〜運河パーク間を<b>着席のまま空中移動</b>でき、歩行距離の調整弁になる。</p>
+  <h4>旅程</h4>
+  <table>
+    <tr><th class="c" style="width:110px">時刻</th><th style="width:30%">行動</th><th class="c">距離</th><th>備考</th></tr>
+    <tr><td class="c">10:00</td><td>桜木町駅前 集合</td><td class="c">─</td><td>トイレ・コンビニ完備。</td></tr>
+    <tr><td class="c">10:15-11:00</td><td>汽車道〜運河パーク</td><td class="c">1.2km</td><td>完全平坦。線路跡と橋梁遺構。撮影多数。</td></tr>
+    <tr><td class="c">11:00-12:00</td><td>赤レンガ倉庫〜象の鼻パーク</td><td class="c">1.5km</td><td>倉庫内はEVあり。海側テラスで休憩。</td></tr>
+    <tr><td class="c">12:00-13:30</td><td>昼食（関内・馬車道方面）</td><td class="c">0.5km</td><td>選択肢が非常に多い。</td></tr>
+    <tr><td class="c">13:30-14:10</td><td>開港記念会館 見学 → 近代建築群</td><td class="c">1.0km</td><td>館内はEVあり。歴史的建築の内部意匠が見どころ。</td></tr>
+    <tr><td class="c">14:10-15:10</td><td>大さん橋 屋上デッキ（客船入港時は必見）</td><td class="c">1.0km</td><td>スロープで屋上まで段差ゼロ。ベンチ多数。</td></tr>
+    <tr><td class="c">15:10-15:35</td><td>大さん橋のベンチで小休止後、海沿いの遊歩道を山下公園方面へ</td><td class="c">0.5km</td><td>平坦な海沿いプロムナード。</td></tr>
+    <tr><td class="c">15:35-16:00</td><td>山下公園を散策 → 元町・中華街駅へ、解散</td><td class="c">0.3km</td><td>日本大通り駅・桜木町駅（ロープウェイ）へ戻る選択肢も引き続き有効。</td></tr>
+  </table>
+  <div class="route"><b>経路ノード：</b>桜木町駅 → 汽車道 → 運河パーク → 横浜赤レンガ倉庫 → 象の鼻パーク → 昼食（馬車道） → 横浜市開港記念会館 → 神奈川県庁本庁舎（外観） → 大さん橋 屋上デッキ → 山下公園（海沿い遊歩道を延伸） → 元町・中華街駅（新終着候補。日本大通り駅／桜木町駅も引き続き選択可）</div>
+  <div class="v3note"><b>V3更新（2026-08-25）：</b>距離を約5.0km→約6.0kmに拡張(実表の距離合計は従来5.2kmのため、実質的な延伸幅は約0.8km)。「開港記念会館見学」ブロックを20分短縮し、その分を大さん橋以降の延伸に充当。大さん橋から山下公園方面へ海沿いの遊歩道を延伸し、元町・中華街駅を新たな終着候補に追加(日本大通り駅も引き続き可)。<b>山下公園通り沿いは横断歩道の位置が分かりにくい交差点があるため、海側の歩道を選んで車道を渡る回数を減らすとよい。</b></div>
+  <div class="info"><b>X裏取り（2026-08-23）：</b>赤レンガ公式が<b>横浜オクトーバーフェスト2026 9/18(金)–10/4(日)</b>を告知（昨年13万人規模、ビアマグ付き飲み比べ、4エリア）。期間中の倉庫周辺は立位・人波が増えるため、<u>赤レンガは外観通過に留め、汽車道〜象の鼻〜開港記念会館〜大さん橋を主軸にする</u>か、10/5以降にずらす。<b>横浜おいも万博 10/9–13</b>も赤レンガ。汽車道自体のイベント投稿はなし。開港記念会館の閉鎖・再休館投稿もなし。</div>
+</div>
+
+<div class="card">
+  <h3 id="course-4">No.4｜コースD：調布飛行場と武蔵野の森公園 掩体壕探訪ルート</h3>
+  <div class="kv"><span>難易度：<b><span class="grade gC">C</span></b></span><span>歩行：<b>約5.0〜5.2km</b></span><span>アクセス：<b>△</b></span><span>雨天：<b>×</b></span></div>
+  <p><span class="tag">ミリタリー／近代遺構</span><span class="tag">航空</span><span class="tag">自然</span><span class="tag">フォトジェニック</span></p>
+  <p><b>特徴：</b>都市部の飛行場に隣接する公園。土日でも比較的空いており、静かに歩ける穴場。小型機の離着陸を至近距離で見られるほか、戦時中の戦闘機格納庫跡である<b>コンクリート遺構「掩体壕」</b>が保存されており、強い非日常感と歴史の重みを備えた被写体となる。</p>
+  <p><b>膝への配慮：</b>「展望の丘」の芝生の起伏や遊歩道の段差が存在する。原案では<u>あえて軽い起伏を取り入れて運動強度を得る</u>設計としたが、<b>今季は直近の歩行量低下を踏まえ、丘への登坂はスロープ側からのみ、下降は最も緩い経路を選ぶ</b>ものとする。そのため本V3更新でも他コースのような6km近くへの延伸は行わず、下り主体の区間を増やさない範囲で、意図的に約5.0〜5.2kmの短めの距離設計を維持する。</p>
+  <h4>旅程（原案どおり／今季修正付）</h4>
+  <table>
+    <tr><th class="c" style="width:110px">時刻</th><th style="width:30%">行動</th><th class="c">距離</th><th>備考</th></tr>
+    <tr><td class="c">10:00</td><td>中央線側の駅 南口 バスロータリー集合 → バス移動</td><td class="c">─</td><td>着席でアプローチ。</td></tr>
+    <tr><td class="c">10:30-11:30</td><td>武蔵野の森公園・展望の丘</td><td class="c">2.0km</td><td>滑走路一望。離着陸を撮影。<b>下降は緩斜面側</b>。</td></tr>
+    <tr><td class="c">11:30-12:30</td><td>掩体壕（大沢1号・2号）見学</td><td class="c">1.5km</td><td>遊歩道は舗装。解説板あり。</td></tr>
+    <tr><td class="c">12:30-14:00</td><td>昼食（飛行場ターミナル併設のカフェ等／椅子席）</td><td class="c">─</td><td>機体を眺めながら食事可。<b>席数が少ないため要予約確認</b>。</td></tr>
+    <tr><td class="c">14:00-15:00</td><td>スタジアム外周〜幹線道路方面へ平坦路</td><td class="c">1.5km</td><td>─</td></tr>
+    <tr><td class="c">15:00-15:30</td><td>最寄駅にて解散</td><td class="c">─</td><td>─</td></tr>
+  </table>
+  <div class="route"><b>経路ノード：</b>中央線側の駅（バス乗車） → 武蔵野の森公園 展望の丘 → 大沢2号掩体壕（または1号） → 調布飛行場ターミナル周辺 → 味の素スタジアム外周 → 飛田給駅 または 多磨駅</div>
+  <div class="v3note"><b>V3更新（2026-08-25）：</b>本コースは起伏をあえて採用した設計のため、距離は約5.0〜5.2kmに据え置き(距離を延伸しない例外コース)。大幅な延伸は行わない。<b>武蔵野の森公園は調布飛行場を挟んで南北に分かれており、両区域をつなぐ連絡通路（地下通路）の入り口の位置が分かりにくいため、展望の丘から掩体壕へ移動する際は連絡口の位置を事前に確認しておくとよい。</b></div>
+  <div class="caution"><b>弱点：</b>雨天時の退避場所が皆無。トイレ間隔が長い。バス区間があり全方面からのアクセス評価が低い。スタジアムでの大規模イベント開催日は周辺が極度に混雑するため、開催日程を必ず確認すること。</div>
+  <div class="info"><b>X裏取り（2026-08-23）：</b>調布飛行場・掩体壕の9–10月催事はX上で確認できず。空の日の告知も羽田側に集中。スタジアム日程の事前確認という弱点は維持。</div>
+</div>
+
+<div class="card">
+  <h3 id="course-6">No.6｜コースF：ところざわサクラタウン＋航空記念公園 アート＆エアウォーク</h3>
+  <div class="kv"><span>難易度：<b><span class="grade gB">B</span></b></span><span>歩行：<b>約6.0km</b></span><span>アクセス：<b>△</b></span><span>雨天：<b>◎最良</b></span></div>
+  <p><span class="tag">IP／アニメ文化</span><span class="tag">先端建築</span><span class="tag">美術</span><span class="tag">航空</span><span class="tag">デジタルアート</span></p>
+  <p><b>特徴：</b>巨大な岩塊のような外観の複合文化施設を中心に、図書空間・企画展・神社・屋外デジタルアートが集まる。雨天耐性は全案中で最も高い。<b>拡張案として、1駅・数駅移動して航空関連の記念公園と屋内航空博物館（実機展示・フライトシミュレータ）を組み合わせる</b>と、テーマの厚みが一段増す。さらに東川沿いの桜並木遊歩道を歩いて航空記念公園まで足を延ばすことで、ミュージアム見学と川沿いの自然散策を組み合わせたコースに広がる。</p>
+  <p><b>膝への配慮：</b>施設内はEV完備でほぼ階段回避可能。屋外は平坦。ただし夜間の屋外デジタルアート鑑賞は<u>足元の視認性が低下する</u>ため、実施する場合はライト携行を必須とする。</p>
+  <h4>旅程（拡張版）</h4>
+  <table>
+    <tr><th class="c" style="width:110px">時刻</th><th style="width:30%">行動</th><th class="c">距離</th><th>備考</th></tr>
+    <tr><td class="c">10:00</td><td>最寄駅 集合 → 施設まで遊歩道</td><td class="c">0.8km</td><td>平坦・屋根なし。</td></tr>
+    <tr><td class="c">10:20-12:00</td><td>複合文化施設（図書空間・企画展・神社）</td><td class="c">1.0km</td><td>館内EVあり。撮影可否は各エリア表示に従う。</td></tr>
+    <tr><td class="c">12:00-13:15</td><td>昼食（施設内レストラン）</td><td class="c">─</td><td>─</td></tr>
+    <tr><td class="c">13:15-14:00</td><td>屋外広場・アート・河川沿い散策</td><td class="c">1.2km</td><td>平坦。</td></tr>
+    <tr><td class="c">14:00-14:20</td><td>角川武蔵野ミュージアム／サクラタウン南口を出て東川遊歩道へ(従来の移動区間を徒歩に変更)</td><td class="c">1.2km</td><td>川沿いの桜並木遊歩道、完全フラット、加美橋・あけぼの橋など橋を渡りながら進む。</td></tr>
+    <tr><td class="c">14:20-14:45</td><td>東川遊歩道を上流(西)方向へ進み、航空記念公園 東口へ到着</td><td class="c">0.6km</td><td>ベンチ点在、日陰あり、平坦。</td></tr>
+    <tr><td class="c">14:45-15:05</td><td>航空記念公園内の平坦な園路を散策・小休止</td><td class="c">0.4km</td><td>ベンチ・トイレ・自販機あり、平坦な園路のみ使用(段差なし)。</td></tr>
+    <tr><td class="c">15:05-15:30</td><td>公園内を抜けて西武新宿線 航空公園駅へ</td><td class="c">─</td><td>平坦、駅前ロータリー。</td></tr>
+    <tr><td class="c">15:30-16:00</td><td>航空公園駅にて解散</td><td class="c">─</td><td>解散地点。</td></tr>
+  </table>
+  <div class="route"><b>経路ノード：</b>東所沢駅 → ところざわサクラタウン（角川武蔵野ミュージアム・武蔵野坐令和神社） → 屋外アートエリア → 東川遊歩道（川沿いの桜並木道、加美橋・中橋・長栄橋・あけぼの橋など沿道の橋） → 所沢航空記念公園 東口 → 所沢航空発祥記念館 → 航空公園駅</div>
+  <div class="v3note"><b>V3更新（2026-08-25）：</b>距離を約4.0km（拡張時5.0km）→約6.0kmに拡張。従来一部鉄道移動だった区間を、実在する「東川さくらおさんぽコース」に沿った徒歩ルートに置き換え、航空記念公園まで足を延ばした。全区間フラットな川沿い遊歩道と公園内園路のみを使用。<b>要注意：</b>東川遊歩道沿いには類似した橋(加美橋・中橋・長栄橋・あけぼの橋など)が連続し、また航空記念公園は出入口が複数あるため、案内板を見落とすと航空公園駅と反対側の出口に出てしまう可能性がある。</div>
+  <div class="note"><b>要事前確認（SNS最新情報に基づく更新 2026年8月時点）：</b>2026年6-8月のX/Instagram公式アカウントおよび現地情報から、ところざわサクラタウン・角川武蔵野ミュージアムは通常営業継続中。大型企画展は会期・チケット方式（日時指定の有無）、屋外デジタルアートの点灯時間を公式サイト+Xで再確認。展示替え期間は見どころが大きく減るため、会期の谷間を避ける。</div>
+  <div class="info"><b>X裏取り（2026-08-23）：</b>公式・巡回展アカウントが秋の重なりを告知。<b>銀河鉄道999 THE GALAXY EXPERIENCE 〜10/26</b>、<b>松本零士展 創作の旅路 9/19–10/26</b>（3階）、<b>わたしをすくう エッセイマンガの処方箋展 9/18–2027/1/11</b>。鳥をテーマにした企画は9月下旬まで。本企画の実施枠と重なるため、IP密度は今季最高水準。混雑は日時指定で制御。航空公園側は<b>とこらぶフェス 9/13</b>（航空記念公園、10–16時）。空の日そのものの航空祭告知は未確認。</div>
+</div>
+
+<div class="card">
+  <h3 id="course-8">No.8｜コースH：上野ミュージアムアイランド</h3>
+  <div class="kv"><span>難易度：<b><span class="grade gB">B</span></b></span><span>歩行：<b>約6.0km</b></span><span>アクセス：<b>◎</b></span><span>雨天：<b>◎</b></span></div>
+  <p><span class="tag">美術・工芸</span><span class="tag">クラシック音楽</span><span class="tag">科学・技術</span><span class="tag">歴史</span><span class="tag">近代建築</span></p>
+  <p><b>特徴：</b>博物館・美術館・音楽ホール・科学館が半径500m以内に集中し、屋内比率を自在に調整できる。文化系テーマのカバー率は全案中最高。庭園公開期（春・秋の限定期間）に当たれば、和風庭園の散策も加わる。さらに上野公園の高台から谷中霊園・天王寺を通る平坦な尾根道をたどり、日暮里駅まで足を延ばすことで、寺町と下町情緒も味わえるコースへと広がる。</p>
+  <p><b>膝への配慮：</b>公園中心部は平坦で、各館はEV完備。<b>不忍池方面へ降りる階段は使用せず</b>、公園上段のみで完結させる（判定Bの理由）。館内での立位鑑賞が長くなりがちなため、各館のロビー・ベンチで意図的に着席を挟む。</p>
+  <h4>旅程</h4>
+  <table>
+    <tr><th class="c" style="width:110px">時刻</th><th style="width:30%">行動</th><th class="c">距離</th><th>備考</th></tr>
+    <tr><td class="c">10:00</td><td>公園口 集合</td><td class="c">─</td><td>駅前は横断歩道なしで公園へ直結（平坦）。</td></tr>
+    <tr><td class="c">10:15-12:00</td><td>大型博物館の常設・企画展</td><td class="c">1.2km</td><td>館内移動が長い。EVを積極利用。</td></tr>
+    <tr><td class="c">12:00-13:15</td><td>昼食（館内レストランまたは公園内カフェ）</td><td class="c">0.3km</td><td>混雑回避のため11:45入店も可。</td></tr>
+    <tr><td class="c">13:15-14:30</td><td>もう1館（美術館または科学館）</td><td class="c">0.8km</td><td>興味に応じ分散行動も可。</td></tr>
+    <tr><td class="c">14:30-14:45</td><td>公園上段の並木・彫刻・音楽ホール外観を巡る</td><td class="c">0.7km</td><td>階段を使う池畔ルートは選ばない。</td></tr>
+    <tr><td class="c">14:45-15:05</td><td>上野の森・彫刻群から上野公園北西部（旧寛永寺境内）を抜けて谷中霊園入口へ</td><td class="c">0.8km</td><td>平坦な園路のみ、階段・急坂なし。</td></tr>
+    <tr><td class="c">15:05-15:30</td><td>谷中霊園 中央園路（五重塔跡）を北上、天王寺方面へ</td><td class="c">0.8km</td><td>平坦、桜並木で日陰多め、ベンチで休憩可。</td></tr>
+    <tr><td class="c">15:30-15:50</td><td>天王寺前から日暮里駅前ペデストリアンデッキへ、エスカレーターで日暮里駅 西口へ下る</td><td class="c">0.5km</td><td>高低差はエスカレーターで解消(隣接する石段ルートには入らない)。</td></tr>
+    <tr><td class="c">15:50-16:00</td><td>日暮里駅(西口)到着・解散</td><td class="c">─</td><td>JR線・京成線・日暮里舎人ライナー。上野駅方面へはJRで復帰可能。</td></tr>
+  </table>
+  <div class="route"><b>経路ノード：</b>上野駅 公園口 → 東京国立博物館 → 表慶館・庭園（公開期のみ） → 昼食 → 国立西洋美術館 または 国立科学博物館 → 東京文化会館（外観） → 上野の森・彫刻群 → 上野公園北西部（旧寛永寺境内） → 谷中霊園 中央園路（五重塔跡） → 天王寺 → 日暮里駅前ペデストリアンデッキ（エスカレーター） → 日暮里駅（西口）</div>
+  <div class="v3note"><b>V3更新（2026-08-25）：</b>距離を約4.0km→約6.0kmに拡張。上野の森から谷中霊園・天王寺を経て日暮里駅（西口）へ抜けるルートを追加。谷中霊園内の中央園路は平坦だが、日暮里駅側の高低差はエスカレーターでのみ下ること(隣接しうる石段ルートは使用しない)。<b>解散地点が上野駅から日暮里駅に変わる点に注意。</b>谷中霊園から日暮里駅へ下る箇所は、駅前ペデストリアンデッキへ通じるエスカレーターと、別ルートの石段(三崎坂・夕やけだんだん等、いずれも急坂)が近接しており、案内なしで進むと誤って石段ルートに入ってしまう恐れがある。</div>
+  <div class="note"><b>更新情報：</b>大型企画展は会期末になるほど待機列が伸び、<u>立位待機が膝への最大リスク</u>となる。オンライン日時指定券を必ず事前購入し、会期初〜中盤の平日寄りを選ぶ。</div>
+  <div class="info"><b>X裏取り（2026-08-23）：</b>東京国立博物館公式：<b>空海と真言の名宝 〜9/6</b>（10万人突破、9月下旬実施には間に合わない）。続く秋は<b>歌川広重 江戸のベストアングル 9/29–12/20</b>（前売販売中）、<b>大徳寺 本朝無双之禅苑 10/14–12/6</b>（開創700年、曜変天目等）。国立西洋美術館：<b>ルーブル美術館展 9/9–12/13</b>（年初からまとめ投稿が数十万表示）、レンブラント銅版画〜9/23、<b>ターナー展 10/24–2027/2/21</b>。科博公式：<b>いきもの超ワールド展 7/11–10/12</b>、<b>生きものたちの性 10/31〜</b>。ルーブル会期は立位待機が最大リスク。日時指定が取れない週はHを下ろし、L／F／Nへ振る。</div>
+</div>
+
+<div class="card">
+  <h3 id="course-9">No.9｜コースI：高尾山（登りケーブルカー／下りもケーブルカー・1号路系）</h3>
+  <div class="kv"><span>難易度：<b><span class="grade gD">D</span></b></span><span>歩行：<b>約2.5〜3.0km</b></span><span>アクセス：<b>◯</b></span><span>雨天：<b>×</b></span></div>
+  <p><span class="tag">自然</span><span class="tag">信仰・歴史</span><span class="tag">紅葉</span><span class="tag">展望</span></p>
+  <p><b>評価：</b>ケーブルカーで往復すれば標高差の大半を機械に任せられるが、山上駅から薬王院・山頂に至る区間には<b>石段と傾斜が残る</b>。女坂を選択すれば階段は回避できるものの、路面は舗装でも常に傾斜が続き、<u>復路の下り（登り返しのない一方向の下降）が膝に集中的な負荷を与える</u>。</p>
+  <p><b>今季判断：</b><b>保留</b>。紅葉最盛期はケーブルカー乗車に長時間の立位待機が発生するため、条件はさらに悪化する。実施する場合は「山上駅〜薬王院手前の平坦区間往復のみ・山頂は目指さない」に限定し、下山は必ずケーブルカーとする。ケーブルカー山上駅から薬王院手前までの舗装された平坦な参道のみを往復する、あえて距離を抑えた膝に優しい設計とし、稜線や山頂方面への立ち入りは行わない。</p>
+  <div class="v3note"><b>V3更新（2026-08-25）：</b>距離表記を「約3.0km＋高低差」から「約2.5〜3.0km」に明確化。ケーブルカー山上駅から薬王院手前の平坦区間のみを往復する運用とし、参道石段・稜線区間には立ち入らない(距離を延伸しない例外コース)。<b>薬王院の境内に入ってさらに奥（山頂方面）へ進むと石段が始まるため、折り返し地点は境内入口（山門）の手前に明確に設定しておく必要がある。</b></div>
+</div>
+
+<!-- ===================== 7 ===================== -->
+<h2 id="sec-7">7. コース詳細③：新規追加案（最新の開業・改修情報を反映）</h2>
+<p class="small">第4版で <b>X／Y／Z</b> を末尾に追加（既存1–5位は動かさない）。第5版で各案にX検索の裏取りと9–10月催事を追記。</p>
+<p class="small">※ 各案は「今季すぐ実施できる代替案」および「今後の企画ストック」として登録する。開業・会期情報は実施前の再確認を前提とする。</p>
+
+<div class="card">
+  <h3 id="course-13">No.13｜コースM：飛鳥山 モノレール昇降＋音無親水公園 産業史ルート</h3>
+  <div class="kv"><span>難易度：<b><span class="grade gB">B</span></b></span><span>歩行：<b>約6.0km</b></span><span>アクセス：<b>◯</b></span><span>雨天：<b>◯</b></span></div>
+  <p><span class="tag">鉄道</span><span class="tag">産業史</span><span class="tag">庭園</span><span class="tag">歴史</span><span class="tag">展望</span></p>
+  <p><b>推し所：</b>公園の高台へ<b>無料の小型モノレール（アスカルゴ）で昇降できる</b>ため、標高差を一切自力で処理しない。園内には博物館が3館（地域史／紙の産業史／近代経済人の記念館）集まり、屋外には静態保存の蒸気機関車と都電が置かれている。街路を走る路面電車が撮影でき、公園下の親水公園は水辺の平坦路。展望ロビーのある公共施設の最上階からは、駅を発着する複数路線の車両を俯瞰できる。さらに音無親水公園から石神井川本流が姿を現す王子駅北側を経て、王子銀座商店街まで足を延ばすことで、川沿いの自然と下町商店街の雰囲気を合わせて楽しめるコースとなる。</p>
+  <h4>旅程</h4>
+  <table>
+    <tr><th class="c" style="width:110px">時刻</th><th style="width:30%">行動</th><th class="c">距離</th><th>備考</th></tr>
+    <tr><td class="c">10:00</td><td>王子駅 集合</td><td class="c">─</td><td>─</td></tr>
+    <tr><td class="c">10:10-10:30</td><td>アスカルゴで飛鳥山公園上へ（着席・無料）</td><td class="c">─</td><td>高低差を機械で完全代替。</td></tr>
+    <tr><td class="c">10:30-12:00</td><td>園内3博物館のうち2館＋保存車両見学</td><td class="c">1.2km</td><td>館内EVあり。着席可。</td></tr>
+    <tr><td class="c">12:00-13:15</td><td>昼食（駅前商業施設）</td><td class="c">0.5km</td><td>─</td></tr>
+    <tr><td class="c">13:15-14:15</td><td>音無親水公園〜石神井川沿いの平坦路</td><td class="c">1.5km</td><td>水辺。園内に段差があるため<u>上段の歩道を通る</u>。</td></tr>
+    <tr><td class="c">14:15-15:00</td><td>公共施設 展望ロビー（無料）で鉄道俯瞰＋路面電車撮影</td><td class="c">1.0km</td><td>EVで最上階へ。椅子あり。</td></tr>
+    <tr><td class="c">15:00-15:20</td><td>音無親水公園（石神井川旧流路）から、飛鳥山の下を抜けた石神井川が地上に現れる王子駅北側付近へ</td><td class="c">0.9km</td><td>完全フラットな川沿い、ベンチあり。</td></tr>
+    <tr><td class="c">15:20-15:40</td><td>王子銀座商店街（北本通り）入口付近を散策</td><td class="c">0.6km</td><td>アーケードあり、平坦、飲食店・買い物処多数。</td></tr>
+    <tr><td class="c">15:40-16:00</td><td>王子駅にて解散</td><td class="c">0.3km</td><td>JR京浜東北線・東京メトロ南北線・都電荒川線。</td></tr>
+  </table>
+  <div class="note"><b>8/22豪雨（閉鎖調査）：</b>北区・板橋・練馬が警戒対象で、資料掲載コースでは地理的最近傍。白子川氾濫は練馬・子安橋（本ルート圏外）。音無親水公園・石神井川遊歩道・飛鳥山の閉鎖・通行止めの名指し報道はなし。実施前に園路と親水公園の通行可否だけ再確認する。</div>
+  <div class="info"><b>X裏取り（2026-08-23）：</b>飛鳥山・アスカルゴ・音無親水公園の9–10月大型催事はX上で確認できず。施設稼働を疑う投稿もなし。産業史3館＋保存車両という通年の見どころで成立する。</div>
+  <div class="route"><b>経路ノード：</b>王子駅 → アスカルゴ（山上） → 飛鳥山公園（3館・保存車両） → 昼食 → 音無親水公園 → 石神井川遊歩道 → 北とぴあ 展望ロビー → 石神井川（王子駅北側で地上に現れる区間） → 王子銀座商店街（北本通り） → 王子駅</div>
+  <div class="v3note"><b>V3更新（2026-08-25）：</b>距離を約4.2km→約6.0kmに拡張。音無親水公園から、飛鳥山の下をトンネルで抜けた石神井川本流が顔を出す王子駅北側を経て、王子銀座商店街まで歩く区間を追加。高低差はアスカルゴで解消済みのため、新規区間は完全フラット。<b>音無親水公園は石神井川の旧流路を利用した公園であり、飛鳥山の下をトンネルで抜けた現在の石神井川本流とは別物のため、両者の位置関係を混同して逆方向（旧流路沿い）に進んでしまう可能性がある。</b></div>
+</div>
+
+<div class="card">
+  <h3 id="course-14">No.14｜コースN：大宮 鉄道博物館〜氷川参道〜大宮公園</h3>
+  <div class="kv"><span>難易度：<b><span class="grade gB">B</span></b></span><span>歩行：<b>約6.0km</b></span><span>アクセス：<b>△</b></span><span>雨天：<b>◎</b></span></div>
+  <p><span class="tag">鉄道</span><span class="tag">歴史</span><span class="tag">自然</span><span class="tag">機械・産業</span></p>
+  <p><b>推し所：</b>国内最大級の鉄道系博物館は、館内が広くEV完備・座席多数で、屋内だけで2km近く歩ける。午後は日本有数の長さを持つ直線参道（完全平坦・並木・砂利部を避け舗装側を歩く）を経て公園へ。<b>雨天時の第一代替候補</b>としても極めて優秀。さらに大宮公園内の平坦な氷川神社参道や、小規模な動物園エリアまで足を延ばすルートも加わった。</p>
+  <h4>旅程</h4>
+  <table>
+    <tr><th class="c" style="width:110px">時刻</th><th style="width:26%">行動</th><th class="c" style="width:70px">距離</th><th>ポイント・設備</th></tr>
+    <tr><td class="c">10:00-11:20</td><td>大宮駅集合、ニューシャトルで鉄道博物館駅へ移動、館内見学（前半）</td><td class="c">約1.2km</td><td>電車移動＋館内はフラットな順路中心、エレベーターあり</td></tr>
+    <tr><td class="c">11:20-11:30</td><td>館内の休憩スペースで座って小休止</td><td class="c">─</td><td>ベンチ・カフェスペースあり</td></tr>
+    <tr><td class="c">11:30-12:00</td><td>鉄道博物館 館内見学（後半）</td><td class="c">約0.6km</td><td>平坦な順路、エレベーターあり</td></tr>
+    <tr><td class="c">12:00-13:30</td><td><b>昼食・休憩</b></td><td class="c">─</td><td>90分の食事休憩</td></tr>
+    <tr><td class="c">13:30-13:50</td><td>鉄道博物館駅から電車を乗り継ぎ大宮公園方面へ移動</td><td class="c">─</td><td>乗換のみ、膝への負担なし</td></tr>
+    <tr><td class="c">13:50-14:30</td><td>大宮公園内・氷川神社参道の平坦部を散策（途中ベンチで休憩）</td><td class="c">約1.3km</td><td>参道は平坦（台地上の園路のみ、見沼側低地への下りは含まない）、ベンチ多数</td></tr>
+    <tr><td class="c">14:30-15:10</td><td>大宮公園小動物園エリアを見学</td><td class="c">約0.9km</td><td>小規模な動物園エリア、平坦な園路、休憩ベンチ多数</td></tr>
+    <tr><td class="c">15:10-16:00</td><td>大宮公園野球場周辺を散策しながら大宮公園駅へ、到着後解散</td><td class="c">約2.0km</td><td>平坦な園路、東武アーバンパークライン利用</td></tr>
+  </table>
+  <div class="route"><b>経路ノード：</b>大宮駅 → ニューシャトル1駅乗車 → 鉄道博物館（館内2〜3時間） → 昼食（館内または駅前） → 氷川参道（舗装側） → 武蔵一宮氷川神社 → 大宮公園（平坦部のみ） → 大宮公園 氷川神社参道（平坦部） → 大宮公園小動物園 → 大宮公園野球場周辺 → 大宮公園駅</div>
+  <div class="v3note"><b>V3更新（2026-08-25）：</b>距離を約4.5km→約6.0kmに拡張。大宮公園内の平坦な氷川神社参道・小動物園エリアを追加し、野球場周辺を経て大宮公園駅へ抜けるルートに延伸。大宮公園・氷川神社は大宮台地の東端に位置し東側の見沼方面へは高低差があるため、今回のルートは台地上の平坦な園路のみを通り、低地側へは下りない設計とした。参道は砂利敷き区間があり平坦だが足元がやや不安定なため、歩きやすい端を選ぶとよい。大宮公園内は氷川神社参道・野球場・小動物園へ向かう分岐が複数あり案内板確認が必要。</div>
+  <div class="note"><b>8/22豪雨（閉鎖調査）：</b>さいたま市で日中110mm級の記録あり。鉄道博物館・氷川参道・大宮公園の閉鎖報道なし。</div>
+  <div class="info"><b>X裏取り（2026-08-23）：</b>鉄道博物館の2026年9–10月「鉄道の日」企画はX上で未発表（例年は直前告知）。2026年春のキャラクター選挙など館内イベントの公式投稿はあり、施設自体は稼働中。雨天第一代替の評価は維持。</div>
+  <div class="note"><b>注意：</b>館内シミュレータは整理券制で待機列が発生する。展示ホールの一部に階段があるがEVで代替可能。参道の砂利区間は歩道側を選択。</div>
+</div>
+
+<div class="card">
+  <h3 id="course-15">No.15｜コースO：天王洲アイル 水辺アート＆ボードウォーク</h3>
+  <div class="kv"><span>難易度：<b><span class="grade gA">A</span></b></span><span>歩行：<b>約6.0km</b></span><span>アクセス：<b>◯</b></span><span>雨天：<b>△</b></span></div>
+  <p><span class="tag">現代アート</span><span class="tag">建築</span><span class="tag">水辺景観</span><span class="tag">フォトジェニック</span></p>
+  <p><b>推し所：</b>運河沿いに整備されたボードウォークとギャラリー街。倉庫をコンバージョンしたアート施設、巨大な壁画群、水上レストラン。人出が少なく、4人で並んで歩いても気を遣わない。歩行路はほぼ完全にフラット。延伸区間では、天王洲運河から目黒川河口の品川浦へと足を延ばし、係留された屋形船が並ぶ独特の水辺風景を平坦な遊歩道のまま楽しめる。</p>
+  <h4>旅程</h4>
+  <table>
+    <tr><th class="c" style="width:110px">時刻</th><th style="width:26%">行動</th><th class="c" style="width:70px">距離</th><th>ポイント・設備</th></tr>
+    <tr><td class="c">10:00</td><td>天王洲アイル駅 集合</td><td class="c">─</td><td>─</td></tr>
+    <tr><td class="c">10:10-10:55</td><td>ボードウォーク一周</td><td class="c">1.5km</td><td>運河沿い、完全フラット</td></tr>
+    <tr><td class="c">10:55-11:10</td><td>休憩</td><td class="c">─</td><td>ベンチあり</td></tr>
+    <tr><td class="c">11:10-12:00</td><td>倉庫改装ギャラリー群・壁画エリア</td><td class="c">1.0km</td><td>日曜休のギャラリーあり</td></tr>
+    <tr><td class="c">12:00-13:30</td><td><b>昼食</b>（水上/運河沿いレストラン）</td><td class="c">─</td><td>─</td></tr>
+    <tr><td class="c">13:30-14:20</td><td>品川方面へ運河沿い遊歩道</td><td class="c">1.2km</td><td>平坦な遊歩道</td></tr>
+    <tr><td class="c">14:20-14:35</td><td>休憩</td><td class="c">─</td><td>ベンチあり</td></tr>
+    <tr><td class="c">14:35-15:20</td><td>品川浦・北品川舟だまり方面へ延伸</td><td class="c">1.5km</td><td>屋形船の係留地、水辺の景観</td></tr>
+    <tr><td class="c">15:20-16:00</td><td>北品川駅へ、到着・解散</td><td class="c">0.8km</td><td>京急本線</td></tr>
+  </table>
+  <div class="route"><b>経路ノード：</b>天王洲アイル駅 → ボードウォーク（運河一周） → 倉庫改装ギャラリー群 → 壁画エリア → 昼食（水上/運河沿いレストラン） → 運河沿い遊歩道 → 品川浦・北品川舟だまり（屋形船の係留地） → 北品川駅</div>
+  <div class="v3note"><b>V3更新（2026-08-25）：</b>距離を約4.5km→約6.0kmに拡張し、詳細旅程表を新設。運河遊歩道を品川駅方面からさらに品川浦・北品川方面へ延伸し、屋形船が係留された舟だまりの水辺風景（新規見どころ）を追加。JR品川駅と京急北品川駅は別の駅のため、延伸区間のゴールをどちらにするか当日の案内を明確に。</div>
+  <p class="small"><b>弱点：</b>雨天の退避場所が限られる。ギャラリーは日曜休が多いため曜日設定に注意。</p>
+  <div class="info"><b>X裏取り（2026-08-23）：</b>9–10月の大型催事はほぼなし。KIWAでのリリースイベント9/6程度。人出の少なさという推しも現状維持。日曜休ギャラリーの注意は維持。</div>
+</div>
+
+<div class="card">
+  <h3 id="course-16">No.16｜コースP：横須賀 ヴェルニー公園〜三笠公園 近代海軍史ルート</h3>
+  <div class="kv"><span>難易度：<b><span class="grade gB">B</span></b></span><span>歩行：<b>約5.7km</b></span><span>アクセス：<b>△</b></span><span>雨天：<b>△</b></span></div>
+  <p><span class="tag">ミリタリー</span><span class="tag">港湾・船舶</span><span class="tag">近代史</span><span class="tag">景観</span></p>
+  <p><b>推し所：</b>湾内に停泊する艦艇を公園の遊歩道から一望できる。記念艦の艦内見学（艦内は階段が多いため<u>甲板と外観のみに留める運用も可</u>）、軍港をめぐる遊覧船（<b>約45分・完全着席</b>）を組み込むと、歩行量を抑えつつ満足度を最大化できる。バラの見頃は概ね5月と10月中旬〜11月。延伸区間の海岸通り〜どぶ板通りでは、横須賀ならではの異国情緒あふれる商店街の景観を眺めながら、平坦な通りを横須賀中央駅までゆったり歩ける。</p>
+  <h4>旅程</h4>
+  <table>
+    <tr><th class="c" style="width:110px">時刻</th><th style="width:26%">行動</th><th class="c" style="width:70px">距離</th><th>ポイント・設備</th></tr>
+    <tr><td class="c">10:00</td><td>横須賀駅 集合</td><td class="c">─</td><td>─</td></tr>
+    <tr><td class="c">10:05-10:50</td><td>ヴェルニー公園・バラ園</td><td class="c">1.3km</td><td>海沿い遊歩道、平坦</td></tr>
+    <tr><td class="c">10:50-11:35</td><td>軍港めぐり遊覧船</td><td class="c">0.2km</td><td>約45分・完全着席</td></tr>
+    <tr><td class="c">11:35-12:00</td><td>昼食会場へ移動</td><td class="c">0.6km</td><td>海軍カレー系</td></tr>
+    <tr><td class="c">12:00-13:30</td><td><b>昼食</b></td><td class="c">─</td><td>─</td></tr>
+    <tr><td class="c">13:30-14:20</td><td>商店街アーケード〜三笠公園</td><td class="c">1.1km</td><td>雨天退避可</td></tr>
+    <tr><td class="c">14:20-14:35</td><td>休憩</td><td class="c">─</td><td>ベンチあり</td></tr>
+    <tr><td class="c">14:35-15:20</td><td>三笠公園・記念艦「三笠」甲板</td><td class="c">0.9km</td><td>艦内は階段が多いため甲板・外観中心</td></tr>
+    <tr><td class="c">15:20-16:00</td><td>海岸通り〜どぶ板通り〜横須賀中央駅</td><td class="c">1.6km</td><td>平坦、異国情緒あふれる商店街</td></tr>
+  </table>
+  <div class="route"><b>経路ノード：</b>横須賀駅 → ヴェルニー公園（海沿い遊歩道・バラ園） → 軍港めぐり遊覧船（着席45分） → 昼食（海軍カレー系） → 商店街アーケード（雨天退避可） → 三笠公園 → 記念艦 三笠（甲板まで） → 海岸通りを北上 → どぶ板通り（本通り北側の商店街） → 横須賀中央駅</div>
+  <div class="v3note"><b>V3更新（2026-08-25）：</b>距離を約4.5km→約5.7kmに拡張し、詳細旅程表を新設。海岸通りをどぶ板通り方面へ延伸し、独特の雰囲気を持つ商店街（新規見どころ）を追加。どぶ板通りは並行する本通りと似た雰囲気の商店街のため、入口を間違えないよう当日案内を。</div>
+  <p class="small"><b>弱点：</b>4方面のうち複数で乗換回数が増える。遊覧船は事前予約推奨、荒天欠航あり。</p>
+  <div class="info"><b>X裏取り（2026-08-23）：</b>軍港めぐりは<b>9月の横浜市民割（半額）</b>と<b>夜の軍港めぐり 9/27</b>（よこすか開国花火の船上観覧、定員80・要予約）。ヴェルニー公園は<b>動物フェスティバルよこすか 10/4</b>、<b>PARKOUR TOP OF JAPAN 10/31</b>。花火日とパルクール日は公園の人出が増える。三笠の9–10月特別公開は未確認。バラ見頃（10月中旬〜）は例年どおり。</div>
+</div>
+
+<div class="card">
+  <h3 id="course-17">No.17｜コースQ：麻布台ヒルズ〜デジタルアート〜東京タワー（要注意：坂）</h3>
+  <div class="kv"><span>難易度：<b><span class="grade gC">C</span></b></span><span>歩行：<b>約4.2km</b></span><span>アクセス：<b>◯</b></span><span>雨天：<b>◎</b></span></div>
+  <p><span class="tag">先端建築</span><span class="tag">デジタルアート</span><span class="tag">フォトジェニック</span><span class="tag">食</span></p>
+  <p><b>推し所：</b>2023年開業の超高層複合街区と、2024年に移転開業した大規模デジタルアート施設。屋内比率が高く、建築・アートの密度は都内最高水準。今季は麻布台ヒルズ〜芝公園の平坦部を軽く周遊する程度にとどめ、EV／ESでの移動を徹底することで、無理のない範囲で東京タワーの眺めを楽しむ構成とした。</p>
+  <h4>旅程</h4>
+  <table>
+    <tr><th class="c" style="width:110px">時刻</th><th style="width:26%">行動</th><th class="c" style="width:70px">距離</th><th>ポイント・設備</th></tr>
+    <tr><td class="c">10:00</td><td>神谷町駅 集合</td><td class="c">─</td><td>─</td></tr>
+    <tr><td class="c">10:10-11:00</td><td>麻布台ヒルズ 中央広場（EV／ES使用）</td><td class="c">0.7km</td><td>スキップフロア状の高低差はEV／ESで代替</td></tr>
+    <tr><td class="c">11:00-11:15</td><td>休憩</td><td class="c">─</td><td>ベンチあり</td></tr>
+    <tr><td class="c">11:15-12:00</td><td>森ビル デジタルアートミュージアム</td><td class="c">0.7km</td><td>暗所・傾斜床・鏡面床の区画あり、足元注意</td></tr>
+    <tr><td class="c">12:00-13:30</td><td><b>昼食</b></td><td class="c">─</td><td>─</td></tr>
+    <tr><td class="c">13:30-14:30</td><td>（EV／ES主体で）東京タワー方向〜芝公園</td><td class="c">1.4km</td><td>EV位置を全員が事前に把握</td></tr>
+    <tr><td class="c">14:30-15:15</td><td>芝公園 芝生広場</td><td class="c">0.6km</td><td>平坦部のみ周遊</td></tr>
+    <tr><td class="c">15:15-16:00</td><td>芝公園駅／御成門駅へ、到着・解散</td><td class="c">0.8km</td><td>2駅併記、当日どちらへ向かうか事前に一本化</td></tr>
+  </table>
+  <div class="caution"><b>膝リスク上の注意：</b>周辺は都内でも屈指の起伏地形で、街区内も<u>スキップフロア状の高低差</u>が連続する。EV・ESでほぼ代替できるが、経路が複雑で「気づいたら階段しかない」状況が起こりやすい。実施する場合は<b>事前に館内バリアフリーマップを入手し、EV位置を全員が把握</b>すること。また没入型アート施設は暗所・傾斜床・鏡面床の区画があり、足元の視認性が低い。今季は<b>優先度中〜低</b>。</div>
+  <div class="route"><b>経路ノード：</b>神谷町駅 → 麻布台ヒルズ 中央広場 → 森ビル デジタルアートミュージアム → 昼食 → （EV／ES主体で）東京タワー方向へ → 芝公園（平坦部） → 芝生広場（平坦部を軽く周遊） → 芝公園駅／御成門駅</div>
+  <div class="v3note"><b>V3更新（2026-08-25）：</b>距離は約4.0km→約4.2kmと今季も抑えたまま、詳細旅程表のみ新設（既存のcautionボックス記載どおり、段差・階段混同リスクを踏まえ優先度中〜低のコース）。館内・園内移動はEV／ESの利用を旅程表内で明記。芝公園駅／御成門駅の2駅併記は、当日どちらへ向かうか事前に一本化しておくと迷いにくい。</div>
+</div>
+
+<div class="card">
+  <h3 id="course-18">No.18｜コースR：小石川後楽園〜東京ドームシティ 庭園＆屋内娯楽</h3>
+  <div class="kv"><span>難易度：<b><span class="grade gB">B</span></b></span><span>歩行：<b>約6.0km</b></span><span>アクセス：<b>◎</b></span><span>雨天：<b>◎</b></span></div>
+  <p><span class="tag">庭園</span><span class="tag">歴史</span><span class="tag">IP／ゲーム</span><span class="tag">スポーツ</span><span class="tag">屋内娯楽</span></p>
+  <p><b>推し所：</b>都心の大名庭園と、その隣に広がる屋内型エンタメ街区の落差が面白い。IP系の期間限定展示・体験型アトラクションが頻繁に入れ替わるため「毎回違う」企画にできる。天然温泉系スパで締めることも可能（歩行後の膝のケアに有効）。延伸区間では、水道橋から御茶ノ水へと続く神田川沿いの遊歩道をさらに歩き、聖橋・御茶ノ水橋周辺の川沿い風景を平坦なまま楽しめる。</p>
+  <h4>旅程</h4>
+  <table>
+    <tr><th class="c" style="width:110px">時刻</th><th style="width:26%">行動</th><th class="c" style="width:70px">距離</th><th>ポイント・設備</th></tr>
+    <tr><td class="c">10:00</td><td>飯田橋駅 集合</td><td class="c">─</td><td>─</td></tr>
+    <tr><td class="c">10:10-11:00</td><td>小石川後楽園 主要園路</td><td class="c">1.4km</td><td>土の園路・飛石は避け、幅の広い園路のみ</td></tr>
+    <tr><td class="c">11:00-11:15</td><td>休憩</td><td class="c">─</td><td>ベンチあり</td></tr>
+    <tr><td class="c">11:15-12:00</td><td>東京ドームシティ・ラクーア</td><td class="c">0.9km</td><td>屋内比率高い</td></tr>
+    <tr><td class="c">12:00-13:30</td><td><b>昼食</b></td><td class="c">─</td><td>─</td></tr>
+    <tr><td class="c">13:30-14:30</td><td>屋内展示・IP系施設</td><td class="c">0.6km</td><td>会期は事前確認</td></tr>
+    <tr><td class="c">14:30-14:45</td><td>休憩</td><td class="c">─</td><td>ベンチあり</td></tr>
+    <tr><td class="c">14:45-15:30</td><td>神田川沿い遊歩道を水道橋方面〜御茶ノ水方面へ延伸</td><td class="c">2.0km</td><td>遊歩道は区間により一般道と合流</td></tr>
+    <tr><td class="c">15:30-16:00</td><td>御茶ノ水橋・聖橋周辺を経て御茶ノ水駅へ、到着・解散</td><td class="c">1.1km</td><td>川沿いの風景</td></tr>
+  </table>
+  <div class="note"><b>SNS／公式に基づく会期（2026年8月確認）：</b>東京ドームシティのアトラクションは2026-07-24再開。期間限定は <b>パウ・パトロール展〜8/31</b>、<b>SAKAMOTO DAYS 展〜9/6</b>、<b>Dr.STONE × TeNQ 〜10/18</b>。9月下旬〜10月実施なら Dr.STONE が本企画の会期内に残る。公式ドメイン変更告知は2026-08-20。文京区は8/22にレベル4対象だったが、庭園・ドームシティの閉鎖報道なし。神田川は氾濫危険の見出しあり（遊歩道は実施前再確認）。</div>
+  <div class="info"><b>X裏取り（2026-08-23）：</b>アトラクション公式が高拡散で<b>NIKKEコラボ「遊園地を奪還せよ、指揮官！」9/10–10/18</b>（前売開始）を告知。ほか <b>東京ホラー特区 9/11–13</b>（プリズムホール）、<b>レイトン教授コラボ謎解き 9/10–12/20</b>、<b>コスホリック45 9/26–27</b>（プリズムホール）、すみっコぐらしカフェスタンド〜9/13。9月下旬〜10月なら Dr.STONE と NIKKE が重なる。ホラー特区・コスホリック当日は館内混雑が増えるため、庭園＋昼食＋TeNQに閉じる運用が安全。</div>
+  <div class="caution"><b>注意：</b>庭園内には土の園路・飛石・小さな段差があり、<u>全区間の平坦化はできない</u>。園内は主要園路（幅の広い舗装／砂利押さえ路）のみを選び、築山や渡り石は登らない。</div>
+  <div class="route"><b>経路ノード：</b>飯田橋駅 → 小石川後楽園（主要園路のみ） → 東京ドームシティ ラクーア方面 → 昼食 → 屋内展示・IP系施設 → 神田川沿い遊歩道 → 神田川遊歩道をさらに東へ（水道橋〜御茶ノ水間） → 御茶ノ水橋・聖橋周辺 → 御茶ノ水駅</div>
+  <div class="v3note"><b>V3更新（2026-08-25）：</b>距離を約4.0km→約6.0kmに拡張し、詳細旅程表を新設。神田川沿い遊歩道を水道橋方面からさらに御茶ノ水方面へ延伸し、聖橋・御茶ノ水橋周辺の川沿い風景（新規見どころ）を追加。遊歩道は区間により一般道と合流するため、川沿いを直進できると思い込まないよう声かけを。</div>
+</div>
+
+<div class="card">
+  <h3 id="course-19">No.19｜コースS：神宮外苑〜国立競技場外周〜赤坂 並木ウォーク</h3>
+  <div class="kv"><span>難易度：<b><span class="grade gB">B</span></b></span><span>歩行：<b>約6.0km</b></span><span>アクセス：<b>◎</b></span><span>雨天：<b>△</b></span></div>
+  <p><span class="tag">スポーツ建築</span><span class="tag">並木景観</span><span class="tag">フォトジェニック</span><span class="tag">歴史</span></p>
+  <p><b>推し所：</b>直線の並木道と、木材を多用した大型スタジアムの外周（<b>空中散歩道は原則フラット、EVあり</b>）。周辺は再開発が進行中で「今の姿を記録する」意味がある。11月下旬の黄葉期は極めてフォトジェニックだが、その時期は混雑が跳ね上がる。延伸区間では、権田原交差点を経て迎賓館前の並木道まで足を延ばし、公道からその重厚な外観を眺めながら青山一丁目駅まで平坦に歩ける。</p>
+  <h4>旅程</h4>
+  <table>
+    <tr><th class="c" style="width:110px">時刻</th><th style="width:26%">行動</th><th class="c" style="width:70px">距離</th><th>ポイント・設備</th></tr>
+    <tr><td class="c">10:00</td><td>信濃町駅 集合</td><td class="c">─</td><td>─</td></tr>
+    <tr><td class="c">10:10-11:00</td><td>いちょう並木</td><td class="c">1.4km</td><td>直線の並木道</td></tr>
+    <tr><td class="c">11:00-11:15</td><td>休憩</td><td class="c">─</td><td>ベンチあり</td></tr>
+    <tr><td class="c">11:15-12:00</td><td>聖徳記念絵画館〜国立競技場外周・空中散歩道</td><td class="c">1.3km</td><td>空中散歩道は原則フラット、EVあり</td></tr>
+    <tr><td class="c">12:00-13:30</td><td><b>昼食</b></td><td class="c">─</td><td>─</td></tr>
+    <tr><td class="c">13:30-14:20</td><td>神宮外苑〜権田原方面</td><td class="c">1.4km</td><td>平坦な公道</td></tr>
+    <tr><td class="c">14:20-14:35</td><td>休憩</td><td class="c">─</td><td>ベンチあり</td></tr>
+    <tr><td class="c">14:35-15:20</td><td>権田原交差点〜迎賓館前</td><td class="c">1.1km</td><td>迎賓館は外観のみ、公道から</td></tr>
+    <tr><td class="c">15:20-16:00</td><td>青山一丁目駅へ、到着・解散</td><td class="c">0.8km</td><td>─</td></tr>
+  </table>
+  <div class="route"><b>経路ノード：</b>信濃町駅 → 明治神宮外苑 いちょう並木 → 聖徳記念絵画館（外観／館内） → 国立競技場 外周・空中散歩道 → 千駄ヶ谷 → 昼食 → 神宮外苑〜権田原 → 権田原交差点 → 迎賓館前（外周の平坦な公道） → 青山一丁目駅</div>
+  <div class="v3note"><b>V3更新（2026-08-25）：</b>距離を約5.0km→約6.0kmに拡張し、詳細旅程表を新設。いちょう並木方面から権田原・迎賓館前の平坦な公道へ延伸し、迎賓館前の並木道（新規見どころ、外観のみ）を追加。権田原交差点は複数の道が交わる変則的な交差点のため、信号待ちで隊列がはぐれないよう声かけを。</div>
+  <p class="small"><b>注意：</b>再開発工事により通行止め・迂回が生じる可能性が高い。実施2週間前に現地状況を確認すること。</p>
+  <div class="info"><b>X裏取り（2026-08-23）：</b>事業Q&amp;A転載（8/20）は「現時点で工事による通行止めは予定していない。発生時は事前周知のうえ誘導」と回答。住民訴訟・議論の投稿は続くが、いちょう並木の全面通行止めを示す一次情報はなし。11月黄葉期の混雑注意は維持。</div>
+</div>
+
+<div class="card">
+  <h3 id="course-20">No.20｜コースT：二子玉川 多摩川水辺ウォーク（南西方面ハブ案）</h3>
+  <div class="kv"><span>難易度：<b><span class="grade gA">A</span></b></span><span>歩行：<b>約6.0km</b></span><span>アクセス：<b>◯</b></span><span>雨天：<b>◯</b></span></div>
+  <p><span class="tag">自然・河川景観</span><span class="tag">商業建築</span><span class="tag">庭園</span><span class="tag">フォトジェニック</span></p>
+  <p><b>推し所：</b>駅直結の商業街区に屋上庭園があり、そこから河川敷まで段差の少ない動線で降りられる。河川敷の遊歩道は完全フラットで見通しが良く、4人並列歩行に最適。天候急変時は駅直結施設に即退避できる。延伸区間では、多摩川左岸遊歩道を二子橋・多摩堤通り方面へさらに上流へ歩き、等々力渓谷方面へは立ち入らず、川面を望む平坦な土手道を長く楽しめる構成とした。</p>
+  <h4>旅程</h4>
+  <table>
+    <tr><th class="c" style="width:110px">時刻</th><th style="width:26%">行動</th><th class="c" style="width:70px">距離</th><th>ポイント・設備</th></tr>
+    <tr><td class="c">10:00</td><td>二子玉川駅 集合</td><td class="c">─</td><td>─</td></tr>
+    <tr><td class="c">10:10-10:50</td><td>商業街区 屋上庭園</td><td class="c">0.8km</td><td>段差の少ない動線</td></tr>
+    <tr><td class="c">10:50-11:05</td><td>休憩</td><td class="c">─</td><td>ベンチあり</td></tr>
+    <tr><td class="c">11:05-11:50</td><td>兵庫島公園</td><td class="c">1.4km</td><td>完全フラット</td></tr>
+    <tr><td class="c">11:50-12:00</td><td>昼食会場へ移動</td><td class="c">0.3km</td><td>駅直結</td></tr>
+    <tr><td class="c">12:00-13:30</td><td><b>昼食</b></td><td class="c">─</td><td>─</td></tr>
+    <tr><td class="c">13:30-14:20</td><td>多摩川左岸遊歩道 往復（下流方向、等々力渓谷には立ち入らない）</td><td class="c">1.7km</td><td>完全フラット、見通し良好</td></tr>
+    <tr><td class="c">14:20-14:35</td><td>休憩</td><td class="c">─</td><td>ベンチあり</td></tr>
+    <tr><td class="c">14:35-15:20</td><td>多摩川左岸遊歩道をさらに上流（二子橋・多摩堤通り方面）へ延伸</td><td class="c">1.1km</td><td>土手道、川面を望む</td></tr>
+    <tr><td class="c">15:20-16:00</td><td>二子橋・多摩堤通り沿いに二子玉川駅へ戻り解散</td><td class="c">0.7km</td><td>─</td></tr>
+  </table>
+  <div class="note"><b>8/22豪雨（閉鎖調査）：</b>多摩川河川敷・商業街区の閉鎖報道なし。東急世田谷線は落雷で17:40–18:40運休（二子玉川駅自体は田園都市線／大井町線）。同夜の東急擾乱として記録するに留め、ルート変更はしない。</div>
+  <div class="info"><b>X裏取り（2026-08-23）：</b>二子玉川ライズ公式が<b>防災イベント 9/23</b>（無料）を告知。河川敷・屋上庭園の閉鎖投稿はなし。等々力渓谷を今季外す判断は維持。</div>
+  <div class="route"><b>経路ノード：</b>二子玉川駅 → 商業街区 屋上庭園 → 兵庫島公園 → 多摩川左岸 遊歩道（往復） → 昼食（駅直結） → 多摩川左岸遊歩道をさらに上流（二子橋方面）へ延伸 → 二子橋・多摩堤通り沿い → 二子玉川駅</div>
+  <div class="v3note"><b>V3更新（2026-08-25）：</b>距離を約4.5km→約6.0kmに拡張し、詳細旅程表を新設。多摩川左岸遊歩道を、既存の下流側往復に加えてさらに二子橋・多摩堤通り方面（上流）へ延伸し、川沿いの土手道（新規見どころ）を追加。等々力渓谷方面は引き続き対象外（既存注記のとおり）。二子橋と新二子橋が並んで架かるため、目印にする橋を事前に共有しておくと迷いにくい。</div>
+  <p class="small">※ 等々力渓谷方面は<b>階段での降下</b>が必須のため今季は組み込まない。</p>
+</div>
+
+<div class="card">
+  <h3 id="course-21">No.21｜コースU：川越 蔵造りの町並み（北西方面ハブ案）</h3>
+  <div class="kv"><span>難易度：<b><span class="grade gB">B</span></b></span><span>歩行：<b>約6.0km</b></span><span>アクセス：<b>△</b></span><span>雨天：<b>△</b></span></div>
+  <p><span class="tag">歴史的町並み</span><span class="tag">建築</span><span class="tag">食</span><span class="tag">神社仏閣</span></p>
+  <p><b>推し所：</b>全区間ほぼ平坦、見どころが一本道に連続し、休憩できる甘味処・カフェが密。歩行に飽きが来ない。さらに足を延ばせば、縁結びで知られる川越氷川神社や新河岸川沿いの遊歩道など、蔵の町とは趣の異なる水辺の静けさも楽しめる。</p>
+  <h4>旅程</h4>
+  <table>
+    <tr><th class="c" style="width:110px">時刻</th><th style="width:26%">行動</th><th class="c" style="width:70px">距離</th><th>ポイント／設備</th></tr>
+    <tr><td class="c">10:00</td><td>集合（本川越駅）</td><td class="c">–</td><td>集合場所</td></tr>
+    <tr><td class="c">10:00–10:25</td><td>大正浪漫夢通りを北上</td><td class="c">約0.6km</td><td>平坦な石畳のアーケード通り</td></tr>
+    <tr><td class="c">10:25–11:20</td><td>蔵造りの町並み（一番街）〜時の鐘</td><td class="c">約0.9km</td><td>平坦な石畳、随所にベンチ</td></tr>
+    <tr><td class="c">11:20–11:50</td><td>菓子屋横丁</td><td class="c">約0.5km</td><td>甘味処・茶店で着席休憩可</td></tr>
+    <tr><td class="c">11:50–12:00</td><td>昼食会場へ移動</td><td class="c">約0.2km</td><td>平坦な道</td></tr>
+    <tr><td class="c">12:00–13:30</td><td><b>昼食</b></td><td class="c">–</td><td>90分の着席休憩</td></tr>
+    <tr><td class="c">13:30–14:00</td><td>喜多院へ（境内は平坦部のみ）</td><td class="c">約0.6km</td><td>山門〜本堂周辺は平坦</td></tr>
+    <tr><td class="c">14:00–15:00</td><td>新河岸川遊歩道を北上〜川越氷川神社</td><td class="c">約1.7km</td><td>川沿いの平坦な遊歩道、緩やかな上りのみ、境内にベンチ多数</td></tr>
+    <tr><td class="c">15:00–16:00</td><td>本川越駅へ戻る</td><td class="c">約1.5km</td><td>平坦な市街路</td></tr>
+  </table>
+  <div class="caution"><b>回避条件：</b><b>10月第3土日前後の大祭期間は極度の混雑</b>となり、人波での急停止・押し合いが膝に危険。この期間は必ず外す。通常の土日でも目抜き通りは混むため、午前中の早い時間に主要区間を歩き切る配分とする。</div>
+  <div class="info"><b>X裏取り（2026-08-23）：</b>川越まつり2026の公式日程はX上で未確定（沿線メディアが「いつ？」記事を出す段階）。百万灯夏まつりは7/25–26に実施済みで本企画枠外。大祭日程が発表され次第、第3土日前後を除外リストに固定する。</div>
+  <div class="route"><b>経路ノード：</b>川越駅／本川越駅 → 大正浪漫夢通り → 蔵造りの町並み → 時の鐘 → 菓子屋横丁 → 昼食 → 喜多院（境内は平坦部のみ） → 新河岸川遊歩道 → 川越氷川神社 → 本川越駅</div>
+  <div class="v3note"><b>V3更新（2026-08-26）：</b>距離を約4.5km→約6.0kmに拡張し、詳細旅程表を新設。喜多院から新河岸川遊歩道を経由して川越氷川神社方面へ延伸し、川沿いの平坦な遊歩道を追加。氷川神社周辺は住宅街の細道が入り組むため、本川越駅へ戻る道筋は大通り沿いを基本ルートとして案内すると安心。川越駅（JR・東武）と本川越駅（西武）は700m以上離れた別の駅のため、集合・解散場所は「本川越駅」と明確に共有しておくとよい。</div>
+</div>
+
+<div class="card">
+  <h3 id="course-22">No.22｜コースV：浜離宮恩賜庭園〜竹芝〜水上バス（着席移動組込案）</h3>
+  <div class="kv"><span>難易度：<b><span class="grade gA">A</span></b></span><span>歩行：<b>約5.7km</b></span><span>アクセス：<b>◎</b></span><span>雨天：<b>△</b></span></div>
+  <p><span class="tag">庭園</span><span class="tag">歴史</span><span class="tag">港湾・船舶</span><span class="tag">近代建築</span><span class="tag">景観</span></p>
+  <p><b>推し所：</b>海水を引き込んだ大名庭園と超高層ビル群の対比という、都内屈指のフォトジェニックな構図。<b>水上バスを行程に組み込むことで、40分前後を完全着席のまま移動しつつ景色が変わる</b>——本企画の負荷分散手法として最も洗練された形。出発直後には汐留シオサイトのペデストリアンデッキを歩き、超高層ビル群を見上げながら庭園散策への期待を高められる。</p>
+  <h4>旅程</h4>
+  <table>
+    <tr><th class="c" style="width:110px">時刻</th><th style="width:26%">行動</th><th class="c" style="width:70px">距離</th><th>ポイント／設備</th></tr>
+    <tr><td class="c">10:00</td><td>汐留駅集合</td><td class="c">–</td><td>集合場所</td></tr>
+    <tr><td class="c">10:00–10:40</td><td>汐留シオサイト ペデストリアンデッキ散策</td><td class="c">約1.6km</td><td>高低差はエレベーター／エスカレーターで移動、平坦デッキ中心</td></tr>
+    <tr><td class="c">10:40–11:40</td><td>浜離宮恩賜庭園（大手門口から入園、潮入の池・三百年の松）</td><td class="c">約1.5km</td><td>平坦な園路中心、ベンチ随所</td></tr>
+    <tr><td class="c">11:40–12:00</td><td>お茶屋で抹茶休憩</td><td class="c">約0.2km</td><td>着席休憩（座敷）</td></tr>
+    <tr><td class="c">12:00–13:30</td><td><b>昼食</b></td><td class="c">–</td><td>90分の着席休憩</td></tr>
+    <tr><td class="c">13:30–13:50</td><td>水上バス発着場へ移動</td><td class="c">約0.3km</td><td>平坦な園路・桟橋</td></tr>
+    <tr><td class="c">13:50–14:30</td><td>水上バス乗船（日の出／竹芝桟橋まで）</td><td class="c">距離対象外</td><td>着席のまま移動、休憩を兼ねる（距離は集計しない）</td></tr>
+    <tr><td class="c">14:30–15:20</td><td>竹芝ウォーターフロント遊歩道</td><td class="c">約1.1km</td><td>平坦な水辺デッキ、ベンチあり</td></tr>
+    <tr><td class="c">15:20–16:00</td><td>旧芝離宮恩賜庭園（オプション）経由、浜松町駅へ</td><td class="c">約1.0km</td><td>平坦な園路・市街路</td></tr>
+  </table>
+  <div class="route"><b>経路ノード：</b>汐留シオサイト（ペデストリアンデッキ） → 大手門口 → 浜離宮恩賜庭園（潮入の池・三百年の松・お茶屋で抹茶休憩） → 水上バス発着場 → 水上バス乗船（着席） → 日の出／竹芝桟橋 → 竹芝ウォーターフロント遊歩道 → 旧芝離宮恩賜庭園（オプション） → 浜松町駅</div>
+  <p class="small"><b>注意：</b>庭園内は土・砂利の園路が主体。主要園路は幅広で概ね平坦だが、<u>橋の一部に段差</u>がある。水上バスは便数が限られるため、時刻表から逆算した行程組みが必須。</p>
+  <div class="info"><b>X裏取り（2026-08-23）：</b>竹芝／芝浦発のナイトクルーズが<b>金曜 8/28–9/25</b>に運航（夜景・クラフトビール）。浜離宮そのものの9–10月特別開園はX上で未確認。近傍で<b>しながわ運河花火 10/9–11</b>（10日打ち上げ）があり、当日の水上交通は混雑しうる。便の予約状況は公式時刻表で確定する。</div>
+  <div class="v3note"><b>V3更新（2026-08-26）：</b>距離を約4.0km→約5.7kmに拡張し、詳細旅程表を新設。冒頭に汐留シオサイトのペデストリアンデッキ散策を追加（高低差はエレベーター／エスカレーターで移動）。水上バス乗船区間の時間はスケジュールに含むが、既存の運用どおり距離には計上していない。汐留駅は「ゆりかもめ」「都営大江戸線」で出口の位置が離れているため、大手門口に最も近い出口を事前に共有しておくとよい。</div>
+</div>
+
+<div class="card">
+  <h3 id="course-23">No.23｜コースW：葛西臨海公園 大観覧車＆水辺（北東方面ハブ案）</h3>
+  <div class="kv"><span>難易度：<b><span class="grade gA">A</span></b></span><span>歩行：<b>約6.0km</b></span><span>アクセス：<b>◯</b></span><span>雨天：<b>△</b></span></div>
+  <p><span class="tag">自然・海景</span><span class="tag">展望</span><span class="tag">生物・科学</span><span class="tag">フォトジェニック</span></p>
+  <p><b>推し所：</b>駅直結、園内はほぼ完全にフラットで幅広の園路。大観覧車（着席17分）と水族施設で座って過ごす時間を確保できる。芝生と海に開けた眺望は、都内とは思えない開放感。さらに足を延ばせば、汽水池や淡水池をめぐる鳥類園エリアまで、水辺の景観を楽しみながら平坦な園路で周遊できる。</p>
+  <h4>旅程</h4>
+  <table>
+    <tr><th class="c" style="width:110px">時刻</th><th style="width:26%">行動</th><th class="c" style="width:70px">距離</th><th>ポイント／設備</th></tr>
+    <tr><td class="c">10:00</td><td>集合（葛西臨海公園駅）</td><td class="c">–</td><td>集合場所</td></tr>
+    <tr><td class="c">10:00–10:30</td><td>大観覧車周辺</td><td class="c">約0.6km</td><td>平坦な広場</td></tr>
+    <tr><td class="c">10:30–11:10</td><td>汐風の広場</td><td class="c">約0.7km</td><td>芝生の平坦な広場、ベンチあり</td></tr>
+    <tr><td class="c">11:10–12:00</td><td>西なぎさ（橋を渡る／平坦）</td><td class="c">約1.0km</td><td>橋は平坦、主要園路も平坦</td></tr>
+    <tr><td class="c">12:00–13:30</td><td><b>昼食</b></td><td class="c">–</td><td>90分の着席休憩</td></tr>
+    <tr><td class="c">13:30–14:10</td><td>水族施設周辺</td><td class="c">約0.5km</td><td>屋内、雨天でも快適</td></tr>
+    <tr><td class="c">14:10–14:30</td><td>クリスタルビュー（展望施設・EVあり）</td><td class="c">約0.3km</td><td>エレベーターで昇降、階段不要</td></tr>
+    <tr><td class="c">14:30–15:20</td><td>鳥類園・汽水池 遊歩道（総合レクリエーション公園方面）</td><td class="c">約1.6km</td><td>平坦な木道・園路、ベンチ多数</td></tr>
+    <tr><td class="c">15:20–16:00</td><td>葛西臨海公園駅へ戻る</td><td class="c">約1.3km</td><td>平坦な園路</td></tr>
+  </table>
+  <div class="route"><b>経路ノード：</b>葛西臨海公園駅 → 大観覧車 → 汐風の広場 → 西なぎさ（橋を渡る／平坦） → 昼食 → 水族施設 → クリスタルビュー（展望施設・EVあり） → 鳥類園・汽水池遊歩道（総合レクリエーション公園方面） → 駅</div>
+  <div class="note"><b>要事前確認：</b>水族施設は<b>2026年4月29日に新園が開園済み</b>（公式告知・8月の来園投稿で稼働確認）。一部に2028年のさらなる更新への言及あり。実施前に開館時間・予約要否を確認すること。</div>
+  <div class="note"><b>8/22豪雨（閉鎖調査）：</b>園路・大観覧車・水族施設の閉鎖報道なし。</div>
+  <div class="v3note"><b>V3更新（2026-08-26）：</b>距離を約4.5km→約6.0kmに拡張し、詳細旅程表を新設。クリスタルビュー見学後、鳥類園・汽水池方面の総合レクリエーション公園エリアへ周回を延伸。木道・園路とも平坦で、随所にベンチを配置。西なぎさへ渡る橋の分岐と鳥類園方面への分岐が近接しており、案内板を見落とすと反対方向へ進みやすい。</div>
+</div>
+
+<div class="card">
+  <h3 id="course-24">No.24｜コースX：東京ミッドタウン〜21_21 DESIGN SIGHT〜檜町公園（第4版・追加推奨）</h3>
+  <div class="kv"><span>難易度：<b><span class="grade gA">A</span></b></span><span>歩行：<b>約6.0km</b></span><span>アクセス：<b>◎</b></span><span>雨天：<b>◎</b></span></div>
+  <p><span class="tag">デザイン</span><span class="tag">美術</span><span class="tag">先端建築</span><span class="tag">庭園</span><span class="tag">食</span></p>
+  <p><b>追加理由（既存案より優れる点）：</b>港区側のほぼ平坦な複合街区で、着席・洋式トイレ・屋内展示が半径400mに集中する。既存Q（麻布台）は同じ港区でも坂とスキップフロアが連続し判定C。本案はミッドタウン敷地内と檜町公園に閉じれば階段を使わず、デザイン／建築テーマをQより安全に消化できる。既存H（上野）より「今のデザイン展」の回転が速く、9–10月の企画展を狙える。</p>
+  <p><b>推し所：</b>21_21 DESIGN SIGHT（安藤忠雄設計）とサントリー美術館、ミッドタウン・ガーデン、檜町公園の芝生。館内はEV完備。昼食はミッドタウン内の着席店が豊富。檜町公園から足を延ばせば、緑に囲まれた乃木神社の参道まで平坦な街路で歩くことができ、都会の中の静けさを味わえる。</p>
+  <h4>旅程</h4>
+  <table>
+    <tr><th class="c" style="width:110px">時刻</th><th style="width:26%">行動</th><th class="c" style="width:70px">距離</th><th>ポイント／設備</th></tr>
+    <tr><td class="c">10:00</td><td>集合（六本木駅／乃木坂駅）</td><td class="c">–</td><td>集合場所</td></tr>
+    <tr><td class="c">10:00–10:40</td><td>東京ミッドタウン ガレリア</td><td class="c">約0.8km</td><td>屋内、雨天でも快適、EV/ES完備</td></tr>
+    <tr><td class="c">10:40–12:00</td><td>21_21 DESIGN SIGHT〜サントリー美術館（会期次第）</td><td class="c">約1.0km</td><td>平坦な敷地内通路、ベンチあり</td></tr>
+    <tr><td class="c">12:00–13:30</td><td><b>昼食</b></td><td class="c">–</td><td>90分の着席休憩</td></tr>
+    <tr><td class="c">13:30–14:05</td><td>ミッドタウン・ガーデン散策</td><td class="c">約0.8km</td><td>芝生広場、平坦</td></tr>
+    <tr><td class="c">14:05–14:35</td><td>檜町公園（平坦園路）</td><td class="c">約0.5km</td><td>池周回路、ベンチ多数</td></tr>
+    <tr><td class="c">14:35–15:35</td><td>乃木神社方面へ平坦街路を延伸</td><td class="c">約2.3km</td><td>公道は平坦、参道は平坦部のみ散策</td></tr>
+    <tr><td class="c">15:35–15:45</td><td>乃木神社周辺で休憩</td><td class="c">–</td><td>境内周辺の腰掛けスペース</td></tr>
+    <tr><td class="c">15:45–16:00</td><td>六本木駅／乃木坂駅へ戻る</td><td class="c">約0.6km</td><td>平坦な市街路</td></tr>
+  </table>
+  <div class="route"><b>経路ノード：</b>六本木駅／乃木坂駅 → 東京ミッドタウン ガレリア → 21_21 DESIGN SIGHT → サントリー美術館（会期次第） → 昼食 → ミッドタウン・ガーデン → 檜町公園（平坦園路） → 乃木神社（参道の平坦部） → 六本木駅／乃木坂駅</div>
+  <div class="note"><b>膝：</b>ミッドタウン敷地と檜町公園の主要園路は平坦。乃木坂からのアプローチに緩い坂があるため、集合は六本木駅直結側を優先。21_21は企画展の会期・日時指定を実施2週間前に確認。</div>
+  <div class="info"><b>X裏取り（2026-08-23）：</b>サントリー美術館公式：<b>逸翁美術館コレクション「蕪村・呉春と茶の湯の名品」9/16–11/8</b>。21_21は自館の長期展より、短会期の<b>パルミジャーニ・フルリエ「メカニカル ワンダーズ 2026」9/19–24</b>がXに出ている。9月下旬実施ならサントリー美術館を主展示にできる。</div>
+  <div class="v3note"><b>V3更新（2026-08-26）：</b>距離を約4.2km→約6.0kmに拡張し、詳細旅程表を新設。檜町公園から乃木神社方面へ平坦な公道を延伸し、参道の平坦部のみ散策したのち六本木駅／乃木坂駅で解散するルートに変更。東京ミッドタウンは出入口が多いため、檜町公園・乃木神社方面へ向かう出口を事前に確認しておくとよい。</div>
+</div>
+
+<div class="card">
+  <h3 id="course-25">No.25｜コースY：日本橋〜コレド〜茅場町〜水天宮前（第4版・追加推奨）</h3>
+  <div class="kv"><span>難易度：<b><span class="grade gA">A</span></b></span><span>歩行：<b>約6.0km</b></span><span>アクセス：<b>◎</b></span><span>雨天：<b>◯</b></span></div>
+  <p><span class="tag">歴史</span><span class="tag">再開発</span><span class="tag">食</span><span class="tag">水辺</span><span class="tag">美術</span></p>
+  <p><b>追加理由（既存案より優れる点）：</b>資料既存案は湾岸・河川敷・庭園は厚いが、<b>都心の川沿い商業テラス</b>が空白。日本橋川テラスは再開発後に歩行者空間が拡がり、コレド群で着席・トイレ・昼食が密。4方面すべて乗換少なく到達できる（東西線・銀座線・半蔵門線・都営浅草線）。既存A（皇居）より雨天退避と着席が多く、既存K（豊洲）より歴史レイヤが厚い。</p>
+  <p><b>推し所：</b>日本橋の欄干と麒麟、コレド室町の地下〜地上、三井記念美術館（会期次第）、茅場町〜水天宮前の川沿いテラス。全区間舗装・ほぼ平坦。さらに日本橋川テラスを鎧橋方面へ歩みを進めれば、水辺の眺めを楽しみながら甘酒横丁など人形町の下町情緒あふれる商店街まで平坦な道のりで到達できる。</p>
+  <h4>旅程</h4>
+  <table>
+    <tr><th class="c" style="width:110px">時刻</th><th style="width:26%">行動</th><th class="c" style="width:70px">距離</th><th>ポイント／設備</th></tr>
+    <tr><td class="c">10:00</td><td>日本橋駅集合</td><td class="c">–</td><td>集合場所</td></tr>
+    <tr><td class="c">10:00–10:30</td><td>日本橋（欄干・麒麟像）</td><td class="c">約0.3km</td><td>平坦、橋詰はスロープ状</td></tr>
+    <tr><td class="c">10:30–11:20</td><td>コレド室町／日本橋室町野村ビル</td><td class="c">約0.5km</td><td>屋内、雨天でも快適、休憩スペースあり</td></tr>
+    <tr><td class="c">11:20–12:00</td><td>三井記念美術館（会期次第）</td><td class="c">約0.3km</td><td>館内エレベーターあり</td></tr>
+    <tr><td class="c">12:00–13:30</td><td><b>昼食</b></td><td class="c">–</td><td>90分の着席休憩</td></tr>
+    <tr><td class="c">13:30–14:20</td><td>日本橋川テラスを鎧橋方面へ</td><td class="c">約1.2km</td><td>川沿いの平坦なテラス遊歩道、ベンチあり</td></tr>
+    <tr><td class="c">14:20–14:50</td><td>茅場町〜水天宮前</td><td class="c">約0.8km</td><td>平坦な市街路</td></tr>
+    <tr><td class="c">14:50–15:30</td><td>人形町・甘酒横丁方面へ延伸</td><td class="c">約1.5km</td><td>平坦な商店街、腰掛けどころ多数</td></tr>
+    <tr><td class="c">15:30–16:00</td><td>水天宮前駅／人形町駅へ</td><td class="c">約1.4km</td><td>平坦な市街路</td></tr>
+  </table>
+  <div class="route"><b>経路ノード：</b>日本橋駅 → 日本橋（欄干・麒麟） → コレド室町／日本橋室町野村ビル → 三井記念美術館（会期次第） → 昼食 → 日本橋川テラス → 鎧橋 → 茅場町 → 水天宮前 → 人形町・甘酒横丁 → 水天宮前駅／人形町駅</div>
+  <div class="note"><b>膝：</b>川沿いテラスの一部に短いスロープあり、階段は使わない。三井記念美術館は休館・会期を実施前確認。8/22豪雨では中央区がレベル4対象だったが、日本橋・コレド・テラスの閉鎖報道なし。</div>
+  <div class="info"><b>X裏取り（2026-08-23）：</b><b>コレド日本橋は2026年10月15日一旦閉館</b>（2027年秋に東京ミッドタウン日本橋へ改装）。経路の昼食・着席は<b>コレド室町側に固定</b>する。10/3は福徳の森・室町仲通りで<b>老舗フェスティバル2026</b>（能・屋台・日本酒、限定席）。日本橋川テラス自体の9–10月催事はX上で確認できず。</div>
+  <div class="v3note"><b>V3更新（2026-08-26）：</b>距離を約4.5km→約6.0kmに拡張し、詳細旅程表を新設。日本橋川テラスを鎧橋方面へ延伸し、水天宮前から人形町・甘酒横丁方面の平坦な商店街を追加で周遊してから水天宮前駅／人形町駅で解散するルートに変更した。鎧橋周辺は日本橋川テラスと地上道路が交差し道が入り組むため、案内表示を確認しながら進むとよい。</div>
+</div>
+
+<div class="card">
+  <h3 id="course-26">No.26｜コースZ：旧古河庭園〜西ヶ原〜駒込（第4版・追加推奨）</h3>
+  <div class="kv"><span>難易度：<b><span class="grade gB">B</span></b></span><span>歩行：<b>約5.8km</b></span><span>アクセス：<b>◯</b></span><span>雨天：<b>△</b></span></div>
+  <p><span class="tag">庭園</span><span class="tag">洋館</span><span class="tag">秋バラ</span><span class="tag">歴史</span><span class="tag">建築</span></p>
+  <p><b>追加理由（既存案より優れる点）：</b>北東ハブがW（葛西）とH（上野）に偏り、庭園×洋館の秋バラが空白。旧古河庭園は10–11月の秋バラが都内屈指で、第8章の「秋バラ」行と直結する。主要園路は平坦で、洋館（ジョサイア・コンドル）は内部見学時に着席できる。既存P（横須賀バラ）よりアクセスが良く、4人の集合負荷が低い。</p>
+  <p><b>推し所：</b>洋館テラスからのバラと芝、和洋折衷庭園、西ヶ原〜駒込の平坦な街路。入場は有料・人数制限がある日があるため事前確認。昼食後には、「おばあちゃんの原宿」として親しまれる巣鴨地蔵通り商店街まで足を延ばし、平坦な参道状の商店街をのんびり歩くこともできる。</p>
+  <h4>旅程</h4>
+  <table>
+    <tr><th class="c" style="width:110px">時刻</th><th style="width:26%">行動</th><th class="c" style="width:70px">距離</th><th>ポイント／設備</th></tr>
+    <tr><td class="c">10:00</td><td>集合（駒込駅／西ヶ原駅）</td><td class="c">–</td><td>集合場所</td></tr>
+    <tr><td class="c">10:00–10:30</td><td>旧古河庭園 正門へ移動</td><td class="c">約0.6km</td><td>平坦な道</td></tr>
+    <tr><td class="c">10:30–11:30</td><td>洋館（外観／公開日は内部）〜バラ園・主要園路</td><td class="c">約1.0km</td><td>主要園路は平坦、階段区間は回避、ベンチあり</td></tr>
+    <tr><td class="c">11:30–12:00</td><td>駒込駅前へ移動</td><td class="c">約0.8km</td><td>平坦な道</td></tr>
+    <tr><td class="c">12:00–13:30</td><td><b>昼食（駒込駅前）</b></td><td class="c">–</td><td>90分の着席休憩</td></tr>
+    <tr><td class="c">13:30–14:30</td><td>巣鴨地蔵通り商店街方面へ</td><td class="c">約1.7km</td><td>平坦な商店街、腰掛けどころ多数</td></tr>
+    <tr><td class="c">14:30–14:50</td><td>商店街で休憩</td><td class="c">–</td><td>座れる場所複数</td></tr>
+    <tr><td class="c">14:50–16:00</td><td>駒込駅へ戻る</td><td class="c">約1.7km</td><td>平坦な道</td></tr>
+  </table>
+  <div class="caution"><b>膝：</b>築山・石段・飛石は使わない。主要園路（幅の広い園路と洋館周辺）のみ。西ヶ原駅からの坂は緩いが、集合は駒込駅側を優先してもよい。</div>
+  <div class="route"><b>経路ノード：</b>駒込駅／西ヶ原駅 → 旧古河庭園（正門） → 洋館（外観／公開日は内部） → バラ園・主要園路のみ → 昼食（駒込駅前） → 巣鴨地蔵通り商店街 → 駒込駅</div>
+  <div class="note"><b>8/22豪雨（閉鎖調査）：</b>北区は警戒対象。旧古河庭園の閉鎖報道なし。実施前に園路のぬかるみと公開日だけ再確認。</div>
+  <div class="info"><b>X裏取り（2026-08-23）：</b>庭園公式が高拡散で<b>秋のバラフェスティバル 10/10–11/6</b>を告知（コンサート、バラ園マーケット、ガイドウォーク、開園70周年／名勝指定20周年の記念企画）。見頃は例年10–11月。主要園路のみの運用は維持。開園直後〜週末は撮影立ち止まりが増えるため、平日寄りまたは開場直後を狙う。</div>
+  <div class="v3note"><b>V3更新（2026-08-26）：</b>距離を約4.0km→約5.8kmに拡張し、詳細旅程表を新設。駒込駅前での昼食後、巣鴨地蔵通り商店街まで平坦な道を延伸してから駒込駅へ戻るルートに変更。商店街は人通りが多く、はぐれないよう声を掛け合うとよい。駒込駅から巣鴨地蔵通りへ向かう道は複数のルートがあるため、往路と復路で違う道を通ると合流地点が分かりにくい。</div>
+</div>
+
+<!-- ===================== 8 ===================== -->
+<h2 id="sec-8">8. 時期別 催事・シーズン要素マトリクス（2026年確定分）</h2>
+<p class="small">※ 上表はX検索（2026-08-23）で会期が取れたもの。下表は例年ベースの目安。いずれも実施年の公式発表で再確認すること。</p>
+
+<h3>8-1. 2026年9〜10月 確定・準確定催事（X検索）</h3>
+<table>
+  <tr><th style="width:16%">日程</th><th style="width:38%">催事</th><th class="c" style="width:10%">コース</th><th>負荷と運用</th></tr>
+  <tr><td>9/4–6</td><td>KANPAI GATEWAY（Gateway Park、酒蔵24）</td><td class="c">G</td><td><b>中</b>：本企画枠より前。直後の土日は余波に注意。</td></tr>
+  <tr><td>〜9/6</td><td>東博「空海と真言の名宝」／ドームシティ「SAKAMOTO DAYS」展</td><td class="c">H／R</td><td><b>低</b>：9月下旬実施には間に合わない。</td></tr>
+  <tr><td>9/9–12/13</td><td>国立西洋美術館「ルーブル美術館展」</td><td class="c">H</td><td><b>高</b>：日時指定必須。取れない週はHを下ろす。</td></tr>
+  <tr><td>9/10–10/18</td><td>東京ドームシティ NIKKEコラボ／TeNQ「Dr.STONE」〜10/18</td><td class="c">R</td><td><b>低〜中</b>：屋内。本企画枠と重なる主力IP。</td></tr>
+  <tr><td>9/10–12/20</td><td>レイトン教授コラボ謎解き（ドームシティ）</td><td class="c">R</td><td><b>低</b>：屋内。希望者のみ。</td></tr>
+  <tr><td>9/11–13</td><td>東京ホラー特区（プリズムホール）</td><td class="c">R</td><td><b>中</b>：当該3日は館内混雑。庭園＋TeNQに閉じる。</td></tr>
+  <tr><td>7/18–9/27</td><td>PLAY! MUSEUM「ノンタン展」（日時指定・当日券なし）</td><td class="c">L</td><td><b>低</b>：9月下旬の最終週のみ重なる。チケット要事前。</td></tr>
+  <tr><td>9/16–11/8</td><td>サントリー美術館「蕪村・呉春と茶の湯の名品」</td><td class="c">X</td><td><b>低</b>：屋内・着席可。Xの主展示になる。</td></tr>
+  <tr><td>9/18–10/4</td><td>横浜オクトーバーフェスト（赤レンガ倉庫）</td><td class="c">C</td><td><b>高</b>：倉庫周辺は回避。汽車道〜大さん橋を主軸。</td></tr>
+  <tr><td>9/18–2027/1/11</td><td>角川武蔵野ミュージアム「エッセイマンガの処方箋展」</td><td class="c">F</td><td><b>低</b>：屋内。</td></tr>
+  <tr><td>9/19–10/26</td><td>同「松本零士展」／999体験展は〜10/26</td><td class="c">F</td><td><b>低〜中</b>：今季のIP密度が最大。日時指定で制御。</td></tr>
+  <tr><td>9/19–24</td><td>21_21「メカニカル ワンダーズ」（短会期）</td><td class="c">X</td><td><b>低</b>：6日間。当たらなければサントリー美術館へ。</td></tr>
+  <tr><td>9/26</td><td>羽田空港 空の日フェスティバル（事前申込枠あり）</td><td class="c">J</td><td><b>中</b>：ターミナル側が主。HICityは屋内中心に組む。</td></tr>
+  <tr><td>9/26–27</td><td>コスホリック45（プリズムホール）</td><td class="c">R</td><td><b>中</b>：当該土日はドームシティ周辺の人出増。</td></tr>
+  <tr><td>9/27–28</td><td>大國魂神社 くり祭（地元イベント帳）</td><td class="c">E</td><td><b>低〜中</b>：参道の立位増。場内完結に切替可。</td></tr>
+  <tr><td>9/27</td><td>夜の軍港めぐり（開国花火の船上観覧）</td><td class="c">P</td><td><b>中</b>：定員80・要予約。歩行会の日中枠とは別。</td></tr>
+  <tr><td>9/29–12/20</td><td>東博「歌川広重 江戸のベストアングル」</td><td class="c">H</td><td><b>中</b>：前売あり。ルーブルと併せて立位管理。</td></tr>
+  <tr><td>10/3</td><td>老舗フェスティバル（福徳の森・コレド室町）／羽田スカイウォーク</td><td class="c">Y／J</td><td><b>中</b>：Yは室町の人出増。J近傍の長距離ウォークは別件。</td></tr>
+  <tr><td>10/3–4</td><td>a-nation 2026（お台場特設）</td><td class="c">B</td><td><b>極高</b>：湾岸交通が跳ねる。<b>当該土日はB回避</b>。</td></tr>
+  <tr><td>10/4〜</td><td>東京競馬場 秋開催再開（毎日王冠10/4等）</td><td class="c">E</td><td><b>中</b>：G1ではないが重賞週は混む。平常開催かPWを選ぶ。</td></tr>
+  <tr><td>10/4</td><td>動物フェスティバルよこすか（ヴェルニー公園）</td><td class="c">P</td><td><b>中</b>：公園の家族連れ増。海沿い遊歩道は維持可。</td></tr>
+  <tr><td>10/7–12/13</td><td>PLAY! MUSEUM「きくちちき展」</td><td class="c">L</td><td><b>低</b>：10月実施の主展示。</td></tr>
+  <tr><td>10/9–13</td><td>横浜おいも万博（赤レンガ）／しながわ運河花火10/9–11</td><td class="c">C／V</td><td><b>中</b>：Cは倉庫回避継続。Vは水上便の混雑に注意。</td></tr>
+  <tr><td>10/10–12</td><td>妖怪盆踊り（GREEN SPRINGS 2F）</td><td class="c">L</td><td><b>中</b>：広場混雑。美術館＋デッキ完結か日程を外す。</td></tr>
+  <tr><td>10/10–11/6</td><td>旧古河庭園 秋のバラフェスティバル（開園70周年）</td><td class="c">Z</td><td><b>低</b>：主要園路のみ。平日寄り／開場直後が安全。</td></tr>
+  <tr><td>10/14–12/6</td><td>東博「大徳寺 本朝無双之禅苑」</td><td class="c">H</td><td><b>中</b>：国宝級。日時指定。</td></tr>
+  <tr><td>10/15</td><td>コレド日本橋 一旦閉館（2027年秋改装）</td><td class="c">Y</td><td><b>—</b>：室町側で昼食・着席を完結させる。</td></tr>
+  <tr><td>10/18</td><td>いきもの超ワールド展終了（科博）／NIKKE・Dr.STONE終了</td><td class="c">H／R</td><td><b>—</b>：これ以降は常設＋広重／大徳寺／きくちちきへ。</td></tr>
+  <tr><td>10/24〜</td><td>西洋美術館「ターナー展」</td><td class="c">H</td><td><b>中</b>：ルーブルと重なる週は1館に絞る。</td></tr>
+  <tr><td>10/31–11/1</td><td>SpringWave × TOKYOMONSOON（HICity × Zepp Haneda）</td><td class="c">J</td><td><b>中</b>：音楽フェス。橋＋足湯中心なら回避可。</td></tr>
+  <tr><td>秋（日未定）</td><td>三の丸尚蔵館 全面開館＋記念特別展3本</td><td class="c">A</td><td><b>高</b>：開館直後は争奪戦。日時指定が取れてから採用。</td></tr>
+  <tr><td>11/1・11/29</td><td>天皇賞・秋／ジャパンカップ（東京競馬場）</td><td class="c">E</td><td><b>高</b>：本企画枠の外。万一延期時は回避。</td></tr>
+</table>
+<div class="note"><b>実施日の切り方（第5版）：</b>①Bの10/3–4、Cの9/18–10/4（赤レンガ滞在）、Uの大祭発表日、EのG1は回避。②Hはルーブル／広重の日時指定が取れた週だけ採用。③Aは全面開館の発表後に再評価。④Lの10/10–12は広場を使わない。⑤それ以外の土日はG／E（9月はPW、10月は平常開催）／J／L／K／X／Zが安定。</div>
+
+<h3>8-2. 例年ベースのシーズン要素</h3>
+<p class="small">※ 日程は例年の目安。8-1の確定分と矛盾する場合は8-1を優先。</p>
+<table>
+  <tr><th style="width:14%">時期</th><th style="width:30%">催事・シーズン要素</th><th class="c" style="width:12%">組合せ先</th><th>負荷判定と運用方針</th></tr>
+  <tr>
+    <td>9/26（2026）</td><td>羽田「空の日フェスティバル」（調布側はX上未確認）</td><td class="c">J／D／F</td>
+    <td><b>中</b>：格納庫・管制塔は事前申込。屋内展示中心の動線に組み替えれば低リスク。所沢は9/13とこらぶフェス。</td>
+  </tr>
+  <tr>
+    <td>9/27–28（2026）</td><td>府中の神社の秋季例祭・くり祭</td><td class="c">E</td>
+    <td><b>低〜中</b>：地元イベント帳に9/27–28と掲載。平坦・人出は分散。参道は立位が増えるため場内完結も可。</td>
+  </tr>
+  <tr>
+    <td>10月中旬</td><td>「鉄道の日」関連イベント</td><td class="c">G／N／M</td>
+    <td><b>中</b>：会場型イベントは長蛇の列。<u>イベント会場そのものではなく常設施設を選ぶ</u>ことで回避。</td>
+  </tr>
+  <tr>
+    <td>10月第3土日前後</td><td>川越の大祭</td><td class="c">U</td>
+    <td><b>高</b>：山車と観衆で歩行不能レベルの密度。当該日は<b>実施回避</b>。</td>
+  </tr>
+  <tr>
+    <td>11/1・11/29（2026）</td><td>秋のG1（天皇賞・秋、ジャパンカップ）</td><td class="c">E</td>
+    <td><b>高</b>：本企画枠の外。超混雑・立位長時間・帰路の入場規制。<b>G1当日は回避</b>。9月は非開催（PW）、10月は平常開催。</td>
+  </tr>
+  <tr>
+    <td>〜9/6（確定）</td><td>東京ドームシティ「SAKAMOTO DAYS」展</td><td class="c">R</td>
+    <td><b>低</b>：屋内。9月下旬実施には間に合わない。パウ・パトロール展は8/31まで。</td>
+  </tr>
+  <tr>
+    <td>〜10/18（確定）</td><td>東京ドームシティ TeNQ「Dr.STONE」＋NIKKEコラボ</td><td class="c">R</td>
+    <td><b>低</b>：屋内・着席多。本企画枠と重なる主力IP（NIKKEは9/10–10/18）。</td>
+  </tr>
+  <tr>
+    <td>10/10–11/6（2026）</td><td>旧古河庭園 秋のバラフェスティバル／横須賀バラ見頃</td><td class="c">Z／P</td>
+    <td><b>低</b>：平坦な園路で完結。Zは開園70周年企画あり。撮影の立ち止まりが休憩を兼ねる。</td>
+  </tr>
+  <tr>
+    <td>10月下旬〜11月上旬</td><td>都心の国際映画祭関連の街区イベント</td><td class="c">A／V周辺</td>
+    <td><b>低〜中</b>：屋外上映・特設ブースで歩道が狭まる時間帯がある。夕方以降は迂回。</td>
+  </tr>
+  <tr>
+    <td>11月上旬</td><td>大規模な航空祭（基地公開）</td><td class="c">単独企画</td>
+    <td><b>極高</b>：数kmの徒歩アプローチ＋数時間の立ち見＋帰路の大行列。<b>今季は見送り、将来の目標枠へ</b>。</td>
+  </tr>
+  <tr>
+    <td>11月中〜下旬</td><td>紅葉（博物館庭園／大名庭園／高尾山）</td><td class="c">H／I／V</td>
+    <td><b>中</b>：混雑と待機列の管理次第。日時指定券の事前確保が必須。高尾山は待機列そのものがリスク。</td>
+  </tr>
+  <tr>
+    <td>11月下旬</td><td>都心の並木黄葉</td><td class="c">S</td>
+    <td><b>中</b>：歩道が人で埋まり、立ち止まりと押し合いが発生。平日夕方前が狙い目。</td>
+  </tr>
+  <tr>
+    <td>11月中〜1月</td><td>丸の内・大手町のイルミネーション</td><td class="c">A の夜延長</td>
+    <td><b>低〜中</b>：完全平坦。ただし人混みでの不意の押され・急停止が膝に危険。壁側・車道側を歩かず、隊列で移動する。</td>
+  </tr>
+  <tr>
+    <td>11月下〜12月</td><td>みなとみらいの冬期ライトアップ演出</td><td class="c">C の夜延長</td>
+    <td><b>低〜中</b>：汽車道は平坦だが、夜間は段差・レール遺構の視認性が下がる。足元灯の携行を推奨。</td>
+  </tr>
+  <tr>
+    <td>12月</td><td>湾岸エリアの冬季ライトアップ</td><td class="c">K／B</td>
+    <td><b>中</b>：日没後の気温低下で関節がこわばる。屋内退避を30分ごとに設定。</td>
+  </tr>
+  <tr>
+    <td>通年（夜間）</td><td>東所沢のデジタルアート常設展示</td><td class="c">F</td>
+    <td><b>中</b>：園内は暗く足元の視認性が低い。<b>ライト携行必須</b>。</td>
+  </tr>
+  <tr>
+    <td>通年</td><td>大型客船の入港日</td><td class="c">C／P</td>
+    <td><b>低</b>：入港スケジュールは公開されている。合わせると満足度が跳ね上がる。</td>
+  </tr>
+</table>
+
+<!-- ===================== 9 ===================== -->
+<h2 id="sec-9">9. 保留・却下案の一覧とその判断理由</h2>
+<p>検討過程で挙がった案は、採否にかかわらず全件を記録する。将来の条件変化により再評価しうるためである。</p>
+<table>
+  <tr><th style="width:24%">案</th><th class="c" style="width:90px">判定</th><th>理由・再評価の条件</th></tr>
+  <tr>
+    <td>陣馬山（相模湖起点）</td><td class="c"><span class="grade gF">F</span> 見送り</td>
+    <td>標高差550mに及ぶ登山道。下山時の粘土質路面と連続する不規則な段差は、現状の条件では衝撃吸収が困難。→ 第10章のマイルストーン達成後に再評価。</td>
+  </tr>
+  <tr>
+    <td>大多摩ウォーキングトレイル</td><td class="c"><span class="grade gF">F</span> 見送り</td>
+    <td>河川沿いの岩場や不規則な石段が連続。加えて<b>クマの活動期における出没エリア</b>にあたるため今回は除外。→ 春先かつ体力条件クリア後に再評価。</td>
+  </tr>
+  <tr>
+    <td>大規模国営公園（西部エリア）</td><td class="c">対象外</td>
+    <td>既往企画との重複により今回の検討対象から除外。地形自体は平坦で条件は良いため、将来の候補としては有効。</td>
+  </tr>
+  <tr>
+    <td>都下の植物公園</td><td class="c">対象外</td>
+    <td>同上（既往企画との重複）。園内に緩斜面と土の園路が多い点も、今季の条件には不利。</td>
+  </tr>
+  <tr>
+    <td>深大寺・周辺散策</td><td class="c">保留</td>
+    <td>参道と境内に石段が集中し、周辺は起伏がある。上記植物公園と一体で扱う性格が強く、今季は見送り。</td>
+  </tr>
+  <tr>
+    <td>等々力渓谷</td><td class="c">保留</td>
+    <td>渓谷への降下・登坂が階段のみで代替手段がない。コースTから切り離して除外。</td>
+  </tr>
+  <tr>
+    <td>六義園などの回遊式庭園単独</td><td class="c">保留</td>
+    <td>園路に砂利・飛石・築山の起伏が多く、単独では歩行距離も不足。紅葉期は入園待機列が長い。他コースの一部として組み込む形なら可。</td>
+  </tr>
+  <tr>
+    <td>大規模航空祭（基地公開）当日</td><td class="c"><span class="grade gF">F</span> 見送り</td>
+    <td>徒歩アプローチ距離・立位時間・帰路の行列のいずれもが本企画の許容範囲を大きく超える。<b>将来の到達目標イベントとして登録</b>。</td>
+  </tr>
+  <tr>
+    <td>川越 大祭当日</td><td class="c">回避</td>
+    <td>群衆密度が危険水準。同エリアは通常日であれば採用可（コースU）。</td>
+  </tr>
+  <tr>
+    <td>秋のG1開催日の競馬場</td><td class="c">回避</td>
+    <td>コースE自体は最優秀だが、当該日のみ条件が反転する。非開催日を選択する。</td>
+  </tr>
+  <tr>
+    <td>高尾山 山頂往復（1号路全歩行）</td><td class="c"><span class="grade gD">D</span> 保留</td>
+    <td>ケーブルカー利用でも山上区間に石段と連続傾斜が残り、下降負荷が集中する。限定運用（山上駅周辺往復のみ）でのみ検討可。</td>
+  </tr>
+  <tr>
+    <td>台場公園（第三台場）</td><td class="c">オプション扱い</td>
+    <td>未舗装・土の起伏があるため、コースBの必須区間から外し、当日の状態が良好な場合のみ追加する扱いに変更。</td>
+  </tr>
+</table>
+
+<!-- ===================== 10 ===================== -->
+<h2 id="sec-10">10. 上位グレード（判定D〜F）への復帰マイルストーン</h2>
+<p>判定D・Fのルートは「二度と行けない」ものではない。以下の条件を段階的に満たすことで、安全に射程へ入る。本章は本企画の中期目標として位置づける。</p>
+
+<table>
+  <tr><th class="c" style="width:60px">STEP</th><th style="width:26%">達成条件</th><th>内容と判断基準</th></tr>
+  <tr>
+    <td class="c">1</td><td><b>体格条件の逓減</b><br>（最も確実な手段）</td>
+    <td>下降時の一歩あたりの衝撃は体重の4〜5倍で効いてくる。体格の逓減はそのまま数十kg単位での関節衝撃の削減に直結し、<u>物理的にリスクの原因を取り除く最強のアプローチ</u>となる。これまでの逓減実績を維持・継続すること自体が、そのままパスポートになる。</td>
+  </tr>
+  <tr>
+    <td class="c">2</td><td><b>平地での連続歩行耐性の確立</b></td>
+    <td>本資料の「多少の階段や起伏を含む5km程度の舗装路ルート」を歩き切り、<b>翌日に膝の腫れ・熱感・痛みの増悪が残らない</b>こと。これが第一関門。まずは判定A → 判定B → 判定Cの順に踏破実績を積む。</td>
+  </tr>
+  <tr>
+    <td class="c">3</td><td><b>下り段差での筋出力の回復</b></td>
+    <td>日常生活で短い階段を下りる際、<b>手すりに預ける体重の割合が明らかに減った</b>と実感できること。これが不整地解禁の明確なサイン。大腿四頭筋が遠心性収縮を担えている証拠となる。</td>
+  </tr>
+  <tr>
+    <td class="c">4</td><td><b>ダブルストック技術の習得</b></td>
+    <td>両手にポールを持つ技術で下半身への荷重を<b>最大2〜3割免荷</b>できる。平地での練習を通じ、上肢へ体重を分散させる歩行を「意識せずできる」レベルまで習熟しておく。</td>
+  </tr>
+  <tr>
+    <td class="c">5</td><td><b>段階的な不整地慣らし</b></td>
+    <td>いきなり山道に入らない。①舗装された緩い山麓路 → ②整備された自然歩道の短距離往復 → ③下降を機械（ケーブル・リフト）に任せた山上歩き、の順に段階を踏む。各段階で翌日の状態を必ず記録する。</td>
+  </tr>
+</table>
+<div class="info">
+<b>復帰後の第一目標ルート（案）</b><br>
+STEP2〜4をクリアした段階での最初の候補は、<b>下降を完全に機械化できる山（登り歩き＋下りケーブル／リフト）</b>とする。次いで河川沿いの整備された自然歩道の短距離区間、最後に標高差のある本格ルートという順序を推奨する。
+</div>
+
+<!-- ===================== 11 ===================== -->
+<h2 id="sec-11">11. 当日運用・リスク管理・持ち物</h2>
+
+<h3>11-1. 歩行技術の徹底事項</h3>
+<ul>
+  <li><b>階段が現れたら：</b>急がない。①手すりをしっかり握る、②膝を曲げて衝撃を受けるのではなく<b>股関節と足首のクッションで逃がす</b>、③必要なら<b>斜め横向きで一段ずつ揃え足</b>で下りる。</li>
+  <li><b>ペースメイク：</b>時速3km前後を維持。会話が途切れる速度は速すぎる。歩数計アプリで進捗を共有すると自然に統制が取れる。</li>
+  <li><b>停止のルール：</b>信号待ち・撮影のたびに全員が立ち止まるため、それを休憩としてカウントしない。<b>着席休憩は別途60〜75分ごとに必ず取る</b>。</li>
+  <li><b>撤退基準：</b>「鋭い痛み」または「力が抜ける感覚」が生じた場合は即座に近くの椅子で休憩。回復しない場合は<u>行程を打ち切り、最寄り駅から帰路につく</u>。これを全員の共通認識としておく（言い出しにくさを排除する）。</li>
+  <li><b>隊列：</b>人混みでは4人横並びを避け、2＋2の縦列とする。不意の押され・急停止が最大のリスク要因。</li>
+</ul>
+
+<h3>11-2. 持ち物リスト</h3>
+<table>
+  <tr><th style="width:22%">区分</th><th>内容</th></tr>
+  <tr><td>膝関連</td><td>膝サポーター（着脱しやすいタイプ）、トレッキングポール（1本でも可・折畳式）、消炎鎮痛の外用薬、冷却材</td></tr>
+  <tr><td>足元</td><td>クッション性の高いウォーキングシューズ（当日おろさない）、替えのインソール、絆創膏</td></tr>
+  <tr><td>水分・行動食</td><td>経口補水系飲料、塩分タブレット、小分けの行動食（低血糖対策）</td></tr>
+  <tr><td>環境対策</td><td>帽子・日焼け止め（9月は必須）、薄手の羽織り（10月夕方の冷え）、折り畳み傘、小型ライト（夜間延長時）</td></tr>
+  <tr><td>その他</td><td>モバイルバッテリー、健康保険証（または資格確認書）、常用薬、簡易腰掛け（軽量スツールがあると自由度が上がる）</td></tr>
+</table>
+
+<h3>11-3. 想定リスクと対策</h3>
+<table>
+  <tr><th style="width:22%">リスク</th><th>対策</th></tr>
+  <tr><td>残暑による熱中症</td><td>9月実施なら屋内比率50%以上のコース（L／H／N／R）を選択。日陰のない湾岸系は10月以降。</td></tr>
+  <tr><td>準備不足による後半の失速</td><td>行程を「前半で見どころを消化」する配置にし、後半は削れる設計にする。全コースで<u>14時以降を短縮可能区間</u>としてある。</td></tr>
+  <tr><td>待機列での長時間立位</td><td>企画展・人気施設は必ず日時指定券を事前購入。列に並ぶ場合は交代制とし、1名が席を確保する。</td></tr>
+  <tr><td>雨天</td><td>各コースにプランBを設定。前日18時時点の予報で判断し、判断結果を全員に通知する。</td></tr>
+  <tr><td>予期せぬ工事・閉鎖</td><td>実施2週間前と前日に、施設公式情報・交通情報を確認。迂回路を地図に事前登録しておく。</td></tr>
+</table>
+
+<!-- ===================== 12 ===================== -->
+<h2 id="sec-12">12. 実施前チェックリストと意思決定フロー</h2>
+
+<h3>12-1. タイムライン</h3>
+<table>
+  <tr><th class="c" style="width:120px">時期</th><th>アクション</th></tr>
+  <tr><td class="c">4週間前</td><td>コース第1候補・第2候補を確定。準備歩行（平地30分×週2回）を開始。</td></tr>
+  <tr><td class="c">3週間前</td><td>催事カレンダーと突き合わせ、混雑日（大祭・G1・大型イベント）を除外して実施日を最終決定。</td></tr>
+  <tr><td class="c">2週間前</td><td>施設の会期・休館日・工事情報を確認。日時指定券／レストランを予約。トイレ位置を地図にピン留め。</td></tr>
+  <tr><td class="c">1週間前</td><td>集合時刻・場所・解散予定・エスケープ駅を共有。持ち物リスト配布。</td></tr>
+  <tr><td class="c">前日18時</td><td>天候判断（決行／プランB／延期）を確定し通知。</td></tr>
+  <tr><td class="c">当日朝</td><td>体調確認。歩行距離の上限(6.0km／5.0km／4.0km／3.0km)をその場で宣言してから出発。</td></tr>
+  <tr><td class="c">翌日</td><td>膝の腫れ・熱感・痛みの有無を記録。次回のグレード設定に反映。</td></tr>
+</table>
+
+<h3>12-2. 判断フロー（簡易）</h3>
+<div class="route">
+【天候】降水確率50%以上 → 屋内比率の高い <b>L／N／H／R／F</b> に振替<br>
+【気温】最高気温30℃以上（9月想定） → 日陰の少ない <b>B／K／O／C</b> を回避、屋内系へ振替<br>
+【体調】直近2週間の歩行実績が不足 → 歩行上限4.0kmに設定し、<b>E（着席自由度最大）</b> または <b>G（屋内退避容易）</b> を選択<br>
+【混雑】催事カレンダーで「高」以上の判定 → 実施日を1週ずらす（コース変更より優先）
+</div>
+
+<!-- ===================== 13 ===================== -->
+<h2 id="sec-13">13. 付録：地図アプリ用 経路ノード一覧</h2>
+<h3>13-1. 本編A〜Z</h3>
+<table>
+  <tr><th class="c" style="width:60px">コース</th><th>ノード（この順に地図アプリへ入力すれば経路が再現できる）</th></tr>
+  <tr><td class="c"><b>A</b></td><td>大手門 → 三の丸尚蔵館 → 二の丸庭園 → 本丸大芝生 → 天守台（外周） → 北桔橋門 → 平川門 → 北の丸公園 → 竹橋駅</td></tr>
+  <tr><td class="c"><b>B</b></td><td>東京テレポート駅 → ダイバーシティ東京プラザ → フジテレビ本社（外観） → アクアシティお台場 → 自由の女神像 → お台場海浜公園 → シンボルプロムナード公園 → 有明北緑道公園 → 東京ビッグサイト → 国際展示場駅／有明駅</td></tr>
+  <tr><td class="c"><b>C</b></td><td>桜木町駅 → 汽車道 → 運河パーク → 赤レンガ倉庫 → 象の鼻パーク → 横浜市開港記念会館 → 大さん橋 → 山下公園 → 元町・中華街駅</td></tr>
+  <tr><td class="c"><b>D</b></td><td>三鷹駅（バス乗車） → 武蔵野の森公園 展望の丘 → 大沢2号掩体壕 → 調布飛行場ターミナル → 味の素スタジアム → 飛田給駅／多磨駅</td></tr>
+  <tr><td class="c"><b>E</b></td><td>府中本町駅 → 東京競馬場 日本庭園 → JRA競馬博物館 → パドック → スタンド → 大國魂神社 → けやき並木 → 郷土の森公園 → 多摩川河川敷 → 是政駅</td></tr>
+  <tr><td class="c"><b>F</b></td><td>東所沢駅 → ところざわサクラタウン → 武蔵野坐令和神社 → 屋外アートエリア → 東川遊歩道 → 所沢航空記念公園 → 所沢航空発祥記念館 → 航空公園駅</td></tr>
+  <tr><td class="c"><b>G</b></td><td>高輪ゲートウェイ駅 → 新街区デッキ → 高輪大木戸跡 → 泉岳寺 山門前 → 第一京浜沿い（高輪皇族邸を麓から望む） → 街区レストラン棟 → 屋内ギャラリー → 品川駅 港南口 → 品川駅</td></tr>
+  <tr><td class="c"><b>H</b></td><td>上野駅 公園口 → 東京国立博物館 → 表慶館・庭園 → 国立西洋美術館／国立科学博物館 → 東京文化会館 → 上野の森 → 谷中霊園（中央園路） → 天王寺 → 日暮里駅（西口・エスカレーター利用）</td></tr>
+  <tr><td class="c"><b>I</b></td><td>高尾山口駅 → ケーブルカー清滝駅 → 高尾山駅 → 展望台 → 女坂 → 薬王院手前で折返し → ケーブルカーで下山</td></tr>
+  <tr><td class="c"><b>J</b></td><td>天空橋駅 → HANEDA INNOVATION CITY → 多摩川沿いプロムナード → 多摩川スカイブリッジ → フードホール → 足湯庭園 → 旧穴守稲荷 大鳥居 → 空港ターミナル展望デッキ → 多摩川緑地（大師橋方面） → 京急大師橋駅</td></tr>
+  <tr><td class="c"><b>K</b></td><td>市場前駅 → 豊洲 千客万来 → 屋上足湯庭園 → 豊洲市場 見学デッキ → 豊洲ぐるり公園 → ぐるり公園（辰巳方面延伸・折返し） → デジタルアート施設 → 豊洲駅</td></tr>
+  <tr><td class="c"><b>L</b></td><td>立川駅 → 北口デッキ → GREEN SPRINGS → 屋上庭園 → 昼食 → 駅南側商業エリア → モノレール沿い北上（高松方面） → 高松駅</td></tr>
+  <tr><td class="c"><b>M</b></td><td>王子駅 → アスカルゴ → 飛鳥山公園（3館・保存車両） → 音無親水公園 → 石神井川遊歩道 → 北とぴあ展望ロビー → 石神井川（王子駅北側） → 王子銀座商店街 → 王子駅</td></tr>
+  <tr><td class="c"><b>N</b></td><td>大宮駅 → ニューシャトル（1駅） → 鉄道博物館 → 氷川参道 → 武蔵一宮氷川神社 → 大宮公園（氷川神社参道・小動物園） → 大宮公園野球場周辺 → 大宮公園駅</td></tr>
+  <tr><td class="c"><b>O</b></td><td>天王洲アイル駅 → ボードウォーク → ギャラリー群 → 壁画エリア → 運河沿いレストラン → 運河沿い遊歩道 → 品川浦 → 北品川駅</td></tr>
+  <tr><td class="c"><b>P</b></td><td>横須賀駅 → ヴェルニー公園 → 軍港めぐり遊覧船 → 昼食 → 商店街 → 三笠公園 → 記念艦 三笠 → 海岸通り → どぶ板通り → 横須賀中央駅</td></tr>
+  <tr><td class="c"><b>Q</b></td><td>神谷町駅 → 麻布台ヒルズ 中央広場 → デジタルアートミュージアム → 昼食 → 東京タワー方面 → 芝公園 → 芝生広場 → 芝公園駅／御成門駅</td></tr>
+  <tr><td class="c"><b>R</b></td><td>飯田橋駅 → 小石川後楽園 → 東京ドームシティ → 昼食 → 屋内展示施設 → 神田川沿い → 御茶ノ水橋 → 御茶ノ水駅</td></tr>
+  <tr><td class="c"><b>S</b></td><td>信濃町駅 → 神宮外苑いちょう並木 → 聖徳記念絵画館 → 国立競技場 外周 → 千駄ヶ谷 → 権田原 → 迎賓館前 → 青山一丁目駅</td></tr>
+  <tr><td class="c"><b>T</b></td><td>二子玉川駅 → 商業街区 屋上庭園 → 兵庫島公園 → 多摩川左岸遊歩道（往復） → 駅直結施設 → 多摩川左岸遊歩道を上流（二子橋方面）へ延伸 → 二子橋・多摩堤通り沿い → 二子玉川駅</td></tr>
+  <tr><td class="c"><b>U</b></td><td>本川越駅 → 大正浪漫夢通り → 蔵造りの町並み → 時の鐘 → 菓子屋横丁 → 昼食 → 喜多院 → 新河岸川遊歩道 → 川越氷川神社 → 本川越駅</td></tr>
+  <tr><td class="c"><b>V</b></td><td>汐留シオサイト → 大手門口 → 浜離宮恩賜庭園（潮入の池・お茶屋） → 水上バス乗船 → 日の出／竹芝桟橋 → 竹芝遊歩道 → 旧芝離宮恩賜庭園 → 浜松町駅</td></tr>
+  <tr><td class="c"><b>W</b></td><td>葛西臨海公園駅 → 大観覧車 → 汐風の広場 → 西なぎさ → 昼食 → 水族施設 → クリスタルビュー → 鳥類園・汽水池遊歩道 → 葛西臨海公園駅</td></tr>
+  <tr><td class="c"><b>X</b></td><td>六本木駅 → 東京ミッドタウン ガレリア → 21_21 DESIGN SIGHT → サントリー美術館 → 昼食 → ミッドタウン・ガーデン → 檜町公園 → 乃木神社（参道） → 六本木駅／乃木坂駅</td></tr>
+  <tr><td class="c"><b>Y</b></td><td>日本橋駅 → 日本橋 → コレド室町 → 三井記念美術館 → 昼食 → 日本橋川テラス → 鎧橋 → 茅場町 → 水天宮前 → 人形町・甘酒横丁 → 水天宮前駅／人形町駅</td></tr>
+  <tr><td class="c"><b>Z</b></td><td>駒込駅／西ヶ原駅 → 旧古河庭園 正門 → 洋館 → バラ園（主要園路のみ） → 昼食（駒込駅前） → 巣鴨地蔵通り商店街 → 駒込駅</td></tr>
+</table>
+
+<h3>13-2. 4シリーズ No.27〜45（V3新設）</h3>
+<table>
+  <tr><th class="c" style="width:60px">No.</th><th>ノード（この順に地図アプリへ入力すれば経路が再現できる）</th></tr>
+  <tr><td class="c"><b>27</b></td><td>新小金井駅 → はけの小路・美術館 → 滄浪泉園 → 貫井神社 → 野川沿い（武蔵野公園） → 武蔵小金井駅</td></tr>
+  <tr><td class="c"><b>28</b></td><td>信濃町駅 → 若葉東公園 → 闇坂 → たいやき わかば → 須賀神社（男坂・女坂） → 新宿歴史博物館 → 四谷駅</td></tr>
+  <tr><td class="c"><b>29</b></td><td>等々力駅 → ゴルフ橋 → 等々力不動尊・日本庭園 → 雪月花 → 用賀駅</td></tr>
+  <tr><td class="c"><b>30</b></td><td>高幡不動駅 → 高幡不動尊 → 日野市立中央図書館 → 黒川清流公園 → 浅川親水公園 → 豊田駅</td></tr>
+  <tr><td class="c"><b>31</b></td><td>赤坂見附駅 → 弁慶橋 → 紀尾井ホール → 清水谷公園 → 喰違見附跡 → 四谷駅</td></tr>
+  <tr><td class="c"><b>32</b></td><td>飯田橋駅 → 兵庫横丁 → 善國寺／赤城神社 → 宮城道雄記念館 → 外堀公園 → 曙橋駅</td></tr>
+  <tr><td class="c"><b>33</b></td><td>動輪の広場 → 丸ビル → 新丸ビル → 大手町 → ミッドタウン八重洲 → R.T.O.レリーフ → 国際フォーラム → 日比谷仲通り → 日比谷国際ビル → KITTE → 動輪の広場</td></tr>
+  <tr><td class="c"><b>34</b></td><td>都庁 → 野村ビル → 新宿の目 → 地下東西自由通路 → メトロプロムナード → サブナード → 京王モール → 新宿三丁目 → 都庁</td></tr>
+  <tr><td class="c"><b>35</b></td><td>Echika池袋 → いけふくろう → ISP → ダイヤゲート池袋 → サンシャインシティ → 豊島区役所 → 大塚駅前（地上短区間） → ISP</td></tr>
+  <tr><td class="c"><b>36</b></td><td>多摩川駅 → 浅間神社 → 丸子橋 → 多摩川大橋 → 蒲田駅 → 京急蒲田駅</td></tr>
+  <tr><td class="c"><b>37</b></td><td>二子玉川駅 → 二子橋 → 多摩川緑地 → 多摩水道橋 → 登戸駅 → 向ヶ丘遊園駅</td></tr>
+  <tr><td class="c"><b>38</b></td><td>聖蹟桜ヶ丘駅 → 関戸橋 → 合流点 → 万願寺歩道橋 → 高幡不動尊参道 → 高幡不動駅</td></tr>
+  <tr><td class="c"><b>39</b></td><td>北千住駅 → 千住新橋 → 荒川大土手 → 堀切橋 → 堀切菖蒲園駅 → お花茶屋駅</td></tr>
+  <tr><td class="c"><b>40</b></td><td>赤羽岩淵駅 → 赤水門 → 新岩淵水門 → 荒川赤羽緑地 → 荒川岩淵水再生センター前 → 川口駅</td></tr>
+  <tr><td class="c"><b>41</b></td><td>金町駅 → 新葛飾橋 → 取水塔 → 矢切の渡し → 柴又公園土手 → 柴又駅 → 柴又帝釈天参道 → 京成高砂駅</td></tr>
+  <tr><td class="c"><b>42</b></td><td>石川町駅 → 中華街 → 大さん橋 → 女神橋 → 臨港パーク → みなとみらい駅 → 新高島駅</td></tr>
+  <tr><td class="c"><b>43</b></td><td>東京テレポート駅 → 夢の大橋 → 豊洲ぐるり公園 → 千客万来 → 豊洲駅</td></tr>
+  <tr><td class="c"><b>44</b></td><td>小島新田駅 → 多摩川スカイブリッジ → 羽田エアポートガーデン → 展望デッキ → 第3ターミナル</td></tr>
+  <tr><td class="c"><b>45</b></td><td>木更津駅 → 鳥居崎海浜公園 → 中の島大橋 → 中の島公園 → 木更津港旧灯台 → 木更津駅</td></tr>
+</table>
+
+<!-- ===================== 14 ===================== -->
+<h2 id="sec-14">14. 統合インタラクティブマップ（全45コース）</h2>
+<p class="small">本編（No.1〜26）と4シリーズ（No.27〜45）の計45コースを、1枚のマップ上で「シリーズ → コース」の2段切り替えで表示する。各コースのルート線は起点（青）→ 経由点 → ゴール（赤）の順に結び、「どの駅からどの方向へ歩くか」を視覚化している。</p>
+<p class="small">※ 本編A〜Zはマスタ資料に掲載の「経路ノード」を基に<b>代表ノードの概略座標</b>でルート線を引いた机上推定であり、実際の歩行経路（歩道・園路の正確な線形）とは一致しない。実施時は地図アプリで経路ノードを再現すること（第13章参照）。4シリーズは各企画仕様書の座標データをそのまま流用。</p>
+<p class="small">※ <b>V3更新：</b>全45コースの大半でルート線・経路ノードを延伸し、実歩行距離を6km前後へ引き上げた(例外コースは据置)。各コースの変更内容は当該カードの「V3更新」注記、経路ノードの更新結果は第13章(13-1/13-2)を参照。</p>
+
+<nav id="map-nav" class="map-nav"></nav>
+<div class="map-wrap">
+  <div class="map-series-controls" id="series-controls"></div>
+  <div class="map-course-controls" id="course-controls"></div>
+  <div id="map"></div>
+  <div class="map-legend">
+    <span><span class="dot" style="background:#2563eb;"></span>起点（Start）</span>
+    <span><span class="dot" style="background:#e11d48;"></span>ゴール（Goal）</span>
+    <span><span class="dot" style="background:#94a3b8;"></span>経由点／ルート線</span>
+  </div>
+  <div class="map-note">※ 地図タイルは OpenStreetMap（Leaflet・インターネット接続必須）。切替ボタンでシリーズ／コースを選択してください。ルート線はOSRM（徒歩プロファイル）による実歩行経路で表示（取得できない場合は点線の概略線）。</div>
+  <div id="map-detail" class="map-detail"></div>
+</div>
+
+<h3>14-1. 全45コース 番号対照表（A〜Z → No.）</h3>
+<table>
+  <tr><th class="c">No.</th><th>コース名</th><th class="c">旧記号</th><th>シリーズ</th></tr>
+  <tr><td class="c">1</td><td>皇居東御苑と三の丸尚蔵館</td><td class="c">A</td><td>本編</td></tr>
+  <tr><td class="c">2</td><td>お台場・有明</td><td class="c">B</td><td>本編</td></tr>
+  <tr><td class="c">3</td><td>横浜・汽車道〜開港記念会館</td><td class="c">C</td><td>本編</td></tr>
+  <tr><td class="c">4</td><td>調布飛行場・武蔵野の森公園</td><td class="c">D</td><td>本編</td></tr>
+  <tr><td class="c">5</td><td>東京競馬場・府中</td><td class="c">E</td><td>本編</td></tr>
+  <tr><td class="c">6</td><td>ところざわサクラタウン</td><td class="c">F</td><td>本編</td></tr>
+  <tr><td class="c">7</td><td>高輪ゲートウェイ〜品川</td><td class="c">G</td><td>本編</td></tr>
+  <tr><td class="c">8</td><td>上野ミュージアム</td><td class="c">H</td><td>本編</td></tr>
+  <tr><td class="c">9</td><td>高尾山（ケーブルカー）</td><td class="c">I</td><td>本編</td></tr>
+  <tr><td class="c">10</td><td>羽田イノベーションシティ〜スカイブリッジ</td><td class="c">J</td><td>本編</td></tr>
+  <tr><td class="c">11</td><td>豊洲 千客万来〜ぐるり公園</td><td class="c">K</td><td>本編</td></tr>
+  <tr><td class="c">12</td><td>立川 GREEN SPRINGS</td><td class="c">L</td><td>本編</td></tr>
+  <tr><td class="c">13</td><td>飛鳥山〜音無親水公園</td><td class="c">M</td><td>本編</td></tr>
+  <tr><td class="c">14</td><td>大宮 鉄道博物館〜大宮公園</td><td class="c">N</td><td>本編</td></tr>
+  <tr><td class="c">15</td><td>天王洲アイル 水辺アート</td><td class="c">O</td><td>本編</td></tr>
+  <tr><td class="c">16</td><td>横須賀 ヴェルニー〜三笠公園</td><td class="c">P</td><td>本編</td></tr>
+  <tr><td class="c">17</td><td>麻布台ヒルズ〜東京タワー</td><td class="c">Q</td><td>本編</td></tr>
+  <tr><td class="c">18</td><td>小石川後楽園〜東京ドームシティ</td><td class="c">R</td><td>本編</td></tr>
+  <tr><td class="c">19</td><td>神宮外苑〜国立競技場外周</td><td class="c">S</td><td>本編</td></tr>
+  <tr><td class="c">20</td><td>二子玉川 多摩川水辺</td><td class="c">T</td><td>本編</td></tr>
+  <tr><td class="c">21</td><td>川越 蔵造りの町並み</td><td class="c">U</td><td>本編</td></tr>
+  <tr><td class="c">22</td><td>浜離宮〜竹芝・水上バス</td><td class="c">V</td><td>本編</td></tr>
+  <tr><td class="c">23</td><td>葛西臨海公園</td><td class="c">W</td><td>本編</td></tr>
+  <tr><td class="c">24</td><td>東京ミッドタウン〜檜町公園</td><td class="c">X</td><td>本編</td></tr>
+  <tr><td class="c">25</td><td>日本橋〜コレド〜水天宮前</td><td class="c">Y</td><td>本編</td></tr>
+  <tr><td class="c">26</td><td>旧古河庭園〜駒込</td><td class="c">Z</td><td>本編</td></tr>
+  <tr><td class="c">27</td><td>国分寺崖線「はけ」</td><td class="c">—</td><td>坂道・崖線</td></tr>
+  <tr><td class="c">28</td><td>四谷・若葉 スリバチ迷宮</td><td class="c">—</td><td>坂道・崖線</td></tr>
+  <tr><td class="c">29</td><td>等々力渓谷と崖の階段</td><td class="c">—</td><td>坂道・崖線</td></tr>
+  <tr><td class="c">30</td><td>日野・多摩川崖線</td><td class="c">—</td><td>坂道・崖線</td></tr>
+  <tr><td class="c">31</td><td>山手線内側・最強の谷底</td><td class="c">—</td><td>坂道・崖線</td></tr>
+  <tr><td class="c">32</td><td>神楽坂〜市ヶ谷 崖の縁</td><td class="c">—</td><td>坂道・崖線</td></tr>
+  <tr><td class="c">33</td><td>東京駅 地下周回</td><td class="c">—</td><td>地下ダンジョン</td></tr>
+  <tr><td class="c">34</td><td>新宿駅 地下周回</td><td class="c">—</td><td>地下ダンジョン</td></tr>
+  <tr><td class="c">35</td><td>池袋駅 地下周回</td><td class="c">—</td><td>地下ダンジョン</td></tr>
+  <tr><td class="c">36</td><td>多摩川 丸子橋・浅間神社</td><td class="c">—</td><td>河川敷</td></tr>
+  <tr><td class="c">37</td><td>多摩川 多摩水道橋・登戸</td><td class="c">—</td><td>河川敷</td></tr>
+  <tr><td class="c">38</td><td>多摩川/浅川 万願寺ふれあい橋</td><td class="c">—</td><td>河川敷</td></tr>
+  <tr><td class="c">39</td><td>荒川 千住大土手・スカイツリー</td><td class="c">—</td><td>河川敷</td></tr>
+  <tr><td class="c">40</td><td>荒川 赤水門・岩淵</td><td class="c">—</td><td>河川敷</td></tr>
+  <tr><td class="c">41</td><td>江戸川 矢切の渡し・柴又</td><td class="c">—</td><td>河川敷</td></tr>
+  <tr><td class="c">42</td><td>横浜 女神橋・大さん橋</td><td class="c">—</td><td>ベイエリア橋</td></tr>
+  <tr><td class="c">43</td><td>東京 夢の大橋・豊洲</td><td class="c">—</td><td>ベイエリア橋</td></tr>
+  <tr><td class="c">44</td><td>川崎・羽田 多摩川スカイブリッジ</td><td class="c">—</td><td>ベイエリア橋</td></tr>
+  <tr><td class="c">45</td><td>木更津 中の島大橋</td><td class="c">—</td><td>ベイエリア橋</td></tr>
+</table>
+
+<!-- ===================== 15 ===================== -->
+<h2 id="sec-15">15. シリーズ①：東京都「坂道・高低差・崖線」ハイキング（No.27〜32）</h2>
+<p class="small">統合元：tokyo_sakamichi_hiking_plan.html（駅Start→駅Goal・各約3〜5km）。コンセプトは「坂道・湧水・階段・スリバチ地形探訪」。<b>本会の採否とは別の一般企画枠</b>であり、膝配慮型の本編評価（下り回避優先）とは設計思想が異なる点に留意（坂道・崖線ゆえに登り・階段を積極的に含む）。</p>
+
+<div class="card">
+  <h3 id="course-27">No.27｜国分寺崖線「はけ」の湧水と急坂コース</h3>
+  <div class="kv"><span>区間：<b>新小金井駅 ➔ 武蔵小金井駅（南➔北）</b></span><span>高低差：<b>約15〜20m</b></span></div>
+  <p><b>見どころ：</b>滄浪泉園（崖線を生かした湧水庭園）、貫井神社（湧水地の水神）、はけの小路／はけの森美術館（せせらぎ散策路）。貫井神社の先に、野川沿いの平坦な遊歩道（武蔵野公園）を追加で組み込んだ。</p>
+  <div class="route"><b>経路ノード：</b>新小金井駅 → はけの小路・美術館 → 滄浪泉園 → 貫井神社 → 野川沿い（武蔵野公園） → 武蔵小金井駅</div>
+  <div class="v3note"><b>V3更新（2026-08-26）：</b>距離目標は坂道・崖線シリーズの設計思想（高低差ありき）を尊重し現状維持。貫井神社の先に野川沿いの平坦な遊歩道（武蔵野公園）を見どころとして追加。</div>
+</div>
+
+<div class="card">
+  <h3 id="course-28">No.28｜四谷・若葉「スリバチ迷宮」攻略コース</h3>
+  <div class="kv"><span>区間：<b>信濃町駅 ➔ 若葉 ➔ 四谷駅（南➔北）</b></span><span>距離：<b>約3.5km</b></span></div>
+  <p><b>見どころ：</b>闇坂（谷底へ続く情緒ある細い急坂）、たいやき わかば（一丁焼きの名店）、若葉東公園／新宿歴史博物館。須賀神社（男坂・女坂）を新たに見どころへ追加。</p>
+  <div class="route"><b>経路ノード：</b>信濃町駅 → 若葉東公園 → 闇坂 → たいやき わかば → 須賀神社（男坂・女坂） → 新宿歴史博物館 → 四谷駅</div>
+  <div class="v3note"><b>V3更新（2026-08-26）：</b>距離未記載だったため目安距離「約3.5km」を新規に明記。須賀神社（男坂・女坂）を見どころに追加。距離目標は坂道・崖線シリーズの設計思想を尊重し大幅延伸はしない。</div>
+</div>
+
+<div class="card">
+  <h3 id="course-29">No.29｜世田谷・等々力渓谷と崖の階段コース</h3>
+  <div class="kv"><span>区間：<b>等々力駅 ➔ 等々力渓谷 ➔ 用賀駅（南➔北）</b></span></div>
+  <p><b>見どころ：</b>ゴルフ橋（渓谷入口の赤いアーチ橋）、等々力不動尊・日本庭園（階段上の境内から見下ろす絶景）、甘味茶屋「雪月花」。</p>
+  <div class="route"><b>経路ノード：</b>等々力駅 → ゴルフ橋 → 等々力不動尊・日本庭園 → 雪月花 → 用賀駅</div>
+  <div class="caution"><b>本編との関係：</b>本編第9章で「等々力渓谷」は<b>保留</b>（渓谷への降下・登坂が階段のみで代替手段がない）。本シリーズは一般向け企画のため掲載するが、4名歩行会としては本編の保留判断を優先する。</div>
+  <div class="v3note"><b>V3更新（2026-08-26）：</b>本編の保留判断（渓谷への降下・登坂が階段のみ）を継続するため、距離・経路は変更しない。</div>
+</div>
+
+<div class="card">
+  <h3 id="course-30">No.30｜日野・多摩川崖線「台地へのアプローチ」コース</h3>
+  <div class="kv"><span>区間：<b>高幡不動駅 ➔ 浅川沿い ➔ 豊田駅（東➔西）</b></span><span>距離：<b>約4.5km</b></span></div>
+  <p><b>見どころ：</b>高幡不動尊（崖斜面の山内八十八ヶ所巡り）、黒川清流公園・湧水池ビオトープ、日野市立中央図書館（地形建築）。浅川親水公園（平坦な水辺）を新たに見どころへ追加。</p>
+  <div class="route"><b>経路ノード：</b>高幡不動駅 → 高幡不動尊 → 日野市立中央図書館 → 黒川清流公園 → 浅川親水公園 → 豊田駅</div>
+  <div class="v3note"><b>V3更新（2026-08-26）：</b>距離未記載だったため目安距離「約4.5km」を新規に明記。黒川清流公園の先に浅川親水公園（平坦な水辺）を見どころに追加。</div>
+</div>
+
+<div class="card">
+  <h3 id="course-31">No.31｜山手線内側・最強の谷底歩きコース</h3>
+  <div class="kv"><span>区間：<b>赤坂見附駅 ➔ 紀尾井町 ➔ 四谷駅（南➔北）</b></span><span>距離：<b>約3.0km</b></span></div>
+  <p><b>見どころ：</b>赤坂見附跡／喰違見附跡（石垣・土塁の江戸城外郭史跡）、弁慶橋（外堀と高層ビルの対比）、紀尾井ホール周辺。清水谷公園を新たに見どころへ追加。</p>
+  <div class="route"><b>経路ノード：</b>赤坂見附駅 → 弁慶橋 → 紀尾井ホール → 清水谷公園 → 喰違見附跡 → 四谷駅</div>
+  <div class="v3note"><b>V3更新（2026-08-26）：</b>距離未記載だったため目安距離「約3.0km」を新規に明記。紀尾井ホールの先に清水谷公園を見どころに追加。</div>
+</div>
+
+<div class="card">
+  <h3 id="course-32">No.32｜神楽坂〜市ヶ谷「崖の縁」上りコース</h3>
+  <div class="kv"><span>区間：<b>飯田橋駅 ➔ 神楽坂 ➔ 砂土原町 ➔ 曙橋駅（東➔西）</b></span><span>距離：<b>約3.8km</b></span></div>
+  <p><b>見どころ：</b>兵庫横丁・かくれんぼ横丁（黒塀と石畳の路地）、毘沙門天 善國寺／赤城神社、宮城道雄記念館。外堀公園を新たに見どころへ追加。</p>
+  <div class="route"><b>経路ノード：</b>飯田橋駅 → 兵庫横丁 → 善國寺／赤城神社 → 宮城道雄記念館 → 外堀公園 → 曙橋駅</div>
+  <div class="v3note"><b>V3更新（2026-08-26）：</b>距離未記載だったため目安距離「約3.8km」を新規に明記。宮城道雄記念館の先に外堀公園を見どころに追加。</div>
+</div>
+
+<!-- ===================== 16 ===================== -->
+<h2 id="sec-16">16. シリーズ②：首都圏三大地下ダンジョン周回ハイキング（No.33〜35）</h2>
+<p class="small">統合元：tokyo_shinjuku_ikebukuro_underground_hiking_plan.html（東京・新宿・池袋の全天候型地下ネットワーク＋無料展望台巡り）。雨天・残暑に強い屋内系企画。</p>
+
+<div class="card">
+  <h3 id="course-33">No.33｜東京駅プラン（約4.8km・1周 65〜75分）</h3>
+  <p><b>旅程：</b>①丸の内ゾーン（行幸地下ギャラリー、丸ビル・新丸ビル地下）→ ②大手町ゾーン（TOKYO TORCH常盤橋タワー直結）→ ③八重洲ゾーン（ヤエチカ、東京駅一番街、ミッドタウン八重洲）→ ④京葉線・有楽町ゾーン（R.T.O.レリーフ、東京国際フォーラムB1）→ ⑤国際フォーラムB1から日比谷仲通り・日比谷国際ビル地下方面へループを延伸 → ⑥南丸の内ゾーン（動輪の広場）へ周回。</p>
+  <p><b>無料展望：</b>KITTEガーデン（6F）、丸ビル5Fテラス、新丸ビル7Fテラス、ミッドタウン八重洲5Fテラス。</p>
+  <div class="route"><b>経路ノード：</b>動輪の広場 → 丸ビル → 新丸ビル → 大手町 → ミッドタウン八重洲 → R.T.O.レリーフ → 国際フォーラム → 日比谷仲通り → 日比谷国際ビル → KITTE → 動輪の広場</div>
+  <div class="v3note"><b>V3更新（2026-08-26）：</b>距離を約3.5km→約4.8kmに拡張。国際フォーラムB1から日比谷仲通り・日比谷国際ビル地下方面へループを延伸。出口番号が似た地下街が連続するため、経由する出口番号をあらかじめメモしておくと迷いにくい。</div>
+</div>
+
+<div class="card">
+  <h3 id="course-34">No.34｜新宿駅プラン（約5.8km・1周 2時間）</h3>
+  <p><b>旅程：</b>①都庁・西新宿（パブリックアート）→ ②西口・中央（新宿の目、地下東西自由通路）→ ③東口・メトロプロムナード → ④歌舞伎町・サブナード → ⑤京王モールを全長歩いて新宿三丁目方面へ延伸 → ⑥西新宿歩行者専用道で都庁へ周回。</p>
+  <p><b>無料展望：</b>東京都庁45F展望室（南/北）、新宿野村ビル50F、新宿NSビル29F吹抜。</p>
+  <div class="route"><b>経路ノード：</b>都庁 → 野村ビル → 新宿の目 → 地下東西自由通路 → メトロプロムナード → サブナード → 京王モール → 新宿三丁目 → 都庁</div>
+  <div class="v3note"><b>V3更新（2026-08-26）：</b>距離を約4.5km→約5.8kmに拡張。京王モール全長を歩いて新宿三丁目方面までループを延伸。通路名（京王モール・メトロプロムナード等）で案内される区間が多く、出口番号よりも通路名を目印にした方が迷いにくい。</div>
+</div>
+
+<div class="card">
+  <h3 id="course-35">No.35｜池袋駅プラン（約4.8km・1周 1.5〜1.8時間）</h3>
+  <p><b>旅程：</b>①西口・Echika＆デパ地下 → ②東西貫通ジグザグ走破（北通路→ISP→南通路→西武食品館）→ ③南口・ダイヤゲートトレインビュー → ④サンシャインアプローチ＆豊島区役所 → ⑤豊島区役所前から大塚駅前まで地上短区間を延伸 → ⑥東口戻り。</p>
+  <p><b>無料展望：</b>豊島区役所10F「豊島の森」、ダイヤゲート池袋2F「ダイヤデッキ」、西武9F／東武8F屋上庭園。</p>
+  <div class="route"><b>経路ノード：</b>Echika池袋 → いけふくろう → ISP → ダイヤゲート池袋 → サンシャインシティ → 豊島区役所 → 大塚駅前（地上短区間） → ISP</div>
+  <div class="v3note"><b>V3更新（2026-08-26）：</b>距離を約3.2km→約4.8kmに拡張。豊島区役所前から大塚駅前まで地上短区間を延伸。地下と地上の出入口が複数あるため、サンシャインシティ方面の案内表示を目印にすると迷いにくい。</div>
+</div>
+
+<!-- ===================== 17 ===================== -->
+<h2 id="sec-17">17. シリーズ③：首都圏河川敷 5km区間ハイキング（No.36〜41）</h2>
+<p class="small">統合元：kasenshiki_hiking_plan.html（多摩川・荒川・江戸川、駅Start→駅Goal、約5km前後）。開放感と名橋・歩道橋巡りがテーマ。</p>
+
+<div class="card">
+  <h3 id="course-36">No.36｜多摩川 丸子橋・富士見台（約6.2km）</h3>
+  <p><b>区間：</b>多摩川駅 → 多摩川浅間神社 → 丸子橋 → 多摩川大橋 → 蒲田駅 → 京急蒲田駅</p>
+  <p><b>見どころ：</b>浅間神社展望台から富士山・丸子橋・東急線鉄橋を一望。信号ゼロの河川敷。蒲田駅から京急蒲田駅までの商店街区間を追加。</p>
+  <div class="route"><b>経路ノード：</b>多摩川駅 → 浅間神社 → 丸子橋 → 多摩川大橋 → 蒲田駅 → 京急蒲田駅</div>
+  <div class="v3note"><b>V3更新（2026-08-26）：</b>距離を約5.2km→約6.2kmに拡張。蒲田駅から京急蒲田駅まで延伸。蒲田駅（JR）と京急蒲田駅は約500m離れており別駅扱いのため、解散駅をあらかじめ明確にしておくと迷いにくい。</div>
+</div>
+
+<div class="card">
+  <h3 id="course-37">No.37｜多摩川 多摩水道橋・登戸（約6.5km）</h3>
+  <p><b>区間：</b>二子玉川駅 → 二子橋 → 多摩川緑地 → 多摩水道橋 → 登戸駅 → 向ヶ丘遊園駅</p>
+  <p><b>見どころ：</b>多摩水道橋（水色アーチ）から小田急線鉄橋と夕景富士を臨む。登戸駅から向ヶ丘遊園駅までの多摩川沿い緑道を追加。</p>
+  <div class="route"><b>経路ノード：</b>二子玉川駅 → 二子橋 → 多摩川緑地 → 多摩水道橋 → 登戸駅 → 向ヶ丘遊園駅</div>
+  <div class="v3note"><b>V3更新（2026-08-26）：</b>距離を約5.5km→約6.5kmに拡張。登戸駅から向ヶ丘遊園駅まで延伸。登戸駅周辺は踏切・地下道が入り組んでいるため、案内標識に沿って進むこと。</div>
+</div>
+
+<div class="card">
+  <h3 id="course-38">No.38｜多摩川/浅川 万願寺ふれあい橋（約6.0km）</h3>
+  <p><b>区間：</b>聖蹟桜ヶ丘駅 → 関戸橋 → 多摩川・浅川合流点 → 万願寺歩道橋 → 高幡不動尊 参道（平坦部） → 高幡不動駅</p>
+  <p><b>見どころ：</b>関戸橋からの山並み、歩行者専用斜張橋「万願寺歩道橋（ふれあい橋）」からの清流・野鳥・高尾の山並み。高幡不動尊の参道入口までを平坦区間として追加。</p>
+  <div class="route"><b>経路ノード：</b>聖蹟桜ヶ丘駅 → 関戸橋 → 合流点 → 万願寺歩道橋 → 高幡不動尊参道 → 高幡不動駅</div>
+  <div class="v3note"><b>V3更新（2026-08-26）：</b>距離を約5.0km→約6.0kmに拡張。高幡不動尊の参道入口（平坦部）までを追加。ただし境内奥は石段があるため、参道の平坦エリアまでに留めること。</div>
+</div>
+
+<div class="card">
+  <h3 id="course-39">No.39｜荒川 千住大土手・スカイツリー（約6.0km）</h3>
+  <p><b>区間：</b>北千住駅 → 千住新橋 → 荒川大土手 → 堀切橋 → 堀切菖蒲園駅 → お花茶屋駅</p>
+  <p><b>見どころ：</b>金八先生ロケ地の広大な大土手、正面に迫るスカイツリー。堀切菖蒲園駅からお花茶屋駅までの街区を追加。</p>
+  <div class="route"><b>経路ノード：</b>北千住駅 → 千住新橋 → 荒川大土手 → 堀切橋 → 堀切菖蒲園駅 → お花茶屋駅</div>
+  <div class="v3note"><b>V3更新（2026-08-26）：</b>距離を約5.0km→約6.0kmに拡張。堀切菖蒲園駅からお花茶屋駅まで延伸。堀切橋周辺は土手上と土手下の道が分岐するため、標識で現在地を確認すること。</div>
+</div>
+
+<div class="card">
+  <h3 id="course-40">No.40｜荒川 赤水門・岩淵（約6.2km）</h3>
+  <p><b>区間：</b>赤羽岩淵駅 → 旧岩淵水門（赤水門） → 新岩淵水門 → 荒川赤羽緑地 → 荒川岩淵水再生センター前 → 川口駅</p>
+  <p><b>見どころ：</b>大正期の近代化産業遺産「赤水門」、隅田川分岐点の水辺景観。荒川岩淵水再生センター前の堤防区間を追加。</p>
+  <div class="route"><b>経路ノード：</b>赤羽岩淵駅 → 赤水門 → 新岩淵水門 → 荒川赤羽緑地 → 荒川岩淵水再生センター前 → 川口駅</div>
+  <div class="v3note"><b>V3更新（2026-08-26）：</b>距離を約5.2km→約6.2kmに拡張。荒川岩淵水再生センター前まで延伸。新荒川大橋を渡る区間は歩道が狭いため、一列で進むこと。</div>
+</div>
+
+<div class="card">
+  <h3 id="course-41">No.41｜江戸川 矢切の渡し・柴又（約6.0km）</h3>
+  <p><b>区間：</b>金町駅 → 新葛飾橋 → 矢切の渡し → 柴又公園土手 → 柴又駅 → 柴又帝釈天参道 → 京成高砂駅</p>
+  <p><b>見どころ：</b>新葛飾橋から見下ろす江戸川の大曲流と金町取水塔、寅さんの柴又公園土手夕景。柴又帝釈天参道を経て京成高砂駅まで延伸。</p>
+  <div class="route"><b>経路ノード：</b>金町駅 → 新葛飾橋 → 取水塔 → 矢切の渡し → 柴又公園土手 → 柴又駅 → 柴又帝釈天参道 → 京成高砂駅</div>
+  <div class="v3note"><b>V3更新（2026-08-26）：</b>距離を約5.0km→約6.0kmに拡張。柴又帝釈天参道を経て京成高砂駅まで延伸。矢切の渡し船は天候・水位により運休する場合があるため、実施前に運航状況を要確認（渡し船区間の距離は歩行距離に含めていない）。</div>
+</div>
+
+<!-- ===================== 18 ===================== -->
+<h2 id="sec-18">18. シリーズ④：首都圏ベイエリア「橋」が主役のフラットウォーキング（No.42〜45）</h2>
+<p class="small">統合元：bayarea_bridge_hiking_plan.html（信号ゼロの湾岸・各5〜7km・4人グループ向け）。橋・絶景・海鮮グルメがテーマ。</p>
+
+<div class="card">
+  <h3 id="course-42">No.42｜横浜 女神橋＆大さん橋（約6.0km）</h3>
+  <p><b>区間：</b>石川町駅 → 山下公園 → 大さん橋 → 女神橋 → 臨港パーク → みなとみらい駅 → 新高島駅</p>
+  <p><b>見どころ：</b>大さん橋「くじらのせなか」のウッドデッキ、2020年開通の歩行者専用橋「女神橋」。中華街・blue terminalで食べ歩き。みなとみらい駅から新高島駅までの高島中央公園沿いを追加。</p>
+  <div class="route"><b>経路ノード：</b>石川町駅 → 中華街 → 大さん橋 → 女神橋 → 臨港パーク → みなとみらい駅 → 新高島駅</div>
+  <div class="v3note"><b>V3更新（2026-08-26）：</b>距離を約5.5km→約6.0kmに拡張。みなとみらい駅から新高島駅まで延伸。臨港パーク周辺は歩道橋・地下通路が入り組んでいるため、新高島方面の案内表示に沿って進むこと。</div>
+</div>
+
+<div class="card">
+  <h3 id="course-43">No.43｜東京 夢の大橋＆豊洲（約6.0〜7.0km）</h3>
+  <p><b>区間：</b>東京テレポート駅 → 夢の大橋 → 武蔵野大学有明 → 豊洲ぐるり公園 → 豊洲駅</p>
+  <p><b>見どころ：</b>幅60mの日本最大級歩行者専用橋「夢の大橋」、豊洲ぐるり公園4.5km遊歩道。豊洲千客万来で海鮮。</p>
+  <div class="route"><b>経路ノード：</b>東京テレポート駅 → 夢の大橋 → 豊洲ぐるり公園 → 千客万来 → 豊洲駅</div>
+  <div class="v3note"><b>V3更新（2026-08-26）：</b>距離は約6.0〜7.0kmと既にV3目標水準に達しているため、距離・経路は変更なし（現状維持）。</div>
+</div>
+
+<div class="card">
+  <h3 id="course-44">No.44｜川崎・羽田 多摩川スカイブリッジ（約6.0km）</h3>
+  <p><b>区間：</b>小島新田駅 → キングスカイフロント → 多摩川スカイブリッジ → 羽田エアポートガーデン → 展望デッキ（第3ターミナル） → 第3ターミナル</p>
+  <p><b>見どころ：</b>全長674mのスカイブリッジから河口と離着陸を同時に一望。泉天空の湯で展望温泉。第3ターミナル展望デッキでの離着陸見学を追加。</p>
+  <div class="route"><b>経路ノード：</b>小島新田駅 → 多摩川スカイブリッジ → 羽田エアポートガーデン → 展望デッキ → 第3ターミナル</div>
+  <div class="v3note"><b>V3更新（2026-08-26）：</b>距離表記を約5.0〜6.0km→約6.0kmに単一化。第3ターミナル展望デッキでの離着陸見学を見どころに追加。</div>
+</div>
+
+<div class="card">
+  <h3 id="course-45">No.45｜木更津 中の島大橋（約6.0km）</h3>
+  <p><b>区間：</b>木更津駅 → 富士見通り → 鳥居崎海浜公園 → 中の島大橋 → 中の島公園（折返し） → 木更津港旧灯台 → 木更津駅</p>
+  <p><b>見どころ：</b>高さ27m・日本一高い歩道橋「中の島大橋」の螺旋スロープから東京湾パノラマ。活き活き亭で浜焼き。中の島公園から木更津港旧灯台までを追加。</p>
+  <div class="route"><b>経路ノード：</b>木更津駅 → 鳥居崎海浜公園 → 中の島大橋 → 中の島公園 → 木更津港旧灯台 → 木更津駅</div>
+  <div class="v3note"><b>V3更新（2026-08-26）：</b>距離を約5.0km（往復）→約6.0kmに拡張。中の島公園から木更津港旧灯台までを追加。中の島大橋のスロープは往路・復路がすれ違うため、通行時は端に寄ること。</div>
+</div>
+
+<div class="caution">
+<b>本資料の取扱いについて</b><br>
+記載の営業時間・料金・会期・催事日程・施設の開業状況は、作成時点（2026年8月）および第5版追記（2026年8月23日、X検索による裏取り）で確認可能な範囲の情報に基づく目安である。X上の告知・訪問記録は公式サイトの確定情報に代わるものではない。特に新規開業街区・企画展・季節催事は変更が頻繁であるため、<b>実施2週間前および前日に公式情報での再確認を必須</b>とする。歩行距離・所要時間は撮影や休憩を含む実測ベースの見積もりであり、当日の混雑状況により増減する。8月22日豪雨に関する閉鎖記載は「報道で施設名が確認できたか否か」であり、開園の保証ではない。
+</div>
+
+<footer>
+2026年秋季 4名歩行会 コース選定・企画総合資料（第6版・統合企画書）｜検討用マスタ資料<br>
+本資料は、第5版までに蓄積した膝配慮型のコース評価（A〜Z・No.1〜26）に、坂道・崖線／地下ダンジョン／河川敷／ベイエリア橋の4シリーズ（No.27〜45）を統合した統合企画書である。採用・保留・却下の全判断と、各シリーズの旅程・経路ノード、そして全45コースを1枚で切り替え表示するインタラクティブマップを収録する。次回改訂時は、実施後の記録（実歩行距離・所要時間・翌日の状態）を追記のうえ、グレード判定を見直すこと。
+</footer>
+
+</div>
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script>
+(function () {
+  // 統合マップ：5シリーズ × 全45コース
+  var SERIES = [
+    {
+      id: 'main', name: '本編 A〜Z（No.1〜26）', color: '#1f5f8b',
+      courses: [
+        { n:'No.1', name:'皇居東御苑・三の丸尚蔵館', c:[35.6865,139.7560], r:[[35.6856,139.7527],[35.6880,139.7540],[35.6885,139.7560],[35.6870,139.7580],[35.6865,139.7590],[35.6915,139.7520],[35.6800,139.7670],[35.6928,139.7558],[35.6905,139.7595]] },
+        { n:'No.2', name:'お台場・有明', c:[35.6260,139.7700], r:[[35.6265,139.7788],[35.6250,139.7760],[35.6258,139.7710],[35.6245,139.7690],[35.6235,139.7640],[35.6270,139.7580],[35.6280,139.7550],[35.6295,139.7525],[35.6310,139.7500]] },
+        { n:'No.3', name:'横浜・汽車道〜開港記念会館', c:[35.4495,139.6390], r:[[35.4508,139.6310],[35.4520,139.6350],[35.4530,139.6360],[35.4520,139.6440],[35.4500,139.6460],[35.4470,139.6440],[35.4522,139.6475],[35.4465,139.6425],[35.4448,139.6500],[35.4430,139.6520]] },
+        { n:'No.4', name:'調布飛行場・武蔵野の森公園', c:[35.6680,139.5220], r:[[35.6740,139.5260],[35.6660,139.5180],[35.6720,139.5250],[35.6640,139.5250],[35.6600,139.5220]] },
+        { n:'No.5', name:'東京競馬場・府中', c:[35.6710,139.4830], r:[[35.6665,139.4790],[35.6730,139.4880],[35.6735,139.4885],[35.6690,139.4850],[35.6720,139.4800],[35.6660,139.4820],[35.6595,139.4845],[35.6545,139.4865]] },
+        { n:'No.6', name:'ところざわサクラタウン', c:[35.7950,139.4900], r:[[35.7950,139.5150],[35.7860,139.5080],[35.7980,139.4680],[35.7995,139.4640],[35.7980,139.4680],[35.7975,139.4690],[35.7968,139.4700],[35.7960,139.4695]] },
+        { n:'No.7', name:'高輪ゲートウェイ〜品川', c:[35.6340,139.7370], r:[[35.6350,139.7380],[35.6325,139.7385],[35.6358,139.7400],[35.6400,139.7360],[35.6280,139.7380]] },
+        { n:'No.8', name:'上野ミュージアム', c:[35.7160,139.7760], r:[[35.7140,139.7770],[35.7180,139.7760],[35.7150,139.7750],[35.7170,139.7790],[35.7130,139.7760],[35.7175,139.7735],[35.7205,139.7695],[35.7275,139.7705]] },
+        { n:'No.9', name:'高尾山（ケーブルカー）', c:[35.6320,139.2480], r:[[35.6330,139.2670],[35.6340,139.2600],[35.6340,139.2480],[35.6310,139.2390]] },
+        { n:'No.10', name:'羽田イノベーションシティ〜スカイブリッジ', c:[35.5460,139.7640], r:[[35.5505,139.7610],[35.5460,139.7650],[35.5398,139.7685],[35.5450,139.7700],[35.5448,139.7688],[35.5460,139.7600],[35.5430,139.7540],[35.5400,139.7480]] },
+        { n:'No.11', name:'豊洲 千客万来〜ぐるり公園', c:[35.6470,139.7860], r:[[35.6430,139.7850],[35.6455,139.7805],[35.6420,139.7820],[35.6550,139.7960],[35.6500,139.8020],[35.6460,139.7920]] },
+        { n:'No.12', name:'立川 GREEN SPRINGS', c:[35.7010,139.4130], r:[[35.6980,139.4140],[35.7040,139.4110],[35.6980,139.4140],[35.7030,139.4128],[35.7065,139.4122],[35.7090,139.4118]] },
+        { n:'No.13', name:'飛鳥山〜音無親水公園', c:[35.7500,139.7350], r:[[35.7490,139.7370],[35.7520,139.7350],[35.7470,139.7330],[35.7500,139.7350],[35.7490,139.7370],[35.7515,139.7385],[35.7550,139.7395]] },
+        { n:'No.14', name:'大宮 鉄道博物館〜大宮公園', c:[35.9120,139.6230], r:[[35.9060,139.6230],[35.9190,139.6160],[35.9110,139.6300],[35.9200,139.6320],[35.9150,139.6345],[35.9080,139.6350]] },
+        { n:'No.15', name:'天王洲アイル 水辺アート', c:[35.6240,139.7440], r:[[35.6210,139.7500],[35.6230,139.7420],[35.6280,139.7380],[35.6250,139.7400],[35.6217,139.7403]] },
+        { n:'No.16', name:'横須賀 ヴェルニー〜三笠公園', c:[35.2810,139.6590], r:[[35.2830,139.6520],[35.2830,139.6570],[35.2800,139.6650],[35.2770,139.6660],[35.2800,139.6665],[35.2845,139.6660]] },
+        { n:'No.17', name:'麻布台ヒルズ〜東京タワー', c:[35.6580,139.7440], r:[[35.6660,139.7440],[35.6600,139.7420],[35.6580,139.7450],[35.6540,139.7480],[35.6540,139.7500],[35.6555,139.7495]] },
+        { n:'No.18', name:'小石川後楽園〜東京ドームシティ', c:[35.7030,139.7510], r:[[35.7020,139.7460],[35.7050,139.7490],[35.7050,139.7530],[35.7010,139.7540],[35.7000,139.7580],[35.6995,139.7630]] },
+        { n:'No.19', name:'神宮外苑〜国立競技場外周', c:[35.6780,139.7180], r:[[35.6790,139.7210],[35.6780,139.7170],[35.6770,139.7140],[35.6780,139.7150],[35.6770,139.7230],[35.6790,139.7250],[35.6810,139.7273]] },
+        { n:'No.20', name:'二子玉川 多摩川水辺', c:[35.6080,139.6250], r:[[35.6110,139.6260],[35.6070,139.6260],[35.6050,139.6240],[35.6110,139.6260],[35.6150,139.6255],[35.6165,139.6245]] },
+        { n:'No.21', name:'川越 蔵造りの町並み', c:[35.9230,139.4860], r:[[35.9210,139.4810],[35.9250,139.4830],[35.9250,139.4850],[35.9260,139.4880],[35.9200,139.4920],[35.9250,139.4870],[35.9270,139.4830],[35.9210,139.4900]] },
+        { n:'No.22', name:'浜離宮〜竹芝・水上バス', c:[35.6550,139.7600], r:[[35.6605,139.7590],[35.6590,139.7640],[35.6550,139.7630],[35.6520,139.7550],[35.6550,139.7570]] },
+        { n:'No.23', name:'葛西臨海公園', c:[35.6410,139.8540], r:[[35.6430,139.8610],[35.6410,139.8530],[35.6400,139.8460],[35.6400,139.8600],[35.6445,139.8500],[35.6415,139.8590]] },
+        { n:'No.24', name:'東京ミッドタウン〜檜町公園', c:[35.6660,139.7300], r:[[35.6630,139.7310],[35.6660,139.7300],[35.6670,139.7280],[35.6660,139.7310],[35.6680,139.7320],[35.6690,139.7275],[35.6708,139.7258]] },
+        { n:'No.25', name:'日本橋〜コレド〜水天宮前', c:[35.6820,139.7750], r:[[35.6840,139.7740],[35.6830,139.7710],[35.6830,139.7720],[35.6800,139.7760],[35.6830,139.7790],[35.6810,139.7775],[35.6870,139.7825]] },
+        { n:'No.26', name:'旧古河庭園〜駒込', c:[35.7380,139.7460], r:[[35.7360,139.7450],[35.7410,139.7460],[35.7360,139.7450],[35.7345,139.7420],[35.7335,139.7395],[35.7365,139.7465]] }
+      ]
+    },
+    {
+      id: 'sakamichi', name: '坂道・崖線（No.27〜32）', color: '#c026d3',
+      courses: [
+        { n:'No.27', name:'国分寺崖線「はけ」', c:[35.6960,139.5120], r:[[35.6961,139.5242],[35.6938,139.5140],[35.6923,139.5103],[35.6970,139.5005],[35.7013,139.5063]] },
+        { n:'No.28', name:'四谷・若葉 スリバチ迷宮', c:[35.6845,139.7265], r:[[35.6800,139.7203],[35.6828,139.7288],[35.6835,139.7262],[35.6848,139.7275],[35.6892,139.7248],[35.6860,139.7306]] },
+        { n:'No.29', name:'等々力渓谷と崖の階段', c:[35.6150,139.6420], r:[[35.6085,139.6480],[35.6075,139.6465],[35.6038,139.6460],[35.6045,139.6455],[35.6264,139.6353]] },
+        { n:'No.30', name:'日野・多摩川崖線', c:[35.6610,139.3980], r:[[35.6622,139.4132],[35.6600,139.4125],[35.6620,139.3940],[35.6605,139.3905],[35.6595,139.3815]] },
+        { n:'No.31', name:'山手線内側・最強の谷底', c:[35.6815,139.7340], r:[[35.6766,139.7370],[35.6802,139.7368],[35.6820,139.7350],[35.6835,139.7328],[35.6860,139.7306]] },
+        { n:'No.32', name:'神楽坂〜市ヶ谷 崖の縁', c:[35.6980,139.7340], r:[[35.7020,139.7450],[35.7028,139.7408],[35.7040,139.7390],[35.6985,139.7350],[35.6923,139.7228]] }
+      ]
+    },
+    {
+      id: 'underground', name: '地下ダンジョン（No.33〜35）', color: '#7c3aed',
+      courses: [
+        { n:'No.33', name:'東京駅 地下周回', c:[35.6810,139.7665], r:[[35.6802,139.7652],[35.6812,139.7638],[35.6822,139.7642],[35.6848,139.7645],[35.6800,139.7690],[35.6778,139.7670],[35.6762,139.7645],[35.6740,139.7605],[35.6758,139.7625],[35.6795,139.7645],[35.6802,139.7652]] },
+        { n:'No.34', name:'新宿駅 地下周回', c:[35.6905,139.6990], r:[[35.6895,139.6918],[35.6922,139.6958],[35.6912,139.6983],[35.6898,139.7005],[35.6905,139.7030],[35.6930,139.7020],[35.6900,139.7040],[35.6928,139.7048],[35.6895,139.6918]] },
+        { n:'No.35', name:'池袋駅 地下周回', c:[35.7295,139.7130], r:[[35.7305,139.7085],[35.7308,139.7112],[35.7300,139.7128],[35.7268,139.7118],[35.7288,139.7190],[35.7262,139.7158],[35.7280,139.7285],[35.7300,139.7128]] }
+      ]
+    },
+    {
+      id: 'kasen', name: '河川敷（No.36〜41）', color: '#0e7c6b',
+      courses: [
+        { n:'No.36', name:'多摩川 丸子橋・浅間神社', c:[35.5870,139.6700], r:[[35.5900,139.6688],[35.5878,139.6685],[35.5862,139.6688],[35.5488,139.6978],[35.5625,139.7160],[35.5615,139.7175]] },
+        { n:'No.37', name:'多摩川 多摩水道橋・登戸', c:[35.6120,139.6000], r:[[35.6110,139.6260],[35.6080,139.6230],[35.6100,139.6160],[35.6120,139.6000],[35.6152,139.5718],[35.6210,139.5700],[35.6230,139.5620]] },
+        { n:'No.38', name:'多摩川/浅川 万願寺ふれあい橋', c:[35.6550,139.4270], r:[[35.6500,139.4470],[35.6520,139.4400],[35.6550,139.4300],[35.6598,139.4172],[35.6610,139.4145],[35.6622,139.4132]] },
+        { n:'No.39', name:'荒川 千住大土手・スカイツリー', c:[35.7500,139.8150], r:[[35.7490,139.8048],[35.7538,139.8038],[35.7490,139.8080],[35.7428,139.8148],[35.7475,139.8270],[35.7460,139.8320]] },
+        { n:'No.40', name:'荒川 赤水門・岩淵', c:[35.7920,139.7260], r:[[35.7860,139.7200],[35.7872,139.7285],[35.7890,139.7300],[35.7950,139.7260],[35.8010,139.7200]] },
+        { n:'No.41', name:'江戸川 矢切の渡し・柴又', c:[35.7650,139.8780], r:[[35.7692,139.8705],[35.7728,139.8790],[35.7628,139.8812],[35.7610,139.8825],[35.7588,139.8782],[35.7570,139.8735],[35.7530,139.8700],[35.7495,139.8650]] }
+      ]
+    },
+    {
+      id: 'bayarea', name: 'ベイエリア橋（No.42〜45）', color: '#e11d48',
+      courses: [
+        { n:'No.42', name:'横浜 女神橋・大さん橋', c:[35.4510,139.6400], r:[[35.4385,139.6425],[35.4430,139.6450],[35.4522,139.6475],[35.4582,139.6385],[35.4610,139.6360],[35.4595,139.6300],[35.4578,139.6328]] },
+        { n:'No.43', name:'東京 夢の大橋・豊洲', c:[35.6380,139.7860], r:[[35.6265,139.7788],[35.6298,139.7845],[35.6420,139.7820],[35.6455,139.7805],[35.6550,139.7960]] },
+        { n:'No.44', name:'川崎・羽田 多摩川スカイブリッジ', c:[35.5390,139.7600], r:[[35.5332,139.7468],[35.5398,139.7685],[35.5460,139.7680],[35.5448,139.7688],[35.5445,139.7695]] },
+        { n:'No.45', name:'木更津 中の島大橋', c:[35.3815,139.9150], r:[[35.3815,139.9270],[35.3812,139.9140],[35.3818,139.9090],[35.3815,139.9040],[35.3800,139.9200],[35.3815,139.9270]] }
+      ]
+    }
+  ];
+
+  var map, routeLayer, routeReqId = 0;
+  var currentSeries = 0;
+  var currentCourse = 0;
+
+  function buildButtons() {
+    var sc = document.getElementById('series-controls');
+    var cc = document.getElementById('course-controls');
+    sc.innerHTML = '';
+    cc.innerHTML = '';
+
+    SERIES.forEach(function (s, si) {
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'map-btn' + (si === currentSeries ? ' series-on' : '');
+      b.textContent = s.name;
+      b.onclick = function () { currentSeries = si; currentCourse = 0; buildButtons(); renderCourse(); };
+      sc.appendChild(b);
+    });
+
+    SERIES[currentSeries].courses.forEach(function (c, ci) {
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'map-btn' + (ci === currentCourse ? ' on' : '');
+      b.textContent = c.n + ' ' + c.name;
+      b.onclick = function () { currentCourse = ci; buildButtons(); renderCourse(); };
+      cc.appendChild(b);
+    });
+  }
+
+  function renderCourse() {
+    if (!map) return;
+    if (!routeLayer) routeLayer = L.layerGroup().addTo(map);
+    routeLayer.clearLayers();
+
+    var course = SERIES[currentSeries].courses[currentCourse];
+    var color = SERIES[currentSeries].color;
+    var pts = course.r;
+
+    drawRoute(course, color, pts);
+
+    pts.forEach(function (p, i) {
+      var isStart = (i === 0);
+      var isGoal = (i === pts.length - 1);
+      var fill = isStart ? '#2563eb' : (isGoal ? '#e11d48' : '#94a3b8');
+      var radius = (isStart || isGoal) ? 7 : 4;
+      var kind = isStart ? '起点（Start）' : (isGoal ? 'ゴール（Goal）' : '経由点');
+      var m = L.circleMarker(p, { radius: radius, color: '#fff', weight: 2, fillColor: fill, fillOpacity: 1 });
+      if (isStart || isGoal) m.bindPopup('<b>' + course.n + ' ' + course.name + '</b><br>' + kind);
+      m.addTo(routeLayer);
+    });
+
+    map.fitBounds(L.latLngBounds(pts).pad(0.3));
+
+    renderDetail(course);
+  }
+
+  function findCard(course) {
+    var cards = document.querySelectorAll('.card');
+    for (var i = 0; i < cards.length; i++) {
+      var h = cards[i].querySelector('h3');
+      if (h && h.textContent.indexOf(course.n + '｜') === 0) return cards[i];
+    }
+    return null;
+  }
+
+  function renderDetail(course) {
+    var el = document.getElementById('map-detail');
+    if (!el) return;
+    var card = findCard(course);
+    if (!card) {
+      el.innerHTML = '<div class="map-detail-empty">このコースの詳細カードが見つかりませんでした。</div>';
+      return;
+    }
+    var clone = card.cloneNode(true);
+    el.innerHTML = '<div class="map-detail-label">選択中コースの旅程詳細</div>' + clone.innerHTML;
+  }
+
+  function drawRoute(course, color, pts) {
+    var reqId = ++routeReqId;
+    var fallback = L.polyline(pts, { color: color, weight: 3, opacity: 0.35, dashArray: '6, 8' });
+    fallback.addTo(routeLayer);
+
+    var coordStr = pts.map(function (p) { return p[1].toFixed(6) + ',' + p[0].toFixed(6); }).join(';');
+    var url = 'https://router.project-osrm.org/route/v1/foot/' + coordStr + '?overview=full&geometries=geojson&steps=false';
+
+    fetch(url)
+      .then(function (r) {
+        if (!r.ok) throw new Error('HTTP ' + r.status);
+        return r.json();
+      })
+      .then(function (data) {
+        if (reqId !== routeReqId) return;
+        if (!data || data.code !== 'Ok' || !data.routes || !data.routes.length) return;
+        var coords = data.routes[0].geometry.coordinates;
+        var latlngs = coords.map(function (c) { return [c[1], c[0]]; });
+        routeLayer.removeLayer(fallback);
+        L.polyline(latlngs, { color: color, weight: 4, opacity: 0.85 }).addTo(routeLayer);
+        map.fitBounds(L.latLngBounds(latlngs).pad(0.2));
+      })
+      .catch(function () {});
+  }
+
+  function escapeHtml(s) {
+    return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  }
+
+  function buildNav() {
+    var nav = document.getElementById('map-nav');
+    if (!nav) return;
+
+    var chapLinks = '';
+    var hs = document.querySelectorAll('h2[id^="sec-"]');
+    for (var i = 0; i < hs.length; i++) {
+      chapLinks += '<a class="map-nav-link" href="#' + hs[i].id + '">' + escapeHtml(hs[i].textContent) + '</a>';
+    }
+
+    var courseLinks = '';
+    SERIES.forEach(function (s) {
+      courseLinks += '<div class="map-nav-group">' + escapeHtml(s.name) + '</div>';
+      s.courses.forEach(function (c) {
+        var num = c.n.replace('No.', '');
+        courseLinks += '<a class="map-nav-link" href="#course-' + num + '">' + escapeHtml(c.n + ' ' + c.name) + '</a>';
+      });
+    });
+
+    nav.innerHTML =
+      '<a class="map-nav-top" href="#top">↑ 本文トップへ</a>' +
+      '<details class="map-nav-details" open>' +
+        '<summary>本文の各章へジャンプ（第1〜18章）</summary>' +
+        '<div class="map-nav-links">' + chapLinks + '</div>' +
+      '</details>' +
+      '<details class="map-nav-details">' +
+        '<summary>各コースカードへジャンプ（No.1〜45）</summary>' +
+        '<div class="map-nav-links">' + courseLinks + '</div>' +
+      '</details>';
+  }
+
+  function init() {
+    map = L.map('map', { zoomControl: true });
+    map.setView([35.68, 139.75], 10);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    buildButtons();
+    renderCourse();
+    buildNav();
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>
+</body>
+</html>
