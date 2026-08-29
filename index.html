@@ -103,6 +103,10 @@ File: walking-plan-2026-autumn.html -->
   .map-note{font-size:12px;color:var(--sub);margin-top:6px;}
   .map-recompute{display:flex;align-items:center;gap:8px;margin-top:6px;flex-wrap:wrap;}
   .map-recompute .small{font-size:12px;color:var(--sub);}
+  .gmap-nav-row{display:flex;align-items:center;gap:8px;margin-top:6px;flex-wrap:wrap;}
+  .gmap-nav-btn{background:#0f9d58;}
+  .gmap-nav-btn:hover{background:#0b7a43;}
+  .gmap-nav-note{font-size:12px;color:var(--sub);margin-top:4px;}
   .map-detail{margin:16px 0 0;padding:16px 18px;border:1px solid var(--line);border-radius:6px;background:#fbfcfe;}
   .map-detail-label{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.05em;color:#fff;background:var(--accent);border-radius:4px;padding:3px 10px;margin-bottom:12px;}
   .map-detail-empty{color:var(--sub);font-size:13px;}
@@ -2205,8 +2209,10 @@ STEP2〜4をクリアした段階での最初の候補は、<b>下降を完全�
     <span><span class="dot" style="background:#e11d48;"></span>ゴール（Goal）</span>
     <span><span class="dot" style="background:#94a3b8;"></span>経由点／ルート線</span>
   </div>
-  <div class="map-note">※ 地図タイルは OpenStreetMap（Leaflet・インターネット接続必須）。ルート線は Valhalla（歩行者プロファイル／FOSSGIS）で実在の歩道・園路にスナップした経路をあらかじめ計算して埋め込み表示しており、直線区間は描画しません。番号マーカーはルート線上の最近傍点にスナップして表示します。</div>
+  <div class="map-note">※ 地図タイルは OpenStreetMap（Leaflet・インターネット接続必須）。ルート線は Valhalla（歩行者プロファイル／FOSSGIS）で実在の歩道・園路にスナップした経路をあらかじめ計算して埋め込み表示しており、直線区間は描画しません。番号マーカーはルート線上の最近傍点にスナップして表示します。Googleマップの徒歩ナビリンクは外部ナビアプリへの受け渡し用で、表示距離はGoogle独自の再計算によるものです（本資料の実測値とは一致しません）。</div>
   <div class="map-recompute"><button id="map-recompute-btn" type="button" class="course-map-jump">🔄 最新の徒歩ルートで再計算</button> <span id="map-recompute-status" class="small"></span></div>
+  <div class="gmap-nav-row"><button id="gmap-open-btn" type="button" class="course-map-jump gmap-nav-btn">📍 Googleマップの徒歩ナビで開く</button><button id="gmap-copy-btn" type="button" class="course-map-jump gmap-nav-btn">🔗 ナビURLをコピー</button> <span id="gmap-status" class="small"></span></div>
+  <div id="gmap-note" class="gmap-nav-note"></div>
   <div id="map-detail" class="map-detail"></div>
 </div>
 
@@ -2287,7 +2293,9 @@ STEP2〜4をクリアした段階での最初の候補は、<b>下降を完全�
     <div id="course-controls-solo" class="map-course-controls"></div>
     <div id="map-detail-solo" class="map-detail"><div class="map-detail-empty">コースを選択すると旅程詳細がここに表示されます。</div></div>
     <div class="map-recompute"><button id="map-recompute-btn-solo" type="button" class="course-map-jump">🔄 最新の徒歩ルートで再計算</button> <span id="map-recompute-status-solo" class="small"></span></div>
-    <p class="map-note small">※ ルート線は Valhalla（歩行者プロファイル）で実在の歩道・園路にスナップして埋め込み済みです。東海（E1〜E5）・全国（Z1〜Z8）は「遠征／全国」シリーズで表示。実施時は道路名・交差点名を頼りに歩行してください。</p>
+    <div class="gmap-nav-row"><button id="gmap-open-btn-solo" type="button" class="course-map-jump gmap-nav-btn">📍 Googleマップの徒歩ナビで開く</button><button id="gmap-copy-btn-solo" type="button" class="course-map-jump gmap-nav-btn">🔗 ナビURLをコピー</button> <span id="gmap-status-solo" class="small"></span></div>
+    <div id="gmap-note-solo" class="gmap-nav-note"></div>
+    <p class="map-note small">※ ルート線は Valhalla（歩行者プロファイル）で実在の歩道・園路にスナップして埋め込み済みです。東海（E1〜E5）・全国（Z1〜Z8）は「遠征／全国」シリーズで表示。実施時は道路名・交差点名を頼りに歩行してください。Googleマップの徒歩ナビリンクは外部ナビアプリへの受け渡し用で、表示距離はGoogle独自の再計算によるものです（本資料の実測値とは一致しません）。</p>
     <div class="map-legend"><span><span class="dot" style="background:#2563eb"></span>起点</span><span><span class="dot" style="background:#64748b"></span>経由点</span><span><span class="dot" style="background:#e11d48"></span>ゴール</span></div>
   </div>
   
@@ -3127,6 +3135,82 @@ STEP2〜4をクリアした段階での最初の候補は、<b>下降を完全�
       });
   }
 
+  // Thins an ordered point list down to at most maxIntermediate interior points, always
+  // keeping the first and last point. Used only for Google Maps nav URLs, which cap
+  // `waypoints` at 9 intermediate points — course.r itself is left untouched.
+  function thinWaypoints(pts, maxIntermediate){
+    if(pts.length <= maxIntermediate + 2) return pts;
+    var mid = pts.slice(1, pts.length - 1);
+    var keep = [];
+    for(var i=0;i<maxIntermediate;i++){
+      var idx = Math.round(i * (mid.length - 1) / (maxIntermediate - 1));
+      keep.push(mid[idx]);
+    }
+    var seen = {}, dedup = [];
+    keep.forEach(function(p){ var k=p[0]+','+p[1]; if(!seen[k]){ seen[k]=1; dedup.push(p); } });
+    return [pts[0]].concat(dedup, [pts[pts.length-1]]);
+  }
+
+  // Builds a Google Maps walking-navigation URL from the course's meaningful waypoints
+  // (course.r — the same anchors drawn as numbered markers), NOT the dense routed polyline.
+  // Google re-routes and re-measures this independently, so the distance it shows will not
+  // match ROUTE_GEOM[n].km — that divergence is expected (see updateGmapNote / Handover.md).
+  function buildGoogleNavUrl(course){
+    var pts = thinWaypoints(course.r, 9);
+    var fmt = function(p){ return p[0].toFixed(6) + ',' + p[1].toFixed(6); };
+    var url = 'https://www.google.com/maps/dir/?api=1&origin=' + fmt(pts[0]) + '&destination=' + fmt(pts[pts.length - 1]);
+    var mid = pts.slice(1, pts.length - 1);
+    if(mid.length) url += '&waypoints=' + encodeURIComponent(mid.map(fmt).join('|'));
+    url += '&travelmode=walking';
+    return url;
+  }
+
+  function findCourseByNum(num){
+    var key = /^[0-9]/.test(num) ? ('No.' + num) : num;
+    for(var si=0; si<SERIES.length; si++){
+      var courses = SERIES[si].courses;
+      for(var ci=0; ci<courses.length; ci++){
+        if(courses[ci].n === key) return courses[ci];
+      }
+    }
+    return null;
+  }
+
+  function legacyCopy(text){
+    try{
+      var ta = document.createElement('textarea');
+      ta.value = text;
+      ta.style.position = 'fixed';
+      ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.focus(); ta.select();
+      var success = document.execCommand('copy');
+      document.body.removeChild(ta);
+      return success;
+    }catch(e){ return false; }
+  }
+
+  function copyToClipboard(text, statusEl){
+    function ok(){ if(statusEl){ statusEl.textContent = 'コピーしました'; setTimeout(function(){ statusEl.textContent = ''; }, 2500); } }
+    function fail(){ if(statusEl) statusEl.textContent = '⚠ コピーに失敗しました'; }
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(text).then(ok, function(){ legacyCopy(text) ? ok() : fail(); });
+    } else {
+      legacyCopy(text) ? ok() : fail();
+    }
+  }
+
+  // Discloses that the Google nav link is a hand-off to an external, independently-routed
+  // navigation tool — never "fix" the coordinates or ROUTE_GEOM[n].km to make this note's
+  // divergence go away; see Handover.md.
+  function updateGmapNote(course, noteEl){
+    if(!noteEl) return;
+    var g = (typeof ROUTE_GEOM !== 'undefined') ? ROUTE_GEOM[course.n] : null;
+    noteEl.textContent = g && g.km
+      ? '※ Googleが独自に徒歩ルートを再計算するため、表示距離は本資料の実測値（約' + g.km.toFixed(1) + 'km）と数%前後します。'
+      : '※ Googleが独自に徒歩ルートを再計算するため、表示距離は本資料の記載距離と数%前後します。';
+  }
+
   function renderCourse() {
     if (!map) return;
     if (!routeLayer) routeLayer = L.layerGroup().addTo(map);
@@ -3140,6 +3224,7 @@ STEP2〜4をクリアした段階での最初の候補は、<b>下降を完全�
 
     var statusEl = document.getElementById('map-recompute-status');
     if (statusEl) statusEl.textContent = latlngs ? '' : '⚠ 経路データ未生成（実行時再計算をお試しください）';
+    updateGmapNote(course, document.getElementById('gmap-note'));
 
     try{
       if (latlngs) map.fitBounds(L.latLngBounds(latlngs).pad(0.20));
@@ -3175,6 +3260,17 @@ STEP2〜4をクリアした段階での最初の候補は、<b>下降を完全�
       var route = card.querySelector('.route');
       if(route) route.parentNode.insertBefore(btn, route);
       else card.appendChild(btn);
+
+      var course = findCourseByNum(num);
+      if(course){
+        var gbtn = document.createElement('button');
+        gbtn.type = 'button';
+        gbtn.className = 'course-map-jump gmap-nav-btn';
+        gbtn.textContent = '📍 Googleマップの徒歩ナビで開く';
+        gbtn.onclick = function(){ window.open(buildGoogleNavUrl(course), '_blank', 'noopener'); };
+        if(route) route.parentNode.insertBefore(gbtn, route);
+        else card.appendChild(gbtn);
+      }
     });
   }
   function getSoloSeriesIndex(){
@@ -3251,6 +3347,7 @@ STEP2〜4をクリアした段階での最初の候補は、<b>下降を完全�
 
     var statusEl = document.getElementById('map-recompute-status-solo');
     if (statusEl) statusEl.textContent = latlngs ? '' : '\u26a0 \u7d4c\u8def\u30c7\u30fc\u30bf\u672a\u751f\u6210\uff08\u5b9f\u884c\u6642\u518d\u8a08\u7b97\u3092\u304a\u8a66\u3057\u304f\u3060\u3055\u3044\uff09';
+    updateGmapNote(course, document.getElementById('gmap-note-solo'));
 
     try{
       if (latlngs) mapSolo.fitBounds(L.latLngBounds(latlngs).pad(0.20));
@@ -3392,6 +3489,32 @@ STEP2〜4をクリアした段階での最初の候補は、<b>下降を完全�
       var course = SERIES[soloIdx].courses[currentCourseSolo];
       var color = SERIES[soloIdx].color;
       recomputeRouteLive(course, color, routeLayerSolo, mapSolo, document.getElementById('map-recompute-status-solo'));
+    };
+    var gmapOpenBtn = document.getElementById('gmap-open-btn');
+    if(gmapOpenBtn) gmapOpenBtn.onclick = function(){
+      var course = SERIES[currentSeries].courses[currentCourse];
+      window.open(buildGoogleNavUrl(course), '_blank', 'noopener');
+    };
+    var gmapCopyBtn = document.getElementById('gmap-copy-btn');
+    if(gmapCopyBtn) gmapCopyBtn.onclick = function(){
+      var course = SERIES[currentSeries].courses[currentCourse];
+      copyToClipboard(buildGoogleNavUrl(course), document.getElementById('gmap-status'));
+    };
+    var gmapOpenBtnSolo = document.getElementById('gmap-open-btn-solo');
+    if(gmapOpenBtnSolo) gmapOpenBtnSolo.onclick = function(){
+      var list = getSoloSeriesList();
+      if(!list.length) return;
+      var soloIdx = list[currentSeriesSolo].idx;
+      var course = SERIES[soloIdx].courses[currentCourseSolo];
+      window.open(buildGoogleNavUrl(course), '_blank', 'noopener');
+    };
+    var gmapCopyBtnSolo = document.getElementById('gmap-copy-btn-solo');
+    if(gmapCopyBtnSolo) gmapCopyBtnSolo.onclick = function(){
+      var list = getSoloSeriesList();
+      if(!list.length) return;
+      var soloIdx = list[currentSeriesSolo].idx;
+      var course = SERIES[soloIdx].courses[currentCourseSolo];
+      copyToClipboard(buildGoogleNavUrl(course), document.getElementById('gmap-status-solo'));
     };
     window.switchTab = switchTab;
     window.jumpToMap = jumpToMap;
