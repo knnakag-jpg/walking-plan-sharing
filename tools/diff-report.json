@@ -1,0 +1,845 @@
+[
+  {
+    "n": "No.7",
+    "kind": "CHANGED",
+    "origLen": 9,
+    "finalLen": 11,
+    "added": [
+      [
+        35.629412,
+        139.733516
+      ]
+    ],
+    "removed": []
+  },
+  {
+    "n": "No.5",
+    "kind": "CHANGED",
+    "origLen": 10,
+    "finalLen": 9,
+    "added": [],
+    "removed": [
+      [
+        35.6672,
+        139.479
+      ]
+    ]
+  },
+  {
+    "n": "No.10",
+    "kind": "CHANGED",
+    "origLen": 6,
+    "finalLen": 9,
+    "added": [
+      [
+        35.545446,
+        139.773957
+      ],
+      [
+        35.544754,
+        139.770905
+      ]
+    ],
+    "removed": [
+      [
+        35.5495,
+        139.758
+      ]
+    ]
+  },
+  {
+    "n": "No.12",
+    "kind": "CHANGED",
+    "origLen": 7,
+    "finalLen": 9,
+    "added": [
+      [
+        35.722516,
+        139.40787
+      ]
+    ],
+    "removed": []
+  },
+  {
+    "n": "No.1",
+    "kind": "CHANGED",
+    "origLen": 9,
+    "finalLen": 11,
+    "added": [
+      [
+        35.684681,
+        139.772765
+      ]
+    ],
+    "removed": []
+  },
+  {
+    "n": "No.4",
+    "kind": "CHANGED",
+    "origLen": 5,
+    "finalLen": 7,
+    "added": [
+      [
+        35.656693,
+        139.521148
+      ]
+    ],
+    "removed": []
+  },
+  {
+    "n": "No.6",
+    "kind": "CHANGED",
+    "origLen": 9,
+    "finalLen": 7,
+    "added": [],
+    "removed": [
+      [
+        35.7995,
+        139.47
+      ],
+      [
+        35.8005,
+        139.4665
+      ]
+    ]
+  },
+  {
+    "n": "No.8",
+    "kind": "CHANGED",
+    "origLen": 9,
+    "finalLen": 11,
+    "added": [
+      [
+        35.740413,
+        139.770031
+      ]
+    ],
+    "removed": []
+  },
+  {
+    "n": "No.13",
+    "kind": "CHANGED",
+    "origLen": 6,
+    "finalLen": 8,
+    "added": [
+      [
+        35.73763,
+        139.709266
+      ]
+    ],
+    "removed": []
+  },
+  {
+    "n": "No.14",
+    "kind": "CHANGED",
+    "origLen": 7,
+    "finalLen": 9,
+    "added": [
+      [
+        35.913325,
+        139.637783
+      ]
+    ],
+    "removed": []
+  },
+  {
+    "n": "No.15",
+    "kind": "CHANGED",
+    "origLen": 6,
+    "finalLen": 8,
+    "added": [
+      [
+        35.613235,
+        139.735564
+      ]
+    ],
+    "removed": []
+  },
+  {
+    "n": "No.16",
+    "kind": "CHANGED",
+    "origLen": 5,
+    "finalLen": 7,
+    "added": [
+      [
+        35.296826,
+        139.683829
+      ]
+    ],
+    "removed": []
+  },
+  {
+    "n": "No.17",
+    "kind": "CHANGED",
+    "origLen": 6,
+    "finalLen": 6,
+    "added": [
+      [
+        35.66147,
+        139.74083
+      ],
+      [
+        35.65845,
+        139.74554
+      ],
+      [
+        35.66031,
+        139.75004
+      ],
+      [
+        35.66497,
+        139.73885
+      ],
+      [
+        35.670295,
+        139.726063
+      ],
+      [
+        35.66497,
+        139.73885
+      ]
+    ],
+    "removed": [
+      [
+        35.6606,
+        139.7408
+      ],
+      [
+        35.659,
+        139.7425
+      ],
+      [
+        35.658,
+        139.7445
+      ],
+      [
+        35.6575,
+        139.7465
+      ],
+      [
+        35.6582,
+        139.748
+      ],
+      [
+        35.658,
+        139.7512
+      ]
+    ]
+  },
+  {
+    "n": "No.18",
+    "kind": "CHANGED",
+    "origLen": 7,
+    "finalLen": 9,
+    "added": [
+      [
+        35.70342,
+        139.778484
+      ]
+    ],
+    "removed": []
+  },
+  {
+    "n": "No.19",
+    "kind": "CHANGED",
+    "origLen": 7,
+    "finalLen": 9,
+    "added": [
+      [
+        35.663855,
+        139.724704
+      ]
+    ],
+    "removed": []
+  },
+  {
+    "n": "No.21",
+    "kind": "CHANGED",
+    "origLen": 6,
+    "finalLen": 8,
+    "added": [
+      [
+        35.906238,
+        139.497427
+      ]
+    ],
+    "removed": []
+  },
+  {
+    "n": "No.22",
+    "kind": "CHANGED",
+    "origLen": 9,
+    "finalLen": 11,
+    "added": [
+      [
+        35.649507,
+        139.756454
+      ]
+    ],
+    "removed": []
+  },
+  {
+    "n": "No.23",
+    "kind": "CHANGED",
+    "origLen": 6,
+    "finalLen": 4,
+    "added": [
+      [
+        35.64468,
+        139.86085
+      ],
+      [
+        35.64066,
+        139.86205
+      ],
+      [
+        35.631431,
+        139.864805
+      ],
+      [
+        35.64066,
+        139.86205
+      ]
+    ],
+    "removed": [
+      [
+        35.6445,
+        139.86
+      ],
+      [
+        35.642,
+        139.855
+      ],
+      [
+        35.64,
+        139.85
+      ],
+      [
+        35.639,
+        139.845
+      ],
+      [
+        35.641,
+        139.84
+      ],
+      [
+        35.644,
+        139.835
+      ]
+    ]
+  },
+  {
+    "n": "No.24",
+    "kind": "CHANGED",
+    "origLen": 7,
+    "finalLen": 9,
+    "added": [
+      [
+        35.654625,
+        139.71213
+      ]
+    ],
+    "removed": []
+  },
+  {
+    "n": "No.25",
+    "kind": "CHANGED",
+    "origLen": 6,
+    "finalLen": 8,
+    "added": [
+      [
+        35.676685,
+        139.800624
+      ]
+    ],
+    "removed": []
+  },
+  {
+    "n": "No.26",
+    "kind": "CHANGED",
+    "origLen": 6,
+    "finalLen": 8,
+    "added": [
+      [
+        35.725515,
+        139.734288
+      ]
+    ],
+    "removed": []
+  },
+  {
+    "n": "No.27",
+    "kind": "CHANGED",
+    "origLen": 5,
+    "finalLen": 7,
+    "added": [
+      [
+        35.708372,
+        139.51584
+      ]
+    ],
+    "removed": []
+  },
+  {
+    "n": "No.28",
+    "kind": "UNCHANGED_AFTER_STRIP",
+    "count": 6
+  },
+  {
+    "n": "No.29",
+    "kind": "CHANGED",
+    "origLen": 5,
+    "finalLen": 7,
+    "added": [
+      [
+        35.63621,
+        139.63073
+      ]
+    ],
+    "removed": []
+  },
+  {
+    "n": "No.30",
+    "kind": "UNCHANGED_AFTER_STRIP",
+    "count": 5
+  },
+  {
+    "n": "No.31",
+    "kind": "CHANGED",
+    "origLen": 5,
+    "finalLen": 7,
+    "added": [
+      [
+        35.689272,
+        139.727721
+      ]
+    ],
+    "removed": []
+  },
+  {
+    "n": "No.32",
+    "kind": "UNCHANGED_AFTER_STRIP",
+    "count": 5
+  },
+  {
+    "n": "No.33",
+    "kind": "CHANGED",
+    "origLen": 11,
+    "finalLen": 13,
+    "added": [
+      [
+        35.68209,
+        139.76709
+      ]
+    ],
+    "removed": []
+  },
+  {
+    "n": "No.34",
+    "kind": "CHANGED",
+    "origLen": 9,
+    "finalLen": 12,
+    "added": [
+      [
+        35.692497,
+        139.6918
+      ]
+    ],
+    "removed": []
+  },
+  {
+    "n": "No.35",
+    "kind": "CHANGED",
+    "origLen": 8,
+    "finalLen": 9,
+    "added": [
+      [
+        35.734437,
+        139.709297
+      ]
+    ],
+    "removed": [
+      [
+        35.728,
+        139.7285
+      ]
+    ]
+  },
+  {
+    "n": "No.36",
+    "kind": "CHANGED",
+    "origLen": 6,
+    "finalLen": 3,
+    "added": [
+      [
+        35.5665,
+        139.7195
+      ]
+    ],
+    "removed": [
+      [
+        35.5862,
+        139.6688
+      ],
+      [
+        35.5488,
+        139.6978
+      ],
+      [
+        35.5625,
+        139.716
+      ],
+      [
+        35.5615,
+        139.7175
+      ]
+    ]
+  },
+  {
+    "n": "No.37",
+    "kind": "CHANGED",
+    "origLen": 6,
+    "finalLen": 2,
+    "added": [],
+    "removed": [
+      [
+        35.6085,
+        139.623
+      ],
+      [
+        35.6128,
+        139.613
+      ],
+      [
+        35.6152,
+        139.5718
+      ],
+      [
+        35.621,
+        139.57
+      ]
+    ]
+  },
+  {
+    "n": "No.38",
+    "kind": "CHANGED",
+    "origLen": 6,
+    "finalLen": 8,
+    "added": [
+      [
+        35.664579,
+        139.410622
+      ]
+    ],
+    "removed": []
+  },
+  {
+    "n": "No.39",
+    "kind": "CHANGED",
+    "origLen": 6,
+    "finalLen": 8,
+    "added": [
+      [
+        35.744793,
+        139.836024
+      ]
+    ],
+    "removed": []
+  },
+  {
+    "n": "No.40",
+    "kind": "CHANGED",
+    "origLen": 5,
+    "finalLen": 7,
+    "added": [
+      [
+        35.805518,
+        139.715482
+      ]
+    ],
+    "removed": []
+  },
+  {
+    "n": "No.41",
+    "kind": "CHANGED",
+    "origLen": 8,
+    "finalLen": 10,
+    "added": [
+      [
+        35.74763,
+        139.862328
+      ]
+    ],
+    "removed": []
+  },
+  {
+    "n": "No.42",
+    "kind": "CHANGED",
+    "origLen": 7,
+    "finalLen": 6,
+    "added": [
+      [
+        35.457607,
+        139.630054
+      ]
+    ],
+    "removed": [
+      [
+        35.4522,
+        139.6475
+      ],
+      [
+        35.461,
+        139.636
+      ],
+      [
+        35.4595,
+        139.63
+      ]
+    ]
+  },
+  {
+    "n": "No.43",
+    "kind": "CHANGED",
+    "origLen": 5,
+    "finalLen": 4,
+    "added": [],
+    "removed": [
+      [
+        35.6298,
+        139.7845
+      ]
+    ]
+  },
+  {
+    "n": "No.44",
+    "kind": "CHANGED",
+    "origLen": 5,
+    "finalLen": 6,
+    "added": [
+      [
+        35.541538,
+        139.770987
+      ]
+    ],
+    "removed": [
+      [
+        35.5398,
+        139.7685
+      ]
+    ]
+  },
+  {
+    "n": "No.45",
+    "kind": "CHANGED",
+    "origLen": 6,
+    "finalLen": 8,
+    "added": [
+      [
+        35.381921,
+        139.928963
+      ]
+    ],
+    "removed": []
+  },
+  {
+    "n": "No.46",
+    "kind": "CHANGED",
+    "origLen": 9,
+    "finalLen": 4,
+    "added": [
+      [
+        35.65109,
+        139.82796
+      ],
+      [
+        35.64066,
+        139.86205
+      ],
+      [
+        35.63763,
+        139.871955
+      ],
+      [
+        35.64066,
+        139.86205
+      ]
+    ],
+    "removed": [
+      [
+        35.6432,
+        139.83
+      ],
+      [
+        35.6465,
+        139.832
+      ],
+      [
+        35.645,
+        139.8335
+      ],
+      [
+        35.642,
+        139.84
+      ],
+      [
+        35.6405,
+        139.838
+      ],
+      [
+        35.642,
+        139.85
+      ],
+      [
+        35.6425,
+        139.855
+      ],
+      [
+        35.64,
+        139.86
+      ],
+      [
+        35.6445,
+        139.86
+      ]
+    ]
+  },
+  {
+    "n": "No.47",
+    "kind": "CHANGED",
+    "origLen": 7,
+    "finalLen": 6,
+    "added": [
+      [
+        35.696671,
+        139.820978
+      ]
+    ],
+    "removed": [
+      [
+        35.683,
+        139.804
+      ],
+      [
+        35.6795,
+        139.803
+      ],
+      [
+        35.6995,
+        139.7925
+      ]
+    ]
+  },
+  {
+    "n": "No.48",
+    "kind": "CHANGED",
+    "origLen": 7,
+    "finalLen": 9,
+    "added": [
+      [
+        35.711133,
+        139.819063
+      ]
+    ],
+    "removed": []
+  },
+  {
+    "n": "No.49",
+    "kind": "CHANGED",
+    "origLen": 6,
+    "finalLen": 8,
+    "added": [
+      [
+        35.711381,
+        139.552173
+      ]
+    ],
+    "removed": []
+  },
+  {
+    "n": "No.50",
+    "kind": "CHANGED",
+    "origLen": 7,
+    "finalLen": 9,
+    "added": [
+      [
+        35.733725,
+        139.772136
+      ]
+    ],
+    "removed": []
+  },
+  {
+    "n": "No.51",
+    "kind": "CHANGED",
+    "origLen": 6,
+    "finalLen": 8,
+    "added": [
+      [
+        35.659473,
+        139.712122
+      ]
+    ],
+    "removed": []
+  },
+  {
+    "n": "No.52",
+    "kind": "CHANGED",
+    "origLen": 7,
+    "finalLen": 9,
+    "added": [
+      [
+        35.719785,
+        139.722
+      ]
+    ],
+    "removed": []
+  },
+  {
+    "n": "No.53",
+    "kind": "CHANGED",
+    "origLen": 5,
+    "finalLen": 7,
+    "added": [
+      [
+        35.648587,
+        139.420225
+      ]
+    ],
+    "removed": []
+  },
+  {
+    "n": "No.54",
+    "kind": "CHANGED",
+    "origLen": 6,
+    "finalLen": 8,
+    "added": [
+      [
+        35.91288,
+        139.628822
+      ]
+    ],
+    "removed": []
+  },
+  {
+    "n": "No.55",
+    "kind": "UNCHANGED_AFTER_STRIP",
+    "count": 5
+  },
+  {
+    "n": "No.56",
+    "kind": "NEW_COURSE(no original)"
+  },
+  {
+    "n": "No.57",
+    "kind": "NEW_COURSE(no original)"
+  },
+  {
+    "n": "No.58",
+    "kind": "NEW_COURSE(no original)"
+  },
+  {
+    "n": "No.59",
+    "kind": "NEW_COURSE(no original)"
+  }
+]

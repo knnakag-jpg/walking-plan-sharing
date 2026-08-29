@@ -1,0 +1,304 @@
+{
+  "No.28": {
+    "mode": "remove"
+  },
+  "No.30": {
+    "mode": "remove"
+  },
+  "No.32": {
+    "mode": "remove"
+  },
+  "No.55": {
+    "mode": "remove"
+  },
+  "No.7": {
+    "mode": "replace",
+    "name": "柘榴坂",
+    "km": 1
+  },
+  "No.10": {
+    "mode": "replace",
+    "name": "羽田空港ターミナル周辺",
+    "km": 0.5
+  },
+  "No.12": {
+    "mode": "replace",
+    "name": "五日市街道",
+    "km": 3.1
+  },
+  "No.1": {
+    "mode": "replace",
+    "name": "日本橋本石町一丁目",
+    "km": 2.8
+  },
+  "No.4": {
+    "mode": "replace",
+    "name": "飛田給二丁目",
+    "km": 1.1
+  },
+  "No.8": {
+    "mode": "replace",
+    "name": "東尾久一丁目",
+    "km": 2.5
+  },
+  "No.13": {
+    "mode": "replace",
+    "name": "池袋四丁目",
+    "km": 6
+  },
+  "No.14": {
+    "mode": "replace",
+    "name": "堀の内町一丁目",
+    "km": 0.7
+  },
+  "No.15": {
+    "mode": "replace",
+    "name": "広町一丁目",
+    "km": 2.8
+  },
+  "No.16": {
+    "mode": "replace",
+    "name": "三笠公園南側の海沿い遊歩道",
+    "km": 4.6
+  },
+  "No.17": {
+    "mode": "replace",
+    "name": "芝公園・増上寺方面",
+    "km": 3.6
+  },
+  "No.18": {
+    "mode": "replace",
+    "name": "台東二丁目",
+    "km": 3.5
+  },
+  "No.19": {
+    "mode": "replace",
+    "name": "六本木七丁目",
+    "km": 4.1
+  },
+  "No.21": {
+    "mode": "replace",
+    "name": "仙波町四丁目",
+    "km": 4.4
+  },
+  "No.22": {
+    "mode": "replace",
+    "name": "旧海岸通り",
+    "km": 1.9
+  },
+  "No.23": {
+    "mode": "replace",
+    "name": "西なぎさ方面の汽水池園路",
+    "km": 6.1
+  },
+  "No.24": {
+    "mode": "replace",
+    "name": "東四丁目",
+    "km": 4.4
+  },
+  "No.25": {
+    "mode": "replace",
+    "name": "冬木",
+    "km": 5.5
+  },
+  "No.26": {
+    "mode": "replace",
+    "name": "南大塚二丁目",
+    "km": 5
+  },
+  "No.27": {
+    "mode": "replace",
+    "name": "緑町四丁目",
+    "km": 3
+  },
+  "No.29": {
+    "mode": "replace",
+    "name": "用賀九条通り",
+    "km": 2.6
+  },
+  "No.31": {
+    "mode": "replace",
+    "name": "四谷三栄町",
+    "km": 1.2
+  },
+  "No.33": {
+    "mode": "replace",
+    "name": "北通路",
+    "km": 0.7
+  },
+  "No.34": {
+    "mode": "replace",
+    "name": "北通り",
+    "km": 0.9
+  },
+  "No.35": {
+    "mode": "replace",
+    "name": "みたけ通り",
+    "km": 1.7
+  },
+  "No.36": {
+    "mode": "replace",
+    "name": "六郷橋方面の多摩川右岸堤防路",
+    "km": 6.5
+  },
+  "No.38": {
+    "mode": "replace",
+    "name": "高幡",
+    "km": 1.2
+  },
+  "No.39": {
+    "mode": "replace",
+    "name": "宝町二丁目",
+    "km": 1.3
+  },
+  "No.40": {
+    "mode": "replace",
+    "name": "SL青葉通り",
+    "km": 1.5
+  },
+  "No.41": {
+    "mode": "replace",
+    "name": "中川側道",
+    "km": 0.9
+  },
+  "No.42": {
+    "mode": "replace",
+    "name": "いちょう通り",
+    "km": 1
+  },
+  "No.44": {
+    "mode": "replace",
+    "name": "羽田空港",
+    "km": 1.7
+  },
+  "No.45": {
+    "mode": "replace",
+    "name": "東中央二丁目",
+    "km": 0.4
+  },
+  "No.46": {
+    "mode": "replace",
+    "name": "葛西臨海公園 汽水池園路",
+    "km": 3
+  },
+  "No.47": {
+    "mode": "replace",
+    "name": "京葉道路",
+    "km": 1.8
+  },
+  "No.48": {
+    "mode": "replace",
+    "name": "押上三丁目",
+    "km": 2
+  },
+  "No.49": {
+    "mode": "replace",
+    "name": "関前二丁目",
+    "km": 3.6
+  },
+  "No.50": {
+    "mode": "replace",
+    "name": "西日暮里五丁目",
+    "km": 1.7
+  },
+  "No.51": {
+    "mode": "replace",
+    "name": "渋谷四丁目",
+    "km": 3.8
+  },
+  "No.52": {
+    "mode": "replace",
+    "name": "雑司が谷一丁目",
+    "km": 4
+  },
+  "No.53": {
+    "mode": "replace",
+    "name": "百草",
+    "km": 2.2
+  },
+  "No.54": {
+    "mode": "replace",
+    "name": "高鼻町一丁目",
+    "km": 1.9
+  },
+  "No.56": {
+    "mode": "replace",
+    "name": "日本橋一丁目",
+    "km": 1.1
+  },
+  "No.58": {
+    "mode": "replace",
+    "name": "赤坂通り",
+    "km": 1.5
+  },
+  "No.5": {
+    "mode": "remove"
+  },
+  "No.6": {
+    "mode": "remove"
+  },
+  "No.37": {
+    "mode": "remove"
+  },
+  "No.43": {
+    "mode": "remove"
+  },
+  "No.57": {
+    "mode": "remove"
+  },
+  "No.59": {
+    "mode": "remove"
+  },
+  "No.2": {
+    "mode": "remove"
+  },
+  "No.11": {
+    "mode": "remove"
+  },
+  "No.3": {
+    "mode": "replace",
+    "name": "新山下（山下公園の先）",
+    "km": 2.5
+  },
+  "No.20": {
+    "mode": "replace",
+    "name": "宇奈根（多摩川左岸）",
+    "km": 3.6
+  },
+  "S1": {
+    "mode": "replace",
+    "name": "中町四丁目",
+    "km": 3.6
+  },
+  "S2": {
+    "mode": "replace",
+    "name": "高幡（三沢方面）",
+    "km": 1.8
+  },
+  "S4": {
+    "mode": "replace",
+    "name": "関町南",
+    "km": 3.1
+  },
+  "S5": {
+    "mode": "replace",
+    "name": "柴崎町三丁目",
+    "km": 2.6
+  },
+  "S6": {
+    "mode": "replace",
+    "name": "天沼三丁目",
+    "km": 3.4
+  },
+  "S7": {
+    "mode": "replace",
+    "name": "南山伏町",
+    "km": 3.3
+  },
+  "S3": {
+    "mode": "remove"
+  },
+  "S8": {
+    "mode": "remove"
+  }
+}
