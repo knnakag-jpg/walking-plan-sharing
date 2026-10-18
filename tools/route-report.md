@@ -1,7 +1,7 @@
 # Route build report
 
-Generated: 2026-08-29T18:55:37.968Z
-Result: 85/85 passed (hard gates). Soft warnings are informational only.
+Generated: 2026-10-18T06:41:13.645Z
+Result: 97/97 passed (hard gates). Soft warnings are informational only.
 
 | No. | 名称 | 判定 | 実測km | 目標km | エンジン | 偽延伸点除去 | 課題（HARD） | 参考（soft） |
 |---|---|---|---|---|---|---|---|---|
@@ -90,3 +90,15 @@ Result: 85/85 passed (hard gates). Soft warnings are informational only.
 | No.57 | 両国〜浅草〜谷中〜上野 | OK | 7.88 | 8 | valhalla-pedestrian |  |  |  |
 | No.58 | 原宿〜表参道〜六本木ヒルズ | OK | 8.02 | 7.9 | valhalla-pedestrian |  |  |  |
 | No.59 | 立川〜国立〜国分寺 はけ | OK | 7.17 | 7 | valhalla-pedestrian |  |  | leg 1 too long (3.03km) — needs an intermediate waypoint |
+| G-1128 | G 11/28版：高輪GW→泉岳寺→品川→インターシティ夜景 | OK | 6.87 | 6.5 | valhalla-pedestrian |  |  | coordinate 35.62961,139.742 has < 4 decimal places (~110m+ error) |
+| G-Rain | G 雨天版：高輪GW屋内回遊 | OK | 1.05 | 1.1 | valhalla-pedestrian |  |  | leg 1 too short (0.11km); leg 4 too short (0.08km) |
+| 1128-D1 | D-1 新豊洲×有明ガーデン | OK | 4.58 | 4.6 | valhalla-pedestrian |  |  |  |
+| 1128-D2 | D-2 神宮外苑いちょう並木 | OK | 4.31 | 4.3 | valhalla-pedestrian |  |  |  |
+| 1128-D3 | D-3 東京駅→日本橋 地下＋丸の内イルミ | OK | 4.35 | 4.4 | valhalla-pedestrian |  |  |  |
+| 1128-D4 | D-4 横浜 上り優先版（桜木町→赤レンガ→馬車道→野毛山→伊勢山） | OK | 6.20 | 6.2 | valhalla-pedestrian |  |  | leg 4 too short (0.15km) |
+| 1128-D5 | D-5 市ヶ谷→靖国→九段→千鳥ヶ淵→半蔵門 上り型 | OK | 8.50 | 8.4 | valhalla-pedestrian |  |  | coordinate 35.698,139.759 has < 4 decimal places (~110m+ error) |
+| VBC-C1 | C-1 幕張新都心（海浜幕張→イオンモール→ペデストリアンデッキ） | OK | 5.60 | 5.6 | valhalla-pedestrian |  |  | leg 3 too long (2.23km) — needs an intermediate waypoint |
+| VBC-C2 | C-2 南町田グランベリーパーク | OK | 8.14 | 8.1 | valhalla-pedestrian |  |  | leg 2 too long (3.45km) — needs an intermediate waypoint; leg 3 too long (3.10km) — needs an intermediate waypoint |
+| VBC-C3 | C-3 大井町 OIMACHI TRACKS〜しながわ中央公園〜品川シーサイド | OK | 3.22 | 3.3 | valhalla-pedestrian |  |  |  |
+| VBC-C4 | C-4 立川 昭和記念公園 砂川口ルート（EV利用版） | OK | 6.06 | 6.6 | valhalla-pedestrian |  |  | leg 1 too long (2.73km) — needs an intermediate waypoint; routed 6.06km vs target 6.6km (ratio 0.92) — outside the preferred +/-7% band |
+| VBC-C5 | C-5 裏参道・学園通り 国立〜谷保 | OK | 2.88 | 2.9 | valhalla-pedestrian |  |  | leg 3 too short (0.12km) |
