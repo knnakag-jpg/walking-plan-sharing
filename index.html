@@ -287,7 +287,20 @@ File: walking-plan-2026-autumn.html -->
   html[data-theme="dark"] .leaflet-popup-content-wrapper,html[data-theme="dark"] .leaflet-popup-tip{background:var(--surface);color:var(--ink);}
   html[data-theme="dark"] .leaflet-control-attribution{background:rgba(26,33,41,.85)!important;color:var(--sub)!important;}
   html[data-theme="dark"] .leaflet-control-attribution a{color:var(--link)!important;}
+  /* ===== スクロール追従ナビ（scroll-nav） ===== */
+  #scroll-nav{position:fixed;right:16px;bottom:16px;z-index:9998;display:flex;flex-direction:column;gap:8px;align-items:center;}
+  #scroll-nav button{width:44px;height:44px;border-radius:50%;border:1px solid var(--accent);background:var(--accent);color:#fff;font-size:17px;line-height:1;cursor:pointer;box-shadow:0 2px 6px rgba(0,0,0,.3);padding:0;}
+  #scroll-nav button:hover{background:var(--accent2);border-color:var(--accent2);}
+  #scroll-nav button:disabled{opacity:.4;cursor:default;}
+  #scroll-nav button:focus-visible{outline:2px solid var(--link);outline-offset:2px;}
+  #scroll-nav #to-top{opacity:0;pointer-events:none;transition:opacity .25s;}
+  #scroll-nav #to-top.show{opacity:1;pointer-events:auto;}
+  #scroll-nav .sec-label{display:none;position:absolute;right:52px;top:50%;transform:translateY(-50%);white-space:nowrap;background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:6px;padding:4px 10px;font-size:12px;box-shadow:0 1px 4px rgba(0,0,0,.25);}
+  #scroll-nav:hover .sec-label,#scroll-nav:focus-within .sec-label{display:block;}
+  html[data-theme="dark"] #scroll-nav button{color:#0d141b;}
+  @media (prefers-reduced-motion:reduce){#scroll-nav #to-top{transition:none;}}
   @media print{
+    #scroll-nav{display:none;}
     html[data-theme="dark"]{--ink:#1c2430;--sub:#5b6875;--line:#d8dee6;--bg:#f6f8fa;--accent:#1f5f8b;--accent2:#0e7c6b;--warn:#b3541e;--ng:#a02c2c;--surface:#fff;--surface2:#f4f7fa;--surface3:#fbfcfe;--note-bg:#fffaf0;--note-line:#e8d8b0;--caution-bg:#fdf1ee;--caution-line:#eec9bd;--info-bg:#eef6f5;--info-line:#bcdcd6;--v3-bg:#faf0fc;--v3-line:#e3b8ec;--v3-ink:#c026d3;--th-bg:#eef2f6;--cur-month-bg:#ffe9c7;--warn-bg:#fef3ec;--chip-bg:#f2f5f8;--feature-bg:#fbfdff;--link:#1f5f8b;}
     html[data-theme="dark"] .leaflet-tile-pane{filter:none;}
     #theme-toggle{display:none;}
@@ -297,6 +310,12 @@ File: walking-plan-2026-autumn.html -->
 </head>
 <body id="top">
 <button id="theme-toggle" type="button" aria-label="ダークモード切替">🌙</button>
+<div id="scroll-nav" aria-label="セクション移動">
+  <button id="sec-prev" type="button" aria-label="前のセクションへ" title="前のセクションへ">▲</button>
+  <button id="sec-next" type="button" aria-label="次のセクションへ" title="次のセクションへ">▼</button>
+  <button id="to-top" type="button" aria-label="ページ先頭へ" title="ページ先頭へ">⤒</button>
+  <span class="sec-label" id="sec-label" aria-live="polite"></span>
+</div>
 <div class="wrap">
 
 <header class="cover">
@@ -5023,6 +5042,7 @@ STEP2〜4をクリアした段階での最初の候補は、<b>下降を完全�
   }
   function init() {
     initTheme();
+    secNavInit();
     // restore tab from hash
     var m = location.hash.match(/tab=(home|map|solo|history)/);
     if(m){ 
@@ -5121,6 +5141,89 @@ STEP2〜4をクリアした段階での最初の候補は、<b>下降を完全�
         }
       }
     });
+  }
+
+  /* ===== スクロール追従ナビ（scroll-nav） ===== */
+  var secNavSections = [], secNavIndex = -1;
+  function secNavReduced(){ return window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches; }
+  function secNavBehavior(){ return secNavReduced() ? 'auto' : 'smooth'; }
+  function secNavRefresh(){
+    var panel = document.querySelector('.tab-panel.active');
+    secNavSections = panel ? Array.prototype.slice.call(panel.querySelectorAll('h2')) : [];
+    secNavUpdate(false);
+  }
+  function secNavDocTop(el){
+    var r = el.getBoundingClientRect();
+    return r.top + (window.scrollY || window.pageYOffset || 0);
+  }
+  function secNavCurrent(){
+    var line = (window.scrollY || window.pageYOffset || 0) + 80, idx = -1, i;
+    for(i = 0; i < secNavSections.length; i++){
+      if(secNavDocTop(secNavSections[i]) <= line) idx = i;
+    }
+    return idx;
+  }
+  /* 検証用に公開する純粋関数：-1 は「移動先なし」を表す */
+  function secNavTarget(currentIndex, dir){
+    var n = secNavSections.length, t = currentIndex + dir;
+    if(t < 0 || t >= n) return -1;
+    return t;
+  }
+  function secNavScrollToEl(el){
+    if(!el) return;
+    var top = secNavDocTop(el);
+    window.scrollTo({top: Math.max(0, top - 8), behavior: secNavBehavior()});
+  }
+  function secNavUpdate(skipCurrent){
+    if(!skipCurrent) secNavIndex = secNavCurrent();
+    var prev = document.getElementById('sec-prev'), next = document.getElementById('sec-next');
+    var top = document.getElementById('to-top'), label = document.getElementById('sec-label');
+    if(!prev || !next || !top) return;
+    var n = secNavSections.length;
+    prev.disabled = (n === 0 || secNavIndex < 0);
+    next.disabled = (n === 0 || secNavIndex >= n - 1);
+    top.classList.toggle('show', (window.scrollY || window.pageYOffset || 0) > 400);
+    if(label) label.textContent = (secNavIndex >= 0 && secNavSections[secNavIndex])
+      ? secNavSections[secNavIndex].textContent.trim().slice(0, 20) : '';
+  }
+  function secNavGo(dir){
+    secNavIndex = secNavCurrent();
+    var n = secNavSections.length;
+    if(!n) return;
+    if(dir < 0){
+      if(secNavIndex < 0) return;
+      var top = secNavDocTop(secNavSections[secNavIndex]);
+      var y = window.scrollY || window.pageYOffset || 0;
+      if(y + 80 - top > 40){ secNavScrollToEl(secNavSections[secNavIndex]); return; }
+      var t = secNavTarget(secNavIndex, -1);
+      if(t >= 0) secNavScrollToEl(secNavSections[t]);
+    }else{
+      var from = (secNavIndex < 0 && n > 0 && (window.scrollY || 0) < secNavDocTop(secNavSections[0])) ? -1 : secNavIndex;
+      var u = secNavTarget(from, 1);
+      if(u >= 0) secNavScrollToEl(secNavSections[u]);
+    }
+  }
+  function secNavInit(){
+    var prev = document.getElementById('sec-prev'), next = document.getElementById('sec-next'), top = document.getElementById('to-top');
+    if(!prev || !next || !top) return;
+    prev.onclick = function(){ secNavGo(-1); };
+    next.onclick = function(){ secNavGo(1); };
+    top.onclick = function(){ window.scrollTo({top: 0, behavior: secNavBehavior()}); };
+    var ticking = false;
+    window.addEventListener('scroll', function(){
+      if(ticking) return;
+      ticking = true;
+      requestAnimationFrame(function(){ ticking = false; secNavUpdate(false); });
+    }, {passive: true});
+    document.addEventListener('click', function(e){
+      if(e.target && e.target.closest && e.target.closest('.tab-btn')) setTimeout(secNavRefresh, 60);
+    });
+    if(window.MutationObserver){
+      var mo = new MutationObserver(function(){ secNavRefresh(); });
+      document.querySelectorAll('.tab-panel').forEach(function(p){ mo.observe(p, {attributes: true, attributeFilter: ['class']}); });
+    }
+    secNavRefresh();
+    if(typeof window !== 'undefined'){ window.__secNavTarget = secNavTarget; window.__secNavRefresh = secNavRefresh; }
   }
 
   if (document.readyState === 'loading') {
