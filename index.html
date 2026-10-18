@@ -204,6 +204,10 @@ File: walking-plan-2026-autumn.html -->
   .card.feature{border:2px solid var(--accent);background:var(--feature-bg);}
   .card.feature h3{border-bottom:2px solid var(--accent);}
   .last-updated{font-size:12.5px;color:var(--sub);text-align:right;margin:0 0 8px;}
+  .top-actions{border:2px solid var(--accent);border-radius:8px;padding:12px 16px 4px;margin:0 0 16px;background:var(--feature-bg);}
+  .top-actions .map-cta a{display:block;text-align:center;font-size:15px;padding:13px 18px;}
+  .top-actions > .map-cta{margin:0 0 14px;}
+  .top-actions .weekly-pick{border:0;padding:0;margin:0;background:transparent;}
   /* ===== 今週のおすすめ（weekly-pick：毎週更新枠） ===== */
   .weekly-pick{border:2px solid var(--accent);border-radius:8px;background:var(--feature-bg);padding:14px 16px;margin:0 0 20px;}
   .weekly-pick h2{margin-top:0;border-bottom:2px solid var(--accent);}
@@ -329,17 +333,20 @@ File: walking-plan-2026-autumn.html -->
   </p>
 </header>
 
-
-<p class="map-cta"><a href="#" onclick="switchTab('map'); return false;">🗺 各案のマップ付き紹介はこちら →</a></p>
-
-<p class="last-updated" id="last-updated">最終更新日：2026年10月18日（第10版）</p>
-
+<div class="top-actions">
+  <p class="map-cta"><a href="#" onclick="switchTab('map'); return false;">🗺 各案のマップ付き紹介はこちら →</a></p>
 <section id="weekly-pick" class="weekly-pick">
   <h2>11月のおすすめ（11/28 実施に向けて）</h2>
   <p class="pick-links"><a href="#sec-22">▶ 22. 11/28単日特集（1128-D1〜D5）を見る</a>｜<a href="#feature-1128">11/28 対抗案の比較表</a></p>
   <div id="weekly-pick-body"></div>
   <p class="pick-note">雨天時は G-Rain / No.33 へ切替。日程・営業時間は直前に公式で再確認。</p>
 </section>
+</div>
+
+
+
+<p class="last-updated" id="last-updated">最終更新日：2026年10月18日（第10版）</p>
+
 
 
 <nav class="tabs" role="tablist" aria-label="資料タブ">
