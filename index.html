@@ -208,6 +208,10 @@ File: walking-plan-2026-autumn.html -->
   .top-actions .map-cta a{display:block;text-align:center;font-size:15px;padding:13px 18px;}
   .top-actions > .map-cta{margin:0 0 14px;}
   .top-actions .weekly-pick{border:0;padding:0;margin:0;background:transparent;}
+  .map-area-anchor{scroll-margin-top:12px;}
+  .map-selected-poster{border:1px solid var(--line);border-left:5px solid var(--accent);background:var(--surface);padding:8px 12px;margin:6px 0 8px;font-size:14px;border-radius:4px;}
+  .map-selected-poster .small{color:var(--sub);}
+  #map{scroll-margin-top:12px;}
   /* ===== 今週のおすすめ（weekly-pick：毎週更新枠） ===== */
   .weekly-pick{border:2px solid var(--accent);border-radius:8px;background:var(--feature-bg);padding:14px 16px;margin:0 0 20px;}
   .weekly-pick h2{margin-top:0;border-bottom:2px solid var(--accent);}
@@ -334,7 +338,7 @@ File: walking-plan-2026-autumn.html -->
 </header>
 
 <div class="top-actions">
-  <p class="map-cta"><a href="#" onclick="switchTab('map'); return false;">🗺 各案のマップ付き紹介はこちら →</a></p>
+  <p class="map-cta"><a href="#" onclick="switchTab('map'); return false;" data-goto="map">🗺 各案のマップ付き紹介はこちら →</a></p>
 <section id="weekly-pick" class="weekly-pick">
   <h2>11月のおすすめ（11/28 実施に向けて）</h2>
   <p class="pick-links"><a href="#sec-22">▶ 22. 11/28単日特集（1128-D1〜D5）を見る</a>｜<a href="#feature-1128">11/28 対抗案の比較表</a></p>
@@ -3404,6 +3408,7 @@ STEP2〜4をクリアした段階での最初の候補は、<b>下降を完全�
     <div id="picker-results"><p class="small">条件を選んで「この条件で選ぶ」を押してください。</p></div>
   </div>
   <div class="map-course-controls" id="course-controls"></div>
+  <div id="map-anchor" class="map-area-anchor"><div class="map-selected-poster" id="map-selected-poster">コースを選ぶとここに地図と旅程が表示されます。</div></div>
   <div id="map"></div>
   <div class="map-legend">
     <span><span class="dot" style="background:#2563eb;"></span>起点（Start）</span>
@@ -4638,6 +4643,8 @@ STEP2〜4をクリアした段階での最初の候補は、<b>下降を完全�
     var clone = card.cloneNode(true);
     var num = course.n.replace('No.','');
     var jumpBack=document.createElement('p');jumpBack.style.margin='10px 0';var backBtn=document.createElement('button');backBtn.className='course-map-jump';backBtn.textContent='\u30DB\u30FC\u30E0\u3067\u65C5\u7A0B\u8A73\u7D30\u3092\u898B\u308B\uFF08No.'+num+'\uFF09';backBtn.onclick=function(){switchTab('home');setTimeout(function(){var target=document.getElementById('course-'+num);if(target)target.scrollIntoView({behavior:'smooth',block:'start'});},220);};jumpBack.appendChild(backBtn)
+    var poster = document.getElementById('map-selected-poster');
+    if(poster) poster.innerHTML = '<b>' + escapeHtml(course.n) + '</b> ' + escapeHtml(course.name) + ' <span class="small">（' + (geomOf(course.n) ? geomOf(course.n).km.toFixed(1) + 'km' : '') + '）</span>';
     el.innerHTML = '<div class="map-detail-label">選択中コースの旅程詳細</div>' + clone.innerHTML;
     try{
       var photos = renderPhotoSlots(course);
@@ -5002,14 +5009,22 @@ STEP2〜4をクリアした段階での最初の候補は、<b>下降を完全�
       else applyTheme((window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light');
     }catch(e){ applyTheme(currentTheme()); }
   }
-  function switchTab(id){
+  function scrollToMapArea(){
+    setTimeout(function(){
+      var el = document.getElementById('map-anchor') || document.getElementById('map');
+      if(el) window.scrollTo({top: el.getBoundingClientRect().top + window.scrollY - 52, behavior: 'smooth'});
+      try{ history.replaceState(null, '', location.pathname + location.search + '#map-area'); }catch(e){}
+    }, 260);
+  }
+  function switchTab(id, opts){
     document.querySelectorAll('.tab-btn').forEach(function(b){ b.classList.toggle('active', b.dataset.tab===id); b.setAttribute('aria-selected', b.dataset.tab===id ? 'true':'false'); });
     document.querySelectorAll('.tab-panel').forEach(function(p){ p.classList.toggle('active', p.id==='panel-'+id); });
     if(id==='map'){ setTimeout(function(){ if(map) map.invalidateSize(); }, 180); }
     if(id==='solo'){ setTimeout(function(){ if(mapSolo) mapSolo.invalidateSize(); }, 180); }
     // update hash for share
     try{ history.replaceState(null,'','#tab='+id); }catch(e){}
-    window.scrollTo({top:0, behavior:'smooth'});
+    if(id==='map'){ scrollToMapArea(); }
+    else { window.scrollTo({top:0, behavior:'smooth'}); }
   }
   function jumpToMap(courseNum){
     switchTab('map');
@@ -5023,7 +5038,7 @@ STEP2〜4をクリアした段階での最初の候補は、<b>下降を完全�
           currentSeries = si;
           currentCourse = ci;
           // need to re-render after tab visible
-          setTimeout(function(){ buildButtons(); renderCourse(); if(map) map.invalidateSize(); }, 220);
+          setTimeout(function(){ buildButtons(); renderCourse(); if(map) map.invalidateSize(); scrollToMapArea(); }, 220);
           return;
         }
       }
@@ -5052,6 +5067,7 @@ STEP2〜4をクリアした段階での最初の候補は、<b>下降を完全�
     secNavInit();
     // restore tab from hash
     var m = location.hash.match(/tab=(home|map|solo|history)/);
+    if(!m && location.hash === '#map-area') m = [null, 'map'];
     if(m){ 
       // defer to let DOM ready
       setTimeout(function(){ switchTab(m[1]); }, 0);
