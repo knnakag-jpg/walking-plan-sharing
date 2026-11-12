@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-12T22:03:11.577Z",
+  "generatedAt": "2026-11-12T22:17:43.243Z",
   "interpretation": "Mechanical triage only. Source and map review required before adopting any new route.",
   "records": [
     {
@@ -23,7 +23,7 @@
       },
       "existingNewVariants": [],
       "coordinateReview": "not_started",
-      "sourceResearch": "not_started",
+      "sourceResearch": "source_research_in_progress",
       "historicalRoutingStrategies": [],
       "transportHints": [
         "water_transport"

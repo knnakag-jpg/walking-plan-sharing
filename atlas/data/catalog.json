@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "source": "legacy import; route quality not re-reviewed",
-  "generatedAt": "2026-11-12T22:03:09.111Z",
+  "generatedAt": "2026-11-12T22:19:00.120Z",
   "courses": [
     {
       "id": "No.1",
@@ -2623,6 +2623,66 @@
       "auditFlags": [
         "repeated_geometry_over_10pct",
         "repeated_waypoint"
+      ],
+      "publicWarning": "2026年11月13日の公式案内では浜離宮船着場は下船のみです。旧経路に含まれる乗船と距離調整の往復を当日の徒歩案内として使わないでください。庭園内の一部園路も2026年11月11～27日に工事で通行止めです。新A/Bは再設計中です。",
+      "evidence": [
+        {
+          "type": "official",
+          "title": "東京都公園協会・浜離宮恩賜庭園",
+          "url": "https://www.tokyo-park.or.jp/park/hama-rikyu/index.html",
+          "checkedAt": "2026-11-13",
+          "supports": "船着場は下船のみ、庭園出入口、開園時間、料金"
+        },
+        {
+          "type": "official",
+          "title": "東京都公園協会・浜離宮バリアフリーマップ",
+          "url": "https://www.tokyo-park.or.jp/park/hama-rikyu/assets/files/hama_bf.pdf?date=20260405180905",
+          "checkedAt": "2026-11-13",
+          "supports": "下船のみの船着場、園路、段差、トイレ"
+        },
+        {
+          "type": "official",
+          "title": "東京都公園協会・浜離宮園路改修工事",
+          "url": "https://www.tokyo-park.or.jp/park/hama-rikyu/news/2026/notice_on_the_restoration_work_of_the_1.html",
+          "checkedAt": "2026-11-13",
+          "supports": "2026年11月の中の島園路の一部通行止め"
+        },
+        {
+          "type": "official",
+          "title": "東京都公園協会・旧芝離宮恩賜庭園",
+          "url": "https://www.tokyo-park.or.jp/park/kyu-shiba-rikyu/",
+          "checkedAt": "2026-11-13",
+          "supports": "開園時間、料金、浜松町駅からのアクセス"
+        },
+        {
+          "type": "official",
+          "title": "東京都公園協会・旧芝離宮FAQ",
+          "url": "https://www.tokyo-park.or.jp/park/kyu-shiba-rikyu/faq/index.html",
+          "checkedAt": "2026-11-13",
+          "supports": "旧芝離宮の出入口は一つ"
+        },
+        {
+          "type": "official",
+          "title": "東京都公園協会・新橋竹芝フロントラリー",
+          "url": "https://www.tokyo-park.or.jp/event_search/shimbashi-takeshiba-frontrally.html",
+          "checkedAt": "2026-11-13",
+          "supports": "新橋・浜離宮・ウォーターズ竹芝・旧芝離宮の地域内のつながり"
+        },
+        {
+          "type": "walked_account",
+          "title": "浜離宮からウォーターズ竹芝への散歩記録",
+          "url": "https://sekaiangya.exblog.jp/31125970/",
+          "checkedAt": "2026-11-13",
+          "supports": "浜離宮から竹芝へ歩いて移動した個人記録。新A/Bの現地検証ではない"
+        }
+      ],
+      "openQuestions": [
+        "浜離宮の当日通行可能な園路と中の島園路第二期工事",
+        "庭園の出入口と園内歩道が徒歩ルーターで正しく連結するか",
+        "水辺の歩道・横断・階段・デッキの連続性",
+        "A/Bの自然な駅間距離、道路重複、休憩・トイレ、途中離脱",
+        "水上バスを別行動として提案する場合の乗船可能な桟橋・運航日・料金",
+        "雨天時に連続して歩ける屋内区間"
       ]
     },
     {

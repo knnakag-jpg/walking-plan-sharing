@@ -193,6 +193,16 @@ for (const filename of fs.readdirSync(curatedRoot).filter((name) => name.endsWit
     { ...target.route, waypoints: target.waypoints },
   ];
 }
+for (const course of courses) {
+  const researchPath = path.join(root, 'data/research', `${course.slug}-route-research.json`);
+  if (!fs.existsSync(researchPath)) continue;
+  const research = JSON.parse(fs.readFileSync(researchPath, 'utf8'));
+  if (research.publicWarning) {
+    course.publicWarning = research.publicWarning;
+    if (!course.evidence) course.evidence = research.evidence || [];
+    if (!course.openQuestions) course.openQuestions = research.openQuestions || [];
+  }
+}
 fs.writeFileSync(path.join(outputRoot, 'catalog.json'), JSON.stringify({
   schemaVersion: 1, source: 'legacy import; route quality not re-reviewed',
   generatedAt: new Date().toISOString(), courses,

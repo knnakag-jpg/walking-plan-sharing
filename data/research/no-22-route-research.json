@@ -1,0 +1,50 @@
+{
+  "id": "No.22",
+  "stage": "source_research_in_progress",
+  "checkedAt": "2026-11-13",
+  "publicWarning": "2026年11月13日の公式案内では浜離宮船着場は下船のみです。旧経路に含まれる乗船と距離調整の往復を当日の徒歩案内として使わないでください。庭園内の一部園路も2026年11月11～27日に工事で通行止めです。新A/Bは再設計中です。",
+  "legacyFindings": [
+    {
+      "issue": "old_departure_from_hamarikyu_dock",
+      "finding": "浜離宮恩賜庭園の公式案内と2026年版バリアフリーマップは船着場を下船のみと記載する。旧案の浜離宮からの乗船は成立しない。",
+      "status": "confirmed_official"
+    },
+    {
+      "issue": "boat_counted_as_pedestrian_line",
+      "finding": "旧案は徒歩・水上バス・徒歩を一続きに記述し、旧GeoJSONは全体を徒歩線として表示する。船の乗車区間と徒歩距離を分離していない。",
+      "status": "confirmed_legacy_data"
+    },
+    {
+      "issue": "distance_filler",
+      "finding": "旧説明は浜松町駅から旧海岸通り方面へ往復約1.9kmで延伸すると明記する。新A/Bでは距離調整のための往復を採用しない。",
+      "status": "confirmed_legacy_text"
+    },
+    {
+      "issue": "temporary_garden_closure",
+      "finding": "浜離宮の中の島園路の一部は2026年11月11～27日に改修工事で通行止め。第二期の範囲・期間は未発表。",
+      "status": "confirmed_official_time_limited"
+    }
+  ],
+  "candidateConcepts": {
+    "standard": "新橋または汐留から浜離宮の大手門口へ入り、開放中の園路・潮入の池を鑑賞。中の御門口からウォーターズ竹芝の水辺へ徒歩で抜け、浜松町駅で終える。庭園内の通行可能経路と出入口を地図照合してから計算する。",
+    "extended": "Aの水辺に旧芝離宮の庭園鑑賞を加える。旧芝離宮は一つの出入口しかなく、往復区間を例外として記録する。追加景観の価値と重複距離を検証し、7～8kmに無理に合わせない。",
+    "rainy": "屋内施設と駅間の屋根のある動線を別途調査する。庭園・海沿いの屋外区間を雨天対応とみなさない。"
+  },
+  "evidence": [
+    { "type": "official", "title": "東京都公園協会・浜離宮恩賜庭園", "url": "https://www.tokyo-park.or.jp/park/hama-rikyu/index.html", "checkedAt": "2026-11-13", "supports": "船着場は下船のみ、庭園出入口、開園時間、料金" },
+    { "type": "official", "title": "東京都公園協会・浜離宮バリアフリーマップ", "url": "https://www.tokyo-park.or.jp/park/hama-rikyu/assets/files/hama_bf.pdf?date=20260405180905", "checkedAt": "2026-11-13", "supports": "下船のみの船着場、園路、段差、トイレ" },
+    { "type": "official", "title": "東京都公園協会・浜離宮園路改修工事", "url": "https://www.tokyo-park.or.jp/park/hama-rikyu/news/2026/notice_on_the_restoration_work_of_the_1.html", "checkedAt": "2026-11-13", "supports": "2026年11月の中の島園路の一部通行止め" },
+    { "type": "official", "title": "東京都公園協会・旧芝離宮恩賜庭園", "url": "https://www.tokyo-park.or.jp/park/kyu-shiba-rikyu/", "checkedAt": "2026-11-13", "supports": "開園時間、料金、浜松町駅からのアクセス" },
+    { "type": "official", "title": "東京都公園協会・旧芝離宮FAQ", "url": "https://www.tokyo-park.or.jp/park/kyu-shiba-rikyu/faq/index.html", "checkedAt": "2026-11-13", "supports": "旧芝離宮の出入口は一つ" },
+    { "type": "official", "title": "東京都公園協会・新橋竹芝フロントラリー", "url": "https://www.tokyo-park.or.jp/event_search/shimbashi-takeshiba-frontrally.html", "checkedAt": "2026-11-13", "supports": "新橋・浜離宮・ウォーターズ竹芝・旧芝離宮の地域内のつながり" },
+    { "type": "walked_account", "title": "浜離宮からウォーターズ竹芝への散歩記録", "url": "https://sekaiangya.exblog.jp/31125970/", "checkedAt": "2026-11-13", "supports": "浜離宮から竹芝へ歩いて移動した個人記録。新A/Bの現地検証ではない" }
+  ],
+  "openQuestions": [
+    "浜離宮の当日通行可能な園路と中の島園路第二期工事",
+    "庭園の出入口と園内歩道が徒歩ルーターで正しく連結するか",
+    "水辺の歩道・横断・階段・デッキの連続性",
+    "A/Bの自然な駅間距離、道路重複、休憩・トイレ、途中離脱",
+    "水上バスを別行動として提案する場合の乗船可能な桟橋・運航日・料金",
+    "雨天時に連続して歩ける屋内区間"
+  ]
+}
