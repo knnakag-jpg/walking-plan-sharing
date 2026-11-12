@@ -1,0 +1,41 @@
+{
+  "id": "No.47",
+  "buildFile": "data/research/kiyosumi-route-build.json",
+  "title": "清澄白河から両国・亀戸へ",
+  "summary": "深川の江戸文化から芭蕉ゆかりの街路、北斎のまちへ。延長すると亀戸天神へ向かう。旧No.47の錦糸町側の往復延伸は採用しない。",
+  "themes": ["庭園", "歴史", "水辺", "美術", "街並み"],
+  "routeReasons": {
+    "standard": "清澄白河駅から深川江戸資料館、清澄庭園、芭蕉記念館を通り、北へ両国、東へすみだ北斎美術館と錦糸町駅へ進む。旧案末尾の距離合わせの往復を除き、異なる街の表情を駅から駅へつなぐ。隅田川テラスを実際にどの区間で使えるかは地図レビューで確かめる。",
+    "extended": "北斎美術館までの流れを共有し、錦糸町駅前へ寄らずに亀戸天神社へ分岐して亀戸駅へ進む。藤・梅などの季節景観と寺社の街並みを加える。亀戸天神の入口位置とJR亀戸駅への最終区間は未確認。"
+  },
+  "scenicSegments": [
+    {"name": "資料館通りと深川の街並み", "theme": "江戸文化・生活の道", "direction": "清澄白河駅から深川江戸資料館へ", "reviewStatus": "候補・道路区間の照合待ち", "evidenceTitle": "江東区観光協会・清澄白河駅周辺モデルコース"},
+    {"name": "隅田川テラス付近", "theme": "川と橋の眺め", "direction": "深川から両国へ北上", "reviewStatus": "候補・A/Bが実際に通る区間を要確認", "evidenceTitle": "東京都公園協会・隅田川沿川の散策コース"},
+    {"name": "亀戸天神社周辺", "theme": "寺社と季節の花", "direction": "北斎美術館から亀戸へ東進するB案", "reviewStatus": "候補・入口と歩道を要確認", "evidenceTitle": "江東区観光協会・亀戸エリア"}
+  ],
+  "rainy": {
+    "verificationStatus": "researched",
+    "summary": "清澄白河駅から深川江戸資料館へ短く歩き、屋内展示を楽しむ。雨が弱ければ地下鉄大江戸線で両国へ移動し、すみだ北斎美術館を追加する。館内の連続歩行距離は未計測。",
+    "segments": [
+      {"kind": "walk_outdoor", "from": "清澄白河駅", "to": "深川江戸資料館", "distanceM": null, "note": "屋根のある連続動線は未確認。傘が必要。"},
+      {"kind": "walk_indoor", "from": "深川江戸資料館", "to": "展示室内", "distanceM": null, "note": "展示室の見学。歩行距離は未計測。"},
+      {"kind": "walk_outdoor", "from": "深川江戸資料館", "to": "清澄白河駅", "distanceM": null, "note": "駅へ戻る区間。雨天の安全な横断を要確認。"},
+      {"kind": "rail", "from": "清澄白河駅", "to": "両国駅", "distanceM": null, "note": "大江戸線利用を想定。時刻・運賃・乗換を当日確認。"},
+      {"kind": "walk_outdoor", "from": "両国駅", "to": "すみだ北斎美術館", "distanceM": null, "note": "傘が必要。歩道橋・横断方法を要確認。"},
+      {"kind": "walk_indoor", "from": "すみだ北斎美術館", "to": "館内展示", "distanceM": null, "note": "入館料・開館日・展示内容を確認。"}
+    ],
+    "conditions": ["深川江戸資料館は第2・第4月曜等に休館。", "すみだ北斎美術館は月曜等に休館。", "両館の臨時休館・料金・利用できる屋内動線は出発前に再確認。"]
+  },
+  "evidence": [
+    {"type": "official", "title": "江東区観光協会・清澄白河駅周辺モデルコース", "url": "https://koto-kanko.jp/tourism/detail_course.php?mcid=27", "checkedAt": "2026-11-12", "supports": "清澄庭園、深川江戸資料館、資料館通りと周辺街並みの散策価値"},
+    {"type": "official", "title": "東京都公園協会・隅田川沿川の散策コース", "url": "https://www.tokyo-park.or.jp/water/terrace/assets/sumidagawa_map20240614.pdf", "checkedAt": "2026-11-12", "supports": "芭蕉記念館、清澄庭園、深川江戸資料館をつなぐ深川散策路"},
+    {"type": "official", "title": "清澄庭園・利用案内", "url": "https://www.tokyo-park.or.jp/park/kiyosumi/", "checkedAt": "2026-11-12", "supports": "庭園の所在地・開園時間・料金"},
+    {"type": "official", "title": "深川江戸資料館・館の概要", "url": "https://www.kcf.or.jp/fukagawa/outline/", "checkedAt": "2026-11-12", "supports": "展示内容・開館時間・休館日"},
+    {"type": "official", "title": "すみだ北斎美術館・ご利用案内", "url": "https://hokusai-museum.jp/modules/Page/pages/view/1111?lang=en", "checkedAt": "2026-11-12", "supports": "開館時間・休館日・観覧料"},
+    {"type": "official", "title": "江東区観光協会・亀戸エリア", "url": "https://koto-kanko.jp/tourism/detail_course.php?mcid=30", "checkedAt": "2026-11-12", "supports": "亀戸天神社と季節の花を楽しむ散策価値"},
+    {"type": "walked_account", "title": "YAMAP・清澄白河の公園と緑道ウォーキング", "url": "https://yamap.com/activities/50752927", "checkedAt": "2026-11-12", "supports": "現地歩行者が公園・緑道を巡った記録。今回のA/B経路を歩いた証拠ではない"},
+    {"type": "geodata", "title": "OpenStreetMap Nominatim利用条件", "url": "https://operations.osmfoundation.org/policies/nominatim/", "checkedAt": "2026-11-12", "supports": "限定的な地点照合と出典表示"},
+    {"type": "geodata", "title": "NII地名地点データ・亀戸天神社", "url": "https://geoshape.ex.nii.ac.jp/nrct-poi/resource/13/130000299900.html", "checkedAt": "2026-11-12", "supports": "亀戸天神社の周辺座標。入口の正確な位置ではない"}
+  ],
+  "openQuestions": ["清澄庭園の推奨出入口と庭園内の歩行距離", "深川江戸資料館と芭蕉記念館の道路からの出入口", "隅田川テラスへの接続と通行可能区間", "亀戸天神社の入口・太鼓橋の雨天安全性", "JR亀戸駅への最終区間", "トイレ・休憩場所・途中離脱", "豊田駅からの鉄道アクセスと東京駅経由の帰宅"]
+}

@@ -1,0 +1,178 @@
+{
+  "generatedAt": "2026-11-12T13:32:15.740Z",
+  "method": "Valhalla pedestrian; exact geometry edge repeat is a screening clue, not OSM edge identity",
+  "results": [
+    {
+      "variant": "standard",
+      "distanceM": 5907,
+      "engineDistanceM": 5908,
+      "repeatedGeometryM": 207,
+      "repeatedGeometryPct": 3.5,
+      "waypoints": [
+        {
+          "id": "kiyosumi_station",
+          "label": "清澄白河駅",
+          "coord": [
+            35.6820504,
+            139.7987644
+          ],
+          "source": "OpenStreetMap Nominatim"
+        },
+        {
+          "id": "fukagawa_museum",
+          "label": "深川江戸資料館",
+          "coord": [
+            35.681089,
+            139.800777
+          ],
+          "source": "OpenStreetMap Nominatim"
+        },
+        {
+          "id": "kiyosumi_garden",
+          "label": "清澄庭園 北側付近",
+          "coord": [
+            35.681,
+            139.7975
+          ],
+          "source": "legacy waypoint; entrance not confirmed"
+        },
+        {
+          "id": "basho_museum",
+          "label": "芭蕉記念館",
+          "coord": [
+            35.686129,
+            139.794092
+          ],
+          "source": "OpenStreetMap Nominatim"
+        },
+        {
+          "id": "ryogoku_station",
+          "label": "両国駅付近",
+          "coord": [
+            35.696,
+            139.7935
+          ],
+          "source": "legacy waypoint; exit not confirmed"
+        },
+        {
+          "id": "hokusai_museum",
+          "label": "すみだ北斎美術館",
+          "coord": [
+            35.6963779,
+            139.8004717
+          ],
+          "source": "OpenStreetMap Nominatim"
+        },
+        {
+          "id": "kinshicho_station",
+          "label": "錦糸町駅",
+          "coord": [
+            35.6967489,
+            139.8139559
+          ],
+          "source": "OpenStreetMap Nominatim"
+        }
+      ],
+      "legDistancesKm": [
+        0.313,
+        0.493,
+        0.866,
+        1.423,
+        1.155,
+        1.655
+      ],
+      "geometryUrl": "data/routes/no-47-standard.geojson"
+    },
+    {
+      "variant": "extended",
+      "distanceM": 7746,
+      "engineDistanceM": 7745,
+      "repeatedGeometryM": 285,
+      "repeatedGeometryPct": 3.7,
+      "waypoints": [
+        {
+          "id": "kiyosumi_station",
+          "label": "清澄白河駅",
+          "coord": [
+            35.6820504,
+            139.7987644
+          ],
+          "source": "OpenStreetMap Nominatim"
+        },
+        {
+          "id": "fukagawa_museum",
+          "label": "深川江戸資料館",
+          "coord": [
+            35.681089,
+            139.800777
+          ],
+          "source": "OpenStreetMap Nominatim"
+        },
+        {
+          "id": "kiyosumi_garden",
+          "label": "清澄庭園 北側付近",
+          "coord": [
+            35.681,
+            139.7975
+          ],
+          "source": "legacy waypoint; entrance not confirmed"
+        },
+        {
+          "id": "basho_museum",
+          "label": "芭蕉記念館",
+          "coord": [
+            35.686129,
+            139.794092
+          ],
+          "source": "OpenStreetMap Nominatim"
+        },
+        {
+          "id": "ryogoku_station",
+          "label": "両国駅付近",
+          "coord": [
+            35.696,
+            139.7935
+          ],
+          "source": "legacy waypoint; exit not confirmed"
+        },
+        {
+          "id": "hokusai_museum",
+          "label": "すみだ北斎美術館",
+          "coord": [
+            35.6963779,
+            139.8004717
+          ],
+          "source": "OpenStreetMap Nominatim"
+        },
+        {
+          "id": "kameido_tenjin",
+          "label": "亀戸天神社",
+          "coord": [
+            35.702053,
+            139.820358
+          ],
+          "source": "NII historical place dataset; vicinity only"
+        },
+        {
+          "id": "kameido_station",
+          "label": "亀戸駅",
+          "coord": [
+            35.6976987,
+            139.827138
+          ],
+          "source": "OpenStreetMap Nominatim; Tobu side, JR entrance unresolved"
+        }
+      ],
+      "legDistancesKm": [
+        0.313,
+        0.493,
+        0.866,
+        1.423,
+        1.155,
+        2.396,
+        1.095
+      ],
+      "geometryUrl": "data/routes/no-47-extended.geojson"
+    }
+  ]
+}

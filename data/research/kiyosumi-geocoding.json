@@ -1,0 +1,126 @@
+{
+  "checkedAt": "2026-11-12T13:30:09.607Z",
+  "source": "OpenStreetMap Nominatim; © OpenStreetMap contributors",
+  "results": {
+    "kiyosumi_station": {
+      "query": "清澄白河駅 東京都",
+      "candidates": [
+        {
+          "osm_type": "node",
+          "osm_id": 5594511144,
+          "name": "清澄白河",
+          "display_name": "清澄白河, 清洲橋通り, 清澄三丁目, 清澄, 江東区, 東京, 135-0024, 日本",
+          "lat": 35.6820504,
+          "lon": 139.7987644
+        }
+      ]
+    },
+    "kiyosumi_garden": {
+      "query": "清澄庭園 江東区",
+      "candidates": [
+        {
+          "osm_type": "way",
+          "osm_id": 22562412,
+          "name": "清澄庭園",
+          "display_name": "清澄庭園, 清澄, 江東区, 東京, 135-0024, 日本",
+          "lat": 35.679981,
+          "lon": 139.7977865
+        }
+      ]
+    },
+    "fukagawa_museum": {
+      "query": "深川江戸資料館 江東区",
+      "candidates": [
+        {
+          "osm_type": "node",
+          "osm_id": 11436157537,
+          "name": "深川江戸資料館",
+          "display_name": "深川江戸資料館, 深川資料館通り, 三好二丁目, 三好, 江東区, 東京, 135-0022, 日本",
+          "lat": 35.681089,
+          "lon": 139.800777
+        }
+      ]
+    },
+    "basho_museum": {
+      "query": "江東区芭蕉記念館 東京都",
+      "candidates": [
+        {
+          "osm_type": "node",
+          "osm_id": 1420787712,
+          "name": "江東区芭蕉記念館",
+          "display_name": "江東区芭蕉記念館, 3, 常盤一丁目, 常盤, 江東区, 東京, 135-0006, 日本",
+          "lat": 35.686129,
+          "lon": 139.794092
+        }
+      ]
+    },
+    "hokusai_museum": {
+      "query": "すみだ北斎美術館 墨田区",
+      "candidates": [
+        {
+          "osm_type": "way",
+          "osm_id": 444853841,
+          "name": "すみだ北斎美術館",
+          "display_name": "すみだ北斎美術館, 2, 亀沢二丁目, 亀沢, 墨田区, 東京, 130-0014, 日本",
+          "lat": 35.6963779,
+          "lon": 139.8004717
+        }
+      ]
+    },
+    "kinshicho_station": {
+      "query": "錦糸町駅 墨田区",
+      "candidates": [
+        {
+          "osm_type": "node",
+          "osm_id": 7865838635,
+          "name": "錦糸町",
+          "display_name": "錦糸町, 錦糸町駅, 錦糸一丁目, 錦糸, 墨田区, 東京, 130-0013, 日本",
+          "lat": 35.6967489,
+          "lon": 139.8139559
+        },
+        {
+          "osm_type": "node",
+          "osm_id": 6547961657,
+          "name": "錦糸町",
+          "display_name": "錦糸町, 四ツ目通り, 江東橋四丁目, 江東橋, 墨田区, 東京, 130-0022, 日本",
+          "lat": 35.6963122,
+          "lon": 139.8150431
+        }
+      ]
+    },
+    "mot": {
+      "query": "東京都現代美術館 江東区",
+      "candidates": [
+        {
+          "osm_type": "relation",
+          "osm_id": 12077221,
+          "name": "東京都現代美術館",
+          "display_name": "東京都現代美術館, 1, 三好四丁目, 三好, 江東区, 東京, 135-0022, 日本",
+          "lat": 35.6797754,
+          "lon": 139.8087878
+        }
+      ]
+    },
+    "kameido_station": {
+      "query": "亀戸駅 江東区",
+      "candidates": [
+        {
+          "osm_type": "node",
+          "osm_id": 6063546675,
+          "name": "亀戸",
+          "display_name": "亀戸, 東武 亀戸駅, 亀戸五丁目, 亀戸, 江東区, 東京, 136-0071, 日本",
+          "lat": 35.6976987,
+          "lon": 139.827138
+        },
+        {
+          "osm_type": "node",
+          "osm_id": 1152742616,
+          "name": "亀戸",
+          "display_name": "亀戸, JR 亀戸駅, 亀戸五丁目, 亀戸, 江東区, 東京, 136-0071, 日本",
+          "lat": 35.6973327,
+          "lon": 139.8267025
+        }
+      ]
+    }
+  }
+}

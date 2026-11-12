@@ -1,0 +1,2004 @@
+{
+  "generatedAt": "2026-11-12T13:59:51.938Z",
+  "method": "decoded legacy shape; exact rounded geometry edge matches, not OSM road edges",
+  "audits": [
+    {
+      "id": "No.1",
+      "title": "皇居東御苑・三の丸尚蔵館",
+      "geometryDistanceM": 6654,
+      "engineDistanceM": 6655,
+      "targetDistanceM": 6900,
+      "engineGapPct": 0.01,
+      "repeatedGeometryM": 1588,
+      "repeatedGeometryPct": 23.9,
+      "maxWaypointToShapeM": 32,
+      "repeatedWaypoints": [
+        [
+          8,
+          10
+        ]
+      ],
+      "legacyGate": "OK",
+      "legacyWarnings": "leg 3 too short (0.14km); leg 4 too short (0.08km); leg 6 too short (0.10km)",
+      "flags": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint"
+      ]
+    },
+    {
+      "id": "No.2",
+      "title": "お台場・有明",
+      "geometryDistanceM": 6586,
+      "engineDistanceM": 6594,
+      "targetDistanceM": 6900,
+      "engineGapPct": 0.12,
+      "repeatedGeometryM": 582,
+      "repeatedGeometryPct": 8.8,
+      "maxWaypointToShapeM": 13,
+      "repeatedWaypoints": [],
+      "legacyGate": "OK",
+      "legacyWarnings": "coordinate 35.6254,139.771 has < 4 decimal places (~110m+ error); coordinate 35.6297,139.775 has < 4 decimal places (~110m+ error); coordinate 35.632,139.7815 has < 4 decimal places (~110m+ error); coordinate 35.634,139.79 has < 4 decimal places (~110m+ error)",
+      "flags": []
+    },
+    {
+      "id": "No.3",
+      "title": "横浜・汽車道～開港記念会館",
+      "geometryDistanceM": 6746,
+      "engineDistanceM": 6753,
+      "targetDistanceM": 6900,
+      "engineGapPct": 0.1,
+      "repeatedGeometryM": 1529,
+      "repeatedGeometryPct": 22.7,
+      "maxWaypointToShapeM": 32,
+      "repeatedWaypoints": [
+        [
+          8,
+          10
+        ]
+      ],
+      "legacyGate": "OK",
+      "legacyWarnings": "leg 4 too short (0.11km); coordinate 35.4522,139.639 has < 4 decimal places (~110m+ error); coordinate 35.452,139.6432 has < 4 decimal places (~110m+ error); coordinate 35.4428,139.652 has < 4 decimal places (~110m+ error); coordinate 35.4428,139.652 has < 4 decimal places (~110m+ error)",
+      "flags": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint"
+      ]
+    },
+    {
+      "id": "No.4",
+      "title": "調布飛行場・武蔵野の森公園",
+      "geometryDistanceM": 5951,
+      "engineDistanceM": 5960,
+      "targetDistanceM": 6000,
+      "engineGapPct": 0.16,
+      "repeatedGeometryM": 767,
+      "repeatedGeometryPct": 12.9,
+      "maxWaypointToShapeM": 74,
+      "repeatedWaypoints": [
+        [
+          4,
+          6
+        ]
+      ],
+      "legacyGate": "OK",
+      "legacyWarnings": "coordinate 35.6738,139.525 has < 4 decimal places (~110m+ error); coordinate 35.6728,139.53 has < 4 decimal places (~110m+ error); coordinate 35.6605,139.523 has < 4 decimal places (~110m+ error); coordinate 35.6605,139.523 has < 4 decimal places (~110m+ error)",
+      "flags": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint",
+        "waypoint_off_shape"
+      ]
+    },
+    {
+      "id": "No.5",
+      "title": "東京競馬場・府中",
+      "geometryDistanceM": 7316,
+      "engineDistanceM": 7323,
+      "targetDistanceM": 6900,
+      "engineGapPct": 0.09,
+      "repeatedGeometryM": 1510,
+      "repeatedGeometryPct": 20.6,
+      "maxWaypointToShapeM": 31,
+      "repeatedWaypoints": [],
+      "legacyGate": "OK",
+      "legacyWarnings": "leg 2 too short (0.11km); leg 3 too short (0.13km); leg 4 too short (0.07km); coordinate 35.6702,139.483 has < 4 decimal places (~110m+ error)",
+      "flags": [
+        "repeated_geometry_over_10pct"
+      ]
+    },
+    {
+      "id": "No.6",
+      "title": "ところざわサクラタウン",
+      "geometryDistanceM": 7235,
+      "engineDistanceM": 7237,
+      "targetDistanceM": 6900,
+      "engineGapPct": 0.02,
+      "repeatedGeometryM": 320,
+      "repeatedGeometryPct": 4.4,
+      "maxWaypointToShapeM": 43,
+      "repeatedWaypoints": [],
+      "legacyGate": "OK",
+      "legacyWarnings": "leg 2 too short (0.08km); leg 3 too short (0.11km); coordinate 35.7865,139.509 has < 4 decimal places (~110m+ error); coordinate 35.786,139.507 has < 4 decimal places (~110m+ error); coordinate 35.788,139.5 has < 4 decimal places (~110m+ error); coordinate 35.7945,139.485 has < 4 decimal places (~110m+ error)",
+      "flags": [
+        "waypoint_off_shape"
+      ]
+    },
+    {
+      "id": "No.7",
+      "title": "高輪ゲートウェイ～品川",
+      "geometryDistanceM": 5612,
+      "engineDistanceM": 5617,
+      "targetDistanceM": 5600,
+      "engineGapPct": 0.08,
+      "repeatedGeometryM": 234,
+      "repeatedGeometryPct": 4.2,
+      "maxWaypointToShapeM": 34,
+      "repeatedWaypoints": [],
+      "legacyGate": "OK",
+      "legacyWarnings": "coordinate 35.62961,139.742 has < 4 decimal places (~110m+ error)",
+      "flags": []
+    },
+    {
+      "id": "No.8",
+      "title": "上野ミュージアム",
+      "geometryDistanceM": 6716,
+      "engineDistanceM": 6725,
+      "targetDistanceM": 6900,
+      "engineGapPct": 0.13,
+      "repeatedGeometryM": 1526,
+      "repeatedGeometryPct": 22.7,
+      "maxWaypointToShapeM": 41,
+      "repeatedWaypoints": [
+        [
+          8,
+          10
+        ]
+      ],
+      "legacyGate": "OK",
+      "legacyWarnings": "leg 3 too short (0.12km); leg 4 too short (0.10km); coordinate 35.7175,139.776 has < 4 decimal places (~110m+ error); coordinate 35.7205,139.772 has < 4 decimal places (~110m+ error)",
+      "flags": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint",
+        "waypoint_off_shape"
+      ]
+    },
+    {
+      "id": "No.9",
+      "title": "高尾山（ケーブルカー）",
+      "geometryDistanceM": 2778,
+      "engineDistanceM": 2781,
+      "targetDistanceM": 3000,
+      "engineGapPct": 0.1,
+      "repeatedGeometryM": 955,
+      "repeatedGeometryPct": 34.4,
+      "maxWaypointToShapeM": 31,
+      "repeatedWaypoints": [
+        [
+          1,
+          3
+        ]
+      ],
+      "legacyGate": "OK",
+      "legacyWarnings": "coordinate 35.634,139.262 has < 4 decimal places (~110m+ error); coordinate 35.634,139.262 has < 4 decimal places (~110m+ error); routed 2.78km vs target 3km (ratio 0.93) — outside the preferred +/-7% band",
+      "flags": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint"
+      ]
+    },
+    {
+      "id": "No.10",
+      "title": "羽田イノベーションシティ～スカイブリッジ",
+      "geometryDistanceM": 6883,
+      "engineDistanceM": 6894,
+      "targetDistanceM": 6900,
+      "engineGapPct": 0.16,
+      "repeatedGeometryM": 1340,
+      "repeatedGeometryPct": 19.5,
+      "maxWaypointToShapeM": 84,
+      "repeatedWaypoints": [
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          6,
+          8
+        ]
+      ],
+      "legacyGate": "OK",
+      "legacyWarnings": "non-adjacent points 4 & 8 are within 80m (possible backtrack/figure-8); coordinate 35.548,139.755 has < 4 decimal places (~110m+ error); coordinate 35.5455,139.762 has < 4 decimal places (~110m+ error); coordinate 35.5425,139.765 has < 4 decimal places (~110m+ error); coordinate 35.5405,139.77 has < 4 decimal places (~110m+ error); coordinate 35.543,139.772 has < 4 decimal places (~110m+ error); coordinate 35.543,139.772 has < 4 decimal places (~110m+ error); coordinate 35.543,139.772 has < 4 decimal places (~110m+ error)",
+      "flags": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint",
+        "waypoint_off_shape"
+      ]
+    },
+    {
+      "id": "No.11",
+      "title": "豊洲 千客万来～ぐるり公園",
+      "geometryDistanceM": 7289,
+      "engineDistanceM": 7299,
+      "targetDistanceM": 7300,
+      "engineGapPct": 0.13,
+      "repeatedGeometryM": 919,
+      "repeatedGeometryPct": 12.6,
+      "maxWaypointToShapeM": 31,
+      "repeatedWaypoints": [],
+      "legacyGate": "OK",
+      "legacyWarnings": "leg 1 too short (0.11km); coordinate 35.645,139.785 has < 4 decimal places (~110m+ error); coordinate 35.6468,139.791 has < 4 decimal places (~110m+ error); coordinate 35.65,139.802 has < 4 decimal places (~110m+ error)",
+      "flags": [
+        "repeated_geometry_over_10pct"
+      ]
+    },
+    {
+      "id": "No.12",
+      "title": "立川 GREEN SPRINGS",
+      "geometryDistanceM": 6721,
+      "engineDistanceM": 6729,
+      "targetDistanceM": 6900,
+      "engineGapPct": 0.12,
+      "repeatedGeometryM": 2302,
+      "repeatedGeometryPct": 34.2,
+      "maxWaypointToShapeM": 85,
+      "repeatedWaypoints": [
+        [
+          6,
+          8
+        ]
+      ],
+      "legacyGate": "OK",
+      "legacyWarnings": "leg 2 too short (0.04km); coordinate 35.701,139.4132 has < 4 decimal places (~110m+ error); coordinate 35.695,139.413 has < 4 decimal places (~110m+ error); coordinate 35.703,139.4129 has < 4 decimal places (~110m+ error); coordinate 35.7112,139.411 has < 4 decimal places (~110m+ error); coordinate 35.7112,139.411 has < 4 decimal places (~110m+ error)",
+      "flags": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint",
+        "waypoint_off_shape"
+      ]
+    },
+    {
+      "id": "No.13",
+      "title": "飛鳥山～音無親水公園",
+      "geometryDistanceM": 6989,
+      "engineDistanceM": 6989,
+      "targetDistanceM": 7000,
+      "engineGapPct": 0,
+      "repeatedGeometryM": 36,
+      "repeatedGeometryPct": 0.5,
+      "maxWaypointToShapeM": 20,
+      "repeatedWaypoints": [],
+      "legacyGate": "OK",
+      "legacyWarnings": "leg 4 too short (0.14km); leg 5 too short (0.11km); leg 6 too long (2.30km) — needs an intermediate waypoint; coordinate 35.752,139.7365 has < 4 decimal places (~110m+ error); coordinate 35.751,139.735 has < 4 decimal places (~110m+ error); coordinate 35.75,139.733 has < 4 decimal places (~110m+ error); coordinate 35.749,139.732 has < 4 decimal places (~110m+ error); coordinate 35.7485,139.731 has < 4 decimal places (~110m+ error)",
+      "flags": []
+    },
+    {
+      "id": "No.14",
+      "title": "大宮 鉄道博物館～大宮公園",
+      "geometryDistanceM": 6769,
+      "engineDistanceM": 6773,
+      "targetDistanceM": 6900,
+      "engineGapPct": 0.06,
+      "repeatedGeometryM": 1141,
+      "repeatedGeometryPct": 16.9,
+      "maxWaypointToShapeM": 39,
+      "repeatedWaypoints": [
+        [
+          6,
+          8
+        ]
+      ],
+      "legacyGate": "OK",
+      "legacyWarnings": "coordinate 35.9201,139.618 has < 4 decimal places (~110m+ error); coordinate 35.917,139.628 has < 4 decimal places (~110m+ error); coordinate 35.919,139.632 has < 4 decimal places (~110m+ error); coordinate 35.9175,139.635 has < 4 decimal places (~110m+ error); coordinate 35.916,139.636 has < 4 decimal places (~110m+ error); coordinate 35.916,139.636 has < 4 decimal places (~110m+ error)",
+      "flags": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint"
+      ]
+    },
+    {
+      "id": "No.15",
+      "title": "天王洲アイル 水辺アート",
+      "geometryDistanceM": 6035,
+      "engineDistanceM": 6036,
+      "targetDistanceM": 6000,
+      "engineGapPct": 0.01,
+      "repeatedGeometryM": 341,
+      "repeatedGeometryPct": 5.6,
+      "maxWaypointToShapeM": 44,
+      "repeatedWaypoints": [],
+      "legacyGate": "OK",
+      "legacyWarnings": "coordinate 35.62,139.75 has < 4 decimal places (~110m+ error); coordinate 35.622,139.752 has < 4 decimal places (~110m+ error); coordinate 35.624,139.748 has < 4 decimal places (~110m+ error); coordinate 35.626,139.745 has < 4 decimal places (~110m+ error); coordinate 35.6245,139.742 has < 4 decimal places (~110m+ error); coordinate 35.621,139.74 has < 4 decimal places (~110m+ error)",
+      "flags": [
+        "waypoint_off_shape"
+      ]
+    },
+    {
+      "id": "No.16",
+      "title": "横須賀 ヴェルニー～三笠公園",
+      "geometryDistanceM": 7159,
+      "engineDistanceM": 7174,
+      "targetDistanceM": 7200,
+      "engineGapPct": 0.21,
+      "repeatedGeometryM": 356,
+      "repeatedGeometryPct": 5,
+      "maxWaypointToShapeM": 44,
+      "repeatedWaypoints": [],
+      "legacyGate": "OK",
+      "legacyWarnings": "leg 7 too long (2.59km) — needs an intermediate waypoint; coordinate 35.2848,139.655 has < 4 decimal places (~110m+ error); coordinate 35.282,139.66 has < 4 decimal places (~110m+ error); coordinate 35.2805,139.665 has < 4 decimal places (~110m+ error); coordinate 35.283,139.67 has < 4 decimal places (~110m+ error); coordinate 35.285,139.672 has < 4 decimal places (~110m+ error)",
+      "flags": [
+        "waypoint_off_shape"
+      ]
+    },
+    {
+      "id": "No.17",
+      "title": "麻布台ヒルズ～東京タワー",
+      "geometryDistanceM": 6839,
+      "engineDistanceM": 6839,
+      "targetDistanceM": 6500,
+      "engineGapPct": 0,
+      "repeatedGeometryM": 1068,
+      "repeatedGeometryPct": 15.6,
+      "maxWaypointToShapeM": 36,
+      "repeatedWaypoints": [
+        [
+          3,
+          5
+        ]
+      ],
+      "legacyGate": "OK",
+      "legacyWarnings": "",
+      "flags": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint"
+      ]
+    },
+    {
+      "id": "No.18",
+      "title": "小石川後楽園～東京ドームシティ",
+      "geometryDistanceM": 7027,
+      "engineDistanceM": 7027,
+      "targetDistanceM": 6900,
+      "engineGapPct": 0.01,
+      "repeatedGeometryM": 1882,
+      "repeatedGeometryPct": 26.8,
+      "maxWaypointToShapeM": 92,
+      "repeatedWaypoints": [
+        [
+          6,
+          8
+        ]
+      ],
+      "legacyGate": "OK",
+      "legacyWarnings": "leg 6 too short (0.08km); non-adjacent points 5 & 8 are within 80m (possible backtrack/figure-8); coordinate 35.703,139.755 has < 4 decimal places (~110m+ error); coordinate 35.702,139.759 has < 4 decimal places (~110m+ error); coordinate 35.6998,139.764 has < 4 decimal places (~110m+ error); coordinate 35.6998,139.764 has < 4 decimal places (~110m+ error)",
+      "flags": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint",
+        "waypoint_off_shape"
+      ]
+    },
+    {
+      "id": "No.19",
+      "title": "神宮外苑～国立競技場外周",
+      "geometryDistanceM": 6835,
+      "engineDistanceM": 6836,
+      "targetDistanceM": 6900,
+      "engineGapPct": 0.02,
+      "repeatedGeometryM": 489,
+      "repeatedGeometryPct": 7.2,
+      "maxWaypointToShapeM": 81,
+      "repeatedWaypoints": [
+        [
+          0,
+          6
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          6,
+          8
+        ]
+      ],
+      "legacyGate": "OK",
+      "legacyWarnings": "non-adjacent points 0 & 6 are within 80m (possible backtrack/figure-8); coordinate 35.677,139.716 has < 4 decimal places (~110m+ error); coordinate 35.6775,139.714 has < 4 decimal places (~110m+ error); coordinate 35.679,139.712 has < 4 decimal places (~110m+ error); coordinate 35.681,139.715 has < 4 decimal places (~110m+ error); coordinate 35.6795,139.718 has < 4 decimal places (~110m+ error)",
+      "flags": [
+        "repeated_waypoint",
+        "waypoint_off_shape"
+      ]
+    },
+    {
+      "id": "No.20",
+      "title": "二子玉川 多摩川水辺",
+      "geometryDistanceM": 6835,
+      "engineDistanceM": 6843,
+      "targetDistanceM": 6800,
+      "engineGapPct": 0.12,
+      "repeatedGeometryM": 394,
+      "repeatedGeometryPct": 5.8,
+      "maxWaypointToShapeM": 35,
+      "repeatedWaypoints": [],
+      "legacyGate": "OK",
+      "legacyWarnings": "coordinate 35.608,139.624 has < 4 decimal places (~110m+ error); coordinate 35.605,139.622 has < 4 decimal places (~110m+ error); coordinate 35.603,139.62 has < 4 decimal places (~110m+ error); coordinate 35.602,139.618 has < 4 decimal places (~110m+ error); coordinate 35.6035,139.616 has < 4 decimal places (~110m+ error)",
+      "flags": []
+    },
+    {
+      "id": "No.21",
+      "title": "川越 蔵造りの町並み",
+      "geometryDistanceM": 6301,
+      "engineDistanceM": 6303,
+      "targetDistanceM": 6300,
+      "engineGapPct": 0.04,
+      "repeatedGeometryM": 467,
+      "repeatedGeometryPct": 7.4,
+      "maxWaypointToShapeM": 36,
+      "repeatedWaypoints": [],
+      "legacyGate": "OK",
+      "legacyWarnings": "coordinate 35.918,139.483 has < 4 decimal places (~110m+ error); coordinate 35.922,139.482 has < 4 decimal places (~110m+ error); coordinate 35.924,139.484 has < 4 decimal places (~110m+ error); coordinate 35.923,139.486 has < 4 decimal places (~110m+ error)",
+      "flags": []
+    },
+    {
+      "id": "No.22",
+      "title": "浜離宮～竹芝・水上バス",
+      "geometryDistanceM": 6973,
+      "engineDistanceM": 6991,
+      "targetDistanceM": 6700,
+      "engineGapPct": 0.26,
+      "repeatedGeometryM": 2616,
+      "repeatedGeometryPct": 37.5,
+      "maxWaypointToShapeM": 37,
+      "repeatedWaypoints": [
+        [
+          8,
+          10
+        ]
+      ],
+      "legacyGate": "OK",
+      "legacyWarnings": "leg 3 too short (0.05km); leg 6 too short (0.11km); coordinate 35.662,139.7592 has < 4 decimal places (~110m+ error)",
+      "flags": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint"
+      ]
+    },
+    {
+      "id": "No.23",
+      "title": "葛西臨海公園",
+      "geometryDistanceM": 6564,
+      "engineDistanceM": 6573,
+      "targetDistanceM": 6600,
+      "engineGapPct": 0.14,
+      "repeatedGeometryM": 607,
+      "repeatedGeometryPct": 9.2,
+      "maxWaypointToShapeM": 33,
+      "repeatedWaypoints": [],
+      "legacyGate": "OK",
+      "legacyWarnings": "",
+      "flags": []
+    },
+    {
+      "id": "No.24",
+      "title": "東京ミッドタウン～檜町公園",
+      "geometryDistanceM": 7067,
+      "engineDistanceM": 7075,
+      "targetDistanceM": 7100,
+      "engineGapPct": 0.11,
+      "repeatedGeometryM": 517,
+      "repeatedGeometryPct": 7.3,
+      "maxWaypointToShapeM": 54,
+      "repeatedWaypoints": [
+        [
+          0,
+          6
+        ]
+      ],
+      "legacyGate": "OK",
+      "legacyWarnings": "leg 4 too short (0.14km); non-adjacent points 0 & 6 are within 80m (possible backtrack/figure-8); coordinate 35.664,139.73 has < 4 decimal places (~110m+ error); coordinate 35.666,139.731 has < 4 decimal places (~110m+ error); coordinate 35.667,139.7325 has < 4 decimal places (~110m+ error); coordinate 35.666,139.7335 has < 4 decimal places (~110m+ error); coordinate 35.664,139.734 has < 4 decimal places (~110m+ error)",
+      "flags": [
+        "repeated_waypoint",
+        "waypoint_off_shape"
+      ]
+    },
+    {
+      "id": "No.25",
+      "title": "日本橋～コレド～水天宮前",
+      "geometryDistanceM": 6934,
+      "engineDistanceM": 6933,
+      "targetDistanceM": 6900,
+      "engineGapPct": 0.02,
+      "repeatedGeometryM": 745,
+      "repeatedGeometryPct": 10.7,
+      "maxWaypointToShapeM": 20,
+      "repeatedWaypoints": [],
+      "legacyGate": "OK",
+      "legacyWarnings": "leg 4 too short (0.15km); coordinate 35.682,139.7738 has < 4 decimal places (~110m+ error); coordinate 35.684,139.7745 has < 4 decimal places (~110m+ error); coordinate 35.686,139.7755 has < 4 decimal places (~110m+ error); coordinate 35.688,139.778 has < 4 decimal places (~110m+ error); coordinate 35.67262,139.795 has < 4 decimal places (~110m+ error)",
+      "flags": [
+        "repeated_geometry_over_10pct"
+      ]
+    },
+    {
+      "id": "No.26",
+      "title": "旧古河庭園～駒込",
+      "geometryDistanceM": 6655,
+      "engineDistanceM": 6637,
+      "targetDistanceM": 6600,
+      "engineGapPct": 0.27,
+      "repeatedGeometryM": 501,
+      "repeatedGeometryPct": 7.5,
+      "maxWaypointToShapeM": 14,
+      "repeatedWaypoints": [],
+      "legacyGate": "OK",
+      "legacyWarnings": "leg 5 too short (0.14km); coordinate 35.738,139.747 has < 4 decimal places (~110m+ error); coordinate 35.74,139.746 has < 4 decimal places (~110m+ error); coordinate 35.742,139.745 has < 4 decimal places (~110m+ error); coordinate 35.743,139.744 has < 4 decimal places (~110m+ error); coordinate 35.7412,139.743 has < 4 decimal places (~110m+ error)",
+      "flags": []
+    },
+    {
+      "id": "No.27",
+      "title": "国分寺崖線「はけ」",
+      "geometryDistanceM": 6962,
+      "engineDistanceM": 6973,
+      "targetDistanceM": 6900,
+      "engineGapPct": 0.16,
+      "repeatedGeometryM": 1432,
+      "repeatedGeometryPct": 20.6,
+      "maxWaypointToShapeM": 31,
+      "repeatedWaypoints": [
+        [
+          4,
+          6
+        ]
+      ],
+      "legacyGate": "OK",
+      "legacyWarnings": "coordinate 35.6938,139.514 has < 4 decimal places (~110m+ error); coordinate 35.697,139.5005 has < 4 decimal places (~110m+ error)",
+      "flags": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint"
+      ]
+    },
+    {
+      "id": "No.28",
+      "title": "四谷・若葉 スリバチ迷宮",
+      "geometryDistanceM": 3262,
+      "engineDistanceM": 3260,
+      "targetDistanceM": 3500,
+      "engineGapPct": 0.05,
+      "repeatedGeometryM": 87,
+      "repeatedGeometryPct": 2.7,
+      "maxWaypointToShapeM": 26,
+      "repeatedWaypoints": [],
+      "legacyGate": "OK",
+      "legacyWarnings": "coordinate 35.68,139.7203 has < 4 decimal places (~110m+ error); coordinate 35.686,139.7306 has < 4 decimal places (~110m+ error)",
+      "flags": []
+    },
+    {
+      "id": "No.29",
+      "title": "等々力渓谷と崖の階段",
+      "geometryDistanceM": 6594,
+      "engineDistanceM": 6598,
+      "targetDistanceM": 6900,
+      "engineGapPct": 0.07,
+      "repeatedGeometryM": 1274,
+      "repeatedGeometryPct": 19.3,
+      "maxWaypointToShapeM": 10,
+      "repeatedWaypoints": [
+        [
+          4,
+          6
+        ]
+      ],
+      "legacyGate": "OK",
+      "legacyWarnings": "leg 3 too short (0.09km); leg 4 too long (2.60km) — needs an intermediate waypoint; coordinate 35.6085,139.648 has < 4 decimal places (~110m+ error); coordinate 35.6038,139.646 has < 4 decimal places (~110m+ error)",
+      "flags": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint"
+      ]
+    },
+    {
+      "id": "No.30",
+      "title": "日野・多摩川崖線",
+      "geometryDistanceM": 4556,
+      "engineDistanceM": 4558,
+      "targetDistanceM": 4500,
+      "engineGapPct": 0.04,
+      "repeatedGeometryM": 175,
+      "repeatedGeometryPct": 3.8,
+      "maxWaypointToShapeM": 23,
+      "repeatedWaypoints": [],
+      "legacyGate": "OK",
+      "legacyWarnings": "coordinate 35.66,139.4125 has < 4 decimal places (~110m+ error); coordinate 35.662,139.394 has < 4 decimal places (~110m+ error)",
+      "flags": []
+    },
+    {
+      "id": "No.31",
+      "title": "山手線内側・最強の谷底",
+      "geometryDistanceM": 3061,
+      "engineDistanceM": 3059,
+      "targetDistanceM": 3000,
+      "engineGapPct": 0.06,
+      "repeatedGeometryM": 322,
+      "repeatedGeometryPct": 10.5,
+      "maxWaypointToShapeM": 23,
+      "repeatedWaypoints": [
+        [
+          4,
+          6
+        ]
+      ],
+      "legacyGate": "OK",
+      "legacyWarnings": "coordinate 35.6766,139.737 has < 4 decimal places (~110m+ error); coordinate 35.682,139.735 has < 4 decimal places (~110m+ error); coordinate 35.686,139.7306 has < 4 decimal places (~110m+ error); coordinate 35.686,139.7306 has < 4 decimal places (~110m+ error)",
+      "flags": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint"
+      ]
+    },
+    {
+      "id": "No.32",
+      "title": "神楽坂～市ヶ谷 崖の縁",
+      "geometryDistanceM": 3609,
+      "engineDistanceM": 3613,
+      "targetDistanceM": 3800,
+      "engineGapPct": 0.1,
+      "repeatedGeometryM": 28,
+      "repeatedGeometryPct": 0.8,
+      "maxWaypointToShapeM": 13,
+      "repeatedWaypoints": [],
+      "legacyGate": "OK",
+      "legacyWarnings": "coordinate 35.702,139.745 has < 4 decimal places (~110m+ error); coordinate 35.704,139.739 has < 4 decimal places (~110m+ error); coordinate 35.6985,139.735 has < 4 decimal places (~110m+ error)",
+      "flags": []
+    },
+    {
+      "id": "No.33",
+      "title": "東京駅 地下周回",
+      "geometryDistanceM": 4816,
+      "engineDistanceM": 4817,
+      "targetDistanceM": 4800,
+      "engineGapPct": 0.03,
+      "repeatedGeometryM": 260,
+      "repeatedGeometryPct": 5.4,
+      "maxWaypointToShapeM": 20,
+      "repeatedWaypoints": [
+        [
+          0,
+          10
+        ],
+        [
+          0,
+          12
+        ],
+        [
+          10,
+          12
+        ]
+      ],
+      "legacyGate": "OK",
+      "legacyWarnings": "leg 2 too short (0.12km); leg 10 too short (0.10km); non-adjacent points 0 & 10 are within 80m (possible backtrack/figure-8); coordinate 35.68,139.769 has < 4 decimal places (~110m+ error); coordinate 35.6778,139.767 has < 4 decimal places (~110m+ error); coordinate 35.674,139.7605 has < 4 decimal places (~110m+ error)",
+      "flags": [
+        "repeated_waypoint"
+      ]
+    },
+    {
+      "id": "No.34",
+      "title": "新宿駅 地下周回",
+      "geometryDistanceM": 5853,
+      "engineDistanceM": 5858,
+      "targetDistanceM": 5800,
+      "engineGapPct": 0.09,
+      "repeatedGeometryM": 806,
+      "repeatedGeometryPct": 13.8,
+      "maxWaypointToShapeM": 13,
+      "repeatedWaypoints": [
+        [
+          0,
+          8
+        ],
+        [
+          0,
+          9
+        ],
+        [
+          0,
+          11
+        ],
+        [
+          8,
+          11
+        ],
+        [
+          9,
+          11
+        ]
+      ],
+      "legacyGate": "OK",
+      "legacyWarnings": "leg 9 too short (0.00km); non-adjacent points 0 & 8 are within 80m (possible backtrack/figure-8); non-adjacent points 0 & 9 are within 80m (possible backtrack/figure-8); non-adjacent points 8 & 11 are within 80m (possible backtrack/figure-8); coordinate 35.6905,139.703 has < 4 decimal places (~110m+ error); coordinate 35.693,139.702 has < 4 decimal places (~110m+ error); coordinate 35.69,139.704 has < 4 decimal places (~110m+ error)",
+      "flags": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint"
+      ]
+    },
+    {
+      "id": "No.35",
+      "title": "池袋駅 地下周回",
+      "geometryDistanceM": 5074,
+      "engineDistanceM": 5075,
+      "targetDistanceM": 4800,
+      "engineGapPct": 0.02,
+      "repeatedGeometryM": 1086,
+      "repeatedGeometryPct": 21.4,
+      "maxWaypointToShapeM": 27,
+      "repeatedWaypoints": [
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          6,
+          8
+        ]
+      ],
+      "legacyGate": "OK",
+      "legacyWarnings": "non-adjacent points 2 & 6 are within 80m (possible backtrack/figure-8); non-adjacent points 2 & 8 are within 80m (possible backtrack/figure-8); coordinate 35.73,139.7128 has < 4 decimal places (~110m+ error); coordinate 35.7288,139.719 has < 4 decimal places (~110m+ error); coordinate 35.73,139.7128 has < 4 decimal places (~110m+ error); coordinate 35.73,139.7128 has < 4 decimal places (~110m+ error)",
+      "flags": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint"
+      ]
+    },
+    {
+      "id": "No.36",
+      "title": "多摩川 丸子橋・浅間神社",
+      "geometryDistanceM": 6491,
+      "engineDistanceM": 6496,
+      "targetDistanceM": 6200,
+      "engineGapPct": 0.07,
+      "repeatedGeometryM": 124,
+      "repeatedGeometryPct": 1.9,
+      "maxWaypointToShapeM": 28,
+      "repeatedWaypoints": [],
+      "legacyGate": "OK",
+      "legacyWarnings": "leg 2 too long (5.18km) — needs an intermediate waypoint; coordinate 35.59,139.6688 has < 4 decimal places (~110m+ error)",
+      "flags": []
+    },
+    {
+      "id": "No.37",
+      "title": "多摩川 多摩水道橋・登戸",
+      "geometryDistanceM": 6812,
+      "engineDistanceM": 6816,
+      "targetDistanceM": 6500,
+      "engineGapPct": 0.05,
+      "repeatedGeometryM": 0,
+      "repeatedGeometryPct": 0,
+      "maxWaypointToShapeM": 3,
+      "repeatedWaypoints": [],
+      "legacyGate": "OK",
+      "legacyWarnings": "leg 1 too long (5.94km) — needs an intermediate waypoint; coordinate 35.623,139.562 has < 4 decimal places (~110m+ error)",
+      "flags": []
+    },
+    {
+      "id": "No.38",
+      "title": "多摩川/浅川 万願寺ふれあい橋",
+      "geometryDistanceM": 5629,
+      "engineDistanceM": 5632,
+      "targetDistanceM": 6000,
+      "engineGapPct": 0.05,
+      "repeatedGeometryM": 849,
+      "repeatedGeometryPct": 15.1,
+      "maxWaypointToShapeM": 19,
+      "repeatedWaypoints": [
+        [
+          5,
+          7
+        ]
+      ],
+      "legacyGate": "OK",
+      "legacyWarnings": "coordinate 35.65,139.447 has < 4 decimal places (~110m+ error); coordinate 35.652,139.44 has < 4 decimal places (~110m+ error); coordinate 35.655,139.43 has < 4 decimal places (~110m+ error); coordinate 35.661,139.4145 has < 4 decimal places (~110m+ error)",
+      "flags": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint"
+      ]
+    },
+    {
+      "id": "No.39",
+      "title": "荒川 千住大土手・スカイツリー",
+      "geometryDistanceM": 6311,
+      "engineDistanceM": 6307,
+      "targetDistanceM": 6000,
+      "engineGapPct": 0.07,
+      "repeatedGeometryM": 1110,
+      "repeatedGeometryPct": 17.6,
+      "maxWaypointToShapeM": 33,
+      "repeatedWaypoints": [
+        [
+          5,
+          7
+        ]
+      ],
+      "legacyGate": "OK",
+      "legacyWarnings": "coordinate 35.749,139.8048 has < 4 decimal places (~110m+ error); coordinate 35.749,139.808 has < 4 decimal places (~110m+ error); coordinate 35.7475,139.827 has < 4 decimal places (~110m+ error); coordinate 35.746,139.832 has < 4 decimal places (~110m+ error); coordinate 35.746,139.832 has < 4 decimal places (~110m+ error)",
+      "flags": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint"
+      ]
+    },
+    {
+      "id": "No.40",
+      "title": "荒川 赤水門・岩淵",
+      "geometryDistanceM": 6101,
+      "engineDistanceM": 6108,
+      "targetDistanceM": 6200,
+      "engineGapPct": 0.11,
+      "repeatedGeometryM": 562,
+      "repeatedGeometryPct": 9.2,
+      "maxWaypointToShapeM": 183,
+      "repeatedWaypoints": [
+        [
+          4,
+          6
+        ]
+      ],
+      "legacyGate": "OK",
+      "legacyWarnings": "coordinate 35.786,139.72 has < 4 decimal places (~110m+ error); coordinate 35.789,139.73 has < 4 decimal places (~110m+ error); coordinate 35.795,139.726 has < 4 decimal places (~110m+ error); coordinate 35.801,139.72 has < 4 decimal places (~110m+ error); coordinate 35.801,139.72 has < 4 decimal places (~110m+ error)",
+      "flags": [
+        "repeated_waypoint",
+        "waypoint_off_shape"
+      ]
+    },
+    {
+      "id": "No.41",
+      "title": "江戸川 矢切の渡し・柴又",
+      "geometryDistanceM": 6067,
+      "engineDistanceM": 6077,
+      "targetDistanceM": 6000,
+      "engineGapPct": 0.17,
+      "repeatedGeometryM": 517,
+      "repeatedGeometryPct": 8.5,
+      "maxWaypointToShapeM": 112,
+      "repeatedWaypoints": [
+        [
+          7,
+          9
+        ]
+      ],
+      "legacyGate": "OK",
+      "legacyWarnings": "coordinate 35.7728,139.879 has < 4 decimal places (~110m+ error); coordinate 35.761,139.8825 has < 4 decimal places (~110m+ error); coordinate 35.757,139.8735 has < 4 decimal places (~110m+ error); coordinate 35.753,139.87 has < 4 decimal places (~110m+ error); coordinate 35.7495,139.865 has < 4 decimal places (~110m+ error); coordinate 35.7495,139.865 has < 4 decimal places (~110m+ error)",
+      "flags": [
+        "repeated_waypoint",
+        "waypoint_off_shape"
+      ]
+    },
+    {
+      "id": "No.42",
+      "title": "横浜 女神橋・大さん橋",
+      "geometryDistanceM": 6346,
+      "engineDistanceM": 6347,
+      "targetDistanceM": 6000,
+      "engineGapPct": 0.02,
+      "repeatedGeometryM": 500,
+      "repeatedGeometryPct": 7.9,
+      "maxWaypointToShapeM": 16,
+      "repeatedWaypoints": [
+        [
+          3,
+          5
+        ]
+      ],
+      "legacyGate": "OK",
+      "legacyWarnings": "coordinate 35.443,139.645 has < 4 decimal places (~110m+ error)",
+      "flags": [
+        "repeated_waypoint"
+      ]
+    },
+    {
+      "id": "No.43",
+      "title": "東京 夢の大橋・豊洲",
+      "geometryDistanceM": 6671,
+      "engineDistanceM": 6679,
+      "targetDistanceM": 6500,
+      "engineGapPct": 0.12,
+      "repeatedGeometryM": 608,
+      "repeatedGeometryPct": 9.1,
+      "maxWaypointToShapeM": 37,
+      "repeatedWaypoints": [],
+      "legacyGate": "OK",
+      "legacyWarnings": "coordinate 35.642,139.782 has < 4 decimal places (~110m+ error); coordinate 35.655,139.796 has < 4 decimal places (~110m+ error)",
+      "flags": []
+    },
+    {
+      "id": "No.44",
+      "title": "川崎・羽田 多摩川スカイブリッジ",
+      "geometryDistanceM": 6117,
+      "engineDistanceM": 6126,
+      "targetDistanceM": 6000,
+      "engineGapPct": 0.14,
+      "repeatedGeometryM": 1590,
+      "repeatedGeometryPct": 26,
+      "maxWaypointToShapeM": 40,
+      "repeatedWaypoints": [
+        [
+          3,
+          5
+        ]
+      ],
+      "legacyGate": "OK",
+      "legacyWarnings": "leg 1 too long (2.39km) — needs an intermediate waypoint; leg 3 too short (0.07km); non-adjacent points 2 & 5 are within 80m (possible backtrack/figure-8); coordinate 35.546,139.768 has < 4 decimal places (~110m+ error)",
+      "flags": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint",
+        "waypoint_off_shape"
+      ]
+    },
+    {
+      "id": "No.45",
+      "title": "木更津 中の島大橋",
+      "geometryDistanceM": 6219,
+      "engineDistanceM": 6229,
+      "targetDistanceM": 6200,
+      "engineGapPct": 0.17,
+      "repeatedGeometryM": 997,
+      "repeatedGeometryPct": 16,
+      "maxWaypointToShapeM": 65,
+      "repeatedWaypoints": [],
+      "legacyGate": "OK",
+      "legacyWarnings": "coordinate 35.38,139.93883 has < 4 decimal places (~110m+ error)",
+      "flags": [
+        "repeated_geometry_over_10pct",
+        "waypoint_off_shape"
+      ]
+    },
+    {
+      "id": "No.46",
+      "title": "夢の島熱帯植物館〜葛西臨海水族園",
+      "geometryDistanceM": 8025,
+      "engineDistanceM": 8033,
+      "targetDistanceM": 8000,
+      "engineGapPct": 0.1,
+      "repeatedGeometryM": 337,
+      "repeatedGeometryPct": 4.2,
+      "maxWaypointToShapeM": 49,
+      "repeatedWaypoints": [],
+      "legacyGate": "OK",
+      "legacyWarnings": "leg 1 too long (3.29km) — needs an intermediate waypoint; leg 2 too long (2.81km) — needs an intermediate waypoint",
+      "flags": [
+        "waypoint_off_shape"
+      ]
+    },
+    {
+      "id": "No.47",
+      "title": "清澄白河〜両国・錦糸町",
+      "geometryDistanceM": 7130,
+      "engineDistanceM": 7127,
+      "targetDistanceM": 6900,
+      "engineGapPct": 0.04,
+      "repeatedGeometryM": 640,
+      "repeatedGeometryPct": 9,
+      "maxWaypointToShapeM": 19,
+      "repeatedWaypoints": [
+        [
+          3,
+          5
+        ]
+      ],
+      "legacyGate": "OK",
+      "legacyWarnings": "leg 1 too short (0.15km); coordinate 35.6805,139.799 has < 4 decimal places (~110m+ error); coordinate 35.681,139.7975 has < 4 decimal places (~110m+ error); coordinate 35.696,139.7935 has < 4 decimal places (~110m+ error); coordinate 35.6965,139.814 has < 4 decimal places (~110m+ error); coordinate 35.6965,139.814 has < 4 decimal places (~110m+ error)",
+      "flags": [
+        "repeated_waypoint"
+      ]
+    },
+    {
+      "id": "No.48",
+      "title": "両国〜浅草〜スカイツリー",
+      "geometryDistanceM": 7021,
+      "engineDistanceM": 7019,
+      "targetDistanceM": 6900,
+      "engineGapPct": 0.03,
+      "repeatedGeometryM": 601,
+      "repeatedGeometryPct": 8.6,
+      "maxWaypointToShapeM": 71,
+      "repeatedWaypoints": [
+        [
+          6,
+          8
+        ]
+      ],
+      "legacyGate": "OK",
+      "legacyWarnings": "leg 6 too short (0.07km); non-adjacent points 5 & 8 are within 80m (possible backtrack/figure-8); coordinate 35.696,139.7935 has < 4 decimal places (~110m+ error); coordinate 35.698,139.796 has < 4 decimal places (~110m+ error); coordinate 35.7085,139.8 has < 4 decimal places (~110m+ error); coordinate 35.713,139.804 has < 4 decimal places (~110m+ error); coordinate 35.71,139.81 has < 4 decimal places (~110m+ error)",
+      "flags": [
+        "repeated_waypoint",
+        "waypoint_off_shape"
+      ]
+    },
+    {
+      "id": "No.49",
+      "title": "吉祥寺〜井の頭〜三鷹",
+      "geometryDistanceM": 7261,
+      "engineDistanceM": 7265,
+      "targetDistanceM": 6800,
+      "engineGapPct": 0.05,
+      "repeatedGeometryM": 549,
+      "repeatedGeometryPct": 7.6,
+      "maxWaypointToShapeM": 19,
+      "repeatedWaypoints": [
+        [
+          5,
+          7
+        ]
+      ],
+      "legacyGate": "OK",
+      "legacyWarnings": "coordinate 35.703,139.5805 has < 4 decimal places (~110m+ error); coordinate 35.7015,139.578 has < 4 decimal places (~110m+ error); coordinate 35.6995,139.576 has < 4 decimal places (~110m+ error); coordinate 35.696,139.5705 has < 4 decimal places (~110m+ error); coordinate 35.6945,139.568 has < 4 decimal places (~110m+ error)",
+      "flags": [
+        "repeated_waypoint"
+      ]
+    },
+    {
+      "id": "No.50",
+      "title": "谷根千 坂と行列グルメ",
+      "geometryDistanceM": 6979,
+      "engineDistanceM": 6991,
+      "targetDistanceM": 6900,
+      "engineGapPct": 0.18,
+      "repeatedGeometryM": 1004,
+      "repeatedGeometryPct": 14.4,
+      "maxWaypointToShapeM": 16,
+      "repeatedWaypoints": [
+        [
+          6,
+          8
+        ]
+      ],
+      "legacyGate": "OK",
+      "legacyWarnings": "coordinate 35.7075,139.774 has < 4 decimal places (~110m+ error); coordinate 35.707,139.7675 has < 4 decimal places (~110m+ error); coordinate 35.724,139.765 has < 4 decimal places (~110m+ error); coordinate 35.7235,139.771 has < 4 decimal places (~110m+ error); coordinate 35.728,139.7715 has < 4 decimal places (~110m+ error); coordinate 35.728,139.7715 has < 4 decimal places (~110m+ error)",
+      "flags": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint"
+      ]
+    },
+    {
+      "id": "No.51",
+      "title": "中目黒〜代官山〜恵比寿",
+      "geometryDistanceM": 7041,
+      "engineDistanceM": 7052,
+      "targetDistanceM": 6900,
+      "engineGapPct": 0.16,
+      "repeatedGeometryM": 840,
+      "repeatedGeometryPct": 11.9,
+      "maxWaypointToShapeM": 12,
+      "repeatedWaypoints": [
+        [
+          5,
+          7
+        ]
+      ],
+      "legacyGate": "OK",
+      "legacyWarnings": "leg 1 too short (0.15km); coordinate 35.644,139.6995 has < 4 decimal places (~110m+ error); coordinate 35.6435,139.698 has < 4 decimal places (~110m+ error); coordinate 35.649,139.703 has < 4 decimal places (~110m+ error); coordinate 35.6425,139.71 has < 4 decimal places (~110m+ error)",
+      "flags": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint"
+      ]
+    },
+    {
+      "id": "No.52",
+      "title": "神楽坂 石畳坂と路地グルメ",
+      "geometryDistanceM": 6593,
+      "engineDistanceM": 6597,
+      "targetDistanceM": 6600,
+      "engineGapPct": 0.06,
+      "repeatedGeometryM": 214,
+      "repeatedGeometryPct": 3.2,
+      "maxWaypointToShapeM": 15,
+      "repeatedWaypoints": [],
+      "legacyGate": "OK",
+      "legacyWarnings": "leg 2 too short (0.15km); leg 6 too short (0.06km); coordinate 35.702,139.744 has < 4 decimal places (~110m+ error); coordinate 35.7035,139.741 has < 4 decimal places (~110m+ error); coordinate 35.704,139.7395 has < 4 decimal places (~110m+ error); coordinate 35.703,139.738 has < 4 decimal places (~110m+ error); coordinate 35.7025,139.73 has < 4 decimal places (~110m+ error); coordinate 35.7055,139.722 has < 4 decimal places (~110m+ error); coordinate 35.706,139.722 has < 4 decimal places (~110m+ error); coordinate 35.719785,139.722 has < 4 decimal places (~110m+ error)",
+      "flags": []
+    },
+    {
+      "id": "No.53",
+      "title": "京王百草園 梅林早春",
+      "geometryDistanceM": 7189,
+      "engineDistanceM": 7193,
+      "targetDistanceM": 6800,
+      "engineGapPct": 0.06,
+      "repeatedGeometryM": 1394,
+      "repeatedGeometryPct": 19.4,
+      "maxWaypointToShapeM": 129,
+      "repeatedWaypoints": [
+        [
+          4,
+          6
+        ]
+      ],
+      "legacyGate": "OK",
+      "legacyWarnings": "leg 3 too long (2.75km) — needs an intermediate waypoint; coordinate 35.651,139.4405 has < 4 decimal places (~110m+ error); coordinate 35.656,139.444 has < 4 decimal places (~110m+ error); coordinate 35.66,139.414 has < 4 decimal places (~110m+ error); coordinate 35.6545,139.417 has < 4 decimal places (~110m+ error); coordinate 35.6545,139.417 has < 4 decimal places (~110m+ error)",
+      "flags": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint",
+        "waypoint_off_shape"
+      ]
+    },
+    {
+      "id": "No.54",
+      "title": "大宮公園 桜はしご",
+      "geometryDistanceM": 7254,
+      "engineDistanceM": 7267,
+      "targetDistanceM": 7300,
+      "engineGapPct": 0.17,
+      "repeatedGeometryM": 250,
+      "repeatedGeometryPct": 3.4,
+      "maxWaypointToShapeM": 20,
+      "repeatedWaypoints": [],
+      "legacyGate": "OK",
+      "legacyWarnings": "leg 1 too long (2.78km) — needs an intermediate waypoint; coordinate 35.912,139.628 has < 4 decimal places (~110m+ error); coordinate 35.9185,139.632 has < 4 decimal places (~110m+ error); coordinate 35.924,139.635 has < 4 decimal places (~110m+ error)",
+      "flags": []
+    },
+    {
+      "id": "No.55",
+      "title": "小金井公園〜野川 桜堤",
+      "geometryDistanceM": 6425,
+      "engineDistanceM": 6432,
+      "targetDistanceM": 6900,
+      "engineGapPct": 0.1,
+      "repeatedGeometryM": 815,
+      "repeatedGeometryPct": 12.7,
+      "maxWaypointToShapeM": 32,
+      "repeatedWaypoints": [],
+      "legacyGate": "OK",
+      "legacyWarnings": "coordinate 35.7,139.52 has < 4 decimal places (~110m+ error); coordinate 35.7155,139.512 has < 4 decimal places (~110m+ error); coordinate 35.698,139.505 has < 4 decimal places (~110m+ error); coordinate 35.7015,139.506 has < 4 decimal places (~110m+ error)",
+      "flags": [
+        "repeated_geometry_over_10pct"
+      ]
+    },
+    {
+      "id": "S1",
+      "title": "玉川上水・仙川緑道（三鷹〜武蔵境〜東小金井）水辺と並木",
+      "geometryDistanceM": 7109,
+      "engineDistanceM": 7113,
+      "targetDistanceM": 6900,
+      "engineGapPct": 0.06,
+      "repeatedGeometryM": 1623,
+      "repeatedGeometryPct": 22.8,
+      "maxWaypointToShapeM": 15,
+      "repeatedWaypoints": [
+        [
+          4,
+          6
+        ]
+      ],
+      "legacyGate": "OK",
+      "legacyWarnings": "coordinate 35.704,139.552 has < 4 decimal places (~110m+ error); coordinate 35.702,139.54 has < 4 decimal places (~110m+ error); coordinate 35.701,139.535 has < 4 decimal places (~110m+ error); coordinate 35.7,139.528 has < 4 decimal places (~110m+ error); coordinate 35.699,139.522 has < 4 decimal places (~110m+ error); coordinate 35.699,139.522 has < 4 decimal places (~110m+ error)",
+      "flags": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint"
+      ]
+    },
+    {
+      "id": "S2",
+      "title": "多摩川・浅川合流（豊田南口〜日野用水堰〜立川）水辺フラット",
+      "geometryDistanceM": 7276,
+      "engineDistanceM": 7281,
+      "targetDistanceM": 6800,
+      "engineGapPct": 0.07,
+      "repeatedGeometryM": 1198,
+      "repeatedGeometryPct": 16.5,
+      "maxWaypointToShapeM": 27,
+      "repeatedWaypoints": [
+        [
+          4,
+          6
+        ]
+      ],
+      "legacyGate": "OK",
+      "legacyWarnings": "coordinate 35.659,139.383 has < 4 decimal places (~110m+ error); coordinate 35.657,139.39 has < 4 decimal places (~110m+ error); coordinate 35.655,139.398 has < 4 decimal places (~110m+ error); coordinate 35.652,139.408 has < 4 decimal places (~110m+ error); coordinate 35.658,139.415 has < 4 decimal places (~110m+ error); coordinate 35.658,139.415 has < 4 decimal places (~110m+ error); routed 7.28km vs target 6.8km (ratio 1.07) — outside the preferred +/-7% band",
+      "flags": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint"
+      ]
+    },
+    {
+      "id": "S3",
+      "title": "昭和記念公園・あけぼの口〜日本庭園〜みんなの原っぱ縦断",
+      "geometryDistanceM": 6662,
+      "engineDistanceM": 6676,
+      "targetDistanceM": 6900,
+      "engineGapPct": 0.21,
+      "repeatedGeometryM": 1007,
+      "repeatedGeometryPct": 15.1,
+      "maxWaypointToShapeM": 39,
+      "repeatedWaypoints": [],
+      "legacyGate": "OK",
+      "legacyWarnings": "coordinate 35.704,139.389 has < 4 decimal places (~110m+ error); coordinate 35.706,139.393 has < 4 decimal places (~110m+ error); coordinate 35.707,139.397 has < 4 decimal places (~110m+ error); coordinate 35.706,139.4 has < 4 decimal places (~110m+ error); coordinate 35.704,139.392 has < 4 decimal places (~110m+ error)",
+      "flags": [
+        "repeated_geometry_over_10pct"
+      ]
+    },
+    {
+      "id": "S4",
+      "title": "井の頭・神田川せせらぎ（高井戸〜井の頭公園〜吉祥寺）",
+      "geometryDistanceM": 6473,
+      "engineDistanceM": 6480,
+      "targetDistanceM": 6900,
+      "engineGapPct": 0.11,
+      "repeatedGeometryM": 1652,
+      "repeatedGeometryPct": 25.5,
+      "maxWaypointToShapeM": 38,
+      "repeatedWaypoints": [
+        [
+          3,
+          5
+        ]
+      ],
+      "legacyGate": "OK",
+      "legacyWarnings": "coordinate 35.682,139.59 has < 4 decimal places (~110m+ error); coordinate 35.688,139.585 has < 4 decimal places (~110m+ error); coordinate 35.695,139.58 has < 4 decimal places (~110m+ error); coordinate 35.702,139.582 has < 4 decimal places (~110m+ error); coordinate 35.702,139.582 has < 4 decimal places (~110m+ error)",
+      "flags": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint"
+      ]
+    },
+    {
+      "id": "S5",
+      "title": "国立・谷保・矢川イチョウ並木（国立〜立川）学園×並木",
+      "geometryDistanceM": 7237,
+      "engineDistanceM": 7251,
+      "targetDistanceM": 7000,
+      "engineGapPct": 0.19,
+      "repeatedGeometryM": 1016,
+      "repeatedGeometryPct": 14,
+      "maxWaypointToShapeM": 79,
+      "repeatedWaypoints": [
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          7
+        ]
+      ],
+      "legacyGate": "OK",
+      "legacyWarnings": "leg 5 too short (0.00km); non-adjacent points 4 & 7 are within 80m (possible backtrack/figure-8); coordinate 35.698,139.441 has < 4 decimal places (~110m+ error); coordinate 35.692,139.433 has < 4 decimal places (~110m+ error); coordinate 35.688,139.428 has < 4 decimal places (~110m+ error); coordinate 35.685,139.42 has < 4 decimal places (~110m+ error); coordinate 35.684,139.412 has < 4 decimal places (~110m+ error); coordinate 35.684,139.412 has < 4 decimal places (~110m+ error); coordinate 35.692285,139.412 has < 4 decimal places (~110m+ error); coordinate 35.684,139.412 has < 4 decimal places (~110m+ error)",
+      "flags": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint",
+        "waypoint_off_shape"
+      ]
+    },
+    {
+      "id": "S6",
+      "title": "青梅街道・中野〜荻窪レトロ商店街（中野〜荻窪）",
+      "geometryDistanceM": 6779,
+      "engineDistanceM": 6789,
+      "targetDistanceM": 7000,
+      "engineGapPct": 0.15,
+      "repeatedGeometryM": 1450,
+      "repeatedGeometryPct": 21.4,
+      "maxWaypointToShapeM": 18,
+      "repeatedWaypoints": [
+        [
+          3,
+          5
+        ]
+      ],
+      "legacyGate": "OK",
+      "legacyWarnings": "coordinate 35.705,139.665 has < 4 decimal places (~110m+ error); coordinate 35.706,139.655 has < 4 decimal places (~110m+ error); coordinate 35.707,139.645 has < 4 decimal places (~110m+ error); coordinate 35.708,139.635 has < 4 decimal places (~110m+ error); coordinate 35.708,139.635 has < 4 decimal places (~110m+ error)",
+      "flags": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint"
+      ]
+    },
+    {
+      "id": "S7",
+      "title": "外濠・水道橋〜飯田橋〜市ケ谷〜四ツ谷 建築×水辺",
+      "geometryDistanceM": 7165,
+      "engineDistanceM": 7173,
+      "targetDistanceM": 6900,
+      "engineGapPct": 0.11,
+      "repeatedGeometryM": 1270,
+      "repeatedGeometryPct": 17.7,
+      "maxWaypointToShapeM": 37,
+      "repeatedWaypoints": [
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          7
+        ]
+      ],
+      "legacyGate": "OK",
+      "legacyWarnings": "leg 5 too short (0.00km); non-adjacent points 4 & 7 are within 80m (possible backtrack/figure-8); coordinate 35.701,139.753 has < 4 decimal places (~110m+ error); coordinate 35.698,139.748 has < 4 decimal places (~110m+ error); coordinate 35.695,139.743 has < 4 decimal places (~110m+ error); coordinate 35.69,139.735 has < 4 decimal places (~110m+ error); coordinate 35.688,139.73 has < 4 decimal places (~110m+ error); coordinate 35.688,139.73 has < 4 decimal places (~110m+ error); coordinate 35.699033,139.73 has < 4 decimal places (~110m+ error); coordinate 35.688,139.73 has < 4 decimal places (~110m+ error)",
+      "flags": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint"
+      ]
+    },
+    {
+      "id": "S8",
+      "title": "隅田川テラス・浅草橋〜スカイツリー（馬喰町〜押上）下町水辺",
+      "geometryDistanceM": 6816,
+      "engineDistanceM": 6818,
+      "targetDistanceM": 6800,
+      "engineGapPct": 0.03,
+      "repeatedGeometryM": 1342,
+      "repeatedGeometryPct": 19.7,
+      "maxWaypointToShapeM": 14,
+      "repeatedWaypoints": [],
+      "legacyGate": "OK",
+      "legacyWarnings": "coordinate 35.693,139.782 has < 4 decimal places (~110m+ error); coordinate 35.698,139.788 has < 4 decimal places (~110m+ error); coordinate 35.704,139.795 has < 4 decimal places (~110m+ error); coordinate 35.714,139.808 has < 4 decimal places (~110m+ error)",
+      "flags": [
+        "repeated_geometry_over_10pct"
+      ]
+    },
+    {
+      "id": "S9",
+      "title": "青梅線・羽村〜拝島 水辺とベースサイド",
+      "geometryDistanceM": 7956,
+      "engineDistanceM": 7966,
+      "targetDistanceM": 8000,
+      "engineGapPct": 0.13,
+      "repeatedGeometryM": 1174,
+      "repeatedGeometryPct": 14.8,
+      "maxWaypointToShapeM": 24,
+      "repeatedWaypoints": [
+        [
+          4,
+          6
+        ]
+      ],
+      "legacyGate": "OK",
+      "legacyWarnings": "coordinate 35.75,139.31 has < 4 decimal places (~110m+ error); coordinate 35.738,139.328 has < 4 decimal places (~110m+ error); coordinate 35.73,139.335 has < 4 decimal places (~110m+ error)",
+      "flags": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint"
+      ]
+    },
+    {
+      "id": "S10",
+      "title": "横浜線・片倉城跡とみなみ野〜橋本",
+      "geometryDistanceM": 7463,
+      "engineDistanceM": 7469,
+      "targetDistanceM": 7800,
+      "engineGapPct": 0.08,
+      "repeatedGeometryM": 36,
+      "repeatedGeometryPct": 0.5,
+      "maxWaypointToShapeM": 45,
+      "repeatedWaypoints": [],
+      "legacyGate": "OK",
+      "legacyWarnings": "leg 2 too long (2.82km) — needs an intermediate waypoint; coordinate 35.635,139.33 has < 4 decimal places (~110m+ error); coordinate 35.61,139.335 has < 4 decimal places (~110m+ error)",
+      "flags": [
+        "waypoint_off_shape"
+      ]
+    },
+    {
+      "id": "S11",
+      "title": "旭が丘中央公園→片倉→みなみ野",
+      "geometryDistanceM": 8656,
+      "engineDistanceM": 8660,
+      "targetDistanceM": 8500,
+      "engineGapPct": 0.05,
+      "repeatedGeometryM": 1360,
+      "repeatedGeometryPct": 15.7,
+      "maxWaypointToShapeM": 16,
+      "repeatedWaypoints": [
+        [
+          4,
+          6
+        ]
+      ],
+      "legacyGate": "OK",
+      "legacyWarnings": "coordinate 35.655,139.355 has < 4 decimal places (~110m+ error); coordinate 35.645,139.345 has < 4 decimal places (~110m+ error); coordinate 35.64,139.342 has < 4 decimal places (~110m+ error); coordinate 35.631,139.33 has < 4 decimal places (~110m+ error); coordinate 35.631,139.33 has < 4 decimal places (~110m+ error)",
+      "flags": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint"
+      ]
+    },
+    {
+      "id": "S12",
+      "title": "旭が丘→浅川→北野街道→めじろ台",
+      "geometryDistanceM": 7839,
+      "engineDistanceM": 7845,
+      "targetDistanceM": 8000,
+      "engineGapPct": 0.08,
+      "repeatedGeometryM": 292,
+      "repeatedGeometryPct": 3.7,
+      "maxWaypointToShapeM": 16,
+      "repeatedWaypoints": [
+        [
+          3,
+          5
+        ]
+      ],
+      "legacyGate": "OK",
+      "legacyWarnings": "leg 2 too long (3.78km) — needs an intermediate waypoint; coordinate 35.655,139.355 has < 4 decimal places (~110m+ error); coordinate 35.645,139.315 has < 4 decimal places (~110m+ error)",
+      "flags": [
+        "repeated_waypoint"
+      ]
+    },
+    {
+      "id": "S13",
+      "title": "旭が丘→湯殿川・浅川→高幡不動",
+      "geometryDistanceM": 8698,
+      "engineDistanceM": 8707,
+      "targetDistanceM": 8200,
+      "engineGapPct": 0.1,
+      "repeatedGeometryM": 46,
+      "repeatedGeometryPct": 0.5,
+      "maxWaypointToShapeM": 24,
+      "repeatedWaypoints": [],
+      "legacyGate": "OK",
+      "legacyWarnings": "coordinate 35.652,139.375 has < 4 decimal places (~110m+ error); coordinate 35.648,139.39 has < 4 decimal places (~110m+ error); coordinate 35.642,139.41 has < 4 decimal places (~110m+ error); coordinate 35.66157,139.413 has < 4 decimal places (~110m+ error)",
+      "flags": []
+    },
+    {
+      "id": "E1",
+      "title": "三島・源兵衛川と三嶋大社",
+      "geometryDistanceM": 6513,
+      "engineDistanceM": 6524,
+      "targetDistanceM": 6000,
+      "engineGapPct": 0.17,
+      "repeatedGeometryM": 2112,
+      "repeatedGeometryPct": 32.4,
+      "maxWaypointToShapeM": 71,
+      "repeatedWaypoints": [
+        [
+          3,
+          5
+        ]
+      ],
+      "legacyGate": "OK",
+      "legacyWarnings": "coordinate 35.118,138.915 has < 4 decimal places (~110m+ error); coordinate 35.12,138.918 has < 4 decimal places (~110m+ error); coordinate 35.119,138.922 has < 4 decimal places (~110m+ error); coordinate 35.118,138.925 has < 4 decimal places (~110m+ error); coordinate 35.118,138.925 has < 4 decimal places (~110m+ error); routed 6.52km vs target 6km (ratio 1.09) — outside the preferred +/-7% band",
+      "flags": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint",
+        "waypoint_off_shape"
+      ]
+    },
+    {
+      "id": "E2",
+      "title": "静岡・駿府城と浅間神社",
+      "geometryDistanceM": 7197,
+      "engineDistanceM": 7206,
+      "targetDistanceM": 7000,
+      "engineGapPct": 0.12,
+      "repeatedGeometryM": 206,
+      "repeatedGeometryPct": 2.9,
+      "maxWaypointToShapeM": 44,
+      "repeatedWaypoints": [],
+      "legacyGate": "OK",
+      "legacyWarnings": "leg 1 too long (4.81km) — needs an intermediate waypoint; coordinate 34.975,138.385 has < 4 decimal places (~110m+ error); coordinate 35.015,138.405 has < 4 decimal places (~110m+ error); coordinate 35.015,138.395 has < 4 decimal places (~110m+ error)",
+      "flags": [
+        "waypoint_off_shape"
+      ]
+    },
+    {
+      "id": "E3",
+      "title": "浜松・遠鉄と浜松城",
+      "geometryDistanceM": 6802,
+      "engineDistanceM": 6806,
+      "targetDistanceM": 7000,
+      "engineGapPct": 0.06,
+      "repeatedGeometryM": 2255,
+      "repeatedGeometryPct": 33.1,
+      "maxWaypointToShapeM": 20,
+      "repeatedWaypoints": [
+        [
+          3,
+          5
+        ]
+      ],
+      "legacyGate": "OK",
+      "legacyWarnings": "coordinate 34.71,137.726 has < 4 decimal places (~110m+ error); coordinate 34.715,137.73 has < 4 decimal places (~110m+ error); coordinate 34.72,137.735 has < 4 decimal places (~110m+ error); coordinate 34.718,137.74 has < 4 decimal places (~110m+ error); coordinate 34.718,137.74 has < 4 decimal places (~110m+ error)",
+      "flags": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint"
+      ]
+    },
+    {
+      "id": "E4",
+      "title": "名古屋・大須と名古屋城",
+      "geometryDistanceM": 6896,
+      "engineDistanceM": 6898,
+      "targetDistanceM": 7000,
+      "engineGapPct": 0.03,
+      "repeatedGeometryM": 37,
+      "repeatedGeometryPct": 0.5,
+      "maxWaypointToShapeM": 9,
+      "repeatedWaypoints": [],
+      "legacyGate": "OK",
+      "legacyWarnings": "leg 3 too long (2.94km) — needs an intermediate waypoint; coordinate 35.16,136.9 has < 4 decimal places (~110m+ error); coordinate 35.165,136.905 has < 4 decimal places (~110m+ error); coordinate 35.175,136.91 has < 4 decimal places (~110m+ error); coordinate 35.185,136.88 has < 4 decimal places (~110m+ error); coordinate 35.181,136.88 has < 4 decimal places (~110m+ error)",
+      "flags": []
+    },
+    {
+      "id": "E5",
+      "title": "小田原・国府津 海と駅伝",
+      "geometryDistanceM": 7411,
+      "engineDistanceM": 7419,
+      "targetDistanceM": 7000,
+      "engineGapPct": 0.11,
+      "repeatedGeometryM": 1875,
+      "repeatedGeometryPct": 25.3,
+      "maxWaypointToShapeM": 74,
+      "repeatedWaypoints": [
+        [
+          3,
+          5
+        ]
+      ],
+      "legacyGate": "OK",
+      "legacyWarnings": "coordinate 35.255,139.155 has < 4 decimal places (~110m+ error); coordinate 35.26,139.16 has < 4 decimal places (~110m+ error); coordinate 35.265,139.15 has < 4 decimal places (~110m+ error); coordinate 35.27,139.135 has < 4 decimal places (~110m+ error); coordinate 35.27,139.135 has < 4 decimal places (~110m+ error)",
+      "flags": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint",
+        "waypoint_off_shape"
+      ]
+    },
+    {
+      "id": "Z1",
+      "title": "広島・平和記念公園と川と橋",
+      "geometryDistanceM": 7254,
+      "engineDistanceM": 7266,
+      "targetDistanceM": 7500,
+      "engineGapPct": 0.16,
+      "repeatedGeometryM": 980,
+      "repeatedGeometryPct": 13.5,
+      "maxWaypointToShapeM": 14,
+      "repeatedWaypoints": [
+        [
+          3,
+          5
+        ]
+      ],
+      "legacyGate": "OK",
+      "legacyWarnings": "coordinate 34.39,132.455 has < 4 decimal places (~110m+ error); coordinate 34.395,132.46 has < 4 decimal places (~110m+ error); coordinate 34.4,132.455 has < 4 decimal places (~110m+ error); coordinate 34.395,132.45 has < 4 decimal places (~110m+ error); coordinate 34.395,132.45 has < 4 decimal places (~110m+ error)",
+      "flags": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint"
+      ]
+    },
+    {
+      "id": "Z2",
+      "title": "神戸・三宮〜ハーバーランド港夜景",
+      "geometryDistanceM": 6940,
+      "engineDistanceM": 6944,
+      "targetDistanceM": 7500,
+      "engineGapPct": 0.06,
+      "repeatedGeometryM": 1183,
+      "repeatedGeometryPct": 17.1,
+      "maxWaypointToShapeM": 27,
+      "repeatedWaypoints": [
+        [
+          3,
+          5
+        ]
+      ],
+      "legacyGate": "OK",
+      "legacyWarnings": "coordinate 34.693,135.195 has < 4 decimal places (~110m+ error); coordinate 34.685,135.185 has < 4 decimal places (~110m+ error); coordinate 34.68,135.178 has < 4 decimal places (~110m+ error); coordinate 34.675,135.168 has < 4 decimal places (~110m+ error); coordinate 34.675,135.168 has < 4 decimal places (~110m+ error); routed 6.94km vs target 7.5km (ratio 0.93) — outside the preferred +/-7% band",
+      "flags": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint"
+      ]
+    },
+    {
+      "id": "Z3",
+      "title": "福岡・博多〜天神〜大濠公園",
+      "geometryDistanceM": 7312,
+      "engineDistanceM": 7316,
+      "targetDistanceM": 7500,
+      "engineGapPct": 0.05,
+      "repeatedGeometryM": 1674,
+      "repeatedGeometryPct": 22.9,
+      "maxWaypointToShapeM": 86,
+      "repeatedWaypoints": [
+        [
+          3,
+          5
+        ]
+      ],
+      "legacyGate": "OK",
+      "legacyWarnings": "coordinate 33.59,130.4 has < 4 decimal places (~110m+ error); coordinate 33.59,130.395 has < 4 decimal places (~110m+ error); coordinate 33.59,130.385 has < 4 decimal places (~110m+ error); coordinate 33.585,130.375 has < 4 decimal places (~110m+ error); coordinate 33.585,130.375 has < 4 decimal places (~110m+ error)",
+      "flags": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint",
+        "waypoint_off_shape"
+      ]
+    },
+    {
+      "id": "Z4",
+      "title": "松山・道後温泉と城下町",
+      "geometryDistanceM": 6507,
+      "engineDistanceM": 6514,
+      "targetDistanceM": 7000,
+      "engineGapPct": 0.11,
+      "repeatedGeometryM": 1091,
+      "repeatedGeometryPct": 16.8,
+      "maxWaypointToShapeM": 19,
+      "repeatedWaypoints": [
+        [
+          3,
+          5
+        ]
+      ],
+      "legacyGate": "OK",
+      "legacyWarnings": "coordinate 33.835,132.765 has < 4 decimal places (~110m+ error); coordinate 33.84,132.77 has < 4 decimal places (~110m+ error); coordinate 33.845,132.775 has < 4 decimal places (~110m+ error); coordinate 33.852,132.785 has < 4 decimal places (~110m+ error); coordinate 33.852,132.785 has < 4 decimal places (~110m+ error)",
+      "flags": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint"
+      ]
+    },
+    {
+      "id": "Z5",
+      "title": "富山・環水公園と立山連峰",
+      "geometryDistanceM": 6976,
+      "engineDistanceM": 6976,
+      "targetDistanceM": 7500,
+      "engineGapPct": 0,
+      "repeatedGeometryM": 1772,
+      "repeatedGeometryPct": 25.4,
+      "maxWaypointToShapeM": 115,
+      "repeatedWaypoints": [
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ]
+      ],
+      "legacyGate": "OK",
+      "legacyWarnings": "leg 4 too short (0.00km); non-adjacent points 3 & 6 are within 80m (possible backtrack/figure-8); coordinate 36.7,137.21 has < 4 decimal places (~110m+ error); coordinate 36.705,137.215 has < 4 decimal places (~110m+ error); coordinate 36.71,137.21 has < 4 decimal places (~110m+ error); coordinate 36.715,137.205 has < 4 decimal places (~110m+ error); coordinate 36.715,137.205 has < 4 decimal places (~110m+ error); coordinate 36.728803,137.205 has < 4 decimal places (~110m+ error); coordinate 36.715,137.205 has < 4 decimal places (~110m+ error)",
+      "flags": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint",
+        "waypoint_off_shape"
+      ]
+    },
+    {
+      "id": "Z6",
+      "title": "札幌・大通〜中島公園",
+      "geometryDistanceM": 8009,
+      "engineDistanceM": 8007,
+      "targetDistanceM": 7500,
+      "engineGapPct": 0.02,
+      "repeatedGeometryM": 299,
+      "repeatedGeometryPct": 3.7,
+      "maxWaypointToShapeM": 38,
+      "repeatedWaypoints": [
+        [
+          3,
+          5
+        ]
+      ],
+      "legacyGate": "OK",
+      "legacyWarnings": "coordinate 43.065,141.35 has < 4 decimal places (~110m+ error); coordinate 43.06,141.355 has < 4 decimal places (~110m+ error); coordinate 43.055,141.35 has < 4 decimal places (~110m+ error); coordinate 43.05,141.345 has < 4 decimal places (~110m+ error); coordinate 43.05,141.345 has < 4 decimal places (~110m+ error)",
+      "flags": [
+        "repeated_waypoint"
+      ]
+    },
+    {
+      "id": "Z7",
+      "title": "京都・鴨川フラットウォーク",
+      "geometryDistanceM": 7257,
+      "engineDistanceM": 7259,
+      "targetDistanceM": 7600,
+      "engineGapPct": 0.03,
+      "repeatedGeometryM": 1110,
+      "repeatedGeometryPct": 15.3,
+      "maxWaypointToShapeM": 5,
+      "repeatedWaypoints": [
+        [
+          3,
+          5
+        ]
+      ],
+      "legacyGate": "OK",
+      "legacyWarnings": "coordinate 35.025,135.77 has < 4 decimal places (~110m+ error); coordinate 35.015,135.775 has < 4 decimal places (~110m+ error); coordinate 35.005,135.77 has < 4 decimal places (~110m+ error); coordinate 34.995,135.768 has < 4 decimal places (~110m+ error); coordinate 34.995,135.768 has < 4 decimal places (~110m+ error)",
+      "flags": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint"
+      ]
+    },
+    {
+      "id": "Z8",
+      "title": "那覇・国際通りと波上宮",
+      "geometryDistanceM": 6929,
+      "engineDistanceM": 6942,
+      "targetDistanceM": 7000,
+      "engineGapPct": 0.19,
+      "repeatedGeometryM": 1685,
+      "repeatedGeometryPct": 24.3,
+      "maxWaypointToShapeM": 8,
+      "repeatedWaypoints": [
+        [
+          3,
+          5
+        ]
+      ],
+      "legacyGate": "OK",
+      "legacyWarnings": "coordinate 26.215,127.675 has < 4 decimal places (~110m+ error); coordinate 26.212,127.68 has < 4 decimal places (~110m+ error); coordinate 26.21,127.685 has < 4 decimal places (~110m+ error); coordinate 26.208,127.69 has < 4 decimal places (~110m+ error); coordinate 26.208,127.69 has < 4 decimal places (~110m+ error)",
+      "flags": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint"
+      ]
+    },
+    {
+      "id": "No.56",
+      "title": "東京駅・皇居外周〜日本橋",
+      "geometryDistanceM": 7987,
+      "engineDistanceM": 7989,
+      "targetDistanceM": 8000,
+      "engineGapPct": 0.02,
+      "repeatedGeometryM": 222,
+      "repeatedGeometryPct": 2.8,
+      "maxWaypointToShapeM": 13,
+      "repeatedWaypoints": [
+        [
+          8,
+          10
+        ]
+      ],
+      "legacyGate": "OK",
+      "legacyWarnings": "",
+      "flags": [
+        "repeated_waypoint"
+      ]
+    },
+    {
+      "id": "No.57",
+      "title": "両国〜浅草〜谷中〜上野",
+      "geometryDistanceM": 7870,
+      "engineDistanceM": 7877,
+      "targetDistanceM": 8000,
+      "engineGapPct": 0.08,
+      "repeatedGeometryM": 278,
+      "repeatedGeometryPct": 3.5,
+      "maxWaypointToShapeM": 35,
+      "repeatedWaypoints": [],
+      "legacyGate": "OK",
+      "legacyWarnings": "",
+      "flags": []
+    },
+    {
+      "id": "No.58",
+      "title": "原宿〜表参道〜六本木ヒルズ",
+      "geometryDistanceM": 8022,
+      "engineDistanceM": 8022,
+      "targetDistanceM": 7900,
+      "engineGapPct": 0,
+      "repeatedGeometryM": 401,
+      "repeatedGeometryPct": 5,
+      "maxWaypointToShapeM": 19,
+      "repeatedWaypoints": [
+        [
+          6,
+          8
+        ]
+      ],
+      "legacyGate": "OK",
+      "legacyWarnings": "",
+      "flags": [
+        "repeated_waypoint"
+      ]
+    },
+    {
+      "id": "No.59",
+      "title": "立川〜国立〜国分寺 はけ",
+      "geometryDistanceM": 7157,
+      "engineDistanceM": 7168,
+      "targetDistanceM": 7000,
+      "engineGapPct": 0.16,
+      "repeatedGeometryM": 0,
+      "repeatedGeometryPct": 0,
+      "maxWaypointToShapeM": 14,
+      "repeatedWaypoints": [],
+      "legacyGate": "OK",
+      "legacyWarnings": "leg 1 too long (3.03km) — needs an intermediate waypoint",
+      "flags": []
+    },
+    {
+      "id": "G-1128",
+      "title": "G 11/28版：高輪GW→泉岳寺→品川→インターシティ夜景",
+      "geometryDistanceM": 5475,
+      "engineDistanceM": 5488,
+      "targetDistanceM": 5500,
+      "engineGapPct": 0.24,
+      "repeatedGeometryM": 895,
+      "repeatedGeometryPct": 16.3,
+      "maxWaypointToShapeM": 46,
+      "repeatedWaypoints": [],
+      "legacyGate": "OK",
+      "legacyWarnings": "leg 6 too short (0.14km); leg 7 too short (0.15km); coordinate 35.63867,139.74 has < 4 decimal places (~110m+ error); coordinate 35.633,139.73577 has < 4 decimal places (~110m+ error)",
+      "flags": [
+        "repeated_geometry_over_10pct",
+        "waypoint_off_shape"
+      ]
+    },
+    {
+      "id": "G-Rain",
+      "title": "G 雨天版：高輪GW屋内回遊",
+      "geometryDistanceM": 1054,
+      "engineDistanceM": 1054,
+      "targetDistanceM": 1100,
+      "engineGapPct": 0.04,
+      "repeatedGeometryM": 362,
+      "repeatedGeometryPct": 34.3,
+      "maxWaypointToShapeM": 16,
+      "repeatedWaypoints": [
+        [
+          0,
+          4
+        ]
+      ],
+      "legacyGate": "OK",
+      "legacyWarnings": "leg 1 too short (0.11km); leg 4 too short (0.08km)",
+      "flags": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint"
+      ]
+    },
+    {
+      "id": "1128-D1",
+      "title": "D-1 新豊洲×有明ガーデン",
+      "geometryDistanceM": 5637,
+      "engineDistanceM": 5643,
+      "targetDistanceM": 5600,
+      "engineGapPct": 0.1,
+      "repeatedGeometryM": 434,
+      "repeatedGeometryPct": 7.7,
+      "maxWaypointToShapeM": 75,
+      "repeatedWaypoints": [],
+      "legacyGate": "OK",
+      "legacyWarnings": "",
+      "flags": [
+        "waypoint_off_shape"
+      ]
+    },
+    {
+      "id": "1128-D2",
+      "title": "D-2 神宮外苑いちょう並木",
+      "geometryDistanceM": 6115,
+      "engineDistanceM": 6125,
+      "targetDistanceM": 6100,
+      "engineGapPct": 0.16,
+      "repeatedGeometryM": 330,
+      "repeatedGeometryPct": 5.4,
+      "maxWaypointToShapeM": 28,
+      "repeatedWaypoints": [],
+      "legacyGate": "OK",
+      "legacyWarnings": "",
+      "flags": []
+    },
+    {
+      "id": "1128-D3",
+      "title": "D-3 東京駅→日本橋 地下＋丸の内イルミ",
+      "geometryDistanceM": 5731,
+      "engineDistanceM": 5739,
+      "targetDistanceM": 5800,
+      "engineGapPct": 0.15,
+      "repeatedGeometryM": 684,
+      "repeatedGeometryPct": 11.9,
+      "maxWaypointToShapeM": 22,
+      "repeatedWaypoints": [
+        [
+          0,
+          7
+        ]
+      ],
+      "legacyGate": "OK",
+      "legacyWarnings": "",
+      "flags": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint"
+      ]
+    },
+    {
+      "id": "1128-D4",
+      "title": "D-4 横浜 上り優先版（桜木町→赤レンガ→馬車道→野毛山→伊勢山）",
+      "geometryDistanceM": 6197,
+      "engineDistanceM": 6203,
+      "targetDistanceM": 6200,
+      "engineGapPct": 0.09,
+      "repeatedGeometryM": 265,
+      "repeatedGeometryPct": 4.3,
+      "maxWaypointToShapeM": 11,
+      "repeatedWaypoints": [],
+      "legacyGate": "OK",
+      "legacyWarnings": "leg 4 too short (0.15km)",
+      "flags": []
+    },
+    {
+      "id": "1128-D5",
+      "title": "D-5 市ヶ谷→靖国→九段→千鳥ヶ淵→半蔵門 上り型",
+      "geometryDistanceM": 8493,
+      "engineDistanceM": 8497,
+      "targetDistanceM": 8400,
+      "engineGapPct": 0.05,
+      "repeatedGeometryM": 503,
+      "repeatedGeometryPct": 5.9,
+      "maxWaypointToShapeM": 39,
+      "repeatedWaypoints": [],
+      "legacyGate": "OK",
+      "legacyWarnings": "coordinate 35.698,139.759 has < 4 decimal places (~110m+ error)",
+      "flags": []
+    },
+    {
+      "id": "VBC-C1",
+      "title": "C-1 幕張新都心（海浜幕張→イオンモール→ペデストリアンデッキ）",
+      "geometryDistanceM": 5602,
+      "engineDistanceM": 5598,
+      "targetDistanceM": 5600,
+      "engineGapPct": 0.06,
+      "repeatedGeometryM": 190,
+      "repeatedGeometryPct": 3.4,
+      "maxWaypointToShapeM": 58,
+      "repeatedWaypoints": [],
+      "legacyGate": "OK",
+      "legacyWarnings": "leg 3 too long (2.23km) — needs an intermediate waypoint",
+      "flags": [
+        "waypoint_off_shape"
+      ]
+    },
+    {
+      "id": "VBC-C2",
+      "title": "C-2 南町田グランベリーパーク",
+      "geometryDistanceM": 7051,
+      "engineDistanceM": 7057,
+      "targetDistanceM": 7100,
+      "engineGapPct": 0.08,
+      "repeatedGeometryM": 57,
+      "repeatedGeometryPct": 0.8,
+      "maxWaypointToShapeM": 15,
+      "repeatedWaypoints": [],
+      "legacyGate": "OK",
+      "legacyWarnings": "leg 2 too long (2.47km) — needs an intermediate waypoint",
+      "flags": []
+    },
+    {
+      "id": "VBC-C3",
+      "title": "C-3 大井町 OIMACHI TRACKS〜しながわ中央公園〜品川シーサイド",
+      "geometryDistanceM": 3215,
+      "engineDistanceM": 3217,
+      "targetDistanceM": 3300,
+      "engineGapPct": 0.08,
+      "repeatedGeometryM": 574,
+      "repeatedGeometryPct": 17.8,
+      "maxWaypointToShapeM": 8,
+      "repeatedWaypoints": [],
+      "legacyGate": "OK",
+      "legacyWarnings": "",
+      "flags": [
+        "repeated_geometry_over_10pct"
+      ]
+    },
+    {
+      "id": "VBC-C4",
+      "title": "C-4 立川 昭和記念公園 砂川口ルート（EV利用版）",
+      "geometryDistanceM": 6052,
+      "engineDistanceM": 6056,
+      "targetDistanceM": 6600,
+      "engineGapPct": 0.06,
+      "repeatedGeometryM": 0,
+      "repeatedGeometryPct": 0,
+      "maxWaypointToShapeM": 6,
+      "repeatedWaypoints": [],
+      "legacyGate": "OK",
+      "legacyWarnings": "leg 1 too long (2.73km) — needs an intermediate waypoint; routed 6.06km vs target 6.6km (ratio 0.92) — outside the preferred +/-7% band",
+      "flags": []
+    },
+    {
+      "id": "VBC-C5",
+      "title": "C-5 裏参道・学園通り 国立〜谷保",
+      "geometryDistanceM": 2871,
+      "engineDistanceM": 2878,
+      "targetDistanceM": 2900,
+      "engineGapPct": 0.23,
+      "repeatedGeometryM": 386,
+      "repeatedGeometryPct": 13.5,
+      "maxWaypointToShapeM": 43,
+      "repeatedWaypoints": [],
+      "legacyGate": "OK",
+      "legacyWarnings": "leg 3 too short (0.12km)",
+      "flags": [
+        "repeated_geometry_over_10pct",
+        "waypoint_off_shape"
+      ]
+    }
+  ]
+}
