@@ -1,10 +1,23 @@
 {
-  "checkedAt": "2026-11-12T21:08:20.579Z",
+  "checkedAt": "2026-11-12T21:18:23.064Z",
   "source": "OpenStreetMap via Overpass API; © OpenStreetMap contributors",
   "bbox": "35.685,139.713,35.708,139.752",
-  "query": "[out:json][timeout:25];(nwr[\"name\"~\"飯田橋駅|兵庫横丁|善國寺|善国寺|赤城神社|宮城道雄記念館|外濠公園|曙橋駅|市ケ谷駅|市ヶ谷駅|牛込神楽坂駅|神楽坂駅|かくれんぼ横丁|見番横丁|神楽坂通り\"](35.685,139.713,35.708,139.752););out center tags;",
+  "query": "[out:json][timeout:25];(nwr[\"name\"~\"飯田橋駅|兵庫横丁|善國寺|善国寺|赤城神社|宮城道雄記念館|外濠公園|曙橋駅|市ケ谷駅|市ヶ谷駅|牛込神楽坂駅|神楽坂駅|かくれんぼ横丁|見番横丁|神楽坂通り|四ツ谷駅|四谷見附橋|牛込見附|市谷見附\"](35.685,139.713,35.708,139.752););out center tags;",
   "note": "Way centres and station features do not identify pedestrian entrances.",
   "features": [
+    {
+      "type": "node",
+      "osmId": 253889570,
+      "name": "市谷見附",
+      "lat": 35.6921144,
+      "lon": 139.7351493,
+      "tags": {
+        "junction": "yes",
+        "name": "市谷見附",
+        "name:en": "Ichigayamitsuke",
+        "name:ja": "市谷見附"
+      }
+    },
     {
       "type": "node",
       "osmId": 255366510,
@@ -87,6 +100,32 @@
         "name": "飯田橋駅東口",
         "name:en": "Iidabashi Sta. E.",
         "name:ja": "飯田橋駅東口"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 1664033796,
+      "name": "市谷見附",
+      "lat": 35.6921928,
+      "lon": 139.7351374,
+      "tags": {
+        "junction": "yes",
+        "name": "市谷見附",
+        "name:en": "Ichigayamitsuke",
+        "name:ja": "市谷見附"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 1808422619,
+      "name": "市谷見附",
+      "lat": 35.6921485,
+      "lon": 139.7352205,
+      "tags": {
+        "junction": "yes",
+        "name": "市谷見附",
+        "name:en": "Ichigayamitsuke",
+        "name:ja": "市谷見附"
       }
     },
     {
@@ -632,6 +671,49 @@
     },
     {
       "type": "way",
+      "osmId": 54957169,
+      "name": "牛込見附",
+      "lat": 35.7000106,
+      "lon": 139.7439398,
+      "tags": {
+        "access": "yes",
+        "barrier": "entrance",
+        "historic": "ruins",
+        "name": "牛込見附",
+        "name:en": "Ushigome Mitsuke"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 54957177,
+      "name": "牛込見附",
+      "lat": 35.6998303,
+      "lon": 139.7437728,
+      "tags": {
+        "access": "yes",
+        "barrier": "entrance",
+        "historic": "ruins",
+        "name": "牛込見附",
+        "name:en": "Ushigome Mitsuke"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 60538898,
+      "name": "JR四ツ谷駅;1番線",
+      "lat": 35.6860226,
+      "lon": 139.7304989,
+      "tags": {
+        "highway": "footway",
+        "layer": "-2",
+        "lit": "yes",
+        "name": "JR四ツ谷駅;1番線",
+        "ref": "1",
+        "source": "Bing, 2007-04"
+      }
+    },
+    {
+      "type": "way",
       "osmId": 92651467,
       "name": "見番横丁",
       "lat": 35.7009942,
@@ -643,6 +725,20 @@
         "name:es": "Kemban Yokocho",
         "name:ja_rm": "Kenban Yokochō",
         "source": "Bing"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 143166729,
+      "name": "牛込見附跡",
+      "lat": 35.6998387,
+      "lon": 139.7437233,
+      "tags": {
+        "barrier": "retaining_wall",
+        "historic": "ruins",
+        "name": "牛込見附跡",
+        "source": "Bing,2007-04",
+        "wikidata": "Q115163657"
       }
     },
     {
@@ -712,6 +808,51 @@
         "wikidata": "Q11635471",
         "wikimedia_commons": "Category:Akagi-jinja (Tokyo)",
         "wikipedia": "ja:赤城神社 (新宿区)"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 143839126,
+      "name": "JR四ツ谷駅;4番線",
+      "lat": 35.685703,
+      "lon": 139.7306219,
+      "tags": {
+        "highway": "footway",
+        "layer": "-2",
+        "lit": "yes",
+        "name": "JR四ツ谷駅;4番線",
+        "ref": "4",
+        "source": "Bing, 2007-04"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 143839135,
+      "name": "JR四ツ谷駅;3番線",
+      "lat": 35.6857107,
+      "lon": 139.7305922,
+      "tags": {
+        "highway": "footway",
+        "layer": "-2",
+        "lit": "yes",
+        "name": "JR四ツ谷駅;3番線",
+        "ref": "3",
+        "source": "Bing, 2007-04"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 143839138,
+      "name": "JR四ツ谷駅;2番線",
+      "lat": 35.6860187,
+      "lon": 139.7305151,
+      "tags": {
+        "highway": "footway",
+        "layer": "-2",
+        "lit": "yes",
+        "name": "JR四ツ谷駅;2番線",
+        "ref": "2",
+        "source": "Bing, 2007-04"
       }
     },
     {
@@ -792,6 +933,316 @@
     },
     {
       "type": "way",
+      "osmId": 664930297,
+      "name": "東京メトロ四ツ谷駅",
+      "lat": 35.6851861,
+      "lon": 139.729868,
+      "tags": {
+        "highway": "footway",
+        "layer": "-1",
+        "level": "-1",
+        "lit": "yes",
+        "name": "東京メトロ四ツ谷駅",
+        "oneway": "yes",
+        "oneway:foot": "yes",
+        "surface": "paved",
+        "tunnel": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 664930298,
+      "name": "東京メトロ四ツ谷駅",
+      "lat": 35.6851394,
+      "lon": 139.7298762,
+      "tags": {
+        "highway": "footway",
+        "layer": "-1",
+        "level": "-1",
+        "lit": "yes",
+        "name": "東京メトロ四ツ谷駅",
+        "surface": "paved",
+        "tunnel": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 664930299,
+      "name": "東京メトロ四ツ谷駅",
+      "lat": 35.6850647,
+      "lon": 139.729958,
+      "tags": {
+        "highway": "steps",
+        "incline": "down",
+        "layer": "-1",
+        "level": "-1",
+        "lit": "yes",
+        "name": "東京メトロ四ツ谷駅",
+        "surface": "paved",
+        "tunnel": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 664930300,
+      "name": "東京メトロ四ツ谷駅",
+      "lat": 35.684984,
+      "lon": 139.7299832,
+      "tags": {
+        "highway": "footway",
+        "layer": "-1",
+        "level": "-2",
+        "lit": "yes",
+        "name": "東京メトロ四ツ谷駅",
+        "surface": "paved"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 664930301,
+      "name": "東京メトロ四ツ谷駅",
+      "lat": 35.6857083,
+      "lon": 139.729584,
+      "tags": {
+        "highway": "footway",
+        "layer": "-1",
+        "level": "-2",
+        "lit": "yes",
+        "name": "東京メトロ四ツ谷駅",
+        "surface": "paved",
+        "tunnel": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 664930302,
+      "name": "東京メトロ四ツ谷駅",
+      "lat": 35.6853207,
+      "lon": 139.7296573,
+      "tags": {
+        "handrail": "yes",
+        "highway": "steps",
+        "incline": "up",
+        "layer": "-1",
+        "level": "-1",
+        "lit": "yes",
+        "name": "東京メトロ四ツ谷駅",
+        "surface": "paved",
+        "tunnel": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 664930303,
+      "name": "東京メトロ四ツ谷駅",
+      "lat": 35.685143,
+      "lon": 139.7297979,
+      "tags": {
+        "highway": "footway",
+        "layer": "-1",
+        "level": "-1",
+        "lit": "yes",
+        "name": "東京メトロ四ツ谷駅",
+        "surface": "paved",
+        "tunnel": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 664930305,
+      "name": "東京メトロ四ツ谷駅;2番線",
+      "lat": 35.6843332,
+      "lon": 139.729894,
+      "tags": {
+        "highway": "footway",
+        "layer": "1",
+        "level": "-2",
+        "lit": "yes",
+        "name": "東京メトロ四ツ谷駅;2番線",
+        "surface": "paved"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 664931832,
+      "name": "JR四ツ谷駅",
+      "lat": 35.6851008,
+      "lon": 139.7300075,
+      "tags": {
+        "highway": "footway",
+        "layer": "-1",
+        "level": "-1",
+        "lit": "yes",
+        "name": "JR四ツ谷駅",
+        "surface": "paved",
+        "tunnel": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 664939794,
+      "name": "東京メトロ四ツ谷駅",
+      "lat": 35.6855881,
+      "lon": 139.7295284,
+      "tags": {
+        "highway": "footway",
+        "layer": "-1",
+        "level": "-2",
+        "lit": "yes",
+        "name": "東京メトロ四ツ谷駅",
+        "surface": "paved",
+        "tunnel": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 664939795,
+      "name": "東京メトロ四ツ谷駅;南北線",
+      "lat": 35.6855205,
+      "lon": 139.7294853,
+      "tags": {
+        "highway": "footway",
+        "layer": "-3",
+        "level": "-3",
+        "lit": "yes",
+        "name": "東京メトロ四ツ谷駅;南北線",
+        "surface": "paved",
+        "tunnel": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 664939796,
+      "name": "東京メトロ四ツ谷駅",
+      "lat": 35.6855555,
+      "lon": 139.7294918,
+      "tags": {
+        "highway": "steps",
+        "incline": "down",
+        "layer": "-2",
+        "level": "-2",
+        "lit": "yes",
+        "name": "東京メトロ四ツ谷駅",
+        "surface": "paved",
+        "tunnel": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 664939797,
+      "name": "東京メトロ四ツ谷駅",
+      "lat": 35.6860059,
+      "lon": 139.7295486,
+      "tags": {
+        "highway": "footway",
+        "layer": "-1",
+        "level": "-2",
+        "lit": "yes",
+        "name": "東京メトロ四ツ谷駅",
+        "surface": "paved",
+        "tunnel": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 664939800,
+      "name": "東京メトロ四ツ谷駅",
+      "lat": 35.6860126,
+      "lon": 139.7296318,
+      "tags": {
+        "highway": "footway",
+        "layer": "-1",
+        "level": "-2",
+        "lit": "yes",
+        "name": "東京メトロ四ツ谷駅",
+        "surface": "paved",
+        "tunnel": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 664939803,
+      "name": "東京メトロ四ツ谷駅",
+      "lat": 35.6860493,
+      "lon": 139.729618,
+      "tags": {
+        "highway": "steps",
+        "incline": "down",
+        "layer": "-2",
+        "level": "-2",
+        "lit": "yes",
+        "name": "東京メトロ四ツ谷駅",
+        "surface": "paved",
+        "tunnel": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 664939806,
+      "name": "東京メトロ四ツ谷駅;南北線",
+      "lat": 35.686081,
+      "lon": 139.7296278,
+      "tags": {
+        "highway": "footway",
+        "layer": "-3",
+        "level": "-3",
+        "lit": "yes",
+        "name": "東京メトロ四ツ谷駅;南北線",
+        "surface": "paved",
+        "tunnel": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 664939808,
+      "name": "東京メトロ四ツ谷駅",
+      "lat": 35.6861562,
+      "lon": 139.7296448,
+      "tags": {
+        "highway": "steps",
+        "incline": "down",
+        "layer": "-2",
+        "level": "-2",
+        "lit": "yes",
+        "name": "東京メトロ四ツ谷駅",
+        "surface": "paved",
+        "tunnel": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 664939810,
+      "name": "東京メトロ四ツ谷駅;南北線",
+      "lat": 35.6861916,
+      "lon": 139.7296573,
+      "tags": {
+        "highway": "footway",
+        "layer": "-3",
+        "level": "-3",
+        "lit": "yes",
+        "name": "東京メトロ四ツ谷駅;南北線",
+        "surface": "paved",
+        "tunnel": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 664939812,
+      "name": "東京メトロ四ツ谷駅",
+      "lat": 35.6861155,
+      "lon": 139.7296578,
+      "tags": {
+        "highway": "footway",
+        "layer": "-1",
+        "level": "-1",
+        "lit": "yes",
+        "name": "東京メトロ四ツ谷駅",
+        "surface": "paved",
+        "tunnel": "yes"
+      }
+    },
+    {
+      "type": "way",
       "osmId": 800551505,
       "name": "神楽坂駅",
       "lat": 35.7039197,
@@ -824,6 +1275,68 @@
         "railway": "platform",
         "ref": "2",
         "subway": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 816262886,
+      "name": "JR四ツ谷駅",
+      "lat": 35.6859783,
+      "lon": 139.7309525,
+      "tags": {
+        "highway": "footway",
+        "name": "JR四ツ谷駅"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 816266513,
+      "name": "東京メトロ四ツ谷駅;3番出入口",
+      "lat": 35.6863507,
+      "lon": 139.7298834,
+      "tags": {
+        "highway": "footway",
+        "layer": "-1",
+        "level": "-2",
+        "lit": "yes",
+        "name": "東京メトロ四ツ谷駅;3番出入口",
+        "surface": "paved",
+        "tunnel": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 816268076,
+      "name": "四ツ谷駅;2番出入口",
+      "lat": 35.6861381,
+      "lon": 139.729329,
+      "tags": {
+        "highway": "footway",
+        "lit": "yes",
+        "name": "四ツ谷駅;2番出入口"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1030386644,
+      "name": "新四谷見附橋",
+      "lat": 35.6862586,
+      "lon": 139.7306855,
+      "tags": {
+        "layer": "1",
+        "man_made": "bridge",
+        "name": "新四谷見附橋"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1104588132,
+      "name": "JR四ツ谷駅",
+      "lat": 35.6859857,
+      "lon": 139.730994,
+      "tags": {
+        "highway": "footway",
+        "name": "JR四ツ谷駅"
       }
     },
     {
@@ -873,6 +1386,376 @@
     },
     {
       "type": "way",
+      "osmId": 1347086099,
+      "name": "JR四ツ谷駅",
+      "lat": 35.6861722,
+      "lon": 139.730462,
+      "tags": {
+        "highway": "footway",
+        "layer": "-1",
+        "name": "JR四ツ谷駅"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1347086100,
+      "name": "JR四ツ谷駅",
+      "lat": 35.6860354,
+      "lon": 139.7305766,
+      "tags": {
+        "bridge": "yes",
+        "highway": "footway",
+        "layer": "-1",
+        "name": "JR四ツ谷駅"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1347086101,
+      "name": "JR四ツ谷駅",
+      "lat": 35.6859899,
+      "lon": 139.7306522,
+      "tags": {
+        "bridge": "yes",
+        "highway": "footway",
+        "layer": "-1",
+        "name": "JR四ツ谷駅"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1347086102,
+      "name": "JR四ツ谷駅",
+      "lat": 35.685981,
+      "lon": 139.7306962,
+      "tags": {
+        "bridge": "yes",
+        "highway": "steps",
+        "layer": "-2",
+        "name": "JR四ツ谷駅"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1347086103,
+      "name": "JR四ツ谷駅",
+      "lat": 35.6860141,
+      "lon": 139.7305217,
+      "tags": {
+        "bridge": "yes",
+        "highway": "steps",
+        "layer": "-2",
+        "name": "JR四ツ谷駅"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1347086104,
+      "name": "JR四ツ谷駅",
+      "lat": 35.6859281,
+      "lon": 139.7304977,
+      "tags": {
+        "highway": "footway",
+        "layer": "-2",
+        "name": "JR四ツ谷駅"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1347086105,
+      "name": "JR四ツ谷駅",
+      "lat": 35.6859022,
+      "lon": 139.7306714,
+      "tags": {
+        "highway": "footway",
+        "layer": "-2",
+        "name": "JR四ツ谷駅"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1347086106,
+      "name": "JR四ツ谷駅",
+      "lat": 35.6863253,
+      "lon": 139.7301383,
+      "tags": {
+        "highway": "footway",
+        "layer": "-1",
+        "level": "-2",
+        "lit": "yes",
+        "name": "JR四ツ谷駅",
+        "surface": "paved"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1347762462,
+      "name": "東京メトロ四ツ谷駅",
+      "lat": 35.6854454,
+      "lon": 139.7295212,
+      "tags": {
+        "highway": "footway",
+        "layer": "-1",
+        "level": "-2",
+        "lit": "yes",
+        "name": "東京メトロ四ツ谷駅",
+        "surface": "paved",
+        "tunnel": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1347762465,
+      "name": "東京メトロ四ツ谷駅;エレベーター;地下3階",
+      "lat": 35.6854483,
+      "lon": 139.729483,
+      "tags": {
+        "highway": "footway",
+        "layer": "-1",
+        "name": "東京メトロ四ツ谷駅;エレベーター;地下3階",
+        "tunnel": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1347762466,
+      "name": "東京メトロ四ツ谷駅;エレベーター;地下2階",
+      "lat": 35.6854469,
+      "lon": 139.7294896,
+      "tags": {
+        "highway": "footway",
+        "layer": "-1",
+        "level": "-2",
+        "lit": "yes",
+        "name": "東京メトロ四ツ谷駅;エレベーター;地下2階",
+        "surface": "paved",
+        "tunnel": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1347762467,
+      "name": "東京メトロ四ツ谷駅;トイレ",
+      "lat": 35.685147,
+      "lon": 139.7298668,
+      "tags": {
+        "highway": "footway",
+        "indoor": "yes",
+        "layer": "-1",
+        "name": "東京メトロ四ツ谷駅;トイレ"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1347762468,
+      "name": "四ツ谷駅;2番出入口",
+      "lat": 35.6862051,
+      "lon": 139.7294825,
+      "tags": {
+        "highway": "footway",
+        "layer": "-1",
+        "level": "-2",
+        "lit": "yes",
+        "name": "四ツ谷駅;2番出入口",
+        "surface": "paved",
+        "tunnel": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1347762472,
+      "name": "東京メトロ四ツ谷駅",
+      "lat": 35.6860946,
+      "lon": 139.7296769,
+      "tags": {
+        "highway": "footway",
+        "layer": "-1",
+        "level": "-2",
+        "lit": "yes",
+        "name": "東京メトロ四ツ谷駅",
+        "surface": "paved",
+        "tunnel": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1347762473,
+      "name": "東京メトロ四ツ谷駅",
+      "lat": 35.6859195,
+      "lon": 139.729631,
+      "tags": {
+        "highway": "footway",
+        "layer": "-1",
+        "level": "-2",
+        "lit": "yes",
+        "name": "東京メトロ四ツ谷駅",
+        "surface": "paved",
+        "tunnel": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1347762474,
+      "name": "東京メトロ四ツ谷駅",
+      "lat": 35.6855147,
+      "lon": 139.7295516,
+      "tags": {
+        "highway": "footway",
+        "layer": "-1",
+        "level": "-2",
+        "lit": "yes",
+        "name": "東京メトロ四ツ谷駅",
+        "surface": "paved",
+        "tunnel": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1437139886,
+      "name": "JR四ツ谷駅",
+      "lat": 35.6855024,
+      "lon": 139.7303814,
+      "tags": {
+        "highway": "footway",
+        "name": "JR四ツ谷駅",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1437139887,
+      "name": "JR四ツ谷駅",
+      "lat": 35.6855618,
+      "lon": 139.7303985,
+      "tags": {
+        "bridge": "yes",
+        "highway": "steps",
+        "incline": "up",
+        "layer": "-2",
+        "name": "JR四ツ谷駅"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1437139888,
+      "name": "JR四ツ谷駅",
+      "lat": 35.6856062,
+      "lon": 139.7304949,
+      "tags": {
+        "bridge": "yes",
+        "highway": "footway",
+        "layer": "1",
+        "name": "JR四ツ谷駅"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1437139889,
+      "name": "JR四ツ谷駅",
+      "lat": 35.6854724,
+      "lon": 139.73054,
+      "tags": {
+        "highway": "footway",
+        "name": "JR四ツ谷駅"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1437139890,
+      "name": "JR四ツ谷駅",
+      "lat": 35.6855319,
+      "lon": 139.7305568,
+      "tags": {
+        "bridge": "yes",
+        "highway": "steps",
+        "incline": "up",
+        "layer": "-2",
+        "name": "JR四ツ谷駅"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1437139891,
+      "name": "JR四ツ谷駅",
+      "lat": 35.6858028,
+      "lon": 139.7305515,
+      "tags": {
+        "bridge": "yes",
+        "highway": "footway",
+        "layer": "1",
+        "name": "JR四ツ谷駅"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1466490364,
+      "name": "四ツ谷駅;2番出入口",
+      "lat": 35.6861887,
+      "lon": 139.7293666,
+      "tags": {
+        "highway": "steps",
+        "incline": "up",
+        "layer": "-1",
+        "level": "-2",
+        "lit": "yes",
+        "name": "四ツ谷駅;2番出入口",
+        "surface": "paved",
+        "tunnel": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1470143619,
+      "name": "東京メトロ四ツ谷駅",
+      "lat": 35.6851861,
+      "lon": 139.7298697,
+      "tags": {
+        "highway": "footway",
+        "layer": "-1",
+        "level": "-1",
+        "lit": "yes",
+        "name": "東京メトロ四ツ谷駅",
+        "surface": "paved",
+        "tunnel": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1470143620,
+      "name": "東京メトロ四ツ谷駅",
+      "lat": 35.6851861,
+      "lon": 139.729873,
+      "tags": {
+        "highway": "footway",
+        "layer": "-1",
+        "level": "-1",
+        "lit": "yes",
+        "name": "東京メトロ四ツ谷駅",
+        "oneway": "yes",
+        "oneway:foot": "yes",
+        "surface": "paved",
+        "tunnel": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1470143621,
+      "name": "東京メトロ四ツ谷駅",
+      "lat": 35.6851861,
+      "lon": 139.7298663,
+      "tags": {
+        "highway": "footway",
+        "layer": "-1",
+        "level": "-1",
+        "lit": "yes",
+        "name": "東京メトロ四ツ谷駅",
+        "surface": "paved",
+        "tunnel": "yes",
+        "wheelchair": "designated"
+      }
+    },
+    {
+      "type": "way",
       "osmId": 1470182099,
       "name": "飯田橋駅前交番",
       "lat": 35.6999411,
@@ -881,6 +1764,304 @@
         "highway": "footway",
         "layer": "-1",
         "name": "飯田橋駅前交番"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1481177749,
+      "name": "JR四ツ谷駅",
+      "lat": 35.6862813,
+      "lon": 139.7305948,
+      "tags": {
+        "highway": "footway",
+        "layer": "-1",
+        "name": "JR四ツ谷駅"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1481177750,
+      "name": "JR四ツ谷駅",
+      "lat": 35.686205,
+      "lon": 139.7305736,
+      "tags": {
+        "bridge": "yes",
+        "highway": "steps",
+        "incline": "up",
+        "layer": "-1",
+        "name": "JR四ツ谷駅"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1481177751,
+      "name": "JR四ツ谷駅",
+      "lat": 35.6861433,
+      "lon": 139.7305121,
+      "tags": {
+        "bridge": "yes",
+        "highway": "footway",
+        "layer": "1",
+        "name": "JR四ツ谷駅",
+        "oneway": "yes",
+        "oneway:foot": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1481177752,
+      "name": "JR四ツ谷駅",
+      "lat": 35.6861283,
+      "lon": 139.7305874,
+      "tags": {
+        "bridge": "yes",
+        "highway": "footway",
+        "layer": "1",
+        "name": "JR四ツ谷駅",
+        "oneway": "yes",
+        "oneway:foot": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1481177753,
+      "name": "JR四ツ谷駅",
+      "lat": 35.6860142,
+      "lon": 139.7308769,
+      "tags": {
+        "highway": "steps",
+        "incline": "up",
+        "layer": "-1",
+        "name": "JR四ツ谷駅",
+        "note": "左側通行"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1485642226,
+      "name": "JR四ツ谷駅",
+      "lat": 35.685976,
+      "lon": 139.7307178,
+      "tags": {
+        "highway": "footway",
+        "layer": "1",
+        "name": "JR四ツ谷駅"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1528445473,
+      "name": "JR四ツ谷駅",
+      "lat": 35.6860978,
+      "lon": 139.7306143,
+      "tags": {
+        "highway": "footway",
+        "layer": "-1",
+        "name": "JR四ツ谷駅"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1528445474,
+      "name": "JR四ツ谷駅",
+      "lat": 35.6861239,
+      "lon": 139.7305874,
+      "tags": {
+        "bridge": "yes",
+        "highway": "footway",
+        "layer": "1",
+        "name": "JR四ツ谷駅",
+        "oneway": "yes",
+        "oneway:foot": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1528445475,
+      "name": "JR四ツ谷駅",
+      "lat": 35.6861282,
+      "lon": 139.7304636,
+      "tags": {
+        "highway": "footway",
+        "layer": "-1",
+        "name": "JR四ツ谷駅"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1528445476,
+      "name": "JR四ツ谷駅",
+      "lat": 35.6861398,
+      "lon": 139.7305121,
+      "tags": {
+        "bridge": "yes",
+        "highway": "footway",
+        "layer": "1",
+        "name": "JR四ツ谷駅",
+        "oneway": "yes",
+        "oneway:foot": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1528445477,
+      "name": "JR四ツ谷駅",
+      "lat": 35.6860237,
+      "lon": 139.7306698,
+      "tags": {
+        "bridge": "yes",
+        "highway": "footway",
+        "indoor": "yes",
+        "layer": "1",
+        "name": "JR四ツ谷駅",
+        "oneway": "yes",
+        "oneway:foot": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1528445478,
+      "name": "JR四ツ谷駅",
+      "lat": 35.686026,
+      "lon": 139.7306601,
+      "tags": {
+        "bridge": "yes",
+        "highway": "footway",
+        "indoor": "yes",
+        "layer": "1",
+        "name": "JR四ツ谷駅",
+        "oneway": "yes",
+        "oneway:foot": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1528445479,
+      "name": "JR四ツ谷駅",
+      "lat": 35.6860283,
+      "lon": 139.7306501,
+      "tags": {
+        "bridge": "yes",
+        "highway": "footway",
+        "indoor": "yes",
+        "layer": "1",
+        "name": "JR四ツ谷駅",
+        "oneway": "yes",
+        "oneway:foot": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1528445480,
+      "name": "JR四ツ谷駅",
+      "lat": 35.6860303,
+      "lon": 139.7306416,
+      "tags": {
+        "bridge": "yes",
+        "highway": "footway",
+        "indoor": "yes",
+        "layer": "1",
+        "name": "JR四ツ谷駅",
+        "oneway": "yes",
+        "oneway:foot": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1528445481,
+      "name": "JR四ツ谷駅",
+      "lat": 35.6860327,
+      "lon": 139.7306313,
+      "tags": {
+        "bridge": "yes",
+        "highway": "footway",
+        "indoor": "yes",
+        "layer": "1",
+        "name": "JR四ツ谷駅",
+        "oneway": "yes",
+        "oneway:foot": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1528445482,
+      "name": "JR四ツ谷駅",
+      "lat": 35.6860375,
+      "lon": 139.7306094,
+      "tags": {
+        "bridge": "yes",
+        "highway": "footway",
+        "indoor": "yes",
+        "layer": "1",
+        "name": "JR四ツ谷駅"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1528445483,
+      "name": "JR四ツ谷駅",
+      "lat": 35.68604,
+      "lon": 139.7305973,
+      "tags": {
+        "bridge": "yes",
+        "highway": "footway",
+        "indoor": "yes",
+        "layer": "1",
+        "name": "JR四ツ谷駅",
+        "oneway": "yes",
+        "oneway:foot": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1528445484,
+      "name": "JR四ツ谷駅",
+      "lat": 35.6860423,
+      "lon": 139.730586,
+      "tags": {
+        "bridge": "yes",
+        "highway": "footway",
+        "indoor": "yes",
+        "layer": "1",
+        "name": "JR四ツ谷駅"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1528445485,
+      "name": "JR四ツ谷駅;有人改札",
+      "lat": 35.6860463,
+      "lon": 139.7305673,
+      "tags": {
+        "highway": "footway",
+        "indoor": "yes",
+        "layer": "1",
+        "name": "JR四ツ谷駅;有人改札"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1528445486,
+      "name": "JR四ツ谷駅",
+      "lat": 35.6856237,
+      "lon": 139.7305013,
+      "tags": {
+        "bridge": "yes",
+        "highway": "footway",
+        "layer": "1",
+        "name": "JR四ツ谷駅"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1528840887,
+      "name": "JR四ツ谷駅",
+      "lat": 35.6860859,
+      "lon": 139.7305325,
+      "tags": {
+        "highway": "footway",
+        "layer": "-1",
+        "name": "JR四ツ谷駅"
       }
     },
     {

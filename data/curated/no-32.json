@@ -1,0 +1,46 @@
+{
+  "id": "No.32",
+  "buildFile": "data/research/no-32-route-build.json",
+  "title": "神楽坂の路地から外濠へ",
+  "summary": "飯田橋から石畳の横丁と神楽坂の高台を歩き、外濠の水辺を経て四ツ谷へ。Bは御茶ノ水の川景色と元町公園を加え、小石川後楽園の南側を通る。旧案の休館中の施設は立ち寄り先に含めない。",
+  "themes": ["石畳", "歴史", "坂道", "水辺", "庭園"],
+  "routeReasons": {
+    "standard": "飯田橋駅東口から兵庫横丁・善國寺・赤城神社を経て、市谷見附の高低差と外濠公園の水辺をたどり、四ツ谷駅で終える。計算上4.26kmで5〜6kmの目標には届かないが、旧経路の曙橋方面への伸長や距離合わせの折り返しを加えず、中央線へ帰りやすい自然な駅間の流れを優先する。路地入口、坂、横断、外濠公園の園路は地図レビュー待ち。",
+    "extended": "御茶ノ水駅の橋口から神田川の眺めと元町公園を通り、小石川後楽園の南側の道を経てAの飯田橋以降へ接続する。計算上7.46km。川・斜面の緑・石畳・外濠という景観の変化に延長の価値がある。庭園内は計算線に含まれず、入園する場合は別途有料・開園条件と経路確認が必要。元町公園の坂は要確認。"
+  },
+  "distanceExceptions": {
+    "standard": "4.26km。飯田橋から神楽坂の路地・高台と外濠を経て四ツ谷へ抜ける自然な流れを優先し、距離合わせの往復や閉館中の施設への立ち寄りを加えない。"
+  },
+  "scenicSegments": [
+    { "name": "兵庫横丁と神楽坂通り", "theme": "石畳と黒塀、坂の街並み", "direction": "飯田橋から坂上へ", "reviewStatus": "候補・路地の入口と歩行線を地図レビュー待ち", "evidenceTitle": "新宿区・神楽坂地区のまちづくり" },
+    { "name": "赤城神社から市谷見附", "theme": "台地の縁と住宅地の坂", "direction": "神楽坂から南へ", "reviewStatus": "候補・坂と横断を地図レビュー待ち", "evidenceTitle": "新宿区・神楽坂散策マップ" },
+    { "name": "市谷見附から四ツ谷の外濠沿い", "theme": "水辺、土手、桜並木", "direction": "市谷から四ツ谷へ", "reviewStatus": "候補・公園の園路と鉄道側の横断を地図レビュー待ち", "evidenceTitle": "Visit Chiyoda・外濠公園" },
+    { "name": "御茶ノ水橋から元町公園", "theme": "神田川の渓谷と鉄道、斜面の緑", "direction": "御茶ノ水から水道橋へ", "reviewStatus": "B候補・元町公園の坂と入口を地図レビュー待ち", "evidenceTitle": "千代田区景観資料・文京区元町公園" },
+    { "name": "小石川後楽園の南側の道", "theme": "庭園外周の緑と街への移り変わり", "direction": "水道橋側から飯田橋側へ", "reviewStatus": "B候補・計算線は園外。園内鑑賞は別行動で距離未計測", "evidenceTitle": "東京都公園協会・小石川後楽園" }
+  ],
+  "rainy": {
+    "verificationStatus": "researched",
+    "summary": "飯田橋駅から東京理科大学近代科学資料館とラムラを訪ねる短縮案。屋外に傘が必要な区間があり、館の開館日以外は資料館を利用できない。徒歩距離と屋内で連続して歩ける距離は未計測。",
+    "segments": [
+      { "kind": "walk_outdoor", "from": "飯田橋駅西口", "to": "東京理科大学近代科学資料館", "distanceM": null, "note": "公式案内は西口から徒歩4分。雨天の横断・屋根の連続性は未確認。" },
+      { "kind": "walk_indoor", "from": "東京理科大学近代科学資料館", "to": "展示室内", "distanceM": null, "note": "水・木・金は12〜16時、土曜は10〜16時。日・月・火・祝日と大学休業日は休館。入場無料。" },
+      { "kind": "walk_outdoor", "from": "東京理科大学近代科学資料館", "to": "飯田橋ラムラ", "distanceM": null, "note": "屋外露出区間。歩道・横断・距離を未計測。" },
+      { "kind": "walk_indoor", "from": "飯田橋ラムラ", "to": "館内", "distanceM": null, "note": "館内の連続歩行距離と店舗ごとの営業時間は未確認。" },
+      { "kind": "walk_outdoor", "from": "飯田橋ラムラ", "to": "飯田橋駅", "distanceM": null, "note": "駅への短い帰路。屋根の連続性は未確認。" }
+    ],
+    "conditions": ["資料館は開館日・大学休業日を当日公式サイトで確認する。", "資料館が閉館の場合はラムラのみの短縮案とし、屋内を長距離歩けるとは表示しない。", "傘が必要な屋外露出と雨天時の滑りやすさは未調査。"]
+  },
+  "evidence": [
+    { "type": "official", "title": "新宿区・神楽坂地区のまちづくり", "url": "https://www.city.shinjuku.lg.jp/kusei/keikan01_002096_00001.html", "checkedAt": "2026-11-13", "supports": "兵庫横丁などの石畳・黒塀の路地景観" },
+    { "type": "official", "title": "新宿区・粋なまち『神楽坂』を満喫", "url": "https://www.city.shinjuku.lg.jp/content/000396225.pdf", "checkedAt": "2026-11-13", "supports": "神楽坂の散策地点と地形の候補" },
+    { "type": "official", "title": "Visit Chiyoda・外濠公園", "url": "https://visit-chiyoda.tokyo/app/spot/detail/274", "checkedAt": "2026-11-13", "supports": "飯田橋から市ヶ谷、四ツ谷までの水辺の公園" },
+    { "type": "official", "title": "東京都公園協会・小石川後楽園", "url": "https://www.tokyo-park.or.jp/park/koishikawakorakuen/index.html", "checkedAt": "2026-11-13", "supports": "東西門、開園時間、料金、園内の水景" },
+    { "type": "official", "title": "文京区・元町公園", "url": "https://www.city.bunkyo.lg.jp/b036/p004881.html", "checkedAt": "2026-11-13", "supports": "神田川を臨む斜面地の公園" },
+    { "type": "official", "title": "宮城道雄オフィシャルサイト", "url": "https://miyagikai.gr.jp/", "checkedAt": "2026-11-13", "supports": "旧経路の宮城道雄記念館は建て替え工事のため閉館中" },
+    { "type": "official", "title": "東京理科大学・近代科学資料館ご利用案内", "url": "https://www.tus.ac.jp/info/setubi/museum/main/info.html", "checkedAt": "2026-11-13", "supports": "雨天案の開館日・時間・料金・駅からのアクセス" },
+    { "type": "official", "title": "飯田橋ラムラ・アクセス", "url": "https://www.ramla.jp/access/", "checkedAt": "2026-11-13", "supports": "雨天案の施設と飯田橋駅の近接" },
+    { "type": "walked_account", "title": "みなみちゃん's blog・神楽坂の坂道を歩いた記録", "url": "https://mnmc.hateblo.jp/entry/2025/06/25/213000", "checkedAt": "2026-11-13", "supports": "横丁、坂、交差点の歩行体験。今回のA/Bを歩いた証拠ではない" },
+    { "type": "geodata", "title": "OpenStreetMap via Overpass API", "url": "https://overpass-api.de/api/interpreter", "checkedAt": "2026-11-13", "supports": "候補点と門の位置。施設中心点は入口ではない" }
+  ],
+  "openQuestions": ["兵庫横丁・善國寺・赤城神社の実入口と道路との接続", "赤城神社から市谷見附への坂・階段・安全な横断", "外濠公園の園路が計算線と一致するか", "元町公園の坂・階段と通行可能時間", "小石川後楽園の南側の道と周辺横断の安全性。園内は本線に含まれない", "トイレ・休憩・途中離脱駅と豊田駅からのアクセス", "Cの屋外露出距離と館内の連続歩行距離", "現地での安全性とGPS実測距離"]
+}

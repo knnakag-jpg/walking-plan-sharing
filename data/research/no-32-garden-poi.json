@@ -1,0 +1,508 @@
+{
+  "checkedAt": "2026-11-12T21:21:33.641Z",
+  "source": "OpenStreetMap via Overpass API; © OpenStreetMap contributors",
+  "bbox": "35.698,139.733,35.712,139.755",
+  "query": "[out:json][timeout:25];(nwr[\"name\"~\"水道橋駅|小石川後楽園|東門|西門|大泉水|唐門\"](35.698,139.733,35.712,139.755);node[\"barrier\"=\"gate\"](35.702,139.746,35.708,139.752);node[\"entrance\"](35.702,139.746,35.708,139.752););out center tags;",
+  "note": "Garden gates and visitor paths need map review.",
+  "features": [
+    {
+      "type": "node",
+      "osmId": 727263512,
+      "name": "小石川後楽園入口",
+      "lat": 35.7048118,
+      "lon": 139.7475302,
+      "tags": {
+        "highway": "traffic_signals",
+        "name": "小石川後楽園入口",
+        "name:en": "Koishikawakorakuen iriguchi",
+        "traffic_signals": "signal"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 1919930576,
+      "lat": 35.7040336,
+      "lon": 139.7513341,
+      "tags": {
+        "barrier": "gate"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 2062610096,
+      "lat": 35.7043604,
+      "lon": 139.7506254,
+      "tags": {
+        "access": "no",
+        "barrier": "gate"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 2062610114,
+      "lat": 35.7044293,
+      "lon": 139.7509999,
+      "tags": {
+        "access": "no",
+        "barrier": "gate"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 2062610147,
+      "lat": 35.7048918,
+      "lon": 139.7476686,
+      "tags": {
+        "barrier": "gate"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 2068114560,
+      "lat": 35.7054609,
+      "lon": 139.7481037,
+      "tags": {
+        "barrier": "gate"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 2068114789,
+      "lat": 35.7061396,
+      "lon": 139.7491219,
+      "tags": {
+        "barrier": "gate"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 2068114813,
+      "lat": 35.7062164,
+      "lon": 139.7492094,
+      "tags": {
+        "barrier": "gate"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 2068114841,
+      "lat": 35.7063285,
+      "lon": 139.7496701,
+      "tags": {
+        "access": "no",
+        "barrier": "gate"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 2068114849,
+      "lat": 35.7064338,
+      "lon": 139.7496649,
+      "tags": {
+        "access": "no",
+        "barrier": "gate"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 3762105818,
+      "lat": 35.7067759,
+      "lon": 139.7510255,
+      "tags": {
+        "barrier": "gate"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 4794739475,
+      "name": "唐門跡",
+      "lat": 35.70433,
+      "lon": 139.7505204,
+      "tags": {
+        "board_type": "notice",
+        "information": "board",
+        "name": "唐門跡",
+        "name:en": "Kara-mon trace",
+        "tourism": "information"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 5123694464,
+      "lat": 35.705389,
+      "lon": 139.7482348,
+      "tags": {
+        "barrier": "gate"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 5143884823,
+      "lat": 35.703933,
+      "lon": 139.7510634,
+      "tags": {
+        "access": "no",
+        "barrier": "gate"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 5143884929,
+      "lat": 35.7063497,
+      "lon": 139.7499645,
+      "tags": {
+        "barrier": "gate"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 5152905854,
+      "lat": 35.705159,
+      "lon": 139.7484019,
+      "tags": {
+        "access": "no",
+        "barrier": "gate"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 5152905883,
+      "name": "小石川後楽園案内板",
+      "lat": 35.7050061,
+      "lon": 139.7478792,
+      "tags": {
+        "information": "map",
+        "map_size": "site",
+        "map_type": "scheme",
+        "name": "小石川後楽園案内板",
+        "tourism": "information"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 5152905884,
+      "name": "小石川後楽園案内",
+      "lat": 35.7050091,
+      "lon": 139.7479315,
+      "tags": {
+        "board_type": "notice",
+        "information": "board",
+        "name": "小石川後楽園案内",
+        "tourism": "information"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 5153132807,
+      "name": "小石川後楽園白糸の滝修復工事のお知らせ",
+      "lat": 35.7055612,
+      "lon": 139.7492646,
+      "tags": {
+        "information": "map",
+        "map_size": "site",
+        "map_type": "scheme",
+        "name": "小石川後楽園白糸の滝修復工事のお知らせ",
+        "tourism": "information"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 5188001981,
+      "lat": 35.7055329,
+      "lon": 139.7505469,
+      "tags": {
+        "access": "no",
+        "barrier": "gate"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 5194175431,
+      "name": "小石川後楽園白糸の滝朱副工事のお知らせ",
+      "lat": 35.7058051,
+      "lon": 139.7498643,
+      "tags": {
+        "check_date": "2023-10-02",
+        "information": "map",
+        "map_size": "site",
+        "map_type": "scheme",
+        "name": "小石川後楽園白糸の滝朱副工事のお知らせ",
+        "tourism": "information"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 5194175432,
+      "name": "小石川後楽園案内図",
+      "lat": 35.705822,
+      "lon": 139.7498643,
+      "tags": {
+        "information": "map",
+        "map_size": "site",
+        "map_type": "scheme",
+        "name": "小石川後楽園案内図",
+        "tourism": "information"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 5272766229,
+      "lat": 35.7049655,
+      "lon": 139.7477674,
+      "tags": {
+        "barrier": "gate",
+        "foot": "no"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 5272766234,
+      "name": "小石川後楽園",
+      "lat": 35.7050014,
+      "lon": 139.7478533,
+      "tags": {
+        "board_type": "notice",
+        "information": "board",
+        "name": "小石川後楽園",
+        "tourism": "information"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 6244909174,
+      "lat": 35.707292,
+      "lon": 139.7517032,
+      "tags": {
+        "entrance": "emergency"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 11436157068,
+      "name": "水道橋駅西口前",
+      "lat": 35.702271,
+      "lon": 139.752619,
+      "tags": {
+        "amenity": "bicycle_rental",
+        "authentication:app": "yes",
+        "bicycle_rental": "dropoff_point",
+        "brand": "Docomo Bike Share",
+        "brand:en": "Docomo Bike Share",
+        "brand:ja": "ドコモ・バイクシェア",
+        "brand:website": "https://docomo-cycle.jp/",
+        "brand:wikidata": "Q55533296",
+        "capacity": "5",
+        "fee": "yes",
+        "gbfs:name": "A2-24.水道橋駅西口前",
+        "gbfs:station_id": "11016",
+        "gbfs:system_id": "docomo-cycle",
+        "name": "水道橋駅西口前",
+        "name:en": "Suidobashi Station West",
+        "name:ja": "水道橋駅西口前",
+        "operator": "ドコモ・バイクシェア",
+        "operator:en": "Docomo Bike Share",
+        "operator:ja": "ドコモ・バイクシェア",
+        "operator:wikidata": "Q55533296",
+        "ref": "A2-24"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 12241405676,
+      "name": "小石川後楽園入口",
+      "lat": 35.7045764,
+      "lon": 139.7475511,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "小石川後楽園入口",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 12749029563,
+      "lat": 35.7043727,
+      "lon": 139.7505452,
+      "tags": {
+        "barrier": "gate"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 20028327,
+      "name": "小石川後楽園",
+      "lat": 35.7053585,
+      "lon": 139.7494608,
+      "tags": {
+        "charge": "300 JPY/adult;0 JPY/child",
+        "charge:conditional": "150 JPY @ (age >= 65)",
+        "contact:phone": "+81 3-3811-3015",
+        "contact:tripadvisor": "480636",
+        "contact:twitter": "KorakuenGarden",
+        "contact:website": "https://www.tokyo-park.or.jp/park/format/index030.html",
+        "fee": "yes",
+        "historic:period": "edo",
+        "leisure": "park",
+        "name": "小石川後楽園",
+        "name:en": "Koishikawa Kōrakuen Gardens",
+        "name:es": "Koishikawa Kōrakuen",
+        "name:fr": "Parc Kōraku de Koishikawa",
+        "name:ja-Hira": "こいしかわこうらくえん",
+        "name:ja-Latn": "Koishikawa Kōraku-en",
+        "name:ru": "Сад Коисикава Коракуэн",
+        "opening_hours": "Mo-Fr 09:00-17:00; Dec 29-Jan 01 off",
+        "operator": "東京都公園協会",
+        "operator:wikidata": "Q11525258",
+        "operator:wikipedia": "ja:東京都公園協会",
+        "source": "MLIT Japan",
+        "source:ja": "国土画像情報（オルソ化空中写真）国土交通省",
+        "start_date": "1938-04-03",
+        "wikidata": "Q1778881",
+        "wikimedia_commons": "Category:Koishikawa Korakuen",
+        "wikipedia": "ja:小石川後楽園"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 152621673,
+      "name": "神田警察署水道橋駅前交番",
+      "lat": 35.7024166,
+      "lon": 139.751661,
+      "tags": {
+        "amenity": "police",
+        "building": "yes",
+        "name": "神田警察署水道橋駅前交番",
+        "note": "National-Land Numerical Information (Public Facility) 2006, MLIT Japan",
+        "note:ja": "国土数値情報（公共施設データ）平成19年　国土交通省",
+        "source": "Bing, 2007-04;KSJ2",
+        "source_ref": "http://nlftp.mlit.go.jp/ksj/jpgis/datalist/KsjTmplt-P02-v2_0.html"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 196482863,
+      "name": "小石川後楽園サービスセンター",
+      "lat": 35.7048823,
+      "lon": 139.7481695,
+      "tags": {
+        "building": "public",
+        "information": "office",
+        "name": "小石川後楽園サービスセンター",
+        "name:en": "Koishikawa Kōrakuen Service Center",
+        "name:fr": "Centre de service Koishikawa Kōrakuen",
+        "name:ja-Latn": "Koishikawa Kōrakuen sābisu sentā",
+        "tourism": "information"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 200387969,
+      "name": "ライオンズスクエア小石川後楽園",
+      "lat": 35.7086812,
+      "lon": 139.742543,
+      "tags": {
+        "addr:block_number": "2",
+        "addr:housenumber": "17",
+        "building": "apartments",
+        "building:levels": "10",
+        "name": "ライオンズスクエア小石川後楽園",
+        "source": "Bing"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 746754686,
+      "name": "水道橋駅",
+      "lat": 35.7019486,
+      "lon": 139.7549439,
+      "tags": {
+        "highway": "footway",
+        "name": "水道橋駅",
+        "surface": "paving_stones",
+        "tunnel": "building_passage"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 816279375,
+      "name": "水道橋駅",
+      "lat": 35.7019353,
+      "lon": 139.7550129,
+      "tags": {
+        "highway": "footway",
+        "name": "水道橋駅",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1053066681,
+      "name": "水道橋駅(西口)",
+      "lat": 35.702067,
+      "lon": 139.752137,
+      "tags": {
+        "highway": "footway",
+        "name": "水道橋駅(西口)"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1119877171,
+      "name": "水道橋駅(西口)",
+      "lat": 35.702154,
+      "lon": 139.7521812,
+      "tags": {
+        "highway": "footway",
+        "layer": "-1",
+        "name": "水道橋駅(西口)",
+        "tunnel": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1119877174,
+      "name": "水道橋駅(西口)",
+      "lat": 35.7021408,
+      "lon": 139.7522735,
+      "tags": {
+        "highway": "footway",
+        "layer": "-1",
+        "name": "水道橋駅(西口)",
+        "tunnel": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1376895623,
+      "name": "唐門",
+      "lat": 35.7043747,
+      "lon": 139.7505407,
+      "tags": {
+        "building": "yes",
+        "building:wikidata": "Q3192940",
+        "name": "唐門",
+        "name:en": "Chinese Gate",
+        "name:fr": "Porte Chinoise",
+        "name:ja-Hira": "からもん",
+        "name:ja-Latn": "Kara-mon"
+      }
+    },
+    {
+      "type": "relation",
+      "osmId": 2634166,
+      "name": "大泉水",
+      "lat": 35.7051097,
+      "lon": 139.7495448,
+      "tags": {
+        "name": "大泉水",
+        "name:fr": "Grand étang",
+        "name:ja-Hira": "だい せんすい",
+        "name:ja-Latn": "Daisensui",
+        "natural": "water",
+        "source:ja": "国土画像情報（オルソ化空中写真）国土交通省",
+        "type": "multipolygon"
+      }
+    }
+  ]
+}

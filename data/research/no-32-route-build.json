@@ -1,0 +1,228 @@
+{
+  "generatedAt": "2026-11-12T22:02:06.016Z",
+  "method": "Valhalla pedestrian; garden and street entrances require map review",
+  "results": [
+    {
+      "variant": "standard",
+      "distanceM": 4262,
+      "engineDistanceM": 4265,
+      "repeatedGeometryM": 91,
+      "repeatedGeometryPct": 2.1,
+      "waypoints": [
+        {
+          "id": "iidabashi_east",
+          "label": "飯田橋駅東口",
+          "coord": [
+            35.7019085,
+            139.7456386
+          ],
+          "source": "OSM node 1579304711; JR exit needs confirmation"
+        },
+        {
+          "id": "hyogo_yokocho",
+          "label": "兵庫横丁付近",
+          "coord": [
+            35.7024504,
+            139.7398422
+          ],
+          "source": "OSM node 10681466205 is a restaurant, not the lane entrance"
+        },
+        {
+          "id": "zenkokuji",
+          "label": "善國寺付近",
+          "coord": [
+            35.7014555,
+            139.7394777
+          ],
+          "source": "OSM way 1270865653 centre; entrance needs confirmation"
+        },
+        {
+          "id": "akagi_shrine",
+          "label": "赤城神社付近",
+          "coord": [
+            35.704607,
+            139.7360988
+          ],
+          "source": "OSM way 143516722 centre; entrance needs confirmation"
+        },
+        {
+          "id": "ichigaya_mitsuke",
+          "label": "市谷見附付近",
+          "coord": [
+            35.6921485,
+            139.7352205
+          ],
+          "source": "OSM node 1808422619; crossing needs map review"
+        },
+        {
+          "id": "sotobori_park",
+          "label": "外濠公園付近",
+          "coord": [
+            35.6892117,
+            139.7325038
+          ],
+          "source": "OSM way 594546211 centre; park path needs map review"
+        },
+        {
+          "id": "yotsuya_jr",
+          "label": "JR四ツ谷駅付近",
+          "coord": [
+            35.6859783,
+            139.7309525
+          ],
+          "source": "OSM way 816262886 outdoor footway; station exit needs confirmation"
+        }
+      ],
+      "legDistancesKm": [
+        0.672,
+        0.215,
+        0.554,
+        1.827,
+        0.573,
+        0.422
+      ],
+      "geometryUrl": "data/routes/no-32-standard.geojson"
+    },
+    {
+      "variant": "extended",
+      "distanceM": 7463,
+      "engineDistanceM": 7467,
+      "repeatedGeometryM": 341,
+      "repeatedGeometryPct": 4.6,
+      "waypoints": [
+        {
+          "id": "ochanomizu_jr",
+          "label": "御茶ノ水駅御茶ノ水橋口",
+          "coord": [
+            35.6999152,
+            139.7636624
+          ],
+          "source": "OSM node 6988063075 train station entrance"
+        },
+        {
+          "id": "ochanomizu_bridge",
+          "label": "御茶ノ水橋",
+          "coord": [
+            35.7002306,
+            139.763593
+          ],
+          "source": "OSM way 375670605 centre; river viewpoint"
+        },
+        {
+          "id": "motomachi_park",
+          "label": "元町公園付近",
+          "coord": [
+            35.7022971,
+            139.7581029
+          ],
+          "source": "OSM way 175996472 centre; park entrance and slope need review"
+        },
+        {
+          "id": "suidobashi_west",
+          "label": "水道橋駅西口付近",
+          "coord": [
+            35.702067,
+            139.752137
+          ],
+          "source": "OSM way 1053066681 outdoor footway"
+        },
+        {
+          "id": "korakuen_south_east",
+          "label": "小石川後楽園南側の道・東端付近",
+          "coord": [
+            35.7040336,
+            139.7513341
+          ],
+          "source": "OSM gate node 1919930576 vicinity; main route stays outside garden"
+        },
+        {
+          "id": "korakuen_south_west",
+          "label": "小石川後楽園南側の道・西端付近",
+          "coord": [
+            35.7049655,
+            139.7477674
+          ],
+          "source": "OSM gate node 5272766229 vicinity; main route stays outside garden"
+        },
+        {
+          "id": "iidabashi_east",
+          "label": "飯田橋駅東口",
+          "coord": [
+            35.7019085,
+            139.7456386
+          ],
+          "source": "OSM node 1579304711; JR exit needs confirmation"
+        },
+        {
+          "id": "hyogo_yokocho",
+          "label": "兵庫横丁付近",
+          "coord": [
+            35.7024504,
+            139.7398422
+          ],
+          "source": "OSM node 10681466205 is a restaurant, not the lane entrance"
+        },
+        {
+          "id": "zenkokuji",
+          "label": "善國寺付近",
+          "coord": [
+            35.7014555,
+            139.7394777
+          ],
+          "source": "OSM way 1270865653 centre; entrance needs confirmation"
+        },
+        {
+          "id": "akagi_shrine",
+          "label": "赤城神社付近",
+          "coord": [
+            35.704607,
+            139.7360988
+          ],
+          "source": "OSM way 143516722 centre; entrance needs confirmation"
+        },
+        {
+          "id": "ichigaya_mitsuke",
+          "label": "市谷見附付近",
+          "coord": [
+            35.6921485,
+            139.7352205
+          ],
+          "source": "OSM node 1808422619; crossing needs map review"
+        },
+        {
+          "id": "sotobori_park",
+          "label": "外濠公園付近",
+          "coord": [
+            35.6892117,
+            139.7325038
+          ],
+          "source": "OSM way 594546211 centre; park path needs map review"
+        },
+        {
+          "id": "yotsuya_jr",
+          "label": "JR四ツ谷駅付近",
+          "coord": [
+            35.6859783,
+            139.7309525
+          ],
+          "source": "OSM way 816262886 outdoor footway; station exit needs confirmation"
+        }
+      ],
+      "legDistancesKm": [
+        0.084,
+        1.17,
+        0.686,
+        0.313,
+        0.403,
+        0.543,
+        0.672,
+        0.215,
+        0.554,
+        1.827,
+        0.573,
+        0.422
+      ],
+      "geometryUrl": "data/routes/no-32-extended.geojson"
+    }
+  ]
+}

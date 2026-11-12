@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-12T21:09:32.935Z",
+  "generatedAt": "2026-11-12T22:03:11.577Z",
   "interpretation": "Mechanical triage only. Source and map review required before adopting any new route.",
   "records": [
     {
@@ -3770,9 +3770,9 @@
     },
     {
       "id": "No.32",
-      "title": "神楽坂～市ヶ谷 崖の縁",
+      "title": "神楽坂の路地から外濠へ",
       "series": "坂道・崖線（No.27～32）",
-      "workStatus": "research_needed",
+      "workStatus": "partial_rebuild",
       "legacy": {
         "geometryUrl": "data/routes/no-32.geojson",
         "walkingDistanceM": 3609,
@@ -3782,9 +3782,25 @@
         "repeatedWaypoints": [],
         "gateResult": "OK"
       },
-      "existingNewVariants": [],
+      "existingNewVariants": [
+        {
+          "variant": "standard",
+          "status": "routed",
+          "distanceM": 4262
+        },
+        {
+          "variant": "extended",
+          "status": "routed",
+          "distanceM": 7463
+        },
+        {
+          "variant": "rainy",
+          "status": "researched",
+          "distanceM": null
+        }
+      ],
       "coordinateReview": "legacy_waypoints_need_replacement",
-      "sourceResearch": "source_review_started",
+      "sourceResearch": "routed_candidates_under_review",
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": false,

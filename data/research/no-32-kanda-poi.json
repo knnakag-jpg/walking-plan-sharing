@@ -1,0 +1,1919 @@
+{
+  "checkedAt": "2026-11-12T21:24:44.494Z",
+  "source": "OpenStreetMap via Overpass API; © OpenStreetMap contributors",
+  "bbox": "35.695,139.750,35.709,139.773",
+  "query": "[out:json][timeout:25];(nwr[\"name\"~\"御茶ノ水駅|お茶の水橋|御茶ノ水橋|水道橋|元町公園|聖橋\"](35.695,139.750,35.709,139.773););out center tags;",
+  "features": [
+    {
+      "type": "node",
+      "osmId": 260710862,
+      "name": "聖橋",
+      "lat": 35.699211,
+      "lon": 139.7655747,
+      "tags": {
+        "highway": "traffic_signals",
+        "name": "聖橋",
+        "name:en": "Hijiribashi",
+        "name:es": "Hijiribashi",
+        "name:ja": "聖橋",
+        "name:ja_rm": "Hijiribashi"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 412971546,
+      "name": "聖橋",
+      "lat": 35.699219,
+      "lon": 139.7654836,
+      "tags": {
+        "highway": "traffic_signals",
+        "name": "聖橋",
+        "name:en": "Hijiribashi",
+        "name:es": "Hijiribashi",
+        "name:ja": "聖橋",
+        "name:ja_rm": "Hijiribashi"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 1420784148,
+      "name": "東京歯科大学水道橋病院",
+      "lat": 35.701355,
+      "lon": 139.754918,
+      "tags": {
+        "addr:full": "東京都千代田区三崎町2-9-18",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "東京歯科大学水道橋病院",
+        "name:en": "Tokyo Dental College Suidobashi Hospital",
+        "name:ja": "東京歯科大学水道橋病院",
+        "note": "National-Land Numerical Information (Public Facility) 2006, MLIT Japan",
+        "note:ja": "国土数値情報（公共施設データ）平成19年 国土交通省",
+        "operator:type": "private",
+        "source": "KSJ2",
+        "source_ref": "http://nlftp.mlit.go.jp/ksj/jpgis/datalist/KsjTmplt-P02-v2_0.html"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 1784214291,
+      "name": "水道橋",
+      "lat": 35.702338,
+      "lon": 139.7553139,
+      "tags": {
+        "highway": "traffic_signals",
+        "name": "水道橋",
+        "name:en": "Suidobashi",
+        "name:ja-Hira": "すいどうばし"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 1784214306,
+      "name": "水道橋",
+      "lat": 35.70245,
+      "lon": 139.7553082,
+      "tags": {
+        "highway": "traffic_signals",
+        "name": "水道橋",
+        "name:en": "Suidobashi",
+        "name:ja-Hira": "すいどうばし"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 1815436264,
+      "name": "御茶ノ水駅",
+      "lat": 35.7003968,
+      "lon": 139.7642442,
+      "tags": {
+        "bench": "yes",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "local_ref": "1",
+        "name": "御茶ノ水駅",
+        "name:en": "Ochanomizu-eki",
+        "name:ja": "御茶ノ水駅",
+        "name:ko": "오차노미즈역",
+        "network": "千代田区地域福祉交通",
+        "operator": "千代田区",
+        "public_transport": "platform",
+        "shelter": "no",
+        "source": "image;Bing,2007-04",
+        "tactile_paving": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 1815436265,
+      "name": "御茶ノ水駅前",
+      "lat": 35.7003884,
+      "lon": 139.7642788,
+      "tags": {
+        "bench": "yes",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "local_ref": "1",
+        "name": "御茶ノ水駅前",
+        "name:en": "Ochanomizu-ekimae",
+        "name:ja": "御茶ノ水駅前",
+        "name:ko": "오차노미즈에키마에",
+        "operator": "東京都交通局",
+        "public_transport": "platform",
+        "shelter": "yes",
+        "source": "image;Bing,2007-04",
+        "tactile_paving": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 1926709968,
+      "name": "水道橋",
+      "lat": 35.7035315,
+      "lon": 139.7552679,
+      "tags": {
+        "name": "水道橋",
+        "name:en": "Suidobashi",
+        "name:es": "Suidobashi",
+        "name:ja": "水道橋",
+        "name:ja-Hira": "すいどうばし",
+        "name:ja_rm": "Suidōbashi",
+        "name:ru": "Суйдобаси",
+        "network": "都営地下鉄",
+        "operator": "東京都交通局",
+        "public_transport": "stop_position",
+        "railway": "stop",
+        "ref": "I11",
+        "subway": "yes",
+        "wikidata": "Q801496",
+        "wikipedia": "ja:水道橋駅"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 2149681741,
+      "name": "ギークカフェ水道橋",
+      "lat": 35.7005404,
+      "lon": 139.7534272,
+      "tags": {
+        "addr:block_number": "13",
+        "addr:city": "千代田区",
+        "addr:housenumber": "7",
+        "addr:neighbourhood": "三崎町二丁目",
+        "addr:postcode": "101-0061",
+        "addr:province": "東京都",
+        "amenity": "cafe",
+        "internet_access": "wlan",
+        "name": "ギークカフェ水道橋",
+        "name:en": "Geek Cafe",
+        "opening_hours": "Mo-Sa 07:30-20:00",
+        "operator": "株式会社ラフィ",
+        "phone": "+81 3-6380-8990"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 2283813055,
+      "name": "新御茶ノ水駅",
+      "lat": 35.6957923,
+      "lon": 139.7652338,
+      "tags": {
+        "name": "新御茶ノ水駅",
+        "railway": "subway_entrance",
+        "ref": "B3",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 2283813064,
+      "name": "新御茶ノ水駅",
+      "lat": 35.6960225,
+      "lon": 139.7652221,
+      "tags": {
+        "name": "新御茶ノ水駅",
+        "railway": "subway_entrance",
+        "ref": "B3a",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 2392663554,
+      "name": "聖橋門",
+      "lat": 35.7003111,
+      "lon": 139.7657825,
+      "tags": {
+        "barrier": "block",
+        "name": "聖橋門"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 2393625549,
+      "name": "御茶ノ水駅前",
+      "lat": 35.700477,
+      "lon": 139.764566,
+      "tags": {
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "local_ref": "2",
+        "name": "御茶ノ水駅前",
+        "name:en": "Ochanomizu-ekimae",
+        "name:ja": "御茶ノ水駅前",
+        "name:ko": "오차노미즈에키마에",
+        "operator": "東京都交通局",
+        "public_transport": "platform",
+        "shelter": "no",
+        "source": "Bing 2010",
+        "tactile_paving": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 2446977827,
+      "name": "新御茶ノ水駅前郵便局",
+      "lat": 35.6963012,
+      "lon": 139.7646079,
+      "tags": {
+        "amenity": "post_office",
+        "name": "新御茶ノ水駅前郵便局",
+        "name:en": "Shin-Ochanomizu ekimae Post Office",
+        "operator": "日本郵便",
+        "operator:en": "Japan Post",
+        "operator:ja": "日本郵便",
+        "operator:short": "郵便局",
+        "operator:short:en": "JP",
+        "operator:short:ja": "郵便局",
+        "operator:wikidata": "Q11509260",
+        "short_name": "郵便局",
+        "short_name:en": "JP",
+        "short_name:ja": "郵便局"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 2446977833,
+      "name": "新御茶ノ水駅",
+      "lat": 35.6963779,
+      "lon": 139.7648052,
+      "tags": {
+        "name": "新御茶ノ水駅",
+        "railway": "subway_entrance",
+        "ref": "B3b",
+        "source": "Knowledge",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 2558121946,
+      "name": "水道橋",
+      "lat": 35.7020455,
+      "lon": 139.7537382,
+      "tags": {
+        "maxspeed": "95",
+        "name": "水道橋",
+        "name:en": "Suidobashi",
+        "name:es": "Suidōbashi",
+        "name:it": "Suidobashi",
+        "name:ja": "水道橋",
+        "name:ja-Hira": "すいどうばし",
+        "name:ja-Latn": "Suidōbashi",
+        "name:ko": "스이도바시",
+        "name:ru": "Суйдобаси",
+        "name:zh-Hans": "水道桥",
+        "operator": "東日本旅客鉄道",
+        "public_transport": "station",
+        "railway": "station",
+        "toilets:wheelchair": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q801496",
+        "wikipedia": "ja:水道橋駅"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 2959531633,
+      "name": "水道橋商会",
+      "lat": 35.703012,
+      "lon": 139.755575,
+      "tags": {
+        "name": "水道橋商会",
+        "name:en": "Suidobashi Shokai",
+        "shop": "sports"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 3343292926,
+      "name": "水道橋駅前",
+      "lat": 35.7011589,
+      "lon": 139.7552839,
+      "tags": {
+        "bench": "no",
+        "bus": "yes",
+        "covered": "yes",
+        "highway": "bus_stop",
+        "name": "水道橋駅前",
+        "network": "都営バス",
+        "operator": "東京都交通局",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 3763656485,
+      "name": "水道橋",
+      "lat": 35.7024017,
+      "lon": 139.7555034,
+      "tags": {
+        "highway": "traffic_signals",
+        "name": "水道橋",
+        "name:en": "Suidobashi",
+        "name:ja-Hira": "すいどうばし",
+        "source": "Bing 2010",
+        "traffic_signals": "signal"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 3763656498,
+      "name": "水道橋",
+      "lat": 35.702295,
+      "lon": 139.755515,
+      "tags": {
+        "highway": "traffic_signals",
+        "name": "水道橋",
+        "name:en": "Suidobashi",
+        "name:ja-Hira": "すいどうばし"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 3763656585,
+      "name": "水道橋",
+      "lat": 35.7036122,
+      "lon": 139.7547824,
+      "tags": {
+        "name": "水道橋",
+        "name:en": "Suidobashi",
+        "name:es": "Suidobashi",
+        "railway": "subway_entrance",
+        "ref": "A3"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 3777697464,
+      "name": "水道橋",
+      "lat": 35.7029095,
+      "lon": 139.7550669,
+      "tags": {
+        "name": "水道橋",
+        "name:en": "Suidobashi",
+        "railway": "subway_entrance",
+        "ref": "A2",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 3777697465,
+      "name": "水道橋",
+      "lat": 35.702925,
+      "lon": 139.755571,
+      "tags": {
+        "name": "水道橋",
+        "name:en": "Suidobashi",
+        "railway": "subway_entrance",
+        "ref": "A1",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 3777697466,
+      "name": "水道橋",
+      "lat": 35.7043004,
+      "lon": 139.7546951,
+      "tags": {
+        "name": "水道橋",
+        "name:en": "Suidobashi",
+        "railway": "subway_entrance",
+        "ref": "A5"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 3777697467,
+      "name": "水道橋",
+      "lat": 35.7044697,
+      "lon": 139.754489,
+      "tags": {
+        "name": "水道橋",
+        "name:en": "Suidobashi",
+        "railway": "subway_entrance",
+        "ref": "A4",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 3777697468,
+      "name": "水道橋",
+      "lat": 35.7042134,
+      "lon": 139.7551512,
+      "tags": {
+        "name": "水道橋",
+        "name:en": "Suidobashi",
+        "railway": "subway_entrance",
+        "ref": "A6",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 3794695436,
+      "name": "水道橋駅前",
+      "lat": 35.7012066,
+      "lon": 139.7555485,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "水道橋駅前",
+        "network": "都営バス",
+        "operator": "東京都交通局",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 3939111154,
+      "name": "水道橋",
+      "lat": 35.7020878,
+      "lon": 139.7553511,
+      "tags": {
+        "barrier": "stile",
+        "name": "水道橋",
+        "name:en": "Suidobashi"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 4013840293,
+      "name": "やるき茶屋　水道橋本店",
+      "lat": 35.7015801,
+      "lon": 139.7526533,
+      "tags": {
+        "amenity": "pub",
+        "name": "やるき茶屋　水道橋本店",
+        "name:en": "Yaruki-Chaya"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 4258665703,
+      "name": "東京歯科大学 水道橋校舎新館",
+      "lat": 35.7002068,
+      "lon": 139.7552957,
+      "tags": {
+        "addr:city": "千代田区",
+        "addr:postcode": "101-0061",
+        "amenity": "university",
+        "education": "university",
+        "name": "東京歯科大学 水道橋校舎新館",
+        "name:en": "Tokyo Dental College Suidobashi New Building",
+        "name:ja": "東京歯科大学 水道橋校舎新館",
+        "operator": "学校法人 東京歯科大学",
+        "website": "https://www.tdc.ac.jp/"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 4534756189,
+      "name": "聖橋口",
+      "lat": 35.6995537,
+      "lon": 139.7648628,
+      "tags": {
+        "barrier": "turnstile",
+        "name": "聖橋口",
+        "name:en": "Hijiribashi Entrance"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 4585672568,
+      "name": "御茶ノ水駅前",
+      "lat": 35.6999064,
+      "lon": 139.7635412,
+      "tags": {
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "layer": "2",
+        "lit": "no",
+        "local_ref": "3",
+        "location": "bridge",
+        "name": "御茶ノ水駅前",
+        "name:en": "Ochanomizu-ekimae",
+        "network": "都営バス",
+        "network:en": "Toei Bus",
+        "network:ja": "都営バス",
+        "network:wikidata": "Q859227",
+        "operator": "東京都交通局",
+        "public_transport": "platform",
+        "shelter": "no",
+        "tactile_paving": "no",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 4952123220,
+      "name": "水道橋A",
+      "lat": 35.702131,
+      "lon": 139.7551687,
+      "tags": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "99",
+        "covered": "no",
+        "fee": "yes",
+        "maxstay": "no",
+        "name": "水道橋A",
+        "operator": "文京区役所 土木部管理課交通安全係",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 4958325359,
+      "name": "都営三田線水道橋駅_AED",
+      "lat": 35.702996,
+      "lon": 139.7553653,
+      "tags": {
+        "bicycle": "no",
+        "description": "「JR水道橋駅方面改札」改札外\n切符売り場向かって右",
+        "emergency": "defibrillator",
+        "foot": "yes",
+        "horse": "no",
+        "indoor": "yes",
+        "motor_vehicle": "no",
+        "name": "都営三田線水道橋駅_AED",
+        "opening_hours": "Mo-Su 07:00-23:00",
+        "phone": "03-3815-7068",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 4960183525,
+      "name": "水道橋B",
+      "lat": 35.7020699,
+      "lon": 139.755586,
+      "tags": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "99",
+        "covered": "no",
+        "fee": "yes",
+        "maxstay": "no",
+        "name": "水道橋B",
+        "operator": "文京区役所 土木部管理課交通安全係",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 4970007440,
+      "name": "聖橋の由来",
+      "lat": 35.7002338,
+      "lon": 139.7654355,
+      "tags": {
+        "historic": "memorial",
+        "material": "stone",
+        "memorial": "stele",
+        "name": "聖橋の由来",
+        "operator": "東京都交通局",
+        "source": "survey",
+        "start_date": "1992-03"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 4970236109,
+      "name": "御茶ノ水駅構内AED",
+      "lat": 35.6995735,
+      "lon": 139.7647033,
+      "tags": {
+        "emergency": "defibrillator",
+        "indoor": "yes",
+        "name": "御茶ノ水駅構内AED"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 4970429073,
+      "name": "御茶ノ水聖橋クリニック",
+      "lat": 35.7018451,
+      "lon": 139.7660709,
+      "tags": {
+        "amenity": "doctors",
+        "healthcare": "doctor",
+        "name": "御茶ノ水聖橋クリニック",
+        "name:en": "Ochanomizu Hijiri-bashi Clinic"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 4970429077,
+      "name": "デンタルオフィス聖橋",
+      "lat": 35.7020998,
+      "lon": 139.7663965,
+      "tags": {
+        "amenity": "dentist",
+        "contact:phone": "+81 3 3253 3718",
+        "healthcare": "dentist",
+        "name": "デンタルオフィス聖橋",
+        "name:en": "Dental Office Hijiri-bashi",
+        "opening_hours": "Mo-Fr 10:00-13:00,14:30-19:00;Sa 10:00-13:00,14:30-17:00;Su,Th,PH off",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 5409193801,
+      "name": "水道橋",
+      "lat": 35.7035144,
+      "lon": 139.7551538,
+      "tags": {
+        "name": "水道橋",
+        "name:en": "Suidobashi",
+        "name:es": "Suidobashi",
+        "name:ja": "水道橋",
+        "name:ko": "스이도바시",
+        "name:zh-Hans": "水道桥",
+        "network": "都営地下鉄",
+        "network:en": "Toei subway",
+        "operator": "東京都交通局",
+        "operator:en": "Toei",
+        "operator:wikidata": "Q1377135",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "subway",
+        "subway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 5692883333,
+      "name": "聖橋亭",
+      "lat": 35.7014641,
+      "lon": 139.7669645,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "聖橋亭",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 6299113286,
+      "name": "カレー＆オリエンタルバル 桃の実 水道橋店",
+      "lat": 35.7008427,
+      "lon": 139.7567859,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "curry;indian",
+        "name": "カレー＆オリエンタルバル 桃の実 水道橋店",
+        "opening_hours": "Mo-Fr 11:30-14:00, 18:00-21:00; Sa 11:30-16:00"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 6441550157,
+      "name": "水道橋",
+      "lat": 35.7035224,
+      "lon": 139.7551113,
+      "tags": {
+        "name": "水道橋",
+        "name:en": "Suidobashi",
+        "name:es": "Suidobashi",
+        "name:ja": "水道橋",
+        "name:ja-Hira": "すいどうばし",
+        "name:ja_rm": "Suidōbashi",
+        "name:ru": "Суйдобаси",
+        "network": "都営地下鉄",
+        "operator": "東京都交通局",
+        "public_transport": "stop_position",
+        "railway": "stop",
+        "ref": "I11",
+        "subway": "yes",
+        "wikidata": "Q801496",
+        "wikipedia": "ja:水道橋駅"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 6988063075,
+      "name": "御茶ノ水橋口",
+      "lat": 35.6999152,
+      "lon": 139.7636624,
+      "tags": {
+        "entrance": "main",
+        "name": "御茶ノ水橋口",
+        "name:en": "Ochanomizubashi Entrance",
+        "railway": "train_station_entrance"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 7016046677,
+      "name": "水道橋",
+      "lat": 35.7020574,
+      "lon": 139.7537391,
+      "tags": {
+        "local_ref": "2",
+        "name": "水道橋",
+        "name:en": "Suidobashi",
+        "name:es": "Suidōbashi",
+        "name:it": "Suidobashi",
+        "name:ja": "水道橋",
+        "name:ja-Hira": "すいどうばし",
+        "name:ja-Latn": "Suidōbashi",
+        "name:ko": "스이도바시",
+        "name:ru": "Суйдобаси",
+        "operator": "東日本旅客鉄道",
+        "public_transport": "stop_position",
+        "railway": "stop",
+        "ref": "JB17",
+        "train": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 7016046678,
+      "name": "水道橋",
+      "lat": 35.7020335,
+      "lon": 139.7537373,
+      "tags": {
+        "local_ref": "1",
+        "name": "水道橋",
+        "name:en": "Suidobashi",
+        "name:es": "Suidōbashi",
+        "name:it": "Suidobashi",
+        "name:ja": "水道橋",
+        "name:ja-Hira": "すいどうばし",
+        "name:ja-Latn": "Suidōbashi",
+        "name:ko": "스이도바시",
+        "name:ru": "Суйдобаси",
+        "operator": "東日本旅客鉄道",
+        "public_transport": "stop_position",
+        "railway": "stop",
+        "ref": "JB17",
+        "train": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 7018312835,
+      "name": "聖橋口",
+      "lat": 35.6995155,
+      "lon": 139.765034,
+      "tags": {
+        "entrance": "yes",
+        "name": "聖橋口",
+        "name:en": "Hijiribashi Entrance",
+        "railway": "train_station_entrance"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 7018316125,
+      "name": "御茶ノ水橋口",
+      "lat": 35.6999035,
+      "lon": 139.7637048,
+      "tags": {
+        "barrier": "turnstile",
+        "name": "御茶ノ水橋口",
+        "name:en": "Ochanomizubashi Entrance"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 8869045823,
+      "name": "御茶ノ水駅前",
+      "lat": 35.7005086,
+      "lon": 139.7636314,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "layer": "2",
+        "local_ref": "4",
+        "name": "御茶ノ水駅前",
+        "network": "千代田区地域福祉交通",
+        "operator": "千代田区コミュニティバス",
+        "public_transport": "platform",
+        "shelter": "no"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 8869045824,
+      "name": "御茶ノ水駅前",
+      "lat": 35.700538,
+      "lon": 139.7636461,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "layer": "2",
+        "local_ref": "4",
+        "name": "御茶ノ水駅前",
+        "network": "都営バス",
+        "network:en": "Toei Bus",
+        "network:ja": "都営バス",
+        "network:wikidata": "Q859227",
+        "operator": "東京都交通局",
+        "public_transport": "platform",
+        "shelter": "no"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 9420286525,
+      "name": "御茶ノ水駅前",
+      "lat": 35.7003419,
+      "lon": 139.7645165,
+      "tags": {
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "no",
+        "local_ref": "5",
+        "name": "御茶ノ水駅前",
+        "network": "都営バス",
+        "network:en": "Toei Bus",
+        "network:ja": "都営バス",
+        "network:wikidata": "Q859227",
+        "operator": "東京都交通局",
+        "public_transport": "platform",
+        "shelter": "no",
+        "tactile_paving": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 9575320202,
+      "name": "聖橋",
+      "lat": 35.7003375,
+      "lon": 139.7655592,
+      "tags": {
+        "bus": "yes",
+        "name": "聖橋",
+        "network": "B-ぐる 本郷・湯島ルート",
+        "public_transport": "stop_position",
+        "ref": "12"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 9575320203,
+      "name": "聖橋",
+      "lat": 35.7003534,
+      "lon": 139.7655062,
+      "tags": {
+        "bench": "no",
+        "bin": "no",
+        "lit": "yes",
+        "name": "聖橋",
+        "public_transport": "platform",
+        "route_ref": "12",
+        "shelter": "no",
+        "tactile_paving": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 9583207100,
+      "name": "新御茶ノ水駅",
+      "lat": 35.6970619,
+      "lon": 139.7653866,
+      "tags": {
+        "bench": "no",
+        "bin": "no",
+        "description": "B-ぐる 本郷・湯島ルート",
+        "name": "新御茶ノ水駅",
+        "public_transport": "platform",
+        "route_ref": "11",
+        "shelter": "no"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 9583207101,
+      "name": "新御茶ノ水駅",
+      "lat": 35.6970536,
+      "lon": 139.7654486,
+      "tags": {
+        "bus": "yes",
+        "name": "新御茶ノ水駅",
+        "network": "B-ぐる 本郷・湯島ルート",
+        "public_transport": "stop_position",
+        "ref": "11"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 9583207104,
+      "name": "御茶ノ水駅前",
+      "lat": 35.6998884,
+      "lon": 139.7635318,
+      "tags": {
+        "bench": "no",
+        "bin": "no",
+        "description": "B-ぐる 本郷・湯島ルート",
+        "lit": "no",
+        "name": "御茶ノ水駅前",
+        "public_transport": "platform",
+        "ref": "9",
+        "shelter": "no",
+        "tactile_paving": "no"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 9583207105,
+      "name": "御茶ノ水駅前",
+      "lat": 35.6999173,
+      "lon": 139.7634332,
+      "tags": {
+        "bus": "yes",
+        "name": "御茶ノ水駅前",
+        "network": "B-ぐる 本郷・湯島ルート",
+        "public_transport": "stop_position",
+        "ref": "9"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 11422114679,
+      "name": "水道橋酒場",
+      "lat": 35.7013208,
+      "lon": 139.7539108,
+      "tags": {
+        "addr:block_number": "10",
+        "addr:city": "千代田区",
+        "addr:neighbourhood": "三崎町二丁目",
+        "addr:postcode": "101-0061",
+        "addr:province": "東京都",
+        "amenity": "pub",
+        "check_date": "2023-12-16",
+        "name": "水道橋酒場"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 11436157068,
+      "name": "水道橋駅西口前",
+      "lat": 35.702271,
+      "lon": 139.752619,
+      "tags": {
+        "amenity": "bicycle_rental",
+        "authentication:app": "yes",
+        "bicycle_rental": "dropoff_point",
+        "brand": "Docomo Bike Share",
+        "brand:en": "Docomo Bike Share",
+        "brand:ja": "ドコモ・バイクシェア",
+        "brand:website": "https://docomo-cycle.jp/",
+        "brand:wikidata": "Q55533296",
+        "capacity": "5",
+        "fee": "yes",
+        "gbfs:name": "A2-24.水道橋駅西口前",
+        "gbfs:station_id": "11016",
+        "gbfs:system_id": "docomo-cycle",
+        "name": "水道橋駅西口前",
+        "name:en": "Suidobashi Station West",
+        "name:ja": "水道橋駅西口前",
+        "operator": "ドコモ・バイクシェア",
+        "operator:en": "Docomo Bike Share",
+        "operator:ja": "ドコモ・バイクシェア",
+        "operator:wikidata": "Q55533296",
+        "ref": "A2-24"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 11621660311,
+      "name": "スタジオ・ノード水道橋",
+      "lat": 35.7014893,
+      "lon": 139.7518793,
+      "tags": {
+        "amenity": "studio",
+        "name": "スタジオ・ノード水道橋"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 11846161436,
+      "name": "神田三崎町（水道橋駅前）",
+      "lat": 35.7010806,
+      "lon": 139.7552092,
+      "tags": {
+        "addr:province": "東京都",
+        "amenity": "bicycle_rental",
+        "authentication:app": "yes",
+        "bicycle_rental": "dropoff_point",
+        "brand": "HELLO CYCLING",
+        "brand:en": "HELLO CYCLING",
+        "brand:ja": "ハローサイクリング",
+        "brand:wikidata": "Q91231927",
+        "capacity": "40",
+        "contact:website": "https://www.hellocycling.jp",
+        "fee": "yes",
+        "gbfs:station_id": "13451",
+        "gbfs:system_id": "hellocycling",
+        "name": "神田三崎町（水道橋駅前）",
+        "name:en": "HELLO CYCLING",
+        "name:ja": "神田三崎町（水道橋駅前）",
+        "network": "HELLO CYCLING",
+        "network:en": "HELLO CYCLING",
+        "network:ja": "ハローサイクリング",
+        "network:wikidata": "Q91231927",
+        "operator": "OpenStreet",
+        "operator:type": "private",
+        "operator:wikidata": "Q43593262"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 13192291767,
+      "name": "VORT 水道橋Ⅲ",
+      "lat": 35.700685,
+      "lon": 139.757391,
+      "tags": {
+        "amenity": "bicycle_rental",
+        "authentication:app": "yes",
+        "brand": "Docomo Bike Share",
+        "brand:ja": "ドコモ・バイクシェア",
+        "brand:website": "https://docomo-cycle.jp/",
+        "brand:wikidata": "Q55533296",
+        "capacity": "2",
+        "fee": "yes",
+        "gbfs:name": "A2-30.VORT 水道橋Ⅲ",
+        "gbfs:station_id": "3921",
+        "gbfs:system_id": "docomo-cycle",
+        "name": "VORT 水道橋Ⅲ",
+        "name:ja": "VORT 水道橋Ⅲ",
+        "ref": "A2-30"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 31887158,
+      "name": "聖橋",
+      "lat": 35.699736,
+      "lon": 139.7655813,
+      "tags": {
+        "bridge": "yes",
+        "cycleway:left": "no",
+        "highway": "secondary",
+        "lanes": "2",
+        "layer": "2",
+        "lit": "yes",
+        "maxweight:signed": "no",
+        "name": "聖橋",
+        "name:ja_rm": "Hongō Dōri",
+        "oneway": "yes",
+        "ref": "403",
+        "sidewalk:left": "separate",
+        "sidewalk:right": "no",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 31887176,
+      "name": "聖橋",
+      "lat": 35.699757,
+      "lon": 139.7654874,
+      "tags": {
+        "bridge": "yes",
+        "cycleway:left": "no",
+        "highway": "secondary",
+        "lanes": "2",
+        "layer": "2",
+        "lit": "yes",
+        "maxweight:signed": "no",
+        "name": "聖橋",
+        "name:ja_rm": "Hongō Dōri",
+        "oneway": "yes",
+        "ref": "403",
+        "sidewalk:left": "separate",
+        "sidewalk:right": "no",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 33626782,
+      "name": "御茶ノ水橋",
+      "lat": 35.7002265,
+      "lon": 139.7635952,
+      "tags": {
+        "bridge": "yes",
+        "highway": "tertiary",
+        "lanes": "2",
+        "layer": "2",
+        "lit": "yes",
+        "maxweight:signed": "no",
+        "name": "御茶ノ水橋",
+        "name:en": "Ochanomizu Bridge",
+        "name:es": "Puente Ochanomizu",
+        "name:ko": "오차노미즈바시",
+        "ref": "千文3号",
+        "source": "Bing 2010",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 139500579,
+      "name": "水道橋西通り",
+      "lat": 35.7004946,
+      "lon": 139.7528701,
+      "tags": {
+        "highway": "tertiary",
+        "lanes": "2",
+        "maxspeed": "40",
+        "name": "水道橋西通り",
+        "name:en": "Suidobashi Nishi-dori",
+        "name:es": "Calle Suidobashi Nishi",
+        "name:ja_rm": "Suidōbashi Nishi Dōri"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 152621673,
+      "name": "神田警察署水道橋駅前交番",
+      "lat": 35.7024166,
+      "lon": 139.751661,
+      "tags": {
+        "amenity": "police",
+        "building": "yes",
+        "name": "神田警察署水道橋駅前交番",
+        "note": "National-Land Numerical Information (Public Facility) 2006, MLIT Japan",
+        "note:ja": "国土数値情報（公共施設データ）平成19年　国土交通省",
+        "source": "Bing, 2007-04;KSJ2",
+        "source_ref": "http://nlftp.mlit.go.jp/ksj/jpgis/datalist/KsjTmplt-P02-v2_0.html"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 171215864,
+      "name": "プライム水道橋ビル",
+      "lat": 35.7015711,
+      "lon": 139.7534592,
+      "tags": {
+        "building": "office",
+        "name": "プライム水道橋ビル",
+        "source": "Bing"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 171215891,
+      "name": "水道橋ニッカビル",
+      "lat": 35.7014942,
+      "lon": 139.7539323,
+      "tags": {
+        "addr:block_number": "10",
+        "addr:city": "千代田区",
+        "addr:neighbourhood": "三崎町二丁目",
+        "addr:postcode": "101-0061",
+        "addr:province": "東京都",
+        "building": "yes",
+        "name": "水道橋ニッカビル",
+        "source": "Bing"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 171215902,
+      "name": "西山興業（株）新水道橋ビル",
+      "lat": 35.7023837,
+      "lon": 139.7521717,
+      "tags": {
+        "building": "yes",
+        "name": "西山興業（株）新水道橋ビル",
+        "source": "Bing"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 171215935,
+      "name": "FUNDES水道橋",
+      "lat": 35.7018603,
+      "lon": 139.7524995,
+      "tags": {
+        "building": "yes",
+        "name": "FUNDES水道橋",
+        "source": "survey;aerial imagery"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 171215964,
+      "name": "オリックス水道橋ビル",
+      "lat": 35.7016459,
+      "lon": 139.7539976,
+      "tags": {
+        "addr:block_number": "10",
+        "addr:city": "千代田区",
+        "addr:housenumber": "8",
+        "addr:neighbourhood": "三崎町二丁目",
+        "addr:postcode": "101-0061",
+        "addr:province": "東京都",
+        "building": "yes",
+        "name": "オリックス水道橋ビル",
+        "source": "Bing"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 171215980,
+      "name": "水道橋西口会館",
+      "lat": 35.7017912,
+      "lon": 139.752767,
+      "tags": {
+        "building": "yes",
+        "name": "水道橋西口会館",
+        "source": "aerial imagery"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 171480302,
+      "name": "私立東京歯科大学水道橋キャンパスさいかち坂校舎",
+      "lat": 35.7009496,
+      "lon": 139.7590235,
+      "tags": {
+        "addr:housenumber": "7",
+        "amenity": "college",
+        "building": "yes",
+        "education": "college",
+        "name": "私立東京歯科大学水道橋キャンパスさいかち坂校舎",
+        "source": "Bing"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 172011463,
+      "name": "KTお茶の水聖橋ビル",
+      "lat": 35.7014562,
+      "lon": 139.7665341,
+      "tags": {
+        "addr:block_number": "3",
+        "addr:city": "文京区",
+        "addr:housenumber": "4",
+        "addr:neighbourhood": "1丁目",
+        "addr:quarter": "湯島",
+        "building": "commercial",
+        "building:levels": "7",
+        "name": "KTお茶の水聖橋ビル",
+        "source": "Bing"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 175996472,
+      "name": "元町公園",
+      "lat": 35.7022971,
+      "lon": 139.7581029,
+      "tags": {
+        "addr:block_number": "1",
+        "addr:neighbourhood": "1",
+        "addr:quarter": "本郷",
+        "leisure": "park",
+        "name": "元町公園",
+        "name:en": "Motomachi Park",
+        "name:es": "Parque Motomachi",
+        "name:ja_rm": "Motomachi Kōen",
+        "opening_hours": "05:00-23:00",
+        "operator": "文京区",
+        "operator:type": "government",
+        "operator:wikidata": "Q212713",
+        "smoking": "no",
+        "source": "Bing",
+        "start_date": "1930-01-25",
+        "website": "https://www.city.bunkyo.lg.jp/bosai/midori/kuritukouen/kouen/motomachi.html",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 210689660,
+      "name": "ニチレイ水道橋ビル",
+      "lat": 35.700336,
+      "lon": 139.7525475,
+      "tags": {
+        "building": "yes",
+        "name": "ニチレイ水道橋ビル",
+        "source": "Bing"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 210689723,
+      "name": "水道橋フロント",
+      "lat": 35.7013263,
+      "lon": 139.7521933,
+      "tags": {
+        "addr:block_number": "7",
+        "addr:city": "千代田区",
+        "addr:housenumber": "1",
+        "addr:neighbourhood": "三崎町三丁目",
+        "addr:postcode": "101-0061",
+        "addr:province": "東京都",
+        "building": "yes",
+        "name": "水道橋フロント",
+        "old_name": "金沢ビル",
+        "source": "Bing"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 210689744,
+      "name": "みとや水道橋",
+      "lat": 35.7017313,
+      "lon": 139.7519548,
+      "tags": {
+        "addr:block_number": "7",
+        "addr:city": "千代田区",
+        "addr:neighbourhood": "三崎町三丁目",
+        "addr:postcode": "101-0061",
+        "addr:province": "東京都",
+        "building": "yes",
+        "leisure": "adult_gaming_centre",
+        "name": "みとや水道橋",
+        "source": "Bing"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 210907058,
+      "name": "ニチレイ水道橋ビルアネックス",
+      "lat": 35.7006075,
+      "lon": 139.7523935,
+      "tags": {
+        "building": "yes",
+        "name": "ニチレイ水道橋ビルアネックス",
+        "source": "Bing"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 210907221,
+      "name": "The Gate 水道橋",
+      "lat": 35.7016003,
+      "lon": 139.7514907,
+      "tags": {
+        "building": "yes",
+        "name": "The Gate 水道橋",
+        "source": "Bing;survey"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 210907408,
+      "name": "NEX水道橋ビル",
+      "lat": 35.7017657,
+      "lon": 139.7512473,
+      "tags": {
+        "addr:block_number": "6",
+        "addr:city": "千代田区",
+        "addr:housenumber": "9",
+        "addr:neighbourhood": "神田三崎町三丁目",
+        "addr:postcode": "101-0061",
+        "addr:province": "東京都",
+        "building": "office",
+        "name": "NEX水道橋ビル",
+        "source": "Bing;website;survey"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 236704253,
+      "name": "新御茶ノ水駅前郵便局",
+      "lat": 35.696312,
+      "lon": 139.7645999,
+      "tags": {
+        "addr:block_number": "9",
+        "building": "office",
+        "building:levels": "1",
+        "name": "新御茶ノ水駅前郵便局",
+        "name:en": "Post Office"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 254341191,
+      "name": "水道橋西通り",
+      "lat": 35.6979626,
+      "lon": 139.7542414,
+      "tags": {
+        "highway": "tertiary",
+        "lanes": "2",
+        "maxspeed": "40",
+        "name": "水道橋西通り",
+        "name:en": "Suidobashi Nishi-dori",
+        "name:es": "Calle Suidobashi Nishi",
+        "name:ja_rm": "Suidōbashi Nishi Dōri"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 327524336,
+      "name": "STAGE FIRST 水道橋",
+      "lat": 35.7009542,
+      "lon": 139.7570706,
+      "tags": {
+        "building": "apartments",
+        "name": "STAGE FIRST 水道橋"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 372817530,
+      "name": "水道橋",
+      "lat": 35.7020893,
+      "lon": 139.7553935,
+      "tags": {
+        "bridge:structure": "beam",
+        "layer": "1",
+        "man_made": "bridge",
+        "name": "水道橋",
+        "name:en": "Suidōbashi Bridge",
+        "name:zh": "水道橋",
+        "wikidata": "Q20045068",
+        "wikimedia_commons": "Category:Suido Bridge",
+        "wikipedia": "ja:水道橋 (神田川)"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 373722240,
+      "name": "水道橋グランドホテル",
+      "lat": 35.7058087,
+      "lon": 139.7552616,
+      "tags": {
+        "landuse": "commercial",
+        "name": "水道橋グランドホテル",
+        "name:en": "Suidobashi Grand Hotel",
+        "name:ja": "水道橋グランドホテル",
+        "tourism": "hotel",
+        "website": "http://www.hatago.co.jp/index.htm"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 375670605,
+      "name": "お茶の水橋",
+      "lat": 35.7002306,
+      "lon": 139.763593,
+      "tags": {
+        "alt_name": "御茶ノ水橋",
+        "area": "yes",
+        "bridge:structure": "arch",
+        "layer": "2",
+        "location": "bridge",
+        "man_made": "bridge",
+        "name": "お茶の水橋",
+        "name:en": "Ochanomizu Bridge",
+        "name:ja": "お茶の水橋",
+        "name:zh": "御茶之水橋",
+        "wikidata": "Q20043533",
+        "wikimedia_commons": "Category:Ochanomizu Bridge",
+        "wikipedia": "ja:お茶の水橋"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 427170013,
+      "name": "住友不動産水道橋西口ビル",
+      "lat": 35.7017522,
+      "lon": 139.7530709,
+      "tags": {
+        "building": "office",
+        "name": "住友不動産水道橋西口ビル",
+        "name:en": "SUMITOMO FUDOSAN SUIDOBASHI NISHIGUCHI BUILDING"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 544730187,
+      "name": "聖橋",
+      "lat": 35.699766,
+      "lon": 139.7655241,
+      "tags": {
+        "bridge:structure": "arch",
+        "layer": "2",
+        "man_made": "bridge",
+        "name": "聖橋",
+        "name:en": "Hijiribashi (Saints Bridge)",
+        "name:ja": "聖橋",
+        "name:zh": "聖橋",
+        "wikidata": "Q11611065",
+        "wikimedia_commons": "Category:Hijiri Bridge (Tokyo)",
+        "wikipedia": "ja:聖橋"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 682703708,
+      "name": "水道橋西通り",
+      "lat": 35.6987597,
+      "lon": 139.7538176,
+      "tags": {
+        "highway": "tertiary",
+        "lanes": "2",
+        "maxspeed": "40",
+        "name": "水道橋西通り",
+        "name:en": "Suidobashi Nishi-dori",
+        "name:es": "Calle Suidobashi Nishi",
+        "name:ja_rm": "Suidōbashi Nishi Dōri"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 696391935,
+      "name": "水道橋 稲荷社",
+      "lat": 35.7035967,
+      "lon": 139.7558338,
+      "tags": {
+        "building": "yes",
+        "historic": "wayside_shrine",
+        "name": "水道橋 稲荷社",
+        "religion": "shinto"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 746754686,
+      "name": "水道橋駅",
+      "lat": 35.7019486,
+      "lon": 139.7549439,
+      "tags": {
+        "highway": "footway",
+        "name": "水道橋駅",
+        "surface": "paving_stones",
+        "tunnel": "building_passage"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 816279375,
+      "name": "水道橋駅",
+      "lat": 35.7019353,
+      "lon": 139.7550129,
+      "tags": {
+        "highway": "footway",
+        "name": "水道橋駅",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1053066681,
+      "name": "水道橋駅(西口)",
+      "lat": 35.702067,
+      "lon": 139.752137,
+      "tags": {
+        "highway": "footway",
+        "name": "水道橋駅(西口)"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1119877171,
+      "name": "水道橋駅(西口)",
+      "lat": 35.702154,
+      "lon": 139.7521812,
+      "tags": {
+        "highway": "footway",
+        "layer": "-1",
+        "name": "水道橋駅(西口)",
+        "tunnel": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1119877174,
+      "name": "水道橋駅(西口)",
+      "lat": 35.7021408,
+      "lon": 139.7522735,
+      "tags": {
+        "highway": "footway",
+        "layer": "-1",
+        "name": "水道橋駅(西口)",
+        "tunnel": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1182803412,
+      "name": "日本生命水道橋ビル",
+      "lat": 35.7025682,
+      "lon": 139.7537115,
+      "tags": {
+        "building": "yes",
+        "name": "日本生命水道橋ビル"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1182803415,
+      "name": "小野水道橋ビル",
+      "lat": 35.7024758,
+      "lon": 139.7541512,
+      "tags": {
+        "building": "yes",
+        "name": "小野水道橋ビル"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1212430042,
+      "name": "水道橋西通り",
+      "lat": 35.7020687,
+      "lon": 139.7520078,
+      "tags": {
+        "highway": "tertiary",
+        "lanes": "2",
+        "maxheight": "3.9",
+        "maxspeed": "40",
+        "name": "水道橋西通り",
+        "name:en": "Suidobashi Nishi-dori",
+        "name:es": "Calle Suidobashi Nishi",
+        "name:ja_rm": "Suidōbashi Nishi Dōri",
+        "sidewalk:both": "separate",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1363346335,
+      "name": "水道橋駅タクシー乗り場",
+      "lat": 35.7019262,
+      "lon": 139.75508,
+      "tags": {
+        "highway": "footway",
+        "name": "水道橋駅タクシー乗り場"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1447720556,
+      "name": "上野水道橋線",
+      "lat": 35.7107091,
+      "lon": 139.7712634,
+      "tags": {
+        "layer": "-1",
+        "location": "underground",
+        "name": "上野水道橋線",
+        "operator": "東京電力パワーグリッド",
+        "power": "cable",
+        "voltage": "275000"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1447945183,
+      "name": "水道橋線",
+      "lat": 35.7185275,
+      "lon": 139.6998875,
+      "tags": {
+        "layer": "-1",
+        "name": "水道橋線",
+        "operator": "東京電力",
+        "power": "cable",
+        "voltage": "275000"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1549891484,
+      "name": "東新宿水道橋線",
+      "lat": 35.6959381,
+      "lon": 139.7313319,
+      "tags": {
+        "cables": "6",
+        "layer": "-1",
+        "location": "underground",
+        "name": "東新宿水道橋線",
+        "operator": "東京電力パワーグリッド",
+        "operator:en": "TEPCO Power Grid",
+        "operator:ja": "東京電力パワーグリッド",
+        "operator:wikidata": "Q21032324",
+        "power": "cable",
+        "voltage": "275000"
+      }
+    },
+    {
+      "type": "relation",
+      "osmId": 326666,
+      "name": "御茶ノ水橋",
+      "lat": 35.7002306,
+      "lon": 139.763593,
+      "tags": {
+        "layer": "2",
+        "name": "御茶ノ水橋",
+        "type": "bridge"
+      }
+    },
+    {
+      "type": "relation",
+      "osmId": 326667,
+      "name": "聖橋",
+      "lat": 35.6997483,
+      "lon": 139.7655351,
+      "tags": {
+        "name": "聖橋",
+        "name:en": "Hijiribashi",
+        "type": "bridge"
+      }
+    },
+    {
+      "type": "relation",
+      "osmId": 6842186,
+      "name": "都営バス茶07系統 東大構内⇒御茶ノ水駅（循環）",
+      "lat": 35.7062278,
+      "lon": 139.7651114,
+      "tags": {
+        "name": "都営バス茶07系統 東大構内⇒御茶ノ水駅（循環）",
+        "network": "都営バス",
+        "network:en": "Toei Bus",
+        "network:ja": "都営バス",
+        "network:wikidata": "Q859227",
+        "operator": "東京都交通局",
+        "public_transport:version": "2",
+        "ref": "茶07",
+        "route": "bus",
+        "type": "route"
+      }
+    },
+    {
+      "type": "relation",
+      "osmId": 8015857,
+      "name": "水道橋 (三田線)",
+      "lat": 35.7035775,
+      "lon": 139.75503,
+      "tags": {
+        "name": "水道橋 (三田線)",
+        "name:en": "Suidobashi (Toei)",
+        "name:es": "Suidobashi (Toei)",
+        "name:ja": "水道橋 (三田線)",
+        "public_transport": "stop_area",
+        "public_transport:version": "2",
+        "type": "public_transport"
+      }
+    },
+    {
+      "type": "relation",
+      "osmId": 9533659,
+      "name": "水道橋 (JR)",
+      "lat": 35.7020558,
+      "lon": 139.753563,
+      "tags": {
+        "name": "水道橋 (JR)",
+        "name:en": "Suidōbashi (JR)",
+        "name:es": "Suidōbashi (JR)",
+        "name:ja": "水道橋 (JR)",
+        "public_transport": "stop_area",
+        "public_transport:version": "2",
+        "type": "public_transport"
+      }
+    },
+    {
+      "type": "relation",
+      "osmId": 13676363,
+      "name": "都営バス茶51系統 秋葉原駅⇒御茶ノ水駅⇒駒込駅南口",
+      "lat": 35.7167242,
+      "lon": 139.7612151,
+      "tags": {
+        "name": "都営バス茶51系統 秋葉原駅⇒御茶ノ水駅⇒駒込駅南口",
+        "network": "都営バス",
+        "network:en": "Toei Bus",
+        "network:ja": "都営バス",
+        "network:wikidata": "Q859227",
+        "operator": "東京都交通局",
+        "public_transport:version": "2",
+        "ref": "茶51",
+        "route": "bus",
+        "type": "route"
+      }
+    },
+    {
+      "type": "relation",
+      "osmId": 13676364,
+      "name": "都営バス茶51系統 駒込駅南口⇒御茶ノ水駅⇒秋葉原駅",
+      "lat": 35.7167216,
+      "lon": 139.7605618,
+      "tags": {
+        "name": "都営バス茶51系統 駒込駅南口⇒御茶ノ水駅⇒秋葉原駅",
+        "network": "都営バス",
+        "network:en": "Toei Bus",
+        "network:ja": "都営バス",
+        "network:wikidata": "Q859227",
+        "operator": "東京都交通局",
+        "public_transport:version": "2",
+        "ref": "茶51",
+        "route": "bus",
+        "type": "route"
+      }
+    },
+    {
+      "type": "relation",
+      "osmId": 13676373,
+      "name": "都営バス茶51系統 御茶ノ水駅⇒駒込駅南口",
+      "lat": 35.7181742,
+      "lon": 139.7555383,
+      "tags": {
+        "name": "都営バス茶51系統 御茶ノ水駅⇒駒込駅南口",
+        "network": "都営バス",
+        "network:en": "Toei Bus",
+        "network:ja": "都営バス",
+        "network:wikidata": "Q859227",
+        "operator": "東京都交通局",
+        "public_transport:version": "2",
+        "ref": "茶51",
+        "route": "bus",
+        "type": "route"
+      }
+    },
+    {
+      "type": "relation",
+      "osmId": 13676374,
+      "name": "都営バス茶51系統 駒込駅南口⇒神田明神⇒御茶ノ水駅",
+      "lat": 35.7174891,
+      "lon": 139.7577094,
+      "tags": {
+        "name": "都営バス茶51系統 駒込駅南口⇒神田明神⇒御茶ノ水駅",
+        "network": "都営バス",
+        "network:en": "Toei Bus",
+        "network:ja": "都営バス",
+        "network:wikidata": "Q859227",
+        "operator": "東京都交通局",
+        "public_transport:version": "2",
+        "ref": "茶51",
+        "route": "bus",
+        "type": "route"
+      }
+    },
+    {
+      "type": "relation",
+      "osmId": 21231805,
+      "name": "水道橋変電所",
+      "lat": 35.7002635,
+      "lon": 139.752316,
+      "tags": {
+        "name": "水道橋変電所",
+        "operator": "東京電力パワーグリッド",
+        "operator:en": "TEPCO Power Grid",
+        "operator:ja": "東京電力パワーグリッド",
+        "operator:short": "東京電力",
+        "operator:wikidata": "Q21032324",
+        "power": "substation",
+        "substation": "transmission",
+        "type": "multipolygon",
+        "voltage": "275000"
+      }
+    },
+    {
+      "type": "relation",
+      "osmId": 21710026,
+      "name": "水道橋西通り",
+      "lat": 35.6999404,
+      "lon": 139.7531622,
+      "tags": {
+        "grid:axis": "north-south",
+        "name": "水道橋西通り",
+        "name:en": "Suidobashi Nishi-dori",
+        "name:es": "Calle Suidobashi Nishi",
+        "name:ja": "水道橋西通り",
+        "name:ja_rm": "Suidōbashi Nishi Dōri",
+        "route": "road",
+        "type": "route"
+      }
+    }
+  ]
+}

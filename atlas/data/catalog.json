@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "source": "legacy import; route quality not re-reviewed",
-  "generatedAt": "2026-11-12T14:44:41.123Z",
+  "generatedAt": "2026-11-12T22:03:09.111Z",
   "courses": [
     {
       "id": "No.1",
@@ -3427,14 +3427,20 @@
     {
       "id": "No.32",
       "slug": "no-32",
-      "title": "神楽坂～市ヶ谷 崖の縁",
+      "title": "神楽坂の路地から外濠へ",
       "seriesId": "sakamichi",
       "seriesName": "坂道・崖線（No.27～32）",
       "legacyAnchor": "course-32",
       "legacyUrl": "../index.html#course-32",
-      "summary": "経路ノード： 飯田橋駅 → 兵庫横丁 → 善國寺／赤城神社 → 宮城道雄記念館 → 外堀公園 → 曙橋駅 → ゴール",
+      "summary": "飯田橋から石畳の横丁と神楽坂の高台を歩き、外濠の水辺を経て四ツ谷へ。Bは御茶ノ水の川景色と元町公園を加え、小石川後楽園の南側を通る。旧案の休館中の施設は立ち寄り先に含めない。",
       "routeText": "経路ノード： 飯田橋駅 → 兵庫横丁 → 善國寺／赤城神社 → 宮城道雄記念館 → 外堀公園 → 曙橋駅 → ゴール",
-      "tags": [],
+      "tags": [
+        "石畳",
+        "歴史",
+        "坂道",
+        "水辺",
+        "庭園"
+      ],
       "route": {
         "id": "no-32-legacy",
         "variant": "legacy",
@@ -3488,7 +3494,464 @@
       ],
       "climbM": 75.5,
       "descentM": 47.4,
-      "auditFlags": []
+      "auditFlags": [],
+      "defaultVariant": "standard",
+      "evidence": [
+        {
+          "type": "official",
+          "title": "新宿区・神楽坂地区のまちづくり",
+          "url": "https://www.city.shinjuku.lg.jp/kusei/keikan01_002096_00001.html",
+          "checkedAt": "2026-11-13",
+          "supports": "兵庫横丁などの石畳・黒塀の路地景観"
+        },
+        {
+          "type": "official",
+          "title": "新宿区・粋なまち『神楽坂』を満喫",
+          "url": "https://www.city.shinjuku.lg.jp/content/000396225.pdf",
+          "checkedAt": "2026-11-13",
+          "supports": "神楽坂の散策地点と地形の候補"
+        },
+        {
+          "type": "official",
+          "title": "Visit Chiyoda・外濠公園",
+          "url": "https://visit-chiyoda.tokyo/app/spot/detail/274",
+          "checkedAt": "2026-11-13",
+          "supports": "飯田橋から市ヶ谷、四ツ谷までの水辺の公園"
+        },
+        {
+          "type": "official",
+          "title": "東京都公園協会・小石川後楽園",
+          "url": "https://www.tokyo-park.or.jp/park/koishikawakorakuen/index.html",
+          "checkedAt": "2026-11-13",
+          "supports": "東西門、開園時間、料金、園内の水景"
+        },
+        {
+          "type": "official",
+          "title": "文京区・元町公園",
+          "url": "https://www.city.bunkyo.lg.jp/b036/p004881.html",
+          "checkedAt": "2026-11-13",
+          "supports": "神田川を臨む斜面地の公園"
+        },
+        {
+          "type": "official",
+          "title": "宮城道雄オフィシャルサイト",
+          "url": "https://miyagikai.gr.jp/",
+          "checkedAt": "2026-11-13",
+          "supports": "旧経路の宮城道雄記念館は建て替え工事のため閉館中"
+        },
+        {
+          "type": "official",
+          "title": "東京理科大学・近代科学資料館ご利用案内",
+          "url": "https://www.tus.ac.jp/info/setubi/museum/main/info.html",
+          "checkedAt": "2026-11-13",
+          "supports": "雨天案の開館日・時間・料金・駅からのアクセス"
+        },
+        {
+          "type": "official",
+          "title": "飯田橋ラムラ・アクセス",
+          "url": "https://www.ramla.jp/access/",
+          "checkedAt": "2026-11-13",
+          "supports": "雨天案の施設と飯田橋駅の近接"
+        },
+        {
+          "type": "walked_account",
+          "title": "みなみちゃん's blog・神楽坂の坂道を歩いた記録",
+          "url": "https://mnmc.hateblo.jp/entry/2025/06/25/213000",
+          "checkedAt": "2026-11-13",
+          "supports": "横丁、坂、交差点の歩行体験。今回のA/Bを歩いた証拠ではない"
+        },
+        {
+          "type": "geodata",
+          "title": "OpenStreetMap via Overpass API",
+          "url": "https://overpass-api.de/api/interpreter",
+          "checkedAt": "2026-11-13",
+          "supports": "候補点と門の位置。施設中心点は入口ではない"
+        }
+      ],
+      "scenicSegments": [
+        {
+          "name": "兵庫横丁と神楽坂通り",
+          "theme": "石畳と黒塀、坂の街並み",
+          "direction": "飯田橋から坂上へ",
+          "reviewStatus": "候補・路地の入口と歩行線を地図レビュー待ち",
+          "evidenceTitle": "新宿区・神楽坂地区のまちづくり"
+        },
+        {
+          "name": "赤城神社から市谷見附",
+          "theme": "台地の縁と住宅地の坂",
+          "direction": "神楽坂から南へ",
+          "reviewStatus": "候補・坂と横断を地図レビュー待ち",
+          "evidenceTitle": "新宿区・神楽坂散策マップ"
+        },
+        {
+          "name": "市谷見附から四ツ谷の外濠沿い",
+          "theme": "水辺、土手、桜並木",
+          "direction": "市谷から四ツ谷へ",
+          "reviewStatus": "候補・公園の園路と鉄道側の横断を地図レビュー待ち",
+          "evidenceTitle": "Visit Chiyoda・外濠公園"
+        },
+        {
+          "name": "御茶ノ水橋から元町公園",
+          "theme": "神田川の渓谷と鉄道、斜面の緑",
+          "direction": "御茶ノ水から水道橋へ",
+          "reviewStatus": "B候補・元町公園の坂と入口を地図レビュー待ち",
+          "evidenceTitle": "千代田区景観資料・文京区元町公園"
+        },
+        {
+          "name": "小石川後楽園の南側の道",
+          "theme": "庭園外周の緑と街への移り変わり",
+          "direction": "水道橋側から飯田橋側へ",
+          "reviewStatus": "B候補・計算線は園外。園内鑑賞は別行動で距離未計測",
+          "evidenceTitle": "東京都公園協会・小石川後楽園"
+        }
+      ],
+      "openQuestions": [
+        "兵庫横丁・善國寺・赤城神社の実入口と道路との接続",
+        "赤城神社から市谷見附への坂・階段・安全な横断",
+        "外濠公園の園路が計算線と一致するか",
+        "元町公園の坂・階段と通行可能時間",
+        "小石川後楽園の南側の道と周辺横断の安全性。園内は本線に含まれない",
+        "トイレ・休憩・途中離脱駅と豊田駅からのアクセス",
+        "Cの屋外露出距離と館内の連続歩行距離",
+        "現地での安全性とGPS実測距離"
+      ],
+      "routeOptions": [
+        {
+          "id": "no-32-standard",
+          "variant": "standard",
+          "strategy": "scenic",
+          "geometryUrl": "data/routes/no-32-standard.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 4262,
+          "engineDistanceM": 4265,
+          "repeatedGeometryPct": 2.1,
+          "routeReason": "飯田橋駅東口から兵庫横丁・善國寺・赤城神社を経て、市谷見附の高低差と外濠公園の水辺をたどり、四ツ谷駅で終える。計算上4.26kmで5〜6kmの目標には届かないが、旧経路の曙橋方面への伸長や距離合わせの折り返しを加えず、中央線へ帰りやすい自然な駅間の流れを優先する。路地入口、坂、横断、外濠公園の園路は地図レビュー待ち。",
+          "distanceException": "4.26km。飯田橋から神楽坂の路地・高台と外濠を経て四ツ谷へ抜ける自然な流れを優先し、距離合わせの往復や閉館中の施設への立ち寄りを加えない。",
+          "waypoints": [
+            {
+              "index": 0,
+              "id": "iidabashi_east",
+              "label": "飯田橋駅東口",
+              "point": [
+                139.7456386,
+                35.7019085
+              ],
+              "source": "OSM node 1579304711; JR exit needs confirmation"
+            },
+            {
+              "index": 1,
+              "id": "hyogo_yokocho",
+              "label": "兵庫横丁付近",
+              "point": [
+                139.7398422,
+                35.7024504
+              ],
+              "source": "OSM node 10681466205 is a restaurant, not the lane entrance"
+            },
+            {
+              "index": 2,
+              "id": "zenkokuji",
+              "label": "善國寺付近",
+              "point": [
+                139.7394777,
+                35.7014555
+              ],
+              "source": "OSM way 1270865653 centre; entrance needs confirmation"
+            },
+            {
+              "index": 3,
+              "id": "akagi_shrine",
+              "label": "赤城神社付近",
+              "point": [
+                139.7360988,
+                35.704607
+              ],
+              "source": "OSM way 143516722 centre; entrance needs confirmation"
+            },
+            {
+              "index": 4,
+              "id": "ichigaya_mitsuke",
+              "label": "市谷見附付近",
+              "point": [
+                139.7352205,
+                35.6921485
+              ],
+              "source": "OSM node 1808422619; crossing needs map review"
+            },
+            {
+              "index": 5,
+              "id": "sotobori_park",
+              "label": "外濠公園付近",
+              "point": [
+                139.7325038,
+                35.6892117
+              ],
+              "source": "OSM way 594546211 centre; park path needs map review"
+            },
+            {
+              "index": 6,
+              "id": "yotsuya_jr",
+              "label": "JR四ツ谷駅付近",
+              "point": [
+                139.7309525,
+                35.6859783
+              ],
+              "source": "OSM way 816262886 outdoor footway; station exit needs confirmation"
+            }
+          ],
+          "engine": "valhalla-pedestrian",
+          "built": "2026-11-12T22:02:06.014Z"
+        },
+        {
+          "id": "no-32-extended",
+          "variant": "extended",
+          "strategy": "scenic",
+          "geometryUrl": "data/routes/no-32-extended.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 7463,
+          "engineDistanceM": 7467,
+          "repeatedGeometryPct": 4.6,
+          "routeReason": "御茶ノ水駅の橋口から神田川の眺めと元町公園を通り、小石川後楽園の南側の道を経てAの飯田橋以降へ接続する。計算上7.46km。川・斜面の緑・石畳・外濠という景観の変化に延長の価値がある。庭園内は計算線に含まれず、入園する場合は別途有料・開園条件と経路確認が必要。元町公園の坂は要確認。",
+          "distanceException": null,
+          "waypoints": [
+            {
+              "index": 0,
+              "id": "ochanomizu_jr",
+              "label": "御茶ノ水駅御茶ノ水橋口",
+              "point": [
+                139.7636624,
+                35.6999152
+              ],
+              "source": "OSM node 6988063075 train station entrance"
+            },
+            {
+              "index": 1,
+              "id": "ochanomizu_bridge",
+              "label": "御茶ノ水橋",
+              "point": [
+                139.763593,
+                35.7002306
+              ],
+              "source": "OSM way 375670605 centre; river viewpoint"
+            },
+            {
+              "index": 2,
+              "id": "motomachi_park",
+              "label": "元町公園付近",
+              "point": [
+                139.7581029,
+                35.7022971
+              ],
+              "source": "OSM way 175996472 centre; park entrance and slope need review"
+            },
+            {
+              "index": 3,
+              "id": "suidobashi_west",
+              "label": "水道橋駅西口付近",
+              "point": [
+                139.752137,
+                35.702067
+              ],
+              "source": "OSM way 1053066681 outdoor footway"
+            },
+            {
+              "index": 4,
+              "id": "korakuen_south_east",
+              "label": "小石川後楽園南側の道・東端付近",
+              "point": [
+                139.7513341,
+                35.7040336
+              ],
+              "source": "OSM gate node 1919930576 vicinity; main route stays outside garden"
+            },
+            {
+              "index": 5,
+              "id": "korakuen_south_west",
+              "label": "小石川後楽園南側の道・西端付近",
+              "point": [
+                139.7477674,
+                35.7049655
+              ],
+              "source": "OSM gate node 5272766229 vicinity; main route stays outside garden"
+            },
+            {
+              "index": 6,
+              "id": "iidabashi_east",
+              "label": "飯田橋駅東口",
+              "point": [
+                139.7456386,
+                35.7019085
+              ],
+              "source": "OSM node 1579304711; JR exit needs confirmation"
+            },
+            {
+              "index": 7,
+              "id": "hyogo_yokocho",
+              "label": "兵庫横丁付近",
+              "point": [
+                139.7398422,
+                35.7024504
+              ],
+              "source": "OSM node 10681466205 is a restaurant, not the lane entrance"
+            },
+            {
+              "index": 8,
+              "id": "zenkokuji",
+              "label": "善國寺付近",
+              "point": [
+                139.7394777,
+                35.7014555
+              ],
+              "source": "OSM way 1270865653 centre; entrance needs confirmation"
+            },
+            {
+              "index": 9,
+              "id": "akagi_shrine",
+              "label": "赤城神社付近",
+              "point": [
+                139.7360988,
+                35.704607
+              ],
+              "source": "OSM way 143516722 centre; entrance needs confirmation"
+            },
+            {
+              "index": 10,
+              "id": "ichigaya_mitsuke",
+              "label": "市谷見附付近",
+              "point": [
+                139.7352205,
+                35.6921485
+              ],
+              "source": "OSM node 1808422619; crossing needs map review"
+            },
+            {
+              "index": 11,
+              "id": "sotobori_park",
+              "label": "外濠公園付近",
+              "point": [
+                139.7325038,
+                35.6892117
+              ],
+              "source": "OSM way 594546211 centre; park path needs map review"
+            },
+            {
+              "index": 12,
+              "id": "yotsuya_jr",
+              "label": "JR四ツ谷駅付近",
+              "point": [
+                139.7309525,
+                35.6859783
+              ],
+              "source": "OSM way 816262886 outdoor footway; station exit needs confirmation"
+            }
+          ],
+          "engine": "valhalla-pedestrian",
+          "built": "2026-11-12T22:02:06.016Z"
+        },
+        {
+          "id": "no-32-rainy",
+          "variant": "rainy",
+          "strategy": "indoor_rail",
+          "verificationStatus": "researched",
+          "distanceM": null,
+          "routeReason": "飯田橋駅から東京理科大学近代科学資料館とラムラを訪ねる短縮案。屋外に傘が必要な区間があり、館の開館日以外は資料館を利用できない。徒歩距離と屋内で連続して歩ける距離は未計測。",
+          "segments": [
+            {
+              "kind": "walk_outdoor",
+              "from": "飯田橋駅西口",
+              "to": "東京理科大学近代科学資料館",
+              "distanceM": null,
+              "note": "公式案内は西口から徒歩4分。雨天の横断・屋根の連続性は未確認。"
+            },
+            {
+              "kind": "walk_indoor",
+              "from": "東京理科大学近代科学資料館",
+              "to": "展示室内",
+              "distanceM": null,
+              "note": "水・木・金は12〜16時、土曜は10〜16時。日・月・火・祝日と大学休業日は休館。入場無料。"
+            },
+            {
+              "kind": "walk_outdoor",
+              "from": "東京理科大学近代科学資料館",
+              "to": "飯田橋ラムラ",
+              "distanceM": null,
+              "note": "屋外露出区間。歩道・横断・距離を未計測。"
+            },
+            {
+              "kind": "walk_indoor",
+              "from": "飯田橋ラムラ",
+              "to": "館内",
+              "distanceM": null,
+              "note": "館内の連続歩行距離と店舗ごとの営業時間は未確認。"
+            },
+            {
+              "kind": "walk_outdoor",
+              "from": "飯田橋ラムラ",
+              "to": "飯田橋駅",
+              "distanceM": null,
+              "note": "駅への短い帰路。屋根の連続性は未確認。"
+            }
+          ],
+          "conditions": [
+            "資料館は開館日・大学休業日を当日公式サイトで確認する。",
+            "資料館が閉館の場合はラムラのみの短縮案とし、屋内を長距離歩けるとは表示しない。",
+            "傘が必要な屋外露出と雨天時の滑りやすさは未調査。"
+          ],
+          "geometryUrl": null,
+          "waypoints": []
+        },
+        {
+          "id": "no-32-legacy",
+          "variant": "legacy",
+          "strategy": "legacy_unknown",
+          "geometryUrl": "data/routes/no-32.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 3609,
+          "engineDistanceM": 3613,
+          "targetDistanceM": 3800,
+          "repeatedGeometryPct": 0.8,
+          "maxWaypointToShapeM": 13,
+          "built": "2026-08-29",
+          "engine": "valhalla-pedestrian",
+          "waypoints": [
+            {
+              "index": 0,
+              "point": [
+                139.745,
+                35.702
+              ]
+            },
+            {
+              "index": 1,
+              "point": [
+                139.7408,
+                35.7028
+              ]
+            },
+            {
+              "index": 2,
+              "point": [
+                139.739,
+                35.704
+              ]
+            },
+            {
+              "index": 3,
+              "point": [
+                139.735,
+                35.6985
+              ]
+            },
+            {
+              "index": 4,
+              "point": [
+                139.7228,
+                35.6923
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "No.33",

@@ -10,7 +10,7 @@ if (fs.existsSync(output) && !process.argv.includes('--refresh')) {
   process.exit(0);
 }
 const bbox = '35.685,139.713,35.708,139.752';
-const names = '飯田橋駅|兵庫横丁|善國寺|善国寺|赤城神社|宮城道雄記念館|外濠公園|曙橋駅|市ケ谷駅|市ヶ谷駅|牛込神楽坂駅|神楽坂駅|かくれんぼ横丁|見番横丁|神楽坂通り';
+const names = '飯田橋駅|兵庫横丁|善國寺|善国寺|赤城神社|宮城道雄記念館|外濠公園|曙橋駅|市ケ谷駅|市ヶ谷駅|牛込神楽坂駅|神楽坂駅|かくれんぼ横丁|見番横丁|神楽坂通り|四ツ谷駅|四谷見附橋|牛込見附|市谷見附';
 const query = `[out:json][timeout:25];(nwr["name"~"${names}"](${bbox}););out center tags;`;
 const response = await fetch('https://overpass-api.de/api/interpreter', {
   method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded; charset=utf-8', 'User-Agent': 'WalkingAtlasRouteResearch/1.0' },
