@@ -1,0 +1,3937 @@
+{
+  "generatedAt": "2026-11-12T21:09:32.935Z",
+  "interpretation": "Mechanical triage only. Source and map review required before adopting any new route.",
+  "records": [
+    {
+      "id": "No.22",
+      "title": "浜離宮～竹芝・水上バス",
+      "series": "本編 A～Z（No.1～26）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/no-22.geojson",
+        "walkingDistanceM": 6973,
+        "repeatedGeometryPct": 37.5,
+        "repeatedGeometryM": 2616,
+        "maxWaypointToShapeM": 37,
+        "repeatedWaypoints": [
+          [
+            8,
+            10
+          ]
+        ],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [
+        "water_transport"
+      ],
+      "possibleDistanceFiller": true,
+      "priorityScore": 137,
+      "issues": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint",
+        "possible_distance_filler",
+        "transport_or_indoor_leg_separation"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "No.12",
+      "title": "立川のアートと昭和記念公園",
+      "series": "本編 A～Z（No.1～26）",
+      "workStatus": "partial_rebuild",
+      "legacy": {
+        "geometryUrl": "data/routes/no-12.geojson",
+        "walkingDistanceM": 6721,
+        "repeatedGeometryPct": 34.2,
+        "repeatedGeometryM": 2302,
+        "maxWaypointToShapeM": 85,
+        "repeatedWaypoints": [
+          [
+            6,
+            8
+          ]
+        ],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [
+        {
+          "variant": "standard",
+          "status": "routed",
+          "distanceM": 3945
+        },
+        {
+          "variant": "extended",
+          "status": "routed",
+          "distanceM": 7590
+        },
+        {
+          "variant": "rainy",
+          "status": "researched",
+          "distanceM": null
+        }
+      ],
+      "coordinateReview": "routed_candidates_with_unverified_entrances",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": true,
+      "priorityScore": 120,
+      "issues": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint",
+        "waypoint_off_shape",
+        "possible_distance_filler"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "No.9",
+      "title": "高尾山（ケーブルカー）",
+      "series": "本編 A～Z（No.1～26）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/no-9.geojson",
+        "walkingDistanceM": 2778,
+        "repeatedGeometryPct": 34.4,
+        "repeatedGeometryM": 955,
+        "maxWaypointToShapeM": 31,
+        "repeatedWaypoints": [
+          [
+            1,
+            3
+          ]
+        ],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [
+        {
+          "oldLabel": "A",
+          "strategyLabel": "A 地図ベース（高尾山口へ別ルート）",
+          "distanceKm": 4.27
+        },
+        {
+          "oldLabel": "B",
+          "strategyLabel": "B 下り回避優先（薬王院経由で蛇滝口へ）",
+          "distanceKm": 5.29
+        }
+      ],
+      "transportHints": [
+        "cable_transport"
+      ],
+      "possibleDistanceFiller": false,
+      "priorityScore": 105,
+      "issues": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint",
+        "transport_or_indoor_leg_separation"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "G-Rain",
+      "title": "G 雨天版：高輪GW屋内回遊",
+      "series": "バリエーションB/C（新規追加）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/g-rain.geojson",
+        "walkingDistanceM": 1054,
+        "repeatedGeometryPct": 34.3,
+        "repeatedGeometryM": 362,
+        "maxWaypointToShapeM": 16,
+        "repeatedWaypoints": [
+          [
+            0,
+            4
+          ]
+        ],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [
+        {
+          "oldLabel": "A",
+          "strategyLabel": "A 地図ベース（屋内で往復）",
+          "distanceKm": 1.19
+        },
+        {
+          "oldLabel": "B",
+          "strategyLabel": "B 下り回避優先（品川駅経由でスカイウェイ）",
+          "distanceKm": 1.79
+        }
+      ],
+      "transportHints": [
+        "indoor_candidate"
+      ],
+      "possibleDistanceFiller": false,
+      "priorityScore": 102,
+      "issues": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint",
+        "transport_or_indoor_leg_separation"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "No.53",
+      "title": "京王百草園 梅林早春",
+      "series": "V4春限定（No.53〜55）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/no-53.geojson",
+        "walkingDistanceM": 7189,
+        "repeatedGeometryPct": 19.4,
+        "repeatedGeometryM": 1394,
+        "maxWaypointToShapeM": 129,
+        "repeatedWaypoints": [
+          [
+            4,
+            6
+          ]
+        ],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": true,
+      "priorityScore": 100,
+      "issues": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint",
+        "waypoint_off_shape",
+        "possible_distance_filler"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "No.44",
+      "title": "川崎・羽田 多摩川スカイブリッジ",
+      "series": "ベイエリア橋（No.42～45）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/no-44.geojson",
+        "walkingDistanceM": 6117,
+        "repeatedGeometryPct": 26,
+        "repeatedGeometryM": 1590,
+        "maxWaypointToShapeM": 40,
+        "repeatedWaypoints": [
+          [
+            3,
+            5
+          ]
+        ],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": true,
+      "priorityScore": 95,
+      "issues": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint",
+        "waypoint_off_shape",
+        "possible_distance_filler"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "S4",
+      "title": "井の頭・神田川せせらぎ（高井戸〜井の頭公園〜吉祥寺）",
+      "series": "制作主専用修行案（個人用・最大8km）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/s4.geojson",
+        "walkingDistanceM": 6473,
+        "repeatedGeometryPct": 25.5,
+        "repeatedGeometryM": 1652,
+        "maxWaypointToShapeM": 38,
+        "repeatedWaypoints": [
+          [
+            3,
+            5
+          ]
+        ],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": true,
+      "priorityScore": 94,
+      "issues": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint",
+        "possible_distance_filler"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "No.10",
+      "title": "羽田イノベーションシティ～スカイブリッジ",
+      "series": "本編 A～Z（No.1～26）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/no-10.geojson",
+        "walkingDistanceM": 6883,
+        "repeatedGeometryPct": 19.5,
+        "repeatedGeometryM": 1340,
+        "maxWaypointToShapeM": 84,
+        "repeatedWaypoints": [
+          [
+            4,
+            6
+          ],
+          [
+            4,
+            8
+          ],
+          [
+            6,
+            8
+          ]
+        ],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": true,
+      "priorityScore": 91,
+      "issues": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint",
+        "waypoint_off_shape",
+        "possible_distance_filler"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "E1",
+      "title": "三島・源兵衛川と三嶋大社",
+      "series": "遠征検討シリーズ（東海・伊豆箱根5コース）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/e1.geojson",
+        "walkingDistanceM": 6513,
+        "repeatedGeometryPct": 32.4,
+        "repeatedGeometryM": 2112,
+        "maxWaypointToShapeM": 71,
+        "repeatedWaypoints": [
+          [
+            3,
+            5
+          ]
+        ],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": false,
+      "priorityScore": 89,
+      "issues": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint",
+        "waypoint_off_shape"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "No.1",
+      "title": "皇居東御苑・三の丸尚蔵館",
+      "series": "本編 A～Z（No.1～26）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/no-1.geojson",
+        "walkingDistanceM": 6654,
+        "repeatedGeometryPct": 23.9,
+        "repeatedGeometryM": 1588,
+        "maxWaypointToShapeM": 32,
+        "repeatedWaypoints": [
+          [
+            8,
+            10
+          ]
+        ],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": true,
+      "priorityScore": 89,
+      "issues": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint",
+        "possible_distance_filler"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "No.8",
+      "title": "上野ミュージアム",
+      "series": "本編 A～Z（No.1～26）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/no-8.geojson",
+        "walkingDistanceM": 6716,
+        "repeatedGeometryPct": 22.7,
+        "repeatedGeometryM": 1526,
+        "maxWaypointToShapeM": 41,
+        "repeatedWaypoints": [
+          [
+            8,
+            10
+          ]
+        ],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": true,
+      "priorityScore": 89,
+      "issues": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint",
+        "waypoint_off_shape",
+        "possible_distance_filler"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "S1",
+      "title": "玉川上水・仙川緑道（三鷹〜武蔵境〜東小金井）水辺と並木",
+      "series": "制作主専用修行案（個人用・最大8km）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/s1.geojson",
+        "walkingDistanceM": 7109,
+        "repeatedGeometryPct": 22.8,
+        "repeatedGeometryM": 1623,
+        "maxWaypointToShapeM": 15,
+        "repeatedWaypoints": [
+          [
+            4,
+            6
+          ]
+        ],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": true,
+      "priorityScore": 84,
+      "issues": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint",
+        "possible_distance_filler"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "Z5",
+      "title": "富山・環水公園と立山連峰",
+      "series": "全国・いつか行きたい（広島・神戸・福岡ほか）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/z5.geojson",
+        "walkingDistanceM": 6976,
+        "repeatedGeometryPct": 25.4,
+        "repeatedGeometryM": 1772,
+        "maxWaypointToShapeM": 115,
+        "repeatedWaypoints": [
+          [
+            3,
+            6
+          ],
+          [
+            4,
+            6
+          ]
+        ],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": false,
+      "priorityScore": 84,
+      "issues": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint",
+        "waypoint_off_shape"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "No.35",
+      "title": "池袋駅 地下周回",
+      "series": "地下ダンジョン（No.33～35）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/no-35.geojson",
+        "walkingDistanceM": 5074,
+        "repeatedGeometryPct": 21.4,
+        "repeatedGeometryM": 1086,
+        "maxWaypointToShapeM": 27,
+        "repeatedWaypoints": [
+          [
+            2,
+            6
+          ],
+          [
+            2,
+            8
+          ],
+          [
+            6,
+            8
+          ]
+        ],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": true,
+      "priorityScore": 83,
+      "issues": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint",
+        "possible_distance_filler"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "No.40",
+      "title": "荒川 赤水門・岩淵",
+      "series": "河川敷（No.36～41）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/no-40.geojson",
+        "walkingDistanceM": 6101,
+        "repeatedGeometryPct": 9.2,
+        "repeatedGeometryM": 562,
+        "maxWaypointToShapeM": 183,
+        "repeatedWaypoints": [
+          [
+            4,
+            6
+          ]
+        ],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": true,
+      "priorityScore": 83,
+      "issues": [
+        "repeated_waypoint",
+        "waypoint_off_shape",
+        "possible_distance_filler"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "No.18",
+      "title": "小石川後楽園～東京ドームシティ",
+      "series": "本編 A～Z（No.1～26）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/no-18.geojson",
+        "walkingDistanceM": 7027,
+        "repeatedGeometryPct": 26.8,
+        "repeatedGeometryM": 1882,
+        "maxWaypointToShapeM": 92,
+        "repeatedWaypoints": [
+          [
+            6,
+            8
+          ]
+        ],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [
+        {
+          "oldLabel": "A",
+          "strategyLabel": "A 地図ベース（現行）",
+          "distanceKm": 5.26
+        },
+        {
+          "oldLabel": "B",
+          "strategyLabel": "B 下り回避優先（上流から下る）",
+          "distanceKm": 4.87
+        }
+      ],
+      "transportHints": [],
+      "possibleDistanceFiller": false,
+      "priorityScore": 82,
+      "issues": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint",
+        "waypoint_off_shape"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "No.27",
+      "title": "国分寺崖線「はけ」",
+      "series": "坂道・崖線（No.27～32）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/no-27.geojson",
+        "walkingDistanceM": 6962,
+        "repeatedGeometryPct": 20.6,
+        "repeatedGeometryM": 1432,
+        "maxWaypointToShapeM": 31,
+        "repeatedWaypoints": [
+          [
+            4,
+            6
+          ]
+        ],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": true,
+      "priorityScore": 82,
+      "issues": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint",
+        "possible_distance_filler"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "No.51",
+      "title": "中目黒〜代官山〜恵比寿",
+      "series": "V4-B/Cグルメ（No.47〜52）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/no-51.geojson",
+        "walkingDistanceM": 7041,
+        "repeatedGeometryPct": 11.9,
+        "repeatedGeometryM": 840,
+        "maxWaypointToShapeM": 12,
+        "repeatedWaypoints": [
+          [
+            5,
+            7
+          ]
+        ],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [
+        "water_transport"
+      ],
+      "possibleDistanceFiller": true,
+      "priorityScore": 81,
+      "issues": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint",
+        "possible_distance_filler",
+        "transport_or_indoor_leg_separation"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "S6",
+      "title": "青梅街道・中野〜荻窪レトロ商店街（中野〜荻窪）",
+      "series": "制作主専用修行案（個人用・最大8km）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/s6.geojson",
+        "walkingDistanceM": 6779,
+        "repeatedGeometryPct": 21.4,
+        "repeatedGeometryM": 1450,
+        "maxWaypointToShapeM": 18,
+        "repeatedWaypoints": [
+          [
+            3,
+            5
+          ]
+        ],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": true,
+      "priorityScore": 81,
+      "issues": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint",
+        "possible_distance_filler"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "E3",
+      "title": "浜松・遠鉄と浜松城",
+      "series": "遠征検討シリーズ（東海・伊豆箱根5コース）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/e3.geojson",
+        "walkingDistanceM": 6802,
+        "repeatedGeometryPct": 33.1,
+        "repeatedGeometryM": 2255,
+        "maxWaypointToShapeM": 20,
+        "repeatedWaypoints": [
+          [
+            3,
+            5
+          ]
+        ],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": false,
+      "priorityScore": 80,
+      "issues": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "S5",
+      "title": "国立・谷保・矢川イチョウ並木（国立〜立川）学園×並木",
+      "series": "制作主専用修行案（個人用・最大8km）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/s5.geojson",
+        "walkingDistanceM": 7237,
+        "repeatedGeometryPct": 14,
+        "repeatedGeometryM": 1016,
+        "maxWaypointToShapeM": 79,
+        "repeatedWaypoints": [
+          [
+            4,
+            7
+          ],
+          [
+            5,
+            7
+          ]
+        ],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": true,
+      "priorityScore": 79,
+      "issues": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint",
+        "waypoint_off_shape",
+        "possible_distance_filler"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "No.14",
+      "title": "大宮 鉄道博物館～大宮公園",
+      "series": "本編 A～Z（No.1～26）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/no-14.geojson",
+        "walkingDistanceM": 6769,
+        "repeatedGeometryPct": 16.9,
+        "repeatedGeometryM": 1141,
+        "maxWaypointToShapeM": 39,
+        "repeatedWaypoints": [
+          [
+            6,
+            8
+          ]
+        ],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": true,
+      "priorityScore": 77,
+      "issues": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint",
+        "possible_distance_filler"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "No.39",
+      "title": "荒川 千住大土手・スカイツリー",
+      "series": "河川敷（No.36～41）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/no-39.geojson",
+        "walkingDistanceM": 6311,
+        "repeatedGeometryPct": 17.6,
+        "repeatedGeometryM": 1110,
+        "maxWaypointToShapeM": 33,
+        "repeatedWaypoints": [
+          [
+            5,
+            7
+          ]
+        ],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": true,
+      "priorityScore": 77,
+      "issues": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint",
+        "possible_distance_filler"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "No.29",
+      "title": "等々力渓谷と崖の階段",
+      "series": "坂道・崖線（No.27～32）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/no-29.geojson",
+        "walkingDistanceM": 6594,
+        "repeatedGeometryPct": 19.3,
+        "repeatedGeometryM": 1274,
+        "maxWaypointToShapeM": 10,
+        "repeatedWaypoints": [
+          [
+            4,
+            6
+          ]
+        ],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": true,
+      "priorityScore": 76,
+      "issues": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint",
+        "possible_distance_filler"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "No.4",
+      "title": "調布飛行場・武蔵野の森公園",
+      "series": "本編 A～Z（No.1～26）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/no-4.geojson",
+        "walkingDistanceM": 5951,
+        "repeatedGeometryPct": 12.9,
+        "repeatedGeometryM": 767,
+        "maxWaypointToShapeM": 74,
+        "repeatedWaypoints": [
+          [
+            4,
+            6
+          ]
+        ],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": true,
+      "priorityScore": 76,
+      "issues": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint",
+        "waypoint_off_shape",
+        "possible_distance_filler"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "E5",
+      "title": "小田原・国府津 海と駅伝",
+      "series": "遠征検討シリーズ（東海・伊豆箱根5コース）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/e5.geojson",
+        "walkingDistanceM": 7411,
+        "repeatedGeometryPct": 25.3,
+        "repeatedGeometryM": 1875,
+        "maxWaypointToShapeM": 74,
+        "repeatedWaypoints": [
+          [
+            3,
+            5
+          ]
+        ],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": false,
+      "priorityScore": 75,
+      "issues": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint",
+        "waypoint_off_shape"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "No.41",
+      "title": "江戸川 矢切の渡し・柴又",
+      "series": "河川敷（No.36～41）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/no-41.geojson",
+        "walkingDistanceM": 6067,
+        "repeatedGeometryPct": 8.5,
+        "repeatedGeometryM": 517,
+        "maxWaypointToShapeM": 112,
+        "repeatedWaypoints": [
+          [
+            7,
+            9
+          ]
+        ],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": true,
+      "priorityScore": 74,
+      "issues": [
+        "repeated_waypoint",
+        "waypoint_off_shape",
+        "possible_distance_filler"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "No.17",
+      "title": "麻布台ヒルズ～東京タワー",
+      "series": "本編 A～Z（No.1～26）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/no-17.geojson",
+        "walkingDistanceM": 6839,
+        "repeatedGeometryPct": 15.6,
+        "repeatedGeometryM": 1068,
+        "maxWaypointToShapeM": 36,
+        "repeatedWaypoints": [
+          [
+            3,
+            5
+          ]
+        ],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": true,
+      "priorityScore": 73,
+      "issues": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint",
+        "possible_distance_filler"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "S2",
+      "title": "多摩川・浅川合流（豊田南口〜日野用水堰〜立川）水辺フラット",
+      "series": "制作主専用修行案（個人用・最大8km）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/s2.geojson",
+        "walkingDistanceM": 7276,
+        "repeatedGeometryPct": 16.5,
+        "repeatedGeometryM": 1198,
+        "maxWaypointToShapeM": 27,
+        "repeatedWaypoints": [
+          [
+            4,
+            6
+          ]
+        ],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": true,
+      "priorityScore": 73,
+      "issues": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint",
+        "possible_distance_filler"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "Z3",
+      "title": "福岡・博多〜天神〜大濠公園",
+      "series": "全国・いつか行きたい（広島・神戸・福岡ほか）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/z3.geojson",
+        "walkingDistanceM": 7312,
+        "repeatedGeometryPct": 22.9,
+        "repeatedGeometryM": 1674,
+        "maxWaypointToShapeM": 86,
+        "repeatedWaypoints": [
+          [
+            3,
+            5
+          ]
+        ],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": false,
+      "priorityScore": 73,
+      "issues": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint",
+        "waypoint_off_shape"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "No.38",
+      "title": "多摩川/浅川 万願寺ふれあい橋",
+      "series": "河川敷（No.36～41）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/no-38.geojson",
+        "walkingDistanceM": 5629,
+        "repeatedGeometryPct": 15.1,
+        "repeatedGeometryM": 849,
+        "maxWaypointToShapeM": 19,
+        "repeatedWaypoints": [
+          [
+            5,
+            7
+          ]
+        ],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": true,
+      "priorityScore": 69,
+      "issues": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint",
+        "possible_distance_filler"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "No.50",
+      "title": "谷根千 坂と行列グルメ",
+      "series": "V4-B/Cグルメ（No.47〜52）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/no-50.geojson",
+        "walkingDistanceM": 6979,
+        "repeatedGeometryPct": 14.4,
+        "repeatedGeometryM": 1004,
+        "maxWaypointToShapeM": 16,
+        "repeatedWaypoints": [
+          [
+            6,
+            8
+          ]
+        ],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": true,
+      "priorityScore": 67,
+      "issues": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint",
+        "possible_distance_filler"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "No.19",
+      "title": "神宮外苑～国立競技場外周",
+      "series": "本編 A～Z（No.1～26）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/no-19.geojson",
+        "walkingDistanceM": 6835,
+        "repeatedGeometryPct": 7.2,
+        "repeatedGeometryM": 489,
+        "maxWaypointToShapeM": 81,
+        "repeatedWaypoints": [
+          [
+            0,
+            6
+          ],
+          [
+            0,
+            8
+          ],
+          [
+            6,
+            8
+          ]
+        ],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": true,
+      "priorityScore": 66,
+      "issues": [
+        "repeated_waypoint",
+        "waypoint_off_shape",
+        "possible_distance_filler"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "No.48",
+      "title": "両国〜浅草〜スカイツリー",
+      "series": "V4-B/Cグルメ（No.47〜52）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/no-48.geojson",
+        "walkingDistanceM": 7021,
+        "repeatedGeometryPct": 8.6,
+        "repeatedGeometryM": 601,
+        "maxWaypointToShapeM": 71,
+        "repeatedWaypoints": [
+          [
+            6,
+            8
+          ]
+        ],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": true,
+      "priorityScore": 66,
+      "issues": [
+        "repeated_waypoint",
+        "waypoint_off_shape",
+        "possible_distance_filler"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "No.15",
+      "title": "天王洲アイル 水辺アート",
+      "series": "本編 A～Z（No.1～26）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/no-15.geojson",
+        "walkingDistanceM": 6035,
+        "repeatedGeometryPct": 5.6,
+        "repeatedGeometryM": 341,
+        "maxWaypointToShapeM": 44,
+        "repeatedWaypoints": [],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [
+        "water_transport"
+      ],
+      "possibleDistanceFiller": true,
+      "priorityScore": 65,
+      "issues": [
+        "waypoint_off_shape",
+        "possible_distance_filler",
+        "transport_or_indoor_leg_separation"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "No.3",
+      "title": "横浜・汽車道～開港記念会館",
+      "series": "本編 A～Z（No.1～26）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/no-3.geojson",
+        "walkingDistanceM": 6746,
+        "repeatedGeometryPct": 22.7,
+        "repeatedGeometryM": 1529,
+        "maxWaypointToShapeM": 32,
+        "repeatedWaypoints": [
+          [
+            8,
+            10
+          ]
+        ],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": false,
+      "priorityScore": 62,
+      "issues": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "No.31",
+      "title": "山手線内側・最強の谷底",
+      "series": "坂道・崖線（No.27～32）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/no-31.geojson",
+        "walkingDistanceM": 3061,
+        "repeatedGeometryPct": 10.5,
+        "repeatedGeometryM": 322,
+        "maxWaypointToShapeM": 23,
+        "repeatedWaypoints": [
+          [
+            4,
+            6
+          ]
+        ],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": true,
+      "priorityScore": 61,
+      "issues": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint",
+        "possible_distance_filler"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "Z8",
+      "title": "那覇・国際通りと波上宮",
+      "series": "全国・いつか行きたい（広島・神戸・福岡ほか）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/z8.geojson",
+        "walkingDistanceM": 6929,
+        "repeatedGeometryPct": 24.3,
+        "repeatedGeometryM": 1685,
+        "maxWaypointToShapeM": 8,
+        "repeatedWaypoints": [
+          [
+            3,
+            5
+          ]
+        ],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": false,
+      "priorityScore": 60,
+      "issues": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "1128-D3",
+      "title": "D-3 東京駅→日本橋 地下＋丸の内イルミ",
+      "series": "バリエーションB/C（新規追加）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/1128-d3.geojson",
+        "walkingDistanceM": 5731,
+        "repeatedGeometryPct": 11.9,
+        "repeatedGeometryM": 684,
+        "maxWaypointToShapeM": 22,
+        "repeatedWaypoints": [
+          [
+            0,
+            7
+          ]
+        ],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [
+        "indoor_candidate"
+      ],
+      "possibleDistanceFiller": false,
+      "priorityScore": 58,
+      "issues": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint",
+        "transport_or_indoor_leg_separation"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "No.47",
+      "title": "清澄白河から両国・亀戸へ",
+      "series": "V4-B/Cグルメ（No.47〜52）",
+      "workStatus": "partial_rebuild",
+      "legacy": {
+        "geometryUrl": "data/routes/no-47.geojson",
+        "walkingDistanceM": 7130,
+        "repeatedGeometryPct": 9,
+        "repeatedGeometryM": 640,
+        "maxWaypointToShapeM": 19,
+        "repeatedWaypoints": [
+          [
+            3,
+            5
+          ]
+        ],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [
+        {
+          "variant": "standard",
+          "status": "routed",
+          "distanceM": 5907
+        },
+        {
+          "variant": "extended",
+          "status": "routed",
+          "distanceM": 7746
+        },
+        {
+          "variant": "rainy",
+          "status": "researched",
+          "distanceM": null
+        }
+      ],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": true,
+      "priorityScore": 57,
+      "issues": [
+        "repeated_waypoint",
+        "possible_distance_filler"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "No.42",
+      "title": "横浜 女神橋・大さん橋",
+      "series": "ベイエリア橋（No.42～45）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/no-42.geojson",
+        "walkingDistanceM": 6346,
+        "repeatedGeometryPct": 7.9,
+        "repeatedGeometryM": 500,
+        "maxWaypointToShapeM": 16,
+        "repeatedWaypoints": [
+          [
+            3,
+            5
+          ]
+        ],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": true,
+      "priorityScore": 54,
+      "issues": [
+        "repeated_waypoint",
+        "possible_distance_filler"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "No.49",
+      "title": "吉祥寺〜井の頭〜三鷹",
+      "series": "V4-B/Cグルメ（No.47〜52）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/no-49.geojson",
+        "walkingDistanceM": 7261,
+        "repeatedGeometryPct": 7.6,
+        "repeatedGeometryM": 549,
+        "maxWaypointToShapeM": 19,
+        "repeatedWaypoints": [
+          [
+            5,
+            7
+          ]
+        ],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": true,
+      "priorityScore": 54,
+      "issues": [
+        "repeated_waypoint",
+        "possible_distance_filler"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "S7",
+      "title": "外濠・水道橋〜飯田橋〜市ケ谷〜四ツ谷 建築×水辺",
+      "series": "制作主専用修行案（個人用・最大8km）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/s7.geojson",
+        "walkingDistanceM": 7165,
+        "repeatedGeometryPct": 17.7,
+        "repeatedGeometryM": 1270,
+        "maxWaypointToShapeM": 37,
+        "repeatedWaypoints": [
+          [
+            4,
+            7
+          ],
+          [
+            5,
+            7
+          ]
+        ],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [
+        {
+          "oldLabel": "A",
+          "strategyLabel": "A 地図ベース（四ツ谷で解散）",
+          "distanceKm": 5.02
+        },
+        {
+          "oldLabel": "B",
+          "strategyLabel": "B 下り回避優先（現行）",
+          "distanceKm": 7.17
+        }
+      ],
+      "transportHints": [],
+      "possibleDistanceFiller": false,
+      "priorityScore": 53,
+      "issues": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "No.33",
+      "title": "東京駅 地下周回",
+      "series": "地下ダンジョン（No.33～35）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/no-33.geojson",
+        "walkingDistanceM": 4816,
+        "repeatedGeometryPct": 5.4,
+        "repeatedGeometryM": 260,
+        "maxWaypointToShapeM": 20,
+        "repeatedWaypoints": [
+          [
+            0,
+            10
+          ],
+          [
+            0,
+            12
+          ],
+          [
+            10,
+            12
+          ]
+        ],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": true,
+      "priorityScore": 50,
+      "issues": [
+        "repeated_waypoint",
+        "possible_distance_filler"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "Z2",
+      "title": "神戸・三宮〜ハーバーランド港夜景",
+      "series": "全国・いつか行きたい（広島・神戸・福岡ほか）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/z2.geojson",
+        "walkingDistanceM": 6940,
+        "repeatedGeometryPct": 17.1,
+        "repeatedGeometryM": 1183,
+        "maxWaypointToShapeM": 27,
+        "repeatedWaypoints": [
+          [
+            3,
+            5
+          ]
+        ],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": false,
+      "priorityScore": 50,
+      "issues": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "No.5",
+      "title": "東京競馬場・府中",
+      "series": "本編 A～Z（No.1～26）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/no-5.geojson",
+        "walkingDistanceM": 7316,
+        "repeatedGeometryPct": 20.6,
+        "repeatedGeometryM": 1510,
+        "maxWaypointToShapeM": 31,
+        "repeatedWaypoints": [],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": false,
+      "priorityScore": 47,
+      "issues": [
+        "repeated_geometry_over_10pct"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "Z4",
+      "title": "松山・道後温泉と城下町",
+      "series": "全国・いつか行きたい（広島・神戸・福岡ほか）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/z4.geojson",
+        "walkingDistanceM": 6507,
+        "repeatedGeometryPct": 16.8,
+        "repeatedGeometryM": 1091,
+        "maxWaypointToShapeM": 19,
+        "repeatedWaypoints": [
+          [
+            3,
+            5
+          ]
+        ],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": false,
+      "priorityScore": 47,
+      "issues": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "No.45",
+      "title": "木更津 中の島大橋",
+      "series": "ベイエリア橋（No.42～45）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/no-45.geojson",
+        "walkingDistanceM": 6219,
+        "repeatedGeometryPct": 16,
+        "repeatedGeometryM": 997,
+        "maxWaypointToShapeM": 65,
+        "repeatedWaypoints": [],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": false,
+      "priorityScore": 45,
+      "issues": [
+        "repeated_geometry_over_10pct",
+        "waypoint_off_shape"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "S11",
+      "title": "旭が丘中央公園→片倉→みなみ野",
+      "series": "制作主専用修行案（個人用・最大8km）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/s11.geojson",
+        "walkingDistanceM": 8656,
+        "repeatedGeometryPct": 15.7,
+        "repeatedGeometryM": 1360,
+        "maxWaypointToShapeM": 16,
+        "repeatedWaypoints": [
+          [
+            4,
+            6
+          ]
+        ],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": false,
+      "priorityScore": 45,
+      "issues": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "S9",
+      "title": "青梅線・羽村〜拝島 水辺とベースサイド",
+      "series": "制作主専用修行案（個人用・最大8km）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/s9.geojson",
+        "walkingDistanceM": 7956,
+        "repeatedGeometryPct": 14.8,
+        "repeatedGeometryM": 1174,
+        "maxWaypointToShapeM": 24,
+        "repeatedWaypoints": [
+          [
+            4,
+            6
+          ]
+        ],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": false,
+      "priorityScore": 44,
+      "issues": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "No.56",
+      "title": "東京駅・皇居外周〜日本橋",
+      "series": "V5追加 8km詳細（No.56〜59）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/no-56.geojson",
+        "walkingDistanceM": 7987,
+        "repeatedGeometryPct": 2.8,
+        "repeatedGeometryM": 222,
+        "maxWaypointToShapeM": 13,
+        "repeatedWaypoints": [
+          [
+            8,
+            10
+          ]
+        ],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": true,
+      "priorityScore": 43,
+      "issues": [
+        "repeated_waypoint",
+        "possible_distance_filler"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "G-1128",
+      "title": "G 11/28版：高輪GW→泉岳寺→品川→インターシティ夜景",
+      "series": "バリエーションB/C（新規追加）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/g-1128.geojson",
+        "walkingDistanceM": 5475,
+        "repeatedGeometryPct": 16.3,
+        "repeatedGeometryM": 895,
+        "maxWaypointToShapeM": 46,
+        "repeatedWaypoints": [],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [
+        {
+          "oldLabel": "A",
+          "strategyLabel": "A 地図ベース（戻りを最小に）",
+          "distanceKm": 5.97
+        },
+        {
+          "oldLabel": "B",
+          "strategyLabel": "B 下り回避優先",
+          "distanceKm": 5.47
+        }
+      ],
+      "transportHints": [],
+      "possibleDistanceFiller": false,
+      "priorityScore": 42,
+      "issues": [
+        "repeated_geometry_over_10pct",
+        "waypoint_off_shape"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "S8",
+      "title": "隅田川テラス・浅草橋〜スカイツリー（馬喰町〜押上）下町水辺",
+      "series": "制作主専用修行案（個人用・最大8km）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/s8.geojson",
+        "walkingDistanceM": 6816,
+        "repeatedGeometryPct": 19.7,
+        "repeatedGeometryM": 1342,
+        "maxWaypointToShapeM": 14,
+        "repeatedWaypoints": [],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": false,
+      "priorityScore": 42,
+      "issues": [
+        "repeated_geometry_over_10pct"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "Z7",
+      "title": "京都・鴨川フラットウォーク",
+      "series": "全国・いつか行きたい（広島・神戸・福岡ほか）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/z7.geojson",
+        "walkingDistanceM": 7257,
+        "repeatedGeometryPct": 15.3,
+        "repeatedGeometryM": 1110,
+        "maxWaypointToShapeM": 5,
+        "repeatedWaypoints": [
+          [
+            3,
+            5
+          ]
+        ],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": false,
+      "priorityScore": 42,
+      "issues": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "No.34",
+      "title": "新宿駅 地下周回",
+      "series": "地下ダンジョン（No.33～35）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/no-34.geojson",
+        "walkingDistanceM": 5853,
+        "repeatedGeometryPct": 13.8,
+        "repeatedGeometryM": 806,
+        "maxWaypointToShapeM": 13,
+        "repeatedWaypoints": [
+          [
+            0,
+            8
+          ],
+          [
+            0,
+            9
+          ],
+          [
+            0,
+            11
+          ],
+          [
+            8,
+            11
+          ],
+          [
+            9,
+            11
+          ]
+        ],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [
+        {
+          "oldLabel": "A",
+          "strategyLabel": "A 地図ベース（地下街の周回）",
+          "distanceKm": 4.97
+        },
+        {
+          "oldLabel": "B",
+          "strategyLabel": "B 下り回避優先（東口→南口→西口）",
+          "distanceKm": 2.56
+        }
+      ],
+      "transportHints": [],
+      "possibleDistanceFiller": false,
+      "priorityScore": 40,
+      "issues": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "Z1",
+      "title": "広島・平和記念公園と川と橋",
+      "series": "全国・いつか行きたい（広島・神戸・福岡ほか）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/z1.geojson",
+        "walkingDistanceM": 7254,
+        "repeatedGeometryPct": 13.5,
+        "repeatedGeometryM": 980,
+        "maxWaypointToShapeM": 14,
+        "repeatedWaypoints": [
+          [
+            3,
+            5
+          ]
+        ],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": false,
+      "priorityScore": 40,
+      "issues": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "No.16",
+      "title": "横須賀 ヴェルニー～三笠公園",
+      "series": "本編 A～Z（No.1～26）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/no-16.geojson",
+        "walkingDistanceM": 7159,
+        "repeatedGeometryPct": 5,
+        "repeatedGeometryM": 356,
+        "maxWaypointToShapeM": 44,
+        "repeatedWaypoints": [],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [
+        "water_transport"
+      ],
+      "possibleDistanceFiller": false,
+      "priorityScore": 39,
+      "issues": [
+        "waypoint_off_shape",
+        "transport_or_indoor_leg_separation"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "S3",
+      "title": "昭和記念公園・あけぼの口〜日本庭園〜みんなの原っぱ縦断",
+      "series": "制作主専用修行案（個人用・最大8km）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/s3.geojson",
+        "walkingDistanceM": 6662,
+        "repeatedGeometryPct": 15.1,
+        "repeatedGeometryM": 1007,
+        "maxWaypointToShapeM": 39,
+        "repeatedWaypoints": [],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": false,
+      "priorityScore": 38,
+      "issues": [
+        "repeated_geometry_over_10pct"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "VBC-C3",
+      "title": "C-3 大井町 OIMACHI TRACKS〜しながわ中央公園〜品川シーサイド",
+      "series": "バリエーションB/C（新規追加）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/vbc-c3.geojson",
+        "walkingDistanceM": 3215,
+        "repeatedGeometryPct": 17.8,
+        "repeatedGeometryM": 574,
+        "maxWaypointToShapeM": 8,
+        "repeatedWaypoints": [],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": false,
+      "priorityScore": 37,
+      "issues": [
+        "repeated_geometry_over_10pct"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "VBC-C5",
+      "title": "C-5 裏参道・学園通り 国立〜谷保",
+      "series": "バリエーションB/C（新規追加）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/vbc-c5.geojson",
+        "walkingDistanceM": 2871,
+        "repeatedGeometryPct": 13.5,
+        "repeatedGeometryM": 386,
+        "maxWaypointToShapeM": 43,
+        "repeatedWaypoints": [],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": false,
+      "priorityScore": 36,
+      "issues": [
+        "repeated_geometry_over_10pct",
+        "waypoint_off_shape"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "No.24",
+      "title": "東京ミッドタウン～檜町公園",
+      "series": "本編 A～Z（No.1～26）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/no-24.geojson",
+        "walkingDistanceM": 7067,
+        "repeatedGeometryPct": 7.3,
+        "repeatedGeometryM": 517,
+        "maxWaypointToShapeM": 54,
+        "repeatedWaypoints": [
+          [
+            0,
+            6
+          ]
+        ],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": false,
+      "priorityScore": 35,
+      "issues": [
+        "repeated_waypoint",
+        "waypoint_off_shape"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "No.36",
+      "title": "多摩川 丸子橋・浅間神社",
+      "series": "河川敷（No.36～41）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/no-36.geojson",
+        "walkingDistanceM": 6491,
+        "repeatedGeometryPct": 1.9,
+        "repeatedGeometryM": 124,
+        "maxWaypointToShapeM": 28,
+        "repeatedWaypoints": [],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": true,
+      "priorityScore": 34,
+      "issues": [
+        "possible_distance_filler"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "No.55",
+      "title": "小金井公園〜野川 桜堤",
+      "series": "V4春限定（No.53〜55）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/no-55.geojson",
+        "walkingDistanceM": 6425,
+        "repeatedGeometryPct": 12.7,
+        "repeatedGeometryM": 815,
+        "maxWaypointToShapeM": 32,
+        "repeatedWaypoints": [],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": false,
+      "priorityScore": 32,
+      "issues": [
+        "repeated_geometry_over_10pct"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "No.11",
+      "title": "豊洲 千客万来～ぐるり公園",
+      "series": "本編 A～Z（No.1～26）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/no-11.geojson",
+        "walkingDistanceM": 7289,
+        "repeatedGeometryPct": 12.6,
+        "repeatedGeometryM": 919,
+        "maxWaypointToShapeM": 31,
+        "repeatedWaypoints": [],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": false,
+      "priorityScore": 31,
+      "issues": [
+        "repeated_geometry_over_10pct"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "1128-D1",
+      "title": "D-1 新豊洲×有明ガーデン",
+      "series": "バリエーションB/C（新規追加）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/1128-d1.geojson",
+        "walkingDistanceM": 5637,
+        "repeatedGeometryPct": 7.7,
+        "repeatedGeometryM": 434,
+        "maxWaypointToShapeM": 75,
+        "repeatedWaypoints": [],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": false,
+      "priorityScore": 30,
+      "issues": [
+        "waypoint_off_shape"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "No.43",
+      "title": "東京 夢の大橋・豊洲",
+      "series": "ベイエリア橋（No.42～45）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/no-43.geojson",
+        "walkingDistanceM": 6671,
+        "repeatedGeometryPct": 9.1,
+        "repeatedGeometryM": 608,
+        "maxWaypointToShapeM": 37,
+        "repeatedWaypoints": [],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [
+        {
+          "oldLabel": "A",
+          "strategyLabel": "A 地図ベース（東雲まで抜ける）",
+          "distanceKm": 7.97
+        },
+        {
+          "oldLabel": "B",
+          "strategyLabel": "B 下り回避優先（現行）",
+          "distanceKm": 6.68
+        }
+      ],
+      "transportHints": [],
+      "possibleDistanceFiller": false,
+      "priorityScore": 26,
+      "issues": [],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "No.23",
+      "title": "葛西臨海公園",
+      "series": "本編 A～Z（No.1～26）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/no-23.geojson",
+        "walkingDistanceM": 6564,
+        "repeatedGeometryPct": 9.2,
+        "repeatedGeometryM": 607,
+        "maxWaypointToShapeM": 33,
+        "repeatedWaypoints": [],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": false,
+      "priorityScore": 25,
+      "issues": [],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "No.25",
+      "title": "日本橋～コレド～水天宮前",
+      "series": "本編 A～Z（No.1～26）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/no-25.geojson",
+        "walkingDistanceM": 6934,
+        "repeatedGeometryPct": 10.7,
+        "repeatedGeometryM": 745,
+        "maxWaypointToShapeM": 20,
+        "repeatedWaypoints": [],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": false,
+      "priorityScore": 25,
+      "issues": [
+        "repeated_geometry_over_10pct"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "Z6",
+      "title": "札幌・大通〜中島公園",
+      "series": "全国・いつか行きたい（広島・神戸・福岡ほか）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/z6.geojson",
+        "walkingDistanceM": 8009,
+        "repeatedGeometryPct": 3.7,
+        "repeatedGeometryM": 299,
+        "maxWaypointToShapeM": 38,
+        "repeatedWaypoints": [
+          [
+            3,
+            5
+          ]
+        ],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": false,
+      "priorityScore": 25,
+      "issues": [
+        "repeated_waypoint"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "No.58",
+      "title": "原宿〜表参道〜六本木ヒルズ",
+      "series": "V5追加 8km詳細（No.56〜59）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/no-58.geojson",
+        "walkingDistanceM": 8022,
+        "repeatedGeometryPct": 5,
+        "repeatedGeometryM": 401,
+        "maxWaypointToShapeM": 19,
+        "repeatedWaypoints": [
+          [
+            6,
+            8
+          ]
+        ],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [
+        {
+          "oldLabel": "A",
+          "strategyLabel": "A 地図ベース（麻布台へ抜ける）",
+          "distanceKm": 6.93
+        },
+        {
+          "oldLabel": "B",
+          "strategyLabel": "B 下り回避優先（現行）",
+          "distanceKm": 7.99
+        }
+      ],
+      "transportHints": [],
+      "possibleDistanceFiller": false,
+      "priorityScore": 24,
+      "issues": [
+        "repeated_waypoint"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "No.21",
+      "title": "川越 蔵造りの町並み",
+      "series": "本編 A～Z（No.1～26）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/no-21.geojson",
+        "walkingDistanceM": 6301,
+        "repeatedGeometryPct": 7.4,
+        "repeatedGeometryM": 467,
+        "maxWaypointToShapeM": 36,
+        "repeatedWaypoints": [],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": false,
+      "priorityScore": 22,
+      "issues": [],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "S12",
+      "title": "旭が丘→浅川→北野街道→めじろ台",
+      "series": "制作主専用修行案（個人用・最大8km）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/s12.geojson",
+        "walkingDistanceM": 7839,
+        "repeatedGeometryPct": 3.7,
+        "repeatedGeometryM": 292,
+        "maxWaypointToShapeM": 16,
+        "repeatedWaypoints": [
+          [
+            3,
+            5
+          ]
+        ],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": false,
+      "priorityScore": 21,
+      "issues": [
+        "repeated_waypoint"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "1128-D5",
+      "title": "D-5 市ヶ谷→靖国→九段→千鳥ヶ淵→半蔵門 上り型",
+      "series": "バリエーションB/C（新規追加）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/1128-d5.geojson",
+        "walkingDistanceM": 8493,
+        "repeatedGeometryPct": 5.9,
+        "repeatedGeometryM": 503,
+        "maxWaypointToShapeM": 39,
+        "repeatedWaypoints": [],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": false,
+      "priorityScore": 20,
+      "issues": [],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "No.2",
+      "title": "お台場・有明",
+      "series": "本編 A～Z（No.1～26）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/no-2.geojson",
+        "walkingDistanceM": 6586,
+        "repeatedGeometryPct": 8.8,
+        "repeatedGeometryM": 582,
+        "maxWaypointToShapeM": 13,
+        "repeatedWaypoints": [],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": false,
+      "priorityScore": 20,
+      "issues": [],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "No.20",
+      "title": "二子玉川 多摩川水辺",
+      "series": "本編 A～Z（No.1～26）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/no-20.geojson",
+        "walkingDistanceM": 6835,
+        "repeatedGeometryPct": 5.8,
+        "repeatedGeometryM": 394,
+        "maxWaypointToShapeM": 35,
+        "repeatedWaypoints": [],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": false,
+      "priorityScore": 19,
+      "issues": [],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "No.26",
+      "title": "旧古河庭園～駒込",
+      "series": "本編 A～Z（No.1～26）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/no-26.geojson",
+        "walkingDistanceM": 6655,
+        "repeatedGeometryPct": 7.5,
+        "repeatedGeometryM": 501,
+        "maxWaypointToShapeM": 14,
+        "repeatedWaypoints": [],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": false,
+      "priorityScore": 18,
+      "issues": [],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "No.46",
+      "title": "夢の島熱帯植物館〜葛西臨海水族園",
+      "series": "V4湾岸追加（No.46）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/no-46.geojson",
+        "walkingDistanceM": 8025,
+        "repeatedGeometryPct": 4.2,
+        "repeatedGeometryM": 337,
+        "maxWaypointToShapeM": 49,
+        "repeatedWaypoints": [],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": false,
+      "priorityScore": 18,
+      "issues": [
+        "waypoint_off_shape"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "VBC-C1",
+      "title": "C-1 幕張新都心（海浜幕張→イオンモール→ペデストリアンデッキ）",
+      "series": "バリエーションB/C（新規追加）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/vbc-c1.geojson",
+        "walkingDistanceM": 5602,
+        "repeatedGeometryPct": 3.4,
+        "repeatedGeometryM": 190,
+        "maxWaypointToShapeM": 58,
+        "repeatedWaypoints": [],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": false,
+      "priorityScore": 18,
+      "issues": [
+        "waypoint_off_shape"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "No.6",
+      "title": "ところざわサクラタウン",
+      "series": "本編 A～Z（No.1～26）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/no-6.geojson",
+        "walkingDistanceM": 7235,
+        "repeatedGeometryPct": 4.4,
+        "repeatedGeometryM": 320,
+        "maxWaypointToShapeM": 43,
+        "repeatedWaypoints": [],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": false,
+      "priorityScore": 17,
+      "issues": [
+        "waypoint_off_shape"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "1128-D2",
+      "title": "D-2 神宮外苑いちょう並木",
+      "series": "バリエーションB/C（新規追加）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/1128-d2.geojson",
+        "walkingDistanceM": 6115,
+        "repeatedGeometryPct": 5.4,
+        "repeatedGeometryM": 330,
+        "maxWaypointToShapeM": 28,
+        "repeatedWaypoints": [],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [
+        {
+          "oldLabel": "A",
+          "strategyLabel": "A 地図ベース（現行）",
+          "distanceKm": 6.11
+        },
+        {
+          "oldLabel": "B",
+          "strategyLabel": "B 下り回避優先（北→南→東）",
+          "distanceKm": 5.13
+        }
+      ],
+      "transportHints": [],
+      "possibleDistanceFiller": false,
+      "priorityScore": 16,
+      "issues": [],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "E2",
+      "title": "静岡・駿府城と浅間神社",
+      "series": "遠征検討シリーズ（東海・伊豆箱根5コース）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/e2.geojson",
+        "walkingDistanceM": 7197,
+        "repeatedGeometryPct": 2.9,
+        "repeatedGeometryM": 206,
+        "maxWaypointToShapeM": 44,
+        "repeatedWaypoints": [],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": false,
+      "priorityScore": 15,
+      "issues": [
+        "waypoint_off_shape"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "No.7",
+      "title": "高輪ゲートウェイ～品川",
+      "series": "本編 A～Z（No.1～26）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/no-7.geojson",
+        "walkingDistanceM": 5612,
+        "repeatedGeometryPct": 4.2,
+        "repeatedGeometryM": 234,
+        "maxWaypointToShapeM": 34,
+        "repeatedWaypoints": [],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": false,
+      "priorityScore": 15,
+      "issues": [],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "No.57",
+      "title": "両国〜浅草〜谷中〜上野",
+      "series": "V5追加 8km詳細（No.56〜59）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/no-57.geojson",
+        "walkingDistanceM": 7870,
+        "repeatedGeometryPct": 3.5,
+        "repeatedGeometryM": 278,
+        "maxWaypointToShapeM": 35,
+        "repeatedWaypoints": [],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": false,
+      "priorityScore": 14,
+      "issues": [],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "No.30",
+      "title": "日野・多摩川崖線",
+      "series": "坂道・崖線（No.27～32）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/no-30.geojson",
+        "walkingDistanceM": 4556,
+        "repeatedGeometryPct": 3.8,
+        "repeatedGeometryM": 175,
+        "maxWaypointToShapeM": 23,
+        "repeatedWaypoints": [],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": false,
+      "priorityScore": 12,
+      "issues": [],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "1128-D4",
+      "title": "D-4 横浜 上り優先版（桜木町→赤レンガ→馬車道→野毛山→伊勢山）",
+      "series": "バリエーションB/C（新規追加）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/1128-d4.geojson",
+        "walkingDistanceM": 6197,
+        "repeatedGeometryPct": 4.3,
+        "repeatedGeometryM": 265,
+        "maxWaypointToShapeM": 11,
+        "repeatedWaypoints": [],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": false,
+      "priorityScore": 11,
+      "issues": [],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "No.28",
+      "title": "四谷・若葉 スリバチ迷宮",
+      "series": "坂道・崖線（No.27～32）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/no-28.geojson",
+        "walkingDistanceM": 3262,
+        "repeatedGeometryPct": 2.7,
+        "repeatedGeometryM": 87,
+        "maxWaypointToShapeM": 26,
+        "repeatedWaypoints": [],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": false,
+      "priorityScore": 11,
+      "issues": [],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "No.54",
+      "title": "大宮公園 桜はしご",
+      "series": "V4春限定（No.53〜55）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/no-54.geojson",
+        "walkingDistanceM": 7254,
+        "repeatedGeometryPct": 3.4,
+        "repeatedGeometryM": 250,
+        "maxWaypointToShapeM": 20,
+        "repeatedWaypoints": [],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": false,
+      "priorityScore": 11,
+      "issues": [],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "S10",
+      "title": "横浜線・片倉城跡とみなみ野〜橋本",
+      "series": "制作主専用修行案（個人用・最大8km）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/s10.geojson",
+        "walkingDistanceM": 7463,
+        "repeatedGeometryPct": 0.5,
+        "repeatedGeometryM": 36,
+        "maxWaypointToShapeM": 45,
+        "repeatedWaypoints": [],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": false,
+      "priorityScore": 10,
+      "issues": [
+        "waypoint_off_shape"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "No.52",
+      "title": "神楽坂 石畳坂と路地グルメ",
+      "series": "V4-B/Cグルメ（No.47〜52）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/no-52.geojson",
+        "walkingDistanceM": 6593,
+        "repeatedGeometryPct": 3.2,
+        "repeatedGeometryM": 214,
+        "maxWaypointToShapeM": 15,
+        "repeatedWaypoints": [],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": false,
+      "priorityScore": 9,
+      "issues": [],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "S13",
+      "title": "旭が丘→湯殿川・浅川→高幡不動",
+      "series": "制作主専用修行案（個人用・最大8km）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/s13.geojson",
+        "walkingDistanceM": 8698,
+        "repeatedGeometryPct": 0.5,
+        "repeatedGeometryM": 46,
+        "maxWaypointToShapeM": 24,
+        "repeatedWaypoints": [],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": false,
+      "priorityScore": 6,
+      "issues": [],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "No.13",
+      "title": "飛鳥山～音無親水公園",
+      "series": "本編 A～Z（No.1～26）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/no-13.geojson",
+        "walkingDistanceM": 6989,
+        "repeatedGeometryPct": 0.5,
+        "repeatedGeometryM": 36,
+        "maxWaypointToShapeM": 20,
+        "repeatedWaypoints": [],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": false,
+      "priorityScore": 5,
+      "issues": [],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "VBC-C2",
+      "title": "C-2 南町田グランベリーパーク",
+      "series": "バリエーションB/C（新規追加）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/vbc-c2.geojson",
+        "walkingDistanceM": 7051,
+        "repeatedGeometryPct": 0.8,
+        "repeatedGeometryM": 57,
+        "maxWaypointToShapeM": 15,
+        "repeatedWaypoints": [],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": false,
+      "priorityScore": 5,
+      "issues": [],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "No.32",
+      "title": "神楽坂～市ヶ谷 崖の縁",
+      "series": "坂道・崖線（No.27～32）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/no-32.geojson",
+        "walkingDistanceM": 3609,
+        "repeatedGeometryPct": 0.8,
+        "repeatedGeometryM": 28,
+        "maxWaypointToShapeM": 13,
+        "repeatedWaypoints": [],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "legacy_waypoints_need_replacement",
+      "sourceResearch": "source_review_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": false,
+      "priorityScore": 4,
+      "issues": [],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "E4",
+      "title": "名古屋・大須と名古屋城",
+      "series": "遠征検討シリーズ（東海・伊豆箱根5コース）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/e4.geojson",
+        "walkingDistanceM": 6896,
+        "repeatedGeometryPct": 0.5,
+        "repeatedGeometryM": 37,
+        "maxWaypointToShapeM": 9,
+        "repeatedWaypoints": [],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": false,
+      "priorityScore": 3,
+      "issues": [],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "No.59",
+      "title": "立川〜国立〜国分寺 はけ",
+      "series": "V5追加 8km詳細（No.56〜59）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/no-59.geojson",
+        "walkingDistanceM": 7157,
+        "repeatedGeometryPct": 0,
+        "repeatedGeometryM": 0,
+        "maxWaypointToShapeM": 14,
+        "repeatedWaypoints": [],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": false,
+      "priorityScore": 3,
+      "issues": [],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "No.37",
+      "title": "多摩川 多摩水道橋・登戸",
+      "series": "河川敷（No.36～41）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/no-37.geojson",
+        "walkingDistanceM": 6812,
+        "repeatedGeometryPct": 0,
+        "repeatedGeometryM": 0,
+        "maxWaypointToShapeM": 3,
+        "repeatedWaypoints": [],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": false,
+      "priorityScore": 1,
+      "issues": [],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "VBC-C4",
+      "title": "C-4 立川 昭和記念公園 砂川口ルート（EV利用版）",
+      "series": "バリエーションB/C（新規追加）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/vbc-c4.geojson",
+        "walkingDistanceM": 6052,
+        "repeatedGeometryPct": 0,
+        "repeatedGeometryM": 0,
+        "maxWaypointToShapeM": 6,
+        "repeatedWaypoints": [],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": false,
+      "priorityScore": 1,
+      "issues": [],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    }
+  ]
+}

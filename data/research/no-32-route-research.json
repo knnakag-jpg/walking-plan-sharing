@@ -1,0 +1,41 @@
+{
+  "courseId": "No.32",
+  "checkedAt": "2026-11-12",
+  "stage": "source_review_started",
+  "legacyRoute": "飯田橋駅 → 兵庫横丁 → 善國寺／赤城神社 → 宮城道雄記念館 → 外堀公園 → 曙橋駅",
+  "legacyDistanceM": 3609,
+  "themeCandidate": "神楽坂の石畳と黒塀、台地から外濠への地形変化",
+  "sourceFindings": [
+    {
+      "sourceType": "official",
+      "title": "新宿区・粋なまち『神楽坂』を満喫",
+      "url": "https://www.city.shinjuku.lg.jp/content/000396225.pdf",
+      "finding": "神楽坂駅、善國寺、兵庫横丁などを含む自治体の散策案。既存No.32の延長距離や曙橋までの通行条件は示さない。"
+    },
+    {
+      "sourceType": "official",
+      "title": "新宿区・神楽坂地区のまちづくり",
+      "url": "https://www.city.shinjuku.lg.jp/kusei/keikan01_002096_00001.html",
+      "finding": "兵庫横丁・かくれんぼ横丁などの石畳と黒塀を地区の景観資産として位置づける。"
+    },
+    {
+      "sourceType": "walked_account",
+      "title": "みなみちゃん's blog・新宿区の神楽坂散策案を歩いた記録",
+      "url": "https://mnmc.hateblo.jp/entry/2025/06/25/213000",
+      "finding": "赤城神社、善國寺、兵庫横丁を歩いた記録。旧No.32の全経路を歩いた証拠ではない。"
+    }
+  ],
+  "scenicRoadCandidates": [
+    { "name": "兵庫横丁", "reason": "新宿区が保全対象とする石畳・黒塀の路地", "direction": "未決定", "status": "歩行方向と入口を地図で照合待ち" },
+    { "name": "神楽坂通りと周辺横丁", "reason": "坂の上下と路地の景観を連続して体験できる候補", "direction": "飯田橋から坂上方向を比較候補", "status": "道路・横断・混雑の調査待ち" },
+    { "name": "外濠沿い", "reason": "石畳の街並みから水辺へ景観を変える候補", "direction": "未決定", "status": "散策可能区間と駅への接続を調査待ち" }
+  ],
+  "nextChecks": [
+    "旧経由点の実施設・入口・駅出口をOSMと公式地図で照合する",
+    "宮城道雄記念館から外濠公園への自然な接続と、曙橋駅を終点にする理由を調べる",
+    "A標準とB延長で景観の価値が増える別経路を設計し、徒歩ネットワークで計算する",
+    "雨天Cの屋内歩行・屋外露出・施設利用条件を個別に調査する",
+    "坂・階段・横断・休憩・トイレ・途中離脱を地図レビューする"
+  ],
+  "routeDecision": "未決定。旧線や旧座標をそのまま新A/Bとして採用しない。"
+}

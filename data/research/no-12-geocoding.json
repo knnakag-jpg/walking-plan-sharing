@@ -1,0 +1,129 @@
+{
+  "checkedAt": "2026-11-12T14:41:18.959Z",
+  "source": "OpenStreetMap Nominatim; © OpenStreetMap contributors",
+  "results": {
+    "tachikawa_station": {
+      "query": "立川駅 東京都",
+      "candidates": [
+        {
+          "osm_type": "way",
+          "osm_id": 126905218,
+          "name": "立会川駅前商店街",
+          "display_name": "立会川駅前商店街, 東大井二丁目, 東大井, 品川区, 東京, 140-0012, 日本",
+          "lat": 35.5979009,
+          "lon": 139.7389843
+        },
+        {
+          "osm_type": "way",
+          "osm_id": 159055112,
+          "name": "伊藤小学校",
+          "display_name": "伊藤小学校, 8, 西大井五丁目, 西大井, 品川区, 東京, 140-0015, 日本",
+          "lat": 35.5984091,
+          "lon": 139.7172402
+        }
+      ]
+    },
+    "faret": {
+      "query": "ファーレ立川 東京都",
+      "candidates": [
+        {
+          "osm_type": "way",
+          "osm_id": 1236232572,
+          "name": "芋窪街道;ファーレ立川北",
+          "display_name": "芋窪街道;ファーレ立川北, 高松町三丁目, 高松町, 立川市, 東京, 190-8578, 日本",
+          "lat": 35.702946,
+          "lon": 139.4149693
+        },
+        {
+          "osm_type": "way",
+          "osm_id": 1236232566,
+          "name": "芋窪街道;ファーレ立川北",
+          "display_name": "芋窪街道;ファーレ立川北, 曙町二丁目, 曙町, 立川市, 東京, 190-8578, 日本",
+          "lat": 35.702757,
+          "lon": 139.4149886
+        }
+      ]
+    },
+    "green_springs": {
+      "query": "GREEN SPRINGS 立川",
+      "candidates": [
+        {
+          "osm_type": "node",
+          "osm_id": 11040587697,
+          "name": "GREEN SPRINGS",
+          "display_name": "GREEN SPRINGS, カスケード, グリーンスプリングス, 緑町, 立川市, 東京, 190-0014, 日本",
+          "lat": 35.7034083,
+          "lon": 139.411371
+        }
+      ]
+    },
+    "akebono_gate": {
+      "query": "昭和記念公園 あけぼの口",
+      "candidates": []
+    },
+    "tachikawa_gate": {
+      "query": "昭和記念公園 立川口",
+      "candidates": [
+        {
+          "osm_type": "node",
+          "osm_id": 11040588073,
+          "name": "立川駅南口西有料自転車駐車場",
+          "display_name": "立川駅南口西有料自転車駐車場, 昭和記念公園通り, 曙町一丁目, 曙町, 立川市, 東京, 190-0012, 日本",
+          "lat": 35.697448,
+          "lon": 139.411606
+        }
+      ]
+    },
+    "fureai": {
+      "query": "昭和記念公園 ふれあい広場",
+      "candidates": []
+    },
+    "waterfowl_pond": {
+      "query": "昭和記念公園 水鳥の池",
+      "candidates": []
+    },
+    "nishitachikawa_gate": {
+      "query": "昭和記念公園 西立川口",
+      "candidates": [
+        {
+          "osm_type": "node",
+          "osm_id": 11040588073,
+          "name": "立川駅南口西有料自転車駐車場",
+          "display_name": "立川駅南口西有料自転車駐車場, 昭和記念公園通り, 曙町一丁目, 曙町, 立川市, 東京, 190-0012, 日本",
+          "lat": 35.697448,
+          "lon": 139.411606
+        }
+      ]
+    },
+    "nishitachikawa_station": {
+      "query": "西立川駅 東京都",
+      "candidates": [
+        {
+          "osm_type": "node",
+          "osm_id": 4351266695,
+          "name": "西立川",
+          "display_name": "西立川, 立川昭島線, もくせいの杜一丁目, もくせいの杜, 立川市, 東京, 196-0035, 日本",
+          "lat": 35.7035276,
+          "lon": 139.3936344
+        }
+      ]
+    },
+    "japanese_garden": {
+      "query": "昭和記念公園 日本庭園",
+      "candidates": []
+    },
+    "musashisunagawa_station": {
+      "query": "武蔵砂川駅 立川市 東京都",
+      "candidates": [
+        {
+          "osm_type": "node",
+          "osm_id": 3279736246,
+          "name": "武蔵砂川",
+          "display_name": "武蔵砂川, 見影橋, 砂川町三丁目, 砂川町, 立川市, 東京, 190-0032, 日本",
+          "lat": 35.7289155,
+          "lon": 139.3922831
+        }
+      ]
+    }
+  }
+}

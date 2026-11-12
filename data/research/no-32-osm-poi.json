@@ -1,0 +1,992 @@
+{
+  "checkedAt": "2026-11-12T21:08:20.579Z",
+  "source": "OpenStreetMap via Overpass API; © OpenStreetMap contributors",
+  "bbox": "35.685,139.713,35.708,139.752",
+  "query": "[out:json][timeout:25];(nwr[\"name\"~\"飯田橋駅|兵庫横丁|善國寺|善国寺|赤城神社|宮城道雄記念館|外濠公園|曙橋駅|市ケ谷駅|市ヶ谷駅|牛込神楽坂駅|神楽坂駅|かくれんぼ横丁|見番横丁|神楽坂通り\"](35.685,139.713,35.708,139.752););out center tags;",
+  "note": "Way centres and station features do not identify pedestrian entrances.",
+  "features": [
+    {
+      "type": "node",
+      "osmId": 255366510,
+      "name": "市ヶ谷駅",
+      "lat": 35.6911176,
+      "lon": 139.7359587,
+      "tags": {
+        "junction": "yes",
+        "name": "市ヶ谷駅",
+        "name:en": "Ichigaya Sta.",
+        "name:ja": "市ヶ谷駅"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 1082040385,
+      "name": "市ヶ谷駅",
+      "lat": 35.6911919,
+      "lon": 139.7359989,
+      "tags": {
+        "junction": "yes",
+        "name": "市ヶ谷駅",
+        "name:en": "Ichigaya Sta.",
+        "name:ja": "市ヶ谷駅"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 1420775065,
+      "name": "宮城道雄記念館",
+      "lat": 35.699758,
+      "lon": 139.736845,
+      "tags": {
+        "addr:block_number": "35",
+        "addr:city": "新宿区",
+        "addr:neighbourhood": "中町",
+        "addr:province": "東京都",
+        "fixme": "reopen in year 2027",
+        "museum": "person;music",
+        "name": "宮城道雄記念館",
+        "name:en": "Miyagi Michio Memorial Museum",
+        "note": "National-Land Numerical Information (Public Facility) 2006, MLIT Japan",
+        "note:ja": "国土数値情報（公共施設データ）平成19年 国土交通省",
+        "opening_hours": "We-Sa 10:00-16:30",
+        "source": "KSJ2",
+        "source_ref": "http://nlftp.mlit.go.jp/ksj/jpgis/datalist/KsjTmplt-P02-v2_0.html",
+        "tourism": "museum",
+        "website": "https://miyagikai.gr.jp/"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 1420800562,
+      "name": "麹町警察署飯田橋駅前交番",
+      "lat": 35.6999558,
+      "lon": 139.7440158,
+      "tags": {
+        "addr:block_number": "9",
+        "addr:city": "千代田区",
+        "addr:housenumber": "4",
+        "addr:neighbourhood": "富士見二丁目",
+        "addr:province": "東京都",
+        "amenity": "police",
+        "name": "麹町警察署飯田橋駅前交番",
+        "note": "National-Land Numerical Information (Public Facility) 2006, MLIT Japan",
+        "note:ja": "国土数値情報（公共施設データ）平成19年　国土交通省",
+        "operator": "警視庁",
+        "source": "KSJ2",
+        "source_ref": "http://nlftp.mlit.go.jp/ksj/jpgis/datalist/KsjTmplt-P02-v2_0.html"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 1579304711,
+      "name": "飯田橋駅東口",
+      "lat": 35.7019085,
+      "lon": 139.7456386,
+      "tags": {
+        "junction": "yes",
+        "name": "飯田橋駅東口",
+        "name:en": "Iidabashi Sta. E.",
+        "name:ja": "飯田橋駅東口"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 1916839094,
+      "name": "飯田橋駅前",
+      "lat": 35.7016977,
+      "lon": 139.7461962,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "local_ref": "6",
+        "name": "飯田橋駅前",
+        "operator": "東京都交通局",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 1916839136,
+      "name": "飯田橋駅東口",
+      "lat": 35.7019499,
+      "lon": 139.7457184,
+      "tags": {
+        "junction": "yes",
+        "name": "飯田橋駅東口",
+        "name:en": "Iidabashi Sta. E.",
+        "name:ja": "飯田橋駅東口"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 1916873021,
+      "name": "曙橋駅",
+      "lat": 35.6922563,
+      "lon": 139.7234393,
+      "tags": {
+        "name": "曙橋駅",
+        "name:en": "Akebonobashi",
+        "railway": "subway_entrance",
+        "ref": "A4",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 1929707638,
+      "name": "市ヶ谷駅前",
+      "lat": 35.6913898,
+      "lon": 139.7368112,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "市ヶ谷駅前",
+        "operator": "東京都交通局",
+        "public_transport": "platform",
+        "shelter": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 2157153735,
+      "name": "市ヶ谷駅前",
+      "lat": 35.690292,
+      "lon": 139.7355763,
+      "tags": {
+        "bus": "yes",
+        "covered": "no",
+        "highway": "bus_stop",
+        "local_ref": "4",
+        "name": "市ヶ谷駅前",
+        "operator": "東京都交通局",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 2256292592,
+      "name": "飯田橋駅前タクシー乗り場",
+      "lat": 35.7022863,
+      "lon": 139.7449864,
+      "tags": {
+        "amenity": "taxi",
+        "capacity": "2",
+        "name": "飯田橋駅前タクシー乗り場",
+        "shelter_type": "public_transport"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 2329712819,
+      "name": "市ヶ谷駅",
+      "lat": 35.6932444,
+      "lon": 139.7368092,
+      "tags": {
+        "name": "市ヶ谷駅",
+        "name:en": "Ichigaya",
+        "name:es": "Ichigaya",
+        "name:ja": "市ヶ谷駅",
+        "network": "東京メトロ南北線",
+        "operator": "東京メトロ",
+        "public_transport": "stop_position",
+        "railway": "stop",
+        "ref": "N09",
+        "subway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 2456798596,
+      "name": "市ケ谷駅",
+      "lat": 35.6913915,
+      "lon": 139.7368177,
+      "tags": {
+        "bench": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "市ケ谷駅",
+        "network": "千代田区地域福祉交通",
+        "operator": "千代田区",
+        "public_transport": "platform",
+        "shelter": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 2456801012,
+      "name": "市ヶ谷駅前",
+      "lat": 35.6905218,
+      "lon": 139.7357856,
+      "tags": {
+        "bus": "yes",
+        "covered": "no",
+        "highway": "bus_stop",
+        "local_ref": "3",
+        "name": "市ヶ谷駅前",
+        "network": "都営バス",
+        "operator": "東京都交通局",
+        "public_transport": "platform",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 3021593201,
+      "name": "飯田橋駅",
+      "lat": 35.7010327,
+      "lon": 139.7474821,
+      "tags": {
+        "bicycle": "no",
+        "name": "飯田橋駅",
+        "name:en": "Iidabashi Station",
+        "railway": "subway_entrance",
+        "ref": "A5",
+        "source": "image,2014-08;Bing;GSI/KIBAN 2500",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 3021593202,
+      "name": "飯田橋駅前クリニック",
+      "lat": 35.7017658,
+      "lon": 139.745557,
+      "tags": {
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "layer": "3",
+        "level": "3",
+        "name": "飯田橋駅前クリニック",
+        "source": "image,2014-08;Bing;GSI/KIBAN 2500"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 3824263307,
+      "name": "曙橋駅",
+      "lat": 35.6922285,
+      "lon": 139.7218541,
+      "tags": {
+        "name": "曙橋駅",
+        "name:en": "Akebonobashi",
+        "railway": "subway_entrance",
+        "ref": "A1",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 3824263308,
+      "name": "曙橋駅",
+      "lat": 35.6925717,
+      "lon": 139.722032,
+      "tags": {
+        "name": "曙橋駅",
+        "name:en": "Akebonobashi",
+        "railway": "subway_entrance",
+        "ref": "A2",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 3824263309,
+      "name": "曙橋駅",
+      "lat": 35.6925448,
+      "lon": 139.7233489,
+      "tags": {
+        "name": "曙橋駅",
+        "name:en": "Akebonobashi",
+        "railway": "subway_entrance",
+        "ref": "A3",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 3841839236,
+      "name": "市ヶ谷駅",
+      "lat": 35.6916079,
+      "lon": 139.7366762,
+      "tags": {
+        "bus": "yes",
+        "highway": "platform",
+        "name": "市ヶ谷駅",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 4407737498,
+      "name": "神楽坂駅前吉野歯科",
+      "lat": 35.70392,
+      "lon": 139.732887,
+      "tags": {
+        "amenity": "dentist",
+        "healthcare": "dentist",
+        "name": "神楽坂駅前吉野歯科"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 4451218553,
+      "name": "飯田橋駅前",
+      "lat": 35.7015692,
+      "lon": 139.7461138,
+      "tags": {
+        "bus": "yes",
+        "name": "飯田橋駅前",
+        "network": "風ぐるま 富士見・神保町ルート",
+        "public_transport": "stop_position",
+        "ref": "4"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 4451218554,
+      "name": "飯田橋駅前",
+      "lat": 35.7015413,
+      "lon": 139.7460875,
+      "tags": {
+        "bench": "yes",
+        "bin": "no",
+        "bus": "yes",
+        "check_date:bench": "2023-10-01",
+        "covered": "yes",
+        "highway": "bus_stop",
+        "lit": "no",
+        "name": "飯田橋駅前",
+        "network": "風ぐるま 富士見・神保町ルート",
+        "operator": "千代田区コミュニティバス",
+        "public_transport": "platform",
+        "tactile_paving": "no",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 4591829924,
+      "name": "飯田橋駅東口郵便局",
+      "lat": 35.7031146,
+      "lon": 139.7433706,
+      "tags": {
+        "amenity": "post_office",
+        "name": "飯田橋駅東口郵便局",
+        "operator": "日本郵政",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 4967138491,
+      "name": "飯田橋駅周辺案内",
+      "lat": 35.7034083,
+      "lon": 139.74662,
+      "tags": {
+        "information": "map",
+        "name": "飯田橋駅周辺案内",
+        "tourism": "information"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 5421511937,
+      "name": "牛込神楽坂駅前",
+      "lat": 35.7018843,
+      "lon": 139.7376874,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "image": "http://storage4.openstreetcam.org/files/photo/2017/7/8/lth/480165_4f401_4.jpg",
+        "name": "牛込神楽坂駅前",
+        "pole": "yes",
+        "public_transport": "platform",
+        "shelter": "no",
+        "survey:date": "2017-07-08",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 5421511938,
+      "name": "牛込神楽坂駅前",
+      "lat": 35.7016556,
+      "lon": 139.7375786,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "牛込神楽坂駅前",
+        "public_transport": "platform",
+        "shelter": "no",
+        "tactile_paving": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 6265977793,
+      "name": "市ヶ谷駅",
+      "lat": 35.6933168,
+      "lon": 139.7366992,
+      "tags": {
+        "name": "市ヶ谷駅",
+        "name:en": "Ichigaya",
+        "name:es": "Ichigaya",
+        "name:ja": "市ヶ谷駅",
+        "network": "東京メトロ南北線",
+        "operator": "東京メト",
+        "public_transport": "stop_position",
+        "railway": "stop",
+        "ref": "N09",
+        "subway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 6856536038,
+      "name": "ローソン 神楽坂駅北店",
+      "lat": 35.7041798,
+      "lon": 139.7358208,
+      "tags": {
+        "amenity": "bicycle_rental",
+        "authentication:app": "yes",
+        "brand": "Docomo Bike Share",
+        "brand:ja": "ドコモ・バイクシェア",
+        "brand:website": "https://docomo-cycle.jp/",
+        "brand:wikidata": "Q55533296",
+        "capacity": "7",
+        "fee": "yes",
+        "gbfs:name": "D2-14.ローソン 神楽坂駅北店",
+        "gbfs:station_id": "10846",
+        "gbfs:system_id": "docomo-cycle",
+        "name": "ローソン 神楽坂駅北店",
+        "name:en": "Lawson",
+        "name:ja": "ローソン 神楽坂駅北店",
+        "ref": "D2-14"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 10681466205,
+      "name": "兵庫横丁",
+      "lat": 35.7024504,
+      "lon": 139.7398422,
+      "tags": {
+        "addr:block_number": "2",
+        "addr:city": "新宿区",
+        "addr:neighbourhood": "神楽坂四丁目",
+        "addr:postcode": "162-0825",
+        "addr:province": "東京都",
+        "amenity": "restaurant",
+        "fixme": "should be a WAY, not a NODE",
+        "name": "兵庫横丁",
+        "name:en": "Hyōgo Yokochō Alley",
+        "website": "https://tokyo-shinjuku.net/hyogoyokocho/"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 12240857834,
+      "name": "市ヶ谷駅前",
+      "lat": 35.6912432,
+      "lon": 139.7368679,
+      "tags": {
+        "bench": "yes",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "市ヶ谷駅前",
+        "operator": "東京都交通局",
+        "public_transport": "platform",
+        "shelter": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 12240920577,
+      "name": "都営飯田橋駅前",
+      "lat": 35.7039196,
+      "lon": 139.7468165,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "local_ref": "7",
+        "name": "都営飯田橋駅前",
+        "operator": "東京都交通局",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 12669464496,
+      "name": "飯田橋駅前",
+      "lat": 35.7015563,
+      "lon": 139.7460629,
+      "tags": {
+        "bench": "yes",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "local_ref": "5",
+        "name": "飯田橋駅前",
+        "operator": "東京都交通局",
+        "public_transport": "platform",
+        "shelter": "yes",
+        "tactile_paving": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 13190051848,
+      "name": "飯田橋駅東口第2自転車駐車場",
+      "lat": 35.7025753,
+      "lon": 139.7456954,
+      "tags": {
+        "addr:province": "東京都",
+        "amenity": "bicycle_rental",
+        "authentication:app": "yes",
+        "brand": "HELLO CYCLING",
+        "brand:en": "HELLO CYCLING",
+        "brand:ja": "ハローサイクリング",
+        "brand:wikidata": "Q91231927",
+        "capacity": "4",
+        "contact:website": "https://www.hellocycling.jp",
+        "fee": "yes",
+        "gbfs:station_id": "19861",
+        "gbfs:system_id": "hellocycling",
+        "name": "飯田橋駅東口第2自転車駐車場",
+        "name:en": "HELLO CYCLING",
+        "name:ja": "飯田橋駅東口第2自転車駐車場",
+        "network": "HELLO CYCLING",
+        "network:en": "HELLO CYCLING",
+        "network:ja": "ハローサイクリング",
+        "network:wikidata": "Q91231927",
+        "operator": "OpenStreet",
+        "operator:type": "private",
+        "operator:wikidata": "Q43593262"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 25498189,
+      "name": "神楽坂通り",
+      "lat": 35.7020526,
+      "lon": 139.738558,
+      "tags": {
+        "bicycle": "yes",
+        "cycleway:both": "shared_lane",
+        "cycleway:lane": "pictogram",
+        "description": "一方通行 0-12 南向き、12-24 北向き",
+        "description:en": "One-way south 00:00-12:00, north 12:00-24:00",
+        "description:ja": "一方通行 0-12 南向き、12-24 北向き",
+        "highway": "unclassified",
+        "lanes": "1",
+        "lit": "yes",
+        "maxspeed": "30",
+        "motor_vehicle:conditional": "no @ (Mo-Sa 12:00-13:00; Su,PH 12:00-19:00)",
+        "name": "神楽坂通り",
+        "name:en": "Kagurazaka Street",
+        "name:es": "Calle Kagurazaka",
+        "name:fr": "Rue Kagurazaka",
+        "name:ja-Hira": "かぐらざかどおり",
+        "name:ja-Latn": "Kagurazaka-dōri",
+        "oneway": "reversible",
+        "oneway:bicycle": "no",
+        "oneway:conditional": "yes @ (12:00-00:00); -1 @ (00:00-12:00)",
+        "surface": "asphalt",
+        "wikidata": "Q11511533"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 27740520,
+      "name": "神楽坂通り",
+      "lat": 35.701023,
+      "lon": 139.7411766,
+      "tags": {
+        "bicycle": "yes",
+        "description": "一方通行 0-12 南向き、12-24 北向き",
+        "description:en": "One-way south 00:00-12:00, north 12:00-24:00",
+        "highway": "unclassified",
+        "incline": "up",
+        "incline:name": "神楽坂",
+        "incline:name:en": "Kagurazaka",
+        "incline:name:ja-Hira": "かぐらざか",
+        "incline:name:ja-Latn": "Kagurazaka",
+        "lanes": "1",
+        "lit": "yes",
+        "maxspeed": "30",
+        "motor_vehicle:conditional": "no @ (Mo-Sa 12:00-13:00; Su,PH 12:00-19:00)",
+        "name": "神楽坂通り",
+        "name:en": "Kagurazaka Street",
+        "name:es": "Calle Kagurazaka",
+        "name:fr": "Rue Kagurazaka",
+        "name:ja-Hira": "かぐらざかどおり",
+        "name:ja-Latn": "Kagurazaka-dōri",
+        "oneway": "reversible",
+        "oneway:bicycle": "no",
+        "oneway:conditional": "yes @ (12:00-00:00); -1 @ (00:00-12:00)",
+        "surface": "asphalt",
+        "wikidata": "Q11511533"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 92651467,
+      "name": "見番横丁",
+      "lat": 35.7009942,
+      "lon": 139.7402043,
+      "tags": {
+        "highway": "residential",
+        "name": "見番横丁",
+        "name:en": "Kemban Yokocho",
+        "name:es": "Kemban Yokocho",
+        "name:ja_rm": "Kenban Yokochō",
+        "source": "Bing"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 143166745,
+      "name": "飯田橋駅東口",
+      "lat": 35.7020815,
+      "lon": 139.7450783,
+      "tags": {
+        "building": "train_station",
+        "name": "飯田橋駅東口",
+        "source": "Bing,2007-04"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 143183293,
+      "name": "神楽坂通り",
+      "lat": 35.7002935,
+      "lon": 139.7430456,
+      "tags": {
+        "highway": "unclassified",
+        "lanes": "1",
+        "lit": "yes",
+        "maxspeed": "30",
+        "name": "神楽坂通り",
+        "name:en": "Kagurazaka Street",
+        "name:es": "Calle Kagurazaka",
+        "name:fr": "Rue Kagurazaka",
+        "name:ja-Hira": "かぐらざかどおり",
+        "name:ja-Latn": "Kagurazaka-dōri",
+        "note": "一方通行 0-12 南向き、12-24 北向き",
+        "surface": "asphalt",
+        "wikidata": "Q11511533"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 143516722,
+      "name": "赤城神社",
+      "lat": 35.704607,
+      "lon": 139.7360988,
+      "tags": {
+        "addr:block_number": "1",
+        "addr:city": "新宿区",
+        "addr:housenumber": "10",
+        "addr:neighbourhood": "赤城元町",
+        "addr:province": "東京都",
+        "amenity": "place_of_worship",
+        "architect": "隈研吾",
+        "architect:wikidata": "Q725462",
+        "contact:facebook": "akagijinja",
+        "contact:tripadvisor": "2524859",
+        "contact:twitter": "Akagi_Jinja_",
+        "contact:website": "https://www.akagi-jinja.jp/",
+        "name": "赤城神社",
+        "name:da": "Akagi hellighommen",
+        "name:en": "Akagi Shrine",
+        "name:es": "Akagi",
+        "name:fr": "Sanctuaire d'Akagi",
+        "name:ja": "赤城神社",
+        "name:ja-Hira": "あかぎじんじゃ",
+        "name:ja-Latn": "Akagi-jinja",
+        "opening_hours": "Mo-Su 09:00-17:00",
+        "religion": "shinto",
+        "start_date": "1300",
+        "wikidata": "Q11635471",
+        "wikimedia_commons": "Category:Akagi-jinja (Tokyo)",
+        "wikipedia": "ja:赤城神社 (新宿区)"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 144480556,
+      "name": "住友不動産飯田橋駅前ビル",
+      "lat": 35.7019177,
+      "lon": 139.7474553,
+      "tags": {
+        "building": "yes",
+        "name": "住友不動産飯田橋駅前ビル",
+        "source": "Bing 2007-04"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 379075317,
+      "name": "神楽坂通り",
+      "lat": 35.7004257,
+      "lon": 139.7427138,
+      "tags": {
+        "highway": "unclassified",
+        "lanes": "1",
+        "layer": "1",
+        "lit": "yes",
+        "maxspeed": "30",
+        "name": "神楽坂通り",
+        "name:en": "Kagurazaka Street",
+        "name:es": "Calle Kagurazaka",
+        "name:fr": "Rue Kagurazaka",
+        "name:ja-Hira": "かぐらざかどおり",
+        "name:ja-Latn": "Kagurazaka-dōri",
+        "note": "一方通行 0-12 南向き、12-24 北向き",
+        "surface": "asphalt",
+        "wikidata": "Q11511533"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 563366149,
+      "name": "神楽坂通り",
+      "lat": 35.7017359,
+      "lon": 139.7393067,
+      "tags": {
+        "bicycle": "yes",
+        "description": "一方通行 0-12 南向き、12-24 北向き",
+        "description:en": "One-way south 00:00-12:00, north 12:00-24:00",
+        "description:ja": "一方通行 0-12 南向き、12-24 北向き",
+        "highway": "unclassified",
+        "lanes": "1",
+        "lit": "yes",
+        "maxspeed": "30",
+        "motor_vehicle:conditional": "no @ (Mo-Sa 12:00-13:00; Su,PH 12:00-19:00)",
+        "name": "神楽坂通り",
+        "name:en": "Kagurazaka Street",
+        "name:es": "Calle Kagurazaka",
+        "name:fr": "Rue Kagurazaka",
+        "name:ja-Hira": "かぐらざかどおり",
+        "name:ja-Latn": "Kagurazaka-dōri",
+        "oneway": "reversible",
+        "oneway:bicycle": "no",
+        "oneway:conditional": "yes @ (12:00-00:00); -1 @ (00:00-12:00)",
+        "surface": "asphalt",
+        "wikidata": "Q11511533"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 594546211,
+      "name": "外濠公園",
+      "lat": 35.6892117,
+      "lon": 139.7325038,
+      "tags": {
+        "name": "外濠公園",
+        "name:en": "Sotobori Park",
+        "name:es": "Parque Sotobori"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 800551505,
+      "name": "神楽坂駅",
+      "lat": 35.7039197,
+      "lon": 139.7342279,
+      "tags": {
+        "area": "yes",
+        "covered": "yes",
+        "indoor": "area",
+        "layer": "-3",
+        "name": "神楽坂駅",
+        "public_transport": "platform",
+        "railway": "platform",
+        "ref": "1",
+        "subway": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 800551506,
+      "name": "神楽坂駅",
+      "lat": 35.7038541,
+      "lon": 139.7342099,
+      "tags": {
+        "area": "yes",
+        "covered": "yes",
+        "indoor": "area",
+        "layer": "-2",
+        "name": "神楽坂駅",
+        "public_transport": "platform",
+        "railway": "platform",
+        "ref": "2",
+        "subway": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1135742444,
+      "name": "飯田橋駅前タクシー乗り場",
+      "lat": 35.7022784,
+      "lon": 139.7449971,
+      "tags": {
+        "building": "roof",
+        "layer": "1",
+        "name": "飯田橋駅前タクシー乗り場"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1270865653,
+      "name": "善國寺",
+      "lat": 35.7014555,
+      "lon": 139.7394777,
+      "tags": {
+        "addr:block_number": "36",
+        "addr:city": "新宿区",
+        "addr:neighbourhood": "神楽坂五丁目",
+        "addr:province": "東京都",
+        "alt_name": "毘沙門天(善國寺)",
+        "amenity": "place_of_worship",
+        "contact:fax": "+81 3-3269-1129",
+        "contact:phone": "+81 3-3269-0641",
+        "contact:tripadvisor": "1975595",
+        "contact:website": "https://www.kagurazaka-bishamonten.com/",
+        "denomination": "nichiren",
+        "name": "善國寺",
+        "name:da": "Zenkokuji templet",
+        "name:en": "Zenkoku-ji Temple",
+        "name:es": "Zenkoku-ji",
+        "name:fr": "Temple Zenkoku",
+        "name:ja-Hira": "ぜんこくじ",
+        "name:ja-Latn": "Zenkoku-ji",
+        "opening_hours": "Mo-Su 09:00-17:00",
+        "religion": "buddhist",
+        "start_date": "1595",
+        "wikidata": "Q11418909",
+        "wikimedia_commons": "Category:Zenkoku-ji",
+        "wikipedia": "ja:善国寺"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1470182099,
+      "name": "飯田橋駅前交番",
+      "lat": 35.6999411,
+      "lon": 139.7440188,
+      "tags": {
+        "highway": "footway",
+        "layer": "-1",
+        "name": "飯田橋駅前交番"
+      }
+    },
+    {
+      "type": "relation",
+      "osmId": 8246678,
+      "name": "飯田橋駅前",
+      "lat": 35.7016195,
+      "lon": 139.7461296,
+      "tags": {
+        "name": "飯田橋駅前",
+        "name:en": "Iidabashi Eki Mae",
+        "public_transport": "stop_area",
+        "type": "public_transport"
+      }
+    },
+    {
+      "type": "relation",
+      "osmId": 9443875,
+      "name": "都営バス飯64系統 小滝橋車庫⇒飯田橋駅⇒九段下（循環）",
+      "lat": 35.7045983,
+      "lon": 139.7230619,
+      "tags": {
+        "from": "小滝橋車庫前",
+        "name": "都営バス飯64系統 小滝橋車庫⇒飯田橋駅⇒九段下（循環）",
+        "network": "都営バス",
+        "network:en": "Toei Bus",
+        "network:ja": "都営バス",
+        "network:wikidata": "Q859227",
+        "network:wikipedia": "ja:都営バス",
+        "note": "See http://toeibus.com/archives/983",
+        "operator": "東京都交通局",
+        "public_transport:version": "2",
+        "ref": "飯64",
+        "route": "bus",
+        "to": "小滝橋車庫前",
+        "type": "route",
+        "via": "九段下"
+      }
+    },
+    {
+      "type": "relation",
+      "osmId": 9443877,
+      "name": "都営バス飯62系統 小滝橋車庫⇒国立国際医療センター⇒都営飯田橋駅",
+      "lat": 35.704699,
+      "lon": 139.7199885,
+      "tags": {
+        "from": "小滝橋車庫前",
+        "name": "都営バス飯62系統 小滝橋車庫⇒国立国際医療センター⇒都営飯田橋駅",
+        "network": "都営バス",
+        "network:en": "Toei Bus",
+        "network:ja": "都営バス",
+        "network:wikidata": "Q859227",
+        "operator": "東京都交通局",
+        "public_transport:version": "2",
+        "ref": "飯62",
+        "route": "bus",
+        "to": "都営飯田橋駅前",
+        "type": "route"
+      }
+    },
+    {
+      "type": "relation",
+      "osmId": 11788287,
+      "name": "都営バス飯62系統 都営飯田橋駅⇒国立国際医療センター⇒小滝橋車庫",
+      "lat": 35.7046364,
+      "lon": 139.7202811,
+      "tags": {
+        "from": "都営飯田橋駅前",
+        "name": "都営バス飯62系統 都営飯田橋駅⇒国立国際医療センター⇒小滝橋車庫",
+        "network": "都営バス",
+        "network:en": "Toei Bus",
+        "network:ja": "都営バス",
+        "network:wikidata": "Q859227",
+        "operator": "東京都交通局",
+        "public_transport:version": "2",
+        "ref": "飯62",
+        "route": "bus",
+        "to": "小滝橋車庫前",
+        "type": "route"
+      }
+    },
+    {
+      "type": "relation",
+      "osmId": 17416865,
+      "name": "外濠公園",
+      "lat": 35.6905631,
+      "lon": 139.7348278,
+      "tags": {
+        "contact:tripadvisor": "3634787",
+        "fee": "no",
+        "leisure": "park",
+        "name": "外濠公園",
+        "name:en": "Sotobori Park",
+        "name:es": "Parque Sotobori",
+        "name:etymology:wikidata": "Q11430499",
+        "name:etymology:wikipedia": "ja:外濠 (東京都)",
+        "name:fr": "Parc Sotobori",
+        "name:ja-Hira": "そとぼりこうえん",
+        "name:ja-Latn": "Sotobori-kōen",
+        "opening_hours": "24/7",
+        "start_date": "1927-08-31",
+        "type": "multipolygon",
+        "wikidata": "Q11430498",
+        "wikimedia_commons": "Category:Sotobori Park",
+        "wikipedia": "ja:外濠公園"
+      }
+    }
+  ]
+}

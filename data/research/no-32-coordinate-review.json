@@ -1,0 +1,22 @@
+{
+  "courseId": "No.32",
+  "checkedAt": "2026-11-12",
+  "status": "legacy_waypoints_need_replacement",
+  "source": "OpenStreetMap named features via bounded Overpass query, stored in data/research/no-32-osm-poi.json",
+  "method": "Great-circle distance between old course coordinates and named OSM feature points or area centres. These distances screen mismatches and do not validate pedestrian entrances.",
+  "matches": [
+    { "legacyWaypointIndex": 0, "feature": "飯田橋駅東口", "osmType": "node", "osmId": 1579304711, "offsetM": 59, "decision": "候補。JR西口との違いと駅出口を確認" },
+    { "legacyWaypointIndex": 1, "feature": "兵庫横丁", "osmType": "node", "osmId": 10681466205, "offsetM": 95, "decision": "候補点は飲食店。路地自体の入口・通行線を別に特定" },
+    { "legacyWaypointIndex": 2, "feature": "善國寺", "osmType": "way", "osmId": 1270865653, "offsetM": 286, "decision": "旧点は境内中心から離れる。神社との混合ラベルを分割" },
+    { "legacyWaypointIndex": 2, "feature": "赤城神社", "osmType": "way", "osmId": 143516722, "offsetM": 271, "decision": "善國寺と別地点。旧1点で双方を表現できない" },
+    { "legacyWaypointIndex": 3, "feature": "宮城道雄記念館", "osmType": "node", "osmId": 1420775065, "offsetM": 218, "decision": "旧点を置換候補。入口・開館条件を別途確認" },
+    { "legacyWaypointIndex": 4, "feature": "曙橋駅", "osmType": "node", "osmId": 1916873021, "offsetM": 58, "decision": "地下鉄出口候補。外濠公園の地点は旧経由点に無い" }
+  ],
+  "blockingFindings": [
+    "旧経路説明は善國寺と赤城神社を同じ経由点としているが、別の施設である",
+    "旧経路説明に外濠公園がある一方、旧経由点には公園内の地点がない",
+    "兵庫横丁の検索一致は飲食店の点で、路地入口の証明ではない",
+    "旧経由点を使う単純な再計算では新しいA/Bの品質を保証できない"
+  ],
+  "nextStep": "公式地図とOSM徒歩道を重ねて路地入口と公園入口を選び、A/Bの駅間構成を決める"
+}

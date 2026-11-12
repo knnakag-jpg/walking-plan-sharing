@@ -184,6 +184,7 @@ for (const filename of fs.readdirSync(curatedRoot).filter((name) => name.endsWit
         distanceM: result.distanceM, engineDistanceM: result.engineDistanceM,
         repeatedGeometryPct: result.repeatedGeometryPct,
         routeReason: curated.routeReasons[variant],
+        distanceException: curated.distanceExceptions?.[variant] || null,
         waypoints: result.waypoints.map((waypoint, index) => ({ index, id: waypoint.id, label: waypoint.label, point: [waypoint.coord[1], waypoint.coord[0]], source: waypoint.source })),
         engine: 'valhalla-pedestrian', built: JSON.parse(fs.readFileSync(path.join(root, result.geometryUrl), 'utf8')).properties.calculatedAt,
       };

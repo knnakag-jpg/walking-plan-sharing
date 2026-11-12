@@ -1,0 +1,27 @@
+{
+  "courseId": "No.12",
+  "reviewedAt": "2026-11-12",
+  "source": "data/research/no-12-geocoding.json; data/research/no-12-osm-poi.json; data/research/no-12-osm-poi-extended.json",
+  "status": "routed_candidates_with_unverified_entrances",
+  "note": "Nominatimの誤一致を採用せず、地域を限定したOSM検索で施設・入園口を再照合してA/Bの計算候補を作成。駅出口、庭園入口、池畔の園路、料金ゲートは地図・現地レビュー待ち。",
+  "points": {
+    "tachikawa_station": "Nominatimの立会川商店街は不採用。OSMの立川駅に再照合。使う出口は未確認。",
+    "faret": "Nominatimの道路候補は不採用。OSMのファーレ立川センタースクエアに再照合。作品位置は未確認。",
+    "green_springs": "施設の地点候補。歩行入口と館内動線は未確認。",
+    "akebono_gate": "OSMで入口を確認したが今回の計算経路には入れず、立川口を選択。",
+    "tachikawa_gate": "Nominatimの駅南口駐輪場は不採用。OSMのentrance=yesの立川口に再照合。ゲートの歩行通行は未確認。",
+    "fureai": "ふれあい広場レストラン付近。広場の正確な鑑賞地点ではない。",
+    "waterfowl_pond": "OSMの池の中心点。池畔の歩道とのずれを要レビュー。",
+    "japanese_garden": "OSMの日本庭園の中心点。入口の位置を要レビュー。",
+    "nishitachikawa_gate": "Nominatimの駅南口駐輪場は不採用。OSMのentrance=yesの西立川口に再照合。",
+    "nishitachikawa_station": "西立川駅付近。駅の出入口は未確認。",
+    "sunagawa_gate": "OSMの砂川口付近。ゲート通行を要レビュー。",
+    "musashisunagawa_station": "OSMと他の地図の駅位置は概ね整合。使う出入口は未確認。"
+  },
+  "officialSources": [
+    "https://www.city.tachikawa.lg.jp/kanko/bunka/1003079/1003104/1003119.html",
+    "https://www.showakinen-koen.jp/park-information/faq/",
+    "https://www.showakinen-koen.jp/access/",
+    "https://greensprings.jp/floor/"
+  ]
+}

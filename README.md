@@ -9,7 +9,8 @@
 | 新 UI | Discover、地図検索、最大 3 件の比較、当日画面、ライト／ダーク、保存、キーボード操作を実装。画面表示の実機確認は未実施 |
 | 旧 97 コース | ID・旧アンカー・原ページを保持して構造化。旧経路 GeoJSON を個別ファイルで収録。景観・安全・現地の再検証は未完了 |
 | 清澄白河 No.47 | A 5.91 km、B 7.75 km を徒歩ルーターで計算し収録。C は屋外徒歩・館内・鉄道を分けた調査案。A/B の地図レビュー、出入口確認、現地確認は未完了 |
-| その他の A/B/C | 再構築待ち。旧経路を A/B/C と読み替えない |
+| 立川 No.12 | A 3.94 km、B 7.59 km を徒歩ルーターで計算し収録。Aは距離合わせの往復を除いた理由付き例外。Cは施設の調査案。公園内の園路・入園口・施設開館を要レビュー |
+| その他の A/B/C | 95件は再構築待ち。旧経路を A/B/C と読み替えない |
 
 数値は経路形状から算出した計算値です。GPS 実測値ではありません。旧ルートは徒歩道路上の計算形状ですが、そのまま現地で安全に歩けると確認したものではありません。
 
@@ -24,19 +25,21 @@ node scripts/preview.mjs 8765
 ```powershell
 node scripts/build-atlas-data.mjs
 node scripts/package-atlas.mjs
+node scripts/build-rebuild-worklist.mjs
 node scripts/verify-atlas.mjs
 node --check atlas/assets/app.js
 ```
 
-`verify-atlas` は 97 件の保持、旧アンカー、GeoJSON の形式と距離、No.47 A/B の距離帯、雨天案の区間分離を検査します。道路エッジ同定、歩道・入口・通行止め、景観品質、モバイル実機操作は検査しません。
+`verify-atlas` は 97 件の保持、再構築台帳と表示用データの一致、旧アンカー、GeoJSON の形式と距離、再構築したA/Bの距離帯または例外理由、雨天案の区間分離を検査します。道路エッジ同定、歩道・入口・通行止め、景観品質、モバイル実機操作は検査しません。
 
 ## データの場所
 
 - `data/catalog.json`: コースと経路の表示用正本。`scripts/build-atlas-data.mjs` から生成。`scripts/package-atlas.mjs` が公開用の `atlas/data/` にコピー。
-- `data/routes/*.geojson`: 97 件の旧経路と No.47 の A/B 計算経路。
+- `data/routes/*.geojson`: 97 件の旧経路と No.47・No.12 の A/B 計算経路。
 - `data/route-audit.json`: 全旧経路の自動監査。形状上の重複などはレビューの手掛かりで、道路エッジの重複判定ではありません。
-- `data/curated/no-47.json`: No.47 の説明、景観候補、出典、未確認事項、C 案。
-- `data/research/`: No.47 の地点照合と経路計算記録。
+- `data/curated/`: 再構築中のコースの説明、景観候補、出典、未確認事項、C 案。
+- `data/research/`: 地点照合と経路計算記録。検索の誤一致と棄却理由も保存。
+- `data/rebuild-worklist.json`: 旧97件の再構築台帳。`node scripts/build-rebuild-worklist.mjs` で生成。
 - `index.html`: 新ページ導入前の原ページで、公開中の先行ページ。
 - `tools/`: 元の 97 件の経由点・経路計算・標高ツール。移行元として保持。
 
@@ -46,7 +49,7 @@ node --check atlas/assets/app.js
 
 97 件中 73 件に一つ以上の自動レビュー項目があります。52 件は丸めた経路形状で同一区間の反復が 10% を超え、55 件は経由点の再訪、28 件は経由点が計算形状から 40 m を超えて離れます。これらは重複する集計です。個別結果は `data/route-audit.json` にあります。
 
-次の作業は、清澄白河 No.47 の地図レビューと入口・横断の確認、神楽坂・外濠および柿の木坂・碑文谷の資料調査と A/B/C 試作です。代表 3 コースで品質手順を確立してから残りを展開します。現地確認は実際に歩いた記録が得られるまで `field_verified` にしません。
+次の作業は、No.47とNo.12の地図レビューと入口・横断の確認、神楽坂・外濠および柿の木坂・碑文谷の資料調査と A/B/C 試作です。全件の作業状況は `design-review/All-Routes-Rebuild-Status.md` に記録します。現地確認は実際に歩いた記録が得られるまで `field_verified` にしません。
 
 ## 制約
 
