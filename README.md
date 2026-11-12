@@ -2,6 +2,8 @@
 
 散歩先を発見・比較し、当日も参照できる静的サイトです。先行ページはルートの `index.html` のまま保持し、PC とスマートフォン向けの姉妹ページを `atlas/index.html` に置いています。GitHub Pages の公開先は `/walking-plan-sharing/atlas/` です。
 
+これまでの判断、公開履歴、未確認事項と再開手順は [作業ジャーナル](design-review/Walking-Atlas-Work-Journal.md) に記録しています。
+
 ## 現在の到達点
 
 | 対象 | 状態 |
