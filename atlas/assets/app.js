@@ -1,3 +1,5 @@
+import { routeDistances, playbackStops, partialRoute } from './route-playback.mjs';
+
 const $ = (selector) => document.querySelector(selector);
 const $$ = (selector) => [...document.querySelectorAll(selector)];
 const escapeHtml = (value) => String(value ?? '').replace(/[&<>"']/g, (ch) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[ch]);
@@ -5,12 +7,13 @@ const km = (meters) => `${(meters / 1000).toFixed(1)} km`;
 const distanceLabel = (route) => Number.isFinite(route?.distanceM) ? km(route.distanceM) : '距離未確定';
 const routeDistanceLabel = (course, route) => course?.publicWarning && route?.variant === 'legacy' ? '未確定（旧線の計算値は無効）' : distanceLabel(route);
 const routeDistanceBasis = (course, route) => course?.publicWarning && route?.variant === 'legacy' ? '旧線は徒歩距離として無効' : route.geometryUrl ? '経路形状から計算' : '未計測';
+const retraceText = (course, route) => route?.variant === 'legacy' && course?.retraceReview ? `旧計算線に約${course.retraceReview.repeatedGeometryM} mの反復候補があります。一筆書きの新経路を再設計中です。` : '';
 const variantLabel = (variant) => ({ standard: 'A 標準', extended: 'B 延長', rainy: 'C 雨天', legacy: '旧経路' })[variant] || variant;
 const statusText = (status) => ({ idea: 'アイデア', researched: '資料調査済み', routed: '経路計算済み・再調査待ち', map_reviewed: '地図レビュー済み', field_verified: '現地確認済み' })[status] || '確認状態不明';
 const localKey = { favorites: 'walking-atlas-favorites-v1', compare: 'walking-atlas-compare-v1', theme: 'walking-atlas-theme-v1', walk: 'walking-atlas-walk-v1' };
 const saved = (key, fallback) => { try { return JSON.parse(localStorage.getItem(key)) ?? fallback; } catch { return fallback; } };
 const save = (key, value) => { try { localStorage.setItem(key, JSON.stringify(value)); } catch { /* private mode still supports in-memory use */ } };
-const state = { courses: [], byId: new Map(), view: 'discover', selectedId: null, variantById: {}, feature: null, routeCache: new Map(), map: null, routeLayer: null, markerLayer: null, locationLayer: null, routeAnimations: [], showMarkers: true, routeRequest: 0, favorites: new Set(saved(localKey.favorites, [])), comparison: saved(localKey.compare, []), walkProgress: saved(localKey.walk, {}), profile: 'solo', theme: saved(localKey.theme, 'light'), search: '', series: 'all', distance: 'all', favoritesOnly: false };
+const state = { courses: [], byId: new Map(), view: 'discover', selectedId: null, variantById: {}, feature: null, routeCache: new Map(), map: null, routeLayer: null, markerLayer: null, locationLayer: null, playback: null, showMarkers: true, routeRequest: 0, favorites: new Set(saved(localKey.favorites, [])), comparison: saved(localKey.compare, []), walkProgress: saved(localKey.walk, {}), profile: 'solo', theme: saved(localKey.theme, 'light'), search: '', series: 'all', distance: 'all', favoritesOnly: false };
 const activeRoute = (course) => course?.routeOptions?.find((route) => route.variant === (state.variantById[course.id] || course.defaultVariant)) || course?.route;
 const routeWaypoints = (course, route) => route?.waypoints || course.waypoints;
 
@@ -34,7 +37,7 @@ function renderList() {
   const courses = visibleCourses();
   $('#result-count').textContent = `${courses.length} 件の候補`;
   $('#active-filter-count').textContent = [state.search, state.series !== 'all', state.distance !== 'all', state.favoritesOnly].filter(Boolean).length ? '・適用中' : '';
-  $('#course-list').innerHTML = courses.length ? courses.map((course) => { const route = activeRoute(course); return `<button type="button" class="course-card ${course.id === state.selectedId ? 'selected' : ''}" data-select="${escapeHtml(course.id)}" aria-pressed="${course.id === state.selectedId}"><span class="card-badge">${escapeHtml(variantLabel(route.variant))}${course.publicWarning ? '・要再設計' : ''}</span><h3>${escapeHtml(course.title)}</h3><div class="card-meta"><span class="distance-pill">徒歩 ${routeDistanceLabel(course, route)}</span><span>${escapeHtml(course.seriesName)}</span></div><p>${escapeHtml(course.summary)}</p></button>`; }).join('') : '<div class="empty-state">条件に合う候補はありません。絞り込みを変えてください。</div>';
+  $('#course-list').innerHTML = courses.length ? courses.map((course) => { const route = activeRoute(course); return `<button type="button" class="course-card ${course.id === state.selectedId ? 'selected' : ''}" data-select="${escapeHtml(course.id)}" aria-pressed="${course.id === state.selectedId}"><span class="card-badge">${escapeHtml(variantLabel(route.variant))}${course.publicWarning || retraceText(course, route) ? '・要再設計' : ''}</span><h3>${escapeHtml(course.title)}</h3><div class="card-meta"><span class="distance-pill">徒歩 ${routeDistanceLabel(course, route)}</span><span>${escapeHtml(course.seriesName)}</span></div><p>${escapeHtml(course.summary)}</p></button>`; }).join('') : '<div class="empty-state">条件に合う候補はありません。絞り込みを変えてください。</div>';
 }
 
 function renderFeatured() {
@@ -51,10 +54,13 @@ function renderSelected() {
   if (!course) return;
   const route = activeRoute(course);
   $('#selected-title').textContent = course.title;
+  $('#replay-route').disabled = !route.geometryUrl;
+  $('#show-route-now').disabled = !route.geometryUrl;
   $('#variant-switch').innerHTML = course.routeOptions ? `${course.routeOptions.map((option) => `<button type="button" data-variant="${escapeHtml(option.variant)}" class="${option.variant === route.variant ? 'active' : ''}" aria-pressed="${option.variant === route.variant}">${escapeHtml(variantLabel(option.variant))}</button>`).join('')}<span class="variant-hint">A/Bは地図・現地レビュー待ち</span>` : '<span class="variant-hint">旧経路のみ・A/B/Cは再構築待ち</span>';
   $('#map-legend').innerHTML = route.variant === 'legacy' ? '<span><i class="legend-line legacy"></i>旧経路・再調査待ち</span><span><i class="legend-dot"></i>旧資料の経由点</span><span>旧計算線・徒歩距離は要確認</span>' : `<span>${escapeHtml(variantLabel(route.variant))}・${escapeHtml(statusText(route.verificationStatus))}</span><span>${route.geometryUrl ? '道路に沿う計算形状・現地未確認' : '徒歩線は未生成'}</span>`;
   const profileNote = state.profile === 'group' ? '歩行会：集合・解散、坂、休憩、トイレ、途中離脱の評価は未完了。' : '個人散歩：豊田駅からのアクセスと中央線への帰路は未調査。';
   $('#selected-summary').innerHTML = `<h2>${escapeHtml(course.title)}</h2><p>${escapeHtml(route.routeReason || course.summary)}</p>${course.publicWarning ? `<p class="walk-warning">${escapeHtml(course.publicWarning)}</p>` : ''}<div class="selected-meta"><span class="status-label">${statusText(route.verificationStatus)}</span><span class="card-meta">徒歩 ${routeDistanceLabel(course, route)} ${routeDistanceBasis(course, route)}</span></div><p class="profile-note">${profileNote}</p><div class="selected-actions"><button type="button" data-action="detail" data-id="${escapeHtml(course.id)}">道の詳細</button><button type="button" data-action="favorite" data-id="${escapeHtml(course.id)}" aria-pressed="${state.favorites.has(course.id)}">${state.favorites.has(course.id) ? '保存済み ♥' : '保存 ♡'}</button><button type="button" data-action="compare" data-id="${escapeHtml(course.id)}" aria-pressed="${state.comparison.includes(course.id)}">${state.comparison.includes(course.id) ? '比較に追加済み' : '比較に追加 ＋'}</button><button type="button" data-action="walk" data-id="${escapeHtml(course.id)}">当日画面</button></div>`;
+  if (retraceText(course, route)) $('#selected-summary').querySelector('.selected-meta').insertAdjacentHTML('beforebegin', `<p class="walk-warning">${escapeHtml(retraceText(course, route))}</p>`);
 }
 
 function initMap() {
@@ -82,29 +88,68 @@ async function featureFor(route) {
   return feature;
 }
 
-function stopRouteAnimation() {
-  state.routeAnimations.forEach((animation) => { try { animation.finish(); } catch { animation.cancel(); } });
-  state.routeAnimations = [];
+function checkpointContent(label, description, number, total) {
+  return `<div class="checkpoint-popup"><strong>${escapeHtml(label)}</strong><p>${escapeHtml(description)}</p><small>チェックポイント ${number} / ${total}・計算線上の目安</small></div>`;
 }
-
+function stopRouteAnimation() {
+  const playback = state.playback;
+  if (!playback) return;
+  cancelAnimationFrame(playback.frame);
+  playback.base?.eachLayer((layer) => layer.setStyle({ opacity: .92 }));
+  if (playback.overlay) state.routeLayer.removeLayer(playback.overlay);
+  state.map?.closePopup();
+  state.playback = null;
+  $('#replay-route').setAttribute('aria-pressed', 'false');
+}
 function animateRoute() {
   stopRouteAnimation();
-  if (!state.map || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-  requestAnimationFrame(() => requestAnimationFrame(() => {
-    state.routeLayer.eachLayer((group) => group.eachLayer?.((layer) => {
-      const path = layer._path;
-      if (!path?.getTotalLength || !path.animate) return;
-      const length = path.getTotalLength();
-      if (!Number.isFinite(length) || length <= 0) return;
-      state.routeAnimations.push(path.animate([
-        { strokeDasharray: `${length} ${length}`, strokeDashoffset: length },
-        { strokeDasharray: `${length} ${length}`, strokeDashoffset: 0 },
-      ], { duration: 1050, easing: 'ease-in-out', fill: 'none' }));
-    }));
-  }));
+  if (!state.map || !state.feature?.geometry?.coordinates?.length || state.view !== 'explore') return;
+  const course = state.byId.get(state.selectedId); const route = activeRoute(course);
+  const coordinates = state.feature.geometry.coordinates;
+  const cumulative = routeDistances(coordinates); const totalM = cumulative.at(-1);
+  if (!Number.isFinite(totalM) || totalM <= 0) return;
+  const stops = playbackStops(routeWaypoints(course, route), coordinates, cumulative);
+  const skippedStops = routeWaypoints(course, route).length - stops.length;
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    $('#map-status').textContent = '動きを減らす設定のため経路を即時表示しています。地点を選ぶと説明を読めます。';
+    return;
+  }
+  const base = state.routeLayer.getLayers()[0];
+  base?.eachLayer((layer) => layer.setStyle({ opacity: .22 }));
+  const overlay = L.polyline([[coordinates[0][1], coordinates[0][0]]], { color: route.variant === 'extended' ? '#b65d3e' : '#315f50', weight: 6, opacity: 1, lineCap: 'round', interactive: false }).addTo(state.routeLayer);
+  const playback = { base, overlay, frame: null };
+  state.playback = playback;
+  $('#replay-route').setAttribute('aria-pressed', 'true');
+  const speedMperMs = totalM / Math.max(9000, Math.min(20000, totalM / 450 * 1000));
+  let progressM = 0; let previousTime = null; let nextStop = 0; let pauseUntil = 0;
+  const tick = (time) => {
+    if (state.playback !== playback) return;
+    const elapsed = previousTime == null ? 0 : Math.min(100, time - previousTime);
+    previousTime = time;
+    if (pauseUntil) {
+      if (time >= pauseUntil) { state.map.closePopup(); pauseUntil = 0; }
+    } else {
+      progressM = Math.min(totalM, progressM + elapsed * speedMperMs);
+      if (stops[nextStop] && progressM >= stops[nextStop].atM) {
+        const stop = stops[nextStop]; progressM = stop.atM;
+        L.popup({ autoClose: true, closeButton: false, className: 'checkpoint-bubble', offset: [0, -12] }).setLatLng([stop.point[1], stop.point[0]]).setContent(checkpointContent(stop.label, stop.description, nextStop + 1, stops.length)).openOn(state.map);
+        $('#map-status').textContent = `${nextStop + 1}/${stops.length} ${stop.label}・経路プレビュー`;
+        pauseUntil = time + 2200; nextStop++;
+      }
+      overlay.setLatLngs(partialRoute(coordinates, cumulative, progressM));
+      if (progressM >= totalM && nextStop >= stops.length) {
+        stopRouteAnimation();
+        $('#map-status').textContent = `${variantLabel(route.variant)}の再生が終わりました。${skippedStops ? `${skippedStops}地点は計算線とのずれで再生対象外。` : ''}現地の道順は未確認です。`;
+        return;
+      }
+    }
+    playback.frame = requestAnimationFrame(tick);
+  };
+  $('#map-status').textContent = `${variantLabel(route.variant)}を再生中・${stops.length}地点で説明します${skippedStops ? `（${skippedStops}地点は線から離れています）` : ''}`;
+  playback.frame = requestAnimationFrame(tick);
 }
 
-function drawFeature(course, route, feature, { fit = true, animate = true } = {}) {
+function drawFeature(course, route, feature, { fit = true } = {}) {
   if (!state.map) return;
   stopRouteAnimation();
   state.routeLayer.clearLayers();
@@ -115,18 +160,20 @@ function drawFeature(course, route, feature, { fit = true, animate = true } = {}
   if (state.showMarkers) waypoints.forEach((waypoint, index) => {
     const last = index === waypoints.length - 1;
     const marker = L.circleMarker([waypoint.point[1], waypoint.point[0]], { radius: index === 0 || last ? 7 : 5, color: '#fff', weight: 2, fillColor: index === 0 ? '#246c55' : last ? '#bf795e' : '#516c64', fillOpacity: 1 });
-    marker.bindTooltip(waypoint.label || (index === 0 ? '旧経路の起点' : last ? '旧経路の終点' : `旧資料の経由点 ${index + 1}`));
+    const label = waypoint.label || (index === 0 ? '旧経路の起点' : last ? '旧経路の終点' : `旧資料の経由点 ${index + 1}`);
+    marker.bindTooltip(label);
+    marker.bindPopup(checkpointContent(label, waypoint.description || (waypoint.label ? 'この地点付近を通る計算経路です。施設の入口と通行条件は未確認です。' : '旧資料の経由点です。地点名と施設入口は再調査中です。'), index + 1, waypoints.length));
     marker.addTo(state.markerLayer);
   });
   state.map.invalidateSize();
   const bounds = geo.getBounds();
   if (fit && bounds.isValid()) state.map.fitBounds(bounds.pad(.17), { animate: !matchMedia('(prefers-reduced-motion: reduce)').matches, maxZoom: 15 });
-  if (animate) animateRoute();
 }
 
 async function selectCourse(id, { updateHash = true } = {}) {
   const course = state.byId.get(id);
   if (!course) return;
+  stopRouteAnimation();
   const route = activeRoute(course);
   state.selectedId = id;
   renderList(); renderSelected();
@@ -149,6 +196,7 @@ async function selectCourse(id, { updateHash = true } = {}) {
 
 function showView(view, { updateHash = true } = {}) {
   if (!['discover', 'explore', 'compare', 'walk'].includes(view)) return;
+  if (view !== 'explore') stopRouteAnimation();
   state.view = view;
   $$('.view').forEach((section) => { section.hidden = section.id !== `view-${view}`; });
   $$('[data-view]').forEach((button) => { button.classList.toggle('is-active', button.dataset.view === view); if (button.tagName === 'BUTTON') button.setAttribute('aria-current', button.dataset.view === view ? 'page' : 'false'); });
@@ -182,10 +230,12 @@ function openDetail(id) {
   const segments = route.segments?.length ? `<h3>雨天時の区間</h3><ol class="detail-segments">${route.segments.map((leg) => `<li><strong>${escapeHtml(leg.from)} → ${escapeHtml(leg.to)}</strong><br>${escapeHtml(({ walk_outdoor: '屋外徒歩', walk_indoor: '屋内徒歩', rail: '鉄道' })[leg.kind] || leg.kind)} ／ ${escapeHtml(leg.note)}</li>`).join('')}</ol><p>${escapeHtml((route.conditions || []).join(' '))}</p>` : '';
   const sources = course.evidence?.length ? `<h3>調査資料</h3><ul class="detail-sources">${course.evidence.map((item) => `<li><a href="${escapeHtml(item.url)}" target="_blank" rel="noopener">${escapeHtml(item.title)}</a><br><small>${escapeHtml(item.supports)} ／ 確認 ${escapeHtml(item.checkedAt)}</small></li>`).join('')}</ul>` : '<p>資料出典は未整理です。</p>';
   const scenic = ['standard', 'extended'].includes(route.variant) && course.scenicSegments?.length ? `<h3>景観区間の候補</h3><ul class="detail-sources">${course.scenicSegments.map((item) => `<li><strong>${escapeHtml(item.name)}</strong>：${escapeHtml(item.theme)}<br><small>${escapeHtml(item.direction)} ／ ${escapeHtml(item.reviewStatus)} ／ 根拠：${escapeHtml(item.evidenceTitle)}</small></li>`).join('')}</ul>` : '';
+  const screening = route.geometryScreening ? `<h3>計算線の点検メモ</h3><p>保存済み形状の同じ辺を照合した結果、約${escapeHtml(route.geometryScreening.repeatedGeometryM)} mの反復候補があります。道路の同一性や通行可能性は未確認です。</p><ul class="detail-sources">${route.geometryScreening.findings.map((item) => `<li>${escapeHtml(item.note)}<br><small>形状上の反復 約${escapeHtml(item.repeatedM)} m ／ 起点座標 ${escapeHtml(item.point.join(', '))}</small></li>`).join('')}</ul><p>地図レビュー待ち：${escapeHtml(route.geometryScreening.openChecks.join('、'))}。</p>` : '';
   const unresolved = course.openQuestions?.length ? `<h3>未確認事項</h3><ul class="detail-sources">${course.openQuestions.map((item) => `<li>${escapeHtml(item)}</li>`).join('')}</ul>` : '';
   const variantButtons = course.routeOptions ? course.routeOptions.map((option) => `<button type="button" class="variant-chip ${route.variant === option.variant ? 'active' : ''}" data-variant="${escapeHtml(option.variant)}">${escapeHtml(variantLabel(option.variant))}</button>`).join('') : '<span class="variant-chip active">旧経路</span><span class="variant-chip unavailable">A/B/C 再構築待ち</span>';
-  $('#detail-content').innerHTML = `<h2 id="detail-title">${escapeHtml(course.title)}</h2><div class="selected-meta"><span class="status-label">${statusText(route.verificationStatus)}</span><span class="card-meta">${escapeHtml(variantLabel(route.variant))} ／ 旧資料 ${escapeHtml(course.id)}</span></div><p>${escapeHtml(course.summary)}</p><div class="detail-grid"><div class="detail-box"><strong>徒歩距離</strong>${routeDistanceLabel(course, route)}（${routeDistanceBasis(course, route)}）${route.variant === 'legacy' ? `<br>旧カードの目標 ${km(route.targetDistanceM)}` : ''}</div><div class="detail-box"><strong>道路の重複</strong>${Number.isFinite(route.repeatedGeometryPct) ? `${route.repeatedGeometryPct}%（形状上の候補値）` : '道路エッジ照合待ち'}</div><div class="detail-box"><strong>個人散歩</strong>豊田駅からの鉄道アクセス・東京駅経由の帰宅は未調査</div><div class="detail-box"><strong>歩行会</strong>休憩・トイレ・段差・途中離脱は再確認が必要</div></div><h3>経路の種類</h3><div class="variant-row">${variantButtons}</div><h3>この道を選ぶ理由</h3><p class="detail-route-text">${escapeHtml(routeNote || '経路選定理由は未整理です。')}</p>${scenic}${segments}<h3>確認状態</h3><p>計算経路と資料調査の段階です。出入口、通行の安全性、現地での距離は未確認です。${route.variant === 'legacy' ? escapeHtml(flags) : '地図レビューと現地確認が必要です。'}</p>${unresolved}${sources}<p><a href="${escapeHtml(course.legacyUrl)}">旧ページの原資料を見る ↗</a></p>`;
+  $('#detail-content').innerHTML = `<h2 id="detail-title">${escapeHtml(course.title)}</h2><div class="selected-meta"><span class="status-label">${statusText(route.verificationStatus)}</span><span class="card-meta">${escapeHtml(variantLabel(route.variant))} ／ 旧資料 ${escapeHtml(course.id)}</span></div><p>${escapeHtml(course.summary)}</p><div class="detail-grid"><div class="detail-box"><strong>徒歩距離</strong>${routeDistanceLabel(course, route)}（${routeDistanceBasis(course, route)}）${route.variant === 'legacy' ? `<br>旧カードの目標 ${km(route.targetDistanceM)}` : ''}</div><div class="detail-box"><strong>道路の重複</strong>${Number.isFinite(route.repeatedGeometryPct) ? `${route.repeatedGeometryPct}%（形状上の候補値）` : '道路エッジ照合待ち'}</div><div class="detail-box"><strong>個人散歩</strong>豊田駅からの鉄道アクセス・東京駅経由の帰宅は未調査</div><div class="detail-box"><strong>歩行会</strong>休憩・トイレ・段差・途中離脱は再確認が必要</div></div><h3>経路の種類</h3><div class="variant-row">${variantButtons}</div><h3>この道を選ぶ理由</h3><p class="detail-route-text">${escapeHtml(routeNote || '経路選定理由は未整理です。')}</p>${scenic}${screening}${segments}<h3>確認状態</h3><p>計算経路と資料調査の段階です。出入口、通行の安全性、現地での距離は未確認です。${route.variant === 'legacy' ? escapeHtml(flags) : '地図レビューと現地確認が必要です。'}</p>${unresolved}${sources}<p><a href="${escapeHtml(course.legacyUrl)}">旧ページの原資料を見る ↗</a></p>`;
   if (course.publicWarning) $('#detail-content').querySelector('.selected-meta').insertAdjacentHTML('afterend', `<p class="walk-warning">${escapeHtml(course.publicWarning)}</p>`);
+  if (retraceText(course, route)) $('#detail-content').querySelector('.selected-meta').insertAdjacentHTML('afterend', `<p class="walk-warning">${escapeHtml(retraceText(course, route))}</p>`);
   const dialog = $('#detail-dialog');
   if (!dialog.open) dialog.showModal();
 }
@@ -207,6 +257,7 @@ function renderWalk() {
   if (!route.geometryUrl) {
     $('#walk-content').innerHTML = `<div class="walk-panel"><span class="status-label">${statusText(route.verificationStatus)}</span><h2>${escapeHtml(course.title)}・${escapeHtml(variantLabel(route.variant))}</h2><p>${escapeHtml(route.routeReason)}</p><ol class="waypoint-list">${(route.segments || []).map((leg) => `<li><strong>${escapeHtml(leg.from)} → ${escapeHtml(leg.to)}</strong>：${escapeHtml(leg.note)}</li>`).join('')}</ol><p class="walk-warning">徒歩の経路線・距離、屋内連続歩行区間、開館状況を確定していません。出発前に公式情報を確認してください。</p></div>`;
     if (course.publicWarning) $('#walk-content').querySelector('.walk-panel').insertAdjacentHTML('afterbegin', `<p class="walk-warning">${escapeHtml(course.publicWarning)}</p>`);
+    if (retraceText(course, route)) $('#walk-content').querySelector('.walk-panel').insertAdjacentHTML('afterbegin', `<p class="walk-warning">${escapeHtml(retraceText(course, route))}</p>`);
     return;
   }
   const waypoints = routeWaypoints(course, route);
@@ -215,6 +266,7 @@ function renderWalk() {
   const percent = waypoints.length > 1 ? index / (waypoints.length - 1) * 100 : 0;
   $('#walk-content').innerHTML = `<div class="walk-panel"><span class="status-label">${statusText(route.verificationStatus)}</span><h2>${escapeHtml(course.title)}・${escapeHtml(variantLabel(route.variant))}</h2><div class="walk-progress" role="progressbar" aria-valuenow="${index + 1}" aria-valuemin="1" aria-valuemax="${waypoints.length}" aria-label="経由点の進行状況"><span style="width:${percent}%"></span></div><p class="walk-next">${escapeHtml(waypoints[index].label || `旧資料の経由点 ${index + 1}`)} <small>${index + 1} / ${waypoints.length}</small></p><p>予定経由点の進行状況です。出入口と歩く道路は地図・現地レビュー待ちです。</p><div class="walk-controls"><button type="button" data-walk-step="-1" ${index === 0 ? 'disabled' : ''}>前の地点</button><button type="button" class="progress-button" data-walk-step="1" ${index === waypoints.length - 1 ? 'disabled' : ''}>この地点に着いた</button><button type="button" data-walk-reset="true">最初から</button><button type="button" data-location="true">現在位置を地図に表示</button></div><p id="geo-status" class="geo-status">位置情報は許可時だけ使い、保存しません。</p><ol class="waypoint-list">${waypoints.map((waypoint, i) => `<li class="${i === index ? 'current' : ''}">${escapeHtml(waypoint.label || `旧資料の経由点 ${i + 1}`)}</li>`).join('')}</ol><p class="walk-warning">この画面はナビゲーションではありません。残り距離・トイレ・離脱は未確認。通行状況と施設情報は当日確認してください。</p></div>`;
   if (course.publicWarning) $('#walk-content').querySelector('.walk-panel').insertAdjacentHTML('afterbegin', `<p class="walk-warning">${escapeHtml(course.publicWarning)}</p>`);
+  if (retraceText(course, route)) $('#walk-content').querySelector('.walk-panel').insertAdjacentHTML('afterbegin', `<p class="walk-warning">${escapeHtml(retraceText(course, route))}</p>`);
 }
 
 function handleHash() {
@@ -268,8 +320,8 @@ function wireEvents() {
   $('#walk-variant').addEventListener('change', () => { const id = $('#walk-course').value; if (!id) return; state.variantById[id] = $('#walk-variant').value; renderWalk(); selectCourse(id, { updateHash: false }); });
   $('#fit-route').addEventListener('click', () => { if (state.map && state.routeLayer.getLayers().length) state.map.fitBounds(state.routeLayer.getBounds?.() || state.routeLayer.getLayers()[0].getBounds(), { maxZoom: 15 }); });
   $('#replay-route').addEventListener('click', animateRoute);
-  $('#show-route-now').addEventListener('click', stopRouteAnimation);
-  $('#map-layer-toggle').addEventListener('click', () => { state.showMarkers = !state.showMarkers; $('#map-layer-toggle').setAttribute('aria-pressed', String(state.showMarkers)); $('#map-layer-toggle').textContent = state.showMarkers ? '地点を非表示' : '地点を表示'; const course = state.byId.get(state.selectedId); if (course && state.feature) drawFeature(course, activeRoute(course), state.feature, { fit: false, animate: false }); });
+  $('#show-route-now').addEventListener('click', () => { stopRouteAnimation(); if (state.selectedId) $('#map-status').textContent = '経路全体を表示中・現地の道順は未確認です。'; });
+  $('#map-layer-toggle').addEventListener('click', () => { state.showMarkers = !state.showMarkers; $('#map-layer-toggle').setAttribute('aria-pressed', String(state.showMarkers)); $('#map-layer-toggle').textContent = state.showMarkers ? '地点を非表示' : '地点を表示'; const course = state.byId.get(state.selectedId); if (course && state.feature) drawFeature(course, activeRoute(course), state.feature, { fit: false }); });
   $('#close-detail').addEventListener('click', () => $('#detail-dialog').close());
   $('#detail-dialog').addEventListener('click', (event) => { if (event.target.id === 'detail-dialog') event.target.close(); });
   $('#theme-toggle').addEventListener('click', () => { state.theme = state.theme === 'dark' ? 'light' : 'dark'; applyTheme(); });

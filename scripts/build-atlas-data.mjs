@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 import { decodePolyline } from '../tools/lib-polyline.mjs';
 
@@ -185,13 +186,30 @@ for (const filename of fs.readdirSync(curatedRoot).filter((name) => name.endsWit
         repeatedGeometryPct: result.repeatedGeometryPct,
         routeReason: curated.routeReasons[variant],
         distanceException: curated.distanceExceptions?.[variant] || null,
-        waypoints: result.waypoints.map((waypoint, index) => ({ index, id: waypoint.id, label: waypoint.label, point: [waypoint.coord[1], waypoint.coord[0]], source: waypoint.source })),
+        waypoints: result.waypoints.map((waypoint, index) => ({ index, id: waypoint.id, label: waypoint.label, description: curated.checkpointDescriptions?.[waypoint.id] || null, point: [waypoint.coord[1], waypoint.coord[0]], source: waypoint.source })),
         engine: 'valhalla-pedestrian', built: JSON.parse(fs.readFileSync(path.join(root, result.geometryUrl), 'utf8')).properties.calculatedAt,
       };
     }),
     { id: `${target.slug}-rainy`, variant: 'rainy', strategy: 'indoor_rail', verificationStatus: curated.rainy.verificationStatus, distanceM: null, routeReason: curated.rainy.summary, segments: curated.rainy.segments, conditions: curated.rainy.conditions, geometryUrl: null, waypoints: [] },
     { ...target.route, waypoints: target.waypoints },
   ];
+}
+const reviewRoot = path.join(root, 'data/reviews');
+for (const filename of fs.readdirSync(reviewRoot).filter((name) => name.endsWith('.json'))) {
+  const screening = JSON.parse(fs.readFileSync(path.join(reviewRoot, filename), 'utf8'));
+  const course = courses.find((item) => item.id === screening.courseId);
+  if (!course?.routeOptions || screening.scope !== 'saved_geometry_screening') throw new Error(`${filename}: invalid screening target or scope`);
+  for (const review of screening.reviews) {
+    const option = course.routeOptions.find((item) => item.id === review.routeId);
+    if (!option?.geometryUrl || option.verificationStatus !== 'routed' || review.decision !== 'map_review_pending') throw new Error(`${filename}: invalid review state ${review.routeId}`);
+    const hash = crypto.createHash('sha256').update(read(option.geometryUrl)).digest('hex');
+    if (hash !== review.geometrySha256) throw new Error(`${filename}: geometry changed since screening ${review.routeId}`);
+    option.geometryScreening = {
+      scope: screening.scope, screenedAt: screening.screenedAt, method: screening.method,
+      decision: review.decision, repeatedGeometryM: review.repeatedGeometryM,
+      findings: review.findings, openChecks: review.openChecks,
+    };
+  }
 }
 for (const course of courses) {
   const researchPath = path.join(root, 'data/research', `${course.slug}-route-research.json`);
@@ -202,6 +220,18 @@ for (const course of courses) {
     if (!course.evidence) course.evidence = research.evidence || [];
     if (!course.openQuestions) course.openQuestions = research.openQuestions || [];
   }
+}
+const retraceReports = JSON.parse(read('data/research/retrace-reports.json'));
+for (const id of retraceReports.courseIds) {
+  const course = courses.find((item) => item.id === id);
+  const audit = audits.find((item) => item.id === id);
+  if (!course || !audit || audit.repeatedGeometryM <= 0) throw new Error(`invalid reported retrace: ${id}`);
+  course.retraceReview = {
+    reportedAt: retraceReports.reportedAt, source: retraceReports.source,
+    status: retraceReports.status, repeatedGeometryM: audit.repeatedGeometryM,
+    repeatedGeometryPct: audit.repeatedGeometryPct,
+    note: retraceReports.note,
+  };
 }
 fs.writeFileSync(path.join(outputRoot, 'catalog.json'), JSON.stringify({
   schemaVersion: 1, source: 'legacy import; route quality not re-reviewed',

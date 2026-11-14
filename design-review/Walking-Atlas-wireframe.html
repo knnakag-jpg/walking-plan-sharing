@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Walking Atlas | PC・スマホ ワイヤーフレーム</title>
+  <style>
+    :root{color-scheme:light;--paper:#f7f5f0;--surface:#fff;--ink:#22302d;--muted:#5e6c68;--line:#d7ded9;--green:#246d57;--pale:#e8f1eb;--sand:#f1e7dc}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.5 "Yu Gothic",Meiryo,sans-serif}
+    h1,h2,h3,p{margin-top:0}
+    h1{font-size:clamp(1.6rem,3vw,2.4rem);line-height:1.3;margin-bottom:.4rem}
+    h2{font-size:1.3rem;margin-bottom:1rem}
+    h3{font-size:1rem;margin-bottom:.35rem}
+    p{margin-bottom:.8rem}
+    small,.muted{color:var(--muted)}
+    .wrap{max-width:1440px;margin:auto;padding:32px 24px 80px}
+    .intro{max-width:850px;margin-bottom:28px}
+    .note{background:#fff9ec;border:1px solid #e5d5ae;border-radius:12px;padding:12px 16px;margin:16px 0}
+    .section{margin:38px 0 54px}
+    .section-lead{max-width:800px}
+    .desktop{border:1px solid #c4d1c9;border-radius:18px;background:var(--surface);box-shadow:0 12px 40px #1b392118;overflow:hidden}
+    .site-header{display:flex;justify-content:space-between;align-items:center;gap:18px;padding:14px 20px;border-bottom:1px solid var(--line)}
+    .brand{font-size:1.15rem;font-weight:800;letter-spacing:.08em}
+    .nav{display:flex;gap:18px;flex-wrap:wrap;font-size:.9rem}
+    .nav .active{color:var(--green);font-weight:800;border-bottom:2px solid var(--green)}
+    .header-tools{font-size:.82rem;color:var(--muted);white-space:nowrap}
+    .explore{display:grid;grid-template-columns:minmax(280px,34%) 1fr;min-height:650px}
+    .side{border-right:1px solid var(--line);padding:20px;display:flex;flex-direction:column;gap:14px}
+    .kicker{font-size:.74rem;letter-spacing:.1em;color:var(--green);font-weight:800;text-transform:uppercase}
+    .search,.filters,.card,.status,.detail,.mobile-card,.motion-step{border:1px solid var(--line);border-radius:12px;background:#fff}
+    .search{padding:11px 14px;color:var(--muted)}
+    .filters{padding:12px}
+    .filter-line{display:flex;gap:6px;flex-wrap:wrap;margin-top:9px}
+    .chip{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:4px 10px;font-size:.77rem;background:#fff}
+    .chip.on{background:var(--pale);border-color:#9ec6af;color:#18543e;font-weight:700}
+    .card{padding:14px}
+    .card.selected{border:2px solid var(--green);background:#f7fbf8}
+    .card-title{font-weight:800;margin-bottom:5px}
+    .meta{display:flex;gap:8px;flex-wrap:wrap;color:var(--muted);font-size:.76rem}
+    .card p{font-size:.84rem;margin:9px 0 0}
+    .status{padding:9px 11px;font-size:.77rem;color:var(--muted);background:#f7f8f6}
+    .map-column{position:relative;display:flex;flex-direction:column;background:#e9eeea}
+    .map-toolbar{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;padding:12px 16px;background:#fff;border-bottom:1px solid var(--line)}
+    .map-stage{position:relative;flex:1;min-height:360px;display:grid;place-items:center;background-color:#ebefeb;background-image:linear-gradient(90deg,#dfe6df 1px,transparent 1px),linear-gradient(#dfe6df 1px,transparent 1px);background-size:72px 72px}
+    .map-placeholder{max-width:340px;padding:20px;text-align:center;background:#ffffffec;border:1px dashed #789485;border-radius:16px}
+    .map-placeholder strong{display:block;margin-bottom:6px}
+    .map-label{position:absolute;left:16px;top:16px;background:#fff;border:1px solid var(--line);border-radius:8px;padding:7px 10px;font-size:.75rem}
+    .map-buttons{position:absolute;right:16px;top:16px;display:grid;gap:6px}
+    .map-buttons span{display:block;background:#fff;border:1px solid var(--line);border-radius:7px;padding:4px 9px;text-align:center}
+    .map-bottom{display:grid;grid-template-columns:1fr auto;gap:14px;padding:12px 16px;background:#fff;border-top:1px solid var(--line);font-size:.78rem}
+    .detail{margin:16px;padding:16px;display:grid;grid-template-columns:1.2fr 1fr;gap:18px}
+    .detail-block{border-left:3px solid #9ac3ab;padding-left:12px}
+    .phone-row{display:flex;gap:26px;align-items:flex-start;flex-wrap:wrap}
+    .phone{width:370px;max-width:100%;min-height:730px;border:8px solid #22342d;border-radius:34px;overflow:hidden;background:#fff;box-shadow:0 16px 40px #22342d24}
+    .phone-top{height:27px;background:#22342d;display:flex;justify-content:center;align-items:center}
+    .phone-top:after{content:"";display:block;width:75px;height:7px;background:#101b15;border-radius:999px}
+    .phone-header{padding:10px 14px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);font-weight:800}
+    .mobile-map{height:315px;min-height:315px}
+    .mobile-map .map-placeholder{max-width:245px;padding:14px;font-size:.83rem}
+    .sheet{position:relative;border-top:3px solid var(--green);border-radius:16px 16px 0 0;padding:16px 14px 70px;margin-top:-12px;background:#fff;box-shadow:0 -8px 22px #233b3020}
+    .handle{width:42px;height:4px;border-radius:99px;background:#9faea4;margin:-7px auto 14px}
+    .sheet-title{font-weight:800;font-size:1.1rem}
+    .variant-row{display:flex;gap:5px;margin:10px 0}
+    .variant-row span{flex:1;border:1px solid var(--line);border-radius:8px;padding:8px 3px;text-align:center;font-size:.77rem}
+    .variant-row .chosen{background:var(--pale);border-color:var(--green);color:var(--green);font-weight:800}
+    .mobile-card{padding:12px;margin-top:10px;font-size:.86rem}
+    .mobile-nav{display:flex;justify-content:space-around;border-top:1px solid var(--line);padding:8px;background:#fff;font-size:.76rem;color:var(--muted)}
+    .walk-header{padding:14px;background:var(--pale)}
+    .walk-body{padding:14px}
+    .progress{height:8px;border-radius:20px;background:#dbe5dd;margin:13px 0;overflow:hidden}
+    .progress:before{content:"";display:block;width:32%;height:100%;background:var(--green)}
+    .primary{display:block;width:100%;text-align:center;background:var(--green);color:#fff;border-radius:10px;padding:12px;font-weight:800;margin:12px 0}
+    .utility{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+    .utility div{border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center;font-size:.84rem}
+    .phone-caption{max-width:360px;color:var(--muted);font-size:.85rem;margin-top:9px}
+    .motion{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+    .motion-step{padding:13px;font-size:.83rem;min-height:120px}
+    .motion-step strong{color:var(--green)}
+    .motion-step .arrow{float:right;font-size:1.3rem;color:#8ba797}
+    @media(max-width:900px){.explore{grid-template-columns:1fr}.side{border-right:0;border-bottom:1px solid var(--line)}.motion{grid-template-columns:repeat(2,1fr)}.detail{grid-template-columns:1fr}}
+    @media(max-width:620px){.wrap{padding:20px 12px 60px}.site-header{align-items:flex-start;flex-direction:column}.header-tools{display:none}.nav{gap:10px}.phone-row{justify-content:center}.motion{grid-template-columns:1fr}.map-bottom{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+<main class="wrap">
+  <div class="intro">
+    <div class="kicker">Design review / low fidelity</div>
+    <h1>Walking Atlas<br>PC・スマホ ワイヤーフレーム</h1>
+    <p>地図を中心に「発見 → 比較 → 選択 → 当日」をつなぐ画面構成。画面上の地図枠は配置を示す図で、実在する道・距離・施設情報を示しません。</p>
+    <div class="note"><strong>設計図・操作不可</strong>　このファイルはレビュー用の静的図です。A/B/Cの経路、GPS、写真、検索結果は実装・検証していません。</div>
+  </div>
+
+  <section class="section" aria-labelledby="pc-title">
+    <h2 id="pc-title">01 / PC — 地図から探す</h2>
+    <p class="section-lead">左に条件と候補、右に大きな地図を置く。候補を選ぶと線と概要が同じIDで切り替わる。地図が表示できなくても左の情報を読める。</p>
+    <div class="desktop">
+      <div class="site-header"><div class="brand">WALKING ATLAS</div><div class="nav"><span>見つける</span><span class="active">地図から探す</span><span>比較</span><span>保存済み</span><span>資料</span></div><div class="header-tools">個人 / グループ　☀︎ / ☾</div></div>
+      <div class="explore">
+        <aside class="side">
+          <div><div class="kicker">Explore Tokyo</div><h3>次はどこを歩こう？</h3></div>
+          <div class="search">駅・街・テーマを探す　⌕</div>
+          <div class="filters"><strong>絞り込み</strong><div class="filter-line"><span class="chip on">街並み</span><span class="chip">水辺</span><span class="chip">庭園</span><span class="chip">歴史</span></div><div class="filter-line"><span class="chip">徒歩5〜6km</span><span class="chip">雨の日</span><span class="chip">坂少なめ</span></div></div>
+          <div class="meta">候補　／　確認状態で絞り込めます</div>
+          <div class="card selected"><div class="card-title">清澄白河・深川の風景</div><div class="meta"><span>庭園・下町</span><span>旧No.47を再調査中</span></div><p>道の選定理由とA/B/Cの経路を検証して掲載します。</p></div>
+          <div class="card"><div class="card-title">柿の木坂・碑文谷</div><div class="meta"><span>街並み</span><span>PoC候補</span></div></div>
+          <div class="card"><div class="card-title">神楽坂・外濠</div><div class="meta"><span>坂・歴史</span><span>PoC候補</span></div></div>
+          <div class="status">未検証の案は距離や線を確定表示しません。</div>
+        </aside>
+        <div class="map-column">
+          <div class="map-toolbar"><div><strong>清澄白河・深川の風景</strong>　<span class="muted">調査中</span></div><div class="filter-line" style="margin:0"><span class="chip on">A 標準</span><span class="chip">B 延長</span><span class="chip">C 雨天</span></div></div>
+          <div class="map-stage"><div class="map-label">見どころ / トイレ / 駅　表示切替</div><div class="map-buttons"><span>＋</span><span>−</span></div><div class="map-placeholder"><strong>ここに実経路を表示</strong>検証済みGeoJSONだけを道路に沿って描画。形状がない場合は「経路未生成」と表示します。</div></div>
+          <div class="map-bottom"><span>凡例：A 実線 ／ B 破線 ／ C 点線　<span class="muted">色とラベルも併用</span></span><span>描画を停止 / 即時表示</span></div>
+          <div class="detail"><div class="detail-block"><strong>この道を選ぶ理由</strong><br><small>景観の向き・通る順序・選ばなかった道を説明</small></div><div class="detail-block"><strong>確認状態と出典</strong><br><small>資料調査 / 地図レビュー / 現地確認を区別</small></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="mobile-title">
+    <h2 id="mobile-title">02 / スマホ — 探す・歩く</h2>
+    <p class="section-lead">探索時は地図と上下に切り替えられる情報パネルを組み合わせる。当日は次の地点と手動進行を優先し、GPSの許可なしでも利用できる構成にする。</p>
+    <div class="phone-row">
+      <div><div class="phone"><div class="phone-top"></div><div class="phone-header"><span>WALKING ATLAS</span><span>⌕　☰</span></div><div class="map-stage mobile-map"><div class="map-label">テーマ / 距離　⌄</div><div class="map-placeholder"><strong>地図領域</strong>実経路のみ表示。地図が失敗してもパネルは使えます。</div></div><div class="sheet"><div class="handle"></div><div class="sheet-title">清澄白河・深川の風景</div><div class="meta"><span>旧No.47を再調査中</span><span>徒歩距離 未確定</span></div><div class="variant-row"><span class="chosen">A 標準</span><span>B 延長</span><span>C 雨天</span></div><div class="mobile-card"><strong>見どころと道の理由</strong><br>選んだ地点と地図を連動。詳細を開くと出典と未確認事項を表示。</div><div class="mobile-card"><strong>候補を比較　＋</strong><br>最大3件まで追加。</div></div><div class="mobile-nav"><span>見つける</span><strong>地図</strong><span>比較</span><span>保存</span></div></div><div class="phone-caption">探索画面。下部パネルは閉・半分・全開を想定。地図上の情報をパネルでも読めるようにする。</div></div>
+      <div><div class="phone"><div class="phone-top"></div><div class="phone-header"><span>‹　当日モード</span><span>ヘルプ</span></div><div class="walk-header"><div class="kicker">Walk / manual mode</div><div class="sheet-title">次の見どころ</div><div class="muted">経路確定後、地点名・残距離を表示</div><div class="progress"></div><small>進行状況：手動更新　／　GPSは未許可</small></div><div class="walk-body"><div class="mobile-card"><strong>歩く道の案内</strong><br>方向、景観、注意点。地図がなくても読める。</div><div class="primary">この地点に着いた</div><div class="utility"><div>近くのトイレ</div><div>休憩場所</div><div>途中離脱駅</div><div>雨天Cへ切替</div></div><div class="mobile-card"><strong>現在位置を使う</strong><br>許可した場合のみ。手動進行はいつでも利用できます。</div><div class="status" style="margin-top:10px">疑似再生は「プレビュー」と表示し、現在位置と混同させません。</div></div><div class="mobile-nav"><span>見つける</span><span>地図</span><strong>歩く</strong><span>保存</span></div></div><div class="phone-caption">当日画面。大きい進行操作、トイレ・離脱・雨天の切替を短い導線で配置。</div></div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="motion-title">
+    <h2 id="motion-title">03 / 選択時のモーション</h2>
+    <div class="motion"><div class="motion-step"><strong>1. 候補を選ぶ</strong><span class="arrow">→</span><p>カードの選択状態と詳細を即時に更新。</p></div><div class="motion-step"><strong>2. 地図へ寄る</strong><span class="arrow">→</span><p>約0.45〜0.8秒。ユーザーが地図操作中なら自動移動を抑制。</p></div><div class="motion-step"><strong>3. 経路を描く</strong><span class="arrow">→</span><p>検証済み形状を約0.8〜1.5秒で始点から表示。</p></div><div class="motion-step"><strong>4. 変種を切り替える</strong><p>旧線を薄くし新線を表示。停止・即時表示・動きの軽減に対応。</p></div></div>
+  </section>
+</main>
+</body>
+</html>

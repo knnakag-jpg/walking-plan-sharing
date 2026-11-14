@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-12T22:17:43.243Z",
+  "generatedAt": "2026-11-14T00:09:33.495Z",
   "interpretation": "Mechanical triage only. Source and map review required before adopting any new route.",
   "records": [
     {
@@ -29,10 +29,12 @@
         "water_transport"
       ],
       "possibleDistanceFiller": true,
+      "retraceReview": null,
       "priorityScore": 137,
       "issues": [
         "repeated_geometry_over_10pct",
         "repeated_waypoint",
+        "retraced_geometry_over_100m",
         "possible_distance_filler",
         "transport_or_indoor_leg_separation"
       ],
@@ -42,7 +44,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -88,11 +90,13 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": true,
+      "retraceReview": null,
       "priorityScore": 120,
       "issues": [
         "repeated_geometry_over_10pct",
         "repeated_waypoint",
         "waypoint_off_shape",
+        "retraced_geometry_over_100m",
         "possible_distance_filler"
       ],
       "checklist": [
@@ -101,7 +105,60 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "No.8",
+      "title": "上野ミュージアム",
+      "series": "本編 A～Z（No.1～26）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/no-8.geojson",
+        "walkingDistanceM": 6716,
+        "repeatedGeometryPct": 22.7,
+        "repeatedGeometryM": 1526,
+        "maxWaypointToShapeM": 41,
+        "repeatedWaypoints": [
+          [
+            8,
+            10
+          ]
+        ],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": true,
+      "retraceReview": {
+        "reportedAt": "2026-11-14",
+        "source": "user_observation",
+        "status": "needs_individual_redesign",
+        "repeatedGeometryM": 1526,
+        "repeatedGeometryPct": 22.7,
+        "note": "同じ線をなぞる区間があるとの指摘。既存の形状反復値は調査の手掛かりで、歩道・施設内・橋の条件や代替道路は未確認。"
+      },
+      "priorityScore": 114,
+      "issues": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint",
+        "waypoint_off_shape",
+        "retraced_geometry_over_100m",
+        "user_reported_retrace",
+        "possible_distance_filler"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -144,10 +201,12 @@
         "cable_transport"
       ],
       "possibleDistanceFiller": false,
+      "retraceReview": null,
       "priorityScore": 105,
       "issues": [
         "repeated_geometry_over_10pct",
         "repeated_waypoint",
+        "retraced_geometry_over_100m",
         "transport_or_indoor_leg_separation"
       ],
       "checklist": [
@@ -156,7 +215,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -199,10 +258,12 @@
         "indoor_candidate"
       ],
       "possibleDistanceFiller": false,
+      "retraceReview": null,
       "priorityScore": 102,
       "issues": [
         "repeated_geometry_over_10pct",
         "repeated_waypoint",
+        "retraced_geometry_over_100m",
         "transport_or_indoor_leg_separation"
       ],
       "checklist": [
@@ -211,7 +272,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -241,11 +302,13 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": true,
+      "retraceReview": null,
       "priorityScore": 100,
       "issues": [
         "repeated_geometry_over_10pct",
         "repeated_waypoint",
         "waypoint_off_shape",
+        "retraced_geometry_over_100m",
         "possible_distance_filler"
       ],
       "checklist": [
@@ -254,7 +317,59 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "No.17",
+      "title": "麻布台ヒルズ～東京タワー",
+      "series": "本編 A～Z（No.1～26）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/no-17.geojson",
+        "walkingDistanceM": 6839,
+        "repeatedGeometryPct": 15.6,
+        "repeatedGeometryM": 1068,
+        "maxWaypointToShapeM": 36,
+        "repeatedWaypoints": [
+          [
+            3,
+            5
+          ]
+        ],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": true,
+      "retraceReview": {
+        "reportedAt": "2026-11-14",
+        "source": "user_observation",
+        "status": "needs_individual_redesign",
+        "repeatedGeometryM": 1068,
+        "repeatedGeometryPct": 15.6,
+        "note": "同じ線をなぞる区間があるとの指摘。既存の形状反復値は調査の手掛かりで、歩道・施設内・橋の条件や代替道路は未確認。"
+      },
+      "priorityScore": 98,
+      "issues": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint",
+        "retraced_geometry_over_100m",
+        "user_reported_retrace",
+        "possible_distance_filler"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -284,11 +399,13 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": true,
+      "retraceReview": null,
       "priorityScore": 95,
       "issues": [
         "repeated_geometry_over_10pct",
         "repeated_waypoint",
         "waypoint_off_shape",
+        "retraced_geometry_over_100m",
         "possible_distance_filler"
       ],
       "checklist": [
@@ -297,7 +414,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -327,10 +444,12 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": true,
+      "retraceReview": null,
       "priorityScore": 94,
       "issues": [
         "repeated_geometry_over_10pct",
         "repeated_waypoint",
+        "retraced_geometry_over_100m",
         "possible_distance_filler"
       ],
       "checklist": [
@@ -339,7 +458,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -377,11 +496,13 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": true,
+      "retraceReview": null,
       "priorityScore": 91,
       "issues": [
         "repeated_geometry_over_10pct",
         "repeated_waypoint",
         "waypoint_off_shape",
+        "retraced_geometry_over_100m",
         "possible_distance_filler"
       ],
       "checklist": [
@@ -390,7 +511,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -420,11 +541,13 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": false,
+      "retraceReview": null,
       "priorityScore": 89,
       "issues": [
         "repeated_geometry_over_10pct",
         "repeated_waypoint",
-        "waypoint_off_shape"
+        "waypoint_off_shape",
+        "retraced_geometry_over_100m"
       ],
       "checklist": [
         "公式の地域・施設資料を収集し、確認日を記録",
@@ -432,7 +555,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -462,10 +585,12 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": true,
+      "retraceReview": null,
       "priorityScore": 89,
       "issues": [
         "repeated_geometry_over_10pct",
         "repeated_waypoint",
+        "retraced_geometry_over_100m",
         "possible_distance_filler"
       ],
       "checklist": [
@@ -474,50 +599,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
-        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
-        "旧経路との差分・採用理由・未確認事項を記録"
-      ]
-    },
-    {
-      "id": "No.8",
-      "title": "上野ミュージアム",
-      "series": "本編 A～Z（No.1～26）",
-      "workStatus": "research_needed",
-      "legacy": {
-        "geometryUrl": "data/routes/no-8.geojson",
-        "walkingDistanceM": 6716,
-        "repeatedGeometryPct": 22.7,
-        "repeatedGeometryM": 1526,
-        "maxWaypointToShapeM": 41,
-        "repeatedWaypoints": [
-          [
-            8,
-            10
-          ]
-        ],
-        "gateResult": "OK"
-      },
-      "existingNewVariants": [],
-      "coordinateReview": "not_started",
-      "sourceResearch": "not_started",
-      "historicalRoutingStrategies": [],
-      "transportHints": [],
-      "possibleDistanceFiller": true,
-      "priorityScore": 89,
-      "issues": [
-        "repeated_geometry_over_10pct",
-        "repeated_waypoint",
-        "waypoint_off_shape",
-        "possible_distance_filler"
-      ],
-      "checklist": [
-        "公式の地域・施設資料を収集し、確認日を記録",
-        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
-        "駅の出入口・施設の入口・横断・通行条件を照合",
-        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
-        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -547,10 +629,12 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": true,
+      "retraceReview": null,
       "priorityScore": 84,
       "issues": [
         "repeated_geometry_over_10pct",
         "repeated_waypoint",
+        "retraced_geometry_over_100m",
         "possible_distance_filler"
       ],
       "checklist": [
@@ -559,7 +643,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -593,11 +677,13 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": false,
+      "retraceReview": null,
       "priorityScore": 84,
       "issues": [
         "repeated_geometry_over_10pct",
         "repeated_waypoint",
-        "waypoint_off_shape"
+        "waypoint_off_shape",
+        "retraced_geometry_over_100m"
       ],
       "checklist": [
         "公式の地域・施設資料を収集し、確認日を記録",
@@ -605,7 +691,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -643,10 +729,12 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": true,
+      "retraceReview": null,
       "priorityScore": 83,
       "issues": [
         "repeated_geometry_over_10pct",
         "repeated_waypoint",
+        "retraced_geometry_over_100m",
         "possible_distance_filler"
       ],
       "checklist": [
@@ -655,7 +743,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -685,10 +773,12 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": true,
+      "retraceReview": null,
       "priorityScore": 83,
       "issues": [
         "repeated_waypoint",
         "waypoint_off_shape",
+        "retraced_geometry_over_100m",
         "possible_distance_filler"
       ],
       "checklist": [
@@ -697,7 +787,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -738,11 +828,13 @@
       ],
       "transportHints": [],
       "possibleDistanceFiller": false,
+      "retraceReview": null,
       "priorityScore": 82,
       "issues": [
         "repeated_geometry_over_10pct",
         "repeated_waypoint",
-        "waypoint_off_shape"
+        "waypoint_off_shape",
+        "retraced_geometry_over_100m"
       ],
       "checklist": [
         "公式の地域・施設資料を収集し、確認日を記録",
@@ -750,7 +842,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -780,10 +872,12 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": true,
+      "retraceReview": null,
       "priorityScore": 82,
       "issues": [
         "repeated_geometry_over_10pct",
         "repeated_waypoint",
+        "retraced_geometry_over_100m",
         "possible_distance_filler"
       ],
       "checklist": [
@@ -792,7 +886,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -824,10 +918,12 @@
         "water_transport"
       ],
       "possibleDistanceFiller": true,
+      "retraceReview": null,
       "priorityScore": 81,
       "issues": [
         "repeated_geometry_over_10pct",
         "repeated_waypoint",
+        "retraced_geometry_over_100m",
         "possible_distance_filler",
         "transport_or_indoor_leg_separation"
       ],
@@ -837,7 +933,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -867,10 +963,12 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": true,
+      "retraceReview": null,
       "priorityScore": 81,
       "issues": [
         "repeated_geometry_over_10pct",
         "repeated_waypoint",
+        "retraced_geometry_over_100m",
         "possible_distance_filler"
       ],
       "checklist": [
@@ -879,7 +977,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -909,10 +1007,12 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": false,
+      "retraceReview": null,
       "priorityScore": 80,
       "issues": [
         "repeated_geometry_over_10pct",
-        "repeated_waypoint"
+        "repeated_waypoint",
+        "retraced_geometry_over_100m"
       ],
       "checklist": [
         "公式の地域・施設資料を収集し、確認日を記録",
@@ -920,7 +1020,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -954,11 +1054,13 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": true,
+      "retraceReview": null,
       "priorityScore": 79,
       "issues": [
         "repeated_geometry_over_10pct",
         "repeated_waypoint",
         "waypoint_off_shape",
+        "retraced_geometry_over_100m",
         "possible_distance_filler"
       ],
       "checklist": [
@@ -967,7 +1069,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -997,10 +1099,12 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": true,
+      "retraceReview": null,
       "priorityScore": 77,
       "issues": [
         "repeated_geometry_over_10pct",
         "repeated_waypoint",
+        "retraced_geometry_over_100m",
         "possible_distance_filler"
       ],
       "checklist": [
@@ -1009,7 +1113,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -1039,10 +1143,12 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": true,
+      "retraceReview": null,
       "priorityScore": 77,
       "issues": [
         "repeated_geometry_over_10pct",
         "repeated_waypoint",
+        "retraced_geometry_over_100m",
         "possible_distance_filler"
       ],
       "checklist": [
@@ -1051,7 +1157,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -1081,10 +1187,12 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": true,
+      "retraceReview": null,
       "priorityScore": 76,
       "issues": [
         "repeated_geometry_over_10pct",
         "repeated_waypoint",
+        "retraced_geometry_over_100m",
         "possible_distance_filler"
       ],
       "checklist": [
@@ -1093,7 +1201,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -1123,11 +1231,13 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": true,
+      "retraceReview": null,
       "priorityScore": 76,
       "issues": [
         "repeated_geometry_over_10pct",
         "repeated_waypoint",
         "waypoint_off_shape",
+        "retraced_geometry_over_100m",
         "possible_distance_filler"
       ],
       "checklist": [
@@ -1136,7 +1246,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -1166,11 +1276,13 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": false,
+      "retraceReview": null,
       "priorityScore": 75,
       "issues": [
         "repeated_geometry_over_10pct",
         "repeated_waypoint",
-        "waypoint_off_shape"
+        "waypoint_off_shape",
+        "retraced_geometry_over_100m"
       ],
       "checklist": [
         "公式の地域・施設資料を収集し、確認日を記録",
@@ -1178,7 +1290,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -1208,10 +1320,12 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": true,
+      "retraceReview": null,
       "priorityScore": 74,
       "issues": [
         "repeated_waypoint",
         "waypoint_off_shape",
+        "retraced_geometry_over_100m",
         "possible_distance_filler"
       ],
       "checklist": [
@@ -1220,49 +1334,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
-        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
-        "旧経路との差分・採用理由・未確認事項を記録"
-      ]
-    },
-    {
-      "id": "No.17",
-      "title": "麻布台ヒルズ～東京タワー",
-      "series": "本編 A～Z（No.1～26）",
-      "workStatus": "research_needed",
-      "legacy": {
-        "geometryUrl": "data/routes/no-17.geojson",
-        "walkingDistanceM": 6839,
-        "repeatedGeometryPct": 15.6,
-        "repeatedGeometryM": 1068,
-        "maxWaypointToShapeM": 36,
-        "repeatedWaypoints": [
-          [
-            3,
-            5
-          ]
-        ],
-        "gateResult": "OK"
-      },
-      "existingNewVariants": [],
-      "coordinateReview": "not_started",
-      "sourceResearch": "not_started",
-      "historicalRoutingStrategies": [],
-      "transportHints": [],
-      "possibleDistanceFiller": true,
-      "priorityScore": 73,
-      "issues": [
-        "repeated_geometry_over_10pct",
-        "repeated_waypoint",
-        "possible_distance_filler"
-      ],
-      "checklist": [
-        "公式の地域・施設資料を収集し、確認日を記録",
-        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
-        "駅の出入口・施設の入口・横断・通行条件を照合",
-        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
-        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -1292,10 +1364,12 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": true,
+      "retraceReview": null,
       "priorityScore": 73,
       "issues": [
         "repeated_geometry_over_10pct",
         "repeated_waypoint",
+        "retraced_geometry_over_100m",
         "possible_distance_filler"
       ],
       "checklist": [
@@ -1304,7 +1378,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -1334,11 +1408,13 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": false,
+      "retraceReview": null,
       "priorityScore": 73,
       "issues": [
         "repeated_geometry_over_10pct",
         "repeated_waypoint",
-        "waypoint_off_shape"
+        "waypoint_off_shape",
+        "retraced_geometry_over_100m"
       ],
       "checklist": [
         "公式の地域・施設資料を収集し、確認日を記録",
@@ -1346,7 +1422,52 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "No.5",
+      "title": "東京競馬場・府中",
+      "series": "本編 A～Z（No.1～26）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/no-5.geojson",
+        "walkingDistanceM": 7316,
+        "repeatedGeometryPct": 20.6,
+        "repeatedGeometryM": 1510,
+        "maxWaypointToShapeM": 31,
+        "repeatedWaypoints": [],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": false,
+      "retraceReview": {
+        "reportedAt": "2026-11-14",
+        "source": "user_observation",
+        "status": "needs_individual_redesign",
+        "repeatedGeometryM": 1510,
+        "repeatedGeometryPct": 20.6,
+        "note": "同じ線をなぞる区間があるとの指摘。既存の形状反復値は調査の手掛かりで、歩道・施設内・橋の条件や代替道路は未確認。"
+      },
+      "priorityScore": 72,
+      "issues": [
+        "repeated_geometry_over_10pct",
+        "retraced_geometry_over_100m",
+        "user_reported_retrace"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -1376,10 +1497,12 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": true,
+      "retraceReview": null,
       "priorityScore": 69,
       "issues": [
         "repeated_geometry_over_10pct",
         "repeated_waypoint",
+        "retraced_geometry_over_100m",
         "possible_distance_filler"
       ],
       "checklist": [
@@ -1388,7 +1511,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -1418,10 +1541,12 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": true,
+      "retraceReview": null,
       "priorityScore": 67,
       "issues": [
         "repeated_geometry_over_10pct",
         "repeated_waypoint",
+        "retraced_geometry_over_100m",
         "possible_distance_filler"
       ],
       "checklist": [
@@ -1430,7 +1555,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -1468,10 +1593,12 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": true,
+      "retraceReview": null,
       "priorityScore": 66,
       "issues": [
         "repeated_waypoint",
         "waypoint_off_shape",
+        "retraced_geometry_over_100m",
         "possible_distance_filler"
       ],
       "checklist": [
@@ -1480,7 +1607,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -1510,10 +1637,12 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": true,
+      "retraceReview": null,
       "priorityScore": 66,
       "issues": [
         "repeated_waypoint",
         "waypoint_off_shape",
+        "retraced_geometry_over_100m",
         "possible_distance_filler"
       ],
       "checklist": [
@@ -1522,7 +1651,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -1549,9 +1678,11 @@
         "water_transport"
       ],
       "possibleDistanceFiller": true,
+      "retraceReview": null,
       "priorityScore": 65,
       "issues": [
         "waypoint_off_shape",
+        "retraced_geometry_over_100m",
         "possible_distance_filler",
         "transport_or_indoor_leg_separation"
       ],
@@ -1561,7 +1692,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -1591,10 +1722,12 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": false,
+      "retraceReview": null,
       "priorityScore": 62,
       "issues": [
         "repeated_geometry_over_10pct",
-        "repeated_waypoint"
+        "repeated_waypoint",
+        "retraced_geometry_over_100m"
       ],
       "checklist": [
         "公式の地域・施設資料を収集し、確認日を記録",
@@ -1602,7 +1735,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -1632,10 +1765,12 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": true,
+      "retraceReview": null,
       "priorityScore": 61,
       "issues": [
         "repeated_geometry_over_10pct",
         "repeated_waypoint",
+        "retraced_geometry_over_100m",
         "possible_distance_filler"
       ],
       "checklist": [
@@ -1644,7 +1779,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -1674,10 +1809,12 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": false,
+      "retraceReview": null,
       "priorityScore": 60,
       "issues": [
         "repeated_geometry_over_10pct",
-        "repeated_waypoint"
+        "repeated_waypoint",
+        "retraced_geometry_over_100m"
       ],
       "checklist": [
         "公式の地域・施設資料を収集し、確認日を記録",
@@ -1685,7 +1822,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -1717,10 +1854,12 @@
         "indoor_candidate"
       ],
       "possibleDistanceFiller": false,
+      "retraceReview": null,
       "priorityScore": 58,
       "issues": [
         "repeated_geometry_over_10pct",
         "repeated_waypoint",
+        "retraced_geometry_over_100m",
         "transport_or_indoor_leg_separation"
       ],
       "checklist": [
@@ -1729,7 +1868,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -1775,9 +1914,11 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": true,
+      "retraceReview": null,
       "priorityScore": 57,
       "issues": [
         "repeated_waypoint",
+        "retraced_geometry_over_100m",
         "possible_distance_filler"
       ],
       "checklist": [
@@ -1786,7 +1927,52 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "No.11",
+      "title": "豊洲 千客万来～ぐるり公園",
+      "series": "本編 A～Z（No.1～26）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/no-11.geojson",
+        "walkingDistanceM": 7289,
+        "repeatedGeometryPct": 12.6,
+        "repeatedGeometryM": 919,
+        "maxWaypointToShapeM": 31,
+        "repeatedWaypoints": [],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": false,
+      "retraceReview": {
+        "reportedAt": "2026-11-14",
+        "source": "user_observation",
+        "status": "needs_individual_redesign",
+        "repeatedGeometryM": 919,
+        "repeatedGeometryPct": 12.6,
+        "note": "同じ線をなぞる区間があるとの指摘。既存の形状反復値は調査の手掛かりで、歩道・施設内・橋の条件や代替道路は未確認。"
+      },
+      "priorityScore": 56,
+      "issues": [
+        "repeated_geometry_over_10pct",
+        "retraced_geometry_over_100m",
+        "user_reported_retrace"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -1816,9 +2002,11 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": true,
+      "retraceReview": null,
       "priorityScore": 54,
       "issues": [
         "repeated_waypoint",
+        "retraced_geometry_over_100m",
         "possible_distance_filler"
       ],
       "checklist": [
@@ -1827,7 +2015,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -1857,9 +2045,11 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": true,
+      "retraceReview": null,
       "priorityScore": 54,
       "issues": [
         "repeated_waypoint",
+        "retraced_geometry_over_100m",
         "possible_distance_filler"
       ],
       "checklist": [
@@ -1868,7 +2058,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -1913,10 +2103,12 @@
       ],
       "transportHints": [],
       "possibleDistanceFiller": false,
+      "retraceReview": null,
       "priorityScore": 53,
       "issues": [
         "repeated_geometry_over_10pct",
-        "repeated_waypoint"
+        "repeated_waypoint",
+        "retraced_geometry_over_100m"
       ],
       "checklist": [
         "公式の地域・施設資料を収集し、確認日を記録",
@@ -1924,7 +2116,51 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "No.23",
+      "title": "葛西臨海公園",
+      "series": "本編 A～Z（No.1～26）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/no-23.geojson",
+        "walkingDistanceM": 6564,
+        "repeatedGeometryPct": 9.2,
+        "repeatedGeometryM": 607,
+        "maxWaypointToShapeM": 33,
+        "repeatedWaypoints": [],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": false,
+      "retraceReview": {
+        "reportedAt": "2026-11-14",
+        "source": "user_observation",
+        "status": "needs_individual_redesign",
+        "repeatedGeometryM": 607,
+        "repeatedGeometryPct": 9.2,
+        "note": "同じ線をなぞる区間があるとの指摘。既存の形状反復値は調査の手掛かりで、歩道・施設内・橋の条件や代替道路は未確認。"
+      },
+      "priorityScore": 50,
+      "issues": [
+        "retraced_geometry_over_100m",
+        "user_reported_retrace"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -1962,9 +2198,11 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": true,
+      "retraceReview": null,
       "priorityScore": 50,
       "issues": [
         "repeated_waypoint",
+        "retraced_geometry_over_100m",
         "possible_distance_filler"
       ],
       "checklist": [
@@ -1973,7 +2211,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -2003,10 +2241,12 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": false,
+      "retraceReview": null,
       "priorityScore": 50,
       "issues": [
         "repeated_geometry_over_10pct",
-        "repeated_waypoint"
+        "repeated_waypoint",
+        "retraced_geometry_over_100m"
       ],
       "checklist": [
         "公式の地域・施設資料を収集し、確認日を記録",
@@ -2014,42 +2254,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
-        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
-        "旧経路との差分・採用理由・未確認事項を記録"
-      ]
-    },
-    {
-      "id": "No.5",
-      "title": "東京競馬場・府中",
-      "series": "本編 A～Z（No.1～26）",
-      "workStatus": "research_needed",
-      "legacy": {
-        "geometryUrl": "data/routes/no-5.geojson",
-        "walkingDistanceM": 7316,
-        "repeatedGeometryPct": 20.6,
-        "repeatedGeometryM": 1510,
-        "maxWaypointToShapeM": 31,
-        "repeatedWaypoints": [],
-        "gateResult": "OK"
-      },
-      "existingNewVariants": [],
-      "coordinateReview": "not_started",
-      "sourceResearch": "not_started",
-      "historicalRoutingStrategies": [],
-      "transportHints": [],
-      "possibleDistanceFiller": false,
-      "priorityScore": 47,
-      "issues": [
-        "repeated_geometry_over_10pct"
-      ],
-      "checklist": [
-        "公式の地域・施設資料を収集し、確認日を記録",
-        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
-        "駅の出入口・施設の入口・横断・通行条件を照合",
-        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
-        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -2079,10 +2284,12 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": false,
+      "retraceReview": null,
       "priorityScore": 47,
       "issues": [
         "repeated_geometry_over_10pct",
-        "repeated_waypoint"
+        "repeated_waypoint",
+        "retraced_geometry_over_100m"
       ],
       "checklist": [
         "公式の地域・施設資料を収集し、確認日を記録",
@@ -2090,7 +2297,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -2115,10 +2322,12 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": false,
+      "retraceReview": null,
       "priorityScore": 45,
       "issues": [
         "repeated_geometry_over_10pct",
-        "waypoint_off_shape"
+        "waypoint_off_shape",
+        "retraced_geometry_over_100m"
       ],
       "checklist": [
         "公式の地域・施設資料を収集し、確認日を記録",
@@ -2126,7 +2335,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -2156,10 +2365,12 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": false,
+      "retraceReview": null,
       "priorityScore": 45,
       "issues": [
         "repeated_geometry_over_10pct",
-        "repeated_waypoint"
+        "repeated_waypoint",
+        "retraced_geometry_over_100m"
       ],
       "checklist": [
         "公式の地域・施設資料を収集し、確認日を記録",
@@ -2167,7 +2378,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -2197,10 +2408,12 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": false,
+      "retraceReview": null,
       "priorityScore": 44,
       "issues": [
         "repeated_geometry_over_10pct",
-        "repeated_waypoint"
+        "repeated_waypoint",
+        "retraced_geometry_over_100m"
       ],
       "checklist": [
         "公式の地域・施設資料を収集し、確認日を記録",
@@ -2208,7 +2421,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -2238,9 +2451,11 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": true,
+      "retraceReview": null,
       "priorityScore": 43,
       "issues": [
         "repeated_waypoint",
+        "retraced_geometry_over_100m",
         "possible_distance_filler"
       ],
       "checklist": [
@@ -2249,7 +2464,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -2285,10 +2500,12 @@
       ],
       "transportHints": [],
       "possibleDistanceFiller": false,
+      "retraceReview": null,
       "priorityScore": 42,
       "issues": [
         "repeated_geometry_over_10pct",
-        "waypoint_off_shape"
+        "waypoint_off_shape",
+        "retraced_geometry_over_100m"
       ],
       "checklist": [
         "公式の地域・施設資料を収集し、確認日を記録",
@@ -2296,7 +2513,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -2321,9 +2538,11 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": false,
+      "retraceReview": null,
       "priorityScore": 42,
       "issues": [
-        "repeated_geometry_over_10pct"
+        "repeated_geometry_over_10pct",
+        "retraced_geometry_over_100m"
       ],
       "checklist": [
         "公式の地域・施設資料を収集し、確認日を記録",
@@ -2331,7 +2550,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -2361,10 +2580,12 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": false,
+      "retraceReview": null,
       "priorityScore": 42,
       "issues": [
         "repeated_geometry_over_10pct",
-        "repeated_waypoint"
+        "repeated_waypoint",
+        "retraced_geometry_over_100m"
       ],
       "checklist": [
         "公式の地域・施設資料を収集し、確認日を記録",
@@ -2372,7 +2593,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -2429,10 +2650,12 @@
       ],
       "transportHints": [],
       "possibleDistanceFiller": false,
+      "retraceReview": null,
       "priorityScore": 40,
       "issues": [
         "repeated_geometry_over_10pct",
-        "repeated_waypoint"
+        "repeated_waypoint",
+        "retraced_geometry_over_100m"
       ],
       "checklist": [
         "公式の地域・施設資料を収集し、確認日を記録",
@@ -2440,7 +2663,51 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "No.7",
+      "title": "高輪ゲートウェイ～品川",
+      "series": "本編 A～Z（No.1～26）",
+      "workStatus": "research_needed",
+      "legacy": {
+        "geometryUrl": "data/routes/no-7.geojson",
+        "walkingDistanceM": 5612,
+        "repeatedGeometryPct": 4.2,
+        "repeatedGeometryM": 234,
+        "maxWaypointToShapeM": 34,
+        "repeatedWaypoints": [],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [],
+      "coordinateReview": "not_started",
+      "sourceResearch": "research_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": false,
+      "retraceReview": {
+        "reportedAt": "2026-11-14",
+        "source": "user_observation",
+        "status": "needs_individual_redesign",
+        "repeatedGeometryM": 234,
+        "repeatedGeometryPct": 4.2,
+        "note": "同じ線をなぞる区間があるとの指摘。既存の形状反復値は調査の手掛かりで、歩道・施設内・橋の条件や代替道路は未確認。"
+      },
+      "priorityScore": 40,
+      "issues": [
+        "retraced_geometry_over_100m",
+        "user_reported_retrace"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -2470,10 +2737,12 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": false,
+      "retraceReview": null,
       "priorityScore": 40,
       "issues": [
         "repeated_geometry_over_10pct",
-        "repeated_waypoint"
+        "repeated_waypoint",
+        "retraced_geometry_over_100m"
       ],
       "checklist": [
         "公式の地域・施設資料を収集し、確認日を記録",
@@ -2481,7 +2750,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -2508,9 +2777,11 @@
         "water_transport"
       ],
       "possibleDistanceFiller": false,
+      "retraceReview": null,
       "priorityScore": 39,
       "issues": [
         "waypoint_off_shape",
+        "retraced_geometry_over_100m",
         "transport_or_indoor_leg_separation"
       ],
       "checklist": [
@@ -2519,7 +2790,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -2544,9 +2815,11 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": false,
+      "retraceReview": null,
       "priorityScore": 38,
       "issues": [
-        "repeated_geometry_over_10pct"
+        "repeated_geometry_over_10pct",
+        "retraced_geometry_over_100m"
       ],
       "checklist": [
         "公式の地域・施設資料を収集し、確認日を記録",
@@ -2554,7 +2827,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -2579,9 +2852,11 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": false,
+      "retraceReview": null,
       "priorityScore": 37,
       "issues": [
-        "repeated_geometry_over_10pct"
+        "repeated_geometry_over_10pct",
+        "retraced_geometry_over_100m"
       ],
       "checklist": [
         "公式の地域・施設資料を収集し、確認日を記録",
@@ -2589,7 +2864,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -2614,10 +2889,12 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": false,
+      "retraceReview": null,
       "priorityScore": 36,
       "issues": [
         "repeated_geometry_over_10pct",
-        "waypoint_off_shape"
+        "waypoint_off_shape",
+        "retraced_geometry_over_100m"
       ],
       "checklist": [
         "公式の地域・施設資料を収集し、確認日を記録",
@@ -2625,7 +2902,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -2655,10 +2932,12 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": false,
+      "retraceReview": null,
       "priorityScore": 35,
       "issues": [
         "repeated_waypoint",
-        "waypoint_off_shape"
+        "waypoint_off_shape",
+        "retraced_geometry_over_100m"
       ],
       "checklist": [
         "公式の地域・施設資料を収集し、確認日を記録",
@@ -2666,7 +2945,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -2691,8 +2970,10 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": true,
+      "retraceReview": null,
       "priorityScore": 34,
       "issues": [
+        "retraced_geometry_over_100m",
         "possible_distance_filler"
       ],
       "checklist": [
@@ -2701,7 +2982,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -2726,9 +3007,11 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": false,
+      "retraceReview": null,
       "priorityScore": 32,
       "issues": [
-        "repeated_geometry_over_10pct"
+        "repeated_geometry_over_10pct",
+        "retraced_geometry_over_100m"
       ],
       "checklist": [
         "公式の地域・施設資料を収集し、確認日を記録",
@@ -2736,42 +3019,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
-        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
-        "旧経路との差分・採用理由・未確認事項を記録"
-      ]
-    },
-    {
-      "id": "No.11",
-      "title": "豊洲 千客万来～ぐるり公園",
-      "series": "本編 A～Z（No.1～26）",
-      "workStatus": "research_needed",
-      "legacy": {
-        "geometryUrl": "data/routes/no-11.geojson",
-        "walkingDistanceM": 7289,
-        "repeatedGeometryPct": 12.6,
-        "repeatedGeometryM": 919,
-        "maxWaypointToShapeM": 31,
-        "repeatedWaypoints": [],
-        "gateResult": "OK"
-      },
-      "existingNewVariants": [],
-      "coordinateReview": "not_started",
-      "sourceResearch": "not_started",
-      "historicalRoutingStrategies": [],
-      "transportHints": [],
-      "possibleDistanceFiller": false,
-      "priorityScore": 31,
-      "issues": [
-        "repeated_geometry_over_10pct"
-      ],
-      "checklist": [
-        "公式の地域・施設資料を収集し、確認日を記録",
-        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
-        "駅の出入口・施設の入口・横断・通行条件を照合",
-        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
-        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -2796,9 +3044,11 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": false,
+      "retraceReview": null,
       "priorityScore": 30,
       "issues": [
-        "waypoint_off_shape"
+        "waypoint_off_shape",
+        "retraced_geometry_over_100m"
       ],
       "checklist": [
         "公式の地域・施設資料を収集し、確認日を記録",
@@ -2806,7 +3056,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -2842,48 +3092,18 @@
       ],
       "transportHints": [],
       "possibleDistanceFiller": false,
+      "retraceReview": null,
       "priorityScore": 26,
-      "issues": [],
+      "issues": [
+        "retraced_geometry_over_100m"
+      ],
       "checklist": [
         "公式の地域・施設資料を収集し、確認日を記録",
         "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
-        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
-        "旧経路との差分・採用理由・未確認事項を記録"
-      ]
-    },
-    {
-      "id": "No.23",
-      "title": "葛西臨海公園",
-      "series": "本編 A～Z（No.1～26）",
-      "workStatus": "research_needed",
-      "legacy": {
-        "geometryUrl": "data/routes/no-23.geojson",
-        "walkingDistanceM": 6564,
-        "repeatedGeometryPct": 9.2,
-        "repeatedGeometryM": 607,
-        "maxWaypointToShapeM": 33,
-        "repeatedWaypoints": [],
-        "gateResult": "OK"
-      },
-      "existingNewVariants": [],
-      "coordinateReview": "not_started",
-      "sourceResearch": "not_started",
-      "historicalRoutingStrategies": [],
-      "transportHints": [],
-      "possibleDistanceFiller": false,
-      "priorityScore": 25,
-      "issues": [],
-      "checklist": [
-        "公式の地域・施設資料を収集し、確認日を記録",
-        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
-        "駅の出入口・施設の入口・横断・通行条件を照合",
-        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
-        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -2908,9 +3128,11 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": false,
+      "retraceReview": null,
       "priorityScore": 25,
       "issues": [
-        "repeated_geometry_over_10pct"
+        "repeated_geometry_over_10pct",
+        "retraced_geometry_over_100m"
       ],
       "checklist": [
         "公式の地域・施設資料を収集し、確認日を記録",
@@ -2918,7 +3140,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -2948,9 +3170,11 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": false,
+      "retraceReview": null,
       "priorityScore": 25,
       "issues": [
-        "repeated_waypoint"
+        "repeated_waypoint",
+        "retraced_geometry_over_100m"
       ],
       "checklist": [
         "公式の地域・施設資料を収集し、確認日を記録",
@@ -2958,7 +3182,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -2999,9 +3223,11 @@
       ],
       "transportHints": [],
       "possibleDistanceFiller": false,
+      "retraceReview": null,
       "priorityScore": 24,
       "issues": [
-        "repeated_waypoint"
+        "repeated_waypoint",
+        "retraced_geometry_over_100m"
       ],
       "checklist": [
         "公式の地域・施設資料を収集し、確認日を記録",
@@ -3009,7 +3235,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -3034,15 +3260,18 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": false,
+      "retraceReview": null,
       "priorityScore": 22,
-      "issues": [],
+      "issues": [
+        "retraced_geometry_over_100m"
+      ],
       "checklist": [
         "公式の地域・施設資料を収集し、確認日を記録",
         "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -3072,9 +3301,11 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": false,
+      "retraceReview": null,
       "priorityScore": 21,
       "issues": [
-        "repeated_waypoint"
+        "repeated_waypoint",
+        "retraced_geometry_over_100m"
       ],
       "checklist": [
         "公式の地域・施設資料を収集し、確認日を記録",
@@ -3082,7 +3313,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -3107,15 +3338,18 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": false,
+      "retraceReview": null,
       "priorityScore": 20,
-      "issues": [],
+      "issues": [
+        "retraced_geometry_over_100m"
+      ],
       "checklist": [
         "公式の地域・施設資料を収集し、確認日を記録",
         "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -3140,15 +3374,18 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": false,
+      "retraceReview": null,
       "priorityScore": 20,
-      "issues": [],
+      "issues": [
+        "retraced_geometry_over_100m"
+      ],
       "checklist": [
         "公式の地域・施設資料を収集し、確認日を記録",
         "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -3173,15 +3410,18 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": false,
+      "retraceReview": null,
       "priorityScore": 19,
-      "issues": [],
+      "issues": [
+        "retraced_geometry_over_100m"
+      ],
       "checklist": [
         "公式の地域・施設資料を収集し、確認日を記録",
         "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -3206,15 +3446,18 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": false,
+      "retraceReview": null,
       "priorityScore": 18,
-      "issues": [],
+      "issues": [
+        "retraced_geometry_over_100m"
+      ],
       "checklist": [
         "公式の地域・施設資料を収集し、確認日を記録",
         "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -3239,9 +3482,11 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": false,
+      "retraceReview": null,
       "priorityScore": 18,
       "issues": [
-        "waypoint_off_shape"
+        "waypoint_off_shape",
+        "retraced_geometry_over_100m"
       ],
       "checklist": [
         "公式の地域・施設資料を収集し、確認日を記録",
@@ -3249,7 +3494,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -3274,9 +3519,11 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": false,
+      "retraceReview": null,
       "priorityScore": 18,
       "issues": [
-        "waypoint_off_shape"
+        "waypoint_off_shape",
+        "retraced_geometry_over_100m"
       ],
       "checklist": [
         "公式の地域・施設資料を収集し、確認日を記録",
@@ -3284,7 +3531,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -3309,9 +3556,11 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": false,
+      "retraceReview": null,
       "priorityScore": 17,
       "issues": [
-        "waypoint_off_shape"
+        "waypoint_off_shape",
+        "retraced_geometry_over_100m"
       ],
       "checklist": [
         "公式の地域・施設資料を収集し、確認日を記録",
@@ -3319,7 +3568,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -3355,15 +3604,18 @@
       ],
       "transportHints": [],
       "possibleDistanceFiller": false,
+      "retraceReview": null,
       "priorityScore": 16,
-      "issues": [],
+      "issues": [
+        "retraced_geometry_over_100m"
+      ],
       "checklist": [
         "公式の地域・施設資料を収集し、確認日を記録",
         "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -3388,9 +3640,11 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": false,
+      "retraceReview": null,
       "priorityScore": 15,
       "issues": [
-        "waypoint_off_shape"
+        "waypoint_off_shape",
+        "retraced_geometry_over_100m"
       ],
       "checklist": [
         "公式の地域・施設資料を収集し、確認日を記録",
@@ -3398,40 +3652,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
-        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
-        "旧経路との差分・採用理由・未確認事項を記録"
-      ]
-    },
-    {
-      "id": "No.7",
-      "title": "高輪ゲートウェイ～品川",
-      "series": "本編 A～Z（No.1～26）",
-      "workStatus": "research_needed",
-      "legacy": {
-        "geometryUrl": "data/routes/no-7.geojson",
-        "walkingDistanceM": 5612,
-        "repeatedGeometryPct": 4.2,
-        "repeatedGeometryM": 234,
-        "maxWaypointToShapeM": 34,
-        "repeatedWaypoints": [],
-        "gateResult": "OK"
-      },
-      "existingNewVariants": [],
-      "coordinateReview": "not_started",
-      "sourceResearch": "not_started",
-      "historicalRoutingStrategies": [],
-      "transportHints": [],
-      "possibleDistanceFiller": false,
-      "priorityScore": 15,
-      "issues": [],
-      "checklist": [
-        "公式の地域・施設資料を収集し、確認日を記録",
-        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
-        "駅の出入口・施設の入口・横断・通行条件を照合",
-        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
-        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -3456,15 +3677,18 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": false,
+      "retraceReview": null,
       "priorityScore": 14,
-      "issues": [],
+      "issues": [
+        "retraced_geometry_over_100m"
+      ],
       "checklist": [
         "公式の地域・施設資料を収集し、確認日を記録",
         "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -3489,15 +3713,18 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": false,
+      "retraceReview": null,
       "priorityScore": 12,
-      "issues": [],
+      "issues": [
+        "retraced_geometry_over_100m"
+      ],
       "checklist": [
         "公式の地域・施設資料を収集し、確認日を記録",
         "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -3522,15 +3749,18 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": false,
+      "retraceReview": null,
       "priorityScore": 11,
-      "issues": [],
+      "issues": [
+        "retraced_geometry_over_100m"
+      ],
       "checklist": [
         "公式の地域・施設資料を収集し、確認日を記録",
         "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -3555,6 +3785,7 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": false,
+      "retraceReview": null,
       "priorityScore": 11,
       "issues": [],
       "checklist": [
@@ -3563,7 +3794,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -3588,15 +3819,18 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": false,
+      "retraceReview": null,
       "priorityScore": 11,
-      "issues": [],
+      "issues": [
+        "retraced_geometry_over_100m"
+      ],
       "checklist": [
         "公式の地域・施設資料を収集し、確認日を記録",
         "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -3621,6 +3855,7 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": false,
+      "retraceReview": null,
       "priorityScore": 10,
       "issues": [
         "waypoint_off_shape"
@@ -3631,7 +3866,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -3656,15 +3891,18 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": false,
+      "retraceReview": null,
       "priorityScore": 9,
-      "issues": [],
+      "issues": [
+        "retraced_geometry_over_100m"
+      ],
       "checklist": [
         "公式の地域・施設資料を収集し、確認日を記録",
         "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -3689,6 +3927,7 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": false,
+      "retraceReview": null,
       "priorityScore": 6,
       "issues": [],
       "checklist": [
@@ -3697,7 +3936,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -3722,6 +3961,7 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": false,
+      "retraceReview": null,
       "priorityScore": 5,
       "issues": [],
       "checklist": [
@@ -3730,7 +3970,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -3755,6 +3995,7 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": false,
+      "retraceReview": null,
       "priorityScore": 5,
       "issues": [],
       "checklist": [
@@ -3763,7 +4004,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -3804,6 +4045,7 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": false,
+      "retraceReview": null,
       "priorityScore": 4,
       "issues": [],
       "checklist": [
@@ -3812,7 +4054,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -3837,6 +4079,7 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": false,
+      "retraceReview": null,
       "priorityScore": 3,
       "issues": [],
       "checklist": [
@@ -3845,7 +4088,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -3870,6 +4113,7 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": false,
+      "retraceReview": null,
       "priorityScore": 3,
       "issues": [],
       "checklist": [
@@ -3878,7 +4122,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -3903,6 +4147,7 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": false,
+      "retraceReview": null,
       "priorityScore": 1,
       "issues": [],
       "checklist": [
@@ -3911,7 +4156,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]
@@ -3936,6 +4181,7 @@
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": false,
+      "retraceReview": null,
       "priorityScore": 1,
       "issues": [],
       "checklist": [
@@ -3944,7 +4190,7 @@
         "駅の出入口・施設の入口・横断・通行条件を照合",
         "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
         "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、距離と道路重複を検査",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
         "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
         "旧経路との差分・採用理由・未確認事項を記録"
       ]

@@ -1,0 +1,56 @@
+{
+  "plannedAt": "2026-11-14",
+  "status": "candidate_plan_not_map_reviewed",
+  "method": "OSMの実在地点を経由点にし、途中点はValhalla pedestrianのthrough指定で計算。施設中心点は入口ではない。",
+  "plans": [
+    {
+      "courseId": "No.17",
+      "title": "麻布台ヒルズから東京タワー・芝公園へ",
+      "reason": "旧線の西側への距離合わせと終点の再訪を除き、神谷町から麻布台、東京タワー、増上寺を経て芝公園駅へ南東に抜ける。目標距離に届かなければ理由付き例外とする。",
+      "distanceException": "徒歩計算は約2.12km。見どころを往復で水増しせず、自然な駅間の流れを優先する。",
+      "checkpointNarration": { "kamiyacho": "神谷町駅付近から出発。使う出口は地図レビューで確定する。", "azabudai_arena": "麻布台ヒルズ中央広場の東側を通る候補。広場へ入る動線は未確認。", "tokyo_tower": "東京タワー前の歩道付近。施設入口と階段を確認する。", "zojoji": "増上寺の門前付近。境内を通る線ではない。", "shibakoen": "芝公園駅付近で終了。利用する出入口を確認する。" },
+      "omittedFromMainLine": ["旧線の芝公園・増上寺方面の往復延伸"],
+      "officialEvidence": ["https://www.azabudai-hills.com/teamlabborderless/index.html", "https://en.tokyotower.co.jp/access/railroad/"],
+      "waypoints": [
+        { "id": "kamiyacho", "label": "神谷町駅付近", "coord": [35.6632143, 139.7455302], "source": "OSM node 4685178037; subway entrance" },
+        { "id": "azabudai_arena", "label": "麻布台ヒルズ中央広場東側の歩道付近", "coord": [35.661703, 139.741505], "source": "2026-11-14 Valhalla route shape junction near OSM way 1228777078; plaza entrance unknown" },
+        { "id": "tokyo_tower", "label": "東京タワー前の歩道付近", "coord": [35.65897, 139.745761], "source": "2026-11-14 Valhalla route shape junction near OSM relation 4247312; entrance unknown" },
+        { "id": "zojoji", "label": "増上寺門前の歩道付近", "coord": [35.657087, 139.748091], "source": "2026-11-14 Valhalla route shape junction near OSM way 744348814; gate unknown" },
+        { "id": "shibakoen", "label": "芝公園駅付近", "coord": [35.655298, 139.750142], "source": "OSM node 2144966779; subway entrance" }
+      ]
+    },
+    {
+      "courseId": "No.11",
+      "title": "豊洲 千客万来からぐるり公園・豊洲駅へ",
+      "reason": "市場前から千客万来を経てふ頭の水際を西・南・東へ一方向に歩き、豊洲駅で終える。旧線の折り返しと位置が曖昧なデジタルアート施設を本線から外す。",
+      "distanceException": "徒歩計算は約4.34km。水際の一方向の流れを優先し、距離合わせの往復を加えない。",
+      "checkpointNarration": { "shijomae": "市場前駅付近から出発。駅の実際の出口は未照合。", "senkyakubanrai": "豊洲 千客万来付近。公式案内には市場前駅から歩行者デッキで接続するとあるが、本線のデッキ区間は未確認。", "gururi_west": "ふ頭の西側水際へ進む候補。園路の連続性を地図で確認する。", "gururi_south": "公園南端付近の景色を楽しむ候補。施設・園路の出入口を確認する。", "gururi_east": "東側水際から豊洲駅方面へ北上する候補。", "toyosu_station": "豊洲駅付近で終了。使う出入口を確認する。" },
+      "omittedFromMainLine": ["旧線の折り返し区間", "旧線で位置が曖昧なデジタルアート施設"],
+      "officialEvidence": ["https://www.shijou.metro.tokyo.lg.jp/info/0/toyosu_senkyaku_banrai", "https://toyosugururi.jp/about/"],
+      "waypoints": [
+        { "id": "shijomae", "label": "市場前駅付近", "coord": [35.6464015, 139.7869901], "source": "OSM node 6387387261 bus stop vicinity; station exit unknown" },
+        { "id": "senkyakubanrai", "label": "豊洲 千客万来付近", "coord": [35.6454629, 139.7836628], "source": "OSM way 1159017723 centre; deck-to-ground route unknown" },
+        { "id": "gururi_west", "label": "ぐるり公園西側の水際付近", "coord": [35.643141, 139.777821], "source": "OSM node 11436145519 bicycle rental vicinity; waterfront path needs review" },
+        { "id": "gururi_south", "label": "ぐるり公園南端付近", "coord": [35.6402759, 139.7782119], "source": "OSM node 11374672983 information point; waterfront path needs review" },
+        { "id": "gururi_east", "label": "ぐるり公園東側の水際園路付近", "coord": [35.643628, 139.787659], "source": "2026-11-14 Valhalla route shape junction near OSM node 11374672984; waterfront path needs review" },
+        { "id": "toyosu_station", "label": "豊洲駅付近", "coord": [35.6544293, 139.7958876], "source": "OSM node 1131996015; subway entrance" }
+      ]
+    },
+    {
+      "courseId": "No.23",
+      "title": "葛西臨海公園の陸側一筆書き",
+      "reason": "駅西側から観覧車、クリスタルビュー、水族園付近を通って駅東側へ戻る。西なぎさと鳥類園の行き止まり候補は本線に含めず、別の任意立ち寄りとして記録する。",
+      "distanceException": "徒歩計算は約2.24km。西なぎさ・鳥類園への往復を本線距離に入れず、園内の一方向の道を優先する。",
+      "checkpointNarration": { "kasai_west_exit": "駅西側付近から出発。正式な出口と園路への接続は未確認。", "ferris_wheel": "大観覧車の外側付近を通る候補。乗車や施設入場は本線の歩行距離に含めない。", "crystal_view": "クリスタルビュー北側の園路付近。施設入口は未確認。", "aquarium": "水族園東側の園路付近。入園する場合は開園・料金と館内距離を別に確認する。", "kasai_east_exit": "駅東側付近で終了。利用する出口は地図レビューで確定する。" },
+      "omittedFromMainLine": ["西なぎさ（橋を往復する別行動・本線距離へ合算しない）", "鳥類園ウォッチングセンター（現行の徒歩ネットワークでは往復が発生。別案として再調査）"],
+      "officialEvidence": ["https://www.tokyo-park.or.jp/park/kasairinkai/"],
+      "waypoints": [
+        { "id": "kasai_west_exit", "label": "葛西臨海公園駅西側付近", "coord": [35.6443, 139.8616], "source": "OSM node 11040588549 bicycle rental vicinity; exit unknown" },
+        { "id": "ferris_wheel", "label": "大観覧車付近", "coord": [35.6439404, 139.8572504], "source": "OSM way 161931777 centre; attraction entrance unknown" },
+        { "id": "crystal_view", "label": "クリスタルビュー北側の園路付近", "coord": [35.641733, 139.860002], "source": "2026-11-14 Valhalla route shape junction near OSM way 161731857; entrance unknown" },
+        { "id": "aquarium", "label": "葛西臨海水族園東側の園路付近", "coord": [35.641914, 139.863135], "source": "2026-11-14 Valhalla route shape junction near OSM way 191044572; entrance and opening need review" },
+        { "id": "kasai_east_exit", "label": "葛西臨海公園駅東側付近", "coord": [35.6438204, 139.8626288], "source": "OSM node 7249081833 station vicinity; exit unknown" }
+      ]
+    }
+  ]
+}

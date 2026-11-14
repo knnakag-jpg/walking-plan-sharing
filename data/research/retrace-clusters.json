@@ -1,0 +1,482 @@
+{
+  "generatedAt": "2026-11-14",
+  "method": "Exact repeated undirected coordinate edges at six-decimal precision; clusters follow the saved route order. This does not identify OSM road edges or safe alternatives.",
+  "cases": [
+    {
+      "courseId": "No.5",
+      "title": "東京競馬場・府中",
+      "geometryUrl": "data/routes/no-5.geojson",
+      "geometrySha256": "cb08feff7519ee5bbe177642a35a313f1f2631e94400f52ca0b4013d5483eea7",
+      "repeatedExactM": 1510,
+      "clusters": [
+        {
+          "firstIndex": 37,
+          "lastIndex": 37,
+          "repeatedM": 28,
+          "start": [
+            139.485793,
+            35.671176
+          ],
+          "end": [
+            139.48609,
+            35.671117
+          ]
+        },
+        {
+          "firstIndex": 44,
+          "lastIndex": 44,
+          "repeatedM": 35,
+          "start": [
+            139.48608,
+            35.672154
+          ],
+          "end": [
+            139.486444,
+            35.672052
+          ]
+        },
+        {
+          "firstIndex": 59,
+          "lastIndex": 64,
+          "repeatedM": 169,
+          "start": [
+            139.487143,
+            35.67238
+          ],
+          "end": [
+            139.486237,
+            35.671562
+          ]
+        },
+        {
+          "firstIndex": 87,
+          "lastIndex": 90,
+          "repeatedM": 44,
+          "start": [
+            139.482996,
+            35.670079
+          ],
+          "end": [
+            139.48347,
+            35.670096
+          ]
+        },
+        {
+          "firstIndex": 93,
+          "lastIndex": 101,
+          "repeatedM": 203,
+          "start": [
+            139.483583,
+            35.669998
+          ],
+          "end": [
+            139.48326,
+            35.668188
+          ]
+        },
+        {
+          "firstIndex": 150,
+          "lastIndex": 183,
+          "repeatedM": 1032,
+          "start": [
+            139.48222,
+            35.664479
+          ],
+          "end": [
+            139.483364,
+            35.666633
+          ]
+        }
+      ],
+      "status": "geometry_screening_only"
+    },
+    {
+      "courseId": "No.7",
+      "title": "高輪ゲートウェイ～品川",
+      "geometryUrl": "data/routes/no-7.geojson",
+      "geometrySha256": "886fbc2810fc7beb70227cdbbd73d2a3a3b727e04c39f6d44cb12afa6b7e43e2",
+      "repeatedExactM": 234,
+      "clusters": [
+        {
+          "firstIndex": 25,
+          "lastIndex": 26,
+          "repeatedM": 9,
+          "start": [
+            139.739157,
+            35.637705
+          ],
+          "end": [
+            139.739259,
+            35.637704
+          ]
+        },
+        {
+          "firstIndex": 112,
+          "lastIndex": 113,
+          "repeatedM": 23,
+          "start": [
+            139.736706,
+            35.633445
+          ],
+          "end": [
+            139.736827,
+            35.633295
+          ]
+        },
+        {
+          "firstIndex": 204,
+          "lastIndex": 208,
+          "repeatedM": 202,
+          "start": [
+            139.741668,
+            35.626417
+          ],
+          "end": [
+            139.741813,
+            35.628225
+          ]
+        }
+      ],
+      "status": "geometry_screening_only"
+    },
+    {
+      "courseId": "No.8",
+      "title": "上野ミュージアム",
+      "geometryUrl": "data/routes/no-8.geojson",
+      "geometrySha256": "56908362b9907c9b13e835bba5efdbf30cfaa79875e91443b00324035e57cc2c",
+      "repeatedExactM": 1526,
+      "clusters": [
+        {
+          "firstIndex": 103,
+          "lastIndex": 110,
+          "repeatedM": 54,
+          "start": [
+            139.776339,
+            35.718457
+          ],
+          "end": [
+            139.776355,
+            35.717994
+          ]
+        },
+        {
+          "firstIndex": 119,
+          "lastIndex": 127,
+          "repeatedM": 74,
+          "start": [
+            139.775665,
+            35.717771
+          ],
+          "end": [
+            139.77534,
+            35.717211
+          ]
+        },
+        {
+          "firstIndex": 146,
+          "lastIndex": 148,
+          "repeatedM": 29,
+          "start": [
+            139.775053,
+            35.715805
+          ],
+          "end": [
+            139.774929,
+            35.71603
+          ]
+        },
+        {
+          "firstIndex": 152,
+          "lastIndex": 152,
+          "repeatedM": 56,
+          "start": [
+            139.774561,
+            35.71619
+          ],
+          "end": [
+            139.774253,
+            35.715751
+          ]
+        },
+        {
+          "firstIndex": 234,
+          "lastIndex": 235,
+          "repeatedM": 53,
+          "start": [
+            139.771234,
+            35.725785
+          ],
+          "end": [
+            139.770653,
+            35.725858
+          ]
+        },
+        {
+          "firstIndex": 286,
+          "lastIndex": 286,
+          "repeatedM": 11,
+          "start": [
+            139.770691,
+            35.730851
+          ],
+          "end": [
+            139.770632,
+            35.730769
+          ]
+        },
+        {
+          "firstIndex": 328,
+          "lastIndex": 369,
+          "repeatedM": 1248,
+          "start": [
+            139.770162,
+            35.740167
+          ],
+          "end": [
+            139.770691,
+            35.730851
+          ]
+        }
+      ],
+      "status": "geometry_screening_only"
+    },
+    {
+      "courseId": "No.11",
+      "title": "豊洲 千客万来～ぐるり公園",
+      "geometryUrl": "data/routes/no-11.geojson",
+      "geometrySha256": "21f496a73f441f0cee9aaf43549b7a7ef59404a6523f0a93c05775710c9ec1cb",
+      "repeatedExactM": 920,
+      "clusters": [
+        {
+          "firstIndex": 43,
+          "lastIndex": 43,
+          "repeatedM": 41,
+          "start": [
+            139.781109,
+            35.643891
+          ],
+          "end": [
+            139.781457,
+            35.644122
+          ]
+        },
+        {
+          "firstIndex": 68,
+          "lastIndex": 74,
+          "repeatedM": 34,
+          "start": [
+            139.784416,
+            35.645046
+          ],
+          "end": [
+            139.784631,
+            35.6448
+          ]
+        },
+        {
+          "firstIndex": 106,
+          "lastIndex": 113,
+          "repeatedM": 229,
+          "start": [
+            139.790987,
+            35.646816
+          ],
+          "end": [
+            139.789435,
+            35.648002
+          ]
+        },
+        {
+          "firstIndex": 177,
+          "lastIndex": 186,
+          "repeatedM": 238,
+          "start": [
+            139.802013,
+            35.649896
+          ],
+          "end": [
+            139.800184,
+            35.651237
+          ]
+        },
+        {
+          "firstIndex": 222,
+          "lastIndex": 242,
+          "repeatedM": 301,
+          "start": [
+            139.795888,
+            35.654429
+          ],
+          "end": [
+            139.797979,
+            35.652771
+          ]
+        },
+        {
+          "firstIndex": 246,
+          "lastIndex": 248,
+          "repeatedM": 78,
+          "start": [
+            139.798111,
+            35.652646
+          ],
+          "end": [
+            139.798665,
+            35.652106
+          ]
+        }
+      ],
+      "status": "geometry_screening_only"
+    },
+    {
+      "courseId": "No.17",
+      "title": "麻布台ヒルズ～東京タワー",
+      "geometryUrl": "data/routes/no-17.geojson",
+      "geometrySha256": "4379d5a10f7616eed6551e2463bd23e4458304d5ca98f858ed410ba8f524e453",
+      "repeatedExactM": 1068,
+      "clusters": [
+        {
+          "firstIndex": 103,
+          "lastIndex": 128,
+          "repeatedM": 198,
+          "start": [
+            139.74998,
+            35.660404
+          ],
+          "end": [
+            139.748579,
+            35.659803
+          ]
+        },
+        {
+          "firstIndex": 161,
+          "lastIndex": 164,
+          "repeatedM": 60,
+          "start": [
+            139.744352,
+            35.659653
+          ],
+          "end": [
+            139.743728,
+            35.659831
+          ]
+        },
+        {
+          "firstIndex": 222,
+          "lastIndex": 224,
+          "repeatedM": 18,
+          "start": [
+            139.738943,
+            35.664959
+          ],
+          "end": [
+            139.738958,
+            35.664807
+          ]
+        },
+        {
+          "firstIndex": 313,
+          "lastIndex": 337,
+          "repeatedM": 498,
+          "start": [
+            139.726137,
+            35.670232
+          ],
+          "end": [
+            139.727985,
+            35.666583
+          ]
+        },
+        {
+          "firstIndex": 367,
+          "lastIndex": 379,
+          "repeatedM": 206,
+          "start": [
+            139.731937,
+            35.663697
+          ],
+          "end": [
+            139.733838,
+            35.664205
+          ]
+        },
+        {
+          "firstIndex": 400,
+          "lastIndex": 410,
+          "repeatedM": 88,
+          "start": [
+            139.738501,
+            35.664976
+          ],
+          "end": [
+            139.738943,
+            35.664959
+          ]
+        }
+      ],
+      "status": "geometry_screening_only"
+    },
+    {
+      "courseId": "No.23",
+      "title": "葛西臨海公園",
+      "geometryUrl": "data/routes/no-23.geojson",
+      "geometrySha256": "b46558640023cb741119d1f41499642b9f95cafdc08d72f4a033728ff304d7fe",
+      "repeatedExactM": 607,
+      "clusters": [
+        {
+          "firstIndex": 63,
+          "lastIndex": 75,
+          "repeatedM": 260,
+          "start": [
+            139.862,
+            35.640958
+          ],
+          "end": [
+            139.860691,
+            35.642107
+          ]
+        },
+        {
+          "firstIndex": 89,
+          "lastIndex": 96,
+          "repeatedM": 131,
+          "start": [
+            139.859842,
+            35.643051
+          ],
+          "end": [
+            139.858531,
+            35.643507
+          ]
+        },
+        {
+          "firstIndex": 173,
+          "lastIndex": 191,
+          "repeatedM": 190,
+          "start": [
+            139.860431,
+            35.654129
+          ],
+          "end": [
+            139.858749,
+            35.653571
+          ]
+        },
+        {
+          "firstIndex": 260,
+          "lastIndex": 260,
+          "repeatedM": 25,
+          "start": [
+            139.857921,
+            35.66059
+          ],
+          "end": [
+            139.858134,
+            35.660441
+          ]
+        }
+      ],
+      "status": "geometry_screening_only"
+    }
+  ]
+}

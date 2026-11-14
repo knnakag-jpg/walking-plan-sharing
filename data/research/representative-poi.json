@@ -1,0 +1,3615 @@
+{
+  "checkedAt": "2026-11-13T23:51:25.590Z",
+  "source": "OpenStreetMap via Overpass API; © OpenStreetMap contributors",
+  "endpoint": "https://overpass-api.de/api/interpreter",
+  "query": "[out:json][timeout:30];(nwr[\"name\"~\"神谷町駅|麻布台ヒルズ|東京タワー|増上寺|芝公園駅|御成門駅|赤羽橋駅|チームラボボーダレス|teamLab Borderless\"](35.65,139.725,35.675,139.755);nwr[\"name\"~\"市場前駅|豊洲 千客万来|豊洲ぐるり公園|豊洲駅|新豊洲駅|チームラボプラネッツ|teamLab Planets\"](35.635,139.775,35.665,139.815);nwr[\"name\"~\"葛西臨海公園駅|葛西臨海水族園|クリスタルビュー|鳥類園|葛西臨海公園|ダイヤと花の大観覧車|西なぎさ\"](35.635,139.85,35.67,139.885););out center tags;",
+  "note": "Way centres are not pedestrian entrances and must be checked on a map.",
+  "features": [
+    {
+      "type": "node",
+      "osmId": 255643777,
+      "name": "葛西臨海公園前",
+      "lat": 35.6427334,
+      "lon": 139.8667652,
+      "tags": {
+        "highway": "traffic_signals",
+        "name": "葛西臨海公園前",
+        "name:en": "Kasai Rinkai Park",
+        "name:ja": "葛西臨海公園前"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 255643794,
+      "name": "葛西臨海公園前",
+      "lat": 35.6427923,
+      "lon": 139.8666,
+      "tags": {
+        "highway": "traffic_signals",
+        "name": "葛西臨海公園前",
+        "name:en": "Kasai Rinkai Park",
+        "name:ja": "葛西臨海公園前"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 289946685,
+      "name": "豊洲駅前",
+      "lat": 35.654691,
+      "lon": 139.7965638,
+      "tags": {
+        "highway": "traffic_signals",
+        "name": "豊洲駅前",
+        "name:en": "Toyosu Sta.",
+        "name:ja": "豊洲駅前",
+        "source": "Bing"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 337024823,
+      "name": "増上寺前",
+      "lat": 35.6572265,
+      "lon": 139.750308,
+      "tags": {
+        "junction": "yes",
+        "name": "増上寺前",
+        "name:en": "Zojoji Temple"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 337141153,
+      "name": "東京タワー下",
+      "lat": 35.6567935,
+      "lon": 139.7460098,
+      "tags": {
+        "junction": "yes",
+        "name": "東京タワー下",
+        "name:en": "Tokyo Tower shita",
+        "name:ja": "東京タワー下"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 588389535,
+      "name": "豊洲駅前",
+      "lat": 35.6544528,
+      "lon": 139.7964984,
+      "tags": {
+        "highway": "traffic_signals",
+        "name": "豊洲駅前",
+        "name:en": "Toyosu Sta.",
+        "name:ja": "豊洲駅前"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 734883798,
+      "name": "東京タワー(公園下)",
+      "lat": 35.6571907,
+      "lon": 139.7464952,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "東京タワー(公園下)",
+        "name:en": "Tokyo Tower",
+        "name:es": "Tokyo Tower",
+        "name:ja": "東京タワー(公園下)",
+        "network": "東急バス",
+        "network:en": "Tokyu Bus",
+        "network:ja": "東急バス",
+        "network:wikidata": "Q11526982",
+        "operator": "東急バス",
+        "public_transport": "platform",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 734883799,
+      "name": "赤羽橋駅前",
+      "lat": 35.6535156,
+      "lon": 139.7452622,
+      "tags": {
+        "bench": "yes",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "name": "赤羽橋駅前",
+        "name:en": "Akabanebashi-eki-mae",
+        "name:ja": "赤羽橋駅前",
+        "name:ja-Hira": "あかばねばしえきまえ",
+        "name:ja-Latn": "Akabanebashi-eki-mae",
+        "operator": "東急バス",
+        "public_transport": "platform",
+        "shelter": "yes",
+        "tactile_paving": "yes",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 765039593,
+      "name": "豊洲駅前",
+      "lat": 35.654575,
+      "lon": 139.7966699,
+      "tags": {
+        "highway": "traffic_signals",
+        "name": "豊洲駅前",
+        "name:en": "Toyosu Sta.",
+        "name:ja": "豊洲駅前"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 765039604,
+      "name": "豊洲駅前",
+      "lat": 35.6545611,
+      "lon": 139.7963842,
+      "tags": {
+        "highway": "traffic_signals",
+        "name": "豊洲駅前",
+        "name:en": "Toyosu Sta.",
+        "name:ja": "豊洲駅前",
+        "source": "Bing"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 1016729249,
+      "name": "東京タワー下",
+      "lat": 35.6567584,
+      "lon": 139.746121,
+      "tags": {
+        "junction": "yes",
+        "name": "東京タワー下",
+        "name:en": "Tokyo Tower shita",
+        "name:ja": "東京タワー下"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 1131996015,
+      "name": "豊洲駅",
+      "lat": 35.6544293,
+      "lon": 139.7958876,
+      "tags": {
+        "name": "豊洲駅",
+        "railway": "subway_entrance",
+        "ref": "7",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 1153971396,
+      "name": "豊洲駅",
+      "lat": 35.6550613,
+      "lon": 139.7966465,
+      "tags": {
+        "layer": "-1",
+        "level": "-1",
+        "name": "豊洲駅",
+        "railway": "subway_entrance",
+        "ref": "3",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 1155821912,
+      "name": "豊洲駅",
+      "lat": 35.6555906,
+      "lon": 139.7959635,
+      "tags": {
+        "name": "豊洲駅",
+        "name:en": "Toyosu Station",
+        "railway": "subway_entrance",
+        "ref": "1a",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 1237991037,
+      "name": "豊洲駅",
+      "lat": 35.6546806,
+      "lon": 139.7969783,
+      "tags": {
+        "name": "豊洲駅",
+        "railway": "subway_entrance",
+        "ref": "4",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 1237991038,
+      "name": "豊洲駅",
+      "lat": 35.6552318,
+      "lon": 139.7954624,
+      "tags": {
+        "name": "豊洲駅",
+        "railway": "subway_entrance",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 1237991040,
+      "name": "豊洲駅",
+      "lat": 35.6544497,
+      "lon": 139.7969513,
+      "tags": {
+        "name": "豊洲駅",
+        "name:en": "Toyosu Station",
+        "railway": "subway_entrance",
+        "ref": "5",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 1509288653,
+      "name": "赤羽橋駅前",
+      "lat": 35.6543414,
+      "lon": 139.7443145,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "local_ref": "5",
+        "name": "赤羽橋駅前",
+        "name:en": "Akabanebashi-eki-mae",
+        "name:ja": "赤羽橋駅前",
+        "name:ja-Hira": "あかばねばしえきまえ",
+        "name:ja-Latn": "Akabanebashi-eki-mae",
+        "operator": "東京都交通局",
+        "public_transport": "platform",
+        "shelter": "yes",
+        "tactile_paving": "yes",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 1509288654,
+      "name": "赤羽橋駅前",
+      "lat": 35.6543596,
+      "lon": 139.7439478,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "赤羽橋駅前",
+        "name:en": "Akabanebashi-eki-mae",
+        "name:ja": "赤羽橋駅前",
+        "name:ja-Hira": "あかばねばしえきまえ",
+        "name:ja-Latn": "Akabanebashi-eki-mae",
+        "operator": "港区コミュニティバス",
+        "public_transport": "platform",
+        "shelter": "yes",
+        "tactile_paving": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 1509288772,
+      "name": "赤羽橋駅前",
+      "lat": 35.6542446,
+      "lon": 139.7438441,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "local_ref": "6",
+        "name": "赤羽橋駅前",
+        "name:en": "Akabanebashi-eki-mae",
+        "name:ja": "赤羽橋駅前",
+        "name:ja-Hira": "あかばねばしえきまえ",
+        "name:ja-Latn": "Akabanebashi-eki-mae",
+        "operator": "東京都交通局",
+        "public_transport": "platform",
+        "shelter": "yes",
+        "tactile_paving": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 1509288773,
+      "name": "赤羽橋駅前",
+      "lat": 35.6542685,
+      "lon": 139.7436308,
+      "tags": {
+        "bench": "yes",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "no",
+        "name": "赤羽橋駅前",
+        "name:en": "Akabanebashi-eki-mae",
+        "name:ja": "赤羽橋駅前",
+        "name:ja-Hira": "あかばねばしえきまえ",
+        "name:ja-Latn": "Akabanebashi-eki-mae",
+        "operator": "港区コミュニティバス",
+        "public_transport": "platform",
+        "shelter": "yes",
+        "tactile_paving": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 1637283659,
+      "name": "東京タワー前",
+      "lat": 35.6584587,
+      "lon": 139.7469936,
+      "tags": {
+        "highway": "traffic_signals",
+        "name": "東京タワー前",
+        "name:en": "Tokyo Tower",
+        "name:ja": "東京タワー前"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 1688041787,
+      "name": "葛西臨海公園前",
+      "lat": 35.6433114,
+      "lon": 139.8673558,
+      "tags": {
+        "highway": "traffic_signals",
+        "name": "葛西臨海公園前",
+        "name:en": "Kasai Rinkai Park",
+        "name:ja": "葛西臨海公園前"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 1688041794,
+      "name": "葛西臨海公園前",
+      "lat": 35.6433689,
+      "lon": 139.8671999,
+      "tags": {
+        "highway": "traffic_signals",
+        "name": "葛西臨海公園前",
+        "name:en": "Kasai Rinkai Park",
+        "name:ja": "葛西臨海公園前"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 1694060348,
+      "name": "増上寺前",
+      "lat": 35.6572377,
+      "lon": 139.7502047,
+      "tags": {
+        "junction": "yes",
+        "name": "増上寺前",
+        "name:en": "Zojoji Temple"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 1926727790,
+      "name": "神谷町駅前",
+      "lat": 35.6624802,
+      "lon": 139.7447379,
+      "tags": {
+        "bus": "yes",
+        "departures_board": "timetable",
+        "highway": "bus_stop",
+        "name": "神谷町駅前",
+        "name:en": "Kamiyacho Station",
+        "name:ja": "神谷町駅前",
+        "name:ja-Hira": "かみやちょうえきまえ",
+        "name:ja-Latn": "Kamiyachō-eki-mae",
+        "network": "都営バス",
+        "network:en": "Toei Bus",
+        "network:ja": "都営バス",
+        "network:wikidata": "Q859227",
+        "network:wikipedia": "ja:都営バス",
+        "operator": "東京都交通局",
+        "public_transport": "platform",
+        "shelter": "yes",
+        "tactile_paving": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 1947656218,
+      "name": "葛西臨海公園",
+      "lat": 35.6444075,
+      "lon": 139.8615992,
+      "tags": {
+        "maxspeed": "100",
+        "name": "葛西臨海公園",
+        "name:en": "Kasai-Rinkai Park",
+        "name:ja": "葛西臨海公園",
+        "name:ja-Hira": "かさいりんかいこうえん",
+        "name:ja-Latn": "Kasai Rinkai Kōen",
+        "name:ko": "가사이 임해공원",
+        "name:ru": "Касай Ринкай Коэн",
+        "public_transport": "station",
+        "railway": "station",
+        "ref": "JE06",
+        "usage": "main",
+        "website": "https://www.jreast.co.jp/estation/station/info.aspx?StationCd=424",
+        "wheelchair": "yes",
+        "wikidata": "Q844280",
+        "wikipedia": "ja:葛西臨海公園駅"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 2016296013,
+      "name": "葛西臨海公園駅前",
+      "lat": 35.6440465,
+      "lon": 139.8619905,
+      "tags": {
+        "bench": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "local_ref": "3",
+        "name": "葛西臨海公園駅前",
+        "name:en": "Kasai-rinkai-koen Station",
+        "name:ja": "葛西臨海公園駅前",
+        "operator": "東京都交通局",
+        "public_transport": "platform",
+        "route_ref": "葛西21",
+        "shelter": "yes",
+        "source": "survey",
+        "survey:date": "2012-11-01"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 2144966779,
+      "name": "芝公園駅",
+      "lat": 35.655298,
+      "lon": 139.750142,
+      "tags": {
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "covered": "no",
+        "highway": "bus_stop",
+        "name": "芝公園駅",
+        "name:en": "Shibakoen Station",
+        "name:es": "Estación Shibakoen",
+        "network": "芝ルート;麻布ルート",
+        "public_transport": "platform",
+        "tactile_paving": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 2144966797,
+      "name": "芝公園駅",
+      "lat": 35.655327,
+      "lon": 139.749832,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "mapillary": "476092946969639",
+        "name": "芝公園駅",
+        "name:en": "Shibakoen Station",
+        "name:es": "Estación Shibakoen",
+        "network": "芝ルート;麻布ルート",
+        "pole": "yes",
+        "public_transport": "platform",
+        "shelter": "no",
+        "survey:date": "2018-07-21",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 2186531844,
+      "name": "赤羽橋駅前",
+      "lat": 35.65323,
+      "lon": 139.74498,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "赤羽橋駅前",
+        "name:en": "Akabanebashi-eki-mae",
+        "name:ja": "赤羽橋駅前",
+        "name:ja-Hira": "あかばねばしえきまえ",
+        "name:ja-Latn": "Akabanebashi-eki-mae",
+        "operator": "東急バス",
+        "public_transport": "platform",
+        "tactile_paving": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 2194543337,
+      "name": "豊洲駅前",
+      "lat": 35.6551545,
+      "lon": 139.7956588,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "local_ref": "5",
+        "name": "豊洲駅前",
+        "name:en": "Toyosu-eki-mae",
+        "name:ja": "豊洲駅前",
+        "name:ja-Hira": "とよすえきまえ",
+        "name:ja-Latn": "Toyosu-eki-mae",
+        "network": "都営バス",
+        "operator": "東京都交通局",
+        "public_transport": "platform",
+        "shelter": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 2194543349,
+      "name": "豊洲駅前",
+      "lat": 35.6547464,
+      "lon": 139.7952821,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "local_ref": "3",
+        "name": "豊洲駅前",
+        "name:en": "Toyosu-eki-mae",
+        "name:ja": "豊洲駅前",
+        "name:ja-Hira": "とよすえきまえ",
+        "name:ja-Latn": "Toyosu-eki-mae",
+        "network": "都営バス",
+        "operator": "東京都交通局",
+        "public_transport": "platform",
+        "route_ref": "錦13甲",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 2194543387,
+      "name": "豊洲駅前",
+      "lat": 35.6537199,
+      "lon": 139.797096,
+      "tags": {
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "local_ref": "6",
+        "name": "豊洲駅前",
+        "name:en": "Toyosu-eki-mae",
+        "name:ja": "豊洲駅前",
+        "name:ja-Hira": "とよすえきまえ",
+        "name:ja-Latn": "Toyosu-eki-mae",
+        "network": "都営バス",
+        "operator": "東京都交通局",
+        "public_transport": "platform",
+        "route_ref": "都05-1、都05-1出入、豊洲01",
+        "shelter": "no",
+        "tactile_paving": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 2194543410,
+      "name": "豊洲駅前",
+      "lat": 35.6541212,
+      "lon": 139.7972576,
+      "tags": {
+        "bench": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "local_ref": "11",
+        "name": "豊洲駅前",
+        "name:en": "Toyosu-eki-mae",
+        "name:ja": "豊洲駅前",
+        "name:ja-Hira": "とよすえきまえ",
+        "name:ja-Latn": "Toyosu-eki-mae",
+        "network": "都営バス",
+        "operator": "東京都交通局",
+        "public_transport": "platform",
+        "shelter": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 2194543420,
+      "name": "豊洲駅前",
+      "lat": 35.6548914,
+      "lon": 139.7951408,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "local_ref": "2",
+        "name": "豊洲駅前",
+        "name:en": "Toyosu-eki-mae",
+        "name:ja": "豊洲駅前",
+        "name:ja-Hira": "とよすえきまえ",
+        "name:ja-Latn": "Toyosu-eki-mae",
+        "network": "都営バス",
+        "operator": "東京都交通局",
+        "public_transport": "platform",
+        "route_ref": "東16、深夜14",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 2194543462,
+      "name": "豊洲駅前",
+      "lat": 35.6543043,
+      "lon": 139.7970934,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "local_ref": "10",
+        "name": "豊洲駅前",
+        "name:en": "Toyosu-eki-mae",
+        "name:ja": "豊洲駅前",
+        "name:ja-Hira": "とよすえきまえ",
+        "name:ja-Latn": "Toyosu-eki-mae",
+        "network": "都営バス",
+        "operator": "東京都交通局",
+        "public_transport": "platform",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 2194543476,
+      "name": "豊洲駅前",
+      "lat": 35.6550425,
+      "lon": 139.794992,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "local_ref": "1",
+        "name": "豊洲駅前",
+        "name:en": "Toyosu-eki-mae",
+        "name:ja": "豊洲駅前",
+        "name:ja-Hira": "とよすえきまえ",
+        "name:ja-Latn": "Toyosu-eki-mae",
+        "network": "都営バス",
+        "operator": "東京都交通局",
+        "public_transport": "platform",
+        "route_ref": "東15",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 2305872069,
+      "name": "豊洲駅前",
+      "lat": 35.6552588,
+      "lon": 139.797298,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "local_ref": "7",
+        "name": "豊洲駅前",
+        "name:en": "Toyosu-eki-mae",
+        "name:ja": "豊洲駅前",
+        "name:ja-Hira": "とよすえきまえ",
+        "name:ja-Latn": "Toyosu-eki-mae",
+        "network": "都営バス",
+        "operator": "東京都交通局",
+        "public_transport": "platform",
+        "route_ref": "錦13甲、陽12-1、陽12-2、陽12-3",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 2590468636,
+      "name": "神谷町駅前",
+      "lat": 35.6628993,
+      "lon": 139.7458769,
+      "tags": {
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "departures_board": "timetable",
+        "highway": "bus_stop",
+        "lit": "no",
+        "name": "神谷町駅前",
+        "name:en": "Kamiyacho Station",
+        "name:ja": "神谷町駅前",
+        "name:ja-Hira": "かみやちょうえきまえ",
+        "name:ja-Latn": "Kamiyachō-eki-mae",
+        "operator": "東京都交通局",
+        "public_transport": "platform",
+        "shelter": "yes",
+        "tactile_paving": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 2590468637,
+      "name": "神谷町駅前",
+      "lat": 35.6636177,
+      "lon": 139.745522,
+      "tags": {
+        "bench": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "神谷町駅前",
+        "name:en": "Kamiyacho-eki-mae",
+        "name:ja": "神谷町駅前",
+        "name:ja-Hira": "Kamiyachō-eki-mae",
+        "network": "都営バス",
+        "network:en": "Toei Bus",
+        "network:ja": "都営バス",
+        "network:wikidata": "Q859227",
+        "network:wikipedia": "ja:都営バス",
+        "operator": "東京都交通局",
+        "public_transport": "platform",
+        "shelter": "yes",
+        "tactile_paving": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 2672580551,
+      "name": "豊洲駅",
+      "lat": 35.6554042,
+      "lon": 139.7963392,
+      "tags": {
+        "bicycle": "no",
+        "layer": "-1",
+        "level": "-1",
+        "name": "豊洲駅",
+        "name:en": "Toyosu Station",
+        "railway": "subway_entrance",
+        "ref": "1b",
+        "source": "image,2014-02;Bing",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 3177877584,
+      "name": "豊洲駅前",
+      "lat": 35.6550036,
+      "lon": 139.7955856,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "local_ref": "4",
+        "name": "豊洲駅前",
+        "name:en": "Toyosu-eki-mae",
+        "name:ja": "豊洲駅前",
+        "name:ja-Hira": "とよすえきまえ",
+        "name:ja-Latn": "Toyosu-eki-mae",
+        "network": "都営バス",
+        "operator": "東京都交通局",
+        "public_transport": "platform",
+        "route_ref": "門19甲、急行06",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 3177877594,
+      "name": "豊洲駅",
+      "lat": 35.6564008,
+      "lon": 139.7952304,
+      "tags": {
+        "highway": "elevator",
+        "name": "豊洲駅",
+        "railway": "subway_entrance",
+        "ref": "1C",
+        "toilets:wheelchair": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 3281717991,
+      "name": "東京タワー前",
+      "lat": 35.6584382,
+      "lon": 139.747091,
+      "tags": {
+        "highway": "traffic_signals",
+        "name": "東京タワー前",
+        "name:en": "Tokyo Tower",
+        "name:ja": "東京タワー前"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 3399816346,
+      "name": "豊洲駅地下駐車場",
+      "lat": 35.6547201,
+      "lon": 139.7958262,
+      "tags": {
+        "amenity": "bicycle_parking",
+        "fee": "yes",
+        "name": "豊洲駅地下駐車場",
+        "note": "100yen/day",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 3399816347,
+      "name": "豊洲駅地下駐車場",
+      "lat": 35.654987,
+      "lon": 139.7956817,
+      "tags": {
+        "amenity": "bicycle_parking",
+        "fee": "yes",
+        "name": "豊洲駅地下駐車場",
+        "note": "100yen/24h"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 3406618641,
+      "name": "葛西臨海公園駅東",
+      "lat": 35.6438465,
+      "lon": 139.863149,
+      "tags": {
+        "amenity": "bicycle_parking",
+        "fee": "yes",
+        "name": "葛西臨海公園駅東",
+        "name:en": "Kasai-rinkai-koen Station East",
+        "note": "100yen/day"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 3406618642,
+      "name": "葛西臨海公園駅西",
+      "lat": 35.6449356,
+      "lon": 139.8604069,
+      "tags": {
+        "amenity": "bicycle_parking",
+        "fee": "yes",
+        "name": "葛西臨海公園駅西",
+        "name:en": "Kasai-rinkai-koen Station West",
+        "note": "100yen/day"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 3426416197,
+      "name": "豊洲駅前",
+      "lat": 35.6550541,
+      "lon": 139.7969901,
+      "tags": {
+        "bench": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "local_ref": "8",
+        "name": "豊洲駅前",
+        "name:en": "Toyosu-eki-mae",
+        "name:ja": "豊洲駅前",
+        "name:ja-Hira": "とよすえきまえ",
+        "name:ja-Latn": "Toyosu-eki-mae",
+        "network": "都営バス",
+        "operator": "東京都交通局",
+        "public_transport": "platform",
+        "route_ref": "海01、門19乙",
+        "shelter": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 3474538895,
+      "name": "新豊洲駅前",
+      "lat": 35.6483076,
+      "lon": 139.7885423,
+      "tags": {
+        "addr:postcode": "135-0061",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "mapillary": "814023312866404",
+        "name": "新豊洲駅前",
+        "name:en": "Bus 05-2 to Tokyo Station",
+        "network": "都営バス",
+        "operator": "東京都交通局",
+        "public_transport": "platform",
+        "shelter": "yes",
+        "survey:date": "2018-08-12",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 3599565944,
+      "name": "新豊洲駅前",
+      "lat": 35.6477192,
+      "lon": 139.7896504,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "mapillary": "1341054809621854",
+        "name": "新豊洲駅前",
+        "network": "都営バス",
+        "operator": "東京都交通局",
+        "public_transport": "platform",
+        "shelter": "yes",
+        "survey:date": "2018-09-24"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 3730429162,
+      "name": "葛西臨海公園",
+      "lat": 35.6443545,
+      "lon": 139.8615614,
+      "tags": {
+        "local_ref": "2",
+        "name": "葛西臨海公園",
+        "name:en": "Kasai-Rinkai Park",
+        "name:ja": "葛西臨海公園",
+        "name:ja-Hira": "かさいりんかいこうえん",
+        "name:ja-Latn": "Kasai Rinkai Kōen",
+        "name:ko": "가사이 임해공원",
+        "name:ru": "Касай Ринкай Коэн",
+        "public_transport": "stop_position",
+        "railway": "stop",
+        "ref": "JE06",
+        "train": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 3730429163,
+      "name": "葛西臨海公園",
+      "lat": 35.6444637,
+      "lon": 139.8616289,
+      "tags": {
+        "local_ref": "1",
+        "name": "葛西臨海公園",
+        "name:en": "Kasai-Rinkai Park",
+        "name:ja": "葛西臨海公園",
+        "name:ja-Hira": "かさいりんかいこうえん",
+        "name:ja-Latn": "Kasai Rinkai Kōen",
+        "name:ko": "가사이 임해공원",
+        "name:ru": "Касай Ринкай Коэн",
+        "public_transport": "stop_position",
+        "railway": "stop",
+        "ref": "JE06",
+        "train": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 3757621915,
+      "name": "豊洲駅前",
+      "lat": 35.6555587,
+      "lon": 139.7958369,
+      "tags": {
+        "bench": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "name": "豊洲駅前",
+        "network": "都営バス",
+        "note": "降車専用(豊洲01終点)",
+        "operator": "東京都交通局",
+        "public_transport": "platform",
+        "shelter": "no",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 3906175804,
+      "name": "東京タワー(公園下)",
+      "lat": 35.6571921,
+      "lon": 139.7461845,
+      "tags": {
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "mapillary": "142271494528715",
+        "name": "東京タワー(公園下)",
+        "name:en": "Tokyo Tower",
+        "name:es": "Tokyo Tower",
+        "name:ja": "東京タワー(公園下)",
+        "operator": "東急バス;東京都交通局",
+        "pole": "yes",
+        "public_transport": "platform",
+        "shelter": "no",
+        "survey:date": "2018-06-09",
+        "tactile_paving": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 4348481010,
+      "name": "豊洲駅",
+      "lat": 35.6553053,
+      "lon": 139.7950425,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "豊洲駅",
+        "name:en": "Toyosu-eki",
+        "name:ja": "豊洲駅",
+        "name:ja-Hira": "とよすえき",
+        "name:ja-Latn": "Toyosu-eki",
+        "network": "リムジンバス",
+        "public_transport": "platform",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 4685178037,
+      "name": "神谷町駅",
+      "lat": 35.6632143,
+      "lon": 139.7455302,
+      "tags": {
+        "name": "神谷町駅",
+        "railway": "subway_entrance"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 5774485737,
+      "name": "浄土宗　大本山　増上寺",
+      "lat": 35.657311,
+      "lon": 139.7497998,
+      "tags": {
+        "check_date": "2024-04-22",
+        "information": "map",
+        "map_size": "site",
+        "map_type": "scheme",
+        "name": "浄土宗　大本山　増上寺",
+        "tourism": "information",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 5774494595,
+      "name": "増上寺経蔵",
+      "lat": 35.6567055,
+      "lon": 139.7493644,
+      "tags": {
+        "board_type": "history",
+        "information": "board",
+        "name": "増上寺経蔵",
+        "tourism": "information"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 5774514111,
+      "name": "増上寺の奔鐘",
+      "lat": 35.6574863,
+      "lon": 139.7494389,
+      "tags": {
+        "board_type": "notice",
+        "information": "board",
+        "name": "増上寺の奔鐘",
+        "tourism": "information",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 5774552753,
+      "name": "三縁山　広度院　増上寺",
+      "lat": 35.6570715,
+      "lon": 139.7500298,
+      "tags": {
+        "board_type": "history",
+        "information": "board",
+        "name": "三縁山　広度院　増上寺",
+        "tourism": "information",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 5774552754,
+      "name": "浄土宗　大本山　増上寺",
+      "lat": 35.657429,
+      "lon": 139.7500914,
+      "tags": {
+        "historic": "memorial",
+        "material": "stone",
+        "name": "浄土宗　大本山　増上寺"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 5863264673,
+      "name": "豊洲駅前",
+      "lat": 35.6551531,
+      "lon": 139.7971368,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "local_ref": "9",
+        "name": "豊洲駅前",
+        "name:en": "Toyosu-eki-mae",
+        "name:ja": "豊洲駅前",
+        "name:ja-Hira": "とよすえきまえ",
+        "name:ja-Latn": "Toyosu-eki-mae",
+        "network": "都営バス",
+        "operator": "東京都交通局",
+        "public_transport": "platform",
+        "route_ref": "業10",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 5965765013,
+      "name": "豊洲ぐるり公園",
+      "lat": 35.6508936,
+      "lon": 139.789162,
+      "tags": {
+        "information": "map",
+        "name": "豊洲ぐるり公園",
+        "tourism": "information"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 6270676490,
+      "name": "浄土宗 大本山 増上寺",
+      "lat": 35.657919,
+      "lon": 139.7487686,
+      "tags": {
+        "information": "board",
+        "name": "浄土宗 大本山 増上寺",
+        "tourism": "information",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 6291685287,
+      "name": "teamLab Planets",
+      "lat": 35.64938,
+      "lon": 139.789728,
+      "tags": {
+        "addr:block_number": "1",
+        "addr:housenumber": "16",
+        "addr:neighbourhood": "6",
+        "addr:province": "東京都",
+        "alt_name": "TeamLab Planets;Teamlab Planets",
+        "fee": "yes",
+        "name": "teamLab Planets",
+        "name:en": "teamLab Planets",
+        "name:fr": "teamLab Planets",
+        "name:ja": "チームラボ プラネッツ",
+        "name:ko": "팀랩 플래닛스",
+        "old_name:de": "teamLab Planets",
+        "opening_hours": "Mo-Su 09:00-22:00",
+        "operator": "teamLab",
+        "tourism": "museum",
+        "website": "https://planets.teamlab.art/tokyo/",
+        "wheelchair": "no",
+        "wikidata": "Q97613610",
+        "wikimedia_commons": "Category:TeamLab Planets TOKYO DMM.com",
+        "wikipedia": "en:TeamLab Planets TOKYO DMM.com"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 6387387261,
+      "name": "市場前駅前",
+      "lat": 35.6464015,
+      "lon": 139.7869901,
+      "tags": {
+        "bench": "yes",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "name": "市場前駅前",
+        "network": "都営バス",
+        "network:en": "Toei Bus",
+        "network:ja": "都営バス",
+        "network:wikidata": "Q859227",
+        "operator": "東京都交通局",
+        "public_transport": "platform",
+        "shelter": "yes",
+        "tactile_paving": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 6387387262,
+      "name": "市場前駅前",
+      "lat": 35.646596,
+      "lon": 139.7867507,
+      "tags": {
+        "bench": "yes",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "name": "市場前駅前",
+        "network": "都営バス",
+        "network:en": "Toei Bus",
+        "network:ja": "都営バス",
+        "network:wikidata": "Q859227",
+        "operator": "東京都交通局",
+        "public_transport": "platform",
+        "shelter": "yes",
+        "tactile_paving": "yes",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 6515577080,
+      "name": "葛西臨海公園",
+      "lat": 35.638972,
+      "lon": 139.8607127,
+      "tags": {
+        "amenity": "ferry_terminal",
+        "ferry": "yes",
+        "name": "葛西臨海公園",
+        "public_transport": "station"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 6515731675,
+      "name": "葛西臨海公園",
+      "lat": 35.6422617,
+      "lon": 139.8638374,
+      "tags": {
+        "information": "map",
+        "name": "葛西臨海公園",
+        "tourism": "information"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 6515731677,
+      "name": "鳥類園へよこそ",
+      "lat": 35.6414541,
+      "lon": 139.8681302,
+      "tags": {
+        "information": "board",
+        "name": "鳥類園へよこそ",
+        "tourism": "information"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 6515731678,
+      "name": "葛西臨海公園",
+      "lat": 35.642004,
+      "lon": 139.8671724,
+      "tags": {
+        "information": "map",
+        "name": "葛西臨海公園",
+        "panoramax": "c153f189-b4c4-412e-9b6c-0fbd79dc0bb4",
+        "tourism": "information"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 6515731682,
+      "name": "葛西臨海公園",
+      "lat": 35.6451139,
+      "lon": 139.8574658,
+      "tags": {
+        "information": "map",
+        "name": "葛西臨海公園",
+        "tourism": "information"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 7049626365,
+      "name": "増上寺のカヤ",
+      "lat": 35.656376,
+      "lon": 139.7495598,
+      "tags": {
+        "board_type": "history",
+        "information": "board",
+        "name": "増上寺のカヤ",
+        "tourism": "information"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 7069913989,
+      "name": "増上寺 景光殿",
+      "lat": 35.6571102,
+      "lon": 139.7479676,
+      "tags": {
+        "board_type": "history",
+        "information": "board",
+        "name": "増上寺 景光殿",
+        "tourism": "information"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 7249081830,
+      "name": "葛西臨海公園駅前",
+      "lat": 35.6439649,
+      "lon": 139.8622059,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "local_ref": "2",
+        "name": "葛西臨海公園駅前",
+        "operator": "東京都交通局",
+        "public_transport": "platform",
+        "route_ref": "西葛20乙、西葛26出入"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 7249081831,
+      "name": "葛西臨海公園駅前",
+      "lat": 35.6439899,
+      "lon": 139.8616802,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "local_ref": "4",
+        "name": "葛西臨海公園駅前",
+        "operator": "東京都交通局",
+        "public_transport": "platform",
+        "route_ref": "西葛26"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 7249081832,
+      "name": "葛西臨海公園駅前",
+      "lat": 35.6439032,
+      "lon": 139.8624259,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "local_ref": "1",
+        "name": "葛西臨海公園駅前",
+        "operator": "東京都交通局",
+        "public_transport": "platform",
+        "route_ref": "臨海28-1"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 7249081833,
+      "name": "葛西臨海公園駅",
+      "lat": 35.6438204,
+      "lon": 139.8626288,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "local_ref": "0",
+        "name": "葛西臨海公園駅",
+        "operator": "京成バス",
+        "public_transport": "platform",
+        "route_ref": "シャトル☆セブン(SS07、SS08)"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 9483243990,
+      "name": "豊洲駅前",
+      "lat": 35.6540228,
+      "lon": 139.7959895,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "local_ref": "13",
+        "name": "豊洲駅前",
+        "name:en": "Toyosu Station",
+        "name:ja": "豊洲駅前",
+        "network": "都営バス",
+        "operator": "東京都交通局",
+        "public_transport": "platform",
+        "route_ref": "陽12-2、陽12-3",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 9483243991,
+      "name": "豊洲駅前",
+      "lat": 35.6539454,
+      "lon": 139.7958876,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "local_ref": "12",
+        "name": "豊洲駅前",
+        "name:en": "Toyosu Station",
+        "name:ja": "豊洲駅前",
+        "network": "都営バス;江東区コミュニティバスしおかぜ",
+        "operator": "東京都交通局;江東区コミュニティバス",
+        "public_transport": "platform",
+        "route_ref": "急行06",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 9483243992,
+      "name": "新豊洲駅前",
+      "lat": 35.6486329,
+      "lon": 139.7902563,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "新豊洲駅前",
+        "network": "都営バス",
+        "operator": "東京都交通局",
+        "public_transport": "platform",
+        "shelter": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 9483243993,
+      "name": "新豊洲駅前",
+      "lat": 35.6488617,
+      "lon": 139.7901115,
+      "tags": {
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "name": "新豊洲駅前",
+        "network": "都営バス",
+        "operator": "東京都交通局",
+        "public_transport": "platform",
+        "shelter": "no",
+        "tactile_paving": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 9497354785,
+      "name": "東京タワー",
+      "lat": 35.6583489,
+      "lon": 139.7461233,
+      "tags": {
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "name": "東京タワー",
+        "note": "始発",
+        "operator": "東京都交通局",
+        "public_transport": "platform",
+        "shelter": "no",
+        "tactile_paving": "no"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 9497354786,
+      "name": "東京タワー",
+      "lat": 35.6584535,
+      "lon": 139.7462171,
+      "tags": {
+        "bench": "yes",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "name": "東京タワー",
+        "note": "降車専用",
+        "operator": "東京都交通局",
+        "public_transport": "platform",
+        "shelter": "no",
+        "tactile_paving": "no"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 9519132908,
+      "name": "赤羽橋駅前",
+      "lat": 35.6542059,
+      "lon": 139.7441947,
+      "tags": {
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "local_ref": "7",
+        "name": "赤羽橋駅前",
+        "name:en": "Akabanebashi-eki-mae",
+        "name:ja": "赤羽橋駅前",
+        "name:ja-Hira": "あかばねばしえきまえ",
+        "name:ja-Latn": "Akabanebashi-eki-mae",
+        "note": "降車専用",
+        "operator": "東京都交通局",
+        "public_transport": "platform",
+        "shelter": "yes",
+        "tactile_paving": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 9714092459,
+      "name": "葛西臨海公園駅前",
+      "lat": 35.6437058,
+      "lon": 139.861756,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "葛西臨海公園駅前",
+        "note": "降車専用",
+        "operator": "東京都交通局",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 10680734505,
+      "name": "葛西臨海水族園",
+      "lat": 35.6400593,
+      "lon": 139.8621905,
+      "tags": {
+        "addr:block_number": "2",
+        "addr:city": "江戸川区",
+        "addr:housenumber": "3",
+        "addr:neighbourhood": "臨海町六丁目",
+        "addr:postcode": "134-8587",
+        "addr:province": "東京都",
+        "name": "葛西臨海水族園",
+        "name:en": "Tōkyō Sea Life Park",
+        "tourism": "attraction",
+        "website": "http://htyps://tokyo-zoo.net/zoo/kasai"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 11040588180,
+      "name": "都立葛西臨海公園",
+      "lat": 35.6423219,
+      "lon": 139.8568469,
+      "tags": {
+        "addr:province": "東京都",
+        "amenity": "bicycle_rental",
+        "authentication:app": "yes",
+        "brand": "HELLO CYCLING",
+        "brand:ja": "ハローサイクリング",
+        "brand:wikidata": "Q91231927",
+        "capacity": "13",
+        "contact:website": "https://www.hellocycling.jp",
+        "fee": "yes",
+        "gbfs:station_id": "7664",
+        "gbfs:system_id": "hellocycling",
+        "name": "都立葛西臨海公園",
+        "name:ja": "都立葛西臨海公園",
+        "network": "HELLO CYCLING",
+        "network:ja": "ハローサイクリング",
+        "network:wikidata": "Q91231927"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 11040588549,
+      "name": "JR葛西臨海公園駅",
+      "lat": 35.6443,
+      "lon": 139.8616,
+      "tags": {
+        "addr:province": "東京都",
+        "amenity": "bicycle_rental",
+        "authentication:app": "yes",
+        "brand": "HELLO CYCLING",
+        "brand:ja": "ハローサイクリング",
+        "brand:wikidata": "Q91231927",
+        "capacity": "8",
+        "contact:website": "https://www.hellocycling.jp",
+        "fee": "yes",
+        "gbfs:station_id": "6070",
+        "gbfs:system_id": "hellocycling",
+        "name": "JR葛西臨海公園駅",
+        "name:en": "JR Kasai-rinkai-koen Station",
+        "name:ja": "JR葛西臨海公園駅",
+        "network": "HELLO CYCLING",
+        "network:ja": "ハローサイクリング",
+        "network:wikidata": "Q91231927"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 11145437212,
+      "name": "神谷町駅前歯科",
+      "lat": 35.6626662,
+      "lon": 139.7444185,
+      "tags": {
+        "amenity": "dentist",
+        "check_date": "2023-08-26",
+        "healthcare": "dentist",
+        "level": "1",
+        "name": "神谷町駅前歯科",
+        "name:ja": "神谷町駅前歯科"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 11230126307,
+      "name": "日本調剤　豊洲駅前薬局",
+      "lat": 35.6547155,
+      "lon": 139.7971628,
+      "tags": {
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "日本調剤　豊洲駅前薬局",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 11374672983,
+      "name": "豊洲ぐるり公園",
+      "lat": 35.6402759,
+      "lon": 139.7782119,
+      "tags": {
+        "information": "map",
+        "name": "豊洲ぐるり公園",
+        "tourism": "information",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 11374672984,
+      "name": "豊洲ぐるり公園",
+      "lat": 35.6436851,
+      "lon": 139.7876291,
+      "tags": {
+        "information": "map",
+        "name": "豊洲ぐるり公園",
+        "tourism": "information"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 11436145519,
+      "name": "豊洲ぐるり公園",
+      "lat": 35.643141,
+      "lon": 139.777821,
+      "tags": {
+        "amenity": "bicycle_rental",
+        "authentication:app": "yes",
+        "brand": "Docomo Bike Share",
+        "brand:en": "Docomo Bike Share",
+        "brand:ja": "ドコモ・バイクシェア",
+        "brand:website": "https://docomo-cycle.jp/",
+        "brand:wikidata": "Q55533296",
+        "capacity": "29",
+        "fee": "yes",
+        "gbfs:name": "H1-134.豊洲ぐるり公園",
+        "gbfs:station_id": "10916",
+        "gbfs:system_id": "docomo-cycle",
+        "name": "豊洲ぐるり公園",
+        "name:en": "Toyosu Gururi Park",
+        "name:ja": "豊洲ぐるり公園",
+        "operator": "ドコモ・バイクシェア",
+        "operator:en": "Docomo Bike Share",
+        "operator:ja": "ドコモ・バイクシェア",
+        "operator:wikidata": "Q55533296",
+        "ref": "H1-134",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 11436145877,
+      "name": "東京タワー",
+      "lat": 35.65928,
+      "lon": 139.744767,
+      "tags": {
+        "amenity": "bicycle_rental",
+        "authentication:app": "yes",
+        "brand": "ドコモ・バイクシェア",
+        "brand:en": "Docomo Bike Share",
+        "brand:ja": "ドコモ・バイクシェア",
+        "brand:website": "https://docomo-cycle.jp/",
+        "brand:wikidata": "Q55533296",
+        "capacity": "15",
+        "fee": "yes",
+        "gbfs:name": "C1-15.東京タワー",
+        "gbfs:station_id": "10087",
+        "gbfs:system_id": "docomo-cycle",
+        "name": "東京タワー",
+        "name:en": "Tokyo Tower",
+        "name:ja": "東京タワー",
+        "operator": "ドコモ・バイクシェア",
+        "operator:en": "Docomo Bike Share",
+        "operator:ja": "ドコモ・バイクシェア",
+        "operator:type": "private",
+        "operator:wikidata": "Q55533296",
+        "ref": "C1-15"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 11436145900,
+      "name": "豊洲駅",
+      "lat": 35.654196,
+      "lon": 139.79626,
+      "tags": {
+        "amenity": "bicycle_rental",
+        "authentication:app": "yes",
+        "brand": "Docomo Bike Share",
+        "brand:ja": "ドコモ・バイクシェア",
+        "brand:website": "https://docomo-cycle.jp/",
+        "brand:wikidata": "Q55533296",
+        "capacity": "50",
+        "fee": "yes",
+        "gbfs:name": "H1-02.豊洲駅",
+        "gbfs:station_id": "10093",
+        "gbfs:system_id": "docomo-cycle",
+        "name": "豊洲駅",
+        "name:en": "Toyosu Station",
+        "name:ja": "豊洲駅",
+        "ref": "H1-02"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 11512273700,
+      "name": "teamLab Borderless Museum",
+      "lat": 35.6620024,
+      "lon": 139.7434178,
+      "tags": {
+        "air_conditioning": "yes",
+        "alt_name": "teamLab Borderless: MORI Building DIGITAL ART MUSEUM",
+        "fee": "yes",
+        "internet_access": "wlan",
+        "museum": "art",
+        "name": "teamLab Borderless Museum",
+        "name:en": "teamLab Borderless",
+        "name:fr": "teamLab Borderless",
+        "name:ja-Hira": "チームラボボーダレス",
+        "official_name": "MORI Building DIGITAL ART MUSEUM: Epson teamLab Borderless",
+        "official_name:ja-Hira": "森ビル デジタルアート ミュージアム：エプソン チームラボボーダレス",
+        "opening_hours": "Mo-Su 08:30-21:00",
+        "start_date": "2024-02-09",
+        "tourism": "museum",
+        "website": "https://www.teamlab.art/e/tokyo/",
+        "wheelchair": "yes",
+        "wikidata": "Q131314431"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 12313875548,
+      "name": "麻布台ヒルズ",
+      "lat": 35.661158,
+      "lon": 139.740036,
+      "tags": {
+        "amenity": "bicycle_rental",
+        "authentication:app": "yes",
+        "bicycle_rental": "docking_station",
+        "brand": "ドコモ・バイクシェア",
+        "brand:en": "Docomo Bike Share",
+        "brand:ja": "ドコモ・バイクシェア",
+        "brand:website": "https://docomo-cycle.jp/",
+        "brand:wikidata": "Q55533296",
+        "capacity": "10",
+        "fee": "yes",
+        "gbfs:name": "C2-32.麻布台ヒルズ",
+        "gbfs:station_id": "3029",
+        "gbfs:system_id": "docomo-cycle",
+        "name": "麻布台ヒルズ",
+        "name:en": "Docomo Bike Share",
+        "name:ja": "麻布台ヒルズ",
+        "operator": "ドコモ・バイクシェア",
+        "operator:en": "Docomo Bike Share",
+        "operator:ja": "ドコモ・バイクシェア",
+        "operator:type": "private",
+        "operator:wikidata": "Q55533296",
+        "ref": "C2-32"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 12441549778,
+      "name": "東京タワータクシー乗り場",
+      "lat": 35.6580425,
+      "lon": 139.7457053,
+      "tags": {
+        "amenity": "taxi",
+        "capacity": "4",
+        "name": "東京タワータクシー乗り場"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 12441549781,
+      "name": "東京タワー地下駐車場",
+      "lat": 35.6568754,
+      "lon": 139.7449335,
+      "tags": {
+        "access": "customers",
+        "amenity": "parking_entrance",
+        "name": "東京タワー地下駐車場",
+        "parking": "underground"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 13786843847,
+      "name": "芝公園駅第2暫定自転車駐車場",
+      "lat": 35.6543102,
+      "lon": 139.7496907,
+      "tags": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "35",
+        "covered": "no",
+        "name": "芝公園駅第2暫定自転車駐車場",
+        "website": "https://www.city.minato.tokyo.jp/shisetsu/chushajo/chushajo/shibakoen-2.html"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 14047630601,
+      "name": "麻布台ヒルズマーケット",
+      "lat": 35.6620031,
+      "lon": 139.7414182,
+      "tags": {
+        "check_date": "2026-07-25",
+        "check_date:opening_hours": "2026-07-25",
+        "level": "-1",
+        "name": "麻布台ヒルズマーケット",
+        "name:en": "Azabudai Hills Market",
+        "opening_hours": "Mo-Su 10:00-20:00",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 14047929449,
+      "name": "麻布台ヒルズ ギャラリー",
+      "lat": 35.662521,
+      "lon": 139.7429967,
+      "tags": {
+        "name": "麻布台ヒルズ ギャラリー",
+        "name:en": "Azabudai Hills Gallery",
+        "tourism": "gallery",
+        "wikidata": "Q140692564"
+      }
+    },
+    {
+      "type": "node",
+      "osmId": 14047957874,
+      "name": "麻布台ヒルズ郵便局",
+      "lat": 35.6609443,
+      "lon": 139.7404072,
+      "tags": {
+        "amenity": "post_office",
+        "name": "麻布台ヒルズ郵便局",
+        "name:en": "Azabudai Hills Post Office",
+        "wikidata": "Q11677486"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 36810736,
+      "name": "増上寺会館",
+      "lat": 35.6567065,
+      "lon": 139.748557,
+      "tags": {
+        "building": "yes",
+        "building:colour": "red",
+        "name": "増上寺会館",
+        "name:en": "Zojo-ji Kaikan",
+        "name:es": "Salón Zojoji",
+        "name:ja": "増上寺会館",
+        "name:ja-Hira": "ぞうじょうじかいかん",
+        "name:ja-Latn": "Zōjōji Kaikan",
+        "roof:colour": "grey",
+        "start_date": "1999"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 36810739,
+      "name": "増上寺墓地",
+      "lat": 35.6577083,
+      "lon": 139.747487,
+      "tags": {
+        "access": "private",
+        "landuse": "cemetery",
+        "name": "増上寺墓地",
+        "name:en": "Zojoji Cemetery",
+        "name:es": "Cementerio de Zojoji",
+        "name:ja": "増上寺墓地",
+        "name:ja-Hira": "ぞうじょうじぼち",
+        "name:ja-Latn": "Zōjōji Bochi",
+        "name:ko": "조조지 묘지",
+        "religion": "buddhist",
+        "source:geometry": "Bing",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 36930488,
+      "name": "増上寺明徳幼稚園",
+      "lat": 35.6571639,
+      "lon": 139.7468582,
+      "tags": {
+        "amenity": "kindergarten",
+        "building": "yes",
+        "building:colour": "beige",
+        "building:levels": "5",
+        "education": "kindergarten",
+        "name": "増上寺明徳幼稚園",
+        "roof:colour": "grey",
+        "roof:shape": "flat",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 88878015,
+      "name": "葛西臨海公園専用有料駐車場",
+      "lat": 35.6441665,
+      "lon": 139.8596018,
+      "tags": {
+        "access": "yes",
+        "amenity": "parking",
+        "fee": "yes",
+        "lit": "yes",
+        "name": "葛西臨海公園専用有料駐車場",
+        "parking": "surface",
+        "supervised": "no",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 88878071,
+      "name": "JR京葉線;葛西臨海公園;2番線",
+      "lat": 35.6441042,
+      "lon": 139.862323,
+      "tags": {
+        "bridge": "viaduct",
+        "electrified": "contact_line",
+        "frequency": "0",
+        "gauge": "1067",
+        "layer": "1",
+        "name": "JR京葉線;葛西臨海公園;2番線",
+        "name:en": "JR Keiyō Line",
+        "name:ja": "JR京葉線",
+        "name:ja_rm": "JR Keiyō Sen",
+        "name:ru": "Линия JR Кэйё",
+        "operator": "東日本旅客鉄道 (East Japan Railway)",
+        "operator:en": "East Japan Railway",
+        "operator:ja": "東日本旅客鉄道",
+        "operator:ja_rm": "Higashi-Nihon Ryokaku Tetsudō",
+        "railway": "rail",
+        "service": "siding",
+        "voltage": "1500"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 91596807,
+      "name": "東京タワー通り",
+      "lat": 35.6592556,
+      "lon": 139.7450462,
+      "tags": {
+        "highway": "tertiary",
+        "lanes": "2",
+        "name": "東京タワー通り",
+        "name:en": "Tokyo Tower Street",
+        "name:es": "Calle de la Torre Tokio",
+        "name:etymology:wikidata": "Q183536",
+        "name:fr": "Rue de la Tour de Tokyo",
+        "name:ja-Hira": "とうきょうタワーどおり",
+        "name:ja-Latn": "Tōkyō tawā-dōri",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 139086709,
+      "name": "住友不動産御成門駅前ビル",
+      "lat": 35.6618926,
+      "lon": 139.7523102,
+      "tags": {
+        "building": "yes",
+        "name": "住友不動産御成門駅前ビル",
+        "source": "Bing"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 150858801,
+      "name": "東京タワー通り",
+      "lat": 35.6598321,
+      "lon": 139.7436625,
+      "tags": {
+        "cycleway:left": "shared_lane",
+        "cycleway:left:lane": "pictogram",
+        "highway": "tertiary",
+        "lanes": "2",
+        "name": "東京タワー通り",
+        "oneway": "yes",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 156492882,
+      "name": "鳥類園ウォッチングセンター",
+      "lat": 35.6398325,
+      "lon": 139.8655735,
+      "tags": {
+        "addr:housename": "葛西臨海公園",
+        "addr:postcode": "134-0086",
+        "building": "yes",
+        "building:levels": "5",
+        "name": "鳥類園ウォッチングセンター",
+        "name:en": "Bird Watching Center",
+        "opening_hours": "09:15-16:30",
+        "source": "Bing, 2012-05"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 156492889,
+      "name": "葛西臨海公園サービスセンター",
+      "lat": 35.6431828,
+      "lon": 139.8604871,
+      "tags": {
+        "building": "yes",
+        "name": "葛西臨海公園サービスセンター",
+        "office": "yes",
+        "source": "Bing, 2007-03",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 161731445,
+      "name": "西なぎさレストハウス",
+      "lat": 35.6413583,
+      "lon": 139.8537622,
+      "tags": {
+        "addr:block_number": "2",
+        "addr:city": "江戸川区",
+        "addr:housename": "西なぎさレストハウス",
+        "addr:housenumber": "4",
+        "addr:neighbourhood": "臨海町六丁目",
+        "addr:postcode": "134-0086",
+        "addr:province": "東京都",
+        "amenity": "public_building",
+        "building": "yes",
+        "name": "西なぎさレストハウス"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 161731857,
+      "name": "クリスタルビュー",
+      "lat": 35.6406025,
+      "lon": 139.8595862,
+      "tags": {
+        "addr:postcode": "134-0086",
+        "building": "yes",
+        "name": "クリスタルビュー",
+        "name:en": "Cristal view",
+        "tourism": "viewpoint"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 161931777,
+      "name": "ダイヤと花の大観覧車",
+      "lat": 35.6439404,
+      "lon": 139.8572504,
+      "tags": {
+        "attraction": "big_wheel",
+        "name": "ダイヤと花の大観覧車",
+        "name:en": "Diamond and Flower Ferris Wheel",
+        "opening_hours": "10:00-19:40",
+        "source": "Bing",
+        "tourism": "theme_park",
+        "wheelchair": "yes",
+        "wikidata": "Q901219",
+        "wikimedia_commons": "Category:Diamond and Flower Ferris Wheel",
+        "wikipedia": "en:Diamond and Flower Ferris Wheel"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 190858886,
+      "name": "東京水辺ライン葛西臨海公園発着場",
+      "lat": 35.6390247,
+      "lon": 139.8608393,
+      "tags": {
+        "building": "transportation",
+        "name": "東京水辺ライン葛西臨海公園発着場",
+        "name:en": "Kasai-rinkai-koen Water Bus Station"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 191044572,
+      "name": "葛西臨海水族園",
+      "lat": 35.6407837,
+      "lon": 139.8619507,
+      "tags": {
+        "landuse": "retail",
+        "name": "葛西臨海水族園",
+        "name:en": "Tokyo Sea Life Park",
+        "name:es": "Tokyo Sea Life Park",
+        "name:ja": "葛西臨海水族園",
+        "opening_hours": "Th-Tu 09:30-17:00",
+        "source": "survey",
+        "survey:date": "2012-11-01",
+        "tourism": "aquarium",
+        "website": "https://www.tokyo-zoo.net/english/kasai/",
+        "wheelchair": "yes",
+        "wikidata": "Q4925165",
+        "wikimedia_commons": "Category:Tokyo Sea Life Park",
+        "wikipedia": "ja:葛西臨海水族園"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 191056504,
+      "name": "葛西臨海公園駅",
+      "lat": 35.6444757,
+      "lon": 139.8614273,
+      "tags": {
+        "building": "train_station",
+        "name": "葛西臨海公園駅",
+        "source": "Bing"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 222758640,
+      "name": "愛宕警察署 東京タワー前交番",
+      "lat": 35.6586549,
+      "lon": 139.7468116,
+      "tags": {
+        "addr:full": "東京都港区芝公園3-4-26",
+        "amenity": "police",
+        "building": "yes",
+        "check_date": "2024-12-07",
+        "name": "愛宕警察署 東京タワー前交番",
+        "name:es": "Koban frente a la Torre de Tokio de la Comisaría de Atago",
+        "name:ja": "愛宕警察署 東京タワー前交番",
+        "name:ja-Hira": "あたごけいさつしょ とうきょうたわーまえこうばん",
+        "name:ja-Latn": "Atago Keisatsusho Tōkyō Tawā-mae Kōban",
+        "note": "National-Land Numerical Information (Public Facility) 2006, MLIT Japan",
+        "note:ja": "国土数値情報（公共施設データ）平成19年 国土交通省",
+        "operator": "東京都",
+        "police": "koban",
+        "source": "Bing;KSJ2",
+        "source_ref": "http://nlftp.mlit.go.jp/ksj/jpgis/datalist/KsjTmplt-P02-v2_0.html"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 239710440,
+      "name": "JR京葉線;葛西臨海公園;1番線",
+      "lat": 35.644471,
+      "lon": 139.8616281,
+      "tags": {
+        "bridge": "viaduct",
+        "electrified": "contact_line",
+        "frequency": "0",
+        "gauge": "1067",
+        "layer": "1",
+        "name": "JR京葉線;葛西臨海公園;1番線",
+        "name:en": "JR Keiyo Line",
+        "name:es": "Línea JR Keiyo",
+        "name:ja": "JR京葉線",
+        "name:ja_rm": "JR Keiyō Sen",
+        "name:ru": "Линия JR Кэйё",
+        "operator": "東日本旅客鉄道",
+        "operator:en": "East Japan Railway",
+        "operator:ja": "東日本旅客鉄道",
+        "operator:ja_rm": "Higashi-Nihon Ryokaku Tetsudō",
+        "railway": "rail",
+        "service": "siding",
+        "voltage": "1500"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 411383314,
+      "name": "増上寺大門",
+      "lat": 35.6570089,
+      "lon": 139.7525736,
+      "tags": {
+        "building": "yes",
+        "historic": "city_gate",
+        "layer": "1",
+        "man_made": "ceremonial_gate",
+        "name": "増上寺大門",
+        "name:en": "Daimon Gate",
+        "name:es": "Gran Puerta de Zojoji",
+        "name:ja": "増上寺大門",
+        "name:ja-Hira": "ぞうじょうじだいもん",
+        "name:ja-Latn": "Zōjōji Daimon",
+        "start_date": "1937",
+        "wikipedia": "ja:増上寺#旧・総門「大門」"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 474601303,
+      "name": "東京タワー通り",
+      "lat": 35.6598237,
+      "lon": 139.7433052,
+      "tags": {
+        "cycleway:left": "no",
+        "highway": "tertiary",
+        "lanes": "1",
+        "name": "東京タワー通り",
+        "name:en": "Tokyo Tower Street",
+        "name:es": "Calle de la Torre Tokio",
+        "name:etymology:wikidata": "Q183536",
+        "name:fr": "Rue de la Tour de Tokyo",
+        "name:ja-Hira": "とうきょうタワーどおり",
+        "name:ja-Latn": "Tōkyō tawā-dōri",
+        "oneway": "yes",
+        "source": "Bing 2010",
+        "surface": "asphalt",
+        "width": "5"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 617968396,
+      "name": "豊洲ぐるり公園",
+      "lat": 35.6456825,
+      "lon": 139.7855942,
+      "tags": {
+        "leisure": "park",
+        "name": "豊洲ぐるり公園",
+        "name:en": "Toyosu-Gururi Park",
+        "name:es": "Parque Toyosu-Gururi",
+        "name:fr": "Parc de Toyosu-Gururi",
+        "name:ja-Hira": "とよす ぐるり こうえん",
+        "name:ja-Latn": "Toyosu gururi kōen",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 670080591,
+      "name": "東京メトロ豊洲駅 7番出入口",
+      "lat": 35.6545187,
+      "lon": 139.7961981,
+      "tags": {
+        "highway": "footway",
+        "layer": "-1",
+        "level": "-1",
+        "lit": "yes",
+        "name": "東京メトロ豊洲駅 7番出入口",
+        "surface": "asphalt",
+        "tunnel": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 670080592,
+      "name": "東京メトロ豊洲駅 7番出入口",
+      "lat": 35.654383,
+      "lon": 139.7959038,
+      "tags": {
+        "highway": "footway",
+        "name": "東京メトロ豊洲駅 7番出入口"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 676303143,
+      "name": "新豊洲駅;1A出入口",
+      "lat": 35.6485184,
+      "lon": 139.7896144,
+      "tags": {
+        "bridge": "yes",
+        "handrail": "yes",
+        "highway": "steps",
+        "incline": "up",
+        "layer": "1",
+        "lit": "yes",
+        "name": "新豊洲駅;1A出入口",
+        "ramp": "no",
+        "step_count": "45",
+        "surface": "asphalt",
+        "tactile_paving": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 676303145,
+      "name": "新豊洲駅;2A出入口",
+      "lat": 35.648325,
+      "lon": 139.7898154,
+      "tags": {
+        "bridge": "yes",
+        "handrail": "yes",
+        "highway": "steps",
+        "incline": "down",
+        "layer": "1",
+        "lit": "yes",
+        "name": "新豊洲駅;2A出入口",
+        "ramp": "no",
+        "surface": "paving_stones",
+        "tactile_paving": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 689336469,
+      "name": "葛西臨海公園",
+      "lat": 35.6422183,
+      "lon": 139.8619281,
+      "tags": {
+        "leisure": "park",
+        "name": "葛西臨海公園",
+        "name:en": "Kasai Rinkai Park",
+        "name:es": "Parque Kasai Rinkai",
+        "name:ja": "葛西臨海公園",
+        "name:zh": "葛西臨海公園",
+        "wikidata": "Q1038727",
+        "wikimedia_commons": "Category:Kasai Rinkai Park",
+        "wikipedia": "ja:葛西臨海公園"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 693993053,
+      "name": "鳥類園",
+      "lat": 35.6405168,
+      "lon": 139.8670829,
+      "tags": {
+        "boundary": "protected_area",
+        "leisure": "nature_reserve",
+        "name": "鳥類園"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 741596532,
+      "name": "麻布台ヒルズ",
+      "lat": 35.6614275,
+      "lon": 139.7419486,
+      "tags": {
+        "landuse": "commercial",
+        "name": "麻布台ヒルズ",
+        "name:en": "Azabudai Hills",
+        "name:ko": "아자부다이 힐즈",
+        "start_date": "2023-11-24",
+        "wikidata": "Q97189958",
+        "wikipedia": "ja:麻布台ヒルズ"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 744348814,
+      "name": "増上寺",
+      "lat": 35.6571906,
+      "lon": 139.7482124,
+      "tags": {
+        "alt_name": "San'en-zan Zōjō-ji",
+        "amenity": "place_of_worship",
+        "contact:facebook": "zojoji",
+        "contact:instagram": "zojoji_enzan1393_official",
+        "contact:phone": "+81 3-3432-1431",
+        "contact:tripadvisor": "320446",
+        "contact:twitter": "zojoji_official",
+        "contact:website": "https://www.zojoji.or.jp/",
+        "contact:youtube": "UCFYbVw6k4a9WI3ylRyhiGZw",
+        "denomination": "jodo_shu",
+        "denomination:ja": "浄土宗",
+        "fee": "no",
+        "name": "増上寺",
+        "name:en": "Zōjōji",
+        "name:es": "Templo Zojoji",
+        "name:fr": "Temple Zōjō",
+        "name:it": "Zōjō-ji",
+        "name:ja": "増上寺",
+        "name:ja-Hira": "ぞうじょうじ",
+        "name:ja-Latn": "Zōjōji",
+        "official_name": "三縁山広度院 増上寺",
+        "official_name:es": "Templo Zojoji de Sanenzan Kodoin",
+        "official_name:ja": "三縁山広度院 増上寺",
+        "official_name:ja-Hira": "さんえんざんこうどいんぞうじょうじ",
+        "official_name:ja-Latn": "San'enzan Kōdoin Zōjōji",
+        "opening_hours": "24/7",
+        "religion": "buddhist",
+        "start_date": "1393",
+        "wheelchair": "yes",
+        "wikidata": "Q249139",
+        "wikimedia_commons": "Category:Zōjō-ji",
+        "wikipedia": "en:Zōjō-ji"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 783335970,
+      "name": "豊洲ぐるり公園自動車駐車場",
+      "lat": 35.6412284,
+      "lon": 139.7787782,
+      "tags": {
+        "access": "yes",
+        "amenity": "parking",
+        "fee": "yes",
+        "name": "豊洲ぐるり公園自動車駐車場",
+        "operator": "江東区",
+        "operator:type": "government",
+        "parking": "surface"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1030284188,
+      "name": "東京タワー通り",
+      "lat": 35.6585593,
+      "lon": 139.7467277,
+      "tags": {
+        "highway": "tertiary",
+        "name": "東京タワー通り",
+        "name:en": "Tokyo Tower Street",
+        "name:es": "Calle de la Torre Tokio",
+        "name:etymology:wikidata": "Q183536",
+        "name:fr": "Rue de la Tour de Tokyo",
+        "name:ja-Hira": "とうきょうタワーどおり",
+        "name:ja-Latn": "Tōkyō tawā-dōri",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1030284191,
+      "name": "東京タワー通り",
+      "lat": 35.659844,
+      "lon": 139.7436623,
+      "tags": {
+        "cycleway:left": "shared_lane",
+        "cycleway:left:lane": "pictogram",
+        "highway": "tertiary",
+        "lanes": "2",
+        "name": "東京タワー通り",
+        "oneway": "yes",
+        "source": "Bing 2010",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1035341898,
+      "name": "東京タワー通り",
+      "lat": 35.6598452,
+      "lon": 139.7435969,
+      "tags": {
+        "access:conditional": "no @ (08:00-20:00)",
+        "cycleway:both": "shared_lane",
+        "cycleway:both:lane": "pictogram",
+        "highway": "tertiary_link",
+        "lane_markings": "no",
+        "name": "東京タワー通り",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1086348783,
+      "name": "新豊洲駅;1A出入口",
+      "lat": 35.6484464,
+      "lon": 139.7894917,
+      "tags": {
+        "highway": "footway",
+        "lit": "yes",
+        "name": "新豊洲駅;1A出入口",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1086348784,
+      "name": "新豊洲駅;2A出入口",
+      "lat": 35.6482204,
+      "lon": 139.7897021,
+      "tags": {
+        "highway": "footway",
+        "lit": "yes",
+        "name": "新豊洲駅;2A出入口",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1158739441,
+      "name": "麻布台ヒルズ森JPタワー",
+      "lat": 35.6608513,
+      "lon": 139.7406545,
+      "tags": {
+        "addr:block_number": "3",
+        "addr:city": "港区",
+        "addr:housenumber": "1",
+        "addr:neighbourhood": "1",
+        "addr:province": "東京都",
+        "addr:quarter": "麻布台",
+        "architect": "Pelli Clarke Pelli Architects",
+        "architect:wikidata": "Q11815494",
+        "building": "commercial",
+        "building:architecture": "neo-futurism",
+        "building:levels": "64",
+        "building:levels:underground": "5",
+        "height": "325.2",
+        "name": "麻布台ヒルズ森JPタワー",
+        "name:en": "Azabudai Hills Mori JP Tower",
+        "name:fr": "Tour Mori JP des collines Azabudai",
+        "name:ja-Hira": "あざぶだいヒルズもりジェイピータワー",
+        "name:ja-Latn": "Azabudai Hiruzu Mori JP tawā",
+        "name:ko": "아자부다이 힐즈 모리 JP타워",
+        "roof:shape": "flat",
+        "start_date": "2023-11-24",
+        "wikidata": "Q109703244",
+        "wikimedia_commons": "Category:Azabudai Hills Mori JP Tower",
+        "wikipedia": "ja:麻布台ヒルズ森JPタワー"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1158739444,
+      "name": "麻布台ヒルズレジデンスA",
+      "lat": 35.6621946,
+      "lon": 139.7402862,
+      "tags": {
+        "addr:block_number": "2",
+        "addr:city": "港区",
+        "addr:housenumber": "1",
+        "addr:neighbourhood": "1",
+        "addr:province": "東京都",
+        "addr:quarter": "麻布台",
+        "building": "apartments",
+        "building:levels": "53",
+        "height": "237.2",
+        "name": "麻布台ヒルズレジデンスA",
+        "name:en": "Azabudai Hills Residence A",
+        "start_date": "2023-08"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1158739445,
+      "name": "麻布台ヒルズレジデンスB",
+      "lat": 35.6625856,
+      "lon": 139.739009,
+      "tags": {
+        "building": "apartments",
+        "building:levels": "64",
+        "height": "263",
+        "name": "麻布台ヒルズレジデンスB",
+        "name:en": "Azabudai Hills Residence B"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1159017723,
+      "name": "豊洲 千客万来",
+      "lat": 35.6454629,
+      "lon": 139.7836628,
+      "tags": {
+        "building": "yes",
+        "building:levels": "3",
+        "name": "豊洲 千客万来",
+        "name:en": "Toyosu Senkyaku Banrai",
+        "shop": "mall",
+        "wikidata": "Q125586281"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1226641506,
+      "name": "豊洲ぐるり公園BBQ広場",
+      "lat": 35.6420102,
+      "lon": 139.7770246,
+      "tags": {
+        "amenity": "bbq",
+        "name": "豊洲ぐるり公園BBQ広場",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1228777078,
+      "name": "麻布台ヒルズアリーナ",
+      "lat": 35.6614824,
+      "lon": 139.7405824,
+      "tags": {
+        "building": "roof",
+        "layer": "1",
+        "name": "麻布台ヒルズアリーナ",
+        "name:en": "Azabudai Hills Arena"
+      }
+    },
+    {
+      "type": "way",
+      "osmId": 1250775758,
+      "name": "東京タワー通り",
+      "lat": 35.6597571,
+      "lon": 139.7433052,
+      "tags": {
+        "cycleway:left": "shared_lane",
+        "cycleway:left:lane": "pictogram",
+        "highway": "tertiary",
+        "lanes": "2",
+        "name": "東京タワー通り",
+        "name:en": "Tokyo Tower Street",
+        "name:es": "Calle de la Torre Tokio",
+        "name:etymology:wikidata": "Q183536",
+        "name:fr": "Rue de la Tour de Tokyo",
+        "name:ja-Hira": "とうきょうタワーどおり",
+        "name:ja-Latn": "Tōkyō tawā-dōri",
+        "oneway": "yes",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "relation",
+      "osmId": 3401238,
+      "name": "都営バス橋86系統 目黒駅⇒麻布十番駅⇒東京タワー",
+      "lat": 35.6485443,
+      "lon": 139.734024,
+      "tags": {
+        "name": "都営バス橋86系統 目黒駅⇒麻布十番駅⇒東京タワー",
+        "network": "都営バス",
+        "network:en": "Toei Bus",
+        "network:ja": "都営バス",
+        "network:wikidata": "Q859227",
+        "operator": "東京都交通局",
+        "public_transport:version": "2",
+        "ref": "橋86",
+        "route": "bus",
+        "type": "route"
+      }
+    },
+    {
+      "type": "relation",
+      "osmId": 4062054,
+      "name": "都営バス錦13甲系統 錦糸町駅⇒豊洲駅⇒晴海埠頭",
+      "lat": 35.671783,
+      "lon": 139.7951718,
+      "tags": {
+        "from": "錦糸町駅",
+        "name": "都営バス錦13甲系統 錦糸町駅⇒豊洲駅⇒晴海埠頭",
+        "network": "都営バス",
+        "network:en": "Toei Bus",
+        "network:ja": "都営バス",
+        "network:wikidata": "Q859227",
+        "operator": "東京都交通局",
+        "public_transport:version": "2",
+        "ref": "錦13甲",
+        "route": "bus",
+        "to": "晴海埠頭",
+        "type": "route",
+        "via": "豊洲駅前",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "relation",
+      "osmId": 4247312,
+      "name": "東京タワー",
+      "lat": 35.6585639,
+      "lon": 139.74544,
+      "tags": {
+        "alt_name:zh": "東京塔",
+        "architect": "内藤多仲",
+        "architect:wikidata": "Q1340974",
+        "building": "yes",
+        "communication:radio": "fm",
+        "contact:facebook": "tokyotower.official",
+        "contact:instagram": "tokyotower_official",
+        "contact:tiktok": "tokyotower_official",
+        "contact:tripadvisor": "320047",
+        "contact:twitter": "nopponotouto",
+        "contact:website": "https://www.tokyotower.co.jp/",
+        "contact:youtube": "UCKyXyJMijwyBebgI9wmzFcw",
+        "fee": "yes",
+        "height": "21",
+        "man_made": "tower",
+        "material": "steel",
+        "name": "東京タワー",
+        "name:en": "Tokyo Tower",
+        "name:es": "Torre de Tokio",
+        "name:et": "Tokyo Tower",
+        "name:fr": "Tour de Tokyo",
+        "name:it": "Torre di Tokyo",
+        "name:ja": "東京タワー",
+        "name:ja-Hira": "とうきょうたわー",
+        "name:ja-Latn": "Tōkyō Tawā",
+        "name:ko": "도쿄 타워",
+        "name:zh": "東京鐵塔",
+        "official_name": "日本電波塔",
+        "official_name:en": "Japan Radio Tower",
+        "opening_hours": "Mo-Su 09:00-23:00",
+        "start_date": "1958-12-23",
+        "tourism": "attraction",
+        "tower:construction": "lattice",
+        "tower:type": "communication",
+        "type": "multipolygon",
+        "wheelchair": "yes",
+        "wikidata": "Q183536",
+        "wikimedia_commons": "Category:Tokyo Tower",
+        "wikipedia": "ja:東京タワー"
+      }
+    },
+    {
+      "type": "relation",
+      "osmId": 4433186,
+      "name": "都営バス業10系統 とうきょうスカイツリー駅⇒豊洲駅⇒新橋",
+      "lat": 35.6836659,
+      "lon": 139.7834693,
+      "tags": {
+        "from": "言問橋",
+        "name": "都営バス業10系統 とうきょうスカイツリー駅⇒豊洲駅⇒新橋",
+        "name:en": "Nari 10 (W->N)",
+        "name:es": "Nari 10 (O->N)",
+        "name:ja": "業10（とうきょうスカイツリー駅⇒新橋）",
+        "network": "都営バス",
+        "network:en": "Toei Bus",
+        "network:ja": "都営バス",
+        "network:wikidata": "Q859227",
+        "network:wikipedia": "ja:都営バス",
+        "operator": "東京都交通局",
+        "public_transport:version": "2",
+        "ref": "業10",
+        "route": "bus",
+        "to": "新橋",
+        "type": "route"
+      }
+    },
+    {
+      "type": "relation",
+      "osmId": 5288008,
+      "name": "東京都交通局 海01 門前仲町⇒豊洲駅⇒東京テレポート駅",
+      "lat": 35.6449067,
+      "lon": 139.7863014,
+      "tags": {
+        "from": "門前仲町",
+        "name": "東京都交通局 海01 門前仲町⇒豊洲駅⇒東京テレポート駅",
+        "name:en": "Umi 01 (Monzen Nakacho-Tokyo TV emikae)",
+        "name:es": "Umi 01 (Monzen Nakacho-Tokyo TV emikae)",
+        "network": "都営バス",
+        "network:en": "Toei Bus",
+        "network:ja": "都営バス",
+        "network:wikidata": "Q859227",
+        "network:wikipedia": "ja:都営バス",
+        "operator": "東京都交通局",
+        "public_transport:version": "2",
+        "ref": "海01(KM01)",
+        "route": "bus",
+        "to": "東京テレポート駅前",
+        "type": "route"
+      }
+    },
+    {
+      "type": "relation",
+      "osmId": 9471643,
+      "name": "都営バス業10系統 新橋⇒豊洲駅⇒とうきょうスカイツリー駅",
+      "lat": 35.6824789,
+      "lon": 139.7836858,
+      "tags": {
+        "from": "新橋",
+        "name": "都営バス業10系統 新橋⇒豊洲駅⇒とうきょうスカイツリー駅",
+        "name:en": "Nari 10 (N->W)",
+        "name:es": "Nari 10 (N->O)",
+        "name:ja": "業10（新橋⇒とうきょうスカイツリー駅）",
+        "network": "都営バス",
+        "network:en": "Toei Bus",
+        "network:ja": "都営バス",
+        "network:wikidata": "Q859227",
+        "operator": "東京都交通局",
+        "public_transport:version": "2",
+        "ref": "業10",
+        "route": "bus",
+        "to": "とうきょうスカイツリー駅前",
+        "type": "route"
+      }
+    },
+    {
+      "type": "relation",
+      "osmId": 9476981,
+      "name": "東京都交通局 海01 東京テレポート駅⇒豊洲駅⇒門前仲町",
+      "lat": 35.6447799,
+      "lon": 139.7861863,
+      "tags": {
+        "from": "東京テレポート駅前",
+        "name": "東京都交通局 海01 東京テレポート駅⇒豊洲駅⇒門前仲町",
+        "name:en": "Umi 01 (Tokyo TV emikae-Monzen Nakacho)",
+        "name:es": "Umi 01 (Tokyo TV emikae-Monzen Nakacho)",
+        "network": "都営バス",
+        "network:en": "Toei Bus",
+        "network:ja": "都営バス",
+        "network:wikidata": "Q859227",
+        "network:wikipedia": "ja:都営バス",
+        "operator": "東京都交通局",
+        "public_transport:version": "2",
+        "ref": "海01(KM01)",
+        "route": "bus",
+        "to": "門前仲町",
+        "type": "route"
+      }
+    },
+    {
+      "type": "relation",
+      "osmId": 9533619,
+      "name": "芝公園駅",
+      "lat": 35.655298,
+      "lon": 139.750142,
+      "tags": {
+        "name": "芝公園駅",
+        "name:en": "Shibakoen Bus Station",
+        "name:es": "Estación de bus Shibakoen",
+        "public_transport": "stop_area",
+        "public_transport:version": "2",
+        "type": "public_transport"
+      }
+    },
+    {
+      "type": "relation",
+      "osmId": 9554102,
+      "name": "葛西臨海公園",
+      "lat": 35.6443943,
+      "lon": 139.8616387,
+      "tags": {
+        "name": "葛西臨海公園",
+        "name:en": "Kasai-Rinkai Park",
+        "name:ja": "葛西臨海公園",
+        "name:ja-Hira": "かさいりんかいこうえん",
+        "name:ja-Latn": "Kasai Rinkai Kōen",
+        "name:ko": "가사이 임해공원",
+        "name:ru": "Касай Ринкай Коэн",
+        "operator": "東日本旅客鉄道",
+        "operator:en": "East Japan Railway Company",
+        "public_transport": "stop_area",
+        "public_transport:version": "2",
+        "ref": "JE06",
+        "type": "public_transport"
+      }
+    },
+    {
+      "type": "relation",
+      "osmId": 9644979,
+      "name": "西なぎさ",
+      "lat": 35.6376964,
+      "lon": 139.8542973,
+      "tags": {
+        "name": "西なぎさ",
+        "name:es": "Nishi Nagisa",
+        "name:ja_rm": "Nishi Nagisa",
+        "place": "islet",
+        "type": "multipolygon"
+      }
+    },
+    {
+      "type": "relation",
+      "osmId": 13609164,
+      "name": "都営バス海01(KM01)系統 東京テレポート駅⇒(直通)⇒豊洲駅⇒門前仲町",
+      "lat": 35.6491797,
+      "lon": 139.7887296,
+      "tags": {
+        "name": "都営バス海01(KM01)系統 東京テレポート駅⇒(直通)⇒豊洲駅⇒門前仲町",
+        "network": "都営バス",
+        "network:en": "Toei Bus",
+        "network:ja": "都営バス",
+        "network:wikidata": "Q859227",
+        "network:wikipedia": "ja:都営バス",
+        "operator": "東京都交通局",
+        "public_transport:version": "2",
+        "ref": "海01(KM01)",
+        "route": "bus",
+        "type": "route"
+      }
+    },
+    {
+      "type": "relation",
+      "osmId": 13609165,
+      "name": "都営バス海01(KM01)系統 門前仲町⇒豊洲駅⇒(直通)⇒東京テレポート駅",
+      "lat": 35.6493102,
+      "lon": 139.7888402,
+      "tags": {
+        "name": "都営バス海01(KM01)系統 門前仲町⇒豊洲駅⇒(直通)⇒東京テレポート駅",
+        "network": "都営バス",
+        "network:en": "Toei Bus",
+        "network:ja": "都営バス",
+        "network:wikidata": "Q859227",
+        "network:wikipedia": "ja:都営バス",
+        "operator": "東京都交通局",
+        "public_transport:version": "2",
+        "ref": "海01(KM01)",
+        "route": "bus",
+        "type": "route"
+      }
+    },
+    {
+      "type": "relation",
+      "osmId": 13738445,
+      "name": "都営バス業10系統 新橋（中央通り経由）⇒豊洲駅⇒とうきょうスカイツリー駅",
+      "lat": 35.6824789,
+      "lon": 139.7834977,
+      "tags": {
+        "name": "都営バス業10系統 新橋（中央通り経由）⇒豊洲駅⇒とうきょうスカイツリー駅",
+        "network": "都営バス",
+        "network:en": "Toei Bus",
+        "network:ja": "都営バス",
+        "network:wikidata": "Q859227",
+        "operator": "東京都交通局",
+        "public_transport:version": "2",
+        "ref": "業10",
+        "route": "bus",
+        "type": "route"
+      }
+    },
+    {
+      "type": "relation",
+      "osmId": 13738446,
+      "name": "都営バス業10系統 とうきょうスカイツリー駅⇒豊洲駅⇒新橋（中央通り経由）",
+      "lat": 35.6836659,
+      "lon": 139.7834937,
+      "tags": {
+        "name": "都営バス業10系統 とうきょうスカイツリー駅⇒豊洲駅⇒新橋（中央通り経由）",
+        "network": "都営バス",
+        "network:en": "Toei Bus",
+        "network:ja": "都営バス",
+        "network:wikidata": "Q859227",
+        "network:wikipedia": "ja:都営バス",
+        "operator": "東京都交通局",
+        "public_transport:version": "2",
+        "ref": "業10",
+        "route": "bus",
+        "type": "route"
+      }
+    },
+    {
+      "type": "relation",
+      "osmId": 13761656,
+      "name": "都営バス豊洲01系統 豊洲駅⇒豊洲一丁目・キャナルコート（循環）",
+      "lat": 35.6537694,
+      "lon": 139.7982553,
+      "tags": {
+        "name": "都営バス豊洲01系統 豊洲駅⇒豊洲一丁目・キャナルコート（循環）",
+        "network": "都営バス",
+        "network:en": "Toei Bus",
+        "network:ja": "都営バス",
+        "network:wikidata": "Q859227",
+        "operator": "東京都交通局",
+        "public_transport:version": "2",
+        "ref": "豊洲01",
+        "route": "bus",
+        "type": "route"
+      }
+    },
+    {
+      "type": "relation",
+      "osmId": 13762478,
+      "name": "都営バス錦13甲系統 晴海埠頭⇒豊洲駅⇒錦糸町駅",
+      "lat": 35.6718042,
+      "lon": 139.7932705,
+      "tags": {
+        "name": "都営バス錦13甲系統 晴海埠頭⇒豊洲駅⇒錦糸町駅",
+        "network": "都営バス",
+        "network:en": "Toei Bus",
+        "network:ja": "都営バス",
+        "network:wikidata": "Q859227",
+        "operator": "東京都交通局",
+        "public_transport:version": "2",
+        "ref": "錦13甲",
+        "route": "bus",
+        "type": "route"
+      }
+    },
+    {
+      "type": "relation",
+      "osmId": 13762666,
+      "name": "都営バス都05-1出入系統 深川車庫⇒豊洲駅⇒晴海埠頭",
+      "lat": 35.6504223,
+      "lon": 139.7885647,
+      "tags": {
+        "name": "都営バス都05-1出入系統 深川車庫⇒豊洲駅⇒晴海埠頭",
+        "network": "都営バス",
+        "network:en": "Toei Bus",
+        "network:ja": "都営バス",
+        "network:wikidata": "Q859227",
+        "operator": "東京都交通局",
+        "public_transport:version": "2",
+        "ref": "都05-1出入",
+        "route": "bus",
+        "type": "route"
+      }
+    },
+    {
+      "type": "relation",
+      "osmId": 13762667,
+      "name": "都営バス錦13出入系統 晴海埠頭⇒豊洲駅⇒深川車庫",
+      "lat": 35.6505222,
+      "lon": 139.7873168,
+      "tags": {
+        "name": "都営バス錦13出入系統 晴海埠頭⇒豊洲駅⇒深川車庫",
+        "network": "都営バス",
+        "network:en": "Toei Bus",
+        "network:ja": "都営バス",
+        "network:wikidata": "Q859227",
+        "operator": "東京都交通局",
+        "public_transport:version": "2",
+        "ref": "錦13出入",
+        "route": "bus",
+        "type": "route"
+      }
+    },
+    {
+      "type": "relation",
+      "osmId": 13765500,
+      "name": "都営バス陽12-1系統 昭和大学江東豊洲病院⇒豊洲駅⇒東陽町駅",
+      "lat": 35.6604625,
+      "lon": 139.8056141,
+      "tags": {
+        "name": "都営バス陽12-1系統 昭和大学江東豊洲病院⇒豊洲駅⇒東陽町駅",
+        "network": "都営バス",
+        "network:en": "Toei Bus",
+        "network:ja": "都営バス",
+        "network:wikidata": "Q859227",
+        "operator": "東京都交通局",
+        "public_transport:version": "2",
+        "ref": "陽12-1",
+        "route": "bus",
+        "type": "route"
+      }
+    },
+    {
+      "type": "relation",
+      "osmId": 13765501,
+      "name": "都営バス陽12-1系統 東陽町駅⇒豊洲駅⇒昭和大学江東豊洲病院",
+      "lat": 35.6602488,
+      "lon": 139.8066761,
+      "tags": {
+        "name": "都営バス陽12-1系統 東陽町駅⇒豊洲駅⇒昭和大学江東豊洲病院",
+        "network": "都営バス",
+        "network:en": "Toei Bus",
+        "network:ja": "都営バス",
+        "network:wikidata": "Q859227",
+        "operator": "東京都交通局",
+        "public_transport:version": "2",
+        "ref": "陽12-1",
+        "route": "bus",
+        "type": "route"
+      }
+    },
+    {
+      "type": "relation",
+      "osmId": 13765641,
+      "name": "都営バス陽12-2系統 豊洲市場⇒豊洲駅⇒東陽町駅",
+      "lat": 35.6562653,
+      "lon": 139.7990289,
+      "tags": {
+        "name": "都営バス陽12-2系統 豊洲市場⇒豊洲駅⇒東陽町駅",
+        "network": "都営バス",
+        "network:en": "Toei Bus",
+        "network:ja": "都営バス",
+        "network:wikidata": "Q859227",
+        "operator": "東京都交通局",
+        "public_transport:version": "2",
+        "ref": "陽12-2",
+        "route": "bus",
+        "type": "route"
+      }
+    },
+    {
+      "type": "relation",
+      "osmId": 13765642,
+      "name": "都営バス陽12-2系統 東陽町駅⇒豊洲駅⇒豊洲市場",
+      "lat": 35.6559389,
+      "lon": 139.7990332,
+      "tags": {
+        "name": "都営バス陽12-2系統 東陽町駅⇒豊洲駅⇒豊洲市場",
+        "network": "都営バス",
+        "network:en": "Toei Bus",
+        "network:ja": "都営バス",
+        "network:wikidata": "Q859227",
+        "operator": "東京都交通局",
+        "public_transport:version": "2",
+        "ref": "陽12-2",
+        "route": "bus",
+        "type": "route"
+      }
+    },
+    {
+      "type": "relation",
+      "osmId": 13765738,
+      "name": "都営バス陽12-3系統 東京テレポート駅⇒豊洲駅⇒東陽町駅",
+      "lat": 35.6450348,
+      "lon": 139.7935075,
+      "tags": {
+        "name": "都営バス陽12-3系統 東京テレポート駅⇒豊洲駅⇒東陽町駅",
+        "network": "都営バス",
+        "network:en": "Toei Bus",
+        "network:ja": "都営バス",
+        "network:wikidata": "Q859227",
+        "network:wikipedia": "ja:都営バス",
+        "operator": "東京都交通局",
+        "public_transport:version": "2",
+        "ref": "陽12-3",
+        "route": "bus",
+        "type": "route"
+      }
+    },
+    {
+      "type": "relation",
+      "osmId": 13765739,
+      "name": "都営バス陽12-3系統 東陽町駅⇒豊洲駅⇒東京テレポート駅",
+      "lat": 35.644779,
+      "lon": 139.7935839,
+      "tags": {
+        "name": "都営バス陽12-3系統 東陽町駅⇒豊洲駅⇒東京テレポート駅",
+        "network": "都営バス",
+        "network:en": "Toei Bus",
+        "network:ja": "都営バス",
+        "network:wikidata": "Q859227",
+        "network:wikipedia": "ja:都営バス",
+        "operator": "東京都交通局",
+        "public_transport:version": "2",
+        "ref": "陽12-3",
+        "route": "bus",
+        "type": "route"
+      }
+    },
+    {
+      "type": "relation",
+      "osmId": 13791260,
+      "name": "都営バス浜95系統 東京タワー⇒浜松町駅⇒品川駅港南口",
+      "lat": 35.6448692,
+      "lon": 139.7515965,
+      "tags": {
+        "name": "都営バス浜95系統 東京タワー⇒浜松町駅⇒品川駅港南口",
+        "network": "都営バス",
+        "network:en": "Toei Bus",
+        "network:ja": "都営バス",
+        "network:wikidata": "Q859227",
+        "network:wikipedia": "ja:都営バス",
+        "operator": "東京都交通局",
+        "public_transport:version": "2",
+        "ref": "浜95",
+        "route": "bus",
+        "type": "route"
+      }
+    },
+    {
+      "type": "relation",
+      "osmId": 13791261,
+      "name": "都営バス浜95系統 品川駅港南口⇒浜松町駅⇒東京タワー",
+      "lat": 35.6457207,
+      "lon": 139.7501469,
+      "tags": {
+        "name": "都営バス浜95系統 品川駅港南口⇒浜松町駅⇒東京タワー",
+        "network": "都営バス",
+        "network:en": "Toei Bus",
+        "network:ja": "都営バス",
+        "network:wikidata": "Q859227",
+        "network:wikipedia": "ja:都営バス",
+        "operator": "東京都交通局",
+        "public_transport:version": "2",
+        "ref": "浜95",
+        "route": "bus",
+        "type": "route"
+      }
+    },
+    {
+      "type": "relation",
+      "osmId": 13795654,
+      "name": "都営バス急行06系統 日本科学未来館⇒豊洲駅⇒森下駅",
+      "lat": 35.6526911,
+      "lon": 139.7870104,
+      "tags": {
+        "name": "都営バス急行06系統 日本科学未来館⇒豊洲駅⇒森下駅",
+        "network": "都営バス",
+        "network:en": "Toei Bus",
+        "network:ja": "都営バス",
+        "network:wikidata": "Q859227",
+        "network:wikipedia": "ja:都営バス",
+        "operator": "東京都交通局",
+        "public_transport:version": "2",
+        "ref": "急行06",
+        "route": "bus",
+        "type": "route"
+      }
+    },
+    {
+      "type": "relation",
+      "osmId": 13795655,
+      "name": "都営バス急行06系統 森下駅⇒豊洲駅⇒日本科学未来館",
+      "lat": 35.6534039,
+      "lon": 139.7864741,
+      "tags": {
+        "name": "都営バス急行06系統 森下駅⇒豊洲駅⇒日本科学未来館",
+        "network": "都営バス",
+        "network:en": "Toei Bus",
+        "network:ja": "都営バス",
+        "network:wikidata": "Q859227",
+        "network:wikipedia": "ja:都営バス",
+        "operator": "東京都交通局",
+        "public_transport:version": "2",
+        "ref": "急行06",
+        "route": "bus",
+        "type": "route"
+      }
+    },
+    {
+      "type": "relation",
+      "osmId": 13824787,
+      "name": "都営バス業10出入系統 深川車庫⇒豊洲駅⇒新橋",
+      "lat": 35.6571685,
+      "lon": 139.7805143,
+      "tags": {
+        "name": "都営バス業10出入系統 深川車庫⇒豊洲駅⇒新橋",
+        "network": "都営バス",
+        "network:en": "Toei Bus",
+        "network:ja": "都営バス",
+        "network:wikidata": "Q859227",
+        "operator": "東京都交通局",
+        "public_transport:version": "2",
+        "ref": "業10出入",
+        "route": "bus",
+        "type": "route"
+      }
+    },
+    {
+      "type": "relation",
+      "osmId": 13824788,
+      "name": "都営バス業10出入系統 新橋⇒豊洲駅⇒深川車庫",
+      "lat": 35.6572345,
+      "lon": 139.7807328,
+      "tags": {
+        "name": "都営バス業10出入系統 新橋⇒豊洲駅⇒深川車庫",
+        "network": "都営バス",
+        "network:en": "Toei Bus",
+        "network:ja": "都営バス",
+        "network:wikidata": "Q859227",
+        "operator": "東京都交通局",
+        "public_transport:version": "2",
+        "ref": "業10出入",
+        "route": "bus",
+        "type": "route"
+      }
+    },
+    {
+      "type": "relation",
+      "osmId": 13824829,
+      "name": "都営バス業10出入系統 深川車庫⇒豊洲駅⇒とうきょうスカイツリー駅",
+      "lat": 35.6760746,
+      "lon": 139.8024547,
+      "tags": {
+        "name": "都営バス業10出入系統 深川車庫⇒豊洲駅⇒とうきょうスカイツリー駅",
+        "network": "都営バス",
+        "network:en": "Toei Bus",
+        "network:ja": "都営バス",
+        "network:wikidata": "Q859227",
+        "operator": "東京都交通局",
+        "public_transport:version": "2",
+        "ref": "業10出入",
+        "route": "bus",
+        "type": "route"
+      }
+    },
+    {
+      "type": "relation",
+      "osmId": 13824830,
+      "name": "都営バス業10出入系統 とうきょうスカイツリー駅⇒豊洲駅⇒深川車庫",
+      "lat": 35.6773807,
+      "lon": 139.8025692,
+      "tags": {
+        "name": "都営バス業10出入系統 とうきょうスカイツリー駅⇒豊洲駅⇒深川車庫",
+        "network": "都営バス",
+        "network:en": "Toei Bus",
+        "network:ja": "都営バス",
+        "network:wikidata": "Q859227",
+        "network:wikipedia": "ja:都営バス",
+        "operator": "東京都交通局",
+        "public_transport:version": "2",
+        "ref": "業10出入",
+        "route": "bus",
+        "type": "route"
+      }
+    },
+    {
+      "type": "relation",
+      "osmId": 13825587,
+      "name": "都営バス反94系統 赤羽橋駅⇒高輪台駅⇒五反田駅",
+      "lat": 35.6408508,
+      "lon": 139.7340507,
+      "tags": {
+        "name": "都営バス反94系統 赤羽橋駅⇒高輪台駅⇒五反田駅",
+        "network": "都営バス",
+        "network:en": "Toei Bus",
+        "network:ja": "都営バス",
+        "network:wikidata": "Q859227",
+        "network:wikipedia": "ja:都営バス",
+        "operator": "東京都交通局",
+        "public_transport:version": "2",
+        "ref": "反94",
+        "route": "bus",
+        "type": "route"
+      }
+    },
+    {
+      "type": "relation",
+      "osmId": 13825588,
+      "name": "都営バス反94系統 五反田駅⇒高輪台駅⇒赤羽橋駅",
+      "lat": 35.6413161,
+      "lon": 139.7345186,
+      "tags": {
+        "name": "都営バス反94系統 五反田駅⇒高輪台駅⇒赤羽橋駅",
+        "network": "都営バス",
+        "network:en": "Toei Bus",
+        "network:ja": "都営バス",
+        "network:wikidata": "Q859227",
+        "operator": "東京都交通局",
+        "public_transport:version": "2",
+        "ref": "反94",
+        "route": "bus",
+        "type": "route"
+      }
+    },
+    {
+      "type": "relation",
+      "osmId": 13854142,
+      "name": "都営バス橋86系統 東京タワー⇒麻布十番駅⇒目黒駅",
+      "lat": 35.6484575,
+      "lon": 139.7338074,
+      "tags": {
+        "name": "都営バス橋86系統 東京タワー⇒麻布十番駅⇒目黒駅",
+        "network": "都営バス",
+        "network:en": "Toei Bus",
+        "network:ja": "都営バス",
+        "network:wikidata": "Q859227",
+        "network:wikipedia": "ja:都営バス",
+        "operator": "東京都交通局",
+        "public_transport:version": "2",
+        "ref": "橋86",
+        "route": "bus",
+        "type": "route"
+      }
+    },
+    {
+      "type": "relation",
+      "osmId": 13854168,
+      "name": "都営バス橋86系統 赤羽橋駅⇒天現寺橋⇒目黒駅",
+      "lat": 35.6445798,
+      "lon": 139.7300381,
+      "tags": {
+        "name": "都営バス橋86系統 赤羽橋駅⇒天現寺橋⇒目黒駅",
+        "network": "都営バス",
+        "network:en": "Toei Bus",
+        "network:ja": "都営バス",
+        "network:wikidata": "Q859227",
+        "operator": "東京都交通局",
+        "public_transport:version": "2",
+        "ref": "橋86",
+        "route": "bus",
+        "type": "route"
+      }
+    },
+    {
+      "type": "relation",
+      "osmId": 13854169,
+      "name": "都営バス橋86系統 目黒駅⇒天現寺橋⇒赤羽橋駅",
+      "lat": 35.6451017,
+      "lon": 139.730908,
+      "tags": {
+        "name": "都営バス橋86系統 目黒駅⇒天現寺橋⇒赤羽橋駅",
+        "network": "都営バス",
+        "network:en": "Toei Bus",
+        "network:ja": "都営バス",
+        "network:wikidata": "Q859227",
+        "network:wikipedia": "ja:都営バス",
+        "operator": "東京都交通局",
+        "public_transport:version": "2",
+        "ref": "橋86",
+        "route": "bus",
+        "type": "route"
+      }
+    },
+    {
+      "type": "relation",
+      "osmId": 14021887,
+      "name": "都営バス浜95系統 品川車庫・品川駅港南口⇒浜松町駅⇒東京タワー",
+      "lat": 35.6411485,
+      "lon": 139.7501469,
+      "tags": {
+        "name": "都営バス浜95系統 品川車庫・品川駅港南口⇒浜松町駅⇒東京タワー",
+        "network": "都営バス",
+        "network:en": "Toei Bus",
+        "network:ja": "都営バス",
+        "network:wikidata": "Q859227",
+        "operator": "東京都交通局",
+        "public_transport:version": "2",
+        "ref": "浜95",
+        "route": "bus",
+        "type": "route"
+      }
+    },
+    {
+      "type": "relation",
+      "osmId": 14105337,
+      "name": "都営バス西葛26系統 葛西臨海公園駅⇒西葛西駅⇒船堀駅",
+      "lat": 35.6631009,
+      "lon": 139.8655126,
+      "tags": {
+        "name": "都営バス西葛26系統 葛西臨海公園駅⇒西葛西駅⇒船堀駅",
+        "network": "都営バス",
+        "network:en": "Toei Bus",
+        "network:ja": "都営バス",
+        "network:wikidata": "Q859227",
+        "operator": "東京都交通局",
+        "public_transport:version": "2",
+        "ref": "西葛26",
+        "route": "bus",
+        "type": "route"
+      }
+    },
+    {
+      "type": "relation",
+      "osmId": 14105338,
+      "name": "都営バス西葛26系統 船堀駅⇒西葛西駅⇒葛西臨海公園駅",
+      "lat": 35.6623917,
+      "lon": 139.8653201,
+      "tags": {
+        "name": "都営バス西葛26系統 船堀駅⇒西葛西駅⇒葛西臨海公園駅",
+        "network": "都営バス",
+        "network:en": "Toei Bus",
+        "network:ja": "都営バス",
+        "network:wikidata": "Q859227",
+        "operator": "東京都交通局",
+        "public_transport:version": "2",
+        "ref": "西葛26",
+        "route": "bus",
+        "type": "route"
+      }
+    },
+    {
+      "type": "relation",
+      "osmId": 16799281,
+      "name": "都営バス葛西21系統 葛西臨海公園駅⇒東葛西九丁目⇒葛西駅",
+      "lat": 35.6524702,
+      "lon": 139.8716428,
+      "tags": {
+        "name": "都営バス葛西21系統 葛西臨海公園駅⇒東葛西九丁目⇒葛西駅",
+        "network": "都営バス",
+        "network:en": "Toei Bus",
+        "network:ja": "都営バス",
+        "network:wikidata": "Q859227",
+        "operator": "東京都交通局",
+        "public_transport:version": "2",
+        "ref": "葛西21",
+        "route": "bus",
+        "type": "route"
+      }
+    },
+    {
+      "type": "relation",
+      "osmId": 16799282,
+      "name": "都営バス葛西21系統 葛西駅⇒東葛西九丁目⇒葛西臨海公園駅",
+      "lat": 35.6521636,
+      "lon": 139.8716085,
+      "tags": {
+        "name": "都営バス葛西21系統 葛西駅⇒東葛西九丁目⇒葛西臨海公園駅",
+        "network": "都営バス",
+        "network:en": "Toei Bus",
+        "network:ja": "都営バス",
+        "network:wikidata": "Q859227",
+        "operator": "東京都交通局",
+        "public_transport:version": "2",
+        "ref": "葛西21",
+        "route": "bus",
+        "type": "route"
+      }
+    },
+    {
+      "type": "relation",
+      "osmId": 16799299,
+      "name": "都営バス葛西21系統 葛西駅⇒東葛西九丁目⇒葛西臨海公園駅（平日朝ルート）",
+      "lat": 35.6528772,
+      "lon": 139.8716085,
+      "tags": {
+        "name": "都営バス葛西21系統 葛西駅⇒東葛西九丁目⇒葛西臨海公園駅（平日朝ルート）",
+        "network": "都営バス",
+        "network:en": "Toei Bus",
+        "network:ja": "都営バス",
+        "network:wikidata": "Q859227",
+        "operator": "東京都交通局",
+        "public_transport:version": "2",
+        "ref": "葛西21",
+        "route": "bus",
+        "type": "route"
+      }
+    },
+    {
+      "type": "relation",
+      "osmId": 16803443,
+      "name": "都営バス西葛20乙系統 葛西臨海公園駅⇒葛西市場⇒西葛西駅",
+      "lat": 35.6534902,
+      "lon": 139.8639953,
+      "tags": {
+        "name": "都営バス西葛20乙系統 葛西臨海公園駅⇒葛西市場⇒西葛西駅",
+        "network": "都営バス",
+        "operator": "東京都交通局",
+        "public_transport:version": "2",
+        "ref": "西葛20乙",
+        "route": "bus",
+        "type": "route"
+      }
+    },
+    {
+      "type": "relation",
+      "osmId": 16803444,
+      "name": "都営バス西葛20乙系統 西葛西駅⇒葛西市場⇒葛西臨海公園駅",
+      "lat": 35.6533381,
+      "lon": 139.8641059,
+      "tags": {
+        "name": "都営バス西葛20乙系統 西葛西駅⇒葛西市場⇒葛西臨海公園駅",
+        "network": "都営バス",
+        "operator": "東京都交通局",
+        "public_transport:version": "2",
+        "ref": "西葛20乙",
+        "route": "bus",
+        "type": "route"
+      }
+    },
+    {
+      "type": "relation",
+      "osmId": 16990929,
+      "name": "都営バス臨海28-1系統 葛西臨海公園駅⇒葛西駅⇒一之江橋西詰",
+      "lat": 35.6720292,
+      "lon": 139.8726597,
+      "tags": {
+        "name": "都営バス臨海28-1系統 葛西臨海公園駅⇒葛西駅⇒一之江橋西詰",
+        "network": "都営バス",
+        "operator": "東京都交通局",
+        "public_transport:version": "2",
+        "ref": "臨海28-1",
+        "route": "bus",
+        "type": "route"
+      }
+    },
+    {
+      "type": "relation",
+      "osmId": 16990932,
+      "name": "都営バス臨海28-1系統 一之江橋西詰⇒葛西駅⇒葛西臨海公園駅",
+      "lat": 35.6715208,
+      "lon": 139.8724598,
+      "tags": {
+        "name": "都営バス臨海28-1系統 一之江橋西詰⇒葛西駅⇒葛西臨海公園駅",
+        "network": "都営バス",
+        "operator": "東京都交通局",
+        "public_transport:version": "2",
+        "ref": "臨海28-1",
+        "route": "bus",
+        "type": "route"
+      }
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "No.7",
+  "stage": "research_started",
+  "checkedAt": "2026-11-14",
+  "observedGeometry": {
+    "legacyRepeatedGeometryM": 234,
+    "largestClusterM": 202,
+    "largestClusterStart": [139.741668, 35.626417],
+    "largestClusterEnd": [139.741813, 35.628225],
+    "interpretation": "品川駅付近の保存済み計算線に南北の往復候補。道路エッジ同定と駅の東西連絡、港南口への動線は未確認。"
+  },
+  "evidence": [
+    {
+      "type": "official",
+      "title": "港区・第二東西連絡道路の整備について",
+      "url": "https://www.city.minato.tokyo.jp/dobokukeikaku/dainitouzai_setumeikai.html",
+      "checkedAt": "2026-11-14",
+      "supports": "2026年3月28日から芝浦港南地域〜高輪ゲートウェイ駅の歩行者ルートが切替。現地案内に従う必要がある。品川駅南側の反復解消はこの資料だけでは判定できない。"
+    }
+  ],
+  "openQuestions": [
+    "品川駅の利用する西側・港南口出入口と駅構内の通行条件",
+    "南北約202mの反復を避け、旧案の立ち寄り地点を保てる屋外歩行路",
+    "高輪ゲートウェイ駅〜港南地域の最新の歩行者ルート図と現地案内",
+    "天王洲アイル駅までの橋・横断・段差、徒歩ルーターの再計算"
+  ],
+  "decision": "No.7の旧線は再設計対象。新しい形状・徒歩距離は未生成。"
+}

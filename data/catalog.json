@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "source": "legacy import; route quality not re-reviewed",
-  "generatedAt": "2026-11-12T22:19:00.120Z",
+  "generatedAt": "2026-11-14T00:09:33.307Z",
   "courses": [
     {
       "id": "No.1",
@@ -523,7 +523,15 @@
       "descentM": 103.3,
       "auditFlags": [
         "repeated_geometry_over_10pct"
-      ]
+      ],
+      "retraceReview": {
+        "reportedAt": "2026-11-14",
+        "source": "user_observation",
+        "status": "needs_individual_redesign",
+        "repeatedGeometryM": 1510,
+        "repeatedGeometryPct": 20.6,
+        "note": "同じ線をなぞる区間があるとの指摘。既存の形状反復値は調査の手掛かりで、歩道・施設内・橋の条件や代替道路は未確認。"
+      }
     },
     {
       "id": "No.6",
@@ -704,7 +712,15 @@
       ],
       "climbM": 123.5,
       "descentM": 115.2,
-      "auditFlags": []
+      "auditFlags": [],
+      "retraceReview": {
+        "reportedAt": "2026-11-14",
+        "source": "user_observation",
+        "status": "needs_individual_redesign",
+        "repeatedGeometryM": 234,
+        "repeatedGeometryPct": 4.2,
+        "note": "同じ線をなぞる区間があるとの指摘。既存の形状反復値は調査の手掛かりで、歩道・施設内・橋の条件や代替道路は未確認。"
+      }
     },
     {
       "id": "No.8",
@@ -822,7 +838,15 @@
         "repeated_geometry_over_10pct",
         "repeated_waypoint",
         "waypoint_off_shape"
-      ]
+      ],
+      "retraceReview": {
+        "reportedAt": "2026-11-14",
+        "source": "user_observation",
+        "status": "needs_individual_redesign",
+        "repeatedGeometryM": 1526,
+        "repeatedGeometryPct": 22.7,
+        "note": "同じ線をなぞる区間があるとの指摘。既存の形状反復値は調査の手掛かりで、歩道・施設内・橋の条件や代替道路は未確認。"
+      }
     },
     {
       "id": "No.9",
@@ -1090,7 +1114,15 @@
       "descentM": 84.5,
       "auditFlags": [
         "repeated_geometry_over_10pct"
-      ]
+      ],
+      "retraceReview": {
+        "reportedAt": "2026-11-14",
+        "source": "user_observation",
+        "status": "needs_individual_redesign",
+        "repeatedGeometryM": 919,
+        "repeatedGeometryPct": 12.6,
+        "note": "同じ線をなぞる区間があるとの指摘。既存の形状反復値は調査の手掛かりで、歩道・施設内・橋の条件や代替道路は未確認。"
+      }
     },
     {
       "id": "No.12",
@@ -1311,6 +1343,7 @@
               "index": 0,
               "id": "tachikawa_station",
               "label": "立川駅",
+              "description": null,
               "point": [
                 139.4138779,
                 35.6977473
@@ -1321,6 +1354,7 @@
               "index": 1,
               "id": "faret",
               "label": "ファーレ立川センタースクエア",
+              "description": null,
               "point": [
                 139.4141024,
                 35.7021632
@@ -1331,6 +1365,7 @@
               "index": 2,
               "id": "green_springs",
               "label": "GREEN SPRINGS",
+              "description": null,
               "point": [
                 139.411371,
                 35.7034083
@@ -1341,6 +1376,7 @@
               "index": 3,
               "id": "tachikawa_gate",
               "label": "昭和記念公園・立川口",
+              "description": null,
               "point": [
                 139.4036071,
                 35.7022439
@@ -1351,6 +1387,7 @@
               "index": 4,
               "id": "fureai",
               "label": "ふれあい広場付近",
+              "description": null,
               "point": [
                 139.4002309,
                 35.7036919
@@ -1361,6 +1398,7 @@
               "index": 5,
               "id": "pond",
               "label": "水鳥の池",
+              "description": null,
               "point": [
                 139.3949054,
                 35.7058623
@@ -1371,6 +1409,7 @@
               "index": 6,
               "id": "west_gate",
               "label": "昭和記念公園・西立川口",
+              "description": null,
               "point": [
                 139.3952508,
                 35.7036353
@@ -1381,6 +1420,7 @@
               "index": 7,
               "id": "nishitachikawa_station",
               "label": "西立川駅",
+              "description": null,
               "point": [
                 139.3936344,
                 35.7035276
@@ -1407,6 +1447,7 @@
               "index": 0,
               "id": "tachikawa_station",
               "label": "立川駅",
+              "description": null,
               "point": [
                 139.4138779,
                 35.6977473
@@ -1417,6 +1458,7 @@
               "index": 1,
               "id": "faret",
               "label": "ファーレ立川センタースクエア",
+              "description": null,
               "point": [
                 139.4141024,
                 35.7021632
@@ -1427,6 +1469,7 @@
               "index": 2,
               "id": "green_springs",
               "label": "GREEN SPRINGS",
+              "description": null,
               "point": [
                 139.411371,
                 35.7034083
@@ -1437,6 +1480,7 @@
               "index": 3,
               "id": "tachikawa_gate",
               "label": "昭和記念公園・立川口",
+              "description": null,
               "point": [
                 139.4036071,
                 35.7022439
@@ -1447,6 +1491,7 @@
               "index": 4,
               "id": "fureai",
               "label": "ふれあい広場付近",
+              "description": null,
               "point": [
                 139.4002309,
                 35.7036919
@@ -1457,6 +1502,7 @@
               "index": 5,
               "id": "pond",
               "label": "水鳥の池",
+              "description": null,
               "point": [
                 139.3949054,
                 35.7058623
@@ -1467,6 +1513,7 @@
               "index": 6,
               "id": "japanese_garden",
               "label": "日本庭園",
+              "description": null,
               "point": [
                 139.3954371,
                 35.7142767
@@ -1477,6 +1524,7 @@
               "index": 7,
               "id": "komorebi",
               "label": "こもれびの里",
+              "description": null,
               "point": [
                 139.397876,
                 35.7164587
@@ -1487,6 +1535,7 @@
               "index": 8,
               "id": "sunagawa_gate",
               "label": "昭和記念公園・砂川口",
+              "description": null,
               "point": [
                 139.3973692,
                 35.7196183
@@ -1497,6 +1546,7 @@
               "index": 9,
               "id": "musashisunagawa_station",
               "label": "武蔵砂川駅",
+              "description": null,
               "point": [
                 139.3922831,
                 35.7289155
@@ -2109,7 +2159,15 @@
       "auditFlags": [
         "repeated_geometry_over_10pct",
         "repeated_waypoint"
-      ]
+      ],
+      "retraceReview": {
+        "reportedAt": "2026-11-14",
+        "source": "user_observation",
+        "status": "needs_individual_redesign",
+        "repeatedGeometryM": 1068,
+        "repeatedGeometryPct": 15.6,
+        "note": "同じ線をなぞる区間があるとの指摘。既存の形状反復値は調査の手掛かりで、歩道・施設内・橋の条件や代替道路は未確認。"
+      }
     },
     {
       "id": "No.18",
@@ -2761,7 +2819,15 @@
       ],
       "climbM": 77.3,
       "descentM": 71.2,
-      "auditFlags": []
+      "auditFlags": [],
+      "retraceReview": {
+        "reportedAt": "2026-11-14",
+        "source": "user_observation",
+        "status": "needs_individual_redesign",
+        "repeatedGeometryM": 607,
+        "repeatedGeometryPct": 9.2,
+        "note": "同じ線をなぞる区間があるとの指摘。既存の形状反復値は調査の手掛かりで、歩道・施設内・橋の条件や代替道路は未確認。"
+      }
     },
     {
       "id": "No.24",
@@ -3692,6 +3758,7 @@
               "index": 0,
               "id": "iidabashi_east",
               "label": "飯田橋駅東口",
+              "description": null,
               "point": [
                 139.7456386,
                 35.7019085
@@ -3702,6 +3769,7 @@
               "index": 1,
               "id": "hyogo_yokocho",
               "label": "兵庫横丁付近",
+              "description": null,
               "point": [
                 139.7398422,
                 35.7024504
@@ -3712,6 +3780,7 @@
               "index": 2,
               "id": "zenkokuji",
               "label": "善國寺付近",
+              "description": null,
               "point": [
                 139.7394777,
                 35.7014555
@@ -3722,6 +3791,7 @@
               "index": 3,
               "id": "akagi_shrine",
               "label": "赤城神社付近",
+              "description": null,
               "point": [
                 139.7360988,
                 35.704607
@@ -3732,6 +3802,7 @@
               "index": 4,
               "id": "ichigaya_mitsuke",
               "label": "市谷見附付近",
+              "description": null,
               "point": [
                 139.7352205,
                 35.6921485
@@ -3742,6 +3813,7 @@
               "index": 5,
               "id": "sotobori_park",
               "label": "外濠公園付近",
+              "description": null,
               "point": [
                 139.7325038,
                 35.6892117
@@ -3752,6 +3824,7 @@
               "index": 6,
               "id": "yotsuya_jr",
               "label": "JR四ツ谷駅付近",
+              "description": null,
               "point": [
                 139.7309525,
                 35.6859783
@@ -3778,6 +3851,7 @@
               "index": 0,
               "id": "ochanomizu_jr",
               "label": "御茶ノ水駅御茶ノ水橋口",
+              "description": null,
               "point": [
                 139.7636624,
                 35.6999152
@@ -3788,6 +3862,7 @@
               "index": 1,
               "id": "ochanomizu_bridge",
               "label": "御茶ノ水橋",
+              "description": null,
               "point": [
                 139.763593,
                 35.7002306
@@ -3798,6 +3873,7 @@
               "index": 2,
               "id": "motomachi_park",
               "label": "元町公園付近",
+              "description": null,
               "point": [
                 139.7581029,
                 35.7022971
@@ -3808,6 +3884,7 @@
               "index": 3,
               "id": "suidobashi_west",
               "label": "水道橋駅西口付近",
+              "description": null,
               "point": [
                 139.752137,
                 35.702067
@@ -3818,6 +3895,7 @@
               "index": 4,
               "id": "korakuen_south_east",
               "label": "小石川後楽園南側の道・東端付近",
+              "description": null,
               "point": [
                 139.7513341,
                 35.7040336
@@ -3828,6 +3906,7 @@
               "index": 5,
               "id": "korakuen_south_west",
               "label": "小石川後楽園南側の道・西端付近",
+              "description": null,
               "point": [
                 139.7477674,
                 35.7049655
@@ -3838,6 +3917,7 @@
               "index": 6,
               "id": "iidabashi_east",
               "label": "飯田橋駅東口",
+              "description": null,
               "point": [
                 139.7456386,
                 35.7019085
@@ -3848,6 +3928,7 @@
               "index": 7,
               "id": "hyogo_yokocho",
               "label": "兵庫横丁付近",
+              "description": null,
               "point": [
                 139.7398422,
                 35.7024504
@@ -3858,6 +3939,7 @@
               "index": 8,
               "id": "zenkokuji",
               "label": "善國寺付近",
+              "description": null,
               "point": [
                 139.7394777,
                 35.7014555
@@ -3868,6 +3950,7 @@
               "index": 9,
               "id": "akagi_shrine",
               "label": "赤城神社付近",
+              "description": null,
               "point": [
                 139.7360988,
                 35.704607
@@ -3878,6 +3961,7 @@
               "index": 10,
               "id": "ichigaya_mitsuke",
               "label": "市谷見附付近",
+              "description": null,
               "point": [
                 139.7352205,
                 35.6921485
@@ -3888,6 +3972,7 @@
               "index": 11,
               "id": "sotobori_park",
               "label": "外濠公園付近",
+              "description": null,
               "point": [
                 139.7325038,
                 35.6892117
@@ -3898,6 +3983,7 @@
               "index": 12,
               "id": "yotsuya_jr",
               "label": "JR四ツ谷駅付近",
+              "description": null,
               "point": [
                 139.7309525,
                 35.6859783
@@ -5375,6 +5461,7 @@
               "index": 0,
               "id": "kiyosumi_station",
               "label": "清澄白河駅",
+              "description": "清澄白河の散歩の起点。利用する出入口は未確認です。",
               "point": [
                 139.7987644,
                 35.6820504
@@ -5385,6 +5472,7 @@
               "index": 1,
               "id": "fukagawa_museum",
               "label": "深川江戸資料館",
+              "description": "深川の暮らしを紹介する資料館。道路からの入口と開館状況は出発前に確認してください。",
               "point": [
                 139.800777,
                 35.681089
@@ -5395,6 +5483,7 @@
               "index": 2,
               "id": "kiyosumi_garden",
               "label": "清澄庭園 北側付近",
+              "description": "庭園の北側付近を通る候補。入園口と園内を歩く距離は未確認です。",
               "point": [
                 139.7975,
                 35.681
@@ -5405,6 +5494,7 @@
               "index": 3,
               "id": "basho_museum",
               "label": "芭蕉記念館",
+              "description": "芭蕉ゆかりの展示施設付近。道路からの入口は未確認です。",
               "point": [
                 139.794092,
                 35.686129
@@ -5415,6 +5505,7 @@
               "index": 4,
               "id": "ryogoku_station",
               "label": "両国駅付近",
+              "description": "両国方面へ向かう途中の目安。利用する駅出入口と横断は未確認です。",
               "point": [
                 139.7935,
                 35.696
@@ -5425,6 +5516,7 @@
               "index": 5,
               "id": "hokusai_museum",
               "label": "すみだ北斎美術館",
+              "description": "北斎の作品を扱う美術館付近。開館日と入口を確認してください。",
               "point": [
                 139.8004717,
                 35.6963779
@@ -5435,6 +5527,7 @@
               "index": 6,
               "id": "kinshicho_station",
               "label": "錦糸町駅",
+              "description": "A標準案の終点。錦糸町駅の利用する出入口は未確認です。",
               "point": [
                 139.8139559,
                 35.6967489
@@ -5443,7 +5536,46 @@
             }
           ],
           "engine": "valhalla-pedestrian",
-          "built": "2026-11-12T13:31:31.655Z"
+          "built": "2026-11-12T13:31:31.655Z",
+          "geometryScreening": {
+            "scope": "saved_geometry_screening",
+            "screenedAt": "2026-11-13",
+            "method": "GeoJSONの隣接座標を小数6桁で無向辺として照合。同じ辺の2回目以降を反復距離に算入。道路エッジの同一性や通行可能性は判定しない。",
+            "decision": "map_review_pending",
+            "repeatedGeometryM": 208,
+            "findings": [
+              {
+                "point": [
+                  139.797159,
+                  35.681182
+                ],
+                "repeatedM": 75,
+                "note": "清澄庭園北側付近の計算線が戻る。入口・園路・入園条件を地図で照合する。"
+              },
+              {
+                "point": [
+                  139.794324,
+                  35.686075
+                ],
+                "repeatedM": 23,
+                "note": "芭蕉記念館付近の短い往復。道路からの入口を照合する。"
+              },
+              {
+                "point": [
+                  139.792334,
+                  35.695985
+                ],
+                "repeatedM": 110,
+                "note": "両国付近の計算線が戻る。立ち寄りの必要性と横断を照合する。"
+              }
+            ],
+            "openChecks": [
+              "隅田川テラスを実際に通る区間",
+              "施設・庭園の入口と開園条件",
+              "道路と横断、階段・坂",
+              "トイレ・休憩・途中離脱"
+            ]
+          }
         },
         {
           "id": "no-47-extended",
@@ -5461,6 +5593,7 @@
               "index": 0,
               "id": "kiyosumi_station",
               "label": "清澄白河駅",
+              "description": "清澄白河の散歩の起点。利用する出入口は未確認です。",
               "point": [
                 139.7987644,
                 35.6820504
@@ -5471,6 +5604,7 @@
               "index": 1,
               "id": "fukagawa_museum",
               "label": "深川江戸資料館",
+              "description": "深川の暮らしを紹介する資料館。道路からの入口と開館状況は出発前に確認してください。",
               "point": [
                 139.800777,
                 35.681089
@@ -5481,6 +5615,7 @@
               "index": 2,
               "id": "kiyosumi_garden",
               "label": "清澄庭園 北側付近",
+              "description": "庭園の北側付近を通る候補。入園口と園内を歩く距離は未確認です。",
               "point": [
                 139.7975,
                 35.681
@@ -5491,6 +5626,7 @@
               "index": 3,
               "id": "basho_museum",
               "label": "芭蕉記念館",
+              "description": "芭蕉ゆかりの展示施設付近。道路からの入口は未確認です。",
               "point": [
                 139.794092,
                 35.686129
@@ -5501,6 +5637,7 @@
               "index": 4,
               "id": "ryogoku_station",
               "label": "両国駅付近",
+              "description": "両国方面へ向かう途中の目安。利用する駅出入口と横断は未確認です。",
               "point": [
                 139.7935,
                 35.696
@@ -5511,6 +5648,7 @@
               "index": 5,
               "id": "hokusai_museum",
               "label": "すみだ北斎美術館",
+              "description": "北斎の作品を扱う美術館付近。開館日と入口を確認してください。",
               "point": [
                 139.8004717,
                 35.6963779
@@ -5521,6 +5659,7 @@
               "index": 6,
               "id": "kameido_tenjin",
               "label": "亀戸天神社",
+              "description": "B延長案で立ち寄る寺社の周辺座標。入口と園内動線は未確認です。",
               "point": [
                 139.820358,
                 35.702053
@@ -5531,6 +5670,7 @@
               "index": 7,
               "id": "kameido_station",
               "label": "亀戸駅",
+              "description": "B延長案の終点。保存座標は東武側付近で、JRの出入口は未照合です。",
               "point": [
                 139.827138,
                 35.6976987
@@ -5539,7 +5679,63 @@
             }
           ],
           "engine": "valhalla-pedestrian",
-          "built": "2026-11-12T13:32:14.529Z"
+          "built": "2026-11-12T13:32:14.529Z",
+          "geometryScreening": {
+            "scope": "saved_geometry_screening",
+            "screenedAt": "2026-11-13",
+            "method": "GeoJSONの隣接座標を小数6桁で無向辺として照合。同じ辺の2回目以降を反復距離に算入。道路エッジの同一性や通行可能性は判定しない。",
+            "decision": "map_review_pending",
+            "repeatedGeometryM": 286,
+            "findings": [
+              {
+                "point": [
+                  139.797159,
+                  35.681182
+                ],
+                "repeatedM": 75,
+                "note": "清澄庭園北側付近の計算線が戻る。入口・園路・入園条件を地図で照合する。"
+              },
+              {
+                "point": [
+                  139.794324,
+                  35.686075
+                ],
+                "repeatedM": 23,
+                "note": "芭蕉記念館付近の短い往復。道路からの入口を照合する。"
+              },
+              {
+                "point": [
+                  139.792334,
+                  35.695985
+                ],
+                "repeatedM": 110,
+                "note": "両国付近の計算線が戻る。立ち寄りの必要性と横断を照合する。"
+              },
+              {
+                "point": [
+                  139.800172,
+                  35.696962
+                ],
+                "repeatedM": 67,
+                "note": "北斎美術館付近の計算線が戻る。入口と分岐の必要性を照合する。"
+              },
+              {
+                "point": [
+                  139.820327,
+                  35.70195
+                ],
+                "repeatedM": 11,
+                "note": "亀戸天神社付近の短い往復。入口と園内動線を照合する。"
+              }
+            ],
+            "openChecks": [
+              "隅田川テラスを実際に通る区間",
+              "亀戸天神社の入口と太鼓橋",
+              "JR亀戸駅の利用する出入口",
+              "道路と横断、階段・坂",
+              "トイレ・休憩・途中離脱"
+            ]
+          }
         },
         {
           "id": "no-47-rainy",

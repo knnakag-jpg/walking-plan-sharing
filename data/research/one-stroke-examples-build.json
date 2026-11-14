@@ -1,0 +1,82 @@
+{
+  "generatedAt": "2026-11-14T00:00:46.504Z",
+  "method": "Valhalla pedestrian with intermediate through points. Geometry screening is not a road-edge or map review.",
+  "results": [
+    {
+      "courseId": "No.17",
+      "geometryUrl": "data/candidates/no-17-one-stroke.geojson",
+      "calculatedAt": "2026-11-13T23:56:42.605Z",
+      "distanceM": 2118,
+      "engineDistanceM": 2120,
+      "repeatedExactM": 0,
+      "repeatedRoundedM": 0,
+      "repeatedExactPct": 0,
+      "oneStrokeScreening": "pass_geometry_only",
+      "waypointIds": [
+        "kamiyacho",
+        "azabudai_arena",
+        "tokyo_tower",
+        "zojoji",
+        "shibakoen"
+      ],
+      "openChecks": [
+        "道路エッジ同定",
+        "徒歩可能な園路・施設出入口",
+        "横断・坂・段差",
+        "現地歩行",
+        "旧線から除いた地点の扱い"
+      ]
+    },
+    {
+      "courseId": "No.11",
+      "geometryUrl": "data/candidates/no-11-one-stroke.geojson",
+      "calculatedAt": "2026-11-14T00:00:45.288Z",
+      "distanceM": 4344,
+      "engineDistanceM": 4353,
+      "repeatedExactM": 0,
+      "repeatedRoundedM": 0,
+      "repeatedExactPct": 0,
+      "oneStrokeScreening": "pass_geometry_only",
+      "waypointIds": [
+        "shijomae",
+        "senkyakubanrai",
+        "gururi_west",
+        "gururi_south",
+        "gururi_east",
+        "toyosu_station"
+      ],
+      "openChecks": [
+        "道路エッジ同定",
+        "徒歩可能な園路・施設出入口",
+        "横断・坂・段差",
+        "現地歩行",
+        "旧線から除いた地点の扱い"
+      ]
+    },
+    {
+      "courseId": "No.23",
+      "geometryUrl": "data/candidates/no-23-one-stroke.geojson",
+      "calculatedAt": "2026-11-13T23:59:56.603Z",
+      "distanceM": 2242,
+      "engineDistanceM": 2244,
+      "repeatedExactM": 0,
+      "repeatedRoundedM": 0,
+      "repeatedExactPct": 0,
+      "oneStrokeScreening": "pass_geometry_only",
+      "waypointIds": [
+        "kasai_west_exit",
+        "ferris_wheel",
+        "crystal_view",
+        "aquarium",
+        "kasai_east_exit"
+      ],
+      "openChecks": [
+        "道路エッジ同定",
+        "徒歩可能な園路・施設出入口",
+        "横断・坂・段差",
+        "現地歩行",
+        "旧線から除いた地点の扱い"
+      ]
+    }
+  ]
+}

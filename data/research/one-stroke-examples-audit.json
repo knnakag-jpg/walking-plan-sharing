@@ -1,0 +1,21 @@
+{
+  "generatedAt": "2026-11-14T00:00:46.504Z",
+  "method": "Repeated identical coordinate edges, grouped by route order; nearest waypoint is only a proximity hint.",
+  "cases": [
+    {
+      "courseId": "No.17",
+      "repeatedExactM": 0,
+      "clusters": []
+    },
+    {
+      "courseId": "No.11",
+      "repeatedExactM": 0,
+      "clusters": []
+    },
+    {
+      "courseId": "No.23",
+      "repeatedExactM": 0,
+      "clusters": []
+    }
+  ]
+}
