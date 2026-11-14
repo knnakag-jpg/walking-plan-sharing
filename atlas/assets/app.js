@@ -1,4 +1,4 @@
-import { routeDistances, playbackStops, partialRoute } from './route-playback.mjs';
+import { routeDistances, playbackStops, partialRoute, revealProgress, drawOnDurationMs, sampleAlong, terrainRuns, sliceRoute, layoutCallouts, TERRAIN_COLORS } from './route-playback.mjs';
 
 const $ = (selector) => document.querySelector(selector);
 const $$ = (selector) => [...document.querySelectorAll(selector)];
@@ -13,7 +13,8 @@ const statusText = (status) => ({ idea: 'アイデア', researched: '資料調�
 const localKey = { favorites: 'walking-atlas-favorites-v1', compare: 'walking-atlas-compare-v1', theme: 'walking-atlas-theme-v1', walk: 'walking-atlas-walk-v1' };
 const saved = (key, fallback) => { try { return JSON.parse(localStorage.getItem(key)) ?? fallback; } catch { return fallback; } };
 const save = (key, value) => { try { localStorage.setItem(key, JSON.stringify(value)); } catch { /* private mode still supports in-memory use */ } };
-const state = { courses: [], byId: new Map(), view: 'discover', selectedId: null, variantById: {}, feature: null, routeCache: new Map(), map: null, routeLayer: null, markerLayer: null, locationLayer: null, playback: null, showMarkers: true, routeRequest: 0, favorites: new Set(saved(localKey.favorites, [])), comparison: saved(localKey.compare, []), walkProgress: saved(localKey.walk, {}), profile: 'solo', theme: saved(localKey.theme, 'light'), search: '', series: 'all', distance: 'all', favoritesOnly: false };
+const state = { courses: [], byId: new Map(), view: 'discover', selectedId: null, variantById: {}, feature: null, model: null, line: null, callouts: null, finalLead: '', elevationCache: new Map(), routeCache: new Map(), map: null, routeLayer: null, markerLayer: null, locationLayer: null, playback: null, startRing: null, reveal: null, sourceRect: null, lastCardRect: {}, showMarkers: true, routeRequest: 0, favorites: new Set(saved(localKey.favorites, [])), comparison: saved(localKey.compare, []), walkProgress: saved(localKey.walk, {}), profile: 'solo', theme: saved(localKey.theme, 'light'), search: '', series: 'all', distance: 'all', favoritesOnly: false };
+const prefersReducedMotion = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
 const activeRoute = (course) => course?.routeOptions?.find((route) => route.variant === (state.variantById[course.id] || course.defaultVariant)) || course?.route;
 const routeWaypoints = (course, route) => route?.waypoints || course.waypoints;
 
@@ -37,7 +38,13 @@ function renderList() {
   const courses = visibleCourses();
   $('#result-count').textContent = `${courses.length} 件の候補`;
   $('#active-filter-count').textContent = [state.search, state.series !== 'all', state.distance !== 'all', state.favoritesOnly].filter(Boolean).length ? '・適用中' : '';
-  $('#course-list').innerHTML = courses.length ? courses.map((course) => { const route = activeRoute(course); return `<button type="button" class="course-card ${course.id === state.selectedId ? 'selected' : ''}" data-select="${escapeHtml(course.id)}" aria-pressed="${course.id === state.selectedId}"><span class="card-badge">${escapeHtml(variantLabel(route.variant))}${course.publicWarning || retraceText(course, route) ? '・要再設計' : ''}</span><h3>${escapeHtml(course.title)}</h3><div class="card-meta"><span class="distance-pill">徒歩 ${routeDistanceLabel(course, route)}</span><span>${escapeHtml(course.seriesName)}</span></div><p>${escapeHtml(course.summary)}</p></button>`; }).join('') : '<div class="empty-state">条件に合う候補はありません。絞り込みを変えてください。</div>';
+  $('#course-list').innerHTML = courses.length ? courses.map((course) => { const route = activeRoute(course); return `<button type="button" class="course-card ${course.id === state.selectedId ? 'selected' : ''} ${state.reveal && course.id === state.selectedId ? 'is-revealing' : ''}" data-select="${escapeHtml(course.id)}" aria-pressed="${course.id === state.selectedId}"><span class="card-badge">${escapeHtml(variantLabel(route.variant))}${course.publicWarning || retraceText(course, route) ? '・要再設計' : ''}</span><h3>${escapeHtml(course.title)}</h3><div class="card-meta"><span class="distance-pill">徒歩 ${routeDistanceLabel(course, route)}</span><span>${escapeHtml(course.seriesName)}</span></div><p>${escapeHtml(course.summary)}</p></button>`; }).join('') : '<div class="empty-state">条件に合う候補はありません。絞り込みを変えてください。</div>';
+  $$('.course-card').forEach((card) => { state.lastCardRect[card.dataset.select] = card.getBoundingClientRect(); });
+  applyUnselectedDim();
+}
+function applyUnselectedDim() {
+  const dim = Boolean(state.reveal) && !prefersReducedMotion();
+  $('#course-list').classList.toggle('is-dimmed', dim);
 }
 
 function renderFeatured() {
@@ -71,6 +78,7 @@ function initMap() {
     const tiles = L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/std/{z}/{x}/{y}.png', { maxZoom: 18, attribution: '<a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank" rel="noopener">地理院タイル</a>' }).addTo(state.map);
     let tileErrors = 0;
     tiles.on('tileerror', () => { if (++tileErrors >= 4) { $('#map-fallback').hidden = false; $('#map-status').textContent = '背景地図を読み込めません'; } });
+    state.map.attributionControl.addAttribution('標高: <a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank" rel="noopener">地理院タイル（標高タイル）</a>を加工して作成');
     state.routeLayer = L.layerGroup().addTo(state.map);
     state.markerLayer = L.layerGroup().addTo(state.map);
     state.locationLayer = L.layerGroup().addTo(state.map);
@@ -88,36 +96,321 @@ async function featureFor(route) {
   return feature;
 }
 
+// ---- 経路の描画: 勾配色（上り=赤・下り=青へ連続フェード） ----
+// The grade series (10m parts, GSI DEM5A) is fetched per route. If it does not line up
+// with the drawn line, the route keeps one base colour: never a guessed colouring.
+async function gradesFor(route) {
+  const url = route.elevation?.url;
+  if (!url) return null;
+  if (state.elevationCache.has(route.id)) return state.elevationCache.get(route.id);
+  let grades = null;
+  try {
+    const response = await fetch(url);
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    const data = await response.json();
+    grades = Array.isArray(data.grades) ? data.grades : null;
+  } catch (error) { console.warn('Elevation grades unavailable', route.id, error); }
+  state.elevationCache.set(route.id, grades);
+  return grades;
+}
+function lineModel(route, feature, grades) {
+  const coordinates = feature.geometry.coordinates;
+  const cumulative = routeDistances(coordinates);
+  const totalM = cumulative.at(-1);
+  const samples = sampleAlong(coordinates, cumulative, 10);
+  const terrain = Array.isArray(grades) && grades.length + 1 === samples.length && Math.abs(samples.at(-1)[2] - (route.elevation?.totalM ?? totalM)) <= 1;
+  const runs = terrain ? terrainRuns(samples, grades) : [{ fromM: 0, toM: totalM, color: TERRAIN_COLORS.flat, level: 0 }];
+  return { feature, coordinates, cumulative, totalM, runs, terrain };
+}
+const modelBounds = (model) => L.latLngBounds(model.coordinates.map(([lon, lat]) => [lat, lon]));
+const lineDash = (route) => (route.variant === 'legacy' ? '8 7' : route.variant === 'extended' ? '13 6' : null);
+
+// Draws a route as a few dozen colour runs, up to a given distance. Finished runs are
+// never rebuilt, so a frame only touches the run the line head is in.
+function createPainter(group, model, route, { weight = 6, opacity = 1 } = {}) {
+  const polys = []; let doneIndex = 0; let currentOpacity = opacity;
+  return {
+    paint(atM) {
+      for (let i = doneIndex; i < model.runs.length; i++) {
+        const run = model.runs[i];
+        if (run.fromM >= atM) break;
+        const toM = Math.min(run.toM, atM);
+        const latlngs = sliceRoute(model.coordinates, model.cumulative, run.fromM, toM);
+        if (latlngs.length < 2) continue;
+        if (!polys[i]) polys[i] = L.polyline(latlngs, { color: run.color, weight, opacity: currentOpacity, dashArray: lineDash(route), lineCap: 'round', lineJoin: 'round', interactive: false }).addTo(group);
+        else polys[i].setLatLngs(latlngs);
+        if (toM >= run.toM) doneIndex = i + 1;
+      }
+    },
+    setOpacity(value) { currentOpacity = value; polys.forEach((poly) => poly?.setStyle({ opacity: value })); },
+    colorAt(atM) { return (model.runs.find((run) => atM <= run.toM) || model.runs.at(-1)).color; },
+  };
+}
+function updateTerrainLegend(model) { const legend = $('#terrain-legend'); if (legend) legend.hidden = !model?.terrain; }
+
+// ---- 吹き出し: 再生完了後に全地点を一度に表示（置けなければ一括表示しない） ----
+function clearCallouts() {
+  const callouts = state.callouts;
+  if (!callouts) return;
+  clearTimeout(callouts.timer);
+  state.map?.off('movestart', callouts.onStart); state.map?.off('moveend', callouts.onEnd);
+  callouts.layer.remove();
+  state.callouts = null;
+}
+const CALLOUT_FAIL_TEXT = '画面が狭く、全地点の吹き出しを経路に重ねず置けないため、一括表示は省略しました。地点を押すと説明を読めます。';
+function relativeRect(element, origin) {
+  const rect = element.getBoundingClientRect();
+  return { left: rect.left - origin.left - 8, top: rect.top - origin.top - 8, width: rect.width + 16, height: rect.height + 16 };
+}
+function showCallouts(course, route, model, { retried = false } = {}) {
+  clearCallouts();
+  if (!state.map || !model) return { shown: false, reason: 'no_map' };
+  const waypoints = routeWaypoints(course, route);
+  const stops = playbackStops(waypoints, model.coordinates, model.cumulative);
+  const skipped = waypoints.length - stops.length;
+  if (!stops.length) return { shown: false, reason: 'no_stops', skipped };
+  const mapEl = $('#map'); const frame = mapEl.parentElement; const origin = mapEl.getBoundingClientRect();
+  const width = mapEl.clientWidth; const height = mapEl.clientHeight;
+  const layer = document.createElement('div');
+  layer.className = 'callout-layer';
+  layer.setAttribute('role', 'list');
+  layer.setAttribute('aria-label', `${variantLabel(route.variant)} 全${stops.length}地点の説明`);
+  frame.append(layer);
+  const maxWidth = Math.round(Math.min(214, Math.max(120, width * 0.42)));
+  const items = stops.map((stop, index) => {
+    const el = document.createElement('div');
+    el.className = 'callout';
+    el.setAttribute('role', 'listitem');
+    el.style.maxWidth = `${maxWidth}px`;
+    el.innerHTML = `<b class="callout-num">${index + 1}</b><span class="callout-text"><strong>${escapeHtml(stop.label)}</strong>${stop.curated ? `<em>${escapeHtml(stop.description)}</em>` : ''}</span>`;
+    layer.append(el);
+    return { stop, el };
+  });
+  const point = (lonLat) => state.map.latLngToContainerPoint([lonLat[1], lonLat[0]]);
+  const sized = items.map(({ stop, el }) => { const rect = el.getBoundingClientRect(); const p = point(stop.point); return { x: p.x, y: p.y, width: Math.ceil(rect.width), height: Math.ceil(rect.height) }; });
+  const blocked = ['.leaflet-control-zoom', '.leaflet-control-attribution', '#map-status', '.terrain-legend'].map((selector) => $(selector)).filter((el) => el && el.offsetWidth > 0).map((el) => relativeRect(el, origin));
+  const route2d = model.coordinates.map((coordinate) => { const p = point(coordinate); return [p.x, p.y]; });
+  const avoid = waypoints.map((waypoint) => { const p = point(waypoint.point); return { x: p.x, y: p.y }; });
+  const layout = layoutCallouts({ stops: sized, route: route2d, viewport: { left: 4, top: 4, width: width - 8, height: height - 8 }, blocked, avoid });
+  if (!layout.ok) {
+    layer.remove();
+    // One retry with more room around the route, only if zooming out can actually help.
+    const wider = modelBounds(model).pad(.55);
+    if (!retried && state.map.getBoundsZoom(wider) < state.map.getZoom()) {
+      state.map.once('moveend', () => { if (state.model === model && state.view === 'explore') { const result = showCallouts(course, route, model, { retried: true }); $('#map-status').textContent = calloutStatus(route, result); } });
+      state.map.fitBounds(wider, { animate: !prefersReducedMotion(), duration: .5, maxZoom: 15 });
+      return { shown: false, reason: 'retrying', skipped };
+    }
+    return { shown: false, reason: layout.reason, skipped };
+  }
+  const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+  svg.setAttribute('class', 'callout-leaders'); svg.setAttribute('width', width); svg.setAttribute('height', height); svg.setAttribute('aria-hidden', 'true');
+  layer.prepend(svg);
+  layout.placed.forEach(({ index, rect }) => {
+    const { el } = items[index]; const anchor = sized[index];
+    el.style.left = `${Math.round(rect.left)}px`; el.style.top = `${Math.round(rect.top)}px`;
+    el.style.setProperty('--delay', `${index * 70}ms`);
+    const cx = Math.max(rect.left, Math.min(anchor.x, rect.left + rect.width)); const cy = Math.max(rect.top, Math.min(anchor.y, rect.top + rect.height));
+    svg.insertAdjacentHTML('beforeend', `<line x1="${anchor.x.toFixed(1)}" y1="${anchor.y.toFixed(1)}" x2="${cx.toFixed(1)}" y2="${cy.toFixed(1)}"/><circle cx="${anchor.x.toFixed(1)}" cy="${anchor.y.toFixed(1)}" r="3.5"/>`);
+    el.classList.add('is-placed');
+  });
+  const callouts = { layer, timer: null, onStart: () => layer.classList.add('is-hidden'), onEnd: null };
+  callouts.onEnd = () => {
+    clearTimeout(callouts.timer);
+    callouts.timer = setTimeout(() => {
+      if (state.callouts !== callouts) return;
+      const result = showCallouts(course, route, model, { retried: true });
+      $('#map-status').textContent = calloutStatus(route, result);
+    }, 160);
+  };
+  state.callouts = callouts;
+  state.map.on('movestart', callouts.onStart); state.map.on('moveend', callouts.onEnd);
+  return { shown: true, count: stops.length, skipped };
+}
+function calloutStatus(route, result) {
+  const lead = `${variantLabel(route.variant)}の${state.finalLead || '再生が終わりました'}。`;
+  const note = result.skipped ? `${result.skipped}地点は計算線から離れているため対象外。` : '';
+  if (result.shown) return `${lead}全${result.count}地点の吹き出しを表示中。${note}現地の道順は未確認です。`;
+  if (result.reason === 'retrying') return `${lead}吹き出しの置き場所を確保するため地図を広げています…`;
+  if (result.reason === 'no_stops') return `${lead}経路上に置ける地点がないため吹き出しはありません。現地の道順は未確認です。`;
+  return `${lead}${CALLOUT_FAIL_TEXT}${note}`;
+}
+
+// Where playback, "すぐ表示" and reduced-motion all end up: the whole line in terrain
+// colours, plus every checkpoint's balloon if (and only if) they all fit.
+function showFinalState(lead = '再生が終わりました') {
+  const course = state.byId.get(state.selectedId); const model = state.model;
+  if (!course || !model) return;
+  const route = activeRoute(course);
+  state.finalLead = lead;
+  stopReveal(); stopRouteAnimation();
+  drawFeature(course, route, model, { fit: false });
+  const result = showCallouts(course, route, model);
+  $('#map-status').textContent = calloutStatus(route, result);
+}
+
+// ---- カードから道へ: 選択 → 地図が展開 → カメラが飛ぶ → 始点が脈打つ → 線が走る ----
+// Every timer and animation frame is owned by state.reveal, and stopReveal() is the
+// only way they end, so a second click cannot leave a ring, trail or dim list behind.
+function stopReveal({ finished = false } = {}) {
+  const reveal = state.reveal;
+  if (!reveal) return;
+  cancelAnimationFrame(reveal.frame);
+  clearTimeout(reveal.trailTimer);
+  reveal.group?.remove();
+  reveal.card?.classList.remove('is-revealing');
+  removeStartRing();
+  state.reveal = null;
+  $('#map-column')?.classList.remove('is-unfolding');
+  $('#map-pulse')?.classList.remove('is-on');
+  $$('.map-sweep, .reveal-chip').forEach((el) => el.remove());
+  $('#course-list')?.classList.remove('is-dimmed');
+  $$('.course-card.is-revealing').forEach((card) => card.classList.remove('is-revealing'));
+  if (finished && !prefersReducedMotion() && state.map) {
+    const end = reveal.model.coordinates.at(-1);
+    const px = state.map.latLngToContainerPoint([end[1], end[0]]);
+    for (const [delay, cls] of [[0, 'map-end-ring'], [140, 'map-end-ring is-late']]) {
+      const ring = document.createElement('span');
+      ring.className = cls; ring.setAttribute('aria-hidden', 'true');
+      ring.style.left = `${px.x}px`; ring.style.top = `${px.y}px`; ring.style.animationDelay = `${delay}ms`;
+      $('#map')?.append(ring);
+      setTimeout(() => ring.remove(), 1200);
+    }
+  }
+}
+
+function flyTrail(from, to) {
+  if (!from || !to) return;
+  const dx = to.x - from.x; const dy = to.y - from.y;
+  const length = Math.hypot(dx, dy);
+  if (length < 40 || length > 1600) return;
+  const angle = Math.atan2(dy, dx) * 180 / Math.PI;
+  const hair = document.createElement('span');
+  hair.className = 'map-sweep';
+  hair.setAttribute('aria-hidden', 'true');
+  hair.style.left = `${from.x}px`; hair.style.top = `${from.y}px`; hair.style.width = `${length}px`;
+  hair.style.transform = `rotate(${angle}deg) scaleX(0)`;
+  $('#map-column')?.append(hair);
+  hair.animate([{ transform: `rotate(${angle}deg) scaleX(0)`, opacity: 0 }, { transform: `rotate(${angle}deg) scaleX(.55)`, opacity: 1, offset: .45 }, { transform: `rotate(${angle}deg) scaleX(1)`, opacity: 1, offset: .75 }, { transform: `rotate(${angle}deg) scaleX(1)`, opacity: 0 }], { duration: 640, easing: 'cubic-bezier(.2,.7,.2,1)' }).finished.then(() => hair.remove()).catch(() => hair.remove());
+}
+
+function startRingAt(latlng, { radius = 30 } = {}) {
+  removeStartRing();
+  const rings = [L.circleMarker(latlng, { radius, weight: 0, fillColor: '#246c55', fillOpacity: .18, interactive: false }), L.circleMarker(latlng, { radius: Math.round(radius * .62), weight: 0, fillColor: '#246c55', fillOpacity: .14, interactive: false }), L.circleMarker(latlng, { radius: 9, color: '#246c55', weight: 3, opacity: .95, fillColor: '#fff', fillOpacity: 1, interactive: false })];
+  state.startRing = L.layerGroup(rings).addTo(state.map);
+  return rings;
+}
+function removeStartRing() { state.startRing?.remove(); state.startRing = null; }
+
+const REVEAL_RING_MS = 460; const REVEAL_FLY_S = .85; const REVEAL_DRAW_AT_MS = 520;
+function drawOn(course, route, model) {
+  if (!state.map || !model) return null;
+  stopReveal(); stopRouteAnimation();
+  state.routeLayer.clearLayers(); state.markerLayer.clearLayers(); state.line = null;
+  updateTerrainLegend(model);
+  state.map.invalidateSize();
+  const { coordinates, cumulative, totalM } = model;
+  const start = [coordinates[0][1], coordinates[0][0]];
+  const bounds = modelBounds(model).pad(.17);
+  if (prefersReducedMotion() || !Number.isFinite(totalM) || totalM <= 0) {
+    state.map.fitBounds(bounds, { animate: false, maxZoom: 15 });
+    drawFeature(course, route, model, { fit: false });
+    startRingAt(start);
+    setTimeout(() => { if (!state.reveal) removeStartRing(); }, 1800);
+    $('#map-status').textContent = `${variantLabel(route.variant)}・${routeDistanceLabel(course, route)}／地図・現地レビュー待ち。地点を押すと説明を読めます。`;
+    return null;
+  }
+  // Camera: fly (zoom out and in) toward the route while the card lifts and the panel unfolds.
+  const zoom = Math.min(15, state.map.getBoundsZoom(bounds));
+  const size = state.map.getSize();
+  const landing = { x: size.x / 2 + state.map.project(start, zoom).x - state.map.project(bounds.getCenter(), zoom).x, y: size.y / 2 + state.map.project(start, zoom).y - state.map.project(bounds.getCenter(), zoom).y };
+  state.map.flyToBounds(bounds, { duration: REVEAL_FLY_S, maxZoom: 15 });
+  const group = L.layerGroup().addTo(state.routeLayer);
+  const painter = createPainter(group, model, route, { weight: 7 });
+  const head = L.circleMarker(start, { radius: 8, color: '#fff', weight: 3, fillColor: TERRAIN_COLORS.flat, fillOpacity: 1, interactive: false }).addTo(group);
+  const reveal = { course, route, model, group, frame: null, trailTimer: null, card: null };
+  state.reveal = reveal;
+  const rings = startRingAt(start);
+  $('#map-column').classList.add('is-unfolding');
+  $('#course-list').classList.add('is-dimmed');
+  const card = $(`.course-card[data-select="${CSS.escape(course.id)}"]`);
+  card?.classList.add('is-revealing');
+  reveal.card = card;
+  const cardRect = card?.getBoundingClientRect() || state.lastCardRect[course.id] || null;
+  const mapRect = $('#map')?.getBoundingClientRect() || null;
+  reveal.trailTimer = setTimeout(() => { reveal.trailTimer = null; flyTrail(cardRect && mapRect ? { x: cardRect.left + cardRect.width / 2 - mapRect.left, y: cardRect.top + cardRect.height / 2 - mapRect.top } : null, landing); }, 100);
+  const pulse = $('#map-pulse');
+  if (pulse) { pulse.classList.add('is-on'); setTimeout(() => pulse.classList.remove('is-on'), 700); }
+  const durationMs = drawOnDurationMs(totalM);
+  const began = performance.now();
+  let runIndex = 0;
+  const tick = (time) => {
+    if (state.reveal !== reveal) return;
+    const elapsed = time - began;
+    if (elapsed < REVEAL_RING_MS) {
+      const beat = Math.sin(elapsed / REVEAL_RING_MS * Math.PI);
+      rings[0].setRadius(22 + 30 * (elapsed / REVEAL_RING_MS)); rings[0].setStyle({ fillOpacity: .26 * (1 - elapsed / REVEAL_RING_MS) });
+      rings[1].setRadius(12 + 22 * beat); rings[1].setStyle({ fillOpacity: .22 * (1 - elapsed / REVEAL_RING_MS * .6) });
+    } else if (state.startRing && elapsed >= REVEAL_DRAW_AT_MS) { removeStartRing(); }
+    if (elapsed < REVEAL_DRAW_AT_MS) { reveal.frame = requestAnimationFrame(tick); return; }
+    const progress = revealProgress(elapsed - REVEAL_DRAW_AT_MS, durationMs);
+    const atM = totalM * progress;
+    painter.paint(atM);
+    while (runIndex < model.runs.length - 1 && atM > model.runs[runIndex].toM) runIndex++;
+    const headPoint = partialRoute(coordinates, cumulative, atM).at(-1);
+    head.setLatLng(headPoint); head.setStyle({ fillColor: model.runs[runIndex].color, radius: 8 + 3 * Math.sin(elapsed / 90) });
+    if (progress >= 1) { finishReveal(reveal); return; }
+    reveal.frame = requestAnimationFrame(tick);
+  };
+  reveal.frame = requestAnimationFrame(tick);
+  $('#map-status').textContent = `${variantLabel(route.variant)}を地図に表示しています…`;
+  return reveal;
+}
+function finishReveal(reveal) {
+  const { course, route, model } = reveal;
+  stopReveal({ finished: true });
+  drawFeature(course, route, model, { fit: false });
+  const end = model.coordinates.at(-1);
+  const px = state.map.latLngToContainerPoint([end[1], end[0]]);
+  const chip = document.createElement('span');
+  chip.className = 'reveal-chip';
+  chip.textContent = `${routeDistanceLabel(course, route)}・${statusText(route.verificationStatus)}`;
+  chip.style.left = `${px.x}px`; chip.style.top = `${px.y - 14}px`;
+  $('#map')?.append(chip);
+  setTimeout(() => chip.remove(), 2800);
+  $('#map-status').textContent = `${variantLabel(route.variant)}・${routeDistanceLabel(course, route)}／地図・現地レビュー待ち。地点を押すと説明を読めます。${model.terrain ? '色は上り＝赤・下り＝青。' : ''}`;
+}
+
 function checkpointContent(label, description, number, total) {
   return `<div class="checkpoint-popup"><strong>${escapeHtml(label)}</strong><p>${escapeHtml(description)}</p><small>チェックポイント ${number} / ${total}・計算線上の目安</small></div>`;
 }
 function stopRouteAnimation() {
+  clearCallouts();
   const playback = state.playback;
   if (!playback) return;
   cancelAnimationFrame(playback.frame);
-  playback.base?.eachLayer((layer) => layer.setStyle({ opacity: .92 }));
-  if (playback.overlay) state.routeLayer.removeLayer(playback.overlay);
+  state.line?.painter.setOpacity(1);
+  playback.group?.remove();
   state.map?.closePopup();
   state.playback = null;
   $('#replay-route').setAttribute('aria-pressed', 'false');
 }
 function animateRoute() {
   stopRouteAnimation();
-  if (!state.map || !state.feature?.geometry?.coordinates?.length || state.view !== 'explore') return;
+  const model = state.model;
+  if (!state.map || !model?.coordinates?.length || state.view !== 'explore') return;
   const course = state.byId.get(state.selectedId); const route = activeRoute(course);
-  const coordinates = state.feature.geometry.coordinates;
-  const cumulative = routeDistances(coordinates); const totalM = cumulative.at(-1);
+  const { coordinates, cumulative, totalM } = model;
   if (!Number.isFinite(totalM) || totalM <= 0) return;
   const stops = playbackStops(routeWaypoints(course, route), coordinates, cumulative);
   const skippedStops = routeWaypoints(course, route).length - stops.length;
-  if (matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    $('#map-status').textContent = '動きを減らす設定のため経路を即時表示しています。地点を選ぶと説明を読めます。';
-    return;
-  }
-  const base = state.routeLayer.getLayers()[0];
-  base?.eachLayer((layer) => layer.setStyle({ opacity: .22 }));
-  const overlay = L.polyline([[coordinates[0][1], coordinates[0][0]]], { color: route.variant === 'extended' ? '#b65d3e' : '#315f50', weight: 6, opacity: 1, lineCap: 'round', interactive: false }).addTo(state.routeLayer);
-  const playback = { base, overlay, frame: null };
+  if (prefersReducedMotion()) { showFinalState(); return; }
+  stopReveal();
+  state.line?.painter.setOpacity(.22);
+  const group = L.layerGroup().addTo(state.routeLayer);
+  const painter = createPainter(group, model, route, { weight: 7 });
+  const head = L.circleMarker([coordinates[0][1], coordinates[0][0]], { radius: 8, color: '#fff', weight: 3, fillColor: TERRAIN_COLORS.flat, fillOpacity: 1, interactive: false }).addTo(group);
+  const playback = { group, painter, frame: null };
   state.playback = playback;
   $('#replay-route').setAttribute('aria-pressed', 'true');
   const speedMperMs = totalM / Math.max(9000, Math.min(20000, totalM / 450 * 1000));
@@ -136,12 +429,9 @@ function animateRoute() {
         $('#map-status').textContent = `${nextStop + 1}/${stops.length} ${stop.label}・経路プレビュー`;
         pauseUntil = time + 2200; nextStop++;
       }
-      overlay.setLatLngs(partialRoute(coordinates, cumulative, progressM));
-      if (progressM >= totalM && nextStop >= stops.length) {
-        stopRouteAnimation();
-        $('#map-status').textContent = `${variantLabel(route.variant)}の再生が終わりました。${skippedStops ? `${skippedStops}地点は計算線とのずれで再生対象外。` : ''}現地の道順は未確認です。`;
-        return;
-      }
+      painter.paint(progressM);
+      head.setLatLng(partialRoute(coordinates, cumulative, progressM).at(-1)); head.setStyle({ fillColor: painter.colorAt(progressM) });
+      if (progressM >= totalM && nextStop >= stops.length) { showFinalState(); return; }
     }
     playback.frame = requestAnimationFrame(tick);
   };
@@ -149,15 +439,11 @@ function animateRoute() {
   playback.frame = requestAnimationFrame(tick);
 }
 
-function drawFeature(course, route, feature, { fit = true } = {}) {
-  if (!state.map) return;
-  stopRouteAnimation();
-  state.routeLayer.clearLayers();
+function drawMarkers(course, route) {
   state.markerLayer.clearLayers();
-  if (!feature) return;
-  const geo = L.geoJSON(feature, { style: { color: route.variant === 'extended' ? '#b65d3e' : '#315f50', weight: 5, opacity: .92, dashArray: route.variant === 'legacy' ? '8 7' : route.variant === 'extended' ? '13 6' : null, lineCap: 'round' } }).addTo(state.routeLayer);
+  if (!state.showMarkers) return;
   const waypoints = routeWaypoints(course, route);
-  if (state.showMarkers) waypoints.forEach((waypoint, index) => {
+  waypoints.forEach((waypoint, index) => {
     const last = index === waypoints.length - 1;
     const marker = L.circleMarker([waypoint.point[1], waypoint.point[0]], { radius: index === 0 || last ? 7 : 5, color: '#fff', weight: 2, fillColor: index === 0 ? '#246c55' : last ? '#bf795e' : '#516c64', fillOpacity: 1 });
     const label = waypoint.label || (index === 0 ? '旧経路の起点' : last ? '旧経路の終点' : `旧資料の経由点 ${index + 1}`);
@@ -165,15 +451,35 @@ function drawFeature(course, route, feature, { fit = true } = {}) {
     marker.bindPopup(checkpointContent(label, waypoint.description || (waypoint.label ? 'この地点付近を通る計算経路です。施設の入口と通行条件は未確認です。' : '旧資料の経由点です。地点名と施設入口は再調査中です。'), index + 1, waypoints.length));
     marker.addTo(state.markerLayer);
   });
+}
+
+function drawFeature(course, route, model, { fit = true } = {}) {
+  if (!state.map) return;
+  stopRouteAnimation();
+  if (!fit) stopReveal();
+  state.routeLayer.clearLayers();
+  state.line = null;
+  if (state.startRing) state.routeLayer.addLayer(state.startRing);
+  if (!model) { state.markerLayer.clearLayers(); updateTerrainLegend(null); return; }
+  const group = L.layerGroup().addTo(state.routeLayer);
+  const painter = createPainter(group, model, route);
+  painter.paint(model.totalM);
+  state.line = { group, painter, model };
+  updateTerrainLegend(model);
+  drawMarkers(course, route);
   state.map.invalidateSize();
-  const bounds = geo.getBounds();
-  if (fit && bounds.isValid()) state.map.fitBounds(bounds.pad(.17), { animate: !matchMedia('(prefers-reduced-motion: reduce)').matches, maxZoom: 15 });
+  if (fit) state.map.fitBounds(modelBounds(model).pad(.17), { animate: !prefersReducedMotion(), maxZoom: 15 });
 }
 
 async function selectCourse(id, { updateHash = true } = {}) {
   const course = state.byId.get(id);
   if (!course) return;
+  // Capture the card's position before the click handler ends: on phones the list
+  // scrolls under the map, so the rect must be read from the pre-scroll layout.
+  const clickedCard = $(`.course-card[data-select="${CSS.escape(id)}"]`);
+  state.sourceRect = clickedCard?.getBoundingClientRect() || state.sourceRect;
   stopRouteAnimation();
+  stopReveal();
   const route = activeRoute(course);
   state.selectedId = id;
   renderList(); renderSelected();
@@ -182,13 +488,16 @@ async function selectCourse(id, { updateHash = true } = {}) {
   $('#map-status').textContent = `${variantLabel(route.variant)}を読み込み中…`;
   try {
     const feature = await featureFor(route);
+    const grades = feature ? await gradesFor(route) : null;
     if (request !== state.routeRequest) return;
     state.feature = feature;
-    drawFeature(course, route, feature);
-    $('#map-status').textContent = route.geometryUrl ? `${routeDistanceLabel(course, route)}・${variantLabel(route.variant)}／地図・現地レビュー待ち` : `${variantLabel(route.variant)}・徒歩線未生成／屋内・鉄道の案を詳細に表示`;
+    state.model = feature ? lineModel(route, feature, grades) : null;
+    if (state.model) drawOn(course, route, state.model);
+    else { drawFeature(course, route, null); $('#map-status').textContent = `${variantLabel(route.variant)}・徒歩線未生成／屋内・鉄道の案を詳細に表示`; }
   } catch (error) {
     if (request !== state.routeRequest) return;
-    state.feature = null;
+    state.feature = null; state.model = null; state.line = null;
+    stopReveal(); updateTerrainLegend(null);
     state.routeLayer?.clearLayers(); state.markerLayer?.clearLayers();
     $('#map-status').textContent = error.message;
   }
@@ -196,12 +505,18 @@ async function selectCourse(id, { updateHash = true } = {}) {
 
 function showView(view, { updateHash = true } = {}) {
   if (!['discover', 'explore', 'compare', 'walk'].includes(view)) return;
-  if (view !== 'explore') stopRouteAnimation();
+  if (view !== 'explore') { stopRouteAnimation(); stopReveal(); }
   state.view = view;
   $$('.view').forEach((section) => { section.hidden = section.id !== `view-${view}`; });
   $$('[data-view]').forEach((button) => { button.classList.toggle('is-active', button.dataset.view === view); if (button.tagName === 'BUTTON') button.setAttribute('aria-current', button.dataset.view === view ? 'page' : 'false'); });
   if (updateHash) history.replaceState(null, '', `#${view}`);
-  if (view === 'explore') setTimeout(() => state.map?.invalidateSize(), 0);
+  if (view === 'explore') {
+    // The panel was display:none while another view was shown; unfold it once the
+    // layout is back, then invalidate the map a single time.
+    const column = $('#map-column');
+    if (column && state.feature) { column.classList.add('is-unfolding'); const pulse = $('#map-pulse'); pulse?.classList.add('is-on'); setTimeout(() => { column.classList.remove('is-unfolding'); pulse?.classList.remove('is-on'); }, 560); }
+    setTimeout(() => state.map?.invalidateSize(), 0);
+  }
   if (view === 'compare') renderCompare();
   if (view === 'walk') renderWalk();
   window.scrollTo({ top: 0, behavior: 'auto' });
@@ -318,10 +633,10 @@ function wireEvents() {
   $('#profile').addEventListener('change', (event) => { state.profile = event.target.value; if (state.selectedId) renderSelected(); });
   $('#walk-course').addEventListener('change', () => { const id = $('#walk-course').value; renderWalk(); if (id) selectCourse(id, { updateHash: false }); });
   $('#walk-variant').addEventListener('change', () => { const id = $('#walk-course').value; if (!id) return; state.variantById[id] = $('#walk-variant').value; renderWalk(); selectCourse(id, { updateHash: false }); });
-  $('#fit-route').addEventListener('click', () => { if (state.map && state.routeLayer.getLayers().length) state.map.fitBounds(state.routeLayer.getBounds?.() || state.routeLayer.getLayers()[0].getBounds(), { maxZoom: 15 }); });
+  $('#fit-route').addEventListener('click', () => { if (state.map && state.model) state.map.fitBounds(modelBounds(state.model).pad(.17), { maxZoom: 15 }); });
   $('#replay-route').addEventListener('click', animateRoute);
-  $('#show-route-now').addEventListener('click', () => { stopRouteAnimation(); if (state.selectedId) $('#map-status').textContent = '経路全体を表示中・現地の道順は未確認です。'; });
-  $('#map-layer-toggle').addEventListener('click', () => { state.showMarkers = !state.showMarkers; $('#map-layer-toggle').setAttribute('aria-pressed', String(state.showMarkers)); $('#map-layer-toggle').textContent = state.showMarkers ? '地点を非表示' : '地点を表示'; const course = state.byId.get(state.selectedId); if (course && state.feature) drawFeature(course, activeRoute(course), state.feature, { fit: false }); });
+  $('#show-route-now').addEventListener('click', () => { if (state.selectedId && state.model) showFinalState('経路全体を表示しました'); else if (state.map) state.map.invalidateSize(); });
+  $('#map-layer-toggle').addEventListener('click', () => { state.showMarkers = !state.showMarkers; $('#map-layer-toggle').setAttribute('aria-pressed', String(state.showMarkers)); $('#map-layer-toggle').textContent = state.showMarkers ? '地点を非表示' : '地点を表示'; const course = state.byId.get(state.selectedId); if (course && state.model) drawFeature(course, activeRoute(course), state.model, { fit: false }); });
   $('#close-detail').addEventListener('click', () => $('#detail-dialog').close());
   $('#detail-dialog').addEventListener('click', (event) => { if (event.target.id === 'detail-dialog') event.target.close(); });
   $('#theme-toggle').addEventListener('click', () => { state.theme = state.theme === 'dark' ? 'light' : 'dark'; applyTheme(); });

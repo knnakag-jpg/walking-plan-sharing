@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "source": "legacy import; route quality not re-reviewed",
-  "generatedAt": "2026-11-14T00:09:33.307Z",
+  "generatedAt": "2026-11-14T14:51:08.496Z",
   "courses": [
     {
       "id": "No.1",
@@ -31,7 +31,17 @@
         "repeatedGeometryPct": 23.9,
         "maxWaypointToShapeM": 32,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "partial_dem_filled",
+          "url": "data/elevation/no-1.json",
+          "totalM": 6654,
+          "climbM": 44.1,
+          "descentM": 44.2,
+          "minM": 2.1,
+          "maxM": 21.9
+        }
       },
       "waypoints": [
         {
@@ -147,7 +157,17 @@
         "repeatedGeometryPct": 8.8,
         "maxWaypointToShapeM": 13,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "partial_dem_filled",
+          "url": "data/elevation/no-2.json",
+          "totalM": 6586,
+          "climbM": 34.9,
+          "descentM": 34.5,
+          "minM": -2.7,
+          "maxM": 11.6
+        }
       },
       "waypoints": [
         {
@@ -246,7 +266,17 @@
         "repeatedGeometryPct": 22.7,
         "maxWaypointToShapeM": 32,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "partial_dem_filled",
+          "url": "data/elevation/no-3.json",
+          "totalM": 6746,
+          "climbM": 21.4,
+          "descentM": 18.7,
+          "minM": 1.6,
+          "maxM": 4.8
+        }
       },
       "waypoints": [
         {
@@ -362,7 +392,17 @@
         "repeatedGeometryPct": 12.9,
         "maxWaypointToShapeM": 74,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "dem",
+          "url": "data/elevation/no-4.json",
+          "totalM": 5951,
+          "climbM": 23.6,
+          "descentM": 25.2,
+          "minM": 34.1,
+          "maxM": 49.9
+        }
       },
       "waypoints": [
         {
@@ -452,7 +492,17 @@
         "repeatedGeometryPct": 20.6,
         "maxWaypointToShapeM": 31,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "partial_dem_filled",
+          "url": "data/elevation/no-5.json",
+          "totalM": 7316,
+          "climbM": 30.4,
+          "descentM": 42.4,
+          "minM": 35.8,
+          "maxM": 55.4
+        }
       },
       "waypoints": [
         {
@@ -562,7 +612,17 @@
         "repeatedGeometryPct": 4.4,
         "maxWaypointToShapeM": 43,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "partial_dem_filled",
+          "url": "data/elevation/no-6.json",
+          "totalM": 7235,
+          "climbM": 67.3,
+          "descentM": 51.7,
+          "minM": 38.2,
+          "maxM": 75.2
+        }
       },
       "waypoints": [
         {
@@ -650,7 +710,17 @@
         "repeatedGeometryPct": 4.2,
         "maxWaypointToShapeM": 34,
         "built": "2026-10-18",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "partial_dem_filled",
+          "url": "data/elevation/no-7.json",
+          "totalM": 5612,
+          "climbM": 21.1,
+          "descentM": 21.3,
+          "minM": 1.7,
+          "maxM": 8
+        }
       },
       "waypoints": [
         {
@@ -751,7 +821,17 @@
         "repeatedGeometryPct": 22.7,
         "maxWaypointToShapeM": 41,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "dem",
+          "url": "data/elevation/no-8.json",
+          "totalM": 6716,
+          "climbM": 46.5,
+          "descentM": 53.8,
+          "minM": -0.4,
+          "maxM": 18.8
+        }
       },
       "waypoints": [
         {
@@ -871,7 +951,17 @@
         "repeatedGeometryPct": 34.4,
         "maxWaypointToShapeM": 31,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "dem",
+          "url": "data/elevation/no-9.json",
+          "totalM": 2778,
+          "climbM": 252.1,
+          "descentM": 175.6,
+          "minM": 190.2,
+          "maxM": 367
+        }
       },
       "waypoints": [
         {
@@ -939,7 +1029,17 @@
         "repeatedGeometryPct": 19.5,
         "maxWaypointToShapeM": 84,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "dem",
+          "url": "data/elevation/no-10.json",
+          "totalM": 6883,
+          "climbM": 20.3,
+          "descentM": 20.1,
+          "minM": 1.8,
+          "maxM": 5.9
+        }
       },
       "waypoints": [
         {
@@ -1043,7 +1143,17 @@
         "repeatedGeometryPct": 12.6,
         "maxWaypointToShapeM": 31,
         "built": "2026-10-18",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "partial_dem_filled",
+          "url": "data/elevation/no-11.json",
+          "totalM": 7289,
+          "climbM": 25.5,
+          "descentM": 27.7,
+          "minM": 0.6,
+          "maxM": 7.8
+        }
       },
       "waypoints": [
         {
@@ -1429,7 +1539,17 @@
             }
           ],
           "engine": "valhalla-pedestrian",
-          "built": "2026-11-12T14:42:54.180Z"
+          "built": "2026-11-12T14:42:54.180Z",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "dem",
+            "url": "data/elevation/no-12-standard.json",
+            "totalM": 3945,
+            "climbM": 27.4,
+            "descentM": 18.1,
+            "minM": 83.2,
+            "maxM": 97.8
+          }
         },
         {
           "id": "no-12-extended",
@@ -1555,7 +1675,17 @@
             }
           ],
           "engine": "valhalla-pedestrian",
-          "built": "2026-11-12T14:42:56.208Z"
+          "built": "2026-11-12T14:42:56.208Z",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "dem",
+            "url": "data/elevation/no-12-extended.json",
+            "totalM": 7590,
+            "climbM": 54.3,
+            "descentM": 32.8,
+            "minM": 83.2,
+            "maxM": 107.1
+          }
         },
         {
           "id": "no-12-rainy",
@@ -1686,7 +1816,17 @@
                 35.7112
               ]
             }
-          ]
+          ],
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "dem",
+            "url": "data/elevation/no-12.json",
+            "totalM": 6721,
+            "climbM": 20.2,
+            "descentM": 12.7,
+            "minM": 82.9,
+            "maxM": 99.2
+          }
         }
       ]
     },
@@ -1719,7 +1859,17 @@
         "repeatedGeometryPct": 0.5,
         "maxWaypointToShapeM": 20,
         "built": "2026-10-18",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "dem",
+          "url": "data/elevation/no-13.json",
+          "totalM": 6989,
+          "climbM": 56.2,
+          "descentM": 37.4,
+          "minM": 5.6,
+          "maxM": 33.7
+        }
       },
       "waypoints": [
         {
@@ -1818,7 +1968,17 @@
         "repeatedGeometryPct": 16.9,
         "maxWaypointToShapeM": 39,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "dem",
+          "url": "data/elevation/no-14.json",
+          "totalM": 6769,
+          "climbM": 29.8,
+          "descentM": 33.2,
+          "minM": 7.8,
+          "maxM": 15.4
+        }
       },
       "waypoints": [
         {
@@ -1920,7 +2080,17 @@
         "repeatedGeometryPct": 5.6,
         "maxWaypointToShapeM": 44,
         "built": "2026-10-18",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "partial_dem_filled",
+          "url": "data/elevation/no-15.json",
+          "totalM": 6035,
+          "climbM": 39.2,
+          "descentM": 30.2,
+          "minM": 1.5,
+          "maxM": 16.6
+        }
       },
       "waypoints": [
         {
@@ -2014,7 +2184,17 @@
         "repeatedGeometryPct": 5,
         "maxWaypointToShapeM": 44,
         "built": "2026-10-18",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "partial_dem_filled",
+          "url": "data/elevation/no-16.json",
+          "totalM": 7159,
+          "climbM": 73.6,
+          "descentM": 65.3,
+          "minM": 1.5,
+          "maxM": 45.3
+        }
       },
       "waypoints": [
         {
@@ -2108,7 +2288,17 @@
         "repeatedGeometryPct": 15.6,
         "maxWaypointToShapeM": 36,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "dem",
+          "url": "data/elevation/no-17.json",
+          "totalM": 6839,
+          "climbM": 89.8,
+          "descentM": 88.8,
+          "minM": 4.5,
+          "maxM": 31.1
+        }
       },
       "waypoints": [
         {
@@ -2198,7 +2388,17 @@
         "repeatedGeometryPct": 26.8,
         "maxWaypointToShapeM": 92,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "partial_dem_filled",
+          "url": "data/elevation/no-18.json",
+          "totalM": 7027,
+          "climbM": 81.1,
+          "descentM": 76.2,
+          "minM": 1.9,
+          "maxM": 19.1
+        }
       },
       "waypoints": [
         {
@@ -2301,7 +2501,17 @@
         "repeatedGeometryPct": 7.2,
         "maxWaypointToShapeM": 81,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "dem",
+          "url": "data/elevation/no-19.json",
+          "totalM": 6835,
+          "climbM": 49.1,
+          "descentM": 49.2,
+          "minM": 20.2,
+          "maxM": 34.6
+        }
       },
       "waypoints": [
         {
@@ -2403,7 +2613,17 @@
         "repeatedGeometryPct": 5.8,
         "maxWaypointToShapeM": 35,
         "built": "2026-10-18",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "partial_dem_filled",
+          "url": "data/elevation/no-20.json",
+          "totalM": 6835,
+          "climbM": 38.6,
+          "descentM": 41,
+          "minM": 5.9,
+          "maxM": 17.2
+        }
       },
       "waypoints": [
         {
@@ -2495,7 +2715,17 @@
         "repeatedGeometryPct": 7.4,
         "maxWaypointToShapeM": 36,
         "built": "2026-10-18",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "dem",
+          "url": "data/elevation/no-21.json",
+          "totalM": 6301,
+          "climbM": 26.2,
+          "descentM": 22.9,
+          "minM": 12.1,
+          "maxM": 21.8
+        }
       },
       "waypoints": [
         {
@@ -2595,7 +2825,17 @@
         "repeatedGeometryPct": 37.5,
         "maxWaypointToShapeM": 37,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "partial_dem_filled",
+          "url": "data/elevation/no-22.json",
+          "totalM": 6973,
+          "climbM": 35.7,
+          "descentM": 31.8,
+          "minM": -0.4,
+          "maxM": 5.3
+        }
       },
       "waypoints": [
         {
@@ -2771,7 +3011,17 @@
         "repeatedGeometryPct": 9.2,
         "maxWaypointToShapeM": 33,
         "built": "2026-10-18",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "partial_dem_filled",
+          "url": "data/elevation/no-23.json",
+          "totalM": 6564,
+          "climbM": 30.9,
+          "descentM": 35,
+          "minM": -1,
+          "maxM": 10.1
+        }
       },
       "waypoints": [
         {
@@ -2858,7 +3108,17 @@
         "repeatedGeometryPct": 7.3,
         "maxWaypointToShapeM": 54,
         "built": "2026-10-18",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "dem",
+          "url": "data/elevation/no-24.json",
+          "totalM": 7067,
+          "climbM": 73.5,
+          "descentM": 79,
+          "minM": 10.8,
+          "maxM": 32
+        }
       },
       "waypoints": [
         {
@@ -2968,7 +3228,17 @@
         "repeatedGeometryPct": 10.7,
         "maxWaypointToShapeM": 20,
         "built": "2026-10-18",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "partial_dem_filled",
+          "url": "data/elevation/no-25.json",
+          "totalM": 6934,
+          "climbM": 20.9,
+          "descentM": 24.4,
+          "minM": 0.4,
+          "maxM": 4.9
+        }
       },
       "waypoints": [
         {
@@ -3077,7 +3347,17 @@
         "repeatedGeometryPct": 7.5,
         "maxWaypointToShapeM": 14,
         "built": "2026-10-18",
-        "engine": "brouter-hiking-beta"
+        "engine": "brouter-hiking-beta",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "dem",
+          "url": "data/elevation/no-26.json",
+          "totalM": 6655,
+          "climbM": 67.1,
+          "descentM": 56.9,
+          "minM": 7.4,
+          "maxM": 26.4
+        }
       },
       "waypoints": [
         {
@@ -3185,7 +3465,17 @@
         "repeatedGeometryPct": 20.6,
         "maxWaypointToShapeM": 31,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "dem",
+          "url": "data/elevation/no-27.json",
+          "totalM": 6962,
+          "climbM": 39.2,
+          "descentM": 33.2,
+          "minM": 47.7,
+          "maxM": 70
+        }
       },
       "waypoints": [
         {
@@ -3268,7 +3558,17 @@
         "repeatedGeometryPct": 2.7,
         "maxWaypointToShapeM": 26,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "dem",
+          "url": "data/elevation/no-28.json",
+          "totalM": 3262,
+          "climbM": 24.1,
+          "descentM": 39.6,
+          "minM": 17.1,
+          "maxM": 35
+        }
       },
       "waypoints": [
         {
@@ -3341,7 +3641,17 @@
         "repeatedGeometryPct": 19.3,
         "maxWaypointToShapeM": 10,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "partial_dem_filled",
+          "url": "data/elevation/no-29.json",
+          "totalM": 6594,
+          "climbM": 46.1,
+          "descentM": 39.3,
+          "minM": 14.2,
+          "maxM": 43.8
+        }
       },
       "waypoints": [
         {
@@ -3424,7 +3734,17 @@
         "repeatedGeometryPct": 3.8,
         "maxWaypointToShapeM": 23,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "partial_dem_filled",
+          "url": "data/elevation/no-30.json",
+          "totalM": 4556,
+          "climbM": 43,
+          "descentM": 18.1,
+          "minM": 65.6,
+          "maxM": 92
+        }
       },
       "waypoints": [
         {
@@ -3490,7 +3810,17 @@
         "repeatedGeometryPct": 10.5,
         "maxWaypointToShapeM": 23,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "partial_dem_filled",
+          "url": "data/elevation/no-31.json",
+          "totalM": 3061,
+          "climbM": 59.6,
+          "descentM": 49.5,
+          "minM": 9.1,
+          "maxM": 32.4
+        }
       },
       "waypoints": [
         {
@@ -3833,7 +4163,17 @@
             }
           ],
           "engine": "valhalla-pedestrian",
-          "built": "2026-11-12T22:02:06.014Z"
+          "built": "2026-11-12T22:02:06.014Z",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/no-32-standard.json",
+            "totalM": 4262,
+            "climbM": 59.7,
+            "descentM": 35.5,
+            "minM": 4.3,
+            "maxM": 33.9
+          }
         },
         {
           "id": "no-32-extended",
@@ -3992,7 +4332,17 @@
             }
           ],
           "engine": "valhalla-pedestrian",
-          "built": "2026-11-12T22:02:06.016Z"
+          "built": "2026-11-12T22:02:06.016Z",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/no-32-extended.json",
+            "totalM": 7463,
+            "climbM": 92.9,
+            "descentM": 79.6,
+            "minM": 3.1,
+            "maxM": 33.9
+          }
         },
         {
           "id": "no-32-rainy",
@@ -4095,7 +4445,17 @@
                 35.6923
               ]
             }
-          ]
+          ],
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "dem",
+            "url": "data/elevation/no-32.json",
+            "totalM": 3609,
+            "climbM": 49.3,
+            "descentM": 36.6,
+            "minM": 4.3,
+            "maxM": 31.2
+          }
         }
       ]
     },
@@ -4122,7 +4482,17 @@
         "repeatedGeometryPct": 5.4,
         "maxWaypointToShapeM": 20,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "dem",
+          "url": "data/elevation/no-33.json",
+          "totalM": 4816,
+          "climbM": 8.4,
+          "descentM": 8.4,
+          "minM": 0.7,
+          "maxM": 3.8
+        }
       },
       "waypoints": [
         {
@@ -4246,7 +4616,17 @@
         "repeatedGeometryPct": 13.8,
         "maxWaypointToShapeM": 13,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "dem",
+          "url": "data/elevation/no-34.json",
+          "totalM": 5853,
+          "climbM": 53,
+          "descentM": 52.9,
+          "minM": 32.5,
+          "maxM": 43.1
+        }
       },
       "waypoints": [
         {
@@ -4364,7 +4744,17 @@
         "repeatedGeometryPct": 21.4,
         "maxWaypointToShapeM": 27,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "dem",
+          "url": "data/elevation/no-35.json",
+          "totalM": 5074,
+          "climbM": 15.9,
+          "descentM": 17,
+          "minM": 28.2,
+          "maxM": 33.4
+        }
       },
       "waypoints": [
         {
@@ -4461,7 +4851,17 @@
         "repeatedGeometryPct": 1.9,
         "maxWaypointToShapeM": 28,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "partial_dem_filled",
+          "url": "data/elevation/no-36.json",
+          "totalM": 6491,
+          "climbM": 18.6,
+          "descentM": 26.5,
+          "minM": 2.4,
+          "maxM": 19.2
+        }
       },
       "waypoints": [
         {
@@ -4513,7 +4913,17 @@
         "repeatedGeometryPct": 0,
         "maxWaypointToShapeM": 3,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "partial_dem_filled",
+          "url": "data/elevation/no-37.json",
+          "totalM": 6812,
+          "climbM": 33.9,
+          "descentM": 27.9,
+          "minM": 12.8,
+          "maxM": 26.1
+        }
       },
       "waypoints": [
         {
@@ -4558,7 +4968,17 @@
         "repeatedGeometryPct": 15.1,
         "maxWaypointToShapeM": 19,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "partial_dem_filled",
+          "url": "data/elevation/no-38.json",
+          "totalM": 5629,
+          "climbM": 47,
+          "descentM": 32.3,
+          "minM": 52.3,
+          "maxM": 82.2
+        }
       },
       "waypoints": [
         {
@@ -4648,7 +5068,17 @@
         "repeatedGeometryPct": 17.6,
         "maxWaypointToShapeM": 33,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "partial_dem_filled",
+          "url": "data/elevation/no-39.json",
+          "totalM": 6311,
+          "climbM": 23.3,
+          "descentM": 24.2,
+          "minM": -1.2,
+          "maxM": 5.9
+        }
       },
       "waypoints": [
         {
@@ -4738,7 +5168,17 @@
         "repeatedGeometryPct": 9.2,
         "maxWaypointToShapeM": 183,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "partial_dem_filled",
+          "url": "data/elevation/no-40.json",
+          "totalM": 6101,
+          "climbM": 42.9,
+          "descentM": 43.5,
+          "minM": 0.6,
+          "maxM": 11.7
+        }
       },
       "waypoints": [
         {
@@ -4821,7 +5261,17 @@
         "repeatedGeometryPct": 8.5,
         "maxWaypointToShapeM": 112,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "partial_dem_filled",
+          "url": "data/elevation/no-41.json",
+          "totalM": 6067,
+          "climbM": 43.5,
+          "descentM": 45,
+          "minM": -0.1,
+          "maxM": 10.5
+        }
       },
       "waypoints": [
         {
@@ -4925,7 +5375,17 @@
         "repeatedGeometryPct": 7.9,
         "maxWaypointToShapeM": 16,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "partial_dem_filled",
+          "url": "data/elevation/no-42.json",
+          "totalM": 6346,
+          "climbM": 16.7,
+          "descentM": 16.2,
+          "minM": 0.3,
+          "maxM": 7.1
+        }
       },
       "waypoints": [
         {
@@ -5000,7 +5460,17 @@
         "repeatedGeometryPct": 9.1,
         "maxWaypointToShapeM": 37,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "partial_dem_filled",
+          "url": "data/elevation/no-43.json",
+          "totalM": 6671,
+          "climbM": 40.5,
+          "descentM": 44.3,
+          "minM": -0.4,
+          "maxM": 8.9
+        }
       },
       "waypoints": [
         {
@@ -5059,7 +5529,17 @@
         "repeatedGeometryPct": 26,
         "maxWaypointToShapeM": 40,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "partial_dem_filled",
+          "url": "data/elevation/no-44.json",
+          "totalM": 6117,
+          "climbM": 14,
+          "descentM": 10.2,
+          "minM": -0.7,
+          "maxM": 4.9
+        }
       },
       "waypoints": [
         {
@@ -5138,7 +5618,17 @@
         "repeatedGeometryPct": 16,
         "maxWaypointToShapeM": 65,
         "built": "2026-10-18",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "partial_dem_filled",
+          "url": "data/elevation/no-45.json",
+          "totalM": 6219,
+          "climbM": 14.7,
+          "descentM": 51.2,
+          "minM": 1,
+          "maxM": 40.9
+        }
       },
       "waypoints": [
         {
@@ -5235,7 +5725,17 @@
         "repeatedGeometryPct": 4.2,
         "maxWaypointToShapeM": 49,
         "built": "2026-10-18",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "partial_dem_filled",
+          "url": "data/elevation/no-46.json",
+          "totalM": 8025,
+          "climbM": 23.7,
+          "descentM": 33.9,
+          "minM": -1,
+          "maxM": 10.3
+        }
       },
       "waypoints": [
         {
@@ -5575,6 +6075,16 @@
               "道路と横断、階段・坂",
               "トイレ・休憩・途中離脱"
             ]
+          },
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/no-47-standard.json",
+            "totalM": 5907,
+            "climbM": 26.3,
+            "descentM": 21.5,
+            "minM": -0.5,
+            "maxM": 5.9
           }
         },
         {
@@ -5735,6 +6245,16 @@
               "道路と横断、階段・坂",
               "トイレ・休憩・途中離脱"
             ]
+          },
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/no-47-extended.json",
+            "totalM": 7746,
+            "climbM": 26.4,
+            "descentM": 27.6,
+            "minM": -1.1,
+            "maxM": 5.9
           }
         },
         {
@@ -5852,7 +6372,17 @@
                 35.6965
               ]
             }
-          ]
+          ],
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/no-47.json",
+            "totalM": 7130,
+            "climbM": 47.2,
+            "descentM": 44.1,
+            "minM": -0.5,
+            "maxM": 5.8
+          }
         }
       ]
     },
@@ -5885,7 +6415,17 @@
         "repeatedGeometryPct": 8.6,
         "maxWaypointToShapeM": 71,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "partial_dem_filled",
+          "url": "data/elevation/no-48.json",
+          "totalM": 7021,
+          "climbM": 23.6,
+          "descentM": 27,
+          "minM": -1.1,
+          "maxM": 5.9
+        }
       },
       "waypoints": [
         {
@@ -5988,7 +6528,17 @@
         "repeatedGeometryPct": 7.6,
         "maxWaypointToShapeM": 19,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "partial_dem_filled",
+          "url": "data/elevation/no-49.json",
+          "totalM": 7261,
+          "climbM": 31.6,
+          "descentM": 26.7,
+          "minM": 46,
+          "maxM": 60.7
+        }
       },
       "waypoints": [
         {
@@ -6083,7 +6633,17 @@
         "repeatedGeometryPct": 14.4,
         "maxWaypointToShapeM": 16,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "dem",
+          "url": "data/elevation/no-50.json",
+          "totalM": 6979,
+          "climbM": 38.1,
+          "descentM": 37.6,
+          "minM": 3.6,
+          "maxM": 20
+        }
       },
       "waypoints": [
         {
@@ -6186,7 +6746,17 @@
         "repeatedGeometryPct": 11.9,
         "maxWaypointToShapeM": 12,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "partial_dem_filled",
+          "url": "data/elevation/no-51.json",
+          "totalM": 7041,
+          "climbM": 98.4,
+          "descentM": 87.1,
+          "minM": 8.5,
+          "maxM": 32.4
+        }
       },
       "waypoints": [
         {
@@ -6282,7 +6852,17 @@
         "repeatedGeometryPct": 3.2,
         "maxWaypointToShapeM": 15,
         "built": "2026-10-18",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "partial_dem_filled",
+          "url": "data/elevation/no-52.json",
+          "totalM": 6593,
+          "climbM": 86.7,
+          "descentM": 58.4,
+          "minM": 4.1,
+          "maxM": 32.4
+        }
       },
       "waypoints": [
         {
@@ -6382,7 +6962,17 @@
         "repeatedGeometryPct": 19.4,
         "maxWaypointToShapeM": 129,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "partial_dem_filled",
+          "url": "data/elevation/no-53.json",
+          "totalM": 7189,
+          "climbM": 89.3,
+          "descentM": 53.6,
+          "minM": 52.3,
+          "maxM": 120.9
+        }
       },
       "waypoints": [
         {
@@ -6472,7 +7062,17 @@
         "repeatedGeometryPct": 3.4,
         "maxWaypointToShapeM": 20,
         "built": "2026-10-18",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "dem",
+          "url": "data/elevation/no-54.json",
+          "totalM": 7254,
+          "climbM": 39.4,
+          "descentM": 32.7,
+          "minM": 5.3,
+          "maxM": 15.1
+        }
       },
       "waypoints": [
         {
@@ -6558,7 +7158,17 @@
         "repeatedGeometryPct": 12.7,
         "maxWaypointToShapeM": 32,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "partial_dem_filled",
+          "url": "data/elevation/no-55.json",
+          "totalM": 6425,
+          "climbM": 26.1,
+          "descentM": 22.4,
+          "minM": 63.3,
+          "maxM": 72.3
+        }
       },
       "waypoints": [
         {
@@ -6629,7 +7239,17 @@
         "repeatedGeometryPct": 22.8,
         "maxWaypointToShapeM": 15,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "dem",
+          "url": "data/elevation/s1.json",
+          "totalM": 7109,
+          "climbM": 29.8,
+          "descentM": 24.4,
+          "minM": 51.4,
+          "maxM": 66.5
+        }
       },
       "waypoints": [
         {
@@ -6715,7 +7335,17 @@
         "repeatedGeometryPct": 16.5,
         "maxWaypointToShapeM": 27,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "partial_dem_filled",
+          "url": "data/elevation/s2.json",
+          "totalM": 7276,
+          "climbM": 93.7,
+          "descentM": 111.4,
+          "minM": 63.9,
+          "maxM": 132.4
+        }
       },
       "waypoints": [
         {
@@ -6801,7 +7431,17 @@
         "repeatedGeometryPct": 15.1,
         "maxWaypointToShapeM": 39,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "dem",
+          "url": "data/elevation/s3.json",
+          "totalM": 6662,
+          "climbM": 33.4,
+          "descentM": 33.9,
+          "minM": 87.1,
+          "maxM": 98
+        }
       },
       "waypoints": [
         {
@@ -6872,7 +7512,17 @@
         "repeatedGeometryPct": 25.5,
         "maxWaypointToShapeM": 38,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "dem",
+          "url": "data/elevation/s4.json",
+          "totalM": 6473,
+          "climbM": 36.5,
+          "descentM": 33.6,
+          "minM": 46.4,
+          "maxM": 61.2
+        }
       },
       "waypoints": [
         {
@@ -6951,7 +7601,17 @@
         "repeatedGeometryPct": 14,
         "maxWaypointToShapeM": 79,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "dem",
+          "url": "data/elevation/s5.json",
+          "totalM": 7237,
+          "climbM": 41.3,
+          "descentM": 50.3,
+          "minM": 67.6,
+          "maxM": 82.5
+        }
       },
       "waypoints": [
         {
@@ -7045,7 +7705,17 @@
         "repeatedGeometryPct": 21.4,
         "maxWaypointToShapeM": 18,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "dem",
+          "url": "data/elevation/s6.json",
+          "totalM": 6779,
+          "climbM": 29.8,
+          "descentM": 25,
+          "minM": 37.6,
+          "maxM": 46.3
+        }
       },
       "waypoints": [
         {
@@ -7124,7 +7794,17 @@
         "repeatedGeometryPct": 17.7,
         "maxWaypointToShapeM": 37,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "partial_dem_filled",
+          "url": "data/elevation/s7.json",
+          "totalM": 7165,
+          "climbM": 101.6,
+          "descentM": 78.1,
+          "minM": 3.3,
+          "maxM": 32.1
+        }
       },
       "waypoints": [
         {
@@ -7217,7 +7897,17 @@
         "repeatedGeometryPct": 19.7,
         "maxWaypointToShapeM": 14,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "partial_dem_filled",
+          "url": "data/elevation/s8.json",
+          "totalM": 6816,
+          "climbM": 10.3,
+          "descentM": 14.3,
+          "minM": 0.5,
+          "maxM": 4.6
+        }
       },
       "waypoints": [
         {
@@ -7283,7 +7973,17 @@
         "repeatedGeometryPct": 14.8,
         "maxWaypointToShapeM": 24,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "partial_dem_filled",
+          "url": "data/elevation/s9.json",
+          "totalM": 7956,
+          "climbM": 87.2,
+          "descentM": 111.9,
+          "minM": 114.8,
+          "maxM": 146.7
+        }
       },
       "waypoints": [
         {
@@ -7370,7 +8070,17 @@
         "repeatedGeometryPct": 0.5,
         "maxWaypointToShapeM": 45,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "partial_dem_filled",
+          "url": "data/elevation/s10.json",
+          "totalM": 7463,
+          "climbM": 124.9,
+          "descentM": 86.5,
+          "minM": 104.1,
+          "maxM": 183.8
+        }
       },
       "waypoints": [
         {
@@ -7435,7 +8145,17 @@
         "repeatedGeometryPct": 15.7,
         "maxWaypointToShapeM": 16,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "partial_dem_filled",
+          "url": "data/elevation/s11.json",
+          "totalM": 8656,
+          "climbM": 86.9,
+          "descentM": 65.7,
+          "minM": 95.7,
+          "maxM": 149.1
+        }
       },
       "waypoints": [
         {
@@ -7522,7 +8242,17 @@
         "repeatedGeometryPct": 3.7,
         "maxWaypointToShapeM": 16,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "partial_dem_filled",
+          "url": "data/elevation/s12.json",
+          "totalM": 7839,
+          "climbM": 111,
+          "descentM": 61.1,
+          "minM": 95.7,
+          "maxM": 172.9
+        }
       },
       "waypoints": [
         {
@@ -7601,7 +8331,17 @@
         "repeatedGeometryPct": 0.5,
         "maxWaypointToShapeM": 24,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "partial_dem_filled",
+          "url": "data/elevation/s13.json",
+          "totalM": 8698,
+          "climbM": 137.8,
+          "descentM": 182.9,
+          "minM": 67.1,
+          "maxM": 147.3
+        }
       },
       "waypoints": [
         {
@@ -7670,7 +8410,17 @@
         "repeatedGeometryPct": 32.4,
         "maxWaypointToShapeM": 71,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "partial_dem_filled",
+          "url": "data/elevation/e1.json",
+          "totalM": 6513,
+          "climbM": 33.6,
+          "descentM": 35.7,
+          "minM": 15.5,
+          "maxM": 25
+        }
       },
       "waypoints": [
         {
@@ -7750,7 +8500,17 @@
         "repeatedGeometryPct": 2.9,
         "maxWaypointToShapeM": 44,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "partial_dem_filled",
+          "url": "data/elevation/e2.json",
+          "totalM": 7197,
+          "climbM": 13.4,
+          "descentM": 26.2,
+          "minM": 5.4,
+          "maxM": 20.1
+        }
       },
       "waypoints": [
         {
@@ -7807,7 +8567,17 @@
         "repeatedGeometryPct": 33.1,
         "maxWaypointToShapeM": 20,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "partial_dem_filled",
+          "url": "data/elevation/e3.json",
+          "totalM": 6802,
+          "climbM": 13,
+          "descentM": 24.9,
+          "minM": 2.8,
+          "maxM": 17.2
+        }
       },
       "waypoints": [
         {
@@ -7886,7 +8656,17 @@
         "repeatedGeometryPct": 0.5,
         "maxWaypointToShapeM": 9,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "partial_dem_filled",
+          "url": "data/elevation/e4.json",
+          "totalM": 6896,
+          "climbM": 13.1,
+          "descentM": 22.2,
+          "minM": 1.3,
+          "maxM": 15
+        }
       },
       "waypoints": [
         {
@@ -7955,7 +8735,17 @@
         "repeatedGeometryPct": 25.3,
         "maxWaypointToShapeM": 74,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "partial_dem_filled",
+          "url": "data/elevation/e5.json",
+          "totalM": 7411,
+          "climbM": 111.7,
+          "descentM": 90.1,
+          "minM": 6.6,
+          "maxM": 101.8
+        }
       },
       "waypoints": [
         {
@@ -8035,7 +8825,17 @@
         "repeatedGeometryPct": 13.5,
         "maxWaypointToShapeM": 14,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "partial_dem_filled",
+          "url": "data/elevation/z1.json",
+          "totalM": 7254,
+          "climbM": 18.8,
+          "descentM": 18.8,
+          "minM": 0.3,
+          "maxM": 5.5
+        }
       },
       "waypoints": [
         {
@@ -8114,7 +8914,17 @@
         "repeatedGeometryPct": 17.1,
         "maxWaypointToShapeM": 27,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "dem",
+          "url": "data/elevation/z2.json",
+          "totalM": 6940,
+          "climbM": 12.3,
+          "descentM": 17.3,
+          "minM": 1.2,
+          "maxM": 10
+        }
       },
       "waypoints": [
         {
@@ -8193,7 +9003,17 @@
         "repeatedGeometryPct": 22.9,
         "maxWaypointToShapeM": 86,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "partial_dem_filled",
+          "url": "data/elevation/z3.json",
+          "totalM": 7312,
+          "climbM": 13.3,
+          "descentM": 15,
+          "minM": 1.4,
+          "maxM": 5.8
+        }
       },
       "waypoints": [
         {
@@ -8273,7 +9093,17 @@
         "repeatedGeometryPct": 16.8,
         "maxWaypointToShapeM": 19,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "dem",
+          "url": "data/elevation/z4.json",
+          "totalM": 6507,
+          "climbM": 109.6,
+          "descentM": 91.8,
+          "minM": 21.9,
+          "maxM": 128.9
+        }
       },
       "waypoints": [
         {
@@ -8352,7 +9182,17 @@
         "repeatedGeometryPct": 25.4,
         "maxWaypointToShapeM": 115,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "partial_dem_filled",
+          "url": "data/elevation/z5.json",
+          "totalM": 6976,
+          "climbM": 33.6,
+          "descentM": 29.5,
+          "minM": 1,
+          "maxM": 10.1
+        }
       },
       "waypoints": [
         {
@@ -8439,7 +9279,17 @@
         "repeatedGeometryPct": 3.7,
         "maxWaypointToShapeM": 38,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "dem",
+          "url": "data/elevation/z6.json",
+          "totalM": 8009,
+          "climbM": 22.7,
+          "descentM": 15.6,
+          "minM": 16.9,
+          "maxM": 31.9
+        }
       },
       "waypoints": [
         {
@@ -8517,7 +9367,17 @@
         "repeatedGeometryPct": 15.3,
         "maxWaypointToShapeM": 5,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "partial_dem_filled",
+          "url": "data/elevation/z7.json",
+          "totalM": 7257,
+          "climbM": 35.2,
+          "descentM": 53.6,
+          "minM": 26.8,
+          "maxM": 48.8
+        }
       },
       "waypoints": [
         {
@@ -8596,7 +9456,17 @@
         "repeatedGeometryPct": 24.3,
         "maxWaypointToShapeM": 8,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "partial_dem_filled",
+          "url": "data/elevation/z8.json",
+          "totalM": 6929,
+          "climbM": 117.5,
+          "descentM": 111.4,
+          "minM": 2.3,
+          "maxM": 74.1
+        }
       },
       "waypoints": [
         {
@@ -8678,7 +9548,17 @@
         "repeatedGeometryPct": 2.8,
         "maxWaypointToShapeM": 13,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "partial_dem_filled",
+          "url": "data/elevation/no-56.json",
+          "totalM": 7987,
+          "climbM": 12.3,
+          "descentM": 12.4,
+          "minM": 1.9,
+          "maxM": 4.7
+        }
       },
       "waypoints": [
         {
@@ -8794,7 +9674,17 @@
         "repeatedGeometryPct": 3.5,
         "maxWaypointToShapeM": 35,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "partial_dem_filled",
+          "url": "data/elevation/no-57.json",
+          "totalM": 7870,
+          "climbM": 53.5,
+          "descentM": 44.3,
+          "minM": 0.9,
+          "maxM": 18.8
+        }
       },
       "waypoints": [
         {
@@ -8887,7 +9777,17 @@
         "repeatedGeometryPct": 5,
         "maxWaypointToShapeM": 19,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "dem",
+          "url": "data/elevation/no-58.json",
+          "totalM": 8022,
+          "climbM": 90.3,
+          "descentM": 88.6,
+          "minM": 6.3,
+          "maxM": 34.3
+        }
       },
       "waypoints": [
         {
@@ -8989,7 +9889,17 @@
         "repeatedGeometryPct": 0,
         "maxWaypointToShapeM": 14,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "dem",
+          "url": "data/elevation/no-59.json",
+          "totalM": 7157,
+          "climbM": 37.3,
+          "descentM": 51.8,
+          "minM": 60.4,
+          "maxM": 84.1
+        }
       },
       "waypoints": [
         {
@@ -9053,7 +9963,17 @@
         "repeatedGeometryPct": 16.3,
         "maxWaypointToShapeM": 46,
         "built": "2026-10-18",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "dem",
+          "url": "data/elevation/g-1128.json",
+          "totalM": 5475,
+          "climbM": 57.2,
+          "descentM": 58.6,
+          "minM": 2.1,
+          "maxM": 28.1
+        }
       },
       "waypoints": [
         {
@@ -9162,7 +10082,17 @@
         "repeatedGeometryPct": 34.3,
         "maxWaypointToShapeM": 16,
         "built": "2026-10-18",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "dem",
+          "url": "data/elevation/g-rain.json",
+          "totalM": 1054,
+          "climbM": 2.4,
+          "descentM": 2.2,
+          "minM": 3.2,
+          "maxM": 4.1
+        }
       },
       "waypoints": [
         {
@@ -9236,7 +10166,17 @@
         "repeatedGeometryPct": 7.7,
         "maxWaypointToShapeM": 75,
         "built": "2026-10-18",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "partial_dem_filled",
+          "url": "data/elevation/1128-d1.json",
+          "totalM": 5637,
+          "climbM": 36.8,
+          "descentM": 41.8,
+          "minM": 0.5,
+          "maxM": 9.3
+        }
       },
       "waypoints": [
         {
@@ -9323,7 +10263,17 @@
         "repeatedGeometryPct": 5.4,
         "maxWaypointToShapeM": 28,
         "built": "2026-10-18",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "dem",
+          "url": "data/elevation/1128-d2.json",
+          "totalM": 6115,
+          "climbM": 31.4,
+          "descentM": 52.7,
+          "minM": 12.4,
+          "maxM": 34.9
+        }
       },
       "waypoints": [
         {
@@ -9401,7 +10351,17 @@
         "repeatedGeometryPct": 11.9,
         "maxWaypointToShapeM": 22,
         "built": "2026-10-18",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "partial_dem_filled",
+          "url": "data/elevation/1128-d3.json",
+          "totalM": 5731,
+          "climbM": 11.8,
+          "descentM": 11.8,
+          "minM": 1.4,
+          "maxM": 4.2
+        }
       },
       "waypoints": [
         {
@@ -9496,7 +10456,17 @@
         "repeatedGeometryPct": 4.3,
         "maxWaypointToShapeM": 11,
         "built": "2026-10-18",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "partial_dem_filled",
+          "url": "data/elevation/1128-d4.json",
+          "totalM": 6197,
+          "climbM": 90.6,
+          "descentM": 49.8,
+          "minM": 1.7,
+          "maxM": 47.9
+        }
       },
       "waypoints": [
         {
@@ -9588,7 +10558,17 @@
         "repeatedGeometryPct": 5.9,
         "maxWaypointToShapeM": 39,
         "built": "2026-10-18",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "partial_dem_filled",
+          "url": "data/elevation/1128-d5.json",
+          "totalM": 8493,
+          "climbM": 115.8,
+          "descentM": 97.9,
+          "minM": 2.6,
+          "maxM": 29.8
+        }
       },
       "waypoints": [
         {
@@ -9673,7 +10653,17 @@
         "repeatedGeometryPct": 3.4,
         "maxWaypointToShapeM": 58,
         "built": "2026-10-18",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "partial_dem_filled",
+          "url": "data/elevation/vbc-c1.json",
+          "totalM": 5602,
+          "climbM": 41.8,
+          "descentM": 28.9,
+          "minM": 1.5,
+          "maxM": 17.3
+        }
       },
       "waypoints": [
         {
@@ -9739,7 +10729,17 @@
         "repeatedGeometryPct": 0.8,
         "maxWaypointToShapeM": 15,
         "built": "2026-10-18",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "dem",
+          "url": "data/elevation/vbc-c2.json",
+          "totalM": 7051,
+          "climbM": 80.7,
+          "descentM": 116.7,
+          "minM": 27.3,
+          "maxM": 82.1
+        }
       },
       "waypoints": [
         {
@@ -9810,7 +10810,17 @@
         "repeatedGeometryPct": 17.8,
         "maxWaypointToShapeM": 8,
         "built": "2026-10-18",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "dem",
+          "url": "data/elevation/vbc-c3.json",
+          "totalM": 3215,
+          "climbM": 31.4,
+          "descentM": 40,
+          "minM": 1.8,
+          "maxM": 18.4
+        }
       },
       "waypoints": [
         {
@@ -9869,7 +10879,17 @@
         "repeatedGeometryPct": 0,
         "maxWaypointToShapeM": 6,
         "built": "2026-10-18",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "dem",
+          "url": "data/elevation/vbc-c4.json",
+          "totalM": 6052,
+          "climbM": 37.9,
+          "descentM": 29,
+          "minM": 83.6,
+          "maxM": 106.2
+        }
       },
       "waypoints": [
         {
@@ -9926,7 +10946,17 @@
         "repeatedGeometryPct": 13.5,
         "maxWaypointToShapeM": 43,
         "built": "2026-10-18",
-        "engine": "valhalla-pedestrian"
+        "engine": "valhalla-pedestrian",
+        "elevation": {
+          "source": "gsi_dem5a",
+          "status": "dem",
+          "url": "data/elevation/vbc-c5.json",
+          "totalM": 2871,
+          "climbM": 10.7,
+          "descentM": 7.4,
+          "minM": 67.3,
+          "maxM": 75.2
+        }
       },
       "waypoints": [
         {

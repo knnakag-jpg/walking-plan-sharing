@@ -233,6 +233,21 @@ for (const id of retraceReports.courseIds) {
     note: retraceReports.note,
   };
 }
+const routeElevation = JSON.parse(read('data/research/route-elevation.json')).routes;
+for (const course of courses) {
+  for (const route of course.routeOptions || [course.route]) {
+    if (!route.geometryUrl) continue;
+    const slug = route.geometryUrl.split('/').pop().replace(/\.geojson$/, '');
+    const profile = routeElevation[slug];
+    if (!profile?.gradients?.length) throw new Error(`${slug}: missing DEM gradient data (run scripts/build-route-elevation.mjs)`);
+    // The 10m grade series is large, so the catalog only keeps a summary and a URL;
+    // scripts/package-atlas.mjs writes the series to atlas/data/elevation/<slug>.json.
+    route.elevation = {
+      source: 'gsi_dem5a', status: profile.status, url: `data/elevation/${slug}.json`, totalM: profile.totalM,
+      climbM: profile.climbM, descentM: profile.descentM, minM: profile.minM, maxM: profile.maxM,
+    };
+  }
+}
 fs.writeFileSync(path.join(outputRoot, 'catalog.json'), JSON.stringify({
   schemaVersion: 1, source: 'legacy import; route quality not re-reviewed',
   generatedAt: new Date().toISOString(), courses,

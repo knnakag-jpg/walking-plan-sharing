@@ -1,3 +1,4 @@
 *.backup.html
 *.zip
 .DS_Store
+tools/.dem-cache/
