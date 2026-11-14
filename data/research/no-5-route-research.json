@@ -1,0 +1,61 @@
+{
+  "id": "No.5",
+  "title": "東京競馬場・府中",
+  "stage": "source_research_in_progress",
+  "checkedAt": "2026-11-15",
+  "legacyDiagnosis": {
+    "repeatedGeometryM": 1510,
+    "repeatedGeometryPct": 20.6,
+    "clusters": "累計約3.7km付近の約1031m（逆走）が最大。他に約168m・約203m（約0.5km地点の再通過）。",
+    "other": "旧線の始点は府中競馬正門前駅の約350m西で、大國魂神社の境内・参道は通らない。終点は是政駅付近。",
+    "decision": "反復の大半は区間の往復。距離合わせの延伸は作らない（Handover.md 禁止事項3）。"
+  },
+  "evidence": [
+    {
+      "checkedAt": "2026-11-15",
+      "url": "https://www.ookunitamajinja.or.jp/",
+      "supports": "大國魂神社の開門は 9/15〜3/31 が 6:30〜17:00、4/1〜9/14 が 6:00〜17:00。府中駅・府中本町駅から各徒歩5分。境内入口の位置・けやき並木との位置関係は文章記載なし（案内図は画像のみ）。"
+    },
+    {
+      "checkedAt": "2026-11-15",
+      "url": "https://www.jra.go.jp/facilities/race/tokyo/news/nyujou.html",
+      "supports": "開催日の入場方法のみ。文字化けのため数値は原文未確認。非開催日の入場可否・日本庭園・競馬博物館の開館日と入口名称は記載なし。"
+    },
+    {
+      "checkedAt": "2026-11-15",
+      "url": "https://www.jra.go.jp/facilities/museum/",
+      "supports": "HTTP 403 のため取得できず。競馬博物館の開館日・時間は未確認。"
+    },
+    {
+      "checkedAt": "2026-11-15",
+      "url": "https://www.fuchu-cs.or.jp/furusato/",
+      "supports": "ホスト名を解決できず取得できなかった。郷土の森の開園時間・休館日・正門位置は未確認。"
+    }
+  ],
+  "trials": [
+    {"n": 1, "variant": "A 標準", "pins": "駅→連絡歩道橋→競馬博物館→府中本町口→神社→郷土の森→是政橋北→是政駅", "result": "6.94km・反復846m", "finding": "競馬博物館のピンから581mの往復（敷地内への出入り）。神社付近も252mの反復"},
+    {"n": 2, "variant": "B 神社先行", "pins": "府中本町口を除外", "result": "6.26km・反復658m", "finding": "博物館の581mは残る"},
+    {"n": 3, "variant": "C/D 逆回り", "pins": "博物館→是政橋→郷土の森→神社→府中本町/府中駅", "result": "7.37km・反復818m / 7.86km・反復647m", "finding": "博物館の約550mが残る。距離も長い"},
+    {"n": 4, "variant": "E 場外ルート", "pins": "博物館を道路側のバス停ピンに替え", "result": "6.45km・反復100m（府中駅着）", "finding": "博物館の往復は消えた。神社の67m・郷土の森18m・けやき並木6mが残る"},
+    {"n": 5, "variant": "G 交差点ピン", "pins": "郷土の森入口・大国魂神社前の信号交差点を使用", "result": "5.86km・反復0m", "finding": "反復は0mだが、線は大國魂神社の中心から約279m・宝物殿から約207mの位置を通る。神社境内に入る経路とは確認できていない"},
+    {"n": 6, "variant": "H 神社西から抜ける", "pins": "神社西の交差点を追加", "result": "5.90km・反復9m", "finding": "神社中心から約187m。境内を通る線にはならない"}
+  ],
+  "decision": "反復0mのGは、建物・境内の入口ではなく道路の交差点にピンを置いた結果で、神社の参拝に当たる地点を通る線とは確認できない。入口・競馬博物館の公開条件を公式で確認できていないため、新A/Bとして採用しない。旧線はそのまま（要再設計）。距離を往復や機械オフセットで埋めない。",
+  "openQuestions": [
+    "大國魂神社の境内（参道・随神門）に入る入口を地図で確認し、そこをピンにして反復が出ないか確認する",
+    "競馬博物館・日本庭園の開館日と入口（JRAの該当ページは取得できず）。非開催日の立ち寄りを前提にしない案にするか",
+    "郷土の森の正門と開園時間（公式ページ取得不可）",
+    "標準5〜6kmに対し、G案は5.86km。入口ピンへ替えると距離がどう変わるか",
+    "是政橋の通行と、是政駅着か府中駅着かの終点選択"
+  ],
+  "files": [
+    "scripts/osm-poi-no-5.mjs",
+    "scripts/build-no-5-candidates.mjs",
+    "scripts/where-repeats.mjs",
+    "data/research/no-5-osm-poi.json",
+    "data/research/no-5-walkway-snap.json",
+    "data/research/no-5-route-build.json",
+    "data/candidates/no-5-junction_fuchu.geojson",
+    "data/candidates/no-5-shrine_through.geojson"
+  ]
+}

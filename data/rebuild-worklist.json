@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T14:51:08.926Z",
+  "generatedAt": "2026-11-14T18:27:37.200Z",
   "interpretation": "Mechanical triage only. Source and map review required before adopting any new route.",
   "records": [
     {
@@ -131,7 +131,7 @@
       },
       "existingNewVariants": [],
       "coordinateReview": "not_started",
-      "sourceResearch": "not_started",
+      "sourceResearch": "source_research_in_progress",
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": true,
@@ -1443,7 +1443,7 @@
       },
       "existingNewVariants": [],
       "coordinateReview": "not_started",
-      "sourceResearch": "not_started",
+      "sourceResearch": "source_research_in_progress",
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": false,

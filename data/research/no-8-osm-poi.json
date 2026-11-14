@@ -1,0 +1,2257 @@
+{
+  "checkedAt": "2026-11-14T15:38:44.743Z",
+  "source": "OpenStreetMap via Overpass API; © OpenStreetMap contributors",
+  "bbox": "35.704,139.762,35.735,139.784",
+  "query": "[out:json][timeout:30];(nwr[\"name\"~\"上野駅|公園口|東京国立博物館|表慶館|国立西洋美術館|国立科学博物館|東京文化会館|上野東照宮|上野動物園|旧寛永寺五重塔|寛永寺|谷中霊園|天王寺|谷中|日暮里駅|西郷隆盛|不忍池|弁天堂|黒田記念館|法隆寺宝物館|東洋館|平成館|本館|上野の森美術館|旧東京音楽学校奏楽堂|国際子ども図書館|朝倉彫塑館|谷中銀座|夕焼けだんだん|御殿坂|上野桜木|桜木|花園稲荷|竹の台\"](35.704,139.762,35.735,139.784););out center tags;",
+  "note": "Way centres and station features do not identify pedestrian entrances.",
+  "features": [
+    {
+      "type": "node",
+      "osmId": 364299564,
+      "name": "谷中六丁目",
+      "lat": 35.7206514,
+      "lon": 139.7693977,
+      "kind": "traffic_signals"
+    },
+    {
+      "type": "node",
+      "osmId": 380533049,
+      "name": "上野桜木二丁目",
+      "lat": 35.7223476,
+      "lon": 139.7739347,
+      "kind": "traffic_signals"
+    },
+    {
+      "type": "node",
+      "osmId": 441655802,
+      "name": "上野の森美術館",
+      "lat": 35.7128522,
+      "lon": 139.7747663,
+      "kind": "museum"
+    },
+    {
+      "type": "node",
+      "osmId": 460049585,
+      "name": "上野駅",
+      "lat": 35.712167,
+      "lon": 139.7781957,
+      "kind": ""
+    },
+    {
+      "type": "node",
+      "osmId": 484203340,
+      "name": "上野桜木",
+      "lat": 35.7211034,
+      "lon": 139.7708546,
+      "kind": "traffic_signals"
+    },
+    {
+      "type": "node",
+      "osmId": 506214973,
+      "name": "谷中区民館",
+      "lat": 35.7235628,
+      "lon": 139.765498,
+      "kind": "community_centre"
+    },
+    {
+      "type": "node",
+      "osmId": 506214980,
+      "name": "谷中まんじゅう 福丸",
+      "lat": 35.7259887,
+      "lon": 139.7645109,
+      "kind": ""
+    },
+    {
+      "type": "node",
+      "osmId": 506214984,
+      "name": "台東区立谷中コミュニティセンター",
+      "lat": 35.7256124,
+      "lon": 139.7666077,
+      "kind": "community_centre"
+    },
+    {
+      "type": "node",
+      "osmId": 727043217,
+      "name": "日暮里駅前",
+      "lat": 35.7290205,
+      "lon": 139.771152,
+      "kind": "bus_stop"
+    },
+    {
+      "type": "node",
+      "osmId": 1420765908,
+      "name": "上野消防署谷中出張所",
+      "lat": 35.720003,
+      "lon": 139.768591,
+      "kind": "fire_station"
+    },
+    {
+      "type": "node",
+      "osmId": 1420765911,
+      "name": "上野警察署上野駅交番",
+      "lat": 35.712318,
+      "lon": 139.776626,
+      "kind": "police"
+    },
+    {
+      "type": "node",
+      "osmId": 1420765920,
+      "name": "上野駅前郵便局",
+      "lat": 35.710651,
+      "lon": 139.775959,
+      "kind": "post_office"
+    },
+    {
+      "type": "node",
+      "osmId": 1420765964,
+      "name": "天王寺駐在所",
+      "lat": 35.725158,
+      "lon": 139.770623,
+      "kind": "police"
+    },
+    {
+      "type": "node",
+      "osmId": 1420765966,
+      "name": "下谷警察署 谷中交番",
+      "lat": 35.7218719,
+      "lon": 139.7706448,
+      "kind": "police"
+    },
+    {
+      "type": "node",
+      "osmId": 1420771129,
+      "name": "台東桜木郵便局",
+      "lat": 35.72024,
+      "lon": 139.769728,
+      "kind": "post_office"
+    },
+    {
+      "type": "node",
+      "osmId": 1420771141,
+      "name": "台東谷中郵便局",
+      "lat": 35.72133,
+      "lon": 139.764519,
+      "kind": "post_office"
+    },
+    {
+      "type": "node",
+      "osmId": 1420780978,
+      "name": "日暮里駅前郵便局",
+      "lat": 35.729557,
+      "lon": 139.770055,
+      "kind": "post_office"
+    },
+    {
+      "type": "node",
+      "osmId": 1420796788,
+      "name": "荒川警察署日暮里駅前交番",
+      "lat": 35.728384,
+      "lon": 139.771799,
+      "kind": "police"
+    },
+    {
+      "type": "node",
+      "osmId": 1420797803,
+      "name": "西日暮里駅前郵便局",
+      "lat": 35.732584,
+      "lon": 139.768758,
+      "kind": "post_office"
+    },
+    {
+      "type": "node",
+      "osmId": 1420798055,
+      "name": "谷中保育園",
+      "lat": 35.722594,
+      "lon": 139.771376,
+      "kind": "kindergarten"
+    },
+    {
+      "type": "node",
+      "osmId": 1420798056,
+      "name": "谷中幼稚園",
+      "lat": 35.729593,
+      "lon": 139.764987,
+      "kind": "kindergarten"
+    },
+    {
+      "type": "node",
+      "osmId": 1589724019,
+      "name": "上野駅",
+      "lat": 35.7120079,
+      "lon": 139.7779576,
+      "kind": ""
+    },
+    {
+      "type": "node",
+      "osmId": 1655927664,
+      "name": "谷中コミュニティセンター",
+      "lat": 35.7254,
+      "lon": 139.768876,
+      "kind": "community_centre"
+    },
+    {
+      "type": "node",
+      "osmId": 1819505247,
+      "name": "日暮里駅前",
+      "lat": 35.7284734,
+      "lon": 139.7731214,
+      "kind": "traffic_signals"
+    },
+    {
+      "type": "node",
+      "osmId": 1819505248,
+      "name": "日暮里駅前",
+      "lat": 35.7284809,
+      "lon": 139.7732342,
+      "kind": "traffic_signals"
+    },
+    {
+      "type": "node",
+      "osmId": 2041459037,
+      "name": "上野駅前",
+      "lat": 35.7114472,
+      "lon": 139.7754398,
+      "kind": "bus_stop"
+    },
+    {
+      "type": "node",
+      "osmId": 2041807443,
+      "name": "Y'sRoad 上野本館",
+      "lat": 35.7053466,
+      "lon": 139.772264,
+      "kind": ""
+    },
+    {
+      "type": "node",
+      "osmId": 2265448191,
+      "name": "旧東京音楽学校奏楽堂",
+      "lat": 35.718259,
+      "lon": 139.773706,
+      "kind": "bus_stop"
+    },
+    {
+      "type": "node",
+      "osmId": 2265470206,
+      "name": "谷中",
+      "lat": 35.7210827,
+      "lon": 139.7706433,
+      "kind": "bus_stop"
+    },
+    {
+      "type": "node",
+      "osmId": 2295378129,
+      "name": "JR上野駅公園口",
+      "lat": 35.7146309,
+      "lon": 139.7765102,
+      "kind": "bus_stop"
+    },
+    {
+      "type": "node",
+      "osmId": 2295385013,
+      "name": "東京国立博物館",
+      "lat": 35.7173317,
+      "lon": 139.7757249,
+      "kind": "bus_stop"
+    },
+    {
+      "type": "node",
+      "osmId": 2457988898,
+      "name": "西日暮里駅前",
+      "lat": 35.7319731,
+      "lon": 139.7662832,
+      "kind": "bus_stop"
+    },
+    {
+      "type": "node",
+      "osmId": 2457988901,
+      "name": "西日暮里駅前",
+      "lat": 35.732104,
+      "lon": 139.7660868,
+      "kind": "bus_stop"
+    },
+    {
+      "type": "node",
+      "osmId": 3259269171,
+      "name": "京成上野駅",
+      "lat": 35.7113782,
+      "lon": 139.7741559,
+      "kind": "bus_stop"
+    },
+    {
+      "type": "node",
+      "osmId": 3259269217,
+      "name": "京成上野駅",
+      "lat": 35.7111363,
+      "lon": 139.7739137,
+      "kind": "subway_entrance"
+    },
+    {
+      "type": "node",
+      "osmId": 3259272053,
+      "name": "上野駅",
+      "lat": 35.7129181,
+      "lon": 139.7767401,
+      "kind": "train_station_entrance"
+    },
+    {
+      "type": "node",
+      "osmId": 3395310504,
+      "name": "上野駅公園口自転車駐車場",
+      "lat": 35.7141539,
+      "lon": 139.7762917,
+      "kind": "bicycle_parking"
+    },
+    {
+      "type": "node",
+      "osmId": 3395310508,
+      "name": "不忍池自転車駐車場",
+      "lat": 35.7100848,
+      "lon": 139.772795,
+      "kind": "bicycle_parking"
+    },
+    {
+      "type": "node",
+      "osmId": 3397796958,
+      "name": "上野駅前",
+      "lat": 35.7118949,
+      "lon": 139.7768282,
+      "kind": "bus_stop"
+    },
+    {
+      "type": "node",
+      "osmId": 3397796959,
+      "name": "上野駅前",
+      "lat": 35.711976,
+      "lon": 139.7769892,
+      "kind": "bus_stop"
+    },
+    {
+      "type": "node",
+      "osmId": 3406733283,
+      "name": "日暮里駅前地下",
+      "lat": 35.7291698,
+      "lon": 139.7714731,
+      "kind": "bicycle_parking"
+    },
+    {
+      "type": "node",
+      "osmId": 3406733284,
+      "name": "日暮里駅前地下",
+      "lat": 35.729154,
+      "lon": 139.7708934,
+      "kind": "bicycle_parking"
+    },
+    {
+      "type": "node",
+      "osmId": 3410117190,
+      "name": "日暮里駅前デンタルクリニック",
+      "lat": 35.7317721,
+      "lon": 139.7659637,
+      "kind": "dentist"
+    },
+    {
+      "type": "node",
+      "osmId": 3526118307,
+      "name": "谷中満天ドーナツ",
+      "lat": 35.7275739,
+      "lon": 139.7650109,
+      "kind": "cafe"
+    },
+    {
+      "type": "node",
+      "osmId": 3981766242,
+      "name": "上野駅入谷口",
+      "lat": 35.7144983,
+      "lon": 139.7784684,
+      "kind": "bus_stop"
+    },
+    {
+      "type": "node",
+      "osmId": 4218532821,
+      "name": "谷中五重塔跡地",
+      "lat": 35.7252681,
+      "lon": 139.7708111,
+      "kind": "archaeological_site"
+    },
+    {
+      "type": "node",
+      "osmId": 4350954267,
+      "name": "日暮里駅前",
+      "lat": 35.7286818,
+      "lon": 139.7714371,
+      "kind": "bus_stop"
+    },
+    {
+      "type": "node",
+      "osmId": 4546573379,
+      "name": "不忍池西",
+      "lat": 35.7103901,
+      "lon": 139.7687842,
+      "kind": "traffic_signals"
+    },
+    {
+      "type": "node",
+      "osmId": 4787157322,
+      "name": "上野動物園正門",
+      "lat": 35.7158662,
+      "lon": 139.7728346,
+      "kind": ""
+    },
+    {
+      "type": "node",
+      "osmId": 4959495863,
+      "name": "京成上野駅駐車場",
+      "lat": 35.711927,
+      "lon": 139.7731103,
+      "kind": "parking_entrance"
+    },
+    {
+      "type": "node",
+      "osmId": 4976749506,
+      "name": "不忍池と蓮 (No.1)",
+      "lat": 35.7099961,
+      "lon": 139.771942,
+      "kind": "information"
+    },
+    {
+      "type": "node",
+      "osmId": 4976908571,
+      "name": "東叡山寛永寺掲示板",
+      "lat": 35.7122772,
+      "lon": 139.7713512,
+      "kind": "information"
+    },
+    {
+      "type": "node",
+      "osmId": 4987577884,
+      "name": "上野動物園全体案内図",
+      "lat": 35.713485,
+      "lon": 139.7732617,
+      "kind": "information"
+    },
+    {
+      "type": "node",
+      "osmId": 4987634527,
+      "name": "上野動物園全体案内図",
+      "lat": 35.7128765,
+      "lon": 139.772007,
+      "kind": "information"
+    },
+    {
+      "type": "node",
+      "osmId": 5002466881,
+      "name": "不忍池で見られる鳥のなかま",
+      "lat": 35.7139607,
+      "lon": 139.7701823,
+      "kind": "information"
+    },
+    {
+      "type": "node",
+      "osmId": 5007324291,
+      "name": "東京メトロ上野駅",
+      "lat": 35.7116219,
+      "lon": 139.7777021,
+      "kind": "subway_entrance"
+    },
+    {
+      "type": "node",
+      "osmId": 5128152764,
+      "name": "不忍池と蓮 (No.2)",
+      "lat": 35.7100004,
+      "lon": 139.7719566,
+      "kind": "information"
+    },
+    {
+      "type": "node",
+      "osmId": 5190889874,
+      "name": "谷中商事",
+      "lat": 35.7314891,
+      "lon": 139.7653064,
+      "kind": ""
+    },
+    {
+      "type": "node",
+      "osmId": 5242020400,
+      "name": "上野駅前整骨院",
+      "lat": 35.7138498,
+      "lon": 139.7786625,
+      "kind": ""
+    },
+    {
+      "type": "node",
+      "osmId": 5242189125,
+      "name": "東北・上越新幹線上野駅開業記念",
+      "lat": 35.7111378,
+      "lon": 139.7750925,
+      "kind": "memorial"
+    },
+    {
+      "type": "node",
+      "osmId": 5436171030,
+      "name": "薬膳カレーじねんじょ 谷中店",
+      "lat": 35.7267092,
+      "lon": 139.7682595,
+      "kind": "restaurant"
+    },
+    {
+      "type": "node",
+      "osmId": 5443134193,
+      "name": "ストレスケア東京 上野駅前クリニック",
+      "lat": 35.714006,
+      "lon": 139.7784975,
+      "kind": "clinic"
+    },
+    {
+      "type": "node",
+      "osmId": 5444850204,
+      "name": "東京メトロ上野駅",
+      "lat": 35.7113131,
+      "lon": 139.7772233,
+      "kind": "subway_entrance"
+    },
+    {
+      "type": "node",
+      "osmId": 5491480944,
+      "name": "たかはし谷中薬局",
+      "lat": 35.7291341,
+      "lon": 139.7642842,
+      "kind": "pharmacy"
+    },
+    {
+      "type": "node",
+      "osmId": 5491480951,
+      "name": "谷中クリニック",
+      "lat": 35.7284338,
+      "lon": 139.7646401,
+      "kind": "doctors"
+    },
+    {
+      "type": "node",
+      "osmId": 5516012127,
+      "name": "スターキッズ 谷中保育園",
+      "lat": 35.7188067,
+      "lon": 139.7667191,
+      "kind": "kindergarten"
+    },
+    {
+      "type": "node",
+      "osmId": 5718105216,
+      "name": "寛永寺前公衆トイレ",
+      "lat": 35.7223874,
+      "lon": 139.7738145,
+      "kind": "toilets"
+    },
+    {
+      "type": "node",
+      "osmId": 5950436529,
+      "name": "上野駅",
+      "lat": 35.7117555,
+      "lon": 139.7778084,
+      "kind": "bus_stop"
+    },
+    {
+      "type": "node",
+      "osmId": 6344886285,
+      "name": "トマト 本館",
+      "lat": 35.7287483,
+      "lon": 139.7761338,
+      "kind": ""
+    },
+    {
+      "type": "node",
+      "osmId": 6401529925,
+      "name": "寛永寺",
+      "lat": 35.7206007,
+      "lon": 139.7740182,
+      "kind": "bus_stop"
+    },
+    {
+      "type": "node",
+      "osmId": 6401541449,
+      "name": "谷中銀座・よみせ通り",
+      "lat": 35.7265111,
+      "lon": 139.7645017,
+      "kind": "bus_stop"
+    },
+    {
+      "type": "node",
+      "osmId": 6448131877,
+      "name": "日暮里駅出入口",
+      "lat": 35.7288141,
+      "lon": 139.7710261,
+      "kind": ""
+    },
+    {
+      "type": "node",
+      "osmId": 6515739586,
+      "name": "不忍池",
+      "lat": 35.7123024,
+      "lon": 139.7718226,
+      "kind": "monument"
+    },
+    {
+      "type": "node",
+      "osmId": 6775028908,
+      "name": "日暮里駅主出入口",
+      "lat": 35.728793,
+      "lon": 139.77105,
+      "kind": ""
+    },
+    {
+      "type": "node",
+      "osmId": 6793554270,
+      "name": "谷中",
+      "lat": 35.7247892,
+      "lon": 139.7685576,
+      "kind": ""
+    },
+    {
+      "type": "node",
+      "osmId": 6899385371,
+      "name": "谷中小学校前",
+      "lat": 35.7241486,
+      "lon": 139.765556,
+      "kind": "traffic_signals"
+    },
+    {
+      "type": "node",
+      "osmId": 7040910091,
+      "name": "京成上野駅",
+      "lat": 35.7117682,
+      "lon": 139.775179,
+      "kind": "subway_entrance"
+    },
+    {
+      "type": "node",
+      "osmId": 7040915508,
+      "name": "日暮里駅 南改札口",
+      "lat": 35.7277902,
+      "lon": 139.7717116,
+      "kind": "train_station_entrance"
+    },
+    {
+      "type": "node",
+      "osmId": 7250953671,
+      "name": "日暮里駅出入口",
+      "lat": 35.7280815,
+      "lon": 139.7700202,
+      "kind": ""
+    },
+    {
+      "type": "node",
+      "osmId": 7418467846,
+      "name": "上野動物園池之端門前",
+      "lat": 35.713953,
+      "lon": 139.7681492,
+      "kind": "bus_stop"
+    },
+    {
+      "type": "node",
+      "osmId": 7418467847,
+      "name": "谷中富士",
+      "lat": 35.7213942,
+      "lon": 139.767702,
+      "kind": "wayside_shrine"
+    },
+    {
+      "type": "node",
+      "osmId": 8373681390,
+      "name": "上野桜木二丁目",
+      "lat": 35.7229917,
+      "lon": 139.7741456,
+      "kind": ""
+    },
+    {
+      "type": "node",
+      "osmId": 8373681391,
+      "name": "上野桜木一丁目",
+      "lat": 35.7213541,
+      "lon": 139.7753191,
+      "kind": ""
+    },
+    {
+      "type": "node",
+      "osmId": 8373681392,
+      "name": "谷中七丁目",
+      "lat": 35.7251953,
+      "lon": 139.7714782,
+      "kind": ""
+    },
+    {
+      "type": "node",
+      "osmId": 8373681393,
+      "name": "谷中六丁目",
+      "lat": 35.7222165,
+      "lon": 139.7698393,
+      "kind": ""
+    },
+    {
+      "type": "node",
+      "osmId": 8373681394,
+      "name": "谷中五丁目",
+      "lat": 35.725596,
+      "lon": 139.7676802,
+      "kind": ""
+    },
+    {
+      "type": "node",
+      "osmId": 8373681395,
+      "name": "谷中四丁目",
+      "lat": 35.7225932,
+      "lon": 139.7673958,
+      "kind": ""
+    },
+    {
+      "type": "node",
+      "osmId": 8373681396,
+      "name": "谷中三丁目",
+      "lat": 35.726835,
+      "lon": 139.7658348,
+      "kind": ""
+    },
+    {
+      "type": "node",
+      "osmId": 8373681397,
+      "name": "谷中二丁目",
+      "lat": 35.7222535,
+      "lon": 139.7648451,
+      "kind": ""
+    },
+    {
+      "type": "node",
+      "osmId": 8373681398,
+      "name": "谷中一丁目",
+      "lat": 35.7201227,
+      "lon": 139.767587,
+      "kind": ""
+    },
+    {
+      "type": "node",
+      "osmId": 8691137817,
+      "name": "谷中銀座",
+      "lat": 35.727657,
+      "lon": 139.7669682,
+      "kind": "attraction"
+    },
+    {
+      "type": "node",
+      "osmId": 8841678829,
+      "name": "日暮里駅前",
+      "lat": 35.7283308,
+      "lon": 139.7715506,
+      "kind": "bus_stop"
+    },
+    {
+      "type": "node",
+      "osmId": 8841840823,
+      "name": "西日暮里駅前",
+      "lat": 35.7322936,
+      "lon": 139.7685412,
+      "kind": "bus_stop"
+    },
+    {
+      "type": "node",
+      "osmId": 8841840826,
+      "name": "西日暮里駅前",
+      "lat": 35.7325723,
+      "lon": 139.7685733,
+      "kind": "bus_stop"
+    },
+    {
+      "type": "node",
+      "osmId": 8849280246,
+      "name": "上野駅前",
+      "lat": 35.7118201,
+      "lon": 139.7766924,
+      "kind": "bus_stop"
+    },
+    {
+      "type": "node",
+      "osmId": 9213142180,
+      "name": "東京文化会館",
+      "lat": 35.7141743,
+      "lon": 139.7749248,
+      "kind": "theatre"
+    },
+    {
+      "type": "node",
+      "osmId": 9347684871,
+      "name": "TOKYO PUBLIC 寛永寺橋駐車場",
+      "lat": 35.7230214,
+      "lon": 139.7784481,
+      "kind": "parking"
+    },
+    {
+      "type": "node",
+      "osmId": 9369060494,
+      "name": "上野東照宮",
+      "lat": 35.7153071,
+      "lon": 139.7714063,
+      "kind": "information"
+    },
+    {
+      "type": "node",
+      "osmId": 9420286533,
+      "name": "上野駅",
+      "lat": 35.7121865,
+      "lon": 139.7779959,
+      "kind": "traffic_signals"
+    },
+    {
+      "type": "node",
+      "osmId": 9420286542,
+      "name": "上野駅",
+      "lat": 35.7120819,
+      "lon": 139.7778887,
+      "kind": "traffic_signals"
+    },
+    {
+      "type": "node",
+      "osmId": 9420286546,
+      "name": "上野駅",
+      "lat": 35.7123329,
+      "lon": 139.7780288,
+      "kind": "traffic_signals"
+    },
+    {
+      "type": "node",
+      "osmId": 9421878386,
+      "name": "谷中",
+      "lat": 35.7211092,
+      "lon": 139.7710343,
+      "kind": "bus_stop"
+    },
+    {
+      "type": "node",
+      "osmId": 9421878387,
+      "name": "上野桜木",
+      "lat": 35.7226988,
+      "lon": 139.7744822,
+      "kind": "bus_stop"
+    },
+    {
+      "type": "node",
+      "osmId": 9421878388,
+      "name": "上野桜木",
+      "lat": 35.7226313,
+      "lon": 139.7742422,
+      "kind": "bus_stop"
+    },
+    {
+      "type": "node",
+      "osmId": 9449927635,
+      "name": "JR上野駅公園口",
+      "lat": 35.7145685,
+      "lon": 139.7764496,
+      "kind": "bus_stop"
+    },
+    {
+      "type": "node",
+      "osmId": 9653003285,
+      "name": "谷中小学校",
+      "lat": 35.7240206,
+      "lon": 139.7660337,
+      "kind": "bus_stop"
+    },
+    {
+      "type": "node",
+      "osmId": 9918854333,
+      "name": "日暮里駅主出入口",
+      "lat": 35.7287773,
+      "lon": 139.771034,
+      "kind": ""
+    },
+    {
+      "type": "node",
+      "osmId": 11040587694,
+      "name": "セブンイレブン 上野桜木2丁目店",
+      "lat": 35.722549,
+      "lon": 139.77409,
+      "kind": "bicycle_rental"
+    },
+    {
+      "type": "node",
+      "osmId": 11040587822,
+      "name": "日暮里駅前自転車駐車場",
+      "lat": 35.729601,
+      "lon": 139.77125,
+      "kind": "bicycle_rental"
+    },
+    {
+      "type": "node",
+      "osmId": 11040588440,
+      "name": "西日暮里第3自転車置場(西日暮里駅近辺)",
+      "lat": 35.7342221,
+      "lon": 139.7666733,
+      "kind": "bicycle_rental"
+    },
+    {
+      "type": "node",
+      "osmId": 11040588457,
+      "name": "谷中防災コミュニティセンター",
+      "lat": 35.7254648,
+      "lon": 139.7668775,
+      "kind": "bicycle_rental"
+    },
+    {
+      "type": "node",
+      "osmId": 11040588535,
+      "name": "コインパーク谷中",
+      "lat": 35.719025,
+      "lon": 139.766736,
+      "kind": "bicycle_rental"
+    },
+    {
+      "type": "node",
+      "osmId": 11040589433,
+      "name": "寛永寺坂ハイム",
+      "lat": 35.723176,
+      "lon": 139.777046,
+      "kind": "bicycle_rental"
+    },
+    {
+      "type": "node",
+      "osmId": 11846161526,
+      "name": "JR上野駅",
+      "lat": 35.711761,
+      "lon": 139.776062,
+      "kind": "bicycle_rental"
+    },
+    {
+      "type": "node",
+      "osmId": 12591766634,
+      "name": "上野桜木",
+      "lat": 35.7215016,
+      "lon": 139.7737857,
+      "kind": ""
+    },
+    {
+      "type": "node",
+      "osmId": 12695817661,
+      "name": "天王寺歴代墓域",
+      "lat": 35.7257797,
+      "lon": 139.7695829,
+      "kind": "grave_yard"
+    },
+    {
+      "type": "node",
+      "osmId": 12695909115,
+      "name": "天王寺銅造釈迦如来像台座跡",
+      "lat": 35.7256663,
+      "lon": 139.7699814,
+      "kind": "archaeological_site"
+    },
+    {
+      "type": "node",
+      "osmId": 12882457262,
+      "name": "TKP上野駅前ビジネスセンター",
+      "lat": 35.7111641,
+      "lon": 139.7772658,
+      "kind": "community_centre"
+    },
+    {
+      "type": "node",
+      "osmId": 13256250757,
+      "name": "上野駅",
+      "lat": 35.712046,
+      "lon": 139.7783179,
+      "kind": "traffic_signals"
+    },
+    {
+      "type": "node",
+      "osmId": 13256250758,
+      "name": "上野駅",
+      "lat": 35.7123754,
+      "lon": 139.7784134,
+      "kind": "traffic_signals"
+    },
+    {
+      "type": "node",
+      "osmId": 13417507335,
+      "name": "台東区谷中防災コミュニティセンター",
+      "lat": 35.7255673,
+      "lon": 139.7662127,
+      "kind": ""
+    },
+    {
+      "type": "node",
+      "osmId": 13722933583,
+      "name": "リパーク上野駅前",
+      "lat": 35.71098,
+      "lon": 139.77871,
+      "kind": "bicycle_rental"
+    },
+    {
+      "type": "node",
+      "osmId": 13874621450,
+      "name": "寛永寺坂駅跡地",
+      "lat": 35.7226691,
+      "lon": 139.7742392,
+      "kind": "memorial"
+    },
+    {
+      "type": "node",
+      "osmId": 13881133162,
+      "name": "旧東京音楽学校奏楽堂",
+      "lat": 35.7179853,
+      "lon": 139.7733061,
+      "kind": "museum"
+    },
+    {
+      "type": "node",
+      "osmId": 14140891103,
+      "name": "東北・上越新幹線上野駅誘致住民運動発祥の地",
+      "lat": 35.7101028,
+      "lon": 139.7745483,
+      "kind": "memorial"
+    },
+    {
+      "type": "node",
+      "osmId": 14156023120,
+      "name": "谷中墓地入口公衆トイレ",
+      "lat": 35.7227704,
+      "lon": 139.7702885,
+      "kind": "toilets"
+    },
+    {
+      "type": "way",
+      "osmId": 33439660,
+      "name": "東京国立博物館",
+      "lat": 35.7190658,
+      "lon": 139.7758162,
+      "kind": "museum"
+    },
+    {
+      "type": "way",
+      "osmId": 33440592,
+      "name": "夕焼けだんだん",
+      "lat": 35.7276462,
+      "lon": 139.7671692,
+      "kind": "steps"
+    },
+    {
+      "type": "way",
+      "osmId": 61957058,
+      "name": "西日暮里駅舎",
+      "lat": 35.7337179,
+      "lon": 139.7680986,
+      "kind": ""
+    },
+    {
+      "type": "way",
+      "osmId": 85395094,
+      "name": "上野駅",
+      "lat": 35.7139366,
+      "lon": 139.7768933,
+      "kind": "railway"
+    },
+    {
+      "type": "way",
+      "osmId": 89041321,
+      "name": "東洋館",
+      "lat": 35.717849,
+      "lon": 139.7768698,
+      "kind": "museum"
+    },
+    {
+      "type": "way",
+      "osmId": 91725730,
+      "name": "平成館",
+      "lat": 35.7199498,
+      "lon": 139.7756422,
+      "kind": ""
+    },
+    {
+      "type": "way",
+      "osmId": 91725747,
+      "name": "不忍池弁天堂",
+      "lat": 35.7121323,
+      "lon": 139.7711573,
+      "kind": "place_of_worship"
+    },
+    {
+      "type": "way",
+      "osmId": 103756731,
+      "name": "西日暮里駅前歩道橋",
+      "lat": 35.731985,
+      "lon": 139.7658302,
+      "kind": "construction"
+    },
+    {
+      "type": "way",
+      "osmId": 103756743,
+      "name": "西日暮里駅前歩道橋",
+      "lat": 35.7319503,
+      "lon": 139.7659407,
+      "kind": "construction"
+    },
+    {
+      "type": "way",
+      "osmId": 115993680,
+      "name": "谷中キッテ通り",
+      "lat": 35.723209,
+      "lon": 139.7644957,
+      "kind": "tertiary"
+    },
+    {
+      "type": "way",
+      "osmId": 138585434,
+      "name": "西郷隆盛像",
+      "lat": 35.7118569,
+      "lon": 139.7741721,
+      "kind": "artwork"
+    },
+    {
+      "type": "way",
+      "osmId": 145344062,
+      "name": "法隆寺宝物館",
+      "lat": 35.7186784,
+      "lon": 139.7740942,
+      "kind": "museum"
+    },
+    {
+      "type": "way",
+      "osmId": 145344085,
+      "name": "上野東照宮",
+      "lat": 35.7153982,
+      "lon": 139.7706324,
+      "kind": "place_of_worship"
+    },
+    {
+      "type": "way",
+      "osmId": 145344139,
+      "name": "上野動物園正門",
+      "lat": 35.7160055,
+      "lon": 139.7729031,
+      "kind": ""
+    },
+    {
+      "type": "way",
+      "osmId": 145344185,
+      "name": "表慶館",
+      "lat": 35.7186128,
+      "lon": 139.7752405,
+      "kind": "museum"
+    },
+    {
+      "type": "way",
+      "osmId": 145344199,
+      "name": "寛永寺 輪王殿",
+      "lat": 35.7171556,
+      "lon": 139.7780179,
+      "kind": ""
+    },
+    {
+      "type": "way",
+      "osmId": 152340249,
+      "name": "黒田記念館",
+      "lat": 35.7189039,
+      "lon": 139.7733129,
+      "kind": "museum"
+    },
+    {
+      "type": "way",
+      "osmId": 152340253,
+      "name": "日本館",
+      "lat": 35.7163461,
+      "lon": 139.776568,
+      "kind": ""
+    },
+    {
+      "type": "way",
+      "osmId": 153990148,
+      "name": "寛永寺",
+      "lat": 35.7215778,
+      "lon": 139.7743693,
+      "kind": "place_of_worship"
+    },
+    {
+      "type": "way",
+      "osmId": 170465236,
+      "name": "きぬや本館",
+      "lat": 35.7100374,
+      "lon": 139.7756718,
+      "kind": "hotel"
+    },
+    {
+      "type": "way",
+      "osmId": 170810682,
+      "name": "タイムズ日暮里駅前第2",
+      "lat": 35.7268227,
+      "lon": 139.7732147,
+      "kind": "parking"
+    },
+    {
+      "type": "way",
+      "osmId": 170810757,
+      "name": "アパホテルTKP日暮里駅前",
+      "lat": 35.7270507,
+      "lon": 139.7728098,
+      "kind": "hotel"
+    },
+    {
+      "type": "way",
+      "osmId": 170810761,
+      "name": "日暮里駅",
+      "lat": 35.7289078,
+      "lon": 139.771359,
+      "kind": ""
+    },
+    {
+      "type": "way",
+      "osmId": 170810851,
+      "name": "コインパーク日暮里駅前",
+      "lat": 35.7275984,
+      "lon": 139.7720801,
+      "kind": "parking"
+    },
+    {
+      "type": "way",
+      "osmId": 170949957,
+      "name": "日暮里駅前中央ビル",
+      "lat": 35.7286803,
+      "lon": 139.7725729,
+      "kind": ""
+    },
+    {
+      "type": "way",
+      "osmId": 175058286,
+      "name": "上野駅前ビル",
+      "lat": 35.7112432,
+      "lon": 139.7775376,
+      "kind": ""
+    },
+    {
+      "type": "way",
+      "osmId": 175217789,
+      "name": "第一工科大学東京 上野キャンパス 本館",
+      "lat": 35.7137607,
+      "lon": 139.7782222,
+      "kind": ""
+    },
+    {
+      "type": "way",
+      "osmId": 203960901,
+      "name": "旧寛永寺五重塔",
+      "lat": 35.7156042,
+      "lon": 139.7718043,
+      "kind": "place_of_worship"
+    },
+    {
+      "type": "way",
+      "osmId": 203960902,
+      "name": "国立科学博物館",
+      "lat": 35.7159919,
+      "lon": 139.7765927,
+      "kind": "museum"
+    },
+    {
+      "type": "way",
+      "osmId": 203960903,
+      "name": "国立西洋美術館",
+      "lat": 35.7154106,
+      "lon": 139.775852,
+      "kind": "museum"
+    },
+    {
+      "type": "way",
+      "osmId": 209190241,
+      "name": "上野消防署 谷中出張所",
+      "lat": 35.7199673,
+      "lon": 139.7686252,
+      "kind": ""
+    },
+    {
+      "type": "way",
+      "osmId": 209190478,
+      "name": "台東区立朝倉彫塑館",
+      "lat": 35.7268074,
+      "lon": 139.7685195,
+      "kind": "museum"
+    },
+    {
+      "type": "way",
+      "osmId": 209320842,
+      "name": "東叡山寛永寺 圓珠院",
+      "lat": 35.7206262,
+      "lon": 139.7713924,
+      "kind": "place_of_worship"
+    },
+    {
+      "type": "way",
+      "osmId": 209321064,
+      "name": "シオン谷中",
+      "lat": 35.7204751,
+      "lon": 139.76574,
+      "kind": ""
+    },
+    {
+      "type": "way",
+      "osmId": 220491265,
+      "name": "花園稲荷神社",
+      "lat": 35.7137776,
+      "lon": 139.7723236,
+      "kind": ""
+    },
+    {
+      "type": "way",
+      "osmId": 220491278,
+      "name": "花園稲荷神社",
+      "lat": 35.7138514,
+      "lon": 139.7723864,
+      "kind": "place_of_worship"
+    },
+    {
+      "type": "way",
+      "osmId": 231439424,
+      "name": "宮地ビル本館",
+      "lat": 35.7072926,
+      "lon": 139.7779709,
+      "kind": ""
+    },
+    {
+      "type": "way",
+      "osmId": 243038404,
+      "name": "谷中SGビル",
+      "lat": 35.7277179,
+      "lon": 139.7651533,
+      "kind": ""
+    },
+    {
+      "type": "way",
+      "osmId": 252709276,
+      "name": "フリューゲル谷中",
+      "lat": 35.7299204,
+      "lon": 139.7637845,
+      "kind": ""
+    },
+    {
+      "type": "way",
+      "osmId": 253020945,
+      "name": "谷中銀座",
+      "lat": 35.7275258,
+      "lon": 139.7652086,
+      "kind": "footway"
+    },
+    {
+      "type": "way",
+      "osmId": 253844168,
+      "name": "日暮里駅",
+      "lat": 35.7279827,
+      "lon": 139.7713586,
+      "kind": ""
+    },
+    {
+      "type": "way",
+      "osmId": 255734191,
+      "name": "天王寺花売り場",
+      "lat": 35.7263195,
+      "lon": 139.7710089,
+      "kind": ""
+    },
+    {
+      "type": "way",
+      "osmId": 458704424,
+      "name": "化学本館",
+      "lat": 35.7129673,
+      "lon": 139.7630471,
+      "kind": ""
+    },
+    {
+      "type": "way",
+      "osmId": 508353830,
+      "name": "台東区不忍池自転車駐車場",
+      "lat": 35.7099851,
+      "lon": 139.7724823,
+      "kind": "bicycle_parking"
+    },
+    {
+      "type": "way",
+      "osmId": 535587424,
+      "name": "荒川警察署 西日暮里駅前交番",
+      "lat": 35.7319787,
+      "lon": 139.7664381,
+      "kind": "police"
+    },
+    {
+      "type": "way",
+      "osmId": 535619917,
+      "name": "天王寺町会防災段器材倉庫",
+      "lat": 35.7257574,
+      "lon": 139.772741,
+      "kind": ""
+    },
+    {
+      "type": "way",
+      "osmId": 556486672,
+      "name": "谷中児童遊園",
+      "lat": 35.7293361,
+      "lon": 139.764721,
+      "kind": "park"
+    },
+    {
+      "type": "way",
+      "osmId": 560499632,
+      "name": "谷中清水町公園",
+      "lat": 35.7202835,
+      "lon": 139.7693427,
+      "kind": "park"
+    },
+    {
+      "type": "way",
+      "osmId": 563364632,
+      "name": "谷中キッテ通り",
+      "lat": 35.7212212,
+      "lon": 139.7648282,
+      "kind": "tertiary"
+    },
+    {
+      "type": "way",
+      "osmId": 563389700,
+      "name": "マガザン谷中",
+      "lat": 35.7276255,
+      "lon": 139.7659936,
+      "kind": ""
+    },
+    {
+      "type": "way",
+      "osmId": 564669945,
+      "name": "寛永寺 津梁院",
+      "lat": 35.7223508,
+      "lon": 139.7750828,
+      "kind": "place_of_worship"
+    },
+    {
+      "type": "way",
+      "osmId": 566690194,
+      "name": "台東区立 谷中小学校",
+      "lat": 35.7236547,
+      "lon": 139.7652516,
+      "kind": "school"
+    },
+    {
+      "type": "way",
+      "osmId": 568507908,
+      "name": "天王寺公園",
+      "lat": 35.7272119,
+      "lon": 139.770647,
+      "kind": "park"
+    },
+    {
+      "type": "way",
+      "osmId": 569630889,
+      "name": "西日暮里駅前歩道橋",
+      "lat": 35.7318936,
+      "lon": 139.7661092,
+      "kind": "construction"
+    },
+    {
+      "type": "way",
+      "osmId": 585320110,
+      "name": "谷中墓地入口 公衆トイレ",
+      "lat": 35.7229349,
+      "lon": 139.770246,
+      "kind": "toilets"
+    },
+    {
+      "type": "way",
+      "osmId": 662750398,
+      "name": "上野駅",
+      "lat": 35.7113861,
+      "lon": 139.7772044,
+      "kind": "footway"
+    },
+    {
+      "type": "way",
+      "osmId": 662750399,
+      "name": "上野駅",
+      "lat": 35.7118694,
+      "lon": 139.7777617,
+      "kind": "footway"
+    },
+    {
+      "type": "way",
+      "osmId": 662750400,
+      "name": "上野駅",
+      "lat": 35.7119888,
+      "lon": 139.7764688,
+      "kind": "footway"
+    },
+    {
+      "type": "way",
+      "osmId": 662754622,
+      "name": "上野駅",
+      "lat": 35.7116531,
+      "lon": 139.77749,
+      "kind": "footway"
+    },
+    {
+      "type": "way",
+      "osmId": 662754623,
+      "name": "上野駅",
+      "lat": 35.711758,
+      "lon": 139.7776278,
+      "kind": "steps"
+    },
+    {
+      "type": "way",
+      "osmId": 662754624,
+      "name": "上野駅",
+      "lat": 35.711558,
+      "lon": 139.7773665,
+      "kind": "steps"
+    },
+    {
+      "type": "way",
+      "osmId": 662754625,
+      "name": "上野駅",
+      "lat": 35.7113243,
+      "lon": 139.7770651,
+      "kind": "footway"
+    },
+    {
+      "type": "way",
+      "osmId": 662754626,
+      "name": "上野駅",
+      "lat": 35.7115727,
+      "lon": 139.7776614,
+      "kind": "footway"
+    },
+    {
+      "type": "way",
+      "osmId": 662754627,
+      "name": "上野駅",
+      "lat": 35.7114804,
+      "lon": 139.7773029,
+      "kind": "footway"
+    },
+    {
+      "type": "way",
+      "osmId": 662754628,
+      "name": "上野駅",
+      "lat": 35.711967,
+      "lon": 139.7777201,
+      "kind": "footway"
+    },
+    {
+      "type": "way",
+      "osmId": 662754629,
+      "name": "上野駅",
+      "lat": 35.7119484,
+      "lon": 139.7778022,
+      "kind": "steps"
+    },
+    {
+      "type": "way",
+      "osmId": 662754630,
+      "name": "上野駅",
+      "lat": 35.7119424,
+      "lon": 139.7778606,
+      "kind": "footway"
+    },
+    {
+      "type": "way",
+      "osmId": 662754631,
+      "name": "上野駅",
+      "lat": 35.7119019,
+      "lon": 139.7778784,
+      "kind": "steps"
+    },
+    {
+      "type": "way",
+      "osmId": 662754632,
+      "name": "上野駅",
+      "lat": 35.7118819,
+      "lon": 139.7778123,
+      "kind": "footway"
+    },
+    {
+      "type": "way",
+      "osmId": 662754694,
+      "name": "上野駅",
+      "lat": 35.7114906,
+      "lon": 139.7771629,
+      "kind": "platform"
+    },
+    {
+      "type": "way",
+      "osmId": 662754695,
+      "name": "上野駅",
+      "lat": 35.7114046,
+      "lon": 139.7772991,
+      "kind": "platform"
+    },
+    {
+      "type": "way",
+      "osmId": 662757162,
+      "name": "上野駅",
+      "lat": 35.7114928,
+      "lon": 139.7773257,
+      "kind": "footway"
+    },
+    {
+      "type": "way",
+      "osmId": 662757164,
+      "name": "上野駅",
+      "lat": 35.7110351,
+      "lon": 139.7767291,
+      "kind": "steps"
+    },
+    {
+      "type": "way",
+      "osmId": 662757165,
+      "name": "上野駅",
+      "lat": 35.7110513,
+      "lon": 139.7767718,
+      "kind": "footway"
+    },
+    {
+      "type": "way",
+      "osmId": 662757166,
+      "name": "上野駅",
+      "lat": 35.7109909,
+      "lon": 139.7767464,
+      "kind": "footway"
+    },
+    {
+      "type": "way",
+      "osmId": 662757167,
+      "name": "上野駅",
+      "lat": 35.7109953,
+      "lon": 139.7766705,
+      "kind": "footway"
+    },
+    {
+      "type": "way",
+      "osmId": 662757168,
+      "name": "上野駅",
+      "lat": 35.7109193,
+      "lon": 139.7768016,
+      "kind": "footway"
+    },
+    {
+      "type": "way",
+      "osmId": 662757286,
+      "name": "上野駅",
+      "lat": 35.711029,
+      "lon": 139.7768021,
+      "kind": "steps"
+    },
+    {
+      "type": "way",
+      "osmId": 662757287,
+      "name": "上野駅",
+      "lat": 35.7109649,
+      "lon": 139.7767772,
+      "kind": "footway"
+    },
+    {
+      "type": "way",
+      "osmId": 662757834,
+      "name": "上野駅",
+      "lat": 35.7111927,
+      "lon": 139.7763779,
+      "kind": "footway"
+    },
+    {
+      "type": "way",
+      "osmId": 662757836,
+      "name": "上野駅",
+      "lat": 35.7113594,
+      "lon": 139.7760614,
+      "kind": "footway"
+    },
+    {
+      "type": "way",
+      "osmId": 662757838,
+      "name": "上野駅",
+      "lat": 35.7117498,
+      "lon": 139.7760035,
+      "kind": "footway"
+    },
+    {
+      "type": "way",
+      "osmId": 662757840,
+      "name": "上野駅",
+      "lat": 35.7118415,
+      "lon": 139.7761507,
+      "kind": "platform"
+    },
+    {
+      "type": "way",
+      "osmId": 662757841,
+      "name": "上野駅",
+      "lat": 35.7117099,
+      "lon": 139.7762022,
+      "kind": "platform"
+    },
+    {
+      "type": "way",
+      "osmId": 662758087,
+      "name": "上野駅",
+      "lat": 35.7116941,
+      "lon": 139.7758867,
+      "kind": "footway"
+    },
+    {
+      "type": "way",
+      "osmId": 662758088,
+      "name": "上野駅",
+      "lat": 35.7117235,
+      "lon": 139.775913,
+      "kind": "footway"
+    },
+    {
+      "type": "way",
+      "osmId": 662758089,
+      "name": "上野駅",
+      "lat": 35.7117579,
+      "lon": 139.7759372,
+      "kind": "steps"
+    },
+    {
+      "type": "way",
+      "osmId": 662758090,
+      "name": "上野駅",
+      "lat": 35.711676,
+      "lon": 139.775932,
+      "kind": "steps"
+    },
+    {
+      "type": "way",
+      "osmId": 662758091,
+      "name": "上野駅",
+      "lat": 35.7116758,
+      "lon": 139.7760165,
+      "kind": "footway"
+    },
+    {
+      "type": "way",
+      "osmId": 662759091,
+      "name": "上野駅",
+      "lat": 35.7119486,
+      "lon": 139.7763379,
+      "kind": "steps"
+    },
+    {
+      "type": "way",
+      "osmId": 662759092,
+      "name": "上野駅",
+      "lat": 35.7119468,
+      "lon": 139.7763855,
+      "kind": "footway"
+    },
+    {
+      "type": "way",
+      "osmId": 662759093,
+      "name": "上野駅",
+      "lat": 35.7117948,
+      "lon": 139.7764845,
+      "kind": "footway"
+    },
+    {
+      "type": "way",
+      "osmId": 662759094,
+      "name": "上野駅",
+      "lat": 35.7117735,
+      "lon": 139.7764519,
+      "kind": "steps"
+    },
+    {
+      "type": "way",
+      "osmId": 662759095,
+      "name": "上野駅",
+      "lat": 35.7118493,
+      "lon": 139.7763748,
+      "kind": "footway"
+    },
+    {
+      "type": "way",
+      "osmId": 662759096,
+      "name": "上野駅",
+      "lat": 35.7117364,
+      "lon": 139.7760184,
+      "kind": "footway"
+    },
+    {
+      "type": "way",
+      "osmId": 662759097,
+      "name": "上野駅",
+      "lat": 35.7114075,
+      "lon": 139.7763923,
+      "kind": "footway"
+    },
+    {
+      "type": "way",
+      "osmId": 662759098,
+      "name": "上野駅",
+      "lat": 35.7118378,
+      "lon": 139.7757662,
+      "kind": "footway"
+    },
+    {
+      "type": "way",
+      "osmId": 662759833,
+      "name": "上野駅",
+      "lat": 35.7118471,
+      "lon": 139.7760779,
+      "kind": "footway"
+    },
+    {
+      "type": "way",
+      "osmId": 662759834,
+      "name": "上野駅",
+      "lat": 35.7117038,
+      "lon": 139.775932,
+      "kind": "footway"
+    },
+    {
+      "type": "way",
+      "osmId": 662759861,
+      "name": "上野駅",
+      "lat": 35.7118978,
+      "lon": 139.7759278,
+      "kind": "footway"
+    },
+    {
+      "type": "way",
+      "osmId": 671851311,
+      "name": "谷中銀座",
+      "lat": 35.7276699,
+      "lon": 139.7662425,
+      "kind": "pedestrian"
+    },
+    {
+      "type": "way",
+      "osmId": 671851312,
+      "name": "谷中銀座",
+      "lat": 35.7276602,
+      "lon": 139.7668567,
+      "kind": "residential"
+    },
+    {
+      "type": "way",
+      "osmId": 675387144,
+      "name": "末広本館",
+      "lat": 35.7216093,
+      "lon": 139.7793608,
+      "kind": "love_hotel"
+    },
+    {
+      "type": "way",
+      "osmId": 736938228,
+      "name": "谷中銀座",
+      "lat": 35.7273199,
+      "lon": 139.7652031,
+      "kind": "service"
+    },
+    {
+      "type": "way",
+      "osmId": 737745076,
+      "name": "谷中銀座",
+      "lat": 35.7276542,
+      "lon": 139.7653184,
+      "kind": "pedestrian"
+    },
+    {
+      "type": "way",
+      "osmId": 737745077,
+      "name": "谷中銀座",
+      "lat": 35.7276519,
+      "lon": 139.766705,
+      "kind": "residential"
+    },
+    {
+      "type": "way",
+      "osmId": 737745078,
+      "name": "御殿坂",
+      "lat": 35.7278621,
+      "lon": 139.7686387,
+      "kind": "residential"
+    },
+    {
+      "type": "way",
+      "osmId": 753571441,
+      "name": "JR上野駅;不忍口",
+      "lat": 35.7120366,
+      "lon": 139.7751655,
+      "kind": "footway"
+    },
+    {
+      "type": "way",
+      "osmId": 776870654,
+      "name": "上野駅",
+      "lat": 35.7119545,
+      "lon": 139.7770551,
+      "kind": "footway"
+    },
+    {
+      "type": "way",
+      "osmId": 955940564,
+      "name": "寛永寺陸橋",
+      "lat": 35.7228844,
+      "lon": 139.7778196,
+      "kind": ""
+    },
+    {
+      "type": "way",
+      "osmId": 1026489342,
+      "name": "寛永寺谷中第一霊園",
+      "lat": 35.724774,
+      "lon": 139.7729675,
+      "kind": "cemetery"
+    },
+    {
+      "type": "way",
+      "osmId": 1026489343,
+      "name": "寛永寺谷中第二霊園",
+      "lat": 35.7235216,
+      "lon": 139.772079,
+      "kind": "cemetery"
+    },
+    {
+      "type": "way",
+      "osmId": 1028597451,
+      "name": "谷中霊園管理事務所",
+      "lat": 35.724001,
+      "lon": 139.7701546,
+      "kind": ""
+    },
+    {
+      "type": "way",
+      "osmId": 1064221304,
+      "name": "ロイジェント上野桜木",
+      "lat": 35.7231028,
+      "lon": 139.7752316,
+      "kind": ""
+    },
+    {
+      "type": "way",
+      "osmId": 1065775336,
+      "name": "恩賜上野動物園",
+      "lat": 35.7153261,
+      "lon": 139.7705426,
+      "kind": "zoo"
+    },
+    {
+      "type": "way",
+      "osmId": 1065775337,
+      "name": "恩賜上野動物園（東園）",
+      "lat": 35.7163957,
+      "lon": 139.7714921,
+      "kind": "zoo"
+    },
+    {
+      "type": "way",
+      "osmId": 1065775338,
+      "name": "恩賜上野動物園（西園）",
+      "lat": 35.7139631,
+      "lon": 139.7702341,
+      "kind": "zoo"
+    },
+    {
+      "type": "way",
+      "osmId": 1066333140,
+      "name": "寛永寺墓地（かんえいじ ぼち)",
+      "lat": 35.7190658,
+      "lon": 139.7767252,
+      "kind": ""
+    },
+    {
+      "type": "way",
+      "osmId": 1354860783,
+      "name": "OnePark 谷中3丁目",
+      "lat": 35.7300759,
+      "lon": 139.7636738,
+      "kind": "parking"
+    },
+    {
+      "type": "way",
+      "osmId": 1354861691,
+      "name": "谷中ほたるさわポケットパーク",
+      "lat": 35.7272168,
+      "lon": 139.7666832,
+      "kind": "park"
+    },
+    {
+      "type": "way",
+      "osmId": 1366791502,
+      "name": "天王寺墓地",
+      "lat": 35.7259798,
+      "lon": 139.7699427,
+      "kind": "cemetery"
+    },
+    {
+      "type": "way",
+      "osmId": 1367250759,
+      "name": "天王寺",
+      "lat": 35.7266164,
+      "lon": 139.7714235,
+      "kind": "place_of_worship"
+    },
+    {
+      "type": "way",
+      "osmId": 1371873297,
+      "name": "天王寺墓地",
+      "lat": 35.7248511,
+      "lon": 139.7710172,
+      "kind": "cemetery"
+    },
+    {
+      "type": "way",
+      "osmId": 1454469298,
+      "name": "ウィルローズ谷中銀座",
+      "lat": 35.7274814,
+      "lon": 139.7670487,
+      "kind": ""
+    },
+    {
+      "type": "way",
+      "osmId": 1482022507,
+      "name": "寛永寺幼稚園",
+      "lat": 35.7216879,
+      "lon": 139.7738266,
+      "kind": "kindergarten"
+    },
+    {
+      "type": "way",
+      "osmId": 1557658863,
+      "name": "コージーコート谷中",
+      "lat": 35.7275293,
+      "lon": 139.7668015,
+      "kind": ""
+    },
+    {
+      "type": "way",
+      "osmId": 1557773722,
+      "name": "日暮里駅前イベント広場",
+      "lat": 35.7291708,
+      "lon": 139.7710712,
+      "kind": "pedestrian"
+    },
+    {
+      "type": "relation",
+      "osmId": 906234,
+      "name": "都営バス都08(T08)系統（グリーンリバー） 日暮里駅⇒東武浅草駅⇒錦糸町駅",
+      "lat": 35.7130946,
+      "lon": 139.793223,
+      "kind": ""
+    },
+    {
+      "type": "relation",
+      "osmId": 2737745,
+      "name": "本館",
+      "lat": 35.7189135,
+      "lon": 139.7764941,
+      "kind": "museum"
+    },
+    {
+      "type": "relation",
+      "osmId": 3669709,
+      "name": "都営バス里48系統 日暮里駅⇒江北六丁目団地⇒見沼代親水公園駅",
+      "lat": 35.7715143,
+      "lon": 139.7688122,
+      "kind": ""
+    },
+    {
+      "type": "relation",
+      "osmId": 5413285,
+      "name": "不忍池",
+      "lat": 35.7118756,
+      "lon": 139.7707383,
+      "kind": ""
+    },
+    {
+      "type": "relation",
+      "osmId": 5419119,
+      "name": "東京文化会館",
+      "lat": 35.7142763,
+      "lon": 139.7751935,
+      "kind": ""
+    },
+    {
+      "type": "relation",
+      "osmId": 7858993,
+      "name": "京成上野駅駐車場",
+      "lat": 35.7123131,
+      "lon": 139.7729046,
+      "kind": ""
+    },
+    {
+      "type": "relation",
+      "osmId": 12858395,
+      "name": "都営バス里48系統 見沼代親水公園駅⇒江北六丁目団地⇒日暮里駅",
+      "lat": 35.7712461,
+      "lon": 139.7688837,
+      "kind": ""
+    },
+    {
+      "type": "relation",
+      "osmId": 13389345,
+      "name": "都営バス里48-2系統 日暮里駅⇒加賀団地循環",
+      "lat": 35.7621876,
+      "lon": 139.7648811,
+      "kind": ""
+    },
+    {
+      "type": "relation",
+      "osmId": 13540834,
+      "name": "都営バス里22系統 亀戸駅⇒大関横丁⇒日暮里駅",
+      "lat": 35.7175189,
+      "lon": 139.8001636,
+      "kind": ""
+    },
+    {
+      "type": "relation",
+      "osmId": 13540835,
+      "name": "都営バス里22系統 日暮里駅⇒大関横丁⇒亀戸駅",
+      "lat": 35.7174872,
+      "lon": 139.8000014,
+      "kind": ""
+    },
+    {
+      "type": "relation",
+      "osmId": 13540873,
+      "name": "都営バス里22系統 泪橋⇒大関横丁⇒日暮里駅",
+      "lat": 35.7326195,
+      "lon": 139.7852062,
+      "kind": ""
+    },
+    {
+      "type": "relation",
+      "osmId": 13540874,
+      "name": "都営バス里22系統 日暮里駅⇒大関横丁⇒南千住車庫",
+      "lat": 35.7327356,
+      "lon": 139.7852448,
+      "kind": ""
+    },
+    {
+      "type": "relation",
+      "osmId": 13540955,
+      "name": "都営バス都08(T08)系統（グリーンリバー） 錦糸町駅⇒東武浅草駅⇒日暮里駅",
+      "lat": 35.713004,
+      "lon": 139.7932364,
+      "kind": ""
+    },
+    {
+      "type": "relation",
+      "osmId": 13724005,
+      "name": "スカイツリーシャトル上野・浅草線（JR上野駅公園口⇒東京スカイツリータウン）",
+      "lat": 35.7134479,
+      "lon": 139.79318,
+      "kind": ""
+    },
+    {
+      "type": "relation",
+      "osmId": 13724006,
+      "name": "スカイツリーシャトル上野・浅草線（東京スカイツリータウン⇒JR上野駅公園口）",
+      "lat": 35.7141192,
+      "lon": 139.793299,
+      "kind": ""
+    },
+    {
+      "type": "relation",
+      "osmId": 13744633,
+      "name": "谷中霊園",
+      "lat": 35.7252029,
+      "lon": 139.7717065,
+      "kind": "cemetery"
+    },
+    {
+      "type": "relation",
+      "osmId": 18711626,
+      "name": "上野桜木一丁目",
+      "lat": 35.7213636,
+      "lon": 139.7743716,
+      "kind": ""
+    },
+    {
+      "type": "relation",
+      "osmId": 18711627,
+      "name": "上野桜木二丁目",
+      "lat": 35.72295,
+      "lon": 139.7730338,
+      "kind": ""
+    },
+    {
+      "type": "relation",
+      "osmId": 18711628,
+      "name": "上野桜木",
+      "lat": 35.721985,
+      "lon": 139.7743716,
+      "kind": ""
+    },
+    {
+      "type": "relation",
+      "osmId": 18711634,
+      "name": "谷中一丁目",
+      "lat": 35.7201069,
+      "lon": 139.7674604,
+      "kind": ""
+    },
+    {
+      "type": "relation",
+      "osmId": 18711635,
+      "name": "谷中二丁目",
+      "lat": 35.7222898,
+      "lon": 139.7650294,
+      "kind": ""
+    },
+    {
+      "type": "relation",
+      "osmId": 18711636,
+      "name": "谷中三丁目",
+      "lat": 35.7278468,
+      "lon": 139.7644911,
+      "kind": ""
+    },
+    {
+      "type": "relation",
+      "osmId": 18711637,
+      "name": "谷中四丁目",
+      "lat": 35.7226259,
+      "lon": 139.7671487,
+      "kind": ""
+    },
+    {
+      "type": "relation",
+      "osmId": 18711638,
+      "name": "谷中五丁目",
+      "lat": 35.7255848,
+      "lon": 139.767455,
+      "kind": ""
+    },
+    {
+      "type": "relation",
+      "osmId": 18711639,
+      "name": "谷中六丁目",
+      "lat": 35.7221292,
+      "lon": 139.7696388,
+      "kind": ""
+    },
+    {
+      "type": "relation",
+      "osmId": 18711640,
+      "name": "谷中七丁目",
+      "lat": 35.7252608,
+      "lon": 139.7713361,
+      "kind": ""
+    },
+    {
+      "type": "relation",
+      "osmId": 18711641,
+      "name": "谷中",
+      "lat": 35.7250151,
+      "lon": 139.7683222,
+      "kind": ""
+    },
+    {
+      "type": "relation",
+      "osmId": 21311152,
+      "name": "恩賜上野動物園",
+      "lat": 35.7153261,
+      "lon": 139.7705426,
+      "kind": "zoo"
+    }
+  ]
+}

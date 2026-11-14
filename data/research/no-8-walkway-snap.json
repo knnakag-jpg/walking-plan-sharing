@@ -1,0 +1,184 @@
+{
+ "checkedAt": "2026-11-14T15:42:09.420Z",
+ "source": "OpenStreetMap via Overpass API; © OpenStreetMap contributors",
+ "ueno_station": {
+  "snapped": [
+   35.7129181,
+   139.7767401
+  ],
+  "movedM": 0,
+  "wayId": 722292960,
+  "highway": "footway",
+  "name": null
+ },
+ "bunka_kaikan": {
+  "snapped": [
+   35.7145818,
+   139.7755385
+  ],
+  "movedM": 46,
+  "wayId": 1386499587,
+  "highway": "pedestrian",
+  "name": null
+ },
+ "nmwa": {
+  "snapped": [
+   35.7154078,
+   139.7755999
+  ],
+  "movedM": 23,
+  "wayId": 1066380812,
+  "highway": "steps",
+  "name": null
+ },
+ "kahaku": {
+  "snapped": [
+   35.7159654,
+   139.7767511
+  ],
+  "movedM": 15,
+  "wayId": 402914220,
+  "highway": "footway",
+  "name": null
+ },
+ "sogakudo": {
+  "snapped": [
+   35.7181246,
+   139.7733675
+  ],
+  "movedM": 16,
+  "wayId": 1385331943,
+  "highway": "pedestrian",
+  "name": null
+ },
+ "kuroda": {
+  "snapped": [
+   35.7186906,
+   139.7732804
+  ],
+  "movedM": 23,
+  "wayId": 958448069,
+  "highway": "footway",
+  "name": null
+ },
+ "tnm": {
+  "snapped": [
+   35.7189955,
+   139.7757872
+  ],
+  "movedM": 9,
+  "wayId": 1382695617,
+  "highway": "footway",
+  "name": null
+ },
+ "kaneiji": {
+  "snapped": [
+   35.7218252,
+   139.77427
+  ],
+  "movedM": 29,
+  "wayId": 564669958,
+  "highway": "service",
+  "name": null
+ },
+ "yanaka_gate": {
+  "snapped": [
+   35.7227303,
+   139.7702893
+  ],
+  "movedM": 4,
+  "wayId": 1062516778,
+  "highway": "footway",
+  "name": null
+ },
+ "gojuto_ato": {
+  "snapped": [
+   35.7250931,
+   139.7707971
+  ],
+  "movedM": 20,
+  "wayId": 170810842,
+  "highway": "residential",
+  "name": "ぎんなん通り"
+ },
+ "tennoji": {
+  "snapped": [
+   35.7264991,
+   139.7711984
+  ],
+  "movedM": 24,
+  "wayId": 1371041089,
+  "highway": "footway",
+  "name": null
+ },
+ "nippori": {
+  "snapped": [
+   35.7277902,
+   139.7717116
+  ],
+  "movedM": 0,
+  "wayId": 1082813811,
+  "highway": "footway",
+  "name": null
+ },
+ "saigo": {
+  "snapped": [
+   35.7118535,
+   139.7741041
+  ],
+  "movedM": 6,
+  "wayId": 1052409917,
+  "highway": "footway",
+  "name": null
+ },
+ "benten": {
+  "snapped": [
+   35.7120613,
+   139.7711861
+  ],
+  "movedM": 8,
+  "wayId": 542062987,
+  "highway": "footway",
+  "name": null
+ },
+ "toshogu": {
+  "snapped": [
+   35.7153583,
+   139.7708969
+  ],
+  "movedM": 25,
+  "wayId": 509536658,
+  "highway": "footway",
+  "name": null
+ },
+ "asakura": {
+  "snapped": [
+   35.7266433,
+   139.768698
+  ],
+  "movedM": 25,
+  "wayId": 997718025,
+  "highway": "service",
+  "name": null
+ },
+ "yuyake": {
+  "snapped": [
+   35.7276407,
+   139.7673409
+  ],
+  "movedM": 15,
+  "wayId": 33440592,
+  "highway": "steps",
+  "name": "夕焼けだんだん"
+ },
+ "yanaka_ginza": {
+  "snapped": [
+   35.7276517,
+   139.7669974
+  ],
+  "movedM": 3,
+  "wayId": 33440592,
+  "highway": "steps",
+  "name": "夕焼けだんだん"
+ }
+}

@@ -1,0 +1,154 @@
+{
+ "checkedAt": "2026-11-14T18:20:57.828Z",
+ "source": "OpenStreetMap via Overpass API; © OpenStreetMap contributors",
+ "seimon_station": {
+  "snapped": [
+   35.6684998,
+   139.4844771
+  ],
+  "movedM": 23,
+  "wayId": 172047647,
+  "highway": "service",
+  "name": null
+ },
+ "bridge": {
+  "snapped": [
+   35.6673765,
+   139.484521
+  ],
+  "movedM": 19,
+  "wayId": 172050723,
+  "highway": "service",
+  "name": null
+ },
+ "jra_museum": {
+  "snapped": [
+   35.6661886,
+   139.488442
+  ],
+  "movedM": 28,
+  "wayId": 570240341,
+  "highway": "footway",
+  "name": null
+ },
+ "west_gate": {
+  "snapped": [
+   35.6661699,
+   139.4773818
+  ],
+  "movedM": 0,
+  "wayId": 260050601,
+  "highway": "pedestrian",
+  "name": "フジビューウォーク"
+ },
+ "okunitama": {
+  "snapped": [
+   35.6676787,
+   139.4790072
+  ],
+  "movedM": 20,
+  "wayId": 172500124,
+  "highway": "pedestrian",
+  "name": "参道"
+ },
+ "kyodo_gate": {
+  "snapped": [
+   35.655989,
+   139.4745528
+  ],
+  "movedM": 4,
+  "wayId": 727315535,
+  "highway": "tertiary",
+  "name": "ふるさと通り"
+ },
+ "koremasa_bridge": {
+  "snapped": [
+   35.6555364,
+   139.4877125
+  ],
+  "movedM": 0,
+  "wayId": 145126004,
+  "highway": "tertiary",
+  "name": null
+ },
+ "koremasa": {
+  "snapped": [
+   35.6563741,
+   139.4893886
+  ],
+  "movedM": 9,
+  "wayId": 1426258155,
+  "highway": "tertiary",
+  "name": "競艇場通り"
+ },
+ "fuchu_hommachi": {
+  "snapped": [
+   35.6661699,
+   139.4773818
+  ],
+  "movedM": 26,
+  "wayId": 260050601,
+  "highway": "pedestrian",
+  "name": "フジビューウォーク"
+ },
+ "keyaki": {
+  "snapped": [
+   35.6730908,
+   139.4793662
+  ],
+  "movedM": 17,
+  "wayId": 74890344,
+  "highway": "footway",
+  "name": null
+ },
+ "fuchu_station": {
+  "snapped": [
+   35.6720514,
+   139.4800069
+  ],
+  "movedM": 19,
+  "wayId": 978149479,
+  "highway": "pedestrian",
+  "name": null
+ },
+ "jra_museum_road": {
+  "snapped": [
+   35.6670953,
+   139.4880611
+  ],
+  "movedM": 4,
+  "wayId": 172906854,
+  "highway": "tertiary",
+  "name": "競馬場通り"
+ },
+ "kyodo_signal": {
+  "snapped": [
+   35.6553932,
+   139.4748301
+  ],
+  "movedM": 0,
+  "wayId": 172406838,
+  "highway": "tertiary",
+  "name": "ふるさと通り"
+ },
+ "okunitama_signal": {
+  "snapped": [
+   35.6700127,
+   139.4790907
+  ],
+  "movedM": 0,
+  "wayId": 172500791,
+  "highway": "pedestrian",
+  "name": null
+ },
+ "okunitama_west": {
+  "snapped": [
+   35.6681965,
+   139.4770865
+  ],
+  "movedM": 1,
+  "wayId": 144700643,
+  "highway": "residential",
+  "name": null
+ }
+}

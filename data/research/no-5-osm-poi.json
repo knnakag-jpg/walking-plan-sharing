@@ -1,0 +1,1502 @@
+{
+ "checkedAt": "2026-11-14T18:20:26.914Z",
+ "source": "OpenStreetMap via Overpass API; © OpenStreetMap contributors",
+ "items": [
+  {
+   "type": "node",
+   "id": 251147725,
+   "name": "分梅駐在所",
+   "kind": "traffic_signals",
+   "lat": 35.66645,
+   "lon": 139.46476
+  },
+  {
+   "type": "node",
+   "id": 264813892,
+   "name": "分倍河原",
+   "kind": "stop",
+   "lat": 35.66843,
+   "lon": 139.46901
+  },
+  {
+   "type": "node",
+   "id": 264813956,
+   "name": "府中本町",
+   "kind": "station",
+   "lat": 35.66611,
+   "lon": 139.4771
+  },
+  {
+   "type": "node",
+   "id": 278928358,
+   "name": "大国魂神社東",
+   "kind": "traffic_signals",
+   "lat": 35.67002,
+   "lon": 139.48041
+  },
+  {
+   "type": "node",
+   "id": 281417227,
+   "name": "多磨霊園",
+   "kind": "stop",
+   "lat": 35.66624,
+   "lon": 139.50262
+  },
+  {
+   "type": "node",
+   "id": 281417649,
+   "name": "東府中",
+   "kind": "stop",
+   "lat": 35.66874,
+   "lon": 139.49566
+  },
+  {
+   "type": "node",
+   "id": 281417654,
+   "name": "分倍河原",
+   "kind": "stop",
+   "lat": 35.66847,
+   "lon": 139.4685
+  },
+  {
+   "type": "node",
+   "id": 281417693,
+   "name": "府中",
+   "kind": "stop",
+   "lat": 35.67221,
+   "lon": 139.48014
+  },
+  {
+   "type": "node",
+   "id": 292613513,
+   "name": "大国魂神社西",
+   "kind": "traffic_signals",
+   "lat": 35.6682,
+   "lon": 139.47709
+  },
+  {
+   "type": "node",
+   "id": 292640007,
+   "name": "是政橋北",
+   "kind": null,
+   "lat": 35.65554,
+   "lon": 139.48771
+  },
+  {
+   "type": "node",
+   "id": 304235847,
+   "name": "けやき並木北 (Keyaki Namiki North)",
+   "kind": "traffic_signals",
+   "lat": 35.67562,
+   "lon": 139.47931
+  },
+  {
+   "type": "node",
+   "id": 317208492,
+   "name": "分梅橋",
+   "kind": "traffic_signals",
+   "lat": 35.66331,
+   "lon": 139.46297
+  },
+  {
+   "type": "node",
+   "id": 317208502,
+   "name": "分梅町二丁目",
+   "kind": "traffic_signals",
+   "lat": 35.66425,
+   "lon": 139.46347
+  },
+  {
+   "type": "node",
+   "id": 339082878,
+   "name": "府中競馬正門前",
+   "kind": "stop",
+   "lat": 35.66854,
+   "lon": 139.48493
+  },
+  {
+   "type": "node",
+   "id": 412187504,
+   "name": "競艇場前",
+   "kind": "stop",
+   "lat": 35.65619,
+   "lon": 139.4996
+  },
+  {
+   "type": "node",
+   "id": 412187550,
+   "name": "是政",
+   "kind": "station",
+   "lat": 35.65631,
+   "lon": 139.48932
+  },
+  {
+   "type": "node",
+   "id": 412187585,
+   "name": "白糸台",
+   "kind": "stop",
+   "lat": 35.66651,
+   "lon": 139.50978
+  },
+  {
+   "type": "node",
+   "id": 683445868,
+   "name": "是政駅東",
+   "kind": "traffic_signals",
+   "lat": 35.65633,
+   "lon": 139.48998
+  },
+  {
+   "type": "node",
+   "id": 813341195,
+   "name": "けやき並木北",
+   "kind": "traffic_signals",
+   "lat": 35.67558,
+   "lon": 139.47929
+  },
+  {
+   "type": "node",
+   "id": 1054131520,
+   "name": "郷土の森入口",
+   "kind": "traffic_signals",
+   "lat": 35.65539,
+   "lon": 139.47483
+  },
+  {
+   "type": "node",
+   "id": 1270122934,
+   "name": "是政橋北",
+   "kind": null,
+   "lat": 35.65555,
+   "lon": 139.48786
+  },
+  {
+   "type": "node",
+   "id": 1270286260,
+   "name": "境八王子線 32;是政線 2",
+   "kind": null,
+   "lat": 35.65857,
+   "lon": 139.49645
+  },
+  {
+   "type": "node",
+   "id": 1270286314,
+   "name": "境八王子線 33;是政線 1",
+   "kind": null,
+   "lat": 35.65556,
+   "lon": 139.49427
+  },
+  {
+   "type": "node",
+   "id": 1339086938,
+   "name": "府中消防署　分梅出張所",
+   "kind": "fire_station",
+   "lat": 35.66243,
+   "lon": 139.46236
+  },
+  {
+   "type": "node",
+   "id": 1420773057,
+   "name": "大国魂神社宝物殿",
+   "kind": "museum",
+   "lat": 35.66813,
+   "lon": 139.47859
+  },
+  {
+   "type": "node",
+   "id": 1420779803,
+   "name": "府中分梅郵便局",
+   "kind": "post_office",
+   "lat": 35.66415,
+   "lon": 139.466
+  },
+  {
+   "type": "node",
+   "id": 1420779824,
+   "name": "府中市立是政図書館",
+   "kind": "library",
+   "lat": 35.66087,
+   "lon": 139.49531
+  },
+  {
+   "type": "node",
+   "id": 1420779839,
+   "name": "府中是政郵便局",
+   "kind": "post_office",
+   "lat": 35.65786,
+   "lon": 139.48503
+  },
+  {
+   "type": "node",
+   "id": 1420779845,
+   "name": "府中消防署分梅出張所",
+   "kind": "fire_station",
+   "lat": 35.6624,
+   "lon": 139.46227
+  },
+  {
+   "type": "node",
+   "id": 1420779846,
+   "name": "府中消防署是政出張所",
+   "kind": "fire_station",
+   "lat": 35.66073,
+   "lon": 139.4936
+  },
+  {
+   "type": "node",
+   "id": 1420779864,
+   "name": "府中警察署分梅駐在所",
+   "kind": "police",
+   "lat": 35.66573,
+   "lon": 139.46452
+  },
+  {
+   "type": "node",
+   "id": 1420779887,
+   "name": "府中警察署是政交番",
+   "kind": "police",
+   "lat": 35.65756,
+   "lon": 139.48748
+  },
+  {
+   "type": "node",
+   "id": 1420781590,
+   "name": "是政つくしんぼ保育園",
+   "kind": "kindergarten",
+   "lat": 35.65662,
+   "lon": 139.48324
+  },
+  {
+   "type": "node",
+   "id": 1420781599,
+   "name": "是政保育園",
+   "kind": "kindergarten",
+   "lat": 35.65982,
+   "lon": 139.48901
+  },
+  {
+   "type": "node",
+   "id": 1420781600,
+   "name": "是政児童館",
+   "kind": "community_centre",
+   "lat": 35.66065,
+   "lon": 139.4939
+  },
+  {
+   "type": "node",
+   "id": 1420800632,
+   "name": "ＪＲＡ競馬博物館",
+   "kind": "museum",
+   "lat": 35.66625,
+   "lon": 139.48814
+  },
+  {
+   "type": "node",
+   "id": 1592862539,
+   "name": "郷土の森公園入口",
+   "kind": "traffic_signals",
+   "lat": 35.65659,
+   "lon": 139.47999
+  },
+  {
+   "type": "node",
+   "id": 1639013037,
+   "name": "分梅公園前",
+   "kind": "traffic_signals",
+   "lat": 35.66403,
+   "lon": 139.46577
+  },
+  {
+   "type": "node",
+   "id": 1834010072,
+   "name": "是政出張所西",
+   "kind": "traffic_signals",
+   "lat": 35.661,
+   "lon": 139.49285
+  },
+  {
+   "type": "node",
+   "id": 1835345346,
+   "name": "大国魂神社前",
+   "kind": "traffic_signals",
+   "lat": 35.67001,
+   "lon": 139.47909
+  },
+  {
+   "type": "node",
+   "id": 2118758396,
+   "name": "北府中",
+   "kind": "stop",
+   "lat": 35.68078,
+   "lon": 139.47183
+  },
+  {
+   "type": "node",
+   "id": 2503437177,
+   "name": "是政交番前",
+   "kind": null,
+   "lat": 35.65736,
+   "lon": 139.48743
+  },
+  {
+   "type": "node",
+   "id": 2503444957,
+   "name": "是政五丁目",
+   "kind": "traffic_signals",
+   "lat": 35.6583,
+   "lon": 139.48999
+  },
+  {
+   "type": "node",
+   "id": 2511028439,
+   "name": "是政渡船場跡",
+   "kind": null,
+   "lat": 35.6516,
+   "lon": 139.48858
+  },
+  {
+   "type": "node",
+   "id": 2520694379,
+   "name": "稲城長沼",
+   "kind": "stop",
+   "lat": 35.64435,
+   "lon": 139.50214
+  },
+  {
+   "type": "node",
+   "id": 2526032127,
+   "name": "郷土の森正門前",
+   "kind": "bus_stop",
+   "lat": 35.65598,
+   "lon": 139.4746
+  },
+  {
+   "type": "node",
+   "id": 2655167442,
+   "name": "東京競馬場口",
+   "kind": "train_station_entrance",
+   "lat": 35.66617,
+   "lon": 139.47738
+  },
+  {
+   "type": "node",
+   "id": 3478062925,
+   "name": "郷土の森観光情報センター",
+   "kind": "information",
+   "lat": 35.65598,
+   "lon": 139.47398
+  },
+  {
+   "type": "node",
+   "id": 3491370826,
+   "name": "さえき是政食品館",
+   "kind": null,
+   "lat": 35.65792,
+   "lon": 139.49035
+  },
+  {
+   "type": "node",
+   "id": 3491370827,
+   "name": "ウエルシア府中是政店",
+   "kind": "pharmacy",
+   "lat": 35.65845,
+   "lon": 139.49075
+  },
+  {
+   "type": "node",
+   "id": 3493037991,
+   "name": "分梅駐在所前",
+   "kind": "traffic_signals",
+   "lat": 35.66609,
+   "lon": 139.46473
+  },
+  {
+   "type": "node",
+   "id": 3504850120,
+   "name": "郷土の森総合体育館",
+   "kind": "bus_stop",
+   "lat": 35.65607,
+   "lon": 139.4785
+  },
+  {
+   "type": "node",
+   "id": 3800710089,
+   "name": "北府中",
+   "kind": "stop",
+   "lat": 35.68075,
+   "lon": 139.47169
+  },
+  {
+   "type": "node",
+   "id": 4023297927,
+   "name": "白糸台",
+   "kind": "stop",
+   "lat": 35.66644,
+   "lon": 139.50986
+  },
+  {
+   "type": "node",
+   "id": 4024582545,
+   "name": "府中",
+   "kind": "stop",
+   "lat": 35.67219,
+   "lon": 139.48013
+  },
+  {
+   "type": "node",
+   "id": 4025044112,
+   "name": "分倍河原",
+   "kind": "stop",
+   "lat": 35.66846,
+   "lon": 139.46853
+  },
+  {
+   "type": "node",
+   "id": 4025090800,
+   "name": "分倍河原",
+   "kind": "stop",
+   "lat": 35.66846,
+   "lon": 139.46898
+  },
+  {
+   "type": "node",
+   "id": 4127280089,
+   "name": "稲城長沼",
+   "kind": "stop",
+   "lat": 35.64457,
+   "lon": 139.50226
+  },
+  {
+   "type": "node",
+   "id": 5099891661,
+   "name": "あじさい",
+   "kind": "fast_food",
+   "lat": 35.66941,
+   "lon": 139.49403
+  },
+  {
+   "type": "node",
+   "id": 5502743927,
+   "name": "是政文化センター前",
+   "kind": "traffic_signals",
+   "lat": 35.6612,
+   "lon": 139.49512
+  },
+  {
+   "type": "node",
+   "id": 5503813716,
+   "name": "是政一丁目",
+   "kind": "traffic_signals",
+   "lat": 35.66025,
+   "lon": 139.49029
+  },
+  {
+   "type": "node",
+   "id": 5503813717,
+   "name": "東京競馬場南",
+   "kind": "traffic_signals",
+   "lat": 35.66151,
+   "lon": 139.49033
+  },
+  {
+   "type": "node",
+   "id": 6057309187,
+   "name": "稲城長沼",
+   "kind": "station",
+   "lat": 35.64446,
+   "lon": 139.5022
+  },
+  {
+   "type": "node",
+   "id": 6057309188,
+   "name": "南多摩",
+   "kind": "station",
+   "lat": 35.64928,
+   "lon": 139.4899
+  },
+  {
+   "type": "node",
+   "id": 6449837410,
+   "name": "稲城長沼",
+   "kind": "stop",
+   "lat": 35.64444,
+   "lon": 139.50219
+  },
+  {
+   "type": "node",
+   "id": 6449837411,
+   "name": "稲城長沼",
+   "kind": "stop",
+   "lat": 35.64447,
+   "lon": 139.50221
+  },
+  {
+   "type": "node",
+   "id": 6449837412,
+   "name": "南多摩",
+   "kind": "stop",
+   "lat": 35.64933,
+   "lon": 139.48989
+  },
+  {
+   "type": "node",
+   "id": 6449837413,
+   "name": "南多摩",
+   "kind": "stop",
+   "lat": 35.64923,
+   "lon": 139.4899
+  },
+  {
+   "type": "node",
+   "id": 6449837414,
+   "name": "府中本町",
+   "kind": "stop",
+   "lat": 35.66607,
+   "lon": 139.47694
+  },
+  {
+   "type": "node",
+   "id": 6449837416,
+   "name": "府中本町",
+   "kind": "stop",
+   "lat": 35.66609,
+   "lon": 139.47703
+  },
+  {
+   "type": "node",
+   "id": 6449837417,
+   "name": "府中本町",
+   "kind": "stop",
+   "lat": 35.66612,
+   "lon": 139.47717
+  },
+  {
+   "type": "node",
+   "id": 6449837419,
+   "name": "府中本町",
+   "kind": "stop",
+   "lat": 35.66576,
+   "lon": 139.47746
+  },
+  {
+   "type": "node",
+   "id": 6449866654,
+   "name": "分倍河原",
+   "kind": "station",
+   "lat": 35.66845,
+   "lon": 139.469
+  },
+  {
+   "type": "node",
+   "id": 6449866655,
+   "name": "分倍河原",
+   "kind": "station",
+   "lat": 35.6686,
+   "lon": 139.46856
+  },
+  {
+   "type": "node",
+   "id": 6816018831,
+   "name": "郷土の森正門前",
+   "kind": "bus_stop",
+   "lat": 35.65597,
+   "lon": 139.47448
+  },
+  {
+   "type": "node",
+   "id": 6816092301,
+   "name": "是政",
+   "kind": "bus_stop",
+   "lat": 35.65759,
+   "lon": 139.48713
+  },
+  {
+   "type": "node",
+   "id": 6816092302,
+   "name": "是政",
+   "kind": "bus_stop",
+   "lat": 35.65683,
+   "lon": 139.48756
+  },
+  {
+   "type": "node",
+   "id": 6936843398,
+   "name": "是政",
+   "kind": "stop",
+   "lat": 35.65626,
+   "lon": 139.48939
+  },
+  {
+   "type": "node",
+   "id": 7168610370,
+   "name": "天然記念物馬場大門けやき並木石垣完成記念",
+   "kind": null,
+   "lat": 35.67295,
+   "lon": 139.47928
+  },
+  {
+   "type": "node",
+   "id": 7168610381,
+   "name": "分梅",
+   "kind": null,
+   "lat": 35.66632,
+   "lon": 139.46485
+  },
+  {
+   "type": "node",
+   "id": 7682981674,
+   "name": "府中",
+   "kind": "station",
+   "lat": 35.67222,
+   "lon": 139.48001
+  },
+  {
+   "type": "node",
+   "id": 7683007940,
+   "name": "多磨霊園",
+   "kind": "station",
+   "lat": 35.66611,
+   "lon": 139.50302
+  },
+  {
+   "type": "node",
+   "id": 7683007941,
+   "name": "多磨霊園",
+   "kind": "stop",
+   "lat": 35.66621,
+   "lon": 139.50261
+  },
+  {
+   "type": "node",
+   "id": 7683014978,
+   "name": "東府中",
+   "kind": "station",
+   "lat": 35.6689,
+   "lon": 139.49515
+  },
+  {
+   "type": "node",
+   "id": 7683014979,
+   "name": "東府中",
+   "kind": "stop",
+   "lat": 35.66871,
+   "lon": 139.49564
+  },
+  {
+   "type": "node",
+   "id": 7881229743,
+   "name": "北府中",
+   "kind": "station",
+   "lat": 35.68077,
+   "lon": 139.47175
+  },
+  {
+   "type": "node",
+   "id": 7956324705,
+   "name": "府中競馬正門前",
+   "kind": "station",
+   "lat": 35.66842,
+   "lon": 139.48471
+  },
+  {
+   "type": "node",
+   "id": 8128277680,
+   "name": "白糸台",
+   "kind": "station",
+   "lat": 35.66648,
+   "lon": 139.50981
+  },
+  {
+   "type": "node",
+   "id": 8128277681,
+   "name": "競艇場前",
+   "kind": "station",
+   "lat": 35.65621,
+   "lon": 139.49958
+  },
+  {
+   "type": "node",
+   "id": 8570812667,
+   "name": "是政駅(出入口)",
+   "kind": "train_station_entrance",
+   "lat": 35.65635,
+   "lon": 139.48882
+  },
+  {
+   "type": "node",
+   "id": 8835988278,
+   "name": "是政四丁目",
+   "kind": null,
+   "lat": 35.65559,
+   "lon": 139.49384
+  },
+  {
+   "type": "node",
+   "id": 8835988279,
+   "name": "分梅町五丁目",
+   "kind": null,
+   "lat": 35.66187,
+   "lon": 139.46331
+  },
+  {
+   "type": "node",
+   "id": 8835988303,
+   "name": "是政一丁目",
+   "kind": null,
+   "lat": 35.66242,
+   "lon": 139.49453
+  },
+  {
+   "type": "node",
+   "id": 8835988304,
+   "name": "分梅町二丁目",
+   "kind": null,
+   "lat": 35.6645,
+   "lon": 139.46545
+  },
+  {
+   "type": "node",
+   "id": 8836007035,
+   "name": "是政三丁目",
+   "kind": null,
+   "lat": 35.65917,
+   "lon": 139.48553
+  },
+  {
+   "type": "node",
+   "id": 8836007036,
+   "name": "分梅町四丁目",
+   "kind": null,
+   "lat": 35.66449,
+   "lon": 139.4612
+  },
+  {
+   "type": "node",
+   "id": 8836007061,
+   "name": "分梅町一丁目",
+   "kind": null,
+   "lat": 35.66759,
+   "lon": 139.46574
+  },
+  {
+   "type": "node",
+   "id": 8836007065,
+   "name": "是政五丁目",
+   "kind": null,
+   "lat": 35.65533,
+   "lon": 139.4854
+  },
+  {
+   "type": "node",
+   "id": 8836007091,
+   "name": "是政二丁目",
+   "kind": null,
+   "lat": 35.65991,
+   "lon": 139.4945
+  },
+  {
+   "type": "node",
+   "id": 8836007092,
+   "name": "分梅町三丁目",
+   "kind": null,
+   "lat": 35.66663,
+   "lon": 139.46146
+  },
+  {
+   "type": "node",
+   "id": 8836007095,
+   "name": "是政六丁目",
+   "kind": null,
+   "lat": 35.654,
+   "lon": 139.47823
+  },
+  {
+   "type": "node",
+   "id": 9152007032,
+   "name": "東京競馬場前",
+   "kind": null,
+   "lat": 35.66391,
+   "lon": 139.47681
+  },
+  {
+   "type": "node",
+   "id": 9164390139,
+   "name": "是政駅",
+   "kind": "bus_stop",
+   "lat": 35.65645,
+   "lon": 139.489
+  },
+  {
+   "type": "node",
+   "id": 9164390148,
+   "name": "是政文化センター",
+   "kind": "bus_stop",
+   "lat": 35.66043,
+   "lon": 139.49519
+  },
+  {
+   "type": "node",
+   "id": 9166597921,
+   "name": "是政二丁目北",
+   "kind": "bus_stop",
+   "lat": 35.66041,
+   "lon": 139.497
+  },
+  {
+   "type": "node",
+   "id": 9166597927,
+   "name": "是政二丁目",
+   "kind": "bus_stop",
+   "lat": 35.65958,
+   "lon": 139.49827
+  },
+  {
+   "type": "node",
+   "id": 9168392025,
+   "name": "是政",
+   "kind": "bus_stop",
+   "lat": 35.65641,
+   "lon": 139.48751
+  },
+  {
+   "type": "node",
+   "id": 9168392030,
+   "name": "是政五丁目",
+   "kind": "bus_stop",
+   "lat": 35.65788,
+   "lon": 139.48858
+  },
+  {
+   "type": "node",
+   "id": 9544422209,
+   "name": "是政橋南",
+   "kind": "traffic_signals",
+   "lat": 35.65181,
+   "lon": 139.48821
+  },
+  {
+   "type": "node",
+   "id": 9544422210,
+   "name": "是政橋南",
+   "kind": "traffic_signals",
+   "lat": 35.65179,
+   "lon": 139.48806
+  },
+  {
+   "type": "node",
+   "id": 10023210189,
+   "name": "府中競馬正門前",
+   "kind": "stop",
+   "lat": 35.6683,
+   "lon": 139.48528
+  },
+  {
+   "type": "node",
+   "id": 11040587987,
+   "name": "セブンイレブン 府中是政1丁目店",
+   "kind": "bicycle_rental",
+   "lat": 35.6617,
+   "lon": 139.49307
+  },
+  {
+   "type": "node",
+   "id": 11040587999,
+   "name": "セブンイレブン 府中分梅通り店",
+   "kind": "bicycle_rental",
+   "lat": 35.66537,
+   "lon": 139.46382
+  },
+  {
+   "type": "node",
+   "id": 11040589017,
+   "name": "ファミリーマート 府中是政店",
+   "kind": "bicycle_rental",
+   "lat": 35.66248,
+   "lon": 139.49434
+  },
+  {
+   "type": "node",
+   "id": 11040589204,
+   "name": "分梅橋公園",
+   "kind": "bicycle_rental",
+   "lat": 35.66336,
+   "lon": 139.46284
+  },
+  {
+   "type": "node",
+   "id": 11040589213,
+   "name": "二ヶ村緑道（是政）",
+   "kind": "bicycle_rental",
+   "lat": 35.65723,
+   "lon": 139.4869
+  },
+  {
+   "type": "node",
+   "id": 11040589237,
+   "name": "郷土の森観光物産館",
+   "kind": "bicycle_rental",
+   "lat": 35.65611,
+   "lon": 139.47431
+  },
+  {
+   "type": "node",
+   "id": 11561200645,
+   "name": "武蔵野の路　是政・昭島コース",
+   "kind": "information",
+   "lat": 35.65336,
+   "lon": 139.47552
+  },
+  {
+   "type": "node",
+   "id": 11561200646,
+   "name": "郷土の森公園",
+   "kind": "information",
+   "lat": 35.65501,
+   "lon": 139.47832
+  },
+  {
+   "type": "node",
+   "id": 12298788734,
+   "name": "府中フォレストメゾン是政",
+   "kind": "bicycle_rental",
+   "lat": 35.65582,
+   "lon": 139.48702
+  },
+  {
+   "type": "node",
+   "id": 12682697930,
+   "name": "是政三丁目南",
+   "kind": "traffic_signals",
+   "lat": 35.6585,
+   "lon": 139.48361
+  },
+  {
+   "type": "node",
+   "id": 13109040230,
+   "name": "競馬博物館",
+   "kind": "bus_stop",
+   "lat": 35.66701,
+   "lon": 139.48748
+  },
+  {
+   "type": "node",
+   "id": 13109040231,
+   "name": "競馬博物館",
+   "kind": "bus_stop",
+   "lat": 35.66711,
+   "lon": 139.4881
+  },
+  {
+   "type": "node",
+   "id": 13110092878,
+   "name": "是政一丁目",
+   "kind": "bus_stop",
+   "lat": 35.66168,
+   "lon": 139.49313
+  },
+  {
+   "type": "node",
+   "id": 13110092879,
+   "name": "是政一丁目",
+   "kind": "bus_stop",
+   "lat": 35.6617,
+   "lon": 139.4933
+  },
+  {
+   "type": "node",
+   "id": 13115824277,
+   "name": "東府中",
+   "kind": "stop",
+   "lat": 35.66877,
+   "lon": 139.49507
+  },
+  {
+   "type": "node",
+   "id": 13116856381,
+   "name": "郷土の森西",
+   "kind": "bus_stop",
+   "lat": 35.65597,
+   "lon": 139.46934
+  },
+  {
+   "type": "node",
+   "id": 13116856385,
+   "name": "郷土の森西",
+   "kind": "bus_stop",
+   "lat": 35.65608,
+   "lon": 139.46861
+  },
+  {
+   "type": "node",
+   "id": 13190051655,
+   "name": "ローソン 府中分梅町五丁目店",
+   "kind": "bicycle_rental",
+   "lat": 35.66267,
+   "lon": 139.46231
+  },
+  {
+   "type": "node",
+   "id": 13190051738,
+   "name": "分梅第六公園",
+   "kind": "bicycle_rental",
+   "lat": 35.66525,
+   "lon": 139.46157
+  },
+  {
+   "type": "node",
+   "id": 13695304027,
+   "name": "是政六丁目",
+   "kind": "bus_stop",
+   "lat": 35.65527,
+   "lon": 139.48107
+  },
+  {
+   "type": "node",
+   "id": 13697362752,
+   "name": "是政駅",
+   "kind": "bus_stop",
+   "lat": 35.6564,
+   "lon": 139.48816
+  },
+  {
+   "type": "node",
+   "id": 13722933632,
+   "name": "是政2丁目駐車場",
+   "kind": "bicycle_rental",
+   "lat": 35.65897,
+   "lon": 139.49167
+  },
+  {
+   "type": "node",
+   "id": 13772969490,
+   "name": "分梅町一丁目",
+   "kind": "bus_stop",
+   "lat": 35.66722,
+   "lon": 139.46298
+  },
+  {
+   "type": "node",
+   "id": 13772969491,
+   "name": "分梅町一丁目",
+   "kind": "bus_stop",
+   "lat": 35.66735,
+   "lon": 139.46236
+  },
+  {
+   "type": "node",
+   "id": 14260065401,
+   "name": "府中分梅郵便局前",
+   "kind": "post_box",
+   "lat": 35.66408,
+   "lon": 139.46598
+  },
+  {
+   "type": "way",
+   "id": 28852111,
+   "name": "分梅通り",
+   "kind": "unclassified",
+   "lat": 35.67163,
+   "lon": 139.46577
+  },
+  {
+   "type": "way",
+   "id": 28972119,
+   "name": "是政通り",
+   "kind": "unclassified",
+   "lat": 35.66011,
+   "lon": 139.49027
+  },
+  {
+   "type": "way",
+   "id": 91524578,
+   "name": "府中郷土の森博物館",
+   "kind": "museum",
+   "lat": 35.65519,
+   "lon": 139.47256
+  },
+  {
+   "type": "way",
+   "id": 111512975,
+   "name": "境八王子線;是政線",
+   "kind": null,
+   "lat": 35.65507,
+   "lon": 139.49376
+  },
+  {
+   "type": "way",
+   "id": 111746015,
+   "name": "是政八幡神社",
+   "kind": "place_of_worship",
+   "lat": 35.65932,
+   "lon": 139.48816
+  },
+  {
+   "type": "way",
+   "id": 164987279,
+   "name": "是政通り",
+   "kind": "unclassified",
+   "lat": 35.6593,
+   "lon": 139.49006
+  },
+  {
+   "type": "way",
+   "id": 172007556,
+   "name": "大國魂神社",
+   "kind": "place_of_worship",
+   "lat": 35.6675,
+   "lon": 139.47897
+  },
+  {
+   "type": "way",
+   "id": 172050737,
+   "name": "東京競馬場連絡歩道橋",
+   "kind": "pedestrian",
+   "lat": 35.66727,
+   "lon": 139.48469
+  },
+  {
+   "type": "way",
+   "id": 172406837,
+   "name": "郷土の森総合体育館",
+   "kind": "sports_centre",
+   "lat": 35.65567,
+   "lon": 139.47743
+  },
+  {
+   "type": "way",
+   "id": 172407311,
+   "name": "府中市郷土の森博物館本館",
+   "kind": "museum",
+   "lat": 35.65669,
+   "lon": 139.47317
+  },
+  {
+   "type": "way",
+   "id": 172499485,
+   "name": "分梅通り",
+   "kind": "tertiary",
+   "lat": 35.6685,
+   "lon": 139.46513
+  },
+  {
+   "type": "way",
+   "id": 172519767,
+   "name": "分梅通り",
+   "kind": "tertiary",
+   "lat": 35.67042,
+   "lon": 139.46553
+  },
+  {
+   "type": "way",
+   "id": 172905902,
+   "name": "分梅通り",
+   "kind": "tertiary",
+   "lat": 35.66694,
+   "lon": 139.46485
+  },
+  {
+   "type": "way",
+   "id": 216951272,
+   "name": "是政通り",
+   "kind": "unclassified",
+   "lat": 35.65747,
+   "lon": 139.48999
+  },
+  {
+   "type": "way",
+   "id": 233586759,
+   "name": "是政通り",
+   "kind": "tertiary",
+   "lat": 35.66488,
+   "lon": 139.49052
+  },
+  {
+   "type": "way",
+   "id": 269984040,
+   "name": "けやき並木",
+   "kind": "secondary",
+   "lat": 35.6744,
+   "lon": 139.47925
+  },
+  {
+   "type": "way",
+   "id": 340301272,
+   "name": "梅欅庵",
+   "kind": null,
+   "lat": 35.65589,
+   "lon": 139.47327
+  },
+  {
+   "type": "way",
+   "id": 340301282,
+   "name": "けやき並木",
+   "kind": "pedestrian",
+   "lat": 35.65593,
+   "lon": 139.47315
+  },
+  {
+   "type": "way",
+   "id": 340554609,
+   "name": "是政文化センター",
+   "kind": "community_centre",
+   "lat": 35.66085,
+   "lon": 139.49529
+  },
+  {
+   "type": "way",
+   "id": 340566657,
+   "name": "郷土の森観光物産館",
+   "kind": null,
+   "lat": 35.65594,
+   "lon": 139.474
+  },
+  {
+   "type": "way",
+   "id": 343136101,
+   "name": "郷土の森総合プール",
+   "kind": "swimming_pool",
+   "lat": 35.65667,
+   "lon": 139.47631
+  },
+  {
+   "type": "way",
+   "id": 343136841,
+   "name": "郷土の森庭球場",
+   "kind": "pitch",
+   "lat": 35.6545,
+   "lon": 139.47747
+  },
+  {
+   "type": "way",
+   "id": 343145803,
+   "name": "府中市郷土の森公園",
+   "kind": "park",
+   "lat": 35.65527,
+   "lon": 139.47465
+  },
+  {
+   "type": "way",
+   "id": 343440983,
+   "name": "多摩川是政公園",
+   "kind": "park",
+   "lat": 35.65555,
+   "lon": 139.48344
+  },
+  {
+   "type": "way",
+   "id": 360334799,
+   "name": "けやき並木",
+   "kind": "secondary",
+   "lat": 35.67161,
+   "lon": 139.47915
+  },
+  {
+   "type": "way",
+   "id": 461296107,
+   "name": "是政第四公園",
+   "kind": "park",
+   "lat": 35.65699,
+   "lon": 139.48959
+  },
+  {
+   "type": "way",
+   "id": 554756846,
+   "name": "東京競馬場乗馬センター",
+   "kind": "horse_riding",
+   "lat": 35.66535,
+   "lon": 139.48957
+  },
+  {
+   "type": "way",
+   "id": 572899138,
+   "name": "是政通り",
+   "kind": "tertiary",
+   "lat": 35.66185,
+   "lon": 139.49053
+  },
+  {
+   "type": "way",
+   "id": 859299552,
+   "name": "京王電鉄競馬場線;府中競馬正門前;1番線",
+   "kind": "rail",
+   "lat": 35.66831,
+   "lon": 139.486
+  },
+  {
+   "type": "way",
+   "id": 859299554,
+   "name": "京王電鉄競馬場線;府中競馬正門前;2番線",
+   "kind": "rail",
+   "lat": 35.66848,
+   "lon": 139.48583
+  },
+  {
+   "type": "way",
+   "id": 992325008,
+   "name": "是政緑道",
+   "kind": "cycleway",
+   "lat": 35.65937,
+   "lon": 139.49705
+  },
+  {
+   "type": "way",
+   "id": 1059282061,
+   "name": "分梅通り(美好町交番前)",
+   "kind": "unclassified",
+   "lat": 35.67271,
+   "lon": 139.46593
+  },
+  {
+   "type": "way",
+   "id": 1059282065,
+   "name": "分梅通り",
+   "kind": "unclassified",
+   "lat": 35.67238,
+   "lon": 139.46592
+  },
+  {
+   "type": "way",
+   "id": 1380825248,
+   "name": "是政線",
+   "kind": null,
+   "lat": 35.65865,
+   "lon": 139.49653
+  },
+  {
+   "type": "way",
+   "id": 1380825249,
+   "name": "是政線",
+   "kind": null,
+   "lat": 35.65863,
+   "lon": 139.49656
+  },
+  {
+   "type": "way",
+   "id": 1380825252,
+   "name": "大丸線;是政線",
+   "kind": null,
+   "lat": 35.65156,
+   "lon": 139.49109
+  },
+  {
+   "type": "way",
+   "id": 1380825257,
+   "name": "大丸線;是政線",
+   "kind": null,
+   "lat": 35.65159,
+   "lon": 139.49104
+  },
+  {
+   "type": "way",
+   "id": 1383323507,
+   "name": "東是政線",
+   "kind": null,
+   "lat": 35.65893,
+   "lon": 139.49815
+  },
+  {
+   "type": "way",
+   "id": 1383323508,
+   "name": "東是政線",
+   "kind": null,
+   "lat": 35.65911,
+   "lon": 139.49507
+  },
+  {
+   "type": "way",
+   "id": 1383323509,
+   "name": "東是政線",
+   "kind": null,
+   "lat": 35.65867,
+   "lon": 139.4977
+  },
+  {
+   "type": "way",
+   "id": 1383323510,
+   "name": "東是政線",
+   "kind": null,
+   "lat": 35.6588,
+   "lon": 139.49885
+  },
+  {
+   "type": "way",
+   "id": 1428386811,
+   "name": "市営第五是政住宅",
+   "kind": null,
+   "lat": 35.65641,
+   "lon": 139.48456
+  },
+  {
+   "type": "relation",
+   "id": 8129848,
+   "name": "東京競馬場",
+   "kind": "stadium",
+   "lat": 35.66367,
+   "lon": 139.48674
+  },
+  {
+   "type": "relation",
+   "id": 11688125,
+   "name": "京王競馬場線 : 東府中→府中競馬正門前",
+   "kind": null,
+   "lat": 35.66881,
+   "lon": 139.49072
+  },
+  {
+   "type": "relation",
+   "id": 11688126,
+   "name": "府中競馬正門前",
+   "kind": null,
+   "lat": 35.66829,
+   "lon": 139.48481
+  },
+  {
+   "type": "relation",
+   "id": 11688294,
+   "name": "京王競馬場線 : 府中競馬正門前→東府中",
+   "kind": null,
+   "lat": 35.66886,
+   "lon": 139.49067
+  },
+  {
+   "type": "relation",
+   "id": 11901883,
+   "name": "是政",
+   "kind": null,
+   "lat": 35.65629,
+   "lon": 139.48935
+  },
+  {
+   "type": "relation",
+   "id": 17506922,
+   "name": "是政橋",
+   "kind": null,
+   "lat": 35.65364,
+   "lon": 139.48794
+  },
+  {
+   "type": "relation",
+   "id": 19032940,
+   "name": "是政線",
+   "kind": null,
+   "lat": 35.65515,
+   "lon": 139.49386
+  },
+  {
+   "type": "relation",
+   "id": 19565141,
+   "name": "是政循環",
+   "kind": null,
+   "lat": 35.66414,
+   "lon": 139.48968
+  },
+  {
+   "type": "relation",
+   "id": 20394870,
+   "name": "郷土の森ルート",
+   "kind": null,
+   "lat": 35.66382,
+   "lon": 139.48435
+  }
+ ]
+}
