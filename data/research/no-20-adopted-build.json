@@ -1,0 +1,57 @@
+{
+  "generatedAt": "2026-11-15T21:27:21.659Z",
+  "method": "Valhalla pedestrian; exact geometry edge repeat is only a screening clue",
+  "results": [
+    {
+      "variant": "standard",
+      "distanceM": 1600,
+      "engineDistanceM": 1600,
+      "repeatedGeometryM": 259,
+      "repeatedGeometryPct": 16.2,
+      "waypoints": [
+        {
+          "id": "futakotamagawa",
+          "label": "二子玉川駅",
+          "coord": [
+            35.6119741,
+            139.6268107
+          ],
+          "source": "OSM station 二子玉川"
+        },
+        {
+          "id": "hyogojima",
+          "label": "兵庫島公園",
+          "coord": [
+            35.6117733,
+            139.6241269
+          ],
+          "source": "OSM information 兵庫島公園案内図"
+        },
+        {
+          "id": "futakobashi",
+          "label": "二子橋",
+          "coord": [
+            35.6080081,
+            139.6232503
+          ],
+          "source": "OSM node 297176384 二子橋"
+        },
+        {
+          "id": "futako_shinchi",
+          "label": "二子新地駅",
+          "coord": [
+            35.6071352,
+            139.6225383
+          ],
+          "source": "OSM station 二子新地"
+        }
+      ],
+      "legDistancesKm": [
+        0.43,
+        0.97,
+        0.2
+      ],
+      "geometryUrl": "data/routes/no-20-standard.geojson"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "id": "No.20",
+  "buildFile": "data/research/no-20-adopted-build.json",
+  "title": "二子玉川 多摩川水辺",
+  "summary": "二子玉川駅から兵庫島公園、二子橋を渡って二子新地駅へ抜ける短い駅間。旧案の多摩川左岸遊歩道の上流往復は座標を作る必要があるため採らない。",
+  "themes": [
+    "川",
+    "公園",
+    "橋",
+    "水辺"
+  ],
+  "routeReasons": {
+    "standard": "二子玉川駅から兵庫島公園、二子橋を通り、多摩川を渡って二子新地駅へ。計算上1.60km。多摩川左岸遊歩道の位置は未確認のため、経由点に含めていない。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
+    "extended": "B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。"
+  },
+  "distanceExceptions": {
+    "standard": "1.60km。橋を渡る短い駅間で5〜6kmに届かない。旧案の上流往復は距離合わせになるため採らない。"
+  },
+  "retraceExceptions": {
+    "standard": "兵庫島公園付近で約170m、約90m（計約259m）。島へ渡る橋と駅側の園路を行き来する形と推定。地図で未確認。"
+  },
+  "rainy": {
+    "verificationStatus": "researched",
+    "summary": "雨の日は二子玉川ライズの屋内通路と店舗を中心にする案。",
+    "segments": [
+      {
+        "kind": "walk_indoor",
+        "from": "二子玉川駅",
+        "to": "二子玉川ライズ",
+        "distanceM": null,
+        "note": "駅直結の屋内動線。連続性は未確認。"
+      },
+      {
+        "kind": "walk_outdoor",
+        "from": "兵庫島公園",
+        "to": "二子橋",
+        "distanceM": null,
+        "note": "屋根なし。傘が必要。"
+      },
+      {
+        "kind": "rail",
+        "from": "二子新地駅",
+        "to": "二子玉川駅",
+        "distanceM": null,
+        "note": "東急田園都市線。"
+      }
+    ],
+    "conditions": [
+      "商業施設の営業時間は当日確認。",
+      "多摩川沿いは強風・増水時に立入規制がある。"
+    ]
+  },
+  "evidence": [
+    {
+      "type": "community",
+      "title": "OpenStreetMap（二子玉川駅・兵庫島公園・二子橋・二子新地駅）",
+      "url": "https://www.openstreetmap.org/",
+      "checkedAt": "2026-11-16",
+      "supports": "駅・施設・公園の名称ノードの座標。入口ではない。"
+    },
+    {
+      "type": "community",
+      "title": "旧資料 No.20（先行ページ index.html）",
+      "url": null,
+      "checkedAt": "2026-11-16",
+      "supports": "旧案の立ち寄り先。多摩川左岸の上流往復は採用していない。"
+    }
+  ],
+  "openQuestions": [
+    "多摩川左岸遊歩道の位置と二子橋下の通行条件",
+    "兵庫島公園の入口と島内の園路",
+    "二子橋の歩道の幅と自転車との区分"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+ "futakotamagawa": {
+  "snapped": [
+   35.6119741,
+   139.6268107
+  ],
+  "movedM": 20,
+  "wayId": 701469631
+ },
+ "tama_suijin": {
+  "snapped": [
+   35.6114025,
+   139.6244385
+  ],
+  "movedM": 4,
+  "wayId": 35948812
+ },
+ "hyogojima": {
+  "snapped": [
+   35.6117733,
+   139.6241269
+  ],
+  "movedM": 4,
+  "wayId": 47376966
+ },
+ "futako_park": {
+  "snapped": [
+   35.6084038,
+   139.6316674
+  ],
+  "movedM": 3,
+  "wayId": 367977673
+ },
+ "futakobashi": {
+  "snapped": [
+   35.6080081,
+   139.6232503
+  ],
+  "movedM": 2,
+  "wayId": 27513347
+ },
+ "futako_shinchi": {
+  "snapped": [
+   35.6071352,
+   139.6225383
+  ],
+  "movedM": 11,
+  "wayId": 759442201
+ }
+}

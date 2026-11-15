@@ -1,0 +1,43 @@
+{
+  "id": "No.19",
+  "title": "神宮外苑と国立競技場",
+  "stage": "source_research_in_progress",
+  "checkedAt": "2026-11-16",
+  "evidence": [
+    {
+      "type": "community",
+      "title": "OpenStreetMap（信濃町駅・絵画館・国立競技場・外苑前駅・青山一丁目駅）",
+      "url": "https://www.openstreetmap.org/",
+      "checkedAt": "2026-11-16",
+      "supports": "駅・施設・公園の名称ノードの座標。入口ではない。"
+    },
+    {
+      "type": "community",
+      "title": "旧資料 No.19（先行ページ index.html）",
+      "url": null,
+      "checkedAt": "2026-11-16",
+      "supports": "旧案の立ち寄り先。六本木七丁目方面の往復延伸は採用していない。"
+    }
+  ],
+  "trials": [
+    {
+      "n": 1,
+      "variant": "A 新規（OSMの駅・地点）",
+      "result": "3.21km・反復272m",
+      "finding": "国立競技場から絵画館へ向かう区間で約246m、絵画館前で約21mが重なる（計約272m）。競技場の周回路と絵画館前の広場を行き来する形と推定。地図で未確認。"
+    }
+  ],
+  "files": [
+    "scripts/lib-rebuild.mjs",
+    "scripts/build-group4.mjs",
+    "data/curated/no-19.json",
+    "data/research/no-19-adopted-build.json"
+  ],
+  "openQuestions": [
+    "国立競技場の外周の空中散歩道の開放状況",
+    "絵画館前通りの歩行者区分とイベント時の規制",
+    "外苑前駅から青山一丁目駅までの歩道",
+    "神宮外苑の再開発に伴う工事・通行規制の有無"
+  ],
+  "decision": "2026-11-16 新Aを計算（3.21km・反復272m）。旧案の迎賓館前の外周と往復延伸は不採用。"
+}

@@ -1,0 +1,43 @@
+{
+  "id": "No.21",
+  "title": "川越 蔵造りの町並み",
+  "stage": "source_research_in_progress",
+  "checkedAt": "2026-11-16",
+  "evidence": [
+    {
+      "type": "community",
+      "title": "OpenStreetMap（本川越駅・菓子屋横丁・川越一番街・時の鐘・喜多院・川越氷川神社・川越城本丸御殿・川越駅）",
+      "url": "https://www.openstreetmap.org/",
+      "checkedAt": "2026-11-16",
+      "supports": "駅・施設・公園の名称ノードの座標。入口ではない。"
+    },
+    {
+      "type": "community",
+      "title": "旧資料 No.21（先行ページ index.html）",
+      "url": null,
+      "checkedAt": "2026-11-16",
+      "supports": "旧案の立ち寄り先。"
+    }
+  ],
+  "trials": [
+    {
+      "n": 1,
+      "variant": "A 新規（OSMの駅・地点）",
+      "result": "7.25km・反復427m",
+      "finding": "菓子屋横丁から一番街へ向かう区間で約188m、氷川神社付近で約114m、喜多院の入口で約6m（計約427m）。路地と大通りの行き来と、境内の出入りと推定。地図で未確認。"
+    }
+  ],
+  "files": [
+    "scripts/lib-rebuild.mjs",
+    "scripts/build-group4.mjs",
+    "data/curated/no-21.json",
+    "data/research/no-21-adopted-build.json"
+  ],
+  "openQuestions": [
+    "新河岸川遊歩道の位置",
+    "喜多院の拝観時間・境内の通り抜け可否",
+    "大正浪漫夢通りの座標（OSMに名称ノードなし）",
+    "川越氷川神社から川越駅への経路"
+  ],
+  "decision": "2026-11-16 新Aを計算（7.25km・反復427m）。旧案の昼食と新河岸川遊歩道は含めていない。"
+}

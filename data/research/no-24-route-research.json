@@ -1,0 +1,43 @@
+{
+  "id": "No.24",
+  "title": "東京ミッドタウンと檜町公園",
+  "stage": "source_research_in_progress",
+  "checkedAt": "2026-11-16",
+  "evidence": [
+    {
+      "type": "community",
+      "title": "OpenStreetMap（六本木駅・サントリー美術館・21_21 DESIGN SIGHT・檜町公園・乃木神社・乃木坂駅）",
+      "url": "https://www.openstreetmap.org/",
+      "checkedAt": "2026-11-16",
+      "supports": "駅・施設・公園の名称ノードの座標。入口ではない。"
+    },
+    {
+      "type": "community",
+      "title": "旧資料 No.24（先行ページ index.html）",
+      "url": null,
+      "checkedAt": "2026-11-16",
+      "supports": "旧案の立ち寄り先。"
+    }
+  ],
+  "trials": [
+    {
+      "n": 1,
+      "variant": "A 新規（OSMの駅・地点）",
+      "result": "2.27km・反復128m",
+      "finding": "乃木神社付近で約81m、檜町公園付近で約40m、21_21 DESIGN SIGHT前で約7m（計約128m）。施設の出入口が道路側へ戻る形と推定。地図で未確認。"
+    }
+  ],
+  "files": [
+    "scripts/lib-rebuild.mjs",
+    "scripts/build-group4.mjs",
+    "data/curated/no-24.json",
+    "data/research/no-24-adopted-build.json"
+  ],
+  "openQuestions": [
+    "東京ミッドタウン ガレリアの屋内動線と開館時間",
+    "檜町公園の入口",
+    "乃木神社の参道の入口",
+    "21_21 DESIGN SIGHTの会期と入場条件"
+  ],
+  "decision": "2026-11-16 新Aを計算（2.27km・反復128m）。旧案の昼食と館内見学は案から外した。"
+}

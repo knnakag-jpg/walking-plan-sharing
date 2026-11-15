@@ -1,0 +1,58 @@
+{
+ "shiodome": {
+  "snapped": [
+   35.664592,
+   139.760623
+  ],
+  "movedM": 12,
+  "wayId": 431525055
+ },
+ "suijo_bus": {
+  "snapped": [
+   35.6601987,
+   139.7672897
+  ],
+  "movedM": 0,
+  "wayId": 1384496876
+ },
+ "hinode": {
+  "snapped": [
+   35.6513705,
+   139.7607894
+  ],
+  "movedM": 15,
+  "wayId": 58963005
+ },
+ "kyu_shiba": {
+  "snapped": [
+   35.6549169,
+   139.75867
+  ],
+  "movedM": 11,
+  "wayId": 637325901
+ },
+ "hamamatsucho": {
+  "snapped": [
+   35.6552,
+   139.756867
+  ],
+  "movedM": 19,
+  "wayId": 670567663
+ },
+ "hamarikyu": {
+  "snapped": [
+   35.6634403,
+   139.7636359
+  ],
+  "movedM": 3,
+  "wayId": 103743021
+ },
+ "takeshiba": {
+  "snapped": [
+   35.6549548,
+   139.7624424
+  ],
+  "movedM": 1,
+  "wayId": 25868299
+ }
+}

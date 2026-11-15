@@ -1,0 +1,83 @@
+{
+  "calculatedAt": "2026-11-15T21:26:18.805Z",
+  "engine": "valhalla-pedestrian",
+  "variants": {
+    "standard": {
+      "label": "standard",
+      "distanceM": 2271,
+      "engineDistanceM": 2280,
+      "repeatedGeometryM": 128,
+      "repeatedGeometryPct": 5.7,
+      "legKm": [
+        0.62,
+        0.12,
+        0.26,
+        0.76,
+        0.52
+      ],
+      "geometryUrl": "data/routes/no-24-standard.geojson",
+      "stops": [
+        {
+          "id": "roppongi",
+          "label": "六本木駅",
+          "coord": [
+            35.663315,
+            139.7327813
+          ],
+          "source": "OSM subway_entrance 六本木",
+          "offsetM": 0
+        },
+        {
+          "id": "suntory",
+          "label": "サントリー美術館",
+          "coord": [
+            35.6666887,
+            139.7303007
+          ],
+          "source": "OSM museum サントリー美術館",
+          "offsetM": 0
+        },
+        {
+          "id": "dsign",
+          "label": "21_21 DESIGN SIGHT",
+          "coord": [
+            35.6673905,
+            139.7304686
+          ],
+          "source": "OSM museum 21_21 Design Sight",
+          "offsetM": 0
+        },
+        {
+          "id": "hinokicho",
+          "label": "檜町公園",
+          "coord": [
+            35.6668572,
+            139.7326161
+          ],
+          "source": "OSM park 檜町公園",
+          "offsetM": 0
+        },
+        {
+          "id": "nogi",
+          "label": "乃木神社",
+          "coord": [
+            35.6685988,
+            139.7280207
+          ],
+          "source": "OSM place_of_worship 乃木神社",
+          "offsetM": 0
+        },
+        {
+          "id": "nogizaka",
+          "label": "乃木坂駅",
+          "coord": [
+            35.665617,
+            139.7249
+          ],
+          "source": "OSM subway_entrance 乃木坂駅",
+          "offsetM": 5
+        }
+      ]
+    }
+  }
+}

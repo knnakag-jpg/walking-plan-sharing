@@ -1,0 +1,97 @@
+{
+  "generatedAt": "2026-11-15T21:24:26.607Z",
+  "method": "Valhalla pedestrian; exact geometry edge repeat is only a screening clue",
+  "results": [
+    {
+      "variant": "standard",
+      "distanceM": 7254,
+      "engineDistanceM": 7257,
+      "repeatedGeometryM": 427,
+      "repeatedGeometryPct": 5.9,
+      "waypoints": [
+        {
+          "id": "hon_kawagoe",
+          "label": "本川越駅",
+          "coord": [
+            35.9139925,
+            139.4810704
+          ],
+          "source": "OSM stop 本川越"
+        },
+        {
+          "id": "kashiya",
+          "label": "菓子屋横丁",
+          "coord": [
+            35.9251449,
+            139.4806653
+          ],
+          "source": "OSM node 6390720633 菓子屋横丁"
+        },
+        {
+          "id": "ichibangai",
+          "label": "川越一番街商店街（蔵造りの町並み）",
+          "coord": [
+            35.9235447,
+            139.4829264
+          ],
+          "source": "OSM attraction 川越一番街商店街"
+        },
+        {
+          "id": "tokinokane",
+          "label": "時の鐘",
+          "coord": [
+            35.9234264,
+            139.4829112
+          ],
+          "source": "OSM node 243887217 時の鐘入口"
+        },
+        {
+          "id": "kitain",
+          "label": "喜多院",
+          "coord": [
+            35.9196955,
+            139.4901083
+          ],
+          "source": "OSM node 243831165 喜多院入口"
+        },
+        {
+          "id": "kawagoe_hikawa",
+          "label": "川越氷川神社",
+          "coord": [
+            35.9272862,
+            139.488017
+          ],
+          "source": "OSM node 7345034522 川越氷川神社"
+        },
+        {
+          "id": "kawagoe_castle",
+          "label": "川越城本丸御殿",
+          "coord": [
+            35.9242949,
+            139.4918697
+          ],
+          "source": "OSM museum 川越城本丸御殿"
+        },
+        {
+          "id": "kawagoe",
+          "label": "川越駅",
+          "coord": [
+            35.9071296,
+            139.4832674
+          ],
+          "source": "OSM stop 川越"
+        }
+      ],
+      "legDistancesKm": [
+        1.48,
+        0.35,
+        0.01,
+        1.03,
+        1.02,
+        0.72,
+        2.64
+      ],
+      "geometryUrl": "data/routes/no-21-standard.geojson"
+    }
+  ]
+}

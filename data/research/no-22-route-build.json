@@ -1,0 +1,72 @@
+{
+  "calculatedAt": "2026-11-15T21:30:17.814Z",
+  "engine": "valhalla-pedestrian",
+  "variants": {
+    "standard": {
+      "label": "standard",
+      "distanceM": 2904,
+      "engineDistanceM": 2910,
+      "repeatedGeometryM": 246,
+      "repeatedGeometryPct": 8.5,
+      "legKm": [
+        0.54,
+        1.19,
+        0.7,
+        0.47
+      ],
+      "geometryUrl": "data/routes/no-22-standard.geojson",
+      "stops": [
+        {
+          "id": "shiodome",
+          "label": "汐留SIO-SITE",
+          "coord": [
+            35.664592,
+            139.760623
+          ],
+          "source": "OSM attraction 汐留SIO-SITE",
+          "offsetM": 5
+        },
+        {
+          "id": "hamarikyu",
+          "label": "旧浜離宮庭園入口（大手門口側）",
+          "coord": [
+            35.6634403,
+            139.7636359
+          ],
+          "source": "OSM information 旧浜離宮庭園入口; 庭園内の園路は通らず、入口前を経由点にした",
+          "offsetM": 3
+        },
+        {
+          "id": "takeshiba",
+          "label": "竹芝桟橋入口",
+          "coord": [
+            35.6549548,
+            139.7624424
+          ],
+          "source": "OSM node 31254192 竹芝桟橋入口 (道路上)",
+          "offsetM": 0
+        },
+        {
+          "id": "kyu_shiba",
+          "label": "旧芝離宮恩賜庭園",
+          "coord": [
+            35.6549169,
+            139.75867
+          ],
+          "source": "OSM park 旧芝離宮恩賜庭園",
+          "offsetM": 0
+        },
+        {
+          "id": "hamamatsucho",
+          "label": "浜松町駅",
+          "coord": [
+            35.6552,
+            139.756867
+          ],
+          "source": "OSM stop 浜松町",
+          "offsetM": 0
+        }
+      ]
+    }
+  }
+}

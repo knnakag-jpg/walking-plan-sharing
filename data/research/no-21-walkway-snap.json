@@ -1,0 +1,66 @@
+{
+ "hon_kawagoe": {
+  "snapped": [
+   35.9139925,
+   139.4810704
+  ],
+  "movedM": 18,
+  "wayId": 219982381
+ },
+ "kashiya": {
+  "snapped": [
+   35.9251449,
+   139.4806653
+  ],
+  "movedM": 14,
+  "wayId": 22730944
+ },
+ "ichibangai": {
+  "snapped": [
+   35.9235447,
+   139.4829264
+  ],
+  "movedM": 1,
+  "wayId": 135154230
+ },
+ "tokinokane": {
+  "snapped": [
+   35.9234264,
+   139.4829112
+  ],
+  "movedM": 0,
+  "wayId": 22735743
+ },
+ "kitain": {
+  "snapped": [
+   35.9196955,
+   139.4901083
+  ],
+  "movedM": 1,
+  "wayId": 36713392
+ },
+ "kawagoe_hikawa": {
+  "snapped": [
+   35.9272862,
+   139.488017
+  ],
+  "movedM": 8,
+  "wayId": 785779131
+ },
+ "kawagoe_castle": {
+  "snapped": [
+   35.9242949,
+   139.4918697
+  ],
+  "movedM": 40,
+  "wayId": 22735739
+ },
+ "kawagoe": {
+  "snapped": [
+   35.9071296,
+   139.4832674
+  ],
+  "movedM": 11,
+  "wayId": 682101849
+ }
+}

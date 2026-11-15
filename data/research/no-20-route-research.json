@@ -1,0 +1,42 @@
+{
+  "id": "No.20",
+  "title": "二子玉川 多摩川水辺",
+  "stage": "source_research_in_progress",
+  "checkedAt": "2026-11-16",
+  "evidence": [
+    {
+      "type": "community",
+      "title": "OpenStreetMap（二子玉川駅・兵庫島公園・二子橋・二子新地駅）",
+      "url": "https://www.openstreetmap.org/",
+      "checkedAt": "2026-11-16",
+      "supports": "駅・施設・公園の名称ノードの座標。入口ではない。"
+    },
+    {
+      "type": "community",
+      "title": "旧資料 No.20（先行ページ index.html）",
+      "url": null,
+      "checkedAt": "2026-11-16",
+      "supports": "旧案の立ち寄り先。多摩川左岸の上流往復は採用していない。"
+    }
+  ],
+  "trials": [
+    {
+      "n": 1,
+      "variant": "A 新規（OSMの駅・地点）",
+      "result": "1.60km・反復259m",
+      "finding": "兵庫島公園付近で約170m、約90m（計約259m）。島へ渡る橋と駅側の園路を行き来する形と推定。地図で未確認。"
+    }
+  ],
+  "files": [
+    "scripts/lib-rebuild.mjs",
+    "scripts/build-group4.mjs",
+    "data/curated/no-20.json",
+    "data/research/no-20-adopted-build.json"
+  ],
+  "openQuestions": [
+    "多摩川左岸遊歩道の位置と二子橋下の通行条件",
+    "兵庫島公園の入口と島内の園路",
+    "二子橋の歩道の幅と自転車との区分"
+  ],
+  "decision": "2026-11-16 新Aを計算（1.60km・反復259m）。旧案の左岸遊歩道の往復は不採用。"
+}
