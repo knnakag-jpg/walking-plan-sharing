@@ -1,0 +1,226 @@
+{
+  "calculatedAt": "2026-11-15T02:13:26.520Z",
+  "engine": "valhalla-pedestrian",
+  "variants": {
+    "model": {
+      "label": "A 桜田門駅→…→千客万来→市場前駅（提供モデルコース順）",
+      "distanceM": 6676,
+      "engineDistanceM": 6680,
+      "repeatedGeometryM": 195,
+      "legKm": [
+        0.37,
+        0.6,
+        0.49,
+        0.86,
+        0.76,
+        1.56,
+        1.37,
+        0.41,
+        0.25
+      ],
+      "maxStopOffsetM": 0,
+      "stops": [
+        {
+          "id": "sakuradamon",
+          "label": "桜田門駅",
+          "coord": [
+            35.6770768,
+            139.752866
+          ],
+          "osmCentre": [
+            35.67708,
+            139.75287
+          ],
+          "movedToWalkwayM": 1,
+          "walkway": {
+            "wayId": 661473959,
+            "highway": "footway",
+            "name": "桜田門"
+          },
+          "source": "OSM node 413481709 subway_entrance",
+          "offsetM": 0
+        },
+        {
+          "id": "iwaidabashi",
+          "label": "祝田橋",
+          "coord": [
+            35.6767007,
+            139.7561187
+          ],
+          "osmCentre": [
+            35.67675,
+            139.75599
+          ],
+          "movedToWalkwayM": 13,
+          "walkway": {
+            "wayId": 572526833,
+            "highway": "footway",
+            "name": null
+          },
+          "source": "OSM node 251731817",
+          "offsetM": 0
+        },
+        {
+          "id": "sukiyabashi",
+          "label": "数寄屋橋公園",
+          "coord": [
+            35.6741076,
+            139.7610692
+          ],
+          "osmCentre": [
+            35.67425,
+            139.76125
+          ],
+          "movedToWalkwayM": 23,
+          "walkway": {
+            "wayId": 661492623,
+            "highway": "footway",
+            "name": "日比谷"
+          },
+          "source": "approx. 数寄屋橋 intersection; no OSM named node found, needs map review",
+          "offsetM": 0
+        },
+        {
+          "id": "ginza_lion",
+          "label": "銀座三越ライオン像",
+          "coord": [
+            35.6714566,
+            139.7651121
+          ],
+          "osmCentre": [
+            35.67155,
+            139.76506
+          ],
+          "movedToWalkwayM": 11,
+          "walkway": {
+            "wayId": 522859644,
+            "highway": "footway",
+            "name": null
+          },
+          "source": "approx. 銀座4丁目交差点; no OSM named node used, needs map review",
+          "offsetM": 0
+        },
+        {
+          "id": "tsukiji_hongwanji",
+          "label": "築地本願寺",
+          "coord": [
+            35.6676803,
+            139.7720205
+          ],
+          "osmCentre": [
+            35.66768,
+            139.77202
+          ],
+          "movedToWalkwayM": 0,
+          "walkway": {
+            "wayId": 667962683,
+            "highway": "residential",
+            "name": null
+          },
+          "source": "OSM node 31254383 traffic_signals 築地本願寺前",
+          "offsetM": 0
+        },
+        {
+          "id": "kachidoki_bridge",
+          "label": "勝鬨橋",
+          "coord": [
+            35.6625799,
+            139.7747543
+          ],
+          "osmCentre": [
+            35.66275,
+            139.77442
+          ],
+          "movedToWalkwayM": 36,
+          "walkway": {
+            "wayId": 286507872,
+            "highway": "footway",
+            "name": "勝鬨橋"
+          },
+          "source": "OSM way near 勝鬨橋 (unnamed node 35.66275,139.77442 in 勝鬨橋 query); needs map review",
+          "offsetM": 0
+        },
+        {
+          "id": "harumi_rinkai",
+          "label": "晴海臨海公園",
+          "coord": [
+            35.6548608,
+            139.7857638
+          ],
+          "osmCentre": [
+            35.65484,
+            139.78582
+          ],
+          "movedToWalkwayM": 6,
+          "walkway": {
+            "wayId": 238838000,
+            "highway": "footway",
+            "name": null
+          },
+          "source": "OSM way 晴海臨海公園; entrance needs confirmation",
+          "offsetM": 0
+        },
+        {
+          "id": "toyosu_ohashi",
+          "label": "豊洲大橋",
+          "coord": [
+            35.6469809,
+            139.7864158
+          ],
+          "osmCentre": [
+            35.6471,
+            139.7868
+          ],
+          "movedToWalkwayM": 37,
+          "walkway": {
+            "wayId": 1413602807,
+            "highway": "footway",
+            "name": null
+          },
+          "source": "approx. 豊洲大橋 west end; no OSM named node used",
+          "offsetM": 0
+        },
+        {
+          "id": "senkyaku",
+          "label": "豊洲 千客万来",
+          "coord": [
+            35.645746,
+            139.7838217
+          ],
+          "osmCentre": [
+            35.64546,
+            139.78366
+          ],
+          "movedToWalkwayM": 35,
+          "walkway": {
+            "wayId": 651677197,
+            "highway": "footway",
+            "name": null
+          },
+          "source": "OSM way 1159017723 centre",
+          "offsetM": 0
+        },
+        {
+          "id": "ichibamae",
+          "label": "市場前駅",
+          "coord": [
+            35.6455531,
+            139.7856933
+          ],
+          "osmCentre": [
+            35.64576,
+            139.78578
+          ],
+          "movedToWalkwayM": 24,
+          "walkway": {
+            "wayId": 629545983,
+            "highway": "footway",
+            "name": null
+          },
+          "source": "OSM node 3349961082 station",
+          "offsetM": 0
+        }
+      ]
+    }
+  }
+}

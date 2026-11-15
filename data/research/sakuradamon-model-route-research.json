@@ -1,0 +1,29 @@
+{
+  "id": "user-model-sakuradamon",
+  "title": "桜田門〜市場前モデルコース（利用者提供・媒体不明）",
+  "stage": "reference_trial_not_adopted",
+  "checkedAt": "2026-11-15",
+  "reference": {
+    "used": "利用者が貼った媒体名不明のモデルコース（桜田門駅→祝田橋→数寄屋橋公園→銀座三越ライオン像→築地本願寺→勝鬨橋→晴海臨海公園→豊洲大橋→豊洲 千客万来→市場前駅、約6.5km・約1時間50分）の順序のみ。出典URLは未提供。",
+    "notCopied": "文章・地図画像・コメントは転載しない。"
+  },
+  "trials": [
+    {
+      "n": 1,
+      "variant": "提供順どおり",
+      "result": "6.68km・反復195m",
+      "finding": "反復は千客万来付近の134m・豊洲大橋付近の50m・11m。数寄屋橋公園・銀座三越・勝鬨橋・豊洲大橋は座標が近似（OSMに該当ノードなし）で未地図確認。豊洲大橋手前の階段で晴海側の橋入口へ出る注記が元資料にあり、段差の有無は未確認"
+    }
+  ],
+  "decision": "距離は元資料の約6.5kmに近く、反復も約3%。No.11（豊洲、旧線7.3km）の距離不足を補う案になりうるが、近似座標のため採用せず保留。",
+  "openQuestions": [
+    "数寄屋橋公園・銀座三越ライオン像・勝鬨橋・豊洲大橋の実座標",
+    "豊洲大橋手前の階段（段差）と代替のスロープ",
+    "千客万来付近134m反復の原因（出入口の形）"
+  ],
+  "files": [
+    "scripts/build-sakuradamon-model-candidates.mjs",
+    "data/research/sakuradamon-model-route-build.json",
+    "data/candidates/sakuradamon-model-model.geojson"
+  ]
+}

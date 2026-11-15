@@ -10,11 +10,44 @@
     "terms": "サイトの著作権ページは二次利用の事前相談を求め、オープンデータのライセンス記載なし。"
   },
   "trials": [
-    {"n": 1, "variant": "新豊洲駅→有明アリーナ→晴海大橋→浜離宮→東京タワー→芝公園駅", "result": "15.37km・反復845m", "finding": "晴海大橋(OSM relationの中心)から浜離宮までが8.55kmの大回り。ピンが歩行可能な橋上に乗っていない可能性"},
-    {"n": 2, "variant": "勝どき・築地大橋を通過点に追加", "result": "10.21km・反復929m", "finding": "晴海大橋ピンが豊洲側へ約728m戻る原因になる"},
-    {"n": 3, "variant": "有明アリーナ前を道路側のみ、勝どき→築地大橋→浜離宮→東京タワー→芝公園駅", "result": "7.51km・反復598m", "finding": "距離は参考値約7.2kmに近い。反復はアリーナ前から駅方向へ戻る約397mと東京タワー付近の約185m"}
+    {
+      "n": 1,
+      "variant": "新豊洲駅→有明アリーナ→晴海大橋→浜離宮→東京タワー→芝公園駅",
+      "result": "15.37km・反復845m",
+      "finding": "晴海大橋(OSM relationの中心)から浜離宮までが8.55kmの大回り。ピンが歩行可能な橋上に乗っていない可能性"
+    },
+    {
+      "n": 2,
+      "variant": "勝どき・築地大橋を通過点に追加",
+      "result": "10.21km・反復929m",
+      "finding": "晴海大橋ピンが豊洲側へ約728m戻る原因になる"
+    },
+    {
+      "n": 3,
+      "variant": "有明アリーナ前を道路側のみ、勝どき→築地大橋→浜離宮→東京タワー→芝公園駅",
+      "result": "7.51km・反復598m",
+      "finding": "距離は参考値約7.2kmに近い。反復はアリーナ前から駅方向へ戻る約397mと東京タワー付近の約185m"
+    },
+    {
+      "n": 4,
+      "variant": "旧晴海鉄道橋（春海橋公園遊歩道）で晴海へ渡る（利用者提案）",
+      "result": "8.85km・反復201m（勝どき通過点なしで 8.80km・反復201m）",
+      "finding": "晴海大橋ピンで出た大回りと728m戻りが消えた。反復は東京タワー付近185mと16mのみ。距離は参考値約7.2kmより長い。利用者提供の地図で、晴海大橋に歩道が写っていないことと、旧晴海鉄道橋が遊歩道であることを確認"
+    }
   ],
-  "decision": "距離は近づいたが、アリーナ前の折り返し（約397m）と東京タワー付近（約185m）が残る。晴海大橋に歩行者通路があるかも地図で未確認。新ルートとして採用せず保留。",
-  "openQuestions": ["晴海大橋の歩道の有無と通行条件", "有明アリーナを外から見るだけにするか、折り返しを許容するか", "東京タワー付近の185m反復の原因（芝公園内の園路）"],
-  "files": ["scripts/osm-poi-ariake-arena.mjs", "scripts/build-ariake-arena-candidates.mjs", "data/research/ariake-arena-osm-poi.json", "data/research/ariake-arena-walkway-snap.json", "data/research/ariake-arena-route-build.json", "data/candidates/ariake-arena-via_bridges.geojson", "data/candidates/ariake-arena-via_bridges_noarena.geojson"]
+  "decision": "晴海大橋は歩道が確認できないため経路に使わず、旧晴海鉄道橋を渡る案（8.85km・反復201m）が最良。入口座標と歩道の通行条件は地図で未確認のため採用せず保留。東京タワー付近の185m反復は芝公園内の園路が原因とみられ、利用者の拡大地図で確認予定。",
+  "openQuestions": [
+    "晴海大橋の歩道の有無と通行条件",
+    "有明アリーナを外から見るだけにするか、折り返しを許容するか",
+    "東京タワー付近の185m反復の原因（芝公園内の園路）"
+  ],
+  "files": [
+    "scripts/osm-poi-ariake-arena.mjs",
+    "scripts/build-ariake-arena-candidates.mjs",
+    "data/research/ariake-arena-osm-poi.json",
+    "data/research/ariake-arena-walkway-snap.json",
+    "data/research/ariake-arena-route-build.json",
+    "data/candidates/ariake-arena-via_haruumi.geojson",
+    "data/candidates/ariake-arena-via_haruumi_short.geojson"
+  ]
 }

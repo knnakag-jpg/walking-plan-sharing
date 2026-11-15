@@ -1,0 +1,104 @@
+{
+ "checkedAt": "2026-11-15T02:14:28.558Z",
+ "source": "OpenStreetMap via Overpass API; © OpenStreetMap contributors",
+ "sakuradamon": {
+  "snapped": [
+   35.6770768,
+   139.752866
+  ],
+  "movedM": 1,
+  "wayId": 661473959,
+  "highway": "footway",
+  "name": "桜田門"
+ },
+ "iwaidabashi": {
+  "snapped": [
+   35.6767007,
+   139.7561187
+  ],
+  "movedM": 13,
+  "wayId": 572526833,
+  "highway": "footway",
+  "name": null
+ },
+ "sukiyabashi": {
+  "snapped": [
+   35.6741076,
+   139.7610692
+  ],
+  "movedM": 23,
+  "wayId": 661492623,
+  "highway": "footway",
+  "name": "日比谷"
+ },
+ "ginza_lion": {
+  "snapped": [
+   35.6714566,
+   139.7651121
+  ],
+  "movedM": 11,
+  "wayId": 522859644,
+  "highway": "footway",
+  "name": null
+ },
+ "tsukiji_hongwanji": {
+  "snapped": [
+   35.6676803,
+   139.7720205
+  ],
+  "movedM": 0,
+  "wayId": 667962683,
+  "highway": "residential",
+  "name": null
+ },
+ "kachidoki_bridge": {
+  "snapped": [
+   35.6625799,
+   139.7747543
+  ],
+  "movedM": 36,
+  "wayId": 286507872,
+  "highway": "footway",
+  "name": "勝鬨橋"
+ },
+ "harumi_rinkai": {
+  "snapped": [
+   35.6548608,
+   139.7857638
+  ],
+  "movedM": 6,
+  "wayId": 238838000,
+  "highway": "footway",
+  "name": null
+ },
+ "toyosu_ohashi": {
+  "snapped": [
+   35.6469809,
+   139.7864158
+  ],
+  "movedM": 37,
+  "wayId": 1413602807,
+  "highway": "footway",
+  "name": null
+ },
+ "senkyaku": {
+  "snapped": [
+   35.645746,
+   139.7838217
+  ],
+  "movedM": 35,
+  "wayId": 651677197,
+  "highway": "footway",
+  "name": null
+ },
+ "ichibamae": {
+  "snapped": [
+   35.6455531,
+   139.7856933
+  ],
+  "movedM": 24,
+  "wayId": 629545983,
+  "highway": "footway",
+  "name": null
+ }
+}
