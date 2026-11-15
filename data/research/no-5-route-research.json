@@ -81,9 +81,16 @@
       "pins": "駅→競馬場通り→博物館（東門の園内）→同じ東門から道路へ→是政橋北→…→府中駅",
       "result": "6.32km・反復255m",
       "finding": "非開催日は東門のみ開放（利用者提供のJRA案内図の注記「南門は閉鎖」、およびWeb情報）。博物館は東門のすぐ内側なので、出入りで同じ門の通路を約245m往復する。これは博物館に入る限り避けられない往復で、距離合わせではない。往復を許容しない場合は場外案にする"
+    },
+    {
+      "n": 8,
+      "variant": "東府中駅発・場外／東府中駅発・東門から博物館",
+      "pins": "東府中駅→(東門→博物館前→東門)→是政橋北→郷土の森入口→神社西→随神門→大鳥居→府中駅",
+      "result": "場外5.97km・反復9m／東門案6.59km・反復418m",
+      "finding": "東門案の反復は博物館通路約274m・門前約135m・神社西約10m。博物館に入る限り避けられない往復なので retraceException に理由を記載。"
     }
   ],
-  "decision": "3案を候補として保持する：場外（5.87km・反復9m）、開催日（6.09km・反復17m）、非開催日の博物館立ち寄り（6.32km・反復255m＝東門の出入り）。いずれも入口座標と入場条件を現地または公式で確認しておらず、新A/Bとしては採用せず routed_candidate_not_map_reviewed のまま保留。",
+  "decision": "2026-11-15 利用者の選択（東門案も採用し2案）。標準=場外（東府中駅→府中駅 5.97km・反復9m）、拡張=非開催日の東門から博物館へ寄る案（6.59km・反復418m、理由は data/curated/no-5.json の retraceExceptions）。入口座標と入場条件は未確認のため verificationStatus は routed のまま（map_reviewed にしない）。",
   "openQuestions": [
     "大國魂神社の境内（参道・随神門）に入る入口を地図で確認し、そこをピンにして反復が出ないか確認する",
     "競馬博物館・日本庭園の開館日と入口（JRAの該当ページは取得できず）。非開催日の立ち寄りを前提にしない案にするか",
@@ -106,7 +113,14 @@
     "data/candidates/no-5-race_day.geojson",
     "scripts/osm-paths-no-5-inside.mjs",
     "data/research/no-5-inside-paths.json",
-    "data/candidates/no-5-weekday.geojson"
+    "data/candidates/no-5-weekday.geojson",
+    "scripts/build-no-5-east.mjs",
+    "scripts/adopt-no-5.mjs",
+    "data/candidates/no-5e-outside_from_higashifuchu.geojson",
+    "data/candidates/no-5e-weekday_east.geojson",
+    "data/research/no-5e-route-build.json",
+    "data/research/no-5-adopted-build.json",
+    "data/curated/no-5.json"
   ],
   "userMaps": {
     "receivedAt": "2026-11-15",

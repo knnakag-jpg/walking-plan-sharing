@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T03:32:36.797Z",
+  "generatedAt": "2026-11-15T10:14:11.123Z",
   "interpretation": "Mechanical triage only. Source and map review required before adopting any new route.",
   "records": [
     {
@@ -1431,7 +1431,7 @@
       "id": "No.5",
       "title": "東京競馬場・府中",
       "series": "本編 A～Z（No.1～26）",
-      "workStatus": "research_needed",
+      "workStatus": "partial_rebuild",
       "legacy": {
         "geometryUrl": "data/routes/no-5.geojson",
         "walkingDistanceM": 7316,
@@ -1441,7 +1441,23 @@
         "repeatedWaypoints": [],
         "gateResult": "OK"
       },
-      "existingNewVariants": [],
+      "existingNewVariants": [
+        {
+          "variant": "standard",
+          "status": "routed",
+          "distanceM": 5967
+        },
+        {
+          "variant": "extended",
+          "status": "routed",
+          "distanceM": 6594
+        },
+        {
+          "variant": "rainy",
+          "status": "researched",
+          "distanceM": null
+        }
+      ],
       "coordinateReview": "not_started",
       "sourceResearch": "source_research_in_progress",
       "historicalRoutingStrategies": [],

@@ -1,0 +1,383 @@
+{
+  "calculatedAt": "2026-11-15T03:33:05.972Z",
+  "engine": "valhalla-pedestrian",
+  "variants": {
+    "weekday_east": {
+      "label": "非開催日・東府中駅から東門へ（駅→東門→博物館前→東門→是政橋北→郷土の森入口→神社西→随神門→大鳥居→府中駅）",
+      "distanceM": 6594,
+      "engineDistanceM": 6595,
+      "repeatedGeometryM": 418,
+      "legKm": [
+        0.82,
+        0.27,
+        0.27,
+        1.43,
+        1.25,
+        1.8,
+        0.18,
+        0.19,
+        0.38
+      ],
+      "maxStopOffsetM": 0,
+      "stops": [
+        {
+          "id": "higashifuchu",
+          "label": "東府中駅",
+          "coord": [
+            35.6690472,
+            139.4953757
+          ],
+          "osmCentre": [
+            35.6689,
+            139.49515
+          ],
+          "movedToWalkwayM": 26,
+          "walkway": {
+            "wayId": 1088343194,
+            "highway": "footway",
+            "name": null
+          },
+          "source": "OSM node 7683014978 station; 京王競馬場線 from 東府中 is the weekday access to 東門 (user-supplied web summary, official source not confirmed)",
+          "offsetM": 0
+        },
+        {
+          "id": "east_gate",
+          "label": "競馬場東門（バス停位置）",
+          "coord": [
+            35.6664283,
+            139.4895639
+          ],
+          "osmCentre": [
+            35.6664,
+            139.48955
+          ],
+          "movedToWalkwayM": 3,
+          "walkway": {
+            "wayId": 572864332,
+            "highway": "tertiary",
+            "name": "競馬場通り"
+          },
+          "source": "OSM node 13109040237 bus_stop 競馬場東門; gate position needs map review",
+          "offsetM": 0
+        },
+        {
+          "id": "museum_walk",
+          "label": "JRA競馬博物館前の園内歩道（東門寄り）",
+          "coord": [
+            35.6668953,
+            139.4881
+          ],
+          "osmCentre": [
+            35.6668,
+            139.4881
+          ],
+          "movedToWalkwayM": 11,
+          "walkway": {
+            "wayId": 347653729,
+            "highway": "footway",
+            "name": null
+          },
+          "source": "on OSM way 342309782 footway; museum stands by 東門 per user-supplied Google map (OSM node of the museum is ~85 m south, inside the grounds)",
+          "offsetM": 0
+        },
+        {
+          "id": "east_gate",
+          "label": "競馬場東門（バス停位置）",
+          "coord": [
+            35.6664283,
+            139.4895639
+          ],
+          "osmCentre": [
+            35.6664,
+            139.48955
+          ],
+          "movedToWalkwayM": 3,
+          "walkway": {
+            "wayId": 572864332,
+            "highway": "tertiary",
+            "name": "競馬場通り"
+          },
+          "source": "OSM node 13109040237 bus_stop 競馬場東門; gate position needs map review",
+          "offsetM": 0
+        },
+        {
+          "id": "koremasa_bridge",
+          "label": "是政橋北",
+          "coord": [
+            35.6555364,
+            139.4877125
+          ],
+          "osmCentre": [
+            35.65554,
+            139.48771
+          ],
+          "movedToWalkwayM": 0,
+          "walkway": {
+            "wayId": 145126004,
+            "highway": "tertiary",
+            "name": null
+          },
+          "source": "OSM node 292640007",
+          "offsetM": 0
+        },
+        {
+          "id": "kyodo_signal",
+          "label": "郷土の森入口（交差点）",
+          "coord": [
+            35.6553932,
+            139.4748301
+          ],
+          "osmCentre": [
+            35.65539,
+            139.47483
+          ],
+          "movedToWalkwayM": 0,
+          "walkway": {
+            "wayId": 172406838,
+            "highway": "tertiary",
+            "name": "ふるさと通り"
+          },
+          "source": "OSM node 1054131520 traffic_signals 郷土の森入口; road junction, not a park gate",
+          "offsetM": 0
+        },
+        {
+          "id": "okunitama_west",
+          "label": "大国魂神社西（交差点）",
+          "coord": [
+            35.6681965,
+            139.4770865
+          ],
+          "osmCentre": [
+            35.6682,
+            139.47709
+          ],
+          "movedToWalkwayM": 1,
+          "walkway": {
+            "wayId": 144700643,
+            "highway": "residential",
+            "name": null
+          },
+          "source": "OSM node 292613513 traffic_signals 大国魂神社西; road junction west of the precinct",
+          "offsetM": 0
+        },
+        {
+          "id": "zuijinmon",
+          "label": "随神門",
+          "coord": [
+            35.6682792,
+            139.479022
+          ],
+          "osmCentre": [
+            35.66821,
+            139.47901
+          ],
+          "movedToWalkwayM": 8,
+          "walkway": {
+            "wayId": 172500124,
+            "highway": "pedestrian",
+            "name": "参道"
+          },
+          "source": "OSM way 172007543 historic 随神門",
+          "offsetM": 0
+        },
+        {
+          "id": "ootorii",
+          "label": "大鳥居（大国魂神社前）",
+          "coord": [
+            35.6700127,
+            139.4790907
+          ],
+          "osmCentre": [
+            35.67001,
+            139.47909
+          ],
+          "movedToWalkwayM": 0,
+          "walkway": {
+            "wayId": 172500791,
+            "highway": "pedestrian",
+            "name": null
+          },
+          "source": "OSM node 1835345346 traffic_signals 大国魂神社前; the 大鳥居 stands at this junction on 旧甲州街道 per the shrine map",
+          "offsetM": 0
+        },
+        {
+          "id": "fuchu_station",
+          "label": "府中駅",
+          "coord": [
+            35.6720514,
+            139.4800069
+          ],
+          "osmCentre": [
+            35.67222,
+            139.48001
+          ],
+          "movedToWalkwayM": 19,
+          "walkway": {
+            "wayId": 978149479,
+            "highway": "pedestrian",
+            "name": null
+          },
+          "source": "OSM node 7682981674 station",
+          "offsetM": 0
+        }
+      ]
+    },
+    "outside_from_higashifuchu": {
+      "label": "場外・東府中駅から大鳥居を回って府中駅へ（競馬場に入らない）",
+      "distanceM": 5967,
+      "engineDistanceM": 5973,
+      "repeatedGeometryM": 9,
+      "legKm": [
+        2.17,
+        1.25,
+        1.8,
+        0.18,
+        0.19,
+        0.38
+      ],
+      "maxStopOffsetM": 0,
+      "stops": [
+        {
+          "id": "higashifuchu",
+          "label": "東府中駅",
+          "coord": [
+            35.6690472,
+            139.4953757
+          ],
+          "osmCentre": [
+            35.6689,
+            139.49515
+          ],
+          "movedToWalkwayM": 26,
+          "walkway": {
+            "wayId": 1088343194,
+            "highway": "footway",
+            "name": null
+          },
+          "source": "OSM node 7683014978 station; 京王競馬場線 from 東府中 is the weekday access to 東門 (user-supplied web summary, official source not confirmed)",
+          "offsetM": 0
+        },
+        {
+          "id": "koremasa_bridge",
+          "label": "是政橋北",
+          "coord": [
+            35.6555364,
+            139.4877125
+          ],
+          "osmCentre": [
+            35.65554,
+            139.48771
+          ],
+          "movedToWalkwayM": 0,
+          "walkway": {
+            "wayId": 145126004,
+            "highway": "tertiary",
+            "name": null
+          },
+          "source": "OSM node 292640007",
+          "offsetM": 0
+        },
+        {
+          "id": "kyodo_signal",
+          "label": "郷土の森入口（交差点）",
+          "coord": [
+            35.6553932,
+            139.4748301
+          ],
+          "osmCentre": [
+            35.65539,
+            139.47483
+          ],
+          "movedToWalkwayM": 0,
+          "walkway": {
+            "wayId": 172406838,
+            "highway": "tertiary",
+            "name": "ふるさと通り"
+          },
+          "source": "OSM node 1054131520 traffic_signals 郷土の森入口; road junction, not a park gate",
+          "offsetM": 0
+        },
+        {
+          "id": "okunitama_west",
+          "label": "大国魂神社西（交差点）",
+          "coord": [
+            35.6681965,
+            139.4770865
+          ],
+          "osmCentre": [
+            35.6682,
+            139.47709
+          ],
+          "movedToWalkwayM": 1,
+          "walkway": {
+            "wayId": 144700643,
+            "highway": "residential",
+            "name": null
+          },
+          "source": "OSM node 292613513 traffic_signals 大国魂神社西; road junction west of the precinct",
+          "offsetM": 0
+        },
+        {
+          "id": "zuijinmon",
+          "label": "随神門",
+          "coord": [
+            35.6682792,
+            139.479022
+          ],
+          "osmCentre": [
+            35.66821,
+            139.47901
+          ],
+          "movedToWalkwayM": 8,
+          "walkway": {
+            "wayId": 172500124,
+            "highway": "pedestrian",
+            "name": "参道"
+          },
+          "source": "OSM way 172007543 historic 随神門",
+          "offsetM": 0
+        },
+        {
+          "id": "ootorii",
+          "label": "大鳥居（大国魂神社前）",
+          "coord": [
+            35.6700127,
+            139.4790907
+          ],
+          "osmCentre": [
+            35.67001,
+            139.47909
+          ],
+          "movedToWalkwayM": 0,
+          "walkway": {
+            "wayId": 172500791,
+            "highway": "pedestrian",
+            "name": null
+          },
+          "source": "OSM node 1835345346 traffic_signals 大国魂神社前; the 大鳥居 stands at this junction on 旧甲州街道 per the shrine map",
+          "offsetM": 0
+        },
+        {
+          "id": "fuchu_station",
+          "label": "府中駅",
+          "coord": [
+            35.6720514,
+            139.4800069
+          ],
+          "osmCentre": [
+            35.67222,
+            139.48001
+          ],
+          "movedToWalkwayM": 19,
+          "walkway": {
+            "wayId": 978149479,
+            "highway": "pedestrian",
+            "name": null
+          },
+          "source": "OSM node 7682981674 station",
+          "offsetM": 0
+        }
+      ]
+    }
+  }
+}

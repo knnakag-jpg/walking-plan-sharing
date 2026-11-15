@@ -192,6 +192,7 @@ for (const filename of fs.readdirSync(curatedRoot).filter((name) => name.endsWit
         repeatedGeometryPct: result.repeatedGeometryPct,
         routeReason: curated.routeReasons[variant],
         distanceException: curated.distanceExceptions?.[variant] || null,
+        retraceException: curated.retraceExceptions?.[variant] || null,
         waypoints: result.waypoints.map((waypoint, index) => ({ index, id: waypoint.id, label: waypoint.label, description: curated.checkpointDescriptions?.[waypoint.id] || null, point: [waypoint.coord[1], waypoint.coord[0]], source: waypoint.source })),
         engine: 'valhalla-pedestrian', built: JSON.parse(fs.readFileSync(path.join(root, result.geometryUrl), 'utf8')).properties.calculatedAt,
       };

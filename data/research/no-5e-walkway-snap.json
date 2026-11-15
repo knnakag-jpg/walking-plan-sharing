@@ -1,0 +1,94 @@
+{
+ "checkedAt": "2026-11-15T03:33:59.959Z",
+ "source": "OpenStreetMap via Overpass API; © OpenStreetMap contributors",
+ "higashifuchu": {
+  "snapped": [
+   35.6690472,
+   139.4953757
+  ],
+  "movedM": 26,
+  "wayId": 1088343194,
+  "highway": "footway",
+  "name": null
+ },
+ "east_gate": {
+  "snapped": [
+   35.6664283,
+   139.4895639
+  ],
+  "movedM": 3,
+  "wayId": 572864332,
+  "highway": "tertiary",
+  "name": "競馬場通り"
+ },
+ "museum_walk": {
+  "snapped": [
+   35.6668953,
+   139.4881
+  ],
+  "movedM": 11,
+  "wayId": 347653729,
+  "highway": "footway",
+  "name": null
+ },
+ "koremasa_bridge": {
+  "snapped": [
+   35.6555364,
+   139.4877125
+  ],
+  "movedM": 0,
+  "wayId": 145126004,
+  "highway": "tertiary",
+  "name": null
+ },
+ "kyodo_signal": {
+  "snapped": [
+   35.6553932,
+   139.4748301
+  ],
+  "movedM": 0,
+  "wayId": 172406838,
+  "highway": "tertiary",
+  "name": "ふるさと通り"
+ },
+ "okunitama_west": {
+  "snapped": [
+   35.6681965,
+   139.4770865
+  ],
+  "movedM": 1,
+  "wayId": 144700643,
+  "highway": "residential",
+  "name": null
+ },
+ "zuijinmon": {
+  "snapped": [
+   35.6682792,
+   139.479022
+  ],
+  "movedM": 8,
+  "wayId": 172500124,
+  "highway": "pedestrian",
+  "name": "参道"
+ },
+ "ootorii": {
+  "snapped": [
+   35.6700127,
+   139.4790907
+  ],
+  "movedM": 0,
+  "wayId": 172500791,
+  "highway": "pedestrian",
+  "name": null
+ },
+ "fuchu_station": {
+  "snapped": [
+   35.6720514,
+   139.4800069
+  ],
+  "movedM": 19,
+  "wayId": 978149479,
+  "highway": "pedestrian",
+  "name": null
+ }
+}

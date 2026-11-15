@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "source": "legacy import; route quality not re-reviewed",
-  "generatedAt": "2026-11-15T03:32:09.820Z",
+  "generatedAt": "2026-11-15T10:14:11.036Z",
   "courses": [
     {
       "id": "No.1",
@@ -471,13 +471,12 @@
       "seriesName": "本編 A～Z（No.1～26）",
       "legacyAnchor": "course-5",
       "legacyUrl": "../index.html#course-5",
-      "summary": "「歩く」と「座る」を自由に切り替えられる、本企画の安全牌。場内は全面バリアフリーで、長距離の動く歩道・エレベーターが整備され、階段を一段も使わずに一周できる。日本庭園、馬場、パドック、競馬博物館（機械式の展示や名馬の資料）と見どころが分散しており、自然に歩数が伸びる。さらに歩を延ばし、府中崖線を緩やかに下って府中市郷土の森公園の緑と多摩川の開けた土手道を歩くルートも新たに加わった。",
+      "summary": "競馬場を前提にしない場外ルート（A）と、非開催日に東門から競馬博物館へ寄る案（B）の2案。どちらも府中崖線の下の郷土の森公園・大國魂神社の随神門と大鳥居を通り、府中駅へ抜ける。Bは東門の出入りで同じ通路を往復する（理由はBの説明に記載）。",
       "routeText": "経路ノード： 最寄駅 → 専用歩道橋 → 東京競馬場 日本庭園 → JRA競馬博物館 → パドック → スタンド／馬場前 → 場外へ → 大國魂神社 参道・けやき並木 → 府中崖線沿いを下り府中市郷土の森公園（梅林・あじさい通り） → 多摩川河川敷 → 是政駅 → ゴール",
       "tags": [
         "馬事・スポーツ",
-        "庭園",
         "歴史",
-        "機械・産業",
+        "庭園",
         "フォトジェニック"
       ],
       "route": {
@@ -492,17 +491,7 @@
         "repeatedGeometryPct": 20.6,
         "maxWaypointToShapeM": 31,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "partial_dem_filled",
-          "url": "data/elevation/no-5.json",
-          "totalM": 7316,
-          "climbM": 30.4,
-          "descentM": 42.4,
-          "minM": 35.8,
-          "maxM": 55.4
-        }
+        "engine": "valhalla-pedestrian"
       },
       "waypoints": [
         {
@@ -573,6 +562,417 @@
       "descentM": 103.3,
       "auditFlags": [
         "repeated_geometry_over_10pct"
+      ],
+      "defaultVariant": "standard",
+      "evidence": [
+        {
+          "type": "official",
+          "title": "大國魂神社公式サイト",
+          "url": "https://www.ookunitamajinja.or.jp/",
+          "checkedAt": "2026-11-15",
+          "supports": "開門時間（9/15〜3/31は6:30〜17:00、4/1〜9/14は6:00〜17:00）と最寄駅の徒歩目安。境内入口の座標は文章記載なし。"
+        },
+        {
+          "type": "community",
+          "title": "利用者提供のJRA案内図・Web要約（公式未確認）",
+          "url": null,
+          "checkedAt": "2026-11-15",
+          "supports": "非開催日は東門のみ開放、博物館は東門のそば。公式ページは文字化け・403のため確認できていない。"
+        }
+      ],
+      "scenicSegments": [
+        {
+          "name": "是政橋北から多摩川の土手",
+          "theme": "河川と開けた空",
+          "direction": "競馬場の南へ下る",
+          "reviewStatus": "候補・歩道と土手の連続性を地図で照合待ち",
+          "evidenceTitle": "OpenStreetMap（是政橋北）"
+        },
+        {
+          "name": "大國魂神社の随神門と大鳥居",
+          "theme": "参道と鳥居",
+          "direction": "神社の西から大鳥居へ",
+          "reviewStatus": "候補・境内入口の座標を地図で照合待ち",
+          "evidenceTitle": "大國魂神社公式サイト"
+        }
+      ],
+      "openQuestions": [
+        "競馬場の非開催日の入場可否と東門の位置（JRA公式で再確認）",
+        "競馬博物館の開館日・時間・入口",
+        "大國魂神社の境内に入る入口の座標（随神門ピンの位置）",
+        "郷土の森公園の正門と開園時間（公式ページ取得不可）",
+        "是政橋北の歩道と、東府中駅の出入口",
+        "競馬場を前提にしない案を主案にするか、非開催日案を主案にするか"
+      ],
+      "routeOptions": [
+        {
+          "id": "no-5-standard",
+          "variant": "standard",
+          "strategy": "scenic",
+          "geometryUrl": "data/routes/no-5-standard.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 5967,
+          "engineDistanceM": 5973,
+          "repeatedGeometryPct": 0.2,
+          "routeReason": "東府中駅から多摩川の是政橋北、郷土の森入口、大國魂神社西を経て随神門・大鳥居を通り府中駅へ。競馬場の中には入らないので、開催日・非開催日や入場条件に左右されない。計算上5.97km、同じ線の重なりは9mのみ。入口ピンは交差点・OSM上の点で、園内の出入口は地図レビュー待ち。",
+          "distanceException": null,
+          "retraceException": null,
+          "waypoints": [
+            {
+              "index": 0,
+              "id": "higashifuchu",
+              "label": "東府中駅",
+              "description": null,
+              "point": [
+                139.4953757,
+                35.6690472
+              ],
+              "source": "OSM node 7683014978 station; 京王競馬場線 from 東府中 is the weekday access to 東門 (user-supplied web summary, official source not confirmed)"
+            },
+            {
+              "index": 1,
+              "id": "koremasa_bridge",
+              "label": "是政橋北",
+              "description": null,
+              "point": [
+                139.4877125,
+                35.6555364
+              ],
+              "source": "OSM node 292640007"
+            },
+            {
+              "index": 2,
+              "id": "kyodo_signal",
+              "label": "郷土の森入口（交差点）",
+              "description": null,
+              "point": [
+                139.4748301,
+                35.6553932
+              ],
+              "source": "OSM node 1054131520 traffic_signals 郷土の森入口; road junction, not a park gate"
+            },
+            {
+              "index": 3,
+              "id": "okunitama_west",
+              "label": "大国魂神社西（交差点）",
+              "description": null,
+              "point": [
+                139.4770865,
+                35.6681965
+              ],
+              "source": "OSM node 292613513 traffic_signals 大国魂神社西; road junction west of the precinct"
+            },
+            {
+              "index": 4,
+              "id": "zuijinmon",
+              "label": "随神門",
+              "description": null,
+              "point": [
+                139.479022,
+                35.6682792
+              ],
+              "source": "OSM way 172007543 historic 随神門"
+            },
+            {
+              "index": 5,
+              "id": "ootorii",
+              "label": "大鳥居（大国魂神社前）",
+              "description": null,
+              "point": [
+                139.4790907,
+                35.6700127
+              ],
+              "source": "OSM node 1835345346 traffic_signals 大国魂神社前; the 大鳥居 stands at this junction on 旧甲州街道 per the shrine map"
+            },
+            {
+              "index": 6,
+              "id": "fuchu_station",
+              "label": "府中駅",
+              "description": null,
+              "point": [
+                139.4800069,
+                35.6720514
+              ],
+              "source": "OSM node 7682981674 station"
+            }
+          ],
+          "engine": "valhalla-pedestrian",
+          "built": "2026-11-15T03:33:05.972Z",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "dem",
+            "url": "data/elevation/no-5-standard.json",
+            "totalM": 5967,
+            "climbM": 31.2,
+            "descentM": 25.6,
+            "minM": 40.1,
+            "maxM": 56.4
+          }
+        },
+        {
+          "id": "no-5-extended",
+          "variant": "extended",
+          "strategy": "scenic",
+          "geometryUrl": "data/routes/no-5-extended.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 6594,
+          "engineDistanceM": 6595,
+          "repeatedGeometryPct": 6.3,
+          "routeReason": "非開催日は東門のみ開放という利用者提供の案内図とWeb要約（公式は未確認）を前提に、東府中駅から東門を入って競馬博物館へ寄り、同じ東門から出て是政橋北・郷土の森入口・神社へ進む。計算上6.59km。博物館は東門のすぐ内側にあるため、門と博物館の間の通路（約270m）と門前の約130mを往復する。これは博物館に入る限り避けられない往復で、距離合わせではない。往復を避けたいときはAにする。",
+          "distanceException": "6.59km。東門から博物館までの往復を含む。7〜8kmの目標に満たないが、距離合わせの延伸は作らない。",
+          "retraceException": "競馬博物館は東門のすぐ内側にあり、非開催日は東門しか通れないため、同じ門の通路を出入りで往復する（約274m＋門前約135m＋随神門手前の交差点約10m）。距離合わせの往復ではなく、博物館に入る場合に避けられない往復。",
+          "waypoints": [
+            {
+              "index": 0,
+              "id": "higashifuchu",
+              "label": "東府中駅",
+              "description": null,
+              "point": [
+                139.4953757,
+                35.6690472
+              ],
+              "source": "OSM node 7683014978 station; 京王競馬場線 from 東府中 is the weekday access to 東門 (user-supplied web summary, official source not confirmed)"
+            },
+            {
+              "index": 1,
+              "id": "east_gate",
+              "label": "競馬場東門（バス停位置）",
+              "description": null,
+              "point": [
+                139.4895639,
+                35.6664283
+              ],
+              "source": "OSM node 13109040237 bus_stop 競馬場東門; gate position needs map review"
+            },
+            {
+              "index": 2,
+              "id": "museum_walk",
+              "label": "JRA競馬博物館前の園内歩道（東門寄り）",
+              "description": null,
+              "point": [
+                139.4881,
+                35.6668953
+              ],
+              "source": "on OSM way 342309782 footway; museum stands by 東門 per user-supplied Google map (OSM node of the museum is ~85 m south, inside the grounds)"
+            },
+            {
+              "index": 3,
+              "id": "east_gate_back",
+              "label": "競馬場東門（バス停位置）（戻り）",
+              "description": null,
+              "point": [
+                139.4895639,
+                35.6664283
+              ],
+              "source": "OSM node 13109040237 bus_stop 競馬場東門; gate position needs map review"
+            },
+            {
+              "index": 4,
+              "id": "koremasa_bridge",
+              "label": "是政橋北",
+              "description": null,
+              "point": [
+                139.4877125,
+                35.6555364
+              ],
+              "source": "OSM node 292640007"
+            },
+            {
+              "index": 5,
+              "id": "kyodo_signal",
+              "label": "郷土の森入口（交差点）",
+              "description": null,
+              "point": [
+                139.4748301,
+                35.6553932
+              ],
+              "source": "OSM node 1054131520 traffic_signals 郷土の森入口; road junction, not a park gate"
+            },
+            {
+              "index": 6,
+              "id": "okunitama_west",
+              "label": "大国魂神社西（交差点）",
+              "description": null,
+              "point": [
+                139.4770865,
+                35.6681965
+              ],
+              "source": "OSM node 292613513 traffic_signals 大国魂神社西; road junction west of the precinct"
+            },
+            {
+              "index": 7,
+              "id": "zuijinmon",
+              "label": "随神門",
+              "description": null,
+              "point": [
+                139.479022,
+                35.6682792
+              ],
+              "source": "OSM way 172007543 historic 随神門"
+            },
+            {
+              "index": 8,
+              "id": "ootorii",
+              "label": "大鳥居（大国魂神社前）",
+              "description": null,
+              "point": [
+                139.4790907,
+                35.6700127
+              ],
+              "source": "OSM node 1835345346 traffic_signals 大国魂神社前; the 大鳥居 stands at this junction on 旧甲州街道 per the shrine map"
+            },
+            {
+              "index": 9,
+              "id": "fuchu_station",
+              "label": "府中駅",
+              "description": null,
+              "point": [
+                139.4800069,
+                35.6720514
+              ],
+              "source": "OSM node 7682981674 station"
+            }
+          ],
+          "engine": "valhalla-pedestrian",
+          "built": "2026-11-15T03:33:05.972Z",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "dem",
+            "url": "data/elevation/no-5-extended.json",
+            "totalM": 6594,
+            "climbM": 28,
+            "descentM": 22.4,
+            "minM": 41.2,
+            "maxM": 56.4
+          }
+        },
+        {
+          "id": "no-5-rainy",
+          "variant": "rainy",
+          "strategy": "indoor_rail",
+          "verificationStatus": "researched",
+          "distanceM": null,
+          "routeReason": "雨の日は大國魂神社の参拝を短い屋外歩行で行い、競馬博物館（館内）に寄る案。連続した屋内徒歩コースとしては未検証。",
+          "segments": [
+            {
+              "kind": "rail",
+              "from": "府中駅",
+              "to": "東府中駅",
+              "distanceM": null,
+              "note": "京王線の乗り継ぎ。所要・運賃は当日確認。"
+            },
+            {
+              "kind": "walk_outdoor",
+              "from": "東府中駅",
+              "to": "競馬場東門",
+              "distanceM": null,
+              "note": "屋根のある連続動線は未確認。傘が必要。"
+            },
+            {
+              "kind": "walk_indoor",
+              "from": "競馬場東門",
+              "to": "競馬博物館の館内",
+              "distanceM": null,
+              "note": "開館日・入館条件を当日確認（利用者提供のWeb要約のみ、公式は未確認）。"
+            }
+          ],
+          "conditions": [
+            "競馬博物館の開館日・入館条件はJRA公式で再確認。",
+            "非開催日の入場可否は公式で未確認。",
+            "屋外露出と雨天の滑りやすい箇所は未調査。"
+          ],
+          "geometryUrl": null,
+          "waypoints": []
+        },
+        {
+          "id": "no-5-legacy",
+          "variant": "legacy",
+          "strategy": "legacy_unknown",
+          "geometryUrl": "data/routes/no-5.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 7316,
+          "engineDistanceM": 7323,
+          "targetDistanceM": 6900,
+          "repeatedGeometryPct": 20.6,
+          "maxWaypointToShapeM": 31,
+          "built": "2026-08-29",
+          "engine": "valhalla-pedestrian",
+          "waypoints": [
+            {
+              "index": 0,
+              "point": [
+                139.4803,
+                35.6687
+              ]
+            },
+            {
+              "index": 1,
+              "point": [
+                139.4858,
+                35.6712
+              ]
+            },
+            {
+              "index": 2,
+              "point": [
+                139.4861,
+                35.6722
+              ]
+            },
+            {
+              "index": 3,
+              "point": [
+                139.4875,
+                35.67255
+              ]
+            },
+            {
+              "index": 4,
+              "point": [
+                139.4882,
+                35.6728
+              ]
+            },
+            {
+              "index": 5,
+              "point": [
+                139.483,
+                35.6702
+              ]
+            },
+            {
+              "index": 6,
+              "point": [
+                139.4822,
+                35.6642
+              ]
+            },
+            {
+              "index": 7,
+              "point": [
+                139.4835,
+                35.6598
+              ]
+            },
+            {
+              "index": 8,
+              "point": [
+                139.4895,
+                35.6518
+              ]
+            }
+          ],
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/no-5.json",
+            "totalM": 7316,
+            "climbM": 30.4,
+            "descentM": 42.4,
+            "minM": 35.8,
+            "maxM": 55.4
+          }
+        }
       ],
       "retraceReview": {
         "reportedAt": "2026-11-14",
@@ -1448,6 +1848,7 @@
           "repeatedGeometryPct": 5.7,
           "routeReason": "立川駅からファーレ立川のアート、GREEN SPRINGS、昭和記念公園の立川口、水鳥の池を通り、西立川駅へ抜ける。計算上3.94kmで5〜6kmの目標には届かないが、距離合わせの往復を加えず、JR駅間の自然な流れを優先する。園内の有料区・出入口・池畔の実際の歩道は地図レビュー待ち。",
           "distanceException": "3.94km。ファーレ立川から昭和記念公園の水辺を西立川駅へ抜ける自然な流れを優先し、旧案の距離合わせの往復を除外。",
+          "retraceException": null,
           "waypoints": [
             {
               "index": 0,
@@ -1562,6 +1963,7 @@
           "repeatedGeometryPct": 5.2,
           "routeReason": "Aと立川口・水鳥の池までを共有し、日本庭園とこもれびの里を経て砂川口から武蔵砂川駅へ抜ける。計算上7.59km。庭園と農村景観を追加する価値があるが、終点は西武拝島線になり、豊田駅への帰路の乗換を要確認。",
           "distanceException": null,
+          "retraceException": null,
           "waypoints": [
             {
               "index": 0,
@@ -4083,6 +4485,7 @@
           "repeatedGeometryPct": 2.1,
           "routeReason": "飯田橋駅東口から兵庫横丁・善國寺・赤城神社を経て、市谷見附の高低差と外濠公園の水辺をたどり、四ツ谷駅で終える。計算上4.26kmで5〜6kmの目標には届かないが、旧経路の曙橋方面への伸長や距離合わせの折り返しを加えず、中央線へ帰りやすい自然な駅間の流れを優先する。路地入口、坂、横断、外濠公園の園路は地図レビュー待ち。",
           "distanceException": "4.26km。飯田橋から神楽坂の路地・高台と外濠を経て四ツ谷へ抜ける自然な流れを優先し、距離合わせの往復や閉館中の施設への立ち寄りを加えない。",
+          "retraceException": null,
           "waypoints": [
             {
               "index": 0,
@@ -4186,6 +4589,7 @@
           "repeatedGeometryPct": 4.6,
           "routeReason": "御茶ノ水駅の橋口から神田川の眺めと元町公園を通り、小石川後楽園の南側の道を経てAの飯田橋以降へ接続する。計算上7.46km。川・斜面の緑・石畳・外濠という景観の変化に延長の価値がある。庭園内は計算線に含まれず、入園する場合は別途有料・開園条件と経路確認が必要。元町公園の坂は要確認。",
           "distanceException": null,
+          "retraceException": null,
           "waypoints": [
             {
               "index": 0,
@@ -5956,6 +6360,7 @@
           "repeatedGeometryPct": 3.5,
           "routeReason": "清澄白河駅から深川江戸資料館、清澄庭園、芭蕉記念館を通り、北へ両国、東へすみだ北斎美術館と錦糸町駅へ進む。旧案末尾の距離合わせの往復を除き、異なる街の表情を駅から駅へつなぐ。隅田川テラスを実際にどの区間で使えるかは地図レビューで確かめる。",
           "distanceException": null,
+          "retraceException": null,
           "waypoints": [
             {
               "index": 0,
@@ -6098,6 +6503,7 @@
           "repeatedGeometryPct": 3.7,
           "routeReason": "北斎美術館までの流れを共有し、錦糸町駅前へ寄らずに亀戸天神社へ分岐して亀戸駅へ進む。藤・梅などの季節景観と寺社の街並みを加える。亀戸天神の入口位置とJR亀戸駅への最終区間は未確認。",
           "distanceException": null,
+          "retraceException": null,
           "waypoints": [
             {
               "index": 0,
