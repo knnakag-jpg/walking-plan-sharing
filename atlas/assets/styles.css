@@ -30,7 +30,7 @@ h2{font-size:clamp(1.6rem,2.5vw,2.5rem);letter-spacing:-.035em}
 .profile-select select{max-width:120px;padding:8px 10px;border:1px solid var(--line);border-radius:999px;color:var(--ink);background:var(--surface)}
 .icon-button{display:grid;place-items:center;width:38px;height:38px;border:1px solid var(--line);border-radius:50%;background:var(--surface);color:var(--ink);font-size:1.2rem}
 .hero{max-width:1450px;margin:auto;min-height:min(650px,75vh);display:grid;grid-template-columns:1fr .9fr;overflow:hidden}
-.hero-copy{padding:clamp(70px,10vw,150px) 32px 60px max(32px,calc((100vw - 1320px)/2 + 32px));position:relative;z-index:1}
+.hero-copy{padding:clamp(70px,10vw,150px) 32px 60px clamp(32px,5vw,80px);position:relative;z-index:1;min-width:0}
 .hero h1{max-width:700px;margin-bottom:22px;font-weight:800}
 .hero h1 em{font-style:normal;color:var(--green)}
 .hero-lead{max-width:490px;color:var(--muted);font-size:1.05rem;line-height:1.9;margin-bottom:28px}
