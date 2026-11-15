@@ -1,0 +1,170 @@
+{
+  "generatedAt": "2026-11-15T12:39:23.857Z",
+  "method": "Valhalla pedestrian; exact geometry edge repeat is only a screening clue",
+  "results": [
+    {
+      "variant": "standard",
+      "distanceM": 4591,
+      "engineDistanceM": 4591,
+      "repeatedGeometryM": 905,
+      "repeatedGeometryPct": 19.7,
+      "waypoints": [
+        {
+          "id": "kasai_station",
+          "label": "葛西臨海公園駅",
+          "coord": [
+            35.6437184,
+            139.8625617
+          ],
+          "source": "OSM node 7249081833"
+        },
+        {
+          "id": "ferris",
+          "label": "ダイヤと花の大観覧車",
+          "coord": [
+            35.6440594,
+            139.8574158
+          ],
+          "source": "OSM way 161931777 centre"
+        },
+        {
+          "id": "shiokaze",
+          "label": "汐風の広場",
+          "coord": [
+            35.6409859,
+            139.8566863
+          ],
+          "source": "OSM way 693987764 centre"
+        },
+        {
+          "id": "crystal",
+          "label": "クリスタルビュー",
+          "coord": [
+            35.6407092,
+            139.8594499
+          ],
+          "source": "OSM way 161731857 centre"
+        },
+        {
+          "id": "aquarium",
+          "label": "葛西臨海水族園",
+          "coord": [
+            35.6409459,
+            139.8618897
+          ],
+          "source": "OSM way 191044572 centre"
+        },
+        {
+          "id": "bird",
+          "label": "鳥類園ウォッチングセンター",
+          "coord": [
+            35.6399744,
+            139.8654187
+          ],
+          "source": "OSM way 156492882 centre"
+        },
+        {
+          "id": "kasai_station_back",
+          "label": "葛西臨海公園駅（戻り）",
+          "coord": [
+            35.6437184,
+            139.8625617
+          ],
+          "source": "OSM node 7249081833"
+        }
+      ],
+      "legDistancesKm": [
+        0.62,
+        0.47,
+        0.46,
+        0.54,
+        0.47,
+        1.17,
+        0.87
+      ],
+      "geometryUrl": "data/routes/no-23-standard.geojson"
+    },
+    {
+      "variant": "extended",
+      "distanceM": 6759,
+      "engineDistanceM": 6767,
+      "repeatedGeometryM": 888,
+      "repeatedGeometryPct": 13.1,
+      "waypoints": [
+        {
+          "id": "kasai_station",
+          "label": "葛西臨海公園駅",
+          "coord": [
+            35.6437184,
+            139.8625617
+          ],
+          "source": "OSM node 7249081833"
+        },
+        {
+          "id": "ferris",
+          "label": "ダイヤと花の大観覧車",
+          "coord": [
+            35.6440594,
+            139.8574158
+          ],
+          "source": "OSM way 161931777 centre"
+        },
+        {
+          "id": "shiokaze",
+          "label": "汐風の広場",
+          "coord": [
+            35.6409859,
+            139.8566863
+          ],
+          "source": "OSM way 693987764 centre"
+        },
+        {
+          "id": "crystal",
+          "label": "クリスタルビュー",
+          "coord": [
+            35.6407092,
+            139.8594499
+          ],
+          "source": "OSM way 161731857 centre"
+        },
+        {
+          "id": "aquarium",
+          "label": "葛西臨海水族園",
+          "coord": [
+            35.6409459,
+            139.8618897
+          ],
+          "source": "OSM way 191044572 centre"
+        },
+        {
+          "id": "bird",
+          "label": "鳥類園ウォッチングセンター",
+          "coord": [
+            35.6399744,
+            139.8654187
+          ],
+          "source": "OSM way 156492882 centre"
+        },
+        {
+          "id": "kasai_st",
+          "label": "葛西駅",
+          "coord": [
+            35.6635975,
+            139.8728131
+          ],
+          "source": "OSM node 1923746881 station"
+        }
+      ],
+      "legDistancesKm": [
+        0.62,
+        0.47,
+        0.46,
+        0.54,
+        0.47,
+        1.17,
+        3.04
+      ],
+      "geometryUrl": "data/routes/no-23-extended.geojson"
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "source": "legacy import; route quality not re-reviewed",
-  "generatedAt": "2026-11-15T12:32:28.155Z",
+  "generatedAt": "2026-11-15T12:39:46.584Z",
   "courses": [
     {
       "id": "No.1",
@@ -1202,19 +1202,19 @@
     {
       "id": "No.8",
       "slug": "no-8",
-      "title": "上野ミュージアム",
+      "title": "上野ミュージアムと谷中",
       "seriesId": "main",
       "seriesName": "本編 A～Z（No.1～26）",
       "legacyAnchor": "course-8",
       "legacyUrl": "../index.html#course-8",
-      "summary": "経路ノード： 上野駅 公園口 → 東京国立博物館 → 表慶館・庭園（公開期のみ） → 昼食 → 国立西洋美術館 または 国立科学博物館 → 東京文化会館（外観） → 上野の森・彫刻群 → 上野公園北西部（旧寛永寺境内） → 谷中霊園 中央園路（五重塔跡） → 天王寺 → 日暮里駅前ペデストリアンデッキ（エスカレーター） → 日暮里駅（西口） → 東尾久一丁目方面へ実在の歩道で延伸（往復約2.5km） → ゴール",
+      "summary": "上野公園の博物館・美術館の前から谷中霊園の五重塔跡を経て日暮里駅へ抜ける駅間ワンウェイ。Bは西郷像、朝倉彫塑館、夕焼けだんだんを加える。旧案の昼食と館内見学を前提にした工程は採用せず、屋外の通過だけを計算した。",
       "routeText": "経路ノード： 上野駅 公園口 → 東京国立博物館 → 表慶館・庭園（公開期のみ） → 昼食 → 国立西洋美術館 または 国立科学博物館 → 東京文化会館（外観） → 上野の森・彫刻群 → 上野公園北西部（旧寛永寺境内） → 谷中霊園 中央園路（五重塔跡） → 天王寺 → 日暮里駅前ペデストリアンデッキ（エスカレーター） → 日暮里駅（西口） → 東尾久一丁目方面へ実在の歩道で延伸（往復約2.5km） → ゴール",
       "tags": [
-        "美術・工芸",
-        "クラシック音楽",
-        "科学・技術",
+        "ミュージアム",
+        "公園",
+        "谷中",
         "歴史",
-        "近代建築"
+        "街並み"
       ],
       "route": {
         "id": "no-8-legacy",
@@ -1228,17 +1228,7 @@
         "repeatedGeometryPct": 22.7,
         "maxWaypointToShapeM": 41,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "dem",
-          "url": "data/elevation/no-8.json",
-          "totalM": 6716,
-          "climbM": 46.5,
-          "descentM": 53.8,
-          "minM": -0.4,
-          "maxM": 18.8
-        }
+        "engine": "valhalla-pedestrian"
       },
       "waypoints": [
         {
@@ -1327,6 +1317,475 @@
         "waypoint_off_shape"
       ],
       "category": "main",
+      "defaultVariant": "standard",
+      "evidence": [
+        {
+          "checkedAt": "2026-11-15",
+          "url": "https://www.t-bunka.jp/info/32755/",
+          "supports": "東京文化会館は2026-05-07から大規模改修で休館（令和10年度中予定）。外観を見る位置の案内は公式に無い。旧案の「外観」立ち寄りは、休館中・工事状況の確認が必要。"
+        },
+        {
+          "checkedAt": "2026-11-15",
+          "url": "https://www.tnm.jp/modules/r_exhibition/index.php?controller=hall&hid=8",
+          "supports": "表慶館は特別展・イベント開催時を除き休館。旧案の「表慶館・庭園（公開期のみ）」は常時の立ち寄り先にできない。"
+        },
+        {
+          "checkedAt": "2026-11-15",
+          "url": "https://www.tnm.jp/modules/r_free_page/index.php?id=113",
+          "supports": "東博は月曜休館、9:30–17:00、正門で手荷物検査。2026-11-30〜12-31は本館17〜20室と東洋館が閉室。正門の位置は公式に記載なし。"
+        },
+        {
+          "checkedAt": "2026-11-15",
+          "url": "https://www.kensetsu.metro.tokyo.lg.jp/jimusho/toubuk/ueno/midokoro",
+          "supports": "旧寛永寺五重塔は上野動物園内。旧案の「上野公園北西部（旧寛永寺境内）」は公園の園路としては確認できていない。公園の主要園路は公式HTMLに記載なく未確認。"
+        },
+        {
+          "type": "community",
+          "title": "OpenStreetMap（名称付き地点）",
+          "url": "https://www.openstreetmap.org/",
+          "checkedAt": "2026-11-15",
+          "supports": "駅・施設中心の座標。入口ではない。"
+        }
+      ],
+      "scenicSegments": [
+        {
+          "name": "上野公園の博物館前の広場",
+          "theme": "建築と並木",
+          "direction": "公園口から北へ",
+          "reviewStatus": "候補・各館の入口を地図で照合待ち",
+          "evidenceTitle": "OpenStreetMap"
+        },
+        {
+          "name": "谷中霊園と五重塔跡",
+          "theme": "桜並木の園路と寺町",
+          "direction": "上野から北西へ",
+          "reviewStatus": "候補・霊園入口と通行条件を地図で照合待ち",
+          "evidenceTitle": "OpenStreetMap"
+        }
+      ],
+      "openQuestions": [
+        "東京国立博物館のどの入口・園路に寄るか（正門位置が公式で未確認）。ピンを建物の道路側の通過点にしないと反復が残る",
+        "上野駅公園口から西洋美術館へ向かう園路（西郷像経由の167m反復の原因）を地図で確認",
+        "標準Aの距離を5〜6kmにするために、実在し根拠のある立ち寄り先が必要か、距離例外（約3〜4km）として扱うか",
+        "谷中霊園中央園路への入口、天王寺・谷中五重塔跡の通行条件",
+        "東京文化会館の休館中の外観立ち寄りの扱い"
+      ],
+      "routeOptions": [
+        {
+          "id": "no-8-standard",
+          "variant": "standard",
+          "strategy": "scenic",
+          "geometryUrl": "data/routes/no-8-standard.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 3030,
+          "engineDistanceM": 3013,
+          "repeatedGeometryPct": 5.9,
+          "routeReason": "上野駅公園口から文化会館、西洋美術館、科博、東博の前を通り、谷中霊園の入口、五重塔跡、天王寺を経て日暮里駅へ。計算上3.03km。館内には入らず屋外だけを通るため5〜6kmには届かない。東博前で約63mの出入りが2回出る。",
+          "distanceException": "3.03km。館内に入らず屋外だけを通る案のため5〜6kmに届かない。距離合わせの延伸は作らない。",
+          "retraceException": "東京国立博物館のピン付近で約63mの重なりが2回、ほかに約20〜25mが数か所（計約180m）。博物館前の園路を出入りする形で、距離合わせではない。入口座標は地図で未確認。",
+          "waypoints": [
+            {
+              "index": 0,
+              "id": "ueno_station",
+              "label": "上野駅公園口付近",
+              "description": null,
+              "point": [
+                139.7767401,
+                35.7129181
+              ],
+              "source": "OSM node 3259272053 train_station_entrance; exit name needs confirmation"
+            },
+            {
+              "index": 1,
+              "id": "bunka_kaikan",
+              "label": "東京文化会館（外観のみ・休館中）",
+              "description": null,
+              "point": [
+                139.7755385,
+                35.7145818
+              ],
+              "source": "OSM relation 5419119 centre; closed for renovation from 2026-05-07 per t-bunka.jp"
+            },
+            {
+              "index": 2,
+              "id": "nmwa",
+              "label": "国立西洋美術館付近",
+              "description": null,
+              "point": [
+                139.7755999,
+                35.7154078
+              ],
+              "source": "OSM way 203960903 centre; entrance needs confirmation"
+            },
+            {
+              "index": 3,
+              "id": "kahaku",
+              "label": "国立科学博物館付近",
+              "description": null,
+              "point": [
+                139.7767511,
+                35.7159654
+              ],
+              "source": "OSM way 203960902 centre; entrance needs confirmation"
+            },
+            {
+              "index": 4,
+              "id": "tnm",
+              "label": "東京国立博物館付近",
+              "description": null,
+              "point": [
+                139.7757872,
+                35.7189955
+              ],
+              "source": "OSM way 33439660 centre; 正門 location not confirmed (tnm.jp does not state it)"
+            },
+            {
+              "index": 5,
+              "id": "yanaka_gate",
+              "label": "谷中霊園の入口付近（公衆トイレ脇）",
+              "description": null,
+              "point": [
+                139.7702893,
+                35.7227303
+              ],
+              "source": "OSM node 14156023120; entrance location is the toilet, needs map review"
+            },
+            {
+              "index": 6,
+              "id": "gojuto_ato",
+              "label": "谷中五重塔跡地",
+              "description": null,
+              "point": [
+                139.7707971,
+                35.7250931
+              ],
+              "source": "OSM node 4218532821 (官公庁表記: 天王寺五重塔の跡)"
+            },
+            {
+              "index": 7,
+              "id": "tennoji",
+              "label": "天王寺付近",
+              "description": null,
+              "point": [
+                139.7711984,
+                35.7264991
+              ],
+              "source": "OSM way 1367250759 centre"
+            },
+            {
+              "index": 8,
+              "id": "nippori",
+              "label": "日暮里駅南改札口付近",
+              "description": null,
+              "point": [
+                139.7717116,
+                35.7277902
+              ],
+              "source": "OSM node 7040915508 train_station_entrance"
+            }
+          ],
+          "engine": "valhalla-pedestrian",
+          "built": "2026-11-14T15:43:34.832Z",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "dem",
+            "url": "data/elevation/no-8-standard.json",
+            "totalM": 3030,
+            "climbM": 23.7,
+            "descentM": 22.2,
+            "minM": 4.2,
+            "maxM": 18.8
+          }
+        },
+        {
+          "id": "no-8-extended",
+          "variant": "extended",
+          "strategy": "scenic",
+          "geometryUrl": "data/routes/no-8-extended.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 4473,
+          "engineDistanceM": 4460,
+          "repeatedGeometryPct": 11.5,
+          "routeReason": "Aの途中で西郷像に寄り、天王寺のあとに朝倉彫塑館と夕焼けだんだんを通って日暮里駅へ。計算上4.47km。距離は7〜8kmに届かないが、実在の立ち寄り先だけで組み、延伸は作らない。西郷像から西洋美術館へ向かう約167mが重なる。",
+          "distanceException": "4.47km。実在の立ち寄り先だけで組んだため7〜8kmに届かない。延伸は作らない。",
+          "retraceException": "西郷像から西洋美術館へ向かう約167m（上野駅公園口からの園路の分岐戻りと推定）と東博前の約63mが2回など計約510m。地図で未確認。距離合わせの往復ではない。",
+          "waypoints": [
+            {
+              "index": 0,
+              "id": "ueno_station",
+              "label": "上野駅公園口付近",
+              "description": null,
+              "point": [
+                139.7767401,
+                35.7129181
+              ],
+              "source": "OSM node 3259272053 train_station_entrance; exit name needs confirmation"
+            },
+            {
+              "index": 1,
+              "id": "saigo",
+              "label": "西郷隆盛像付近",
+              "description": null,
+              "point": [
+                139.7741041,
+                35.7118535
+              ],
+              "source": "OSM way 138585434"
+            },
+            {
+              "index": 2,
+              "id": "nmwa",
+              "label": "国立西洋美術館付近",
+              "description": null,
+              "point": [
+                139.7755999,
+                35.7154078
+              ],
+              "source": "OSM way 203960903 centre; entrance needs confirmation"
+            },
+            {
+              "index": 3,
+              "id": "kahaku",
+              "label": "国立科学博物館付近",
+              "description": null,
+              "point": [
+                139.7767511,
+                35.7159654
+              ],
+              "source": "OSM way 203960902 centre; entrance needs confirmation"
+            },
+            {
+              "index": 4,
+              "id": "tnm",
+              "label": "東京国立博物館付近",
+              "description": null,
+              "point": [
+                139.7757872,
+                35.7189955
+              ],
+              "source": "OSM way 33439660 centre; 正門 location not confirmed (tnm.jp does not state it)"
+            },
+            {
+              "index": 5,
+              "id": "yanaka_gate",
+              "label": "谷中霊園の入口付近（公衆トイレ脇）",
+              "description": null,
+              "point": [
+                139.7702893,
+                35.7227303
+              ],
+              "source": "OSM node 14156023120; entrance location is the toilet, needs map review"
+            },
+            {
+              "index": 6,
+              "id": "gojuto_ato",
+              "label": "谷中五重塔跡地",
+              "description": null,
+              "point": [
+                139.7707971,
+                35.7250931
+              ],
+              "source": "OSM node 4218532821 (官公庁表記: 天王寺五重塔の跡)"
+            },
+            {
+              "index": 7,
+              "id": "tennoji",
+              "label": "天王寺付近",
+              "description": null,
+              "point": [
+                139.7711984,
+                35.7264991
+              ],
+              "source": "OSM way 1367250759 centre"
+            },
+            {
+              "index": 8,
+              "id": "asakura",
+              "label": "朝倉彫塑館付近",
+              "description": null,
+              "point": [
+                139.768698,
+                35.7266433
+              ],
+              "source": "OSM way 209190478 centre; opening days not checked"
+            },
+            {
+              "index": 9,
+              "id": "yuyake",
+              "label": "夕焼けだんだん",
+              "description": null,
+              "point": [
+                139.7673409,
+                35.7276407
+              ],
+              "source": "OSM way 340/733 steps 夕焼けだんだん (w433... via name); steps, not step-free"
+            },
+            {
+              "index": 10,
+              "id": "nippori",
+              "label": "日暮里駅南改札口付近",
+              "description": null,
+              "point": [
+                139.7717116,
+                35.7277902
+              ],
+              "source": "OSM node 7040915508 train_station_entrance"
+            }
+          ],
+          "engine": "valhalla-pedestrian",
+          "built": "2026-11-14T15:43:34.832Z",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "dem",
+            "url": "data/elevation/no-8-extended.json",
+            "totalM": 4473,
+            "climbM": 31.7,
+            "descentM": 31,
+            "minM": 4.2,
+            "maxM": 19.9
+          }
+        },
+        {
+          "id": "no-8-rainy",
+          "variant": "rainy",
+          "strategy": "indoor_rail",
+          "verificationStatus": "researched",
+          "distanceM": null,
+          "routeReason": "雨の日は東京国立博物館または国立科学博物館の館内見学を中心にし、屋外は上野駅と館の間だけにする案。館内の連続歩行距離は未計測。",
+          "segments": [
+            {
+              "kind": "walk_outdoor",
+              "from": "上野駅公園口",
+              "to": "館の入口",
+              "distanceM": null,
+              "note": "屋根のない区間あり。傘が必要。"
+            },
+            {
+              "kind": "walk_indoor",
+              "from": "館の入口",
+              "to": "展示室内",
+              "distanceM": null,
+              "note": "開館日・入館料・特別展を当日公式で確認。"
+            },
+            {
+              "kind": "rail",
+              "from": "上野駅",
+              "to": "日暮里駅",
+              "distanceM": null,
+              "note": "JR山手線で戻る場合。運賃・所要は当日確認。"
+            }
+          ],
+          "conditions": [
+            "各館の開館日・臨時休館・料金は当日公式で確認。",
+            "東京文化会館は休館中の可能性があり、案内に載せる場合は公式で確認。"
+          ],
+          "geometryUrl": null,
+          "waypoints": []
+        },
+        {
+          "id": "no-8-legacy",
+          "variant": "legacy",
+          "strategy": "legacy_unknown",
+          "geometryUrl": "data/routes/no-8.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 6716,
+          "engineDistanceM": 6725,
+          "targetDistanceM": 6900,
+          "repeatedGeometryPct": 22.7,
+          "maxWaypointToShapeM": 41,
+          "built": "2026-08-29",
+          "engine": "valhalla-pedestrian",
+          "waypoints": [
+            {
+              "index": 0,
+              "point": [
+                139.7773,
+                35.7141
+              ]
+            },
+            {
+              "index": 1,
+              "point": [
+                139.7765,
+                35.7188
+              ]
+            },
+            {
+              "index": 2,
+              "point": [
+                139.776,
+                35.7175
+              ]
+            },
+            {
+              "index": 3,
+              "point": [
+                139.7755,
+                35.7165
+              ]
+            },
+            {
+              "index": 4,
+              "point": [
+                139.7748,
+                35.7158
+              ]
+            },
+            {
+              "index": 5,
+              "point": [
+                139.7735,
+                35.7168
+              ]
+            },
+            {
+              "index": 6,
+              "point": [
+                139.772,
+                35.7205
+              ]
+            },
+            {
+              "index": 7,
+              "point": [
+                139.7712,
+                35.7258
+              ]
+            },
+            {
+              "index": 8,
+              "point": [
+                139.7708,
+                35.7308
+              ]
+            },
+            {
+              "index": 9,
+              "point": [
+                139.770031,
+                35.740413
+              ]
+            },
+            {
+              "index": 10,
+              "point": [
+                139.7708,
+                35.7308
+              ]
+            }
+          ],
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "dem",
+            "url": "data/elevation/no-8.json",
+            "totalM": 6716,
+            "climbM": 46.5,
+            "descentM": 53.8,
+            "minM": -0.4,
+            "maxM": 18.8
+          }
+        }
+      ],
       "retraceReview": {
         "reportedAt": "2026-11-14",
         "source": "user_observation",
@@ -3069,18 +3528,19 @@
     {
       "id": "No.17",
       "slug": "no-17",
-      "title": "麻布台ヒルズ～東京タワー",
+      "title": "東京タワーと芝公園・愛宕",
       "seriesId": "main",
       "seriesName": "本編 A～Z（No.1～26）",
       "legacyAnchor": "course-17",
       "legacyUrl": "../index.html#course-17",
-      "summary": "経路ノード： 神谷町駅 → 麻布台ヒルズ 中央広場 → 森ビル デジタルアートミュージアム → 昼食 → （EV／ES主体で）東京タワー方向へ → 芝公園（平坦部） → 芝生広場（平坦部を軽く周遊） → 芝公園駅／御成門駅 → 芝公園・増上寺方面方面へ実在の歩道で延伸（往復約3.6km） → ゴール",
+      "summary": "神谷町駅から東京タワーの足元、増上寺、芝公園の緑を歩く短い駅間ワンウェイ。Bは愛宕神社まで上がって虎ノ門ヒルズ駅へ抜ける。旧案の「エリア方面へ延伸（往復約3.6km）」は座標を作る必要があるため採用しない。",
       "routeText": "経路ノード： 神谷町駅 → 麻布台ヒルズ 中央広場 → 森ビル デジタルアートミュージアム → 昼食 → （EV／ES主体で）東京タワー方向へ → 芝公園（平坦部） → 芝生広場（平坦部を軽く周遊） → 芝公園駅／御成門駅 → 芝公園・増上寺方面方面へ実在の歩道で延伸（往復約3.6km） → ゴール",
       "tags": [
-        "先端建築",
-        "デジタルアート",
-        "フォトジェニック",
-        "食"
+        "タワー",
+        "寺社",
+        "公園",
+        "展望",
+        "街並み"
       ],
       "route": {
         "id": "no-17-legacy",
@@ -3094,17 +3554,7 @@
         "repeatedGeometryPct": 15.6,
         "maxWaypointToShapeM": 36,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "dem",
-          "url": "data/elevation/no-17.json",
-          "totalM": 6839,
-          "climbM": 89.8,
-          "descentM": 88.8,
-          "minM": 4.5,
-          "maxM": 31.1
-        }
+        "engine": "valhalla-pedestrian"
       },
       "waypoints": [
         {
@@ -3157,6 +3607,338 @@
         "repeated_waypoint"
       ],
       "category": "main",
+      "defaultVariant": "standard",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "旧資料 No.17（先行ページ index.html）",
+          "url": null,
+          "checkedAt": "2026-11-15",
+          "supports": "旧案の立ち寄り先。距離合わせの往復は採用していない。"
+        },
+        {
+          "type": "community",
+          "title": "OpenStreetMap（名称付き地点）",
+          "url": "https://www.openstreetmap.org/",
+          "checkedAt": "2026-11-15",
+          "supports": "駅・施設中心の座標。入口ではない。"
+        }
+      ],
+      "scenicSegments": [
+        {
+          "name": "東京タワーの足元から増上寺",
+          "theme": "タワーと寺院の対比",
+          "direction": "神谷町から南へ",
+          "reviewStatus": "候補・歩道と入口を地図で照合待ち",
+          "evidenceTitle": "OpenStreetMap"
+        },
+        {
+          "name": "愛宕神社の石段",
+          "theme": "都心の高台と階段",
+          "direction": "芝公園から北へ",
+          "reviewStatus": "候補・石段を通る経路か地図で照合待ち",
+          "evidenceTitle": "OpenStreetMap"
+        }
+      ],
+      "openQuestions": [
+        "麻布台ヒルズ中央広場・デジタルアートミュージアムの入口座標（OSMに名称ノードなし）",
+        "増上寺前から御成門の297m重なりの原因（御成門交差点ピンの位置）",
+        "愛宕神社の石段を通る経路か、一般の歩道かの確認",
+        "東京タワー展望台の入場条件（Aは外観のみ）"
+      ],
+      "routeOptions": [
+        {
+          "id": "no-17-standard",
+          "variant": "standard",
+          "strategy": "scenic",
+          "geometryUrl": "data/routes/no-17-standard.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 2562,
+          "engineDistanceM": 2562,
+          "repeatedGeometryPct": 14.8,
+          "routeReason": "神谷町駅から東京タワー前、増上寺前、御成門、芝公園を通り芝公園駅へ。計算上2.56km。麻布台ヒルズ内の入口の座標が取れないため、麻布台ヒルズの立ち寄りは含めていない。5〜6kmには大きく届かない。",
+          "distanceException": "2.56km。実在の立ち寄り先だけで組んだため5〜6kmに届かない。旧案の往復延伸（座標を作る必要がある）は採用しない。",
+          "retraceException": "増上寺前から御成門へ向かう約297mと、芝公園内から駅への約82mが重なる（計約380m）。御成門交差点のピン位置が原因と推定されるが、地図では未確認で、必要な往復と確認できていない。",
+          "waypoints": [
+            {
+              "index": 0,
+              "id": "kamiyacho_cross",
+              "label": "神谷町（交差点）",
+              "description": null,
+              "point": [
+                139.7453255,
+                35.663177
+              ],
+              "source": "OSM node 251857299 traffic_signals 神谷町"
+            },
+            {
+              "index": 1,
+              "id": "tower_road",
+              "label": "東京タワー前（交差点）",
+              "description": null,
+              "point": [
+                139.7469936,
+                35.6584587
+              ],
+              "source": "OSM node 1637283659 traffic_signals 東京タワー前"
+            },
+            {
+              "index": 2,
+              "id": "zojoji",
+              "label": "増上寺前",
+              "description": null,
+              "point": [
+                139.750308,
+                35.6572265
+              ],
+              "source": "OSM node 337024823"
+            },
+            {
+              "index": 3,
+              "id": "onarimon",
+              "label": "御成門（交差点）",
+              "description": null,
+              "point": [
+                139.7515109,
+                35.6609616
+              ],
+              "source": "OSM node 281679484 traffic_signals"
+            },
+            {
+              "index": 4,
+              "id": "shiba_park",
+              "label": "芝公園（園内）",
+              "description": null,
+              "point": [
+                139.7501717,
+                35.6556362
+              ],
+              "source": "OSM way 745301120 park centre"
+            },
+            {
+              "index": 5,
+              "id": "shiba_st",
+              "label": "芝公園駅",
+              "description": null,
+              "point": [
+                139.7499008,
+                35.6541549
+              ],
+              "source": "OSM node 6233834712 station"
+            }
+          ],
+          "engine": "valhalla-pedestrian",
+          "built": "2026-11-15T02:35:29.106Z",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "dem",
+            "url": "data/elevation/no-17-standard.json",
+            "totalM": 2562,
+            "climbM": 19.1,
+            "descentM": 24.6,
+            "minM": 2.9,
+            "maxM": 25.4
+          }
+        },
+        {
+          "id": "no-17-extended",
+          "variant": "extended",
+          "strategy": "scenic",
+          "geometryUrl": "data/routes/no-17-extended.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 3266,
+          "engineDistanceM": 3260,
+          "repeatedGeometryPct": 3.9,
+          "routeReason": "神谷町駅から東京タワー前、増上寺前、芝公園の園内を通り、愛宕神社へ上って虎ノ門ヒルズ駅へ抜ける。計算上3.27km。愛宕神社の階段（出世の石段）を通るかは未確認。7〜8kmには届かないが延伸は作らない。",
+          "distanceException": "3.27km。実在の立ち寄り先だけで組んだため7〜8kmに届かない。延伸は作らない。",
+          "retraceException": "芝公園内で約58mと約60mの短い重なり（計約126m）。園内の歩道の分岐戻りと推定。地図で未確認。",
+          "waypoints": [
+            {
+              "index": 0,
+              "id": "kamiyacho_cross",
+              "label": "神谷町（交差点）",
+              "description": null,
+              "point": [
+                139.7453255,
+                35.663177
+              ],
+              "source": "OSM node 251857299 traffic_signals 神谷町"
+            },
+            {
+              "index": 1,
+              "id": "tower_road",
+              "label": "東京タワー前（交差点）",
+              "description": null,
+              "point": [
+                139.7469936,
+                35.6584587
+              ],
+              "source": "OSM node 1637283659 traffic_signals 東京タワー前"
+            },
+            {
+              "index": 2,
+              "id": "zojoji",
+              "label": "増上寺前",
+              "description": null,
+              "point": [
+                139.750308,
+                35.6572265
+              ],
+              "source": "OSM node 337024823"
+            },
+            {
+              "index": 3,
+              "id": "shiba_park2",
+              "label": "芝公園（園内）",
+              "description": null,
+              "point": [
+                139.7501717,
+                35.6556362
+              ],
+              "source": "OSM way 745301120 park centre"
+            },
+            {
+              "index": 4,
+              "id": "atago",
+              "label": "愛宕神社",
+              "description": null,
+              "point": [
+                139.7494577,
+                35.6646441
+              ],
+              "source": "OSM node 4740994270 愛宕神社"
+            },
+            {
+              "index": 5,
+              "id": "toranomon_hills",
+              "label": "虎ノ門ヒルズ駅",
+              "description": null,
+              "point": [
+                139.7477064,
+                35.6674782
+              ],
+              "source": "OSM node 7786715973 station"
+            }
+          ],
+          "engine": "valhalla-pedestrian",
+          "built": "2026-11-15T12:36:46.285Z",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "dem",
+            "url": "data/elevation/no-17-extended.json",
+            "totalM": 3266,
+            "climbM": 21.7,
+            "descentM": 24.9,
+            "minM": 2.8,
+            "maxM": 25.4
+          }
+        },
+        {
+          "id": "no-17-rainy",
+          "variant": "rainy",
+          "strategy": "indoor_rail",
+          "verificationStatus": "researched",
+          "distanceM": null,
+          "routeReason": "雨の日は麻布台ヒルズ内のデジタルアートミュージアム（館内）と東京タワーの展望を中心にする案。館内の連続歩行距離と屋根の連続性は未確認。",
+          "segments": [
+            {
+              "kind": "walk_outdoor",
+              "from": "神谷町駅",
+              "to": "麻布台ヒルズ",
+              "distanceM": null,
+              "note": "屋根の有無は未確認。傘が必要。"
+            },
+            {
+              "kind": "walk_indoor",
+              "from": "麻布台ヒルズ",
+              "to": "館内",
+              "distanceM": null,
+              "note": "開館日・料金・予約を当日公式で確認。"
+            },
+            {
+              "kind": "rail",
+              "from": "神谷町駅",
+              "to": "芝公園駅",
+              "distanceM": null,
+              "note": "地下鉄日比谷線・都営三田線の乗り換えで戻る場合。運賃・所要は当日確認。"
+            }
+          ],
+          "conditions": [
+            "館の開館日・料金は当日公式で確認。",
+            "屋外露出は未調査。"
+          ],
+          "geometryUrl": null,
+          "waypoints": []
+        },
+        {
+          "id": "no-17-legacy",
+          "variant": "legacy",
+          "strategy": "legacy_unknown",
+          "geometryUrl": "data/routes/no-17.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 6839,
+          "engineDistanceM": 6839,
+          "targetDistanceM": 6500,
+          "repeatedGeometryPct": 15.6,
+          "maxWaypointToShapeM": 36,
+          "built": "2026-08-29",
+          "engine": "valhalla-pedestrian",
+          "waypoints": [
+            {
+              "index": 0,
+              "point": [
+                139.74083,
+                35.66147
+              ]
+            },
+            {
+              "index": 1,
+              "point": [
+                139.74554,
+                35.65845
+              ]
+            },
+            {
+              "index": 2,
+              "point": [
+                139.75004,
+                35.66031
+              ]
+            },
+            {
+              "index": 3,
+              "point": [
+                139.73885,
+                35.66497
+              ]
+            },
+            {
+              "index": 4,
+              "point": [
+                139.726063,
+                35.670295
+              ]
+            },
+            {
+              "index": 5,
+              "point": [
+                139.73885,
+                35.66497
+              ]
+            }
+          ],
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "dem",
+            "url": "data/elevation/no-17.json",
+            "totalM": 6839,
+            "climbM": 89.8,
+            "descentM": 88.8,
+            "minM": 4.5,
+            "maxM": 31.1
+          }
+        }
+      ],
       "retraceReview": {
         "reportedAt": "2026-11-14",
         "source": "user_observation",
@@ -3803,13 +4585,14 @@
       "seriesName": "本編 A～Z（No.1～26）",
       "legacyAnchor": "course-23",
       "legacyUrl": "../index.html#course-23",
-      "summary": "経路ノード： 葛西臨海公園駅 → 大観覧車 → 汐風の広場 → 西なぎさ（橋を渡る／平坦） → 昼食 → 水族施設 → クリスタルビュー（展望施設・EVあり） → 鳥類園・汽水池遊歩道（総合レクリエーション公園方面） → 葛西臨海公園駅（解散）",
+      "summary": "葛西臨海公園駅から大観覧車、汐風の広場、クリスタルビュー、水族園、鳥類園をめぐる駅発着の周回（A）と、鳥類園から葛西駅へ抜ける案（B）。旧案の総合レクリエーション公園への往復延伸は座標を作る必要があるため採用しない。",
       "routeText": "経路ノード： 葛西臨海公園駅 → 大観覧車 → 汐風の広場 → 西なぎさ（橋を渡る／平坦） → 昼食 → 水族施設 → クリスタルビュー（展望施設・EVあり） → 鳥類園・汽水池遊歩道（総合レクリエーション公園方面） → 葛西臨海公園駅（解散）",
       "tags": [
-        "自然・海景",
+        "海辺",
+        "公園",
         "展望",
-        "生物・科学",
-        "フォトジェニック"
+        "野鳥",
+        "水族園"
       ],
       "route": {
         "id": "no-23-legacy",
@@ -3823,17 +4606,7 @@
         "repeatedGeometryPct": 9.2,
         "maxWaypointToShapeM": 33,
         "built": "2026-10-18",
-        "engine": "valhalla-pedestrian",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "partial_dem_filled",
-          "url": "data/elevation/no-23.json",
-          "totalM": 6564,
-          "climbM": 30.9,
-          "descentM": 35,
-          "minM": -1,
-          "maxM": 10.1
-        }
+        "engine": "valhalla-pedestrian"
       },
       "waypoints": [
         {
@@ -3883,6 +4656,360 @@
       "descentM": 71.2,
       "auditFlags": [],
       "category": "main",
+      "defaultVariant": "standard",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "旧資料 No.23（先行ページ index.html）",
+          "url": null,
+          "checkedAt": "2026-11-15",
+          "supports": "旧案の立ち寄り先。距離合わせの往復は採用していない。"
+        },
+        {
+          "type": "community",
+          "title": "OpenStreetMap（名称付き地点）",
+          "url": "https://www.openstreetmap.org/",
+          "checkedAt": "2026-11-15",
+          "supports": "駅・施設中心の座標。入口ではない。"
+        }
+      ],
+      "scenicSegments": [
+        {
+          "name": "大観覧車とクリスタルビュー",
+          "theme": "東京湾と海浜の景観",
+          "direction": "駅から海側へ",
+          "reviewStatus": "候補・園路を地図で照合待ち",
+          "evidenceTitle": "OpenStreetMap"
+        },
+        {
+          "name": "鳥類園の汽水池",
+          "theme": "野鳥と水辺",
+          "direction": "園の北東へ",
+          "reviewStatus": "候補・観察舎への園路を地図で照合待ち",
+          "evidenceTitle": "OpenStreetMap"
+        }
+      ],
+      "openQuestions": [
+        "西なぎさ（橋を渡る園路）の入口と通行条件。ピンが経路から約218m離れている",
+        "西なぎさ・鳥類園・水族園の園路網を地図で確認し、駅へ戻らずに回れるルートがあるか",
+        "水族園の営業状況（建替え工事の有無）",
+        "Bの終点（葛西駅）までの歩道の連続性"
+      ],
+      "routeOptions": [
+        {
+          "id": "no-23-standard",
+          "variant": "standard",
+          "strategy": "scenic",
+          "geometryUrl": "data/routes/no-23-standard.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 4591,
+          "engineDistanceM": 4591,
+          "repeatedGeometryPct": 19.7,
+          "routeReason": "葛西臨海公園駅から大観覧車、汐風の広場、クリスタルビュー、水族園、鳥類園を通り駅へ戻る周回。計算上4.59km。園内の見どころは行き止まりの園路の先にあり、同じ道の戻りが約900m出る。西なぎさのピンは経路から約218m離れていて経路は通らない可能性があるため、経由点から外した。",
+          "distanceException": "4.59km。実在の立ち寄り先だけで組んだため5〜6kmに届かない。総合レクリエーション公園への延伸は座標を作る必要があるため採用しない。",
+          "retraceException": "西なぎさ方向からの戻り約323m、海浜側から駅方向へ約250m、鳥類園から駅方向へ約287m（計約905m）。園内の見どころが行き止まりの園路の先にあるため、同じ道を戻る必要がある往復と推定。地図・現地で未確認で、距離合わせの往復ではない。",
+          "waypoints": [
+            {
+              "index": 0,
+              "id": "kasai_station",
+              "label": "葛西臨海公園駅",
+              "description": null,
+              "point": [
+                139.8625617,
+                35.6437184
+              ],
+              "source": "OSM node 7249081833"
+            },
+            {
+              "index": 1,
+              "id": "ferris",
+              "label": "ダイヤと花の大観覧車",
+              "description": null,
+              "point": [
+                139.8574158,
+                35.6440594
+              ],
+              "source": "OSM way 161931777 centre"
+            },
+            {
+              "index": 2,
+              "id": "shiokaze",
+              "label": "汐風の広場",
+              "description": null,
+              "point": [
+                139.8566863,
+                35.6409859
+              ],
+              "source": "OSM way 693987764 centre"
+            },
+            {
+              "index": 3,
+              "id": "crystal",
+              "label": "クリスタルビュー",
+              "description": null,
+              "point": [
+                139.8594499,
+                35.6407092
+              ],
+              "source": "OSM way 161731857 centre"
+            },
+            {
+              "index": 4,
+              "id": "aquarium",
+              "label": "葛西臨海水族園",
+              "description": null,
+              "point": [
+                139.8618897,
+                35.6409459
+              ],
+              "source": "OSM way 191044572 centre"
+            },
+            {
+              "index": 5,
+              "id": "bird",
+              "label": "鳥類園ウォッチングセンター",
+              "description": null,
+              "point": [
+                139.8654187,
+                35.6399744
+              ],
+              "source": "OSM way 156492882 centre"
+            },
+            {
+              "index": 6,
+              "id": "kasai_station_back",
+              "label": "葛西臨海公園駅（戻り）",
+              "description": null,
+              "point": [
+                139.8625617,
+                35.6437184
+              ],
+              "source": "OSM node 7249081833"
+            }
+          ],
+          "engine": "valhalla-pedestrian",
+          "built": "2026-11-15T02:41:23.422Z",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/no-23-standard.json",
+            "totalM": 4591,
+            "climbM": 41.8,
+            "descentM": 41.8,
+            "minM": 0.7,
+            "maxM": 13.9
+          }
+        },
+        {
+          "id": "no-23-extended",
+          "variant": "extended",
+          "strategy": "scenic",
+          "geometryUrl": "data/routes/no-23-extended.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 6759,
+          "engineDistanceM": 6767,
+          "repeatedGeometryPct": 13.1,
+          "routeReason": "同じ見どころを巡り、鳥類園から北へ葛西駅へ抜ける。計算上6.76km。終点が葛西駅（地下鉄東西線）に変わる。西なぎさは経由点から外しているので、鳥類園から先の経路を地図で確認する必要がある。",
+          "distanceException": null,
+          "retraceException": "Aと同様に西なぎさ方向からの戻り約323m、海浜側から約250m、鳥類園方向約287m（計約888m）。園内の見どころが行き止まりの園路の先にあるため。未確認。",
+          "waypoints": [
+            {
+              "index": 0,
+              "id": "kasai_station",
+              "label": "葛西臨海公園駅",
+              "description": null,
+              "point": [
+                139.8625617,
+                35.6437184
+              ],
+              "source": "OSM node 7249081833"
+            },
+            {
+              "index": 1,
+              "id": "ferris",
+              "label": "ダイヤと花の大観覧車",
+              "description": null,
+              "point": [
+                139.8574158,
+                35.6440594
+              ],
+              "source": "OSM way 161931777 centre"
+            },
+            {
+              "index": 2,
+              "id": "shiokaze",
+              "label": "汐風の広場",
+              "description": null,
+              "point": [
+                139.8566863,
+                35.6409859
+              ],
+              "source": "OSM way 693987764 centre"
+            },
+            {
+              "index": 3,
+              "id": "crystal",
+              "label": "クリスタルビュー",
+              "description": null,
+              "point": [
+                139.8594499,
+                35.6407092
+              ],
+              "source": "OSM way 161731857 centre"
+            },
+            {
+              "index": 4,
+              "id": "aquarium",
+              "label": "葛西臨海水族園",
+              "description": null,
+              "point": [
+                139.8618897,
+                35.6409459
+              ],
+              "source": "OSM way 191044572 centre"
+            },
+            {
+              "index": 5,
+              "id": "bird",
+              "label": "鳥類園ウォッチングセンター",
+              "description": null,
+              "point": [
+                139.8654187,
+                35.6399744
+              ],
+              "source": "OSM way 156492882 centre"
+            },
+            {
+              "index": 6,
+              "id": "kasai_st",
+              "label": "葛西駅",
+              "description": null,
+              "point": [
+                139.8728131,
+                35.6635975
+              ],
+              "source": "OSM node 1923746881 station"
+            }
+          ],
+          "engine": "valhalla-pedestrian",
+          "built": "2026-11-15T12:35:53.735Z",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/no-23-extended.json",
+            "totalM": 6759,
+            "climbM": 44.9,
+            "descentM": 48.8,
+            "minM": -1,
+            "maxM": 13.9
+          }
+        },
+        {
+          "id": "no-23-rainy",
+          "variant": "rainy",
+          "strategy": "indoor_rail",
+          "verificationStatus": "researched",
+          "distanceM": null,
+          "routeReason": "雨の日は水族園の館内を中心にする案。水族園は建替え工事などで営業が変わっている可能性があり、現在の営業状況は未確認。",
+          "segments": [
+            {
+              "kind": "walk_outdoor",
+              "from": "葛西臨海公園駅",
+              "to": "水族園",
+              "distanceM": null,
+              "note": "屋根の有無は未確認。傘が必要。"
+            },
+            {
+              "kind": "walk_indoor",
+              "from": "水族園",
+              "to": "館内",
+              "distanceM": null,
+              "note": "営業状況・開館日・料金を公式で確認。"
+            },
+            {
+              "kind": "rail",
+              "from": "葛西臨海公園駅",
+              "to": "葛西駅",
+              "distanceM": null,
+              "note": "京葉線・東西線の乗り換え。運賃・所要は当日確認。"
+            }
+          ],
+          "conditions": [
+            "水族園の営業状況は公式で確認が必要。",
+            "屋外露出と強風時の閉鎖は未調査。"
+          ],
+          "geometryUrl": null,
+          "waypoints": []
+        },
+        {
+          "id": "no-23-legacy",
+          "variant": "legacy",
+          "strategy": "legacy_unknown",
+          "geometryUrl": "data/routes/no-23.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 6564,
+          "engineDistanceM": 6573,
+          "targetDistanceM": 6600,
+          "repeatedGeometryPct": 9.2,
+          "maxWaypointToShapeM": 33,
+          "built": "2026-10-18",
+          "engine": "valhalla-pedestrian",
+          "waypoints": [
+            {
+              "index": 0,
+              "point": [
+                139.86085,
+                35.64468
+              ]
+            },
+            {
+              "index": 1,
+              "point": [
+                139.86205,
+                35.64066
+              ]
+            },
+            {
+              "index": 2,
+              "point": [
+                139.86044,
+                35.65387
+              ]
+            },
+            {
+              "index": 3,
+              "point": [
+                139.85779,
+                35.66059
+              ]
+            },
+            {
+              "index": 4,
+              "point": [
+                139.85932,
+                35.66458
+              ]
+            },
+            {
+              "index": 5,
+              "point": [
+                139.87331,
+                35.66425
+              ]
+            }
+          ],
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/no-23.json",
+            "totalM": 6564,
+            "climbM": 30.9,
+            "descentM": 35,
+            "minM": -1,
+            "maxM": 10.1
+          }
+        }
+      ],
       "retraceReview": {
         "reportedAt": "2026-11-14",
         "source": "user_observation",

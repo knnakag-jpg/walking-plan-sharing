@@ -141,7 +141,7 @@
     },
     {
       "courseId": "No.8",
-      "title": "上野ミュージアム",
+      "title": "上野ミュージアムと谷中",
       "geometryUrl": "data/routes/no-8.geojson",
       "geometrySha256": "56908362b9907c9b13e835bba5efdbf30cfaa79875e91443b00324035e57cc2c",
       "repeatedExactM": 1526,
@@ -330,7 +330,7 @@
     },
     {
       "courseId": "No.17",
-      "title": "麻布台ヒルズ～東京タワー",
+      "title": "東京タワーと芝公園・愛宕",
       "geometryUrl": "data/routes/no-17.geojson",
       "geometrySha256": "4379d5a10f7616eed6551e2463bd23e4458304d5ca98f858ed410ba8f524e453",
       "repeatedExactM": 1068,

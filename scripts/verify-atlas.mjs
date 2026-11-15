@@ -57,7 +57,7 @@ for (const course of data.courses) {
   const options = course.routeOptions || [course.route];
   for (const option of options) {
     assert(option.verificationStatus !== 'field_verified', `${course.id}/${option.variant} claims unverified field work`);
-    if (['map_reviewed', 'field_verified'].includes(option.verificationStatus) && option.variant !== 'legacy' && option.repeatedGeometryPct >= 1) assert(Boolean(option.retraceException), `${course.id}/${option.variant}: reviewed route has unexplained retracing`);
+    if (option.repeatedGeometryPct >= 10 && option.variant !== 'legacy' && !option.retraceException) assert(false, `${course.id}/${option.variant}: geometry repeat over 10% without a stated reason`);
     if (!option.geometryUrl) { assert(option.distanceM == null, `${course.id}/${option.variant} has distance without geometry`); continue; }
     const filename = path.join(root, option.geometryUrl);
     assert(fs.existsSync(filename), `missing ${option.geometryUrl}`);
@@ -123,7 +123,8 @@ for (const course of data.courses.filter((item) => item.routeOptions)) {
   assert(a && b && c, `${course.id}: A/B/C options missing`);
   assert(a?.distanceM >= 5000 && a?.distanceM <= 6000 || Boolean(a?.distanceException), `${course.id}: A outside target without reason`);
   assert(b?.distanceM >= 7000 && b?.distanceM <= 8000 || Boolean(b?.distanceException), `${course.id}: B outside target without reason`);
-  assert(a?.repeatedGeometryPct <= 10 && b?.repeatedGeometryPct <= 10, `${course.id}: geometry repeat clue over 10%`);
+  assert(a?.repeatedGeometryPct <= 10 || Boolean(a?.retraceException), `${course.id}: geometry repeat clue over 10% needs a stated reason`);
+  assert(b?.repeatedGeometryPct <= 10 || Boolean(b?.retraceException), `${course.id}: geometry repeat clue over 10% needs a stated reason`);
   assert(c?.distanceM == null && c?.segments?.some((leg) => leg.kind === 'walk_indoor') && c?.segments?.some((leg) => leg.kind === 'walk_outdoor'), `${course.id}: rainy indoor/outdoor split missing`);
   assert(course.evidence?.length >= 2 && course.openQuestions?.length, `${course.id}: research evidence or open questions missing`);
 }

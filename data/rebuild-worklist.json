@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T12:32:28.254Z",
+  "generatedAt": "2026-11-15T12:39:46.773Z",
   "interpretation": "Mechanical triage only. Source and map review required before adopting any new route.",
   "records": [
     {
@@ -112,9 +112,9 @@
     },
     {
       "id": "No.8",
-      "title": "上野ミュージアム",
+      "title": "上野ミュージアムと谷中",
       "series": "本編 A～Z（No.1～26）",
-      "workStatus": "research_needed",
+      "workStatus": "partial_rebuild",
       "legacy": {
         "geometryUrl": "data/routes/no-8.geojson",
         "walkingDistanceM": 6716,
@@ -129,7 +129,23 @@
         ],
         "gateResult": "OK"
       },
-      "existingNewVariants": [],
+      "existingNewVariants": [
+        {
+          "variant": "standard",
+          "status": "routed",
+          "distanceM": 3030
+        },
+        {
+          "variant": "extended",
+          "status": "routed",
+          "distanceM": 4473
+        },
+        {
+          "variant": "rainy",
+          "status": "researched",
+          "distanceM": null
+        }
+      ],
       "coordinateReview": "not_started",
       "sourceResearch": "source_research_in_progress",
       "historicalRoutingStrategies": [],
@@ -324,9 +340,9 @@
     },
     {
       "id": "No.17",
-      "title": "麻布台ヒルズ～東京タワー",
+      "title": "東京タワーと芝公園・愛宕",
       "series": "本編 A～Z（No.1～26）",
-      "workStatus": "research_needed",
+      "workStatus": "partial_rebuild",
       "legacy": {
         "geometryUrl": "data/routes/no-17.geojson",
         "walkingDistanceM": 6839,
@@ -341,7 +357,23 @@
         ],
         "gateResult": "OK"
       },
-      "existingNewVariants": [],
+      "existingNewVariants": [
+        {
+          "variant": "standard",
+          "status": "routed",
+          "distanceM": 2562
+        },
+        {
+          "variant": "extended",
+          "status": "routed",
+          "distanceM": 3266
+        },
+        {
+          "variant": "rainy",
+          "status": "researched",
+          "distanceM": null
+        }
+      ],
       "coordinateReview": "not_started",
       "sourceResearch": "source_research_in_progress",
       "historicalRoutingStrategies": [],
@@ -2157,7 +2189,7 @@
       "id": "No.23",
       "title": "葛西臨海公園",
       "series": "本編 A～Z（No.1～26）",
-      "workStatus": "research_needed",
+      "workStatus": "partial_rebuild",
       "legacy": {
         "geometryUrl": "data/routes/no-23.geojson",
         "walkingDistanceM": 6564,
@@ -2167,7 +2199,23 @@
         "repeatedWaypoints": [],
         "gateResult": "OK"
       },
-      "existingNewVariants": [],
+      "existingNewVariants": [
+        {
+          "variant": "standard",
+          "status": "routed",
+          "distanceM": 4591
+        },
+        {
+          "variant": "extended",
+          "status": "routed",
+          "distanceM": 6759
+        },
+        {
+          "variant": "rainy",
+          "status": "researched",
+          "distanceM": null
+        }
+      ],
       "coordinateReview": "not_started",
       "sourceResearch": "source_research_in_progress",
       "historicalRoutingStrategies": [],
