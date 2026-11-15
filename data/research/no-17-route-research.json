@@ -1,0 +1,23 @@
+{
+  "id": "No.17",
+  "title": "麻布台ヒルズ～東京タワー",
+  "stage": "source_research_in_progress",
+  "checkedAt": "2026-11-15",
+  "legacyDiagnosis": {
+    "repeatedGeometryM": 796,
+    "clusters": "約5.1km〜6.2kmに約498m＋約206m（西の六本木方面への往復）、約3.3kmに約88m、約1.4kmに約198m",
+    "cause": "旧文言「芝公園・増上寺方面方面へ実在の歩道で延伸（往復約3.6km）」。西（六本木・麻布台方面）への往復が主。",
+    "decision": "文言の往復延伸はHandover.md 禁止事項3に該当するため復活させない。"
+  },
+  "trials": [
+    {"n": 1, "variant": "神谷町駅→東京タワー前→増上寺前→御成門→芝公園→芝公園駅（交差点ピン）", "result": "2.56km・反復380m", "finding": "残る反復は増上寺前→御成門の約297mと芝公園内→駅の約82m。目標6.5kmには大きく不足"},
+    {"n": 2, "variant": "麻布台ヒルズ前（歩道上の仮点）を経由", "result": "2.56km・反復380m", "finding": "半径30mの到達範囲内で距離が変わらず、差は意味がない"}
+  ],
+  "decision": "往復を外すと2.5〜3kmで、目標6.5kmには実在の立ち寄り先が不足する。距離を往復や機械オフセットで埋めない。新A/Bとして採用しない。旧線はそのまま（要再設計）。",
+  "openQuestions": [
+    "麻布台ヒルズ中央広場・デジタルアート美術館の入口座標（OSMに名称ノードなし）",
+    "芝公園から先（愛宕神社・虎ノ門・日比谷方面）へ延ばす実在の経路の有無",
+    "増上寺前→御成門の297m反復の原因（御成門交差点ピンの位置）"
+  ],
+  "files": ["scripts/osm-poi-no-17.mjs", "scripts/build-no-17-candidates.mjs", "data/research/no-17-osm-poi.json", "data/research/no-17-walkway-snap.json", "data/research/no-17-route-build.json", "data/candidates/no-17-through.geojson", "data/candidates/no-17-through_azabu.geojson"]
+}

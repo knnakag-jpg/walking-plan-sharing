@@ -1,0 +1,94 @@
+{
+ "checkedAt": "2026-11-15T02:33:48.786Z",
+ "source": "OpenStreetMap via Overpass API; © OpenStreetMap contributors",
+ "kamiyacho": {
+  "snapped": [
+   35.6630963,
+   139.7451089
+  ],
+  "movedM": 13,
+  "wayId": 281201616,
+  "highway": "footway"
+ },
+ "tower_road": {
+  "snapped": [
+   35.6584587,
+   139.7469936
+  ],
+  "movedM": 0,
+  "wayId": 1030284188,
+  "highway": "tertiary"
+ },
+ "zojoji": {
+  "snapped": [
+   35.6572265,
+   139.750308
+  ],
+  "movedM": 0,
+  "wayId": 1326058953,
+  "highway": "tertiary"
+ },
+ "onarimon": {
+  "snapped": [
+   35.6609616,
+   139.7515109
+  ],
+  "movedM": 0,
+  "wayId": 667868684,
+  "highway": "tertiary"
+ },
+ "shiba_park": {
+  "snapped": [
+   35.6556362,
+   139.7501717
+  ],
+  "movedM": 12,
+  "wayId": 745301117,
+  "highway": "footway"
+ },
+ "shiba_st": {
+  "snapped": [
+   35.6541549,
+   139.7499008
+  ],
+  "movedM": 10,
+  "wayId": 411265068,
+  "highway": "footway"
+ },
+ "tower_foot": {
+  "snapped": [
+   35.6583693,
+   139.7460741
+  ],
+  "movedM": 5,
+  "wayId": 30526238,
+  "highway": "tertiary"
+ },
+ "azabudai": {
+  "snapped": [
+   35.6601237,
+   139.7408022
+  ],
+  "movedM": 20,
+  "wayId": 1192656133,
+  "highway": "footway"
+ },
+ "kamiyacho_cross": {
+  "snapped": [
+   35.663177,
+   139.7453255
+  ],
+  "movedM": 1,
+  "wayId": 683135150,
+  "highway": "tertiary"
+ },
+ "azabu_walk": {
+  "snapped": [
+   35.6602643,
+   139.7431923
+  ],
+  "movedM": 28,
+  "wayId": 474600366,
+  "highway": "footway"
+ }
+}

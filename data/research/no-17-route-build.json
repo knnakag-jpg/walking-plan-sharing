@@ -1,0 +1,191 @@
+{
+  "calculatedAt": "2026-11-15T02:35:29.106Z",
+  "engine": "valhalla-pedestrian",
+  "variants": {
+    "through": {
+      "label": "D 交差点ピンのみ：神谷町→東京タワー前→増上寺→御成門→芝公園→芝公園駅",
+      "distanceM": 2562,
+      "repeatedGeometryM": 380,
+      "legKm": [
+        0.82,
+        0.41,
+        0.48,
+        0.67,
+        0.18
+      ],
+      "stops": [
+        {
+          "id": "kamiyacho_cross",
+          "label": "神谷町（交差点）",
+          "coord": [
+            35.663177,
+            139.7453255
+          ],
+          "movedToWalkwayM": 1,
+          "highway": "tertiary",
+          "source": "OSM node 251857299 traffic_signals 神谷町",
+          "offsetM": 0
+        },
+        {
+          "id": "tower_road",
+          "label": "東京タワー前（交差点）",
+          "coord": [
+            35.6584587,
+            139.7469936
+          ],
+          "movedToWalkwayM": 0,
+          "highway": "tertiary",
+          "source": "OSM node 1637283659 traffic_signals 東京タワー前",
+          "offsetM": 0
+        },
+        {
+          "id": "zojoji",
+          "label": "増上寺前",
+          "coord": [
+            35.6572265,
+            139.750308
+          ],
+          "movedToWalkwayM": 0,
+          "highway": "tertiary",
+          "source": "OSM node 337024823",
+          "offsetM": 0
+        },
+        {
+          "id": "onarimon",
+          "label": "御成門（交差点）",
+          "coord": [
+            35.6609616,
+            139.7515109
+          ],
+          "movedToWalkwayM": 0,
+          "highway": "tertiary",
+          "source": "OSM node 281679484 traffic_signals",
+          "offsetM": 0
+        },
+        {
+          "id": "shiba_park",
+          "label": "芝公園（園内）",
+          "coord": [
+            35.6556362,
+            139.7501717
+          ],
+          "movedToWalkwayM": 12,
+          "highway": "footway",
+          "source": "OSM way 745301120 park centre",
+          "offsetM": 0
+        },
+        {
+          "id": "shiba_st",
+          "label": "芝公園駅",
+          "coord": [
+            35.6541549,
+            139.7499008
+          ],
+          "movedToWalkwayM": 10,
+          "highway": "footway",
+          "source": "OSM node 6233834712 station",
+          "offsetM": 0
+        }
+      ]
+    },
+    "through_azabu": {
+      "label": "E 麻布台ヒルズに先に寄る：神谷町→麻布台ヒルズ前→東京タワー前→増上寺→御成門→芝公園→芝公園駅",
+      "distanceM": 2562,
+      "repeatedGeometryM": 380,
+      "legKm": [
+        0.39,
+        0.44,
+        0.41,
+        0.48,
+        0.67,
+        0.18
+      ],
+      "stops": [
+        {
+          "id": "kamiyacho_cross",
+          "label": "神谷町（交差点）",
+          "coord": [
+            35.663177,
+            139.7453255
+          ],
+          "movedToWalkwayM": 1,
+          "highway": "tertiary",
+          "source": "OSM node 251857299 traffic_signals 神谷町",
+          "offsetM": 0
+        },
+        {
+          "id": "azabu_walk",
+          "label": "麻布台ヒルズ前（歩道上の仮点）",
+          "coord": [
+            35.6602643,
+            139.7431923
+          ],
+          "movedToWalkwayM": 28,
+          "highway": "footway",
+          "source": "placement on the street in front of 麻布台ヒルズ; needs map review",
+          "offsetM": 0
+        },
+        {
+          "id": "tower_road",
+          "label": "東京タワー前（交差点）",
+          "coord": [
+            35.6584587,
+            139.7469936
+          ],
+          "movedToWalkwayM": 0,
+          "highway": "tertiary",
+          "source": "OSM node 1637283659 traffic_signals 東京タワー前",
+          "offsetM": 0
+        },
+        {
+          "id": "zojoji",
+          "label": "増上寺前",
+          "coord": [
+            35.6572265,
+            139.750308
+          ],
+          "movedToWalkwayM": 0,
+          "highway": "tertiary",
+          "source": "OSM node 337024823",
+          "offsetM": 0
+        },
+        {
+          "id": "onarimon",
+          "label": "御成門（交差点）",
+          "coord": [
+            35.6609616,
+            139.7515109
+          ],
+          "movedToWalkwayM": 0,
+          "highway": "tertiary",
+          "source": "OSM node 281679484 traffic_signals",
+          "offsetM": 0
+        },
+        {
+          "id": "shiba_park",
+          "label": "芝公園（園内）",
+          "coord": [
+            35.6556362,
+            139.7501717
+          ],
+          "movedToWalkwayM": 12,
+          "highway": "footway",
+          "source": "OSM way 745301120 park centre",
+          "offsetM": 0
+        },
+        {
+          "id": "shiba_st",
+          "label": "芝公園駅",
+          "coord": [
+            35.6541549,
+            139.7499008
+          ],
+          "movedToWalkwayM": 10,
+          "highway": "footway",
+          "source": "OSM node 6233834712 station",
+          "offsetM": 0
+        }
+      ]
+    }
+  }
+}
