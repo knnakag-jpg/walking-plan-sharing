@@ -1,0 +1,23 @@
+{
+  "id": "No.23",
+  "title": "葛西臨海公園",
+  "stage": "source_research_in_progress",
+  "checkedAt": "2026-11-15",
+  "legacyDiagnosis": {
+    "repeatedGeometryM": 600,
+    "clusters": "約1.25kmに260m、約1.7kmに131m、約3.5kmに190m、約4.7kmに25m",
+    "cause": "ゴールが起点と同じ葛西臨海公園駅で、園内の寄り道が往復になる。鳥類園・水族園側で駅方向へ戻る区間が残る。"
+  },
+  "trials": [
+    {"n": 1, "variant": "駅→観覧車→汐風→西なぎさ→クリスタルビュー→水族園→鳥類園→駅", "result": "4.59km・反復905m", "finding": "反復は西なぎさからの戻り323m・海浜側から駅方向へ250m・鳥類園から駅方向へ287m"},
+    {"n": 2, "variant": "逆回り", "result": "4.56km・反復913m", "finding": "往復の順序が変わるだけで同じ"},
+    {"n": 3, "variant": "総合レクリエーション公園まで足を延ばす（近似座標）", "result": "10.99km・反復1181m", "finding": "往復2.15kmの区間が新たに増える。総合レクリエーション公園のピンが駅の北で遠い"}
+  ],
+  "decision": "駅発着の周回で、園内の見どころへの寄り道が往復になる構造は解消できていない。距離を満たすために逆走を足さない。新A/Bとして採用しない。旧線はそのまま（要再設計）。",
+  "openQuestions": [
+    "西なぎさ・鳥類園・水族園の園路（園内の歩道網）を地図で確認し、駅へ戻らずに回れるルートがあるか",
+    "終点を葛西臨海公園駅のままにするか、隣駅（葛西駅・新木場駅）へ抜ける案にするか",
+    "総合レクリエーション公園への延長ルートの実在性（2.15kmの戻りの原因）"
+  ],
+  "files": ["scripts/osm-poi-no-23.mjs", "scripts/build-no-23-candidates.mjs", "data/research/no-23-osm-poi.json", "data/research/no-23-walkway-snap.json", "data/research/no-23-route-build.json", "data/candidates/no-23-no_sogo.geojson", "data/candidates/no-23-no_sogo_counter.geojson"]
+}

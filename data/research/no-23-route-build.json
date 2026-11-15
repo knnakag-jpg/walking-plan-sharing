@@ -1,0 +1,230 @@
+{
+  "calculatedAt": "2026-11-15T02:41:23.422Z",
+  "engine": "valhalla-pedestrian",
+  "variants": {
+    "no_sogo": {
+      "label": "A 総合レクリエーション公園を外す：駅→観覧車→汐風→西なぎさ→クリスタル→水族園→鳥類園→駅",
+      "distanceM": 4591,
+      "repeatedGeometryM": 905,
+      "legKm": [
+        0.62,
+        0.47,
+        0.46,
+        0.54,
+        0.47,
+        1.17,
+        0.87
+      ],
+      "stops": [
+        {
+          "id": "kasai_station",
+          "label": "葛西臨海公園駅",
+          "coord": [
+            35.6437184,
+            139.8625617
+          ],
+          "movedToWalkwayM": 13,
+          "highway": "tertiary",
+          "source": "OSM node 7249081833",
+          "offsetM": 0
+        },
+        {
+          "id": "ferris",
+          "label": "ダイヤと花の大観覧車",
+          "coord": [
+            35.6440594,
+            139.8574158
+          ],
+          "movedToWalkwayM": 20,
+          "highway": "footway",
+          "source": "OSM way 161931777 centre",
+          "offsetM": 0
+        },
+        {
+          "id": "shiokaze",
+          "label": "汐風の広場",
+          "coord": [
+            35.6409859,
+            139.8566863
+          ],
+          "movedToWalkwayM": 41,
+          "highway": "footway",
+          "source": "OSM way 693987764 centre",
+          "offsetM": 0
+        },
+        {
+          "id": "nishinagisa",
+          "label": "西なぎさ",
+          "coord": [
+            35.6377,
+            139.8543
+          ],
+          "movedToWalkwayM": null,
+          "highway": null,
+          "source": "OSM relation 9644979 centre",
+          "offsetM": 218
+        },
+        {
+          "id": "crystal",
+          "label": "クリスタルビュー",
+          "coord": [
+            35.6407092,
+            139.8594499
+          ],
+          "movedToWalkwayM": 18,
+          "highway": "footway",
+          "source": "OSM way 161731857 centre",
+          "offsetM": 0
+        },
+        {
+          "id": "aquarium",
+          "label": "葛西臨海水族園",
+          "coord": [
+            35.6409459,
+            139.8618897
+          ],
+          "movedToWalkwayM": 19,
+          "highway": "footway",
+          "source": "OSM way 191044572 centre",
+          "offsetM": 0
+        },
+        {
+          "id": "bird",
+          "label": "鳥類園ウォッチングセンター",
+          "coord": [
+            35.6399744,
+            139.8654187
+          ],
+          "movedToWalkwayM": 21,
+          "highway": "path",
+          "source": "OSM way 156492882 centre",
+          "offsetM": 0
+        },
+        {
+          "id": "kasai_station",
+          "label": "葛西臨海公園駅",
+          "coord": [
+            35.6437184,
+            139.8625617
+          ],
+          "movedToWalkwayM": 13,
+          "highway": "tertiary",
+          "source": "OSM node 7249081833",
+          "offsetM": 0
+        }
+      ]
+    },
+    "no_sogo_counter": {
+      "label": "B 同・逆回り",
+      "distanceM": 4565,
+      "repeatedGeometryM": 913,
+      "legKm": [
+        0.86,
+        1.17,
+        0.47,
+        0.52,
+        0.46,
+        0.46,
+        0.62
+      ],
+      "stops": [
+        {
+          "id": "kasai_station",
+          "label": "葛西臨海公園駅",
+          "coord": [
+            35.6437184,
+            139.8625617
+          ],
+          "movedToWalkwayM": 13,
+          "highway": "tertiary",
+          "source": "OSM node 7249081833",
+          "offsetM": 0
+        },
+        {
+          "id": "bird",
+          "label": "鳥類園ウォッチングセンター",
+          "coord": [
+            35.6399744,
+            139.8654187
+          ],
+          "movedToWalkwayM": 21,
+          "highway": "path",
+          "source": "OSM way 156492882 centre",
+          "offsetM": 0
+        },
+        {
+          "id": "aquarium",
+          "label": "葛西臨海水族園",
+          "coord": [
+            35.6409459,
+            139.8618897
+          ],
+          "movedToWalkwayM": 19,
+          "highway": "footway",
+          "source": "OSM way 191044572 centre",
+          "offsetM": 0
+        },
+        {
+          "id": "crystal",
+          "label": "クリスタルビュー",
+          "coord": [
+            35.6407092,
+            139.8594499
+          ],
+          "movedToWalkwayM": 18,
+          "highway": "footway",
+          "source": "OSM way 161731857 centre",
+          "offsetM": 0
+        },
+        {
+          "id": "nishinagisa",
+          "label": "西なぎさ",
+          "coord": [
+            35.6377,
+            139.8543
+          ],
+          "movedToWalkwayM": null,
+          "highway": null,
+          "source": "OSM relation 9644979 centre",
+          "offsetM": 218
+        },
+        {
+          "id": "shiokaze",
+          "label": "汐風の広場",
+          "coord": [
+            35.6409859,
+            139.8566863
+          ],
+          "movedToWalkwayM": 41,
+          "highway": "footway",
+          "source": "OSM way 693987764 centre",
+          "offsetM": 0
+        },
+        {
+          "id": "ferris",
+          "label": "ダイヤと花の大観覧車",
+          "coord": [
+            35.6440594,
+            139.8574158
+          ],
+          "movedToWalkwayM": 20,
+          "highway": "footway",
+          "source": "OSM way 161931777 centre",
+          "offsetM": 0
+        },
+        {
+          "id": "kasai_station",
+          "label": "葛西臨海公園駅",
+          "coord": [
+            35.6437184,
+            139.8625617
+          ],
+          "movedToWalkwayM": 13,
+          "highway": "tertiary",
+          "source": "OSM node 7249081833",
+          "offsetM": 0
+        }
+      ]
+    }
+  }
+}

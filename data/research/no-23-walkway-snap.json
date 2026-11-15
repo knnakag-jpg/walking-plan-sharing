@@ -1,0 +1,79 @@
+{
+ "checkedAt": "2026-11-15T02:40:46.685Z",
+ "source": "OpenStreetMap via Overpass API; © OpenStreetMap contributors",
+ "kasai_station": {
+  "snapped": [
+   35.6437184,
+   139.8625617
+  ],
+  "movedM": 13,
+  "wayId": 23604986,
+  "highway": "tertiary"
+ },
+ "ferris": {
+  "snapped": [
+   35.6440594,
+   139.8574158
+  ],
+  "movedM": 20,
+  "wayId": 156492928,
+  "highway": "footway"
+ },
+ "shiokaze": {
+  "snapped": [
+   35.6409859,
+   139.8566863
+  ],
+  "movedM": 41,
+  "wayId": 190858894,
+  "highway": "footway"
+ },
+ "nishinagisa": {
+  "snapped": null
+ },
+ "crystal": {
+  "snapped": [
+   35.6407092,
+   139.8594499
+  ],
+  "movedM": 18,
+  "wayId": 510326456,
+  "highway": "footway"
+ },
+ "aquarium": {
+  "snapped": [
+   35.6409459,
+   139.8618897
+  ],
+  "movedM": 19,
+  "wayId": 614186095,
+  "highway": "footway"
+ },
+ "bird": {
+  "snapped": [
+   35.6399744,
+   139.8654187
+  ],
+  "movedM": 21,
+  "wayId": 615034984,
+  "highway": "path"
+ },
+ "sogo": {
+  "snapped": [
+   35.6503146,
+   139.874278
+  ],
+  "movedM": 5,
+  "wayId": 823665060,
+  "highway": "footway"
+ },
+ "sogo_n": {
+  "snapped": [
+   35.6604412,
+   139.8581338
+  ],
+  "movedM": 7,
+  "wayId": 71890014,
+  "highway": "steps"
+ }
+}
