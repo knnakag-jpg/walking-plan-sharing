@@ -158,8 +158,14 @@ for (const series of raw) for (const course of series.courses) {
     legacyWarnings: reportRows.get(course.n)?.soft ?? '', flags,
   });
 }
-if (courses.length !== 97 || Object.keys(geometry).length !== 97 || legacyCard.size !== 97) {
+const legacyCourses = courses.filter((c) => c.seriesId !== 'personal');
+if (legacyCourses.length !== 97 || Object.keys(geometry).length !== 97 || legacyCard.size !== 97) {
   throw new Error(`count mismatch: cards=${legacyCard.size} courses=${courses.length} shapes=${Object.keys(geometry).length}`);
+}
+// 個人散歩 (seriesId 'personal') は本編97件とは別枠。旧カード/SERIES/形状の97件照合から外す。
+for (const course of courses.filter((c) => c.seriesId === 'personal')) {
+  course.seriesName = '個人散歩';
+  if (!course.routeOptions) course.routeOptions = [course.route];
 }
 const curatedRoot = path.join(root, 'data/curated');
 for (const filename of fs.readdirSync(curatedRoot).filter((name) => name.endsWith('.json'))) {
