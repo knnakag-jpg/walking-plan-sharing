@@ -8,12 +8,12 @@ const distanceLabel = (route) => Number.isFinite(route?.distanceM) ? km(route.di
 const routeDistanceLabel = (course, route) => course?.publicWarning && route?.variant === 'legacy' ? '未確定（旧線の計算値は無効）' : distanceLabel(route);
 const routeDistanceBasis = (course, route) => course?.publicWarning && route?.variant === 'legacy' ? '旧線は徒歩距離として無効' : route.geometryUrl ? '経路形状から計算' : '未計測';
 const retraceText = (course, route) => route?.variant === 'legacy' && course?.retraceReview ? `旧計算線に約${course.retraceReview.repeatedGeometryM} mの反復候補があります。一筆書きの新経路を再設計中です。` : '';
-const variantLabel = (variant) => ({ standard: 'A 標準', extended: 'B 延長', rainy: 'C 雨天', legacy: '旧経路' })[variant] || variant;
+const variantLabel = (variant) => ({ standard: 'A 標準', extended: 'B 延長', rainy: 'C 雨天', legacy: '旧経路', personal: '個人散歩' })[variant] || variant;
 const statusText = (status) => ({ idea: 'アイデア', researched: '資料調査済み', routed: '経路計算済み・再調査待ち', map_reviewed: '地図レビュー済み', field_verified: '現地確認済み' })[status] || '確認状態不明';
 const localKey = { favorites: 'walking-atlas-favorites-v1', compare: 'walking-atlas-compare-v1', theme: 'walking-atlas-theme-v1', walk: 'walking-atlas-walk-v1' };
 const saved = (key, fallback) => { try { return JSON.parse(localStorage.getItem(key)) ?? fallback; } catch { return fallback; } };
 const save = (key, value) => { try { localStorage.setItem(key, JSON.stringify(value)); } catch { /* private mode still supports in-memory use */ } };
-const state = { courses: [], byId: new Map(), view: 'discover', selectedId: null, variantById: {}, feature: null, model: null, line: null, callouts: null, finalLead: '', elevationCache: new Map(), routeCache: new Map(), map: null, routeLayer: null, markerLayer: null, locationLayer: null, playback: null, startRing: null, reveal: null, sourceRect: null, lastCardRect: {}, showMarkers: true, routeRequest: 0, favorites: new Set(saved(localKey.favorites, [])), comparison: saved(localKey.compare, []), walkProgress: saved(localKey.walk, {}), profile: 'solo', theme: saved(localKey.theme, 'light'), search: '', series: 'all', distance: 'all', favoritesOnly: false };
+const state = { courses: [], byId: new Map(), view: 'discover', selectedId: null, variantById: {}, feature: null, model: null, line: null, callouts: null, finalLead: '', elevationCache: new Map(), routeCache: new Map(), map: null, routeLayer: null, markerLayer: null, locationLayer: null, playback: null, startRing: null, reveal: null, sourceRect: null, lastCardRect: {}, showMarkers: true, routeRequest: 0, favorites: new Set(saved(localKey.favorites, [])), comparison: saved(localKey.compare, []), walkProgress: saved(localKey.walk, {}), profile: 'solo', theme: saved(localKey.theme, 'light'), search: '', category: 'main', series: 'all', distance: 'all', favoritesOnly: false };
 const prefersReducedMotion = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
 const activeRoute = (course) => course?.routeOptions?.find((route) => route.variant === (state.variantById[course.id] || course.defaultVariant)) || course?.route;
 const routeWaypoints = (course, route) => route?.waypoints || course.waypoints;
@@ -21,6 +21,7 @@ const routeWaypoints = (course, route) => route?.waypoints || course.waypoints;
 function visibleCourses() {
   const query = state.search.trim().toLocaleLowerCase('ja');
   return state.courses.filter((course) => {
+    if (state.category !== 'all' && course.category !== state.category) return false;
     if (state.series !== 'all' && course.seriesId !== state.series) return false;
     if (state.favoritesOnly && !state.favorites.has(course.id)) return false;
     const distance = course.publicWarning && activeRoute(course).variant === 'legacy' ? NaN : activeRoute(course).distanceM;
@@ -37,7 +38,7 @@ function visibleCourses() {
 function renderList() {
   const courses = visibleCourses();
   $('#result-count').textContent = `${courses.length} 件の候補`;
-  $('#active-filter-count').textContent = [state.search, state.series !== 'all', state.distance !== 'all', state.favoritesOnly].filter(Boolean).length ? '・適用中' : '';
+  $('#active-filter-count').textContent = [state.search, state.category !== 'main', state.series !== 'all', state.distance !== 'all', state.favoritesOnly].filter(Boolean).length ? '・適用中' : '';
   $('#course-list').innerHTML = courses.length ? courses.map((course) => { const route = activeRoute(course); return `<button type="button" class="course-card ${course.id === state.selectedId ? 'selected' : ''} ${state.reveal && course.id === state.selectedId ? 'is-revealing' : ''}" data-select="${escapeHtml(course.id)}" aria-pressed="${course.id === state.selectedId}"><span class="card-badge">${escapeHtml(variantLabel(route.variant))}${course.publicWarning || retraceText(course, route) ? '・要再設計' : ''}</span><h3>${escapeHtml(course.title)}</h3><div class="card-meta"><span class="distance-pill">徒歩 ${routeDistanceLabel(course, route)}</span><span>${escapeHtml(course.seriesName)}</span></div><p>${escapeHtml(course.summary)}</p></button>`; }).join('') : '<div class="empty-state">条件に合う候補はありません。絞り込みを変えてください。</div>';
   $$('.course-card').forEach((card) => { state.lastCardRect[card.dataset.select] = card.getBoundingClientRect(); });
   applyUnselectedDim();
@@ -65,9 +66,30 @@ function renderSelected() {
   $('#show-route-now').disabled = !route.geometryUrl;
   $('#variant-switch').innerHTML = course.routeOptions ? `${course.routeOptions.map((option) => `<button type="button" data-variant="${escapeHtml(option.variant)}" class="${option.variant === route.variant ? 'active' : ''}" aria-pressed="${option.variant === route.variant}">${escapeHtml(variantLabel(option.variant))}</button>`).join('')}<span class="variant-hint">A/Bは地図・現地レビュー待ち</span>` : '<span class="variant-hint">旧経路のみ・A/B/Cは再構築待ち</span>';
   $('#map-legend').innerHTML = route.variant === 'legacy' ? '<span><i class="legend-line legacy"></i>旧経路・再調査待ち</span><span><i class="legend-dot"></i>旧資料の経由点</span><span>旧計算線・徒歩距離は要確認</span>' : `<span>${escapeHtml(variantLabel(route.variant))}・${escapeHtml(statusText(route.verificationStatus))}</span><span>${route.geometryUrl ? '道路に沿う計算形状・現地未確認' : '徒歩線は未生成'}</span>`;
-  const profileNote = course.seriesId === 'personal' ? '個人散歩：写真の順光・朝の時間帯を見込んだ順路。宿泊は駅近の鍵付完全個室（CPAP・電源）、食事はコンビニ前提。' : state.profile === 'group' ? '歩行会：集合・解散、坂、休憩、トイレ、途中離脱の評価は未完了。' : '個人散歩：豊田駅からのアクセスと中央線への帰路は未調査。';
+  const profileNote = course.category === 'personal' ? '個人散歩：写真の順光・朝の時間帯を見込んだ順路。宿泊は駅近の鍵付完全個室（CPAP・電源）、食事はコンビニ前提。' : state.profile === 'group' ? '歩行会：集合・解散、坂、休憩、トイレ、途中離脱の評価は未完了。' : '個人散歩：豊田駅からのアクセスと中央線への帰路は未調査。';
   $('#selected-summary').innerHTML = `<h2>${escapeHtml(course.title)}</h2><p>${escapeHtml(route.routeReason || course.summary)}</p>${course.publicWarning ? `<p class="walk-warning">${escapeHtml(course.publicWarning)}</p>` : ''}<div class="selected-meta"><span class="status-label">${statusText(route.verificationStatus)}</span><span class="card-meta">徒歩 ${routeDistanceLabel(course, route)} ${routeDistanceBasis(course, route)}</span></div><p class="profile-note">${profileNote}</p><div class="selected-actions"><button type="button" data-action="detail" data-id="${escapeHtml(course.id)}">道の詳細</button><button type="button" data-action="favorite" data-id="${escapeHtml(course.id)}" aria-pressed="${state.favorites.has(course.id)}">${state.favorites.has(course.id) ? '保存済み ♥' : '保存 ♡'}</button><button type="button" data-action="compare" data-id="${escapeHtml(course.id)}" aria-pressed="${state.comparison.includes(course.id)}">${state.comparison.includes(course.id) ? '比較に追加済み' : '比較に追加 ＋'}</button><button type="button" data-action="walk" data-id="${escapeHtml(course.id)}">当日画面</button></div>`;
+  if (course.personalPlan || route.retraceException || route.distanceException) $('#selected-summary').insertAdjacentHTML('beforeend', personalPlanHtml(course, route));
   if (retraceText(course, route)) $('#selected-summary').querySelector('.selected-meta').insertAdjacentHTML('beforebegin', `<p class="walk-warning">${escapeHtml(retraceText(course, route))}</p>`);
+}
+
+function personalPlanHtml(course, route) {
+  const plan = course.personalPlan;
+  const rows = [];
+  if (route.retraceException) rows.push(['往復の理由', route.retraceException]);
+  if (route.distanceException) rows.push(['距離について', route.distanceException]);
+  if (plan) {
+    rows.push(['形', plan.mode === 'station_loop' ? '駅発着の周遊' : '駅間ワンウェイ']);
+    rows.push(['拠点', plan.hub]); rows.push(['撮影', plan.photo]); rows.push(['移動', plan.transit]);
+    if (plan.lodging) { rows.push(['宿', plan.lodging.policy]); rows.push(['宿の状況', plan.lodging.status]); rows.push(['荷物', plan.lodging.luggage]); }
+    rows.push(['食事', plan.food]);
+  }
+  return `<dl class="personal-plan">${rows.filter(([, v]) => v).map(([k, v]) => `<div><dt>${escapeHtml(k)}</dt><dd>${escapeHtml(v)}</dd></div>`).join('')}</dl>`;
+}
+
+function renderSeriesOptions() {
+  const series = new Map(state.courses.filter((course) => state.category === 'all' || course.category === state.category).map((course) => [course.seriesId, course.seriesName]));
+  $('#series-filter').innerHTML = '<option value="all">すべて</option>' + [...series].map(([id, label]) => `<option value="${escapeHtml(id)}">${escapeHtml(label)}</option>`).join('');
+  state.series = 'all';
 }
 
 function initMap() {
@@ -587,7 +609,10 @@ function renderWalk() {
 function handleHash() {
   const hash = decodeURIComponent(location.hash.slice(1));
   const course = state.courses.find((item) => item.legacyAnchor === hash);
-  if (course) { showView('explore', { updateHash: false }); selectCourse(course.id, { updateHash: false }); return; }
+  if (course) {
+    if (state.category !== 'all' && state.category !== course.category) { state.category = course.category; $('#category-filter').value = course.category; renderSeriesOptions(); renderList(); }
+    showView('explore', { updateHash: false }); selectCourse(course.id, { updateHash: false }); return;
+  }
   showView(['discover', 'explore', 'compare', 'walk'].includes(hash) ? hash : 'discover', { updateHash: false });
 }
 
@@ -626,10 +651,11 @@ function wireEvents() {
     if (event.target.closest('[data-location]')) showLocation();
   });
   $('#search').addEventListener('input', (event) => { state.search = event.target.value; renderList(); });
+  $('#category-filter').addEventListener('change', (event) => { state.category = event.target.value; renderSeriesOptions(); renderList(); });
   $('#series-filter').addEventListener('change', (event) => { state.series = event.target.value; renderList(); });
   $('#distance-filter').addEventListener('change', (event) => { state.distance = event.target.value; renderList(); });
   $('#favorites-only').addEventListener('change', (event) => { state.favoritesOnly = event.target.checked; renderList(); });
-  $('#reset-filters').addEventListener('click', () => { state.search = ''; state.series = 'all'; state.distance = 'all'; state.favoritesOnly = false; $('#search').value = ''; $('#series-filter').value = 'all'; $('#distance-filter').value = 'all'; $('#favorites-only').checked = false; renderList(); });
+  $('#reset-filters').addEventListener('click', () => { state.search = ''; state.category = 'main'; $('#category-filter').value = 'main'; renderSeriesOptions(); state.distance = 'all'; state.favoritesOnly = false; $('#search').value = ''; $('#distance-filter').value = 'all'; $('#favorites-only').checked = false; renderList(); });
   $('#profile').addEventListener('change', (event) => { state.profile = event.target.value; if (state.selectedId) renderSelected(); });
   $('#walk-course').addEventListener('change', () => { const id = $('#walk-course').value; renderWalk(); if (id) selectCourse(id, { updateHash: false }); });
   $('#walk-variant').addEventListener('change', () => { const id = $('#walk-course').value; if (!id) return; state.variantById[id] = $('#walk-variant').value; renderWalk(); selectCourse(id, { updateHash: false }); });
@@ -671,12 +697,11 @@ async function init() {
     const response = await fetch('data/catalog.json');
     if (!response.ok) throw new Error(`コースデータを取得できません (${response.status})`);
     const data = await response.json();
-    if (!Array.isArray(data.courses) || data.courses.length !== 97) throw new Error('コース件数が想定と一致しません');
+    if (!Array.isArray(data.courses) || data.courses.length < 97) throw new Error('コース件数が想定と一致しません');
     state.courses = data.courses;
     state.byId = new Map(data.courses.map((course) => [course.id, course]));
     state.comparison = state.comparison.filter((id) => state.byId.has(id)).slice(0, 3);
-    const series = new Map(data.courses.map((course) => [course.seriesId, course.seriesName]));
-    $('#series-filter').insertAdjacentHTML('beforeend', [...series].map(([id, label]) => `<option value="${escapeHtml(id)}">${escapeHtml(label)}</option>`).join(''));
+    renderSeriesOptions();
     $('#walk-course').insertAdjacentHTML('beforeend', data.courses.map((course) => `<option value="${escapeHtml(course.id)}">${escapeHtml(course.title)}</option>`).join(''));
     renderFeatured(); renderList(); renderCompare(); renderWalk(); initMap(); handleHash();
   } catch (error) {

@@ -4,7 +4,7 @@ import { fileURLToPath } from 'node:url';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const read = (file) => JSON.parse(fs.readFileSync(path.join(root, file), 'utf8'));
-const courses = read('data/catalog.json').courses;
+const courses = read('data/catalog.json').courses.filter((course) => course.seriesId !== 'personal'); // 個人散歩の新案は本編97件の作業台帳に入れない
 const audits = new Map(read('data/route-audit.json').audits.map((row) => [row.id, row]));
 const historicalBranches = read('tools/branches/plan.json');
 const checklist = [

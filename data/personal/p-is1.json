@@ -1,0 +1,85 @@
+{
+  "id": "P-IS1",
+  "title": "石巻駅から渡波駅へ・日和山の見晴らしと港町",
+  "mode": "oneway",
+  "stops": [
+    {
+      "id": "ishinomaki",
+      "label": "石巻駅",
+      "coord": [
+        38.4350986,
+        141.3037834
+      ],
+      "osmCentre": [
+        38.43524,
+        141.3038
+      ],
+      "movedToWalkwayM": 16,
+      "source": "OSM node 3570916493 station",
+      "offsetM": 0
+    },
+    {
+      "id": "hiyoriyama",
+      "label": "日和山公園",
+      "coord": [
+        38.4232826,
+        141.3083327
+      ],
+      "osmCentre": [
+        38.42322,
+        141.30805
+      ],
+      "movedToWalkwayM": 26,
+      "source": "OSM way 318426659 park centre; entrance needs map review",
+      "offsetM": 0
+    },
+    {
+      "id": "watanoha",
+      "label": "渡波駅",
+      "coord": [
+        38.4197189,
+        141.3652452
+      ],
+      "osmCentre": [
+        38.41984,
+        141.36501
+      ],
+      "movedToWalkwayM": 25,
+      "source": "OSM node 264404860 station",
+      "offsetM": 0
+    }
+  ],
+  "targetM": 6600,
+  "tags": [
+    "港",
+    "川",
+    "展望",
+    "個人散歩",
+    "駅間"
+  ],
+  "summary": "石巻駅から日和山公園の見晴らしへ上り、港町を東へ歩いて渡波駅へ抜ける。",
+  "plan": {
+    "mode": "station_to_station",
+    "hub": "石巻駅",
+    "photo": "日和山からの旧北上川と港は午前の順光側。未計算。",
+    "transit": "仙台駅→石巻駅は仙石線、ゴールの渡波駅からは石巻線で石巻駅へ。",
+    "lodging": {
+      "policy": "ビジネスホテルまたは快活CLUBのナイト12時間パック（鍵付完全個室・フラット、100V電源・CPAP可）を駅徒歩10分以内で。WEB予約は無料キャンセル期限内で仮押さえ。",
+      "hub": "石巻駅",
+      "status": "未予約（候補探しのみ。宿名・料金は未確認）",
+      "luggage": "CPAPと着替えは拠点駅のコインロッカーへ。"
+    },
+    "food": "コンビニ（地域限定商品は未調査）。"
+  },
+  "distanceException": "計算上8.46km。目標6.6km前後より長い。日和山公園から渡波駅までの経路（6.45km）をそのまま採用した。",
+  "slug": "p-is1",
+  "geometryUrl": "data/routes/p-is1.geojson",
+  "distanceM": 8463,
+  "engineDistanceM": 8470,
+  "repeatedGeometryM": 0,
+  "calculatedAt": "2026-11-15T10:25:48.396Z",
+  "legKm": [
+    2.02,
+    6.45
+  ]
+}

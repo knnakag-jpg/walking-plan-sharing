@@ -1,0 +1,182 @@
+{
+ "sendai": {
+  "snapped": [
+   38.2597623,
+   140.880056
+  ],
+  "movedM": 3,
+  "wayId": 1434873995,
+  "highway": "tertiary"
+ },
+ "omachi_nishikoen": {
+  "snapped": [
+   38.2589935,
+   140.8645808
+  ],
+  "movedM": 11,
+  "wayId": 104155396,
+  "highway": "residential"
+ },
+ "kokusai_center": {
+  "snapped": [
+   38.26006,
+   140.8567939
+  ],
+  "movedM": 21,
+  "wayId": 1377717713,
+  "highway": "footway"
+ },
+ "sendai_castle": {
+  "snapped": [
+   38.2536558,
+   140.8555012
+  ],
+  "movedM": 4,
+  "wayId": 60100945,
+  "highway": "path"
+ },
+ "sendai_castle_south": {
+  "snapped": [
+   38.2510904,
+   140.854791
+  ],
+  "movedM": 7,
+  "wayId": 760398275,
+  "highway": "tertiary"
+ },
+ "atago_shrine": {
+  "snapped": [
+   38.2458012,
+   140.8756794
+  ],
+  "movedM": 16,
+  "wayId": 816093561,
+  "highway": "footway"
+ },
+ "nagamachi": {
+  "snapped": [
+   38.2267824,
+   140.8857263
+  ],
+  "movedM": 15,
+  "wayId": 365018243,
+  "highway": "footway"
+ },
+ "kita_sendai": {
+  "snapped": [
+   38.2817514,
+   140.8696878
+  ],
+  "movedM": 1,
+  "wayId": 1151601784,
+  "highway": "steps"
+ },
+ "toshogu_station": {
+  "snapped": [
+   38.2774318,
+   140.8863135
+  ],
+  "movedM": 11,
+  "wayId": 556457896,
+  "highway": "path"
+ },
+ "ishinomaki": {
+  "snapped": [
+   38.4350986,
+   141.3037834
+  ],
+  "movedM": 16,
+  "wayId": 1451955657,
+  "highway": "footway"
+ },
+ "ishinomori_mangakan": {
+  "snapped": [
+   38.4296136,
+   141.3108387
+  ],
+  "movedM": 8,
+  "wayId": 1305464163,
+  "highway": "footway"
+ },
+ "hiyoriyama": {
+  "snapped": [
+   38.4232826,
+   141.3083327
+  ],
+  "movedM": 26,
+  "wayId": 206703162,
+  "highway": "steps"
+ },
+ "watanoha": {
+  "snapped": [
+   38.4197189,
+   141.3652452
+  ],
+  "movedM": 25,
+  "wayId": 1453149436,
+  "highway": "footway"
+ },
+ "yui": {
+  "snapped": [
+   35.0973725,
+   138.553305
+  ],
+  "movedM": 38,
+  "wayId": 372669409,
+  "highway": "service"
+ },
+ "satta_pass": {
+  "snapped": [
+   35.0659342,
+   138.5392828
+  ],
+  "movedM": 3,
+  "wayId": 166754794,
+  "highway": "path"
+ },
+ "okitsu": {
+  "snapped": [
+   35.0523842,
+   138.5221619
+  ],
+  "movedM": 26,
+  "wayId": 36964292,
+  "highway": "secondary"
+ },
+ "numazu": {
+  "snapped": [
+   35.1031955,
+   138.859304
+  ],
+  "movedM": 8,
+  "wayId": 1206060183,
+  "highway": "steps"
+ },
+ "senbonhama": {
+  "snapped": [
+   35.0941903,
+   138.847498
+  ],
+  "movedM": 18,
+  "wayId": 609629642,
+  "highway": "path"
+ },
+ "byuo": {
+  "snapped": [
+   35.0810874,
+   138.8547491
+  ],
+  "movedM": 33,
+  "wayId": 404706299,
+  "highway": "residential"
+ },
+ "kanukiyama": {
+  "snapped": [
+   35.0922375,
+   138.8776673
+  ],
+  "movedM": 7,
+  "wayId": 62256273,
+  "highway": "path"
+ }
+}

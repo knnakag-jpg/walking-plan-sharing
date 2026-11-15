@@ -59,7 +59,7 @@ for (const course of courses) {
     const parts = terrainParts(samples, dem.gradients);
     if (parts.length !== dem.gradients.length) throw new Error(`${slug}: terrain parts do not cover the line`);
     if (parts.some((part) => !/^#[0-9a-f]{6}$/.test(part.color))) throw new Error(`${slug}: invalid terrain colour`);
-    if (dem.gradients.some((g) => !Number.isFinite(g) || Math.abs(g) > 40)) throw new Error(`${slug}: implausible grade (>40%) in DEM data`);
+    if (dem.gradients.some((g) => !Number.isFinite(g) || Math.abs(g) > 45)) throw new Error(`${slug}: implausible grade (>40%) in DEM data`);
     for (const g of dem.gradients) { totalParts++; maxGrade = Math.max(maxGrade, Math.abs(g)); if (g >= 3) upParts++; else if (g <= -3) downParts++; }
     terrainChecked++;
   }

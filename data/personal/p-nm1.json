@@ -1,0 +1,100 @@
+{
+  "id": "P-NM1",
+  "title": "沼津駅発着・千本浜とびゅうおの海辺周遊",
+  "mode": "loop",
+  "stops": [
+    {
+      "id": "numazu",
+      "label": "沼津駅",
+      "coord": [
+        35.1031955,
+        138.859304
+      ],
+      "osmCentre": [
+        35.10313,
+        138.85934
+      ],
+      "movedToWalkwayM": 8,
+      "source": "OSM node 3999393691 station",
+      "offsetM": 0
+    },
+    {
+      "id": "senbonhama",
+      "label": "千本浜公園",
+      "coord": [
+        35.0941903,
+        138.847498
+      ],
+      "osmCentre": [
+        35.09429,
+        138.84766
+      ],
+      "movedToWalkwayM": 18,
+      "source": "OSM node 5772244871 park",
+      "offsetM": 0
+    },
+    {
+      "id": "byuo",
+      "label": "びゅうお",
+      "coord": [
+        35.0810874,
+        138.8547491
+      ],
+      "osmCentre": [
+        35.08134,
+        138.85456
+      ],
+      "movedToWalkwayM": 33,
+      "source": "OSM node 14234231494 attraction",
+      "offsetM": 0
+    },
+    {
+      "id": "numazu",
+      "label": "沼津駅",
+      "coord": [
+        35.1031955,
+        138.859304
+      ],
+      "osmCentre": [
+        35.10313,
+        138.85934
+      ],
+      "movedToWalkwayM": 8,
+      "source": "OSM node 3999393691 station",
+      "offsetM": 0
+    }
+  ],
+  "targetM": 6500,
+  "tags": [
+    "海",
+    "展望",
+    "個人散歩",
+    "周遊"
+  ],
+  "summary": "沼津駅から千本浜公園の海岸線、びゅうお水門の見晴らしを経て駅へ戻る周遊。",
+  "plan": {
+    "mode": "station_loop",
+    "hub": "沼津駅",
+    "photo": "千本浜の富士と海は朝の順光側を想定。未計算。",
+    "transit": "東海道本線（普通）で沼津駅へ。",
+    "lodging": {
+      "policy": "ビジネスホテルまたは快活CLUBのナイト12時間パック（鍵付完全個室・フラット、100V電源・CPAP可）を駅徒歩10分以内で。WEB予約は無料キャンセル期限内で仮押さえ。",
+      "hub": "沼津駅",
+      "status": "未予約（候補探しのみ。宿名・料金は未確認）",
+      "luggage": "CPAPと着替えは拠点駅のコインロッカーへ。"
+    },
+    "food": "コンビニ。"
+  },
+  "retraceException": "びゅうお付近で約800m重ねる（うち約660mが水門の先への出入り）。水門の先端が行き止まりと見られ、同じ道を戻る必要があるためで、距離合わせではない。先端まで入らない場合は短くなる（地図で未確認）。",
+  "slug": "p-nm1",
+  "geometryUrl": "data/routes/p-nm1.geojson",
+  "distanceM": 7333,
+  "engineDistanceM": 7343,
+  "repeatedGeometryM": 799,
+  "calculatedAt": "2026-11-15T10:26:04.418Z",
+  "legKm": [
+    1.91,
+    2.56,
+    2.88
+  ]
+}

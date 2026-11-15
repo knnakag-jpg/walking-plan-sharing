@@ -163,9 +163,22 @@ if (legacyCourses.length !== 97 || Object.keys(geometry).length !== 97 || legacy
   throw new Error(`count mismatch: cards=${legacyCard.size} courses=${courses.length} shapes=${Object.keys(geometry).length}`);
 }
 // 個人散歩 (seriesId 'personal') は本編97件とは別枠。旧カード/SERIES/形状の97件照合から外す。
-for (const course of courses.filter((c) => c.seriesId === 'personal')) {
-  course.seriesName = '個人散歩';
-  if (!course.routeOptions) course.routeOptions = [course.route];
+// 先行ページの個人系26件(solo/enso/zenkoku)は本編97件の中に残したまま、区分(category)だけ個人散歩にする。
+const PERSONAL_LEGACY = new Set(['solo', 'enso', 'zenkoku']);
+for (const course of courses) course.category = PERSONAL_LEGACY.has(course.seriesId) ? 'personal' : 'main';
+// 新案は data/personal/<id>.json から。先行ページには載せず、アトラス専用（本編97件の照合には入れない）。
+const personalRoot = path.join(root, 'data/personal');
+if (fs.existsSync(personalRoot)) for (const filename of fs.readdirSync(personalRoot).filter((name) => name.endsWith('.json')).sort()) {
+  const spec = JSON.parse(fs.readFileSync(path.join(personalRoot, filename), 'utf8'));
+  const pct = Number((spec.repeatedGeometryM / spec.distanceM * 100).toFixed(1));
+  courses.push({
+    id: spec.id, slug: spec.slug, title: spec.title, seriesId: 'personal', seriesName: '個人散歩（新案）', category: 'personal',
+    legacyAnchor: `personal-${spec.slug}`, legacyUrl: null, summary: spec.summary,
+    routeText: '経路ノード： ' + spec.stops.map((s) => s.label).join(' → '), routeTextSource: 'osm_named_points', tags: spec.tags,
+    route: { id: `${spec.slug}-personal`, variant: 'personal', strategy: 'personal_one_stroke', geometryUrl: spec.geometryUrl, verificationStatus: 'routed', distanceM: spec.distanceM, engineDistanceM: spec.engineDistanceM, targetDistanceM: spec.targetM ?? null, repeatedGeometryPct: pct, maxWaypointToShapeM: Math.max(...spec.stops.map((s) => s.offsetM)), built: spec.calculatedAt.slice(0, 10), engine: 'valhalla-pedestrian', routeReason: spec.summary, retraceException: spec.retraceException ?? null, distanceException: spec.distanceException ?? null },
+    waypoints: spec.stops.map((s, index) => ({ index, id: s.id, label: s.label, point: [s.coord[1], s.coord[0]], source: s.source })),
+    personalPlan: spec.plan, climbM: null, descentM: null, auditFlags: [],
+  });
 }
 const curatedRoot = path.join(root, 'data/curated');
 for (const filename of fs.readdirSync(curatedRoot).filter((name) => name.endsWith('.json'))) {

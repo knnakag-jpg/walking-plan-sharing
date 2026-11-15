@@ -1,0 +1,86 @@
+{
+  "id": "P-SZ1",
+  "title": "由比駅から興津駅へ・薩埵峠の富士と駿河湾",
+  "mode": "oneway",
+  "stops": [
+    {
+      "id": "yui",
+      "label": "由比駅",
+      "coord": [
+        35.0973725,
+        138.553305
+      ],
+      "osmCentre": [
+        35.09719,
+        138.55295
+      ],
+      "movedToWalkwayM": 38,
+      "source": "OSM node 3999393709 station",
+      "offsetM": 0
+    },
+    {
+      "id": "satta_pass",
+      "label": "薩埵峠（展望）",
+      "coord": [
+        35.0659342,
+        138.5392828
+      ],
+      "osmCentre": [
+        35.06592,
+        138.53931
+      ],
+      "movedToWalkwayM": 3,
+      "source": "OSM node 12303563079 viewpoint",
+      "offsetM": 0
+    },
+    {
+      "id": "okitsu",
+      "label": "興津駅",
+      "coord": [
+        35.0523842,
+        138.5221619
+      ],
+      "osmCentre": [
+        35.05256,
+        138.52197
+      ],
+      "movedToWalkwayM": 26,
+      "source": "OSM node 3999393692 station",
+      "offsetM": 0
+    }
+  ],
+  "targetM": 6500,
+  "tags": [
+    "展望",
+    "海",
+    "富士山",
+    "個人散歩",
+    "駅間"
+  ],
+  "summary": "由比駅から薩埵峠の展望へ上り、東海道本線沿いに興津駅へ下る駅間。峠道の歩道状況は未確認。",
+  "plan": {
+    "mode": "station_to_station",
+    "hub": "静岡駅または沼津駅",
+    "photo": "薩埵峠の富士と海は朝の順光側を想定。未計算。",
+    "transit": "東海道本線（普通）。青春18きっぷ向き。",
+    "lodging": {
+      "policy": "ビジネスホテルまたは快活CLUBのナイト12時間パック（鍵付完全個室・フラット、100V電源・CPAP可）を駅徒歩10分以内で。WEB予約は無料キャンセル期限内で仮押さえ。",
+      "hub": "静岡駅",
+      "status": "未予約（候補探しのみ。宿名・料金は未確認）",
+      "luggage": "CPAPと着替えは拠点駅のコインロッカーへ。"
+    },
+    "food": "コンビニ。"
+  },
+  "retraceException": "薩埵峠の展望ピン付近で約660m重ねる。展望地点が本道から外れた位置にあり、同じ道を戻る必要があるためと見られる（地図・現地で未確認）。距離合わせではない。",
+  "distanceException": "計算上8.13km。目標6.5km前後より長い。薩埵峠の展望を経由する最短の経路で、距離合わせの延伸は作らない。",
+  "slug": "p-sz1",
+  "geometryUrl": "data/routes/p-sz1.geojson",
+  "distanceM": 8131,
+  "engineDistanceM": 8137,
+  "repeatedGeometryM": 663,
+  "calculatedAt": "2026-11-15T10:26:02.685Z",
+  "legKm": [
+    5.63,
+    2.5
+  ]
+}

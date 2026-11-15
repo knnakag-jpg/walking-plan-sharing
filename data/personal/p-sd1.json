@@ -1,0 +1,117 @@
+{
+  "id": "P-SD1",
+  "title": "仙台駅発着・青葉城跡の見晴らし周遊",
+  "mode": "loop",
+  "stops": [
+    {
+      "id": "sendai",
+      "label": "仙台駅",
+      "coord": [
+        38.2597623,
+        140.880056
+      ],
+      "osmCentre": [
+        38.25975,
+        140.88002
+      ],
+      "movedToWalkwayM": 3,
+      "source": "OSM node 264415884 station",
+      "offsetM": 0
+    },
+    {
+      "id": "kokusai_center",
+      "label": "国際センター駅",
+      "coord": [
+        38.26006,
+        140.8567939
+      ],
+      "osmCentre": [
+        38.26025,
+        140.85678
+      ],
+      "movedToWalkwayM": 21,
+      "source": "OSM node 3594254135 station",
+      "offsetM": 0
+    },
+    {
+      "id": "sendai_castle",
+      "label": "仙台城跡",
+      "coord": [
+        38.2536558,
+        140.8555012
+      ],
+      "osmCentre": [
+        38.25365,
+        140.85546
+      ],
+      "movedToWalkwayM": 4,
+      "source": "OSM node 4782747521 仙台城跡",
+      "offsetM": 0
+    },
+    {
+      "id": "omachi_nishikoen",
+      "label": "大町西公園駅",
+      "coord": [
+        38.2589935,
+        140.8645808
+      ],
+      "osmCentre": [
+        38.259,
+        140.86446
+      ],
+      "movedToWalkwayM": 11,
+      "source": "OSM node 3651059967 station",
+      "offsetM": 0
+    },
+    {
+      "id": "sendai",
+      "label": "仙台駅",
+      "coord": [
+        38.2597623,
+        140.880056
+      ],
+      "osmCentre": [
+        38.25975,
+        140.88002
+      ],
+      "movedToWalkwayM": 3,
+      "source": "OSM node 264415884 station",
+      "offsetM": 0
+    }
+  ],
+  "targetM": 6750,
+  "tags": [
+    "展望",
+    "城跡",
+    "川",
+    "個人散歩",
+    "周遊"
+  ],
+  "summary": "仙台駅を出て広瀬川を渡り青葉城跡の見晴らしへ上り、西公園側へ下って駅へ戻る周遊。",
+  "plan": {
+    "mode": "station_loop",
+    "hub": "仙台駅",
+    "photo": "城跡の展望は朝の順光側を狙う。時間帯・太陽の向きは未計算。",
+    "transit": "仙台駅発着。JR・地下鉄の乗車は不要（徒歩のみ）。",
+    "lodging": {
+      "policy": "ビジネスホテルまたは快活CLUBのナイト12時間パック（鍵付完全個室・フラット、100V電源・CPAP可）を駅徒歩10分以内で。WEB予約は無料キャンセル期限内で仮押さえ。",
+      "hub": "仙台駅",
+      "status": "未予約（候補探しのみ。宿名・料金は未確認）",
+      "luggage": "CPAPと着替えは拠点駅のコインロッカーへ。"
+    },
+    "food": "コンビニ。地域限定商品は未調査。"
+  },
+  "retraceException": "西公園付近で同じ道を約200m重ねる。大町西公園駅のピンを通るための出入りと見られ、地図で別の抜け道がないか未確認。距離合わせの往復ではない。",
+  "slug": "p-sd1",
+  "geometryUrl": "data/routes/p-sd1.geojson",
+  "distanceM": 6476,
+  "engineDistanceM": 6485,
+  "repeatedGeometryM": 198,
+  "calculatedAt": "2026-11-15T10:25:43.163Z",
+  "legKm": [
+    2.37,
+    1.13,
+    1.44,
+    1.55
+  ]
+}

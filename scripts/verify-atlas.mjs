@@ -53,7 +53,7 @@ for (const item of retraceClusters.cases) {
 for (const course of old) assert(data.courses.some((item) => item.id === course.n), `missing ${course.n}`);
 for (const id of ['view-discover', 'view-explore', 'view-compare', 'view-walk', 'map', 'course-list', 'detail-dialog', 'replay-route', 'show-route-now', 'map-status']) assert(html.includes(`id="${id}"`), `missing UI element ${id}`);
 for (const course of data.courses) {
-  assert(archive.includes(`id="${course.legacyAnchor}"`), `missing old anchor ${course.legacyAnchor}`);
+  if (course.legacyUrl !== null) assert(archive.includes(`id="${course.legacyAnchor}"`), `missing old anchor ${course.legacyAnchor}`);
   const options = course.routeOptions || [course.route];
   for (const option of options) {
     assert(option.verificationStatus !== 'field_verified', `${course.id}/${option.variant} claims unverified field work`);

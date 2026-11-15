@@ -1,0 +1,85 @@
+{
+  "id": "P-SD3",
+  "title": "北仙台駅から仙台駅へ・東照宮を通る駅間",
+  "mode": "oneway",
+  "stops": [
+    {
+      "id": "kita_sendai",
+      "label": "北仙台駅",
+      "coord": [
+        38.2817514,
+        140.8696878
+      ],
+      "osmCentre": [
+        38.28176,
+        140.86969
+      ],
+      "movedToWalkwayM": 1,
+      "source": "OSM node 3585108876 station",
+      "offsetM": 0
+    },
+    {
+      "id": "toshogu_station",
+      "label": "東照宮駅",
+      "coord": [
+        38.2774318,
+        140.8863135
+      ],
+      "osmCentre": [
+        38.27736,
+        140.8864
+      ],
+      "movedToWalkwayM": 11,
+      "source": "OSM node 3585108737 station",
+      "offsetM": 0
+    },
+    {
+      "id": "sendai",
+      "label": "仙台駅",
+      "coord": [
+        38.2597623,
+        140.880056
+      ],
+      "osmCentre": [
+        38.25975,
+        140.88002
+      ],
+      "movedToWalkwayM": 3,
+      "source": "OSM node 264415884 station",
+      "offsetM": 0
+    }
+  ],
+  "targetM": null,
+  "tags": [
+    "神社",
+    "街並み",
+    "個人散歩",
+    "駅間"
+  ],
+  "summary": "北仙台駅から東照宮駅の東照宮を経て仙台駅へ。計算上の距離をそのまま記載する（距離合わせの延伸はしない）。",
+  "plan": {
+    "mode": "station_to_station",
+    "hub": "仙台駅",
+    "photo": "東照宮の参道は朝の斜光を想定。未計算。",
+    "transit": "仙台駅→北仙台駅は仙山線（または地下鉄南北線）。",
+    "lodging": {
+      "policy": "ビジネスホテルまたは快活CLUBのナイト12時間パック（鍵付完全個室・フラット、100V電源・CPAP可）を駅徒歩10分以内で。WEB予約は無料キャンセル期限内で仮押さえ。",
+      "hub": "仙台駅",
+      "status": "未予約（候補探しのみ。宿名・料金は未確認）",
+      "luggage": "CPAPと着替えは拠点駅のコインロッカーへ。"
+    },
+    "food": "コンビニ。"
+  },
+  "retraceException": "東照宮駅のピン付近で約200m重ねる（駅と神社の出入り）。距離は約4.5kmで目標に届かないが、延伸は作らない。",
+  "distanceException": "計算上4.51km。北仙台駅から仙台駅への最短に近い流れを優先し、距離合わせの延伸は作らない。",
+  "slug": "p-sd3",
+  "geometryUrl": "data/routes/p-sd3.geojson",
+  "distanceM": 4508,
+  "engineDistanceM": 4506,
+  "repeatedGeometryM": 204,
+  "calculatedAt": "2026-11-15T10:25:46.650Z",
+  "legKm": [
+    1.96,
+    2.54
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "id": "P-SD2",
+  "title": "長町駅から国際センター駅へ・愛宕と青葉城跡の駅間",
+  "mode": "oneway",
+  "stops": [
+    {
+      "id": "nagamachi",
+      "label": "長町駅",
+      "coord": [
+        38.2267824,
+        140.8857263
+      ],
+      "osmCentre": [
+        38.2268,
+        140.88556
+      ],
+      "movedToWalkwayM": 15,
+      "source": "OSM node 3570916496 station",
+      "offsetM": 0
+    },
+    {
+      "id": "atago_shrine",
+      "label": "愛宕神社",
+      "coord": [
+        38.2458012,
+        140.8756794
+      ],
+      "osmCentre": [
+        38.24587,
+        140.87552
+      ],
+      "movedToWalkwayM": 16,
+      "source": "OSM way 246449487 愛宕神社",
+      "offsetM": 0
+    },
+    {
+      "id": "sendai_castle",
+      "label": "仙台城跡",
+      "coord": [
+        38.2536558,
+        140.8555012
+      ],
+      "osmCentre": [
+        38.25365,
+        140.85546
+      ],
+      "movedToWalkwayM": 4,
+      "source": "OSM node 4782747521 仙台城跡",
+      "offsetM": 0
+    },
+    {
+      "id": "kokusai_center",
+      "label": "国際センター駅",
+      "coord": [
+        38.26006,
+        140.8567939
+      ],
+      "osmCentre": [
+        38.26025,
+        140.85678
+      ],
+      "movedToWalkwayM": 21,
+      "source": "OSM node 3594254135 station",
+      "offsetM": 0
+    }
+  ],
+  "targetM": 6500,
+  "tags": [
+    "展望",
+    "城跡",
+    "川",
+    "個人散歩",
+    "駅間"
+  ],
+  "summary": "長町駅から愛宕神社、仙台城跡南を経て城跡の見晴らしへ。国際センター駅へ下りる駅間ワンウェイ。",
+  "plan": {
+    "mode": "station_to_station",
+    "hub": "仙台駅（宿・コインロッカー）",
+    "photo": "長町駅を朝に出発し、城跡へ午前中に着く順。時間帯・太陽の向きは未計算。",
+    "transit": "仙台駅→長町駅はJR（普通）、ゴールは地下鉄東西線の国際センター駅。",
+    "lodging": {
+      "policy": "ビジネスホテルまたは快活CLUBのナイト12時間パック（鍵付完全個室・フラット、100V電源・CPAP可）を駅徒歩10分以内で。WEB予約は無料キャンセル期限内で仮押さえ。",
+      "hub": "仙台駅",
+      "status": "未予約（候補探しのみ。宿名・料金は未確認）",
+      "luggage": "CPAPと着替えは拠点駅のコインロッカーへ。"
+    },
+    "food": "コンビニ。"
+  },
+  "distanceException": "計算上7.65km。目標6.5km前後より長い。愛宕神社から城跡への登りの経路をそのまま採用し、距離合わせの延伸は作らない。",
+  "slug": "p-sd2",
+  "geometryUrl": "data/routes/p-sd2.geojson",
+  "distanceM": 7650,
+  "engineDistanceM": 7664,
+  "repeatedGeometryM": 24,
+  "calculatedAt": "2026-11-15T10:25:44.903Z",
+  "legKm": [
+    2.85,
+    3.7,
+    1.11
+  ]
+}

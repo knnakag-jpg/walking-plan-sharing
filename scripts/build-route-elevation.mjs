@@ -162,6 +162,13 @@ function courses() {
       rows.push({ courseId: course.id, routeId: route.id, variant: route.variant, slug, geometryUrl: route.geometryUrl });
     }
   }
+  const personalRoot = path.join(root, 'data/personal');
+  if (fs.existsSync(personalRoot)) for (const name of fs.readdirSync(personalRoot).filter((n) => n.endsWith('.json'))) {
+    const spec = JSON.parse(fs.readFileSync(path.join(personalRoot, name), 'utf8'));
+    const slug = path.basename(spec.geometryUrl, '.geojson');
+    if (ONLY && !ONLY.has(slug)) continue;
+    rows.push({ courseId: spec.id, routeId: `${spec.slug}-personal`, variant: 'personal', slug, geometryUrl: spec.geometryUrl });
+  }
   return rows;
 }
 
