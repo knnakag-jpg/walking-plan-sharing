@@ -1,0 +1,80 @@
+{
+ "checkedAt": "2026-11-15T01:39:23.498Z",
+ "source": "OpenStreetMap via Overpass API; © OpenStreetMap contributors",
+ "shintoyosu": {
+  "snapped": [
+   35.6489148,
+   139.790156
+  ],
+  "movedM": 19,
+  "wayId": 612573420,
+  "highway": "footway",
+  "name": null
+ },
+ "arena": {
+  "snapped": null
+ },
+ "harumi_bridge": {
+  "snapped": null
+ },
+ "hamarikyu": {
+  "snapped": [
+   35.6634403,
+   139.7636359
+  ],
+  "movedM": 4,
+  "wayId": 103743021,
+  "highway": "service",
+  "name": null
+ },
+ "tokyo_tower": {
+  "snapped": [
+   35.6587922,
+   139.7456321
+  ],
+  "movedM": 31,
+  "wayId": 480649484,
+  "highway": "footway",
+  "name": null
+ },
+ "shiba_koen": {
+  "snapped": [
+   35.6541549,
+   139.7499008
+  ],
+  "movedM": 10,
+  "wayId": 411265068,
+  "highway": "footway",
+  "name": null
+ },
+ "arena_road": {
+  "snapped": [
+   35.646005,
+   139.7920551
+  ],
+  "movedM": 67,
+  "wayId": 617971206,
+  "highway": "footway",
+  "name": null
+ },
+ "kachidoki": {
+  "snapped": [
+   35.6588468,
+   139.7771934
+  ],
+  "movedM": 15,
+  "wayId": 687108957,
+  "highway": "footway",
+  "name": null
+ },
+ "tsukiji_bridge": {
+  "snapped": [
+   35.6594822,
+   139.7708898
+  ],
+  "movedM": 22,
+  "wayId": 819139751,
+  "highway": "footway",
+  "name": null
+ }
+}

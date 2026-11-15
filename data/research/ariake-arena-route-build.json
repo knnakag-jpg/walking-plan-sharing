@@ -1,0 +1,337 @@
+{
+  "calculatedAt": "2026-11-15T01:39:56.520Z",
+  "engine": "valhalla-pedestrian",
+  "variants": {
+    "via_bridges": {
+      "label": "C 勝どき・築地大橋を通過点にする",
+      "distanceM": 10211,
+      "engineDistanceM": 10213,
+      "repeatedGeometryM": 929,
+      "legKm": [
+        0.51,
+        2.03,
+        2.82,
+        0.83,
+        0.84,
+        2.28,
+        0.92
+      ],
+      "maxStopOffsetM": 23,
+      "stops": [
+        {
+          "id": "shintoyosu",
+          "label": "新豊洲駅",
+          "coord": [
+            35.6489148,
+            139.790156
+          ],
+          "osmCentre": [
+            35.64875,
+            139.79019
+          ],
+          "movedToWalkwayM": 19,
+          "walkway": {
+            "wayId": 612573420,
+            "highway": "footway",
+            "name": null
+          },
+          "source": "OSM node 3349961084 station",
+          "offsetM": 0
+        },
+        {
+          "id": "arena_road",
+          "label": "有明アリーナ前（歩道）",
+          "coord": [
+            35.646005,
+            139.7920551
+          ],
+          "osmCentre": [
+            35.64543,
+            139.79228
+          ],
+          "movedToWalkwayM": 67,
+          "walkway": {
+            "wayId": 617971206,
+            "highway": "footway",
+            "name": null
+          },
+          "source": "on the road between 新豊洲駅 and the arena; no coordinate taken from the Tokyo walking map",
+          "offsetM": 0
+        },
+        {
+          "id": "harumi_bridge",
+          "label": "晴海大橋",
+          "coord": [
+            35.65156,
+            139.78554
+          ],
+          "osmCentre": [
+            35.65156,
+            139.78554
+          ],
+          "movedToWalkwayM": null,
+          "walkway": null,
+          "source": "OSM relation 8805118 centre; whether a pedestrian walkway exists is checked by the router",
+          "offsetM": 23
+        },
+        {
+          "id": "kachidoki",
+          "label": "勝どき駅",
+          "coord": [
+            35.6588468,
+            139.7771934
+          ],
+          "osmCentre": [
+            35.65893,
+            139.77733
+          ],
+          "movedToWalkwayM": 15,
+          "walkway": {
+            "wayId": 687108957,
+            "highway": "footway",
+            "name": null
+          },
+          "source": "OSM node 6374714705 bus_stop 勝どき駅",
+          "offsetM": 0
+        },
+        {
+          "id": "tsukiji_bridge",
+          "label": "築地大橋",
+          "coord": [
+            35.6594822,
+            139.7708898
+          ],
+          "osmCentre": [
+            35.65932,
+            139.77075
+          ],
+          "movedToWalkwayM": 22,
+          "walkway": {
+            "wayId": 819139751,
+            "highway": "footway",
+            "name": null
+          },
+          "source": "OSM way 557441209",
+          "offsetM": 0
+        },
+        {
+          "id": "hamarikyu",
+          "label": "浜離宮恩賜庭園（北口側）",
+          "coord": [
+            35.6634403,
+            139.7636359
+          ],
+          "osmCentre": [
+            35.66342,
+            139.76367
+          ],
+          "movedToWalkwayM": 4,
+          "walkway": {
+            "wayId": 103743021,
+            "highway": "service",
+            "name": null
+          },
+          "source": "OSM node 4917393495 information; garden entry fee/hours not confirmed",
+          "offsetM": 3
+        },
+        {
+          "id": "tokyo_tower",
+          "label": "東京タワー",
+          "coord": [
+            35.6587922,
+            139.7456321
+          ],
+          "osmCentre": [
+            35.65856,
+            139.74544
+          ],
+          "movedToWalkwayM": 31,
+          "walkway": {
+            "wayId": 480649484,
+            "highway": "footway",
+            "name": null
+          },
+          "source": "OSM relation 4247312 attraction",
+          "offsetM": 0
+        },
+        {
+          "id": "shiba_koen",
+          "label": "芝公園駅",
+          "coord": [
+            35.6541549,
+            139.7499008
+          ],
+          "osmCentre": [
+            35.65424,
+            139.74989
+          ],
+          "movedToWalkwayM": 10,
+          "walkway": {
+            "wayId": 411265068,
+            "highway": "footway",
+            "name": null
+          },
+          "source": "OSM node 6233834712 station",
+          "offsetM": 0
+        }
+      ]
+    },
+    "via_bridges_noarena": {
+      "label": "D 有明アリーナ前を道路側の通過点のみにする",
+      "distanceM": 7509,
+      "engineDistanceM": 7508,
+      "repeatedGeometryM": 598,
+      "legKm": [
+        0.51,
+        2.14,
+        0.83,
+        0.84,
+        2.28,
+        0.92
+      ],
+      "maxStopOffsetM": 3,
+      "stops": [
+        {
+          "id": "shintoyosu",
+          "label": "新豊洲駅",
+          "coord": [
+            35.6489148,
+            139.790156
+          ],
+          "osmCentre": [
+            35.64875,
+            139.79019
+          ],
+          "movedToWalkwayM": 19,
+          "walkway": {
+            "wayId": 612573420,
+            "highway": "footway",
+            "name": null
+          },
+          "source": "OSM node 3349961084 station",
+          "offsetM": 0
+        },
+        {
+          "id": "arena_road",
+          "label": "有明アリーナ前（歩道）",
+          "coord": [
+            35.646005,
+            139.7920551
+          ],
+          "osmCentre": [
+            35.64543,
+            139.79228
+          ],
+          "movedToWalkwayM": 67,
+          "walkway": {
+            "wayId": 617971206,
+            "highway": "footway",
+            "name": null
+          },
+          "source": "on the road between 新豊洲駅 and the arena; no coordinate taken from the Tokyo walking map",
+          "offsetM": 0
+        },
+        {
+          "id": "kachidoki",
+          "label": "勝どき駅",
+          "coord": [
+            35.6588468,
+            139.7771934
+          ],
+          "osmCentre": [
+            35.65893,
+            139.77733
+          ],
+          "movedToWalkwayM": 15,
+          "walkway": {
+            "wayId": 687108957,
+            "highway": "footway",
+            "name": null
+          },
+          "source": "OSM node 6374714705 bus_stop 勝どき駅",
+          "offsetM": 0
+        },
+        {
+          "id": "tsukiji_bridge",
+          "label": "築地大橋",
+          "coord": [
+            35.6594822,
+            139.7708898
+          ],
+          "osmCentre": [
+            35.65932,
+            139.77075
+          ],
+          "movedToWalkwayM": 22,
+          "walkway": {
+            "wayId": 819139751,
+            "highway": "footway",
+            "name": null
+          },
+          "source": "OSM way 557441209",
+          "offsetM": 0
+        },
+        {
+          "id": "hamarikyu",
+          "label": "浜離宮恩賜庭園（北口側）",
+          "coord": [
+            35.6634403,
+            139.7636359
+          ],
+          "osmCentre": [
+            35.66342,
+            139.76367
+          ],
+          "movedToWalkwayM": 4,
+          "walkway": {
+            "wayId": 103743021,
+            "highway": "service",
+            "name": null
+          },
+          "source": "OSM node 4917393495 information; garden entry fee/hours not confirmed",
+          "offsetM": 3
+        },
+        {
+          "id": "tokyo_tower",
+          "label": "東京タワー",
+          "coord": [
+            35.6587922,
+            139.7456321
+          ],
+          "osmCentre": [
+            35.65856,
+            139.74544
+          ],
+          "movedToWalkwayM": 31,
+          "walkway": {
+            "wayId": 480649484,
+            "highway": "footway",
+            "name": null
+          },
+          "source": "OSM relation 4247312 attraction",
+          "offsetM": 0
+        },
+        {
+          "id": "shiba_koen",
+          "label": "芝公園駅",
+          "coord": [
+            35.6541549,
+            139.7499008
+          ],
+          "osmCentre": [
+            35.65424,
+            139.74989
+          ],
+          "movedToWalkwayM": 10,
+          "walkway": {
+            "wayId": 411265068,
+            "highway": "footway",
+            "name": null
+          },
+          "source": "OSM node 6233834712 station",
+          "offsetM": 0
+        }
+      ]
+    }
+  }
+}
