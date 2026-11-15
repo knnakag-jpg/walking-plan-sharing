@@ -1,0 +1,43 @@
+{
+  "id": "No.14",
+  "title": "大宮の氷川参道と大宮公園",
+  "stage": "source_research_in_progress",
+  "checkedAt": "2026-11-16",
+  "evidence": [
+    {
+      "type": "community",
+      "title": "OpenStreetMap（大宮駅・氷川参道・氷川神社・大宮公園・大宮公園駅）",
+      "url": "https://www.openstreetmap.org/",
+      "checkedAt": "2026-11-16",
+      "supports": "駅・参道・神社・公園の名称ノードの座標。入口ではない。"
+    },
+    {
+      "type": "community",
+      "title": "旧資料 No.14（先行ページ index.html）",
+      "url": null,
+      "checkedAt": "2026-11-16",
+      "supports": "旧案の立ち寄り先。堀の内町方面の往復延伸は採用していない。"
+    }
+  ],
+  "trials": [
+    {
+      "n": 1,
+      "variant": "A 新規（OSMの駅・地点）",
+      "result": "3.36km・反復46m",
+      "finding": "計算上の重なりは約46m（神社境内・公園内の分岐戻り）。地図で未確認。"
+    }
+  ],
+  "files": [
+    "scripts/lib-rebuild.mjs",
+    "scripts/build-group3.mjs",
+    "data/curated/no-14.json",
+    "data/research/no-14-adopted-build.json"
+  ],
+  "openQuestions": [
+    "氷川参道の舗装側（歩行者専用）の歩道と車道の区分",
+    "武蔵一宮氷川神社の境内の入口と拝観条件",
+    "大宮公園の小動物園・野球場周辺の開放状況",
+    "鉄道博物館を含める場合の徒歩接続（駅から徒歩約1km）"
+  ],
+  "decision": "2026-11-16 新Aを計算。氷川参道を北上して大宮公園駅へ抜ける一方向。旧案の堀の内町方面の往復延伸と鉄道博物館の昼食は不採用。"
+}

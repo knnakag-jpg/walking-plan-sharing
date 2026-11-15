@@ -1,0 +1,43 @@
+{
+  "id": "No.15",
+  "title": "天王洲アイル 水辺アートと北品川",
+  "stage": "source_research_in_progress",
+  "checkedAt": "2026-11-16",
+  "evidence": [
+    {
+      "type": "community",
+      "title": "OpenStreetMap（天王洲アイル駅・天王洲公園・天王洲橋・品川浦・北品川駅・新馬場駅）",
+      "url": "https://www.openstreetmap.org/",
+      "checkedAt": "2026-11-16",
+      "supports": "駅・公園・橋の名称ノードの座標。入口ではない。"
+    },
+    {
+      "type": "community",
+      "title": "旧資料 No.15（先行ページ index.html）",
+      "url": null,
+      "checkedAt": "2026-11-16",
+      "supports": "旧案の立ち寄り先。広町一丁目方面の往復延伸は採用していない。"
+    }
+  ],
+  "trials": [
+    {
+      "n": 1,
+      "variant": "A 新規（OSMの駅・地点）",
+      "result": "2.48km・反復5m",
+      "finding": "計算上の重なりは約5m。"
+    }
+  ],
+  "files": [
+    "scripts/lib-rebuild.mjs",
+    "scripts/build-group3.mjs",
+    "data/curated/no-15.json",
+    "data/research/no-15-adopted-build.json"
+  ],
+  "openQuestions": [
+    "天王洲運河沿いのボードウォークの歩道の位置",
+    "倉庫改装ギャラリー・壁画エリアの座標（OSMに名称ノードなし）",
+    "品川浦の舟だまりの岸の歩行可否",
+    "天王洲アイル駅の出口"
+  ],
+  "decision": "2026-11-16 新Aを計算（2.48km・反復5m）。運河を一周する旧案は往復が大きく不採用。"
+}

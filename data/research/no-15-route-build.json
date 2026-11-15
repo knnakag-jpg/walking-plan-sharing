@@ -1,0 +1,83 @@
+{
+  "calculatedAt": "2026-11-15T21:09:55.851Z",
+  "engine": "valhalla-pedestrian",
+  "variants": {
+    "standard": {
+      "label": "standard",
+      "distanceM": 2483,
+      "engineDistanceM": 2487,
+      "repeatedGeometryM": 5,
+      "repeatedGeometryPct": 0.2,
+      "legKm": [
+        0.5,
+        0.67,
+        0.4,
+        0.35,
+        0.57
+      ],
+      "geometryUrl": "data/routes/no-15-standard.geojson",
+      "stops": [
+        {
+          "id": "tennozu",
+          "label": "天王洲アイル駅",
+          "coord": [
+            35.6226949,
+            139.7506698
+          ],
+          "source": "OSM station 天王洲アイル",
+          "offsetM": 0
+        },
+        {
+          "id": "tennozu_park",
+          "label": "天王洲公園",
+          "coord": [
+            35.619637,
+            139.7496461
+          ],
+          "source": "OSM park 天王洲公園",
+          "offsetM": 0
+        },
+        {
+          "id": "tennozu_bashi",
+          "label": "天王洲橋",
+          "coord": [
+            35.6221549,
+            139.7454481
+          ],
+          "source": "OSM node 天王洲橋",
+          "offsetM": 0
+        },
+        {
+          "id": "shinagawa_ura",
+          "label": "品川浦（北品川舟だまり）",
+          "coord": [
+            35.621899,
+            139.7413704
+          ],
+          "source": "OSM 品川浦（周辺）",
+          "offsetM": 0
+        },
+        {
+          "id": "kita_shinagawa_st",
+          "label": "北品川駅",
+          "coord": [
+            35.6223254,
+            139.7393885
+          ],
+          "source": "OSM way 157576289 北品川駅",
+          "offsetM": 0
+        },
+        {
+          "id": "shinbaba",
+          "label": "新馬場駅",
+          "coord": [
+            35.6177816,
+            139.7412356
+          ],
+          "source": "OSM 新馬場駅 北口",
+          "offsetM": 0
+        }
+      ]
+    }
+  }
+}

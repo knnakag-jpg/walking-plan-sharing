@@ -1,0 +1,66 @@
+{
+ "tennozu": {
+  "snapped": [
+   35.6226949,
+   139.7506698
+  ],
+  "movedM": 12,
+  "wayId": 1034362741
+ },
+ "tennozu_canal": {
+  "snapped": [
+   35.6260122,
+   139.7503021
+  ],
+  "movedM": 12,
+  "wayId": 208363595
+ },
+ "tennozu_fure": {
+  "snapped": [
+   35.62323,
+   139.7476488
+  ],
+  "movedM": 38,
+  "wayId": 24636470
+ },
+ "tennozu_bashi": {
+  "snapped": [
+   35.6221549,
+   139.7454481
+  ],
+  "movedM": 1,
+  "wayId": 23597878
+ },
+ "tennozu_park": {
+  "snapped": [
+   35.619637,
+   139.7496461
+  ],
+  "movedM": 3,
+  "wayId": 170856417
+ },
+ "shinagawa_ura": {
+  "snapped": [
+   35.621899,
+   139.7413704
+  ],
+  "movedM": 5,
+  "wayId": 1039180732
+ },
+ "kita_shinagawa_st": {
+  "snapped": [
+   35.6223254,
+   139.7393885
+  ],
+  "movedM": 11,
+  "wayId": 456882127
+ },
+ "shinbaba": {
+  "snapped": [
+   35.6177816,
+   139.7412356
+  ],
+  "movedM": 0,
+  "wayId": 325664566
+ }
+}

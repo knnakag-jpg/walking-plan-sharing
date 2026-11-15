@@ -1,0 +1,87 @@
+{
+  "generatedAt": "2026-11-15T21:09:59.710Z",
+  "method": "Valhalla pedestrian; exact geometry edge repeat is only a screening clue",
+  "results": [
+    {
+      "variant": "standard",
+      "distanceM": 5979,
+      "engineDistanceM": 5981,
+      "repeatedGeometryM": 389,
+      "repeatedGeometryPct": 6.5,
+      "waypoints": [
+        {
+          "id": "myogadani",
+          "label": "茗荷谷駅",
+          "coord": [
+            35.7171275,
+            139.7369256
+          ],
+          "source": "OSM station 茗荷谷"
+        },
+        {
+          "id": "koishikawa_iri",
+          "label": "小石川後楽園入口",
+          "coord": [
+            35.7047562,
+            139.7475829
+          ],
+          "source": "OSM node 12241405676 小石川後楽園入口"
+        },
+        {
+          "id": "koishikawa",
+          "label": "小石川後楽園",
+          "coord": [
+            35.7055579,
+            139.7495779
+          ],
+          "source": "OSM park 小石川後楽園"
+        },
+        {
+          "id": "dome",
+          "label": "東京ドームシティ",
+          "coord": [
+            35.7065171,
+            139.7542763
+          ],
+          "source": "OSM relation 東京ドームシティ"
+        },
+        {
+          "id": "suidobashi",
+          "label": "水道橋駅",
+          "coord": [
+            35.7021223,
+            139.7538482
+          ],
+          "source": "OSM station 水道橋"
+        },
+        {
+          "id": "hijiribashi",
+          "label": "聖橋",
+          "coord": [
+            35.699211,
+            139.7655747
+          ],
+          "source": "OSM node 260710862 聖橋"
+        },
+        {
+          "id": "ochanomizu",
+          "label": "御茶ノ水駅",
+          "coord": [
+            35.7004771,
+            139.7642984
+          ],
+          "source": "OSM node 1815436264 御茶ノ水駅"
+        }
+      ],
+      "legDistancesKm": [
+        2.09,
+        0.24,
+        1.24,
+        0.71,
+        1.36,
+        0.34
+      ],
+      "geometryUrl": "data/routes/no-18-standard.geojson"
+    }
+  ]
+}

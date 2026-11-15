@@ -1,0 +1,87 @@
+{
+  "generatedAt": "2026-11-15T21:09:57.679Z",
+  "method": "Valhalla pedestrian; exact geometry edge repeat is only a screening clue",
+  "results": [
+    {
+      "variant": "standard",
+      "distanceM": 3969,
+      "engineDistanceM": 3970,
+      "repeatedGeometryM": 429,
+      "repeatedGeometryPct": 10.8,
+      "waypoints": [
+        {
+          "id": "yokosuka",
+          "label": "横須賀駅",
+          "coord": [
+            35.2841031,
+            139.6565208
+          ],
+          "source": "OSM node 9908355231 横須賀駅"
+        },
+        {
+          "id": "verny",
+          "label": "ヴェルニー公園",
+          "coord": [
+            35.2835595,
+            139.6582059
+          ],
+          "source": "OSM park ヴェルニー公園"
+        },
+        {
+          "id": "shioiri_pier",
+          "label": "汐入桟橋",
+          "coord": [
+            35.2838058,
+            139.6620597
+          ],
+          "source": "OSM viewpoint 汐入桟橋"
+        },
+        {
+          "id": "shioiri_st",
+          "label": "汐入駅",
+          "coord": [
+            35.2806342,
+            139.6616482
+          ],
+          "source": "OSM node 3365343107 汐入駅"
+        },
+        {
+          "id": "mikasa_park",
+          "label": "三笠公園",
+          "coord": [
+            35.2856344,
+            139.673721
+          ],
+          "source": "OSM park 三笠公園"
+        },
+        {
+          "id": "mikasa",
+          "label": "記念艦みかさ",
+          "coord": [
+            35.2848657,
+            139.674173
+          ],
+          "source": "OSM museum 記念艦みかさ"
+        },
+        {
+          "id": "yokosuka_chuo",
+          "label": "横須賀中央駅",
+          "coord": [
+            35.2797114,
+            139.670093
+          ],
+          "source": "OSM node 3436823058 横須賀中央駅"
+        }
+      ],
+      "legDistancesKm": [
+        0.39,
+        0.48,
+        0.48,
+        1.49,
+        0.16,
+        0.97
+      ],
+      "geometryUrl": "data/routes/no-16-standard.geojson"
+    }
+  ]
+}

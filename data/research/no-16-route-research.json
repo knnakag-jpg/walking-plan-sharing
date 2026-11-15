@@ -1,0 +1,43 @@
+{
+  "id": "No.16",
+  "title": "横須賀 ヴェルニー公園と三笠公園",
+  "stage": "source_research_in_progress",
+  "checkedAt": "2026-11-16",
+  "evidence": [
+    {
+      "type": "community",
+      "title": "OpenStreetMap（横須賀駅・ヴェルニー公園・汐入・三笠公園・記念艦みかさ・横須賀中央駅）",
+      "url": "https://www.openstreetmap.org/",
+      "checkedAt": "2026-11-16",
+      "supports": "駅・公園・艦の名称ノードの座標。入口ではない。"
+    },
+    {
+      "type": "community",
+      "title": "旧資料 No.16（先行ページ index.html）",
+      "url": null,
+      "checkedAt": "2026-11-16",
+      "supports": "旧案の立ち寄り先。"
+    }
+  ],
+  "trials": [
+    {
+      "n": 1,
+      "variant": "A 新規（OSMの駅・地点）",
+      "result": "3.97km・反復429m",
+      "finding": "ヴェルニー公園内で約86m、汐入駅の出入りで約175m、三笠公園内で約103m・約26m（計約429m）。公園や駅の出入口が道路側へ戻る形と推定。地図で未確認。"
+    }
+  ],
+  "files": [
+    "scripts/lib-rebuild.mjs",
+    "scripts/build-group3.mjs",
+    "data/curated/no-16.json",
+    "data/research/no-16-adopted-build.json"
+  ],
+  "openQuestions": [
+    "どぶ板通りの座標（OSMに名称ノードが見つからない）",
+    "ヴェルニー公園から汐入桟橋への海沿い遊歩道",
+    "三笠公園から横須賀中央駅への経路（海岸通り・どぶ板）",
+    "軍港めぐりの乗船場の位置"
+  ],
+  "decision": "2026-11-16 新Aを計算（3.97km・反復429m）。どぶ板通りは名称ノードがなく含めていない。"
+}

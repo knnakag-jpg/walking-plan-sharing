@@ -1,0 +1,43 @@
+{
+  "id": "No.18",
+  "title": "小石川後楽園と東京ドームシティ",
+  "stage": "source_research_in_progress",
+  "checkedAt": "2026-11-16",
+  "evidence": [
+    {
+      "type": "community",
+      "title": "OpenStreetMap（茗荷谷駅・小石川後楽園・東京ドームシティ・水道橋駅・聖橋・御茶ノ水駅）",
+      "url": "https://www.openstreetmap.org/",
+      "checkedAt": "2026-11-16",
+      "supports": "駅・庭園・橋の名称ノードの座標。入口ではない。"
+    },
+    {
+      "type": "community",
+      "title": "旧資料 No.18（先行ページ index.html）",
+      "url": null,
+      "checkedAt": "2026-11-16",
+      "supports": "旧案の立ち寄り先。"
+    }
+  ],
+  "trials": [
+    {
+      "n": 1,
+      "variant": "A 新規（OSMの駅・地点）",
+      "result": "5.98km・反復389m",
+      "finding": "計算上の重なりは約389m（庭園の入口付近と東京ドームシティ周辺）。出入口が道路側へ戻る形と推定。地図で未確認。"
+    }
+  ],
+  "files": [
+    "scripts/lib-rebuild.mjs",
+    "scripts/build-group3.mjs",
+    "data/curated/no-18.json",
+    "data/research/no-18-adopted-build.json"
+  ],
+  "openQuestions": [
+    "小石川後楽園の開園日・入園料・出入口",
+    "東京ドームシティから神田川沿いへの経路",
+    "神田川沿いの遊歩道の連続性",
+    "御茶ノ水橋と聖橋の歩道"
+  ],
+  "decision": "2026-11-16 新Aを計算（5.98km・反復389m）。昼食・IP系施設の館内見学は案から外した。"
+}

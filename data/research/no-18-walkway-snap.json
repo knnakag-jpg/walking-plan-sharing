@@ -1,0 +1,58 @@
+{
+ "myogadani": {
+  "snapped": [
+   35.7171275,
+   139.7369256
+  ],
+  "movedM": 7,
+  "wayId": 665047291
+ },
+ "koishikawa_iri": {
+  "snapped": [
+   35.7047562,
+   139.7475829
+  ],
+  "movedM": 20,
+  "wayId": 506394837
+ },
+ "koishikawa": {
+  "snapped": [
+   35.7055579,
+   139.7495779
+  ],
+  "movedM": 24,
+  "wayId": 374543109
+ },
+ "dome": {
+  "snapped": [
+   35.7065171,
+   139.7542763
+  ],
+  "movedM": 16,
+  "wayId": 130445616
+ },
+ "suidobashi": {
+  "snapped": [
+   35.7021223,
+   139.7538482
+  ],
+  "movedM": 13,
+  "wayId": 446655743
+ },
+ "hijiribashi": {
+  "snapped": [
+   35.699211,
+   139.7655747
+  ],
+  "movedM": 0,
+  "wayId": 35216848
+ },
+ "ochanomizu": {
+  "snapped": [
+   35.7004771,
+   139.7642984
+  ],
+  "movedM": 10,
+  "wayId": 427171555
+ }
+}

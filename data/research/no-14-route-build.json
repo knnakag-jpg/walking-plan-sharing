@@ -1,0 +1,94 @@
+{
+  "calculatedAt": "2026-11-15T21:09:53.161Z",
+  "engine": "valhalla-pedestrian",
+  "variants": {
+    "standard": {
+      "label": "standard",
+      "distanceM": 3360,
+      "engineDistanceM": 3364,
+      "repeatedGeometryM": 46,
+      "repeatedGeometryPct": 1.4,
+      "legKm": [
+        0.82,
+        0.44,
+        0.19,
+        0.35,
+        0.78,
+        0.78
+      ],
+      "geometryUrl": "data/routes/no-14-standard.geojson",
+      "stops": [
+        {
+          "id": "omiya",
+          "label": "大宮駅",
+          "coord": [
+            35.9082352,
+            139.6241204
+          ],
+          "source": "OSM station 大宮",
+          "offsetM": 0
+        },
+        {
+          "id": "hikawa_sando",
+          "label": "氷川参道（二の鳥居）",
+          "coord": [
+            35.9110981,
+            139.6307673
+          ],
+          "source": "OSM node 2751272138 氷川参道二の鳥居",
+          "offsetM": 0
+        },
+        {
+          "id": "hikawa_santorii",
+          "label": "氷川参道三の鳥居",
+          "coord": [
+            35.9150474,
+            139.630474
+          ],
+          "source": "OSM node 8110463779 氷川参道三の鳥居",
+          "offsetM": 0
+        },
+        {
+          "id": "hikawa",
+          "label": "武蔵一宮氷川神社",
+          "coord": [
+            35.9164627,
+            139.6301364
+          ],
+          "source": "OSM information 武蔵一宮氷川神社 境内案内図",
+          "offsetM": 0
+        },
+        {
+          "id": "omiya_koen",
+          "label": "大宮公園",
+          "coord": [
+            35.9189136,
+            139.6316622
+          ],
+          "source": "OSM way 大宮公園 park",
+          "offsetM": 0
+        },
+        {
+          "id": "omiya_koen_east",
+          "label": "大宮公園東口",
+          "coord": [
+            35.9191673,
+            139.6355026
+          ],
+          "source": "OSM node 8441235882 大宮公園東口",
+          "offsetM": 0
+        },
+        {
+          "id": "omiya_koen_st",
+          "label": "大宮公園駅",
+          "coord": [
+            35.9239113,
+            139.6329139
+          ],
+          "source": "OSM station 大宮公園",
+          "offsetM": 4
+        }
+      ]
+    }
+  }
+}

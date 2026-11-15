@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T14:07:51.271Z",
+  "generatedAt": "2026-11-15T21:10:04.185Z",
   "interpretation": "Mechanical triage only. Source and map review required before adopting any new route.",
   "records": [
     {
@@ -859,9 +859,9 @@
     },
     {
       "id": "No.18",
-      "title": "小石川後楽園～東京ドームシティ",
+      "title": "小石川後楽園と東京ドームシティ",
       "series": "本編 A～Z（No.1～26）",
-      "workStatus": "research_needed",
+      "workStatus": "partial_rebuild",
       "legacy": {
         "geometryUrl": "data/routes/no-18.geojson",
         "walkingDistanceM": 7027,
@@ -876,9 +876,20 @@
         ],
         "gateResult": "OK"
       },
-      "existingNewVariants": [],
+      "existingNewVariants": [
+        {
+          "variant": "standard",
+          "status": "routed",
+          "distanceM": 5979
+        },
+        {
+          "variant": "rainy",
+          "status": "researched",
+          "distanceM": null
+        }
+      ],
       "coordinateReview": "not_started",
-      "sourceResearch": "not_started",
+      "sourceResearch": "source_research_in_progress",
       "historicalRoutingStrategies": [
         {
           "oldLabel": "A",
@@ -1141,9 +1152,9 @@
     },
     {
       "id": "No.14",
-      "title": "大宮 鉄道博物館～大宮公園",
+      "title": "大宮の氷川参道と大宮公園",
       "series": "本編 A～Z（No.1～26）",
-      "workStatus": "research_needed",
+      "workStatus": "partial_rebuild",
       "legacy": {
         "geometryUrl": "data/routes/no-14.geojson",
         "walkingDistanceM": 6769,
@@ -1158,9 +1169,20 @@
         ],
         "gateResult": "OK"
       },
-      "existingNewVariants": [],
+      "existingNewVariants": [
+        {
+          "variant": "standard",
+          "status": "routed",
+          "distanceM": 3360
+        },
+        {
+          "variant": "rainy",
+          "status": "researched",
+          "distanceM": null
+        }
+      ],
       "coordinateReview": "not_started",
-      "sourceResearch": "not_started",
+      "sourceResearch": "source_research_in_progress",
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": true,
@@ -1750,9 +1772,9 @@
     },
     {
       "id": "No.15",
-      "title": "天王洲アイル 水辺アート",
+      "title": "天王洲アイル 水辺アートと北品川",
       "series": "本編 A～Z（No.1～26）",
-      "workStatus": "research_needed",
+      "workStatus": "partial_rebuild",
       "legacy": {
         "geometryUrl": "data/routes/no-15.geojson",
         "walkingDistanceM": 6035,
@@ -1762,9 +1784,20 @@
         "repeatedWaypoints": [],
         "gateResult": "OK"
       },
-      "existingNewVariants": [],
+      "existingNewVariants": [
+        {
+          "variant": "standard",
+          "status": "routed",
+          "distanceM": 2483
+        },
+        {
+          "variant": "rainy",
+          "status": "researched",
+          "distanceM": null
+        }
+      ],
       "coordinateReview": "not_started",
-      "sourceResearch": "not_started",
+      "sourceResearch": "source_research_in_progress",
       "historicalRoutingStrategies": [],
       "transportHints": [
         "water_transport"
@@ -2848,9 +2881,9 @@
     },
     {
       "id": "No.16",
-      "title": "横須賀 ヴェルニー～三笠公園",
+      "title": "横須賀 ヴェルニー公園と三笠公園",
       "series": "本編 A～Z（No.1～26）",
-      "workStatus": "research_needed",
+      "workStatus": "partial_rebuild",
       "legacy": {
         "geometryUrl": "data/routes/no-16.geojson",
         "walkingDistanceM": 7159,
@@ -2860,9 +2893,20 @@
         "repeatedWaypoints": [],
         "gateResult": "OK"
       },
-      "existingNewVariants": [],
+      "existingNewVariants": [
+        {
+          "variant": "standard",
+          "status": "routed",
+          "distanceM": 3969
+        },
+        {
+          "variant": "rainy",
+          "status": "researched",
+          "distanceM": null
+        }
+      ],
       "coordinateReview": "not_started",
-      "sourceResearch": "not_started",
+      "sourceResearch": "source_research_in_progress",
       "historicalRoutingStrategies": [],
       "transportHints": [
         "water_transport"

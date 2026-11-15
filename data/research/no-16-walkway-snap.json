@@ -1,0 +1,58 @@
+{
+ "yokosuka": {
+  "snapped": [
+   35.2841031,
+   139.6565208
+  ],
+  "movedM": 6,
+  "wayId": 169825991
+ },
+ "verny": {
+  "snapped": [
+   35.2835595,
+   139.6582059
+  ],
+  "movedM": 8,
+  "wayId": 329616684
+ },
+ "shioiri_pier": {
+  "snapped": [
+   35.2838058,
+   139.6620597
+  ],
+  "movedM": 6,
+  "wayId": 650795834
+ },
+ "shioiri_st": {
+  "snapped": [
+   35.2806342,
+   139.6616482
+  ],
+  "movedM": 3,
+  "wayId": 329614476
+ },
+ "mikasa_park": {
+  "snapped": [
+   35.2856344,
+   139.673721
+  ],
+  "movedM": 44,
+  "wayId": 505995358
+ },
+ "mikasa": {
+  "snapped": [
+   35.2848657,
+   139.674173
+  ],
+  "movedM": 39,
+  "wayId": 1512987426
+ },
+ "yokosuka_chuo": {
+  "snapped": [
+   35.2797114,
+   139.670093
+  ],
+  "movedM": 19,
+  "wayId": 1205699045
+ }
+}

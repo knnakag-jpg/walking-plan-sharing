@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "source": "legacy import; route quality not re-reviewed",
-  "generatedAt": "2026-11-15T14:07:51.163Z",
+  "generatedAt": "2026-11-15T21:10:04.090Z",
   "courses": [
     {
       "id": "No.1",
@@ -5400,18 +5400,19 @@
     {
       "id": "No.14",
       "slug": "no-14",
-      "title": "大宮 鉄道博物館～大宮公園",
+      "title": "大宮の氷川参道と大宮公園",
       "seriesId": "main",
       "seriesName": "本編 A～Z（No.1～26）",
       "legacyAnchor": "course-14",
       "legacyUrl": "../index.html#course-14",
-      "summary": "経路ノード： 大宮駅 → ニューシャトル1駅乗車 → 鉄道博物館（館内2〜3時間） → 昼食（館内または駅前） → 氷川参道（舗装側） → 武蔵一宮氷川神社 → 大宮公園（平坦部のみ） → 大宮公園 氷川神社参道（平坦部） → 大宮公園小動物園 → 大宮公園野球場周辺 → 大宮公園駅 → 堀の内町一丁目方面へ実在の歩道で延伸（往復約0.7km） → ゴール",
+      "summary": "大宮駅から氷川参道を北上して武蔵一宮氷川神社、大宮公園へ。公園の東口から大宮公園駅へ抜ける。鉄道博物館はニューシャトル（鉄道博物館駅）が最寄りで、今回の徒歩経路には含めない。",
       "routeText": "経路ノード： 大宮駅 → ニューシャトル1駅乗車 → 鉄道博物館（館内2〜3時間） → 昼食（館内または駅前） → 氷川参道（舗装側） → 武蔵一宮氷川神社 → 大宮公園（平坦部のみ） → 大宮公園 氷川神社参道（平坦部） → 大宮公園小動物園 → 大宮公園野球場周辺 → 大宮公園駅 → 堀の内町一丁目方面へ実在の歩道で延伸（往復約0.7km） → ゴール",
       "tags": [
-        "鉄道",
-        "歴史",
-        "自然",
-        "機械・産業"
+        "神社",
+        "参道",
+        "公園",
+        "桜",
+        "野球場"
       ],
       "route": {
         "id": "no-14-legacy",
@@ -5425,17 +5426,7 @@
         "repeatedGeometryPct": 16.9,
         "maxWaypointToShapeM": 39,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "dem",
-          "url": "data/elevation/no-14.json",
-          "totalM": 6769,
-          "climbM": 29.8,
-          "descentM": 33.2,
-          "minM": 7.8,
-          "maxM": 15.4
-        }
+        "engine": "valhalla-pedestrian"
       },
       "waypoints": [
         {
@@ -5508,23 +5499,278 @@
         "repeated_geometry_over_10pct",
         "repeated_waypoint"
       ],
-      "category": "main"
+      "category": "main",
+      "defaultVariant": "standard",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "OpenStreetMap（大宮駅・氷川参道・氷川神社・大宮公園・大宮公園駅）",
+          "url": "https://www.openstreetmap.org/",
+          "checkedAt": "2026-11-16",
+          "supports": "駅・参道・神社・公園の名称ノードの座標。入口ではない。"
+        },
+        {
+          "type": "community",
+          "title": "旧資料 No.14（先行ページ index.html）",
+          "url": null,
+          "checkedAt": "2026-11-16",
+          "supports": "旧案の立ち寄り先。堀の内町方面の往復延伸は採用していない。"
+        }
+      ],
+      "openQuestions": [
+        "氷川参道の舗装側（歩行者専用）の歩道と車道の区分",
+        "武蔵一宮氷川神社の境内の入口と拝観条件",
+        "大宮公園の小動物園・野球場周辺の開放状況",
+        "鉄道博物館を含める場合の徒歩接続（駅から徒歩約1km）"
+      ],
+      "routeOptions": [
+        {
+          "id": "no-14-standard",
+          "variant": "standard",
+          "strategy": "scenic",
+          "geometryUrl": "data/routes/no-14-standard.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 3360,
+          "engineDistanceM": 3364,
+          "repeatedGeometryPct": 1.4,
+          "routeReason": "大宮駅から氷川参道の二の鳥居・三の鳥居を北上し、武蔵一宮氷川神社の境内、大宮公園、公園東口を経て大宮公園駅へ。参道は約2kmの一直線で、同じ道を戻らない。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
+          "distanceException": "3.36km。実在の立ち寄り先だけで組んだため5〜6kmに届かない。延伸は作らない。",
+          "retraceException": "計算上の重なりは約46m（神社境内・公園内の分岐戻り）。地図で未確認。",
+          "waypoints": [
+            {
+              "index": 0,
+              "id": "omiya",
+              "label": "大宮駅",
+              "description": null,
+              "point": [
+                139.6241204,
+                35.9082352
+              ],
+              "source": "OSM station 大宮"
+            },
+            {
+              "index": 1,
+              "id": "hikawa_sando",
+              "label": "氷川参道（二の鳥居）",
+              "description": null,
+              "point": [
+                139.6307673,
+                35.9110981
+              ],
+              "source": "OSM node 2751272138 氷川参道二の鳥居"
+            },
+            {
+              "index": 2,
+              "id": "hikawa_santorii",
+              "label": "氷川参道三の鳥居",
+              "description": null,
+              "point": [
+                139.630474,
+                35.9150474
+              ],
+              "source": "OSM node 8110463779 氷川参道三の鳥居"
+            },
+            {
+              "index": 3,
+              "id": "hikawa",
+              "label": "武蔵一宮氷川神社",
+              "description": null,
+              "point": [
+                139.6301364,
+                35.9164627
+              ],
+              "source": "OSM information 武蔵一宮氷川神社 境内案内図"
+            },
+            {
+              "index": 4,
+              "id": "omiya_koen",
+              "label": "大宮公園",
+              "description": null,
+              "point": [
+                139.6316622,
+                35.9189136
+              ],
+              "source": "OSM way 大宮公園 park"
+            },
+            {
+              "index": 5,
+              "id": "omiya_koen_east",
+              "label": "大宮公園東口",
+              "description": null,
+              "point": [
+                139.6355026,
+                35.9191673
+              ],
+              "source": "OSM node 8441235882 大宮公園東口"
+            },
+            {
+              "index": 6,
+              "id": "omiya_koen_st",
+              "label": "大宮公園駅",
+              "description": null,
+              "point": [
+                139.6329139,
+                35.9239113
+              ],
+              "source": "OSM station 大宮公園"
+            }
+          ],
+          "engine": "valhalla-pedestrian",
+          "built": "2026-11-15T21:09:53.161Z",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "dem",
+            "url": "data/elevation/no-14-standard.json",
+            "totalM": 3360,
+            "climbM": 16,
+            "descentM": 15.6,
+            "minM": 7.8,
+            "maxM": 15.1
+          }
+        },
+        {
+          "id": "no-14-rainy",
+          "variant": "rainy",
+          "strategy": "indoor_rail",
+          "verificationStatus": "researched",
+          "distanceM": null,
+          "routeReason": "雨の日は氷川参道の樹の下を歩き、鉄道博物館の館内を中心にする案。館内の連続歩行距離は未計測。",
+          "segments": [
+            {
+              "kind": "walk_outdoor",
+              "from": "大宮駅",
+              "to": "氷川神社",
+              "distanceM": null,
+              "note": "参道の舗装側は樹木で雨が当たりにくいが、屋根はない。"
+            },
+            {
+              "kind": "rail",
+              "from": "大宮駅",
+              "to": "鉄道博物館駅",
+              "distanceM": null,
+              "note": "ニューシャトル。運行・運賃は当日確認。"
+            },
+            {
+              "kind": "walk_indoor",
+              "from": "鉄道博物館",
+              "to": "館内",
+              "distanceM": null,
+              "note": "開館日・料金・予約を当日公式で確認。"
+            }
+          ],
+          "conditions": [
+            "鉄道博物館の開館日・料金は当日確認。",
+            "ニューシャトルの運行状況は当日確認。"
+          ],
+          "geometryUrl": null,
+          "waypoints": []
+        },
+        {
+          "id": "no-14-legacy",
+          "variant": "legacy",
+          "strategy": "legacy_unknown",
+          "geometryUrl": "data/routes/no-14.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 6769,
+          "engineDistanceM": 6773,
+          "targetDistanceM": 6900,
+          "repeatedGeometryPct": 16.9,
+          "maxWaypointToShapeM": 39,
+          "built": "2026-08-29",
+          "engine": "valhalla-pedestrian",
+          "waypoints": [
+            {
+              "index": 0,
+              "point": [
+                139.6249,
+                35.9062
+              ]
+            },
+            {
+              "index": 1,
+              "point": [
+                139.618,
+                35.9201
+              ]
+            },
+            {
+              "index": 2,
+              "point": [
+                139.628,
+                35.917
+              ]
+            },
+            {
+              "index": 3,
+              "point": [
+                139.632,
+                35.919
+              ]
+            },
+            {
+              "index": 4,
+              "point": [
+                139.6338,
+                35.9204
+              ]
+            },
+            {
+              "index": 5,
+              "point": [
+                139.635,
+                35.9175
+              ]
+            },
+            {
+              "index": 6,
+              "point": [
+                139.636,
+                35.916
+              ]
+            },
+            {
+              "index": 7,
+              "point": [
+                139.637783,
+                35.913325
+              ]
+            },
+            {
+              "index": 8,
+              "point": [
+                139.636,
+                35.916
+              ]
+            }
+          ],
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "dem",
+            "url": "data/elevation/no-14.json",
+            "totalM": 6769,
+            "climbM": 29.8,
+            "descentM": 33.2,
+            "minM": 7.8,
+            "maxM": 15.4
+          }
+        }
+      ]
     },
     {
       "id": "No.15",
       "slug": "no-15",
-      "title": "天王洲アイル 水辺アート",
+      "title": "天王洲アイル 水辺アートと北品川",
       "seriesId": "main",
       "seriesName": "本編 A～Z（No.1～26）",
       "legacyAnchor": "course-15",
       "legacyUrl": "../index.html#course-15",
-      "summary": "経路ノード： 天王洲アイル駅 → ボードウォーク（運河一周） → 倉庫改装ギャラリー群 → 壁画エリア → 昼食（水上/運河沿いレストラン） → 運河沿い遊歩道 → 品川浦・北品川舟だまり（屋形船の係留地） → 北品川駅 → 広町一丁目方面へ実在の歩道で延伸（往復約2.8km） → ゴール",
+      "summary": "天王洲アイル駅から天王洲公園、運河沿いの天王洲橋を経て、品川浦の北品川舟だまり、北品川駅、新馬場駅へ抜ける短い駅間。運河沿いの歩道・ボードウォークの位置は地図で未確認。",
       "routeText": "経路ノード： 天王洲アイル駅 → ボードウォーク（運河一周） → 倉庫改装ギャラリー群 → 壁画エリア → 昼食（水上/運河沿いレストラン） → 運河沿い遊歩道 → 品川浦・北品川舟だまり（屋形船の係留地） → 北品川駅 → 広町一丁目方面へ実在の歩道で延伸（往復約2.8km） → ゴール",
       "tags": [
-        "現代アート",
-        "建築",
-        "水辺景観",
-        "フォトジェニック"
+        "水辺",
+        "アート",
+        "運河",
+        "街並み"
       ],
       "route": {
         "id": "no-15-legacy",
@@ -5538,17 +5784,7 @@
         "repeatedGeometryPct": 5.6,
         "maxWaypointToShapeM": 44,
         "built": "2026-10-18",
-        "engine": "valhalla-pedestrian",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "partial_dem_filled",
-          "url": "data/elevation/no-15.json",
-          "totalM": 6035,
-          "climbM": 39.2,
-          "descentM": 30.2,
-          "minM": 1.5,
-          "maxM": 16.6
-        }
+        "engine": "valhalla-pedestrian"
       },
       "waypoints": [
         {
@@ -5613,23 +5849,261 @@
       "auditFlags": [
         "waypoint_off_shape"
       ],
-      "category": "main"
+      "category": "main",
+      "defaultVariant": "standard",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "OpenStreetMap（天王洲アイル駅・天王洲公園・天王洲橋・品川浦・北品川駅・新馬場駅）",
+          "url": "https://www.openstreetmap.org/",
+          "checkedAt": "2026-11-16",
+          "supports": "駅・公園・橋の名称ノードの座標。入口ではない。"
+        },
+        {
+          "type": "community",
+          "title": "旧資料 No.15（先行ページ index.html）",
+          "url": null,
+          "checkedAt": "2026-11-16",
+          "supports": "旧案の立ち寄り先。広町一丁目方面の往復延伸は採用していない。"
+        }
+      ],
+      "openQuestions": [
+        "天王洲運河沿いのボードウォークの歩道の位置",
+        "倉庫改装ギャラリー・壁画エリアの座標（OSMに名称ノードなし）",
+        "品川浦の舟だまりの岸の歩行可否",
+        "天王洲アイル駅の出口"
+      ],
+      "routeOptions": [
+        {
+          "id": "no-15-standard",
+          "variant": "standard",
+          "strategy": "scenic",
+          "geometryUrl": "data/routes/no-15-standard.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 2483,
+          "engineDistanceM": 2487,
+          "repeatedGeometryPct": 0.2,
+          "routeReason": "天王洲アイル駅から天王洲公園、天王洲橋、品川浦（北品川舟だまり）、北品川駅を経て新馬場駅へ。計算上2.48km。天王洲運河沿いのボードウォークは名称ノードが見つかったが、歩道としては経由せず、運河沿いの道路を通った。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
+          "distanceException": "2.48km。駅間の短い案で5〜6kmに届かない。延伸は作らない。",
+          "retraceException": "計算上の重なりは約5m。",
+          "waypoints": [
+            {
+              "index": 0,
+              "id": "tennozu",
+              "label": "天王洲アイル駅",
+              "description": null,
+              "point": [
+                139.7506698,
+                35.6226949
+              ],
+              "source": "OSM station 天王洲アイル"
+            },
+            {
+              "index": 1,
+              "id": "tennozu_park",
+              "label": "天王洲公園",
+              "description": null,
+              "point": [
+                139.7496461,
+                35.619637
+              ],
+              "source": "OSM park 天王洲公園"
+            },
+            {
+              "index": 2,
+              "id": "tennozu_bashi",
+              "label": "天王洲橋",
+              "description": null,
+              "point": [
+                139.7454481,
+                35.6221549
+              ],
+              "source": "OSM node 天王洲橋"
+            },
+            {
+              "index": 3,
+              "id": "shinagawa_ura",
+              "label": "品川浦（北品川舟だまり）",
+              "description": null,
+              "point": [
+                139.7413704,
+                35.621899
+              ],
+              "source": "OSM 品川浦（周辺）"
+            },
+            {
+              "index": 4,
+              "id": "kita_shinagawa_st",
+              "label": "北品川駅",
+              "description": null,
+              "point": [
+                139.7393885,
+                35.6223254
+              ],
+              "source": "OSM way 157576289 北品川駅"
+            },
+            {
+              "index": 5,
+              "id": "shinbaba",
+              "label": "新馬場駅",
+              "description": null,
+              "point": [
+                139.7412356,
+                35.6177816
+              ],
+              "source": "OSM 新馬場駅 北口"
+            }
+          ],
+          "engine": "valhalla-pedestrian",
+          "built": "2026-11-15T21:09:55.851Z",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/no-15-standard.json",
+            "totalM": 2483,
+            "climbM": 11.4,
+            "descentM": 10,
+            "minM": 1.9,
+            "maxM": 8.4
+          }
+        },
+        {
+          "id": "no-15-rainy",
+          "variant": "rainy",
+          "strategy": "indoor_rail",
+          "verificationStatus": "researched",
+          "distanceM": null,
+          "routeReason": "雨の日は天王洲アイル駅周辺のギャラリー・館内展示を中心にする案。運河沿いのボードウォークは屋根がない。",
+          "segments": [
+            {
+              "kind": "walk_outdoor",
+              "from": "天王洲アイル駅",
+              "to": "倉庫改装のギャラリー群",
+              "distanceM": null,
+              "note": "屋根のない区間あり。傘が必要。"
+            },
+            {
+              "kind": "walk_indoor",
+              "from": "ギャラリー群",
+              "to": "館内",
+              "distanceM": null,
+              "note": "各館の営業日・料金を当日確認。"
+            },
+            {
+              "kind": "rail",
+              "from": "北品川駅",
+              "to": "天王洲アイル駅",
+              "distanceM": null,
+              "note": "京急・りんかい線の乗り換え。"
+            }
+          ],
+          "conditions": [
+            "各ギャラリーの営業日は当日確認。",
+            "運河沿いの歩道は雨天で濡れやすい。"
+          ],
+          "geometryUrl": null,
+          "waypoints": []
+        },
+        {
+          "id": "no-15-legacy",
+          "variant": "legacy",
+          "strategy": "legacy_unknown",
+          "geometryUrl": "data/routes/no-15.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 6035,
+          "engineDistanceM": 6036,
+          "targetDistanceM": 6000,
+          "repeatedGeometryPct": 5.6,
+          "maxWaypointToShapeM": 44,
+          "built": "2026-10-18",
+          "engine": "valhalla-pedestrian",
+          "waypoints": [
+            {
+              "index": 0,
+              "point": [
+                139.75,
+                35.62
+              ]
+            },
+            {
+              "index": 1,
+              "point": [
+                139.752,
+                35.622
+              ]
+            },
+            {
+              "index": 2,
+              "point": [
+                139.748,
+                35.624
+              ]
+            },
+            {
+              "index": 3,
+              "point": [
+                139.745,
+                35.626
+              ]
+            },
+            {
+              "index": 4,
+              "point": [
+                139.742,
+                35.6245
+              ]
+            },
+            {
+              "index": 5,
+              "point": [
+                139.74,
+                35.621
+              ]
+            },
+            {
+              "index": 6,
+              "point": [
+                139.735564,
+                35.613235
+              ]
+            },
+            {
+              "index": 7,
+              "point": [
+                139.73488,
+                35.60639
+              ]
+            }
+          ],
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/no-15.json",
+            "totalM": 6035,
+            "climbM": 39.2,
+            "descentM": 30.2,
+            "minM": 1.5,
+            "maxM": 16.6
+          }
+        }
+      ]
     },
     {
       "id": "No.16",
       "slug": "no-16",
-      "title": "横須賀 ヴェルニー～三笠公園",
+      "title": "横須賀 ヴェルニー公園と三笠公園",
       "seriesId": "main",
       "seriesName": "本編 A～Z（No.1～26）",
       "legacyAnchor": "course-16",
       "legacyUrl": "../index.html#course-16",
-      "summary": "経路ノード： 横須賀駅 → ヴェルニー公園（海沿い遊歩道・バラ園） → 軍港めぐり遊覧船（着席45分） → 昼食（海軍カレー系） → 商店街アーケード（雨天退避可） → 三笠公園 → 記念艦 三笠（甲板まで） → 海岸通りを北上 → どぶ板通り（本通り北側の商店街） → 横須賀中央駅（解散）",
+      "summary": "横須賀駅からヴェルニー公園、汐入桟橋、汐入駅、三笠公園、記念艦みかさを経て横須賀中央駅へ。どぶ板通りの名称ノードが見つからず、経由点に含めていない。軍港めぐりの遊覧船は徒歩経路に含めない。",
       "routeText": "経路ノード： 横須賀駅 → ヴェルニー公園（海沿い遊歩道・バラ園） → 軍港めぐり遊覧船（着席45分） → 昼食（海軍カレー系） → 商店街アーケード（雨天退避可） → 三笠公園 → 記念艦 三笠（甲板まで） → 海岸通りを北上 → どぶ板通り（本通り北側の商店街） → 横須賀中央駅（解散）",
       "tags": [
-        "ミリタリー",
-        "港湾・船舶",
-        "近代史",
-        "景観"
+        "軍港",
+        "公園",
+        "歴史",
+        "海辺",
+        "艦"
       ],
       "route": {
         "id": "no-16-legacy",
@@ -5643,17 +6117,7 @@
         "repeatedGeometryPct": 5,
         "maxWaypointToShapeM": 44,
         "built": "2026-10-18",
-        "engine": "valhalla-pedestrian",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "partial_dem_filled",
-          "url": "data/elevation/no-16.json",
-          "totalM": 7159,
-          "climbM": 73.6,
-          "descentM": 65.3,
-          "minM": 1.5,
-          "maxM": 45.3
-        }
+        "engine": "valhalla-pedestrian"
       },
       "waypoints": [
         {
@@ -5718,7 +6182,255 @@
       "auditFlags": [
         "waypoint_off_shape"
       ],
-      "category": "main"
+      "category": "main",
+      "defaultVariant": "standard",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "OpenStreetMap（横須賀駅・ヴェルニー公園・汐入・三笠公園・記念艦みかさ・横須賀中央駅）",
+          "url": "https://www.openstreetmap.org/",
+          "checkedAt": "2026-11-16",
+          "supports": "駅・公園・艦の名称ノードの座標。入口ではない。"
+        },
+        {
+          "type": "community",
+          "title": "旧資料 No.16（先行ページ index.html）",
+          "url": null,
+          "checkedAt": "2026-11-16",
+          "supports": "旧案の立ち寄り先。"
+        }
+      ],
+      "openQuestions": [
+        "どぶ板通りの座標（OSMに名称ノードが見つからない）",
+        "ヴェルニー公園から汐入桟橋への海沿い遊歩道",
+        "三笠公園から横須賀中央駅への経路（海岸通り・どぶ板）",
+        "軍港めぐりの乗船場の位置"
+      ],
+      "routeOptions": [
+        {
+          "id": "no-16-standard",
+          "variant": "standard",
+          "strategy": "scenic",
+          "geometryUrl": "data/routes/no-16-standard.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 3969,
+          "engineDistanceM": 3970,
+          "repeatedGeometryPct": 10.8,
+          "routeReason": "横須賀駅からヴェルニー公園、汐入桟橋、汐入駅、三笠公園、記念艦みかさを経て横須賀中央駅へ。計算上3.97km。軍港めぐり（遊覧船）は鉄道の駅間にはなく、徒歩経路に含めない。どぶ板通りは名称ノードが見つからないため含めていない。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
+          "distanceException": "3.97km。実在の立ち寄り先だけで組んだため5〜6kmに届かない。どぶ板通りの座標を作る延伸は採らない。",
+          "retraceException": "ヴェルニー公園内で約86m、汐入駅の出入りで約175m、三笠公園内で約103m・約26m（計約429m）。公園や駅の出入口が道路側へ戻る形と推定。地図で未確認。",
+          "waypoints": [
+            {
+              "index": 0,
+              "id": "yokosuka",
+              "label": "横須賀駅",
+              "description": null,
+              "point": [
+                139.6565208,
+                35.2841031
+              ],
+              "source": "OSM node 9908355231 横須賀駅"
+            },
+            {
+              "index": 1,
+              "id": "verny",
+              "label": "ヴェルニー公園",
+              "description": null,
+              "point": [
+                139.6582059,
+                35.2835595
+              ],
+              "source": "OSM park ヴェルニー公園"
+            },
+            {
+              "index": 2,
+              "id": "shioiri_pier",
+              "label": "汐入桟橋",
+              "description": null,
+              "point": [
+                139.6620597,
+                35.2838058
+              ],
+              "source": "OSM viewpoint 汐入桟橋"
+            },
+            {
+              "index": 3,
+              "id": "shioiri_st",
+              "label": "汐入駅",
+              "description": null,
+              "point": [
+                139.6616482,
+                35.2806342
+              ],
+              "source": "OSM node 3365343107 汐入駅"
+            },
+            {
+              "index": 4,
+              "id": "mikasa_park",
+              "label": "三笠公園",
+              "description": null,
+              "point": [
+                139.673721,
+                35.2856344
+              ],
+              "source": "OSM park 三笠公園"
+            },
+            {
+              "index": 5,
+              "id": "mikasa",
+              "label": "記念艦みかさ",
+              "description": null,
+              "point": [
+                139.674173,
+                35.2848657
+              ],
+              "source": "OSM museum 記念艦みかさ"
+            },
+            {
+              "index": 6,
+              "id": "yokosuka_chuo",
+              "label": "横須賀中央駅",
+              "description": null,
+              "point": [
+                139.670093,
+                35.2797114
+              ],
+              "source": "OSM node 3436823058 横須賀中央駅"
+            }
+          ],
+          "engine": "valhalla-pedestrian",
+          "built": "2026-11-15T21:09:57.679Z",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/no-16-standard.json",
+            "totalM": 3969,
+            "climbM": 8.1,
+            "descentM": 8.7,
+            "minM": 1.2,
+            "maxM": 4.2
+          }
+        },
+        {
+          "id": "no-16-rainy",
+          "variant": "rainy",
+          "strategy": "indoor_rail",
+          "verificationStatus": "researched",
+          "distanceM": null,
+          "routeReason": "雨の日は記念艦みかさの艦内と横須賀市自然・人文博物館の館内を中心にする案。",
+          "segments": [
+            {
+              "kind": "walk_outdoor",
+              "from": "横須賀駅",
+              "to": "ヴェルニー公園",
+              "distanceM": null,
+              "note": "屋根なし。傘が必要。"
+            },
+            {
+              "kind": "walk_indoor",
+              "from": "記念艦みかさ",
+              "to": "艦内",
+              "distanceM": null,
+              "note": "開館日・料金を当日公式で確認。"
+            },
+            {
+              "kind": "rail",
+              "from": "横須賀中央駅",
+              "to": "横須賀駅",
+              "distanceM": null,
+              "note": "京急・JRの乗り換え。"
+            }
+          ],
+          "conditions": [
+            "記念艦みかさの開館日は当日確認。",
+            "軍港めぐりは天候による欠航がある。"
+          ],
+          "geometryUrl": null,
+          "waypoints": []
+        },
+        {
+          "id": "no-16-legacy",
+          "variant": "legacy",
+          "strategy": "legacy_unknown",
+          "geometryUrl": "data/routes/no-16.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 7159,
+          "engineDistanceM": 7174,
+          "targetDistanceM": 7200,
+          "repeatedGeometryPct": 5,
+          "maxWaypointToShapeM": 44,
+          "built": "2026-10-18",
+          "engine": "valhalla-pedestrian",
+          "waypoints": [
+            {
+              "index": 0,
+              "point": [
+                139.655,
+                35.2848
+              ]
+            },
+            {
+              "index": 1,
+              "point": [
+                139.66,
+                35.282
+              ]
+            },
+            {
+              "index": 2,
+              "point": [
+                139.665,
+                35.2805
+              ]
+            },
+            {
+              "index": 3,
+              "point": [
+                139.67,
+                35.283
+              ]
+            },
+            {
+              "index": 4,
+              "point": [
+                139.672,
+                35.285
+              ]
+            },
+            {
+              "index": 5,
+              "point": [
+                139.67405,
+                35.28538
+              ]
+            },
+            {
+              "index": 6,
+              "point": [
+                139.67017,
+                35.27987
+              ]
+            },
+            {
+              "index": 7,
+              "point": [
+                139.66181,
+                35.25764
+              ]
+            }
+          ],
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/no-16.json",
+            "totalM": 7159,
+            "climbM": 73.6,
+            "descentM": 65.3,
+            "minM": 1.5,
+            "maxM": 45.3
+          }
+        }
+      ]
     },
     {
       "id": "No.17",
@@ -6146,19 +6858,19 @@
     {
       "id": "No.18",
       "slug": "no-18",
-      "title": "小石川後楽園～東京ドームシティ",
+      "title": "小石川後楽園と東京ドームシティ",
       "seriesId": "main",
       "seriesName": "本編 A～Z（No.1～26）",
       "legacyAnchor": "course-18",
       "legacyUrl": "../index.html#course-18",
-      "summary": "経路ノード（B案）： 茗荷谷駅（高台） → 小石川後楽園（主要園路のみ） → 東京ドームシティ ラクーア方面 → 昼食 → 屋内展示・IP系施設 → 神田川沿い遊歩道 → 御茶ノ水橋・聖橋周辺 → 御茶ノ水駅（解散） → ゴール",
+      "summary": "茗荷谷駅から小石川後楽園、東京ドームシティ、水道橋駅を通り、神田川沿いに聖橋、御茶ノ水駅へ抜ける駅間。昼食と館内展示を前提にした旧案の工程は採らず、屋外の通過だけを計算した。",
       "routeText": "経路ノード（B案）： 茗荷谷駅（高台） → 小石川後楽園（主要園路のみ） → 東京ドームシティ ラクーア方面 → 昼食 → 屋内展示・IP系施設 → 神田川沿い遊歩道 → 御茶ノ水橋・聖橋周辺 → 御茶ノ水駅（解散） → ゴール",
       "tags": [
         "庭園",
-        "歴史",
-        "IP／ゲーム",
-        "スポーツ",
-        "屋内娯楽"
+        "川",
+        "橋",
+        "街並み",
+        "ドーム"
       ],
       "route": {
         "id": "no-18-legacy",
@@ -6172,17 +6884,7 @@
         "repeatedGeometryPct": 26.8,
         "maxWaypointToShapeM": 92,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "partial_dem_filled",
-          "url": "data/elevation/no-18.json",
-          "totalM": 7027,
-          "climbM": 81.1,
-          "descentM": 76.2,
-          "minM": 1.9,
-          "maxM": 19.1
-        }
+        "engine": "valhalla-pedestrian"
       },
       "waypoints": [
         {
@@ -6256,7 +6958,262 @@
         "repeated_waypoint",
         "waypoint_off_shape"
       ],
-      "category": "main"
+      "category": "main",
+      "defaultVariant": "standard",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "OpenStreetMap（茗荷谷駅・小石川後楽園・東京ドームシティ・水道橋駅・聖橋・御茶ノ水駅）",
+          "url": "https://www.openstreetmap.org/",
+          "checkedAt": "2026-11-16",
+          "supports": "駅・庭園・橋の名称ノードの座標。入口ではない。"
+        },
+        {
+          "type": "community",
+          "title": "旧資料 No.18（先行ページ index.html）",
+          "url": null,
+          "checkedAt": "2026-11-16",
+          "supports": "旧案の立ち寄り先。"
+        }
+      ],
+      "openQuestions": [
+        "小石川後楽園の開園日・入園料・出入口",
+        "東京ドームシティから神田川沿いへの経路",
+        "神田川沿いの遊歩道の連続性",
+        "御茶ノ水橋と聖橋の歩道"
+      ],
+      "routeOptions": [
+        {
+          "id": "no-18-standard",
+          "variant": "standard",
+          "strategy": "scenic",
+          "geometryUrl": "data/routes/no-18-standard.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 5979,
+          "engineDistanceM": 5981,
+          "repeatedGeometryPct": 6.5,
+          "routeReason": "茗荷谷駅から小石川後楽園入口、園内、東京ドームシティ、水道橋駅、神田川沿いを経て聖橋、御茶ノ水駅へ。計算上5.98km。園内は主要園路のみで、庭園の有料区の通行と出入口は地図レビュー待ち。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
+          "distanceException": null,
+          "retraceException": "計算上の重なりは約389m（庭園の入口付近と東京ドームシティ周辺）。出入口が道路側へ戻る形と推定。地図で未確認。",
+          "waypoints": [
+            {
+              "index": 0,
+              "id": "myogadani",
+              "label": "茗荷谷駅",
+              "description": null,
+              "point": [
+                139.7369256,
+                35.7171275
+              ],
+              "source": "OSM station 茗荷谷"
+            },
+            {
+              "index": 1,
+              "id": "koishikawa_iri",
+              "label": "小石川後楽園入口",
+              "description": null,
+              "point": [
+                139.7475829,
+                35.7047562
+              ],
+              "source": "OSM node 12241405676 小石川後楽園入口"
+            },
+            {
+              "index": 2,
+              "id": "koishikawa",
+              "label": "小石川後楽園",
+              "description": null,
+              "point": [
+                139.7495779,
+                35.7055579
+              ],
+              "source": "OSM park 小石川後楽園"
+            },
+            {
+              "index": 3,
+              "id": "dome",
+              "label": "東京ドームシティ",
+              "description": null,
+              "point": [
+                139.7542763,
+                35.7065171
+              ],
+              "source": "OSM relation 東京ドームシティ"
+            },
+            {
+              "index": 4,
+              "id": "suidobashi",
+              "label": "水道橋駅",
+              "description": null,
+              "point": [
+                139.7538482,
+                35.7021223
+              ],
+              "source": "OSM station 水道橋"
+            },
+            {
+              "index": 5,
+              "id": "hijiribashi",
+              "label": "聖橋",
+              "description": null,
+              "point": [
+                139.7655747,
+                35.699211
+              ],
+              "source": "OSM node 260710862 聖橋"
+            },
+            {
+              "index": 6,
+              "id": "ochanomizu",
+              "label": "御茶ノ水駅",
+              "description": null,
+              "point": [
+                139.7642984,
+                35.7004771
+              ],
+              "source": "OSM node 1815436264 御茶ノ水駅"
+            }
+          ],
+          "engine": "valhalla-pedestrian",
+          "built": "2026-11-15T21:09:59.710Z",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/no-18-standard.json",
+            "totalM": 5979,
+            "climbM": 46.4,
+            "descentM": 58,
+            "minM": 3.2,
+            "maxM": 26.7
+          }
+        },
+        {
+          "id": "no-18-rainy",
+          "variant": "rainy",
+          "strategy": "indoor_rail",
+          "verificationStatus": "researched",
+          "distanceM": null,
+          "routeReason": "雨の日は東京ドームシティの館内（ラクーア・スパ）と小石川後楽園の東屋を中心にする案。",
+          "segments": [
+            {
+              "kind": "walk_outdoor",
+              "from": "茗荷谷駅",
+              "to": "小石川後楽園",
+              "distanceM": null,
+              "note": "屋根なし。傘が必要。"
+            },
+            {
+              "kind": "walk_indoor",
+              "from": "東京ドームシティ",
+              "to": "ラクーア館内",
+              "distanceM": null,
+              "note": "営業時間は当日確認。"
+            },
+            {
+              "kind": "rail",
+              "from": "水道橋駅",
+              "to": "御茶ノ水駅",
+              "distanceM": null,
+              "note": "JR中央線。"
+            }
+          ],
+          "conditions": [
+            "小石川後楽園の開園日・入園料は当日確認。",
+            "神田川沿いの歩道は雨天で濡れやすい。"
+          ],
+          "geometryUrl": null,
+          "waypoints": []
+        },
+        {
+          "id": "no-18-legacy",
+          "variant": "legacy",
+          "strategy": "legacy_unknown",
+          "geometryUrl": "data/routes/no-18.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 7027,
+          "engineDistanceM": 7027,
+          "targetDistanceM": 6900,
+          "repeatedGeometryPct": 26.8,
+          "maxWaypointToShapeM": 92,
+          "built": "2026-08-29",
+          "engine": "valhalla-pedestrian",
+          "waypoints": [
+            {
+              "index": 0,
+              "point": [
+                139.7446,
+                35.7021
+              ]
+            },
+            {
+              "index": 1,
+              "point": [
+                139.7485,
+                35.7055
+              ]
+            },
+            {
+              "index": 2,
+              "point": [
+                139.7516,
+                35.7056
+              ]
+            },
+            {
+              "index": 3,
+              "point": [
+                139.755,
+                35.703
+              ]
+            },
+            {
+              "index": 4,
+              "point": [
+                139.759,
+                35.702
+              ]
+            },
+            {
+              "index": 5,
+              "point": [
+                139.7632,
+                35.6996
+              ]
+            },
+            {
+              "index": 6,
+              "point": [
+                139.764,
+                35.6998
+              ]
+            },
+            {
+              "index": 7,
+              "point": [
+                139.778484,
+                35.70342
+              ]
+            },
+            {
+              "index": 8,
+              "point": [
+                139.764,
+                35.6998
+              ]
+            }
+          ],
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/no-18.json",
+            "totalM": 7027,
+            "climbM": 81.1,
+            "descentM": 76.2,
+            "minM": 1.9,
+            "maxM": 19.1
+          }
+        }
+      ]
     },
     {
       "id": "No.19",
