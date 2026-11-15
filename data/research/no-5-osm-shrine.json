@@ -1,0 +1,374 @@
+{
+ "checkedAt": "2026-11-15T00:04:30.683Z",
+ "source": "OpenStreetMap via Overpass API; © OpenStreetMap contributors",
+ "items": [
+  {
+   "type": "node",
+   "id": 278928358,
+   "name": "大国魂神社東",
+   "kind": "traffic_signals",
+   "lat": 35.67002,
+   "lon": 139.48041
+  },
+  {
+   "type": "node",
+   "id": 292613513,
+   "name": "大国魂神社西",
+   "kind": "traffic_signals",
+   "lat": 35.6682,
+   "lon": 139.47709
+  },
+  {
+   "type": "node",
+   "id": 339082878,
+   "name": "府中競馬正門前",
+   "kind": null,
+   "lat": 35.66854,
+   "lon": 139.48493
+  },
+  {
+   "type": "node",
+   "id": 444251287,
+   "name": "競馬場西門入口",
+   "kind": "traffic_signals",
+   "lat": 35.66488,
+   "lon": 139.47893
+  },
+  {
+   "type": "node",
+   "id": 683438896,
+   "name": "競馬場正門前",
+   "kind": "traffic_signals",
+   "lat": 35.66669,
+   "lon": 139.48326
+  },
+  {
+   "type": "node",
+   "id": 683442071,
+   "name": "競馬場正門前",
+   "kind": "traffic_signals",
+   "lat": 35.66679,
+   "lon": 139.48324
+  },
+  {
+   "type": "node",
+   "id": 1420773057,
+   "name": "大国魂神社宝物殿",
+   "kind": null,
+   "lat": 35.66813,
+   "lon": 139.47859
+  },
+  {
+   "type": "node",
+   "id": 1420779874,
+   "name": "府中警察署大国魂交番",
+   "kind": "police",
+   "lat": 35.66988,
+   "lon": 139.4796
+  },
+  {
+   "type": "node",
+   "id": 1835345346,
+   "name": "大国魂神社前",
+   "kind": "traffic_signals",
+   "lat": 35.67001,
+   "lon": 139.47909
+  },
+  {
+   "type": "node",
+   "id": 4167558785,
+   "name": "武蔵国府跡",
+   "kind": "yes",
+   "lat": 35.66895,
+   "lon": 139.47984
+  },
+  {
+   "type": "node",
+   "id": 4168147994,
+   "name": "府中高札場",
+   "kind": "yes",
+   "lat": 35.66988,
+   "lon": 139.47677
+  },
+  {
+   "type": "node",
+   "id": 4172313813,
+   "name": "甲州街道",
+   "kind": "memorial",
+   "lat": 35.66989,
+   "lon": 139.47669
+  },
+  {
+   "type": "node",
+   "id": 4172313814,
+   "name": "府中小唄",
+   "kind": "memorial",
+   "lat": 35.66989,
+   "lon": 139.47667
+  },
+  {
+   "type": "node",
+   "id": 5503813717,
+   "name": "東京競馬場南",
+   "kind": "traffic_signals",
+   "lat": 35.66151,
+   "lon": 139.49033
+  },
+  {
+   "type": "node",
+   "id": 6816092292,
+   "name": "競馬場前",
+   "kind": "bus_stop",
+   "lat": 35.66452,
+   "lon": 139.47898
+  },
+  {
+   "type": "node",
+   "id": 6816092293,
+   "name": "競馬場前",
+   "kind": "bus_stop",
+   "lat": 35.6643,
+   "lon": 139.47886
+  },
+  {
+   "type": "node",
+   "id": 7168610372,
+   "name": "万葉の歌碑",
+   "kind": "memorial",
+   "lat": 35.67012,
+   "lon": 139.47902
+  },
+  {
+   "type": "node",
+   "id": 7956324705,
+   "name": "府中競馬正門前",
+   "kind": null,
+   "lat": 35.66842,
+   "lon": 139.48471
+  },
+  {
+   "type": "node",
+   "id": 10023210189,
+   "name": "府中競馬正門前",
+   "kind": null,
+   "lat": 35.6683,
+   "lon": 139.48528
+  },
+  {
+   "type": "node",
+   "id": 11040589195,
+   "name": "宮東公園（競馬場 西門側）",
+   "kind": "bicycle_rental",
+   "lat": 35.66657,
+   "lon": 139.48082
+  },
+  {
+   "type": "node",
+   "id": 13109040226,
+   "name": "競馬場正門通り",
+   "kind": "bus_stop",
+   "lat": 35.66945,
+   "lon": 139.48346
+  },
+  {
+   "type": "node",
+   "id": 13109040229,
+   "name": "競馬場正門通り",
+   "kind": "bus_stop",
+   "lat": 35.6693,
+   "lon": 139.48352
+  },
+  {
+   "type": "node",
+   "id": 13109040237,
+   "name": "競馬場東門",
+   "kind": "bus_stop",
+   "lat": 35.6664,
+   "lon": 139.48955
+  },
+  {
+   "type": "node",
+   "id": 13109040238,
+   "name": "競馬場東門",
+   "kind": "bus_stop",
+   "lat": 35.66653,
+   "lon": 139.4897
+  },
+  {
+   "type": "way",
+   "id": 30661569,
+   "name": "京王電鉄競馬場線",
+   "kind": null,
+   "lat": 35.66889,
+   "lon": 139.49052
+  },
+  {
+   "type": "way",
+   "id": 54182886,
+   "name": "競馬場正門通り",
+   "kind": "tertiary",
+   "lat": 35.66834,
+   "lon": 139.48337
+  },
+  {
+   "type": "way",
+   "id": 172007543,
+   "name": "随神門",
+   "kind": "yes",
+   "lat": 35.66821,
+   "lon": 139.47901
+  },
+  {
+   "type": "way",
+   "id": 172007556,
+   "name": "大國魂神社",
+   "kind": "place_of_worship",
+   "lat": 35.6675,
+   "lon": 139.47897
+  },
+  {
+   "type": "way",
+   "id": 172050737,
+   "name": "東京競馬場連絡歩道橋",
+   "kind": "pedestrian",
+   "lat": 35.66727,
+   "lon": 139.48469
+  },
+  {
+   "type": "way",
+   "id": 172500124,
+   "name": "参道",
+   "kind": "pedestrian",
+   "lat": 35.66798,
+   "lon": 139.47901
+  },
+  {
+   "type": "way",
+   "id": 172502244,
+   "name": "競馬場通り",
+   "kind": "tertiary",
+   "lat": 35.66633,
+   "lon": 139.49186
+  },
+  {
+   "type": "way",
+   "id": 172906854,
+   "name": "競馬場通り",
+   "kind": "tertiary",
+   "lat": 35.66663,
+   "lon": 139.48745
+  },
+  {
+   "type": "way",
+   "id": 554756846,
+   "name": "東京競馬場乗馬センター",
+   "kind": "horse_riding",
+   "lat": 35.66535,
+   "lon": 139.48957
+  },
+  {
+   "type": "way",
+   "id": 572864329,
+   "name": "競馬場通り",
+   "kind": "tertiary",
+   "lat": 35.66632,
+   "lon": 139.49188
+  },
+  {
+   "type": "way",
+   "id": 572864331,
+   "name": "競馬場通り",
+   "kind": "tertiary",
+   "lat": 35.66613,
+   "lon": 139.49166
+  },
+  {
+   "type": "way",
+   "id": 572864332,
+   "name": "競馬場通り",
+   "kind": "tertiary",
+   "lat": 35.66657,
+   "lon": 139.48746
+  },
+  {
+   "type": "way",
+   "id": 859299552,
+   "name": "京王電鉄競馬場線;府中競馬正門前;1番線",
+   "kind": null,
+   "lat": 35.66831,
+   "lon": 139.486
+  },
+  {
+   "type": "way",
+   "id": 859299554,
+   "name": "京王電鉄競馬場線;府中競馬正門前;2番線",
+   "kind": null,
+   "lat": 35.66848,
+   "lon": 139.48583
+  },
+  {
+   "type": "way",
+   "id": 859299558,
+   "name": "京王電鉄競馬場線",
+   "kind": null,
+   "lat": 35.66885,
+   "lon": 139.49059
+  },
+  {
+   "type": "way",
+   "id": 1182665311,
+   "name": "競馬場通り",
+   "kind": "tertiary",
+   "lat": 35.66566,
+   "lon": 139.48109
+  },
+  {
+   "type": "way",
+   "id": 1182665312,
+   "name": "競馬場通り",
+   "kind": "tertiary",
+   "lat": 35.66574,
+   "lon": 139.48109
+  },
+  {
+   "type": "relation",
+   "id": 8129848,
+   "name": "東京競馬場",
+   "kind": "stadium",
+   "lat": 35.66367,
+   "lon": 139.48674
+  },
+  {
+   "type": "relation",
+   "id": 9561988,
+   "name": "甲州道中",
+   "kind": "road",
+   "lat": 35.83576,
+   "lon": 138.93204
+  },
+  {
+   "type": "relation",
+   "id": 11688125,
+   "name": "京王競馬場線 : 東府中→府中競馬正門前",
+   "kind": null,
+   "lat": 35.66881,
+   "lon": 139.49072
+  },
+  {
+   "type": "relation",
+   "id": 11688126,
+   "name": "府中競馬正門前",
+   "kind": null,
+   "lat": 35.66829,
+   "lon": 139.48481
+  },
+  {
+   "type": "relation",
+   "id": 11688294,
+   "name": "京王競馬場線 : 府中競馬正門前→東府中",
+   "kind": null,
+   "lat": 35.66886,
+   "lon": 139.49067
+  }
+ ]
+}

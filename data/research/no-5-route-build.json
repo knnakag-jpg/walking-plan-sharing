@@ -1,154 +1,19 @@
 {
-  "calculatedAt": "2026-11-14T18:25:44.999Z",
+  "calculatedAt": "2026-11-15T00:04:51.034Z",
   "engine": "valhalla-pedestrian",
   "variants": {
-    "junction_fuchu": {
-      "label": "G 交差点ピン・府中駅着",
-      "distanceM": 5858,
-      "engineDistanceM": 5857,
-      "repeatedGeometryM": 0,
-      "legKm": [
-        0.48,
-        1.6,
-        1.25,
-        2.15,
-        0.38
-      ],
-      "maxStopOffsetM": 0,
-      "stops": [
-        {
-          "id": "seimon_station",
-          "label": "府中競馬正門前駅",
-          "coord": [
-            35.6684998,
-            139.4844771
-          ],
-          "osmCentre": [
-            35.66842,
-            139.48471
-          ],
-          "movedToWalkwayM": 23,
-          "walkway": {
-            "wayId": 172047647,
-            "highway": "service",
-            "name": null
-          },
-          "source": "OSM node 7956324705 station",
-          "offsetM": 0
-        },
-        {
-          "id": "jra_museum_road",
-          "label": "JRA競馬博物館前（道路側）",
-          "coord": [
-            35.6670953,
-            139.4880611
-          ],
-          "osmCentre": [
-            35.66711,
-            139.4881
-          ],
-          "movedToWalkwayM": 4,
-          "walkway": {
-            "wayId": 172906854,
-            "highway": "tertiary",
-            "name": "競馬場通り"
-          },
-          "source": "OSM node 13109040231 bus_stop 競馬博物館; public road side, interior of the racecourse is not routed",
-          "offsetM": 0
-        },
-        {
-          "id": "koremasa_bridge",
-          "label": "是政橋北",
-          "coord": [
-            35.6555364,
-            139.4877125
-          ],
-          "osmCentre": [
-            35.65554,
-            139.48771
-          ],
-          "movedToWalkwayM": 0,
-          "walkway": {
-            "wayId": 145126004,
-            "highway": "tertiary",
-            "name": null
-          },
-          "source": "OSM node 292640007",
-          "offsetM": 0
-        },
-        {
-          "id": "kyodo_signal",
-          "label": "郷土の森入口（交差点）",
-          "coord": [
-            35.6553932,
-            139.4748301
-          ],
-          "osmCentre": [
-            35.65539,
-            139.47483
-          ],
-          "movedToWalkwayM": 0,
-          "walkway": {
-            "wayId": 172406838,
-            "highway": "tertiary",
-            "name": "ふるさと通り"
-          },
-          "source": "OSM node 1054131520 traffic_signals 郷土の森入口; road junction, not a park gate",
-          "offsetM": 0
-        },
-        {
-          "id": "okunitama_signal",
-          "label": "大国魂神社前（交差点）",
-          "coord": [
-            35.6700127,
-            139.4790907
-          ],
-          "osmCentre": [
-            35.67001,
-            139.47909
-          ],
-          "movedToWalkwayM": 0,
-          "walkway": {
-            "wayId": 172500791,
-            "highway": "pedestrian",
-            "name": null
-          },
-          "source": "OSM node 1835345346 traffic_signals 大国魂神社前; road junction at the keyaki avenue, not the shrine gate",
-          "offsetM": 0
-        },
-        {
-          "id": "fuchu_station",
-          "label": "府中駅",
-          "coord": [
-            35.6720514,
-            139.4800069
-          ],
-          "osmCentre": [
-            35.67222,
-            139.48001
-          ],
-          "movedToWalkwayM": 19,
-          "walkway": {
-            "wayId": 978149479,
-            "highway": "pedestrian",
-            "name": null
-          },
-          "source": "OSM node 7682981674 station",
-          "offsetM": 0
-        }
-      ]
-    },
-    "shrine_through": {
-      "label": "H 神社西から北へ抜ける・府中駅着",
-      "distanceM": 5903,
-      "engineDistanceM": 5903,
+    "outside": {
+      "label": "前提にしない・場外ルート",
+      "distanceM": 5873,
+      "engineDistanceM": 5874,
       "repeatedGeometryM": 9,
       "legKm": [
         0.48,
         1.6,
         1.25,
         1.8,
-        0.4,
+        0.18,
+        0.19,
         0.38
       ],
       "maxStopOffsetM": 0,
@@ -254,8 +119,28 @@
           "offsetM": 0
         },
         {
-          "id": "okunitama_signal",
-          "label": "大国魂神社前（交差点）",
+          "id": "zuijinmon",
+          "label": "随神門",
+          "coord": [
+            35.6682792,
+            139.479022
+          ],
+          "osmCentre": [
+            35.66821,
+            139.47901
+          ],
+          "movedToWalkwayM": 8,
+          "walkway": {
+            "wayId": 172500124,
+            "highway": "pedestrian",
+            "name": "参道"
+          },
+          "source": "OSM way 172007543 historic 随神門",
+          "offsetM": 0
+        },
+        {
+          "id": "ootorii",
+          "label": "大鳥居（大国魂神社前）",
           "coord": [
             35.6700127,
             139.4790907
@@ -270,7 +155,227 @@
             "highway": "pedestrian",
             "name": null
           },
-          "source": "OSM node 1835345346 traffic_signals 大国魂神社前; road junction at the keyaki avenue, not the shrine gate",
+          "source": "OSM node 1835345346 traffic_signals 大国魂神社前; the 大鳥居 stands at this junction on 旧甲州街道 per the shrine map",
+          "offsetM": 0
+        },
+        {
+          "id": "fuchu_station",
+          "label": "府中駅",
+          "coord": [
+            35.6720514,
+            139.4800069
+          ],
+          "osmCentre": [
+            35.67222,
+            139.48001
+          ],
+          "movedToWalkwayM": 19,
+          "walkway": {
+            "wayId": 978149479,
+            "highway": "pedestrian",
+            "name": null
+          },
+          "source": "OSM node 7682981674 station",
+          "offsetM": 0
+        }
+      ]
+    },
+    "inside": {
+      "label": "前提にする・競馬場内を通る",
+      "distanceM": 7206,
+      "engineDistanceM": 7213,
+      "repeatedGeometryM": 565,
+      "legKm": [
+        0.27,
+        0.91,
+        0.81,
+        1.43,
+        1.25,
+        1.8,
+        0.18,
+        0.19,
+        0.38
+      ],
+      "maxStopOffsetM": 0,
+      "stops": [
+        {
+          "id": "seimon_station",
+          "label": "府中競馬正門前駅",
+          "coord": [
+            35.6684998,
+            139.4844771
+          ],
+          "osmCentre": [
+            35.66842,
+            139.48471
+          ],
+          "movedToWalkwayM": 23,
+          "walkway": {
+            "wayId": 172047647,
+            "highway": "service",
+            "name": null
+          },
+          "source": "OSM node 7956324705 station",
+          "offsetM": 0
+        },
+        {
+          "id": "racecourse_seimon",
+          "label": "競馬場正門前（交差点）",
+          "coord": [
+            35.6667889,
+            139.4832401
+          ],
+          "osmCentre": [
+            35.66679,
+            139.48324
+          ],
+          "movedToWalkwayM": 0,
+          "walkway": {
+            "wayId": 54182886,
+            "highway": "tertiary",
+            "name": "競馬場正門通り"
+          },
+          "source": "OSM node 683442071 traffic_signals; outside the gate",
+          "offsetM": 0
+        },
+        {
+          "id": "jra_museum",
+          "label": "JRA競馬博物館",
+          "coord": [
+            35.6661886,
+            139.488442
+          ],
+          "osmCentre": [
+            35.66625,
+            139.48814
+          ],
+          "movedToWalkwayM": 28,
+          "walkway": {
+            "wayId": 570240341,
+            "highway": "footway",
+            "name": null
+          },
+          "source": "OSM node 1420800632",
+          "offsetM": 0
+        },
+        {
+          "id": "racecourse_east",
+          "label": "競馬場東門（バス停）",
+          "coord": [
+            35.6664283,
+            139.4895639
+          ],
+          "osmCentre": [
+            35.6664,
+            139.48955
+          ],
+          "movedToWalkwayM": 3,
+          "walkway": {
+            "wayId": 572864332,
+            "highway": "tertiary",
+            "name": "競馬場通り"
+          },
+          "source": "OSM node 13109040237 bus_stop 競馬場東門",
+          "offsetM": 0
+        },
+        {
+          "id": "koremasa_bridge",
+          "label": "是政橋北",
+          "coord": [
+            35.6555364,
+            139.4877125
+          ],
+          "osmCentre": [
+            35.65554,
+            139.48771
+          ],
+          "movedToWalkwayM": 0,
+          "walkway": {
+            "wayId": 145126004,
+            "highway": "tertiary",
+            "name": null
+          },
+          "source": "OSM node 292640007",
+          "offsetM": 0
+        },
+        {
+          "id": "kyodo_signal",
+          "label": "郷土の森入口（交差点）",
+          "coord": [
+            35.6553932,
+            139.4748301
+          ],
+          "osmCentre": [
+            35.65539,
+            139.47483
+          ],
+          "movedToWalkwayM": 0,
+          "walkway": {
+            "wayId": 172406838,
+            "highway": "tertiary",
+            "name": "ふるさと通り"
+          },
+          "source": "OSM node 1054131520 traffic_signals 郷土の森入口; road junction, not a park gate",
+          "offsetM": 0
+        },
+        {
+          "id": "okunitama_west",
+          "label": "大国魂神社西（交差点）",
+          "coord": [
+            35.6681965,
+            139.4770865
+          ],
+          "osmCentre": [
+            35.6682,
+            139.47709
+          ],
+          "movedToWalkwayM": 1,
+          "walkway": {
+            "wayId": 144700643,
+            "highway": "residential",
+            "name": null
+          },
+          "source": "OSM node 292613513 traffic_signals 大国魂神社西; road junction west of the precinct",
+          "offsetM": 0
+        },
+        {
+          "id": "zuijinmon",
+          "label": "随神門",
+          "coord": [
+            35.6682792,
+            139.479022
+          ],
+          "osmCentre": [
+            35.66821,
+            139.47901
+          ],
+          "movedToWalkwayM": 8,
+          "walkway": {
+            "wayId": 172500124,
+            "highway": "pedestrian",
+            "name": "参道"
+          },
+          "source": "OSM way 172007543 historic 随神門",
+          "offsetM": 0
+        },
+        {
+          "id": "ootorii",
+          "label": "大鳥居（大国魂神社前）",
+          "coord": [
+            35.6700127,
+            139.4790907
+          ],
+          "osmCentre": [
+            35.67001,
+            139.47909
+          ],
+          "movedToWalkwayM": 0,
+          "walkway": {
+            "wayId": 172500791,
+            "highway": "pedestrian",
+            "name": null
+          },
+          "source": "OSM node 1835345346 traffic_signals 大国魂神社前; the 大鳥居 stands at this junction on 旧甲州街道 per the shrine map",
           "offsetM": 0
         },
         {

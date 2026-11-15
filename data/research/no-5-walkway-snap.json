@@ -150,5 +150,45 @@
   "wayId": 144700643,
   "highway": "residential",
   "name": null
+ },
+ "zuijinmon": {
+  "snapped": [
+   35.6682792,
+   139.479022
+  ],
+  "movedM": 8,
+  "wayId": 172500124,
+  "highway": "pedestrian",
+  "name": "参道"
+ },
+ "ootorii": {
+  "snapped": [
+   35.6700127,
+   139.4790907
+  ],
+  "movedM": 0,
+  "wayId": 172500791,
+  "highway": "pedestrian",
+  "name": null
+ },
+ "racecourse_seimon": {
+  "snapped": [
+   35.6667889,
+   139.4832401
+  ],
+  "movedM": 0,
+  "wayId": 54182886,
+  "highway": "tertiary",
+  "name": "競馬場正門通り"
+ },
+ "racecourse_east": {
+  "snapped": [
+   35.6664283,
+   139.4895639
+  ],
+  "movedM": 3,
+  "wayId": 572864332,
+  "highway": "tertiary",
+  "name": "競馬場通り"
  }
 }

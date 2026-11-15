@@ -133,3 +133,15 @@ h2{font-size:clamp(1.6rem,2.5vw,2.5rem);letter-spacing:-.035em}
 .callout-text strong{font-weight:800}
 .callout-text em{font-style:normal;color:var(--muted);font-size:.66rem}
 @media(prefers-reduced-motion:reduce){.callout.is-placed,.map-end-ring,.course-card.is-revealing{animation:none!important}.callout-layer{transition:none}}
+/* Phone: keep the map pinned under the header while the course cards scroll beneath it. */
+@media(max-width:760px){
+  #view-explore .map-column{position:sticky;top:61px;z-index:60;background:var(--surface);box-shadow:0 6px 16px #13271c26}
+  #view-explore .map-topbar{min-height:0;padding:5px 12px;gap:4px}
+  #view-explore #selected-title{font-size:.78rem;line-height:1.25;max-height:2.5em;overflow:hidden}
+  #view-explore .variant-switch{padding:5px 12px;min-height:0}
+  #view-explore .map-frame{height:min(38vh,320px);min-height:200px}
+  #view-explore .map-legend,#view-explore .selected-summary{display:none}
+  #view-explore .explore-sidebar{margin-top:0;border-radius:0;box-shadow:none;z-index:1}
+  #view-explore .course-list{max-height:none;overflow:visible}
+  #view-explore .course-card{scroll-margin-top:calc(61px + min(38vh,320px) + 96px)}
+}

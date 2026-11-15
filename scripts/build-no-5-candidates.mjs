@@ -19,14 +19,18 @@ const museumRoad = P('jra_museum_road', 'JRA競馬博物館前（道路側）', 
 const kyodoSignal = P('kyodo_signal', '郷土の森入口（交差点）', 35.65539, 139.47483, 'OSM node 1054131520 traffic_signals 郷土の森入口; road junction, not a park gate');
 const shrineSignal = P('okunitama_signal', '大国魂神社前（交差点）', 35.67001, 139.47909, 'OSM node 1835345346 traffic_signals 大国魂神社前; road junction at the keyaki avenue, not the shrine gate');
 const shrineWest = P('okunitama_west', '大国魂神社西（交差点）', 35.6682, 139.47709, 'OSM node 292613513 traffic_signals 大国魂神社西; road junction west of the precinct');
+const zuijin = P('zuijinmon', '随神門', 35.66821, 139.47901, 'OSM way 172007543 historic 随神門');
+const ootorii = P('ootorii', '大鳥居（大国魂神社前）', 35.67001, 139.47909, 'OSM node 1835345346 traffic_signals 大国魂神社前; the 大鳥居 stands at this junction on 旧甲州街道 per the shrine map');
+const seimon = P('racecourse_seimon', '競馬場正門前（交差点）', 35.66679, 139.48324, 'OSM node 683442071 traffic_signals; outside the gate');
+const tomon = P('racecourse_east', '競馬場東門（バス停）', 35.6664, 139.48955, 'OSM node 13109040237 bus_stop 競馬場東門');
 const hommachi = P('fuchu_hommachi', '府中本町駅', 35.66611, 139.4771, 'OSM node 264813956 station');
 const fuchu = P('fuchu_station', '府中駅', 35.67222, 139.48001, 'OSM node 7682981674 station');
 const keyaki = P('keyaki', '馬場大門のケヤキ並木', 35.67295, 139.47928, 'OSM node 7168610370 monument (天然記念物 馬場大門けやき並木)');
 const koremasa = P('koremasa', '是政駅', 35.65631, 139.48932, 'OSM node 412187550 station');
 
 const variants = {
-  junction_fuchu: { label: 'G 交差点ピン・府中駅着', points: [station, museumRoad, koremasaBridge, kyodoSignal, shrineSignal, fuchu] },
-  shrine_through: { label: 'H 神社西から北へ抜ける・府中駅着', points: [station, museumRoad, koremasaBridge, kyodoSignal, shrineWest, shrineSignal, fuchu] },
+  outside: { label: '前提にしない・場外ルート', points: [station, museumRoad, koremasaBridge, kyodoSignal, shrineWest, zuijin, ootorii, fuchu] },
+  inside: { label: '前提にする・競馬場内を通る', points: [station, seimon, museum, tomon, koremasaBridge, kyodoSignal, shrineWest, zuijin, ootorii, fuchu] },
 };
 
 const WALKWAY = 'footway|path|pedestrian|living_street|residential|service|steps|tertiary|unclassified|track|cycleway';
