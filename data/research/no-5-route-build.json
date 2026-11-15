@@ -1,5 +1,5 @@
 {
-  "calculatedAt": "2026-11-15T00:04:51.034Z",
+  "calculatedAt": "2026-11-15T00:12:27.702Z",
   "engine": "valhalla-pedestrian",
   "variants": {
     "outside": {
@@ -182,14 +182,13 @@
     },
     "inside": {
       "label": "前提にする・競馬場内を通る",
-      "distanceM": 7206,
-      "engineDistanceM": 7213,
-      "repeatedGeometryM": 565,
+      "distanceM": 6089,
+      "engineDistanceM": 6094,
+      "repeatedGeometryM": 17,
       "legKm": [
-        0.27,
-        0.91,
-        0.81,
-        1.43,
+        0.26,
+        0.47,
+        1.57,
         1.25,
         1.8,
         0.18,
@@ -219,63 +218,43 @@
           "offsetM": 0
         },
         {
-          "id": "racecourse_seimon",
-          "label": "競馬場正門前（交差点）",
+          "id": "gate_in",
+          "label": "東京競馬場 けやき門（正門）内側の歩道",
           "coord": [
-            35.6667889,
-            139.4832401
+            35.6669121,
+            139.4832806
           ],
           "osmCentre": [
-            35.66679,
-            139.48324
+            35.66691,
+            139.48328
           ],
           "movedToWalkwayM": 0,
           "walkway": {
-            "wayId": 54182886,
-            "highway": "tertiary",
-            "name": "競馬場正門通り"
-          },
-          "source": "OSM node 683442071 traffic_signals; outside the gate",
-          "offsetM": 0
-        },
-        {
-          "id": "jra_museum",
-          "label": "JRA競馬博物館",
-          "coord": [
-            35.6661886,
-            139.488442
-          ],
-          "osmCentre": [
-            35.66625,
-            139.48814
-          ],
-          "movedToWalkwayM": 28,
-          "walkway": {
-            "wayId": 570240341,
+            "wayId": 342309782,
             "highway": "footway",
             "name": null
           },
-          "source": "OSM node 1420800632",
+          "source": "OSM way 342309782 footway west end; gate position from user-supplied Google map",
           "offsetM": 0
         },
         {
-          "id": "racecourse_east",
-          "label": "競馬場東門（バス停）",
+          "id": "museum_walk",
+          "label": "JRA競馬博物館前の園内歩道（東門寄り）",
           "coord": [
-            35.6664283,
-            139.4895639
+            35.6668953,
+            139.4881
           ],
           "osmCentre": [
-            35.6664,
-            139.48955
+            35.6668,
+            139.4881
           ],
-          "movedToWalkwayM": 3,
+          "movedToWalkwayM": 11,
           "walkway": {
-            "wayId": 572864332,
-            "highway": "tertiary",
-            "name": "競馬場通り"
+            "wayId": 347653729,
+            "highway": "footway",
+            "name": null
           },
-          "source": "OSM node 13109040237 bus_stop 競馬場東門",
+          "source": "on OSM way 342309782 footway; museum stands by 東門 per user-supplied Google map (OSM node of the museum is ~85 m south, inside the grounds)",
           "offsetM": 0
         },
         {

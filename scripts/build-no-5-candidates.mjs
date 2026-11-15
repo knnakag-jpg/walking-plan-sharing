@@ -23,6 +23,8 @@ const zuijin = P('zuijinmon', '随神門', 35.66821, 139.47901, 'OSM way 1720075
 const ootorii = P('ootorii', '大鳥居（大国魂神社前）', 35.67001, 139.47909, 'OSM node 1835345346 traffic_signals 大国魂神社前; the 大鳥居 stands at this junction on 旧甲州街道 per the shrine map');
 const seimon = P('racecourse_seimon', '競馬場正門前（交差点）', 35.66679, 139.48324, 'OSM node 683442071 traffic_signals; outside the gate');
 const tomon = P('racecourse_east', '競馬場東門（バス停）', 35.6664, 139.48955, 'OSM node 13109040237 bus_stop 競馬場東門');
+const gateIn = P('gate_in', '東京競馬場 けやき門（正門）内側の歩道', 35.66691, 139.48328, 'OSM way 342309782 footway west end; gate position from user-supplied Google map');
+const museumWalk = P('museum_walk', 'JRA競馬博物館前の園内歩道（東門寄り）', 35.6668, 139.4881, 'on OSM way 342309782 footway; museum stands by 東門 per user-supplied Google map (OSM node of the museum is ~85 m south, inside the grounds)');
 const hommachi = P('fuchu_hommachi', '府中本町駅', 35.66611, 139.4771, 'OSM node 264813956 station');
 const fuchu = P('fuchu_station', '府中駅', 35.67222, 139.48001, 'OSM node 7682981674 station');
 const keyaki = P('keyaki', '馬場大門のケヤキ並木', 35.67295, 139.47928, 'OSM node 7168610370 monument (天然記念物 馬場大門けやき並木)');
@@ -30,7 +32,7 @@ const koremasa = P('koremasa', '是政駅', 35.65631, 139.48932, 'OSM node 41218
 
 const variants = {
   outside: { label: '前提にしない・場外ルート', points: [station, museumRoad, koremasaBridge, kyodoSignal, shrineWest, zuijin, ootorii, fuchu] },
-  inside: { label: '前提にする・競馬場内を通る', points: [station, seimon, museum, tomon, koremasaBridge, kyodoSignal, shrineWest, zuijin, ootorii, fuchu] },
+  inside: { label: '前提にする・競馬場内を通る', points: [station, gateIn, museumWalk, koremasaBridge, kyodoSignal, shrineWest, zuijin, ootorii, fuchu] },
 };
 
 const WALKWAY = 'footway|path|pedestrian|living_street|residential|service|steps|tertiary|unclassified|track|cycleway';

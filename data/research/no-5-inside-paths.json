@@ -1,0 +1,886 @@
+{
+ "checkedAt": "2026-11-15T00:12:10.322Z",
+ "source": "OpenStreetMap via Overpass API; © OpenStreetMap contributors",
+ "ways": [
+  {
+   "id": 172007582,
+   "highway": "service",
+   "name": null,
+   "access": null,
+   "foot": null,
+   "nodes": 15,
+   "from": [
+    35.6691195,
+    139.4815862
+   ],
+   "to": [
+    35.6685168,
+    139.4833283
+   ]
+  },
+  {
+   "id": 172047645,
+   "highway": "service",
+   "name": null,
+   "access": null,
+   "foot": null,
+   "nodes": 2,
+   "from": [
+    35.6688486,
+    139.4844725
+   ],
+   "to": [
+    35.6689272,
+    139.4834095
+   ]
+  },
+  {
+   "id": 172047647,
+   "highway": "service",
+   "name": null,
+   "access": null,
+   "foot": null,
+   "nodes": 3,
+   "from": [
+    35.6684998,
+    139.4844771
+   ],
+   "to": [
+    35.6687126,
+    139.48379
+   ]
+  },
+  {
+   "id": 172050714,
+   "highway": "service",
+   "name": null,
+   "access": null,
+   "foot": null,
+   "nodes": 11,
+   "from": [
+    35.6671302,
+    139.4869405
+   ],
+   "to": [
+    35.6656746,
+    139.4859859
+   ]
+  },
+  {
+   "id": 172050715,
+   "highway": "service",
+   "name": null,
+   "access": null,
+   "foot": null,
+   "nodes": 2,
+   "from": [
+    35.6670369,
+    139.4838601
+   ],
+   "to": [
+    35.6670018,
+    139.4834464
+   ]
+  },
+  {
+   "id": 172050719,
+   "highway": "service",
+   "name": null,
+   "access": null,
+   "foot": null,
+   "nodes": 2,
+   "from": [
+    35.6671788,
+    139.4838931
+   ],
+   "to": [
+    35.6671269,
+    139.483354
+   ]
+  },
+  {
+   "id": 172050721,
+   "highway": "service",
+   "name": null,
+   "access": null,
+   "foot": null,
+   "nodes": 3,
+   "from": [
+    35.6675187,
+    139.4845966
+   ],
+   "to": [
+    35.6676095,
+    139.4856616
+   ]
+  },
+  {
+   "id": 172050722,
+   "highway": "service",
+   "name": null,
+   "access": null,
+   "foot": null,
+   "nodes": 3,
+   "from": [
+    35.6672802,
+    139.4864577
+   ],
+   "to": [
+    35.66737,
+    139.4859518
+   ]
+  },
+  {
+   "id": 172050723,
+   "highway": "service",
+   "name": null,
+   "access": null,
+   "foot": null,
+   "nodes": 3,
+   "from": [
+    35.6673765,
+    139.484521
+   ],
+   "to": [
+    35.6674814,
+    139.4857534
+   ]
+  },
+  {
+   "id": 172050724,
+   "highway": "service",
+   "name": null,
+   "access": null,
+   "foot": null,
+   "nodes": 3,
+   "from": [
+    35.66737,
+    139.4859518
+   ],
+   "to": [
+    35.6672388,
+    139.484451
+   ]
+  },
+  {
+   "id": 172050726,
+   "highway": "service",
+   "name": null,
+   "access": null,
+   "foot": null,
+   "nodes": 5,
+   "from": [
+    35.6672902,
+    139.4865842
+   ],
+   "to": [
+    35.6671162,
+    139.4867892
+   ]
+  },
+  {
+   "id": 172050728,
+   "highway": "service",
+   "name": null,
+   "access": null,
+   "foot": null,
+   "nodes": 3,
+   "from": [
+    35.6674494,
+    139.4838925
+   ],
+   "to": [
+    35.6672193,
+    139.4839138
+   ]
+  },
+  {
+   "id": 172050731,
+   "highway": "service",
+   "name": null,
+   "access": null,
+   "foot": null,
+   "nodes": 5,
+   "from": [
+    35.6672193,
+    139.4839138
+   ],
+   "to": [
+    35.6668456,
+    139.4838551
+   ]
+  },
+  {
+   "id": 172050732,
+   "highway": "service",
+   "name": null,
+   "access": null,
+   "foot": null,
+   "nodes": 3,
+   "from": [
+    35.6675187,
+    139.4845966
+   ],
+   "to": [
+    35.6672388,
+    139.484451
+   ]
+  },
+  {
+   "id": 172050733,
+   "highway": "service",
+   "name": null,
+   "access": null,
+   "foot": null,
+   "nodes": 4,
+   "from": [
+    35.6674751,
+    139.4841813
+   ],
+   "to": [
+    35.6672784,
+    139.4835161
+   ]
+  },
+  {
+   "id": 172050734,
+   "highway": "service",
+   "name": null,
+   "access": null,
+   "foot": null,
+   "nodes": 4,
+   "from": [
+    35.6664228,
+    139.4870458
+   ],
+   "to": [
+    35.666186,
+    139.4870935
+   ]
+  },
+  {
+   "id": 172050735,
+   "highway": "service",
+   "name": null,
+   "access": null,
+   "foot": null,
+   "nodes": 4,
+   "from": [
+    35.6672633,
+    139.4833461
+   ],
+   "to": [
+    35.6673382,
+    139.484177
+   ]
+  },
+  {
+   "id": 172050736,
+   "highway": "service",
+   "name": null,
+   "access": null,
+   "foot": null,
+   "nodes": 4,
+   "from": [
+    35.667135,
+    139.4848466
+   ],
+   "to": [
+    35.6672902,
+    139.4865842
+   ]
+  },
+  {
+   "id": 172050737,
+   "highway": "pedestrian",
+   "name": "東京競馬場連絡歩道橋",
+   "access": null,
+   "foot": null,
+   "nodes": 2,
+   "from": [
+    35.667857,
+    139.4846859
+   ],
+   "to": [
+    35.6666897,
+    139.4846989
+   ]
+  },
+  {
+   "id": 172050739,
+   "highway": "service",
+   "name": null,
+   "access": null,
+   "foot": null,
+   "nodes": 8,
+   "from": [
+    35.6676645,
+    139.4856419
+   ],
+   "to": [
+    35.6670059,
+    139.4855923
+   ]
+  },
+  {
+   "id": 172502678,
+   "highway": "service",
+   "name": null,
+   "access": null,
+   "foot": null,
+   "nodes": 5,
+   "from": [
+    35.6685154,
+    139.4888601
+   ],
+   "to": [
+    35.6696273,
+    139.4891602
+   ]
+  },
+  {
+   "id": 172524454,
+   "highway": "service",
+   "name": null,
+   "access": null,
+   "foot": null,
+   "nodes": 2,
+   "from": [
+    35.6675031,
+    139.4874485
+   ],
+   "to": [
+    35.6674727,
+    139.4873404
+   ]
+  },
+  {
+   "id": 258585138,
+   "highway": "service",
+   "name": null,
+   "access": null,
+   "foot": null,
+   "nodes": 8,
+   "from": [
+    35.6680675,
+    139.4832374
+   ],
+   "to": [
+    35.6675576,
+    139.4844263
+   ]
+  },
+  {
+   "id": 258585141,
+   "highway": "service",
+   "name": null,
+   "access": null,
+   "foot": null,
+   "nodes": 5,
+   "from": [
+    35.6690413,
+    139.4878616
+   ],
+   "to": [
+    35.6689208,
+    139.488952
+   ]
+  },
+  {
+   "id": 342309782,
+   "highway": "footway",
+   "name": null,
+   "access": null,
+   "foot": null,
+   "nodes": 34,
+   "from": [
+    35.6669121,
+    139.4832806
+   ],
+   "to": [
+    35.6665268,
+    139.492579
+   ]
+  },
+  {
+   "id": 347653724,
+   "highway": "service",
+   "name": null,
+   "access": null,
+   "foot": null,
+   "nodes": 2,
+   "from": [
+    35.6676689,
+    139.4854706
+   ],
+   "to": [
+    35.6676651,
+    139.4848287
+   ]
+  },
+  {
+   "id": 347653725,
+   "highway": "service",
+   "name": null,
+   "access": null,
+   "foot": null,
+   "nodes": 4,
+   "from": [
+    35.6676645,
+    139.4856419
+   ],
+   "to": [
+    35.66737,
+    139.4859518
+   ]
+  },
+  {
+   "id": 347653729,
+   "highway": "footway",
+   "name": null,
+   "access": null,
+   "foot": null,
+   "nodes": 38,
+   "from": [
+    35.666126,
+    139.4902271
+   ],
+   "to": [
+    35.6646064,
+    139.4803934
+   ]
+  },
+  {
+   "id": 565998212,
+   "highway": "pedestrian",
+   "name": null,
+   "access": null,
+   "foot": null,
+   "nodes": 2,
+   "from": [
+    35.6664141,
+    139.4847015
+   ],
+   "to": [
+    35.6655057,
+    139.4847103
+   ]
+  },
+  {
+   "id": 570024403,
+   "highway": "pedestrian",
+   "name": null,
+   "access": null,
+   "foot": null,
+   "nodes": 102,
+   "from": [
+    35.6642383,
+    139.4810018
+   ],
+   "to": [
+    35.6642383,
+    139.4810018
+   ]
+  },
+  {
+   "id": 570240341,
+   "highway": "footway",
+   "name": null,
+   "access": null,
+   "foot": null,
+   "nodes": 2,
+   "from": [
+    35.666039,
+    139.4884614
+   ],
+   "to": [
+    35.6661886,
+    139.488442
+   ]
+  },
+  {
+   "id": 575285824,
+   "highway": "footway",
+   "name": null,
+   "access": null,
+   "foot": null,
+   "nodes": 4,
+   "from": [
+    35.6669384,
+    139.4842306
+   ],
+   "to": [
+    35.6666826,
+    139.4842382
+   ]
+  },
+  {
+   "id": 669888778,
+   "highway": "path",
+   "name": null,
+   "access": null,
+   "foot": null,
+   "nodes": 4,
+   "from": [
+    35.6685154,
+    139.4888601
+   ],
+   "to": [
+    35.6683567,
+    139.4888245
+   ]
+  },
+  {
+   "id": 699238172,
+   "highway": "footway",
+   "name": null,
+   "access": null,
+   "foot": null,
+   "nodes": 2,
+   "from": [
+    35.6666897,
+    139.4846989
+   ],
+   "to": [
+    35.6664141,
+    139.4847015
+   ]
+  },
+  {
+   "id": 1184847411,
+   "highway": "footway",
+   "name": null,
+   "access": null,
+   "foot": null,
+   "nodes": 18,
+   "from": [
+    35.6657054,
+    139.4811138
+   ],
+   "to": [
+    35.6669228,
+    139.4830842
+   ]
+  },
+  {
+   "id": 1184847412,
+   "highway": "footway",
+   "name": null,
+   "access": null,
+   "foot": null,
+   "nodes": 3,
+   "from": [
+    35.6669033,
+    139.4831816
+   ],
+   "to": [
+    35.6669121,
+    139.4832806
+   ]
+  },
+  {
+   "id": 1426075474,
+   "highway": "footway",
+   "name": null,
+   "access": null,
+   "foot": null,
+   "nodes": 2,
+   "from": [
+    35.6669228,
+    139.4830842
+   ],
+   "to": [
+    35.6668092,
+    139.4831053
+   ]
+  },
+  {
+   "id": 1426075475,
+   "highway": "footway",
+   "name": null,
+   "access": null,
+   "foot": null,
+   "nodes": 4,
+   "from": [
+    35.6668092,
+    139.4831053
+   ],
+   "to": [
+    35.6666116,
+    139.4831335
+   ]
+  },
+  {
+   "id": 1426075476,
+   "highway": "footway",
+   "name": null,
+   "access": null,
+   "foot": null,
+   "nodes": 4,
+   "from": [
+    35.6668565,
+    139.4833314
+   ],
+   "to": [
+    35.6666332,
+    139.4833637
+   ]
+  },
+  {
+   "id": 1426172770,
+   "highway": "service",
+   "name": null,
+   "access": null,
+   "foot": null,
+   "nodes": 2,
+   "from": [
+    35.6683567,
+    139.4888245
+   ],
+   "to": [
+    35.6681751,
+    139.4887736
+   ]
+  },
+  {
+   "id": 1428352608,
+   "highway": "pedestrian",
+   "name": null,
+   "access": null,
+   "foot": null,
+   "nodes": 28,
+   "from": [
+    35.6678053,
+    139.4845482
+   ],
+   "to": [
+    35.6678053,
+    139.4845482
+   ]
+  },
+  {
+   "id": 1428352609,
+   "highway": "pedestrian",
+   "name": null,
+   "access": null,
+   "foot": null,
+   "nodes": 3,
+   "from": [
+    35.6680494,
+    139.4846837
+   ],
+   "to": [
+    35.668006,
+    139.4846842
+   ]
+  },
+  {
+   "id": 1431604149,
+   "highway": "service",
+   "name": null,
+   "access": null,
+   "foot": null,
+   "nodes": 10,
+   "from": [
+    35.6674281,
+    139.4866039
+   ],
+   "to": [
+    35.6672664,
+    139.4878131
+   ]
+  },
+  {
+   "id": 1431604151,
+   "highway": "service",
+   "name": null,
+   "access": null,
+   "foot": null,
+   "nodes": 4,
+   "from": [
+    35.6686479,
+    139.484472
+   ],
+   "to": [
+    35.668748,
+    139.4833754
+   ]
+  },
+  {
+   "id": 1526894928,
+   "highway": "footway",
+   "name": null,
+   "access": null,
+   "foot": null,
+   "nodes": 2,
+   "from": [
+    35.6669228,
+    139.4830842
+   ],
+   "to": [
+    35.6669033,
+    139.4831816
+   ]
+  },
+  {
+   "id": 1528645687,
+   "highway": "service",
+   "name": null,
+   "access": null,
+   "foot": null,
+   "nodes": 2,
+   "from": [
+    35.6689109,
+    139.4863541
+   ],
+   "to": [
+    35.6691684,
+    139.4863901
+   ]
+  },
+  {
+   "id": 1528645688,
+   "highway": "service",
+   "name": null,
+   "access": null,
+   "foot": null,
+   "nodes": 2,
+   "from": [
+    35.6685631,
+    139.4862742
+   ],
+   "to": [
+    35.6689133,
+    139.4863202
+   ]
+  },
+  {
+   "id": 1528645740,
+   "highway": "service",
+   "name": null,
+   "access": null,
+   "foot": null,
+   "nodes": 2,
+   "from": [
+    35.6688468,
+    139.4869334
+   ],
+   "to": [
+    35.6690957,
+    139.4869911
+   ]
+  },
+  {
+   "id": 1529322361,
+   "highway": "service",
+   "name": null,
+   "access": null,
+   "foot": null,
+   "nodes": 4,
+   "from": [
+    35.6687589,
+    139.4878317
+   ],
+   "to": [
+    35.6686179,
+    139.4875805
+   ]
+  },
+  {
+   "id": 1529330238,
+   "highway": "service",
+   "name": null,
+   "access": null,
+   "foot": null,
+   "nodes": 2,
+   "from": [
+    35.6683567,
+    139.4888245
+   ],
+   "to": [
+    35.6683073,
+    139.4885253
+   ]
+  },
+  {
+   "id": 1529330239,
+   "highway": "service",
+   "name": null,
+   "access": null,
+   "foot": null,
+   "nodes": 3,
+   "from": [
+    35.6677719,
+    139.4861415
+   ],
+   "to": [
+    35.6675139,
+    139.4861466
+   ]
+  },
+  {
+   "id": 1529950003,
+   "highway": "service",
+   "name": null,
+   "access": null,
+   "foot": null,
+   "nodes": 2,
+   "from": [
+    35.6675956,
+    139.4901741
+   ],
+   "to": [
+    35.667524,
+    139.4896482
+   ]
+  },
+  {
+   "id": 1529950004,
+   "highway": "path",
+   "name": null,
+   "access": null,
+   "foot": null,
+   "nodes": 3,
+   "from": [
+    35.6685154,
+    139.4888601
+   ],
+   "to": [
+    35.6695793,
+    139.4891995
+   ]
+  },
+  {
+   "id": 1531299652,
+   "highway": "service",
+   "name": null,
+   "access": null,
+   "foot": null,
+   "nodes": 4,
+   "from": [
+    35.668207,
+    139.4902881
+   ],
+   "to": [
+    35.6684225,
+    139.4898302
+   ]
+  },
+  {
+   "id": 1548332190,
+   "highway": "service",
+   "name": null,
+   "access": null,
+   "foot": null,
+   "nodes": 4,
+   "from": [
+    35.668993,
+    139.489817
+   ],
+   "to": [
+    35.6687318,
+    139.4894626
+   ]
+  }
+ ]
+}
