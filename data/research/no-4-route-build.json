@@ -1,0 +1,72 @@
+{
+  "calculatedAt": "2026-11-15T13:44:26.526Z",
+  "engine": "valhalla-pedestrian",
+  "variants": {
+    "standard": {
+      "label": "standard",
+      "distanceM": 8475,
+      "engineDistanceM": 8485,
+      "repeatedGeometryM": 1983,
+      "repeatedGeometryPct": 23.4,
+      "legKm": [
+        1.4,
+        0.29,
+        2.54,
+        4.25
+      ],
+      "geometryUrl": "data/routes/no-4-standard.geojson",
+      "stops": [
+        {
+          "id": "tama_st",
+          "label": "多磨駅",
+          "coord": [
+            35.6765361,
+            139.5169524
+          ],
+          "source": "OSM node 多磨 station",
+          "offsetM": 2
+        },
+        {
+          "id": "hida_kyubo",
+          "label": "大沢1号掩体壕",
+          "coord": [
+            35.6765319,
+            139.5283657
+          ],
+          "source": "OSM node 大沢1号掩体壕 attraction",
+          "offsetM": 0
+        },
+        {
+          "id": "hida_kyubo2",
+          "label": "大沢2号掩体壕",
+          "coord": [
+            35.6777005,
+            139.5275297
+          ],
+          "source": "OSM node 大沢2号掩体壕 attraction",
+          "offsetM": 0
+        },
+        {
+          "id": "musashino_park",
+          "label": "武蔵野の森公園",
+          "coord": [
+            35.671524,
+            139.5276743
+          ],
+          "source": "OSM way 武蔵野の森公園 park",
+          "offsetM": 0
+        },
+        {
+          "id": "ajinomoto",
+          "label": "味の素スタジアム前（交差点）",
+          "coord": [
+            35.66363,
+            139.5244
+          ],
+          "source": "OSM node 9003529380 traffic_signals 味の素スタジアム前; スタジアムの中心は経路から約128m離れているため交差点を経由点にした",
+          "offsetM": 0
+        }
+      ]
+    }
+  }
+}

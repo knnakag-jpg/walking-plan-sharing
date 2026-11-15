@@ -1,0 +1,61 @@
+{
+ "hida_kyubo": {
+  "snapped": [
+   35.6765319,
+   139.5283657
+  ],
+  "movedM": 9,
+  "wayId": 850063093
+ },
+ "hida_kyubo2": {
+  "snapped": [
+   35.6777005,
+   139.5275297
+  ],
+  "movedM": 17,
+  "wayId": 658627454
+ },
+ "tenbodai_oka": {
+  "snapped": [
+   35.6777335,
+   139.526789
+  ],
+  "movedM": 24,
+  "wayId": 61509932
+ },
+ "musashino_park": {
+  "snapped": [
+   35.671524,
+   139.5276743
+  ],
+  "movedM": 55,
+  "wayId": 1126442253
+ },
+ "chofu_terminal": {
+  "snapped": [
+   35.6726685,
+   139.5296762
+  ],
+  "movedM": 23,
+  "wayId": 72420056
+ },
+ "ajinomoto": {
+  "snapped": null
+ },
+ "tama_st": {
+  "snapped": [
+   35.6765361,
+   139.5169524
+  ],
+  "movedM": 10,
+  "wayId": 1123833797
+ },
+ "tobita_st": {
+  "snapped": [
+   35.6600512,
+   139.5235626
+  ],
+  "movedM": 3,
+  "wayId": 1085257200
+ }
+}

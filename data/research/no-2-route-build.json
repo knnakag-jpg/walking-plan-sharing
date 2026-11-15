@@ -1,0 +1,127 @@
+{
+  "calculatedAt": "2026-11-15T13:45:50.149Z",
+  "engine": "valhalla-pedestrian",
+  "variants": {
+    "standard": {
+      "label": "standard",
+      "distanceM": 7862,
+      "engineDistanceM": 7869,
+      "repeatedGeometryM": 647,
+      "repeatedGeometryPct": 8.2,
+      "legKm": [
+        0.24,
+        0.55,
+        0.26,
+        0.47,
+        0.58,
+        1.73,
+        2.02,
+        1.42,
+        0.61
+      ],
+      "geometryUrl": "data/routes/no-2-standard.geojson",
+      "stops": [
+        {
+          "id": "teleport",
+          "label": "東京テレポート駅",
+          "coord": [
+            35.6270066,
+            139.7781191
+          ],
+          "source": "OSM node 東京テレポート station",
+          "offsetM": 4
+        },
+        {
+          "id": "diversity",
+          "label": "ダイバーシティ東京",
+          "coord": [
+            35.6259623,
+            139.7762641
+          ],
+          "source": "OSM way ダイバーシティ東京",
+          "offsetM": 0
+        },
+        {
+          "id": "aquacity",
+          "label": "アクアシティお台場",
+          "coord": [
+            35.6268678,
+            139.7726695
+          ],
+          "source": "OSM way アクアシティお台場",
+          "offsetM": 0
+        },
+        {
+          "id": "fuji",
+          "label": "フジテレビ前（バス停）",
+          "coord": [
+            35.62767,
+            139.77494
+          ],
+          "source": "OSM node 3597315993 bus_stop フジテレビ前; 建物の中心は経路から約44m離れているためバス停を経由点にした",
+          "offsetM": 5
+        },
+        {
+          "id": "odaiba_kaihin_st",
+          "label": "お台場海浜公園駅",
+          "coord": [
+            35.6299286,
+            139.7788458
+          ],
+          "source": "OSM node お台場海浜公園 station",
+          "offsetM": 0
+        },
+        {
+          "id": "rainbow_park_road",
+          "label": "お台場レインボー公園前（道路上）",
+          "coord": [
+            35.6331303,
+            139.7773601
+          ],
+          "source": "OSM お台場レインボー公園の園内中心は経路から約46m離れているため、同じ公園の道路側の点を使う",
+          "offsetM": 8
+        },
+        {
+          "id": "aomi",
+          "label": "青海駅",
+          "coord": [
+            35.6245646,
+            139.7812789
+          ],
+          "source": "OSM node 青海 station",
+          "offsetM": 0
+        },
+        {
+          "id": "ariake_north",
+          "label": "有明北緑道公園",
+          "coord": [
+            35.6350389,
+            139.7808669
+          ],
+          "source": "OSM way 有明北緑道公園 park",
+          "offsetM": 0
+        },
+        {
+          "id": "bigsight",
+          "label": "東京ビッグサイト",
+          "coord": [
+            35.6304204,
+            139.791356
+          ],
+          "source": "OSM relation 東京ビッグサイト",
+          "offsetM": 0
+        },
+        {
+          "id": "kokusai",
+          "label": "国際展示場駅",
+          "coord": [
+            35.6343923,
+            139.7916516
+          ],
+          "source": "OSM node 国際展示場 station",
+          "offsetM": 0
+        }
+      ]
+    }
+  }
+}

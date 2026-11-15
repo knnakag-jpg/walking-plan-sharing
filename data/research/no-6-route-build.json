@@ -1,0 +1,116 @@
+{
+  "calculatedAt": "2026-11-15T13:35:50.990Z",
+  "engine": "valhalla-pedestrian",
+  "variants": {
+    "standard": {
+      "label": "standard",
+      "distanceM": 3908,
+      "engineDistanceM": 3914,
+      "repeatedGeometryM": 278,
+      "repeatedGeometryPct": 7.1,
+      "legKm": [
+        0.77,
+        0.21,
+        0.05,
+        0.09,
+        1.13,
+        1.12,
+        0.51,
+        0.04
+      ],
+      "geometryUrl": "data/routes/no-6-standard.geojson",
+      "stops": [
+        {
+          "id": "higashi_tokorozawa",
+          "label": "東所沢駅",
+          "coord": [
+            35.795182,
+            139.514577
+          ],
+          "source": "OSM relation 東所沢 station",
+          "offsetM": 0
+        },
+        {
+          "id": "tokorozawa_koen",
+          "label": "東所沢公園",
+          "coord": [
+            35.7980714,
+            139.5095471
+          ],
+          "source": "OSM node 東所沢公園 park",
+          "offsetM": 3
+        },
+        {
+          "id": "sakuratown",
+          "label": "ところざわサクラタウン",
+          "coord": [
+            35.7971886,
+            139.5075113
+          ],
+          "source": "OSM way ところざわサクラタウン",
+          "offsetM": 0
+        },
+        {
+          "id": "kadokawa",
+          "label": "角川武蔵野ミュージアム",
+          "coord": [
+            35.7973994,
+            139.5080436
+          ],
+          "source": "OSM node 角川武蔵野ミュージアム museum",
+          "offsetM": 0
+        },
+        {
+          "id": "jinja",
+          "label": "武蔵野坐令和神社",
+          "coord": [
+            35.797222,
+            139.5084732
+          ],
+          "source": "OSM node 武蔵野坐令和神社",
+          "offsetM": 0
+        },
+        {
+          "id": "higashigawa",
+          "label": "東川沿い（東所沢公園の南）",
+          "coord": [
+            35.7994958,
+            139.5031299
+          ],
+          "source": "OSM way 154727209 東川; 川に沿う歩道の位置は地図レビュー待ち",
+          "offsetM": 0
+        },
+        {
+          "id": "koku_park",
+          "label": "所沢航空記念公園",
+          "coord": [
+            35.7978,
+            139.4941136
+          ],
+          "source": "OSM node 300458958 航空記念公園",
+          "offsetM": 0
+        },
+        {
+          "id": "koku_kinenkan",
+          "label": "所沢航空発祥記念館",
+          "coord": [
+            35.7992661,
+            139.4899252
+          ],
+          "source": "OSM way 160511084 所沢航空発祥記念館 museum",
+          "offsetM": 0
+        },
+        {
+          "id": "koku_park_st",
+          "label": "航空公園駅",
+          "coord": [
+            35.7989225,
+            139.4899441
+          ],
+          "source": "OSM node 7978379439 航空公園 station",
+          "offsetM": 0
+        }
+      ]
+    }
+  }
+}

@@ -1,23 +1,24 @@
 {
   "schemaVersion": 1,
   "source": "legacy import; route quality not re-reviewed",
-  "generatedAt": "2026-11-15T13:12:09.777Z",
+  "generatedAt": "2026-11-15T13:46:10.008Z",
   "courses": [
     {
       "id": "No.1",
       "slug": "no-1",
-      "title": "皇居東御苑・三の丸尚蔵館",
+      "title": "皇居東御苑と北の丸公園",
       "seriesId": "main",
       "seriesName": "本編 A～Z（No.1～26）",
       "legacyAnchor": "course-1",
       "legacyUrl": "../index.html#course-1",
-      "summary": "経路ノード： 大手門 → 三の丸尚蔵館 → 二の丸庭園（平坦） → 本丸大芝生（緩い登り） → 天守台下（登らず外周） → 北桔橋門 → 平川門 → 北の丸公園（科学技術館・日本武道館前・中池周辺、平坦に周遊） → 竹橋駅（新終着。丸の内・東京駅方面へ続ける場合は選択可） → 日本橋本石町一丁目方面へ実在の歩道で延伸（往復約2.8km） → ゴール",
+      "summary": "大手門から皇居東御苑の本丸・天守台を歩き、北桔橋門から北の丸公園の科学技術館・日本武道館前を通って竹橋駅へ。旧案の平川門への戻りと日本橋方面への往復延伸は採らない。",
       "routeText": "経路ノード： 大手門 → 三の丸尚蔵館 → 二の丸庭園（平坦） → 本丸大芝生（緩い登り） → 天守台下（登らず外周） → 北桔橋門 → 平川門 → 北の丸公園（科学技術館・日本武道館前・中池周辺、平坦に周遊） → 竹橋駅（新終着。丸の内・東京駅方面へ続ける場合は選択可） → 日本橋本石町一丁目方面へ実在の歩道で延伸（往復約2.8km） → ゴール",
       "tags": [
-        "歴史・城郭",
-        "美術・工芸",
-        "近代建築",
-        "庭園"
+        "御苑",
+        "庭園",
+        "歴史",
+        "桜",
+        "街並み"
       ],
       "route": {
         "id": "no-1-legacy",
@@ -31,17 +32,7 @@
         "repeatedGeometryPct": 23.9,
         "maxWaypointToShapeM": 32,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "partial_dem_filled",
-          "url": "data/elevation/no-1.json",
-          "totalM": 6654,
-          "climbM": 44.1,
-          "descentM": 44.2,
-          "minM": 2.1,
-          "maxM": 21.9
-        }
+        "engine": "valhalla-pedestrian"
       },
       "waypoints": [
         {
@@ -128,7 +119,298 @@
         "repeated_geometry_over_10pct",
         "repeated_waypoint"
       ],
-      "category": "main"
+      "category": "main",
+      "defaultVariant": "standard",
+      "evidence": [
+        {
+          "type": "official",
+          "title": "宮内庁：皇居東御苑",
+          "url": "https://www.kunaicho.go.jp/event/higashigyoen/higashigyoen.html",
+          "checkedAt": "2026-11-15",
+          "supports": "開園日・開園時間の確認先（本セッションでは本文を取得していない。当日確認が必要）。"
+        },
+        {
+          "type": "community",
+          "title": "OpenStreetMap（大手門・本丸大芝生・天守台・北桔橋門・科学技術館・日本武道館・和田倉噴水公園）",
+          "url": "https://www.openstreetmap.org/",
+          "checkedAt": "2026-11-15",
+          "supports": "門・園地・施設の名称ノード/リレーションの座標。入口ではない。"
+        }
+      ],
+      "openQuestions": [
+        "三の丸尚蔵館・二の丸庭園を回る順路（天守台へ戻らずに回れるか）",
+        "皇居東御苑の開園日と開園時間（宮内庁公式）",
+        "和田倉噴水公園から東京駅への地下通路",
+        "北桔橋門から北の丸公園への通り抜け"
+      ],
+      "routeOptions": [
+        {
+          "id": "no-1-standard",
+          "variant": "standard",
+          "strategy": "scenic",
+          "geometryUrl": "data/routes/no-1-standard.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 5741,
+          "engineDistanceM": 5748,
+          "repeatedGeometryPct": 9.8,
+          "routeReason": "大手門から本丸大芝生、天守台、北桔橋門を経て北の丸公園へ入り、科学技術館と日本武道館の前を通り、平川門の外側から和田倉噴水公園を回って竹橋駅へ下る。計算上5.74km。三の丸尚蔵館と二の丸庭園は御苑の南東寄りに並び、天守台へ向かうと南へ戻ることになるため含めていない（入口の位置は地図レビュー待ち）。 B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
+          "distanceException": null,
+          "retraceException": "本丸大芝生と天守台を結ぶ園路で約117mと約47m、北の丸公園の入口（北桔橋門）付近で約54m、和田倉噴水公園の園路で約345mが重なる（計約562m）。園内の行き止まりの園路と、和田倉公園の池の周回路を戻る形で、地図で未確認。距離合わせの往復ではない。",
+          "waypoints": [
+            {
+              "index": 0,
+              "id": "otemon",
+              "label": "大手門",
+              "description": null,
+              "point": [
+                139.7601925,
+                35.6860559
+              ],
+              "source": "OSM node city_gate 大手門"
+            },
+            {
+              "index": 1,
+              "id": "honmaru",
+              "label": "本丸大芝生",
+              "description": null,
+              "point": [
+                139.7556735,
+                35.6866338
+              ],
+              "source": "OSM relation 本丸大芝生"
+            },
+            {
+              "index": 2,
+              "id": "tenshudai",
+              "label": "天守台",
+              "description": null,
+              "point": [
+                139.754397,
+                35.6882734
+              ],
+              "source": "OSM node 天守台 ruins"
+            },
+            {
+              "index": 3,
+              "id": "kitanogibashi",
+              "label": "北桔橋門",
+              "description": null,
+              "point": [
+                139.7540372,
+                35.6888641
+              ],
+              "source": "OSM node 北桔橋門 city_gate"
+            },
+            {
+              "index": 4,
+              "id": "kagakukan",
+              "label": "科学技術館",
+              "description": null,
+              "point": [
+                139.7526659,
+                35.6913004
+              ],
+              "source": "OSM node 科学技術館 museum"
+            },
+            {
+              "index": 5,
+              "id": "budokan",
+              "label": "日本武道館",
+              "description": null,
+              "point": [
+                139.7500431,
+                35.6937941
+              ],
+              "source": "OSM node 日本武道館 sports_centre"
+            },
+            {
+              "index": 6,
+              "id": "hirakawa_signal",
+              "label": "平川門（交差点）",
+              "description": null,
+              "point": [
+                139.7588238,
+                35.6902816
+              ],
+              "source": "OSM node 243828110 traffic_signals 平川門; 御苑の平川門の外側"
+            },
+            {
+              "index": 7,
+              "id": "wadakura",
+              "label": "和田倉噴水公園",
+              "description": null,
+              "point": [
+                139.7612987,
+                35.6833717
+              ],
+              "source": "OSM node 和田倉噴水公園 park"
+            },
+            {
+              "index": 8,
+              "id": "takebashi",
+              "label": "竹橋駅",
+              "description": null,
+              "point": [
+                139.7586934,
+                35.6902074
+              ],
+              "source": "OSM node 竹橋 station"
+            }
+          ],
+          "engine": "valhalla-pedestrian",
+          "built": "2026-11-15T13:32:18.084Z",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/no-1-standard.json",
+            "totalM": 5741,
+            "climbM": 43.8,
+            "descentM": 43.7,
+            "minM": 2.2,
+            "maxM": 27.4
+          }
+        },
+        {
+          "id": "no-1-rainy",
+          "variant": "rainy",
+          "strategy": "indoor_rail",
+          "verificationStatus": "researched",
+          "distanceM": null,
+          "routeReason": "雨の日は三の丸尚蔵館（館内展示）と和田倉噴水公園の屋根下を中心にする案。屋外は大手町・竹橋の駅と館の間だけにする。館内の連続歩行距離は未計測。",
+          "segments": [
+            {
+              "kind": "walk_outdoor",
+              "from": "竹橋駅",
+              "to": "皇居三の丸尚蔵館",
+              "distanceM": null,
+              "note": "屋根のない区間あり。傘が必要。"
+            },
+            {
+              "kind": "walk_indoor",
+              "from": "皇居三の丸尚蔵館",
+              "to": "展示室内",
+              "distanceM": null,
+              "note": "開館日・入館料・予約を当日公式で確認。"
+            },
+            {
+              "kind": "walk_outdoor",
+              "from": "和田倉噴水公園",
+              "to": "東京駅丸の内北口",
+              "distanceM": null,
+              "note": "地下通路の有無は未確認。"
+            }
+          ],
+          "conditions": [
+            "御苑の開園日（月・金休園など）を当日公式で確認。",
+            "各館の開館日・入場料は当日確認。"
+          ],
+          "geometryUrl": null,
+          "waypoints": []
+        },
+        {
+          "id": "no-1-legacy",
+          "variant": "legacy",
+          "strategy": "legacy_unknown",
+          "geometryUrl": "data/routes/no-1.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 6654,
+          "engineDistanceM": 6655,
+          "targetDistanceM": 6900,
+          "repeatedGeometryPct": 23.9,
+          "maxWaypointToShapeM": 32,
+          "built": "2026-08-29",
+          "engine": "valhalla-pedestrian",
+          "waypoints": [
+            {
+              "index": 0,
+              "point": [
+                139.76026,
+                35.68596
+              ]
+            },
+            {
+              "index": 1,
+              "point": [
+                139.75885,
+                35.6867
+              ]
+            },
+            {
+              "index": 2,
+              "point": [
+                139.7569,
+                35.6877
+              ]
+            },
+            {
+              "index": 3,
+              "point": [
+                139.7562,
+                35.68885
+              ]
+            },
+            {
+              "index": 4,
+              "point": [
+                139.7556,
+                35.68835
+              ]
+            },
+            {
+              "index": 5,
+              "point": [
+                139.7541,
+                35.69075
+              ]
+            },
+            {
+              "index": 6,
+              "point": [
+                139.75305,
+                35.69095
+              ]
+            },
+            {
+              "index": 7,
+              "point": [
+                139.7515,
+                35.6928
+              ]
+            },
+            {
+              "index": 8,
+              "point": [
+                139.76038,
+                35.68941
+              ]
+            },
+            {
+              "index": 9,
+              "point": [
+                139.772765,
+                35.684681
+              ]
+            },
+            {
+              "index": 10,
+              "point": [
+                139.76038,
+                35.68941
+              ]
+            }
+          ],
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/no-1.json",
+            "totalM": 6654,
+            "climbM": 44.1,
+            "descentM": 44.2,
+            "minM": 2.1,
+            "maxM": 21.9
+          }
+        }
+      ]
     },
     {
       "id": "No.2",
@@ -138,13 +420,14 @@
       "seriesName": "本編 A～Z（No.1～26）",
       "legacyAnchor": "course-2",
       "legacyUrl": "../index.html#course-2",
-      "summary": "経路ノード： 東京テレポート駅 → ダイバーシティ東京プラザ（実物大立像） → 放送局社屋（外観） → アクアシティお台場（昼食） → 自由の女神像 → お台場海浜公園 → お台場海浜公園駅 → シンボルプロムナード公園（有明方面へ延伸） → 有明北緑道公園 → 東京ビッグサイト（外観） → 国際展示場駅／有明駅",
+      "summary": "東京テレポート駅からダイバーシティ東京、アクアシティお台場、お台場海浜公園駅を歩き、青海駅からお台場レインボー公園・有明北緑道公園を経て東京ビッグサイト、国際展示場駅へ抜ける。自由の女神像の像そのものの座標は取れなかったため、海浜公園の区間を通す形にしている。",
       "routeText": "経路ノード： 東京テレポート駅 → ダイバーシティ東京プラザ（実物大立像） → 放送局社屋（外観） → アクアシティお台場（昼食） → 自由の女神像 → お台場海浜公園 → お台場海浜公園駅 → シンボルプロムナード公園（有明方面へ延伸） → 有明北緑道公園 → 東京ビッグサイト（外観） → 国際展示場駅／有明駅",
       "tags": [
-        "メカ／IP",
-        "テック",
+        "海辺",
+        "都市",
         "景観",
-        "フォトジェニック"
+        "公園",
+        "美術"
       ],
       "route": {
         "id": "no-2-legacy",
@@ -158,17 +441,7 @@
         "repeatedGeometryPct": 8.8,
         "maxWaypointToShapeM": 13,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "partial_dem_filled",
-          "url": "data/elevation/no-2.json",
-          "totalM": 6586,
-          "climbM": 34.9,
-          "descentM": 34.5,
-          "minM": -2.7,
-          "maxM": 11.6
-        }
+        "engine": "valhalla-pedestrian"
       },
       "waypoints": [
         {
@@ -238,23 +511,313 @@
       "climbM": 149.5,
       "descentM": 146.7,
       "auditFlags": [],
-      "category": "main"
+      "category": "main",
+      "defaultVariant": "standard",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "旧資料 No.2（先行ページ index.html）",
+          "url": null,
+          "checkedAt": "2026-11-15",
+          "supports": "旧案の立ち寄り先。距離合わせの往復は採用していない。"
+        },
+        {
+          "type": "community",
+          "title": "OpenStreetMap（駅・公園・施設）",
+          "url": "https://www.openstreetmap.org/",
+          "checkedAt": "2026-11-15",
+          "supports": "駅と公園・施設の名称ノードの座標。入口ではない。"
+        }
+      ],
+      "openQuestions": [
+        "自由の女神像の正確な位置（OSMに名称ノードが見つからず、海浜公園の区間で代用）",
+        "お台場レインボー公園から青海駅への経路（約264mの重なりの原因）",
+        "アクアシティお台場とダイバーシティ東京の出入口",
+        "シンボルプロムナード公園の歩行者動線",
+        "東京ビッグサイトの入口（展示会の有無で動線が変わる）"
+      ],
+      "routeOptions": [
+        {
+          "id": "no-2-standard",
+          "variant": "standard",
+          "strategy": "scenic",
+          "geometryUrl": "data/routes/no-2-standard.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 7862,
+          "engineDistanceM": 7869,
+          "repeatedGeometryPct": 8.2,
+          "routeReason": "東京テレポート駅からダイバーシティ東京、アクアシティお台場、フジテレビ前を通り、お台場海浜公園駅、お台場レインボー公園、青海駅、有明北緑道公園、東京ビッグサイトを経て国際展示場駅へ。計算上7.86km。フジテレビとお台場レインボー公園は施設の中心が経路から離れているため、道路側のバス停・公園の点を経由点にした。 B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
+          "distanceException": "7.86km。7〜8kmの範囲に収まった。",
+          "retraceException": "ダイバーシティ東京の前後で約35m、アクアシティお台場の角で約12m、お台場海浜公園駅の前後で約48m、お台場レインボー公園から青海駅へ向かう区間で約264m（計約647m）。建物の出入口が道路側へ戻る形と推定。地図で未確認。",
+          "waypoints": [
+            {
+              "index": 0,
+              "id": "teleport",
+              "label": "東京テレポート駅",
+              "description": null,
+              "point": [
+                139.7781191,
+                35.6270066
+              ],
+              "source": "OSM node 東京テレポート station"
+            },
+            {
+              "index": 1,
+              "id": "diversity",
+              "label": "ダイバーシティ東京",
+              "description": null,
+              "point": [
+                139.7762641,
+                35.6259623
+              ],
+              "source": "OSM way ダイバーシティ東京"
+            },
+            {
+              "index": 2,
+              "id": "aquacity",
+              "label": "アクアシティお台場",
+              "description": null,
+              "point": [
+                139.7726695,
+                35.6268678
+              ],
+              "source": "OSM way アクアシティお台場"
+            },
+            {
+              "index": 3,
+              "id": "fuji",
+              "label": "フジテレビ前（バス停）",
+              "description": null,
+              "point": [
+                139.77494,
+                35.62767
+              ],
+              "source": "OSM node 3597315993 bus_stop フジテレビ前; 建物の中心は経路から約44m離れているためバス停を経由点にした"
+            },
+            {
+              "index": 4,
+              "id": "odaiba_kaihin_st",
+              "label": "お台場海浜公園駅",
+              "description": null,
+              "point": [
+                139.7788458,
+                35.6299286
+              ],
+              "source": "OSM node お台場海浜公園 station"
+            },
+            {
+              "index": 5,
+              "id": "rainbow_park_road",
+              "label": "お台場レインボー公園前（道路上）",
+              "description": null,
+              "point": [
+                139.7773601,
+                35.6331303
+              ],
+              "source": "OSM お台場レインボー公園の園内中心は経路から約46m離れているため、同じ公園の道路側の点を使う"
+            },
+            {
+              "index": 6,
+              "id": "aomi",
+              "label": "青海駅",
+              "description": null,
+              "point": [
+                139.7812789,
+                35.6245646
+              ],
+              "source": "OSM node 青海 station"
+            },
+            {
+              "index": 7,
+              "id": "ariake_north",
+              "label": "有明北緑道公園",
+              "description": null,
+              "point": [
+                139.7808669,
+                35.6350389
+              ],
+              "source": "OSM way 有明北緑道公園 park"
+            },
+            {
+              "index": 8,
+              "id": "bigsight",
+              "label": "東京ビッグサイト",
+              "description": null,
+              "point": [
+                139.791356,
+                35.6304204
+              ],
+              "source": "OSM relation 東京ビッグサイト"
+            },
+            {
+              "index": 9,
+              "id": "kokusai",
+              "label": "国際展示場駅",
+              "description": null,
+              "point": [
+                139.7916516,
+                35.6343923
+              ],
+              "source": "OSM node 国際展示場 station"
+            }
+          ],
+          "engine": "valhalla-pedestrian",
+          "built": "2026-11-15T13:45:50.149Z",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/no-2-standard.json",
+            "totalM": 7862,
+            "climbM": 36,
+            "descentM": 34.5,
+            "minM": -2.7,
+            "maxM": 8.1
+          }
+        },
+        {
+          "id": "no-2-rainy",
+          "variant": "rainy",
+          "strategy": "indoor_rail",
+          "verificationStatus": "researched",
+          "distanceM": null,
+          "routeReason": "雨の日はダイバーシティ東京とアクアシティお台場の館内を中心にする案。屋外は駅と館の間だけ。",
+          "segments": [
+            {
+              "kind": "walk_outdoor",
+              "from": "東京テレポート駅",
+              "to": "ダイバーシティ東京",
+              "distanceM": null,
+              "note": "屋根の有無は未確認。"
+            },
+            {
+              "kind": "walk_indoor",
+              "from": "ダイバーシティ東京",
+              "to": "アクアシティお台場",
+              "distanceM": null,
+              "note": "館内の連続動線は未確認。"
+            },
+            {
+              "kind": "rail",
+              "from": "お台場海浜公園駅",
+              "to": "東京テレポート駅",
+              "distanceM": null,
+              "note": "ゆりかもめで戻る場合。"
+            }
+          ],
+          "conditions": [
+            "各施設の営業時間は当日確認。",
+            "屋外露出は未調査。"
+          ],
+          "geometryUrl": null,
+          "waypoints": []
+        },
+        {
+          "id": "no-2-legacy",
+          "variant": "legacy",
+          "strategy": "legacy_unknown",
+          "geometryUrl": "data/routes/no-2.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 6586,
+          "engineDistanceM": 6594,
+          "targetDistanceM": 6900,
+          "repeatedGeometryPct": 8.8,
+          "maxWaypointToShapeM": 13,
+          "built": "2026-08-29",
+          "engine": "valhalla-pedestrian",
+          "waypoints": [
+            {
+              "index": 0,
+              "point": [
+                139.77962,
+                35.62701
+              ]
+            },
+            {
+              "index": 1,
+              "point": [
+                139.7758,
+                35.62585
+              ]
+            },
+            {
+              "index": 2,
+              "point": [
+                139.77255,
+                35.62662
+              ]
+            },
+            {
+              "index": 3,
+              "point": [
+                139.7701,
+                35.62705
+              ]
+            },
+            {
+              "index": 4,
+              "point": [
+                139.771,
+                35.6254
+              ]
+            },
+            {
+              "index": 5,
+              "point": [
+                139.775,
+                35.6297
+              ]
+            },
+            {
+              "index": 6,
+              "point": [
+                139.7815,
+                35.632
+              ]
+            },
+            {
+              "index": 7,
+              "point": [
+                139.79,
+                35.634
+              ]
+            },
+            {
+              "index": 8,
+              "point": [
+                139.7928,
+                35.6297
+              ]
+            }
+          ],
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/no-2.json",
+            "totalM": 6586,
+            "climbM": 34.9,
+            "descentM": 34.5,
+            "minM": -2.7,
+            "maxM": 11.6
+          }
+        }
+      ]
     },
     {
       "id": "No.3",
       "slug": "no-3",
-      "title": "横浜・汽車道～開港記念会館",
+      "title": "横浜・汽車道と港のプロムナード",
       "seriesId": "main",
       "seriesName": "本編 A～Z（No.1～26）",
       "legacyAnchor": "course-3",
       "legacyUrl": "../index.html#course-3",
-      "summary": "経路ノード： 桜木町駅 → 汽車道 → 運河パーク → 横浜赤レンガ倉庫 → 象の鼻パーク → 昼食（馬車道） → 横浜市開港記念会館 → 神奈川県庁本庁舎（外観） → 大さん橋 屋上デッキ → 山下公園（海沿い遊歩道を延伸） → 元町・中華街駅（新終着候補。日本大通り駅／桜木町駅も引き続き選択可）",
+      "summary": "桜木町駅から汽車道を渡り、運河パーク、横浜赤レンガ倉庫、象の鼻パーク、開港記念会館、神奈川県庁、大さん橋入口を経て山下公園、元町・中華街駅へ抜ける。旧案の昼食の組み込みは採らない。",
       "routeText": "経路ノード： 桜木町駅 → 汽車道 → 運河パーク → 横浜赤レンガ倉庫 → 象の鼻パーク → 昼食（馬車道） → 横浜市開港記念会館 → 神奈川県庁本庁舎（外観） → 大さん橋 屋上デッキ → 山下公園（海沿い遊歩道を延伸） → 元町・中華街駅（新終着候補。日本大通り駅／桜木町駅も引き続き選択可）",
       "tags": [
-        "近代建築",
-        "港湾・船舶",
-        "景観",
-        "歴史"
+        "港",
+        "歴史",
+        "橋",
+        "洋館",
+        "海辺"
       ],
       "route": {
         "id": "no-3-legacy",
@@ -268,17 +831,7 @@
         "repeatedGeometryPct": 22.7,
         "maxWaypointToShapeM": 32,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "partial_dem_filled",
-          "url": "data/elevation/no-3.json",
-          "totalM": 6746,
-          "climbM": 21.4,
-          "descentM": 18.7,
-          "minM": 1.6,
-          "maxM": 4.8
-        }
+        "engine": "valhalla-pedestrian"
       },
       "waypoints": [
         {
@@ -365,23 +918,324 @@
         "repeated_geometry_over_10pct",
         "repeated_waypoint"
       ],
-      "category": "main"
+      "category": "main",
+      "defaultVariant": "standard",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "旧資料 No.3（先行ページ index.html）",
+          "url": null,
+          "checkedAt": "2026-11-15",
+          "supports": "旧案の立ち寄り先。"
+        },
+        {
+          "type": "community",
+          "title": "OpenStreetMap（駅・公園・施設）",
+          "url": "https://www.openstreetmap.org/",
+          "checkedAt": "2026-11-15",
+          "supports": "駅と施設の名称ノードの座標。入口ではない。"
+        }
+      ],
+      "openQuestions": [
+        "大さん橋の屋上デッキへの入口とエレベーター",
+        "山下公園から元町・中華街駅への経路",
+        "各施設の営業時間・休館日"
+      ],
+      "routeOptions": [
+        {
+          "id": "no-3-standard",
+          "variant": "standard",
+          "strategy": "scenic",
+          "geometryUrl": "data/routes/no-3-standard.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 4498,
+          "engineDistanceM": 4495,
+          "repeatedGeometryPct": 5.9,
+          "routeReason": "桜木町駅から汽車道（旧桜木町駅の線路跡）、運河パーク、横浜赤レンガ倉庫、象の鼻パーク、横浜市開港記念会館、神奈川県庁、大さん橋入口、山下公園を経て元町・中華街駅へ。計算上4.50km。大さん橋は屋上デッキまで上がらず入口を経由点にしている（デッキの座標は未確認）。 B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
+          "distanceException": null,
+          "retraceException": "運河パーク付近で約56m、象の鼻パーク付近で約58m、開港記念会館付近で約33m（計約266m）。施設の出入口が道路側へ戻る形と推定。地図で未確認。",
+          "waypoints": [
+            {
+              "index": 0,
+              "id": "sakuragicho",
+              "label": "桜木町駅",
+              "description": null,
+              "point": [
+                139.6308928,
+                35.4511416
+              ],
+              "source": "OSM node 桜木町 station"
+            },
+            {
+              "index": 1,
+              "id": "kishamichi",
+              "label": "汽車道",
+              "description": null,
+              "point": [
+                139.6363779,
+                35.4526856
+              ],
+              "source": "OSM relation 汽車道"
+            },
+            {
+              "index": 2,
+              "id": "unga",
+              "label": "運河パーク",
+              "description": null,
+              "point": [
+                139.637402,
+                35.4531884
+              ],
+              "source": "OSM node 運河パーク park"
+            },
+            {
+              "index": 3,
+              "id": "akarenga",
+              "label": "横浜赤レンガ倉庫",
+              "description": null,
+              "point": [
+                139.6428916,
+                35.4523158
+              ],
+              "source": "OSM relation 横浜赤レンガ倉庫"
+            },
+            {
+              "index": 4,
+              "id": "zounohana",
+              "label": "象の鼻パーク",
+              "description": null,
+              "point": [
+                139.6425898,
+                35.4500822
+              ],
+              "source": "OSM node 象の鼻パーク garden"
+            },
+            {
+              "index": 5,
+              "id": "kaikou",
+              "label": "横浜市開港記念会館",
+              "description": null,
+              "point": [
+                139.6414435,
+                35.4473623
+              ],
+              "source": "OSM relation 横浜市開港記念会館"
+            },
+            {
+              "index": 6,
+              "id": "kentai",
+              "label": "神奈川県庁",
+              "description": null,
+              "point": [
+                139.6422975,
+                35.4478746
+              ],
+              "source": "OSM relation 神奈川県庁 本庁舎"
+            },
+            {
+              "index": 7,
+              "id": "osambashi_iri",
+              "label": "大さん橋入口",
+              "description": null,
+              "point": [
+                139.6457294,
+                35.4474185
+              ],
+              "source": "OSM node 大さん橋入口"
+            },
+            {
+              "index": 8,
+              "id": "yamashita",
+              "label": "山下公園",
+              "description": null,
+              "point": [
+                139.6498683,
+                35.4457087
+              ],
+              "source": "OSM node 山下公園 park"
+            },
+            {
+              "index": 9,
+              "id": "motomachi",
+              "label": "元町・中華街駅",
+              "description": null,
+              "point": [
+                139.6509254,
+                35.4421263
+              ],
+              "source": "OSM node 元町・中華街 station"
+            }
+          ],
+          "engine": "valhalla-pedestrian",
+          "built": "2026-11-15T13:32:23.051Z",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/no-3-standard.json",
+            "totalM": 4498,
+            "climbM": 15.9,
+            "descentM": 13.6,
+            "minM": 0.8,
+            "maxM": 5.2
+          }
+        },
+        {
+          "id": "no-3-rainy",
+          "variant": "rainy",
+          "strategy": "indoor_rail",
+          "verificationStatus": "researched",
+          "distanceM": null,
+          "routeReason": "雨の日は横浜赤レンガ倉庫と大さん橋客船ターミナルの館内を中心にする案。",
+          "segments": [
+            {
+              "kind": "walk_outdoor",
+              "from": "桜木町駅",
+              "to": "横浜赤レンガ倉庫",
+              "distanceM": null,
+              "note": "汽車道は屋根なし。傘が必要。"
+            },
+            {
+              "kind": "walk_indoor",
+              "from": "横浜赤レンガ倉庫",
+              "to": "大さん橋客船ターミナル",
+              "distanceM": null,
+              "note": "館内の連続動線は未確認。"
+            },
+            {
+              "kind": "rail",
+              "from": "元町・中華街駅",
+              "to": "桜木町駅",
+              "distanceM": null,
+              "note": "みなとみらい線で戻る場合。"
+            }
+          ],
+          "conditions": [
+            "各施設の営業時間は当日確認。",
+            "港の風雨は公式の荒天情報を確認。"
+          ],
+          "geometryUrl": null,
+          "waypoints": []
+        },
+        {
+          "id": "no-3-legacy",
+          "variant": "legacy",
+          "strategy": "legacy_unknown",
+          "geometryUrl": "data/routes/no-3.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 6746,
+          "engineDistanceM": 6753,
+          "targetDistanceM": 6900,
+          "repeatedGeometryPct": 22.7,
+          "maxWaypointToShapeM": 32,
+          "built": "2026-08-29",
+          "engine": "valhalla-pedestrian",
+          "waypoints": [
+            {
+              "index": 0,
+              "point": [
+                139.63333,
+                35.45033
+              ]
+            },
+            {
+              "index": 1,
+              "point": [
+                139.639,
+                35.4522
+              ]
+            },
+            {
+              "index": 2,
+              "point": [
+                139.6408,
+                35.4538
+              ]
+            },
+            {
+              "index": 3,
+              "point": [
+                139.6427,
+                35.4529
+              ]
+            },
+            {
+              "index": 4,
+              "point": [
+                139.6432,
+                35.452
+              ]
+            },
+            {
+              "index": 5,
+              "point": [
+                139.6428,
+                35.4473
+              ]
+            },
+            {
+              "index": 6,
+              "point": [
+                139.6423,
+                35.4497
+              ]
+            },
+            {
+              "index": 7,
+              "point": [
+                139.6495,
+                35.4448
+              ]
+            },
+            {
+              "index": 8,
+              "point": [
+                139.652,
+                35.4428
+              ]
+            },
+            {
+              "index": 9,
+              "point": [
+                139.660307,
+                35.436153
+              ]
+            },
+            {
+              "index": 10,
+              "point": [
+                139.652,
+                35.4428
+              ]
+            }
+          ],
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/no-3.json",
+            "totalM": 6746,
+            "climbM": 21.4,
+            "descentM": 18.7,
+            "minM": 1.6,
+            "maxM": 4.8
+          }
+        }
+      ]
     },
     {
       "id": "No.4",
       "slug": "no-4",
-      "title": "調布飛行場・武蔵野の森公園",
+      "title": "調布飛行場と武蔵野の森",
       "seriesId": "main",
       "seriesName": "本編 A～Z（No.1～26）",
       "legacyAnchor": "course-4",
       "legacyUrl": "../index.html#course-4",
-      "summary": "経路ノード： 中央線側の駅（バス乗車） → 武蔵野の森公園 展望の丘 → 大沢2号掩体壕（または1号） → 調布飛行場ターミナル周辺 → 味の素スタジアム外周 → 飛田給駅 または 多磨駅 → 飛田給二丁目方面へ実在の歩道で延伸（往復約1.1km） → ゴール",
+      "summary": "多磨駅から大沢1号掩体壕、2号掩体壕、武蔵野の森公園を通り、調布飛行場ターミナルを経て味の素スタジアムへ下る。往復が多い案で、掩体壕と展望の丘が行き止まりの園路の先にある。",
       "routeText": "経路ノード： 中央線側の駅（バス乗車） → 武蔵野の森公園 展望の丘 → 大沢2号掩体壕（または1号） → 調布飛行場ターミナル周辺 → 味の素スタジアム外周 → 飛田給駅 または 多磨駅 → 飛田給二丁目方面へ実在の歩道で延伸（往復約1.1km） → ゴール",
       "tags": [
-        "ミリタリー／近代遺構",
-        "航空",
-        "自然",
-        "フォトジェニック"
+        "飛行場",
+        "史跡",
+        "公園",
+        "スタジアム"
       ],
       "route": {
         "id": "no-4-legacy",
@@ -395,17 +1249,7 @@
         "repeatedGeometryPct": 12.9,
         "maxWaypointToShapeM": 74,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "dem",
-          "url": "data/elevation/no-4.json",
-          "totalM": 5951,
-          "climbM": 23.6,
-          "descentM": 25.2,
-          "minM": 34.1,
-          "maxM": 49.9
-        }
+        "engine": "valhalla-pedestrian"
       },
       "waypoints": [
         {
@@ -465,7 +1309,226 @@
         "repeated_waypoint",
         "waypoint_off_shape"
       ],
-      "category": "main"
+      "category": "main",
+      "defaultVariant": "standard",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "OpenStreetMap（多磨駅・掩体壕・武蔵野の森公園・調布飛行場ターミナル・味の素スタジアム）",
+          "url": "https://www.openstreetmap.org/",
+          "checkedAt": "2026-11-15",
+          "supports": "駅・史跡・施設の名称ノードの座標。入口ではない。"
+        },
+        {
+          "type": "community",
+          "title": "旧資料 No.4（先行ページ index.html）",
+          "url": null,
+          "checkedAt": "2026-11-15",
+          "supports": "旧案の立ち寄り先。"
+        }
+      ],
+      "openQuestions": [
+        "掩体壕から展望の丘へ戻らずに行ける園路があるか",
+        "調布飛行場のターミナルと滑走路沿いの歩道の通行条件",
+        "味の素スタジアムの外周通路の開放状況",
+        "旧案の「中央線側の駅（バス乗車）」の始点をどこにするか"
+      ],
+      "routeOptions": [
+        {
+          "id": "no-4-standard",
+          "variant": "standard",
+          "strategy": "scenic",
+          "geometryUrl": "data/routes/no-4-standard.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 8475,
+          "engineDistanceM": 8485,
+          "repeatedGeometryPct": 23.4,
+          "routeReason": "多磨駅から大沢1号掩体壕、大沢2号掩体壕、武蔵野の森公園、調布飛行場ターミナルを経て味の素スタジアムへ。計算上7.99km。掩体壕が行き止まりの園路の先にあり、展望の丘を足すと往復がさらに増えるため外した。 B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
+          "distanceException": "7.99km。7〜8kmの範囲に収まった。",
+          "retraceException": "掩体壕への園路で約331m、武蔵野の森公園から調布飛行場を回る区間で約1,652m（計約1,983m）。行き止まりの園路と、空港の周回・ターミナルへの出入りによる往復と推定。地図で未確認。距離合わせの往復ではないが、再検討の余地が大きい。",
+          "waypoints": [
+            {
+              "index": 0,
+              "id": "tama_st",
+              "label": "多磨駅",
+              "description": null,
+              "point": [
+                139.5169524,
+                35.6765361
+              ],
+              "source": "OSM node 多磨 station"
+            },
+            {
+              "index": 1,
+              "id": "hida_kyubo",
+              "label": "大沢1号掩体壕",
+              "description": null,
+              "point": [
+                139.5283657,
+                35.6765319
+              ],
+              "source": "OSM node 大沢1号掩体壕 attraction"
+            },
+            {
+              "index": 2,
+              "id": "hida_kyubo2",
+              "label": "大沢2号掩体壕",
+              "description": null,
+              "point": [
+                139.5275297,
+                35.6777005
+              ],
+              "source": "OSM node 大沢2号掩体壕 attraction"
+            },
+            {
+              "index": 3,
+              "id": "musashino_park",
+              "label": "武蔵野の森公園",
+              "description": null,
+              "point": [
+                139.5276743,
+                35.671524
+              ],
+              "source": "OSM way 武蔵野の森公園 park"
+            },
+            {
+              "index": 4,
+              "id": "ajinomoto",
+              "label": "味の素スタジアム前（交差点）",
+              "description": null,
+              "point": [
+                139.5244,
+                35.66363
+              ],
+              "source": "OSM node 9003529380 traffic_signals 味の素スタジアム前; スタジアムの中心は経路から約128m離れているため交差点を経由点にした"
+            }
+          ],
+          "engine": "valhalla-pedestrian",
+          "built": "2026-11-15T13:44:26.526Z",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "dem",
+            "url": "data/elevation/no-4-standard.json",
+            "totalM": 8475,
+            "climbM": 13.5,
+            "descentM": 16.7,
+            "minM": 40.7,
+            "maxM": 47.7
+          }
+        },
+        {
+          "id": "no-4-rainy",
+          "variant": "rainy",
+          "strategy": "indoor_rail",
+          "verificationStatus": "researched",
+          "distanceM": null,
+          "routeReason": "雨の日は調布飛行場のターミナル（館内）と味の素スタジアムの外周（屋根あり区間）を中心にする。",
+          "segments": [
+            {
+              "kind": "walk_outdoor",
+              "from": "多磨駅",
+              "to": "掩体壕",
+              "distanceM": null,
+              "note": "屋根なし。"
+            },
+            {
+              "kind": "walk_indoor",
+              "from": "調布飛行場ターミナル",
+              "to": "館内",
+              "distanceM": null,
+              "note": "公開範囲は未確認。"
+            },
+            {
+              "kind": "walk_outdoor",
+              "from": "味の素スタジアム",
+              "to": "飛田給駅",
+              "distanceM": null,
+              "note": "試合日は混雑。"
+            }
+          ],
+          "conditions": [
+            "調布飛行場の見学可否は当日確認。",
+            "味の素スタジアムの外周通路の開放は未確認。"
+          ],
+          "geometryUrl": null,
+          "waypoints": []
+        },
+        {
+          "id": "no-4-legacy",
+          "variant": "legacy",
+          "strategy": "legacy_unknown",
+          "geometryUrl": "data/routes/no-4.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 5951,
+          "engineDistanceM": 5960,
+          "targetDistanceM": 6000,
+          "repeatedGeometryPct": 12.9,
+          "maxWaypointToShapeM": 74,
+          "built": "2026-08-29",
+          "engine": "valhalla-pedestrian",
+          "waypoints": [
+            {
+              "index": 0,
+              "point": [
+                139.525,
+                35.6738
+              ]
+            },
+            {
+              "index": 1,
+              "point": [
+                139.5215,
+                35.6752
+              ]
+            },
+            {
+              "index": 2,
+              "point": [
+                139.53,
+                35.6728
+              ]
+            },
+            {
+              "index": 3,
+              "point": [
+                139.5248,
+                35.6642
+              ]
+            },
+            {
+              "index": 4,
+              "point": [
+                139.523,
+                35.6605
+              ]
+            },
+            {
+              "index": 5,
+              "point": [
+                139.521148,
+                35.656693
+              ]
+            },
+            {
+              "index": 6,
+              "point": [
+                139.523,
+                35.6605
+              ]
+            }
+          ],
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "dem",
+            "url": "data/elevation/no-4.json",
+            "totalM": 5951,
+            "climbM": 23.6,
+            "descentM": 25.2,
+            "minM": 34.1,
+            "maxM": 49.9
+          }
+        }
+      ]
     },
     {
       "id": "No.5",
@@ -991,19 +2054,19 @@
     {
       "id": "No.6",
       "slug": "no-6",
-      "title": "ところざわサクラタウン",
+      "title": "ところざわサクラタウンと航空公園",
       "seriesId": "main",
       "seriesName": "本編 A～Z（No.1～26）",
       "legacyAnchor": "course-6",
       "legacyUrl": "../index.html#course-6",
-      "summary": "経路ノード： 東所沢駅 → ところざわサクラタウン（角川武蔵野ミュージアム・武蔵野坐令和神社） → 屋外アートエリア → 東川遊歩道（川沿いの桜並木道、加美橋・中橋・長栄橋・あけぼの橋など沿道の橋） → 所沢航空記念公園 東口 → 所沢航空発祥記念館 → 航空公園駅 → ゴール",
+      "summary": "東所沢駅からところざわサクラタウン（角川武蔵野ミュージアム・武蔵野坐令和神社）を歩き、東川沿いを経て所沢航空記念公園、航空公園駅へ抜ける案。東川沿いの遊歩道と公園・駅の位置は地図で未確認の仮点を含む。",
       "routeText": "経路ノード： 東所沢駅 → ところざわサクラタウン（角川武蔵野ミュージアム・武蔵野坐令和神社） → 屋外アートエリア → 東川遊歩道（川沿いの桜並木道、加美橋・中橋・長栄橋・あけぼの橋など沿道の橋） → 所沢航空記念公園 東口 → 所沢航空発祥記念館 → 航空公園駅 → ゴール",
       "tags": [
-        "IP／アニメ文化",
-        "先端建築",
         "美術",
-        "航空",
-        "デジタルアート"
+        "建築",
+        "川",
+        "公園",
+        "航空"
       ],
       "route": {
         "id": "no-6-legacy",
@@ -1017,17 +2080,7 @@
         "repeatedGeometryPct": 4.4,
         "maxWaypointToShapeM": 43,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "partial_dem_filled",
-          "url": "data/elevation/no-6.json",
-          "totalM": 7235,
-          "climbM": 67.3,
-          "descentM": 51.7,
-          "minM": 38.2,
-          "maxM": 75.2
-        }
+        "engine": "valhalla-pedestrian"
       },
       "waypoints": [
         {
@@ -1085,7 +2138,270 @@
       "auditFlags": [
         "waypoint_off_shape"
       ],
-      "category": "main"
+      "category": "main",
+      "defaultVariant": "standard",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "OpenStreetMap（東所沢駅・サクラタウン・角川武蔵野ミュージアム・武蔵野坐令和神社・東川）",
+          "url": "https://www.openstreetmap.org/",
+          "checkedAt": "2026-11-15",
+          "supports": "駅・施設・川の名称ノードの座標。入口ではない。"
+        },
+        {
+          "type": "community",
+          "title": "旧資料 No.6（先行ページ index.html）",
+          "url": null,
+          "checkedAt": "2026-11-15",
+          "supports": "旧案の立ち寄り先。"
+        }
+      ],
+      "openQuestions": [
+        "東川沿いの遊歩道の位置と開通状況",
+        "所沢航空記念公園の東口の位置",
+        "所沢航空発祥記念館と航空公園駅の正確な座標（仮点を使用）",
+        "サクラタウンの出入口と角川武蔵野ミュージアムの入口"
+      ],
+      "routeOptions": [
+        {
+          "id": "no-6-standard",
+          "variant": "standard",
+          "strategy": "scenic",
+          "geometryUrl": "data/routes/no-6-standard.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 3908,
+          "engineDistanceM": 3914,
+          "repeatedGeometryPct": 7.1,
+          "routeReason": "東所沢駅からところざわサクラタウン、角川武蔵野ミュージアム、武蔵野坐令和神社を通り、東川沿いの遊歩道を西へ、所沢航空記念公園と所沢航空発祥記念館を経て航空公園駅へ。計算上3.91km。東川沿いの歩道の位置は地図レビュー待ち。 B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
+          "distanceException": "3.35km。仮点を含む計算値で5〜6kmに届かない。延伸は作らない。",
+          "retraceException": "東所沢駅からサクラタウンへ入る区間で約199m（サクラタウンの東側と駅側の出入口を行き来する形と推定）。地図で未確認。",
+          "waypoints": [
+            {
+              "index": 0,
+              "id": "higashi_tokorozawa",
+              "label": "東所沢駅",
+              "description": null,
+              "point": [
+                139.514577,
+                35.795182
+              ],
+              "source": "OSM relation 東所沢 station"
+            },
+            {
+              "index": 1,
+              "id": "tokorozawa_koen",
+              "label": "東所沢公園",
+              "description": null,
+              "point": [
+                139.5095471,
+                35.7980714
+              ],
+              "source": "OSM node 東所沢公園 park"
+            },
+            {
+              "index": 2,
+              "id": "sakuratown",
+              "label": "ところざわサクラタウン",
+              "description": null,
+              "point": [
+                139.5075113,
+                35.7971886
+              ],
+              "source": "OSM way ところざわサクラタウン"
+            },
+            {
+              "index": 3,
+              "id": "kadokawa",
+              "label": "角川武蔵野ミュージアム",
+              "description": null,
+              "point": [
+                139.5080436,
+                35.7973994
+              ],
+              "source": "OSM node 角川武蔵野ミュージアム museum"
+            },
+            {
+              "index": 4,
+              "id": "jinja",
+              "label": "武蔵野坐令和神社",
+              "description": null,
+              "point": [
+                139.5084732,
+                35.797222
+              ],
+              "source": "OSM node 武蔵野坐令和神社"
+            },
+            {
+              "index": 5,
+              "id": "higashigawa",
+              "label": "東川沿い（東所沢公園の南）",
+              "description": null,
+              "point": [
+                139.5031299,
+                35.7994958
+              ],
+              "source": "OSM way 154727209 東川; 川に沿う歩道の位置は地図レビュー待ち"
+            },
+            {
+              "index": 6,
+              "id": "koku_park",
+              "label": "所沢航空記念公園",
+              "description": null,
+              "point": [
+                139.4941136,
+                35.7978
+              ],
+              "source": "OSM node 300458958 航空記念公園"
+            },
+            {
+              "index": 7,
+              "id": "koku_kinenkan",
+              "label": "所沢航空発祥記念館",
+              "description": null,
+              "point": [
+                139.4899252,
+                35.7992661
+              ],
+              "source": "OSM way 160511084 所沢航空発祥記念館 museum"
+            },
+            {
+              "index": 8,
+              "id": "koku_park_st",
+              "label": "航空公園駅",
+              "description": null,
+              "point": [
+                139.4899441,
+                35.7989225
+              ],
+              "source": "OSM node 7978379439 航空公園 station"
+            }
+          ],
+          "engine": "valhalla-pedestrian",
+          "built": "2026-11-15T13:35:50.990Z",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/no-6-standard.json",
+            "totalM": 3908,
+            "climbM": 27,
+            "descentM": 17.1,
+            "minM": 48.1,
+            "maxM": 64.6
+          }
+        },
+        {
+          "id": "no-6-rainy",
+          "variant": "rainy",
+          "strategy": "indoor_rail",
+          "verificationStatus": "researched",
+          "distanceM": null,
+          "routeReason": "雨の日は角川武蔵野ミュージアムと所沢航空発祥記念館の館内を中心にする案。",
+          "segments": [
+            {
+              "kind": "walk_outdoor",
+              "from": "東所沢駅",
+              "to": "ところざわサクラタウン",
+              "distanceM": null,
+              "note": "屋根なし。"
+            },
+            {
+              "kind": "walk_indoor",
+              "from": "角川武蔵野ミュージアム",
+              "to": "館内",
+              "distanceM": null,
+              "note": "開館日・料金・予約を当日公式で確認。"
+            },
+            {
+              "kind": "rail",
+              "from": "航空公園駅",
+              "to": "東所沢駅",
+              "distanceM": null,
+              "note": "西武池袋線・新宿線の乗り換えで戻る場合。"
+            }
+          ],
+          "conditions": [
+            "角川武蔵野ミュージアムの開館日・料金・予約は当日確認。",
+            "東川沿いの遊歩道の開通状況は未確認。"
+          ],
+          "geometryUrl": null,
+          "waypoints": []
+        },
+        {
+          "id": "no-6-legacy",
+          "variant": "legacy",
+          "strategy": "legacy_unknown",
+          "geometryUrl": "data/routes/no-6.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 7235,
+          "engineDistanceM": 7237,
+          "targetDistanceM": 6900,
+          "repeatedGeometryPct": 4.4,
+          "maxWaypointToShapeM": 43,
+          "built": "2026-08-29",
+          "engine": "valhalla-pedestrian",
+          "waypoints": [
+            {
+              "index": 0,
+              "point": [
+                139.5145,
+                35.7908
+              ]
+            },
+            {
+              "index": 1,
+              "point": [
+                139.509,
+                35.7865
+              ]
+            },
+            {
+              "index": 2,
+              "point": [
+                139.5082,
+                35.7861
+              ]
+            },
+            {
+              "index": 3,
+              "point": [
+                139.507,
+                35.786
+              ]
+            },
+            {
+              "index": 4,
+              "point": [
+                139.5,
+                35.788
+              ]
+            },
+            {
+              "index": 5,
+              "point": [
+                139.485,
+                35.7945
+              ]
+            },
+            {
+              "index": 6,
+              "point": [
+                139.4648,
+                35.7991
+              ]
+            }
+          ],
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/no-6.json",
+            "totalM": 7235,
+            "climbM": 67.3,
+            "descentM": 51.7,
+            "minM": 38.2,
+            "maxM": 75.2
+          }
+        }
+      ]
     },
     {
       "id": "No.7",
@@ -1355,9 +2671,9 @@
             "source": "gsi_dem5a",
             "status": "partial_dem_filled",
             "url": "data/elevation/no-7-standard.json",
-            "totalM": 4622,
-            "climbM": 26.6,
-            "descentM": 25.7,
+            "totalM": 4654,
+            "climbM": 26.5,
+            "descentM": 25.6,
             "minM": 2.8,
             "maxM": 14.4
           }

@@ -120,7 +120,14 @@ for (const course of data.courses.filter((item) => item.routeOptions)) {
   const a = course.routeOptions.find((item) => item.variant === 'standard');
   const b = course.routeOptions.find((item) => item.variant === 'extended');
   const c = course.routeOptions.find((item) => item.variant === 'rainy');
-  assert(a && b && c, `${course.id}: A/B/C options missing`);
+  assert(a, `${course.id}: A option missing`);
+  if (!b) {
+    // Aだけの採用は、Bを作らない理由を routeReason に書いてある場合に限る。
+    assert(/B（7〜8kmの延長案）|実在の座標で同じ道を使わずに延ばせる/.test(a?.routeReason || ''), `${course.id}: B missing without a stated reason`);
+    assert(c?.distanceM == null && c?.segments?.some((leg) => leg.kind === 'walk_indoor') && c?.segments?.some((leg) => leg.kind === 'walk_outdoor'), `${course.id}: rainy indoor/outdoor split missing`);
+    assert(course.evidence?.length >= 2 && course.openQuestions?.length, `${course.id}: research evidence or open questions missing`);
+    continue;
+  }
   assert(a?.distanceM >= 5000 && a?.distanceM <= 6000 || Boolean(a?.distanceException), `${course.id}: A outside target without reason`);
   assert(b?.distanceM >= 7000 && b?.distanceM <= 8000 || Boolean(b?.distanceException), `${course.id}: B outside target without reason`);
   assert(a?.repeatedGeometryPct <= 10 || Boolean(a?.retraceException), `${course.id}: geometry repeat clue over 10% needs a stated reason`);

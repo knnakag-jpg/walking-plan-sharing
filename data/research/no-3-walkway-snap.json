@@ -1,0 +1,82 @@
+{
+ "sakuragicho": {
+  "snapped": [
+   35.4511416,
+   139.6308928
+  ],
+  "movedM": 20,
+  "wayId": 58069878
+ },
+ "kishamichi": {
+  "snapped": [
+   35.4526856,
+   139.6363779
+  ],
+  "movedM": 27,
+  "wayId": 410778232
+ },
+ "unga": {
+  "snapped": [
+   35.4531884,
+   139.637402
+  ],
+  "movedM": 1,
+  "wayId": 36073752
+ },
+ "akarenga": {
+  "snapped": [
+   35.4523158,
+   139.6428916
+  ],
+  "movedM": 12,
+  "wayId": 73001719
+ },
+ "zounohana": {
+  "snapped": [
+   35.4500822,
+   139.6425898
+  ],
+  "movedM": 11,
+  "wayId": 84832545
+ },
+ "kaikou": {
+  "snapped": [
+   35.4473623,
+   139.6414435
+  ],
+  "movedM": 33,
+  "wayId": 307414060
+ },
+ "kentai": {
+  "snapped": [
+   35.4478746,
+   139.6422975
+  ],
+  "movedM": 24,
+  "wayId": 915910786
+ },
+ "osambashi_iri": {
+  "snapped": [
+   35.4474185,
+   139.6457294
+  ],
+  "movedM": 6,
+  "wayId": 172134815
+ },
+ "yamashita": {
+  "snapped": [
+   35.4457087,
+   139.6498683
+  ],
+  "movedM": 1,
+  "wayId": 172485027
+ },
+ "motomachi": {
+  "snapped": [
+   35.4421263,
+   139.6509254
+  ],
+  "movedM": 2,
+  "wayId": 319057476
+ }
+}

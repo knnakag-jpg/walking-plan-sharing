@@ -185,9 +185,13 @@ for (const filename of fs.readdirSync(curatedRoot).filter((name) => name.endsWit
   const curated = JSON.parse(fs.readFileSync(path.join(curatedRoot, filename), 'utf8'));
   const buildPath = path.join(root, curated.buildFile);
   if (!fs.existsSync(buildPath)) throw new Error(`${curated.id}: missing route build ${curated.buildFile}`);
-  const builds = JSON.parse(fs.readFileSync(buildPath, 'utf8')).results;
+  const buildJson = JSON.parse(fs.readFileSync(buildPath, 'utf8'));
+  // curated のビルドは results 配列（既存）と variants オブジェクト（新規の組み直し）の両方がある。
+  const builds = buildJson.results || Object.entries(buildJson.variants).map(([variant, value]) => ({ variant, ...value }));
   const target = courses.find((item) => item.id === curated.id);
-  if (!target || !builds.some((item) => item.variant === 'standard') || !builds.some((item) => item.variant === 'extended')) throw new Error(`${curated.id}: curated route is incomplete`);
+  // B（7〜8kmの延長）は、実在の座標で延ばせる立ち寄り先が確認できるまで作らない。Aは必須、Bは任意。
+  if (!target || !builds.some((item) => item.variant === 'standard')) throw new Error(`${curated.id}: curated route is incomplete`);
+  if (!builds.some((item) => item.variant === 'extended')) curated.bOnlySkipped = true;
   target.title = curated.title;
   target.summary = curated.summary;
   target.tags = curated.themes;
@@ -196,7 +200,7 @@ for (const filename of fs.readdirSync(curatedRoot).filter((name) => name.endsWit
   target.scenicSegments = curated.scenicSegments;
   target.openQuestions = curated.openQuestions;
   target.routeOptions = [
-    ...['standard', 'extended'].map((variant) => {
+    ...(curated.bOnlySkipped ? ['standard'] : ['standard', 'extended']).map((variant) => {
       const result = builds.find((item) => item.variant === variant);
       return {
         id: `${target.slug}-${variant}`, variant, strategy: 'scenic',
@@ -206,7 +210,7 @@ for (const filename of fs.readdirSync(curatedRoot).filter((name) => name.endsWit
         routeReason: curated.routeReasons[variant],
         distanceException: curated.distanceExceptions?.[variant] || null,
         retraceException: curated.retraceExceptions?.[variant] || null,
-        waypoints: result.waypoints.map((waypoint, index) => ({ index, id: waypoint.id, label: waypoint.label, description: curated.checkpointDescriptions?.[waypoint.id] || null, point: [waypoint.coord[1], waypoint.coord[0]], source: waypoint.source })),
+        waypoints: (result.waypoints || result.stops).map((waypoint, index) => ({ index, id: waypoint.id, label: waypoint.label, description: curated.checkpointDescriptions?.[waypoint.id] || null, point: waypoint.point || [waypoint.coord[1], waypoint.coord[0]], source: waypoint.source })),
         engine: 'valhalla-pedestrian', built: JSON.parse(fs.readFileSync(path.join(root, result.geometryUrl), 'utf8')).properties.calculatedAt,
       };
     }),

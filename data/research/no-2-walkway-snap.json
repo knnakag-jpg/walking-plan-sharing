@@ -1,0 +1,85 @@
+{
+ "teleport": {
+  "snapped": [
+   35.6270066,
+   139.7781191
+  ],
+  "movedM": 10,
+  "wayId": 332617478
+ },
+ "diversity": {
+  "snapped": [
+   35.6259623,
+   139.7762641
+  ],
+  "movedM": 5,
+  "wayId": 1374940213
+ },
+ "aquacity": {
+  "snapped": [
+   35.6268678,
+   139.7726695
+  ],
+  "movedM": 5,
+  "wayId": 207807419
+ },
+ "fuji": {
+  "snapped": null
+ },
+ "odaiba_kaihin_st": {
+  "snapped": [
+   35.6299286,
+   139.7788458
+  ],
+  "movedM": 5,
+  "wayId": 1574193727
+ },
+ "aomi": {
+  "snapped": [
+   35.6245646,
+   139.7812789
+  ],
+  "movedM": 18,
+  "wayId": 171300278
+ },
+ "rainbow_park": {
+  "snapped": [
+   35.6333788,
+   139.7779153
+  ],
+  "movedM": 31,
+  "wayId": 198113751
+ },
+ "ariake_north": {
+  "snapped": [
+   35.6350389,
+   139.7808669
+  ],
+  "movedM": 48,
+  "wayId": 1117832732
+ },
+ "bigsight": {
+  "snapped": [
+   35.6304204,
+   139.791356
+  ],
+  "movedM": 20,
+  "wayId": 1126633894
+ },
+ "kokusai": {
+  "snapped": [
+   35.6343923,
+   139.7916516
+  ],
+  "movedM": 10,
+  "wayId": 381682011
+ },
+ "rainbow_park_road": {
+  "snapped": [
+   35.6331303,
+   139.7773601
+  ],
+  "movedM": 5,
+  "wayId": 198113755
+ }
+}

@@ -1,0 +1,116 @@
+{
+  "calculatedAt": "2026-11-15T13:32:18.084Z",
+  "engine": "valhalla-pedestrian",
+  "variants": {
+    "standard": {
+      "label": "standard",
+      "distanceM": 5741,
+      "engineDistanceM": 5748,
+      "repeatedGeometryM": 562,
+      "repeatedGeometryPct": 9.8,
+      "legKm": [
+        0.7,
+        0.33,
+        0.32,
+        0.41,
+        0.54,
+        1.35,
+        1.06,
+        1.05
+      ],
+      "geometryUrl": "data/routes/no-1-standard.geojson",
+      "stops": [
+        {
+          "id": "otemon",
+          "label": "大手門",
+          "coord": [
+            35.6860559,
+            139.7601925
+          ],
+          "source": "OSM node city_gate 大手門",
+          "offsetM": 0
+        },
+        {
+          "id": "honmaru",
+          "label": "本丸大芝生",
+          "coord": [
+            35.6866338,
+            139.7556735
+          ],
+          "source": "OSM relation 本丸大芝生",
+          "offsetM": 0
+        },
+        {
+          "id": "tenshudai",
+          "label": "天守台",
+          "coord": [
+            35.6882734,
+            139.754397
+          ],
+          "source": "OSM node 天守台 ruins",
+          "offsetM": 0
+        },
+        {
+          "id": "kitanogibashi",
+          "label": "北桔橋門",
+          "coord": [
+            35.6888641,
+            139.7540372
+          ],
+          "source": "OSM node 北桔橋門 city_gate",
+          "offsetM": 0
+        },
+        {
+          "id": "kagakukan",
+          "label": "科学技術館",
+          "coord": [
+            35.6913004,
+            139.7526659
+          ],
+          "source": "OSM node 科学技術館 museum",
+          "offsetM": 0
+        },
+        {
+          "id": "budokan",
+          "label": "日本武道館",
+          "coord": [
+            35.6937941,
+            139.7500431
+          ],
+          "source": "OSM node 日本武道館 sports_centre",
+          "offsetM": 0
+        },
+        {
+          "id": "hirakawa_signal",
+          "label": "平川門（交差点）",
+          "coord": [
+            35.6902816,
+            139.7588238
+          ],
+          "source": "OSM node 243828110 traffic_signals 平川門; 御苑の平川門の外側",
+          "offsetM": 0
+        },
+        {
+          "id": "wadakura",
+          "label": "和田倉噴水公園",
+          "coord": [
+            35.6833717,
+            139.7612987
+          ],
+          "source": "OSM node 和田倉噴水公園 park",
+          "offsetM": 0
+        },
+        {
+          "id": "takebashi",
+          "label": "竹橋駅",
+          "coord": [
+            35.6902074,
+            139.7586934
+          ],
+          "source": "OSM node 竹橋 station",
+          "offsetM": 0
+        }
+      ]
+    }
+  }
+}

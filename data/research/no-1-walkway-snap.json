@@ -1,0 +1,106 @@
+{
+ "otemon": {
+  "snapped": [
+   35.6860559,
+   139.7601925
+  ],
+  "movedM": 7,
+  "wayId": 1271443798
+ },
+ "sannomaru": {
+  "snapped": [
+   35.6861801,
+   139.7588459
+  ],
+  "movedM": 41,
+  "wayId": 43900450
+ },
+ "ninomaru": {
+  "snapped": [
+   35.6874089,
+   139.7585661
+  ],
+  "movedM": 11,
+  "wayId": 176581301
+ },
+ "honmaru": {
+  "snapped": [
+   35.6866338,
+   139.7556735
+  ],
+  "movedM": 6,
+  "wayId": 43932740
+ },
+ "tenshudai": {
+  "snapped": [
+   35.6882734,
+   139.754397
+  ],
+  "movedM": 5,
+  "wayId": 43932738
+ },
+ "kitanogibashi": {
+  "snapped": [
+   35.6888641,
+   139.7540372
+  ],
+  "movedM": 1,
+  "wayId": 371633162
+ },
+ "hirakawa": {
+  "snapped": [
+   35.6895919,
+   139.7578042
+  ],
+  "movedM": 6,
+  "wayId": 43932745
+ },
+ "kagakukan": {
+  "snapped": [
+   35.6913004,
+   139.7526659
+  ],
+  "movedM": 47,
+  "wayId": 624081599
+ },
+ "budokan": {
+  "snapped": [
+   35.6937941,
+   139.7500431
+  ],
+  "movedM": 51,
+  "wayId": 43982161
+ },
+ "takebashi": {
+  "snapped": [
+   35.6902074,
+   139.7586934
+  ],
+  "movedM": 13,
+  "wayId": 491316226
+ },
+ "hitotsubashi": {
+  "snapped": [
+   35.6913902,
+   139.7551006
+  ],
+  "movedM": 35,
+  "wayId": 624081601
+ },
+ "hirakawa_signal": {
+  "snapped": [
+   35.6902816,
+   139.7588238
+  ],
+  "movedM": 0,
+  "wayId": 139504332
+ },
+ "wadakura": {
+  "snapped": [
+   35.6833717,
+   139.7612987
+  ],
+  "movedM": 2,
+  "wayId": 572510209
+ }
+}
