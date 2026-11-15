@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "source": "legacy import; route quality not re-reviewed",
-  "generatedAt": "2026-11-15T12:39:46.584Z",
+  "generatedAt": "2026-11-15T12:39:59.053Z",
   "courses": [
     {
       "id": "No.1",
@@ -4810,7 +4810,7 @@
           "engineDistanceM": 6767,
           "repeatedGeometryPct": 13.1,
           "routeReason": "同じ見どころを巡り、鳥類園から北へ葛西駅へ抜ける。計算上6.76km。終点が葛西駅（地下鉄東西線）に変わる。西なぎさは経由点から外しているので、鳥類園から先の経路を地図で確認する必要がある。",
-          "distanceException": null,
+          "distanceException": "6.76km。7〜8kmに届かない。鳥類園から葛西駅へ抜ける実在の経路だけで組み、延伸は作らない。",
           "retraceException": "Aと同様に西なぎさ方向からの戻り約323m、海浜側から約250m、鳥類園方向約287m（計約888m）。園内の見どころが行き止まりの園路の先にあるため。未確認。",
           "waypoints": [
             {
