@@ -1,16 +1,15 @@
 {
-  "calculatedAt": "2026-11-15T13:00:32.330Z",
+  "calculatedAt": "2026-11-15T13:11:46.202Z",
   "variants": {
     "standard": {
-      "label": "A 高輪ゲートウェイ→高輪大木戸→泉岳寺→品川→北品川→品川神社→青物横丁駅",
-      "distanceM": 4622,
-      "engineDistanceM": 4622,
-      "repeatedGeometryM": 124,
+      "label": "A 高輪ゲートウェイ→泉岳寺駅→高輪大木戸→品川→北品川→品川神社→青物横丁駅",
+      "distanceM": 4654,
+      "engineDistanceM": 4654,
+      "repeatedGeometryM": 397,
       "legKm": [
-        0.66,
-        0.2,
-        0.14,
-        1.13,
+        0.38,
+        0.34,
+        1.45,
         0.02,
         0.56,
         0.53,
@@ -26,12 +25,27 @@
             139.7406315
           ],
           "osmCentre": [
-            35.63559,
-            139.7407
+            35.6354,
+            139.74066
           ],
           "movedToWalkwayM": 9,
-          "source": "OSM station; exit pending",
+          "source": "OSM node 7502284289 station; exit pending",
           "offsetM": 0
+        },
+        {
+          "id": "sengakuji_st",
+          "label": "泉岳寺駅",
+          "coord": [
+            35.6377427,
+            139.7391684
+          ],
+          "osmCentre": [
+            35.63972,
+            139.74035
+          ],
+          "movedToWalkwayM": 0,
+          "source": "OSM node 2270731393 泉岳寺駅（高輪大木戸跡側の出口）; 境内は拝観のため入らない",
+          "offsetM": 4
         },
         {
           "id": "takanawa_okido",
@@ -47,36 +61,6 @@
           "movedToWalkwayM": 1,
           "source": "OSM node 31296890 高輪大木戸跡",
           "offsetM": 0
-        },
-        {
-          "id": "sengakuji",
-          "label": "泉岳寺",
-          "coord": [
-            35.6387114,
-            139.739953
-          ],
-          "osmCentre": [
-            35.63864,
-            139.74011
-          ],
-          "movedToWalkwayM": 16,
-          "source": "OSM node 2099275533 泉岳寺",
-          "offsetM": 0
-        },
-        {
-          "id": "sengakuji_st",
-          "label": "泉岳寺駅",
-          "coord": [
-            35.6377427,
-            139.7391684
-          ],
-          "osmCentre": [
-            35.63774,
-            139.73917
-          ],
-          "movedToWalkwayM": 0,
-          "source": "OSM node 2262661501 泉岳寺駅",
-          "offsetM": 4
         },
         {
           "id": "shinagawa_high",
@@ -190,11 +174,11 @@
             139.7406315
           ],
           "osmCentre": [
-            35.63559,
-            139.7407
+            35.6354,
+            139.74066
           ],
           "movedToWalkwayM": 9,
-          "source": "OSM station; exit pending",
+          "source": "OSM node 7502284289 station; exit pending",
           "offsetM": 4
         },
         {
@@ -229,7 +213,7 @@
         },
         {
           "id": "daiba",
-          "label": "台場（海浜公園方面）",
+          "label": "台場（橋の台場側入口方面）",
           "coord": [
             35.6349662,
             139.7686928
@@ -239,7 +223,7 @@
             139.76868
           ],
           "movedToWalkwayM": 3,
-          "source": "OSM node 31236584 台場; entrance needs map review",
+          "source": "OSM node 31236584 台場; レインボーブリッジの台場口（スロープ・階段）の位置は利用者提供の情報で台場公園のすぐ横、座標は要確認",
           "offsetM": 0
         },
         {

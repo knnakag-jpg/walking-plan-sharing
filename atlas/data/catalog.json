@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "source": "legacy import; route quality not re-reviewed",
-  "generatedAt": "2026-11-15T13:00:58.918Z",
+  "generatedAt": "2026-11-15T13:12:09.777Z",
   "courses": [
     {
       "id": "No.1",
@@ -1191,10 +1191,17 @@
         },
         {
           "type": "community",
-          "title": "OpenStreetMap（駅・高輪大木戸跡・泉岳寺・八ツ山橋・品川神社）",
+          "title": "OpenStreetMap（駅・高輪大木戸跡・八ツ山橋・品川神社）",
           "url": "https://www.openstreetmap.org/",
           "checkedAt": "2026-11-15",
           "supports": "駅と史跡の名称ノードの座標。入口ではない。"
+        },
+        {
+          "type": "community",
+          "title": "利用者提供：レインボーブリッジ遊歩道の通行情報",
+          "url": null,
+          "checkedAt": "2026-11-15",
+          "supports": "徒歩・無料、芝浦側入口（芝浦ふ頭駅から徒歩約5分・アンカレイジのエレベーター）と台場側入口（お台場海浜公園駅から徒歩約8〜15分・台場公園すぐ横のスロープ・階段）、ノース／サウス2ルート、お台場寄りのP31付近だけ地下連絡通路で反対側へ渡れる、開場時間（冬10:00〜18:00・最終17:30／夏9:00〜21:00）、毎月第3月曜と年末年始の閉鎖・荒天時通行止め、トイレは芝浦側のみ、三脚禁止。2026-11-15 は冬時間で、11/16（第3月曜）は終日閉鎖（利用者提供のWeb要約・公式URLは未提供）。"
         }
       ],
       "scenicSegments": [
@@ -1206,11 +1213,11 @@
           "evidenceTitle": "OpenStreetMap"
         },
         {
-          "name": "レインボーブリッジと台場",
+          "name": "レインボーブリッジのノース／サウスルート",
           "theme": "橋と海辺の景観",
-          "direction": "芝浦ふ頭から台場へ",
-          "reviewStatus": "未確証・橋の歩道が徒歩で通れるか地図で照合待ち",
-          "evidenceTitle": "OpenStreetMap"
+          "direction": "芝浦：北（都心側）→台場、南（湾岸側）→台場",
+          "reviewStatus": "利用者提供の情報で徒歩可（無料）。冬季10:00〜18:00（最終入場17:30）、夏季9:00〜21:00。毎月第3月曜（祝日なら翌日）と年末年始（12/29〜31）は閉鎖。荒天・イベント時も通行止め。三脚禁止、トイレは芝浦側のみ。台場口の正確な座標は要確認",
+          "evidenceTitle": "利用者提供の通行情報"
         },
         {
           "name": "北品川の旧東海道",
@@ -1221,9 +1228,10 @@
         }
       ],
       "openQuestions": [
-        "レインボーブリッジの歩道が徒歩で通れるか（自転車専用の時間帯・通路の区分）",
+        "レインボーブリッジの台場口（スロープ・階段）の正確な位置（台場公園のすぐ横）",
         "台場・お台場海浜公園駅の入口",
-        "泉岳寺の拝観時間・拝観料",
+        "泉岳寺の拝観時間・拝観料（境内には入らない案にした）",
+        "高輪ゲートウェイ駅の出口（駅ビル内の動線）",
         "品川駅の高輪口と港南口の南北通路が歩行者に開放されているか",
         "品川プリンスホテル館内の通り抜け可否"
       ],
@@ -1234,12 +1242,12 @@
           "strategy": "scenic",
           "geometryUrl": "data/routes/no-7-standard.geojson",
           "verificationStatus": "routed",
-          "distanceM": 4622,
-          "engineDistanceM": 4622,
-          "repeatedGeometryPct": 2.7,
-          "routeReason": "高輪ゲートウェイ駅から高輪大木戸跡、泉岳寺、泉岳寺駅前を通り、品川駅の高輪口から港南口へ駅を抜け、八ツ山橋、北品川、品川神社を経て青物横丁駅へ。計算上4.62km。品川駅の南北の通り抜けで約76m重なる。",
-          "distanceException": "4.62km。実在の駅と通りだけを結んだため5〜6kmに届かない。距離合わせの延伸は作らない。",
-          "retraceException": "品川駅の高輪口から港南口へ抜ける通路で約76m、北品川の駅前付近で約56m、高輪大木戸跡で約39m（計約124m）。駅の反対側へ出るための通路と交差点の横断で生じる短い往復で、距離合わせではない。",
+          "distanceM": 4654,
+          "engineDistanceM": 4654,
+          "repeatedGeometryPct": 8.5,
+          "routeReason": "高輪ゲートウェイ駅から泉岳寺駅前（境内は入らない）、高輪大木戸跡を通り、品川駅の高輪口から港南口へ駅を抜け、八ツ山橋、北品川、品川神社を経て青物横丁駅へ。計算上4.65km。高輪大木戸跡と泉岳寺駅の間の約304mと、品川駅の南北の通り抜けで約76mが重なる（理由は下記）。",
+          "distanceException": "4.65km。実在の駅と通りだけを結んだため5〜6kmに届かない。距離合わせの延伸は作らない。",
+          "retraceException": "高輪大木戸跡と泉岳寺駅の間の約304mは、大木戸跡が旧東海道沿いの南寄り、泉岳寺駅の出口が北寄りにあり、駅へ近づいてから同じ道を戻るためと推定。品川駅の高輪口から港南口へ抜ける通路で約76m。北品川の駅前付近の約9m。いずれも駅と史跡へ寄るための往復で、距離合わせではない。地図で未確認。",
           "waypoints": [
             {
               "index": 0,
@@ -1250,10 +1258,21 @@
                 139.7406315,
                 35.6355265
               ],
-              "source": "OSM station; exit pending"
+              "source": "OSM node 7502284289 station; exit pending"
             },
             {
               "index": 1,
+              "id": "sengakuji_st",
+              "label": "泉岳寺駅",
+              "description": null,
+              "point": [
+                139.7391684,
+                35.6377427
+              ],
+              "source": "OSM node 2270731393 泉岳寺駅（高輪大木戸跡側の出口）; 境内は拝観のため入らない"
+            },
+            {
+              "index": 2,
               "id": "takanawa_okido",
               "label": "高輪大木戸跡",
               "description": null,
@@ -1264,29 +1283,7 @@
               "source": "OSM node 31296890 高輪大木戸跡"
             },
             {
-              "index": 2,
-              "id": "sengakuji",
-              "label": "泉岳寺",
-              "description": null,
-              "point": [
-                139.739953,
-                35.6387114
-              ],
-              "source": "OSM node 2099275533 泉岳寺"
-            },
-            {
               "index": 3,
-              "id": "sengakuji_st",
-              "label": "泉岳寺駅",
-              "description": null,
-              "point": [
-                139.7391684,
-                35.6377427
-              ],
-              "source": "OSM node 2262661501 泉岳寺駅"
-            },
-            {
-              "index": 4,
               "id": "shinagawa_high",
               "label": "品川駅（高輪口）",
               "description": null,
@@ -1297,7 +1294,7 @@
               "source": "OSM node 3938821105 品川駅高輪口"
             },
             {
-              "index": 5,
+              "index": 4,
               "id": "shinagawa_st",
               "label": "品川駅（港南口）",
               "description": null,
@@ -1308,7 +1305,7 @@
               "source": "OSM station node 品川（港南口側）"
             },
             {
-              "index": 6,
+              "index": 5,
               "id": "yatsuyama",
               "label": "八ツ山橋",
               "description": null,
@@ -1319,7 +1316,7 @@
               "source": "OSM node 1304248741 八ツ山橋"
             },
             {
-              "index": 7,
+              "index": 6,
               "id": "kita_shinagawa",
               "label": "北品川",
               "description": null,
@@ -1330,7 +1327,7 @@
               "source": "OSM node 1081989778 北品川"
             },
             {
-              "index": 8,
+              "index": 7,
               "id": "shinagawa_jinja",
               "label": "品川神社",
               "description": null,
@@ -1341,7 +1338,7 @@
               "source": "OSM node 5336284605 品川神社"
             },
             {
-              "index": 9,
+              "index": 8,
               "id": "aomono_st",
               "label": "青物横丁駅",
               "description": null,
@@ -1353,7 +1350,7 @@
             }
           ],
           "engine": "valhalla-pedestrian",
-          "built": "2026-11-15T13:00:32.330Z",
+          "built": "2026-11-15T13:11:46.202Z",
           "elevation": {
             "source": "gsi_dem5a",
             "status": "partial_dem_filled",
@@ -1374,7 +1371,7 @@
           "distanceM": 9114,
           "engineDistanceM": 9118,
           "repeatedGeometryPct": 0.9,
-          "routeReason": "Aの高輪ゲートウェイから品川駅へ下り、芝浦ふ頭駅からレインボーブリッジの都道を経て台場、お台場海浜公園駅前へ。計算上9.11km。台場の入口と橋の歩道の通行を地図で確認する必要がある。距離は7〜8kmを超える。",
+          "routeReason": "Aの高輪ゲートウェイから品川駅へ下り、芝浦ふ頭駅からレインボーブリッジへ入る。芝浦側入口は芝浦アンカレイジで、駅から徒歩約5分。橋はノース／サウスどちらかを選んでお台場側（台場口）へ渡り、お台場海浜公園駅前へ下る。計算上9.11km。距離は7〜8kmを超える。",
           "distanceException": "9.11km。7〜8kmの目標を超えるが、芝浦ふ頭から台場までを実在の橋の歩道でつないだ結果で、短縮のための中途半端な切り詰めはしない。",
           "retraceException": "品川駅の南北の通り抜けで約56m、芝浦ふ頭駅前で約27m（計約83m）。駅の反対側へ出るための短い往復。",
           "waypoints": [
@@ -1387,7 +1384,7 @@
                 139.7406315,
                 35.6355265
               ],
-              "source": "OSM station; exit pending"
+              "source": "OSM node 7502284289 station; exit pending"
             },
             {
               "index": 1,
@@ -1414,13 +1411,13 @@
             {
               "index": 3,
               "id": "daiba",
-              "label": "台場（海浜公園方面）",
+              "label": "台場（橋の台場側入口方面）",
               "description": null,
               "point": [
                 139.7686928,
                 35.6349662
               ],
-              "source": "OSM node 31236584 台場; entrance needs map review"
+              "source": "OSM node 31236584 台場; レインボーブリッジの台場口（スロープ・階段）の位置は利用者提供の情報で台場公園のすぐ横、座標は要確認"
             },
             {
               "index": 4,
@@ -1435,7 +1432,7 @@
             }
           ],
           "engine": "valhalla-pedestrian",
-          "built": "2026-11-15T13:00:32.330Z",
+          "built": "2026-11-15T13:11:46.202Z",
           "elevation": {
             "source": "gsi_dem5a",
             "status": "partial_dem_filled",

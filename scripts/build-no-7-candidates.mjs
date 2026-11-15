@@ -5,21 +5,20 @@ import { fileURLToPath } from 'node:url';
 import { decodePolyline } from '../tools/lib-polyline.mjs';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const P = (id, label, lat, lon, source) => ({ id, label, coord: [lat, lon], source });
-const takanawaGw = P('takanawa_gw', '高輪ゲートウェイ駅', 35.63559, 139.7407, 'OSM station; exit pending');
+const takanawaGw = P('takanawa_gw', '高輪ゲートウェイ駅', 35.6354, 139.74066, 'OSM node 7502284289 station; exit pending');
 const shinagawaHigh = P('shinagawa_high', '品川駅（高輪口）', 35.62832, 139.7377, 'OSM node 3938821105 品川駅高輪口');
 const okido = P('takanawa_okido', '高輪大木戸跡', 35.64017, 139.74093, 'OSM node 31296890 高輪大木戸跡');
-const sengakuji = P('sengakuji', '泉岳寺', 35.63864, 139.74011, 'OSM node 2099275533 泉岳寺');
-const sengakujiSt = P('sengakuji_st', '泉岳寺駅', 35.63774, 139.73917, 'OSM node 2262661501 泉岳寺駅');
+const sengakujiSt = P('sengakuji_st', '泉岳寺駅', 35.63972, 139.74035, 'OSM node 2270731393 泉岳寺駅（高輪大木戸跡側の出口）; 境内は拝観のため入らない');
 const shinagawaSt = P('shinagawa_st', '品川駅（港南口）', 35.62867, 139.73917, 'OSM station node 品川（港南口側）');
 const yatsuyama = P('yatsuyama', '八ツ山橋', 35.62487, 139.73825, 'OSM node 1304248741 八ツ山橋');
 const kitaShinagawa = P('kita_shinagawa', '北品川', 35.62053, 139.74001, 'OSM node 1081989778 北品川');
 const shinagawaJinja = P('shinagawa_jinja', '品川神社', 35.61837, 139.74066, 'OSM node 5336284605 品川神社');
 const aomonoSt = P('aomono_st', '青物横丁駅', 35.61024, 139.74315, 'OSM node 1893803482 青物横丁駅');
 const shibauraStation = P('shibaura_st', '芝浦ふ頭駅', 35.64173, 139.75777, 'OSM node 31252846 芝浦ふ頭');
-const daiba = P('daiba', '台場（海浜公園方面）', 35.63494, 139.76868, 'OSM node 31236584 台場; entrance needs map review');
+const daiba = P('daiba', '台場（橋の台場側入口方面）', 35.63494, 139.76868, 'OSM node 31236584 台場; レインボーブリッジの台場口（スロープ・階段）の位置は利用者提供の情報で台場公園のすぐ横、座標は要確認');
 const odaibaKaihin = P('odaiba_kaihin', 'お台場海浜公園駅前', 35.6294, 139.7747, 'OSM bus_stop お台場海浜公園駅前; station exit needs map review');
 const variants = {
-  standard: { points: [takanawaGw, okido, sengakuji, sengakujiSt, shinagawaHigh, shinagawaSt, yatsuyama, kitaShinagawa, shinagawaJinja, aomonoSt], label: 'A 高輪ゲートウェイ→高輪大木戸→泉岳寺→品川→北品川→品川神社→青物横丁駅' },
+  standard: { points: [takanawaGw, sengakujiSt, okido, shinagawaHigh, shinagawaSt, yatsuyama, kitaShinagawa, shinagawaJinja, aomonoSt], label: 'A 高輪ゲートウェイ→泉岳寺駅→高輪大木戸→品川→北品川→品川神社→青物横丁駅' },
   extended: { points: [takanawaGw, shinagawaSt, shibauraStation, daiba, odaibaKaihin], label: 'B 高輪ゲートウェイ→品川→芝浦ふ頭→台場→お台場海浜公園駅前' },
 };
 const WALKWAY = 'footway|path|pedestrian|living_street|residential|service|steps|tertiary|unclassified|track|cycleway|secondary|primary';

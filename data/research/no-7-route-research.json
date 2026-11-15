@@ -22,6 +22,11 @@
       "url": "https://www.city.minato.tokyo.jp/dobokukeikaku/dainitouzai_setumeikai.html",
       "checkedAt": "2026-11-14",
       "supports": "2026年3月28日から芝浦港南地域〜高輪ゲートウェイ駅の歩行者ルートが切替。現地案内に従う必要がある。品川駅南側の反復解消はこの資料だけでは判定できない。"
+    },
+    {
+      "checkedAt": "2026-11-15",
+      "url": null,
+      "supports": "利用者提供：レインボーブリッジ遊歩道の通行条件（徒歩可・無料、冬季10:00〜18:00／夏季9:00〜21:00、毎月第3月曜と年末年始は閉鎖、荒天時通行止め、トイレは芝浦側のみ、三脚禁止、芝浦アンカレイジのエレベーター・台場口のスロープ・階段、ノース／サウス2ルート、P31付近のみ地下連絡通路）"
     }
   ],
   "openQuestions": [
@@ -36,5 +41,9 @@
     "scripts/build-no-7-candidates.mjs",
     "data/curated/no-7.json",
     "data/research/no-7-adopted-build.json"
-  ]
+  ],
+  "userMaps": {
+    "receivedAt": "2026-11-15",
+    "note": "高輪ゲートウェイ駅周辺の地図（Google マップ航空写真）。駅と駅ビル（TAKANAWA GATEWAY CITY）・交通広場・Gateway Parkの位置関係を確認。画像自体は保存していない。"
+  }
 }

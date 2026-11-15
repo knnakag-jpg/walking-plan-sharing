@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-11-15T13:00:32.330Z",
+  "generatedAt": "2026-11-15T13:11:46.202Z",
   "method": "Valhalla pedestrian; exact geometry edge repeat is only a screening clue",
   "results": [
     {
       "variant": "standard",
-      "distanceM": 4622,
-      "engineDistanceM": 4622,
-      "repeatedGeometryM": 124,
-      "repeatedGeometryPct": 2.7,
+      "distanceM": 4654,
+      "engineDistanceM": 4654,
+      "repeatedGeometryM": 397,
+      "repeatedGeometryPct": 8.5,
       "waypoints": [
         {
           "id": "takanawa_gw",
@@ -16,7 +16,16 @@
             35.6355265,
             139.7406315
           ],
-          "source": "OSM station; exit pending"
+          "source": "OSM node 7502284289 station; exit pending"
+        },
+        {
+          "id": "sengakuji_st",
+          "label": "泉岳寺駅",
+          "coord": [
+            35.6377427,
+            139.7391684
+          ],
+          "source": "OSM node 2270731393 泉岳寺駅（高輪大木戸跡側の出口）; 境内は拝観のため入らない"
         },
         {
           "id": "takanawa_okido",
@@ -26,24 +35,6 @@
             139.7409267
           ],
           "source": "OSM node 31296890 高輪大木戸跡"
-        },
-        {
-          "id": "sengakuji",
-          "label": "泉岳寺",
-          "coord": [
-            35.6387114,
-            139.739953
-          ],
-          "source": "OSM node 2099275533 泉岳寺"
-        },
-        {
-          "id": "sengakuji_st",
-          "label": "泉岳寺駅",
-          "coord": [
-            35.6377427,
-            139.7391684
-          ],
-          "source": "OSM node 2262661501 泉岳寺駅"
         },
         {
           "id": "shinagawa_high",
@@ -101,10 +92,9 @@
         }
       ],
       "legDistancesKm": [
-        0.66,
-        0.2,
-        0.14,
-        1.13,
+        0.38,
+        0.34,
+        1.45,
         0.02,
         0.56,
         0.53,
@@ -127,7 +117,7 @@
             35.6355265,
             139.7406315
           ],
-          "source": "OSM station; exit pending"
+          "source": "OSM node 7502284289 station; exit pending"
         },
         {
           "id": "shinagawa_st",
@@ -149,12 +139,12 @@
         },
         {
           "id": "daiba",
-          "label": "台場（海浜公園方面）",
+          "label": "台場（橋の台場側入口方面）",
           "coord": [
             35.6349662,
             139.7686928
           ],
-          "source": "OSM node 31236584 台場; entrance needs map review"
+          "source": "OSM node 31236584 台場; レインボーブリッジの台場口（スロープ・階段）の位置は利用者提供の情報で台場公園のすぐ横、座標は要確認"
         },
         {
           "id": "odaiba_kaihin",
