@@ -8,12 +8,12 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const P = (id, label, lat, lon, source) => ({ id, label, coord: [lat, lon], source });
 const sakurada = P('sakuradamon', '桜田門駅', 35.67708, 139.75287, 'OSM node 413481709 subway_entrance');
 const iwaida = P('iwaidabashi', '祝田橋', 35.67675, 139.75599, 'OSM node 251731817');
-const sukiya = P('sukiyabashi', '数寄屋橋公園', 35.67425, 139.76125, 'approx. 数寄屋橋 intersection; no OSM named node found, needs map review');
-const mitsukoshi = P('ginza_lion', '銀座三越ライオン像', 35.67155, 139.76506, 'approx. 銀座4丁目交差点; no OSM named node used, needs map review');
+const sukiya = P('sukiyabashi', '数寄屋橋公園', 35.67422, 139.76083, 'OSM node 数寄屋橋交差点 (35.6742121,139.7608135); park is the block west of 数寄屋通り per user-supplied map');
+const mitsukoshi = P('ginza_lion', '銀座三越ライオン像', 35.67200, 139.76558, 'OSM node ライオン像(重要文化財) 35.6720021,139.765582; the lion statue is at the 銀座4丁目 corner of 銀座三越 per user-supplied map');
 const tsukiji = P('tsukiji_hongwanji', '築地本願寺', 35.66768, 139.77202, 'OSM node 31254383 traffic_signals 築地本願寺前');
-const kachidoki = P('kachidoki_bridge', '勝鬨橋', 35.66275, 139.77442, 'OSM way near 勝鬨橋 (unnamed node 35.66275,139.77442 in 勝鬨橋 query); needs map review');
+const kachidoki = P('kachidoki_bridge', '勝鬨橋', 35.66275, 139.77442, 'OSM way near 勝鬨橋 (35.66275,139.77442) from the 勝鬨橋 query; the 橋脚塔 stands on the bridge centre per user-supplied map; footway confirmed by OSM ways 228050647/286507872');
 const harumiPark = P('harumi_rinkai', '晴海臨海公園', 35.65484, 139.78582, 'OSM way 晴海臨海公園; entrance needs confirmation');
-const toyosuBridge = P('toyosu_ohashi', '豊洲大橋', 35.6471, 139.7868, 'approx. 豊洲大橋 west end; no OSM named node used');
+const toyosuBridge = P('toyosu_ohashi', '豊洲大橋（東端）', 35.64887, 139.78138, 'OSM way 557451914 centre; east/west ends need map review');
 const senkyaku = P('senkyaku', '豊洲 千客万来', 35.64546, 139.78366, 'OSM way 1159017723 centre');
 const ichiba = P('ichibamae', '市場前駅', 35.64576, 139.78578, 'OSM node 3349961082 station');
 const variants = {

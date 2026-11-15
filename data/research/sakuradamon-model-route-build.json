@@ -1,5 +1,5 @@
 {
-  "calculatedAt": "2026-11-15T02:13:26.520Z",
+  "calculatedAt": "2026-11-15T02:29:12.840Z",
   "engine": "valhalla-pedestrian",
   "variants": {
     "model": {
@@ -68,8 +68,8 @@
             139.7610692
           ],
           "osmCentre": [
-            35.67425,
-            139.76125
+            35.67422,
+            139.76083
           ],
           "movedToWalkwayM": 23,
           "walkway": {
@@ -77,7 +77,7 @@
             "highway": "footway",
             "name": "日比谷"
           },
-          "source": "approx. 数寄屋橋 intersection; no OSM named node found, needs map review",
+          "source": "OSM node 数寄屋橋交差点 (35.6742121,139.7608135); park is the block west of 数寄屋通り per user-supplied map",
           "offsetM": 0
         },
         {
@@ -88,8 +88,8 @@
             139.7651121
           ],
           "osmCentre": [
-            35.67155,
-            139.76506
+            35.672,
+            139.76558
           ],
           "movedToWalkwayM": 11,
           "walkway": {
@@ -97,7 +97,7 @@
             "highway": "footway",
             "name": null
           },
-          "source": "approx. 銀座4丁目交差点; no OSM named node used, needs map review",
+          "source": "OSM node ライオン像(重要文化財) 35.6720021,139.765582; the lion statue is at the 銀座4丁目 corner of 銀座三越 per user-supplied map",
           "offsetM": 0
         },
         {
@@ -137,7 +137,7 @@
             "highway": "footway",
             "name": "勝鬨橋"
           },
-          "source": "OSM way near 勝鬨橋 (unnamed node 35.66275,139.77442 in 勝鬨橋 query); needs map review",
+          "source": "OSM way near 勝鬨橋 (35.66275,139.77442) from the 勝鬨橋 query; the 橋脚塔 stands on the bridge centre per user-supplied map; footway confirmed by OSM ways 228050647/286507872",
           "offsetM": 0
         },
         {
@@ -162,14 +162,14 @@
         },
         {
           "id": "toyosu_ohashi",
-          "label": "豊洲大橋",
+          "label": "豊洲大橋（東端）",
           "coord": [
             35.6469809,
             139.7864158
           ],
           "osmCentre": [
-            35.6471,
-            139.7868
+            35.64887,
+            139.78138
           ],
           "movedToWalkwayM": 37,
           "walkway": {
@@ -177,7 +177,7 @@
             "highway": "footway",
             "name": null
           },
-          "source": "approx. 豊洲大橋 west end; no OSM named node used",
+          "source": "OSM way 557451914 centre; east/west ends need map review",
           "offsetM": 0
         },
         {
