@@ -1,0 +1,50 @@
+{
+ "ikebukuro": {
+  "snapped": [
+   35.7285996,
+   139.7111653
+  ],
+  "movedM": 58,
+  "wayId": 665146730
+ },
+ "ikebukuro_east": {
+  "snapped": [
+   35.7299522,
+   139.7123601
+  ],
+  "movedM": 0,
+  "wayId": 771800195
+ },
+ "sunshine_mae": {
+  "snapped": [
+   35.7293627,
+   139.716797
+  ],
+  "movedM": 0,
+  "wayId": 51079508
+ },
+ "sunshine_aquarium": {
+  "snapped": [
+   35.7294473,
+   139.7203118
+  ],
+  "movedM": 34,
+  "wayId": 696974191
+ },
+ "hi_ikebukuro_park": {
+  "snapped": [
+   35.7302539,
+   139.718812
+  ],
+  "movedM": 16,
+  "wayId": 595622652
+ },
+ "higashi_ikebukuro_st": {
+  "snapped": [
+   35.726097,
+   139.7189511
+  ],
+  "movedM": 6,
+  "wayId": 275891362
+ }
+}

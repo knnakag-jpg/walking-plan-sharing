@@ -1,0 +1,50 @@
+{
+ "shinjuku_south": {
+  "snapped": [
+   35.6878916,
+   139.7010875
+  ],
+  "movedM": 12,
+  "wayId": 541852648
+ },
+ "shinjuku_eye": {
+  "snapped": [
+   35.6909524,
+   139.6987427
+  ],
+  "movedM": 2,
+  "wayId": 673570992
+ },
+ "shinjuku_nishi": {
+  "snapped": [
+   35.6922211,
+   139.6983867
+  ],
+  "movedM": 0,
+  "wayId": 1367643353
+ },
+ "nishi_shinjuku1": {
+  "snapped": [
+   35.688652,
+   139.6989409
+  ],
+  "movedM": 0,
+  "wayId": 144763035
+ },
+ "shinjuku_east": {
+  "snapped": [
+   35.6922507,
+   139.7017709
+  ],
+  "movedM": 0,
+  "wayId": 139633245
+ },
+ "shinjuku3": {
+  "snapped": [
+   35.6908841,
+   139.7048359
+  ],
+  "movedM": 1,
+  "wayId": 199152193
+ }
+}

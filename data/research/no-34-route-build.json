@@ -1,0 +1,83 @@
+{
+  "calculatedAt": "2026-11-15T22:08:11.927Z",
+  "engine": "valhalla-pedestrian",
+  "variants": {
+    "standard": {
+      "label": "standard",
+      "distanceM": 2612,
+      "engineDistanceM": 2618,
+      "repeatedGeometryM": 92,
+      "repeatedGeometryPct": 3.5,
+      "legKm": [
+        0.68,
+        0.3,
+        0.53,
+        0.75,
+        0.36
+      ],
+      "geometryUrl": "data/routes/no-34-standard.geojson",
+      "stops": [
+        {
+          "id": "shinjuku_south",
+          "label": "新宿駅南口",
+          "coord": [
+            35.6878916,
+            139.7010875
+          ],
+          "source": "OSM stop 新宿",
+          "offsetM": 11
+        },
+        {
+          "id": "shinjuku_eye",
+          "label": "新宿の目",
+          "coord": [
+            35.6909524,
+            139.6987427
+          ],
+          "source": "OSM artwork 新宿の目",
+          "offsetM": 2
+        },
+        {
+          "id": "shinjuku_nishi",
+          "label": "新宿西口ロータリー入口",
+          "coord": [
+            35.6922211,
+            139.6983867
+          ],
+          "source": "OSM node 新宿西口ロータリー入口",
+          "offsetM": 0
+        },
+        {
+          "id": "nishi_shinjuku1",
+          "label": "西新宿一丁目",
+          "coord": [
+            35.688652,
+            139.6989409
+          ],
+          "source": "OSM node 西新宿一丁目",
+          "offsetM": 1
+        },
+        {
+          "id": "shinjuku_east",
+          "label": "新宿駅東口",
+          "coord": [
+            35.6922507,
+            139.7017709
+          ],
+          "source": "OSM node 新宿駅東口",
+          "offsetM": 0
+        },
+        {
+          "id": "shinjuku3",
+          "label": "新宿三丁目",
+          "coord": [
+            35.6908841,
+            139.7048359
+          ],
+          "source": "OSM node 新宿三丁目",
+          "offsetM": 0
+        }
+      ]
+    }
+  }
+}

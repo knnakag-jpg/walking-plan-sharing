@@ -1,0 +1,83 @@
+{
+  "calculatedAt": "2026-11-15T22:08:45.895Z",
+  "engine": "valhalla-pedestrian",
+  "variants": {
+    "standard": {
+      "label": "standard",
+      "distanceM": 2202,
+      "engineDistanceM": 2198,
+      "repeatedGeometryM": 179,
+      "repeatedGeometryPct": 8.1,
+      "legKm": [
+        0.23,
+        0.57,
+        0.46,
+        0.18,
+        0.75
+      ],
+      "geometryUrl": "data/routes/no-35-standard.geojson",
+      "stops": [
+        {
+          "id": "ikebukuro",
+          "label": "池袋駅",
+          "coord": [
+            35.7285996,
+            139.7111653
+          ],
+          "source": "OSM station 池袋",
+          "offsetM": 0
+        },
+        {
+          "id": "ikebukuro_east",
+          "label": "池袋駅東口",
+          "coord": [
+            35.7299522,
+            139.7123601
+          ],
+          "source": "OSM node 池袋駅東口",
+          "offsetM": 0
+        },
+        {
+          "id": "sunshine_mae",
+          "label": "サンシャイン前",
+          "coord": [
+            35.7293627,
+            139.716797
+          ],
+          "source": "OSM node サンシャイン前",
+          "offsetM": 0
+        },
+        {
+          "id": "sunshine_aquarium",
+          "label": "サンシャイン国際水族館",
+          "coord": [
+            35.7294473,
+            139.7203118
+          ],
+          "source": "OSM aquarium サンシャイン国際水族館",
+          "offsetM": 0
+        },
+        {
+          "id": "hi_ikebukuro_park",
+          "label": "東池袋中央公園",
+          "coord": [
+            35.7302539,
+            139.718812
+          ],
+          "source": "OSM park 東池袋中央公園",
+          "offsetM": 0
+        },
+        {
+          "id": "higashi_ikebukuro_st",
+          "label": "東池袋駅",
+          "coord": [
+            35.726097,
+            139.7189511
+          ],
+          "source": "OSM platform 東池袋",
+          "offsetM": 0
+        }
+      ]
+    }
+  }
+}

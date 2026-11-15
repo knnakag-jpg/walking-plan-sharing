@@ -1,0 +1,75 @@
+{
+  "id": "No.31",
+  "buildFile": "data/research/no-31-adopted-build.json",
+  "title": "赤坂見附から四ツ谷・紀尾井の谷底",
+  "summary": "赤坂見附駅から弁慶橋、紀尾井町、上智大学の前を経て四ツ谷駅へ抜ける短い駅間。清水谷公園と喰違見附跡は名称の点が見つからず、経由点に含めていない。旧案の四谷三栄町方面の往復延伸は採らない。",
+  "themes": [
+    "谷",
+    "橋",
+    "坂道",
+    "堀"
+  ],
+  "routeReasons": {
+    "standard": "赤坂見附駅から弁慶橋、紀尾井町、上智大学、四ツ谷駅へ。計算上1.88km。清水谷公園と喰違見附跡は名称ノードが見つからず、座標を作らずに含めていない。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
+    "extended": "B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。"
+  },
+  "distanceExceptions": {
+    "standard": "1.88km。実在の立ち寄り先だけで組んだため5〜6kmに届かない。旧案の往復延伸は座標を作る必要があるため採らない。"
+  },
+  "retraceExceptions": {
+    "standard": "計算上の重なりは0m。"
+  },
+  "rainy": {
+    "verificationStatus": "researched",
+    "summary": "雨の日は赤坂見附駅の構内通路と四ツ谷駅のコンコースを中心にした短縮案。連続した屋内徒歩コースとしては未検証。",
+    "segments": [
+      {
+        "kind": "walk_outdoor",
+        "from": "赤坂見附駅",
+        "to": "弁慶橋",
+        "distanceM": null,
+        "note": "屋根なし。傘が必要。"
+      },
+      {
+        "kind": "walk_indoor",
+        "from": "赤坂見附駅",
+        "to": "駅構内の通路",
+        "distanceM": null,
+        "note": "構内の連続性は未確認。"
+      },
+      {
+        "kind": "rail",
+        "from": "四ツ谷駅",
+        "to": "赤坂見附駅",
+        "distanceM": null,
+        "note": "地下鉄丸ノ内線。"
+      }
+    ],
+    "conditions": [
+      "弁慶橋の歩道と堀端の路面は雨天で濡れやすい。",
+      "紀尾井ホールの公演日は当日確認。"
+    ]
+  },
+  "evidence": [
+    {
+      "type": "community",
+      "title": "OpenStreetMap（赤坂見附駅・弁慶橋・紀尾井町・上智大学・四ツ谷駅）",
+      "url": "https://www.openstreetmap.org/",
+      "checkedAt": "2026-11-16",
+      "supports": "駅・施設・公園の名称ノードの座標。入口ではない。"
+    },
+    {
+      "type": "community",
+      "title": "旧資料 No.31（先行ページ index.html）",
+      "url": null,
+      "checkedAt": "2026-11-16",
+      "supports": "旧案の立ち寄り先。四谷三栄町方面の往復延伸は採用していない。"
+    }
+  ],
+  "openQuestions": [
+    "清水谷公園と喰違見附跡の座標（OSMに名称ノードなし）",
+    "紀尾井ホールの位置",
+    "弁慶橋の歩道",
+    "紀尾井町から四ツ谷駅への歩道"
+  ]
+}

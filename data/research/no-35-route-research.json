@@ -1,0 +1,49 @@
+{
+  "id": "No.35",
+  "title": "池袋駅周辺（地上の周回）",
+  "stage": "source_research_in_progress",
+  "checkedAt": "2026-11-16",
+  "evidence": [
+    {
+      "type": "community",
+      "title": "OpenStreetMap（池袋駅・サンシャイン前・サンシャイン国際水族館・東池袋中央公園・東池袋駅）",
+      "url": "https://www.openstreetmap.org/",
+      "checkedAt": "2026-11-16",
+      "supports": "駅・施設・公園の名称ノードの座標。入口ではない。"
+    },
+    {
+      "type": "community",
+      "title": "旧資料 No.35（先行ページ index.html）",
+      "url": null,
+      "checkedAt": "2026-11-16",
+      "supports": "旧案の立ち寄り先。地下周回とみたけ通り方面の往復延伸は採用していない。"
+    }
+  ],
+  "trials": [
+    {
+      "n": 1,
+      "variant": "A 新規（OSMの駅・地点）",
+      "result": "2.20km・反復179m",
+      "finding": "サンシャイン国際水族館から東池袋中央公園へ向かう区間で約117m、他に約62mの短い重なり（計約179m）。施設の出入口と公園の入口を行き来する形と推定。地図で未確認。"
+    },
+    {
+      "n": 2,
+      "variant": "A 新規（OSMの駅・地点）",
+      "result": "2.20km・反復179m",
+      "finding": "サンシャイン国際水族館から東池袋中央公園へ向かう区間で約117m、他に約62mの短い重なり（計約179m）。施設の出入口と公園の入口を行き来する形と推定。地図で未確認。"
+    }
+  ],
+  "files": [
+    "scripts/lib-rebuild.mjs",
+    "scripts/build-group6.mjs",
+    "data/curated/no-35.json",
+    "data/research/no-35-adopted-build.json"
+  ],
+  "openQuestions": [
+    "池袋駅の地下通路の座標（OSMにない）",
+    "いけふくろう・豊島区役所・ダイヤゲート池袋の位置",
+    "サンシャインシティの屋内動線",
+    "大塚駅前の地上短区間"
+  ],
+  "decision": "2026-11-16 地上の周回として新Aを計算（2.20km・反復179m）。地下通路は座標を作れないため案から外した。"
+}

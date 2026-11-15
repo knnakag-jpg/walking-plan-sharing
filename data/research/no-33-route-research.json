@@ -1,0 +1,49 @@
+{
+  "id": "No.33",
+  "title": "東京駅周辺（地上の周回）",
+  "stage": "source_research_in_progress",
+  "checkedAt": "2026-11-16",
+  "evidence": [
+    {
+      "type": "community",
+      "title": "OpenStreetMap（東京駅・動輪の広場・KITTE・東京国際フォーラム・大手町駅前・日比谷公園）",
+      "url": "https://www.openstreetmap.org/",
+      "checkedAt": "2026-11-16",
+      "supports": "駅・施設・公園の名称ノードの座標。入口ではない。"
+    },
+    {
+      "type": "community",
+      "title": "旧資料 No.33（先行ページ index.html）",
+      "url": null,
+      "checkedAt": "2026-11-16",
+      "supports": "旧案の立ち寄り先。地下周回と北通路方面の往復延伸は採用していない。"
+    }
+  ],
+  "trials": [
+    {
+      "n": 1,
+      "variant": "A 新規（OSMの駅・地点）",
+      "result": "4.15km・反復185m",
+      "finding": "東京駅丸の内中央口から二重橋前駅へ向かう区間で約148m、他に約22mの短い重なり（計約185m）。駅前広場と改札の出入りで生じる往復と推定。地図で未確認。"
+    },
+    {
+      "n": 2,
+      "variant": "A 新規（OSMの駅・地点）",
+      "result": "4.15km・反復185m",
+      "finding": "東京駅丸の内中央口から二重橋前駅へ向かう区間で約148m、他に約22mの短い重なり（計約185m）。駅前広場と改札の出入りで生じる往復と推定。地図で未確認。"
+    }
+  ],
+  "files": [
+    "scripts/lib-rebuild.mjs",
+    "scripts/build-group6.mjs",
+    "data/curated/no-33.json",
+    "data/research/no-33-adopted-build.json"
+  ],
+  "openQuestions": [
+    "東京駅丸の内側の地下通路の座標（OSMにない）",
+    "丸ビル・新丸ビルの屋内動線",
+    "東京国際フォーラム内の通り抜け",
+    "日比谷国際ビル・日比谷仲通りの位置"
+  ],
+  "decision": "2026-11-16 地上の周回として新Aを計算（4.15km・反復185m）。地下通路は座標を作れないため案から外した。"
+}

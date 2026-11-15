@@ -1,0 +1,67 @@
+{
+  "generatedAt": "2026-11-15T22:09:15.698Z",
+  "method": "Valhalla pedestrian; exact geometry edge repeat is only a screening clue",
+  "results": [
+    {
+      "variant": "standard",
+      "distanceM": 6230,
+      "engineDistanceM": 6228,
+      "repeatedGeometryM": 45,
+      "repeatedGeometryPct": 0.7,
+      "waypoints": [
+        {
+          "id": "tamagawa_st",
+          "label": "多摩川駅",
+          "coord": [
+            35.5895,
+            139.6690534
+          ],
+          "source": "OSM stop 多摩川"
+        },
+        {
+          "id": "maruko",
+          "label": "丸子橋",
+          "coord": [
+            35.5858319,
+            139.6699914
+          ],
+          "source": "OSM node 丸子橋"
+        },
+        {
+          "id": "nunobe",
+          "label": "沼部駅",
+          "coord": [
+            35.582856,
+            139.6730398
+          ],
+          "source": "OSM station 沼部"
+        },
+        {
+          "id": "shimomaruko",
+          "label": "下丸子駅",
+          "coord": [
+            35.5712509,
+            139.6853944
+          ],
+          "source": "OSM stop 下丸子"
+        },
+        {
+          "id": "kamata",
+          "label": "蒲田駅",
+          "coord": [
+            35.5617501,
+            139.7149788
+          ],
+          "source": "OSM stop 蒲田"
+        }
+      ],
+      "legDistancesKm": [
+        0.47,
+        0.55,
+        1.94,
+        3.28
+      ],
+      "geometryUrl": "data/routes/no-36-standard.geojson"
+    }
+  ]
+}

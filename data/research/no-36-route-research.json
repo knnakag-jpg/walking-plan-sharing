@@ -1,0 +1,49 @@
+{
+  "id": "No.36",
+  "title": "多摩川 丸子橋・浅間神社",
+  "stage": "source_research_in_progress",
+  "checkedAt": "2026-11-16",
+  "evidence": [
+    {
+      "type": "community",
+      "title": "OpenStreetMap（多摩川駅・丸子橋・沼部駅・下丸子駅・蒲田駅）",
+      "url": "https://www.openstreetmap.org/",
+      "checkedAt": "2026-11-16",
+      "supports": "駅・施設・公園の名称ノードの座標。入口ではない。"
+    },
+    {
+      "type": "community",
+      "title": "旧資料 No.36（先行ページ index.html）",
+      "url": null,
+      "checkedAt": "2026-11-16",
+      "supports": "旧案の立ち寄り先。右岸堤防路の往復延伸は採用していない。"
+    }
+  ],
+  "trials": [
+    {
+      "n": 1,
+      "variant": "A 新規（OSMの駅・地点）",
+      "result": "6.23km・反復45m",
+      "finding": "計算上の重なりは約45m（沼部駅と下丸子駅の出入口付近）。"
+    },
+    {
+      "n": 2,
+      "variant": "A 新規（OSMの駅・地点）",
+      "result": "6.23km・反復45m",
+      "finding": "計算上の重なりは約45m（沼部駅と下丸子駅の出入口付近）。"
+    }
+  ],
+  "files": [
+    "scripts/lib-rebuild.mjs",
+    "scripts/build-group6.mjs",
+    "data/curated/no-36.json",
+    "data/research/no-36-adopted-build.json"
+  ],
+  "openQuestions": [
+    "浅間神社（多摩川浅間神社）の座標",
+    "多摩川大橋・六郷橋の座標",
+    "堤防路の位置と通行条件",
+    "蒲田駅から京急蒲田駅への経路"
+  ],
+  "decision": "2026-11-16 新Aを計算（6.23km・反復45m）。浅間神社と六郷橋は名称ノードがなく含めていない。"
+}

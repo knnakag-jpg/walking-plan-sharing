@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T21:55:01.750Z",
+  "generatedAt": "2026-11-15T22:10:34.976Z",
   "interpretation": "Mechanical triage only. Source and map review required before adopting any new route.",
   "records": [
     {
@@ -774,9 +774,9 @@
     },
     {
       "id": "No.35",
-      "title": "池袋駅 地下周回",
+      "title": "池袋駅周辺（地上の周回）",
       "series": "地下ダンジョン（No.33～35）",
-      "workStatus": "research_needed",
+      "workStatus": "partial_rebuild",
       "legacy": {
         "geometryUrl": "data/routes/no-35.geojson",
         "walkingDistanceM": 5074,
@@ -799,9 +799,20 @@
         ],
         "gateResult": "OK"
       },
-      "existingNewVariants": [],
+      "existingNewVariants": [
+        {
+          "variant": "standard",
+          "status": "routed",
+          "distanceM": 2202
+        },
+        {
+          "variant": "rainy",
+          "status": "researched",
+          "distanceM": null
+        }
+      ],
       "coordinateReview": "not_started",
-      "sourceResearch": "not_started",
+      "sourceResearch": "source_research_in_progress",
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": true,
@@ -1922,9 +1933,9 @@
     },
     {
       "id": "No.31",
-      "title": "山手線内側・最強の谷底",
+      "title": "赤坂見附から四ツ谷・紀尾井の谷底",
       "series": "坂道・崖線（No.27～32）",
-      "workStatus": "research_needed",
+      "workStatus": "partial_rebuild",
       "legacy": {
         "geometryUrl": "data/routes/no-31.geojson",
         "walkingDistanceM": 3061,
@@ -1939,9 +1950,20 @@
         ],
         "gateResult": "OK"
       },
-      "existingNewVariants": [],
+      "existingNewVariants": [
+        {
+          "variant": "standard",
+          "status": "routed",
+          "distanceM": 1876
+        },
+        {
+          "variant": "rainy",
+          "status": "researched",
+          "distanceM": null
+        }
+      ],
       "coordinateReview": "not_started",
-      "sourceResearch": "not_started",
+      "sourceResearch": "source_research_in_progress",
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": true,
@@ -2379,9 +2401,9 @@
     },
     {
       "id": "No.33",
-      "title": "東京駅 地下周回",
+      "title": "東京駅周辺（地上の周回）",
       "series": "地下ダンジョン（No.33～35）",
-      "workStatus": "research_needed",
+      "workStatus": "partial_rebuild",
       "legacy": {
         "geometryUrl": "data/routes/no-33.geojson",
         "walkingDistanceM": 4816,
@@ -2404,9 +2426,20 @@
         ],
         "gateResult": "OK"
       },
-      "existingNewVariants": [],
+      "existingNewVariants": [
+        {
+          "variant": "standard",
+          "status": "routed",
+          "distanceM": 4147
+        },
+        {
+          "variant": "rainy",
+          "status": "researched",
+          "distanceM": null
+        }
+      ],
       "coordinateReview": "not_started",
-      "sourceResearch": "not_started",
+      "sourceResearch": "source_research_in_progress",
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": true,
@@ -2812,9 +2845,9 @@
     },
     {
       "id": "No.34",
-      "title": "新宿駅 地下周回",
+      "title": "新宿駅周辺（地上の周回）",
       "series": "地下ダンジョン（No.33～35）",
-      "workStatus": "research_needed",
+      "workStatus": "partial_rebuild",
       "legacy": {
         "geometryUrl": "data/routes/no-34.geojson",
         "walkingDistanceM": 5853,
@@ -2845,9 +2878,20 @@
         ],
         "gateResult": "OK"
       },
-      "existingNewVariants": [],
+      "existingNewVariants": [
+        {
+          "variant": "standard",
+          "status": "routed",
+          "distanceM": 2612
+        },
+        {
+          "variant": "rainy",
+          "status": "researched",
+          "distanceM": null
+        }
+      ],
       "coordinateReview": "not_started",
-      "sourceResearch": "not_started",
+      "sourceResearch": "source_research_in_progress",
       "historicalRoutingStrategies": [
         {
           "oldLabel": "A",
@@ -3144,7 +3188,7 @@
       "id": "No.36",
       "title": "多摩川 丸子橋・浅間神社",
       "series": "河川敷（No.36～41）",
-      "workStatus": "research_needed",
+      "workStatus": "partial_rebuild",
       "legacy": {
         "geometryUrl": "data/routes/no-36.geojson",
         "walkingDistanceM": 6491,
@@ -3154,9 +3198,20 @@
         "repeatedWaypoints": [],
         "gateResult": "OK"
       },
-      "existingNewVariants": [],
+      "existingNewVariants": [
+        {
+          "variant": "standard",
+          "status": "routed",
+          "distanceM": 6230
+        },
+        {
+          "variant": "rainy",
+          "status": "researched",
+          "distanceM": null
+        }
+      ],
       "coordinateReview": "not_started",
-      "sourceResearch": "not_started",
+      "sourceResearch": "source_research_in_progress",
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": true,

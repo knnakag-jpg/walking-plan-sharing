@@ -1,0 +1,49 @@
+{
+  "id": "No.34",
+  "title": "新宿駅周辺（地上の周回）",
+  "stage": "source_research_in_progress",
+  "checkedAt": "2026-11-16",
+  "evidence": [
+    {
+      "type": "community",
+      "title": "OpenStreetMap（新宿駅南口・新宿の目・新宿西口ロータリー・西新宿・新宿駅東口・新宿三丁目）",
+      "url": "https://www.openstreetmap.org/",
+      "checkedAt": "2026-11-16",
+      "supports": "駅・施設・公園の名称ノードの座標。入口ではない。"
+    },
+    {
+      "type": "community",
+      "title": "旧資料 No.34（先行ページ index.html）",
+      "url": null,
+      "checkedAt": "2026-11-16",
+      "supports": "旧案の立ち寄り先。地下周回は採用していない。"
+    }
+  ],
+  "trials": [
+    {
+      "n": 1,
+      "variant": "A 新規（OSMの駅・地点）",
+      "result": "2.61km・反復92m",
+      "finding": "西新宿一丁目付近で約67m、他に約23mの短い重なり（計約92m）。交差点の横断で生じる往復と推定。"
+    },
+    {
+      "n": 2,
+      "variant": "A 新規（OSMの駅・地点）",
+      "result": "2.61km・反復92m",
+      "finding": "西新宿一丁目付近で約67m、他に約23mの短い重なり（計約92m）。交差点の横断で生じる往復と推定。"
+    }
+  ],
+  "files": [
+    "scripts/lib-rebuild.mjs",
+    "scripts/build-group6.mjs",
+    "data/curated/no-34.json",
+    "data/research/no-34-adopted-build.json"
+  ],
+  "openQuestions": [
+    "新宿駅の地下通路の座標（OSMにない）",
+    "サブナード・京王モールの屋内動線",
+    "新宿の目の位置",
+    "新宿西口ロータリーの歩行者動線"
+  ],
+  "decision": "2026-11-16 地上の周回として新Aを計算（2.61km・反復92m）。地下通路は座標を作れないため案から外した。"
+}

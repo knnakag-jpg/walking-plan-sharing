@@ -1,0 +1,42 @@
+{
+ "akasaka_mitsuke": {
+  "snapped": [
+   35.6783939,
+   139.7362919
+  ],
+  "movedM": 0,
+  "wayId": 556522975
+ },
+ "benkeibashi": {
+  "snapped": [
+   35.6790238,
+   139.7361427
+  ],
+  "movedM": 12,
+  "wayId": 1013447218
+ },
+ "kioicho": {
+  "snapped": [
+   35.6829787,
+   139.7382083
+  ],
+  "movedM": 0,
+  "wayId": 254126678
+ },
+ "sophia": {
+  "snapped": [
+   35.6841133,
+   139.7321897
+  ],
+  "movedM": 63,
+  "wayId": 39442149
+ },
+ "yotsuya_st": {
+  "snapped": [
+   35.6864638,
+   139.7299811
+  ],
+  "movedM": 7,
+  "wayId": 816261563
+ }
+}

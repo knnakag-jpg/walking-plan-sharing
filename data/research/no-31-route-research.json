@@ -1,0 +1,49 @@
+{
+  "id": "No.31",
+  "title": "赤坂見附から四ツ谷・紀尾井の谷底",
+  "stage": "source_research_in_progress",
+  "checkedAt": "2026-11-16",
+  "evidence": [
+    {
+      "type": "community",
+      "title": "OpenStreetMap（赤坂見附駅・弁慶橋・紀尾井町・上智大学・四ツ谷駅）",
+      "url": "https://www.openstreetmap.org/",
+      "checkedAt": "2026-11-16",
+      "supports": "駅・施設・公園の名称ノードの座標。入口ではない。"
+    },
+    {
+      "type": "community",
+      "title": "旧資料 No.31（先行ページ index.html）",
+      "url": null,
+      "checkedAt": "2026-11-16",
+      "supports": "旧案の立ち寄り先。四谷三栄町方面の往復延伸は採用していない。"
+    }
+  ],
+  "trials": [
+    {
+      "n": 1,
+      "variant": "A 新規（OSMの駅・地点）",
+      "result": "1.88km・反復0m",
+      "finding": "計算上の重なりは0m。"
+    },
+    {
+      "n": 2,
+      "variant": "A 新規（OSMの駅・地点）",
+      "result": "1.88km・反復0m",
+      "finding": "計算上の重なりは0m。"
+    }
+  ],
+  "files": [
+    "scripts/lib-rebuild.mjs",
+    "scripts/build-group6.mjs",
+    "data/curated/no-31.json",
+    "data/research/no-31-adopted-build.json"
+  ],
+  "openQuestions": [
+    "清水谷公園と喰違見附跡の座標（OSMに名称ノードなし）",
+    "紀尾井ホールの位置",
+    "弁慶橋の歩道",
+    "紀尾井町から四ツ谷駅への歩道"
+  ],
+  "decision": "2026-11-16 新Aを計算（1.88km・反復0m）。清水谷公園・喰違見附跡は名称ノードがなく含めていない。"
+}

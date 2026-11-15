@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "source": "legacy import; route quality not re-reviewed",
-  "generatedAt": "2026-11-15T21:55:01.628Z",
+  "generatedAt": "2026-11-15T22:10:34.866Z",
   "courses": [
     {
       "id": "No.1",
@@ -11351,14 +11351,19 @@
     {
       "id": "No.31",
       "slug": "no-31",
-      "title": "山手線内側・最強の谷底",
+      "title": "赤坂見附から四ツ谷・紀尾井の谷底",
       "seriesId": "sakamichi",
       "seriesName": "坂道・崖線（No.27～32）",
       "legacyAnchor": "course-31",
       "legacyUrl": "../index.html#course-31",
-      "summary": "経路ノード： 赤坂見附駅 → 弁慶橋 → 紀尾井ホール → 清水谷公園 → 喰違見附跡 → 四谷駅 → 四谷三栄町方面へ実在の歩道で延伸（往復約1.2km） → ゴール",
+      "summary": "赤坂見附駅から弁慶橋、紀尾井町、上智大学の前を経て四ツ谷駅へ抜ける短い駅間。清水谷公園と喰違見附跡は名称の点が見つからず、経由点に含めていない。旧案の四谷三栄町方面の往復延伸は採らない。",
       "routeText": "経路ノード： 赤坂見附駅 → 弁慶橋 → 紀尾井ホール → 清水谷公園 → 喰違見附跡 → 四谷駅 → 四谷三栄町方面へ実在の歩道で延伸（往復約1.2km） → ゴール",
-      "tags": [],
+      "tags": [
+        "谷",
+        "橋",
+        "坂道",
+        "堀"
+      ],
       "route": {
         "id": "no-31-legacy",
         "variant": "legacy",
@@ -11371,17 +11376,7 @@
         "repeatedGeometryPct": 10.5,
         "maxWaypointToShapeM": 23,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "partial_dem_filled",
-          "url": "data/elevation/no-31.json",
-          "totalM": 3061,
-          "climbM": 59.6,
-          "descentM": 49.5,
-          "minM": 9.1,
-          "maxM": 32.4
-        }
+        "engine": "valhalla-pedestrian"
       },
       "waypoints": [
         {
@@ -11440,7 +11435,226 @@
         "repeated_geometry_over_10pct",
         "repeated_waypoint"
       ],
-      "category": "main"
+      "category": "main",
+      "defaultVariant": "standard",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "OpenStreetMap（赤坂見附駅・弁慶橋・紀尾井町・上智大学・四ツ谷駅）",
+          "url": "https://www.openstreetmap.org/",
+          "checkedAt": "2026-11-16",
+          "supports": "駅・施設・公園の名称ノードの座標。入口ではない。"
+        },
+        {
+          "type": "community",
+          "title": "旧資料 No.31（先行ページ index.html）",
+          "url": null,
+          "checkedAt": "2026-11-16",
+          "supports": "旧案の立ち寄り先。四谷三栄町方面の往復延伸は採用していない。"
+        }
+      ],
+      "openQuestions": [
+        "清水谷公園と喰違見附跡の座標（OSMに名称ノードなし）",
+        "紀尾井ホールの位置",
+        "弁慶橋の歩道",
+        "紀尾井町から四ツ谷駅への歩道"
+      ],
+      "routeOptions": [
+        {
+          "id": "no-31-standard",
+          "variant": "standard",
+          "strategy": "scenic",
+          "geometryUrl": "data/routes/no-31-standard.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 1876,
+          "engineDistanceM": 1877,
+          "repeatedGeometryPct": 0,
+          "routeReason": "赤坂見附駅から弁慶橋、紀尾井町、上智大学、四ツ谷駅へ。計算上1.88km。清水谷公園と喰違見附跡は名称ノードが見つからず、座標を作らずに含めていない。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
+          "distanceException": "1.88km。実在の立ち寄り先だけで組んだため5〜6kmに届かない。旧案の往復延伸は座標を作る必要があるため採らない。",
+          "retraceException": "計算上の重なりは0m。",
+          "waypoints": [
+            {
+              "index": 0,
+              "id": "akasaka_mitsuke",
+              "label": "赤坂見附駅",
+              "description": null,
+              "point": [
+                139.7362919,
+                35.6783939
+              ],
+              "source": "OSM node 赤坂見附"
+            },
+            {
+              "index": 1,
+              "id": "benkeibashi",
+              "label": "弁慶橋（弁慶橋ボート場）",
+              "description": null,
+              "point": [
+                139.7361427,
+                35.6790238
+              ],
+              "source": "OSM slipway 弁慶橋ボート場"
+            },
+            {
+              "index": 2,
+              "id": "kioicho",
+              "label": "紀尾井町",
+              "description": null,
+              "point": [
+                139.7382083,
+                35.6829787
+              ],
+              "source": "OSM node 紀尾井町（バス停）"
+            },
+            {
+              "index": 3,
+              "id": "sophia",
+              "label": "上智大学",
+              "description": null,
+              "point": [
+                139.7321897,
+                35.6841133
+              ],
+              "source": "OSM university 上智大学"
+            },
+            {
+              "index": 4,
+              "id": "yotsuya_st",
+              "label": "四ツ谷駅",
+              "description": null,
+              "point": [
+                139.7299811,
+                35.6864638
+              ],
+              "source": "OSM node 四谷駅"
+            }
+          ],
+          "engine": "valhalla-pedestrian",
+          "built": "2026-11-15T22:07:00.395Z",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/no-31-standard.json",
+            "totalM": 1876,
+            "climbM": 36.7,
+            "descentM": 19.9,
+            "minM": 11.2,
+            "maxM": 32.3
+          }
+        },
+        {
+          "id": "no-31-rainy",
+          "variant": "rainy",
+          "strategy": "indoor_rail",
+          "verificationStatus": "researched",
+          "distanceM": null,
+          "routeReason": "雨の日は赤坂見附駅の構内通路と四ツ谷駅のコンコースを中心にした短縮案。連続した屋内徒歩コースとしては未検証。",
+          "segments": [
+            {
+              "kind": "walk_outdoor",
+              "from": "赤坂見附駅",
+              "to": "弁慶橋",
+              "distanceM": null,
+              "note": "屋根なし。傘が必要。"
+            },
+            {
+              "kind": "walk_indoor",
+              "from": "赤坂見附駅",
+              "to": "駅構内の通路",
+              "distanceM": null,
+              "note": "構内の連続性は未確認。"
+            },
+            {
+              "kind": "rail",
+              "from": "四ツ谷駅",
+              "to": "赤坂見附駅",
+              "distanceM": null,
+              "note": "地下鉄丸ノ内線。"
+            }
+          ],
+          "conditions": [
+            "弁慶橋の歩道と堀端の路面は雨天で濡れやすい。",
+            "紀尾井ホールの公演日は当日確認。"
+          ],
+          "geometryUrl": null,
+          "waypoints": []
+        },
+        {
+          "id": "no-31-legacy",
+          "variant": "legacy",
+          "strategy": "legacy_unknown",
+          "geometryUrl": "data/routes/no-31.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 3061,
+          "engineDistanceM": 3059,
+          "targetDistanceM": 3000,
+          "repeatedGeometryPct": 10.5,
+          "maxWaypointToShapeM": 23,
+          "built": "2026-08-29",
+          "engine": "valhalla-pedestrian",
+          "waypoints": [
+            {
+              "index": 0,
+              "point": [
+                139.737,
+                35.6766
+              ]
+            },
+            {
+              "index": 1,
+              "point": [
+                139.7368,
+                35.6802
+              ]
+            },
+            {
+              "index": 2,
+              "point": [
+                139.735,
+                35.682
+              ]
+            },
+            {
+              "index": 3,
+              "point": [
+                139.7328,
+                35.6835
+              ]
+            },
+            {
+              "index": 4,
+              "point": [
+                139.7306,
+                35.686
+              ]
+            },
+            {
+              "index": 5,
+              "point": [
+                139.727721,
+                35.689272
+              ]
+            },
+            {
+              "index": 6,
+              "point": [
+                139.7306,
+                35.686
+              ]
+            }
+          ],
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/no-31.json",
+            "totalM": 3061,
+            "climbM": 59.6,
+            "descentM": 49.5,
+            "minM": 9.1,
+            "maxM": 32.4
+          }
+        }
+      ]
     },
     {
       "id": "No.32",
@@ -12027,14 +12241,20 @@
     {
       "id": "No.33",
       "slug": "no-33",
-      "title": "東京駅 地下周回",
+      "title": "東京駅周辺（地上の周回）",
       "seriesId": "underground",
       "seriesName": "地下ダンジョン（No.33～35）",
       "legacyAnchor": "course-33",
       "legacyUrl": "../index.html#course-33",
-      "summary": "経路ノード： 動輪の広場 → 丸ビル → 新丸ビル → 大手町 → ミッドタウン八重洲 → R.T.O.レリーフ → 国際フォーラム → 日比谷仲通り → 日比谷国際ビル → KITTE → 動輪の広場 → 北通路方面へ実在の歩道で延伸（往復約0.7km） → ゴール",
+      "summary": "東京駅丸の内側の動輪の広場から二重橋前、大手町、KITTE、東京国際フォーラム、日比谷公園を結ぶ地上の周回。旧案の地下周回は、地下通路の座標はOSMにないため経路には含めていない（地上の駅・施設の前を通る徒歩経路のみ）。",
       "routeText": "経路ノード： 動輪の広場 → 丸ビル → 新丸ビル → 大手町 → ミッドタウン八重洲 → R.T.O.レリーフ → 国際フォーラム → 日比谷仲通り → 日比谷国際ビル → KITTE → 動輪の広場 → 北通路方面へ実在の歩道で延伸（往復約0.7km） → ゴール",
-      "tags": [],
+      "tags": [
+        "駅",
+        "建築",
+        "広場",
+        "公園",
+        "都心"
+      ],
       "route": {
         "id": "no-33-legacy",
         "variant": "legacy",
@@ -12047,17 +12267,7 @@
         "repeatedGeometryPct": 5.4,
         "maxWaypointToShapeM": 20,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "dem",
-          "url": "data/elevation/no-33.json",
-          "totalM": 4816,
-          "climbM": 8.4,
-          "descentM": 8.4,
-          "minM": 0.7,
-          "maxM": 3.8
-        }
+        "engine": "valhalla-pedestrian"
       },
       "waypoints": [
         {
@@ -12157,19 +12367,307 @@
       "auditFlags": [
         "repeated_waypoint"
       ],
-      "category": "main"
+      "category": "main",
+      "defaultVariant": "standard",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "OpenStreetMap（東京駅・動輪の広場・KITTE・東京国際フォーラム・大手町駅前・日比谷公園）",
+          "url": "https://www.openstreetmap.org/",
+          "checkedAt": "2026-11-16",
+          "supports": "駅・施設・公園の名称ノードの座標。入口ではない。"
+        },
+        {
+          "type": "community",
+          "title": "旧資料 No.33（先行ページ index.html）",
+          "url": null,
+          "checkedAt": "2026-11-16",
+          "supports": "旧案の立ち寄り先。地下周回と北通路方面の往復延伸は採用していない。"
+        }
+      ],
+      "openQuestions": [
+        "東京駅丸の内側の地下通路の座標（OSMにない）",
+        "丸ビル・新丸ビルの屋内動線",
+        "東京国際フォーラム内の通り抜け",
+        "日比谷国際ビル・日比谷仲通りの位置"
+      ],
+      "routeOptions": [
+        {
+          "id": "no-33-standard",
+          "variant": "standard",
+          "strategy": "scenic",
+          "geometryUrl": "data/routes/no-33-standard.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 4147,
+          "engineDistanceM": 4149,
+          "repeatedGeometryPct": 4.5,
+          "routeReason": "動輪の広場から東京駅丸の内中央口、二重橋前駅、大手町駅前、KITTE、東京国際フォーラム西、日比谷公園へ。計算上4.15km。地下通路の座標はOSMにないため経路には含めていない（地上の駅・施設の前を通る徒歩経路のみ）。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
+          "distanceException": "4.15km。地上の駅・施設を結ぶ案で5〜6kmに届かない。地下通路の座標を作る延伸は採らない。",
+          "retraceException": "東京駅丸の内中央口から二重橋前駅へ向かう区間で約148m、他に約22mの短い重なり（計約185m）。駅前広場と改札の出入りで生じる往復と推定。地図で未確認。",
+          "waypoints": [
+            {
+              "index": 0,
+              "id": "dorin",
+              "label": "動輪の広場",
+              "description": null,
+              "point": [
+                139.7649204,
+                35.6811701
+              ],
+              "source": "OSM attraction 動輪の広場（C62形蒸気機関車）"
+            },
+            {
+              "index": 1,
+              "id": "tokyo_marunouchi",
+              "label": "東京駅 丸の内中央口",
+              "description": null,
+              "point": [
+                139.7660203,
+                35.6815845
+              ],
+              "source": "OSM train_station_entrance 丸の内中央口"
+            },
+            {
+              "index": 2,
+              "id": "nijubashi_mae",
+              "label": "二重橋前〈丸の内〉駅",
+              "description": null,
+              "point": [
+                139.7616264,
+                35.6798594
+              ],
+              "source": "OSM stop 二重橋前"
+            },
+            {
+              "index": 3,
+              "id": "otemachi",
+              "label": "大手町駅前",
+              "description": null,
+              "point": [
+                139.7657432,
+                35.6848263
+              ],
+              "source": "OSM node 大手町駅前"
+            },
+            {
+              "index": 4,
+              "id": "kitte",
+              "label": "KITTE",
+              "description": null,
+              "point": [
+                139.764862,
+                35.6799098
+              ],
+              "source": "OSM node KITTE"
+            },
+            {
+              "index": 5,
+              "id": "forum_west",
+              "label": "東京国際フォーラム西",
+              "description": null,
+              "point": [
+                139.7634239,
+                35.6780187
+              ],
+              "source": "OSM node 東京国際フォーラム西"
+            },
+            {
+              "index": 6,
+              "id": "hibiya",
+              "label": "日比谷公園",
+              "description": null,
+              "point": [
+                139.7560389,
+                35.6737364
+              ],
+              "source": "OSM park 日比谷公園"
+            }
+          ],
+          "engine": "valhalla-pedestrian",
+          "built": "2026-11-15T22:07:29.488Z",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "dem",
+            "url": "data/elevation/no-33-standard.json",
+            "totalM": 4147,
+            "climbM": 8.5,
+            "descentM": 7.5,
+            "minM": 0.7,
+            "maxM": 4
+          }
+        },
+        {
+          "id": "no-33-rainy",
+          "variant": "rainy",
+          "strategy": "indoor_rail",
+          "verificationStatus": "researched",
+          "distanceM": null,
+          "routeReason": "雨の日は東京駅の地下街・丸の内の地下通路を中心にする案（本来の旧案）。地下通路の座標は取れていないため、距離は未確定。",
+          "segments": [
+            {
+              "kind": "walk_indoor",
+              "from": "東京駅",
+              "to": "丸ビル・新丸ビル（地下通路）",
+              "distanceM": null,
+              "note": "地下通路の連続性・営業時間は当日確認。"
+            },
+            {
+              "kind": "walk_indoor",
+              "from": "丸ビル",
+              "to": "KITTE",
+              "distanceM": null,
+              "note": "地下接続の有無は未確認。"
+            },
+            {
+              "kind": "walk_outdoor",
+              "from": "KITTE",
+              "to": "東京国際フォーラム",
+              "distanceM": null,
+              "note": "地上の屋根なし区間あり。"
+            }
+          ],
+          "conditions": [
+            "地下通路の開放時間は当日確認。",
+            "工事で通路が変わる可能性がある。"
+          ],
+          "geometryUrl": null,
+          "waypoints": []
+        },
+        {
+          "id": "no-33-legacy",
+          "variant": "legacy",
+          "strategy": "legacy_unknown",
+          "geometryUrl": "data/routes/no-33.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 4816,
+          "engineDistanceM": 4817,
+          "targetDistanceM": 4800,
+          "repeatedGeometryPct": 5.4,
+          "maxWaypointToShapeM": 20,
+          "built": "2026-08-29",
+          "engine": "valhalla-pedestrian",
+          "waypoints": [
+            {
+              "index": 0,
+              "point": [
+                139.7652,
+                35.6802
+              ]
+            },
+            {
+              "index": 1,
+              "point": [
+                139.7638,
+                35.6812
+              ]
+            },
+            {
+              "index": 2,
+              "point": [
+                139.7642,
+                35.6822
+              ]
+            },
+            {
+              "index": 3,
+              "point": [
+                139.7645,
+                35.6848
+              ]
+            },
+            {
+              "index": 4,
+              "point": [
+                139.769,
+                35.68
+              ]
+            },
+            {
+              "index": 5,
+              "point": [
+                139.767,
+                35.6778
+              ]
+            },
+            {
+              "index": 6,
+              "point": [
+                139.7645,
+                35.6762
+              ]
+            },
+            {
+              "index": 7,
+              "point": [
+                139.7605,
+                35.674
+              ]
+            },
+            {
+              "index": 8,
+              "point": [
+                139.7625,
+                35.6758
+              ]
+            },
+            {
+              "index": 9,
+              "point": [
+                139.7645,
+                35.6795
+              ]
+            },
+            {
+              "index": 10,
+              "point": [
+                139.7652,
+                35.6802
+              ]
+            },
+            {
+              "index": 11,
+              "point": [
+                139.76709,
+                35.68209
+              ]
+            },
+            {
+              "index": 12,
+              "point": [
+                139.7652,
+                35.6802
+              ]
+            }
+          ],
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "dem",
+            "url": "data/elevation/no-33.json",
+            "totalM": 4816,
+            "climbM": 8.4,
+            "descentM": 8.4,
+            "minM": 0.7,
+            "maxM": 3.8
+          }
+        }
+      ]
     },
     {
       "id": "No.34",
       "slug": "no-34",
-      "title": "新宿駅 地下周回",
+      "title": "新宿駅周辺（地上の周回）",
       "seriesId": "underground",
       "seriesName": "地下ダンジョン（No.33～35）",
       "legacyAnchor": "course-34",
       "legacyUrl": "../index.html#course-34",
-      "summary": "経路ノード（B案）： 新宿駅 東口 → メトロプロムナード → サブナード → 南口 → 新宿の目 → 地下東西自由通路 → 西口・京王モール → 西新宿（解散） → ゴール",
+      "summary": "新宿駅南口から新宿の目、西口ロータリー、西新宿一丁目、東口、新宿三丁目を結ぶ地上の周回。旧案の地下周回は、地下通路の座標はOSMにないため経路には含めていない（地上の駅・施設の前を通る徒歩経路のみ）。",
       "routeText": "経路ノード（B案）： 新宿駅 東口 → メトロプロムナード → サブナード → 南口 → 新宿の目 → 地下東西自由通路 → 西口・京王モール → 西新宿（解散） → ゴール",
-      "tags": [],
+      "tags": [
+        "駅",
+        "都心",
+        "芸術",
+        "街並み"
+      ],
       "route": {
         "id": "no-34-legacy",
         "variant": "legacy",
@@ -12182,17 +12680,7 @@
         "repeatedGeometryPct": 13.8,
         "maxWaypointToShapeM": 13,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "dem",
-          "url": "data/elevation/no-34.json",
-          "totalM": 5853,
-          "climbM": 53,
-          "descentM": 52.9,
-          "minM": 32.5,
-          "maxM": 43.1
-        }
+        "engine": "valhalla-pedestrian"
       },
       "waypoints": [
         {
@@ -12286,19 +12774,289 @@
         "repeated_geometry_over_10pct",
         "repeated_waypoint"
       ],
-      "category": "main"
+      "category": "main",
+      "defaultVariant": "standard",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "OpenStreetMap（新宿駅南口・新宿の目・新宿西口ロータリー・西新宿・新宿駅東口・新宿三丁目）",
+          "url": "https://www.openstreetmap.org/",
+          "checkedAt": "2026-11-16",
+          "supports": "駅・施設・公園の名称ノードの座標。入口ではない。"
+        },
+        {
+          "type": "community",
+          "title": "旧資料 No.34（先行ページ index.html）",
+          "url": null,
+          "checkedAt": "2026-11-16",
+          "supports": "旧案の立ち寄り先。地下周回は採用していない。"
+        }
+      ],
+      "openQuestions": [
+        "新宿駅の地下通路の座標（OSMにない）",
+        "サブナード・京王モールの屋内動線",
+        "新宿の目の位置",
+        "新宿西口ロータリーの歩行者動線"
+      ],
+      "routeOptions": [
+        {
+          "id": "no-34-standard",
+          "variant": "standard",
+          "strategy": "scenic",
+          "geometryUrl": "data/routes/no-34-standard.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 2612,
+          "engineDistanceM": 2618,
+          "repeatedGeometryPct": 3.5,
+          "routeReason": "新宿駅南口から新宿の目（アート）、新宿西口ロータリー、西新宿一丁目、新宿駅東口、新宿三丁目へ。計算上2.61km。地下通路の座標はOSMにないため経路には含めていない（地上の駅・施設の前を通る徒歩経路のみ）。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
+          "distanceException": "2.61km。地上の駅・施設を結ぶ案で5〜6kmに届かない。地下通路の座標を作る延伸は採らない。",
+          "retraceException": "西新宿一丁目付近で約67m、他に約23mの短い重なり（計約92m）。交差点の横断で生じる往復と推定。",
+          "waypoints": [
+            {
+              "index": 0,
+              "id": "shinjuku_south",
+              "label": "新宿駅南口",
+              "description": null,
+              "point": [
+                139.7010875,
+                35.6878916
+              ],
+              "source": "OSM stop 新宿"
+            },
+            {
+              "index": 1,
+              "id": "shinjuku_eye",
+              "label": "新宿の目",
+              "description": null,
+              "point": [
+                139.6987427,
+                35.6909524
+              ],
+              "source": "OSM artwork 新宿の目"
+            },
+            {
+              "index": 2,
+              "id": "shinjuku_nishi",
+              "label": "新宿西口ロータリー入口",
+              "description": null,
+              "point": [
+                139.6983867,
+                35.6922211
+              ],
+              "source": "OSM node 新宿西口ロータリー入口"
+            },
+            {
+              "index": 3,
+              "id": "nishi_shinjuku1",
+              "label": "西新宿一丁目",
+              "description": null,
+              "point": [
+                139.6989409,
+                35.688652
+              ],
+              "source": "OSM node 西新宿一丁目"
+            },
+            {
+              "index": 4,
+              "id": "shinjuku_east",
+              "label": "新宿駅東口",
+              "description": null,
+              "point": [
+                139.7017709,
+                35.6922507
+              ],
+              "source": "OSM node 新宿駅東口"
+            },
+            {
+              "index": 5,
+              "id": "shinjuku3",
+              "label": "新宿三丁目",
+              "description": null,
+              "point": [
+                139.7048359,
+                35.6908841
+              ],
+              "source": "OSM node 新宿三丁目"
+            }
+          ],
+          "engine": "valhalla-pedestrian",
+          "built": "2026-11-15T22:08:11.927Z",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "dem",
+            "url": "data/elevation/no-34-standard.json",
+            "totalM": 2612,
+            "climbM": 14.5,
+            "descentM": 13.5,
+            "minM": 35.6,
+            "maxM": 43
+          }
+        },
+        {
+          "id": "no-34-rainy",
+          "variant": "rainy",
+          "strategy": "indoor_rail",
+          "verificationStatus": "researched",
+          "distanceM": null,
+          "routeReason": "雨の日は新宿駅の地下通路（メトロプロムナード・サブナード・京王モール）を中心にする案（本来の旧案）。地下通路の座標は取れていないため、距離は未確定。",
+          "segments": [
+            {
+              "kind": "walk_indoor",
+              "from": "新宿駅東口",
+              "to": "メトロプロムナード・サブナード",
+              "distanceM": null,
+              "note": "地下通路の連続性は当日確認。"
+            },
+            {
+              "kind": "walk_indoor",
+              "from": "新宿駅",
+              "to": "地下東西自由通路・京王モール",
+              "distanceM": null,
+              "note": "連続性は未確認。"
+            },
+            {
+              "kind": "walk_outdoor",
+              "from": "西新宿",
+              "to": "新宿駅西口",
+              "distanceM": null,
+              "note": "屋根のない区間あり。"
+            }
+          ],
+          "conditions": [
+            "地下通路の開放時間・工事は当日確認。",
+            "新宿駅は構造が複雑で迷いやすい。"
+          ],
+          "geometryUrl": null,
+          "waypoints": []
+        },
+        {
+          "id": "no-34-legacy",
+          "variant": "legacy",
+          "strategy": "legacy_unknown",
+          "geometryUrl": "data/routes/no-34.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 5853,
+          "engineDistanceM": 5858,
+          "targetDistanceM": 5800,
+          "repeatedGeometryPct": 13.8,
+          "maxWaypointToShapeM": 13,
+          "built": "2026-08-29",
+          "engine": "valhalla-pedestrian",
+          "waypoints": [
+            {
+              "index": 0,
+              "point": [
+                139.6918,
+                35.6895
+              ]
+            },
+            {
+              "index": 1,
+              "point": [
+                139.6958,
+                35.6922
+              ]
+            },
+            {
+              "index": 2,
+              "point": [
+                139.6983,
+                35.6912
+              ]
+            },
+            {
+              "index": 3,
+              "point": [
+                139.7005,
+                35.6898
+              ]
+            },
+            {
+              "index": 4,
+              "point": [
+                139.703,
+                35.6905
+              ]
+            },
+            {
+              "index": 5,
+              "point": [
+                139.702,
+                35.693
+              ]
+            },
+            {
+              "index": 6,
+              "point": [
+                139.704,
+                35.69
+              ]
+            },
+            {
+              "index": 7,
+              "point": [
+                139.7048,
+                35.6928
+              ]
+            },
+            {
+              "index": 8,
+              "point": [
+                139.6918,
+                35.6895
+              ]
+            },
+            {
+              "index": 9,
+              "point": [
+                139.6918,
+                35.6895
+              ]
+            },
+            {
+              "index": 10,
+              "point": [
+                139.6918,
+                35.692497
+              ]
+            },
+            {
+              "index": 11,
+              "point": [
+                139.6918,
+                35.6895
+              ]
+            }
+          ],
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "dem",
+            "url": "data/elevation/no-34.json",
+            "totalM": 5853,
+            "climbM": 53,
+            "descentM": 52.9,
+            "minM": 32.5,
+            "maxM": 43.1
+          }
+        }
+      ]
     },
     {
       "id": "No.35",
       "slug": "no-35",
-      "title": "池袋駅 地下周回",
+      "title": "池袋駅周辺（地上の周回）",
       "seriesId": "underground",
       "seriesName": "地下ダンジョン（No.33～35）",
       "legacyAnchor": "course-35",
       "legacyUrl": "../index.html#course-35",
-      "summary": "経路ノード： Echika池袋 → いけふくろう → ISP → ダイヤゲート池袋 → サンシャインシティ → 豊島区役所 → 大塚駅前（地上短区間） → ISP → みたけ通り方面へ実在の歩道で延伸（往復約1.7km） → ゴール",
+      "summary": "池袋駅から駅東口、サンシャイン前、サンシャイン国際水族館、東池袋中央公園、東池袋駅を結ぶ地上の周回。旧案の地下周回は、地下通路の座標はOSMにないため経路には含めていない（地上の駅・施設の前を通る徒歩経路のみ）。",
       "routeText": "経路ノード： Echika池袋 → いけふくろう → ISP → ダイヤゲート池袋 → サンシャインシティ → 豊島区役所 → 大塚駅前（地上短区間） → ISP → みたけ通り方面へ実在の歩道で延伸（往復約1.7km） → ゴール",
-      "tags": [],
+      "tags": [
+        "駅",
+        "水族館",
+        "公園",
+        "街並み"
+      ],
       "route": {
         "id": "no-35-legacy",
         "variant": "legacy",
@@ -12311,17 +13069,7 @@
         "repeatedGeometryPct": 21.4,
         "maxWaypointToShapeM": 27,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "dem",
-          "url": "data/elevation/no-35.json",
-          "totalM": 5074,
-          "climbM": 15.9,
-          "descentM": 17,
-          "minM": 28.2,
-          "maxM": 33.4
-        }
+        "engine": "valhalla-pedestrian"
       },
       "waypoints": [
         {
@@ -12394,7 +13142,251 @@
         "repeated_geometry_over_10pct",
         "repeated_waypoint"
       ],
-      "category": "main"
+      "category": "main",
+      "defaultVariant": "standard",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "OpenStreetMap（池袋駅・サンシャイン前・サンシャイン国際水族館・東池袋中央公園・東池袋駅）",
+          "url": "https://www.openstreetmap.org/",
+          "checkedAt": "2026-11-16",
+          "supports": "駅・施設・公園の名称ノードの座標。入口ではない。"
+        },
+        {
+          "type": "community",
+          "title": "旧資料 No.35（先行ページ index.html）",
+          "url": null,
+          "checkedAt": "2026-11-16",
+          "supports": "旧案の立ち寄り先。地下周回とみたけ通り方面の往復延伸は採用していない。"
+        }
+      ],
+      "openQuestions": [
+        "池袋駅の地下通路の座標（OSMにない）",
+        "いけふくろう・豊島区役所・ダイヤゲート池袋の位置",
+        "サンシャインシティの屋内動線",
+        "大塚駅前の地上短区間"
+      ],
+      "routeOptions": [
+        {
+          "id": "no-35-standard",
+          "variant": "standard",
+          "strategy": "scenic",
+          "geometryUrl": "data/routes/no-35-standard.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 2202,
+          "engineDistanceM": 2198,
+          "repeatedGeometryPct": 8.1,
+          "routeReason": "池袋駅から駅東口、サンシャイン前、サンシャイン国際水族館、東池袋中央公園、東池袋駅へ。計算上2.20km。地下通路の座標はOSMにないため経路には含めていない（地上の駅・施設の前を通る徒歩経路のみ）。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
+          "distanceException": "2.20km。地上の駅・施設を結ぶ案で5〜6kmに届かない。地下通路の座標を作る延伸は採らない。",
+          "retraceException": "サンシャイン国際水族館から東池袋中央公園へ向かう区間で約117m、他に約62mの短い重なり（計約179m）。施設の出入口と公園の入口を行き来する形と推定。地図で未確認。",
+          "waypoints": [
+            {
+              "index": 0,
+              "id": "ikebukuro",
+              "label": "池袋駅",
+              "description": null,
+              "point": [
+                139.7111653,
+                35.7285996
+              ],
+              "source": "OSM station 池袋"
+            },
+            {
+              "index": 1,
+              "id": "ikebukuro_east",
+              "label": "池袋駅東口",
+              "description": null,
+              "point": [
+                139.7123601,
+                35.7299522
+              ],
+              "source": "OSM node 池袋駅東口"
+            },
+            {
+              "index": 2,
+              "id": "sunshine_mae",
+              "label": "サンシャイン前",
+              "description": null,
+              "point": [
+                139.716797,
+                35.7293627
+              ],
+              "source": "OSM node サンシャイン前"
+            },
+            {
+              "index": 3,
+              "id": "sunshine_aquarium",
+              "label": "サンシャイン国際水族館",
+              "description": null,
+              "point": [
+                139.7203118,
+                35.7294473
+              ],
+              "source": "OSM aquarium サンシャイン国際水族館"
+            },
+            {
+              "index": 4,
+              "id": "hi_ikebukuro_park",
+              "label": "東池袋中央公園",
+              "description": null,
+              "point": [
+                139.718812,
+                35.7302539
+              ],
+              "source": "OSM park 東池袋中央公園"
+            },
+            {
+              "index": 5,
+              "id": "higashi_ikebukuro_st",
+              "label": "東池袋駅",
+              "description": null,
+              "point": [
+                139.7189511,
+                35.726097
+              ],
+              "source": "OSM platform 東池袋"
+            }
+          ],
+          "engine": "valhalla-pedestrian",
+          "built": "2026-11-15T22:08:45.895Z",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "dem",
+            "url": "data/elevation/no-35-standard.json",
+            "totalM": 2202,
+            "climbM": 3.6,
+            "descentM": 8.4,
+            "minM": 27.8,
+            "maxM": 32.6
+          }
+        },
+        {
+          "id": "no-35-rainy",
+          "variant": "rainy",
+          "strategy": "indoor_rail",
+          "verificationStatus": "researched",
+          "distanceM": null,
+          "routeReason": "雨の日は池袋駅の地下通路（Echika池袋・ISP）とサンシャインシティの館内を中心にする案（本来の旧案）。地下通路の座標は取れていないため、距離は未確定。",
+          "segments": [
+            {
+              "kind": "walk_indoor",
+              "from": "池袋駅",
+              "to": "Echika池袋・地下通路",
+              "distanceM": null,
+              "note": "地下通路の連続性は当日確認。"
+            },
+            {
+              "kind": "walk_indoor",
+              "from": "サンシャインシティ",
+              "to": "館内",
+              "distanceM": null,
+              "note": "営業時間・水族館の入場料は当日確認。"
+            },
+            {
+              "kind": "walk_outdoor",
+              "from": "サンシャイン前",
+              "to": "東池袋中央公園",
+              "distanceM": null,
+              "note": "屋根なし。"
+            }
+          ],
+          "conditions": [
+            "サンシャイン国際水族館の営業は当日確認。",
+            "地下通路の工事は当日確認。"
+          ],
+          "geometryUrl": null,
+          "waypoints": []
+        },
+        {
+          "id": "no-35-legacy",
+          "variant": "legacy",
+          "strategy": "legacy_unknown",
+          "geometryUrl": "data/routes/no-35.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 5074,
+          "engineDistanceM": 5075,
+          "targetDistanceM": 4800,
+          "repeatedGeometryPct": 21.4,
+          "maxWaypointToShapeM": 27,
+          "built": "2026-08-29",
+          "engine": "valhalla-pedestrian",
+          "waypoints": [
+            {
+              "index": 0,
+              "point": [
+                139.7085,
+                35.7305
+              ]
+            },
+            {
+              "index": 1,
+              "point": [
+                139.7112,
+                35.7308
+              ]
+            },
+            {
+              "index": 2,
+              "point": [
+                139.7128,
+                35.73
+              ]
+            },
+            {
+              "index": 3,
+              "point": [
+                139.7118,
+                35.7268
+              ]
+            },
+            {
+              "index": 4,
+              "point": [
+                139.719,
+                35.7288
+              ]
+            },
+            {
+              "index": 5,
+              "point": [
+                139.7158,
+                35.7262
+              ]
+            },
+            {
+              "index": 6,
+              "point": [
+                139.7128,
+                35.73
+              ]
+            },
+            {
+              "index": 7,
+              "point": [
+                139.709297,
+                35.734437
+              ]
+            },
+            {
+              "index": 8,
+              "point": [
+                139.7128,
+                35.73
+              ]
+            }
+          ],
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "dem",
+            "url": "data/elevation/no-35.json",
+            "totalM": 5074,
+            "climbM": 15.9,
+            "descentM": 17,
+            "minM": 28.2,
+            "maxM": 33.4
+          }
+        }
+      ]
     },
     {
       "id": "No.36",
@@ -12404,9 +13396,14 @@
       "seriesName": "河川敷（No.36～41）",
       "legacyAnchor": "course-36",
       "legacyUrl": "../index.html#course-36",
-      "summary": "経路ノード： 多摩川駅 → 浅間神社 → 丸子橋 → 多摩川大橋 → 蒲田駅 → 京急蒲田駅 → 六郷橋方面の多摩川右岸堤防路方面へ実在の歩道で延伸（往復約6.5km） → ゴール",
+      "summary": "多摩川駅から丸子橋、沼部駅、下丸子駅を経て蒲田駅へ抜ける駅間。浅間神社と多摩川大橋・六郷橋の名称ノードが見つからず含めていない。旧案の右岸堤防路の往復延伸は採らない。",
       "routeText": "経路ノード： 多摩川駅 → 浅間神社 → 丸子橋 → 多摩川大橋 → 蒲田駅 → 京急蒲田駅 → 六郷橋方面の多摩川右岸堤防路方面へ実在の歩道で延伸（往復約6.5km） → ゴール",
-      "tags": [],
+      "tags": [
+        "川",
+        "橋",
+        "堤防",
+        "駅間"
+      ],
       "route": {
         "id": "no-36-legacy",
         "variant": "legacy",
@@ -12419,17 +13416,7 @@
         "repeatedGeometryPct": 1.9,
         "maxWaypointToShapeM": 28,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "partial_dem_filled",
-          "url": "data/elevation/no-36.json",
-          "totalM": 6491,
-          "climbM": 18.6,
-          "descentM": 26.5,
-          "minM": 2.4,
-          "maxM": 19.2
-        }
+        "engine": "valhalla-pedestrian"
       },
       "waypoints": [
         {
@@ -12457,7 +13444,198 @@
       "climbM": 54.2,
       "descentM": 64.6,
       "auditFlags": [],
-      "category": "main"
+      "category": "main",
+      "defaultVariant": "standard",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "OpenStreetMap（多摩川駅・丸子橋・沼部駅・下丸子駅・蒲田駅）",
+          "url": "https://www.openstreetmap.org/",
+          "checkedAt": "2026-11-16",
+          "supports": "駅・施設・公園の名称ノードの座標。入口ではない。"
+        },
+        {
+          "type": "community",
+          "title": "旧資料 No.36（先行ページ index.html）",
+          "url": null,
+          "checkedAt": "2026-11-16",
+          "supports": "旧案の立ち寄り先。右岸堤防路の往復延伸は採用していない。"
+        }
+      ],
+      "openQuestions": [
+        "浅間神社（多摩川浅間神社）の座標",
+        "多摩川大橋・六郷橋の座標",
+        "堤防路の位置と通行条件",
+        "蒲田駅から京急蒲田駅への経路"
+      ],
+      "routeOptions": [
+        {
+          "id": "no-36-standard",
+          "variant": "standard",
+          "strategy": "scenic",
+          "geometryUrl": "data/routes/no-36-standard.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 6230,
+          "engineDistanceM": 6228,
+          "repeatedGeometryPct": 0.7,
+          "routeReason": "多摩川駅から丸子橋、沼部駅、下丸子駅を経て蒲田駅へ。計算上6.23km。多摩川の堤防路の位置は未確認のため、名称付きの駅と橋のみを経由点にした。浅間神社と多摩川大橋・六郷橋は名称ノードが見つからず含めていない。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
+          "distanceException": "6.23km。5〜6kmを少し超えるが、駅と橋を結んだ自然な駅間で、切り詰めはしない。",
+          "retraceException": "計算上の重なりは約45m（沼部駅と下丸子駅の出入口付近）。",
+          "waypoints": [
+            {
+              "index": 0,
+              "id": "tamagawa_st",
+              "label": "多摩川駅",
+              "description": null,
+              "point": [
+                139.6690534,
+                35.5895
+              ],
+              "source": "OSM stop 多摩川"
+            },
+            {
+              "index": 1,
+              "id": "maruko",
+              "label": "丸子橋",
+              "description": null,
+              "point": [
+                139.6699914,
+                35.5858319
+              ],
+              "source": "OSM node 丸子橋"
+            },
+            {
+              "index": 2,
+              "id": "nunobe",
+              "label": "沼部駅",
+              "description": null,
+              "point": [
+                139.6730398,
+                35.582856
+              ],
+              "source": "OSM station 沼部"
+            },
+            {
+              "index": 3,
+              "id": "shimomaruko",
+              "label": "下丸子駅",
+              "description": null,
+              "point": [
+                139.6853944,
+                35.5712509
+              ],
+              "source": "OSM stop 下丸子"
+            },
+            {
+              "index": 4,
+              "id": "kamata",
+              "label": "蒲田駅",
+              "description": null,
+              "point": [
+                139.7149788,
+                35.5617501
+              ],
+              "source": "OSM stop 蒲田"
+            }
+          ],
+          "engine": "valhalla-pedestrian",
+          "built": "2026-11-15T22:09:15.698Z",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "dem",
+            "url": "data/elevation/no-36-standard.json",
+            "totalM": 6230,
+            "climbM": 12.9,
+            "descentM": 20.2,
+            "minM": 2.8,
+            "maxM": 14.1
+          }
+        },
+        {
+          "id": "no-36-rainy",
+          "variant": "rainy",
+          "strategy": "indoor_rail",
+          "verificationStatus": "researched",
+          "distanceM": null,
+          "routeReason": "雨の日は駅から駅へ電車で移動し、多摩川沿いの歩きを短縮する案。堤防路は屋根がなく強風に注意。",
+          "segments": [
+            {
+              "kind": "walk_outdoor",
+              "from": "多摩川駅",
+              "to": "丸子橋",
+              "distanceM": null,
+              "note": "屋根なし。傘が必要。"
+            },
+            {
+              "kind": "rail",
+              "from": "沼部駅",
+              "to": "蒲田駅",
+              "distanceM": null,
+              "note": "東急多摩川線。"
+            },
+            {
+              "kind": "walk_indoor",
+              "from": "蒲田駅",
+              "to": "駅ビル・駅前アーケード",
+              "distanceM": null,
+              "note": "屋根のある通路の有無は未確認。"
+            }
+          ],
+          "conditions": [
+            "堤防路は増水時に立入規制がある。",
+            "強風時は丸子橋の歩道が危険。"
+          ],
+          "geometryUrl": null,
+          "waypoints": []
+        },
+        {
+          "id": "no-36-legacy",
+          "variant": "legacy",
+          "strategy": "legacy_unknown",
+          "geometryUrl": "data/routes/no-36.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 6491,
+          "engineDistanceM": 6496,
+          "targetDistanceM": 6200,
+          "repeatedGeometryPct": 1.9,
+          "maxWaypointToShapeM": 28,
+          "built": "2026-08-29",
+          "engine": "valhalla-pedestrian",
+          "waypoints": [
+            {
+              "index": 0,
+              "point": [
+                139.6688,
+                35.59
+              ]
+            },
+            {
+              "index": 1,
+              "point": [
+                139.6685,
+                35.5878
+              ]
+            },
+            {
+              "index": 2,
+              "point": [
+                139.7195,
+                35.5665
+              ]
+            }
+          ],
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/no-36.json",
+            "totalM": 6491,
+            "climbM": 18.6,
+            "descentM": 26.5,
+            "minM": 2.4,
+            "maxM": 19.2
+          }
+        }
+      ]
     },
     {
       "id": "No.37",

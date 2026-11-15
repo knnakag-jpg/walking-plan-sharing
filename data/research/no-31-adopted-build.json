@@ -1,0 +1,67 @@
+{
+  "generatedAt": "2026-11-15T22:07:00.395Z",
+  "method": "Valhalla pedestrian; exact geometry edge repeat is only a screening clue",
+  "results": [
+    {
+      "variant": "standard",
+      "distanceM": 1876,
+      "engineDistanceM": 1877,
+      "repeatedGeometryM": 0,
+      "repeatedGeometryPct": 0,
+      "waypoints": [
+        {
+          "id": "akasaka_mitsuke",
+          "label": "赤坂見附駅",
+          "coord": [
+            35.6783939,
+            139.7362919
+          ],
+          "source": "OSM node 赤坂見附"
+        },
+        {
+          "id": "benkeibashi",
+          "label": "弁慶橋（弁慶橋ボート場）",
+          "coord": [
+            35.6790238,
+            139.7361427
+          ],
+          "source": "OSM slipway 弁慶橋ボート場"
+        },
+        {
+          "id": "kioicho",
+          "label": "紀尾井町",
+          "coord": [
+            35.6829787,
+            139.7382083
+          ],
+          "source": "OSM node 紀尾井町（バス停）"
+        },
+        {
+          "id": "sophia",
+          "label": "上智大学",
+          "coord": [
+            35.6841133,
+            139.7321897
+          ],
+          "source": "OSM university 上智大学"
+        },
+        {
+          "id": "yotsuya_st",
+          "label": "四ツ谷駅",
+          "coord": [
+            35.6864638,
+            139.7299811
+          ],
+          "source": "OSM node 四谷駅"
+        }
+      ],
+      "legDistancesKm": [
+        0.08,
+        0.73,
+        0.68,
+        0.38
+      ],
+      "geometryUrl": "data/routes/no-31-standard.geojson"
+    }
+  ]
+}
