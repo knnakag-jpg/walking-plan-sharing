@@ -1,7 +1,13 @@
 {
   "reportedAt": "2026-11-14",
   "source": "user_observation",
-  "courseIds": ["No.5", "No.7", "No.8", "No.11", "No.17", "No.23"],
+  "courseIds": [
+    "No.5",
+    "No.8",
+    "No.11",
+    "No.17",
+    "No.23"
+  ],
   "status": "needs_individual_redesign",
   "note": "同じ線をなぞる区間があるとの指摘。既存の形状反復値は調査の手掛かりで、歩道・施設内・橋の条件や代替道路は未確認。"
 }

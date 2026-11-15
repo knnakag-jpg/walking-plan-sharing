@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T12:52:55.416Z",
+  "generatedAt": "2026-11-15T13:01:13.624Z",
   "interpretation": "Mechanical triage only. Source and map review required before adopting any new route.",
   "records": [
     {
@@ -2749,50 +2749,6 @@
       ]
     },
     {
-      "id": "No.7",
-      "title": "高輪ゲートウェイ～品川",
-      "series": "本編 A～Z（No.1～26）",
-      "workStatus": "research_needed",
-      "legacy": {
-        "geometryUrl": "data/routes/no-7.geojson",
-        "walkingDistanceM": 5612,
-        "repeatedGeometryPct": 4.2,
-        "repeatedGeometryM": 234,
-        "maxWaypointToShapeM": 34,
-        "repeatedWaypoints": [],
-        "gateResult": "OK"
-      },
-      "existingNewVariants": [],
-      "coordinateReview": "not_started",
-      "sourceResearch": "research_started",
-      "historicalRoutingStrategies": [],
-      "transportHints": [],
-      "possibleDistanceFiller": false,
-      "retraceReview": {
-        "reportedAt": "2026-11-14",
-        "source": "user_observation",
-        "status": "needs_individual_redesign",
-        "repeatedGeometryM": 234,
-        "repeatedGeometryPct": 4.2,
-        "note": "同じ線をなぞる区間があるとの指摘。既存の形状反復値は調査の手掛かりで、歩道・施設内・橋の条件や代替道路は未確認。"
-      },
-      "priorityScore": 40,
-      "issues": [
-        "retraced_geometry_over_100m",
-        "user_reported_retrace"
-      ],
-      "checklist": [
-        "公式の地域・施設資料を収集し、確認日を記録",
-        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
-        "駅の出入口・施設の入口・横断・通行条件を照合",
-        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
-        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
-        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
-        "旧経路との差分・採用理由・未確認事項を記録"
-      ]
-    },
-    {
       "id": "Z1",
       "title": "広島・平和記念公園と川と橋",
       "series": "全国・いつか行きたい（広島・神戸・福岡ほか）",
@@ -3724,6 +3680,58 @@
       "priorityScore": 15,
       "issues": [
         "waypoint_off_shape",
+        "retraced_geometry_over_100m"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
+      "id": "No.7",
+      "title": "高輪ゲートウェイと品川・北品川",
+      "series": "本編 A～Z（No.1～26）",
+      "workStatus": "partial_rebuild",
+      "legacy": {
+        "geometryUrl": "data/routes/no-7.geojson",
+        "walkingDistanceM": 5612,
+        "repeatedGeometryPct": 4.2,
+        "repeatedGeometryM": 234,
+        "maxWaypointToShapeM": 34,
+        "repeatedWaypoints": [],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [
+        {
+          "variant": "standard",
+          "status": "routed",
+          "distanceM": 4622
+        },
+        {
+          "variant": "extended",
+          "status": "routed",
+          "distanceM": 9114
+        },
+        {
+          "variant": "rainy",
+          "status": "researched",
+          "distanceM": null
+        }
+      ],
+      "coordinateReview": "not_started",
+      "sourceResearch": "source_research_in_progress",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": false,
+      "retraceReview": null,
+      "priorityScore": 15,
+      "issues": [
         "retraced_geometry_over_100m"
       ],
       "checklist": [

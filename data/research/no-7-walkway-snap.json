@@ -1,0 +1,106 @@
+{
+ "takanawa_gw": {
+  "snapped": [
+   35.6355265,
+   139.7406315
+  ],
+  "movedM": 9,
+  "wayId": 1207169863
+ },
+ "takanawa_okido": {
+  "snapped": [
+   35.640175,
+   139.7409267
+  ],
+  "movedM": 1,
+  "wayId": 993380117
+ },
+ "sengakuji": {
+  "snapped": [
+   35.6387114,
+   139.739953
+  ],
+  "movedM": 16,
+  "wayId": 176742157
+ },
+ "sengakuji_st": {
+  "snapped": [
+   35.6377427,
+   139.7391684
+  ],
+  "movedM": 0,
+  "wayId": 1083758716
+ },
+ "shinagawa_high": {
+  "snapped": [
+   35.6282857,
+   139.7377732
+  ],
+  "movedM": 8,
+  "wayId": 686575939
+ },
+ "shinagawa_st": {
+  "snapped": [
+   35.6282922,
+   139.7380153
+  ],
+  "movedM": 26,
+  "wayId": 686575939
+ },
+ "yatsuyama": {
+  "snapped": [
+   35.6248671,
+   139.7382503
+  ],
+  "movedM": 0,
+  "wayId": 1241505783
+ },
+ "kita_shinagawa": {
+  "snapped": [
+   35.6205303,
+   139.7400087
+  ],
+  "movedM": 0,
+  "wayId": 93320066
+ },
+ "shinagawa_jinja": {
+  "snapped": [
+   35.6183959,
+   139.7406206
+  ],
+  "movedM": 5,
+  "wayId": 229854234
+ },
+ "aomono_st": {
+  "snapped": [
+   35.6102661,
+   139.743312
+  ],
+  "movedM": 15,
+  "wayId": 1308099444
+ },
+ "shibaura_st": {
+  "snapped": [
+   35.6417259,
+   139.7577715
+  ],
+  "movedM": 0,
+  "wayId": 671327133
+ },
+ "daiba": {
+  "snapped": [
+   35.6349662,
+   139.7686928
+  ],
+  "movedM": 3,
+  "wayId": 4848879
+ },
+ "odaiba_kaihin": {
+  "snapped": [
+   35.6294566,
+   139.7746425
+  ],
+  "movedM": 8,
+  "wayId": 659293976
+ }
+}

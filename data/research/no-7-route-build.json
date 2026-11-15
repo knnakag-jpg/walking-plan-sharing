@@ -1,0 +1,263 @@
+{
+  "calculatedAt": "2026-11-15T13:00:32.330Z",
+  "variants": {
+    "standard": {
+      "label": "A 高輪ゲートウェイ→高輪大木戸→泉岳寺→品川→北品川→品川神社→青物横丁駅",
+      "distanceM": 4622,
+      "engineDistanceM": 4622,
+      "repeatedGeometryM": 124,
+      "legKm": [
+        0.66,
+        0.2,
+        0.14,
+        1.13,
+        0.02,
+        0.56,
+        0.53,
+        0.28,
+        1.1
+      ],
+      "stops": [
+        {
+          "id": "takanawa_gw",
+          "label": "高輪ゲートウェイ駅",
+          "coord": [
+            35.6355265,
+            139.7406315
+          ],
+          "osmCentre": [
+            35.63559,
+            139.7407
+          ],
+          "movedToWalkwayM": 9,
+          "source": "OSM station; exit pending",
+          "offsetM": 0
+        },
+        {
+          "id": "takanawa_okido",
+          "label": "高輪大木戸跡",
+          "coord": [
+            35.640175,
+            139.7409267
+          ],
+          "osmCentre": [
+            35.64017,
+            139.74093
+          ],
+          "movedToWalkwayM": 1,
+          "source": "OSM node 31296890 高輪大木戸跡",
+          "offsetM": 0
+        },
+        {
+          "id": "sengakuji",
+          "label": "泉岳寺",
+          "coord": [
+            35.6387114,
+            139.739953
+          ],
+          "osmCentre": [
+            35.63864,
+            139.74011
+          ],
+          "movedToWalkwayM": 16,
+          "source": "OSM node 2099275533 泉岳寺",
+          "offsetM": 0
+        },
+        {
+          "id": "sengakuji_st",
+          "label": "泉岳寺駅",
+          "coord": [
+            35.6377427,
+            139.7391684
+          ],
+          "osmCentre": [
+            35.63774,
+            139.73917
+          ],
+          "movedToWalkwayM": 0,
+          "source": "OSM node 2262661501 泉岳寺駅",
+          "offsetM": 4
+        },
+        {
+          "id": "shinagawa_high",
+          "label": "品川駅（高輪口）",
+          "coord": [
+            35.6282857,
+            139.7377732
+          ],
+          "osmCentre": [
+            35.62832,
+            139.7377
+          ],
+          "movedToWalkwayM": 8,
+          "source": "OSM node 3938821105 品川駅高輪口",
+          "offsetM": 0
+        },
+        {
+          "id": "shinagawa_st",
+          "label": "品川駅（港南口）",
+          "coord": [
+            35.6282922,
+            139.7380153
+          ],
+          "osmCentre": [
+            35.62867,
+            139.73917
+          ],
+          "movedToWalkwayM": 26,
+          "source": "OSM station node 品川（港南口側）",
+          "offsetM": 0
+        },
+        {
+          "id": "yatsuyama",
+          "label": "八ツ山橋",
+          "coord": [
+            35.6248671,
+            139.7382503
+          ],
+          "osmCentre": [
+            35.62487,
+            139.73825
+          ],
+          "movedToWalkwayM": 0,
+          "source": "OSM node 1304248741 八ツ山橋",
+          "offsetM": 0
+        },
+        {
+          "id": "kita_shinagawa",
+          "label": "北品川",
+          "coord": [
+            35.6205303,
+            139.7400087
+          ],
+          "osmCentre": [
+            35.62053,
+            139.74001
+          ],
+          "movedToWalkwayM": 0,
+          "source": "OSM node 1081989778 北品川",
+          "offsetM": 0
+        },
+        {
+          "id": "shinagawa_jinja",
+          "label": "品川神社",
+          "coord": [
+            35.6183959,
+            139.7406206
+          ],
+          "osmCentre": [
+            35.61837,
+            139.74066
+          ],
+          "movedToWalkwayM": 5,
+          "source": "OSM node 5336284605 品川神社",
+          "offsetM": 0
+        },
+        {
+          "id": "aomono_st",
+          "label": "青物横丁駅",
+          "coord": [
+            35.6102661,
+            139.743312
+          ],
+          "osmCentre": [
+            35.61024,
+            139.74315
+          ],
+          "movedToWalkwayM": 15,
+          "source": "OSM node 1893803482 青物横丁駅",
+          "offsetM": 0
+        }
+      ]
+    },
+    "extended": {
+      "label": "B 高輪ゲートウェイ→品川→芝浦ふ頭→台場→お台場海浜公園駅前",
+      "distanceM": 9114,
+      "engineDistanceM": 9118,
+      "repeatedGeometryM": 83,
+      "legKm": [
+        1.07,
+        3.25,
+        2.7,
+        2.1
+      ],
+      "stops": [
+        {
+          "id": "takanawa_gw",
+          "label": "高輪ゲートウェイ駅",
+          "coord": [
+            35.6355265,
+            139.7406315
+          ],
+          "osmCentre": [
+            35.63559,
+            139.7407
+          ],
+          "movedToWalkwayM": 9,
+          "source": "OSM station; exit pending",
+          "offsetM": 4
+        },
+        {
+          "id": "shinagawa_st",
+          "label": "品川駅（港南口）",
+          "coord": [
+            35.6282922,
+            139.7380153
+          ],
+          "osmCentre": [
+            35.62867,
+            139.73917
+          ],
+          "movedToWalkwayM": 26,
+          "source": "OSM station node 品川（港南口側）",
+          "offsetM": 0
+        },
+        {
+          "id": "shibaura_st",
+          "label": "芝浦ふ頭駅",
+          "coord": [
+            35.6417259,
+            139.7577715
+          ],
+          "osmCentre": [
+            35.64173,
+            139.75777
+          ],
+          "movedToWalkwayM": 0,
+          "source": "OSM node 31252846 芝浦ふ頭",
+          "offsetM": 0
+        },
+        {
+          "id": "daiba",
+          "label": "台場（海浜公園方面）",
+          "coord": [
+            35.6349662,
+            139.7686928
+          ],
+          "osmCentre": [
+            35.63494,
+            139.76868
+          ],
+          "movedToWalkwayM": 3,
+          "source": "OSM node 31236584 台場; entrance needs map review",
+          "offsetM": 0
+        },
+        {
+          "id": "odaiba_kaihin",
+          "label": "お台場海浜公園駅前",
+          "coord": [
+            35.6294566,
+            139.7746425
+          ],
+          "osmCentre": [
+            35.6294,
+            139.7747
+          ],
+          "movedToWalkwayM": 8,
+          "source": "OSM bus_stop お台場海浜公園駅前; station exit needs map review",
+          "offsetM": 4
+        }
+      ]
+    }
+  }
+}

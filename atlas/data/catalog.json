@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "source": "legacy import; route quality not re-reviewed",
-  "generatedAt": "2026-11-15T12:52:55.317Z",
+  "generatedAt": "2026-11-15T13:00:58.918Z",
   "courses": [
     {
       "id": "No.1",
@@ -1090,19 +1090,19 @@
     {
       "id": "No.7",
       "slug": "no-7",
-      "title": "高輪ゲートウェイ～品川",
+      "title": "高輪ゲートウェイと品川・北品川",
       "seriesId": "main",
       "seriesName": "本編 A～Z（No.1～26）",
       "legacyAnchor": "course-7",
       "legacyUrl": "../index.html#course-7",
-      "summary": "都心最後の大規模鉄道用地転換地に生まれた新街区を、開業間もないタイミングで通しで歩く。全面が最新のバリアフリー基準で設計されており、駅からデッキ、デッキから広場まで段差ゼロで接続する。線路際の眺望デッキからは在来線・新幹線が連続して見え、鉄道関連の見どころが濃い。泉岳寺門前から第一京浜沿い・高輪二丁目の平坦な道をたどり、高輪皇族邸の緑を麓から望む、静かな街歩きも新たに加わった。柘榴坂の往復はやめ、品川駅・港南口を経て天王洲アイル駅で解散する引き返さない一筆書きとした。",
+      "summary": "高輪ゲートウェイ駅から高輪大木戸跡と泉岳寺を通り、駅の南北を通り抜けて品川神社・青物横丁駅へ抜ける駅間ワンウェイ（A）。Bは芝浦ふ頭からレインボーブリッジを渡って台場まで伸ばす。旧案の品川駅構内の行き来は計算結果に残る短い重なりのみとし、距離合わせの往復は加えない。",
       "routeText": "経路ノード： 高輪ゲートウェイ駅 → 新街区 → 高輪大木戸跡 → 泉岳寺山門前 → 第一京浜沿い → 高輪二丁目 → 品川駅 → 港南口 → 天王洲アイル駅（解散） → ゴール",
       "tags": [
-        "テック",
-        "鉄道",
-        "先端建築",
-        "フォトジェニック",
-        "ガジェット"
+        "旧東海道",
+        "宿場町",
+        "高輪",
+        "海辺",
+        "橋"
       ],
       "route": {
         "id": "no-7-legacy",
@@ -1116,17 +1116,7 @@
         "repeatedGeometryPct": 4.2,
         "maxWaypointToShapeM": 34,
         "built": "2026-10-18",
-        "engine": "valhalla-pedestrian",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "partial_dem_filled",
-          "url": "data/elevation/no-7.json",
-          "totalM": 5612,
-          "climbM": 21.1,
-          "descentM": 21.3,
-          "minM": 1.7,
-          "maxM": 8
-        }
+        "engine": "valhalla-pedestrian"
       },
       "waypoints": [
         {
@@ -1190,14 +1180,393 @@
       "descentM": 115.2,
       "auditFlags": [],
       "category": "main",
-      "retraceReview": {
-        "reportedAt": "2026-11-14",
-        "source": "user_observation",
-        "status": "needs_individual_redesign",
-        "repeatedGeometryM": 234,
-        "repeatedGeometryPct": 4.2,
-        "note": "同じ線をなぞる区間があるとの指摘。既存の形状反復値は調査の手掛かりで、歩道・施設内・橋の条件や代替道路は未確認。"
-      }
+      "defaultVariant": "standard",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "旧資料 No.7（先行ページ index.html）",
+          "url": null,
+          "checkedAt": "2026-11-15",
+          "supports": "旧案の立ち寄り先。距離合わせの往復は採用していない。"
+        },
+        {
+          "type": "community",
+          "title": "OpenStreetMap（駅・高輪大木戸跡・泉岳寺・八ツ山橋・品川神社）",
+          "url": "https://www.openstreetmap.org/",
+          "checkedAt": "2026-11-15",
+          "supports": "駅と史跡の名称ノードの座標。入口ではない。"
+        }
+      ],
+      "scenicSegments": [
+        {
+          "name": "高輪大木戸跡と旧東海道",
+          "theme": "江戸の入口と板の石垣",
+          "direction": "高輪ゲートウェイから泉岳寺へ",
+          "reviewStatus": "候補・歩道と大木戸の位置を地図で照合待ち",
+          "evidenceTitle": "OpenStreetMap"
+        },
+        {
+          "name": "レインボーブリッジと台場",
+          "theme": "橋と海辺の景観",
+          "direction": "芝浦ふ頭から台場へ",
+          "reviewStatus": "未確証・橋の歩道が徒歩で通れるか地図で照合待ち",
+          "evidenceTitle": "OpenStreetMap"
+        },
+        {
+          "name": "北品川の旧東海道",
+          "theme": "宿場町の町並み",
+          "direction": "品川から北品川へ南へ",
+          "reviewStatus": "候補・商店街の歩行部分を地図で照合待ち",
+          "evidenceTitle": "OpenStreetMap"
+        }
+      ],
+      "openQuestions": [
+        "レインボーブリッジの歩道が徒歩で通れるか（自転車専用の時間帯・通路の区分）",
+        "台場・お台場海浜公園駅の入口",
+        "泉岳寺の拝観時間・拝観料",
+        "品川駅の高輪口と港南口の南北通路が歩行者に開放されているか",
+        "品川プリンスホテル館内の通り抜け可否"
+      ],
+      "routeOptions": [
+        {
+          "id": "no-7-standard",
+          "variant": "standard",
+          "strategy": "scenic",
+          "geometryUrl": "data/routes/no-7-standard.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 4622,
+          "engineDistanceM": 4622,
+          "repeatedGeometryPct": 2.7,
+          "routeReason": "高輪ゲートウェイ駅から高輪大木戸跡、泉岳寺、泉岳寺駅前を通り、品川駅の高輪口から港南口へ駅を抜け、八ツ山橋、北品川、品川神社を経て青物横丁駅へ。計算上4.62km。品川駅の南北の通り抜けで約76m重なる。",
+          "distanceException": "4.62km。実在の駅と通りだけを結んだため5〜6kmに届かない。距離合わせの延伸は作らない。",
+          "retraceException": "品川駅の高輪口から港南口へ抜ける通路で約76m、北品川の駅前付近で約56m、高輪大木戸跡で約39m（計約124m）。駅の反対側へ出るための通路と交差点の横断で生じる短い往復で、距離合わせではない。",
+          "waypoints": [
+            {
+              "index": 0,
+              "id": "takanawa_gw",
+              "label": "高輪ゲートウェイ駅",
+              "description": null,
+              "point": [
+                139.7406315,
+                35.6355265
+              ],
+              "source": "OSM station; exit pending"
+            },
+            {
+              "index": 1,
+              "id": "takanawa_okido",
+              "label": "高輪大木戸跡",
+              "description": null,
+              "point": [
+                139.7409267,
+                35.640175
+              ],
+              "source": "OSM node 31296890 高輪大木戸跡"
+            },
+            {
+              "index": 2,
+              "id": "sengakuji",
+              "label": "泉岳寺",
+              "description": null,
+              "point": [
+                139.739953,
+                35.6387114
+              ],
+              "source": "OSM node 2099275533 泉岳寺"
+            },
+            {
+              "index": 3,
+              "id": "sengakuji_st",
+              "label": "泉岳寺駅",
+              "description": null,
+              "point": [
+                139.7391684,
+                35.6377427
+              ],
+              "source": "OSM node 2262661501 泉岳寺駅"
+            },
+            {
+              "index": 4,
+              "id": "shinagawa_high",
+              "label": "品川駅（高輪口）",
+              "description": null,
+              "point": [
+                139.7377732,
+                35.6282857
+              ],
+              "source": "OSM node 3938821105 品川駅高輪口"
+            },
+            {
+              "index": 5,
+              "id": "shinagawa_st",
+              "label": "品川駅（港南口）",
+              "description": null,
+              "point": [
+                139.7380153,
+                35.6282922
+              ],
+              "source": "OSM station node 品川（港南口側）"
+            },
+            {
+              "index": 6,
+              "id": "yatsuyama",
+              "label": "八ツ山橋",
+              "description": null,
+              "point": [
+                139.7382503,
+                35.6248671
+              ],
+              "source": "OSM node 1304248741 八ツ山橋"
+            },
+            {
+              "index": 7,
+              "id": "kita_shinagawa",
+              "label": "北品川",
+              "description": null,
+              "point": [
+                139.7400087,
+                35.6205303
+              ],
+              "source": "OSM node 1081989778 北品川"
+            },
+            {
+              "index": 8,
+              "id": "shinagawa_jinja",
+              "label": "品川神社",
+              "description": null,
+              "point": [
+                139.7406206,
+                35.6183959
+              ],
+              "source": "OSM node 5336284605 品川神社"
+            },
+            {
+              "index": 9,
+              "id": "aomono_st",
+              "label": "青物横丁駅",
+              "description": null,
+              "point": [
+                139.743312,
+                35.6102661
+              ],
+              "source": "OSM node 1893803482 青物横丁駅"
+            }
+          ],
+          "engine": "valhalla-pedestrian",
+          "built": "2026-11-15T13:00:32.330Z",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/no-7-standard.json",
+            "totalM": 4622,
+            "climbM": 26.6,
+            "descentM": 25.7,
+            "minM": 2.8,
+            "maxM": 14.4
+          }
+        },
+        {
+          "id": "no-7-extended",
+          "variant": "extended",
+          "strategy": "scenic",
+          "geometryUrl": "data/routes/no-7-extended.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 9114,
+          "engineDistanceM": 9118,
+          "repeatedGeometryPct": 0.9,
+          "routeReason": "Aの高輪ゲートウェイから品川駅へ下り、芝浦ふ頭駅からレインボーブリッジの都道を経て台場、お台場海浜公園駅前へ。計算上9.11km。台場の入口と橋の歩道の通行を地図で確認する必要がある。距離は7〜8kmを超える。",
+          "distanceException": "9.11km。7〜8kmの目標を超えるが、芝浦ふ頭から台場までを実在の橋の歩道でつないだ結果で、短縮のための中途半端な切り詰めはしない。",
+          "retraceException": "品川駅の南北の通り抜けで約56m、芝浦ふ頭駅前で約27m（計約83m）。駅の反対側へ出るための短い往復。",
+          "waypoints": [
+            {
+              "index": 0,
+              "id": "takanawa_gw",
+              "label": "高輪ゲートウェイ駅",
+              "description": null,
+              "point": [
+                139.7406315,
+                35.6355265
+              ],
+              "source": "OSM station; exit pending"
+            },
+            {
+              "index": 1,
+              "id": "shinagawa_st",
+              "label": "品川駅（港南口）",
+              "description": null,
+              "point": [
+                139.7380153,
+                35.6282922
+              ],
+              "source": "OSM station node 品川（港南口側）"
+            },
+            {
+              "index": 2,
+              "id": "shibaura_st",
+              "label": "芝浦ふ頭駅",
+              "description": null,
+              "point": [
+                139.7577715,
+                35.6417259
+              ],
+              "source": "OSM node 31252846 芝浦ふ頭"
+            },
+            {
+              "index": 3,
+              "id": "daiba",
+              "label": "台場（海浜公園方面）",
+              "description": null,
+              "point": [
+                139.7686928,
+                35.6349662
+              ],
+              "source": "OSM node 31236584 台場; entrance needs map review"
+            },
+            {
+              "index": 4,
+              "id": "odaiba_kaihin",
+              "label": "お台場海浜公園駅前",
+              "description": null,
+              "point": [
+                139.7746425,
+                35.6294566
+              ],
+              "source": "OSM bus_stop お台場海浜公園駅前; station exit needs map review"
+            }
+          ],
+          "engine": "valhalla-pedestrian",
+          "built": "2026-11-15T13:00:32.330Z",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/no-7-extended.json",
+            "totalM": 9114,
+            "climbM": 23.4,
+            "descentM": 22.9,
+            "minM": 1.6,
+            "maxM": 6.5
+          }
+        },
+        {
+          "id": "no-7-rainy",
+          "variant": "rainy",
+          "strategy": "indoor_rail",
+          "verificationStatus": "researched",
+          "distanceM": null,
+          "routeReason": "雨の日は泉岳寺と品川プリンスホテル周辺の館内・屋根のある通路を中心にする案。連続した屋内徒歩コースとしては未検証。",
+          "segments": [
+            {
+              "kind": "walk_outdoor",
+              "from": "泉岳寺駅",
+              "to": "泉岳寺",
+              "distanceM": null,
+              "note": "屋根のない区間あり。傘が必要。"
+            },
+            {
+              "kind": "walk_outdoor",
+              "from": "泉岳寺",
+              "to": "品川駅高輪口",
+              "distanceM": null,
+              "note": "坂道。雨天の滑りやすさは未確認。"
+            },
+            {
+              "kind": "walk_indoor",
+              "from": "品川駅高輪口",
+              "to": "品川プリンスホテル",
+              "distanceM": null,
+              "note": "館内の連続歩行と公開範囲は未確認。"
+            }
+          ],
+          "conditions": [
+            "泉岳寺の拝観時間・拝観料を当日確認。",
+            "品川プリンスホテル館内の通り抜け可否は未確認。"
+          ],
+          "geometryUrl": null,
+          "waypoints": []
+        },
+        {
+          "id": "no-7-legacy",
+          "variant": "legacy",
+          "strategy": "legacy_unknown",
+          "geometryUrl": "data/routes/no-7.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 5612,
+          "engineDistanceM": 5617,
+          "targetDistanceM": 5600,
+          "repeatedGeometryPct": 4.2,
+          "maxWaypointToShapeM": 34,
+          "built": "2026-10-18",
+          "engine": "valhalla-pedestrian",
+          "waypoints": [
+            {
+              "index": 0,
+              "point": [
+                139.7407,
+                35.6358
+              ]
+            },
+            {
+              "index": 1,
+              "point": [
+                139.73917,
+                35.63774
+              ]
+            },
+            {
+              "index": 2,
+              "point": [
+                139.74079,
+                35.64022
+              ]
+            },
+            {
+              "index": 3,
+              "point": [
+                139.7366,
+                35.6335
+              ]
+            },
+            {
+              "index": 4,
+              "point": [
+                139.7392,
+                35.6286
+              ]
+            },
+            {
+              "index": 5,
+              "point": [
+                139.742,
+                35.62961
+              ]
+            },
+            {
+              "index": 6,
+              "point": [
+                139.74204,
+                35.62638
+              ]
+            },
+            {
+              "index": 7,
+              "point": [
+                139.75082,
+                35.62278
+              ]
+            }
+          ],
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/no-7.json",
+            "totalM": 5612,
+            "climbM": 21.1,
+            "descentM": 21.3,
+            "minM": 1.7,
+            "maxM": 8
+          }
+        }
+      ]
     },
     {
       "id": "No.8",

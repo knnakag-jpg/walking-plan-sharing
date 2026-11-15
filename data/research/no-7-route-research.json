@@ -1,12 +1,18 @@
 {
   "id": "No.7",
-  "stage": "research_started",
+  "stage": "source_research_in_progress",
   "checkedAt": "2026-11-14",
   "observedGeometry": {
     "legacyRepeatedGeometryM": 234,
     "largestClusterM": 202,
-    "largestClusterStart": [139.741668, 35.626417],
-    "largestClusterEnd": [139.741813, 35.628225],
+    "largestClusterStart": [
+      139.741668,
+      35.626417
+    ],
+    "largestClusterEnd": [
+      139.741813,
+      35.628225
+    ],
     "interpretation": "品川駅付近の保存済み計算線に南北の往復候補。道路エッジ同定と駅の東西連絡、港南口への動線は未確認。"
   },
   "evidence": [
@@ -24,5 +30,11 @@
     "高輪ゲートウェイ駅〜港南地域の最新の歩行者ルート図と現地案内",
     "天王洲アイル駅までの橋・横断・段差、徒歩ルーターの再計算"
   ],
-  "decision": "No.7の旧線は再設計対象。新しい形状・徒歩距離は未生成。"
+  "decision": "2026-11-15 利用者の指摘（線の反復）を受けてA/Bを実在の駅・史跡で新規計算。A=高輪ゲートウェイ→青物横丁駅(4.62km・反復124m)、B=高輪ゲートウェイ→お台場海浜公園駅前(9.11km・反復83m)。旧案の反復は残る短い通路の往復のみに減った。",
+  "files": [
+    "scripts/osm-poi-area.mjs",
+    "scripts/build-no-7-candidates.mjs",
+    "data/curated/no-7.json",
+    "data/research/no-7-adopted-build.json"
+  ]
 }

@@ -1,0 +1,178 @@
+{
+  "generatedAt": "2026-11-15T13:00:32.330Z",
+  "method": "Valhalla pedestrian; exact geometry edge repeat is only a screening clue",
+  "results": [
+    {
+      "variant": "standard",
+      "distanceM": 4622,
+      "engineDistanceM": 4622,
+      "repeatedGeometryM": 124,
+      "repeatedGeometryPct": 2.7,
+      "waypoints": [
+        {
+          "id": "takanawa_gw",
+          "label": "高輪ゲートウェイ駅",
+          "coord": [
+            35.6355265,
+            139.7406315
+          ],
+          "source": "OSM station; exit pending"
+        },
+        {
+          "id": "takanawa_okido",
+          "label": "高輪大木戸跡",
+          "coord": [
+            35.640175,
+            139.7409267
+          ],
+          "source": "OSM node 31296890 高輪大木戸跡"
+        },
+        {
+          "id": "sengakuji",
+          "label": "泉岳寺",
+          "coord": [
+            35.6387114,
+            139.739953
+          ],
+          "source": "OSM node 2099275533 泉岳寺"
+        },
+        {
+          "id": "sengakuji_st",
+          "label": "泉岳寺駅",
+          "coord": [
+            35.6377427,
+            139.7391684
+          ],
+          "source": "OSM node 2262661501 泉岳寺駅"
+        },
+        {
+          "id": "shinagawa_high",
+          "label": "品川駅（高輪口）",
+          "coord": [
+            35.6282857,
+            139.7377732
+          ],
+          "source": "OSM node 3938821105 品川駅高輪口"
+        },
+        {
+          "id": "shinagawa_st",
+          "label": "品川駅（港南口）",
+          "coord": [
+            35.6282922,
+            139.7380153
+          ],
+          "source": "OSM station node 品川（港南口側）"
+        },
+        {
+          "id": "yatsuyama",
+          "label": "八ツ山橋",
+          "coord": [
+            35.6248671,
+            139.7382503
+          ],
+          "source": "OSM node 1304248741 八ツ山橋"
+        },
+        {
+          "id": "kita_shinagawa",
+          "label": "北品川",
+          "coord": [
+            35.6205303,
+            139.7400087
+          ],
+          "source": "OSM node 1081989778 北品川"
+        },
+        {
+          "id": "shinagawa_jinja",
+          "label": "品川神社",
+          "coord": [
+            35.6183959,
+            139.7406206
+          ],
+          "source": "OSM node 5336284605 品川神社"
+        },
+        {
+          "id": "aomono_st",
+          "label": "青物横丁駅",
+          "coord": [
+            35.6102661,
+            139.743312
+          ],
+          "source": "OSM node 1893803482 青物横丁駅"
+        }
+      ],
+      "legDistancesKm": [
+        0.66,
+        0.2,
+        0.14,
+        1.13,
+        0.02,
+        0.56,
+        0.53,
+        0.28,
+        1.1
+      ],
+      "geometryUrl": "data/routes/no-7-standard.geojson"
+    },
+    {
+      "variant": "extended",
+      "distanceM": 9114,
+      "engineDistanceM": 9118,
+      "repeatedGeometryM": 83,
+      "repeatedGeometryPct": 0.9,
+      "waypoints": [
+        {
+          "id": "takanawa_gw",
+          "label": "高輪ゲートウェイ駅",
+          "coord": [
+            35.6355265,
+            139.7406315
+          ],
+          "source": "OSM station; exit pending"
+        },
+        {
+          "id": "shinagawa_st",
+          "label": "品川駅（港南口）",
+          "coord": [
+            35.6282922,
+            139.7380153
+          ],
+          "source": "OSM station node 品川（港南口側）"
+        },
+        {
+          "id": "shibaura_st",
+          "label": "芝浦ふ頭駅",
+          "coord": [
+            35.6417259,
+            139.7577715
+          ],
+          "source": "OSM node 31252846 芝浦ふ頭"
+        },
+        {
+          "id": "daiba",
+          "label": "台場（海浜公園方面）",
+          "coord": [
+            35.6349662,
+            139.7686928
+          ],
+          "source": "OSM node 31236584 台場; entrance needs map review"
+        },
+        {
+          "id": "odaiba_kaihin",
+          "label": "お台場海浜公園駅前",
+          "coord": [
+            35.6294566,
+            139.7746425
+          ],
+          "source": "OSM bus_stop お台場海浜公園駅前; station exit needs map review"
+        }
+      ],
+      "legDistancesKm": [
+        1.07,
+        3.25,
+        2.7,
+        2.1
+      ],
+      "geometryUrl": "data/routes/no-7-extended.geojson"
+    }
+  ]
+}

@@ -41,7 +41,7 @@ for (const course of legacyCourses) {
     assert(course.retraceReview.repeatedGeometryM === routeAudits.get(course.id)?.repeatedGeometryM, `${course.id}: retrace metric differs from audit`);
   }
 }
-assert(retraceReports.courseIds.length === 6 && new Set(retraceReports.courseIds).size === 6, 'reported retraces must list six distinct courses');
+assert(retraceReports.courseIds.length >= 1 && new Set(retraceReports.courseIds).size === retraceReports.courseIds.length, 'reported retraces must list distinct courses');
 assert(retraceClusters.cases.length === retraceReports.courseIds.length, 'retrace cluster case count differs');
 for (const item of retraceClusters.cases) {
   const course = data.courses.find((entry) => entry.id === item.courseId);

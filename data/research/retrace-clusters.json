@@ -91,55 +91,6 @@
       "status": "geometry_screening_only"
     },
     {
-      "courseId": "No.7",
-      "title": "高輪ゲートウェイ～品川",
-      "geometryUrl": "data/routes/no-7.geojson",
-      "geometrySha256": "886fbc2810fc7beb70227cdbbd73d2a3a3b727e04c39f6d44cb12afa6b7e43e2",
-      "repeatedExactM": 234,
-      "clusters": [
-        {
-          "firstIndex": 25,
-          "lastIndex": 26,
-          "repeatedM": 9,
-          "start": [
-            139.739157,
-            35.637705
-          ],
-          "end": [
-            139.739259,
-            35.637704
-          ]
-        },
-        {
-          "firstIndex": 112,
-          "lastIndex": 113,
-          "repeatedM": 23,
-          "start": [
-            139.736706,
-            35.633445
-          ],
-          "end": [
-            139.736827,
-            35.633295
-          ]
-        },
-        {
-          "firstIndex": 204,
-          "lastIndex": 208,
-          "repeatedM": 202,
-          "start": [
-            139.741668,
-            35.626417
-          ],
-          "end": [
-            139.741813,
-            35.628225
-          ]
-        }
-      ],
-      "status": "geometry_screening_only"
-    },
-    {
       "courseId": "No.8",
       "title": "上野ミュージアムと谷中",
       "geometryUrl": "data/routes/no-8.geojson",
