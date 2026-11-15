@@ -32,7 +32,8 @@ const koremasa = P('koremasa', '是政駅', 35.65631, 139.48932, 'OSM node 41218
 
 const variants = {
   outside: { label: '前提にしない・場外ルート', points: [station, museumRoad, koremasaBridge, kyodoSignal, shrineWest, zuijin, ootorii, fuchu] },
-  inside: { label: '前提にする・競馬場内を通る', points: [station, gateIn, museumWalk, koremasaBridge, kyodoSignal, shrineWest, zuijin, ootorii, fuchu] },
+  race_day: { label: '開催日・正門から入り東門へ抜ける', points: [station, gateIn, museumWalk, koremasaBridge, kyodoSignal, shrineWest, zuijin, ootorii, fuchu] },
+  weekday: { label: '非開催日・東門から入り東門へ戻る', points: [station, museumRoad, museumWalk, museumRoad, koremasaBridge, kyodoSignal, shrineWest, zuijin, ootorii, fuchu] },
 };
 
 const WALKWAY = 'footway|path|pedestrian|living_street|residential|service|steps|tertiary|unclassified|track|cycleway';
