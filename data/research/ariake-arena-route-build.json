@@ -1,20 +1,19 @@
 {
-  "calculatedAt": "2026-11-15T02:12:08.729Z",
+  "calculatedAt": "2026-11-15T02:16:54.612Z",
   "engine": "valhalla-pedestrian",
   "variants": {
-    "via_haruumi": {
-      "label": "E 旧晴海鉄道橋で晴海へ渡る",
-      "distanceM": 8848,
-      "engineDistanceM": 8853,
-      "repeatedGeometryM": 201,
+    "tower_road": {
+      "label": "G 東京タワーを道路側のピンにする",
+      "distanceM": 8780,
+      "engineDistanceM": 8788,
+      "repeatedGeometryM": 16,
       "legKm": [
         0.51,
         1.98,
-        1.51,
-        0.83,
-        0.84,
         2.28,
-        0.92
+        0.84,
+        2.36,
+        0.82
       ],
       "maxStopOffsetM": 5,
       "stops": [
@@ -75,26 +74,6 @@
           "offsetM": 5
         },
         {
-          "id": "kachidoki",
-          "label": "勝どき駅",
-          "coord": [
-            35.6588468,
-            139.7771934
-          ],
-          "osmCentre": [
-            35.65893,
-            139.77733
-          ],
-          "movedToWalkwayM": 15,
-          "walkway": {
-            "wayId": 687108957,
-            "highway": "footway",
-            "name": null
-          },
-          "source": "OSM node 6374714705 bus_stop 勝どき駅",
-          "offsetM": 0
-        },
-        {
           "id": "tsukiji_bridge",
           "label": "築地大橋",
           "coord": [
@@ -135,23 +114,23 @@
           "offsetM": 3
         },
         {
-          "id": "tokyo_tower",
-          "label": "東京タワー",
+          "id": "tower_road",
+          "label": "東京タワー下（道路・バス停）",
           "coord": [
-            35.6587922,
-            139.7456321
+            35.6583693,
+            139.7460741
           ],
           "osmCentre": [
-            35.65856,
-            139.74544
+            35.65835,
+            139.74612
           ],
-          "movedToWalkwayM": 31,
+          "movedToWalkwayM": 5,
           "walkway": {
-            "wayId": 480649484,
-            "highway": "footway",
+            "wayId": 30526238,
+            "highway": "tertiary",
             "name": null
           },
-          "source": "OSM relation 4247312 attraction",
+          "source": "OSM node 9497354785 bus_stop 東京タワー; road side, avoids a dead-end spur to the tower base",
           "offsetM": 0
         },
         {
@@ -176,20 +155,21 @@
         }
       ]
     },
-    "via_haruumi_short": {
-      "label": "F 同・勝どきを通過点にしない",
-      "distanceM": 8797,
-      "engineDistanceM": 8803,
-      "repeatedGeometryM": 201,
+    "tower_zojoji": {
+      "label": "H 東京タワー道路側→増上寺付近→芝公園駅",
+      "distanceM": 8847,
+      "engineDistanceM": 8854,
+      "repeatedGeometryM": 97,
       "legKm": [
         0.51,
         1.98,
         2.28,
         0.84,
-        2.28,
-        0.92
+        2.36,
+        0.33,
+        0.55
       ],
-      "maxStopOffsetM": 5,
+      "maxStopOffsetM": 7,
       "stops": [
         {
           "id": "shintoyosu",
@@ -288,24 +268,44 @@
           "offsetM": 3
         },
         {
-          "id": "tokyo_tower",
-          "label": "東京タワー",
+          "id": "tower_road",
+          "label": "東京タワー下（道路・バス停）",
           "coord": [
-            35.6587922,
-            139.7456321
+            35.6583693,
+            139.7460741
           ],
           "osmCentre": [
-            35.65856,
-            139.74544
+            35.65835,
+            139.74612
           ],
-          "movedToWalkwayM": 31,
+          "movedToWalkwayM": 5,
           "walkway": {
-            "wayId": 480649484,
-            "highway": "footway",
+            "wayId": 30526238,
+            "highway": "tertiary",
             "name": null
           },
-          "source": "OSM relation 4247312 attraction",
+          "source": "OSM node 9497354785 bus_stop 東京タワー; road side, avoids a dead-end spur to the tower base",
           "offsetM": 0
+        },
+        {
+          "id": "zojoji",
+          "label": "増上寺付近",
+          "coord": [
+            35.6578923,
+            139.7486043
+          ],
+          "osmCentre": [
+            35.65783,
+            139.7486
+          ],
+          "movedToWalkwayM": 7,
+          "walkway": {
+            "wayId": 30516539,
+            "highway": "pedestrian",
+            "name": null
+          },
+          "source": "approx. 増上寺 grounds; no OSM node used, needs map review",
+          "offsetM": 7
         },
         {
           "id": "shiba_koen",

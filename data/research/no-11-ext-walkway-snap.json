@@ -1,0 +1,87 @@
+{
+ "checkedAt": "2026-11-15T02:18:44.990Z",
+ "source": "OpenStreetMap via Overpass API; © OpenStreetMap contributors",
+ "kachidoki_st": {
+  "snapped": [
+   35.6588468,
+   139.7771934
+  ],
+  "movedM": 15,
+  "wayId": 687108957,
+  "highway": "footway",
+  "name": null
+ },
+ "harumi_rinkai": {
+  "snapped": [
+   35.6548608,
+   139.7857638
+  ],
+  "movedM": 6,
+  "wayId": 238838000,
+  "highway": "footway",
+  "name": null
+ },
+ "toyosu_ohashi": {
+  "snapped": [
+   35.6469809,
+   139.7864158
+  ],
+  "movedM": 37,
+  "wayId": 1413602807,
+  "highway": "footway",
+  "name": null
+ },
+ "senkyaku": {
+  "snapped": [
+   35.645746,
+   139.7838217
+  ],
+  "movedM": 35,
+  "wayId": 651677197,
+  "highway": "footway",
+  "name": null
+ },
+ "ichibamae": {
+  "snapped": [
+   35.6455531,
+   139.7856933
+  ],
+  "movedM": 24,
+  "wayId": 629545983,
+  "highway": "footway",
+  "name": null
+ },
+ "okujo": {
+  "snapped": [
+   35.6436711,
+   139.7807766
+  ],
+  "movedM": 5,
+  "wayId": 1202384848,
+  "highway": "footway",
+  "name": null
+ },
+ "haruumi_rail": {
+  "snapped": null
+ },
+ "rokuchome": {
+  "snapped": [
+   35.6465432,
+   139.7908102
+  ],
+  "movedM": 8,
+  "wayId": 1191359604,
+  "highway": "footway",
+  "name": null
+ },
+ "toyosu": {
+  "snapped": [
+   35.6544293,
+   139.7958876
+  ],
+  "movedM": 0,
+  "wayId": 670080591,
+  "highway": "footway",
+  "name": "東京メトロ豊洲駅 7番出入口"
+ }
+}

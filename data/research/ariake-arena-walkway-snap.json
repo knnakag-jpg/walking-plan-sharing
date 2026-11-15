@@ -79,5 +79,25 @@
  },
  "haruumi_rail": {
   "snapped": null
+ },
+ "tower_road": {
+  "snapped": [
+   35.6583693,
+   139.7460741
+  ],
+  "movedM": 5,
+  "wayId": 30526238,
+  "highway": "tertiary",
+  "name": null
+ },
+ "zojoji": {
+  "snapped": [
+   35.6578923,
+   139.7486043
+  ],
+  "movedM": 7,
+  "wayId": 30516539,
+  "highway": "pedestrian",
+  "name": null
  }
 }

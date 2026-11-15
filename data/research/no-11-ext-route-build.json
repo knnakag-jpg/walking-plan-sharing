@@ -1,0 +1,368 @@
+{
+  "calculatedAt": "2026-11-15T02:18:10.885Z",
+  "engine": "valhalla-pedestrian",
+  "variants": {
+    "east_half": {
+      "label": "A 勝どき駅→晴海臨海公園→豊洲大橋→千客万来→市場前駅",
+      "distanceM": 3244,
+      "engineDistanceM": 3245,
+      "repeatedGeometryM": 195,
+      "legKm": [
+        1.21,
+        1.37,
+        0.41,
+        0.25
+      ],
+      "maxStopOffsetM": 0,
+      "stops": [
+        {
+          "id": "kachidoki_st",
+          "label": "勝どき駅",
+          "coord": [
+            35.6588468,
+            139.7771934
+          ],
+          "osmCentre": [
+            35.65893,
+            139.77733
+          ],
+          "movedToWalkwayM": 15,
+          "walkway": {
+            "wayId": 687108957,
+            "highway": "footway",
+            "name": null
+          },
+          "source": "OSM node 6374714705 bus_stop 勝どき駅",
+          "offsetM": 0
+        },
+        {
+          "id": "harumi_rinkai",
+          "label": "晴海臨海公園",
+          "coord": [
+            35.6548608,
+            139.7857638
+          ],
+          "osmCentre": [
+            35.65484,
+            139.78582
+          ],
+          "movedToWalkwayM": 6,
+          "walkway": {
+            "wayId": 238838000,
+            "highway": "footway",
+            "name": null
+          },
+          "source": "OSM way 晴海臨海公園; entrance needs confirmation",
+          "offsetM": 0
+        },
+        {
+          "id": "toyosu_ohashi",
+          "label": "豊洲大橋",
+          "coord": [
+            35.6469809,
+            139.7864158
+          ],
+          "osmCentre": [
+            35.6471,
+            139.7868
+          ],
+          "movedToWalkwayM": 37,
+          "walkway": {
+            "wayId": 1413602807,
+            "highway": "footway",
+            "name": null
+          },
+          "source": "approx. 豊洲大橋 west end; no OSM named node used",
+          "offsetM": 0
+        },
+        {
+          "id": "senkyaku",
+          "label": "豊洲 千客万来",
+          "coord": [
+            35.645746,
+            139.7838217
+          ],
+          "osmCentre": [
+            35.64546,
+            139.78366
+          ],
+          "movedToWalkwayM": 35,
+          "walkway": {
+            "wayId": 651677197,
+            "highway": "footway",
+            "name": null
+          },
+          "source": "OSM way 1159017723 centre",
+          "offsetM": 0
+        },
+        {
+          "id": "ichibamae",
+          "label": "市場前駅",
+          "coord": [
+            35.6455531,
+            139.7856933
+          ],
+          "osmCentre": [
+            35.64576,
+            139.78578
+          ],
+          "movedToWalkwayM": 24,
+          "walkway": {
+            "wayId": 629545983,
+            "highway": "footway",
+            "name": null
+          },
+          "source": "OSM node 3349961082 station",
+          "offsetM": 0
+        }
+      ]
+    },
+    "with_okujo": {
+      "label": "B 同・屋上緑化広場→千客万来→市場前駅",
+      "distanceM": 4408,
+      "engineDistanceM": 4406,
+      "repeatedGeometryM": 141,
+      "legKm": [
+        1.21,
+        1.37,
+        0.81,
+        0.76,
+        0.25
+      ],
+      "maxStopOffsetM": 0,
+      "stops": [
+        {
+          "id": "kachidoki_st",
+          "label": "勝どき駅",
+          "coord": [
+            35.6588468,
+            139.7771934
+          ],
+          "osmCentre": [
+            35.65893,
+            139.77733
+          ],
+          "movedToWalkwayM": 15,
+          "walkway": {
+            "wayId": 687108957,
+            "highway": "footway",
+            "name": null
+          },
+          "source": "OSM node 6374714705 bus_stop 勝どき駅",
+          "offsetM": 0
+        },
+        {
+          "id": "harumi_rinkai",
+          "label": "晴海臨海公園",
+          "coord": [
+            35.6548608,
+            139.7857638
+          ],
+          "osmCentre": [
+            35.65484,
+            139.78582
+          ],
+          "movedToWalkwayM": 6,
+          "walkway": {
+            "wayId": 238838000,
+            "highway": "footway",
+            "name": null
+          },
+          "source": "OSM way 晴海臨海公園; entrance needs confirmation",
+          "offsetM": 0
+        },
+        {
+          "id": "toyosu_ohashi",
+          "label": "豊洲大橋",
+          "coord": [
+            35.6469809,
+            139.7864158
+          ],
+          "osmCentre": [
+            35.6471,
+            139.7868
+          ],
+          "movedToWalkwayM": 37,
+          "walkway": {
+            "wayId": 1413602807,
+            "highway": "footway",
+            "name": null
+          },
+          "source": "approx. 豊洲大橋 west end; no OSM named node used",
+          "offsetM": 0
+        },
+        {
+          "id": "okujo",
+          "label": "豊洲市場 屋上緑化広場",
+          "coord": [
+            35.6436711,
+            139.7807766
+          ],
+          "osmCentre": [
+            35.64371,
+            139.78081
+          ],
+          "movedToWalkwayM": 5,
+          "walkway": {
+            "wayId": 1202384848,
+            "highway": "footway",
+            "name": null
+          },
+          "source": "OSM way 1202384855 centre",
+          "offsetM": 0
+        },
+        {
+          "id": "senkyaku",
+          "label": "豊洲 千客万来",
+          "coord": [
+            35.645746,
+            139.7838217
+          ],
+          "osmCentre": [
+            35.64546,
+            139.78366
+          ],
+          "movedToWalkwayM": 35,
+          "walkway": {
+            "wayId": 651677197,
+            "highway": "footway",
+            "name": null
+          },
+          "source": "OSM way 1159017723 centre",
+          "offsetM": 0
+        },
+        {
+          "id": "ichibamae",
+          "label": "市場前駅",
+          "coord": [
+            35.6455531,
+            139.7856933
+          ],
+          "osmCentre": [
+            35.64576,
+            139.78578
+          ],
+          "movedToWalkwayM": 24,
+          "walkway": {
+            "wayId": 629545983,
+            "highway": "footway",
+            "name": null
+          },
+          "source": "OSM node 3349961082 station",
+          "offsetM": 0
+        }
+      ]
+    },
+    "rail_bridge": {
+      "label": "C 勝どき駅→晴海臨海公園→旧晴海鉄道橋→六丁目公園→豊洲駅",
+      "distanceM": 5154,
+      "engineDistanceM": 5162,
+      "repeatedGeometryM": 413,
+      "legKm": [
+        1.21,
+        0.83,
+        1.96,
+        1.17
+      ],
+      "maxStopOffsetM": 5,
+      "stops": [
+        {
+          "id": "kachidoki_st",
+          "label": "勝どき駅",
+          "coord": [
+            35.6588468,
+            139.7771934
+          ],
+          "osmCentre": [
+            35.65893,
+            139.77733
+          ],
+          "movedToWalkwayM": 15,
+          "walkway": {
+            "wayId": 687108957,
+            "highway": "footway",
+            "name": null
+          },
+          "source": "OSM node 6374714705 bus_stop 勝どき駅",
+          "offsetM": 0
+        },
+        {
+          "id": "harumi_rinkai",
+          "label": "晴海臨海公園",
+          "coord": [
+            35.6548608,
+            139.7857638
+          ],
+          "osmCentre": [
+            35.65484,
+            139.78582
+          ],
+          "movedToWalkwayM": 6,
+          "walkway": {
+            "wayId": 238838000,
+            "highway": "footway",
+            "name": null
+          },
+          "source": "OSM way 晴海臨海公園; entrance needs confirmation",
+          "offsetM": 0
+        },
+        {
+          "id": "haruumi_rail",
+          "label": "旧晴海鉄道橋（春海橋公園遊歩道）",
+          "coord": [
+            35.65896,
+            139.78936
+          ],
+          "osmCentre": [
+            35.65896,
+            139.78936
+          ],
+          "movedToWalkwayM": null,
+          "walkway": null,
+          "source": "OSM node near 春海橋; user-proposed pedestrian bridge",
+          "offsetM": 5
+        },
+        {
+          "id": "rokuchome",
+          "label": "豊洲六丁目公園",
+          "coord": [
+            35.6465432,
+            139.7908102
+          ],
+          "osmCentre": [
+            35.64651,
+            139.79089
+          ],
+          "movedToWalkwayM": 8,
+          "walkway": {
+            "wayId": 1191359604,
+            "highway": "footway",
+            "name": null
+          },
+          "source": "OSM node 11374672985 information",
+          "offsetM": 0
+        },
+        {
+          "id": "toyosu",
+          "label": "豊洲駅",
+          "coord": [
+            35.6544293,
+            139.7958876
+          ],
+          "osmCentre": [
+            35.65443,
+            139.79589
+          ],
+          "movedToWalkwayM": 0,
+          "walkway": {
+            "wayId": 670080591,
+            "highway": "footway",
+            "name": "東京メトロ豊洲駅 7番出入口"
+          },
+          "source": "OSM node 1131996015 subway_entrance",
+          "offsetM": 0
+        }
+      ]
+    }
+  }
+}

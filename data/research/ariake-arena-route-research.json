@@ -33,13 +33,19 @@
       "variant": "旧晴海鉄道橋（春海橋公園遊歩道）で晴海へ渡る（利用者提案）",
       "result": "8.85km・反復201m（勝どき通過点なしで 8.80km・反復201m）",
       "finding": "晴海大橋ピンで出た大回りと728m戻りが消えた。反復は東京タワー付近185mと16mのみ。距離は参考値約7.2kmより長い。利用者提供の地図で、晴海大橋に歩道が写っていないことと、旧晴海鉄道橋が遊歩道であることを確認"
+    },
+    {
+      "n": 5,
+      "variant": "東京タワーを道路側（バス停）のピンにする",
+      "result": "8.78km・反復16m",
+      "finding": "東京タワー付近185mの反復は、タワー足元のピンが行き止まりの歩道で、往復の枝になったことが原因。道路側のピンにすると解消。増上寺付近を通過点に足すと反復97mに戻るため不要"
     }
   ],
-  "decision": "晴海大橋は歩道が確認できないため経路に使わず、旧晴海鉄道橋を渡る案（8.85km・反復201m）が最良。入口座標と歩道の通行条件は地図で未確認のため採用せず保留。東京タワー付近の185m反復は芝公園内の園路が原因とみられ、利用者の拡大地図で確認予定。",
+  "decision": "最良は旧晴海鉄道橋＋東京タワー道路側ピンの 8.78km・反復16m（残る16mは新豊洲駅付近の端点）。ただし東京タワーの足元には寄らず、道路側を通る。公式参考値7.2kmより長い。入口座標・旧晴海鉄道橋の通行条件は地図で未確認のため採用せず保留。",
   "openQuestions": [
-    "晴海大橋の歩道の有無と通行条件",
     "有明アリーナを外から見るだけにするか、折り返しを許容するか",
-    "東京タワー付近の185m反復の原因（芝公園内の園路）"
+    "旧晴海鉄道橋（春海橋公園遊歩道）の通行条件・段差",
+    "東京タワー足元（芝公園の園路）に寄る場合の反復の扱い"
   ],
   "files": [
     "scripts/osm-poi-ariake-arena.mjs",
@@ -47,7 +53,7 @@
     "data/research/ariake-arena-osm-poi.json",
     "data/research/ariake-arena-walkway-snap.json",
     "data/research/ariake-arena-route-build.json",
-    "data/candidates/ariake-arena-via_haruumi.geojson",
-    "data/candidates/ariake-arena-via_haruumi_short.geojson"
+    "data/candidates/ariake-arena-tower_road.geojson",
+    "data/candidates/ariake-arena-tower_zojoji.geojson"
   ]
 }

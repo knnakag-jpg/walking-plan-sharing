@@ -14,12 +14,14 @@ const harumi = P('harumi_bridge', '晴海大橋', 35.65156, 139.78554, 'OSM rela
 const kachidoki = P('kachidoki', '勝どき駅', 35.65893, 139.77733, 'OSM node 6374714705 bus_stop 勝どき駅');
 const tsukijiBridge = P('tsukiji_bridge', '築地大橋', 35.65932, 139.77075, 'OSM way 557441209');
 const haru = P('haruumi_rail', '旧晴海鉄道橋（春海橋公園遊歩道）', 35.65896, 139.78936, 'OSM node near 春海橋; location from user-supplied Google map pin, pedestrian bridge replaces 晴海大橋 which has no footway');
+const towerRoad = P('tower_road', '東京タワー下（道路・バス停）', 35.65835, 139.74612, 'OSM node 9497354785 bus_stop 東京タワー; road side, avoids a dead-end spur to the tower base');
+const zojoji = P('zojoji', '増上寺付近', 35.65783, 139.7486, 'approx. 増上寺 grounds; no OSM node used, needs map review');
 const hama = P('hamarikyu', '浜離宮恩賜庭園（北口側）', 35.66342, 139.76367, 'OSM node 4917393495 information; garden entry fee/hours not confirmed');
 const tower = P('tokyo_tower', '東京タワー', 35.65856, 139.74544, 'OSM relation 4247312 attraction');
 const shiba = P('shiba_koen', '芝公園駅', 35.65424, 139.74989, 'OSM node 6233834712 station');
 const variants = {
-  via_haruumi: { label: 'E 旧晴海鉄道橋で晴海へ渡る', points: [shin, arenaRoad, haru, kachidoki, tsukijiBridge, hama, tower, shiba] },
-  via_haruumi_short: { label: 'F 同・勝どきを通過点にしない', points: [shin, arenaRoad, haru, tsukijiBridge, hama, tower, shiba] },
+  tower_road: { label: 'G 東京タワーを道路側のピンにする', points: [shin, arenaRoad, haru, tsukijiBridge, hama, towerRoad, shiba] },
+  tower_zojoji: { label: 'H 東京タワー道路側→増上寺付近→芝公園駅', points: [shin, arenaRoad, haru, tsukijiBridge, hama, towerRoad, zojoji, shiba] },
 };
 
 const WALKWAY = 'footway|path|pedestrian|living_street|residential|service|steps|tertiary|unclassified|track|cycleway';
