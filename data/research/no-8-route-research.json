@@ -97,6 +97,10 @@
     "scripts/adopt-extra.mjs",
     "scripts/build-extra-b-variants.mjs",
     "data/curated/no-8.json",
+    "data/research/no-8-adopted-build.json",
+    "scripts/adopt-extra.mjs",
+    "scripts/build-extra-b-variants.mjs",
+    "data/curated/no-8.json",
     "data/research/no-8-adopted-build.json"
   ]
 }

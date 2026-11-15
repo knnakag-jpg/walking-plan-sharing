@@ -21,6 +21,12 @@
       "variant": "麻布台ヒルズ前（歩道上の仮点）を経由",
       "result": "2.56km・反復380m",
       "finding": "半径30mの到達範囲内で距離が変わらず、差は意味がない"
+    },
+    {
+      "n": 3,
+      "variant": "御成門交差点を外す（試作のみ）",
+      "result": "1.60km・反復0m",
+      "finding": "神谷町→東京タワー前→増上寺前→芝公園→芝公園駅。御成門を外すと増上寺前から芝公園へ直接南下でき、297mの往復が消える。距離が1.60kmに減るため不採用。計算後に試作ファイルは取り消した（再現は scripts/build-no-17-candidates.mjs の points から御成門を外すだけ）。"
     }
   ],
   "decision": "2026-11-15 方針「必要な往復は許容」を受けて採用: A=神谷町駅→芝公園駅(2.56km・反復380m)、B=神谷町駅→虎ノ門ヒルズ駅(3.27km・反復126m)。距離は例外として記録し延伸は作らない。旧案の往復延伸は採用しない。",
@@ -52,6 +58,14 @@
     "scripts/adopt-extra.mjs",
     "scripts/build-extra-b-variants.mjs",
     "data/curated/no-17.json",
+    "data/research/no-17-adopted-build.json",
+    "scripts/adopt-extra.mjs",
+    "scripts/build-extra-b-variants.mjs",
+    "data/curated/no-17.json",
     "data/research/no-17-adopted-build.json"
-  ]
+  ],
+  "userMaps": {
+    "receivedAt": "2026-11-15",
+    "note": "御成門周辺の地図2枚（Google マップ）。御成門の中門は東京プリンスホテルの駐車場東端・芝公園三丁目交差点のすぐ西にあり、増上寺の宝物殿と三解脱門はその南から西へ離れて並ぶ。これでAの297m往復の原因（御成門交差点の点を触るための北上と戻り）を確認した。画像自体は保存していない。"
+  }
 }
