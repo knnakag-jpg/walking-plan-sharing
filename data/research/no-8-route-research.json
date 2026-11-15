@@ -66,7 +66,7 @@
       "finding": "反復は減るが距離も標準5〜6kmを大きく下回る。東博ピン(63m×2)と西郷像→西洋美術館(167m)が残る"
     }
   ],
-  "decision": "2026-11-15 方針「必要な往復は許容」を受けて採用: A=上野駅→日暮里駅(3.03km・反復180m)、B=西郷像・朝倉彫塑館を加える(4.47km・反復513m)。距離は例外として記録し延伸は作らない。入口座標は未確認のため routed のまま。",
+  "decision": "2026-11-15 方針「必要な往復は許容」を受けて採用: A=上野駅→日暮里駅(3.03km・反復180m)、B=西郷像・朝倉彫塑館を加える(4.47km・反復513m)。距離は例外として記録し延伸は作らない。入口座標は未確認のため routed のまま。東京文化会館は利用者提供の東京都報道発表（令和8年5月7日〜令和10年度中の休館）により外観のみ・注記つきとし、経路は変えない。",
   "openQuestions": [
     "東京国立博物館のどの入口・園路に寄るか（正門位置が公式で未確認）。ピンを建物の道路側の通過点にしないと反復が残る",
     "上野駅公園口から西洋美術館へ向かう園路（西郷像経由の167m反復の原因）を地図で確認",
@@ -82,6 +82,18 @@
     "data/research/no-8-route-build.json",
     "data/candidates/no-8-standard.geojson",
     "data/candidates/no-8-extended.geojson",
+    "scripts/adopt-extra.mjs",
+    "scripts/build-extra-b-variants.mjs",
+    "data/curated/no-8.json",
+    "data/research/no-8-adopted-build.json",
+    "scripts/adopt-extra.mjs",
+    "scripts/build-extra-b-variants.mjs",
+    "data/curated/no-8.json",
+    "data/research/no-8-adopted-build.json",
+    "scripts/adopt-extra.mjs",
+    "scripts/build-extra-b-variants.mjs",
+    "data/curated/no-8.json",
+    "data/research/no-8-adopted-build.json",
     "scripts/adopt-extra.mjs",
     "scripts/build-extra-b-variants.mjs",
     "data/curated/no-8.json",
