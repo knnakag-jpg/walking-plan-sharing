@@ -1,0 +1,97 @@
+{
+  "id": "No.10",
+  "title": "羽田イノベーションシティ～スカイブリッジ",
+  "stage": "source_research_in_progress",
+  "checkedAt": "2026-11-15",
+  "evidence": [
+    {
+      "type": "community",
+      "title": "OpenStreetMap（天空橋駅・多摩川スカイブリッジ・旧穴守稲荷大鳥居・大師橋駅）",
+      "url": "https://www.openstreetmap.org/",
+      "checkedAt": "2026-11-15",
+      "supports": "駅・橋・大鳥居の名称ノードの座標。入口ではない。"
+    },
+    {
+      "type": "community",
+      "title": "旧資料 No.10（先行ページ index.html）",
+      "url": null,
+      "checkedAt": "2026-11-15",
+      "supports": "旧案の立ち寄り先。距離合わせの往復は採用していない。"
+    }
+  ],
+  "trials": [
+    {
+      "n": 1,
+      "variant": "standard 新規（OSMの駅・地点）",
+      "result": "4.23km・反復0m",
+      "finding": "重なりは計算上0m。"
+    },
+    {
+      "n": 2,
+      "variant": "extended 新規（OSMの駅・地点）",
+      "result": "3.11km・反復0m",
+      "finding": "重なりは計算上0m。"
+    },
+    {
+      "n": 3,
+      "variant": "standard 新規（OSMの駅・地点）",
+      "result": "4.23km・反復0m",
+      "finding": "重なりは計算上0m。"
+    },
+    {
+      "n": 4,
+      "variant": "extended 新規（OSMの駅・地点）",
+      "result": "3.11km・反復0m",
+      "finding": "重なりは計算上0m。"
+    },
+    {
+      "n": 5,
+      "variant": "standard 新規（OSMの駅・地点）",
+      "result": "4.23km・反復0m",
+      "finding": "重なりは計算上0m。"
+    },
+    {
+      "n": 6,
+      "variant": "extended 新規（OSMの駅・地点）",
+      "result": "3.11km・反復0m",
+      "finding": "重なりは計算上0m。"
+    },
+    {
+      "n": 7,
+      "variant": "standard 新規（OSMの駅・地点）",
+      "result": "4.23km・反復0m",
+      "finding": "重なりは計算上0m。"
+    },
+    {
+      "n": 8,
+      "variant": "extended 新規（OSMの駅・地点）",
+      "result": "3.11km・反復0m",
+      "finding": "重なりは計算上0m。"
+    },
+    {
+      "n": 9,
+      "variant": "standard 新規（OSMの駅・地点）",
+      "result": "4.23km・反復0m",
+      "finding": "重なりは計算上0m。"
+    },
+    {
+      "n": 10,
+      "variant": "extended 新規（OSMの駅・地点）",
+      "result": "3.11km・反復0m",
+      "finding": "重なりは計算上0m。"
+    }
+  ],
+  "files": [
+    "scripts/lib-rebuild.mjs",
+    "scripts/build-group2.mjs",
+    "data/curated/no-10.json",
+    "data/research/no-10-adopted-build.json"
+  ],
+  "openQuestions": [
+    "HANEDA INNOVATION CITYの足湯庭園・フードホールの営業状況",
+    "多摩川スカイブリッジの歩道の通行条件（自転車との区分）",
+    "多摩川緑地（殿町地区）から大師橋駅までの歩道",
+    "羽田空港ターミナルの展望デッキの開放状況"
+  ],
+  "decision": "2026-11-15 A=天空橋駅→スカイブリッジ→大師橋駅(4.23km・反復0m)、B=天空橋駅→旧穴守稲荷大鳥居→羽田空港第3ターミナル駅(3.11km・反復0m)。旧案のスカイブリッジ往復と羽田空港方面の往復延伸は不採用。"
+}

@@ -1,208 +1,83 @@
 {
-  "generatedAt": "2026-11-12T14:42:57.415Z",
-  "method": "Valhalla pedestrian; exact geometry edge repeat is only a screening clue",
-  "results": [
-    {
-      "variant": "standard",
-      "distanceM": 3945,
-      "engineDistanceM": 3956,
-      "repeatedGeometryM": 226,
-      "repeatedGeometryPct": 5.7,
-      "waypoints": [
+  "calculatedAt": "2026-11-15T14:07:33.442Z",
+  "engine": "valhalla-pedestrian",
+  "variants": {
+    "standard": {
+      "label": "standard",
+      "distanceM": 6861,
+      "engineDistanceM": 6868,
+      "repeatedGeometryM": 13,
+      "repeatedGeometryPct": 0.2,
+      "legKm": [
+        0.6,
+        0.13,
+        2.73,
+        1,
+        2.4
+      ],
+      "geometryUrl": "data/routes/no-12-standard.geojson",
+      "stops": [
         {
-          "id": "tachikawa_station",
+          "id": "tachikawa",
           "label": "立川駅",
           "coord": [
-            35.6977473,
-            139.4138779
+            35.6977668,
+            139.4137893
           ],
-          "source": "OpenStreetMap via Overpass; station feature; exit pending"
+          "source": "OSM station 立川; exit pending",
+          "offsetM": 0
         },
         {
           "id": "faret",
           "label": "ファーレ立川センタースクエア",
           "coord": [
-            35.7021632,
-            139.4141024
+            35.7020795,
+            139.4143614
           ],
-          "source": "OpenStreetMap via Overpass; art area"
+          "source": "OSM art area ファーレ立川",
+          "offsetM": 0
         },
         {
-          "id": "green_springs",
-          "label": "GREEN SPRINGS",
+          "id": "tachikawa_n",
+          "label": "ファーレ立川北",
           "coord": [
-            35.7034083,
-            139.411371
+            35.7028243,
+            139.4149362
           ],
-          "source": "OpenStreetMap via Overpass; facility point; walking entrance pending"
+          "source": "OSM node ファーレ立川北",
+          "offsetM": 0
         },
         {
-          "id": "tachikawa_gate",
-          "label": "昭和記念公園・立川口",
+          "id": "tamagawa_josui",
+          "label": "残堀川（昭島・東町付近）",
           "coord": [
-            35.7022439,
-            139.4036071
+            35.70806,
+            139.39193
           ],
-          "source": "OpenStreetMap via Overpass; entrance=yes"
+          "source": "OSM way 60964072 残堀川 river; 玉川上水はこの範囲で名称ノードが見つからず、河道の座標は未確認のため使わない",
+          "offsetM": 3
         },
         {
-          "id": "fureai",
-          "label": "ふれあい広場付近",
+          "id": "higashinakagami",
+          "label": "東中神駅",
           "coord": [
-            35.7036919,
-            139.4002309
+            35.7063214,
+            139.3838683
           ],
-          "source": "OpenStreetMap via Overpass; restaurant vicinity, not plaza entrance"
+          "source": "OSM node 東中神 stop（JR青梅線）",
+          "offsetM": 0
         },
         {
-          "id": "pond",
-          "label": "水鳥の池",
+          "id": "akishima",
+          "label": "昭島駅",
           "coord": [
-            35.7058623,
-            139.3949054
+            35.7135685,
+            139.3608668
           ],
-          "source": "OpenStreetMap via Overpass; waterbody center; shore path pending"
-        },
-        {
-          "id": "west_gate",
-          "label": "昭和記念公園・西立川口",
-          "coord": [
-            35.7036353,
-            139.3952508
-          ],
-          "source": "OpenStreetMap via Overpass; entrance=yes"
-        },
-        {
-          "id": "nishitachikawa_station",
-          "label": "西立川駅",
-          "coord": [
-            35.7035276,
-            139.3936344
-          ],
-          "source": "OpenStreetMap via Overpass; station vicinity; exit pending"
+          "source": "OSM node 305545683 昭島 station",
+          "offsetM": 0
         }
-      ],
-      "legDistancesKm": [
-        0.609,
-        0.53,
-        1.084,
-        0.481,
-        0.723,
-        0.339,
-        0.188
-      ],
-      "geometryUrl": "data/routes/no-12-standard.geojson"
-    },
-    {
-      "variant": "extended",
-      "distanceM": 7590,
-      "engineDistanceM": 7606,
-      "repeatedGeometryM": 398,
-      "repeatedGeometryPct": 5.2,
-      "waypoints": [
-        {
-          "id": "tachikawa_station",
-          "label": "立川駅",
-          "coord": [
-            35.6977473,
-            139.4138779
-          ],
-          "source": "OpenStreetMap via Overpass; station feature; exit pending"
-        },
-        {
-          "id": "faret",
-          "label": "ファーレ立川センタースクエア",
-          "coord": [
-            35.7021632,
-            139.4141024
-          ],
-          "source": "OpenStreetMap via Overpass; art area"
-        },
-        {
-          "id": "green_springs",
-          "label": "GREEN SPRINGS",
-          "coord": [
-            35.7034083,
-            139.411371
-          ],
-          "source": "OpenStreetMap via Overpass; facility point; walking entrance pending"
-        },
-        {
-          "id": "tachikawa_gate",
-          "label": "昭和記念公園・立川口",
-          "coord": [
-            35.7022439,
-            139.4036071
-          ],
-          "source": "OpenStreetMap via Overpass; entrance=yes"
-        },
-        {
-          "id": "fureai",
-          "label": "ふれあい広場付近",
-          "coord": [
-            35.7036919,
-            139.4002309
-          ],
-          "source": "OpenStreetMap via Overpass; restaurant vicinity, not plaza entrance"
-        },
-        {
-          "id": "pond",
-          "label": "水鳥の池",
-          "coord": [
-            35.7058623,
-            139.3949054
-          ],
-          "source": "OpenStreetMap via Overpass; waterbody center; shore path pending"
-        },
-        {
-          "id": "japanese_garden",
-          "label": "日本庭園",
-          "coord": [
-            35.7142767,
-            139.3954371
-          ],
-          "source": "OpenStreetMap via Overpass; garden center; entrance pending"
-        },
-        {
-          "id": "komorebi",
-          "label": "こもれびの里",
-          "coord": [
-            35.7164587,
-            139.397876
-          ],
-          "source": "OpenStreetMap via Overpass; area center; entrance pending"
-        },
-        {
-          "id": "sunagawa_gate",
-          "label": "昭和記念公園・砂川口",
-          "coord": [
-            35.7196183,
-            139.3973692
-          ],
-          "source": "OpenStreetMap via Overpass; gate vicinity"
-        },
-        {
-          "id": "musashisunagawa_station",
-          "label": "武蔵砂川駅",
-          "coord": [
-            35.7289155,
-            139.3922831
-          ],
-          "source": "OpenStreetMap via Overpass; station vicinity; exit pending"
-        }
-      ],
-      "legDistancesKm": [
-        0.609,
-        0.53,
-        1.084,
-        0.481,
-        0.723,
-        1.416,
-        0.799,
-        0.375,
-        1.587
-      ],
-      "geometryUrl": "data/routes/no-12-extended.geojson"
+      ]
     }
-  ]
+  }
 }

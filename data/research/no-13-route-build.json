@@ -1,0 +1,83 @@
+{
+  "calculatedAt": "2026-11-15T13:58:33.156Z",
+  "engine": "valhalla-pedestrian",
+  "variants": {
+    "standard": {
+      "label": "standard",
+      "distanceM": 2246,
+      "engineDistanceM": 2248,
+      "repeatedGeometryM": 199,
+      "repeatedGeometryPct": 8.9,
+      "legKm": [
+        0.59,
+        0.43,
+        0.42,
+        0.61,
+        0.2
+      ],
+      "geometryUrl": "data/routes/no-13-standard.geojson",
+      "stops": [
+        {
+          "id": "oji",
+          "label": "王子駅",
+          "coord": [
+            35.7538798,
+            139.7375536
+          ],
+          "source": "OSM node 5406714005 王子 station",
+          "offsetM": 8
+        },
+        {
+          "id": "asukayama",
+          "label": "飛鳥山公園",
+          "coord": [
+            35.7500951,
+            139.7379967
+          ],
+          "source": "OSM node 飛鳥山公園 park",
+          "offsetM": 0
+        },
+        {
+          "id": "otonashi",
+          "label": "音無親水公園",
+          "coord": [
+            35.7526497,
+            139.7359522
+          ],
+          "source": "OSM way 音無親水公園 park",
+          "offsetM": 0
+        },
+        {
+          "id": "shakujii_river",
+          "label": "石神井川（武蔵野の路・石神井川コース）",
+          "coord": [
+            35.7525129,
+            139.7320061
+          ],
+          "source": "OSM information 武蔵野の路 石神井川コース; 遊歩道の位置は地図レビュー待ち",
+          "offsetM": 0
+        },
+        {
+          "id": "kitatopia",
+          "label": "北とぴあ",
+          "coord": [
+            35.7547065,
+            139.7370852
+          ],
+          "source": "OSM node 北とぴあ前 416334963",
+          "offsetM": 0
+        },
+        {
+          "id": "oji",
+          "label": "王子駅",
+          "coord": [
+            35.7538798,
+            139.7375536
+          ],
+          "source": "OSM node 5406714005 王子 station",
+          "offsetM": 8
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+ "tenkubashi": {
+  "snapped": [
+   35.5480731,
+   139.7546938
+  ],
+  "movedM": 4,
+  "wayId": 1039536034
+ },
+ "hic": {
+  "snapped": [
+   35.5478134,
+   139.7551653
+  ],
+  "movedM": 8,
+  "wayId": 1554534131
+ },
+ "sky_bridge_n": {
+  "snapped": [
+   35.5442496,
+   139.7633023
+  ],
+  "movedM": 0,
+  "wayId": 820461488
+ },
+ "sky_bridge_s": {
+  "snapped": null
+ },
+ "tmr_yokudo": {
+  "snapped": [
+   35.5406113,
+   139.7425949
+  ],
+  "movedM": 43,
+  "wayId": 305354783
+ },
+ "keikyu_daishibashi": {
+  "snapped": [
+   35.5365616,
+   139.7405267
+  ],
+  "movedM": 8,
+  "wayId": 963870128
+ },
+ "okunoin_torii": {
+  "snapped": [
+   35.5466426,
+   139.7522816
+  ],
+  "movedM": 13,
+  "wayId": 1302865544
+ },
+ "haneda_t3": {
+  "snapped": [
+   35.543874,
+   139.7686203
+  ],
+  "movedM": 3,
+  "wayId": 677916966
+ }
+}

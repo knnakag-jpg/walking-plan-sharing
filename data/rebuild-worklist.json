@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T13:46:10.110Z",
+  "generatedAt": "2026-11-15T14:07:51.271Z",
   "interpretation": "Mechanical triage only. Source and map review required before adopting any new route.",
   "records": [
     {
@@ -51,7 +51,7 @@
     },
     {
       "id": "No.12",
-      "title": "立川のアートと昭和記念公園",
+      "title": "立川のアートと昭島の水辺",
       "series": "本編 A～Z（No.1～26）",
       "workStatus": "partial_rebuild",
       "legacy": {
@@ -72,12 +72,7 @@
         {
           "variant": "standard",
           "status": "routed",
-          "distanceM": 3945
-        },
-        {
-          "variant": "extended",
-          "status": "routed",
-          "distanceM": 7590
+          "distanceM": 6861
         },
         {
           "variant": "rainy",
@@ -86,7 +81,7 @@
         }
       ],
       "coordinateReview": "routed_candidates_with_unverified_entrances",
-      "sourceResearch": "not_started",
+      "sourceResearch": "source_research_in_progress",
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": true,
@@ -183,7 +178,7 @@
       "id": "No.9",
       "title": "高尾山（ケーブルカー）",
       "series": "本編 A～Z（No.1～26）",
-      "workStatus": "research_needed",
+      "workStatus": "partial_rebuild",
       "legacy": {
         "geometryUrl": "data/routes/no-9.geojson",
         "walkingDistanceM": 2778,
@@ -198,9 +193,20 @@
         ],
         "gateResult": "OK"
       },
-      "existingNewVariants": [],
+      "existingNewVariants": [
+        {
+          "variant": "standard",
+          "status": "routed",
+          "distanceM": 10386
+        },
+        {
+          "variant": "rainy",
+          "status": "researched",
+          "distanceM": null
+        }
+      ],
       "coordinateReview": "not_started",
-      "sourceResearch": "not_started",
+      "sourceResearch": "source_research_in_progress",
       "historicalRoutingStrategies": [
         {
           "oldLabel": "A",
@@ -499,7 +505,7 @@
       "id": "No.10",
       "title": "羽田イノベーションシティ～スカイブリッジ",
       "series": "本編 A～Z（No.1～26）",
-      "workStatus": "research_needed",
+      "workStatus": "partial_rebuild",
       "legacy": {
         "geometryUrl": "data/routes/no-10.geojson",
         "walkingDistanceM": 6883,
@@ -522,9 +528,25 @@
         ],
         "gateResult": "OK"
       },
-      "existingNewVariants": [],
+      "existingNewVariants": [
+        {
+          "variant": "standard",
+          "status": "routed",
+          "distanceM": 4226
+        },
+        {
+          "variant": "extended",
+          "status": "routed",
+          "distanceM": 3109
+        },
+        {
+          "variant": "rainy",
+          "status": "researched",
+          "distanceM": null
+        }
+      ],
       "coordinateReview": "not_started",
-      "sourceResearch": "not_started",
+      "sourceResearch": "source_research_in_progress",
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": true,
@@ -4086,9 +4108,9 @@
     },
     {
       "id": "No.13",
-      "title": "飛鳥山～音無親水公園",
+      "title": "飛鳥山と音無親水公園",
       "series": "本編 A～Z（No.1～26）",
-      "workStatus": "research_needed",
+      "workStatus": "partial_rebuild",
       "legacy": {
         "geometryUrl": "data/routes/no-13.geojson",
         "walkingDistanceM": 6989,
@@ -4098,9 +4120,20 @@
         "repeatedWaypoints": [],
         "gateResult": "OK"
       },
-      "existingNewVariants": [],
+      "existingNewVariants": [
+        {
+          "variant": "standard",
+          "status": "routed",
+          "distanceM": 2246
+        },
+        {
+          "variant": "rainy",
+          "status": "researched",
+          "distanceM": null
+        }
+      ],
       "coordinateReview": "not_started",
-      "sourceResearch": "not_started",
+      "sourceResearch": "source_research_in_progress",
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": false,

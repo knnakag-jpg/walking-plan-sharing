@@ -1,0 +1,138 @@
+{
+  "calculatedAt": "2026-11-15T13:57:52.954Z",
+  "engine": "valhalla-pedestrian",
+  "variants": {
+    "standard": {
+      "label": "standard",
+      "distanceM": 4226,
+      "engineDistanceM": 4229,
+      "repeatedGeometryM": 0,
+      "repeatedGeometryPct": 0,
+      "legKm": [
+        0.08,
+        0.98,
+        0.49,
+        2.01,
+        0.67
+      ],
+      "geometryUrl": "data/routes/no-10-standard.geojson",
+      "stops": [
+        {
+          "id": "tenkubashi",
+          "label": "天空橋駅",
+          "coord": [
+            35.5480731,
+            139.7546938
+          ],
+          "source": "OSM node 天空橋 station",
+          "offsetM": 2
+        },
+        {
+          "id": "hic",
+          "label": "HANEDA INNOVATION CITY",
+          "coord": [
+            35.5478134,
+            139.7551653
+          ],
+          "source": "OSM information HANEDA INNOVATION CITY",
+          "offsetM": 0
+        },
+        {
+          "id": "sky_bridge_n",
+          "label": "多摩川スカイブリッジ北",
+          "coord": [
+            35.5442496,
+            139.7633023
+          ],
+          "source": "OSM node 7654141396 多摩川スカイブリッジ北",
+          "offsetM": 7
+        },
+        {
+          "id": "sky_bridge_s",
+          "label": "多摩川スカイブリッジ南（多摩川緑地側）",
+          "coord": [
+            35.54045,
+            139.76095
+          ],
+          "source": "OSM node 819656082 多摩川スカイブリッジ（南端）",
+          "offsetM": 7
+        },
+        {
+          "id": "tmr_yokudo",
+          "label": "多摩川緑地（殿町地区）",
+          "coord": [
+            35.5406113,
+            139.7425949
+          ],
+          "source": "OSM node 多摩川緑地（殿町地区） park",
+          "offsetM": 3
+        },
+        {
+          "id": "keikyu_daishibashi",
+          "label": "大師橋駅",
+          "coord": [
+            35.5365616,
+            139.7405267
+          ],
+          "source": "OSM node 7878805495 大師橋 station",
+          "offsetM": 0
+        }
+      ]
+    },
+    "extended": {
+      "label": "extended",
+      "distanceM": 3109,
+      "engineDistanceM": 3113,
+      "repeatedGeometryM": 0,
+      "repeatedGeometryPct": 0,
+      "legKm": [
+        0.08,
+        0.6,
+        2.43
+      ],
+      "geometryUrl": "data/routes/no-10-extended.geojson",
+      "stops": [
+        {
+          "id": "tenkubashi",
+          "label": "天空橋駅",
+          "coord": [
+            35.5480731,
+            139.7546938
+          ],
+          "source": "OSM node 天空橋 station",
+          "offsetM": 2
+        },
+        {
+          "id": "hic",
+          "label": "HANEDA INNOVATION CITY",
+          "coord": [
+            35.5478134,
+            139.7551653
+          ],
+          "source": "OSM information HANEDA INNOVATION CITY",
+          "offsetM": 0
+        },
+        {
+          "id": "okunoin_torii",
+          "label": "旧穴守稲荷神社 大鳥居",
+          "coord": [
+            35.5466426,
+            139.7522816
+          ],
+          "source": "OSM node 617802345 旧穴守稲荷神社 大鳥居",
+          "offsetM": 0
+        },
+        {
+          "id": "haneda_t3",
+          "label": "羽田空港第3ターミナル駅",
+          "coord": [
+            35.543874,
+            139.7686203
+          ],
+          "source": "OSM node 羽田空港第3ターミナル station",
+          "offsetM": 0
+        }
+      ]
+    }
+  }
+}

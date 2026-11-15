@@ -1,0 +1,77 @@
+{
+  "generatedAt": "2026-11-15T14:07:33.442Z",
+  "method": "Valhalla pedestrian; exact geometry edge repeat is only a screening clue",
+  "results": [
+    {
+      "variant": "standard",
+      "distanceM": 6861,
+      "engineDistanceM": 6868,
+      "repeatedGeometryM": 13,
+      "repeatedGeometryPct": 0.2,
+      "waypoints": [
+        {
+          "id": "tachikawa",
+          "label": "立川駅",
+          "coord": [
+            35.6977668,
+            139.4137893
+          ],
+          "source": "OSM station 立川; exit pending"
+        },
+        {
+          "id": "faret",
+          "label": "ファーレ立川センタースクエア",
+          "coord": [
+            35.7020795,
+            139.4143614
+          ],
+          "source": "OSM art area ファーレ立川"
+        },
+        {
+          "id": "tachikawa_n",
+          "label": "ファーレ立川北",
+          "coord": [
+            35.7028243,
+            139.4149362
+          ],
+          "source": "OSM node ファーレ立川北"
+        },
+        {
+          "id": "tamagawa_josui",
+          "label": "残堀川（昭島・東町付近）",
+          "coord": [
+            35.70806,
+            139.39193
+          ],
+          "source": "OSM way 60964072 残堀川 river; 玉川上水はこの範囲で名称ノードが見つからず、河道の座標は未確認のため使わない"
+        },
+        {
+          "id": "higashinakagami",
+          "label": "東中神駅",
+          "coord": [
+            35.7063214,
+            139.3838683
+          ],
+          "source": "OSM node 東中神 stop（JR青梅線）"
+        },
+        {
+          "id": "akishima",
+          "label": "昭島駅",
+          "coord": [
+            35.7135685,
+            139.3608668
+          ],
+          "source": "OSM node 305545683 昭島 station"
+        }
+      ],
+      "legDistancesKm": [
+        0.6,
+        0.13,
+        2.73,
+        1,
+        2.4
+      ],
+      "geometryUrl": "data/routes/no-12-standard.geojson"
+    }
+  ]
+}

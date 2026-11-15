@@ -1,0 +1,67 @@
+{
+  "id": "No.13",
+  "title": "飛鳥山と音無親水公園",
+  "stage": "source_research_in_progress",
+  "checkedAt": "2026-11-15",
+  "evidence": [
+    {
+      "type": "community",
+      "title": "OpenStreetMap（王子駅・飛鳥山公園・音無親水公園・武蔵野の路 石神井川コース・北とぴあ）",
+      "url": "https://www.openstreetmap.org/",
+      "checkedAt": "2026-11-15",
+      "supports": "駅・公園・遊歩道案内・展望施設の名称ノードの座標。入口ではない。"
+    },
+    {
+      "type": "community",
+      "title": "旧資料 No.13（先行ページ index.html）",
+      "url": null,
+      "checkedAt": "2026-11-15",
+      "supports": "旧案の立ち寄り先。"
+    }
+  ],
+  "trials": [
+    {
+      "n": 1,
+      "variant": "standard 新規（OSMの駅・地点）",
+      "result": "2.25km・反復199m",
+      "finding": "飛鳥山公園内で約110mと約60m（計約199m）。坂の上り下りで同じ園路を戻る形と推定。地図で未確認。"
+    },
+    {
+      "n": 2,
+      "variant": "standard 新規（OSMの駅・地点）",
+      "result": "2.25km・反復199m",
+      "finding": "飛鳥山公園内で約110mと約60m（計約199m）。坂の上り下りで同じ園路を戻る形と推定。地図で未確認。"
+    },
+    {
+      "n": 3,
+      "variant": "standard 新規（OSMの駅・地点）",
+      "result": "2.25km・反復199m",
+      "finding": "飛鳥山公園内で約110mと約60m（計約199m）。坂の上り下りで同じ園路を戻る形と推定。地図で未確認。"
+    },
+    {
+      "n": 4,
+      "variant": "standard 新規（OSMの駅・地点）",
+      "result": "2.25km・反復199m",
+      "finding": "飛鳥山公園内で約110mと約60m（計約199m）。坂の上り下りで同じ園路を戻る形と推定。地図で未確認。"
+    },
+    {
+      "n": 5,
+      "variant": "standard 新規（OSMの駅・地点）",
+      "result": "2.25km・反復199m",
+      "finding": "飛鳥山公園内で約110mと約60m（計約199m）。坂の上り下りで同じ園路を戻る形と推定。地図で未確認。"
+    }
+  ],
+  "files": [
+    "scripts/lib-rebuild.mjs",
+    "scripts/build-group2.mjs",
+    "data/curated/no-13.json",
+    "data/research/no-13-adopted-build.json"
+  ],
+  "openQuestions": [
+    "石神井川沿いの遊歩道の正確な位置と通行条件",
+    "北とぴあ展望ロビーの開放時間",
+    "アスカルゴの運行状況",
+    "飛鳥山の3館の開館日と入口"
+  ],
+  "decision": "2026-11-15 新Aを周遊で計算（2.25km・反復199m）。同じ道を戻る区間は坂の往復に限った。石神井川沿いは遊歩道の位置が未確認。"
+}

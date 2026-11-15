@@ -1,0 +1,77 @@
+{
+  "generatedAt": "2026-11-15T14:00:01.332Z",
+  "method": "Valhalla pedestrian; exact geometry edge repeat is only a screening clue",
+  "results": [
+    {
+      "variant": "standard",
+      "distanceM": 10386,
+      "engineDistanceM": 10392,
+      "repeatedGeometryM": 595,
+      "repeatedGeometryPct": 5.7,
+      "waypoints": [
+        {
+          "id": "cable_shitakiyo",
+          "label": "高尾登山ケーブル 清滝駅",
+          "coord": [
+            35.6310796,
+            139.2668737
+          ],
+          "source": "OSM node 清滝（ケーブル下駅）"
+        },
+        {
+          "id": "cable_sanjo",
+          "label": "高尾登山ケーブル 高尾山駅（山上）",
+          "coord": [
+            35.6305265,
+            139.261813
+          ],
+          "source": "OSM node 高尾登山ケーブル（山上）"
+        },
+        {
+          "id": "yakuoin",
+          "label": "高尾山薬王院",
+          "coord": [
+            35.626096,
+            139.2497312
+          ],
+          "source": "OSM node 高尾山薬王院 place_of_worship"
+        },
+        {
+          "id": "sancho",
+          "label": "高尾山頂",
+          "coord": [
+            35.62575,
+            139.2500453
+          ],
+          "source": "OSM information 高尾山頂; 三角点の正確な位置は地図レビュー待ち"
+        },
+        {
+          "id": "jaguchi",
+          "label": "蛇滝口",
+          "coord": [
+            35.6391818,
+            139.2582307
+          ],
+          "source": "OSM node 2963604825 蛇滝口"
+        },
+        {
+          "id": "takao_sanguchi",
+          "label": "高尾山口駅",
+          "coord": [
+            35.6323944,
+            139.26985
+          ],
+          "source": "OSM node 6003241794 高尾山口 station"
+        }
+      ],
+      "legDistancesKm": [
+        0.51,
+        3.62,
+        0.06,
+        3.93,
+        2.28
+      ],
+      "geometryUrl": "data/routes/no-9-standard.geojson"
+    }
+  ]
+}

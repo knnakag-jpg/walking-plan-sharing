@@ -1,0 +1,50 @@
+{
+ "cable_shitakiyo": {
+  "snapped": [
+   35.6310796,
+   139.2668737
+  ],
+  "movedM": 10,
+  "wayId": 1426472153
+ },
+ "cable_sanjo": {
+  "snapped": [
+   35.6305265,
+   139.261813
+  ],
+  "movedM": 70,
+  "wayId": 443284435
+ },
+ "yakuoin": {
+  "snapped": [
+   35.626096,
+   139.2497312
+  ],
+  "movedM": 13,
+  "wayId": 81058828
+ },
+ "sancho": {
+  "snapped": [
+   35.62575,
+   139.2500453
+  ],
+  "movedM": 0,
+  "wayId": 238461938
+ },
+ "jaguchi": {
+  "snapped": [
+   35.6391818,
+   139.2582307
+  ],
+  "movedM": 7,
+  "wayId": 30952678
+ },
+ "takao_sanguchi": {
+  "snapped": [
+   35.6323944,
+   139.26985
+  ],
+  "movedM": 13,
+  "wayId": 1299158457
+ }
+}

@@ -1,0 +1,53 @@
+{
+ "tachikawa": {
+  "snapped": [
+   35.6977668,
+   139.4137893
+  ],
+  "movedM": 8,
+  "wayId": 128769711
+ },
+ "faret": {
+  "snapped": [
+   35.7020795,
+   139.4143614
+  ],
+  "movedM": 25,
+  "wayId": 183970179
+ },
+ "tachikawa_n": {
+  "snapped": [
+   35.7028243,
+   139.4149362
+  ],
+  "movedM": 1,
+  "wayId": 128829436
+ },
+ "tamagawa_josui": {
+  "snapped": null
+ },
+ "shiyakusho": {
+  "snapped": [
+   35.7035267,
+   139.3820297
+  ],
+  "movedM": 22,
+  "wayId": 86578770
+ },
+ "akishima": {
+  "snapped": [
+   35.7135685,
+   139.3608668
+  ],
+  "movedM": 2,
+  "wayId": 1088695105
+ },
+ "higashinakagami": {
+  "snapped": [
+   35.7063214,
+   139.3838683
+  ],
+  "movedM": 26,
+  "wayId": 1088999659
+ }
+}

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "source": "legacy import; route quality not re-reviewed",
-  "generatedAt": "2026-11-15T13:46:10.008Z",
+  "generatedAt": "2026-11-15T14:07:51.163Z",
   "courses": [
     {
       "id": "No.1",
@@ -3492,9 +3492,14 @@
       "seriesName": "本編 A～Z（No.1～26）",
       "legacyAnchor": "course-9",
       "legacyUrl": "../index.html#course-9",
-      "summary": "経路ノード（B案）： ケーブル清滝駅 → ケーブルカー（山上駅） → 薬王院（山門手前） → 山上 → 薬王院を経て蛇滝口へ → 高尾山口駅（解散） → ゴール",
+      "summary": "ケーブル清滝駅からケーブルカーを利用する前提の案（線形は徒歩経路に含めない）。山上駅から薬王院・山頂を歩き、蛇滝口へ下りて高尾山口駅へ。山道の通行条件は未確認。",
       "routeText": "経路ノード（B案）： ケーブル清滝駅 → ケーブルカー（山上駅） → 薬王院（山門手前） → 山上 → 薬王院を経て蛇滝口へ → 高尾山口駅（解散） → ゴール",
-      "tags": [],
+      "tags": [
+        "山",
+        "寺社",
+        "自然",
+        "展望"
+      ],
       "route": {
         "id": "no-9-legacy",
         "variant": "legacy",
@@ -3507,17 +3512,7 @@
         "repeatedGeometryPct": 34.4,
         "maxWaypointToShapeM": 31,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "dem",
-          "url": "data/elevation/no-9.json",
-          "totalM": 2778,
-          "climbM": 252.1,
-          "descentM": 175.6,
-          "minM": 190.2,
-          "maxM": 367
-        }
+        "engine": "valhalla-pedestrian"
       },
       "waypoints": [
         {
@@ -3555,7 +3550,223 @@
         "repeated_geometry_over_10pct",
         "repeated_waypoint"
       ],
-      "category": "main"
+      "category": "main",
+      "defaultVariant": "standard",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "OpenStreetMap（高尾登山ケーブル・薬王院・山頂・蛇滝口・高尾山口駅）",
+          "url": "https://www.openstreetmap.org/",
+          "checkedAt": "2026-11-15",
+          "supports": "ケーブルカーと寺社・地点の名称ノードの座標。入口ではない。"
+        },
+        {
+          "type": "community",
+          "title": "旧資料 No.9（先行ページ index.html）",
+          "url": null,
+          "checkedAt": "2026-11-15",
+          "supports": "旧案の立ち寄り順。"
+        }
+      ],
+      "openQuestions": [
+        "ケーブルカーの営業時間・料金・運行状況（公式）",
+        "薬王院から山頂への登山道の通行条件",
+        "蛇滝口から高尾山口駅への下り（蛇滝線歩道）の通行条件",
+        "山頂の三角点の正確な位置"
+      ],
+      "routeOptions": [
+        {
+          "id": "no-9-standard",
+          "variant": "standard",
+          "strategy": "scenic",
+          "geometryUrl": "data/routes/no-9-standard.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 10386,
+          "engineDistanceM": 10392,
+          "repeatedGeometryPct": 5.7,
+          "routeReason": "ケーブル清滝駅から山上駅まではケーブルカー、そこから薬王院、高尾山頂、蛇滝口を経て高尾山口駅へ下る。計算上10.39km（鉄道・ケーブルカー以外の徒歩部分）。旧案の「山上→薬王院→蛇滝口→高尾山口駅」の順をそのまま使った。山道の通行条件とケーブルカーの営業は未確認。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
+          "distanceException": "10.39km。7〜8kmを超えるが、薬王院・山頂・蛇滝口をすべて含めた結果で、距離を削るための短縮はしない。",
+          "retraceException": "ケーブル清滝駅から山上駅までの登りで約493m（ケーブルカーの線形と並行する参道を往復する形と推定）、薬王院の境内で約102m（計約595m）。地図で未確認。なお、この案はケーブルカーを利用する前提で徒歩経路が本来の山道と一致するか未確認。",
+          "waypoints": [
+            {
+              "index": 0,
+              "id": "cable_shitakiyo",
+              "label": "高尾登山ケーブル 清滝駅",
+              "description": null,
+              "point": [
+                139.2668737,
+                35.6310796
+              ],
+              "source": "OSM node 清滝（ケーブル下駅）"
+            },
+            {
+              "index": 1,
+              "id": "cable_sanjo",
+              "label": "高尾登山ケーブル 高尾山駅（山上）",
+              "description": null,
+              "point": [
+                139.261813,
+                35.6305265
+              ],
+              "source": "OSM node 高尾登山ケーブル（山上）"
+            },
+            {
+              "index": 2,
+              "id": "yakuoin",
+              "label": "高尾山薬王院",
+              "description": null,
+              "point": [
+                139.2497312,
+                35.626096
+              ],
+              "source": "OSM node 高尾山薬王院 place_of_worship"
+            },
+            {
+              "index": 3,
+              "id": "sancho",
+              "label": "高尾山頂",
+              "description": null,
+              "point": [
+                139.2500453,
+                35.62575
+              ],
+              "source": "OSM information 高尾山頂; 三角点の正確な位置は地図レビュー待ち"
+            },
+            {
+              "index": 4,
+              "id": "jaguchi",
+              "label": "蛇滝口",
+              "description": null,
+              "point": [
+                139.2582307,
+                35.6391818
+              ],
+              "source": "OSM node 2963604825 蛇滝口"
+            },
+            {
+              "index": 5,
+              "id": "takao_sanguchi",
+              "label": "高尾山口駅",
+              "description": null,
+              "point": [
+                139.26985,
+                35.6323944
+              ],
+              "source": "OSM node 6003241794 高尾山口 station"
+            }
+          ],
+          "engine": "valhalla-pedestrian",
+          "built": "2026-11-15T14:00:01.332Z",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/no-9-standard.json",
+            "totalM": 10386,
+            "climbM": 454.8,
+            "descentM": 465.2,
+            "minM": 179.1,
+            "maxM": 570.6
+          }
+        },
+        {
+          "id": "no-9-rainy",
+          "variant": "rainy",
+          "strategy": "indoor_rail",
+          "verificationStatus": "researched",
+          "distanceM": null,
+          "routeReason": "雨の日はケーブルカーで上がり、薬王院の参道だけを歩いて同じ道で戻る短い案。薬王院の建物内で雨宿りできるかは未確認。",
+          "segments": [
+            {
+              "kind": "rail",
+              "from": "高尾山口駅",
+              "to": "清滝駅",
+              "distanceM": null,
+              "note": "ケーブルカー。営業時間・運行状況は当日確認。"
+            },
+            {
+              "kind": "walk_outdoor",
+              "from": "清滝駅",
+              "to": "薬王院",
+              "distanceM": null,
+              "note": "石段と坂。雨天は滑りやすい。"
+            },
+            {
+              "kind": "walk_indoor",
+              "from": "薬王院",
+              "to": "本堂・客殿の屋内",
+              "distanceM": null,
+              "note": "屋内に入れる範囲は未確認。"
+            },
+            {
+              "kind": "walk_outdoor",
+              "from": "薬王院",
+              "to": "高尾山口駅",
+              "distanceM": null,
+              "note": "雨の山道は危険。代替のバスは未確認。"
+            }
+          ],
+          "conditions": [
+            "ケーブルカーの運行状況・混雑は当日確認。",
+            "雨天・強風時の登山道の規制は未調査。"
+          ],
+          "geometryUrl": null,
+          "waypoints": []
+        },
+        {
+          "id": "no-9-legacy",
+          "variant": "legacy",
+          "strategy": "legacy_unknown",
+          "geometryUrl": "data/routes/no-9.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 2778,
+          "engineDistanceM": 2781,
+          "targetDistanceM": 3000,
+          "repeatedGeometryPct": 34.4,
+          "maxWaypointToShapeM": 31,
+          "built": "2026-08-29",
+          "engine": "valhalla-pedestrian",
+          "waypoints": [
+            {
+              "index": 0,
+              "point": [
+                139.26998,
+                35.63229
+              ]
+            },
+            {
+              "index": 1,
+              "point": [
+                139.262,
+                35.634
+              ]
+            },
+            {
+              "index": 2,
+              "point": [
+                139.265984,
+                35.637264
+              ]
+            },
+            {
+              "index": 3,
+              "point": [
+                139.262,
+                35.634
+              ]
+            }
+          ],
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "dem",
+            "url": "data/elevation/no-9.json",
+            "totalM": 2778,
+            "climbM": 252.1,
+            "descentM": 175.6,
+            "minM": 190.2,
+            "maxM": 367
+          }
+        }
+      ]
     },
     {
       "id": "No.10",
@@ -3565,14 +3776,14 @@
       "seriesName": "本編 A～Z（No.1～26）",
       "legacyAnchor": "course-10",
       "legacyUrl": "../index.html#course-10",
-      "summary": "空港跡地に整備された複合施設と、多摩川河口に架かる歩行者通行可能な橋を組み合わせた「離着陸を眺め続ける」平坦ルート。全区間が新しい舗装で、路面の凹凸が極めて少ない。 無料の足湯 があり、歩行後の膝周辺のクーリング／ウォーミングに使える点が本企画独自の価値。さらに多摩川緑地の遊歩道を大師橋方面へたどり、川風を感じながら京急線の駅へ向かうルートも新たに加わった。",
+      "summary": "天空橋駅からHANEDA INNOVATION CITYを抜け、多摩川沿いから多摩川スカイブリッジを渡って多摩川緑地へ下り、大師橋駅へ抜けるA。Bは旧穴守稲荷の大鳥居を経て羽田空港第3ターミナル駅へ向かう短い駅間。足湯・フードホールは営業未確認のため案内文には含めない。",
       "routeText": "経路ノード： 天空橋駅 → HANEDA INNOVATION CITY 館内 → 多摩川沿いプロムナード → 多摩川スカイブリッジ（往復） → フードホール（昼食） → 足湯庭園 → 旧穴守稲荷 大鳥居 → 空港ターミナル 展望デッキ → 多摩川緑地（大師橋方面） → 大師橋たもと → 京急大師橋駅 → 羽田空港ターミナル周辺方面へ実在の歩道で延伸（往復約0.5km） → ゴール",
       "tags": [
-        "航空",
-        "テック",
-        "港湾・河川景観",
-        "フォトジェニック",
-        "ミリタリー／近代史"
+        "空港",
+        "橋",
+        "川",
+        "展望",
+        "史跡"
       ],
       "route": {
         "id": "no-10-legacy",
@@ -3586,17 +3797,7 @@
         "repeatedGeometryPct": 19.5,
         "maxWaypointToShapeM": 84,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "dem",
-          "url": "data/elevation/no-10.json",
-          "totalM": 6883,
-          "climbM": 20.3,
-          "descentM": 20.1,
-          "minM": 1.8,
-          "maxM": 5.9
-        }
+        "engine": "valhalla-pedestrian"
       },
       "waypoints": [
         {
@@ -3670,7 +3871,329 @@
         "repeated_waypoint",
         "waypoint_off_shape"
       ],
-      "category": "main"
+      "category": "main",
+      "defaultVariant": "standard",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "OpenStreetMap（天空橋駅・多摩川スカイブリッジ・旧穴守稲荷大鳥居・大師橋駅）",
+          "url": "https://www.openstreetmap.org/",
+          "checkedAt": "2026-11-15",
+          "supports": "駅・橋・大鳥居の名称ノードの座標。入口ではない。"
+        },
+        {
+          "type": "community",
+          "title": "旧資料 No.10（先行ページ index.html）",
+          "url": null,
+          "checkedAt": "2026-11-15",
+          "supports": "旧案の立ち寄り先。距離合わせの往復は採用していない。"
+        }
+      ],
+      "openQuestions": [
+        "HANEDA INNOVATION CITYの足湯庭園・フードホールの営業状況",
+        "多摩川スカイブリッジの歩道の通行条件（自転車との区分）",
+        "多摩川緑地（殿町地区）から大師橋駅までの歩道",
+        "羽田空港ターミナルの展望デッキの開放状況"
+      ],
+      "routeOptions": [
+        {
+          "id": "no-10-standard",
+          "variant": "standard",
+          "strategy": "scenic",
+          "geometryUrl": "data/routes/no-10-standard.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 4226,
+          "engineDistanceM": 4229,
+          "repeatedGeometryPct": 0,
+          "routeReason": "天空橋駅からHANEDA INNOVATION CITYの前を通り、多摩川沿いを南へ、多摩川スカイブリッジを渡って多摩川緑地（殿町地区）から大師橋駅へ。計算上4.23km。橋は往復せずに渡りきる形にした。フードホール・足湯庭園は営業状況未確認のため立ち寄り先に含めていない。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
+          "distanceException": "4.23km。実在の駅・橋・公園だけで組んだため5〜6kmに届かない。旧案の往復は作らず延伸しない。",
+          "retraceException": "重なりは計算上0m。",
+          "waypoints": [
+            {
+              "index": 0,
+              "id": "tenkubashi",
+              "label": "天空橋駅",
+              "description": null,
+              "point": [
+                139.7546938,
+                35.5480731
+              ],
+              "source": "OSM node 天空橋 station"
+            },
+            {
+              "index": 1,
+              "id": "hic",
+              "label": "HANEDA INNOVATION CITY",
+              "description": null,
+              "point": [
+                139.7551653,
+                35.5478134
+              ],
+              "source": "OSM information HANEDA INNOVATION CITY"
+            },
+            {
+              "index": 2,
+              "id": "sky_bridge_n",
+              "label": "多摩川スカイブリッジ北",
+              "description": null,
+              "point": [
+                139.7633023,
+                35.5442496
+              ],
+              "source": "OSM node 7654141396 多摩川スカイブリッジ北"
+            },
+            {
+              "index": 3,
+              "id": "sky_bridge_s",
+              "label": "多摩川スカイブリッジ南（多摩川緑地側）",
+              "description": null,
+              "point": [
+                139.76095,
+                35.54045
+              ],
+              "source": "OSM node 819656082 多摩川スカイブリッジ（南端）"
+            },
+            {
+              "index": 4,
+              "id": "tmr_yokudo",
+              "label": "多摩川緑地（殿町地区）",
+              "description": null,
+              "point": [
+                139.7425949,
+                35.5406113
+              ],
+              "source": "OSM node 多摩川緑地（殿町地区） park"
+            },
+            {
+              "index": 5,
+              "id": "keikyu_daishibashi",
+              "label": "大師橋駅",
+              "description": null,
+              "point": [
+                139.7405267,
+                35.5365616
+              ],
+              "source": "OSM node 7878805495 大師橋 station"
+            }
+          ],
+          "engine": "valhalla-pedestrian",
+          "built": "2026-11-15T13:57:52.954Z",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/no-10-standard.json",
+            "totalM": 4226,
+            "climbM": 14.9,
+            "descentM": 17.7,
+            "minM": -0.7,
+            "maxM": 5.5
+          }
+        },
+        {
+          "id": "no-10-extended",
+          "variant": "extended",
+          "strategy": "scenic",
+          "geometryUrl": "data/routes/no-10-extended.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 3109,
+          "engineDistanceM": 3113,
+          "repeatedGeometryPct": 0,
+          "routeReason": "Bは旧穴守稲荷神社の大鳥居を経て羽田空港第3ターミナル駅へ向かう短い駅間。計算上3.11km。旧案の羽田空港ターミナル周辺への往復延伸は不採用。",
+          "distanceException": "3.11km。5〜6kmにも7〜8kmにも届かない短い駅間。延伸は作らない。",
+          "retraceException": null,
+          "waypoints": [
+            {
+              "index": 0,
+              "id": "tenkubashi",
+              "label": "天空橋駅",
+              "description": null,
+              "point": [
+                139.7546938,
+                35.5480731
+              ],
+              "source": "OSM node 天空橋 station"
+            },
+            {
+              "index": 1,
+              "id": "hic",
+              "label": "HANEDA INNOVATION CITY",
+              "description": null,
+              "point": [
+                139.7551653,
+                35.5478134
+              ],
+              "source": "OSM information HANEDA INNOVATION CITY"
+            },
+            {
+              "index": 2,
+              "id": "okunoin_torii",
+              "label": "旧穴守稲荷神社 大鳥居",
+              "description": null,
+              "point": [
+                139.7522816,
+                35.5466426
+              ],
+              "source": "OSM node 617802345 旧穴守稲荷神社 大鳥居"
+            },
+            {
+              "index": 3,
+              "id": "haneda_t3",
+              "label": "羽田空港第3ターミナル駅",
+              "description": null,
+              "point": [
+                139.7686203,
+                35.543874
+              ],
+              "source": "OSM node 羽田空港第3ターミナル station"
+            }
+          ],
+          "engine": "valhalla-pedestrian",
+          "built": "2026-11-15T13:57:52.954Z",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "dem",
+            "url": "data/elevation/no-10-extended.json",
+            "totalM": 3109,
+            "climbM": 10.4,
+            "descentM": 9.9,
+            "minM": 1.8,
+            "maxM": 5.3
+          }
+        },
+        {
+          "id": "no-10-rainy",
+          "variant": "rainy",
+          "strategy": "indoor_rail",
+          "verificationStatus": "researched",
+          "distanceM": null,
+          "routeReason": "雨の日はHANEDA INNOVATION CITYの館内と羽田空港第3ターミナルの館内を鉄道でつなぐ案。",
+          "segments": [
+            {
+              "kind": "walk_outdoor",
+              "from": "天空橋駅",
+              "to": "HANEDA INNOVATION CITY",
+              "distanceM": null,
+              "note": "駅と館の間の屋根の有無は未確認。"
+            },
+            {
+              "kind": "walk_indoor",
+              "from": "HANEDA INNOVATION CITY",
+              "to": "館内",
+              "distanceM": null,
+              "note": "館内動線は未確認。"
+            },
+            {
+              "kind": "rail",
+              "from": "天空橋駅",
+              "to": "羽田空港第3ターミナル駅",
+              "distanceM": null,
+              "note": "京急空港線または東京モノレール。"
+            },
+            {
+              "kind": "walk_indoor",
+              "from": "羽田空港第3ターミナル駅",
+              "to": "ターミナル館内",
+              "distanceM": null,
+              "note": "展望デッキの開放は未確認。"
+            }
+          ],
+          "conditions": [
+            "各施設の営業時間・入場は当日確認。",
+            "多摩川沿いのプロムナードの通行条件は未確認。"
+          ],
+          "geometryUrl": null,
+          "waypoints": []
+        },
+        {
+          "id": "no-10-legacy",
+          "variant": "legacy",
+          "strategy": "legacy_unknown",
+          "geometryUrl": "data/routes/no-10.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 6883,
+          "engineDistanceM": 6894,
+          "targetDistanceM": 6900,
+          "repeatedGeometryPct": 19.5,
+          "maxWaypointToShapeM": 84,
+          "built": "2026-08-29",
+          "engine": "valhalla-pedestrian",
+          "waypoints": [
+            {
+              "index": 0,
+              "point": [
+                139.755,
+                35.548
+              ]
+            },
+            {
+              "index": 1,
+              "point": [
+                139.762,
+                35.5455
+              ]
+            },
+            {
+              "index": 2,
+              "point": [
+                139.765,
+                35.5425
+              ]
+            },
+            {
+              "index": 3,
+              "point": [
+                139.77,
+                35.5405
+              ]
+            },
+            {
+              "index": 4,
+              "point": [
+                139.772,
+                35.543
+              ]
+            },
+            {
+              "index": 5,
+              "point": [
+                139.773957,
+                35.545446
+              ]
+            },
+            {
+              "index": 6,
+              "point": [
+                139.772,
+                35.543
+              ]
+            },
+            {
+              "index": 7,
+              "point": [
+                139.770905,
+                35.544754
+              ]
+            },
+            {
+              "index": 8,
+              "point": [
+                139.772,
+                35.543
+              ]
+            }
+          ],
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "dem",
+            "url": "data/elevation/no-10.json",
+            "totalM": 6883,
+            "climbM": 20.3,
+            "descentM": 20.1,
+            "minM": 1.8,
+            "maxM": 5.9
+          }
+        }
+      ]
     },
     {
       "id": "No.11",
@@ -4184,19 +4707,18 @@
     {
       "id": "No.12",
       "slug": "no-12",
-      "title": "立川のアートと昭和記念公園",
+      "title": "立川のアートと昭島の水辺",
       "seriesId": "main",
       "seriesName": "本編 A～Z（No.1～26）",
       "legacyAnchor": "course-12",
       "legacyUrl": "../index.html#course-12",
-      "summary": "駅前の屋外アートからGREEN SPRINGS、昭和記念公園の水辺へ。Bは日本庭園とこもれびの里を経て砂川側へ抜ける。旧経路末尾の五日市街道往復は採用しない。",
+      "summary": "立川駅からファーレ立川の屋外アートを通り、昭島側の残堀川沿いを経て東中神駅、昭島駅へ抜ける駅間。旧案の五日市街道方面の往復（約3.1km）は採らない。",
       "routeText": "経路ノード： 立川駅 → 北口デッキ → GREEN SPRINGS（美術館・広場・屋上庭園） → 昼食 → デッキ経由で駅南側商業エリア → モノレール沿い北上 → 高松町方面 → 高松駅 → 五日市街道方面へ実在の歩道で延伸（往復約3.1km） → ゴール",
       "tags": [
         "アート",
-        "庭園",
-        "公園",
-        "水辺",
-        "街並み"
+        "街並み",
+        "川",
+        "公園"
       ],
       "route": {
         "id": "no-12-legacy",
@@ -4288,101 +4810,25 @@
       "defaultVariant": "standard",
       "evidence": [
         {
-          "type": "official",
-          "title": "立川市・ファーレ立川アートマップ",
-          "url": "https://www.city.tachikawa.lg.jp/kanko/bunka/1003079/1003104/1003119.html",
-          "checkedAt": "2026-11-12",
-          "supports": "ファーレ立川の屋外アート鑑賞"
+          "type": "community",
+          "title": "OpenStreetMap（立川駅・ファーレ立川・東中神駅・昭島駅・玉川上水）",
+          "url": "https://www.openstreetmap.org/",
+          "checkedAt": "2026-11-15",
+          "supports": "駅とアート地区・川の名称ノードの座標。入口ではない。"
         },
         {
-          "type": "official",
-          "title": "国営昭和記念公園・園内マップ",
-          "url": "https://www.showakinen-koen.jp/wp-content/uploads/2024/05/ccccee673add3b37d63a8ca164af5060-1.pdf",
-          "checkedAt": "2026-11-12",
-          "supports": "立川口・西立川口、水鳥の池、日本庭園、砂川口等の位置と園内景観"
-        },
-        {
-          "type": "official",
-          "title": "国営昭和記念公園・アクセス",
-          "url": "https://www.showakinen-koen.jp/access/",
-          "checkedAt": "2026-11-12",
-          "supports": "各入園口と鉄道駅の関係"
-        },
-        {
-          "type": "official",
-          "title": "国営昭和記念公園・よくある質問",
-          "url": "https://www.showakinen-koen.jp/park-information/faq/",
-          "checkedAt": "2026-11-12",
-          "supports": "無料区と有料区、入園口の区別"
-        },
-        {
-          "type": "official",
-          "title": "GREEN SPRINGS・フロアガイド",
-          "url": "https://greensprings.jp/floor/",
-          "checkedAt": "2026-11-12",
-          "supports": "施設と美術館の位置"
-        },
-        {
-          "type": "official",
-          "title": "PLAY! MUSEUM・利用案内",
-          "url": "https://play2020.jp/museum/visit/",
-          "checkedAt": "2026-11-12",
-          "supports": "雨天案の施設利用条件は展覧会ごとに変わる"
-        },
-        {
-          "type": "official",
-          "title": "たましん美術館・公式",
-          "url": "https://www.tamashinmuseum.org/",
-          "checkedAt": "2026-11-12",
-          "supports": "雨天案の施設。現在の開館状態は出発日に再確認が必要"
-        },
-        {
-          "type": "walked_account",
-          "title": "武蔵野つれづれ草・モノレール沿いからGREEN SPRINGSを歩いた記録",
-          "url": "https://musashino007.hatenablog.com/entry/2023/04/06/122330",
-          "checkedAt": "2026-11-12",
-          "supports": "サンサンロード沿いの雰囲気。今回のA/Bを歩いた証拠ではない"
-        },
-        {
-          "type": "geodata",
-          "title": "OpenStreetMap via Overpass API",
-          "url": "https://overpass-api.de/api/interpreter",
-          "checkedAt": "2026-11-12",
-          "supports": "地点候補と入園口の位置。センター点は実際の入口ではない"
-        }
-      ],
-      "scenicSegments": [
-        {
-          "name": "ファーレ立川からGREEN SPRINGS",
-          "theme": "街なかのアートと植栽",
-          "direction": "立川駅から北へ",
-          "reviewStatus": "候補・作品位置と道路を照合待ち",
-          "evidenceTitle": "立川市・ファーレ立川アートマップ"
-        },
-        {
-          "name": "ふれあい広場から水鳥の池",
-          "theme": "芝生と水辺",
-          "direction": "昭和記念公園を西へ",
-          "reviewStatus": "候補・池畔の歩道と施設入口を照合待ち",
-          "evidenceTitle": "国営昭和記念公園・園内マップ"
-        },
-        {
-          "name": "日本庭園からこもれびの里",
-          "theme": "日本庭園と農村景観",
-          "direction": "B案で北へ",
-          "reviewStatus": "候補・園路と各入口を照合待ち",
-          "evidenceTitle": "国営昭和記念公園・園内マップ"
+          "type": "community",
+          "title": "旧資料 No.12（先行ページ index.html）",
+          "url": null,
+          "checkedAt": "2026-11-15",
+          "supports": "旧案の立ち寄り先。距離合わせの往復は採用していない。"
         }
       ],
       "openQuestions": [
-        "立川駅と西立川駅・武蔵砂川駅の使う出入口",
-        "園内の歩行線が実際の園路と一致するか",
-        "水鳥の池・日本庭園の中心点と入口のずれ",
-        "開園時間・休園日・入園料",
-        "園内の階段・坂・滑りやすい箇所",
-        "トイレ・休憩・途中離脱",
-        "B終点から豊田駅・グループ各方面への鉄道接続",
-        "Cの屋外露出距離と館内連続歩行距離"
+        "玉川上水沿いの歩道の位置（名称ノードがなく、残堀川沿いで代用した）",
+        "立川駅の使う出口と北口デッキ",
+        "昭島駅までの歩道の連続性",
+        "旧案の昭和記念公園を通る案と統合するか"
       ],
       "routeOptions": [
         {
@@ -4391,23 +4837,23 @@
           "strategy": "scenic",
           "geometryUrl": "data/routes/no-12-standard.geojson",
           "verificationStatus": "routed",
-          "distanceM": 3945,
-          "engineDistanceM": 3956,
-          "repeatedGeometryPct": 5.7,
-          "routeReason": "立川駅からファーレ立川のアート、GREEN SPRINGS、昭和記念公園の立川口、水鳥の池を通り、西立川駅へ抜ける。計算上3.94kmで5〜6kmの目標には届かないが、距離合わせの往復を加えず、JR駅間の自然な流れを優先する。園内の有料区・出入口・池畔の実際の歩道は地図レビュー待ち。",
-          "distanceException": "3.94km。ファーレ立川から昭和記念公園の水辺を西立川駅へ抜ける自然な流れを優先し、旧案の距離合わせの往復を除外。",
-          "retraceException": null,
+          "distanceM": 6861,
+          "engineDistanceM": 6868,
+          "repeatedGeometryPct": 0.2,
+          "routeReason": "立川駅からファーレ立川センタースクエア、ファーレ立川北を通り、昭島側の残堀川沿いを西へ、東中神駅を経て昭島駅へ。計算上6.86km。玉川上水はこの範囲で名称ノードが見つからず、川沿いの歩道も未確認のため、実在の河道がある残堀川沿いを使った。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
+          "distanceException": "6.86km。5〜6kmを少し超えるが、実在の河道沿いを通る自然な流れを優先し、短縮のための切り詰めはしない。",
+          "retraceException": "計算上の重なりは約13m（ファーレ立川北付近）。交差点の横断で生じる短い往復と推定。",
           "waypoints": [
             {
               "index": 0,
-              "id": "tachikawa_station",
+              "id": "tachikawa",
               "label": "立川駅",
               "description": null,
               "point": [
-                139.4138779,
-                35.6977473
+                139.4137893,
+                35.6977668
               ],
-              "source": "OpenStreetMap via Overpass; station feature; exit pending"
+              "source": "OSM station 立川; exit pending"
             },
             {
               "index": 1,
@@ -4415,226 +4861,67 @@
               "label": "ファーレ立川センタースクエア",
               "description": null,
               "point": [
-                139.4141024,
-                35.7021632
+                139.4143614,
+                35.7020795
               ],
-              "source": "OpenStreetMap via Overpass; art area"
+              "source": "OSM art area ファーレ立川"
             },
             {
               "index": 2,
-              "id": "green_springs",
-              "label": "GREEN SPRINGS",
+              "id": "tachikawa_n",
+              "label": "ファーレ立川北",
               "description": null,
               "point": [
-                139.411371,
-                35.7034083
+                139.4149362,
+                35.7028243
               ],
-              "source": "OpenStreetMap via Overpass; facility point; walking entrance pending"
+              "source": "OSM node ファーレ立川北"
             },
             {
               "index": 3,
-              "id": "tachikawa_gate",
-              "label": "昭和記念公園・立川口",
+              "id": "tamagawa_josui",
+              "label": "残堀川（昭島・東町付近）",
               "description": null,
               "point": [
-                139.4036071,
-                35.7022439
+                139.39193,
+                35.70806
               ],
-              "source": "OpenStreetMap via Overpass; entrance=yes"
+              "source": "OSM way 60964072 残堀川 river; 玉川上水はこの範囲で名称ノードが見つからず、河道の座標は未確認のため使わない"
             },
             {
               "index": 4,
-              "id": "fureai",
-              "label": "ふれあい広場付近",
+              "id": "higashinakagami",
+              "label": "東中神駅",
               "description": null,
               "point": [
-                139.4002309,
-                35.7036919
+                139.3838683,
+                35.7063214
               ],
-              "source": "OpenStreetMap via Overpass; restaurant vicinity, not plaza entrance"
+              "source": "OSM node 東中神 stop（JR青梅線）"
             },
             {
               "index": 5,
-              "id": "pond",
-              "label": "水鳥の池",
+              "id": "akishima",
+              "label": "昭島駅",
               "description": null,
               "point": [
-                139.3949054,
-                35.7058623
+                139.3608668,
+                35.7135685
               ],
-              "source": "OpenStreetMap via Overpass; waterbody center; shore path pending"
-            },
-            {
-              "index": 6,
-              "id": "west_gate",
-              "label": "昭和記念公園・西立川口",
-              "description": null,
-              "point": [
-                139.3952508,
-                35.7036353
-              ],
-              "source": "OpenStreetMap via Overpass; entrance=yes"
-            },
-            {
-              "index": 7,
-              "id": "nishitachikawa_station",
-              "label": "西立川駅",
-              "description": null,
-              "point": [
-                139.3936344,
-                35.7035276
-              ],
-              "source": "OpenStreetMap via Overpass; station vicinity; exit pending"
+              "source": "OSM node 305545683 昭島 station"
             }
           ],
           "engine": "valhalla-pedestrian",
-          "built": "2026-11-12T14:42:54.180Z",
+          "built": "2026-11-15T14:07:33.442Z",
           "elevation": {
             "source": "gsi_dem5a",
             "status": "dem",
             "url": "data/elevation/no-12-standard.json",
-            "totalM": 3945,
-            "climbM": 27.4,
-            "descentM": 18.1,
+            "totalM": 6861,
+            "climbM": 41.9,
+            "descentM": 16,
             "minM": 83.2,
-            "maxM": 97.8
-          }
-        },
-        {
-          "id": "no-12-extended",
-          "variant": "extended",
-          "strategy": "scenic",
-          "geometryUrl": "data/routes/no-12-extended.geojson",
-          "verificationStatus": "routed",
-          "distanceM": 7590,
-          "engineDistanceM": 7606,
-          "repeatedGeometryPct": 5.2,
-          "routeReason": "Aと立川口・水鳥の池までを共有し、日本庭園とこもれびの里を経て砂川口から武蔵砂川駅へ抜ける。計算上7.59km。庭園と農村景観を追加する価値があるが、終点は西武拝島線になり、豊田駅への帰路の乗換を要確認。",
-          "distanceException": null,
-          "retraceException": null,
-          "waypoints": [
-            {
-              "index": 0,
-              "id": "tachikawa_station",
-              "label": "立川駅",
-              "description": null,
-              "point": [
-                139.4138779,
-                35.6977473
-              ],
-              "source": "OpenStreetMap via Overpass; station feature; exit pending"
-            },
-            {
-              "index": 1,
-              "id": "faret",
-              "label": "ファーレ立川センタースクエア",
-              "description": null,
-              "point": [
-                139.4141024,
-                35.7021632
-              ],
-              "source": "OpenStreetMap via Overpass; art area"
-            },
-            {
-              "index": 2,
-              "id": "green_springs",
-              "label": "GREEN SPRINGS",
-              "description": null,
-              "point": [
-                139.411371,
-                35.7034083
-              ],
-              "source": "OpenStreetMap via Overpass; facility point; walking entrance pending"
-            },
-            {
-              "index": 3,
-              "id": "tachikawa_gate",
-              "label": "昭和記念公園・立川口",
-              "description": null,
-              "point": [
-                139.4036071,
-                35.7022439
-              ],
-              "source": "OpenStreetMap via Overpass; entrance=yes"
-            },
-            {
-              "index": 4,
-              "id": "fureai",
-              "label": "ふれあい広場付近",
-              "description": null,
-              "point": [
-                139.4002309,
-                35.7036919
-              ],
-              "source": "OpenStreetMap via Overpass; restaurant vicinity, not plaza entrance"
-            },
-            {
-              "index": 5,
-              "id": "pond",
-              "label": "水鳥の池",
-              "description": null,
-              "point": [
-                139.3949054,
-                35.7058623
-              ],
-              "source": "OpenStreetMap via Overpass; waterbody center; shore path pending"
-            },
-            {
-              "index": 6,
-              "id": "japanese_garden",
-              "label": "日本庭園",
-              "description": null,
-              "point": [
-                139.3954371,
-                35.7142767
-              ],
-              "source": "OpenStreetMap via Overpass; garden center; entrance pending"
-            },
-            {
-              "index": 7,
-              "id": "komorebi",
-              "label": "こもれびの里",
-              "description": null,
-              "point": [
-                139.397876,
-                35.7164587
-              ],
-              "source": "OpenStreetMap via Overpass; area center; entrance pending"
-            },
-            {
-              "index": 8,
-              "id": "sunagawa_gate",
-              "label": "昭和記念公園・砂川口",
-              "description": null,
-              "point": [
-                139.3973692,
-                35.7196183
-              ],
-              "source": "OpenStreetMap via Overpass; gate vicinity"
-            },
-            {
-              "index": 9,
-              "id": "musashisunagawa_station",
-              "label": "武蔵砂川駅",
-              "description": null,
-              "point": [
-                139.3922831,
-                35.7289155
-              ],
-              "source": "OpenStreetMap via Overpass; station vicinity; exit pending"
-            }
-          ],
-          "engine": "valhalla-pedestrian",
-          "built": "2026-11-12T14:42:56.208Z",
-          "elevation": {
-            "source": "gsi_dem5a",
-            "status": "dem",
-            "url": "data/elevation/no-12-extended.json",
-            "totalM": 7590,
-            "climbM": 54.3,
-            "descentM": 32.8,
-            "minM": 83.2,
-            "maxM": 107.1
+            "maxM": 109.4
           }
         },
         {
@@ -4643,48 +4930,33 @@
           "strategy": "indoor_rail",
           "verificationStatus": "researched",
           "distanceM": null,
-          "routeReason": "立川駅からたましん美術館、GREEN SPRINGSのPLAY! MUSEUMへ移る短い屋外歩行と館内見学の案。施設間・駅間に屋根のない区間があり、連続した屋内徒歩コースとしては未検証。",
+          "routeReason": "雨の日は立川駅北口のデッキと商業施設の館内を中心にする短い案。",
           "segments": [
             {
-              "kind": "walk_outdoor",
+              "kind": "walk_indoor",
               "from": "立川駅",
-              "to": "たましん美術館",
+              "to": "北口デッキ",
               "distanceM": null,
-              "note": "屋根のある連続動線は未確認。傘が必要。"
-            },
-            {
-              "kind": "walk_indoor",
-              "from": "たましん美術館",
-              "to": "展示室内",
-              "distanceM": null,
-              "note": "開館・展示・入館料を当日確認。"
+              "note": "デッキの連続性は未確認。"
             },
             {
               "kind": "walk_outdoor",
-              "from": "たましん美術館",
-              "to": "PLAY! MUSEUM",
+              "from": "北口デッキ",
+              "to": "ファーレ立川",
               "distanceM": null,
-              "note": "館外を歩く区間があり、雨天の横断・段差を要確認。"
+              "note": "屋外のアート広場。"
             },
             {
-              "kind": "walk_indoor",
-              "from": "PLAY! MUSEUM",
-              "to": "展示室内",
+              "kind": "rail",
+              "from": "立川駅",
+              "to": "昭島駅",
               "distanceM": null,
-              "note": "展覧会ごとに料金・利用方法が変わる。"
-            },
-            {
-              "kind": "walk_outdoor",
-              "from": "PLAY! MUSEUM",
-              "to": "立川駅",
-              "distanceM": null,
-              "note": "駅への帰路。屋根の連続性は未確認。"
+              "note": "JR青梅線。"
             }
           ],
           "conditions": [
-            "両館の開館日・臨時休館・料金を当日公式サイトで確認。",
-            "屋外露出と滑りやすい箇所は未調査。",
-            "徒歩距離と館内連続歩行距離は未計測。"
+            "商業施設の営業時間は当日確認。",
+            "玉川上水沿いの歩道は雨天で濡れやすい。"
           ],
           "geometryUrl": null,
           "waypoints": []
@@ -4783,18 +5055,18 @@
     {
       "id": "No.13",
       "slug": "no-13",
-      "title": "飛鳥山～音無親水公園",
+      "title": "飛鳥山と音無親水公園",
       "seriesId": "main",
       "seriesName": "本編 A～Z（No.1～26）",
       "legacyAnchor": "course-13",
       "legacyUrl": "../index.html#course-13",
-      "summary": "経路ノード： 王子駅 → アスカルゴ（山上） → 飛鳥山公園（3館・保存車両） → 昼食 → 音無親水公園 → 石神井川遊歩道 → 北とぴあ 展望ロビー → 石神井川（王子駅北側で地上に現れる区間） → 王子銀座商店街（北本通り） → 王子駅（解散）",
+      "summary": "王子駅から飛鳥山公園、音無親水公園、石神井川の武蔵野の路、北とぴあを回って王子駅へ戻る短い周遊。石神井川沿いの遊歩道の位置は地図で未確認。",
       "routeText": "経路ノード： 王子駅 → アスカルゴ（山上） → 飛鳥山公園（3館・保存車両） → 昼食 → 音無親水公園 → 石神井川遊歩道 → 北とぴあ 展望ロビー → 石神井川（王子駅北側で地上に現れる区間） → 王子銀座商店街（北本通り） → 王子駅（解散）",
       "tags": [
-        "鉄道",
-        "産業史",
-        "庭園",
-        "歴史",
+        "公園",
+        "桜",
+        "川",
+        "街並み",
         "展望"
       ],
       "route": {
@@ -4809,17 +5081,7 @@
         "repeatedGeometryPct": 0.5,
         "maxWaypointToShapeM": 20,
         "built": "2026-10-18",
-        "engine": "valhalla-pedestrian",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "dem",
-          "url": "data/elevation/no-13.json",
-          "totalM": 6989,
-          "climbM": 56.2,
-          "descentM": 37.4,
-          "minM": 5.6,
-          "maxM": 33.7
-        }
+        "engine": "valhalla-pedestrian"
       },
       "waypoints": [
         {
@@ -4889,7 +5151,251 @@
       "climbM": 80.7,
       "descentM": 60.9,
       "auditFlags": [],
-      "category": "main"
+      "category": "main",
+      "defaultVariant": "standard",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "OpenStreetMap（王子駅・飛鳥山公園・音無親水公園・武蔵野の路 石神井川コース・北とぴあ）",
+          "url": "https://www.openstreetmap.org/",
+          "checkedAt": "2026-11-15",
+          "supports": "駅・公園・遊歩道案内・展望施設の名称ノードの座標。入口ではない。"
+        },
+        {
+          "type": "community",
+          "title": "旧資料 No.13（先行ページ index.html）",
+          "url": null,
+          "checkedAt": "2026-11-15",
+          "supports": "旧案の立ち寄り先。"
+        }
+      ],
+      "openQuestions": [
+        "石神井川沿いの遊歩道の正確な位置と通行条件",
+        "北とぴあ展望ロビーの開放時間",
+        "アスカルゴの運行状況",
+        "飛鳥山の3館の開館日と入口"
+      ],
+      "routeOptions": [
+        {
+          "id": "no-13-standard",
+          "variant": "standard",
+          "strategy": "scenic",
+          "geometryUrl": "data/routes/no-13-standard.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 2246,
+          "engineDistanceM": 2248,
+          "repeatedGeometryPct": 8.9,
+          "routeReason": "王子駅から飛鳥山公園（アスカルゴ・3館の前）、音無親水公園、石神井川の武蔵野の路 石神井川コース沿いを回り、北とぴあの前を通って王子駅へ戻る。計算上2.25km。周遊にして同じ道を戻ることを避けた。石神井川沿いの遊歩道の位置は地図で未確認。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
+          "distanceException": "2.25km。駅を中心にした短い周遊で5〜6kmに届かない。周遊を無理に延ばさない。",
+          "retraceException": "飛鳥山公園内で約110mと約60m（計約199m）。坂の上り下りで同じ園路を戻る形と推定。地図で未確認。",
+          "waypoints": [
+            {
+              "index": 0,
+              "id": "oji",
+              "label": "王子駅",
+              "description": null,
+              "point": [
+                139.7375536,
+                35.7538798
+              ],
+              "source": "OSM node 5406714005 王子 station"
+            },
+            {
+              "index": 1,
+              "id": "asukayama",
+              "label": "飛鳥山公園",
+              "description": null,
+              "point": [
+                139.7379967,
+                35.7500951
+              ],
+              "source": "OSM node 飛鳥山公園 park"
+            },
+            {
+              "index": 2,
+              "id": "otonashi",
+              "label": "音無親水公園",
+              "description": null,
+              "point": [
+                139.7359522,
+                35.7526497
+              ],
+              "source": "OSM way 音無親水公園 park"
+            },
+            {
+              "index": 3,
+              "id": "shakujii_river",
+              "label": "石神井川（武蔵野の路・石神井川コース）",
+              "description": null,
+              "point": [
+                139.7320061,
+                35.7525129
+              ],
+              "source": "OSM information 武蔵野の路 石神井川コース; 遊歩道の位置は地図レビュー待ち"
+            },
+            {
+              "index": 4,
+              "id": "kitatopia",
+              "label": "北とぴあ",
+              "description": null,
+              "point": [
+                139.7370852,
+                35.7547065
+              ],
+              "source": "OSM node 北とぴあ前 416334963"
+            },
+            {
+              "index": 5,
+              "id": "oji",
+              "label": "王子駅",
+              "description": null,
+              "point": [
+                139.7375536,
+                35.7538798
+              ],
+              "source": "OSM node 5406714005 王子 station"
+            }
+          ],
+          "engine": "valhalla-pedestrian",
+          "built": "2026-11-15T13:58:33.156Z",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "dem",
+            "url": "data/elevation/no-13-standard.json",
+            "totalM": 2246,
+            "climbM": 26,
+            "descentM": 25.9,
+            "minM": 5.4,
+            "maxM": 16.2
+          }
+        },
+        {
+          "id": "no-13-rainy",
+          "variant": "rainy",
+          "strategy": "indoor_rail",
+          "verificationStatus": "researched",
+          "distanceM": null,
+          "routeReason": "雨の日は飛鳥山公園の3つの博物館（紙の博物館・渋沢史料館・北区飛鳥山博物館）の館内を中心にする案。",
+          "segments": [
+            {
+              "kind": "walk_outdoor",
+              "from": "王子駅",
+              "to": "飛鳥山公園",
+              "distanceM": null,
+              "note": "アスカルゴ（モノレール）の利用可否は未確認。"
+            },
+            {
+              "kind": "walk_indoor",
+              "from": "飛鳥山公園",
+              "to": "博物館の館内",
+              "distanceM": null,
+              "note": "開館日・料金を当日公式で確認。"
+            },
+            {
+              "kind": "rail",
+              "from": "飛鳥山駅",
+              "to": "王子駅",
+              "distanceM": null,
+              "note": "都電荒川線。"
+            }
+          ],
+          "conditions": [
+            "各館の開館日・料金は当日確認。",
+            "アスカルゴの運行状況は未確認。"
+          ],
+          "geometryUrl": null,
+          "waypoints": []
+        },
+        {
+          "id": "no-13-legacy",
+          "variant": "legacy",
+          "strategy": "legacy_unknown",
+          "geometryUrl": "data/routes/no-13.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 6989,
+          "engineDistanceM": 6989,
+          "targetDistanceM": 7000,
+          "repeatedGeometryPct": 0.5,
+          "maxWaypointToShapeM": 20,
+          "built": "2026-10-18",
+          "engine": "valhalla-pedestrian",
+          "waypoints": [
+            {
+              "index": 0,
+              "point": [
+                139.7382,
+                35.7528
+              ]
+            },
+            {
+              "index": 1,
+              "point": [
+                139.7365,
+                35.752
+              ]
+            },
+            {
+              "index": 2,
+              "point": [
+                139.735,
+                35.751
+              ]
+            },
+            {
+              "index": 3,
+              "point": [
+                139.733,
+                35.75
+              ]
+            },
+            {
+              "index": 4,
+              "point": [
+                139.732,
+                35.749
+              ]
+            },
+            {
+              "index": 5,
+              "point": [
+                139.731,
+                35.7485
+              ]
+            },
+            {
+              "index": 6,
+              "point": [
+                139.709266,
+                35.73763
+              ]
+            },
+            {
+              "index": 7,
+              "point": [
+                139.71286,
+                35.72855
+              ]
+            },
+            {
+              "index": 8,
+              "point": [
+                139.70619,
+                35.72034
+              ]
+            }
+          ],
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "dem",
+            "url": "data/elevation/no-13.json",
+            "totalM": 6989,
+            "climbM": 56.2,
+            "descentM": 37.4,
+            "minM": 5.6,
+            "maxM": 33.7
+          }
+        }
+      ]
     },
     {
       "id": "No.14",

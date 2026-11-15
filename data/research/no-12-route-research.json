@@ -1,0 +1,67 @@
+{
+  "id": "No.12",
+  "title": "立川のアートと昭島の水辺",
+  "stage": "source_research_in_progress",
+  "checkedAt": "2026-11-15",
+  "evidence": [
+    {
+      "type": "community",
+      "title": "OpenStreetMap（立川駅・ファーレ立川・東中神駅・昭島駅・玉川上水）",
+      "url": "https://www.openstreetmap.org/",
+      "checkedAt": "2026-11-15",
+      "supports": "駅とアート地区・川の名称ノードの座標。入口ではない。"
+    },
+    {
+      "type": "community",
+      "title": "旧資料 No.12（先行ページ index.html）",
+      "url": null,
+      "checkedAt": "2026-11-15",
+      "supports": "旧案の立ち寄り先。距離合わせの往復は採用していない。"
+    }
+  ],
+  "trials": [
+    {
+      "n": 1,
+      "variant": "standard 新規（OSMの駅・地点）",
+      "result": "6.41km・反復86m",
+      "finding": "計算上の重なりは約86m。玉川上水沿いの歩道へ入るための仮点の前後と推定。地図で未確認。"
+    },
+    {
+      "n": 2,
+      "variant": "standard 新規（OSMの駅・地点）",
+      "result": "6.41km・反復86m",
+      "finding": "計算上の重なりは約86m。玉川上水沿いの歩道へ入るための仮点の前後と推定。地図で未確認。"
+    },
+    {
+      "n": 3,
+      "variant": "standard 新規（OSMの駅・地点）",
+      "result": "6.41km・反復86m",
+      "finding": "計算上の重なりは約86m。玉川上水沿いの歩道へ入るための仮点の前後と推定。地図で未確認。"
+    },
+    {
+      "n": 4,
+      "variant": "standard 新規（OSMの駅・地点）",
+      "result": "6.41km・反復86m",
+      "finding": "計算上の重なりは約86m。玉川上水沿いの歩道へ入るための仮点の前後と推定。地図で未確認。"
+    },
+    {
+      "n": 5,
+      "variant": "standard 新規（OSMの駅・地点）",
+      "result": "6.86km・反復13m",
+      "finding": "計算上の重なりは約13m（ファーレ立川北付近）。交差点の横断で生じる短い往復と推定。"
+    }
+  ],
+  "files": [
+    "scripts/lib-rebuild.mjs",
+    "scripts/build-group2.mjs",
+    "data/curated/no-12.json",
+    "data/research/no-12-adopted-build.json"
+  ],
+  "openQuestions": [
+    "玉川上水沿いの歩道の位置（名称ノードがなく、残堀川沿いで代用した）",
+    "立川駅の使う出口と北口デッキ",
+    "昭島駅までの歩道の連続性",
+    "旧案の昭和記念公園を通る案と統合するか"
+  ],
+  "decision": "2026-11-15 新Aを計算（6.86km・反復13m）。玉川上水の名称ノードがないため残堀川沿いで代用。旧案の五日市街道方面の往復は不採用。"
+}
