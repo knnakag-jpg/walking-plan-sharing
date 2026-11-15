@@ -1,0 +1,94 @@
+{
+ "checkedAt": "2026-11-15T00:57:32.821Z",
+ "source": "OpenStreetMap via Overpass API; © OpenStreetMap contributors",
+ "ichibamae": {
+  "snapped": [
+   35.6455531,
+   139.7856933
+  ],
+  "movedM": 24,
+  "wayId": 629545983,
+  "highway": "footway",
+  "name": null
+ },
+ "senkyaku": {
+  "snapped": [
+   35.645746,
+   139.7838217
+  ],
+  "movedM": 35,
+  "wayId": 651677197,
+  "highway": "footway",
+  "name": null
+ },
+ "okujo": {
+  "snapped": [
+   35.6436711,
+   139.7807766
+  ],
+  "movedM": 5,
+  "wayId": 1202384848,
+  "highway": "footway",
+  "name": null
+ },
+ "gururi_s": {
+  "snapped": [
+   35.6436409,
+   139.7876224
+  ],
+  "movedM": 6,
+  "wayId": 617971201,
+  "highway": "footway",
+  "name": null
+ },
+ "rokuchome": {
+  "snapped": [
+   35.6465432,
+   139.7908102
+  ],
+  "movedM": 8,
+  "wayId": 1191359604,
+  "highway": "footway",
+  "name": null
+ },
+ "toyosu_park": {
+  "snapped": [
+   35.653551,
+   139.7936791
+  ],
+  "movedM": 7,
+  "wayId": 1126000119,
+  "highway": "pedestrian",
+  "name": null
+ },
+ "toyosu": {
+  "snapped": [
+   35.6544293,
+   139.7958876
+  ],
+  "movedM": 0,
+  "wayId": 670080591,
+  "highway": "footway",
+  "name": "東京メトロ豊洲駅 7番出入口"
+ },
+ "ashiyu": {
+  "snapped": [
+   35.6459829,
+   139.7834213
+  ],
+  "movedM": 25,
+  "wayId": 1426189762,
+  "highway": "steps",
+  "name": null
+ },
+ "shintoyosu": {
+  "snapped": [
+   35.6489148,
+   139.790156
+  ],
+  "movedM": 19,
+  "wayId": 612573420,
+  "highway": "footway",
+  "name": null
+ }
+}

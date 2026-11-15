@@ -1,0 +1,278 @@
+{
+  "calculatedAt": "2026-11-15T00:58:43.672Z",
+  "engine": "valhalla-pedestrian",
+  "variants": {
+    "direct": {
+      "label": "A 市場前→屋上緑化広場→千客万来→六丁目公園→豊洲駅",
+      "distanceM": 3609,
+      "engineDistanceM": 3602,
+      "repeatedGeometryM": 169,
+      "legKm": [
+        0.64,
+        0.76,
+        0.89,
+        1.01,
+        0.3
+      ],
+      "maxStopOffsetM": 6,
+      "stops": [
+        {
+          "id": "ichibamae",
+          "label": "市場前駅",
+          "coord": [
+            35.6455531,
+            139.7856933
+          ],
+          "osmCentre": [
+            35.64576,
+            139.78578
+          ],
+          "movedToWalkwayM": 24,
+          "walkway": {
+            "wayId": 629545983,
+            "highway": "footway",
+            "name": null
+          },
+          "source": "OSM node 3349961082 station",
+          "offsetM": 0
+        },
+        {
+          "id": "okujo",
+          "label": "豊洲市場 屋上緑化広場",
+          "coord": [
+            35.6436711,
+            139.7807766
+          ],
+          "osmCentre": [
+            35.64371,
+            139.78081
+          ],
+          "movedToWalkwayM": 5,
+          "walkway": {
+            "wayId": 1202384848,
+            "highway": "footway",
+            "name": null
+          },
+          "source": "OSM way 1202384855 centre; 5:00-23:00 free per user-supplied web summary, not official",
+          "offsetM": 0
+        },
+        {
+          "id": "senkyaku",
+          "label": "千客万来",
+          "coord": [
+            35.645746,
+            139.7838217
+          ],
+          "osmCentre": [
+            35.64546,
+            139.78366
+          ],
+          "movedToWalkwayM": 35,
+          "walkway": {
+            "wayId": 651677197,
+            "highway": "footway",
+            "name": null
+          },
+          "source": "OSM way 1159017723 centre; entrance needs confirmation",
+          "offsetM": 0
+        },
+        {
+          "id": "rokuchome",
+          "label": "豊洲六丁目公園（テプコ豊洲ビル外観を望む）",
+          "coord": [
+            35.6465432,
+            139.7908102
+          ],
+          "osmCentre": [
+            35.64651,
+            139.79089
+          ],
+          "movedToWalkwayM": 8,
+          "walkway": {
+            "wayId": 1191359604,
+            "highway": "footway",
+            "name": null
+          },
+          "source": "OSM node 11374672985 information; TEPCO building is not enterable (user-supplied, not official)",
+          "offsetM": 0
+        },
+        {
+          "id": "toyosu_park",
+          "label": "豊洲公園",
+          "coord": [
+            35.653551,
+            139.7936791
+          ],
+          "osmCentre": [
+            35.65361,
+            139.7937
+          ],
+          "movedToWalkwayM": 7,
+          "walkway": {
+            "wayId": 1126000119,
+            "highway": "pedestrian",
+            "name": null
+          },
+          "source": "OSM way 22823726 centre",
+          "offsetM": 6
+        },
+        {
+          "id": "toyosu",
+          "label": "豊洲駅",
+          "coord": [
+            35.6544293,
+            139.7958876
+          ],
+          "osmCentre": [
+            35.65443,
+            139.79589
+          ],
+          "movedToWalkwayM": 0,
+          "walkway": {
+            "wayId": 670080591,
+            "highway": "footway",
+            "name": "東京メトロ豊洲駅 7番出入口"
+          },
+          "source": "OSM node 1131996015 subway_entrance",
+          "offsetM": 0
+        }
+      ]
+    },
+    "direct_ashiyu": {
+      "label": "B 足湯庭園経由",
+      "distanceM": 3636,
+      "engineDistanceM": 3630,
+      "repeatedGeometryM": 183,
+      "legKm": [
+        0.64,
+        0.73,
+        0.94,
+        1.01,
+        0.3
+      ],
+      "maxStopOffsetM": 6,
+      "stops": [
+        {
+          "id": "ichibamae",
+          "label": "市場前駅",
+          "coord": [
+            35.6455531,
+            139.7856933
+          ],
+          "osmCentre": [
+            35.64576,
+            139.78578
+          ],
+          "movedToWalkwayM": 24,
+          "walkway": {
+            "wayId": 629545983,
+            "highway": "footway",
+            "name": null
+          },
+          "source": "OSM node 3349961082 station",
+          "offsetM": 0
+        },
+        {
+          "id": "okujo",
+          "label": "豊洲市場 屋上緑化広場",
+          "coord": [
+            35.6436711,
+            139.7807766
+          ],
+          "osmCentre": [
+            35.64371,
+            139.78081
+          ],
+          "movedToWalkwayM": 5,
+          "walkway": {
+            "wayId": 1202384848,
+            "highway": "footway",
+            "name": null
+          },
+          "source": "OSM way 1202384855 centre; 5:00-23:00 free per user-supplied web summary, not official",
+          "offsetM": 0
+        },
+        {
+          "id": "ashiyu",
+          "label": "千客万来 足湯庭園（8F）",
+          "coord": [
+            35.6459829,
+            139.7834213
+          ],
+          "osmCentre": [
+            35.64611,
+            139.78319
+          ],
+          "movedToWalkwayM": 25,
+          "walkway": {
+            "wayId": 1426189762,
+            "highway": "steps",
+            "name": null
+          },
+          "source": "OSM node 13110259613 public_bath 千客万来足湯; hours/fee not confirmed",
+          "offsetM": 0
+        },
+        {
+          "id": "rokuchome",
+          "label": "豊洲六丁目公園（テプコ豊洲ビル外観を望む）",
+          "coord": [
+            35.6465432,
+            139.7908102
+          ],
+          "osmCentre": [
+            35.64651,
+            139.79089
+          ],
+          "movedToWalkwayM": 8,
+          "walkway": {
+            "wayId": 1191359604,
+            "highway": "footway",
+            "name": null
+          },
+          "source": "OSM node 11374672985 information; TEPCO building is not enterable (user-supplied, not official)",
+          "offsetM": 0
+        },
+        {
+          "id": "toyosu_park",
+          "label": "豊洲公園",
+          "coord": [
+            35.653551,
+            139.7936791
+          ],
+          "osmCentre": [
+            35.65361,
+            139.7937
+          ],
+          "movedToWalkwayM": 7,
+          "walkway": {
+            "wayId": 1126000119,
+            "highway": "pedestrian",
+            "name": null
+          },
+          "source": "OSM way 22823726 centre",
+          "offsetM": 6
+        },
+        {
+          "id": "toyosu",
+          "label": "豊洲駅",
+          "coord": [
+            35.6544293,
+            139.7958876
+          ],
+          "osmCentre": [
+            35.65443,
+            139.79589
+          ],
+          "movedToWalkwayM": 0,
+          "walkway": {
+            "wayId": 670080591,
+            "highway": "footway",
+            "name": "東京メトロ豊洲駅 7番出入口"
+          },
+          "source": "OSM node 1131996015 subway_entrance",
+          "offsetM": 0
+        }
+      ]
+    }
+  }
+}

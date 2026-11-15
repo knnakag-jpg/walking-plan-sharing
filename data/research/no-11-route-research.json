@@ -1,0 +1,35 @@
+{
+  "id": "No.11",
+  "title": "豊洲 千客万来～ぐるり公園",
+  "stage": "source_research_in_progress",
+  "checkedAt": "2026-11-15",
+  "legacyDiagnosis": {
+    "repeatedGeometryM": 919,
+    "largestCluster": "約1.0〜1.2km付近、市場西端（屋上緑化広場側）への往復を含む区間",
+    "other": "旧文言「ぐるり公園の周回をさらに辰巳方面へ延ばし」は実座標のない延伸で、Handover.md 禁止事項3に該当するため復活させない。"
+  },
+  "userSupplied": {
+    "note": "利用者提供のWeb要約（公式未確認）：テプコ豊洲ビルは一般の立ち入り不可で展望台・商業施設なし。外観は豊洲六丁目公園などから。豊洲市場屋上緑化広場は5:00〜23:00無料、千客万来足湯庭園（8F）は無料。テレコムセンター展望室は大人500円。拡大地図（新豊洲〜豊洲周辺の航空写真）も受領。"
+  },
+  "trials": [
+    {"n": 1, "variant": "市場前→千客万来→屋上緑化広場→ぐるり公園→六丁目公園→豊洲公園→豊洲駅", "result": "4.33km・反復820m", "finding": "屋上緑化広場が市場西端にあり、東へ戻る約745mの往復が出る"},
+    {"n": 2, "variant": "市場南側を西へ→屋上緑化広場→千客万来→北側を東へ", "result": "4.39km・反復535m", "finding": "ぐるり公園の南側ピンで市場前駅から折り返す約366mが出る"},
+    {"n": 3, "variant": "市場前→屋上緑化広場→千客万来→六丁目公園→豊洲公園→豊洲駅", "result": "3.61km・反復169m", "finding": "反復は屋上緑化広場の79m・豊洲公園付近の75m等。距離は元の約7.3kmの約半分"}
+  ],
+  "decision": "最小の反復は3.61km・169m。距離が約7.3kmの約半分で、旧案の距離を満たす実在の立ち寄り先が確認できていない。距離を往復や機械オフセットで埋めない。新A/Bとしては採用せず、旧線はそのまま（要再設計）。",
+  "openQuestions": [
+    "距離を延ばせる実在の立ち寄り先：新豊洲側（teamLab Planets は有料、入場を前提にするか）、豊洲ぐるり公園の水際遊歩道の東側、テレコムセンター展望室（500円）",
+    "屋上緑化広場への入口（市場の見学者動線）と開放時間を公式で確認",
+    "千客万来の足湯庭園の営業時間・料金",
+    "豊洲公園付近の75m反復の原因となる歩行路の確認（拡大地図で歩道橋・公園出入口）"
+  ],
+  "files": [
+    "scripts/osm-poi-no-11.mjs",
+    "scripts/build-no-11-candidates.mjs",
+    "data/research/no-11-osm-poi.json",
+    "data/research/no-11-walkway-snap.json",
+    "data/research/no-11-route-build.json",
+    "data/candidates/no-11-direct.geojson",
+    "data/candidates/no-11-direct_ashiyu.geojson"
+  ]
+}
