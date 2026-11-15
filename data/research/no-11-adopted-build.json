@@ -1,0 +1,188 @@
+{
+  "generatedAt": "2026-11-15T12:32:26.578Z",
+  "method": "Valhalla pedestrian; exact geometry edge repeat is only a screening clue",
+  "results": [
+    {
+      "variant": "standard",
+      "distanceM": 4408,
+      "engineDistanceM": 4406,
+      "repeatedGeometryM": 141,
+      "repeatedGeometryPct": 3.2,
+      "waypoints": [
+        {
+          "id": "kachidoki_st",
+          "label": "勝どき駅",
+          "coord": [
+            35.6588468,
+            139.7771934
+          ],
+          "source": "OSM node 6374714705 bus_stop 勝どき駅"
+        },
+        {
+          "id": "harumi_rinkai",
+          "label": "晴海臨海公園",
+          "coord": [
+            35.6548608,
+            139.7857638
+          ],
+          "source": "OSM way 晴海臨海公園; entrance needs confirmation"
+        },
+        {
+          "id": "toyosu_ohashi",
+          "label": "豊洲大橋",
+          "coord": [
+            35.6469809,
+            139.7864158
+          ],
+          "source": "approx. 豊洲大橋 west end; no OSM named node used"
+        },
+        {
+          "id": "okujo",
+          "label": "豊洲市場 屋上緑化広場",
+          "coord": [
+            35.6436711,
+            139.7807766
+          ],
+          "source": "OSM way 1202384855 centre"
+        },
+        {
+          "id": "senkyaku",
+          "label": "豊洲 千客万来",
+          "coord": [
+            35.645746,
+            139.7838217
+          ],
+          "source": "OSM way 1159017723 centre"
+        },
+        {
+          "id": "ichibamae",
+          "label": "市場前駅",
+          "coord": [
+            35.6455531,
+            139.7856933
+          ],
+          "source": "OSM node 3349961082 station"
+        }
+      ],
+      "legDistancesKm": [
+        1.21,
+        1.37,
+        0.81,
+        0.76,
+        0.25
+      ],
+      "geometryUrl": "data/routes/no-11-standard.geojson"
+    },
+    {
+      "variant": "extended",
+      "distanceM": 6676,
+      "engineDistanceM": 6680,
+      "repeatedGeometryM": 195,
+      "repeatedGeometryPct": 2.9,
+      "waypoints": [
+        {
+          "id": "sakuradamon",
+          "label": "桜田門駅",
+          "coord": [
+            35.6770768,
+            139.752866
+          ],
+          "source": "OSM node 413481709 subway_entrance"
+        },
+        {
+          "id": "iwaidabashi",
+          "label": "祝田橋",
+          "coord": [
+            35.6767007,
+            139.7561187
+          ],
+          "source": "OSM node 251731817"
+        },
+        {
+          "id": "sukiyabashi",
+          "label": "数寄屋橋公園",
+          "coord": [
+            35.6741076,
+            139.7610692
+          ],
+          "source": "OSM node 数寄屋橋交差点 (35.6742121,139.7608135); park is the block west of 数寄屋通り per user-supplied map"
+        },
+        {
+          "id": "ginza_lion",
+          "label": "銀座三越ライオン像",
+          "coord": [
+            35.6714566,
+            139.7651121
+          ],
+          "source": "OSM node ライオン像(重要文化財) 35.6720021,139.765582; the lion statue is at the 銀座4丁目 corner of 銀座三越 per user-supplied map"
+        },
+        {
+          "id": "tsukiji_hongwanji",
+          "label": "築地本願寺",
+          "coord": [
+            35.6676803,
+            139.7720205
+          ],
+          "source": "OSM node 31254383 traffic_signals 築地本願寺前"
+        },
+        {
+          "id": "kachidoki_bridge",
+          "label": "勝鬨橋",
+          "coord": [
+            35.6625799,
+            139.7747543
+          ],
+          "source": "OSM way near 勝鬨橋 (35.66275,139.77442) from the 勝鬨橋 query; the 橋脚塔 stands on the bridge centre per user-supplied map; footway confirmed by OSM ways 228050647/286507872"
+        },
+        {
+          "id": "harumi_rinkai",
+          "label": "晴海臨海公園",
+          "coord": [
+            35.6548608,
+            139.7857638
+          ],
+          "source": "OSM way 晴海臨海公園; entrance needs confirmation"
+        },
+        {
+          "id": "toyosu_ohashi",
+          "label": "豊洲大橋（東端）",
+          "coord": [
+            35.6469809,
+            139.7864158
+          ],
+          "source": "OSM way 557451914 centre; east/west ends need map review"
+        },
+        {
+          "id": "senkyaku",
+          "label": "豊洲 千客万来",
+          "coord": [
+            35.645746,
+            139.7838217
+          ],
+          "source": "OSM way 1159017723 centre"
+        },
+        {
+          "id": "ichibamae",
+          "label": "市場前駅",
+          "coord": [
+            35.6455531,
+            139.7856933
+          ],
+          "source": "OSM node 3349961082 station"
+        }
+      ],
+      "legDistancesKm": [
+        0.37,
+        0.6,
+        0.49,
+        0.86,
+        0.76,
+        1.56,
+        1.37,
+        0.41,
+        0.25
+      ],
+      "geometryUrl": "data/routes/no-11-extended.geojson"
+    }
+  ]
+}

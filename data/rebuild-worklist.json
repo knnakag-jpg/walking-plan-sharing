@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T10:27:22.113Z",
+  "generatedAt": "2026-11-15T12:32:28.254Z",
   "interpretation": "Mechanical triage only. Source and map review required before adopting any new route.",
   "records": [
     {
@@ -1950,9 +1950,9 @@
     },
     {
       "id": "No.11",
-      "title": "豊洲 千客万来～ぐるり公園",
+      "title": "豊洲 千客万来と晴海・勝どきの水辺",
       "series": "本編 A～Z（No.1～26）",
-      "workStatus": "research_needed",
+      "workStatus": "partial_rebuild",
       "legacy": {
         "geometryUrl": "data/routes/no-11.geojson",
         "walkingDistanceM": 7289,
@@ -1962,7 +1962,23 @@
         "repeatedWaypoints": [],
         "gateResult": "OK"
       },
-      "existingNewVariants": [],
+      "existingNewVariants": [
+        {
+          "variant": "standard",
+          "status": "routed",
+          "distanceM": 4408
+        },
+        {
+          "variant": "extended",
+          "status": "routed",
+          "distanceM": 6676
+        },
+        {
+          "variant": "rainy",
+          "status": "researched",
+          "distanceM": null
+        }
+      ],
       "coordinateReview": "not_started",
       "sourceResearch": "source_research_in_progress",
       "historicalRoutingStrategies": [],

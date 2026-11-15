@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "source": "legacy import; route quality not re-reviewed",
-  "generatedAt": "2026-11-15T10:26:50.813Z",
+  "generatedAt": "2026-11-15T12:32:28.155Z",
   "courses": [
     {
       "id": "No.1",
@@ -1527,19 +1527,19 @@
     {
       "id": "No.11",
       "slug": "no-11",
-      "title": "豊洲 千客万来～ぐるり公園",
+      "title": "豊洲 千客万来と晴海・勝どきの水辺",
       "seriesId": "main",
       "seriesName": "本編 A～Z（No.1～26）",
       "legacyAnchor": "course-11",
       "legacyUrl": "../index.html#course-11",
-      "summary": "2024年に開業した江戸情緒の食のエリアと、湾岸を縁取る完全平坦の周回公園を組み合わせる。屋上の足湯庭園から東京湾を一望でき、着席と歩行の切替が容易。近隣の没入型デジタルアート施設を組み合わせれば、屋内比率を大きく高められる。ぐるり公園の周回をさらに辰巳方面へ延ばし、水際の開放的な遊歩道を歩く時間も新たに加わった。",
+      "summary": "勝どき駅から晴海臨海公園、豊洲大橋を渡り、屋上緑化広場と千客万来を経て市場前駅へ抜けるA。Bは桜田門駅から銀座・築地・勝鬨橋を歩いて同じ終点へ向かう。旧案のぐるり公園の往復は採用しない。",
       "routeText": "経路ノード： 市場前駅 → 豊洲 千客万来（食エリア・屋上足湯） → 豊洲市場 見学者デッキ → 豊洲ぐるり公園（水際遊歩道・辰巳方面へ周回） → デジタルアート施設 → 豊洲駅（解散）",
       "tags": [
-        "食文化",
-        "デジタルアート",
-        "港湾・船舶",
-        "フォトジェニック",
-        "テック"
+        "水辺",
+        "橋",
+        "湾岸",
+        "展望",
+        "街並み"
       ],
       "route": {
         "id": "no-11-legacy",
@@ -1553,17 +1553,7 @@
         "repeatedGeometryPct": 12.6,
         "maxWaypointToShapeM": 31,
         "built": "2026-10-18",
-        "engine": "valhalla-pedestrian",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "partial_dem_filled",
-          "url": "data/elevation/no-11.json",
-          "totalM": 7289,
-          "climbM": 25.5,
-          "descentM": 27.7,
-          "minM": 0.6,
-          "maxM": 7.8
-        }
+        "engine": "valhalla-pedestrian"
       },
       "waypoints": [
         {
@@ -1636,6 +1626,404 @@
         "repeated_geometry_over_10pct"
       ],
       "category": "main",
+      "defaultVariant": "standard",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "利用者提供のモデルコース（媒体名・出典URLは未提供）",
+          "url": null,
+          "checkedAt": "2026-11-15",
+          "supports": "桜田門駅から市場前駅までの立ち寄り順（Bの参考）。座標・文章は転載していない。"
+        },
+        {
+          "type": "community",
+          "title": "OpenStreetMap（名称付き地点）",
+          "url": "https://www.openstreetmap.org/",
+          "checkedAt": "2026-11-15",
+          "supports": "駅・橋・公園・施設中心の座標。入口ではない。"
+        }
+      ],
+      "scenicSegments": [
+        {
+          "name": "豊洲大橋から千客万来",
+          "theme": "橋と湾岸の水辺",
+          "direction": "晴海から豊洲へ渡る",
+          "reviewStatus": "候補・橋の歩道の両端と入口を地図で照合待ち",
+          "evidenceTitle": "OpenStreetMap"
+        },
+        {
+          "name": "屋上緑化広場",
+          "theme": "市場の屋上と水辺",
+          "direction": "市場前駅側から",
+          "reviewStatus": "候補・見学者動線と開放時間を公式で確認待ち",
+          "evidenceTitle": "OpenStreetMap"
+        }
+      ],
+      "openQuestions": [
+        "屋上緑化広場への入口（見学者動線）と開放時間を公式で確認",
+        "千客万来の足湯庭園の営業時間・料金",
+        "豊洲大橋の歩道の両端と、千客万来付近の約134m重なりの原因",
+        "旧案のぐるり公園（水際遊歩道）を含める根拠のある延伸があるか",
+        "提供モデルコースの媒体名と出典"
+      ],
+      "routeOptions": [
+        {
+          "id": "no-11-standard",
+          "variant": "standard",
+          "strategy": "scenic",
+          "geometryUrl": "data/routes/no-11-standard.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 4408,
+          "engineDistanceM": 4406,
+          "repeatedGeometryPct": 3.2,
+          "routeReason": "勝どき駅から晴海臨海公園、豊洲大橋を渡り、市場の屋上緑化広場から千客万来へ。計算上4.41km。5〜6kmには届かないが、実在の立ち寄り先だけで組み、距離合わせの往復は足さない。千客万来付近に約140mの重なりが残る（理由は下記）。入口は地図レビュー待ち。",
+          "distanceException": "4.41km。実在の立ち寄り先だけで組んだため5〜6kmに届かない。距離合わせの延伸は作らない。",
+          "retraceException": "千客万来付近と豊洲大橋のたもとで約140m重ねる。施設の出入口が道路側へ戻る形のため（約134m＋約50mの一部）で、距離合わせではない。入口座標は地図で未確認。",
+          "waypoints": [
+            {
+              "index": 0,
+              "id": "kachidoki_st",
+              "label": "勝どき駅",
+              "description": null,
+              "point": [
+                139.7771934,
+                35.6588468
+              ],
+              "source": "OSM node 6374714705 bus_stop 勝どき駅"
+            },
+            {
+              "index": 1,
+              "id": "harumi_rinkai",
+              "label": "晴海臨海公園",
+              "description": null,
+              "point": [
+                139.7857638,
+                35.6548608
+              ],
+              "source": "OSM way 晴海臨海公園; entrance needs confirmation"
+            },
+            {
+              "index": 2,
+              "id": "toyosu_ohashi",
+              "label": "豊洲大橋",
+              "description": null,
+              "point": [
+                139.7864158,
+                35.6469809
+              ],
+              "source": "approx. 豊洲大橋 west end; no OSM named node used"
+            },
+            {
+              "index": 3,
+              "id": "okujo",
+              "label": "豊洲市場 屋上緑化広場",
+              "description": null,
+              "point": [
+                139.7807766,
+                35.6436711
+              ],
+              "source": "OSM way 1202384855 centre"
+            },
+            {
+              "index": 4,
+              "id": "senkyaku",
+              "label": "豊洲 千客万来",
+              "description": null,
+              "point": [
+                139.7838217,
+                35.645746
+              ],
+              "source": "OSM way 1159017723 centre"
+            },
+            {
+              "index": 5,
+              "id": "ichibamae",
+              "label": "市場前駅",
+              "description": null,
+              "point": [
+                139.7856933,
+                35.6455531
+              ],
+              "source": "OSM node 3349961082 station"
+            }
+          ],
+          "engine": "valhalla-pedestrian",
+          "built": "2026-11-15T02:18:10.885Z",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/no-11-standard.json",
+            "totalM": 4408,
+            "climbM": 18,
+            "descentM": 12.6,
+            "minM": 1.5,
+            "maxM": 7.8
+          }
+        },
+        {
+          "id": "no-11-extended",
+          "variant": "extended",
+          "strategy": "scenic",
+          "geometryUrl": "data/routes/no-11-extended.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 6676,
+          "engineDistanceM": 6680,
+          "repeatedGeometryPct": 2.9,
+          "routeReason": "桜田門駅から数寄屋橋、銀座、築地本願寺、勝鬨橋、晴海臨海公園、豊洲大橋、千客万来を経て市場前駅へ。利用者提供のモデルコースの順序だけを参考に、自前で計算した。計算上6.68km。駅を2つ以上またぐ長めのワンウェイで、終点は市場前駅（ゆりかもめ）。",
+          "distanceException": "6.68km。7〜8kmの目標に届かない。提供モデルの順序をそのまま計算した結果で、延伸は作らない。",
+          "retraceException": "千客万来付近で約134m、豊洲大橋付近で約50m、晴海臨海公園で約11m重ねる。施設の出入りに伴う往復で、距離合わせではない。",
+          "waypoints": [
+            {
+              "index": 0,
+              "id": "sakuradamon",
+              "label": "桜田門駅",
+              "description": null,
+              "point": [
+                139.752866,
+                35.6770768
+              ],
+              "source": "OSM node 413481709 subway_entrance"
+            },
+            {
+              "index": 1,
+              "id": "iwaidabashi",
+              "label": "祝田橋",
+              "description": null,
+              "point": [
+                139.7561187,
+                35.6767007
+              ],
+              "source": "OSM node 251731817"
+            },
+            {
+              "index": 2,
+              "id": "sukiyabashi",
+              "label": "数寄屋橋公園",
+              "description": null,
+              "point": [
+                139.7610692,
+                35.6741076
+              ],
+              "source": "OSM node 数寄屋橋交差点 (35.6742121,139.7608135); park is the block west of 数寄屋通り per user-supplied map"
+            },
+            {
+              "index": 3,
+              "id": "ginza_lion",
+              "label": "銀座三越ライオン像",
+              "description": null,
+              "point": [
+                139.7651121,
+                35.6714566
+              ],
+              "source": "OSM node ライオン像(重要文化財) 35.6720021,139.765582; the lion statue is at the 銀座4丁目 corner of 銀座三越 per user-supplied map"
+            },
+            {
+              "index": 4,
+              "id": "tsukiji_hongwanji",
+              "label": "築地本願寺",
+              "description": null,
+              "point": [
+                139.7720205,
+                35.6676803
+              ],
+              "source": "OSM node 31254383 traffic_signals 築地本願寺前"
+            },
+            {
+              "index": 5,
+              "id": "kachidoki_bridge",
+              "label": "勝鬨橋",
+              "description": null,
+              "point": [
+                139.7747543,
+                35.6625799
+              ],
+              "source": "OSM way near 勝鬨橋 (35.66275,139.77442) from the 勝鬨橋 query; the 橋脚塔 stands on the bridge centre per user-supplied map; footway confirmed by OSM ways 228050647/286507872"
+            },
+            {
+              "index": 6,
+              "id": "harumi_rinkai",
+              "label": "晴海臨海公園",
+              "description": null,
+              "point": [
+                139.7857638,
+                35.6548608
+              ],
+              "source": "OSM way 晴海臨海公園; entrance needs confirmation"
+            },
+            {
+              "index": 7,
+              "id": "toyosu_ohashi",
+              "label": "豊洲大橋（東端）",
+              "description": null,
+              "point": [
+                139.7864158,
+                35.6469809
+              ],
+              "source": "OSM way 557451914 centre; east/west ends need map review"
+            },
+            {
+              "index": 8,
+              "id": "senkyaku",
+              "label": "豊洲 千客万来",
+              "description": null,
+              "point": [
+                139.7838217,
+                35.645746
+              ],
+              "source": "OSM way 1159017723 centre"
+            },
+            {
+              "index": 9,
+              "id": "ichibamae",
+              "label": "市場前駅",
+              "description": null,
+              "point": [
+                139.7856933,
+                35.6455531
+              ],
+              "source": "OSM node 3349961082 station"
+            }
+          ],
+          "engine": "valhalla-pedestrian",
+          "built": "2026-11-15T02:29:12.840Z",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/no-11-extended.json",
+            "totalM": 6676,
+            "climbM": 26.5,
+            "descentM": 26.3,
+            "minM": 0.1,
+            "maxM": 7.6
+          }
+        },
+        {
+          "id": "no-11-rainy",
+          "variant": "rainy",
+          "strategy": "indoor_rail",
+          "verificationStatus": "researched",
+          "distanceM": null,
+          "routeReason": "雨の日は千客万来の館内と足湯庭園の屋根下を中心にする案。連続した屋内徒歩コースとしては未検証。",
+          "segments": [
+            {
+              "kind": "rail",
+              "from": "勝どき駅",
+              "to": "市場前駅",
+              "distanceM": null,
+              "note": "都営大江戸線・ゆりかもめの乗り継ぎ。運賃・所要は当日確認。"
+            },
+            {
+              "kind": "walk_outdoor",
+              "from": "市場前駅",
+              "to": "千客万来",
+              "distanceM": null,
+              "note": "屋根のない区間あり。傘が必要。"
+            },
+            {
+              "kind": "walk_indoor",
+              "from": "千客万来",
+              "to": "館内",
+              "distanceM": null,
+              "note": "営業時間・料金は当日公式で確認。"
+            }
+          ],
+          "conditions": [
+            "足湯庭園の営業時間・料金は未確認。",
+            "屋外露出は未調査。"
+          ],
+          "geometryUrl": null,
+          "waypoints": []
+        },
+        {
+          "id": "no-11-legacy",
+          "variant": "legacy",
+          "strategy": "legacy_unknown",
+          "geometryUrl": "data/routes/no-11.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 7289,
+          "engineDistanceM": 7299,
+          "targetDistanceM": 7300,
+          "repeatedGeometryPct": 12.6,
+          "maxWaypointToShapeM": 31,
+          "built": "2026-10-18",
+          "engine": "valhalla-pedestrian",
+          "waypoints": [
+            {
+              "index": 0,
+              "point": [
+                139.7847,
+                35.6428
+              ]
+            },
+            {
+              "index": 1,
+              "point": [
+                139.7838,
+                35.6435
+              ]
+            },
+            {
+              "index": 2,
+              "point": [
+                139.7812,
+                35.6438
+              ]
+            },
+            {
+              "index": 3,
+              "point": [
+                139.785,
+                35.645
+              ]
+            },
+            {
+              "index": 4,
+              "point": [
+                139.791,
+                35.6468
+              ]
+            },
+            {
+              "index": 5,
+              "point": [
+                139.7895,
+                35.6492
+              ]
+            },
+            {
+              "index": 6,
+              "point": [
+                139.802,
+                35.65
+              ]
+            },
+            {
+              "index": 7,
+              "point": [
+                139.79589,
+                35.65443
+              ]
+            },
+            {
+              "index": 8,
+              "point": [
+                139.80929,
+                35.64676
+              ]
+            }
+          ],
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/no-11.json",
+            "totalM": 7289,
+            "climbM": 25.5,
+            "descentM": 27.7,
+            "minM": 0.6,
+            "maxM": 7.8
+          }
+        }
+      ],
       "retraceReview": {
         "reportedAt": "2026-11-14",
         "source": "user_observation",
