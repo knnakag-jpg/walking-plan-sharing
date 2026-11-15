@@ -1,0 +1,43 @@
+{
+  "id": "No.27",
+  "title": "国分寺崖線「はけ」と野川",
+  "stage": "source_research_in_progress",
+  "checkedAt": "2026-11-16",
+  "evidence": [
+    {
+      "type": "community",
+      "title": "OpenStreetMap（新小金井駅・武蔵野公園・はけの森美術館・はけの森緑地・武蔵小金井駅）",
+      "url": "https://www.openstreetmap.org/",
+      "checkedAt": "2026-11-16",
+      "supports": "駅・施設・公園の名称ノードの座標。入口ではない。"
+    },
+    {
+      "type": "community",
+      "title": "旧資料 No.27（先行ページ index.html）",
+      "url": null,
+      "checkedAt": "2026-11-16",
+      "supports": "旧案の立ち寄り先。緑町四丁目方面の往復延伸は採用していない。"
+    }
+  ],
+  "trials": [
+    {
+      "n": 1,
+      "variant": "A 新規（OSMの駅・地点）",
+      "result": "3.66km・反復65m",
+      "finding": "計算上の重なりは約65m。はけの森美術館付近の入口と通りの出入りで生じる短い往復と推定。地図で未確認。"
+    }
+  ],
+  "files": [
+    "scripts/lib-rebuild.mjs",
+    "scripts/build-group5.mjs",
+    "data/curated/no-27.json",
+    "data/research/no-27-adopted-build.json"
+  ],
+  "openQuestions": [
+    "滄浪泉園・貫井神社の座標と入口",
+    "野川沿いの歩道の連続性",
+    "はけの小路の位置",
+    "はけの森美術館の開館日・入館料"
+  ],
+  "decision": "2026-11-16 新Aを計算（3.66km・反復65m）。滄浪泉園・貫井神社は名称ノードがなく含めていない。"
+}

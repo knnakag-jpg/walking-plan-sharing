@@ -1,0 +1,83 @@
+{
+  "calculatedAt": "2026-11-15T21:54:53.264Z",
+  "engine": "valhalla-pedestrian",
+  "variants": {
+    "standard": {
+      "label": "standard",
+      "distanceM": 3160,
+      "engineDistanceM": 3158,
+      "repeatedGeometryM": 413,
+      "repeatedGeometryPct": 13.1,
+      "legKm": [
+        0.95,
+        0.07,
+        0.61,
+        0.99,
+        0.54
+      ],
+      "geometryUrl": "data/routes/no-28-standard.geojson",
+      "stops": [
+        {
+          "id": "shinanomachi",
+          "label": "信濃町駅",
+          "coord": [
+            35.6802337,
+            139.7207175
+          ],
+          "source": "OSM station 信濃町",
+          "offsetM": 0
+        },
+        {
+          "id": "suga_onnazaka",
+          "label": "須賀神社 女坂",
+          "coord": [
+            35.6853905,
+            139.7230208
+          ],
+          "source": "OSM attraction 須賀神社 女坂",
+          "offsetM": 0
+        },
+        {
+          "id": "suga_jinja",
+          "label": "須賀神社",
+          "coord": [
+            35.6853419,
+            139.722633
+          ],
+          "source": "OSM place_of_worship 須賀神社",
+          "offsetM": 0
+        },
+        {
+          "id": "shinjuku_history",
+          "label": "新宿歴史博物館",
+          "coord": [
+            35.6889003,
+            139.7246334
+          ],
+          "source": "OSM information 新宿歴史博物館",
+          "offsetM": 4
+        },
+        {
+          "id": "wakaba_higashi",
+          "label": "若葉東公園",
+          "coord": [
+            35.6831578,
+            139.728604
+          ],
+          "source": "OSM garden 若葉東公園",
+          "offsetM": 0
+        },
+        {
+          "id": "yotsuya",
+          "label": "四ツ谷駅",
+          "coord": [
+            35.686036,
+            139.7306199
+          ],
+          "source": "OSM station 四ツ谷",
+          "offsetM": 4
+        }
+      ]
+    }
+  }
+}

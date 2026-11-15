@@ -1,0 +1,67 @@
+{
+  "generatedAt": "2026-11-15T21:54:51.517Z",
+  "method": "Valhalla pedestrian; exact geometry edge repeat is only a screening clue",
+  "results": [
+    {
+      "variant": "standard",
+      "distanceM": 3659,
+      "engineDistanceM": 3662,
+      "repeatedGeometryM": 65,
+      "repeatedGeometryPct": 1.8,
+      "waypoints": [
+        {
+          "id": "shin_koganei",
+          "label": "新小金井駅",
+          "coord": [
+            35.6943952,
+            139.5260341
+          ],
+          "source": "OSM node 新小金井駅"
+        },
+        {
+          "id": "musashino_park",
+          "label": "武蔵野公園",
+          "coord": [
+            35.6899716,
+            139.5182836
+          ],
+          "source": "OSM park 武蔵野公園"
+        },
+        {
+          "id": "hake_museum",
+          "label": "はけの森美術館",
+          "coord": [
+            35.6953668,
+            139.5128475
+          ],
+          "source": "OSM museum はけの森美術館"
+        },
+        {
+          "id": "hake_mori",
+          "label": "はけの森緑地２",
+          "coord": [
+            35.6963385,
+            139.5065779
+          ],
+          "source": "OSM park はけの森緑地２"
+        },
+        {
+          "id": "musashi_koganei",
+          "label": "武蔵小金井駅",
+          "coord": [
+            35.7011281,
+            139.5067878
+          ],
+          "source": "OSM station 武蔵小金井"
+        }
+      ],
+      "legDistancesKm": [
+        1.3,
+        0.99,
+        0.77,
+        0.6
+      ],
+      "geometryUrl": "data/routes/no-27-standard.geojson"
+    }
+  ]
+}

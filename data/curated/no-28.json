@@ -1,0 +1,76 @@
+{
+  "id": "No.28",
+  "buildFile": "data/research/no-28-adopted-build.json",
+  "title": "四谷・若葉 スリバチ迷宮",
+  "summary": "信濃町駅から須賀神社の女坂、須賀神社、新宿歴史博物館、若葉東公園を経て四ツ谷駅へ抜ける坂道の駅間。闇坂とたいやき わかばの座標は見つからず含めていない。",
+  "themes": [
+    "坂道",
+    "神社",
+    "階段",
+    "谷",
+    "博物館"
+  ],
+  "routeReasons": {
+    "standard": "信濃町駅から須賀神社 女坂・須賀神社、新宿歴史博物館、若葉東公園を経て四ツ谷駅へ。計算上3.16km。闇坂とたいやき わかばは名称ノードが見つからず含めていない。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
+    "extended": "B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。"
+  },
+  "distanceExceptions": {
+    "standard": "3.16km。坂道と階段を巡る短い駅間で5〜6kmに届かない。延伸は作らない。"
+  },
+  "retraceExceptions": {
+    "standard": "若葉東公園から四ツ谷駅へ向かう区間で約328m、須賀神社の階段付近で約50m・約35mの短い重なり（計約413m）。須賀神社の階段（女坂・男坂）と若葉の谷底を往来する地形で、同じ坂を登り降りする形と推定。地図で未確認。"
+  },
+  "rainy": {
+    "verificationStatus": "researched",
+    "summary": "雨の日は新宿歴史博物館の館内を中心にする案。須賀神社の階段は雨天で滑りやすい。",
+    "segments": [
+      {
+        "kind": "walk_outdoor",
+        "from": "信濃町駅",
+        "to": "須賀神社",
+        "distanceM": null,
+        "note": "階段が滑りやすい。"
+      },
+      {
+        "kind": "walk_indoor",
+        "from": "新宿歴史博物館",
+        "to": "館内",
+        "distanceM": null,
+        "note": "開館日・料金を当日確認。"
+      },
+      {
+        "kind": "rail",
+        "from": "四ツ谷駅",
+        "to": "信濃町駅",
+        "distanceM": null,
+        "note": "JR中央線・総武線。"
+      }
+    ],
+    "conditions": [
+      "新宿歴史博物館の開館日は当日確認。",
+      "須賀神社の階段は雨天は避ける。"
+    ]
+  },
+  "evidence": [
+    {
+      "type": "community",
+      "title": "OpenStreetMap（信濃町駅・須賀神社・新宿歴史博物館・若葉東公園・四ツ谷駅）",
+      "url": "https://www.openstreetmap.org/",
+      "checkedAt": "2026-11-16",
+      "supports": "駅・施設・公園の名称ノードの座標。入口ではない。"
+    },
+    {
+      "type": "community",
+      "title": "旧資料 No.28（先行ページ index.html）",
+      "url": null,
+      "checkedAt": "2026-11-16",
+      "supports": "旧案の立ち寄り先。闇坂・たいやき わかばは含めていない。"
+    }
+  ],
+  "openQuestions": [
+    "闇坂の位置（OSMに名称ノードなし）",
+    "たいやき わかばの座標と営業状況",
+    "須賀神社の男坂と女坂の区別",
+    "若葉東公園の入口"
+  ]
+}

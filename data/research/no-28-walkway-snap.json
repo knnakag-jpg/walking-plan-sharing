@@ -1,0 +1,50 @@
+{
+ "shinanomachi": {
+  "snapped": [
+   35.6802337,
+   139.7207175
+  ],
+  "movedM": 31,
+  "wayId": 97194404
+ },
+ "wakaba_higashi": {
+  "snapped": [
+   35.6831578,
+   139.728604
+  ],
+  "movedM": 17,
+  "wayId": 145109182
+ },
+ "suga_onnazaka": {
+  "snapped": [
+   35.6853905,
+   139.7230208
+  ],
+  "movedM": 4,
+  "wayId": 390367485
+ },
+ "suga_jinja": {
+  "snapped": [
+   35.6853419,
+   139.722633
+  ],
+  "movedM": 4,
+  "wayId": 390405312
+ },
+ "shinjuku_history": {
+  "snapped": [
+   35.6889003,
+   139.7246334
+  ],
+  "movedM": 2,
+  "wayId": 1191358085
+ },
+ "yotsuya": {
+  "snapped": [
+   35.686036,
+   139.7306199
+  ],
+  "movedM": 1,
+  "wayId": 1347086100
+ }
+}

@@ -1,0 +1,76 @@
+{
+  "id": "No.25",
+  "buildFile": "data/research/no-25-adopted-build.json",
+  "title": "日本橋・人形町・浜町",
+  "summary": "日本橋駅から日本橋（橋の中央）、日本橋魚河岸発祥の地、三井記念美術館、茅場町駅、人形町、水天宮前、浜町公園を結ぶ駅間。清澄白河駅まで続く旧案は座標を作る必要があるため、浜町公園で止めた。COREDO日本橋は2027年秋まで一時閉店のため経由点に含めない。",
+  "themes": [
+    "橋",
+    "町並み",
+    "歴史",
+    "神社",
+    "美術館"
+  ],
+  "routeReasons": {
+    "standard": "日本橋駅から日本橋（橋）、日本橋魚河岸発祥の地、三井記念美術館、茅場町駅、人形町駅、人形町からくり櫓、水天宮前、浜町公園へ。計算上4.07km。COREDO日本橋はOSMで「一時閉店（2027年秋まで）」とあり含めていない。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
+    "extended": "B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。"
+  },
+  "distanceExceptions": {
+    "standard": "4.07km。実在の立ち寄り先だけで組んだため5〜6kmの範囲外。延伸は作らない。"
+  },
+  "retraceExceptions": {
+    "standard": "計算上の重なりは約94m。日本橋付近の交差点と魚河岸記念碑前の出入りで生じる短い往復と推定。地図で未確認。"
+  },
+  "rainy": {
+    "verificationStatus": "researched",
+    "summary": "雨の日は三井記念美術館の館内と地下通路（日本橋〜三越前）を中心にする案。",
+    "segments": [
+      {
+        "kind": "walk_indoor",
+        "from": "日本橋駅",
+        "to": "三越前駅",
+        "distanceM": null,
+        "note": "地下通路の連続性は未確認。"
+      },
+      {
+        "kind": "walk_indoor",
+        "from": "三井記念美術館",
+        "to": "館内",
+        "distanceM": null,
+        "note": "開館日・会期を当日公式で確認。"
+      },
+      {
+        "kind": "walk_outdoor",
+        "from": "人形町",
+        "to": "水天宮前",
+        "distanceM": null,
+        "note": "屋根なし。傘が必要。"
+      }
+    ],
+    "conditions": [
+      "三井記念美術館の会期・休館日は当日確認。",
+      "COREDO日本橋は一時閉店中。"
+    ]
+  },
+  "evidence": [
+    {
+      "type": "community",
+      "title": "OpenStreetMap（日本橋駅・日本橋・三井記念美術館・茅場町駅・人形町・水天宮前・浜町公園）",
+      "url": "https://www.openstreetmap.org/",
+      "checkedAt": "2026-11-16",
+      "supports": "駅・施設・公園の名称ノードの座標。入口ではない。"
+    },
+    {
+      "type": "community",
+      "title": "旧資料 No.25（先行ページ index.html）",
+      "url": null,
+      "checkedAt": "2026-11-16",
+      "supports": "旧案の立ち寄り先。清澄白河駅までの延伸は採用していない。"
+    }
+  ],
+  "openQuestions": [
+    "COREDO日本橋の営業再開時期（2027年秋予定）",
+    "鎧橋の正確な位置（OSMに名称ノードなし）",
+    "水天宮の境内の入口",
+    "浜町駅から清澄白河駅までの旧案の経路"
+  ]
+}

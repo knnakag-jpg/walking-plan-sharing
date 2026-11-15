@@ -1,0 +1,67 @@
+{
+  "generatedAt": "2026-11-15T21:54:56.809Z",
+  "method": "Valhalla pedestrian; exact geometry edge repeat is only a screening clue",
+  "results": [
+    {
+      "variant": "standard",
+      "distanceM": 6544,
+      "engineDistanceM": 6557,
+      "repeatedGeometryM": 166,
+      "repeatedGeometryPct": 2.5,
+      "waypoints": [
+        {
+          "id": "takahata",
+          "label": "高幡不動駅",
+          "coord": [
+            35.6612263,
+            139.4151319
+          ],
+          "source": "OSM station 高幡不動"
+        },
+        {
+          "id": "takahata_fudo",
+          "label": "高幡不動尊",
+          "coord": [
+            35.6623658,
+            139.411006
+          ],
+          "source": "OSM place_of_worship 高幡不動尊"
+        },
+        {
+          "id": "hino_library",
+          "label": "日野市郷土資料館",
+          "coord": [
+            35.6527699,
+            139.4111742
+          ],
+          "source": "OSM museum 日野市郷土資料館"
+        },
+        {
+          "id": "kurokawa",
+          "label": "黒川清流公園",
+          "coord": [
+            35.6641551,
+            139.3847809
+          ],
+          "source": "OSM park 黒川清流公園"
+        },
+        {
+          "id": "toyoda",
+          "label": "豊田駅",
+          "coord": [
+            35.6608354,
+            139.3805661
+          ],
+          "source": "OSM stop 豊田駅前"
+        }
+      ],
+      "legDistancesKm": [
+        0.46,
+        1.47,
+        3.77,
+        0.86
+      ],
+      "geometryUrl": "data/routes/no-30-standard.geojson"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "No.25",
+  "title": "日本橋・人形町・浜町",
+  "stage": "source_research_in_progress",
+  "checkedAt": "2026-11-16",
+  "evidence": [
+    {
+      "type": "community",
+      "title": "OpenStreetMap（日本橋駅・日本橋・三井記念美術館・茅場町駅・人形町・水天宮前・浜町公園）",
+      "url": "https://www.openstreetmap.org/",
+      "checkedAt": "2026-11-16",
+      "supports": "駅・施設・公園の名称ノードの座標。入口ではない。"
+    },
+    {
+      "type": "community",
+      "title": "旧資料 No.25（先行ページ index.html）",
+      "url": null,
+      "checkedAt": "2026-11-16",
+      "supports": "旧案の立ち寄り先。清澄白河駅までの延伸は採用していない。"
+    }
+  ],
+  "trials": [
+    {
+      "n": 1,
+      "variant": "A 新規（OSMの駅・地点）",
+      "result": "4.07km・反復94m",
+      "finding": "計算上の重なりは約94m。日本橋付近の交差点と魚河岸記念碑前の出入りで生じる短い往復と推定。地図で未確認。"
+    }
+  ],
+  "files": [
+    "scripts/lib-rebuild.mjs",
+    "scripts/build-group5.mjs",
+    "data/curated/no-25.json",
+    "data/research/no-25-adopted-build.json"
+  ],
+  "openQuestions": [
+    "COREDO日本橋の営業再開時期（2027年秋予定）",
+    "鎧橋の正確な位置（OSMに名称ノードなし）",
+    "水天宮の境内の入口",
+    "浜町駅から清澄白河駅までの旧案の経路"
+  ],
+  "decision": "2026-11-16 新Aを計算（4.07km・反復94m）。旧案の浜町駅から清澄白河駅への延伸は不採用。"
+}

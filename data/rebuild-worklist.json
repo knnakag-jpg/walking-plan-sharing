@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T21:31:25.878Z",
+  "generatedAt": "2026-11-15T21:55:01.750Z",
   "interpretation": "Mechanical triage only. Source and map review required before adopting any new route.",
   "records": [
     {
@@ -936,9 +936,9 @@
     },
     {
       "id": "No.27",
-      "title": "国分寺崖線「はけ」",
+      "title": "国分寺崖線「はけ」と野川",
       "series": "坂道・崖線（No.27～32）",
-      "workStatus": "research_needed",
+      "workStatus": "partial_rebuild",
       "legacy": {
         "geometryUrl": "data/routes/no-27.geojson",
         "walkingDistanceM": 6962,
@@ -953,9 +953,20 @@
         ],
         "gateResult": "OK"
       },
-      "existingNewVariants": [],
+      "existingNewVariants": [
+        {
+          "variant": "standard",
+          "status": "routed",
+          "distanceM": 3659
+        },
+        {
+          "variant": "rainy",
+          "status": "researched",
+          "distanceM": null
+        }
+      ],
       "coordinateReview": "not_started",
-      "sourceResearch": "not_started",
+      "sourceResearch": "source_research_in_progress",
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": true,
@@ -1264,7 +1275,7 @@
       "id": "No.29",
       "title": "等々力渓谷と崖の階段",
       "series": "坂道・崖線（No.27～32）",
-      "workStatus": "research_needed",
+      "workStatus": "partial_rebuild",
       "legacy": {
         "geometryUrl": "data/routes/no-29.geojson",
         "walkingDistanceM": 6594,
@@ -1279,9 +1290,20 @@
         ],
         "gateResult": "OK"
       },
-      "existingNewVariants": [],
+      "existingNewVariants": [
+        {
+          "variant": "standard",
+          "status": "routed",
+          "distanceM": 2619
+        },
+        {
+          "variant": "rainy",
+          "status": "researched",
+          "distanceM": null
+        }
+      ],
       "coordinateReview": "not_started",
-      "sourceResearch": "not_started",
+      "sourceResearch": "source_research_in_progress",
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": true,
@@ -3278,9 +3300,9 @@
     },
     {
       "id": "No.25",
-      "title": "日本橋～コレド～水天宮前",
+      "title": "日本橋・人形町・浜町",
       "series": "本編 A～Z（No.1～26）",
-      "workStatus": "research_needed",
+      "workStatus": "partial_rebuild",
       "legacy": {
         "geometryUrl": "data/routes/no-25.geojson",
         "walkingDistanceM": 6934,
@@ -3290,9 +3312,20 @@
         "repeatedWaypoints": [],
         "gateResult": "OK"
       },
-      "existingNewVariants": [],
+      "existingNewVariants": [
+        {
+          "variant": "standard",
+          "status": "routed",
+          "distanceM": 4066
+        },
+        {
+          "variant": "rainy",
+          "status": "researched",
+          "distanceM": null
+        }
+      ],
       "coordinateReview": "not_started",
-      "sourceResearch": "not_started",
+      "sourceResearch": "source_research_in_progress",
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": false,
@@ -3629,9 +3662,9 @@
     },
     {
       "id": "No.26",
-      "title": "旧古河庭園～駒込",
+      "title": "旧古河庭園と六義園",
       "series": "本編 A～Z（No.1～26）",
-      "workStatus": "research_needed",
+      "workStatus": "partial_rebuild",
       "legacy": {
         "geometryUrl": "data/routes/no-26.geojson",
         "walkingDistanceM": 6655,
@@ -3641,9 +3674,20 @@
         "repeatedWaypoints": [],
         "gateResult": "OK"
       },
-      "existingNewVariants": [],
+      "existingNewVariants": [
+        {
+          "variant": "standard",
+          "status": "routed",
+          "distanceM": 3398
+        },
+        {
+          "variant": "rainy",
+          "status": "researched",
+          "distanceM": null
+        }
+      ],
       "coordinateReview": "not_started",
-      "sourceResearch": "not_started",
+      "sourceResearch": "source_research_in_progress",
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": false,
@@ -3961,7 +4005,7 @@
       "id": "No.30",
       "title": "日野・多摩川崖線",
       "series": "坂道・崖線（No.27～32）",
-      "workStatus": "research_needed",
+      "workStatus": "partial_rebuild",
       "legacy": {
         "geometryUrl": "data/routes/no-30.geojson",
         "walkingDistanceM": 4556,
@@ -3971,9 +4015,20 @@
         "repeatedWaypoints": [],
         "gateResult": "OK"
       },
-      "existingNewVariants": [],
+      "existingNewVariants": [
+        {
+          "variant": "standard",
+          "status": "routed",
+          "distanceM": 6544
+        },
+        {
+          "variant": "rainy",
+          "status": "researched",
+          "distanceM": null
+        }
+      ],
       "coordinateReview": "not_started",
-      "sourceResearch": "not_started",
+      "sourceResearch": "source_research_in_progress",
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": false,
@@ -4033,7 +4088,7 @@
       "id": "No.28",
       "title": "四谷・若葉 スリバチ迷宮",
       "series": "坂道・崖線（No.27～32）",
-      "workStatus": "research_needed",
+      "workStatus": "partial_rebuild",
       "legacy": {
         "geometryUrl": "data/routes/no-28.geojson",
         "walkingDistanceM": 3262,
@@ -4043,9 +4098,20 @@
         "repeatedWaypoints": [],
         "gateResult": "OK"
       },
-      "existingNewVariants": [],
+      "existingNewVariants": [
+        {
+          "variant": "standard",
+          "status": "routed",
+          "distanceM": 3160
+        },
+        {
+          "variant": "rainy",
+          "status": "researched",
+          "distanceM": null
+        }
+      ],
       "coordinateReview": "not_started",
-      "sourceResearch": "not_started",
+      "sourceResearch": "source_research_in_progress",
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": false,

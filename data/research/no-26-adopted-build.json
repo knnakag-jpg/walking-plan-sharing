@@ -1,0 +1,57 @@
+{
+  "generatedAt": "2026-11-15T21:54:49.757Z",
+  "method": "Valhalla pedestrian; exact geometry edge repeat is only a screening clue",
+  "results": [
+    {
+      "variant": "standard",
+      "distanceM": 3398,
+      "engineDistanceM": 3407,
+      "repeatedGeometryM": 814,
+      "repeatedGeometryPct": 24,
+      "waypoints": [
+        {
+          "id": "komagome",
+          "label": "駒込駅",
+          "coord": [
+            35.7365819,
+            139.7472407
+          ],
+          "source": "OSM station 駒込"
+        },
+        {
+          "id": "kyu_furukawa",
+          "label": "旧古河庭園",
+          "coord": [
+            35.7424884,
+            139.7463295
+          ],
+          "source": "OSM garden 旧古河庭園"
+        },
+        {
+          "id": "rikugien",
+          "label": "六義園",
+          "coord": [
+            35.7348354,
+            139.7468421
+          ],
+          "source": "OSM information 六義園"
+        },
+        {
+          "id": "sugamo",
+          "label": "巣鴨駅",
+          "coord": [
+            35.7334627,
+            139.7395492
+          ],
+          "source": "OSM station 巣鴨"
+        }
+      ],
+      "legDistancesKm": [
+        1.14,
+        1.3,
+        0.97
+      ],
+      "geometryUrl": "data/routes/no-26-standard.geojson"
+    }
+  ]
+}

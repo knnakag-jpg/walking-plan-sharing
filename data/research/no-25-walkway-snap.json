@@ -1,0 +1,74 @@
+{
+ "nihonbashi_st": {
+  "snapped": [
+   35.6816617,
+   139.7760632
+  ],
+  "movedM": 12,
+  "wayId": 1315938622
+ },
+ "nihonbashi": {
+  "snapped": [
+   35.6825677,
+   139.7737674
+  ],
+  "movedM": 0,
+  "wayId": 163198815
+ },
+ "uogashi": {
+  "snapped": [
+   35.6843916,
+   139.7748193
+  ],
+  "movedM": 6,
+  "wayId": 666706652
+ },
+ "mitsui_museum": {
+  "snapped": [
+   35.6865114,
+   139.7728674
+  ],
+  "movedM": 41,
+  "wayId": 1068491703
+ },
+ "kayabacho": {
+  "snapped": [
+   35.6800057,
+   139.7801158
+  ],
+  "movedM": 1,
+  "wayId": 31046486
+ },
+ "ningyocho": {
+  "snapped": [
+   35.6862163,
+   139.7823757
+  ],
+  "movedM": 6,
+  "wayId": 666904206
+ },
+ "karakuri": {
+  "snapped": [
+   35.6848464,
+   139.7837427
+  ],
+  "movedM": 14,
+  "wayId": 95282571
+ },
+ "suitengu": {
+  "snapped": [
+   35.6838832,
+   139.7844797
+  ],
+  "movedM": 0,
+  "wayId": 90837300
+ },
+ "hamacho": {
+  "snapped": [
+   35.6877794,
+   139.7879205
+  ],
+  "movedM": 11,
+  "wayId": 157214558
+ }
+}

@@ -1,0 +1,50 @@
+{
+ "todoroki": {
+  "snapped": [
+   35.6084733,
+   139.6479331
+  ],
+  "movedM": 15,
+  "wayId": 47483021
+ },
+ "golf_bridge": {
+  "snapped": [
+   35.607891,
+   139.6463696
+  ],
+  "movedM": 13,
+  "wayId": 47747346
+ },
+ "todoroki_keikoku": {
+  "snapped": [
+   35.6047737,
+   139.644942
+  ],
+  "movedM": 40,
+  "wayId": 54575133
+ },
+ "todoroki_fudo": {
+  "snapped": [
+   35.6036049,
+   139.6468689
+  ],
+  "movedM": 10,
+  "wayId": 242056650
+ },
+ "tama_noge": {
+  "snapped": [
+   35.6052093,
+   139.6423311
+  ],
+  "movedM": 35,
+  "wayId": 91388260
+ },
+ "kaminoge": {
+  "snapped": [
+   35.6120928,
+   139.6388401
+  ],
+  "movedM": 9,
+  "wayId": 1083491001
+ }
+}

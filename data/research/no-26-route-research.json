@@ -1,0 +1,43 @@
+{
+  "id": "No.26",
+  "title": "旧古河庭園と六義園",
+  "stage": "source_research_in_progress",
+  "checkedAt": "2026-11-16",
+  "evidence": [
+    {
+      "type": "community",
+      "title": "OpenStreetMap（駒込駅・旧古河庭園・六義園・巣鴨駅）",
+      "url": "https://www.openstreetmap.org/",
+      "checkedAt": "2026-11-16",
+      "supports": "駅・施設・公園の名称ノードの座標。入口ではない。"
+    },
+    {
+      "type": "community",
+      "title": "旧資料 No.26（先行ページ index.html）",
+      "url": null,
+      "checkedAt": "2026-11-16",
+      "supports": "旧案の立ち寄り先。巣鴨地蔵通り商店街と昼食は含めていない。"
+    }
+  ],
+  "trials": [
+    {
+      "n": 1,
+      "variant": "A 新規（OSMの駅・地点）",
+      "result": "3.40km・反復814m",
+      "finding": "旧古河庭園と駒込駅の間の約654m（庭園へ入って同じ道を戻る往復）、駒込駅付近の約115m、六義園付近の約45m（計約814m）。庭園は駅から一本道の先にあるため、庭園を含む限り必要な往復。距離合わせではない。"
+    }
+  ],
+  "files": [
+    "scripts/lib-rebuild.mjs",
+    "scripts/build-group5.mjs",
+    "data/curated/no-26.json",
+    "data/research/no-26-adopted-build.json"
+  ],
+  "openQuestions": [
+    "旧古河庭園の正門の位置と入口",
+    "洋館の公開日・予約",
+    "六義園の出入口と有料区",
+    "巣鴨地蔵通り商店街の座標（OSMに名称ノードなし）"
+  ],
+  "decision": "2026-11-16 新Aを計算（3.40km・反復814m）。庭園への往復は避けられないため retraceException に理由を記載。"
+}

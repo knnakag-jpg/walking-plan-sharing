@@ -1,0 +1,83 @@
+{
+  "calculatedAt": "2026-11-15T21:54:55.041Z",
+  "engine": "valhalla-pedestrian",
+  "variants": {
+    "standard": {
+      "label": "standard",
+      "distanceM": 2619,
+      "engineDistanceM": 2620,
+      "repeatedGeometryM": 211,
+      "repeatedGeometryPct": 8.1,
+      "legKm": [
+        0.22,
+        0.47,
+        0.3,
+        0.66,
+        0.98
+      ],
+      "geometryUrl": "data/routes/no-29-standard.geojson",
+      "stops": [
+        {
+          "id": "todoroki",
+          "label": "等々力駅",
+          "coord": [
+            35.6084733,
+            139.6479331
+          ],
+          "source": "OSM station 等々力",
+          "offsetM": 0
+        },
+        {
+          "id": "golf_bridge",
+          "label": "ゴルフ橋",
+          "coord": [
+            35.607891,
+            139.6463696
+          ],
+          "source": "OSM node ゴルフ橋",
+          "offsetM": 0
+        },
+        {
+          "id": "todoroki_keikoku",
+          "label": "等々力渓谷公園",
+          "coord": [
+            35.6047737,
+            139.644942
+          ],
+          "source": "OSM park 等々力渓谷公園",
+          "offsetM": 0
+        },
+        {
+          "id": "todoroki_fudo",
+          "label": "等々力不動尊",
+          "coord": [
+            35.6036049,
+            139.6468689
+          ],
+          "source": "OSM place_of_worship 等々力不動尊",
+          "offsetM": 0
+        },
+        {
+          "id": "tama_noge",
+          "label": "玉川野毛町公園",
+          "coord": [
+            35.6052093,
+            139.6423311
+          ],
+          "source": "OSM park 玉川野毛町公園",
+          "offsetM": 0
+        },
+        {
+          "id": "kaminoge",
+          "label": "上野毛駅",
+          "coord": [
+            35.6120928,
+            139.6388401
+          ],
+          "source": "OSM stop 上野毛",
+          "offsetM": 0
+        }
+      ]
+    }
+  }
+}

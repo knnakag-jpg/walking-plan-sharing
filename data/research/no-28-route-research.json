@@ -1,0 +1,43 @@
+{
+  "id": "No.28",
+  "title": "四谷・若葉 スリバチ迷宮",
+  "stage": "source_research_in_progress",
+  "checkedAt": "2026-11-16",
+  "evidence": [
+    {
+      "type": "community",
+      "title": "OpenStreetMap（信濃町駅・須賀神社・新宿歴史博物館・若葉東公園・四ツ谷駅）",
+      "url": "https://www.openstreetmap.org/",
+      "checkedAt": "2026-11-16",
+      "supports": "駅・施設・公園の名称ノードの座標。入口ではない。"
+    },
+    {
+      "type": "community",
+      "title": "旧資料 No.28（先行ページ index.html）",
+      "url": null,
+      "checkedAt": "2026-11-16",
+      "supports": "旧案の立ち寄り先。闇坂・たいやき わかばは含めていない。"
+    }
+  ],
+  "trials": [
+    {
+      "n": 1,
+      "variant": "A 新規（OSMの駅・地点）",
+      "result": "3.16km・反復413m",
+      "finding": "若葉東公園から四ツ谷駅へ向かう区間で約328m、須賀神社の階段付近で約50m・約35mの短い重なり（計約413m）。須賀神社の階段（女坂・男坂）と若葉の谷底を往来する地形で、同じ坂を登り降りする形と推定。地図で未確認。"
+    }
+  ],
+  "files": [
+    "scripts/lib-rebuild.mjs",
+    "scripts/build-group5.mjs",
+    "data/curated/no-28.json",
+    "data/research/no-28-adopted-build.json"
+  ],
+  "openQuestions": [
+    "闇坂の位置（OSMに名称ノードなし）",
+    "たいやき わかばの座標と営業状況",
+    "須賀神社の男坂と女坂の区別",
+    "若葉東公園の入口"
+  ],
+  "decision": "2026-11-16 新Aを計算（3.16km・反復413m）。闇坂・たいやき わかばは名称ノードがなく含めていない。"
+}

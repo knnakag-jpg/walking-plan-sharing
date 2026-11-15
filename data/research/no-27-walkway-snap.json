@@ -1,0 +1,42 @@
+{
+ "shin_koganei": {
+  "snapped": [
+   35.6943952,
+   139.5260341
+  ],
+  "movedM": 1,
+  "wayId": 360332994
+ },
+ "hake_museum": {
+  "snapped": [
+   35.6953668,
+   139.5128475
+  ],
+  "movedM": 9,
+  "wayId": 1160845820
+ },
+ "hake_mori": {
+  "snapped": [
+   35.6963385,
+   139.5065779
+  ],
+  "movedM": 0,
+  "wayId": 62330329
+ },
+ "musashino_park": {
+  "snapped": [
+   35.6899716,
+   139.5182836
+  ],
+  "movedM": 27,
+  "wayId": 506150891
+ },
+ "musashi_koganei": {
+  "snapped": [
+   35.7011281,
+   139.5067878
+  ],
+  "movedM": 0,
+  "wayId": 1053538124
+ }
+}

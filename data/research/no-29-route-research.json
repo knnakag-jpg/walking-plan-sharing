@@ -1,0 +1,43 @@
+{
+  "id": "No.29",
+  "title": "等々力渓谷と崖の階段",
+  "stage": "source_research_in_progress",
+  "checkedAt": "2026-11-16",
+  "evidence": [
+    {
+      "type": "community",
+      "title": "OpenStreetMap（等々力駅・ゴルフ橋・等々力渓谷公園・等々力不動尊・玉川野毛町公園・上野毛駅）",
+      "url": "https://www.openstreetmap.org/",
+      "checkedAt": "2026-11-16",
+      "supports": "駅・施設・公園の名称ノードの座標。入口ではない。"
+    },
+    {
+      "type": "community",
+      "title": "旧資料 No.29（先行ページ index.html）",
+      "url": null,
+      "checkedAt": "2026-11-16",
+      "supports": "旧案の立ち寄り先。用賀駅方面の往復延伸は採用していない。"
+    }
+  ],
+  "trials": [
+    {
+      "n": 1,
+      "variant": "A 新規（OSMの駅・地点）",
+      "result": "2.62km・反復211m",
+      "finding": "等々力渓谷公園から不動尊へ向かう区間で約211mが重なる。渓谷の遊歩道が一本道で、不動尊へ入って同じ道を戻る形と推定。地図で未確認。"
+    }
+  ],
+  "files": [
+    "scripts/lib-rebuild.mjs",
+    "scripts/build-group5.mjs",
+    "data/curated/no-29.json",
+    "data/research/no-29-adopted-build.json"
+  ],
+  "openQuestions": [
+    "渓谷の遊歩道の連続性と閉鎖時の迂回路",
+    "雪月花の座標と営業状況（OSMに名称ノードなし）",
+    "上野毛駅から用賀駅への経路",
+    "等々力不動尊の参拝時間"
+  ],
+  "decision": "2026-11-16 新Aを計算（2.62km・反復211m）。用賀駅への延伸と雪月花は含めていない。"
+}

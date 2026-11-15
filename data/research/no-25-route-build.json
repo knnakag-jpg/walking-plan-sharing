@@ -1,0 +1,116 @@
+{
+  "calculatedAt": "2026-11-15T21:54:47.113Z",
+  "engine": "valhalla-pedestrian",
+  "variants": {
+    "standard": {
+      "label": "standard",
+      "distanceM": 4066,
+      "engineDistanceM": 4068,
+      "repeatedGeometryM": 94,
+      "repeatedGeometryPct": 2.3,
+      "legKm": [
+        0.31,
+        0.24,
+        0.42,
+        1.22,
+        0.83,
+        0.21,
+        0.14,
+        0.71
+      ],
+      "geometryUrl": "data/routes/no-25-standard.geojson",
+      "stops": [
+        {
+          "id": "nihonbashi_st",
+          "label": "日本橋駅",
+          "coord": [
+            35.6816617,
+            139.7760632
+          ],
+          "source": "OSM information 日本橋駅",
+          "offsetM": 0
+        },
+        {
+          "id": "nihonbashi",
+          "label": "日本橋（橋の中央）",
+          "coord": [
+            35.6825677,
+            139.7737674
+          ],
+          "source": "OSM node 日本橋（橋）",
+          "offsetM": 0
+        },
+        {
+          "id": "uogashi",
+          "label": "日本橋魚河岸発祥の地",
+          "coord": [
+            35.6843916,
+            139.7748193
+          ],
+          "source": "OSM memorial 日本橋魚河岸発祥の地",
+          "offsetM": 2
+        },
+        {
+          "id": "mitsui_museum",
+          "label": "三井記念美術館",
+          "coord": [
+            35.6865114,
+            139.7728674
+          ],
+          "source": "OSM museum 三井記念美術館",
+          "offsetM": 0
+        },
+        {
+          "id": "kayabacho",
+          "label": "茅場町駅",
+          "coord": [
+            35.6800057,
+            139.7801158
+          ],
+          "source": "OSM stop 茅場町",
+          "offsetM": 0
+        },
+        {
+          "id": "ningyocho",
+          "label": "人形町駅",
+          "coord": [
+            35.6862163,
+            139.7823757
+          ],
+          "source": "OSM station 人形町",
+          "offsetM": 0
+        },
+        {
+          "id": "karakuri",
+          "label": "人形町からくり櫓",
+          "coord": [
+            35.6848464,
+            139.7837427
+          ],
+          "source": "OSM clock 人形町からくり櫓",
+          "offsetM": 0
+        },
+        {
+          "id": "suitengu",
+          "label": "水天宮前",
+          "coord": [
+            35.6838832,
+            139.7844797
+          ],
+          "source": "OSM stop 水天宮前",
+          "offsetM": 0
+        },
+        {
+          "id": "hamacho",
+          "label": "浜町公園",
+          "coord": [
+            35.6877794,
+            139.7879205
+          ],
+          "source": "OSM information 中央区立浜町公園案内図",
+          "offsetM": 0
+        }
+      ]
+    }
+  }
+}

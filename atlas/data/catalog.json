@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "source": "legacy import; route quality not re-reviewed",
-  "generatedAt": "2026-11-15T21:31:25.738Z",
+  "generatedAt": "2026-11-15T21:55:01.628Z",
   "courses": [
     {
       "id": "No.1",
@@ -9397,19 +9397,19 @@
     {
       "id": "No.25",
       "slug": "no-25",
-      "title": "日本橋～コレド～水天宮前",
+      "title": "日本橋・人形町・浜町",
       "seriesId": "main",
       "seriesName": "本編 A～Z（No.1～26）",
       "legacyAnchor": "course-25",
       "legacyUrl": "../index.html#course-25",
-      "summary": "経路ノード： 日本橋駅 → 日本橋（欄干・麒麟） → 日本橋室町 → コレド日本橋・三井本館 → 三井記念美術館（会期次第） → 鎧橋 → 茅場町駅 → 人形町駅 → 水天宮前 → 浜町駅 → 清澄白河駅 → ゴール",
+      "summary": "日本橋駅から日本橋（橋の中央）、日本橋魚河岸発祥の地、三井記念美術館、茅場町駅、人形町、水天宮前、浜町公園を結ぶ駅間。清澄白河駅まで続く旧案は座標を作る必要があるため、浜町公園で止めた。COREDO日本橋は2027年秋まで一時閉店のため経由点に含めない。",
       "routeText": "経路ノード： 日本橋駅 → 日本橋（欄干・麒麟） → 日本橋室町 → コレド日本橋・三井本館 → 三井記念美術館（会期次第） → 鎧橋 → 茅場町駅 → 人形町駅 → 水天宮前 → 浜町駅 → 清澄白河駅 → ゴール",
       "tags": [
+        "橋",
+        "町並み",
         "歴史",
-        "再開発",
-        "食",
-        "水辺",
-        "美術"
+        "神社",
+        "美術館"
       ],
       "route": {
         "id": "no-25-legacy",
@@ -9423,17 +9423,7 @@
         "repeatedGeometryPct": 10.7,
         "maxWaypointToShapeM": 20,
         "built": "2026-10-18",
-        "engine": "valhalla-pedestrian",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "partial_dem_filled",
-          "url": "data/elevation/no-25.json",
-          "totalM": 6934,
-          "climbM": 20.9,
-          "descentM": 24.4,
-          "minM": 0.4,
-          "maxM": 4.9
-        }
+        "engine": "valhalla-pedestrian"
       },
       "waypoints": [
         {
@@ -9512,24 +9502,307 @@
       "auditFlags": [
         "repeated_geometry_over_10pct"
       ],
-      "category": "main"
+      "category": "main",
+      "defaultVariant": "standard",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "OpenStreetMap（日本橋駅・日本橋・三井記念美術館・茅場町駅・人形町・水天宮前・浜町公園）",
+          "url": "https://www.openstreetmap.org/",
+          "checkedAt": "2026-11-16",
+          "supports": "駅・施設・公園の名称ノードの座標。入口ではない。"
+        },
+        {
+          "type": "community",
+          "title": "旧資料 No.25（先行ページ index.html）",
+          "url": null,
+          "checkedAt": "2026-11-16",
+          "supports": "旧案の立ち寄り先。清澄白河駅までの延伸は採用していない。"
+        }
+      ],
+      "openQuestions": [
+        "COREDO日本橋の営業再開時期（2027年秋予定）",
+        "鎧橋の正確な位置（OSMに名称ノードなし）",
+        "水天宮の境内の入口",
+        "浜町駅から清澄白河駅までの旧案の経路"
+      ],
+      "routeOptions": [
+        {
+          "id": "no-25-standard",
+          "variant": "standard",
+          "strategy": "scenic",
+          "geometryUrl": "data/routes/no-25-standard.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 4066,
+          "engineDistanceM": 4068,
+          "repeatedGeometryPct": 2.3,
+          "routeReason": "日本橋駅から日本橋（橋）、日本橋魚河岸発祥の地、三井記念美術館、茅場町駅、人形町駅、人形町からくり櫓、水天宮前、浜町公園へ。計算上4.07km。COREDO日本橋はOSMで「一時閉店（2027年秋まで）」とあり含めていない。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
+          "distanceException": "4.07km。実在の立ち寄り先だけで組んだため5〜6kmの範囲外。延伸は作らない。",
+          "retraceException": "計算上の重なりは約94m。日本橋付近の交差点と魚河岸記念碑前の出入りで生じる短い往復と推定。地図で未確認。",
+          "waypoints": [
+            {
+              "index": 0,
+              "id": "nihonbashi_st",
+              "label": "日本橋駅",
+              "description": null,
+              "point": [
+                139.7760632,
+                35.6816617
+              ],
+              "source": "OSM information 日本橋駅"
+            },
+            {
+              "index": 1,
+              "id": "nihonbashi",
+              "label": "日本橋（橋の中央）",
+              "description": null,
+              "point": [
+                139.7737674,
+                35.6825677
+              ],
+              "source": "OSM node 日本橋（橋）"
+            },
+            {
+              "index": 2,
+              "id": "uogashi",
+              "label": "日本橋魚河岸発祥の地",
+              "description": null,
+              "point": [
+                139.7748193,
+                35.6843916
+              ],
+              "source": "OSM memorial 日本橋魚河岸発祥の地"
+            },
+            {
+              "index": 3,
+              "id": "mitsui_museum",
+              "label": "三井記念美術館",
+              "description": null,
+              "point": [
+                139.7728674,
+                35.6865114
+              ],
+              "source": "OSM museum 三井記念美術館"
+            },
+            {
+              "index": 4,
+              "id": "kayabacho",
+              "label": "茅場町駅",
+              "description": null,
+              "point": [
+                139.7801158,
+                35.6800057
+              ],
+              "source": "OSM stop 茅場町"
+            },
+            {
+              "index": 5,
+              "id": "ningyocho",
+              "label": "人形町駅",
+              "description": null,
+              "point": [
+                139.7823757,
+                35.6862163
+              ],
+              "source": "OSM station 人形町"
+            },
+            {
+              "index": 6,
+              "id": "karakuri",
+              "label": "人形町からくり櫓",
+              "description": null,
+              "point": [
+                139.7837427,
+                35.6848464
+              ],
+              "source": "OSM clock 人形町からくり櫓"
+            },
+            {
+              "index": 7,
+              "id": "suitengu",
+              "label": "水天宮前",
+              "description": null,
+              "point": [
+                139.7844797,
+                35.6838832
+              ],
+              "source": "OSM stop 水天宮前"
+            },
+            {
+              "index": 8,
+              "id": "hamacho",
+              "label": "浜町公園",
+              "description": null,
+              "point": [
+                139.7879205,
+                35.6877794
+              ],
+              "source": "OSM information 中央区立浜町公園案内図"
+            }
+          ],
+          "engine": "valhalla-pedestrian",
+          "built": "2026-11-15T21:54:47.113Z",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/no-25-standard.json",
+            "totalM": 4066,
+            "climbM": 13.4,
+            "descentM": 15.3,
+            "minM": 1.3,
+            "maxM": 5.6
+          }
+        },
+        {
+          "id": "no-25-rainy",
+          "variant": "rainy",
+          "strategy": "indoor_rail",
+          "verificationStatus": "researched",
+          "distanceM": null,
+          "routeReason": "雨の日は三井記念美術館の館内と地下通路（日本橋〜三越前）を中心にする案。",
+          "segments": [
+            {
+              "kind": "walk_indoor",
+              "from": "日本橋駅",
+              "to": "三越前駅",
+              "distanceM": null,
+              "note": "地下通路の連続性は未確認。"
+            },
+            {
+              "kind": "walk_indoor",
+              "from": "三井記念美術館",
+              "to": "館内",
+              "distanceM": null,
+              "note": "開館日・会期を当日公式で確認。"
+            },
+            {
+              "kind": "walk_outdoor",
+              "from": "人形町",
+              "to": "水天宮前",
+              "distanceM": null,
+              "note": "屋根なし。傘が必要。"
+            }
+          ],
+          "conditions": [
+            "三井記念美術館の会期・休館日は当日確認。",
+            "COREDO日本橋は一時閉店中。"
+          ],
+          "geometryUrl": null,
+          "waypoints": []
+        },
+        {
+          "id": "no-25-legacy",
+          "variant": "legacy",
+          "strategy": "legacy_unknown",
+          "geometryUrl": "data/routes/no-25.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 6934,
+          "engineDistanceM": 6933,
+          "targetDistanceM": 6900,
+          "repeatedGeometryPct": 10.7,
+          "maxWaypointToShapeM": 20,
+          "built": "2026-10-18",
+          "engine": "valhalla-pedestrian",
+          "waypoints": [
+            {
+              "index": 0,
+              "point": [
+                139.7738,
+                35.682
+              ]
+            },
+            {
+              "index": 1,
+              "point": [
+                139.7745,
+                35.684
+              ]
+            },
+            {
+              "index": 2,
+              "point": [
+                139.7755,
+                35.686
+              ]
+            },
+            {
+              "index": 3,
+              "point": [
+                139.7765,
+                35.6875
+              ]
+            },
+            {
+              "index": 4,
+              "point": [
+                139.778,
+                35.688
+              ]
+            },
+            {
+              "index": 5,
+              "point": [
+                139.77942,
+                35.68023
+              ]
+            },
+            {
+              "index": 6,
+              "point": [
+                139.78219,
+                35.68628
+              ]
+            },
+            {
+              "index": 7,
+              "point": [
+                139.78814,
+                35.68847
+              ]
+            },
+            {
+              "index": 8,
+              "point": [
+                139.79876,
+                35.68205
+              ]
+            },
+            {
+              "index": 9,
+              "point": [
+                139.795,
+                35.67262
+              ]
+            }
+          ],
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/no-25.json",
+            "totalM": 6934,
+            "climbM": 20.9,
+            "descentM": 24.4,
+            "minM": 0.4,
+            "maxM": 4.9
+          }
+        }
+      ]
     },
     {
       "id": "No.26",
       "slug": "no-26",
-      "title": "旧古河庭園～駒込",
+      "title": "旧古河庭園と六義園",
       "seriesId": "main",
       "seriesName": "本編 A～Z（No.1～26）",
       "legacyAnchor": "course-26",
       "legacyUrl": "../index.html#course-26",
-      "summary": "経路ノード： 駒込駅／西ヶ原駅 → 旧古河庭園（正門） → 洋館（外観／公開日は内部） → バラ園・主要園路のみ → 昼食（駒込駅前） → 巣鴨地蔵通り商店街 → 駒込駅（解散）",
+      "summary": "駒込駅から旧古河庭園へ北上し、同じ道を戻って六義園の前を通り巣鴨駅へ抜ける駅間。旧古河庭園は駅から一本道の先にあり、往復が必要。巣鴨地蔵通り商店街と昼食は経由点に含めない。",
       "routeText": "経路ノード： 駒込駅／西ヶ原駅 → 旧古河庭園（正門） → 洋館（外観／公開日は内部） → バラ園・主要園路のみ → 昼食（駒込駅前） → 巣鴨地蔵通り商店街 → 駒込駅（解散）",
       "tags": [
         "庭園",
         "洋館",
-        "秋バラ",
-        "歴史",
-        "建築"
+        "バラ",
+        "駅間"
       ],
       "route": {
         "id": "no-26-legacy",
@@ -9543,17 +9816,7 @@
         "repeatedGeometryPct": 7.5,
         "maxWaypointToShapeM": 14,
         "built": "2026-10-18",
-        "engine": "brouter-hiking-beta",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "dem",
-          "url": "data/elevation/no-26.json",
-          "totalM": 6655,
-          "climbM": 67.1,
-          "descentM": 56.9,
-          "minM": 7.4,
-          "maxM": 26.4
-        }
+        "engine": "brouter-hiking-beta"
       },
       "waypoints": [
         {
@@ -9637,19 +9900,261 @@
       "climbM": 95.3,
       "descentM": 93.3,
       "auditFlags": [],
-      "category": "main"
+      "category": "main",
+      "defaultVariant": "standard",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "OpenStreetMap（駒込駅・旧古河庭園・六義園・巣鴨駅）",
+          "url": "https://www.openstreetmap.org/",
+          "checkedAt": "2026-11-16",
+          "supports": "駅・施設・公園の名称ノードの座標。入口ではない。"
+        },
+        {
+          "type": "community",
+          "title": "旧資料 No.26（先行ページ index.html）",
+          "url": null,
+          "checkedAt": "2026-11-16",
+          "supports": "旧案の立ち寄り先。巣鴨地蔵通り商店街と昼食は含めていない。"
+        }
+      ],
+      "openQuestions": [
+        "旧古河庭園の正門の位置と入口",
+        "洋館の公開日・予約",
+        "六義園の出入口と有料区",
+        "巣鴨地蔵通り商店街の座標（OSMに名称ノードなし）"
+      ],
+      "routeOptions": [
+        {
+          "id": "no-26-standard",
+          "variant": "standard",
+          "strategy": "scenic",
+          "geometryUrl": "data/routes/no-26-standard.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 3398,
+          "engineDistanceM": 3407,
+          "repeatedGeometryPct": 24,
+          "routeReason": "駒込駅から旧古河庭園（北へ約1.1km）、六義園の前、巣鴨駅へ。計算上3.40km。旧古河庭園は駅から一本道の先にあるため、庭園へ入って戻る往復（約654m）が避けられない。巣鴨地蔵通り商店街の座標は名称ノードが見つからず含めていない。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
+          "distanceException": "3.40km。庭園を中心とした短い駅間で5〜6kmに届かない。延伸は作らない。",
+          "retraceException": "旧古河庭園と駒込駅の間の約654m（庭園へ入って同じ道を戻る往復）、駒込駅付近の約115m、六義園付近の約45m（計約814m）。庭園は駅から一本道の先にあるため、庭園を含む限り必要な往復。距離合わせではない。",
+          "waypoints": [
+            {
+              "index": 0,
+              "id": "komagome",
+              "label": "駒込駅",
+              "description": null,
+              "point": [
+                139.7472407,
+                35.7365819
+              ],
+              "source": "OSM station 駒込"
+            },
+            {
+              "index": 1,
+              "id": "kyu_furukawa",
+              "label": "旧古河庭園",
+              "description": null,
+              "point": [
+                139.7463295,
+                35.7424884
+              ],
+              "source": "OSM garden 旧古河庭園"
+            },
+            {
+              "index": 2,
+              "id": "rikugien",
+              "label": "六義園",
+              "description": null,
+              "point": [
+                139.7468421,
+                35.7348354
+              ],
+              "source": "OSM information 六義園"
+            },
+            {
+              "index": 3,
+              "id": "sugamo",
+              "label": "巣鴨駅",
+              "description": null,
+              "point": [
+                139.7395492,
+                35.7334627
+              ],
+              "source": "OSM station 巣鴨"
+            }
+          ],
+          "engine": "valhalla-pedestrian",
+          "built": "2026-11-15T21:54:49.757Z",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "dem",
+            "url": "data/elevation/no-26-standard.json",
+            "totalM": 3398,
+            "climbM": 37.2,
+            "descentM": 34.6,
+            "minM": 13.4,
+            "maxM": 25
+          }
+        },
+        {
+          "id": "no-26-rainy",
+          "variant": "rainy",
+          "strategy": "indoor_rail",
+          "verificationStatus": "researched",
+          "distanceM": null,
+          "routeReason": "雨の日は旧古河庭園の洋館（公開日のみ内部）と六義園の園路を中心にする案。",
+          "segments": [
+            {
+              "kind": "walk_outdoor",
+              "from": "駒込駅",
+              "to": "旧古河庭園",
+              "distanceM": null,
+              "note": "屋根なし。傘が必要。"
+            },
+            {
+              "kind": "walk_indoor",
+              "from": "旧古河庭園",
+              "to": "洋館の内部",
+              "distanceM": null,
+              "note": "公開日は限られる。当日公式で確認。"
+            },
+            {
+              "kind": "rail",
+              "from": "巣鴨駅",
+              "to": "駒込駅",
+              "distanceM": null,
+              "note": "JR山手線で戻る場合。"
+            }
+          ],
+          "conditions": [
+            "旧古河庭園の洋館の公開日・予約は当日確認。",
+            "庭園の開園時間・入園料は当日確認。"
+          ],
+          "geometryUrl": null,
+          "waypoints": []
+        },
+        {
+          "id": "no-26-legacy",
+          "variant": "legacy",
+          "strategy": "legacy_unknown",
+          "geometryUrl": "data/routes/no-26.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 6655,
+          "engineDistanceM": 6637,
+          "targetDistanceM": 6600,
+          "repeatedGeometryPct": 7.5,
+          "maxWaypointToShapeM": 14,
+          "built": "2026-10-18",
+          "engine": "brouter-hiking-beta",
+          "waypoints": [
+            {
+              "index": 0,
+              "point": [
+                139.76069,
+                35.73832
+              ]
+            },
+            {
+              "index": 1,
+              "point": [
+                139.7485,
+                35.7362
+              ]
+            },
+            {
+              "index": 2,
+              "point": [
+                139.747,
+                35.738
+              ]
+            },
+            {
+              "index": 3,
+              "point": [
+                139.746,
+                35.74
+              ]
+            },
+            {
+              "index": 4,
+              "point": [
+                139.745,
+                35.742
+              ]
+            },
+            {
+              "index": 5,
+              "point": [
+                139.744,
+                35.743
+              ]
+            },
+            {
+              "index": 6,
+              "point": [
+                139.743,
+                35.7412
+              ]
+            },
+            {
+              "index": 7,
+              "point": [
+                139.73739,
+                35.73909
+              ]
+            },
+            {
+              "index": 8,
+              "point": [
+                139.73549,
+                35.7357
+              ]
+            },
+            {
+              "index": 9,
+              "point": [
+                139.73943,
+                35.73341
+              ]
+            },
+            {
+              "index": 10,
+              "point": [
+                139.72926,
+                35.73145
+              ]
+            }
+          ],
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "dem",
+            "url": "data/elevation/no-26.json",
+            "totalM": 6655,
+            "climbM": 67.1,
+            "descentM": 56.9,
+            "minM": 7.4,
+            "maxM": 26.4
+          }
+        }
+      ]
     },
     {
       "id": "No.27",
       "slug": "no-27",
-      "title": "国分寺崖線「はけ」",
+      "title": "国分寺崖線「はけ」と野川",
       "seriesId": "sakamichi",
       "seriesName": "坂道・崖線（No.27～32）",
       "legacyAnchor": "course-27",
       "legacyUrl": "../index.html#course-27",
-      "summary": "経路ノード： 新小金井駅 → はけの小路・美術館 → 滄浪泉園 → 貫井神社 → 野川沿い（武蔵野公園） → 武蔵小金井駅 → 緑町四丁目方面へ実在の歩道で延伸（往復約3km） → ゴール",
+      "summary": "新小金井駅から武蔵野公園、はけの森美術館、はけの森緑地、武蔵小金井駅へ抜ける駅間。滄浪泉園・貫井神社は名称ノードが見つからず含めていない。旧案の緑町四丁目方面の往復延伸は採らない。",
       "routeText": "経路ノード： 新小金井駅 → はけの小路・美術館 → 滄浪泉園 → 貫井神社 → 野川沿い（武蔵野公園） → 武蔵小金井駅 → 緑町四丁目方面へ実在の歩道で延伸（往復約3km） → ゴール",
-      "tags": [],
+      "tags": [
+        "崖線",
+        "湧水",
+        "公園",
+        "美術館",
+        "川"
+      ],
       "route": {
         "id": "no-27-legacy",
         "variant": "legacy",
@@ -9662,17 +10167,7 @@
         "repeatedGeometryPct": 20.6,
         "maxWaypointToShapeM": 31,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "dem",
-          "url": "data/elevation/no-27.json",
-          "totalM": 6962,
-          "climbM": 39.2,
-          "descentM": 33.2,
-          "minM": 47.7,
-          "maxM": 70
-        }
+        "engine": "valhalla-pedestrian"
       },
       "waypoints": [
         {
@@ -9731,7 +10226,226 @@
         "repeated_geometry_over_10pct",
         "repeated_waypoint"
       ],
-      "category": "main"
+      "category": "main",
+      "defaultVariant": "standard",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "OpenStreetMap（新小金井駅・武蔵野公園・はけの森美術館・はけの森緑地・武蔵小金井駅）",
+          "url": "https://www.openstreetmap.org/",
+          "checkedAt": "2026-11-16",
+          "supports": "駅・施設・公園の名称ノードの座標。入口ではない。"
+        },
+        {
+          "type": "community",
+          "title": "旧資料 No.27（先行ページ index.html）",
+          "url": null,
+          "checkedAt": "2026-11-16",
+          "supports": "旧案の立ち寄り先。緑町四丁目方面の往復延伸は採用していない。"
+        }
+      ],
+      "openQuestions": [
+        "滄浪泉園・貫井神社の座標と入口",
+        "野川沿いの歩道の連続性",
+        "はけの小路の位置",
+        "はけの森美術館の開館日・入館料"
+      ],
+      "routeOptions": [
+        {
+          "id": "no-27-standard",
+          "variant": "standard",
+          "strategy": "scenic",
+          "geometryUrl": "data/routes/no-27-standard.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 3659,
+          "engineDistanceM": 3662,
+          "repeatedGeometryPct": 1.8,
+          "routeReason": "新小金井駅から武蔵野公園（野川沿い）、はけの森美術館、はけの森緑地、武蔵小金井駅へ。計算上3.66km。滄浪泉園・貫井神社の座標は名称ノードが見つからず含めていない。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
+          "distanceException": "3.66km。実在の立ち寄り先だけで組んだため5〜6kmに届かない。旧案の往復延伸は採らない。",
+          "retraceException": "計算上の重なりは約65m。はけの森美術館付近の入口と通りの出入りで生じる短い往復と推定。地図で未確認。",
+          "waypoints": [
+            {
+              "index": 0,
+              "id": "shin_koganei",
+              "label": "新小金井駅",
+              "description": null,
+              "point": [
+                139.5260341,
+                35.6943952
+              ],
+              "source": "OSM node 新小金井駅"
+            },
+            {
+              "index": 1,
+              "id": "musashino_park",
+              "label": "武蔵野公園",
+              "description": null,
+              "point": [
+                139.5182836,
+                35.6899716
+              ],
+              "source": "OSM park 武蔵野公園"
+            },
+            {
+              "index": 2,
+              "id": "hake_museum",
+              "label": "はけの森美術館",
+              "description": null,
+              "point": [
+                139.5128475,
+                35.6953668
+              ],
+              "source": "OSM museum はけの森美術館"
+            },
+            {
+              "index": 3,
+              "id": "hake_mori",
+              "label": "はけの森緑地２",
+              "description": null,
+              "point": [
+                139.5065779,
+                35.6963385
+              ],
+              "source": "OSM park はけの森緑地２"
+            },
+            {
+              "index": 4,
+              "id": "musashi_koganei",
+              "label": "武蔵小金井駅",
+              "description": null,
+              "point": [
+                139.5067878,
+                35.7011281
+              ],
+              "source": "OSM station 武蔵小金井"
+            }
+          ],
+          "engine": "valhalla-pedestrian",
+          "built": "2026-11-15T21:54:51.517Z",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/no-27-standard.json",
+            "totalM": 3659,
+            "climbM": 32.4,
+            "descentM": 26.1,
+            "minM": 45,
+            "maxM": 68.9
+          }
+        },
+        {
+          "id": "no-27-rainy",
+          "variant": "rainy",
+          "strategy": "indoor_rail",
+          "verificationStatus": "researched",
+          "distanceM": null,
+          "routeReason": "雨の日ははけの森美術館の館内を中心にする案。野川沿いは増水時に立入規制がある。",
+          "segments": [
+            {
+              "kind": "walk_outdoor",
+              "from": "新小金井駅",
+              "to": "はけの森美術館",
+              "distanceM": null,
+              "note": "屋根なし。傘が必要。"
+            },
+            {
+              "kind": "walk_indoor",
+              "from": "はけの森美術館",
+              "to": "館内",
+              "distanceM": null,
+              "note": "開館日・会期を当日公式で確認。"
+            },
+            {
+              "kind": "rail",
+              "from": "武蔵小金井駅",
+              "to": "新小金井駅",
+              "distanceM": null,
+              "note": "西武多摩川線・JR中央線の乗り換え。"
+            }
+          ],
+          "conditions": [
+            "美術館の開館日は当日確認。",
+            "野川沿いは増水時に立入規制あり。"
+          ],
+          "geometryUrl": null,
+          "waypoints": []
+        },
+        {
+          "id": "no-27-legacy",
+          "variant": "legacy",
+          "strategy": "legacy_unknown",
+          "geometryUrl": "data/routes/no-27.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 6962,
+          "engineDistanceM": 6973,
+          "targetDistanceM": 6900,
+          "repeatedGeometryPct": 20.6,
+          "maxWaypointToShapeM": 31,
+          "built": "2026-08-29",
+          "engine": "valhalla-pedestrian",
+          "waypoints": [
+            {
+              "index": 0,
+              "point": [
+                139.5242,
+                35.6961
+              ]
+            },
+            {
+              "index": 1,
+              "point": [
+                139.514,
+                35.6938
+              ]
+            },
+            {
+              "index": 2,
+              "point": [
+                139.5103,
+                35.6923
+              ]
+            },
+            {
+              "index": 3,
+              "point": [
+                139.5005,
+                35.697
+              ]
+            },
+            {
+              "index": 4,
+              "point": [
+                139.5063,
+                35.7013
+              ]
+            },
+            {
+              "index": 5,
+              "point": [
+                139.51584,
+                35.708372
+              ]
+            },
+            {
+              "index": 6,
+              "point": [
+                139.5063,
+                35.7013
+              ]
+            }
+          ],
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "dem",
+            "url": "data/elevation/no-27.json",
+            "totalM": 6962,
+            "climbM": 39.2,
+            "descentM": 33.2,
+            "minM": 47.7,
+            "maxM": 70
+          }
+        }
+      ]
     },
     {
       "id": "No.28",
@@ -9741,9 +10455,15 @@
       "seriesName": "坂道・崖線（No.27～32）",
       "legacyAnchor": "course-28",
       "legacyUrl": "../index.html#course-28",
-      "summary": "経路ノード： 信濃町駅 → 若葉東公園 → 闇坂 → たいやき わかば → 須賀神社（男坂・女坂） → 新宿歴史博物館 → 四谷駅 → ゴール",
+      "summary": "信濃町駅から須賀神社の女坂、須賀神社、新宿歴史博物館、若葉東公園を経て四ツ谷駅へ抜ける坂道の駅間。闇坂とたいやき わかばの座標は見つからず含めていない。",
       "routeText": "経路ノード： 信濃町駅 → 若葉東公園 → 闇坂 → たいやき わかば → 須賀神社（男坂・女坂） → 新宿歴史博物館 → 四谷駅 → ゴール",
-      "tags": [],
+      "tags": [
+        "坂道",
+        "神社",
+        "階段",
+        "谷",
+        "博物館"
+      ],
       "route": {
         "id": "no-28-legacy",
         "variant": "legacy",
@@ -9756,17 +10476,7 @@
         "repeatedGeometryPct": 2.7,
         "maxWaypointToShapeM": 26,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "dem",
-          "url": "data/elevation/no-28.json",
-          "totalM": 3262,
-          "climbM": 24.1,
-          "descentM": 39.6,
-          "minM": 17.1,
-          "maxM": 35
-        }
+        "engine": "valhalla-pedestrian"
       },
       "waypoints": [
         {
@@ -9815,7 +10525,230 @@
       "climbM": 61.4,
       "descentM": 75.9,
       "auditFlags": [],
-      "category": "main"
+      "category": "main",
+      "defaultVariant": "standard",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "OpenStreetMap（信濃町駅・須賀神社・新宿歴史博物館・若葉東公園・四ツ谷駅）",
+          "url": "https://www.openstreetmap.org/",
+          "checkedAt": "2026-11-16",
+          "supports": "駅・施設・公園の名称ノードの座標。入口ではない。"
+        },
+        {
+          "type": "community",
+          "title": "旧資料 No.28（先行ページ index.html）",
+          "url": null,
+          "checkedAt": "2026-11-16",
+          "supports": "旧案の立ち寄り先。闇坂・たいやき わかばは含めていない。"
+        }
+      ],
+      "openQuestions": [
+        "闇坂の位置（OSMに名称ノードなし）",
+        "たいやき わかばの座標と営業状況",
+        "須賀神社の男坂と女坂の区別",
+        "若葉東公園の入口"
+      ],
+      "routeOptions": [
+        {
+          "id": "no-28-standard",
+          "variant": "standard",
+          "strategy": "scenic",
+          "geometryUrl": "data/routes/no-28-standard.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 3160,
+          "engineDistanceM": 3158,
+          "repeatedGeometryPct": 13.1,
+          "routeReason": "信濃町駅から須賀神社 女坂・須賀神社、新宿歴史博物館、若葉東公園を経て四ツ谷駅へ。計算上3.16km。闇坂とたいやき わかばは名称ノードが見つからず含めていない。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
+          "distanceException": "3.16km。坂道と階段を巡る短い駅間で5〜6kmに届かない。延伸は作らない。",
+          "retraceException": "若葉東公園から四ツ谷駅へ向かう区間で約328m、須賀神社の階段付近で約50m・約35mの短い重なり（計約413m）。須賀神社の階段（女坂・男坂）と若葉の谷底を往来する地形で、同じ坂を登り降りする形と推定。地図で未確認。",
+          "waypoints": [
+            {
+              "index": 0,
+              "id": "shinanomachi",
+              "label": "信濃町駅",
+              "description": null,
+              "point": [
+                139.7207175,
+                35.6802337
+              ],
+              "source": "OSM station 信濃町"
+            },
+            {
+              "index": 1,
+              "id": "suga_onnazaka",
+              "label": "須賀神社 女坂",
+              "description": null,
+              "point": [
+                139.7230208,
+                35.6853905
+              ],
+              "source": "OSM attraction 須賀神社 女坂"
+            },
+            {
+              "index": 2,
+              "id": "suga_jinja",
+              "label": "須賀神社",
+              "description": null,
+              "point": [
+                139.722633,
+                35.6853419
+              ],
+              "source": "OSM place_of_worship 須賀神社"
+            },
+            {
+              "index": 3,
+              "id": "shinjuku_history",
+              "label": "新宿歴史博物館",
+              "description": null,
+              "point": [
+                139.7246334,
+                35.6889003
+              ],
+              "source": "OSM information 新宿歴史博物館"
+            },
+            {
+              "index": 4,
+              "id": "wakaba_higashi",
+              "label": "若葉東公園",
+              "description": null,
+              "point": [
+                139.728604,
+                35.6831578
+              ],
+              "source": "OSM garden 若葉東公園"
+            },
+            {
+              "index": 5,
+              "id": "yotsuya",
+              "label": "四ツ谷駅",
+              "description": null,
+              "point": [
+                139.7306199,
+                35.686036
+              ],
+              "source": "OSM station 四ツ谷"
+            }
+          ],
+          "engine": "valhalla-pedestrian",
+          "built": "2026-11-15T21:54:53.264Z",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "dem",
+            "url": "data/elevation/no-28-standard.json",
+            "totalM": 3160,
+            "climbM": 19.9,
+            "descentM": 34.8,
+            "minM": 19.1,
+            "maxM": 34.8
+          }
+        },
+        {
+          "id": "no-28-rainy",
+          "variant": "rainy",
+          "strategy": "indoor_rail",
+          "verificationStatus": "researched",
+          "distanceM": null,
+          "routeReason": "雨の日は新宿歴史博物館の館内を中心にする案。須賀神社の階段は雨天で滑りやすい。",
+          "segments": [
+            {
+              "kind": "walk_outdoor",
+              "from": "信濃町駅",
+              "to": "須賀神社",
+              "distanceM": null,
+              "note": "階段が滑りやすい。"
+            },
+            {
+              "kind": "walk_indoor",
+              "from": "新宿歴史博物館",
+              "to": "館内",
+              "distanceM": null,
+              "note": "開館日・料金を当日確認。"
+            },
+            {
+              "kind": "rail",
+              "from": "四ツ谷駅",
+              "to": "信濃町駅",
+              "distanceM": null,
+              "note": "JR中央線・総武線。"
+            }
+          ],
+          "conditions": [
+            "新宿歴史博物館の開館日は当日確認。",
+            "須賀神社の階段は雨天は避ける。"
+          ],
+          "geometryUrl": null,
+          "waypoints": []
+        },
+        {
+          "id": "no-28-legacy",
+          "variant": "legacy",
+          "strategy": "legacy_unknown",
+          "geometryUrl": "data/routes/no-28.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 3262,
+          "engineDistanceM": 3260,
+          "targetDistanceM": 3500,
+          "repeatedGeometryPct": 2.7,
+          "maxWaypointToShapeM": 26,
+          "built": "2026-08-29",
+          "engine": "valhalla-pedestrian",
+          "waypoints": [
+            {
+              "index": 0,
+              "point": [
+                139.7203,
+                35.68
+              ]
+            },
+            {
+              "index": 1,
+              "point": [
+                139.7288,
+                35.6828
+              ]
+            },
+            {
+              "index": 2,
+              "point": [
+                139.7262,
+                35.6835
+              ]
+            },
+            {
+              "index": 3,
+              "point": [
+                139.7275,
+                35.6848
+              ]
+            },
+            {
+              "index": 4,
+              "point": [
+                139.7248,
+                35.6892
+              ]
+            },
+            {
+              "index": 5,
+              "point": [
+                139.7306,
+                35.686
+              ]
+            }
+          ],
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "dem",
+            "url": "data/elevation/no-28.json",
+            "totalM": 3262,
+            "climbM": 24.1,
+            "descentM": 39.6,
+            "minM": 17.1,
+            "maxM": 35
+          }
+        }
+      ]
     },
     {
       "id": "No.29",
@@ -9825,9 +10758,15 @@
       "seriesName": "坂道・崖線（No.27～32）",
       "legacyAnchor": "course-29",
       "legacyUrl": "../index.html#course-29",
-      "summary": "経路ノード： 等々力駅 → ゴルフ橋 → 等々力不動尊・日本庭園 → 雪月花 → 用賀駅 → 用賀九条通り方面へ実在の歩道で延伸（往復約2.6km） → ゴール",
+      "summary": "等々力駅からゴルフ橋、等々力渓谷公園、等々力不動尊、玉川野毛町公園を経て上野毛駅へ抜ける坂道の駅間。旧案の用賀駅への経路は座標を作る必要があるため、上野毛駅で止めた。",
       "routeText": "経路ノード： 等々力駅 → ゴルフ橋 → 等々力不動尊・日本庭園 → 雪月花 → 用賀駅 → 用賀九条通り方面へ実在の歩道で延伸（往復約2.6km） → ゴール",
-      "tags": [],
+      "tags": [
+        "渓谷",
+        "階段",
+        "不動",
+        "公園",
+        "自然"
+      ],
       "route": {
         "id": "no-29-legacy",
         "variant": "legacy",
@@ -9840,17 +10779,7 @@
         "repeatedGeometryPct": 19.3,
         "maxWaypointToShapeM": 10,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "partial_dem_filled",
-          "url": "data/elevation/no-29.json",
-          "totalM": 6594,
-          "climbM": 46.1,
-          "descentM": 39.3,
-          "minM": 14.2,
-          "maxM": 43.8
-        }
+        "engine": "valhalla-pedestrian"
       },
       "waypoints": [
         {
@@ -9909,7 +10838,237 @@
         "repeated_geometry_over_10pct",
         "repeated_waypoint"
       ],
-      "category": "main"
+      "category": "main",
+      "defaultVariant": "standard",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "OpenStreetMap（等々力駅・ゴルフ橋・等々力渓谷公園・等々力不動尊・玉川野毛町公園・上野毛駅）",
+          "url": "https://www.openstreetmap.org/",
+          "checkedAt": "2026-11-16",
+          "supports": "駅・施設・公園の名称ノードの座標。入口ではない。"
+        },
+        {
+          "type": "community",
+          "title": "旧資料 No.29（先行ページ index.html）",
+          "url": null,
+          "checkedAt": "2026-11-16",
+          "supports": "旧案の立ち寄り先。用賀駅方面の往復延伸は採用していない。"
+        }
+      ],
+      "openQuestions": [
+        "渓谷の遊歩道の連続性と閉鎖時の迂回路",
+        "雪月花の座標と営業状況（OSMに名称ノードなし）",
+        "上野毛駅から用賀駅への経路",
+        "等々力不動尊の参拝時間"
+      ],
+      "routeOptions": [
+        {
+          "id": "no-29-standard",
+          "variant": "standard",
+          "strategy": "scenic",
+          "geometryUrl": "data/routes/no-29-standard.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 2619,
+          "engineDistanceM": 2620,
+          "repeatedGeometryPct": 8.1,
+          "routeReason": "等々力駅からゴルフ橋、等々力渓谷公園、等々力不動尊、玉川野毛町公園を経て上野毛駅へ。計算上2.62km。渓谷の遊歩道は階段が多い。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
+          "distanceException": "2.62km。渓谷と不動尊を中心にした短い駅間で5〜6kmに届かない。用賀駅方面への延伸は座標を作る必要があるため採らない。",
+          "retraceException": "等々力渓谷公園から不動尊へ向かう区間で約211mが重なる。渓谷の遊歩道が一本道で、不動尊へ入って同じ道を戻る形と推定。地図で未確認。",
+          "waypoints": [
+            {
+              "index": 0,
+              "id": "todoroki",
+              "label": "等々力駅",
+              "description": null,
+              "point": [
+                139.6479331,
+                35.6084733
+              ],
+              "source": "OSM station 等々力"
+            },
+            {
+              "index": 1,
+              "id": "golf_bridge",
+              "label": "ゴルフ橋",
+              "description": null,
+              "point": [
+                139.6463696,
+                35.607891
+              ],
+              "source": "OSM node ゴルフ橋"
+            },
+            {
+              "index": 2,
+              "id": "todoroki_keikoku",
+              "label": "等々力渓谷公園",
+              "description": null,
+              "point": [
+                139.644942,
+                35.6047737
+              ],
+              "source": "OSM park 等々力渓谷公園"
+            },
+            {
+              "index": 3,
+              "id": "todoroki_fudo",
+              "label": "等々力不動尊",
+              "description": null,
+              "point": [
+                139.6468689,
+                35.6036049
+              ],
+              "source": "OSM place_of_worship 等々力不動尊"
+            },
+            {
+              "index": 4,
+              "id": "tama_noge",
+              "label": "玉川野毛町公園",
+              "description": null,
+              "point": [
+                139.6423311,
+                35.6052093
+              ],
+              "source": "OSM park 玉川野毛町公園"
+            },
+            {
+              "index": 5,
+              "id": "kaminoge",
+              "label": "上野毛駅",
+              "description": null,
+              "point": [
+                139.6388401,
+                35.6120928
+              ],
+              "source": "OSM stop 上野毛"
+            }
+          ],
+          "engine": "valhalla-pedestrian",
+          "built": "2026-11-15T21:54:55.041Z",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/no-29-standard.json",
+            "totalM": 2619,
+            "climbM": 46.8,
+            "descentM": 44.5,
+            "minM": 14.3,
+            "maxM": 34.7
+          }
+        },
+        {
+          "id": "no-29-rainy",
+          "variant": "rainy",
+          "strategy": "indoor_rail",
+          "verificationStatus": "researched",
+          "distanceM": null,
+          "routeReason": "雨の日は等々力不動尊の堂内と、渓谷の遊歩道の屋根のない区間を避ける短縮案。",
+          "segments": [
+            {
+              "kind": "walk_outdoor",
+              "from": "等々力駅",
+              "to": "等々力不動尊",
+              "distanceM": null,
+              "note": "渓谷の階段は雨天で滑りやすく、増水時は立入禁止の可能性。"
+            },
+            {
+              "kind": "walk_indoor",
+              "from": "等々力不動尊",
+              "to": "堂内",
+              "distanceM": null,
+              "note": "参拝時間を当日確認。"
+            },
+            {
+              "kind": "rail",
+              "from": "等々力駅",
+              "to": "上野毛駅",
+              "distanceM": null,
+              "note": "東急大井町線。"
+            }
+          ],
+          "conditions": [
+            "渓谷は大雨・増水時に閉鎖される。",
+            "階段の路面は雨天で危険。"
+          ],
+          "geometryUrl": null,
+          "waypoints": []
+        },
+        {
+          "id": "no-29-legacy",
+          "variant": "legacy",
+          "strategy": "legacy_unknown",
+          "geometryUrl": "data/routes/no-29.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 6594,
+          "engineDistanceM": 6598,
+          "targetDistanceM": 6900,
+          "repeatedGeometryPct": 19.3,
+          "maxWaypointToShapeM": 10,
+          "built": "2026-08-29",
+          "engine": "valhalla-pedestrian",
+          "waypoints": [
+            {
+              "index": 0,
+              "point": [
+                139.648,
+                35.6085
+              ]
+            },
+            {
+              "index": 1,
+              "point": [
+                139.6465,
+                35.6075
+              ]
+            },
+            {
+              "index": 2,
+              "point": [
+                139.646,
+                35.6038
+              ]
+            },
+            {
+              "index": 3,
+              "point": [
+                139.6455,
+                35.6045
+              ]
+            },
+            {
+              "index": 4,
+              "point": [
+                139.6353,
+                35.6264
+              ]
+            },
+            {
+              "index": 5,
+              "point": [
+                139.63073,
+                35.63621
+              ]
+            },
+            {
+              "index": 6,
+              "point": [
+                139.6353,
+                35.6264
+              ]
+            }
+          ],
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/no-29.json",
+            "totalM": 6594,
+            "climbM": 46.1,
+            "descentM": 39.3,
+            "minM": 14.2,
+            "maxM": 43.8
+          }
+        }
+      ]
     },
     {
       "id": "No.30",
@@ -9919,9 +11078,15 @@
       "seriesName": "坂道・崖線（No.27～32）",
       "legacyAnchor": "course-30",
       "legacyUrl": "../index.html#course-30",
-      "summary": "経路ノード： 高幡不動駅 → 高幡不動尊 → 日野市立中央図書館 → 黒川清流公園 → 浅川親水公園 → 豊田駅 → ゴール",
+      "summary": "高幡不動駅から高幡不動尊、日野市郷土資料館、黒川清流公園を経て豊田駅へ抜ける駅間。浅川親水公園は名称ノードが見つからず含めていない。",
       "routeText": "経路ノード： 高幡不動駅 → 高幡不動尊 → 日野市立中央図書館 → 黒川清流公園 → 浅川親水公園 → 豊田駅 → ゴール",
-      "tags": [],
+      "tags": [
+        "不動",
+        "崖線",
+        "公園",
+        "川",
+        "資料館"
+      ],
       "route": {
         "id": "no-30-legacy",
         "variant": "legacy",
@@ -9934,17 +11099,7 @@
         "repeatedGeometryPct": 3.8,
         "maxWaypointToShapeM": 23,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "partial_dem_filled",
-          "url": "data/elevation/no-30.json",
-          "totalM": 4556,
-          "climbM": 43,
-          "descentM": 18.1,
-          "minM": 65.6,
-          "maxM": 92
-        }
+        "engine": "valhalla-pedestrian"
       },
       "waypoints": [
         {
@@ -9986,7 +11141,212 @@
       "climbM": 64.2,
       "descentM": 33.9,
       "auditFlags": [],
-      "category": "main"
+      "category": "main",
+      "defaultVariant": "standard",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "OpenStreetMap（高幡不動駅・高幡不動尊・日野市郷土資料館・黒川清流公園・豊田駅）",
+          "url": "https://www.openstreetmap.org/",
+          "checkedAt": "2026-11-16",
+          "supports": "駅・施設・公園の名称ノードの座標。入口ではない。"
+        },
+        {
+          "type": "community",
+          "title": "旧資料 No.30（先行ページ index.html）",
+          "url": null,
+          "checkedAt": "2026-11-16",
+          "supports": "旧案の立ち寄り先。浅川親水公園・日野市立中央図書館は含めていない。"
+        }
+      ],
+      "openQuestions": [
+        "浅川親水公園の座標（OSMに名称ノードなし）",
+        "日野市立中央図書館の座標",
+        "高幡不動尊の境内の入口",
+        "黒川清流公園から豊田駅への経路"
+      ],
+      "routeOptions": [
+        {
+          "id": "no-30-standard",
+          "variant": "standard",
+          "strategy": "scenic",
+          "geometryUrl": "data/routes/no-30-standard.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 6544,
+          "engineDistanceM": 6557,
+          "repeatedGeometryPct": 2.5,
+          "routeReason": "高幡不動駅から高幡不動尊、日野市郷土資料館、黒川清流公園を経て豊田駅へ。計算上6.54km。浅川親水公園は名称ノードが見つからず含めていない。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
+          "distanceException": "6.54km。5〜6kmを少し超えるが、実在の立ち寄り先をそのまま結んだ結果で、切り詰めはしない。",
+          "retraceException": "高幡不動尊の境内で約166m（計約166m）。境内の参道を入って出る形と推定。地図で未確認。",
+          "waypoints": [
+            {
+              "index": 0,
+              "id": "takahata",
+              "label": "高幡不動駅",
+              "description": null,
+              "point": [
+                139.4151319,
+                35.6612263
+              ],
+              "source": "OSM station 高幡不動"
+            },
+            {
+              "index": 1,
+              "id": "takahata_fudo",
+              "label": "高幡不動尊",
+              "description": null,
+              "point": [
+                139.411006,
+                35.6623658
+              ],
+              "source": "OSM place_of_worship 高幡不動尊"
+            },
+            {
+              "index": 2,
+              "id": "hino_library",
+              "label": "日野市郷土資料館",
+              "description": null,
+              "point": [
+                139.4111742,
+                35.6527699
+              ],
+              "source": "OSM museum 日野市郷土資料館"
+            },
+            {
+              "index": 3,
+              "id": "kurokawa",
+              "label": "黒川清流公園",
+              "description": null,
+              "point": [
+                139.3847809,
+                35.6641551
+              ],
+              "source": "OSM park 黒川清流公園"
+            },
+            {
+              "index": 4,
+              "id": "toyoda",
+              "label": "豊田駅",
+              "description": null,
+              "point": [
+                139.3805661,
+                35.6608354
+              ],
+              "source": "OSM stop 豊田駅前"
+            }
+          ],
+          "engine": "valhalla-pedestrian",
+          "built": "2026-11-15T21:54:56.809Z",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/no-30-standard.json",
+            "totalM": 6544,
+            "climbM": 151.3,
+            "descentM": 115.3,
+            "minM": 66.6,
+            "maxM": 130.1
+          }
+        },
+        {
+          "id": "no-30-rainy",
+          "variant": "rainy",
+          "strategy": "indoor_rail",
+          "verificationStatus": "researched",
+          "distanceM": null,
+          "routeReason": "雨の日は高幡不動尊の堂内と日野市郷土資料館の館内を中心にする案。",
+          "segments": [
+            {
+              "kind": "walk_outdoor",
+              "from": "高幡不動駅",
+              "to": "高幡不動尊",
+              "distanceM": null,
+              "note": "参道は屋根なし。"
+            },
+            {
+              "kind": "walk_indoor",
+              "from": "日野市郷土資料館",
+              "to": "館内",
+              "distanceM": null,
+              "note": "開館日・料金を当日公式で確認。"
+            },
+            {
+              "kind": "rail",
+              "from": "豊田駅",
+              "to": "高幡不動駅",
+              "distanceM": null,
+              "note": "京王線とJR中央線の乗り換え。"
+            }
+          ],
+          "conditions": [
+            "郷土資料館の開館日は当日確認。",
+            "黒川清流公園の池畔は雨天で濡れやすい。"
+          ],
+          "geometryUrl": null,
+          "waypoints": []
+        },
+        {
+          "id": "no-30-legacy",
+          "variant": "legacy",
+          "strategy": "legacy_unknown",
+          "geometryUrl": "data/routes/no-30.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 4556,
+          "engineDistanceM": 4558,
+          "targetDistanceM": 4500,
+          "repeatedGeometryPct": 3.8,
+          "maxWaypointToShapeM": 23,
+          "built": "2026-08-29",
+          "engine": "valhalla-pedestrian",
+          "waypoints": [
+            {
+              "index": 0,
+              "point": [
+                139.4132,
+                35.6622
+              ]
+            },
+            {
+              "index": 1,
+              "point": [
+                139.4125,
+                35.66
+              ]
+            },
+            {
+              "index": 2,
+              "point": [
+                139.394,
+                35.662
+              ]
+            },
+            {
+              "index": 3,
+              "point": [
+                139.3905,
+                35.6605
+              ]
+            },
+            {
+              "index": 4,
+              "point": [
+                139.3815,
+                35.6595
+              ]
+            }
+          ],
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/no-30.json",
+            "totalM": 4556,
+            "climbM": 43,
+            "descentM": 18.1,
+            "minM": 65.6,
+            "maxM": 92
+          }
+        }
+      ]
     },
     {
       "id": "No.31",

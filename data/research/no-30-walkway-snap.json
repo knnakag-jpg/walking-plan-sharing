@@ -1,0 +1,42 @@
+{
+ "takahata": {
+  "snapped": [
+   35.6612263,
+   139.4151319
+  ],
+  "movedM": 6,
+  "wayId": 1088695095
+ },
+ "takahata_fudo": {
+  "snapped": [
+   35.6623658,
+   139.411006
+  ],
+  "movedM": 20,
+  "wayId": 385495223
+ },
+ "hino_library": {
+  "snapped": [
+   35.6527699,
+   139.4111742
+  ],
+  "movedM": 43,
+  "wayId": 49336532
+ },
+ "kurokawa": {
+  "snapped": [
+   35.6641551,
+   139.3847809
+  ],
+  "movedM": 9,
+  "wayId": 183549770
+ },
+ "toyoda": {
+  "snapped": [
+   35.6608354,
+   139.3805661
+  ],
+  "movedM": 1,
+  "wayId": 25154146
+ }
+}
