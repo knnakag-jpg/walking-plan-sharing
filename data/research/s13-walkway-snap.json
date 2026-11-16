@@ -30,5 +30,69 @@
   ],
   "movedM": 22,
   "wayId": 1088695095
+ },
+ "watanishi": {
+  "snapped": [
+   35.6782847,
+   139.4157221
+  ],
+  "movedM": 22,
+  "wayId": 74846010
+ },
+ "ichirizuka": {
+  "snapped": [
+   35.6745512,
+   139.4151908
+  ],
+  "movedM": 26,
+  "wayId": 1340018368
+ },
+ "hijikata_museum": {
+  "snapped": [
+   35.6696071,
+   139.4198184
+  ],
+  "movedM": 22,
+  "wayId": 849379501
+ },
+ "sekidenji": {
+  "snapped": [
+   35.6682375,
+   139.424127
+  ],
+  "movedM": 23,
+  "wayId": 54148198
+ },
+ "suisha": {
+  "snapped": [
+   35.6734581,
+   139.4200921
+  ],
+  "movedM": 17,
+  "wayId": 62213401
+ },
+ "kitagawara": {
+  "snapped": [
+   35.6726439,
+   139.4232801
+  ],
+  "movedM": 31,
+  "wayId": 55063113
+ },
+ "misawa": {
+  "snapped": [
+   35.6584957,
+   139.418846
+  ],
+  "movedM": 26,
+  "wayId": 187637642
+ },
+ "muramae": {
+  "snapped": [
+   35.6666572,
+   139.4050373
+  ],
+  "movedM": 15,
+  "wayId": 73814109
  }
 }

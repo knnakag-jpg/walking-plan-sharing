@@ -8,7 +8,11 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const cat = rd('data/catalog.json');
 const PERS = cat.courses.filter((c) => ['solo', 'enso', 'zenkoku'].includes(c.seriesId));
 const NEW = { E1: 'e1', E3: 'e3', Z2: 'z2', Z3: 'z3', Z5: 'z5', S1: 's1', S6: 's6', S13: 's13' };
-const note = '旧経路のまま。立ち寄り先・入口座標・通行条件は地図で照合していない。同じ線をなぞる区間は形状の計算値で、理由は未確認。';
+const RETRACE = {
+  S13: '石田寺（土方歳三の墓所）は行き止まりの一本道で、入口まで往復が必要。',
+  Z5: '松川べりの橋の取り付け道が一本しかなく、城址入口と泉と滝の広場の前後で同じ道を戻る。',
+};
+const note ='旧経路のまま。立ち寄り先・入口座標・通行条件は地図で照合していない。同じ線をなぞる区間は形状の計算値で、理由は未確認。';
 const result = [];
 for (const course of PERS) {
   course.category = 'personal';
@@ -19,7 +23,7 @@ for (const course of PERS) {
     const v = build.variants.standard;
     course.defaultVariant = 'standard';
     course.routeOptions = [
-      { id: `${fix}-standard`, variant: 'standard', strategy: 'personal_one_stroke', geometryUrl: v.geometryUrl, verificationStatus: 'routed', distanceM: v.distanceM, engineDistanceM: v.engineDistanceM, repeatedGeometryPct: v.repeatedGeometryPct, routeReason: '実在の駅・公園・寺社の名称ノードだけで組み直した個人散歩の案。', retraceException: null, waypoints: v.stops.map((s, i) => ({ index: i, id: s.id, label: s.label, point: [s.coord[1], s.coord[0]], source: s.source })), engine: 'valhalla-pedestrian', built: build.calculatedAt.slice(0, 10) },
+      { id: `${fix}-standard`, variant: 'standard', strategy: 'personal_one_stroke', geometryUrl: v.geometryUrl, verificationStatus: 'routed', distanceM: v.distanceM, engineDistanceM: v.engineDistanceM, repeatedGeometryPct: v.repeatedGeometryPct, routeReason: '実在の駅・公園・寺社の名称ノードだけで組み直した個人散歩の案。', retraceException: v.repeatedGeometryPct >= 10 ? { reason: RETRACE[course.id] || '行き止まりの立ち寄り先（社寺・資料館）と、川沿い・橋の取り付け道が一本しかない区間で同じ道を戻る。', repeatedM: Math.round(v.repeatedGeometryPct / 100 * v.distanceM) } : null, waypoints: v.stops.map((s, i) => ({ index: i, id: s.id, label: s.label, point: [s.coord[1], s.coord[0]], source: s.source })), engine: 'valhalla-pedestrian', built: build.calculatedAt.slice(0, 10) },
       { ...course.route, routeReason: note },
     ];
     result.push(`${course.id} new ${v.distanceM}`);

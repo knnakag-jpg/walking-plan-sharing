@@ -30,5 +30,45 @@
   ],
   "movedM": 5,
   "wayId": 363704708
+ },
+ "gakki": {
+  "snapped": [
+   34.706443,
+   137.7385572
+  ],
+  "movedM": 37,
+  "wayId": 576959787
+ },
+ "hamamatsu_bijutsu": {
+  "snapped": [
+   34.7119018,
+   137.7239316
+  ],
+  "movedM": 19,
+  "wayId": 267663563
+ },
+ "saigagake": {
+  "snapped": [
+   34.7193861,
+   137.7187172
+  ],
+  "movedM": 12,
+  "wayId": 1128129948
+ },
+ "mabuchi": {
+  "snapped": [
+   34.700965,
+   137.7161879
+  ],
+  "movedM": 20,
+  "wayId": 190545851
+ },
+ "hamamatsu_st_end": {
+  "snapped": [
+   34.705402,
+   137.7334896
+  ],
+  "movedM": 15,
+  "wayId": 596516351
  }
 }

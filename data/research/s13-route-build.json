@@ -1,17 +1,21 @@
 {
-  "calculatedAt": "2026-11-16T14:51:25.129Z",
+  "calculatedAt": "2026-11-16T21:53:51.150Z",
   "engine": "valhalla-pedestrian",
   "variants": {
     "standard": {
       "label": "standard",
-      "distanceM": 2290,
-      "engineDistanceM": 2296,
-      "repeatedGeometryM": 18,
-      "repeatedGeometryPct": 0.8,
+      "distanceM": 5573,
+      "engineDistanceM": 5582,
+      "repeatedGeometryM": 712,
+      "repeatedGeometryPct": 12.8,
       "legKm": [
-        0.85,
-        0.99,
-        0.46
+        0.27,
+        0.55,
+        1.13,
+        0.84,
+        1.02,
+        0.98,
+        0.78
       ],
       "geometryUrl": "data/routes/s13-standard.geojson",
       "stops": [
@@ -26,6 +30,26 @@
           "offsetM": 0
         },
         {
+          "id": "hijikata_museum",
+          "label": "土方歳三資料館",
+          "coord": [
+            35.6696071,
+            139.4198184
+          ],
+          "source": "OSM museum 土方歳三資料館",
+          "offsetM": 0
+        },
+        {
+          "id": "sekidenji",
+          "label": "石田寺",
+          "coord": [
+            35.6682375,
+            139.424127
+          ],
+          "source": "OSM place_of_worship 石田寺",
+          "offsetM": 0
+        },
+        {
           "id": "asakawa_park",
           "label": "浅川スポーツ公園",
           "coord": [
@@ -33,6 +57,16 @@
             139.4129949
           ],
           "source": "OSM sports_centre 浅川スポーツ公園",
+          "offsetM": 0
+        },
+        {
+          "id": "muramae",
+          "label": "村前公園",
+          "coord": [
+            35.6666572,
+            139.4050373
+          ],
+          "source": "OSM park 村前公園",
           "offsetM": 0
         },
         {
@@ -44,6 +78,16 @@
           ],
           "source": "OSM place_of_worship 高幡不動尊",
           "offsetM": 4
+        },
+        {
+          "id": "misawa",
+          "label": "三澤八幡神社",
+          "coord": [
+            35.6584957,
+            139.418846
+          ],
+          "source": "OSM place_of_worship 三澤八幡神社",
+          "offsetM": 0
         },
         {
           "id": "takahata_st_s",

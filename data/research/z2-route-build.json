@@ -1,16 +1,19 @@
 {
-  "calculatedAt": "2026-11-16T14:34:53.242Z",
+  "calculatedAt": "2026-11-16T21:50:29.900Z",
   "engine": "valhalla-pedestrian",
   "variants": {
     "standard": {
       "label": "standard",
-      "distanceM": 3738,
-      "engineDistanceM": 3740,
-      "repeatedGeometryM": 227,
-      "repeatedGeometryPct": 6.1,
+      "distanceM": 5972,
+      "engineDistanceM": 5972,
+      "repeatedGeometryM": 376,
+      "repeatedGeometryPct": 6.3,
       "legKm": [
-        0.66,
-        1.44,
+        0.3,
+        1.46,
+        0.98,
+        0.75,
+        0.86,
         0.7,
         0.94
       ],
@@ -27,13 +30,43 @@
           "offsetM": 0
         },
         {
-          "id": "motomachi",
-          "label": "元町駅",
+          "id": "ikuta",
+          "label": "生田宮",
           "coord": [
-            34.6899124,
-            135.1871829
+            34.6942333,
+            135.1908857
           ],
-          "source": "OSM station 元町",
+          "source": "OSM yes 生田宮",
+          "offsetM": 0
+        },
+        {
+          "id": "suwa",
+          "label": "諏訪神社",
+          "coord": [
+            34.6964036,
+            135.1798395
+          ],
+          "source": "OSM place_of_worship 諏訪神社",
+          "offsetM": 0
+        },
+        {
+          "id": "hanakuma",
+          "label": "花隈厳島神社",
+          "coord": [
+            34.6885525,
+            135.1820545
+          ],
+          "source": "OSM place_of_worship 花隈厳島神社",
+          "offsetM": 0
+        },
+        {
+          "id": "kakyo",
+          "label": "神戸華僑歴史博物館",
+          "coord": [
+            34.6859156,
+            135.1873469
+          ],
+          "source": "OSM museum 神戸華僑歴史博物館",
           "offsetM": 0
         },
         {
@@ -53,7 +86,7 @@
             34.6813952,
             135.1841253
           ],
-          "source": "OSM node 6033546386 ハーバーランド(モザイク前); 利用者提供の地図でモザイク・はね橋の位置を確認",
+          "source": "OSM node 6033546386 ハーバーランド(モザイク前)",
           "offsetM": 0
         },
         {

@@ -1,18 +1,21 @@
 {
-  "calculatedAt": "2026-11-16T14:08:11.948Z",
+  "calculatedAt": "2026-11-16T21:51:38.664Z",
   "engine": "valhalla-pedestrian",
   "variants": {
     "standard": {
       "label": "standard",
-      "distanceM": 2064,
-      "engineDistanceM": 2065,
-      "repeatedGeometryM": 41,
-      "repeatedGeometryPct": 2,
+      "distanceM": 7671,
+      "engineDistanceM": 7674,
+      "repeatedGeometryM": 140,
+      "repeatedGeometryPct": 1.8,
       "legKm": [
-        0.06,
-        0.62,
-        0.57,
-        0.82
+        2.56,
+        2,
+        1.09,
+        0.78,
+        0.6,
+        0.58,
+        0.06
       ],
       "geometryUrl": "data/routes/e1-standard.geojson",
       "stops": [
@@ -27,23 +30,23 @@
           "offsetM": 0
         },
         {
-          "id": "rakuju",
-          "label": "楽寿園",
+          "id": "kakita",
+          "label": "柿田川公園",
           "coord": [
-            35.1249331,
-            138.9110879
+            35.1074916,
+            138.9010513
           ],
-          "source": "OSM park 三島市立公園 楽寿園",
-          "offsetM": 0
+          "source": "OSM park 柿田川公園",
+          "offsetM": 54
         },
         {
-          "id": "shirataki",
-          "label": "白滝公園",
+          "id": "sano",
+          "label": "佐野美術館",
           "coord": [
-            35.1227253,
-            138.9144425
+            35.1147363,
+            138.915844
           ],
-          "source": "OSM node 白滝公園",
+          "source": "OSM museum 佐野美術館",
           "offsetM": 0
         },
         {
@@ -57,13 +60,43 @@
           "offsetM": 0
         },
         {
-          "id": "mishima_tamachi",
-          "label": "三島田町駅",
+          "id": "komoike",
+          "label": "菰池公園",
           "coord": [
-            35.1163758,
-            138.9176516
+            35.1255333,
+            138.9160482
           ],
-          "source": "OSM station 三島田町",
+          "source": "OSM park 菰池公園",
+          "offsetM": 0
+        },
+        {
+          "id": "shirataki",
+          "label": "白滝公園",
+          "coord": [
+            35.1227253,
+            138.9144425
+          ],
+          "source": "OSM node 白滝公園",
+          "offsetM": 0
+        },
+        {
+          "id": "rakuju",
+          "label": "楽寿園",
+          "coord": [
+            35.1249331,
+            138.9110879
+          ],
+          "source": "OSM park 三島市立公園 楽寿園",
+          "offsetM": 0
+        },
+        {
+          "id": "mishima_st_end",
+          "label": "三島駅（戻り）",
+          "coord": [
+            35.1254155,
+            138.9109651
+          ],
+          "source": "OSM station 三島",
           "offsetM": 0
         }
       ]

@@ -1,30 +1,24 @@
 {
-  "calculatedAt": "2026-11-16T14:41:00.189Z",
+  "calculatedAt": "2026-11-16T21:52:44.462Z",
   "engine": "valhalla-pedestrian",
   "variants": {
     "standard": {
       "label": "standard",
-      "distanceM": 2085,
-      "engineDistanceM": 2081,
-      "repeatedGeometryM": 22,
-      "repeatedGeometryPct": 1,
+      "distanceM": 5513,
+      "engineDistanceM": 5503,
+      "repeatedGeometryM": 689,
+      "repeatedGeometryPct": 12.5,
       "legKm": [
-        1.2,
-        0.87,
-        0.01
+        0.73,
+        1.09,
+        0.42,
+        0.01,
+        2.02,
+        0.43,
+        0.81
       ],
       "geometryUrl": "data/routes/z5-standard.geojson",
       "stops": [
-        {
-          "id": "toyama_jo",
-          "label": "富山城址",
-          "coord": [
-            36.6927027,
-            137.2110967
-          ],
-          "source": "OSM information 富山城の石垣について（城址公園内）",
-          "offsetM": 0
-        },
         {
           "id": "toyama_st",
           "label": "富山駅",
@@ -33,6 +27,26 @@
             137.213037
           ],
           "source": "OSM tram_stop 富山駅",
+          "offsetM": 0
+        },
+        {
+          "id": "kyoiku",
+          "label": "富山県教育記念館",
+          "coord": [
+            36.6977649,
+            137.2172714
+          ],
+          "source": "OSM museum 富山県教育記念館",
+          "offsetM": 0
+        },
+        {
+          "id": "rakusui",
+          "label": "楽翠亭美術館",
+          "coord": [
+            36.7061807,
+            137.2169262
+          ],
+          "source": "OSM museum 楽翠亭美術館",
           "offsetM": 0
         },
         {
@@ -52,7 +66,37 @@
             36.7078621,
             137.213589
           ],
-          "source": "OSM 富岩運河環水公園（利用者提供の地図で天門橋・泉と滝の位置を確認）",
+          "source": "OSM 富岩運河環水公園",
+          "offsetM": 0
+        },
+        {
+          "id": "matsukawa",
+          "label": "松川遊覧船乗降場",
+          "coord": [
+            36.6945703,
+            137.2126836
+          ],
+          "source": "OSM viewpoint 松川遊覧船乗降場",
+          "offsetM": 0
+        },
+        {
+          "id": "toyama_jo",
+          "label": "富山城址",
+          "coord": [
+            36.6927027,
+            137.2110967
+          ],
+          "source": "OSM information 富山城の石垣について（城址公園内）",
+          "offsetM": 0
+        },
+        {
+          "id": "toyama_glass",
+          "label": "富山市ガラス美術館",
+          "coord": [
+            36.688054,
+            137.2146965
+          ],
+          "source": "OSM museum 富山市ガラス美術館",
           "offsetM": 0
         }
       ]
