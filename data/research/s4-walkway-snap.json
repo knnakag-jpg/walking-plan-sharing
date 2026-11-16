@@ -1,0 +1,26 @@
+{
+ "hatagaya": {
+  "snapped": [
+   35.6771243,
+   139.6768705
+  ],
+  "movedM": 12,
+  "wayId": 330343659
+ },
+ "inokashira_pond": {
+  "snapped": [
+   35.6913687,
+   139.5802915
+  ],
+  "movedM": 0,
+  "wayId": 38608448
+ },
+ "kichijoji_s": {
+  "snapped": [
+   35.7022413,
+   139.5804517
+  ],
+  "movedM": 7,
+  "wayId": 492430184
+ }
+}

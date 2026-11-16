@@ -1,0 +1,61 @@
+{
+  "calculatedAt": "2026-11-16T14:50:43.366Z",
+  "engine": "valhalla-pedestrian",
+  "variants": {
+    "standard": {
+      "label": "standard",
+      "distanceM": 4625,
+      "engineDistanceM": 4628,
+      "repeatedGeometryM": 0,
+      "repeatedGeometryPct": 0,
+      "legKm": [
+        1.65,
+        1.39,
+        1.59
+      ],
+      "geometryUrl": "data/routes/s6-standard.geojson",
+      "stops": [
+        {
+          "id": "nakano_s",
+          "label": "中野駅",
+          "coord": [
+            35.7058704,
+            139.6655563
+          ],
+          "source": "OSM node 中野駅",
+          "offsetM": 3
+        },
+        {
+          "id": "koenji",
+          "label": "高円寺駅北口",
+          "coord": [
+            35.7055277,
+            139.6496639
+          ],
+          "source": "OSM node 高円寺駅北口",
+          "offsetM": 0
+        },
+        {
+          "id": "asagaya",
+          "label": "阿佐ヶ谷駅北口",
+          "coord": [
+            35.7050875,
+            139.6366424
+          ],
+          "source": "OSM node 阿佐ヶ谷駅北口",
+          "offsetM": 0
+        },
+        {
+          "id": "ogikubo",
+          "label": "荻窪駅北口",
+          "coord": [
+            35.7051607,
+            139.6213438
+          ],
+          "source": "OSM node 荻窪駅北口",
+          "offsetM": 0
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "calculatedAt": "2026-11-16T14:51:25.129Z",
+  "engine": "valhalla-pedestrian",
+  "variants": {
+    "standard": {
+      "label": "standard",
+      "distanceM": 2290,
+      "engineDistanceM": 2296,
+      "repeatedGeometryM": 18,
+      "repeatedGeometryPct": 0.8,
+      "legKm": [
+        0.85,
+        0.99,
+        0.46
+      ],
+      "geometryUrl": "data/routes/s13-standard.geojson",
+      "stops": [
+        {
+          "id": "manganji",
+          "label": "万願寺駅",
+          "coord": [
+            35.6702239,
+            139.4192068
+          ],
+          "source": "OSM node 万願寺駅",
+          "offsetM": 0
+        },
+        {
+          "id": "asakawa_park",
+          "label": "浅川スポーツ公園",
+          "coord": [
+            35.6672452,
+            139.4129949
+          ],
+          "source": "OSM sports_centre 浅川スポーツ公園",
+          "offsetM": 0
+        },
+        {
+          "id": "takahata_fudo_s",
+          "label": "高幡不動尊",
+          "coord": [
+            35.6623658,
+            139.411006
+          ],
+          "source": "OSM place_of_worship 高幡不動尊",
+          "offsetM": 4
+        },
+        {
+          "id": "takahata_st_s",
+          "label": "高幡不動駅",
+          "coord": [
+            35.6612263,
+            139.4151319
+          ],
+          "source": "OSM node 高幡不動駅",
+          "offsetM": 0
+        }
+      ]
+    }
+  }
+}

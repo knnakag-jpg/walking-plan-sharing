@@ -1,0 +1,34 @@
+{
+ "mitaka_s": {
+  "snapped": [
+   35.7029768,
+   139.5609186
+  ],
+  "movedM": 29,
+  "wayId": 880024459
+ },
+ "musashisakai": {
+  "snapped": [
+   35.701749,
+   139.5441355
+  ],
+  "movedM": 24,
+  "wayId": 141598528
+ },
+ "higashi_koganei_s": {
+  "snapped": [
+   35.6974768,
+   139.5242159
+  ],
+  "movedM": 1,
+  "wayId": 146351618
+ },
+ "musashi_koganei_s": {
+  "snapped": [
+   35.7013945,
+   139.5057814
+  ],
+  "movedM": 7,
+  "wayId": 328870252
+ }
+}

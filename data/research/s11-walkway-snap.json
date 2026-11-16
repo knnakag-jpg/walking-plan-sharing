@@ -1,0 +1,34 @@
+{
+ "kita_hachioji": {
+  "snapped": [
+   35.6693923,
+   139.3635452
+  ],
+  "movedM": 11,
+  "wayId": 182469759
+ },
+ "hachioji_minamino": {
+  "snapped": [
+   35.6312568,
+   139.3312812
+  ],
+  "movedM": 3,
+  "wayId": 452354275
+ },
+ "hashimoto": {
+  "snapped": [
+   35.5948177,
+   139.3449298
+  ],
+  "movedM": 9,
+  "wayId": 58116263
+ },
+ "katakura": {
+  "snapped": [
+   35.6407228,
+   139.3392883
+  ],
+  "movedM": 10,
+  "wayId": 447168530
+ }
+}

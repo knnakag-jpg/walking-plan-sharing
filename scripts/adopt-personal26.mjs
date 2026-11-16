@@ -7,7 +7,7 @@ import { rd, wr } from './lib-rebuild.mjs';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const cat = rd('data/catalog.json');
 const PERS = cat.courses.filter((c) => ['solo', 'enso', 'zenkoku'].includes(c.seriesId));
-const NEW = { E1: 'e1', E3: 'e3', Z2: 'z2', Z3: 'z3', Z5: 'z5' };
+const NEW = { E1: 'e1', E3: 'e3', Z2: 'z2', Z3: 'z3', Z5: 'z5', S1: 's1', S6: 's6', S13: 's13' };
 const note = '旧経路のまま。立ち寄り先・入口座標・通行条件は地図で照合していない。同じ線をなぞる区間は形状の計算値で、理由は未確認。';
 const result = [];
 for (const course of PERS) {

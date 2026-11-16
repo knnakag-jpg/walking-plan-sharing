@@ -1,0 +1,61 @@
+{
+  "calculatedAt": "2026-11-16T14:49:57.415Z",
+  "engine": "valhalla-pedestrian",
+  "variants": {
+    "standard": {
+      "label": "standard",
+      "distanceM": 5851,
+      "engineDistanceM": 5856,
+      "repeatedGeometryM": 0,
+      "repeatedGeometryPct": 0,
+      "legKm": [
+        1.69,
+        2.25,
+        1.91
+      ],
+      "geometryUrl": "data/routes/s1-standard.geojson",
+      "stops": [
+        {
+          "id": "mitaka_s",
+          "label": "三鷹駅",
+          "coord": [
+            35.7029768,
+            139.5609186
+          ],
+          "source": "OSM station 三鷹",
+          "offsetM": 7
+        },
+        {
+          "id": "musashisakai",
+          "label": "武蔵境駅",
+          "coord": [
+            35.701749,
+            139.5441355
+          ],
+          "source": "OSM station 武蔵境",
+          "offsetM": 0
+        },
+        {
+          "id": "higashi_koganei_s",
+          "label": "東小金井駅",
+          "coord": [
+            35.6974768,
+            139.5242159
+          ],
+          "source": "OSM node 東小金井駅入口",
+          "offsetM": 0
+        },
+        {
+          "id": "musashi_koganei_s",
+          "label": "武蔵小金井駅",
+          "coord": [
+            35.7013945,
+            139.5057814
+          ],
+          "source": "OSM node 武蔵小金井駅",
+          "offsetM": 0
+        }
+      ]
+    }
+  }
+}
