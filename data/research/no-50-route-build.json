@@ -1,0 +1,72 @@
+{
+  "calculatedAt": "2026-11-16T13:14:35.294Z",
+  "engine": "valhalla-pedestrian",
+  "variants": {
+    "standard": {
+      "label": "standard",
+      "distanceM": 4748,
+      "engineDistanceM": 4749,
+      "repeatedGeometryM": 579,
+      "repeatedGeometryPct": 12.2,
+      "legKm": [
+        0.63,
+        2.2,
+        1.69,
+        0.23
+      ],
+      "geometryUrl": "data/routes/no-50-standard.geojson",
+      "stops": [
+        {
+          "id": "ueno_hirokoji",
+          "label": "上野広小路付近",
+          "coord": [
+            35.7074232,
+            139.7674694
+          ],
+          "source": "OSM node 上野広小路付近（湯島方面への起点）",
+          "offsetM": 0
+        },
+        {
+          "id": "yushima",
+          "label": "湯島天神",
+          "coord": [
+            35.7079654,
+            139.7732674
+          ],
+          "source": "TOPIC: 湯島天神。OSMの正確な点は地図レビュー待ち",
+          "offsetM": 0
+        },
+        {
+          "id": "nezu",
+          "label": "根津神社",
+          "coord": [
+            35.720388,
+            139.760298
+          ],
+          "source": "TOPIC: 根津神社。OSMの正確な点は地図レビュー待ち",
+          "offsetM": 0
+        },
+        {
+          "id": "yanaka",
+          "label": "谷中（谷中銀座付近）",
+          "coord": [
+            35.7284906,
+            139.7710058
+          ],
+          "source": "TOPIC: 谷中銀座。OSMの正確な点は地図レビュー待ち",
+          "offsetM": 0
+        },
+        {
+          "id": "nippori",
+          "label": "日暮里駅",
+          "coord": [
+            35.728363,
+            139.7707247
+          ],
+          "source": "OSM station 日暮里",
+          "offsetM": 0
+        }
+      ]
+    }
+  }
+}

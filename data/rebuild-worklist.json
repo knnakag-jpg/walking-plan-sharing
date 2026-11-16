@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T12:46:27.703Z",
+  "generatedAt": "2026-11-16T13:21:00.210Z",
   "interpretation": "Mechanical triage only. Source and map review required before adopting any new route.",
   "records": [
     {
@@ -312,9 +312,9 @@
     },
     {
       "id": "No.53",
-      "title": "京王百草園 梅林早春",
+      "title": "京王百草園 梅林",
       "series": "V4春限定（No.53〜55）",
-      "workStatus": "research_needed",
+      "workStatus": "partial_rebuild",
       "legacy": {
         "geometryUrl": "data/routes/no-53.geojson",
         "walkingDistanceM": 7189,
@@ -329,9 +329,20 @@
         ],
         "gateResult": "OK"
       },
-      "existingNewVariants": [],
+      "existingNewVariants": [
+        {
+          "variant": "standard",
+          "status": "routed",
+          "distanceM": 3789
+        },
+        {
+          "variant": "rainy",
+          "status": "researched",
+          "distanceM": null
+        }
+      ],
       "coordinateReview": "not_started",
-      "sourceResearch": "not_started",
+      "sourceResearch": "source_research_in_progress",
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": true,
@@ -1082,9 +1093,9 @@
     },
     {
       "id": "No.51",
-      "title": "中目黒〜代官山〜恵比寿",
+      "title": "中目黒から代官山・恵比寿",
       "series": "V4-B/Cグルメ（No.47〜52）",
-      "workStatus": "research_needed",
+      "workStatus": "partial_rebuild",
       "legacy": {
         "geometryUrl": "data/routes/no-51.geojson",
         "walkingDistanceM": 7041,
@@ -1099,9 +1110,20 @@
         ],
         "gateResult": "OK"
       },
-      "existingNewVariants": [],
+      "existingNewVariants": [
+        {
+          "variant": "standard",
+          "status": "routed",
+          "distanceM": 4123
+        },
+        {
+          "variant": "rainy",
+          "status": "researched",
+          "distanceM": null
+        }
+      ],
       "coordinateReview": "not_started",
-      "sourceResearch": "not_started",
+      "sourceResearch": "source_research_in_progress",
       "historicalRoutingStrategies": [],
       "transportHints": [
         "water_transport"
@@ -1734,9 +1756,9 @@
     },
     {
       "id": "No.50",
-      "title": "谷根千 坂と行列グルメ",
+      "title": "谷根千 坂とグルメ",
       "series": "V4-B/Cグルメ（No.47〜52）",
-      "workStatus": "research_needed",
+      "workStatus": "partial_rebuild",
       "legacy": {
         "geometryUrl": "data/routes/no-50.geojson",
         "walkingDistanceM": 6979,
@@ -1751,9 +1773,20 @@
         ],
         "gateResult": "OK"
       },
-      "existingNewVariants": [],
+      "existingNewVariants": [
+        {
+          "variant": "standard",
+          "status": "routed",
+          "distanceM": 4748
+        },
+        {
+          "variant": "rainy",
+          "status": "researched",
+          "distanceM": null
+        }
+      ],
       "coordinateReview": "not_started",
-      "sourceResearch": "not_started",
+      "sourceResearch": "source_research_in_progress",
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": true,
@@ -2320,9 +2353,9 @@
     },
     {
       "id": "No.49",
-      "title": "吉祥寺〜井の頭〜三鷹",
+      "title": "吉祥寺・井の頭公園から三鷹",
       "series": "V4-B/Cグルメ（No.47〜52）",
-      "workStatus": "research_needed",
+      "workStatus": "partial_rebuild",
       "legacy": {
         "geometryUrl": "data/routes/no-49.geojson",
         "walkingDistanceM": 7261,
@@ -2337,9 +2370,20 @@
         ],
         "gateResult": "OK"
       },
-      "existingNewVariants": [],
+      "existingNewVariants": [
+        {
+          "variant": "standard",
+          "status": "routed",
+          "distanceM": 6851
+        },
+        {
+          "variant": "rainy",
+          "status": "researched",
+          "distanceM": null
+        }
+      ],
       "coordinateReview": "not_started",
-      "sourceResearch": "not_started",
+      "sourceResearch": "source_research_in_progress",
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": true,
@@ -4299,9 +4343,9 @@
     },
     {
       "id": "No.54",
-      "title": "大宮公園 桜はしご",
+      "title": "大宮公園 桜めぐり",
       "series": "V4春限定（No.53〜55）",
-      "workStatus": "research_needed",
+      "workStatus": "partial_rebuild",
       "legacy": {
         "geometryUrl": "data/routes/no-54.geojson",
         "walkingDistanceM": 7254,
@@ -4311,9 +4355,20 @@
         "repeatedWaypoints": [],
         "gateResult": "OK"
       },
-      "existingNewVariants": [],
+      "existingNewVariants": [
+        {
+          "variant": "standard",
+          "status": "routed",
+          "distanceM": 4531
+        },
+        {
+          "variant": "rainy",
+          "status": "researched",
+          "distanceM": null
+        }
+      ],
       "coordinateReview": "not_started",
-      "sourceResearch": "not_started",
+      "sourceResearch": "source_research_in_progress",
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": false,
@@ -4371,9 +4426,9 @@
     },
     {
       "id": "No.52",
-      "title": "神楽坂 石畳坂と路地グルメ",
+      "title": "神楽坂 石畳の坂と路地",
       "series": "V4-B/Cグルメ（No.47〜52）",
-      "workStatus": "research_needed",
+      "workStatus": "partial_rebuild",
       "legacy": {
         "geometryUrl": "data/routes/no-52.geojson",
         "walkingDistanceM": 6593,
@@ -4383,9 +4438,20 @@
         "repeatedWaypoints": [],
         "gateResult": "OK"
       },
-      "existingNewVariants": [],
+      "existingNewVariants": [
+        {
+          "variant": "standard",
+          "status": "routed",
+          "distanceM": 2121
+        },
+        {
+          "variant": "rainy",
+          "status": "researched",
+          "distanceM": null
+        }
+      ],
       "coordinateReview": "not_started",
-      "sourceResearch": "not_started",
+      "sourceResearch": "source_research_in_progress",
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": false,

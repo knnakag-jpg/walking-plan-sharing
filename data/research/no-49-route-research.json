@@ -1,0 +1,43 @@
+{
+  "id": "No.49",
+  "title": "吉祥寺・井の頭公園から三鷹",
+  "stage": "source_research_in_progress",
+  "checkedAt": "2026-11-16",
+  "evidence": [
+    {
+      "type": "community",
+      "title": "OpenStreetMap（吉祥寺駅・井の頭橋・三鷹台駅・三鷹市八幡前・三鷹駅）",
+      "url": "https://www.openstreetmap.org/",
+      "checkedAt": "2026-11-16",
+      "supports": "駅・公園・寺社の名称ノードの座標。入口ではない。"
+    },
+    {
+      "type": "community",
+      "title": "旧資料 No.49（先行ページ index.html）",
+      "url": null,
+      "checkedAt": "2026-11-16",
+      "supports": "旧案の立ち寄り先。関前二丁目方面の往復延伸は採用していない。"
+    }
+  ],
+  "trials": [
+    {
+      "n": 1,
+      "variant": "A 新規（OSMの駅・地点）",
+      "result": "6.85km・反復66m",
+      "finding": "三鷹台駅の出入りで約51m、三鷹市八幡前付近で約15m（計約66m）。駅前の交差点で生じる短い往復と推定。"
+    }
+  ],
+  "files": [
+    "scripts/lib-rebuild.mjs",
+    "scripts/build-group9.mjs",
+    "data/curated/no-49.json",
+    "data/research/no-49-adopted-build.json"
+  ],
+  "openQuestions": [
+    "三鷹の森ジブリ美術館の外観の位置と入館予約",
+    "玉川上水緑道の位置と通行条件",
+    "井の頭恩賜公園の池周りの園路",
+    "三鷹台駅から三鷹駅への歩道"
+  ],
+  "decision": "2026-11-16 新Aを計算（6.85km・反復66m）。ジブリ美術館と玉川上水緑道は名称ノードがなく含めていない。"
+}

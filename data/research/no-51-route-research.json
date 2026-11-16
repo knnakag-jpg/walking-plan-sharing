@@ -1,0 +1,43 @@
+{
+  "id": "No.51",
+  "title": "中目黒から代官山・恵比寿",
+  "stage": "source_research_in_progress",
+  "checkedAt": "2026-11-16",
+  "evidence": [
+    {
+      "type": "community",
+      "title": "OpenStreetMap（中目黒駅・目黒川船入場・代官山T-SITE・恵比寿ガーデンプレイス・恵比寿駅）",
+      "url": "https://www.openstreetmap.org/",
+      "checkedAt": "2026-11-16",
+      "supports": "駅・公園・寺社の名称ノードの座標。入口ではない。"
+    },
+    {
+      "type": "community",
+      "title": "旧資料 No.51（先行ページ index.html）",
+      "url": null,
+      "checkedAt": "2026-11-16",
+      "supports": "旧案の立ち寄り先。渋谷四丁目方面の往復延伸は採用していない。"
+    }
+  ],
+  "trials": [
+    {
+      "n": 1,
+      "variant": "A 新規（OSMの駅・地点）",
+      "result": "4.12km・反復424m",
+      "finding": "代官山付近で約242m、目黒川船入場で約51m、他にも短い重なり（計約424m）。坂の途中の入口と大通りの行き来と推定。地図で未確認。"
+    }
+  ],
+  "files": [
+    "scripts/lib-rebuild.mjs",
+    "scripts/build-group9.mjs",
+    "data/curated/no-51.json",
+    "data/research/no-51-adopted-build.json"
+  ],
+  "openQuestions": [
+    "旧朝倉家住宅の座標と公開日",
+    "目黒川沿いの歩道の連続性",
+    "代官山の坂道と階段",
+    "恵比寿ガーデンプレイスから恵比寿駅への動く歩道"
+  ],
+  "decision": "2026-11-16 新Aを計算（4.12km・反復424m）。旧朝倉家住宅は名称ノードがなく含めていない。"
+}

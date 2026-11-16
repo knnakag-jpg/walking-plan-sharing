@@ -1,0 +1,75 @@
+{
+  "id": "No.50",
+  "buildFile": "data/research/no-50-adopted-build.json",
+  "title": "谷根千 坂とグルメ",
+  "summary": "上野広小路付近から湯島、根津、谷中銀座付近を経て日暮里駅へ抜ける坂道の駅間。湯島天神・根津神社・谷中銀座の正確な座標はOSMで見つからず、概略の点を使っている。",
+  "themes": [
+    "坂道",
+    "下町",
+    "神社",
+    "商店街"
+  ],
+  "routeReasons": {
+    "standard": "上野広小路付近から湯島、根津神社付近、谷中銀座付近を経て日暮里駅へ。計算上4.75km。湯島天神・根津神社・谷中銀座・谷中霊園の正確な点がなく、概略の点を使った（地図レビュー待ち）。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
+    "extended": "B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。"
+  },
+  "distanceExceptions": {
+    "standard": "4.75km。実在の駅と地点だけで組んだため5〜6kmに届かない。旧案の西日暮里五丁目方面の往復延伸は採らない。"
+  },
+  "retraceExceptions": {
+    "standard": "湯島付近で約286m、根津付近で約215m、谷中付近で約78m（計約579m）。坂の途中の入口と大通りの行き来と推定。地図で未確認。"
+  },
+  "rainy": {
+    "verificationStatus": "researched",
+    "summary": "雨の日は谷中銀座のアーケードと湯島の坂の下を中心にする短縮案。",
+    "segments": [
+      {
+        "kind": "walk_outdoor",
+        "from": "上野広小路",
+        "to": "湯島",
+        "distanceM": null,
+        "note": "屋根なし。傘が必要。"
+      },
+      {
+        "kind": "walk_indoor",
+        "from": "根津",
+        "to": "根津神社周辺の屋根のある参道",
+        "distanceM": null,
+        "note": "屋根の範囲は未確認。"
+      },
+      {
+        "kind": "rail",
+        "from": "日暮里駅",
+        "to": "上野広小路付近",
+        "distanceM": null,
+        "note": "鉄道で戻る場合。運賃・所要は当日確認。"
+      }
+    ],
+    "conditions": [
+      "営業時間・休館日は当日確認。",
+      "屋外の路面は雨天で濡れやすい。"
+    ]
+  },
+  "evidence": [
+    {
+      "type": "community",
+      "title": "OpenStreetMap（上野広小路付近・根津・谷中・日暮里駅）",
+      "url": "https://www.openstreetmap.org/",
+      "checkedAt": "2026-11-16",
+      "supports": "駅・公園・寺社の名称ノードの座標。入口ではない。"
+    },
+    {
+      "type": "community",
+      "title": "旧資料 No.50（先行ページ index.html）",
+      "url": null,
+      "checkedAt": "2026-11-16",
+      "supports": "旧案の立ち寄り先。西日暮里五丁目方面の往復延伸は採用していない。"
+    }
+  ],
+  "openQuestions": [
+    "湯島天神・根津神社・谷中銀座・谷中霊園の正確な座標",
+    "谷中霊園の中央園路の通行条件",
+    "根津のたいやきの店の座標（OSMに名称ノードなし）",
+    "坂道の実際の勾配と階段"
+  ]
+}

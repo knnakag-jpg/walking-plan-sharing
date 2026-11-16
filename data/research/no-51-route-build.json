@@ -1,0 +1,72 @@
+{
+  "calculatedAt": "2026-11-16T13:16:06.161Z",
+  "engine": "valhalla-pedestrian",
+  "variants": {
+    "standard": {
+      "label": "standard",
+      "distanceM": 4123,
+      "engineDistanceM": 4121,
+      "repeatedGeometryM": 424,
+      "repeatedGeometryPct": 10.3,
+      "legKm": [
+        0.47,
+        1.11,
+        1.72,
+        0.82
+      ],
+      "geometryUrl": "data/routes/no-51-standard.geojson",
+      "stops": [
+        {
+          "id": "nakameguro",
+          "label": "中目黒駅",
+          "coord": [
+            35.6441201,
+            139.6988038
+          ],
+          "source": "OSM station 中目黒",
+          "offsetM": 0
+        },
+        {
+          "id": "funeire",
+          "label": "目黒川船入場",
+          "coord": [
+            35.6417676,
+            139.7019939
+          ],
+          "source": "OSM park 目黒川船入場",
+          "offsetM": 0
+        },
+        {
+          "id": "daikanyama",
+          "label": "代官山 T-SITE",
+          "coord": [
+            35.6493509,
+            139.6997774
+          ],
+          "source": "OSM way 代官山 T-SITE",
+          "offsetM": 0
+        },
+        {
+          "id": "ebisu_gp",
+          "label": "恵比寿ガーデンプレイス",
+          "coord": [
+            35.6420941,
+            139.7128773
+          ],
+          "source": "OSM way 恵比寿ガーデンプレイス",
+          "offsetM": 0
+        },
+        {
+          "id": "ebisu_st",
+          "label": "恵比寿駅",
+          "coord": [
+            35.6469959,
+            139.7086355
+          ],
+          "source": "OSM station 恵比寿",
+          "offsetM": 0
+        }
+      ]
+    }
+  }
+}

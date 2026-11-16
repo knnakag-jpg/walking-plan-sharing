@@ -1,0 +1,43 @@
+{
+  "id": "No.52",
+  "title": "神楽坂 石畳の坂と路地",
+  "stage": "source_research_in_progress",
+  "checkedAt": "2026-11-16",
+  "evidence": [
+    {
+      "type": "community",
+      "title": "OpenStreetMap（飯田橋駅・神楽坂・赤城神社付近・江戸川橋）",
+      "url": "https://www.openstreetmap.org/",
+      "checkedAt": "2026-11-16",
+      "supports": "駅・公園・寺社の名称ノードの座標。入口ではない。"
+    },
+    {
+      "type": "community",
+      "title": "旧資料 No.52（先行ページ index.html）",
+      "url": null,
+      "checkedAt": "2026-11-16",
+      "supports": "旧案の立ち寄り先。"
+    }
+  ],
+  "trials": [
+    {
+      "n": 1,
+      "variant": "A 新規（OSMの駅・地点）",
+      "result": "2.12km・反復139m",
+      "finding": "赤城神社付近で約116m、神楽坂の坂下で約23m（計約139m）。路地と大通りの行き来と推定。地図で未確認。"
+    }
+  ],
+  "files": [
+    "scripts/lib-rebuild.mjs",
+    "scripts/build-group9.mjs",
+    "data/curated/no-52.json",
+    "data/research/no-52-adopted-build.json"
+  ],
+  "openQuestions": [
+    "兵庫横丁・かくれんぼ横丁の座標",
+    "赤城神社の正確な点と入口",
+    "大隈庭園への経路",
+    "神楽坂の石畳の通行時間帯"
+  ],
+  "decision": "2026-11-16 新Aを計算（2.12km・反復139m）。兵庫横丁などは名称ノードがなく含めていない。"
+}

@@ -1,0 +1,43 @@
+{
+  "id": "No.53",
+  "title": "京王百草園 梅林",
+  "stage": "source_research_in_progress",
+  "checkedAt": "2026-11-16",
+  "evidence": [
+    {
+      "type": "community",
+      "title": "OpenStreetMap（百草園駅・京王百草園・高幡不動尊・高幡不動駅）",
+      "url": "https://www.openstreetmap.org/",
+      "checkedAt": "2026-11-16",
+      "supports": "駅・公園・寺社の名称ノードの座標。入口ではない。"
+    },
+    {
+      "type": "community",
+      "title": "旧資料 No.53（先行ページ index.html）",
+      "url": null,
+      "checkedAt": "2026-11-16",
+      "supports": "旧案の立ち寄り先。"
+    }
+  ],
+  "trials": [
+    {
+      "n": 1,
+      "variant": "A 新規（OSMの駅・地点）",
+      "result": "3.79km・反復39m",
+      "finding": "高幡不動尊の境内で約39mの重なり。参道を入って出る形と推定。"
+    }
+  ],
+  "files": [
+    "scripts/lib-rebuild.mjs",
+    "scripts/build-group9.mjs",
+    "data/curated/no-53.json",
+    "data/research/no-53-adopted-build.json"
+  ],
+  "openQuestions": [
+    "京王百草園の正確な座標・入口・開園時間・入園料",
+    "梅まつりの期間（公式で確認）",
+    "園内の坂道と階段",
+    "百草園駅から園までの歩道"
+  ],
+  "decision": "2026-11-16 新Aを計算（3.79km・反復39m）。京王百草園の正確な点がなく概略の点を使用。梅まつりの期間は未確認。"
+}

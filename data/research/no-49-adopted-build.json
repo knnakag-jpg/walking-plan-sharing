@@ -1,0 +1,67 @@
+{
+  "generatedAt": "2026-11-16T13:16:51.483Z",
+  "method": "Valhalla pedestrian; exact geometry edge repeat is only a screening clue",
+  "results": [
+    {
+      "variant": "standard",
+      "distanceM": 6851,
+      "engineDistanceM": 6845,
+      "repeatedGeometryM": 66,
+      "repeatedGeometryPct": 1,
+      "waypoints": [
+        {
+          "id": "kichijoji",
+          "label": "吉祥寺駅",
+          "coord": [
+            35.7022413,
+            139.5804517
+          ],
+          "source": "OSM station 吉祥寺"
+        },
+        {
+          "id": "inokashira",
+          "label": "井の頭橋（井の頭恩賜公園）",
+          "coord": [
+            35.6913687,
+            139.5802915
+          ],
+          "source": "OSM node 440001922 井の頭橋"
+        },
+        {
+          "id": "mitakadai",
+          "label": "三鷹台駅",
+          "coord": [
+            35.6922523,
+            139.5888749
+          ],
+          "source": "OSM station 三鷹台"
+        },
+        {
+          "id": "hachimanmae",
+          "label": "三鷹市八幡前",
+          "coord": [
+            35.6930622,
+            139.5593774
+          ],
+          "source": "OSM node 三鷹市八幡前"
+        },
+        {
+          "id": "mitaka",
+          "label": "三鷹駅",
+          "coord": [
+            35.7029768,
+            139.5609186
+          ],
+          "source": "OSM station 三鷹"
+        }
+      ],
+      "legDistancesKm": [
+        1.4,
+        0.97,
+        3.02,
+        1.45
+      ],
+      "geometryUrl": "data/routes/no-49-standard.geojson"
+    }
+  ]
+}

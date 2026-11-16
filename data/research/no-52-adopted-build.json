@@ -1,0 +1,57 @@
+{
+  "generatedAt": "2026-11-16T13:17:35.931Z",
+  "method": "Valhalla pedestrian; exact geometry edge repeat is only a screening clue",
+  "results": [
+    {
+      "variant": "standard",
+      "distanceM": 2121,
+      "engineDistanceM": 2119,
+      "repeatedGeometryM": 139,
+      "repeatedGeometryPct": 6.6,
+      "waypoints": [
+        {
+          "id": "iidabashi",
+          "label": "飯田橋駅",
+          "coord": [
+            35.7015138,
+            139.7437279
+          ],
+          "source": "OSM station 飯田橋"
+        },
+        {
+          "id": "kagurazaka",
+          "label": "神楽坂（坂下）",
+          "coord": [
+            35.702493,
+            139.7382758
+          ],
+          "source": "OSM 神楽坂の坂下付近の点"
+        },
+        {
+          "id": "akagi",
+          "label": "赤城神社",
+          "coord": [
+            35.7038299,
+            139.7344584
+          ],
+          "source": "TOPIC: 赤城神社。OSMの正確な点は地図レビュー待ち"
+        },
+        {
+          "id": "edogawabashi",
+          "label": "江戸川橋",
+          "coord": [
+            35.7096819,
+            139.7334471
+          ],
+          "source": "OSM stop 江戸川橋"
+        }
+      ],
+      "legDistancesKm": [
+        0.72,
+        0.42,
+        0.98
+      ],
+      "geometryUrl": "data/routes/no-52-standard.geojson"
+    }
+  ]
+}

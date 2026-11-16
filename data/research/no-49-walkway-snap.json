@@ -1,0 +1,42 @@
+{
+ "kichijoji": {
+  "snapped": [
+   35.7022413,
+   139.5804517
+  ],
+  "movedM": 7,
+  "wayId": 492430184
+ },
+ "inokashira": {
+  "snapped": [
+   35.6913687,
+   139.5802915
+  ],
+  "movedM": 0,
+  "wayId": 38608448
+ },
+ "mitakadai": {
+  "snapped": [
+   35.6922523,
+   139.5888749
+  ],
+  "movedM": 3,
+  "wayId": 143330772
+ },
+ "hachimanmae": {
+  "snapped": [
+   35.6930622,
+   139.5593774
+  ],
+  "movedM": 0,
+  "wayId": 736959226
+ },
+ "mitaka": {
+  "snapped": [
+   35.7029768,
+   139.5609186
+  ],
+  "movedM": 29,
+  "wayId": 880024459
+ }
+}

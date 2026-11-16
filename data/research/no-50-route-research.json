@@ -1,0 +1,43 @@
+{
+  "id": "No.50",
+  "title": "谷根千 坂とグルメ",
+  "stage": "source_research_in_progress",
+  "checkedAt": "2026-11-16",
+  "evidence": [
+    {
+      "type": "community",
+      "title": "OpenStreetMap（上野広小路付近・根津・谷中・日暮里駅）",
+      "url": "https://www.openstreetmap.org/",
+      "checkedAt": "2026-11-16",
+      "supports": "駅・公園・寺社の名称ノードの座標。入口ではない。"
+    },
+    {
+      "type": "community",
+      "title": "旧資料 No.50（先行ページ index.html）",
+      "url": null,
+      "checkedAt": "2026-11-16",
+      "supports": "旧案の立ち寄り先。西日暮里五丁目方面の往復延伸は採用していない。"
+    }
+  ],
+  "trials": [
+    {
+      "n": 1,
+      "variant": "A 新規（OSMの駅・地点）",
+      "result": "4.75km・反復579m",
+      "finding": "湯島付近で約286m、根津付近で約215m、谷中付近で約78m（計約579m）。坂の途中の入口と大通りの行き来と推定。地図で未確認。"
+    }
+  ],
+  "files": [
+    "scripts/lib-rebuild.mjs",
+    "scripts/build-group9.mjs",
+    "data/curated/no-50.json",
+    "data/research/no-50-adopted-build.json"
+  ],
+  "openQuestions": [
+    "湯島天神・根津神社・谷中銀座・谷中霊園の正確な座標",
+    "谷中霊園の中央園路の通行条件",
+    "根津のたいやきの店の座標（OSMに名称ノードなし）",
+    "坂道の実際の勾配と階段"
+  ],
+  "decision": "2026-11-16 新Aを計算（4.75km・反復579m）。主要地点は概略の点で、地図レビューが必要。"
+}

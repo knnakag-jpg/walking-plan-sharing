@@ -1,0 +1,61 @@
+{
+  "calculatedAt": "2026-11-16T13:18:23.779Z",
+  "engine": "valhalla-pedestrian",
+  "variants": {
+    "standard": {
+      "label": "standard",
+      "distanceM": 3789,
+      "engineDistanceM": 3794,
+      "repeatedGeometryM": 39,
+      "repeatedGeometryPct": 1,
+      "legKm": [
+        1.52,
+        1.81,
+        0.46
+      ],
+      "geometryUrl": "data/routes/no-53-standard.geojson",
+      "stops": [
+        {
+          "id": "mogusaen_st",
+          "label": "百草園駅",
+          "coord": [
+            35.6571342,
+            139.4308613
+          ],
+          "source": "OSM node 百草園駅前",
+          "offsetM": 0
+        },
+        {
+          "id": "mogusaen",
+          "label": "京王百草園",
+          "coord": [
+            35.6516617,
+            139.4211701
+          ],
+          "source": "TOPIC: 京王百草園。OSMの正確な点は地図レビュー待ち",
+          "offsetM": 0
+        },
+        {
+          "id": "takahata_fudo2",
+          "label": "高幡不動尊",
+          "coord": [
+            35.6623658,
+            139.411006
+          ],
+          "source": "OSM place_of_worship 高幡不動尊",
+          "offsetM": 4
+        },
+        {
+          "id": "takahata_st2",
+          "label": "高幡不動駅",
+          "coord": [
+            35.6612263,
+            139.4151319
+          ],
+          "source": "OSM station 高幡不動",
+          "offsetM": 0
+        }
+      ]
+    }
+  }
+}

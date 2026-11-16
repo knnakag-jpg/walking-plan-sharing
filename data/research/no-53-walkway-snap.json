@@ -1,0 +1,34 @@
+{
+ "mogusaen_st": {
+  "snapped": [
+   35.6571342,
+   139.4308613
+  ],
+  "movedM": 0,
+  "wayId": 27874810
+ },
+ "mogusaen": {
+  "snapped": [
+   35.6516617,
+   139.4211701
+  ],
+  "movedM": 0,
+  "wayId": 327877044
+ },
+ "takahata_fudo2": {
+  "snapped": [
+   35.6623658,
+   139.411006
+  ],
+  "movedM": 20,
+  "wayId": 385495223
+ },
+ "takahata_st2": {
+  "snapped": [
+   35.6612263,
+   139.4151319
+  ],
+  "movedM": 6,
+  "wayId": 1088695095
+ }
+}
