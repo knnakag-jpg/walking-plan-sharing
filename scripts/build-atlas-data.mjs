@@ -193,6 +193,13 @@ if (fs.existsSync(personalRoot)) for (const filename of fs.readdirSync(personalR
     waypoints: spec.stops.map((s, index) => ({ index, id: s.id, label: s.label, point: [s.coord[1], s.coord[0]], source: s.source })),
     personalPlan: spec.plan, climbM: null, descentM: null, auditFlags: [],
   });
+  // 新案もアトラスの切替に載せるため routeOptions を持つ（variant は 'personal' のまま、A/B/C の型には縛らない）。
+  const added = courses.at(-1);
+  added.routeOptions = [{ ...added.route, routeReason: spec.summary, retraceException: spec.retraceException ?? null, distanceException: spec.distanceException ?? null, waypoints: added.waypoints }];
+  added.defaultVariant = 'personal';
+  // 個人散歩の新案も根拠と未確認事項を必ず持たせる（検証の最低条件）。
+  added.evidence = [{ type: 'community', title: 'OpenStreetMap（名称付き地点）', url: 'https://www.openstreetmap.org/', checkedAt: '2026-11-16', supports: '駅・展望・公園の名称ノードの座標。入口ではない。' }];
+  added.openQuestions = ['各地点の入口・通行条件を地図と現地で照合', '撮影の太陽の向きと時間帯', '宿の候補（駅徒歩10分以内・鍵付完全個室）'];
 }
 const curatedRoot = path.join(root, 'data/curated');
 for (const filename of fs.readdirSync(curatedRoot).filter((name) => name.endsWith('.json'))) {

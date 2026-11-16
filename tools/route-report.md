@@ -1,6 +1,6 @@
 # Route build report
 
-Generated: 2026-11-16T14:55:28.102Z
+Generated: 2026-11-16T14:59:24.030Z
 Result: 97/97 passed (hard gates). Soft warnings are informational only.
 
 | No. | 名称 | 判定 | 実測km | 目標km | エンジン | 偽延伸点除去 | 課題（HARD） | 参考（soft） |

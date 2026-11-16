@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "source": "legacy import; route quality not re-reviewed",
-  "generatedAt": "2026-11-16T14:55:26.258Z",
+  "generatedAt": "2026-11-16T14:59:22.327Z",
   "courses": [
     {
       "id": "No.1",
@@ -25317,17 +25317,7 @@
         "engine": "valhalla-pedestrian",
         "routeReason": "石巻駅から日和山公園の見晴らしへ上り、港町を東へ歩いて渡波駅へ抜ける。",
         "retraceException": null,
-        "distanceException": "計算上8.46km。目標6.6km前後より長い。日和山公園から渡波駅までの経路（6.45km）をそのまま採用した。",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "partial_dem_filled",
-          "url": "data/elevation/p-is1.json",
-          "totalM": 8463,
-          "climbM": 87.6,
-          "descentM": 86.1,
-          "minM": 0.6,
-          "maxM": 57.2
-        }
+        "distanceException": "計算上8.46km。目標6.6km前後より長い。日和山公園から渡波駅までの経路（6.45km）をそのまま採用した。"
       },
       "waypoints": [
         {
@@ -25376,7 +25366,83 @@
       },
       "climbM": null,
       "descentM": null,
-      "auditFlags": []
+      "auditFlags": [],
+      "routeOptions": [
+        {
+          "id": "p-is1-personal",
+          "variant": "personal",
+          "strategy": "personal_one_stroke",
+          "geometryUrl": "data/routes/p-is1.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 8463,
+          "engineDistanceM": 8470,
+          "targetDistanceM": 6600,
+          "repeatedGeometryPct": 0,
+          "maxWaypointToShapeM": 0,
+          "built": "2026-11-15",
+          "engine": "valhalla-pedestrian",
+          "routeReason": "石巻駅から日和山公園の見晴らしへ上り、港町を東へ歩いて渡波駅へ抜ける。",
+          "retraceException": null,
+          "distanceException": "計算上8.46km。目標6.6km前後より長い。日和山公園から渡波駅までの経路（6.45km）をそのまま採用した。",
+          "waypoints": [
+            {
+              "index": 0,
+              "id": "ishinomaki",
+              "label": "石巻駅",
+              "point": [
+                141.3037834,
+                38.4350986
+              ],
+              "source": "OSM node 3570916493 station"
+            },
+            {
+              "index": 1,
+              "id": "hiyoriyama",
+              "label": "日和山公園",
+              "point": [
+                141.3083327,
+                38.4232826
+              ],
+              "source": "OSM way 318426659 park centre; entrance needs map review"
+            },
+            {
+              "index": 2,
+              "id": "watanoha",
+              "label": "渡波駅",
+              "point": [
+                141.3652452,
+                38.4197189
+              ],
+              "source": "OSM node 264404860 station"
+            }
+          ],
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/p-is1.json",
+            "totalM": 8463,
+            "climbM": 87.6,
+            "descentM": 86.1,
+            "minM": 0.6,
+            "maxM": 57.2
+          }
+        }
+      ],
+      "defaultVariant": "personal",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "OpenStreetMap（名称付き地点）",
+          "url": "https://www.openstreetmap.org/",
+          "checkedAt": "2026-11-16",
+          "supports": "駅・展望・公園の名称ノードの座標。入口ではない。"
+        }
+      ],
+      "openQuestions": [
+        "各地点の入口・通行条件を地図と現地で照合",
+        "撮影の太陽の向きと時間帯",
+        "宿の候補（駅徒歩10分以内・鍵付完全個室）"
+      ]
     },
     {
       "id": "P-NM1",
@@ -25411,17 +25477,7 @@
         "engine": "valhalla-pedestrian",
         "routeReason": "沼津駅から千本浜公園の海岸線、びゅうお水門の見晴らしを経て駅へ戻る周遊。",
         "retraceException": "びゅうお付近で約800m重ねる（うち約660mが水門の先への出入り）。水門の先端が行き止まりと見られ、同じ道を戻る必要があるためで、距離合わせではない。先端まで入らない場合は短くなる（地図で未確認）。",
-        "distanceException": null,
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "dem",
-          "url": "data/elevation/p-nm1.json",
-          "totalM": 7333,
-          "climbM": 17.8,
-          "descentM": 17.8,
-          "minM": 1.3,
-          "maxM": 9.9
-        }
+        "distanceException": null
       },
       "waypoints": [
         {
@@ -25480,7 +25536,93 @@
       },
       "climbM": null,
       "descentM": null,
-      "auditFlags": []
+      "auditFlags": [],
+      "routeOptions": [
+        {
+          "id": "p-nm1-personal",
+          "variant": "personal",
+          "strategy": "personal_one_stroke",
+          "geometryUrl": "data/routes/p-nm1.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 7333,
+          "engineDistanceM": 7343,
+          "targetDistanceM": 6500,
+          "repeatedGeometryPct": 10.9,
+          "maxWaypointToShapeM": 0,
+          "built": "2026-11-15",
+          "engine": "valhalla-pedestrian",
+          "routeReason": "沼津駅から千本浜公園の海岸線、びゅうお水門の見晴らしを経て駅へ戻る周遊。",
+          "retraceException": "びゅうお付近で約800m重ねる（うち約660mが水門の先への出入り）。水門の先端が行き止まりと見られ、同じ道を戻る必要があるためで、距離合わせではない。先端まで入らない場合は短くなる（地図で未確認）。",
+          "distanceException": null,
+          "waypoints": [
+            {
+              "index": 0,
+              "id": "numazu",
+              "label": "沼津駅",
+              "point": [
+                138.859304,
+                35.1031955
+              ],
+              "source": "OSM node 3999393691 station"
+            },
+            {
+              "index": 1,
+              "id": "senbonhama",
+              "label": "千本浜公園",
+              "point": [
+                138.847498,
+                35.0941903
+              ],
+              "source": "OSM node 5772244871 park"
+            },
+            {
+              "index": 2,
+              "id": "byuo",
+              "label": "びゅうお",
+              "point": [
+                138.8547491,
+                35.0810874
+              ],
+              "source": "OSM node 14234231494 attraction"
+            },
+            {
+              "index": 3,
+              "id": "numazu",
+              "label": "沼津駅",
+              "point": [
+                138.859304,
+                35.1031955
+              ],
+              "source": "OSM node 3999393691 station"
+            }
+          ],
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "dem",
+            "url": "data/elevation/p-nm1.json",
+            "totalM": 7333,
+            "climbM": 17.8,
+            "descentM": 17.8,
+            "minM": 1.3,
+            "maxM": 9.9
+          }
+        }
+      ],
+      "defaultVariant": "personal",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "OpenStreetMap（名称付き地点）",
+          "url": "https://www.openstreetmap.org/",
+          "checkedAt": "2026-11-16",
+          "supports": "駅・展望・公園の名称ノードの座標。入口ではない。"
+        }
+      ],
+      "openQuestions": [
+        "各地点の入口・通行条件を地図と現地で照合",
+        "撮影の太陽の向きと時間帯",
+        "宿の候補（駅徒歩10分以内・鍵付完全個室）"
+      ]
     },
     {
       "id": "P-SD1",
@@ -25516,17 +25658,7 @@
         "engine": "valhalla-pedestrian",
         "routeReason": "仙台駅を出て広瀬川を渡り青葉城跡の見晴らしへ上り、西公園側へ下って駅へ戻る周遊。",
         "retraceException": "西公園付近で同じ道を約200m重ねる。大町西公園駅のピンを通るための出入りと見られ、地図で別の抜け道がないか未確認。距離合わせの往復ではない。",
-        "distanceException": null,
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "partial_dem_filled",
-          "url": "data/elevation/p-sd1.json",
-          "totalM": 6476,
-          "climbM": 108.5,
-          "descentM": 108.5,
-          "minM": 25.2,
-          "maxM": 106.4
-        }
+        "distanceException": null
       },
       "waypoints": [
         {
@@ -25595,7 +25727,103 @@
       },
       "climbM": null,
       "descentM": null,
-      "auditFlags": []
+      "auditFlags": [],
+      "routeOptions": [
+        {
+          "id": "p-sd1-personal",
+          "variant": "personal",
+          "strategy": "personal_one_stroke",
+          "geometryUrl": "data/routes/p-sd1.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 6476,
+          "engineDistanceM": 6485,
+          "targetDistanceM": 6750,
+          "repeatedGeometryPct": 3.1,
+          "maxWaypointToShapeM": 0,
+          "built": "2026-11-15",
+          "engine": "valhalla-pedestrian",
+          "routeReason": "仙台駅を出て広瀬川を渡り青葉城跡の見晴らしへ上り、西公園側へ下って駅へ戻る周遊。",
+          "retraceException": "西公園付近で同じ道を約200m重ねる。大町西公園駅のピンを通るための出入りと見られ、地図で別の抜け道がないか未確認。距離合わせの往復ではない。",
+          "distanceException": null,
+          "waypoints": [
+            {
+              "index": 0,
+              "id": "sendai",
+              "label": "仙台駅",
+              "point": [
+                140.880056,
+                38.2597623
+              ],
+              "source": "OSM node 264415884 station"
+            },
+            {
+              "index": 1,
+              "id": "kokusai_center",
+              "label": "国際センター駅",
+              "point": [
+                140.8567939,
+                38.26006
+              ],
+              "source": "OSM node 3594254135 station"
+            },
+            {
+              "index": 2,
+              "id": "sendai_castle",
+              "label": "仙台城跡",
+              "point": [
+                140.8555012,
+                38.2536558
+              ],
+              "source": "OSM node 4782747521 仙台城跡"
+            },
+            {
+              "index": 3,
+              "id": "omachi_nishikoen",
+              "label": "大町西公園駅",
+              "point": [
+                140.8645808,
+                38.2589935
+              ],
+              "source": "OSM node 3651059967 station"
+            },
+            {
+              "index": 4,
+              "id": "sendai",
+              "label": "仙台駅",
+              "point": [
+                140.880056,
+                38.2597623
+              ],
+              "source": "OSM node 264415884 station"
+            }
+          ],
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/p-sd1.json",
+            "totalM": 6476,
+            "climbM": 108.5,
+            "descentM": 108.5,
+            "minM": 25.2,
+            "maxM": 106.4
+          }
+        }
+      ],
+      "defaultVariant": "personal",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "OpenStreetMap（名称付き地点）",
+          "url": "https://www.openstreetmap.org/",
+          "checkedAt": "2026-11-16",
+          "supports": "駅・展望・公園の名称ノードの座標。入口ではない。"
+        }
+      ],
+      "openQuestions": [
+        "各地点の入口・通行条件を地図と現地で照合",
+        "撮影の太陽の向きと時間帯",
+        "宿の候補（駅徒歩10分以内・鍵付完全個室）"
+      ]
     },
     {
       "id": "P-SD2",
@@ -25631,17 +25859,7 @@
         "engine": "valhalla-pedestrian",
         "routeReason": "長町駅から愛宕神社、仙台城跡南を経て城跡の見晴らしへ。国際センター駅へ下りる駅間ワンウェイ。",
         "retraceException": null,
-        "distanceException": "計算上7.65km。目標6.5km前後より長い。愛宕神社から城跡への登りの経路をそのまま採用し、距離合わせの延伸は作らない。",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "partial_dem_filled",
-          "url": "data/elevation/p-sd2.json",
-          "totalM": 7650,
-          "climbM": 186.4,
-          "descentM": 156.7,
-          "minM": 11.1,
-          "maxM": 106.3
-        }
+        "distanceException": "計算上7.65km。目標6.5km前後より長い。愛宕神社から城跡への登りの経路をそのまま採用し、距離合わせの延伸は作らない。"
       },
       "waypoints": [
         {
@@ -25700,7 +25918,93 @@
       },
       "climbM": null,
       "descentM": null,
-      "auditFlags": []
+      "auditFlags": [],
+      "routeOptions": [
+        {
+          "id": "p-sd2-personal",
+          "variant": "personal",
+          "strategy": "personal_one_stroke",
+          "geometryUrl": "data/routes/p-sd2.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 7650,
+          "engineDistanceM": 7664,
+          "targetDistanceM": 6500,
+          "repeatedGeometryPct": 0.3,
+          "maxWaypointToShapeM": 0,
+          "built": "2026-11-15",
+          "engine": "valhalla-pedestrian",
+          "routeReason": "長町駅から愛宕神社、仙台城跡南を経て城跡の見晴らしへ。国際センター駅へ下りる駅間ワンウェイ。",
+          "retraceException": null,
+          "distanceException": "計算上7.65km。目標6.5km前後より長い。愛宕神社から城跡への登りの経路をそのまま採用し、距離合わせの延伸は作らない。",
+          "waypoints": [
+            {
+              "index": 0,
+              "id": "nagamachi",
+              "label": "長町駅",
+              "point": [
+                140.8857263,
+                38.2267824
+              ],
+              "source": "OSM node 3570916496 station"
+            },
+            {
+              "index": 1,
+              "id": "atago_shrine",
+              "label": "愛宕神社",
+              "point": [
+                140.8756794,
+                38.2458012
+              ],
+              "source": "OSM way 246449487 愛宕神社"
+            },
+            {
+              "index": 2,
+              "id": "sendai_castle",
+              "label": "仙台城跡",
+              "point": [
+                140.8555012,
+                38.2536558
+              ],
+              "source": "OSM node 4782747521 仙台城跡"
+            },
+            {
+              "index": 3,
+              "id": "kokusai_center",
+              "label": "国際センター駅",
+              "point": [
+                140.8567939,
+                38.26006
+              ],
+              "source": "OSM node 3594254135 station"
+            }
+          ],
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/p-sd2.json",
+            "totalM": 7650,
+            "climbM": 186.4,
+            "descentM": 156.7,
+            "minM": 11.1,
+            "maxM": 106.3
+          }
+        }
+      ],
+      "defaultVariant": "personal",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "OpenStreetMap（名称付き地点）",
+          "url": "https://www.openstreetmap.org/",
+          "checkedAt": "2026-11-16",
+          "supports": "駅・展望・公園の名称ノードの座標。入口ではない。"
+        }
+      ],
+      "openQuestions": [
+        "各地点の入口・通行条件を地図と現地で照合",
+        "撮影の太陽の向きと時間帯",
+        "宿の候補（駅徒歩10分以内・鍵付完全個室）"
+      ]
     },
     {
       "id": "P-SD3",
@@ -25735,17 +26039,7 @@
         "engine": "valhalla-pedestrian",
         "routeReason": "北仙台駅から東照宮駅の東照宮を経て仙台駅へ。計算上の距離をそのまま記載する（距離合わせの延伸はしない）。",
         "retraceException": "東照宮駅のピン付近で約200m重ねる（駅と神社の出入り）。距離は約4.5kmで目標に届かないが、延伸は作らない。",
-        "distanceException": "計算上4.51km。北仙台駅から仙台駅への最短に近い流れを優先し、距離合わせの延伸は作らない。",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "dem",
-          "url": "data/elevation/p-sd3.json",
-          "totalM": 4508,
-          "climbM": 10.2,
-          "descentM": 25.5,
-          "minM": 34.6,
-          "maxM": 50.4
-        }
+        "distanceException": "計算上4.51km。北仙台駅から仙台駅への最短に近い流れを優先し、距離合わせの延伸は作らない。"
       },
       "waypoints": [
         {
@@ -25794,7 +26088,83 @@
       },
       "climbM": null,
       "descentM": null,
-      "auditFlags": []
+      "auditFlags": [],
+      "routeOptions": [
+        {
+          "id": "p-sd3-personal",
+          "variant": "personal",
+          "strategy": "personal_one_stroke",
+          "geometryUrl": "data/routes/p-sd3.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 4508,
+          "engineDistanceM": 4506,
+          "targetDistanceM": null,
+          "repeatedGeometryPct": 4.5,
+          "maxWaypointToShapeM": 0,
+          "built": "2026-11-15",
+          "engine": "valhalla-pedestrian",
+          "routeReason": "北仙台駅から東照宮駅の東照宮を経て仙台駅へ。計算上の距離をそのまま記載する（距離合わせの延伸はしない）。",
+          "retraceException": "東照宮駅のピン付近で約200m重ねる（駅と神社の出入り）。距離は約4.5kmで目標に届かないが、延伸は作らない。",
+          "distanceException": "計算上4.51km。北仙台駅から仙台駅への最短に近い流れを優先し、距離合わせの延伸は作らない。",
+          "waypoints": [
+            {
+              "index": 0,
+              "id": "kita_sendai",
+              "label": "北仙台駅",
+              "point": [
+                140.8696878,
+                38.2817514
+              ],
+              "source": "OSM node 3585108876 station"
+            },
+            {
+              "index": 1,
+              "id": "toshogu_station",
+              "label": "東照宮駅",
+              "point": [
+                140.8863135,
+                38.2774318
+              ],
+              "source": "OSM node 3585108737 station"
+            },
+            {
+              "index": 2,
+              "id": "sendai",
+              "label": "仙台駅",
+              "point": [
+                140.880056,
+                38.2597623
+              ],
+              "source": "OSM node 264415884 station"
+            }
+          ],
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "dem",
+            "url": "data/elevation/p-sd3.json",
+            "totalM": 4508,
+            "climbM": 10.2,
+            "descentM": 25.5,
+            "minM": 34.6,
+            "maxM": 50.4
+          }
+        }
+      ],
+      "defaultVariant": "personal",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "OpenStreetMap（名称付き地点）",
+          "url": "https://www.openstreetmap.org/",
+          "checkedAt": "2026-11-16",
+          "supports": "駅・展望・公園の名称ノードの座標。入口ではない。"
+        }
+      ],
+      "openQuestions": [
+        "各地点の入口・通行条件を地図と現地で照合",
+        "撮影の太陽の向きと時間帯",
+        "宿の候補（駅徒歩10分以内・鍵付完全個室）"
+      ]
     },
     {
       "id": "P-SZ1",
@@ -25830,17 +26200,7 @@
         "engine": "valhalla-pedestrian",
         "routeReason": "由比駅から薩埵峠の展望へ上り、東海道本線沿いに興津駅へ下る駅間。峠道の歩道状況は未確認。",
         "retraceException": "薩埵峠の展望ピン付近で約660m重ねる。展望地点が本道から外れた位置にあり、同じ道を戻る必要があるためと見られる（地図・現地で未確認）。距離合わせではない。",
-        "distanceException": "計算上8.13km。目標6.5km前後より長い。薩埵峠の展望を経由する最短の経路で、距離合わせの延伸は作らない。",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "partial_dem_filled",
-          "url": "data/elevation/p-sz1.json",
-          "totalM": 8131,
-          "climbM": 103.9,
-          "descentM": 103.8,
-          "minM": 0.5,
-          "maxM": 90.9
-        }
+        "distanceException": "計算上8.13km。目標6.5km前後より長い。薩埵峠の展望を経由する最短の経路で、距離合わせの延伸は作らない。"
       },
       "waypoints": [
         {
@@ -25889,7 +26249,83 @@
       },
       "climbM": null,
       "descentM": null,
-      "auditFlags": []
+      "auditFlags": [],
+      "routeOptions": [
+        {
+          "id": "p-sz1-personal",
+          "variant": "personal",
+          "strategy": "personal_one_stroke",
+          "geometryUrl": "data/routes/p-sz1.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 8131,
+          "engineDistanceM": 8137,
+          "targetDistanceM": 6500,
+          "repeatedGeometryPct": 8.2,
+          "maxWaypointToShapeM": 0,
+          "built": "2026-11-15",
+          "engine": "valhalla-pedestrian",
+          "routeReason": "由比駅から薩埵峠の展望へ上り、東海道本線沿いに興津駅へ下る駅間。峠道の歩道状況は未確認。",
+          "retraceException": "薩埵峠の展望ピン付近で約660m重ねる。展望地点が本道から外れた位置にあり、同じ道を戻る必要があるためと見られる（地図・現地で未確認）。距離合わせではない。",
+          "distanceException": "計算上8.13km。目標6.5km前後より長い。薩埵峠の展望を経由する最短の経路で、距離合わせの延伸は作らない。",
+          "waypoints": [
+            {
+              "index": 0,
+              "id": "yui",
+              "label": "由比駅",
+              "point": [
+                138.553305,
+                35.0973725
+              ],
+              "source": "OSM node 3999393709 station"
+            },
+            {
+              "index": 1,
+              "id": "satta_pass",
+              "label": "薩埵峠（展望）",
+              "point": [
+                138.5392828,
+                35.0659342
+              ],
+              "source": "OSM node 12303563079 viewpoint"
+            },
+            {
+              "index": 2,
+              "id": "okitsu",
+              "label": "興津駅",
+              "point": [
+                138.5221619,
+                35.0523842
+              ],
+              "source": "OSM node 3999393692 station"
+            }
+          ],
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/p-sz1.json",
+            "totalM": 8131,
+            "climbM": 103.9,
+            "descentM": 103.8,
+            "minM": 0.5,
+            "maxM": 90.9
+          }
+        }
+      ],
+      "defaultVariant": "personal",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "OpenStreetMap（名称付き地点）",
+          "url": "https://www.openstreetmap.org/",
+          "checkedAt": "2026-11-16",
+          "supports": "駅・展望・公園の名称ノードの座標。入口ではない。"
+        }
+      ],
+      "openQuestions": [
+        "各地点の入口・通行条件を地図と現地で照合",
+        "撮影の太陽の向きと時間帯",
+        "宿の候補（駅徒歩10分以内・鍵付完全個室）"
+      ]
     }
   ]
 }
