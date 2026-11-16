@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T13:43:28.588Z",
+  "generatedAt": "2026-11-16T14:15:12.498Z",
   "interpretation": "Mechanical triage only. Source and map review required before adopting any new route.",
   "records": [
     {
@@ -551,7 +551,7 @@
     {
       "id": "S4",
       "title": "井の頭・神田川せせらぎ（高井戸〜井の頭公園〜吉祥寺）",
-      "series": "制作主専用修行案（個人用・最大8km）",
+      "series": "個人散歩（修行案 S）",
       "workStatus": "research_needed",
       "legacy": {
         "geometryUrl": "data/routes/s4.geojson",
@@ -664,7 +664,7 @@
     {
       "id": "E1",
       "title": "三島・源兵衛川と三嶋大社",
-      "series": "遠征検討シリーズ（東海・伊豆箱根5コース）",
+      "series": "個人散歩（遠征検討 E）",
       "workStatus": "research_needed",
       "legacy": {
         "geometryUrl": "data/routes/e1.geojson",
@@ -763,7 +763,7 @@
     {
       "id": "S1",
       "title": "玉川上水・仙川緑道（三鷹〜武蔵境〜東小金井）水辺と並木",
-      "series": "制作主専用修行案（個人用・最大8km）",
+      "series": "個人散歩（修行案 S）",
       "workStatus": "research_needed",
       "legacy": {
         "geometryUrl": "data/routes/s1.geojson",
@@ -807,7 +807,7 @@
     {
       "id": "Z5",
       "title": "富山・環水公園と立山連峰",
-      "series": "全国・いつか行きたい（広島・神戸・福岡ほか）",
+      "series": "個人散歩（全国 Z）",
       "workStatus": "research_needed",
       "legacy": {
         "geometryUrl": "data/routes/z5.geojson",
@@ -1152,7 +1152,7 @@
     {
       "id": "S6",
       "title": "青梅街道・中野〜荻窪レトロ商店街（中野〜荻窪）",
-      "series": "制作主専用修行案（個人用・最大8km）",
+      "series": "個人散歩（修行案 S）",
       "workStatus": "research_needed",
       "legacy": {
         "geometryUrl": "data/routes/s6.geojson",
@@ -1196,7 +1196,7 @@
     {
       "id": "E3",
       "title": "浜松・遠鉄と浜松城",
-      "series": "遠征検討シリーズ（東海・伊豆箱根5コース）",
+      "series": "個人散歩（遠征検討 E）",
       "workStatus": "research_needed",
       "legacy": {
         "geometryUrl": "data/routes/e3.geojson",
@@ -1239,7 +1239,7 @@
     {
       "id": "S5",
       "title": "国立・谷保・矢川イチョウ並木（国立〜立川）学園×並木",
-      "series": "制作主専用修行案（個人用・最大8km）",
+      "series": "個人散歩（修行案 S）",
       "workStatus": "research_needed",
       "legacy": {
         "geometryUrl": "data/routes/s5.geojson",
@@ -1509,7 +1509,7 @@
     {
       "id": "E5",
       "title": "小田原・国府津 海と駅伝",
-      "series": "遠征検討シリーズ（東海・伊豆箱根5コース）",
+      "series": "個人散歩（遠征検討 E）",
       "workStatus": "research_needed",
       "legacy": {
         "geometryUrl": "data/routes/e5.geojson",
@@ -1553,7 +1553,7 @@
     {
       "id": "S2",
       "title": "多摩川・浅川合流（豊田南口〜日野用水堰〜立川）水辺フラット",
-      "series": "制作主専用修行案（個人用・最大8km）",
+      "series": "個人散歩（修行案 S）",
       "workStatus": "research_needed",
       "legacy": {
         "geometryUrl": "data/routes/s2.geojson",
@@ -1597,7 +1597,7 @@
     {
       "id": "Z3",
       "title": "福岡・博多〜天神〜大濠公園",
-      "series": "全国・いつか行きたい（広島・神戸・福岡ほか）",
+      "series": "個人散歩（全国 Z）",
       "workStatus": "research_needed",
       "legacy": {
         "geometryUrl": "data/routes/z3.geojson",
@@ -2091,7 +2091,7 @@
     {
       "id": "Z8",
       "title": "那覇・国際通りと波上宮",
-      "series": "全国・いつか行きたい（広島・神戸・福岡ほか）",
+      "series": "個人散歩（全国 Z）",
       "workStatus": "research_needed",
       "legacy": {
         "geometryUrl": "data/routes/z8.geojson",
@@ -2408,7 +2408,7 @@
     {
       "id": "S7",
       "title": "外濠・水道橋〜飯田橋〜市ケ谷〜四ツ谷 建築×水辺",
-      "series": "制作主専用修行案（個人用・最大8km）",
+      "series": "個人散歩（修行案 S）",
       "workStatus": "research_needed",
       "legacy": {
         "geometryUrl": "data/routes/s7.geojson",
@@ -2588,7 +2588,7 @@
     {
       "id": "Z2",
       "title": "神戸・三宮〜ハーバーランド港夜景",
-      "series": "全国・いつか行きたい（広島・神戸・福岡ほか）",
+      "series": "個人散歩（全国 Z）",
       "workStatus": "research_needed",
       "legacy": {
         "geometryUrl": "data/routes/z2.geojson",
@@ -2631,7 +2631,7 @@
     {
       "id": "Z4",
       "title": "松山・道後温泉と城下町",
-      "series": "全国・いつか行きたい（広島・神戸・福岡ほか）",
+      "series": "個人散歩（全国 Z）",
       "workStatus": "research_needed",
       "legacy": {
         "geometryUrl": "data/routes/z4.geojson",
@@ -2723,7 +2723,7 @@
     {
       "id": "S11",
       "title": "旭が丘中央公園→片倉→みなみ野",
-      "series": "制作主専用修行案（個人用・最大8km）",
+      "series": "個人散歩（修行案 S）",
       "workStatus": "research_needed",
       "legacy": {
         "geometryUrl": "data/routes/s11.geojson",
@@ -2766,7 +2766,7 @@
     {
       "id": "S9",
       "title": "青梅線・羽村〜拝島 水辺とベースサイド",
-      "series": "制作主専用修行案（個人用・最大8km）",
+      "series": "個人散歩（修行案 S）",
       "workStatus": "research_needed",
       "legacy": {
         "geometryUrl": "data/routes/s9.geojson",
@@ -2912,7 +2912,7 @@
     {
       "id": "S8",
       "title": "隅田川テラス・浅草橋〜スカイツリー（馬喰町〜押上）下町水辺",
-      "series": "制作主専用修行案（個人用・最大8km）",
+      "series": "個人散歩（修行案 S）",
       "workStatus": "research_needed",
       "legacy": {
         "geometryUrl": "data/routes/s8.geojson",
@@ -2949,7 +2949,7 @@
     {
       "id": "Z7",
       "title": "京都・鴨川フラットウォーク",
-      "series": "全国・いつか行きたい（広島・神戸・福岡ほか）",
+      "series": "個人散歩（全国 Z）",
       "workStatus": "research_needed",
       "legacy": {
         "geometryUrl": "data/routes/z7.geojson",
@@ -3073,7 +3073,7 @@
     {
       "id": "Z1",
       "title": "広島・平和記念公園と川と橋",
-      "series": "全国・いつか行きたい（広島・神戸・福岡ほか）",
+      "series": "個人散歩（全国 Z）",
       "workStatus": "research_needed",
       "legacy": {
         "geometryUrl": "data/routes/z1.geojson",
@@ -3167,7 +3167,7 @@
     {
       "id": "S3",
       "title": "昭和記念公園・あけぼの口〜日本庭園〜みんなの原っぱ縦断",
-      "series": "制作主専用修行案（個人用・最大8km）",
+      "series": "個人散歩（修行案 S）",
       "workStatus": "research_needed",
       "legacy": {
         "geometryUrl": "data/routes/s3.geojson",
@@ -3572,7 +3572,7 @@
     {
       "id": "Z6",
       "title": "札幌・大通〜中島公園",
-      "series": "全国・いつか行きたい（広島・神戸・福岡ほか）",
+      "series": "個人散歩（全国 Z）",
       "workStatus": "research_needed",
       "legacy": {
         "geometryUrl": "data/routes/z6.geojson",
@@ -3725,7 +3725,7 @@
     {
       "id": "S12",
       "title": "旭が丘→浅川→北野街道→めじろ台",
-      "series": "制作主専用修行案（個人用・最大8km）",
+      "series": "個人散歩（修行案 S）",
       "workStatus": "research_needed",
       "legacy": {
         "geometryUrl": "data/routes/s12.geojson",
@@ -4124,7 +4124,7 @@
     {
       "id": "E2",
       "title": "静岡・駿府城と浅間神社",
-      "series": "遠征検討シリーズ（東海・伊豆箱根5コース）",
+      "series": "個人散歩（遠征検討 E）",
       "workStatus": "research_needed",
       "legacy": {
         "geometryUrl": "data/routes/e2.geojson",
@@ -4435,7 +4435,7 @@
     {
       "id": "S10",
       "title": "横浜線・片倉城跡とみなみ野〜橋本",
-      "series": "制作主専用修行案（個人用・最大8km）",
+      "series": "個人散歩（修行案 S）",
       "workStatus": "research_needed",
       "legacy": {
         "geometryUrl": "data/routes/s10.geojson",
@@ -4518,7 +4518,7 @@
     {
       "id": "S13",
       "title": "旭が丘→湯殿川・浅川→高幡不動",
-      "series": "制作主専用修行案（個人用・最大8km）",
+      "series": "個人散歩（修行案 S）",
       "workStatus": "research_needed",
       "legacy": {
         "geometryUrl": "data/routes/s13.geojson",
@@ -4681,7 +4681,7 @@
     {
       "id": "E4",
       "title": "名古屋・大須と名古屋城",
-      "series": "遠征検討シリーズ（東海・伊豆箱根5コース）",
+      "series": "個人散歩（遠征検討 E）",
       "workStatus": "research_needed",
       "legacy": {
         "geometryUrl": "data/routes/e4.geojson",

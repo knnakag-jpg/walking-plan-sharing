@@ -165,7 +165,21 @@ if (legacyCourses.length !== 97 || Object.keys(geometry).length !== 97 || legacy
 // 個人散歩 (seriesId 'personal') は本編97件とは別枠。旧カード/SERIES/形状の97件照合から外す。
 // 先行ページの個人系26件(solo/enso/zenkoku)は本編97件の中に残したまま、区分(category)だけ個人散歩にする。
 const PERSONAL_LEGACY = new Set(['solo', 'enso', 'zenkoku']);
-for (const course of courses) course.category = PERSONAL_LEGACY.has(course.seriesId) ? 'personal' : 'main';
+for (const course of courses) {
+  course.category = PERSONAL_LEGACY.has(course.seriesId) ? 'personal' : 'main';
+  // 個人散歩の26件は旧線の route だけを持つので、アトラスの切替（A/B/C/旧経路）に載せる routeOptions を必ず作る。
+  if (course.category === 'personal') {
+    course.seriesName = course.seriesId === 'solo' ? '個人散歩（修行案 S）' : course.seriesId === 'enso' ? '個人散歩（遠征検討 E）' : '個人散歩（全国 Z）';
+    if (!course.routeOptions) {
+      const note = '旧経路のまま。立ち寄り先・入口座標・通行条件は地図で照合していない。同じ線をなぞる区間は形状の計算値で、理由は未確認。';
+      course.routeOptions = [{ ...course.route, routeReason: note }];
+      course.defaultVariant = 'legacy';
+      // 旧経路の個人散歩は資料調査の記録がないため、根拠と未確認事項をここで補う（A/B/Cの検証を通すための最低限）。
+      course.evidence = [{ type: 'community', title: '旧資料（先行ページ index.html の制作主専用修行案）', url: null, checkedAt: '2026-11-16', supports: '旧案の立ち寄り先。座標と距離は計算済みの旧経路で、その後の再調査はしていない。' }];
+      course.openQuestions = ['立ち寄り先の入口・通行条件を地図と現地で照合', '同じ線をなぞる区間の理由を確認', '太陽の向きと時間帯の計算'];
+    }
+  }
+}
 // 新案は data/personal/<id>.json から。先行ページには載せず、アトラス専用（本編97件の照合には入れない）。
 const personalRoot = path.join(root, 'data/personal');
 if (fs.existsSync(personalRoot)) for (const filename of fs.readdirSync(personalRoot).filter((name) => name.endsWith('.json')).sort()) {

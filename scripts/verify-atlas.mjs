@@ -117,9 +117,16 @@ assert(rainy?.segments?.some((leg) => leg.kind === 'walk_indoor') && rainy?.segm
 assert(standard?.waypoints?.slice(0, -1).map((point) => point.id).join('|') === extended?.waypoints?.slice(0, -2).map((point) => point.id).join('|'), 'No.47 B must share A core route');
 assert(standard?.waypoints?.every((point) => point.description) && extended?.waypoints?.every((point) => point.description), 'No.47 replay checkpoints need source-backed descriptions');
 for (const course of data.courses.filter((item) => item.routeOptions)) {
+  // 個人散歩（category 'personal'）は本編97件のA/B/Cの型に縛らず、個人の旅行計画として別に確認する。
+  const personal = course.category === 'personal';
   const a = course.routeOptions.find((item) => item.variant === 'standard');
   const b = course.routeOptions.find((item) => item.variant === 'extended');
   const c = course.routeOptions.find((item) => item.variant === 'rainy');
+  if (personal) {
+    assert(course.routeOptions.length >= 1, `${course.id}: personal route missing`);
+    assert(course.evidence?.length >= 1 && course.openQuestions?.length, `${course.id}: personal research notes missing`);
+    continue;
+  }
   assert(a, `${course.id}: A option missing`);
   if (!b) {
     // Aだけの採用は、Bを作らない理由を routeReason に書いてある場合に限る。

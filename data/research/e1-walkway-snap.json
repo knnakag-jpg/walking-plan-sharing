@@ -1,0 +1,42 @@
+{
+ "mishima_st": {
+  "snapped": [
+   35.1254155,
+   138.9109651
+  ],
+  "movedM": 53,
+  "wayId": 35866904
+ },
+ "rakuju": {
+  "snapped": [
+   35.1249331,
+   138.9110879
+  ],
+  "movedM": 9,
+  "wayId": 164465533
+ },
+ "shirataki": {
+  "snapped": [
+   35.1227253,
+   138.9144425
+  ],
+  "movedM": 3,
+  "wayId": 203830699
+ },
+ "mishima_taisha": {
+  "snapped": [
+   35.1212772,
+   138.9197264
+  ],
+  "movedM": 14,
+  "wayId": 485769816
+ },
+ "mishima_tamachi": {
+  "snapped": [
+   35.1163758,
+   138.9176516
+  ],
+  "movedM": 20,
+  "wayId": 660429244
+ }
+}

@@ -1,0 +1,72 @@
+{
+  "calculatedAt": "2026-11-16T14:08:11.948Z",
+  "engine": "valhalla-pedestrian",
+  "variants": {
+    "standard": {
+      "label": "standard",
+      "distanceM": 2064,
+      "engineDistanceM": 2065,
+      "repeatedGeometryM": 41,
+      "repeatedGeometryPct": 2,
+      "legKm": [
+        0.06,
+        0.62,
+        0.57,
+        0.82
+      ],
+      "geometryUrl": "data/routes/e1-standard.geojson",
+      "stops": [
+        {
+          "id": "mishima_st",
+          "label": "三島駅",
+          "coord": [
+            35.1254155,
+            138.9109651
+          ],
+          "source": "OSM station 三島",
+          "offsetM": 0
+        },
+        {
+          "id": "rakuju",
+          "label": "楽寿園",
+          "coord": [
+            35.1249331,
+            138.9110879
+          ],
+          "source": "OSM park 三島市立公園 楽寿園",
+          "offsetM": 0
+        },
+        {
+          "id": "shirataki",
+          "label": "白滝公園",
+          "coord": [
+            35.1227253,
+            138.9144425
+          ],
+          "source": "OSM node 白滝公園",
+          "offsetM": 0
+        },
+        {
+          "id": "mishima_taisha",
+          "label": "三嶋大社",
+          "coord": [
+            35.1212772,
+            138.9197264
+          ],
+          "source": "OSM museum 三嶋大社宝物館",
+          "offsetM": 0
+        },
+        {
+          "id": "mishima_tamachi",
+          "label": "三島田町駅",
+          "coord": [
+            35.1163758,
+            138.9176516
+          ],
+          "source": "OSM station 三島田町",
+          "offsetM": 0
+        }
+      ]
+    }
+  }
+}

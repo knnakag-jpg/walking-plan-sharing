@@ -1,0 +1,72 @@
+{
+  "calculatedAt": "2026-11-16T14:03:27.448Z",
+  "engine": "valhalla-pedestrian",
+  "variants": {
+    "standard": {
+      "label": "standard",
+      "distanceM": 4026,
+      "engineDistanceM": 4029,
+      "repeatedGeometryM": 280,
+      "repeatedGeometryPct": 7,
+      "legKm": [
+        0.66,
+        1.44,
+        1.41,
+        0.52
+      ],
+      "geometryUrl": "data/routes/z2-standard.geojson",
+      "stops": [
+        {
+          "id": "sannomiya",
+          "label": "神戸三宮駅",
+          "coord": [
+            34.6932523,
+            135.192671
+          ],
+          "source": "OSM station 神戸三宮",
+          "offsetM": 0
+        },
+        {
+          "id": "motomachi",
+          "label": "元町駅",
+          "coord": [
+            34.6899124,
+            135.1871829
+          ],
+          "source": "OSM station 元町",
+          "offsetM": 0
+        },
+        {
+          "id": "chutottei",
+          "label": "中突堤旅客ターミナル",
+          "coord": [
+            34.6799903,
+            135.1881514
+          ],
+          "source": "OSM ferry_terminal 中突堤旅客ターミナル",
+          "offsetM": 7
+        },
+        {
+          "id": "harborland",
+          "label": "神戸ハーバーランド",
+          "coord": [
+            34.6781076,
+            135.1801814
+          ],
+          "source": "OSM attraction 神戸ハーバーランド",
+          "offsetM": 0
+        },
+        {
+          "id": "kobe_st",
+          "label": "神戸駅",
+          "coord": [
+            34.6792281,
+            135.1784971
+          ],
+          "source": "OSM station 神戸",
+          "offsetM": 0
+        }
+      ]
+    }
+  }
+}

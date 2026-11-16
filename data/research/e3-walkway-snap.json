@@ -1,0 +1,26 @@
+{
+ "hamamatsu_st": {
+  "snapped": [
+   34.705402,
+   137.7334896
+  ],
+  "movedM": 15,
+  "wayId": 596516351
+ },
+ "hamamatsu_jo": {
+  "snapped": [
+   34.7119755,
+   137.7227348
+  ],
+  "movedM": 12,
+  "wayId": 363704710
+ },
+ "shin_hamamatsu": {
+  "snapped": [
+   34.7034624,
+   137.7358956
+  ],
+  "movedM": 4,
+  "wayId": 42744327
+ }
+}

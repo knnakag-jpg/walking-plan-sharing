@@ -1,0 +1,61 @@
+{
+  "calculatedAt": "2026-11-16T14:08:47.725Z",
+  "engine": "valhalla-pedestrian",
+  "variants": {
+    "standard": {
+      "label": "standard",
+      "distanceM": 4280,
+      "engineDistanceM": 4279,
+      "repeatedGeometryM": 55,
+      "repeatedGeometryPct": 1.3,
+      "legKm": [
+        1.06,
+        1.02,
+        2.19
+      ],
+      "geometryUrl": "data/routes/z3-standard.geojson",
+      "stops": [
+        {
+          "id": "hakata_st",
+          "label": "博多駅",
+          "coord": [
+            33.5900426,
+            130.399804
+          ],
+          "source": "OSM 博多 station; 正確な点は地図レビュー待ち",
+          "offsetM": 0
+        },
+        {
+          "id": "nakasu",
+          "label": "中洲川端駅",
+          "coord": [
+            33.594691,
+            130.4063973
+          ],
+          "source": "OSM station 中洲川端",
+          "offsetM": 4
+        },
+        {
+          "id": "tenjin",
+          "label": "天神駅",
+          "coord": [
+            33.5912384,
+            130.3986384
+          ],
+          "source": "OSM station 天神",
+          "offsetM": 4
+        },
+        {
+          "id": "ohori",
+          "label": "大濠公園",
+          "coord": [
+            33.5901753,
+            130.3772225
+          ],
+          "source": "OSM node 大濠公園",
+          "offsetM": 0
+        }
+      ]
+    }
+  }
+}

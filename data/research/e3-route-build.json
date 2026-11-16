@@ -1,0 +1,50 @@
+{
+  "calculatedAt": "2026-11-16T14:08:44.766Z",
+  "engine": "valhalla-pedestrian",
+  "variants": {
+    "standard": {
+      "label": "standard",
+      "distanceM": 3377,
+      "engineDistanceM": 3375,
+      "repeatedGeometryM": 908,
+      "repeatedGeometryPct": 26.9,
+      "legKm": [
+        1.5,
+        1.87
+      ],
+      "geometryUrl": "data/routes/e3-standard.geojson",
+      "stops": [
+        {
+          "id": "hamamatsu_st",
+          "label": "浜松駅",
+          "coord": [
+            34.705402,
+            137.7334896
+          ],
+          "source": "OSM node 浜松駅",
+          "offsetM": 0
+        },
+        {
+          "id": "hamamatsu_jo",
+          "label": "浜松城（浜松城公園）",
+          "coord": [
+            34.7119755,
+            137.7227348
+          ],
+          "source": "OSM 浜松城公園前交番の近くの公園; 城の点は地図レビュー待ち",
+          "offsetM": 4
+        },
+        {
+          "id": "shin_hamamatsu",
+          "label": "新浜松駅",
+          "coord": [
+            34.7034624,
+            137.7358956
+          ],
+          "source": "OSM node JR浜松駅東（新浜松駅の近く）; 駅の正確な点は地図レビュー待ち",
+          "offsetM": 0
+        }
+      ]
+    }
+  }
+}

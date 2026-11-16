@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "source": "legacy import; route quality not re-reviewed",
-  "generatedAt": "2026-11-16T13:43:28.498Z",
+  "generatedAt": "2026-11-16T14:14:45.223Z",
   "courses": [
     {
       "id": "No.1",
@@ -19728,7 +19728,7 @@
       "slug": "s1",
       "title": "玉川上水・仙川緑道（三鷹〜武蔵境〜東小金井）水辺と並木",
       "seriesId": "solo",
-      "seriesName": "制作主専用修行案（個人用・最大8km）",
+      "seriesName": "個人散歩（修行案 S）",
       "legacyAnchor": "course-S1",
       "legacyUrl": "../index.html#course-S1",
       "summary": "経路ノード： 三鷹駅北口 → 三鷹通り → 井の頭通り → 玉川上水緑道 → 武蔵境駅北口 → ののみち → 東小金井駅 → 武蔵小金井駅 → 中町四丁目方面へ実在の歩道で延伸（往復約3.6km） → ゴール",
@@ -19749,17 +19749,7 @@
         "repeatedGeometryPct": 22.8,
         "maxWaypointToShapeM": 15,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "dem",
-          "url": "data/elevation/s1.json",
-          "totalM": 7109,
-          "climbM": 29.8,
-          "descentM": 24.4,
-          "minM": 51.4,
-          "maxM": 66.5
-        }
+        "engine": "valhalla-pedestrian"
       },
       "waypoints": [
         {
@@ -19818,14 +19808,56 @@
         "repeated_geometry_over_10pct",
         "repeated_waypoint"
       ],
-      "category": "personal"
+      "category": "personal",
+      "routeOptions": [
+        {
+          "id": "s1-legacy",
+          "variant": "legacy",
+          "strategy": "legacy_unknown",
+          "geometryUrl": "data/routes/s1.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 7109,
+          "engineDistanceM": 7113,
+          "targetDistanceM": 6900,
+          "repeatedGeometryPct": 22.8,
+          "maxWaypointToShapeM": 15,
+          "built": "2026-08-29",
+          "engine": "valhalla-pedestrian",
+          "routeReason": "旧経路のまま。立ち寄り先・入口座標・通行条件は地図で照合していない。同じ線をなぞる区間は形状の計算値で、理由は未確認。",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "dem",
+            "url": "data/elevation/s1.json",
+            "totalM": 7109,
+            "climbM": 29.8,
+            "descentM": 24.4,
+            "minM": 51.4,
+            "maxM": 66.5
+          }
+        }
+      ],
+      "defaultVariant": "legacy",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "旧資料（先行ページ index.html の制作主専用修行案）",
+          "url": null,
+          "checkedAt": "2026-11-16",
+          "supports": "旧案の立ち寄り先。座標と距離は計算済みの旧経路で、その後の再調査はしていない。"
+        }
+      ],
+      "openQuestions": [
+        "立ち寄り先の入口・通行条件を地図と現地で照合",
+        "同じ線をなぞる区間の理由を確認",
+        "太陽の向きと時間帯の計算"
+      ]
     },
     {
       "id": "S2",
       "slug": "s2",
       "title": "多摩川・浅川合流（豊田南口〜日野用水堰〜立川）水辺フラット",
       "seriesId": "solo",
-      "seriesName": "制作主専用修行案（個人用・最大8km）",
+      "seriesName": "個人散歩（修行案 S）",
       "legacyAnchor": "course-S2",
       "legacyUrl": "../index.html#course-S2",
       "summary": "経路ノード： 豊田駅南口 → 浅川右岸遊歩道 → 石田大橋付近（合流点） → 多摩川左岸 → 日野用水堰 → 立川駅南口 → 高幡（三沢方面）方面へ実在の歩道で延伸（往復約1.8km） → ゴール",
@@ -19846,17 +19878,7 @@
         "repeatedGeometryPct": 16.5,
         "maxWaypointToShapeM": 27,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "partial_dem_filled",
-          "url": "data/elevation/s2.json",
-          "totalM": 7276,
-          "climbM": 93.7,
-          "descentM": 111.4,
-          "minM": 63.9,
-          "maxM": 132.4
-        }
+        "engine": "valhalla-pedestrian"
       },
       "waypoints": [
         {
@@ -19915,14 +19937,56 @@
         "repeated_geometry_over_10pct",
         "repeated_waypoint"
       ],
-      "category": "personal"
+      "category": "personal",
+      "routeOptions": [
+        {
+          "id": "s2-legacy",
+          "variant": "legacy",
+          "strategy": "legacy_unknown",
+          "geometryUrl": "data/routes/s2.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 7276,
+          "engineDistanceM": 7281,
+          "targetDistanceM": 6800,
+          "repeatedGeometryPct": 16.5,
+          "maxWaypointToShapeM": 27,
+          "built": "2026-08-29",
+          "engine": "valhalla-pedestrian",
+          "routeReason": "旧経路のまま。立ち寄り先・入口座標・通行条件は地図で照合していない。同じ線をなぞる区間は形状の計算値で、理由は未確認。",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/s2.json",
+            "totalM": 7276,
+            "climbM": 93.7,
+            "descentM": 111.4,
+            "minM": 63.9,
+            "maxM": 132.4
+          }
+        }
+      ],
+      "defaultVariant": "legacy",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "旧資料（先行ページ index.html の制作主専用修行案）",
+          "url": null,
+          "checkedAt": "2026-11-16",
+          "supports": "旧案の立ち寄り先。座標と距離は計算済みの旧経路で、その後の再調査はしていない。"
+        }
+      ],
+      "openQuestions": [
+        "立ち寄り先の入口・通行条件を地図と現地で照合",
+        "同じ線をなぞる区間の理由を確認",
+        "太陽の向きと時間帯の計算"
+      ]
     },
     {
       "id": "S3",
       "slug": "s3",
       "title": "昭和記念公園・あけぼの口〜日本庭園〜みんなの原っぱ縦断",
       "seriesId": "solo",
-      "seriesName": "制作主専用修行案（個人用・最大8km）",
+      "seriesName": "個人散歩（修行案 S）",
       "legacyAnchor": "course-S3",
       "legacyUrl": "../index.html#course-S3",
       "summary": "経路ノード： 立川駅北口 → シネマシティ通り → あけぼの口 → かたらいのイチョウ並木 → 日本庭園 → みんなの原っぱ → 西立川口 → 西立川駅 → ゴール",
@@ -19943,17 +20007,7 @@
         "repeatedGeometryPct": 15.1,
         "maxWaypointToShapeM": 39,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "dem",
-          "url": "data/elevation/s3.json",
-          "totalM": 6662,
-          "climbM": 33.4,
-          "descentM": 33.9,
-          "minM": 87.1,
-          "maxM": 98
-        }
+        "engine": "valhalla-pedestrian"
       },
       "waypoints": [
         {
@@ -19997,14 +20051,56 @@
       "auditFlags": [
         "repeated_geometry_over_10pct"
       ],
-      "category": "personal"
+      "category": "personal",
+      "routeOptions": [
+        {
+          "id": "s3-legacy",
+          "variant": "legacy",
+          "strategy": "legacy_unknown",
+          "geometryUrl": "data/routes/s3.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 6662,
+          "engineDistanceM": 6676,
+          "targetDistanceM": 6900,
+          "repeatedGeometryPct": 15.1,
+          "maxWaypointToShapeM": 39,
+          "built": "2026-08-29",
+          "engine": "valhalla-pedestrian",
+          "routeReason": "旧経路のまま。立ち寄り先・入口座標・通行条件は地図で照合していない。同じ線をなぞる区間は形状の計算値で、理由は未確認。",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "dem",
+            "url": "data/elevation/s3.json",
+            "totalM": 6662,
+            "climbM": 33.4,
+            "descentM": 33.9,
+            "minM": 87.1,
+            "maxM": 98
+          }
+        }
+      ],
+      "defaultVariant": "legacy",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "旧資料（先行ページ index.html の制作主専用修行案）",
+          "url": null,
+          "checkedAt": "2026-11-16",
+          "supports": "旧案の立ち寄り先。座標と距離は計算済みの旧経路で、その後の再調査はしていない。"
+        }
+      ],
+      "openQuestions": [
+        "立ち寄り先の入口・通行条件を地図と現地で照合",
+        "同じ線をなぞる区間の理由を確認",
+        "太陽の向きと時間帯の計算"
+      ]
     },
     {
       "id": "S4",
       "slug": "s4",
       "title": "井の頭・神田川せせらぎ（高井戸〜井の頭公園〜吉祥寺）",
       "seriesId": "solo",
-      "seriesName": "制作主専用修行案（個人用・最大8km）",
+      "seriesName": "個人散歩（修行案 S）",
       "legacyAnchor": "course-S4",
       "legacyUrl": "../index.html#course-S4",
       "summary": "経路ノード： 高井戸駅 → 神田川沿い上流へ → 久我山 → 三鷹台 → 井の頭公園駅 → 井の頭池 → 吉祥寺駅 → 関町南方面へ実在の歩道で延伸（往復約3.1km） → ゴール",
@@ -20025,17 +20121,7 @@
         "repeatedGeometryPct": 25.5,
         "maxWaypointToShapeM": 38,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "dem",
-          "url": "data/elevation/s4.json",
-          "totalM": 6473,
-          "climbM": 36.5,
-          "descentM": 33.6,
-          "minM": 46.4,
-          "maxM": 61.2
-        }
+        "engine": "valhalla-pedestrian"
       },
       "waypoints": [
         {
@@ -20087,14 +20173,56 @@
         "repeated_geometry_over_10pct",
         "repeated_waypoint"
       ],
-      "category": "personal"
+      "category": "personal",
+      "routeOptions": [
+        {
+          "id": "s4-legacy",
+          "variant": "legacy",
+          "strategy": "legacy_unknown",
+          "geometryUrl": "data/routes/s4.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 6473,
+          "engineDistanceM": 6480,
+          "targetDistanceM": 6900,
+          "repeatedGeometryPct": 25.5,
+          "maxWaypointToShapeM": 38,
+          "built": "2026-08-29",
+          "engine": "valhalla-pedestrian",
+          "routeReason": "旧経路のまま。立ち寄り先・入口座標・通行条件は地図で照合していない。同じ線をなぞる区間は形状の計算値で、理由は未確認。",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "dem",
+            "url": "data/elevation/s4.json",
+            "totalM": 6473,
+            "climbM": 36.5,
+            "descentM": 33.6,
+            "minM": 46.4,
+            "maxM": 61.2
+          }
+        }
+      ],
+      "defaultVariant": "legacy",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "旧資料（先行ページ index.html の制作主専用修行案）",
+          "url": null,
+          "checkedAt": "2026-11-16",
+          "supports": "旧案の立ち寄り先。座標と距離は計算済みの旧経路で、その後の再調査はしていない。"
+        }
+      ],
+      "openQuestions": [
+        "立ち寄り先の入口・通行条件を地図と現地で照合",
+        "同じ線をなぞる区間の理由を確認",
+        "太陽の向きと時間帯の計算"
+      ]
     },
     {
       "id": "S5",
       "slug": "s5",
       "title": "国立・谷保・矢川イチョウ並木（国立〜立川）学園×並木",
       "seriesId": "solo",
-      "seriesName": "制作主専用修行案（個人用・最大8km）",
+      "seriesName": "個人散歩（修行案 S）",
       "legacyAnchor": "course-S5",
       "legacyUrl": "../index.html#course-S5",
       "summary": "経路ノード： 国立駅南口 → 大学通り → 谷保駅 → さくら通り → 矢川駅 → 甲州街道 → 西国立駅 → 立川駅南口 → 柴崎町三丁目方面へ実在の歩道で延伸（往復約2.6km） → ゴール",
@@ -20115,17 +20243,7 @@
         "repeatedGeometryPct": 14,
         "maxWaypointToShapeM": 79,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "dem",
-          "url": "data/elevation/s5.json",
-          "totalM": 7237,
-          "climbM": 41.3,
-          "descentM": 50.3,
-          "minM": 67.6,
-          "maxM": 82.5
-        }
+        "engine": "valhalla-pedestrian"
       },
       "waypoints": [
         {
@@ -20192,14 +20310,56 @@
         "repeated_waypoint",
         "waypoint_off_shape"
       ],
-      "category": "personal"
+      "category": "personal",
+      "routeOptions": [
+        {
+          "id": "s5-legacy",
+          "variant": "legacy",
+          "strategy": "legacy_unknown",
+          "geometryUrl": "data/routes/s5.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 7237,
+          "engineDistanceM": 7251,
+          "targetDistanceM": 7000,
+          "repeatedGeometryPct": 14,
+          "maxWaypointToShapeM": 79,
+          "built": "2026-08-29",
+          "engine": "valhalla-pedestrian",
+          "routeReason": "旧経路のまま。立ち寄り先・入口座標・通行条件は地図で照合していない。同じ線をなぞる区間は形状の計算値で、理由は未確認。",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "dem",
+            "url": "data/elevation/s5.json",
+            "totalM": 7237,
+            "climbM": 41.3,
+            "descentM": 50.3,
+            "minM": 67.6,
+            "maxM": 82.5
+          }
+        }
+      ],
+      "defaultVariant": "legacy",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "旧資料（先行ページ index.html の制作主専用修行案）",
+          "url": null,
+          "checkedAt": "2026-11-16",
+          "supports": "旧案の立ち寄り先。座標と距離は計算済みの旧経路で、その後の再調査はしていない。"
+        }
+      ],
+      "openQuestions": [
+        "立ち寄り先の入口・通行条件を地図と現地で照合",
+        "同じ線をなぞる区間の理由を確認",
+        "太陽の向きと時間帯の計算"
+      ]
     },
     {
       "id": "S6",
       "slug": "s6",
       "title": "青梅街道・中野〜荻窪レトロ商店街（中野〜荻窪）",
       "seriesId": "solo",
-      "seriesName": "制作主専用修行案（個人用・最大8km）",
+      "seriesName": "個人散歩（修行案 S）",
       "legacyAnchor": "course-S6",
       "legacyUrl": "../index.html#course-S6",
       "summary": "経路ノード： 中野駅北口 → 中野通り → 桃園川緑道 → 高円寺 → 阿佐ヶ谷 → 荻窪駅 → 天沼三丁目方面へ実在の歩道で延伸（往復約3.4km） → ゴール",
@@ -20220,17 +20380,7 @@
         "repeatedGeometryPct": 21.4,
         "maxWaypointToShapeM": 18,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "dem",
-          "url": "data/elevation/s6.json",
-          "totalM": 6779,
-          "climbM": 29.8,
-          "descentM": 25,
-          "minM": 37.6,
-          "maxM": 46.3
-        }
+        "engine": "valhalla-pedestrian"
       },
       "waypoints": [
         {
@@ -20282,14 +20432,56 @@
         "repeated_geometry_over_10pct",
         "repeated_waypoint"
       ],
-      "category": "personal"
+      "category": "personal",
+      "routeOptions": [
+        {
+          "id": "s6-legacy",
+          "variant": "legacy",
+          "strategy": "legacy_unknown",
+          "geometryUrl": "data/routes/s6.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 6779,
+          "engineDistanceM": 6789,
+          "targetDistanceM": 7000,
+          "repeatedGeometryPct": 21.4,
+          "maxWaypointToShapeM": 18,
+          "built": "2026-08-29",
+          "engine": "valhalla-pedestrian",
+          "routeReason": "旧経路のまま。立ち寄り先・入口座標・通行条件は地図で照合していない。同じ線をなぞる区間は形状の計算値で、理由は未確認。",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "dem",
+            "url": "data/elevation/s6.json",
+            "totalM": 6779,
+            "climbM": 29.8,
+            "descentM": 25,
+            "minM": 37.6,
+            "maxM": 46.3
+          }
+        }
+      ],
+      "defaultVariant": "legacy",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "旧資料（先行ページ index.html の制作主専用修行案）",
+          "url": null,
+          "checkedAt": "2026-11-16",
+          "supports": "旧案の立ち寄り先。座標と距離は計算済みの旧経路で、その後の再調査はしていない。"
+        }
+      ],
+      "openQuestions": [
+        "立ち寄り先の入口・通行条件を地図と現地で照合",
+        "同じ線をなぞる区間の理由を確認",
+        "太陽の向きと時間帯の計算"
+      ]
     },
     {
       "id": "S7",
       "slug": "s7",
       "title": "外濠・水道橋〜飯田橋〜市ケ谷〜四ツ谷 建築×水辺",
       "seriesId": "solo",
-      "seriesName": "制作主専用修行案（個人用・最大8km）",
+      "seriesName": "個人散歩（修行案 S）",
       "legacyAnchor": "course-S7",
       "legacyUrl": "../index.html#course-S7",
       "summary": "経路ノード（B案）： 水道橋駅東口 → 外堀通り → 飯田橋 → 市ケ谷 → 四ツ谷 → 四谷三丁目・信濃町方向 → 外濠の西縁を折り返して戻る（1.65km） → 千駄ケ谷駅（解散） → ゴール",
@@ -20310,17 +20502,7 @@
         "repeatedGeometryPct": 17.7,
         "maxWaypointToShapeM": 37,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "partial_dem_filled",
-          "url": "data/elevation/s7.json",
-          "totalM": 7165,
-          "climbM": 101.6,
-          "descentM": 78.1,
-          "minM": 3.3,
-          "maxM": 32.1
-        }
+        "engine": "valhalla-pedestrian"
       },
       "waypoints": [
         {
@@ -20386,14 +20568,56 @@
         "repeated_geometry_over_10pct",
         "repeated_waypoint"
       ],
-      "category": "personal"
+      "category": "personal",
+      "routeOptions": [
+        {
+          "id": "s7-legacy",
+          "variant": "legacy",
+          "strategy": "legacy_unknown",
+          "geometryUrl": "data/routes/s7.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 7165,
+          "engineDistanceM": 7173,
+          "targetDistanceM": 6900,
+          "repeatedGeometryPct": 17.7,
+          "maxWaypointToShapeM": 37,
+          "built": "2026-08-29",
+          "engine": "valhalla-pedestrian",
+          "routeReason": "旧経路のまま。立ち寄り先・入口座標・通行条件は地図で照合していない。同じ線をなぞる区間は形状の計算値で、理由は未確認。",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/s7.json",
+            "totalM": 7165,
+            "climbM": 101.6,
+            "descentM": 78.1,
+            "minM": 3.3,
+            "maxM": 32.1
+          }
+        }
+      ],
+      "defaultVariant": "legacy",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "旧資料（先行ページ index.html の制作主専用修行案）",
+          "url": null,
+          "checkedAt": "2026-11-16",
+          "supports": "旧案の立ち寄り先。座標と距離は計算済みの旧経路で、その後の再調査はしていない。"
+        }
+      ],
+      "openQuestions": [
+        "立ち寄り先の入口・通行条件を地図と現地で照合",
+        "同じ線をなぞる区間の理由を確認",
+        "太陽の向きと時間帯の計算"
+      ]
     },
     {
       "id": "S8",
       "slug": "s8",
       "title": "隅田川テラス・浅草橋〜スカイツリー（馬喰町〜押上）下町水辺",
       "seriesId": "solo",
-      "seriesName": "制作主専用修行案（個人用・最大8km）",
+      "seriesName": "個人散歩（修行案 S）",
       "legacyAnchor": "course-S8",
       "legacyUrl": "../index.html#course-S8",
       "summary": "経路ノード： 馬喰町駅 → 江戸通り → 隅田川テラス（西岸） → 吾妻橋 → 墨堤通り → 言問橋東 → 北十間川 → 押上駅 → ゴール",
@@ -20414,17 +20638,7 @@
         "repeatedGeometryPct": 19.7,
         "maxWaypointToShapeM": 14,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "partial_dem_filled",
-          "url": "data/elevation/s8.json",
-          "totalM": 6816,
-          "climbM": 10.3,
-          "descentM": 14.3,
-          "minM": 0.5,
-          "maxM": 4.6
-        }
+        "engine": "valhalla-pedestrian"
       },
       "waypoints": [
         {
@@ -20461,14 +20675,56 @@
       "auditFlags": [
         "repeated_geometry_over_10pct"
       ],
-      "category": "personal"
+      "category": "personal",
+      "routeOptions": [
+        {
+          "id": "s8-legacy",
+          "variant": "legacy",
+          "strategy": "legacy_unknown",
+          "geometryUrl": "data/routes/s8.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 6816,
+          "engineDistanceM": 6818,
+          "targetDistanceM": 6800,
+          "repeatedGeometryPct": 19.7,
+          "maxWaypointToShapeM": 14,
+          "built": "2026-08-29",
+          "engine": "valhalla-pedestrian",
+          "routeReason": "旧経路のまま。立ち寄り先・入口座標・通行条件は地図で照合していない。同じ線をなぞる区間は形状の計算値で、理由は未確認。",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/s8.json",
+            "totalM": 6816,
+            "climbM": 10.3,
+            "descentM": 14.3,
+            "minM": 0.5,
+            "maxM": 4.6
+          }
+        }
+      ],
+      "defaultVariant": "legacy",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "旧資料（先行ページ index.html の制作主専用修行案）",
+          "url": null,
+          "checkedAt": "2026-11-16",
+          "supports": "旧案の立ち寄り先。座標と距離は計算済みの旧経路で、その後の再調査はしていない。"
+        }
+      ],
+      "openQuestions": [
+        "立ち寄り先の入口・通行条件を地図と現地で照合",
+        "同じ線をなぞる区間の理由を確認",
+        "太陽の向きと時間帯の計算"
+      ]
     },
     {
       "id": "S9",
       "slug": "s9",
       "title": "青梅線・羽村〜拝島 水辺とベースサイド",
       "seriesId": "solo",
-      "seriesName": "制作主専用修行案（個人用・最大8km）",
+      "seriesName": "個人散歩（修行案 S）",
       "legacyAnchor": "course-S9",
       "legacyUrl": "../index.html#course-S9",
       "summary": "経路ノード： 羽村駅 西口 → 羽村取水堰 → 多摩川左岸遊歩道 → 福生南公園 → 福生駅東口交差点 → 国道16号ベースサイドストリート → 第2ゲート前 → 武蔵野橋北 → 拝島駅 南口",
@@ -20491,17 +20747,7 @@
         "repeatedGeometryPct": 14.8,
         "maxWaypointToShapeM": 24,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "partial_dem_filled",
-          "url": "data/elevation/s9.json",
-          "totalM": 7956,
-          "climbM": 87.2,
-          "descentM": 111.9,
-          "minM": 114.8,
-          "maxM": 146.7
-        }
+        "engine": "valhalla-pedestrian"
       },
       "waypoints": [
         {
@@ -20560,14 +20806,56 @@
         "repeated_geometry_over_10pct",
         "repeated_waypoint"
       ],
-      "category": "personal"
+      "category": "personal",
+      "routeOptions": [
+        {
+          "id": "s9-legacy",
+          "variant": "legacy",
+          "strategy": "legacy_unknown",
+          "geometryUrl": "data/routes/s9.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 7956,
+          "engineDistanceM": 7966,
+          "targetDistanceM": 8000,
+          "repeatedGeometryPct": 14.8,
+          "maxWaypointToShapeM": 24,
+          "built": "2026-08-29",
+          "engine": "valhalla-pedestrian",
+          "routeReason": "旧経路のまま。立ち寄り先・入口座標・通行条件は地図で照合していない。同じ線をなぞる区間は形状の計算値で、理由は未確認。",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/s9.json",
+            "totalM": 7956,
+            "climbM": 87.2,
+            "descentM": 111.9,
+            "minM": 114.8,
+            "maxM": 146.7
+          }
+        }
+      ],
+      "defaultVariant": "legacy",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "旧資料（先行ページ index.html の制作主専用修行案）",
+          "url": null,
+          "checkedAt": "2026-11-16",
+          "supports": "旧案の立ち寄り先。座標と距離は計算済みの旧経路で、その後の再調査はしていない。"
+        }
+      ],
+      "openQuestions": [
+        "立ち寄り先の入口・通行条件を地図と現地で照合",
+        "同じ線をなぞる区間の理由を確認",
+        "太陽の向きと時間帯の計算"
+      ]
     },
     {
       "id": "S10",
       "slug": "s10",
       "title": "横浜線・片倉城跡とみなみ野〜橋本",
       "seriesId": "solo",
-      "seriesName": "制作主専用修行案（個人用・最大8km）",
+      "seriesName": "個人散歩（修行案 S）",
       "legacyAnchor": "course-S10",
       "legacyUrl": "../index.html#course-S10",
       "summary": "経路ノード： 片倉駅 西口 → 片倉つどいの森公園 → 片倉城跡公園 → 鑓水街道 → みなみ野大橋 → みなみ野シティ → 八王子みなみ野駅 → 尾根幹線 → 橋本駅 北口",
@@ -20589,17 +20877,7 @@
         "repeatedGeometryPct": 0.5,
         "maxWaypointToShapeM": 45,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "partial_dem_filled",
-          "url": "data/elevation/s10.json",
-          "totalM": 7463,
-          "climbM": 124.9,
-          "descentM": 86.5,
-          "minM": 104.1,
-          "maxM": 183.8
-        }
+        "engine": "valhalla-pedestrian"
       },
       "waypoints": [
         {
@@ -20636,14 +20914,56 @@
       "auditFlags": [
         "waypoint_off_shape"
       ],
-      "category": "personal"
+      "category": "personal",
+      "routeOptions": [
+        {
+          "id": "s10-legacy",
+          "variant": "legacy",
+          "strategy": "legacy_unknown",
+          "geometryUrl": "data/routes/s10.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 7463,
+          "engineDistanceM": 7469,
+          "targetDistanceM": 7800,
+          "repeatedGeometryPct": 0.5,
+          "maxWaypointToShapeM": 45,
+          "built": "2026-08-29",
+          "engine": "valhalla-pedestrian",
+          "routeReason": "旧経路のまま。立ち寄り先・入口座標・通行条件は地図で照合していない。同じ線をなぞる区間は形状の計算値で、理由は未確認。",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/s10.json",
+            "totalM": 7463,
+            "climbM": 124.9,
+            "descentM": 86.5,
+            "minM": 104.1,
+            "maxM": 183.8
+          }
+        }
+      ],
+      "defaultVariant": "legacy",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "旧資料（先行ページ index.html の制作主専用修行案）",
+          "url": null,
+          "checkedAt": "2026-11-16",
+          "supports": "旧案の立ち寄り先。座標と距離は計算済みの旧経路で、その後の再調査はしていない。"
+        }
+      ],
+      "openQuestions": [
+        "立ち寄り先の入口・通行条件を地図と現地で照合",
+        "同じ線をなぞる区間の理由を確認",
+        "太陽の向きと時間帯の計算"
+      ]
     },
     {
       "id": "S11",
       "slug": "s11",
       "title": "旭が丘中央公園→片倉→みなみ野",
       "seriesId": "solo",
-      "seriesName": "制作主専用修行案（個人用・最大8km）",
+      "seriesName": "個人散歩（修行案 S）",
       "legacyAnchor": "course-S11",
       "legacyUrl": "../index.html#course-S11",
       "summary": "経路ノード： 旭が丘中央公園 → 旭が丘中央公園通り → 高倉町西 → 北八王子駅入口 → 大和田橋（浅川） → 片倉つどいの森公園 → 片倉駅 → 鑓水街道 → みなみ野大橋 → 八王子みなみ野駅",
@@ -20665,17 +20985,7 @@
         "repeatedGeometryPct": 15.7,
         "maxWaypointToShapeM": 16,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "partial_dem_filled",
-          "url": "data/elevation/s11.json",
-          "totalM": 8656,
-          "climbM": 86.9,
-          "descentM": 65.7,
-          "minM": 95.7,
-          "maxM": 149.1
-        }
+        "engine": "valhalla-pedestrian"
       },
       "waypoints": [
         {
@@ -20734,14 +21044,56 @@
         "repeated_geometry_over_10pct",
         "repeated_waypoint"
       ],
-      "category": "personal"
+      "category": "personal",
+      "routeOptions": [
+        {
+          "id": "s11-legacy",
+          "variant": "legacy",
+          "strategy": "legacy_unknown",
+          "geometryUrl": "data/routes/s11.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 8656,
+          "engineDistanceM": 8660,
+          "targetDistanceM": 8500,
+          "repeatedGeometryPct": 15.7,
+          "maxWaypointToShapeM": 16,
+          "built": "2026-08-29",
+          "engine": "valhalla-pedestrian",
+          "routeReason": "旧経路のまま。立ち寄り先・入口座標・通行条件は地図で照合していない。同じ線をなぞる区間は形状の計算値で、理由は未確認。",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/s11.json",
+            "totalM": 8656,
+            "climbM": 86.9,
+            "descentM": 65.7,
+            "minM": 95.7,
+            "maxM": 149.1
+          }
+        }
+      ],
+      "defaultVariant": "legacy",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "旧資料（先行ページ index.html の制作主専用修行案）",
+          "url": null,
+          "checkedAt": "2026-11-16",
+          "supports": "旧案の立ち寄り先。座標と距離は計算済みの旧経路で、その後の再調査はしていない。"
+        }
+      ],
+      "openQuestions": [
+        "立ち寄り先の入口・通行条件を地図と現地で照合",
+        "同じ線をなぞる区間の理由を確認",
+        "太陽の向きと時間帯の計算"
+      ]
     },
     {
       "id": "S12",
       "slug": "s12",
       "title": "旭が丘→浅川→北野街道→めじろ台",
       "seriesId": "solo",
-      "seriesName": "制作主専用修行案（個人用・最大8km）",
+      "seriesName": "個人散歩（修行案 S）",
       "legacyAnchor": "course-S12",
       "legacyUrl": "../index.html#course-S12",
       "summary": "経路ノード： 旭が丘中央公園 → 高倉町 → 石川町 → 長沼橋（浅川） → 浅川サイクリングロード → 北野街道 → 北野駅南口 → めじろ台一丁目 → めじろ台駅",
@@ -20763,17 +21115,7 @@
         "repeatedGeometryPct": 3.7,
         "maxWaypointToShapeM": 16,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "partial_dem_filled",
-          "url": "data/elevation/s12.json",
-          "totalM": 7839,
-          "climbM": 111,
-          "descentM": 61.1,
-          "minM": 95.7,
-          "maxM": 172.9
-        }
+        "engine": "valhalla-pedestrian"
       },
       "waypoints": [
         {
@@ -20824,14 +21166,56 @@
       "auditFlags": [
         "repeated_waypoint"
       ],
-      "category": "personal"
+      "category": "personal",
+      "routeOptions": [
+        {
+          "id": "s12-legacy",
+          "variant": "legacy",
+          "strategy": "legacy_unknown",
+          "geometryUrl": "data/routes/s12.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 7839,
+          "engineDistanceM": 7845,
+          "targetDistanceM": 8000,
+          "repeatedGeometryPct": 3.7,
+          "maxWaypointToShapeM": 16,
+          "built": "2026-08-29",
+          "engine": "valhalla-pedestrian",
+          "routeReason": "旧経路のまま。立ち寄り先・入口座標・通行条件は地図で照合していない。同じ線をなぞる区間は形状の計算値で、理由は未確認。",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/s12.json",
+            "totalM": 7839,
+            "climbM": 111,
+            "descentM": 61.1,
+            "minM": 95.7,
+            "maxM": 172.9
+          }
+        }
+      ],
+      "defaultVariant": "legacy",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "旧資料（先行ページ index.html の制作主専用修行案）",
+          "url": null,
+          "checkedAt": "2026-11-16",
+          "supports": "旧案の立ち寄り先。座標と距離は計算済みの旧経路で、その後の再調査はしていない。"
+        }
+      ],
+      "openQuestions": [
+        "立ち寄り先の入口・通行条件を地図と現地で照合",
+        "同じ線をなぞる区間の理由を確認",
+        "太陽の向きと時間帯の計算"
+      ]
     },
     {
       "id": "S13",
       "slug": "s13",
       "title": "旭が丘→湯殿川・浅川→高幡不動",
       "seriesId": "solo",
-      "seriesName": "制作主専用修行案（個人用・最大8km）",
+      "seriesName": "個人散歩（修行案 S）",
       "legacyAnchor": "course-S13",
       "legacyUrl": "../index.html#course-S13",
       "summary": "経路ノード： 旭が丘中央公園 → 北八王子駅入口 → 湯殿川遊歩道 → 浅川左岸遊歩道 → 新浅川橋 → 万願寺駅（6.5km） → 川崎街道 → 高幡不動参道 → 高幡不動駅",
@@ -20853,17 +21237,7 @@
         "repeatedGeometryPct": 0.5,
         "maxWaypointToShapeM": 24,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "partial_dem_filled",
-          "url": "data/elevation/s13.json",
-          "totalM": 8698,
-          "climbM": 137.8,
-          "descentM": 182.9,
-          "minM": 67.1,
-          "maxM": 147.3
-        }
+        "engine": "valhalla-pedestrian"
       },
       "waypoints": [
         {
@@ -20905,14 +21279,56 @@
       "climbM": 178.3,
       "descentM": 216,
       "auditFlags": [],
-      "category": "personal"
+      "category": "personal",
+      "routeOptions": [
+        {
+          "id": "s13-legacy",
+          "variant": "legacy",
+          "strategy": "legacy_unknown",
+          "geometryUrl": "data/routes/s13.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 8698,
+          "engineDistanceM": 8707,
+          "targetDistanceM": 8200,
+          "repeatedGeometryPct": 0.5,
+          "maxWaypointToShapeM": 24,
+          "built": "2026-08-29",
+          "engine": "valhalla-pedestrian",
+          "routeReason": "旧経路のまま。立ち寄り先・入口座標・通行条件は地図で照合していない。同じ線をなぞる区間は形状の計算値で、理由は未確認。",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/s13.json",
+            "totalM": 8698,
+            "climbM": 137.8,
+            "descentM": 182.9,
+            "minM": 67.1,
+            "maxM": 147.3
+          }
+        }
+      ],
+      "defaultVariant": "legacy",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "旧資料（先行ページ index.html の制作主専用修行案）",
+          "url": null,
+          "checkedAt": "2026-11-16",
+          "supports": "旧案の立ち寄り先。座標と距離は計算済みの旧経路で、その後の再調査はしていない。"
+        }
+      ],
+      "openQuestions": [
+        "立ち寄り先の入口・通行条件を地図と現地で照合",
+        "同じ線をなぞる区間の理由を確認",
+        "太陽の向きと時間帯の計算"
+      ]
     },
     {
       "id": "E1",
       "slug": "e1",
       "title": "三島・源兵衛川と三嶋大社",
       "seriesId": "enso",
-      "seriesName": "遠征検討シリーズ（東海・伊豆箱根5コース）",
+      "seriesName": "個人散歩（遠征検討 E）",
       "legacyAnchor": "course-E1",
       "legacyUrl": "../index.html#course-E1",
       "summary": "経路ノード： 地図「遠征／全国」シリーズで確認（詳細は添付リサーチ参照・平坦舗装／エレベーター／多目的トイレを優先） → ゴール",
@@ -20933,17 +21349,7 @@
         "repeatedGeometryPct": 32.4,
         "maxWaypointToShapeM": 71,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "partial_dem_filled",
-          "url": "data/elevation/e1.json",
-          "totalM": 6513,
-          "climbM": 33.6,
-          "descentM": 35.7,
-          "minM": 15.5,
-          "maxM": 25
-        }
+        "engine": "valhalla-pedestrian"
       },
       "waypoints": [
         {
@@ -20996,14 +21402,56 @@
         "repeated_waypoint",
         "waypoint_off_shape"
       ],
-      "category": "personal"
+      "category": "personal",
+      "routeOptions": [
+        {
+          "id": "e1-legacy",
+          "variant": "legacy",
+          "strategy": "legacy_unknown",
+          "geometryUrl": "data/routes/e1.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 6513,
+          "engineDistanceM": 6524,
+          "targetDistanceM": 6000,
+          "repeatedGeometryPct": 32.4,
+          "maxWaypointToShapeM": 71,
+          "built": "2026-08-29",
+          "engine": "valhalla-pedestrian",
+          "routeReason": "旧経路のまま。立ち寄り先・入口座標・通行条件は地図で照合していない。同じ線をなぞる区間は形状の計算値で、理由は未確認。",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/e1.json",
+            "totalM": 6513,
+            "climbM": 33.6,
+            "descentM": 35.7,
+            "minM": 15.5,
+            "maxM": 25
+          }
+        }
+      ],
+      "defaultVariant": "legacy",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "旧資料（先行ページ index.html の制作主専用修行案）",
+          "url": null,
+          "checkedAt": "2026-11-16",
+          "supports": "旧案の立ち寄り先。座標と距離は計算済みの旧経路で、その後の再調査はしていない。"
+        }
+      ],
+      "openQuestions": [
+        "立ち寄り先の入口・通行条件を地図と現地で照合",
+        "同じ線をなぞる区間の理由を確認",
+        "太陽の向きと時間帯の計算"
+      ]
     },
     {
       "id": "E2",
       "slug": "e2",
       "title": "静岡・駿府城と浅間神社",
       "seriesId": "enso",
-      "seriesName": "遠征検討シリーズ（東海・伊豆箱根5コース）",
+      "seriesName": "個人散歩（遠征検討 E）",
       "legacyAnchor": "course-E2",
       "legacyUrl": "../index.html#course-E2",
       "summary": "経路ノード： 地図「遠征／全国」シリーズで確認（詳細は添付リサーチ参照・平坦舗装／エレベーター／多目的トイレを優先） → ゴール",
@@ -21024,17 +21472,7 @@
         "repeatedGeometryPct": 2.9,
         "maxWaypointToShapeM": 44,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "partial_dem_filled",
-          "url": "data/elevation/e2.json",
-          "totalM": 7197,
-          "climbM": 13.4,
-          "descentM": 26.2,
-          "minM": 5.4,
-          "maxM": 20.1
-        }
+        "engine": "valhalla-pedestrian"
       },
       "waypoints": [
         {
@@ -21064,14 +21502,56 @@
       "auditFlags": [
         "waypoint_off_shape"
       ],
-      "category": "personal"
+      "category": "personal",
+      "routeOptions": [
+        {
+          "id": "e2-legacy",
+          "variant": "legacy",
+          "strategy": "legacy_unknown",
+          "geometryUrl": "data/routes/e2.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 7197,
+          "engineDistanceM": 7206,
+          "targetDistanceM": 7000,
+          "repeatedGeometryPct": 2.9,
+          "maxWaypointToShapeM": 44,
+          "built": "2026-08-29",
+          "engine": "valhalla-pedestrian",
+          "routeReason": "旧経路のまま。立ち寄り先・入口座標・通行条件は地図で照合していない。同じ線をなぞる区間は形状の計算値で、理由は未確認。",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/e2.json",
+            "totalM": 7197,
+            "climbM": 13.4,
+            "descentM": 26.2,
+            "minM": 5.4,
+            "maxM": 20.1
+          }
+        }
+      ],
+      "defaultVariant": "legacy",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "旧資料（先行ページ index.html の制作主専用修行案）",
+          "url": null,
+          "checkedAt": "2026-11-16",
+          "supports": "旧案の立ち寄り先。座標と距離は計算済みの旧経路で、その後の再調査はしていない。"
+        }
+      ],
+      "openQuestions": [
+        "立ち寄り先の入口・通行条件を地図と現地で照合",
+        "同じ線をなぞる区間の理由を確認",
+        "太陽の向きと時間帯の計算"
+      ]
     },
     {
       "id": "E3",
       "slug": "e3",
       "title": "浜松・遠鉄と浜松城",
       "seriesId": "enso",
-      "seriesName": "遠征検討シリーズ（東海・伊豆箱根5コース）",
+      "seriesName": "個人散歩（遠征検討 E）",
       "legacyAnchor": "course-E3",
       "legacyUrl": "../index.html#course-E3",
       "summary": "経路ノード： 地図「遠征／全国」シリーズで確認（詳細は添付リサーチ参照・平坦舗装／エレベーター／多目的トイレを優先） → ゴール",
@@ -21092,17 +21572,7 @@
         "repeatedGeometryPct": 33.1,
         "maxWaypointToShapeM": 20,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "partial_dem_filled",
-          "url": "data/elevation/e3.json",
-          "totalM": 6802,
-          "climbM": 13,
-          "descentM": 24.9,
-          "minM": 2.8,
-          "maxM": 17.2
-        }
+        "engine": "valhalla-pedestrian"
       },
       "waypoints": [
         {
@@ -21154,14 +21624,56 @@
         "repeated_geometry_over_10pct",
         "repeated_waypoint"
       ],
-      "category": "personal"
+      "category": "personal",
+      "routeOptions": [
+        {
+          "id": "e3-legacy",
+          "variant": "legacy",
+          "strategy": "legacy_unknown",
+          "geometryUrl": "data/routes/e3.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 6802,
+          "engineDistanceM": 6806,
+          "targetDistanceM": 7000,
+          "repeatedGeometryPct": 33.1,
+          "maxWaypointToShapeM": 20,
+          "built": "2026-08-29",
+          "engine": "valhalla-pedestrian",
+          "routeReason": "旧経路のまま。立ち寄り先・入口座標・通行条件は地図で照合していない。同じ線をなぞる区間は形状の計算値で、理由は未確認。",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/e3.json",
+            "totalM": 6802,
+            "climbM": 13,
+            "descentM": 24.9,
+            "minM": 2.8,
+            "maxM": 17.2
+          }
+        }
+      ],
+      "defaultVariant": "legacy",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "旧資料（先行ページ index.html の制作主専用修行案）",
+          "url": null,
+          "checkedAt": "2026-11-16",
+          "supports": "旧案の立ち寄り先。座標と距離は計算済みの旧経路で、その後の再調査はしていない。"
+        }
+      ],
+      "openQuestions": [
+        "立ち寄り先の入口・通行条件を地図と現地で照合",
+        "同じ線をなぞる区間の理由を確認",
+        "太陽の向きと時間帯の計算"
+      ]
     },
     {
       "id": "E4",
       "slug": "e4",
       "title": "名古屋・大須と名古屋城",
       "seriesId": "enso",
-      "seriesName": "遠征検討シリーズ（東海・伊豆箱根5コース）",
+      "seriesName": "個人散歩（遠征検討 E）",
       "legacyAnchor": "course-E4",
       "legacyUrl": "../index.html#course-E4",
       "summary": "経路ノード： 地図「遠征／全国」シリーズで確認（詳細は添付リサーチ参照・平坦舗装／エレベーター／多目的トイレを優先） → ゴール",
@@ -21182,17 +21694,7 @@
         "repeatedGeometryPct": 0.5,
         "maxWaypointToShapeM": 9,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "partial_dem_filled",
-          "url": "data/elevation/e4.json",
-          "totalM": 6896,
-          "climbM": 13.1,
-          "descentM": 22.2,
-          "minM": 1.3,
-          "maxM": 15
-        }
+        "engine": "valhalla-pedestrian"
       },
       "waypoints": [
         {
@@ -21234,14 +21736,56 @@
       "climbM": 89.4,
       "descentM": 92.7,
       "auditFlags": [],
-      "category": "personal"
+      "category": "personal",
+      "routeOptions": [
+        {
+          "id": "e4-legacy",
+          "variant": "legacy",
+          "strategy": "legacy_unknown",
+          "geometryUrl": "data/routes/e4.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 6896,
+          "engineDistanceM": 6898,
+          "targetDistanceM": 7000,
+          "repeatedGeometryPct": 0.5,
+          "maxWaypointToShapeM": 9,
+          "built": "2026-08-29",
+          "engine": "valhalla-pedestrian",
+          "routeReason": "旧経路のまま。立ち寄り先・入口座標・通行条件は地図で照合していない。同じ線をなぞる区間は形状の計算値で、理由は未確認。",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/e4.json",
+            "totalM": 6896,
+            "climbM": 13.1,
+            "descentM": 22.2,
+            "minM": 1.3,
+            "maxM": 15
+          }
+        }
+      ],
+      "defaultVariant": "legacy",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "旧資料（先行ページ index.html の制作主専用修行案）",
+          "url": null,
+          "checkedAt": "2026-11-16",
+          "supports": "旧案の立ち寄り先。座標と距離は計算済みの旧経路で、その後の再調査はしていない。"
+        }
+      ],
+      "openQuestions": [
+        "立ち寄り先の入口・通行条件を地図と現地で照合",
+        "同じ線をなぞる区間の理由を確認",
+        "太陽の向きと時間帯の計算"
+      ]
     },
     {
       "id": "E5",
       "slug": "e5",
       "title": "小田原・国府津 海と駅伝",
       "seriesId": "enso",
-      "seriesName": "遠征検討シリーズ（東海・伊豆箱根5コース）",
+      "seriesName": "個人散歩（遠征検討 E）",
       "legacyAnchor": "course-E5",
       "legacyUrl": "../index.html#course-E5",
       "summary": "経路ノード： 地図「遠征／全国」シリーズで確認（詳細は添付リサーチ参照・平坦舗装／エレベーター／多目的トイレを優先） → ゴール",
@@ -21262,17 +21806,7 @@
         "repeatedGeometryPct": 25.3,
         "maxWaypointToShapeM": 74,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "partial_dem_filled",
-          "url": "data/elevation/e5.json",
-          "totalM": 7411,
-          "climbM": 111.7,
-          "descentM": 90.1,
-          "minM": 6.6,
-          "maxM": 101.8
-        }
+        "engine": "valhalla-pedestrian"
       },
       "waypoints": [
         {
@@ -21325,14 +21859,56 @@
         "repeated_waypoint",
         "waypoint_off_shape"
       ],
-      "category": "personal"
+      "category": "personal",
+      "routeOptions": [
+        {
+          "id": "e5-legacy",
+          "variant": "legacy",
+          "strategy": "legacy_unknown",
+          "geometryUrl": "data/routes/e5.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 7411,
+          "engineDistanceM": 7419,
+          "targetDistanceM": 7000,
+          "repeatedGeometryPct": 25.3,
+          "maxWaypointToShapeM": 74,
+          "built": "2026-08-29",
+          "engine": "valhalla-pedestrian",
+          "routeReason": "旧経路のまま。立ち寄り先・入口座標・通行条件は地図で照合していない。同じ線をなぞる区間は形状の計算値で、理由は未確認。",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/e5.json",
+            "totalM": 7411,
+            "climbM": 111.7,
+            "descentM": 90.1,
+            "minM": 6.6,
+            "maxM": 101.8
+          }
+        }
+      ],
+      "defaultVariant": "legacy",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "旧資料（先行ページ index.html の制作主専用修行案）",
+          "url": null,
+          "checkedAt": "2026-11-16",
+          "supports": "旧案の立ち寄り先。座標と距離は計算済みの旧経路で、その後の再調査はしていない。"
+        }
+      ],
+      "openQuestions": [
+        "立ち寄り先の入口・通行条件を地図と現地で照合",
+        "同じ線をなぞる区間の理由を確認",
+        "太陽の向きと時間帯の計算"
+      ]
     },
     {
       "id": "Z1",
       "slug": "z1",
       "title": "広島・平和記念公園と川と橋",
       "seriesId": "zenkoku",
-      "seriesName": "全国・いつか行きたい（広島・神戸・福岡ほか）",
+      "seriesName": "個人散歩（全国 Z）",
       "legacyAnchor": "course-Z1",
       "legacyUrl": "../index.html#course-Z1",
       "summary": "経路ノード： 地図「遠征／全国」シリーズで確認（詳細は添付リサーチ参照・平坦舗装／エレベーター／多目的トイレを優先） → ゴール",
@@ -21353,17 +21929,7 @@
         "repeatedGeometryPct": 13.5,
         "maxWaypointToShapeM": 14,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "partial_dem_filled",
-          "url": "data/elevation/z1.json",
-          "totalM": 7254,
-          "climbM": 18.8,
-          "descentM": 18.8,
-          "minM": 0.3,
-          "maxM": 5.5
-        }
+        "engine": "valhalla-pedestrian"
       },
       "waypoints": [
         {
@@ -21415,14 +21981,56 @@
         "repeated_geometry_over_10pct",
         "repeated_waypoint"
       ],
-      "category": "personal"
+      "category": "personal",
+      "routeOptions": [
+        {
+          "id": "z1-legacy",
+          "variant": "legacy",
+          "strategy": "legacy_unknown",
+          "geometryUrl": "data/routes/z1.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 7254,
+          "engineDistanceM": 7266,
+          "targetDistanceM": 7500,
+          "repeatedGeometryPct": 13.5,
+          "maxWaypointToShapeM": 14,
+          "built": "2026-08-29",
+          "engine": "valhalla-pedestrian",
+          "routeReason": "旧経路のまま。立ち寄り先・入口座標・通行条件は地図で照合していない。同じ線をなぞる区間は形状の計算値で、理由は未確認。",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/z1.json",
+            "totalM": 7254,
+            "climbM": 18.8,
+            "descentM": 18.8,
+            "minM": 0.3,
+            "maxM": 5.5
+          }
+        }
+      ],
+      "defaultVariant": "legacy",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "旧資料（先行ページ index.html の制作主専用修行案）",
+          "url": null,
+          "checkedAt": "2026-11-16",
+          "supports": "旧案の立ち寄り先。座標と距離は計算済みの旧経路で、その後の再調査はしていない。"
+        }
+      ],
+      "openQuestions": [
+        "立ち寄り先の入口・通行条件を地図と現地で照合",
+        "同じ線をなぞる区間の理由を確認",
+        "太陽の向きと時間帯の計算"
+      ]
     },
     {
       "id": "Z2",
       "slug": "z2",
       "title": "神戸・三宮〜ハーバーランド港夜景",
       "seriesId": "zenkoku",
-      "seriesName": "全国・いつか行きたい（広島・神戸・福岡ほか）",
+      "seriesName": "個人散歩（全国 Z）",
       "legacyAnchor": "course-Z2",
       "legacyUrl": "../index.html#course-Z2",
       "summary": "経路ノード： 地図「遠征／全国」シリーズで確認（詳細は添付リサーチ参照・平坦舗装／エレベーター／多目的トイレを優先） → ゴール",
@@ -21443,17 +22051,7 @@
         "repeatedGeometryPct": 17.1,
         "maxWaypointToShapeM": 27,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "dem",
-          "url": "data/elevation/z2.json",
-          "totalM": 6940,
-          "climbM": 12.3,
-          "descentM": 17.3,
-          "minM": 1.2,
-          "maxM": 10
-        }
+        "engine": "valhalla-pedestrian"
       },
       "waypoints": [
         {
@@ -21505,14 +22103,56 @@
         "repeated_geometry_over_10pct",
         "repeated_waypoint"
       ],
-      "category": "personal"
+      "category": "personal",
+      "routeOptions": [
+        {
+          "id": "z2-legacy",
+          "variant": "legacy",
+          "strategy": "legacy_unknown",
+          "geometryUrl": "data/routes/z2.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 6940,
+          "engineDistanceM": 6944,
+          "targetDistanceM": 7500,
+          "repeatedGeometryPct": 17.1,
+          "maxWaypointToShapeM": 27,
+          "built": "2026-08-29",
+          "engine": "valhalla-pedestrian",
+          "routeReason": "旧経路のまま。立ち寄り先・入口座標・通行条件は地図で照合していない。同じ線をなぞる区間は形状の計算値で、理由は未確認。",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "dem",
+            "url": "data/elevation/z2.json",
+            "totalM": 6940,
+            "climbM": 12.3,
+            "descentM": 17.3,
+            "minM": 1.2,
+            "maxM": 10
+          }
+        }
+      ],
+      "defaultVariant": "legacy",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "旧資料（先行ページ index.html の制作主専用修行案）",
+          "url": null,
+          "checkedAt": "2026-11-16",
+          "supports": "旧案の立ち寄り先。座標と距離は計算済みの旧経路で、その後の再調査はしていない。"
+        }
+      ],
+      "openQuestions": [
+        "立ち寄り先の入口・通行条件を地図と現地で照合",
+        "同じ線をなぞる区間の理由を確認",
+        "太陽の向きと時間帯の計算"
+      ]
     },
     {
       "id": "Z3",
       "slug": "z3",
       "title": "福岡・博多〜天神〜大濠公園",
       "seriesId": "zenkoku",
-      "seriesName": "全国・いつか行きたい（広島・神戸・福岡ほか）",
+      "seriesName": "個人散歩（全国 Z）",
       "legacyAnchor": "course-Z3",
       "legacyUrl": "../index.html#course-Z3",
       "summary": "経路ノード： 地図「遠征／全国」シリーズで確認（詳細は添付リサーチ参照・平坦舗装／エレベーター／多目的トイレを優先） → ゴール",
@@ -21533,17 +22173,7 @@
         "repeatedGeometryPct": 22.9,
         "maxWaypointToShapeM": 86,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "partial_dem_filled",
-          "url": "data/elevation/z3.json",
-          "totalM": 7312,
-          "climbM": 13.3,
-          "descentM": 15,
-          "minM": 1.4,
-          "maxM": 5.8
-        }
+        "engine": "valhalla-pedestrian"
       },
       "waypoints": [
         {
@@ -21596,14 +22226,56 @@
         "repeated_waypoint",
         "waypoint_off_shape"
       ],
-      "category": "personal"
+      "category": "personal",
+      "routeOptions": [
+        {
+          "id": "z3-legacy",
+          "variant": "legacy",
+          "strategy": "legacy_unknown",
+          "geometryUrl": "data/routes/z3.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 7312,
+          "engineDistanceM": 7316,
+          "targetDistanceM": 7500,
+          "repeatedGeometryPct": 22.9,
+          "maxWaypointToShapeM": 86,
+          "built": "2026-08-29",
+          "engine": "valhalla-pedestrian",
+          "routeReason": "旧経路のまま。立ち寄り先・入口座標・通行条件は地図で照合していない。同じ線をなぞる区間は形状の計算値で、理由は未確認。",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/z3.json",
+            "totalM": 7312,
+            "climbM": 13.3,
+            "descentM": 15,
+            "minM": 1.4,
+            "maxM": 5.8
+          }
+        }
+      ],
+      "defaultVariant": "legacy",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "旧資料（先行ページ index.html の制作主専用修行案）",
+          "url": null,
+          "checkedAt": "2026-11-16",
+          "supports": "旧案の立ち寄り先。座標と距離は計算済みの旧経路で、その後の再調査はしていない。"
+        }
+      ],
+      "openQuestions": [
+        "立ち寄り先の入口・通行条件を地図と現地で照合",
+        "同じ線をなぞる区間の理由を確認",
+        "太陽の向きと時間帯の計算"
+      ]
     },
     {
       "id": "Z4",
       "slug": "z4",
       "title": "松山・道後温泉と城下町",
       "seriesId": "zenkoku",
-      "seriesName": "全国・いつか行きたい（広島・神戸・福岡ほか）",
+      "seriesName": "個人散歩（全国 Z）",
       "legacyAnchor": "course-Z4",
       "legacyUrl": "../index.html#course-Z4",
       "summary": "経路ノード： 地図「遠征／全国」シリーズで確認（詳細は添付リサーチ参照・平坦舗装／エレベーター／多目的トイレを優先） → ゴール",
@@ -21624,17 +22296,7 @@
         "repeatedGeometryPct": 16.8,
         "maxWaypointToShapeM": 19,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "dem",
-          "url": "data/elevation/z4.json",
-          "totalM": 6507,
-          "climbM": 109.6,
-          "descentM": 91.8,
-          "minM": 21.9,
-          "maxM": 128.9
-        }
+        "engine": "valhalla-pedestrian"
       },
       "waypoints": [
         {
@@ -21686,14 +22348,56 @@
         "repeated_geometry_over_10pct",
         "repeated_waypoint"
       ],
-      "category": "personal"
+      "category": "personal",
+      "routeOptions": [
+        {
+          "id": "z4-legacy",
+          "variant": "legacy",
+          "strategy": "legacy_unknown",
+          "geometryUrl": "data/routes/z4.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 6507,
+          "engineDistanceM": 6514,
+          "targetDistanceM": 7000,
+          "repeatedGeometryPct": 16.8,
+          "maxWaypointToShapeM": 19,
+          "built": "2026-08-29",
+          "engine": "valhalla-pedestrian",
+          "routeReason": "旧経路のまま。立ち寄り先・入口座標・通行条件は地図で照合していない。同じ線をなぞる区間は形状の計算値で、理由は未確認。",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "dem",
+            "url": "data/elevation/z4.json",
+            "totalM": 6507,
+            "climbM": 109.6,
+            "descentM": 91.8,
+            "minM": 21.9,
+            "maxM": 128.9
+          }
+        }
+      ],
+      "defaultVariant": "legacy",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "旧資料（先行ページ index.html の制作主専用修行案）",
+          "url": null,
+          "checkedAt": "2026-11-16",
+          "supports": "旧案の立ち寄り先。座標と距離は計算済みの旧経路で、その後の再調査はしていない。"
+        }
+      ],
+      "openQuestions": [
+        "立ち寄り先の入口・通行条件を地図と現地で照合",
+        "同じ線をなぞる区間の理由を確認",
+        "太陽の向きと時間帯の計算"
+      ]
     },
     {
       "id": "Z5",
       "slug": "z5",
       "title": "富山・環水公園と立山連峰",
       "seriesId": "zenkoku",
-      "seriesName": "全国・いつか行きたい（広島・神戸・福岡ほか）",
+      "seriesName": "個人散歩（全国 Z）",
       "legacyAnchor": "course-Z5",
       "legacyUrl": "../index.html#course-Z5",
       "summary": "経路ノード： 地図「遠征／全国」シリーズで確認（詳細は添付リサーチ参照・平坦舗装／エレベーター／多目的トイレを優先） → ゴール",
@@ -21714,17 +22418,7 @@
         "repeatedGeometryPct": 25.4,
         "maxWaypointToShapeM": 115,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "partial_dem_filled",
-          "url": "data/elevation/z5.json",
-          "totalM": 6976,
-          "climbM": 33.6,
-          "descentM": 29.5,
-          "minM": 1,
-          "maxM": 10.1
-        }
+        "engine": "valhalla-pedestrian"
       },
       "waypoints": [
         {
@@ -21784,14 +22478,56 @@
         "repeated_waypoint",
         "waypoint_off_shape"
       ],
-      "category": "personal"
+      "category": "personal",
+      "routeOptions": [
+        {
+          "id": "z5-legacy",
+          "variant": "legacy",
+          "strategy": "legacy_unknown",
+          "geometryUrl": "data/routes/z5.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 6976,
+          "engineDistanceM": 6976,
+          "targetDistanceM": 7500,
+          "repeatedGeometryPct": 25.4,
+          "maxWaypointToShapeM": 115,
+          "built": "2026-08-29",
+          "engine": "valhalla-pedestrian",
+          "routeReason": "旧経路のまま。立ち寄り先・入口座標・通行条件は地図で照合していない。同じ線をなぞる区間は形状の計算値で、理由は未確認。",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/z5.json",
+            "totalM": 6976,
+            "climbM": 33.6,
+            "descentM": 29.5,
+            "minM": 1,
+            "maxM": 10.1
+          }
+        }
+      ],
+      "defaultVariant": "legacy",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "旧資料（先行ページ index.html の制作主専用修行案）",
+          "url": null,
+          "checkedAt": "2026-11-16",
+          "supports": "旧案の立ち寄り先。座標と距離は計算済みの旧経路で、その後の再調査はしていない。"
+        }
+      ],
+      "openQuestions": [
+        "立ち寄り先の入口・通行条件を地図と現地で照合",
+        "同じ線をなぞる区間の理由を確認",
+        "太陽の向きと時間帯の計算"
+      ]
     },
     {
       "id": "Z6",
       "slug": "z6",
       "title": "札幌・大通〜中島公園",
       "seriesId": "zenkoku",
-      "seriesName": "全国・いつか行きたい（広島・神戸・福岡ほか）",
+      "seriesName": "個人散歩（全国 Z）",
       "legacyAnchor": "course-Z6",
       "legacyUrl": "../index.html#course-Z6",
       "summary": "経路ノード： 地図「遠征／全国」シリーズで確認（詳細は添付リサーチ参照・平坦舗装／エレベーター／多目的トイレを優先） → ゴール",
@@ -21812,17 +22548,7 @@
         "repeatedGeometryPct": 3.7,
         "maxWaypointToShapeM": 38,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "dem",
-          "url": "data/elevation/z6.json",
-          "totalM": 8009,
-          "climbM": 22.7,
-          "descentM": 15.6,
-          "minM": 16.9,
-          "maxM": 31.9
-        }
+        "engine": "valhalla-pedestrian"
       },
       "waypoints": [
         {
@@ -21873,14 +22599,56 @@
       "auditFlags": [
         "repeated_waypoint"
       ],
-      "category": "personal"
+      "category": "personal",
+      "routeOptions": [
+        {
+          "id": "z6-legacy",
+          "variant": "legacy",
+          "strategy": "legacy_unknown",
+          "geometryUrl": "data/routes/z6.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 8009,
+          "engineDistanceM": 8007,
+          "targetDistanceM": 7500,
+          "repeatedGeometryPct": 3.7,
+          "maxWaypointToShapeM": 38,
+          "built": "2026-08-29",
+          "engine": "valhalla-pedestrian",
+          "routeReason": "旧経路のまま。立ち寄り先・入口座標・通行条件は地図で照合していない。同じ線をなぞる区間は形状の計算値で、理由は未確認。",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "dem",
+            "url": "data/elevation/z6.json",
+            "totalM": 8009,
+            "climbM": 22.7,
+            "descentM": 15.6,
+            "minM": 16.9,
+            "maxM": 31.9
+          }
+        }
+      ],
+      "defaultVariant": "legacy",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "旧資料（先行ページ index.html の制作主専用修行案）",
+          "url": null,
+          "checkedAt": "2026-11-16",
+          "supports": "旧案の立ち寄り先。座標と距離は計算済みの旧経路で、その後の再調査はしていない。"
+        }
+      ],
+      "openQuestions": [
+        "立ち寄り先の入口・通行条件を地図と現地で照合",
+        "同じ線をなぞる区間の理由を確認",
+        "太陽の向きと時間帯の計算"
+      ]
     },
     {
       "id": "Z7",
       "slug": "z7",
       "title": "京都・鴨川フラットウォーク",
       "seriesId": "zenkoku",
-      "seriesName": "全国・いつか行きたい（広島・神戸・福岡ほか）",
+      "seriesName": "個人散歩（全国 Z）",
       "legacyAnchor": "course-Z7",
       "legacyUrl": "../index.html#course-Z7",
       "summary": "経路ノード： 地図「遠征／全国」シリーズで確認（詳細は添付リサーチ参照・平坦舗装／エレベーター／多目的トイレを優先） → ゴール",
@@ -21901,17 +22669,7 @@
         "repeatedGeometryPct": 15.3,
         "maxWaypointToShapeM": 5,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "partial_dem_filled",
-          "url": "data/elevation/z7.json",
-          "totalM": 7257,
-          "climbM": 35.2,
-          "descentM": 53.6,
-          "minM": 26.8,
-          "maxM": 48.8
-        }
+        "engine": "valhalla-pedestrian"
       },
       "waypoints": [
         {
@@ -21963,14 +22721,56 @@
         "repeated_geometry_over_10pct",
         "repeated_waypoint"
       ],
-      "category": "personal"
+      "category": "personal",
+      "routeOptions": [
+        {
+          "id": "z7-legacy",
+          "variant": "legacy",
+          "strategy": "legacy_unknown",
+          "geometryUrl": "data/routes/z7.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 7257,
+          "engineDistanceM": 7259,
+          "targetDistanceM": 7600,
+          "repeatedGeometryPct": 15.3,
+          "maxWaypointToShapeM": 5,
+          "built": "2026-08-29",
+          "engine": "valhalla-pedestrian",
+          "routeReason": "旧経路のまま。立ち寄り先・入口座標・通行条件は地図で照合していない。同じ線をなぞる区間は形状の計算値で、理由は未確認。",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/z7.json",
+            "totalM": 7257,
+            "climbM": 35.2,
+            "descentM": 53.6,
+            "minM": 26.8,
+            "maxM": 48.8
+          }
+        }
+      ],
+      "defaultVariant": "legacy",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "旧資料（先行ページ index.html の制作主専用修行案）",
+          "url": null,
+          "checkedAt": "2026-11-16",
+          "supports": "旧案の立ち寄り先。座標と距離は計算済みの旧経路で、その後の再調査はしていない。"
+        }
+      ],
+      "openQuestions": [
+        "立ち寄り先の入口・通行条件を地図と現地で照合",
+        "同じ線をなぞる区間の理由を確認",
+        "太陽の向きと時間帯の計算"
+      ]
     },
     {
       "id": "Z8",
       "slug": "z8",
       "title": "那覇・国際通りと波上宮",
       "seriesId": "zenkoku",
-      "seriesName": "全国・いつか行きたい（広島・神戸・福岡ほか）",
+      "seriesName": "個人散歩（全国 Z）",
       "legacyAnchor": "course-Z8",
       "legacyUrl": "../index.html#course-Z8",
       "summary": "経路ノード： 地図「遠征／全国」シリーズで確認（詳細は添付リサーチ参照・平坦舗装／エレベーター／多目的トイレを優先） → ゴール",
@@ -21991,17 +22791,7 @@
         "repeatedGeometryPct": 24.3,
         "maxWaypointToShapeM": 8,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "partial_dem_filled",
-          "url": "data/elevation/z8.json",
-          "totalM": 6929,
-          "climbM": 117.5,
-          "descentM": 111.4,
-          "minM": 2.3,
-          "maxM": 74.1
-        }
+        "engine": "valhalla-pedestrian"
       },
       "waypoints": [
         {
@@ -22053,7 +22843,49 @@
         "repeated_geometry_over_10pct",
         "repeated_waypoint"
       ],
-      "category": "personal"
+      "category": "personal",
+      "routeOptions": [
+        {
+          "id": "z8-legacy",
+          "variant": "legacy",
+          "strategy": "legacy_unknown",
+          "geometryUrl": "data/routes/z8.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 6929,
+          "engineDistanceM": 6942,
+          "targetDistanceM": 7000,
+          "repeatedGeometryPct": 24.3,
+          "maxWaypointToShapeM": 8,
+          "built": "2026-08-29",
+          "engine": "valhalla-pedestrian",
+          "routeReason": "旧経路のまま。立ち寄り先・入口座標・通行条件は地図で照合していない。同じ線をなぞる区間は形状の計算値で、理由は未確認。",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/z8.json",
+            "totalM": 6929,
+            "climbM": 117.5,
+            "descentM": 111.4,
+            "minM": 2.3,
+            "maxM": 74.1
+          }
+        }
+      ],
+      "defaultVariant": "legacy",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "旧資料（先行ページ index.html の制作主専用修行案）",
+          "url": null,
+          "checkedAt": "2026-11-16",
+          "supports": "旧案の立ち寄り先。座標と距離は計算済みの旧経路で、その後の再調査はしていない。"
+        }
+      ],
+      "openQuestions": [
+        "立ち寄り先の入口・通行条件を地図と現地で照合",
+        "同じ線をなぞる区間の理由を確認",
+        "太陽の向きと時間帯の計算"
+      ]
     },
     {
       "id": "No.56",
