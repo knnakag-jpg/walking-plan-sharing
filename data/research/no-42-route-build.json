@@ -1,0 +1,83 @@
+{
+  "calculatedAt": "2026-11-16T12:06:05.200Z",
+  "engine": "valhalla-pedestrian",
+  "variants": {
+    "standard": {
+      "label": "standard",
+      "distanceM": 4220,
+      "engineDistanceM": 4218,
+      "repeatedGeometryM": 178,
+      "repeatedGeometryPct": 4.2,
+      "legKm": [
+        0.45,
+        0.5,
+        0.88,
+        1.6,
+        0.79
+      ],
+      "geometryUrl": "data/routes/no-42-standard.geojson",
+      "stops": [
+        {
+          "id": "ishikawacho",
+          "label": "石川町駅",
+          "coord": [
+            35.4410009,
+            139.6423334
+          ],
+          "source": "OSM 中華街西門付近; 石川町駅の位置は地図レビュー待ち",
+          "offsetM": 0
+        },
+        {
+          "id": "chukagai",
+          "label": "横浜中華街",
+          "coord": [
+            35.4428331,
+            139.6452167
+          ],
+          "source": "OSM attraction 横浜中華街",
+          "offsetM": 0
+        },
+        {
+          "id": "osanbashi",
+          "label": "大さん橋入口",
+          "coord": [
+            35.4461623,
+            139.6437368
+          ],
+          "source": "OSM node 290045152 大さん橋入口",
+          "offsetM": 0
+        },
+        {
+          "id": "akarenga",
+          "label": "赤レンガ倉庫前",
+          "coord": [
+            35.4524969,
+            139.6414792
+          ],
+          "source": "OSM node 281755214 赤レンガ倉庫前",
+          "offsetM": 0
+        },
+        {
+          "id": "rinko_park",
+          "label": "臨港パーク入口",
+          "coord": [
+            35.4627065,
+            139.6332516
+          ],
+          "source": "OSM node 臨港パーク入口",
+          "offsetM": 0
+        },
+        {
+          "id": "minatomirai",
+          "label": "みなとみらい駅前",
+          "coord": [
+            35.4570965,
+            139.633082
+          ],
+          "source": "OSM node みなとみらい駅前",
+          "offsetM": 0
+        }
+      ]
+    }
+  }
+}

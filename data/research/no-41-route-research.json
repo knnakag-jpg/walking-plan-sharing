@@ -1,0 +1,43 @@
+{
+  "id": "No.41",
+  "title": "江戸川 柴又と中川",
+  "stage": "source_research_in_progress",
+  "checkedAt": "2026-11-16",
+  "evidence": [
+    {
+      "type": "community",
+      "title": "OpenStreetMap（金町駅・中川大橋・柴又帝釈天・柴又駅・京成高砂駅）",
+      "url": "https://www.openstreetmap.org/",
+      "checkedAt": "2026-11-16",
+      "supports": "駅・橋・公園・寺社の名称ノードの座標。入口ではない。"
+    },
+    {
+      "type": "community",
+      "title": "旧資料 No.41（先行ページ index.html）",
+      "url": null,
+      "checkedAt": "2026-11-16",
+      "supports": "旧案の立ち寄り先。中川側道方面の往復延伸は採用していない。"
+    }
+  ],
+  "trials": [
+    {
+      "n": 1,
+      "variant": "A 新規（OSMの駅・地点）",
+      "result": "5.26km・反復185m",
+      "finding": "柴又帝釈天と柴又駅の間で約185m。参道を往復する形と推定。地図で未確認。"
+    }
+  ],
+  "files": [
+    "scripts/lib-rebuild.mjs",
+    "scripts/build-group7.mjs",
+    "data/curated/no-41.json",
+    "data/research/no-41-adopted-build.json"
+  ],
+  "openQuestions": [
+    "矢切の渡しの運航・料金（徒歩経路には含めていない）",
+    "柴又公園土手の歩道",
+    "金町駅から江戸川へ出る道",
+    "柴又帝釈天の参道と境内の入口"
+  ],
+  "decision": "2026-11-16 新Aを計算（5.26km・反復185m）。矢切の渡しは徒歩経路に含めていない。"
+}

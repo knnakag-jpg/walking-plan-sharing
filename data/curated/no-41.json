@@ -1,0 +1,73 @@
+{
+  "id": "No.41",
+  "buildFile": "data/research/no-41-adopted-build.json",
+  "title": "江戸川 柴又と中川",
+  "summary": "金町駅から中川大橋、柴又帝釈天、柴又駅を経て京成高砂駅へ抜ける駅間。矢切の渡しは対岸（松戸）への渡船で、徒歩の連続経路にならないため含めていない。",
+  "themes": [
+    "川",
+    "帝釈天",
+    "参道",
+    "渡船"
+  ],
+  "routeReasons": {
+    "standard": "金町駅から中川大橋東、柴又帝釈天、柴又駅を経て京成高砂駅へ。計算上5.26km。矢切の渡しは対岸へ渡る船で徒歩経路に含められないため外した。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
+    "extended": "B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。"
+  },
+  "distanceExceptions": {},
+  "retraceExceptions": {
+    "standard": "柴又帝釈天と柴又駅の間で約185m。参道を往復する形と推定。地図で未確認。"
+  },
+  "rainy": {
+    "verificationStatus": "researched",
+    "summary": "雨の日は柴又帝釈天の参道と京成高砂駅前だけを歩く短縮案。堤防・河川敷は屋根がなく、強風と増水に注意。",
+    "segments": [
+      {
+        "kind": "walk_outdoor",
+        "from": "駅",
+        "to": "堤防・河川敷",
+        "distanceM": null,
+        "note": "屋根なし。傘が必要。"
+      },
+      {
+        "kind": "rail",
+        "from": "終点の駅",
+        "to": "始点の駅",
+        "distanceM": null,
+        "note": "鉄道で戻る場合。運賃・所要は当日確認。"
+      },
+      {
+        "kind": "walk_indoor",
+        "from": "駅",
+        "to": "駅ビル・商店街のアーケード",
+        "distanceM": null,
+        "note": "屋根のある通路の有無は未確認。"
+      }
+    ],
+    "conditions": [
+      "増水・強風時は河川敷が立入規制になる。",
+      "堤防の路面は雨天でぬかるむ。"
+    ]
+  },
+  "evidence": [
+    {
+      "type": "community",
+      "title": "OpenStreetMap（金町駅・中川大橋・柴又帝釈天・柴又駅・京成高砂駅）",
+      "url": "https://www.openstreetmap.org/",
+      "checkedAt": "2026-11-16",
+      "supports": "駅・橋・公園・寺社の名称ノードの座標。入口ではない。"
+    },
+    {
+      "type": "community",
+      "title": "旧資料 No.41（先行ページ index.html）",
+      "url": null,
+      "checkedAt": "2026-11-16",
+      "supports": "旧案の立ち寄り先。中川側道方面の往復延伸は採用していない。"
+    }
+  ],
+  "openQuestions": [
+    "矢切の渡しの運航・料金（徒歩経路には含めていない）",
+    "柴又公園土手の歩道",
+    "金町駅から江戸川へ出る道",
+    "柴又帝釈天の参道と境内の入口"
+  ]
+}

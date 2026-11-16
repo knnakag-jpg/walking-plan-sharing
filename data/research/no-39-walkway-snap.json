@@ -1,0 +1,42 @@
+{
+ "kitasenju": {
+  "snapped": [
+   35.7494999,
+   139.8050731
+  ],
+  "movedM": 5,
+  "wayId": 666311407
+ },
+ "senju_shinbashi": {
+  "snapped": [
+   35.75723,
+   139.8020749
+  ],
+  "movedM": 0,
+  "wayId": 216602774
+ },
+ "horikiri_bashi": {
+  "snapped": [
+   35.7449295,
+   139.8168773
+  ],
+  "movedM": 0,
+  "wayId": 154522126
+ },
+ "horikiri_shobuen": {
+  "snapped": [
+   35.7432947,
+   139.8177339
+  ],
+  "movedM": 13,
+  "wayId": 681056535
+ },
+ "keisei_sekiya": {
+  "snapped": [
+   35.7440813,
+   139.8117133
+  ],
+  "movedM": 10,
+  "wayId": 1168168066
+ }
+}

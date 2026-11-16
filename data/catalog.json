@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "source": "legacy import; route quality not re-reviewed",
-  "generatedAt": "2026-11-15T22:10:34.866Z",
+  "generatedAt": "2026-11-16T12:08:30.677Z",
   "courses": [
     {
       "id": "No.1",
@@ -13640,14 +13640,19 @@
     {
       "id": "No.37",
       "slug": "no-37",
-      "title": "多摩川 多摩水道橋・登戸",
+      "title": "多摩川 二子橋から登戸",
       "seriesId": "kasen",
       "seriesName": "河川敷（No.36～41）",
       "legacyAnchor": "course-37",
       "legacyUrl": "../index.html#course-37",
-      "summary": "経路ノード： 二子玉川駅 → 二子橋 → 多摩川緑地 → 多摩水道橋 → 登戸駅 → 向ヶ丘遊園駅 → ゴール",
+      "summary": "二子玉川駅から二子橋を渡り、多摩川緑地の上流を歩いて宿河原駅、登戸駅へ抜ける駅間。多摩水道橋と向ヶ丘遊園は名称ノードが見つからず含めていない。",
       "routeText": "経路ノード： 二子玉川駅 → 二子橋 → 多摩川緑地 → 多摩水道橋 → 登戸駅 → 向ヶ丘遊園駅 → ゴール",
-      "tags": [],
+      "tags": [
+        "川",
+        "橋",
+        "緑地",
+        "土手"
+      ],
       "route": {
         "id": "no-37-legacy",
         "variant": "legacy",
@@ -13660,17 +13665,7 @@
         "repeatedGeometryPct": 0,
         "maxWaypointToShapeM": 3,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "partial_dem_filled",
-          "url": "data/elevation/no-37.json",
-          "totalM": 6812,
-          "climbM": 33.9,
-          "descentM": 27.9,
-          "minM": 12.8,
-          "maxM": 26.1
-        }
+        "engine": "valhalla-pedestrian"
       },
       "waypoints": [
         {
@@ -13691,19 +13686,208 @@
       "climbM": 62.3,
       "descentM": 63,
       "auditFlags": [],
-      "category": "main"
+      "category": "main",
+      "defaultVariant": "standard",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "OpenStreetMap（二子玉川駅・二子橋・多摩川緑地・宿河原駅・登戸駅）",
+          "url": "https://www.openstreetmap.org/",
+          "checkedAt": "2026-11-16",
+          "supports": "駅・橋・公園・寺社の名称ノードの座標。入口ではない。"
+        },
+        {
+          "type": "community",
+          "title": "旧資料 No.37（先行ページ index.html）",
+          "url": null,
+          "checkedAt": "2026-11-16",
+          "supports": "旧案の立ち寄り先。"
+        }
+      ],
+      "openQuestions": [
+        "多摩水道橋の座標",
+        "多摩川緑地の遊歩道の位置と通行条件",
+        "向ヶ丘遊園を終点にする場合の経路",
+        "宿河原駅から堤防へ上がる道"
+      ],
+      "routeOptions": [
+        {
+          "id": "no-37-standard",
+          "variant": "standard",
+          "strategy": "scenic",
+          "geometryUrl": "data/routes/no-37-standard.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 6879,
+          "engineDistanceM": 6890,
+          "repeatedGeometryPct": 4.7,
+          "routeReason": "二子玉川駅から二子橋、多摩川緑地（上流）、宿河原駅を経て登戸駅へ。計算上6.27km。多摩水道橋は緑地の中で橋の名称ノードが見つからず、向ヶ丘遊園は範囲外にあるため含めていない。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
+          "distanceException": "6.27km。5〜6kmを少し超えるが、堤防沿いの自然な流れで、切り詰めはしない。",
+          "retraceException": "多摩川緑地から宿河原駅へ向かう区間で約287m、宿河原駅付近で約36m（計約323m）。緑地から駅へ上がる道を行き来する形と推定。地図で未確認。",
+          "waypoints": [
+            {
+              "index": 0,
+              "id": "futako",
+              "label": "二子玉川駅",
+              "description": null,
+              "point": [
+                139.6268107,
+                35.6119741
+              ],
+              "source": "OSM station 二子玉川"
+            },
+            {
+              "index": 1,
+              "id": "futakobashi",
+              "label": "二子橋",
+              "description": null,
+              "point": [
+                139.6232503,
+                35.6080081
+              ],
+              "source": "OSM node 297176384 二子橋"
+            },
+            {
+              "index": 2,
+              "id": "tmr_upper",
+              "label": "多摩川緑地（上流）",
+              "description": null,
+              "point": [
+                139.5846675,
+                35.6189238
+              ],
+              "source": "OSM park 多摩川緑地（二子玉川より上流）"
+            },
+            {
+              "index": 3,
+              "id": "shukugawara",
+              "label": "宿河原駅",
+              "description": null,
+              "point": [
+                139.5798196,
+                35.6153703
+              ],
+              "source": "OSM station 宿河原"
+            },
+            {
+              "index": 4,
+              "id": "noborito",
+              "label": "登戸駅",
+              "description": null,
+              "point": [
+                139.5700235,
+                35.6207546
+              ],
+              "source": "OSM station 登戸"
+            }
+          ],
+          "engine": "valhalla-pedestrian",
+          "built": "2026-11-16T11:59:55.210Z",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/no-37-standard.json",
+            "totalM": 6879,
+            "climbM": 33.8,
+            "descentM": 27.5,
+            "minM": 5.8,
+            "maxM": 21
+          }
+        },
+        {
+          "id": "no-37-rainy",
+          "variant": "rainy",
+          "strategy": "indoor_rail",
+          "verificationStatus": "researched",
+          "distanceM": null,
+          "routeReason": "雨の日は駅から駅へ鉄道で移動し、橋の上だけを歩く短縮案。堤防・河川敷は屋根がなく、強風と増水に注意。",
+          "segments": [
+            {
+              "kind": "walk_outdoor",
+              "from": "駅",
+              "to": "堤防・河川敷",
+              "distanceM": null,
+              "note": "屋根なし。傘が必要。"
+            },
+            {
+              "kind": "rail",
+              "from": "終点の駅",
+              "to": "始点の駅",
+              "distanceM": null,
+              "note": "鉄道で戻る場合。運賃・所要は当日確認。"
+            },
+            {
+              "kind": "walk_indoor",
+              "from": "駅",
+              "to": "駅ビル・商店街のアーケード",
+              "distanceM": null,
+              "note": "屋根のある通路の有無は未確認。"
+            }
+          ],
+          "conditions": [
+            "増水・強風時は河川敷が立入規制になる。",
+            "堤防の路面は雨天でぬかるむ。"
+          ],
+          "geometryUrl": null,
+          "waypoints": []
+        },
+        {
+          "id": "no-37-legacy",
+          "variant": "legacy",
+          "strategy": "legacy_unknown",
+          "geometryUrl": "data/routes/no-37.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 6812,
+          "engineDistanceM": 6816,
+          "targetDistanceM": 6500,
+          "repeatedGeometryPct": 0,
+          "maxWaypointToShapeM": 3,
+          "built": "2026-08-29",
+          "engine": "valhalla-pedestrian",
+          "waypoints": [
+            {
+              "index": 0,
+              "point": [
+                139.6262,
+                35.6117
+              ]
+            },
+            {
+              "index": 1,
+              "point": [
+                139.562,
+                35.623
+              ]
+            }
+          ],
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/no-37.json",
+            "totalM": 6812,
+            "climbM": 33.9,
+            "descentM": 27.9,
+            "minM": 12.8,
+            "maxM": 26.1
+          }
+        }
+      ]
     },
     {
       "id": "No.38",
       "slug": "no-38",
-      "title": "多摩川/浅川 万願寺ふれあい橋",
+      "title": "多摩川と浅川 万願寺の渡し場",
       "seriesId": "kasen",
       "seriesName": "河川敷（No.36～41）",
       "legacyAnchor": "course-38",
       "legacyUrl": "../index.html#course-38",
-      "summary": "経路ノード： 聖蹟桜ヶ丘駅 → 関戸橋 → 合流点 → 万願寺歩道橋 → 高幡不動尊参道 → 高幡不動駅 → 高幡方面へ実在の歩道で延伸（往復約1.2km） → ゴール",
+      "summary": "聖蹟桜ヶ丘駅から一ノ宮、百草園駅、高幡不動尊を経て高幡不動駅へ抜ける駅間。関戸橋・万願寺歩道橋・合流点は名称ノードが見つからず含めていない。",
       "routeText": "経路ノード： 聖蹟桜ヶ丘駅 → 関戸橋 → 合流点 → 万願寺歩道橋 → 高幡不動尊参道 → 高幡不動駅 → 高幡方面へ実在の歩道で延伸（往復約1.2km） → ゴール",
-      "tags": [],
+      "tags": [
+        "川",
+        "浅川",
+        "寺",
+        "土手"
+      ],
       "route": {
         "id": "no-38-legacy",
         "variant": "legacy",
@@ -13716,17 +13900,7 @@
         "repeatedGeometryPct": 15.1,
         "maxWaypointToShapeM": 19,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "partial_dem_filled",
-          "url": "data/elevation/no-38.json",
-          "totalM": 5629,
-          "climbM": 47,
-          "descentM": 32.3,
-          "minM": 52.3,
-          "maxM": 82.2
-        }
+        "engine": "valhalla-pedestrian"
       },
       "waypoints": [
         {
@@ -13792,19 +13966,250 @@
         "repeated_geometry_over_10pct",
         "repeated_waypoint"
       ],
-      "category": "main"
+      "category": "main",
+      "defaultVariant": "standard",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "OpenStreetMap（聖蹟桜ヶ丘駅・一ノ宮・百草園駅・高幡不動尊・高幡不動駅）",
+          "url": "https://www.openstreetmap.org/",
+          "checkedAt": "2026-11-16",
+          "supports": "駅・橋・公園・寺社の名称ノードの座標。入口ではない。"
+        },
+        {
+          "type": "community",
+          "title": "旧資料 No.38（先行ページ index.html）",
+          "url": null,
+          "checkedAt": "2026-11-16",
+          "supports": "旧案の立ち寄り先。高幡方面の往復延伸は採用していない。"
+        }
+      ],
+      "openQuestions": [
+        "関戸橋・万願寺歩道橋の座標",
+        "多摩川と浅川の合流点の位置",
+        "高幡不動尊の参道の入口",
+        "聖蹟桜ヶ丘駅から川へ出る道"
+      ],
+      "routeOptions": [
+        {
+          "id": "no-38-standard",
+          "variant": "standard",
+          "strategy": "scenic",
+          "geometryUrl": "data/routes/no-38-standard.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 4260,
+          "engineDistanceM": 4268,
+          "repeatedGeometryPct": 0.9,
+          "routeReason": "聖蹟桜ヶ丘駅から一ノ宮、百草園駅、高幡不動尊を経て高幡不動駅へ。計算上4.26km。関戸橋と万願寺歩道橋は橋の名称ノードが見つからず、合流点の座標も取れないため含めていない。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
+          "distanceException": "4.26km。実在の駅と寺社だけで組んだため5〜6kmに届かない。旧案の高幡方面の往復延伸は採らない。",
+          "retraceException": "高幡不動尊の境内で約39mの重なり。参道を入って出る形と推定。",
+          "waypoints": [
+            {
+              "index": 0,
+              "id": "seiseki",
+              "label": "聖蹟桜ヶ丘駅",
+              "description": null,
+              "point": [
+                139.4468281,
+                35.6507724
+              ],
+              "source": "OSM stop 聖蹟桜ヶ丘"
+            },
+            {
+              "index": 1,
+              "id": "ichinomiya",
+              "label": "一ノ宮",
+              "description": null,
+              "point": [
+                139.4374629,
+                35.6517715
+              ],
+              "source": "OSM node 一ノ宮（交差点）"
+            },
+            {
+              "index": 2,
+              "id": "mogusaen",
+              "label": "百草園駅",
+              "description": null,
+              "point": [
+                139.4308613,
+                35.6571342
+              ],
+              "source": "OSM node 百草園駅前"
+            },
+            {
+              "index": 3,
+              "id": "takahata_fudo",
+              "label": "高幡不動尊",
+              "description": null,
+              "point": [
+                139.411006,
+                35.6623658
+              ],
+              "source": "OSM place_of_worship 高幡不動尊"
+            },
+            {
+              "index": 4,
+              "id": "takahata",
+              "label": "高幡不動駅",
+              "description": null,
+              "point": [
+                139.4151319,
+                35.6612263
+              ],
+              "source": "OSM station 高幡不動"
+            }
+          ],
+          "engine": "valhalla-pedestrian",
+          "built": "2026-11-16T12:07:48.128Z",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/no-38-standard.json",
+            "totalM": 4260,
+            "climbM": 18.8,
+            "descentM": 4.5,
+            "minM": 52.5,
+            "maxM": 69.5
+          }
+        },
+        {
+          "id": "no-38-rainy",
+          "variant": "rainy",
+          "strategy": "indoor_rail",
+          "verificationStatus": "researched",
+          "distanceM": null,
+          "routeReason": "雨の日は高幡不動尊の参道と百草園駅の駅前だけを歩く短縮案。堤防・河川敷は屋根がなく、強風と増水に注意。",
+          "segments": [
+            {
+              "kind": "walk_outdoor",
+              "from": "駅",
+              "to": "堤防・河川敷",
+              "distanceM": null,
+              "note": "屋根なし。傘が必要。"
+            },
+            {
+              "kind": "rail",
+              "from": "終点の駅",
+              "to": "始点の駅",
+              "distanceM": null,
+              "note": "鉄道で戻る場合。運賃・所要は当日確認。"
+            },
+            {
+              "kind": "walk_indoor",
+              "from": "駅",
+              "to": "駅ビル・商店街のアーケード",
+              "distanceM": null,
+              "note": "屋根のある通路の有無は未確認。"
+            }
+          ],
+          "conditions": [
+            "増水・強風時は河川敷が立入規制になる。",
+            "堤防の路面は雨天でぬかるむ。"
+          ],
+          "geometryUrl": null,
+          "waypoints": []
+        },
+        {
+          "id": "no-38-legacy",
+          "variant": "legacy",
+          "strategy": "legacy_unknown",
+          "geometryUrl": "data/routes/no-38.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 5629,
+          "engineDistanceM": 5632,
+          "targetDistanceM": 6000,
+          "repeatedGeometryPct": 15.1,
+          "maxWaypointToShapeM": 19,
+          "built": "2026-08-29",
+          "engine": "valhalla-pedestrian",
+          "waypoints": [
+            {
+              "index": 0,
+              "point": [
+                139.447,
+                35.65
+              ]
+            },
+            {
+              "index": 1,
+              "point": [
+                139.44,
+                35.652
+              ]
+            },
+            {
+              "index": 2,
+              "point": [
+                139.43,
+                35.655
+              ]
+            },
+            {
+              "index": 3,
+              "point": [
+                139.4172,
+                35.6598
+              ]
+            },
+            {
+              "index": 4,
+              "point": [
+                139.4145,
+                35.661
+              ]
+            },
+            {
+              "index": 5,
+              "point": [
+                139.4132,
+                35.6622
+              ]
+            },
+            {
+              "index": 6,
+              "point": [
+                139.410622,
+                35.664579
+              ]
+            },
+            {
+              "index": 7,
+              "point": [
+                139.4132,
+                35.6622
+              ]
+            }
+          ],
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/no-38.json",
+            "totalM": 5629,
+            "climbM": 47,
+            "descentM": 32.3,
+            "minM": 52.3,
+            "maxM": 82.2
+          }
+        }
+      ]
     },
     {
       "id": "No.39",
       "slug": "no-39",
-      "title": "荒川 千住大土手・スカイツリー",
+      "title": "荒川 千住の大土手",
       "seriesId": "kasen",
       "seriesName": "河川敷（No.36～41）",
       "legacyAnchor": "course-39",
       "legacyUrl": "../index.html#course-39",
-      "summary": "経路ノード： 北千住駅 → 千住新橋 → 荒川大土手 → 堀切橋 → 堀切菖蒲園駅 → お花茶屋駅 → 宝町二丁目方面へ実在の歩道で延伸（往復約1.3km） → ゴール",
+      "summary": "北千住駅から千住新橋、堀切橋を渡って堀切菖蒲園駅、京成関屋駅へ抜ける駅間。荒川の大土手は名称ノードがないため、橋と駅だけを経由点にしている。",
       "routeText": "経路ノード： 北千住駅 → 千住新橋 → 荒川大土手 → 堀切橋 → 堀切菖蒲園駅 → お花茶屋駅 → 宝町二丁目方面へ実在の歩道で延伸（往復約1.3km） → ゴール",
-      "tags": [],
+      "tags": [
+        "川",
+        "土手",
+        "橋",
+        "菖蒲池"
+      ],
       "route": {
         "id": "no-39-legacy",
         "variant": "legacy",
@@ -13817,17 +14222,7 @@
         "repeatedGeometryPct": 17.6,
         "maxWaypointToShapeM": 33,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "partial_dem_filled",
-          "url": "data/elevation/no-39.json",
-          "totalM": 6311,
-          "climbM": 23.3,
-          "descentM": 24.2,
-          "minM": -1.2,
-          "maxM": 5.9
-        }
+        "engine": "valhalla-pedestrian"
       },
       "waypoints": [
         {
@@ -13893,19 +14288,250 @@
         "repeated_geometry_over_10pct",
         "repeated_waypoint"
       ],
-      "category": "main"
+      "category": "main",
+      "defaultVariant": "standard",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "OpenStreetMap（北千住駅・千住新橋・堀切橋・堀切菖蒲園駅・京成関屋駅）",
+          "url": "https://www.openstreetmap.org/",
+          "checkedAt": "2026-11-16",
+          "supports": "駅・橋・公園・寺社の名称ノードの座標。入口ではない。"
+        },
+        {
+          "type": "community",
+          "title": "旧資料 No.39（先行ページ index.html）",
+          "url": null,
+          "checkedAt": "2026-11-16",
+          "supports": "旧案の立ち寄り先。宝町二丁目方面の往復延伸は採用していない。"
+        }
+      ],
+      "openQuestions": [
+        "荒川大土手の歩行者動線",
+        "堀切菖蒲園の開園期間・料金",
+        "千住新橋から堀切橋までの堤防上の歩道",
+        "お花茶屋駅の位置"
+      ],
+      "routeOptions": [
+        {
+          "id": "no-39-standard",
+          "variant": "standard",
+          "strategy": "scenic",
+          "geometryUrl": "data/routes/no-39-standard.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 4663,
+          "engineDistanceM": 4668,
+          "repeatedGeometryPct": 6.7,
+          "routeReason": "北千住駅から千住新橋（南詰）、堀切橋（西詰）、堀切菖蒲園駅を経て京成関屋駅へ。計算上4.14km。荒川大土手は名称ノードが見つからず、橋を渡る形で堤防の上を通る。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
+          "distanceException": "4.14km。橋と駅だけで組んだため5〜6kmに届かない。旧案の宝町方面の往復延伸は採らない。",
+          "retraceException": "堀切橋から堀切菖蒲園駅へ向かう区間で約105m、堀切菖蒲園駅から京成関屋駅へ向かう区間で約206m（計約313m）。橋のたもとと駅を行き来する形と推定。地図で未確認。",
+          "waypoints": [
+            {
+              "index": 0,
+              "id": "kitasenju",
+              "label": "北千住駅",
+              "description": null,
+              "point": [
+                139.8050731,
+                35.7494999
+              ],
+              "source": "OSM station 北千住"
+            },
+            {
+              "index": 1,
+              "id": "senju_shinbashi",
+              "label": "千住新橋（南詰）",
+              "description": null,
+              "point": [
+                139.8020749,
+                35.75723
+              ],
+              "source": "OSM node 441675524 千住新橋南詰"
+            },
+            {
+              "index": 2,
+              "id": "horikiri_bashi",
+              "label": "堀切橋（西詰）",
+              "description": null,
+              "point": [
+                139.8168773,
+                35.7449295
+              ],
+              "source": "OSM node 364659601 堀切橋西詰"
+            },
+            {
+              "index": 3,
+              "id": "horikiri_shobuen",
+              "label": "堀切菖蒲園駅",
+              "description": null,
+              "point": [
+                139.8177339,
+                35.7432947
+              ],
+              "source": "OSM stop 堀切（堀切菖蒲園駅前）"
+            },
+            {
+              "index": 4,
+              "id": "keisei_sekiya",
+              "label": "京成関屋駅",
+              "description": null,
+              "point": [
+                139.8117133,
+                35.7440813
+              ],
+              "source": "OSM stop 京成関屋"
+            }
+          ],
+          "engine": "valhalla-pedestrian",
+          "built": "2026-11-16T12:02:06.739Z",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "dem",
+            "url": "data/elevation/no-39-standard.json",
+            "totalM": 4663,
+            "climbM": 39.9,
+            "descentM": 38.5,
+            "minM": -0.3,
+            "maxM": 8.3
+          }
+        },
+        {
+          "id": "no-39-rainy",
+          "variant": "rainy",
+          "strategy": "indoor_rail",
+          "verificationStatus": "researched",
+          "distanceM": null,
+          "routeReason": "雨の日は堀切菖蒲園駅の駅前と京成関屋駅の間だけを歩く短縮案。堤防・河川敷は屋根がなく、強風と増水に注意。",
+          "segments": [
+            {
+              "kind": "walk_outdoor",
+              "from": "駅",
+              "to": "堤防・河川敷",
+              "distanceM": null,
+              "note": "屋根なし。傘が必要。"
+            },
+            {
+              "kind": "rail",
+              "from": "終点の駅",
+              "to": "始点の駅",
+              "distanceM": null,
+              "note": "鉄道で戻る場合。運賃・所要は当日確認。"
+            },
+            {
+              "kind": "walk_indoor",
+              "from": "駅",
+              "to": "駅ビル・商店街のアーケード",
+              "distanceM": null,
+              "note": "屋根のある通路の有無は未確認。"
+            }
+          ],
+          "conditions": [
+            "増水・強風時は河川敷が立入規制になる。",
+            "堤防の路面は雨天でぬかるむ。"
+          ],
+          "geometryUrl": null,
+          "waypoints": []
+        },
+        {
+          "id": "no-39-legacy",
+          "variant": "legacy",
+          "strategy": "legacy_unknown",
+          "geometryUrl": "data/routes/no-39.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 6311,
+          "engineDistanceM": 6307,
+          "targetDistanceM": 6000,
+          "repeatedGeometryPct": 17.6,
+          "maxWaypointToShapeM": 33,
+          "built": "2026-08-29",
+          "engine": "valhalla-pedestrian",
+          "waypoints": [
+            {
+              "index": 0,
+              "point": [
+                139.8048,
+                35.749
+              ]
+            },
+            {
+              "index": 1,
+              "point": [
+                139.8038,
+                35.7538
+              ]
+            },
+            {
+              "index": 2,
+              "point": [
+                139.808,
+                35.749
+              ]
+            },
+            {
+              "index": 3,
+              "point": [
+                139.8148,
+                35.7428
+              ]
+            },
+            {
+              "index": 4,
+              "point": [
+                139.827,
+                35.7475
+              ]
+            },
+            {
+              "index": 5,
+              "point": [
+                139.832,
+                35.746
+              ]
+            },
+            {
+              "index": 6,
+              "point": [
+                139.836024,
+                35.744793
+              ]
+            },
+            {
+              "index": 7,
+              "point": [
+                139.832,
+                35.746
+              ]
+            }
+          ],
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/no-39.json",
+            "totalM": 6311,
+            "climbM": 23.3,
+            "descentM": 24.2,
+            "minM": -1.2,
+            "maxM": 5.9
+          }
+        }
+      ]
     },
     {
       "id": "No.40",
       "slug": "no-40",
-      "title": "荒川 赤水門・岩淵",
+      "title": "荒川 岩淵の水門",
       "seriesId": "kasen",
       "seriesName": "河川敷（No.36～41）",
       "legacyAnchor": "course-40",
       "legacyUrl": "../index.html#course-40",
-      "summary": "経路ノード： 赤羽岩淵駅 → 赤水門 → 新岩淵水門 → 荒川赤羽緑地 → 荒川岩淵水再生センター前 → 川口駅 → SL青葉通り方面へ実在の歩道で延伸（往復約1.5km） → ゴール",
+      "summary": "赤羽岩淵駅から新荒川大橋、荒川知水資料館を経て赤羽駅へ抜ける駅間。赤水門・川口駅は名称ノードが見つからず含めていない。",
       "routeText": "経路ノード： 赤羽岩淵駅 → 赤水門 → 新岩淵水門 → 荒川赤羽緑地 → 荒川岩淵水再生センター前 → 川口駅 → SL青葉通り方面へ実在の歩道で延伸（往復約1.5km） → ゴール",
-      "tags": [],
+      "tags": [
+        "川",
+        "水門",
+        "資料館",
+        "動植物"
+      ],
       "route": {
         "id": "no-40-legacy",
         "variant": "legacy",
@@ -13918,17 +14544,7 @@
         "repeatedGeometryPct": 9.2,
         "maxWaypointToShapeM": 183,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "partial_dem_filled",
-          "url": "data/elevation/no-40.json",
-          "totalM": 6101,
-          "climbM": 42.9,
-          "descentM": 43.5,
-          "minM": 0.6,
-          "maxM": 11.7
-        }
+        "engine": "valhalla-pedestrian"
       },
       "waypoints": [
         {
@@ -13987,19 +14603,232 @@
         "repeated_waypoint",
         "waypoint_off_shape"
       ],
-      "category": "main"
+      "category": "main",
+      "defaultVariant": "standard",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "OpenStreetMap（赤羽岩淵駅・新荒川大橋・荒川知水資料館・赤羽駅）",
+          "url": "https://www.openstreetmap.org/",
+          "checkedAt": "2026-11-16",
+          "supports": "駅・橋・公園・寺社の名称ノードの座標。入口ではない。"
+        },
+        {
+          "type": "community",
+          "title": "旧資料 No.40（先行ページ index.html）",
+          "url": null,
+          "checkedAt": "2026-11-16",
+          "supports": "旧案の立ち寄り先。SL青葉通り方面の往復延伸は採用していない。"
+        }
+      ],
+      "openQuestions": [
+        "赤水門・岩淵水門の座標と見学可否",
+        "川口駅へ渡る経路（荒川の横断）",
+        "荒川赤羽緑地の位置",
+        "荒川知水資料館の開館日"
+      ],
+      "routeOptions": [
+        {
+          "id": "no-40-standard",
+          "variant": "standard",
+          "strategy": "scenic",
+          "geometryUrl": "data/routes/no-40-standard.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 3215,
+          "engineDistanceM": 3215,
+          "repeatedGeometryPct": 2.3,
+          "routeReason": "赤羽岩淵駅から新荒川大橋、荒川知水資料館を経て赤羽駅へ。計算上3.22km。赤水門は名称ノードが見つからず、川口駅は荒川の東岸で経路から外れるため含めていない。荒川赤羽緑地も名称ノードが見つからず、近くの志茂東ふれあい館前を経由点にした。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
+          "distanceException": "3.22km。実在の地点だけで組んだため5〜6kmに届かない。旧案のSL青葉通り方面の往復延伸は採らない。",
+          "retraceException": "荒川知水資料館から赤羽駅へ向かう区間で約75m。資料館前と駅前の道を行き来する形と推定。",
+          "waypoints": [
+            {
+              "index": 0,
+              "id": "akabane_iwabuchi",
+              "label": "赤羽岩淵駅",
+              "description": null,
+              "point": [
+                139.7224728,
+                35.7834475
+              ],
+              "source": "OSM node 366548486 赤羽岩淵駅"
+            },
+            {
+              "index": 1,
+              "id": "shin_arakawa",
+              "label": "新荒川大橋",
+              "description": null,
+              "point": [
+                139.7225291,
+                35.7866389
+              ],
+              "source": "OSM node 305964401 新荒川大橋"
+            },
+            {
+              "index": 2,
+              "id": "chisu_shiryo",
+              "label": "荒川知水資料館",
+              "description": null,
+              "point": [
+                139.7302743,
+                35.7854759
+              ],
+              "source": "OSM museum 荒川知水資料館"
+            },
+            {
+              "index": 3,
+              "id": "akabane",
+              "label": "赤羽駅",
+              "description": null,
+              "point": [
+                139.720002,
+                35.7779138
+              ],
+              "source": "OSM bus_station 赤羽駅西口"
+            }
+          ],
+          "engine": "valhalla-pedestrian",
+          "built": "2026-11-16T12:06:45.430Z",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/no-40-standard.json",
+            "totalM": 3215,
+            "climbM": 20.9,
+            "descentM": 18.2,
+            "minM": 1.1,
+            "maxM": 11.7
+          }
+        },
+        {
+          "id": "no-40-rainy",
+          "variant": "rainy",
+          "strategy": "indoor_rail",
+          "verificationStatus": "researched",
+          "distanceM": null,
+          "routeReason": "雨の日は荒川知水資料館の館内と赤羽駅前の商店街だけを歩く短縮案。堤防・河川敷は屋根がなく、強風と増水に注意。",
+          "segments": [
+            {
+              "kind": "walk_outdoor",
+              "from": "駅",
+              "to": "堤防・河川敷",
+              "distanceM": null,
+              "note": "屋根なし。傘が必要。"
+            },
+            {
+              "kind": "rail",
+              "from": "終点の駅",
+              "to": "始点の駅",
+              "distanceM": null,
+              "note": "鉄道で戻る場合。運賃・所要は当日確認。"
+            },
+            {
+              "kind": "walk_indoor",
+              "from": "駅",
+              "to": "駅ビル・商店街のアーケード",
+              "distanceM": null,
+              "note": "屋根のある通路の有無は未確認。"
+            }
+          ],
+          "conditions": [
+            "増水・強風時は河川敷が立入規制になる。",
+            "堤防の路面は雨天でぬかるむ。"
+          ],
+          "geometryUrl": null,
+          "waypoints": []
+        },
+        {
+          "id": "no-40-legacy",
+          "variant": "legacy",
+          "strategy": "legacy_unknown",
+          "geometryUrl": "data/routes/no-40.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 6101,
+          "engineDistanceM": 6108,
+          "targetDistanceM": 6200,
+          "repeatedGeometryPct": 9.2,
+          "maxWaypointToShapeM": 183,
+          "built": "2026-08-29",
+          "engine": "valhalla-pedestrian",
+          "waypoints": [
+            {
+              "index": 0,
+              "point": [
+                139.72,
+                35.786
+              ]
+            },
+            {
+              "index": 1,
+              "point": [
+                139.7285,
+                35.7872
+              ]
+            },
+            {
+              "index": 2,
+              "point": [
+                139.73,
+                35.789
+              ]
+            },
+            {
+              "index": 3,
+              "point": [
+                139.726,
+                35.795
+              ]
+            },
+            {
+              "index": 4,
+              "point": [
+                139.72,
+                35.801
+              ]
+            },
+            {
+              "index": 5,
+              "point": [
+                139.715482,
+                35.805518
+              ]
+            },
+            {
+              "index": 6,
+              "point": [
+                139.72,
+                35.801
+              ]
+            }
+          ],
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/no-40.json",
+            "totalM": 6101,
+            "climbM": 42.9,
+            "descentM": 43.5,
+            "minM": 0.6,
+            "maxM": 11.7
+          }
+        }
+      ]
     },
     {
       "id": "No.41",
       "slug": "no-41",
-      "title": "江戸川 矢切の渡し・柴又",
+      "title": "江戸川 柴又と中川",
       "seriesId": "kasen",
       "seriesName": "河川敷（No.36～41）",
       "legacyAnchor": "course-41",
       "legacyUrl": "../index.html#course-41",
-      "summary": "経路ノード： 金町駅 → 新葛飾橋 → 取水塔 → 矢切の渡し → 柴又公園土手 → 柴又駅 → 柴又帝釈天参道 → 京成高砂駅 → 中川側道方面へ実在の歩道で延伸（往復約0.9km） → ゴール",
+      "summary": "金町駅から中川大橋、柴又帝釈天、柴又駅を経て京成高砂駅へ抜ける駅間。矢切の渡しは対岸（松戸）への渡船で、徒歩の連続経路にならないため含めていない。",
       "routeText": "経路ノード： 金町駅 → 新葛飾橋 → 取水塔 → 矢切の渡し → 柴又公園土手 → 柴又駅 → 柴又帝釈天参道 → 京成高砂駅 → 中川側道方面へ実在の歩道で延伸（往復約0.9km） → ゴール",
-      "tags": [],
+      "tags": [
+        "川",
+        "帝釈天",
+        "参道",
+        "渡船"
+      ],
       "route": {
         "id": "no-41-legacy",
         "variant": "legacy",
@@ -14012,17 +14841,7 @@
         "repeatedGeometryPct": 8.5,
         "maxWaypointToShapeM": 112,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "partial_dem_filled",
-          "url": "data/elevation/no-41.json",
-          "totalM": 6067,
-          "climbM": 43.5,
-          "descentM": 45,
-          "minM": -0.1,
-          "maxM": 10.5
-        }
+        "engine": "valhalla-pedestrian"
       },
       "waypoints": [
         {
@@ -14102,19 +14921,264 @@
         "repeated_waypoint",
         "waypoint_off_shape"
       ],
-      "category": "main"
+      "category": "main",
+      "defaultVariant": "standard",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "OpenStreetMap（金町駅・中川大橋・柴又帝釈天・柴又駅・京成高砂駅）",
+          "url": "https://www.openstreetmap.org/",
+          "checkedAt": "2026-11-16",
+          "supports": "駅・橋・公園・寺社の名称ノードの座標。入口ではない。"
+        },
+        {
+          "type": "community",
+          "title": "旧資料 No.41（先行ページ index.html）",
+          "url": null,
+          "checkedAt": "2026-11-16",
+          "supports": "旧案の立ち寄り先。中川側道方面の往復延伸は採用していない。"
+        }
+      ],
+      "openQuestions": [
+        "矢切の渡しの運航・料金（徒歩経路には含めていない）",
+        "柴又公園土手の歩道",
+        "金町駅から江戸川へ出る道",
+        "柴又帝釈天の参道と境内の入口"
+      ],
+      "routeOptions": [
+        {
+          "id": "no-41-standard",
+          "variant": "standard",
+          "strategy": "scenic",
+          "geometryUrl": "data/routes/no-41-standard.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 5260,
+          "engineDistanceM": 5260,
+          "repeatedGeometryPct": 3.5,
+          "routeReason": "金町駅から中川大橋東、柴又帝釈天、柴又駅を経て京成高砂駅へ。計算上5.26km。矢切の渡しは対岸へ渡る船で徒歩経路に含められないため外した。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
+          "distanceException": null,
+          "retraceException": "柴又帝釈天と柴又駅の間で約185m。参道を往復する形と推定。地図で未確認。",
+          "waypoints": [
+            {
+              "index": 0,
+              "id": "kanamachi",
+              "label": "金町駅",
+              "description": null,
+              "point": [
+                139.8707286,
+                35.7697348
+              ],
+              "source": "OSM stop 金町"
+            },
+            {
+              "index": 1,
+              "id": "nakagawa_bashi",
+              "label": "中川大橋東",
+              "description": null,
+              "point": [
+                139.8597105,
+                35.7603666
+              ],
+              "source": "OSM node 465306559 中川大橋東"
+            },
+            {
+              "index": 2,
+              "id": "shibamata",
+              "label": "柴又帝釈天",
+              "description": null,
+              "point": [
+                139.8789525,
+                35.7581309
+              ],
+              "source": "OSM place_of_worship 柴又帝釈天"
+            },
+            {
+              "index": 3,
+              "id": "shibamata_st",
+              "label": "柴又駅",
+              "description": null,
+              "point": [
+                139.8750017,
+                35.756414
+              ],
+              "source": "OSM node 柴又駅"
+            },
+            {
+              "index": 4,
+              "id": "keisei_takasago",
+              "label": "京成高砂駅",
+              "description": null,
+              "point": [
+                139.8667451,
+                35.7510589
+              ],
+              "source": "OSM node 京成高砂駅"
+            }
+          ],
+          "engine": "valhalla-pedestrian",
+          "built": "2026-11-16T12:07:33.332Z",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "dem",
+            "url": "data/elevation/no-41-standard.json",
+            "totalM": 5260,
+            "climbM": 7.6,
+            "descentM": 12.4,
+            "minM": 0.2,
+            "maxM": 5.9
+          }
+        },
+        {
+          "id": "no-41-rainy",
+          "variant": "rainy",
+          "strategy": "indoor_rail",
+          "verificationStatus": "researched",
+          "distanceM": null,
+          "routeReason": "雨の日は柴又帝釈天の参道と京成高砂駅前だけを歩く短縮案。堤防・河川敷は屋根がなく、強風と増水に注意。",
+          "segments": [
+            {
+              "kind": "walk_outdoor",
+              "from": "駅",
+              "to": "堤防・河川敷",
+              "distanceM": null,
+              "note": "屋根なし。傘が必要。"
+            },
+            {
+              "kind": "rail",
+              "from": "終点の駅",
+              "to": "始点の駅",
+              "distanceM": null,
+              "note": "鉄道で戻る場合。運賃・所要は当日確認。"
+            },
+            {
+              "kind": "walk_indoor",
+              "from": "駅",
+              "to": "駅ビル・商店街のアーケード",
+              "distanceM": null,
+              "note": "屋根のある通路の有無は未確認。"
+            }
+          ],
+          "conditions": [
+            "増水・強風時は河川敷が立入規制になる。",
+            "堤防の路面は雨天でぬかるむ。"
+          ],
+          "geometryUrl": null,
+          "waypoints": []
+        },
+        {
+          "id": "no-41-legacy",
+          "variant": "legacy",
+          "strategy": "legacy_unknown",
+          "geometryUrl": "data/routes/no-41.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 6067,
+          "engineDistanceM": 6077,
+          "targetDistanceM": 6000,
+          "repeatedGeometryPct": 8.5,
+          "maxWaypointToShapeM": 112,
+          "built": "2026-08-29",
+          "engine": "valhalla-pedestrian",
+          "waypoints": [
+            {
+              "index": 0,
+              "point": [
+                139.8705,
+                35.7692
+              ]
+            },
+            {
+              "index": 1,
+              "point": [
+                139.879,
+                35.7728
+              ]
+            },
+            {
+              "index": 2,
+              "point": [
+                139.8812,
+                35.7628
+              ]
+            },
+            {
+              "index": 3,
+              "point": [
+                139.8825,
+                35.761
+              ]
+            },
+            {
+              "index": 4,
+              "point": [
+                139.8782,
+                35.7588
+              ]
+            },
+            {
+              "index": 5,
+              "point": [
+                139.8735,
+                35.757
+              ]
+            },
+            {
+              "index": 6,
+              "point": [
+                139.87,
+                35.753
+              ]
+            },
+            {
+              "index": 7,
+              "point": [
+                139.865,
+                35.7495
+              ]
+            },
+            {
+              "index": 8,
+              "point": [
+                139.862328,
+                35.74763
+              ]
+            },
+            {
+              "index": 9,
+              "point": [
+                139.865,
+                35.7495
+              ]
+            }
+          ],
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/no-41.json",
+            "totalM": 6067,
+            "climbM": 43.5,
+            "descentM": 45,
+            "minM": -0.1,
+            "maxM": 10.5
+          }
+        }
+      ]
     },
     {
       "id": "No.42",
       "slug": "no-42",
-      "title": "横浜 女神橋・大さん橋",
+      "title": "横浜 大さん橋とみなとみらい",
       "seriesId": "bayarea",
       "seriesName": "ベイエリア橋（No.42～45）",
       "legacyAnchor": "course-42",
       "legacyUrl": "../index.html#course-42",
-      "summary": "経路ノード： 石川町駅 → 中華街 → 大さん橋 → 女神橋 → 臨港パーク → みなとみらい駅 → 新高島駅 → いちょう通り方面へ実在の歩道で延伸（往復約1km） → ゴール",
+      "summary": "石川町駅付近から横浜中華街、大さん橋入口、赤レンガ倉庫前、臨港パークを経てみなとみらい駅へ抜ける駅間。女神橋と新高島駅は名称ノードが見つからず含めていない。",
       "routeText": "経路ノード： 石川町駅 → 中華街 → 大さん橋 → 女神橋 → 臨港パーク → みなとみらい駅 → 新高島駅 → いちょう通り方面へ実在の歩道で延伸（往復約1km） → ゴール",
-      "tags": [],
+      "tags": [
+        "港",
+        "橋",
+        "公園",
+        "中華街"
+      ],
       "route": {
         "id": "no-42-legacy",
         "variant": "legacy",
@@ -14127,17 +15191,7 @@
         "repeatedGeometryPct": 7.9,
         "maxWaypointToShapeM": 16,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "partial_dem_filled",
-          "url": "data/elevation/no-42.json",
-          "totalM": 6346,
-          "climbM": 16.7,
-          "descentM": 16.2,
-          "minM": 0.3,
-          "maxM": 7.1
-        }
+        "engine": "valhalla-pedestrian"
       },
       "waypoints": [
         {
@@ -14188,7 +15242,230 @@
       "auditFlags": [
         "repeated_waypoint"
       ],
-      "category": "main"
+      "category": "main",
+      "defaultVariant": "standard",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "OpenStreetMap（横浜中華街・大さん橋入口・赤レンガ倉庫前・臨港パーク入口・みなとみらい駅前）",
+          "url": "https://www.openstreetmap.org/",
+          "checkedAt": "2026-11-16",
+          "supports": "駅・橋・公園・寺社の名称ノードの座標。入口ではない。"
+        },
+        {
+          "type": "community",
+          "title": "旧資料 No.42（先行ページ index.html）",
+          "url": null,
+          "checkedAt": "2026-11-16",
+          "supports": "旧案の立ち寄り先。いちょう通り方面の往復延伸は採用していない。"
+        }
+      ],
+      "openQuestions": [
+        "石川町駅の駅ノードと出入口",
+        "女神橋の座標と渡れるか",
+        "新高島駅の座標",
+        "大さん橋の屋上デッキへの入口"
+      ],
+      "routeOptions": [
+        {
+          "id": "no-42-standard",
+          "variant": "standard",
+          "strategy": "scenic",
+          "geometryUrl": "data/routes/no-42-standard.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 4220,
+          "engineDistanceM": 4218,
+          "repeatedGeometryPct": 4.2,
+          "routeReason": "石川町駅付近から横浜中華街、大さん橋入口、赤レンガ倉庫前、臨港パークを経てみなとみらい駅へ。計算上4.22km。石川町駅の正確な駅ノードが見つからず、中華街西門付近を始点にした。女神橋と新高島駅は名称ノードが見つからず含めていない。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
+          "distanceException": "4.22km。実在の地点だけで組んだため5〜6kmに届かない。旧案のいちょう通り方面の往復延伸は採らない。",
+          "retraceException": "大さん橋入口から赤レンガ倉庫前へ向かう区間で約178m。埠頭の入口と海岸沿いの道を行き来する形と推定。地図で未確認。",
+          "waypoints": [
+            {
+              "index": 0,
+              "id": "ishikawacho",
+              "label": "石川町駅",
+              "description": null,
+              "point": [
+                139.6423334,
+                35.4410009
+              ],
+              "source": "OSM 中華街西門付近; 石川町駅の位置は地図レビュー待ち"
+            },
+            {
+              "index": 1,
+              "id": "chukagai",
+              "label": "横浜中華街",
+              "description": null,
+              "point": [
+                139.6452167,
+                35.4428331
+              ],
+              "source": "OSM attraction 横浜中華街"
+            },
+            {
+              "index": 2,
+              "id": "osanbashi",
+              "label": "大さん橋入口",
+              "description": null,
+              "point": [
+                139.6437368,
+                35.4461623
+              ],
+              "source": "OSM node 290045152 大さん橋入口"
+            },
+            {
+              "index": 3,
+              "id": "akarenga",
+              "label": "赤レンガ倉庫前",
+              "description": null,
+              "point": [
+                139.6414792,
+                35.4524969
+              ],
+              "source": "OSM node 281755214 赤レンガ倉庫前"
+            },
+            {
+              "index": 4,
+              "id": "rinko_park",
+              "label": "臨港パーク入口",
+              "description": null,
+              "point": [
+                139.6332516,
+                35.4627065
+              ],
+              "source": "OSM node 臨港パーク入口"
+            },
+            {
+              "index": 5,
+              "id": "minatomirai",
+              "label": "みなとみらい駅前",
+              "description": null,
+              "point": [
+                139.633082,
+                35.4570965
+              ],
+              "source": "OSM node みなとみらい駅前"
+            }
+          ],
+          "engine": "valhalla-pedestrian",
+          "built": "2026-11-16T12:06:05.200Z",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/no-42-standard.json",
+            "totalM": 4220,
+            "climbM": 16.9,
+            "descentM": 15.7,
+            "minM": 1.2,
+            "maxM": 7
+          }
+        },
+        {
+          "id": "no-42-rainy",
+          "variant": "rainy",
+          "strategy": "indoor_rail",
+          "verificationStatus": "researched",
+          "distanceM": null,
+          "routeReason": "雨の日は横浜中華街のアーケードと大さん橋客船ターミナルの館内を中心にする案。",
+          "segments": [
+            {
+              "kind": "walk_indoor",
+              "from": "横浜中華街",
+              "to": "中華街のアーケード",
+              "distanceM": null,
+              "note": "アーケードの範囲・営業時間は未確認。"
+            },
+            {
+              "kind": "walk_indoor",
+              "from": "大さん橋入口",
+              "to": "大さん橋ホール",
+              "distanceM": null,
+              "note": "館内の連続性は未確認。"
+            },
+            {
+              "kind": "walk_outdoor",
+              "from": "赤レンガ倉庫",
+              "to": "みなとみらい駅",
+              "distanceM": null,
+              "note": "屋根なし。繋留中の船からの眺めは天候に左右される。"
+            }
+          ],
+          "conditions": [
+            "大さん橋の屋上デッキの開放時間は当日確認。",
+            "港湾の強風時は臨港パーク側が閉鎖の可能性。"
+          ],
+          "geometryUrl": null,
+          "waypoints": []
+        },
+        {
+          "id": "no-42-legacy",
+          "variant": "legacy",
+          "strategy": "legacy_unknown",
+          "geometryUrl": "data/routes/no-42.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 6346,
+          "engineDistanceM": 6347,
+          "targetDistanceM": 6000,
+          "repeatedGeometryPct": 7.9,
+          "maxWaypointToShapeM": 16,
+          "built": "2026-08-29",
+          "engine": "valhalla-pedestrian",
+          "waypoints": [
+            {
+              "index": 0,
+              "point": [
+                139.6425,
+                35.4385
+              ]
+            },
+            {
+              "index": 1,
+              "point": [
+                139.645,
+                35.443
+              ]
+            },
+            {
+              "index": 2,
+              "point": [
+                139.6385,
+                35.4582
+              ]
+            },
+            {
+              "index": 3,
+              "point": [
+                139.6328,
+                35.4578
+              ]
+            },
+            {
+              "index": 4,
+              "point": [
+                139.630054,
+                35.457607
+              ]
+            },
+            {
+              "index": 5,
+              "point": [
+                139.6328,
+                35.4578
+              ]
+            }
+          ],
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/no-42.json",
+            "totalM": 6346,
+            "climbM": 16.7,
+            "descentM": 16.2,
+            "minM": 0.3,
+            "maxM": 7.1
+          }
+        }
+      ]
     },
     {
       "id": "No.43",

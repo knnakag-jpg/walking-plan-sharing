@@ -1,0 +1,42 @@
+{
+ "kanamachi": {
+  "snapped": [
+   35.7697348,
+   139.8707286
+  ],
+  "movedM": 24,
+  "wayId": 1363685141
+ },
+ "nakagawa_bashi": {
+  "snapped": [
+   35.7603666,
+   139.8597105
+  ],
+  "movedM": 0,
+  "wayId": 1124642435
+ },
+ "shibamata": {
+  "snapped": [
+   35.7581309,
+   139.8789525
+  ],
+  "movedM": 37,
+  "wayId": 60617009
+ },
+ "shibamata_st": {
+  "snapped": [
+   35.756414,
+   139.8750017
+  ],
+  "movedM": 18,
+  "wayId": 744893300
+ },
+ "keisei_takasago": {
+  "snapped": [
+   35.7510589,
+   139.8667451
+  ],
+  "movedM": 21,
+  "wayId": 742169664
+ }
+}

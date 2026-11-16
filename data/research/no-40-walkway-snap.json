@@ -1,0 +1,34 @@
+{
+ "akabane_iwabuchi": {
+  "snapped": [
+   35.7834475,
+   139.7224728
+  ],
+  "movedM": 0,
+  "wayId": 257662208
+ },
+ "shin_arakawa": {
+  "snapped": [
+   35.7866389,
+   139.7225291
+  ],
+  "movedM": 0,
+  "wayId": 65600843
+ },
+ "chisu_shiryo": {
+  "snapped": [
+   35.7854759,
+   139.7302743
+  ],
+  "movedM": 21,
+  "wayId": 249321613
+ },
+ "akabane": {
+  "snapped": [
+   35.7779138,
+   139.720002
+  ],
+  "movedM": 7,
+  "wayId": 157633594
+ }
+}

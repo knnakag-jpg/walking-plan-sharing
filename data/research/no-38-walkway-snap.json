@@ -1,0 +1,50 @@
+{
+ "seiseki": {
+  "snapped": [
+   35.6507724,
+   139.4468281
+  ],
+  "movedM": 6,
+  "wayId": 822892555
+ },
+ "sekido_bashi": {
+  "snapped": [
+   35.6553331,
+   139.4556857
+  ],
+  "movedM": 1,
+  "wayId": 172509090
+ },
+ "ichinomiya": {
+  "snapped": [
+   35.6517715,
+   139.4374629
+  ],
+  "movedM": 0,
+  "wayId": 24593303
+ },
+ "mogusaen": {
+  "snapped": [
+   35.6571342,
+   139.4308613
+  ],
+  "movedM": 0,
+  "wayId": 27874810
+ },
+ "takahata_fudo": {
+  "snapped": [
+   35.6623658,
+   139.411006
+  ],
+  "movedM": 20,
+  "wayId": 385495223
+ },
+ "takahata": {
+  "snapped": [
+   35.6612263,
+   139.4151319
+  ],
+  "movedM": 6,
+  "wayId": 1088695095
+ }
+}

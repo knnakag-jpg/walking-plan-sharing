@@ -1,0 +1,43 @@
+{
+  "id": "No.38",
+  "title": "多摩川と浅川 万願寺の渡し場",
+  "stage": "source_research_in_progress",
+  "checkedAt": "2026-11-16",
+  "evidence": [
+    {
+      "type": "community",
+      "title": "OpenStreetMap（聖蹟桜ヶ丘駅・一ノ宮・百草園駅・高幡不動尊・高幡不動駅）",
+      "url": "https://www.openstreetmap.org/",
+      "checkedAt": "2026-11-16",
+      "supports": "駅・橋・公園・寺社の名称ノードの座標。入口ではない。"
+    },
+    {
+      "type": "community",
+      "title": "旧資料 No.38（先行ページ index.html）",
+      "url": null,
+      "checkedAt": "2026-11-16",
+      "supports": "旧案の立ち寄り先。高幡方面の往復延伸は採用していない。"
+    }
+  ],
+  "trials": [
+    {
+      "n": 1,
+      "variant": "A 新規（OSMの駅・地点）",
+      "result": "4.26km・反復39m",
+      "finding": "高幡不動尊の境内で約39mの重なり。参道を入って出る形と推定。"
+    }
+  ],
+  "files": [
+    "scripts/lib-rebuild.mjs",
+    "scripts/build-group7.mjs",
+    "data/curated/no-38.json",
+    "data/research/no-38-adopted-build.json"
+  ],
+  "openQuestions": [
+    "関戸橋・万願寺歩道橋の座標",
+    "多摩川と浅川の合流点の位置",
+    "高幡不動尊の参道の入口",
+    "聖蹟桜ヶ丘駅から川へ出る道"
+  ],
+  "decision": "2026-11-16 新Aを計算（4.26km・反復39m）。関戸橋・万願寺歩道橋は名称ノードがなく含めていない。"
+}

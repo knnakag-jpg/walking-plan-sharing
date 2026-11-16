@@ -1,0 +1,50 @@
+{
+ "ishikawacho": {
+  "snapped": [
+   35.4410009,
+   139.6423334
+  ],
+  "movedM": 0,
+  "wayId": 28417679
+ },
+ "chukagai": {
+  "snapped": [
+   35.4428331,
+   139.6452167
+  ],
+  "movedM": 5,
+  "wayId": 47883231
+ },
+ "osanbashi": {
+  "snapped": [
+   35.4461623,
+   139.6437368
+  ],
+  "movedM": 0,
+  "wayId": 26467435
+ },
+ "akarenga": {
+  "snapped": [
+   35.4524969,
+   139.6414792
+  ],
+  "movedM": 3,
+  "wayId": 73016871
+ },
+ "rinko_park": {
+  "snapped": [
+   35.4627065,
+   139.6332516
+  ],
+  "movedM": 0,
+  "wayId": 32462406
+ },
+ "minatomirai": {
+  "snapped": [
+   35.4570965,
+   139.633082
+  ],
+  "movedM": 0,
+  "wayId": 25944236
+ }
+}

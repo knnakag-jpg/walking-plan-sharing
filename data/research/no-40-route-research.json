@@ -1,0 +1,43 @@
+{
+  "id": "No.40",
+  "title": "荒川 岩淵の水門",
+  "stage": "source_research_in_progress",
+  "checkedAt": "2026-11-16",
+  "evidence": [
+    {
+      "type": "community",
+      "title": "OpenStreetMap（赤羽岩淵駅・新荒川大橋・荒川知水資料館・赤羽駅）",
+      "url": "https://www.openstreetmap.org/",
+      "checkedAt": "2026-11-16",
+      "supports": "駅・橋・公園・寺社の名称ノードの座標。入口ではない。"
+    },
+    {
+      "type": "community",
+      "title": "旧資料 No.40（先行ページ index.html）",
+      "url": null,
+      "checkedAt": "2026-11-16",
+      "supports": "旧案の立ち寄り先。SL青葉通り方面の往復延伸は採用していない。"
+    }
+  ],
+  "trials": [
+    {
+      "n": 1,
+      "variant": "A 新規（OSMの駅・地点）",
+      "result": "3.21km・反復75m",
+      "finding": "荒川知水資料館から赤羽駅へ向かう区間で約75m。資料館前と駅前の道を行き来する形と推定。"
+    }
+  ],
+  "files": [
+    "scripts/lib-rebuild.mjs",
+    "scripts/build-group7.mjs",
+    "data/curated/no-40.json",
+    "data/research/no-40-adopted-build.json"
+  ],
+  "openQuestions": [
+    "赤水門・岩淵水門の座標と見学可否",
+    "川口駅へ渡る経路（荒川の横断）",
+    "荒川赤羽緑地の位置",
+    "荒川知水資料館の開館日"
+  ],
+  "decision": "2026-11-16 新Aを計算（3.22km・反復75m）。赤水門・川口駅は名称ノードがなく含めていない。"
+}

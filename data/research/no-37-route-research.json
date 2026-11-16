@@ -1,0 +1,43 @@
+{
+  "id": "No.37",
+  "title": "多摩川 二子橋から登戸",
+  "stage": "source_research_in_progress",
+  "checkedAt": "2026-11-16",
+  "evidence": [
+    {
+      "type": "community",
+      "title": "OpenStreetMap（二子玉川駅・二子橋・多摩川緑地・宿河原駅・登戸駅）",
+      "url": "https://www.openstreetmap.org/",
+      "checkedAt": "2026-11-16",
+      "supports": "駅・橋・公園・寺社の名称ノードの座標。入口ではない。"
+    },
+    {
+      "type": "community",
+      "title": "旧資料 No.37（先行ページ index.html）",
+      "url": null,
+      "checkedAt": "2026-11-16",
+      "supports": "旧案の立ち寄り先。"
+    }
+  ],
+  "trials": [
+    {
+      "n": 1,
+      "variant": "A 新規（OSMの駅・地点）",
+      "result": "6.88km・反復323m",
+      "finding": "多摩川緑地から宿河原駅へ向かう区間で約287m、宿河原駅付近で約36m（計約323m）。緑地から駅へ上がる道を行き来する形と推定。地図で未確認。"
+    }
+  ],
+  "files": [
+    "scripts/lib-rebuild.mjs",
+    "scripts/build-group7.mjs",
+    "data/curated/no-37.json",
+    "data/research/no-37-adopted-build.json"
+  ],
+  "openQuestions": [
+    "多摩水道橋の座標",
+    "多摩川緑地の遊歩道の位置と通行条件",
+    "向ヶ丘遊園を終点にする場合の経路",
+    "宿河原駅から堤防へ上がる道"
+  ],
+  "decision": "2026-11-16 新Aを計算（6.27km・反復323m）。多摩水道橋・向ヶ丘遊園は名称ノードがなく含めていない。"
+}

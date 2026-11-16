@@ -1,0 +1,72 @@
+{
+  "calculatedAt": "2026-11-16T12:07:33.332Z",
+  "engine": "valhalla-pedestrian",
+  "variants": {
+    "standard": {
+      "label": "standard",
+      "distanceM": 5260,
+      "engineDistanceM": 5260,
+      "repeatedGeometryM": 185,
+      "repeatedGeometryPct": 3.5,
+      "legKm": [
+        1.6,
+        2.03,
+        0.57,
+        1.06
+      ],
+      "geometryUrl": "data/routes/no-41-standard.geojson",
+      "stops": [
+        {
+          "id": "kanamachi",
+          "label": "金町駅",
+          "coord": [
+            35.7697348,
+            139.8707286
+          ],
+          "source": "OSM stop 金町",
+          "offsetM": 0
+        },
+        {
+          "id": "nakagawa_bashi",
+          "label": "中川大橋東",
+          "coord": [
+            35.7603666,
+            139.8597105
+          ],
+          "source": "OSM node 465306559 中川大橋東",
+          "offsetM": 0
+        },
+        {
+          "id": "shibamata",
+          "label": "柴又帝釈天",
+          "coord": [
+            35.7581309,
+            139.8789525
+          ],
+          "source": "OSM place_of_worship 柴又帝釈天",
+          "offsetM": 0
+        },
+        {
+          "id": "shibamata_st",
+          "label": "柴又駅",
+          "coord": [
+            35.756414,
+            139.8750017
+          ],
+          "source": "OSM node 柴又駅",
+          "offsetM": 0
+        },
+        {
+          "id": "keisei_takasago",
+          "label": "京成高砂駅",
+          "coord": [
+            35.7510589,
+            139.8667451
+          ],
+          "source": "OSM node 京成高砂駅",
+          "offsetM": 0
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "calculatedAt": "2026-11-16T12:07:48.128Z",
+  "engine": "valhalla-pedestrian",
+  "variants": {
+    "standard": {
+      "label": "standard",
+      "distanceM": 4260,
+      "engineDistanceM": 4268,
+      "repeatedGeometryM": 39,
+      "repeatedGeometryPct": 0.9,
+      "legKm": [
+        0.92,
+        0.87,
+        2.02,
+        0.46
+      ],
+      "geometryUrl": "data/routes/no-38-standard.geojson",
+      "stops": [
+        {
+          "id": "seiseki",
+          "label": "聖蹟桜ヶ丘駅",
+          "coord": [
+            35.6507724,
+            139.4468281
+          ],
+          "source": "OSM stop 聖蹟桜ヶ丘",
+          "offsetM": 0
+        },
+        {
+          "id": "ichinomiya",
+          "label": "一ノ宮",
+          "coord": [
+            35.6517715,
+            139.4374629
+          ],
+          "source": "OSM node 一ノ宮（交差点）",
+          "offsetM": 0
+        },
+        {
+          "id": "mogusaen",
+          "label": "百草園駅",
+          "coord": [
+            35.6571342,
+            139.4308613
+          ],
+          "source": "OSM node 百草園駅前",
+          "offsetM": 0
+        },
+        {
+          "id": "takahata_fudo",
+          "label": "高幡不動尊",
+          "coord": [
+            35.6623658,
+            139.411006
+          ],
+          "source": "OSM place_of_worship 高幡不動尊",
+          "offsetM": 4
+        },
+        {
+          "id": "takahata",
+          "label": "高幡不動駅",
+          "coord": [
+            35.6612263,
+            139.4151319
+          ],
+          "source": "OSM station 高幡不動",
+          "offsetM": 0
+        }
+      ]
+    }
+  }
+}

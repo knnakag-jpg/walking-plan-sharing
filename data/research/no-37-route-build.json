@@ -1,0 +1,72 @@
+{
+  "calculatedAt": "2026-11-16T11:59:55.210Z",
+  "engine": "valhalla-pedestrian",
+  "variants": {
+    "standard": {
+      "label": "standard",
+      "distanceM": 6879,
+      "engineDistanceM": 6890,
+      "repeatedGeometryM": 323,
+      "repeatedGeometryPct": 4.7,
+      "legKm": [
+        0.56,
+        3.82,
+        1.26,
+        1.24
+      ],
+      "geometryUrl": "data/routes/no-37-standard.geojson",
+      "stops": [
+        {
+          "id": "futako",
+          "label": "二子玉川駅",
+          "coord": [
+            35.6119741,
+            139.6268107
+          ],
+          "source": "OSM station 二子玉川",
+          "offsetM": 0
+        },
+        {
+          "id": "futakobashi",
+          "label": "二子橋",
+          "coord": [
+            35.6080081,
+            139.6232503
+          ],
+          "source": "OSM node 297176384 二子橋",
+          "offsetM": 0
+        },
+        {
+          "id": "tmr_upper",
+          "label": "多摩川緑地（上流）",
+          "coord": [
+            35.6189238,
+            139.5846675
+          ],
+          "source": "OSM park 多摩川緑地（二子玉川より上流）",
+          "offsetM": 0
+        },
+        {
+          "id": "shukugawara",
+          "label": "宿河原駅",
+          "coord": [
+            35.6153703,
+            139.5798196
+          ],
+          "source": "OSM station 宿河原",
+          "offsetM": 0
+        },
+        {
+          "id": "noborito",
+          "label": "登戸駅",
+          "coord": [
+            35.6207546,
+            139.5700235
+          ],
+          "source": "OSM station 登戸",
+          "offsetM": 0
+        }
+      ]
+    }
+  }
+}

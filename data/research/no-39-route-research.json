@@ -1,0 +1,43 @@
+{
+  "id": "No.39",
+  "title": "荒川 千住の大土手",
+  "stage": "source_research_in_progress",
+  "checkedAt": "2026-11-16",
+  "evidence": [
+    {
+      "type": "community",
+      "title": "OpenStreetMap（北千住駅・千住新橋・堀切橋・堀切菖蒲園駅・京成関屋駅）",
+      "url": "https://www.openstreetmap.org/",
+      "checkedAt": "2026-11-16",
+      "supports": "駅・橋・公園・寺社の名称ノードの座標。入口ではない。"
+    },
+    {
+      "type": "community",
+      "title": "旧資料 No.39（先行ページ index.html）",
+      "url": null,
+      "checkedAt": "2026-11-16",
+      "supports": "旧案の立ち寄り先。宝町二丁目方面の往復延伸は採用していない。"
+    }
+  ],
+  "trials": [
+    {
+      "n": 1,
+      "variant": "A 新規（OSMの駅・地点）",
+      "result": "4.66km・反復314m",
+      "finding": "堀切橋から堀切菖蒲園駅へ向かう区間で約105m、堀切菖蒲園駅から京成関屋駅へ向かう区間で約206m（計約313m）。橋のたもとと駅を行き来する形と推定。地図で未確認。"
+    }
+  ],
+  "files": [
+    "scripts/lib-rebuild.mjs",
+    "scripts/build-group7.mjs",
+    "data/curated/no-39.json",
+    "data/research/no-39-adopted-build.json"
+  ],
+  "openQuestions": [
+    "荒川大土手の歩行者動線",
+    "堀切菖蒲園の開園期間・料金",
+    "千住新橋から堀切橋までの堤防上の歩道",
+    "お花茶屋駅の位置"
+  ],
+  "decision": "2026-11-16 新Aを計算（4.14km・反復313m）。荒川大土手は名称ノードがないため橋と駅を経由点にした。"
+}

@@ -1,0 +1,43 @@
+{
+  "id": "No.42",
+  "title": "横浜 大さん橋とみなとみらい",
+  "stage": "source_research_in_progress",
+  "checkedAt": "2026-11-16",
+  "evidence": [
+    {
+      "type": "community",
+      "title": "OpenStreetMap（横浜中華街・大さん橋入口・赤レンガ倉庫前・臨港パーク入口・みなとみらい駅前）",
+      "url": "https://www.openstreetmap.org/",
+      "checkedAt": "2026-11-16",
+      "supports": "駅・橋・公園・寺社の名称ノードの座標。入口ではない。"
+    },
+    {
+      "type": "community",
+      "title": "旧資料 No.42（先行ページ index.html）",
+      "url": null,
+      "checkedAt": "2026-11-16",
+      "supports": "旧案の立ち寄り先。いちょう通り方面の往復延伸は採用していない。"
+    }
+  ],
+  "trials": [
+    {
+      "n": 1,
+      "variant": "A 新規（OSMの駅・地点）",
+      "result": "4.22km・反復178m",
+      "finding": "大さん橋入口から赤レンガ倉庫前へ向かう区間で約178m。埠頭の入口と海岸沿いの道を行き来する形と推定。地図で未確認。"
+    }
+  ],
+  "files": [
+    "scripts/lib-rebuild.mjs",
+    "scripts/build-group7.mjs",
+    "data/curated/no-42.json",
+    "data/research/no-42-adopted-build.json"
+  ],
+  "openQuestions": [
+    "石川町駅の駅ノードと出入口",
+    "女神橋の座標と渡れるか",
+    "新高島駅の座標",
+    "大さん橋の屋上デッキへの入口"
+  ],
+  "decision": "2026-11-16 新Aを計算（4.22km・反復178m）。女神橋・新高島駅は名称ノードがなく含めていない。"
+}

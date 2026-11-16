@@ -1,0 +1,61 @@
+{
+  "calculatedAt": "2026-11-16T12:06:45.430Z",
+  "engine": "valhalla-pedestrian",
+  "variants": {
+    "standard": {
+      "label": "standard",
+      "distanceM": 3215,
+      "engineDistanceM": 3215,
+      "repeatedGeometryM": 75,
+      "repeatedGeometryPct": 2.3,
+      "legKm": [
+        0.5,
+        0.92,
+        1.79
+      ],
+      "geometryUrl": "data/routes/no-40-standard.geojson",
+      "stops": [
+        {
+          "id": "akabane_iwabuchi",
+          "label": "赤羽岩淵駅",
+          "coord": [
+            35.7834475,
+            139.7224728
+          ],
+          "source": "OSM node 366548486 赤羽岩淵駅",
+          "offsetM": 0
+        },
+        {
+          "id": "shin_arakawa",
+          "label": "新荒川大橋",
+          "coord": [
+            35.7866389,
+            139.7225291
+          ],
+          "source": "OSM node 305964401 新荒川大橋",
+          "offsetM": 0
+        },
+        {
+          "id": "chisu_shiryo",
+          "label": "荒川知水資料館",
+          "coord": [
+            35.7854759,
+            139.7302743
+          ],
+          "source": "OSM museum 荒川知水資料館",
+          "offsetM": 0
+        },
+        {
+          "id": "akabane",
+          "label": "赤羽駅",
+          "coord": [
+            35.7779138,
+            139.720002
+          ],
+          "source": "OSM bus_station 赤羽駅西口",
+          "offsetM": 14
+        }
+      ]
+    }
+  }
+}

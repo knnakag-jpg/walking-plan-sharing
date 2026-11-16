@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T22:10:34.976Z",
+  "generatedAt": "2026-11-16T12:08:30.784Z",
   "interpretation": "Mechanical triage only. Source and map review required before adopting any new route.",
   "records": [
     {
@@ -469,6 +469,64 @@
       ]
     },
     {
+      "id": "No.41",
+      "title": "江戸川 柴又と中川",
+      "series": "河川敷（No.36～41）",
+      "workStatus": "partial_rebuild",
+      "legacy": {
+        "geometryUrl": "data/routes/no-41.geojson",
+        "walkingDistanceM": 6067,
+        "repeatedGeometryPct": 8.5,
+        "repeatedGeometryM": 517,
+        "maxWaypointToShapeM": 112,
+        "repeatedWaypoints": [
+          [
+            7,
+            9
+          ]
+        ],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [
+        {
+          "variant": "standard",
+          "status": "routed",
+          "distanceM": 5260
+        },
+        {
+          "variant": "rainy",
+          "status": "researched",
+          "distanceM": null
+        }
+      ],
+      "coordinateReview": "not_started",
+      "sourceResearch": "source_research_in_progress",
+      "historicalRoutingStrategies": [],
+      "transportHints": [
+        "water_transport"
+      ],
+      "possibleDistanceFiller": true,
+      "retraceReview": null,
+      "priorityScore": 94,
+      "issues": [
+        "repeated_waypoint",
+        "waypoint_off_shape",
+        "retraced_geometry_over_100m",
+        "possible_distance_filler",
+        "transport_or_indoor_leg_separation"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
       "id": "S4",
       "title": "井の頭・神田川せせらぎ（高井戸〜井の頭公園〜吉祥寺）",
       "series": "制作主専用修行案（個人用・最大8km）",
@@ -837,9 +895,9 @@
     },
     {
       "id": "No.40",
-      "title": "荒川 赤水門・岩淵",
+      "title": "荒川 岩淵の水門",
       "series": "河川敷（No.36～41）",
-      "workStatus": "research_needed",
+      "workStatus": "partial_rebuild",
       "legacy": {
         "geometryUrl": "data/routes/no-40.geojson",
         "walkingDistanceM": 6101,
@@ -854,9 +912,20 @@
         ],
         "gateResult": "OK"
       },
-      "existingNewVariants": [],
+      "existingNewVariants": [
+        {
+          "variant": "standard",
+          "status": "routed",
+          "distanceM": 3215
+        },
+        {
+          "variant": "rainy",
+          "status": "researched",
+          "distanceM": null
+        }
+      ],
       "coordinateReview": "not_started",
-      "sourceResearch": "not_started",
+      "sourceResearch": "source_research_in_progress",
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": true,
@@ -1240,9 +1309,9 @@
     },
     {
       "id": "No.39",
-      "title": "荒川 千住大土手・スカイツリー",
+      "title": "荒川 千住の大土手",
       "series": "河川敷（No.36～41）",
-      "workStatus": "research_needed",
+      "workStatus": "partial_rebuild",
       "legacy": {
         "geometryUrl": "data/routes/no-39.geojson",
         "walkingDistanceM": 6311,
@@ -1257,9 +1326,20 @@
         ],
         "gateResult": "OK"
       },
-      "existingNewVariants": [],
+      "existingNewVariants": [
+        {
+          "variant": "standard",
+          "status": "routed",
+          "distanceM": 4663
+        },
+        {
+          "variant": "rainy",
+          "status": "researched",
+          "distanceM": null
+        }
+      ],
       "coordinateReview": "not_started",
-      "sourceResearch": "not_started",
+      "sourceResearch": "source_research_in_progress",
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": true,
@@ -1438,50 +1518,6 @@
       ]
     },
     {
-      "id": "No.41",
-      "title": "江戸川 矢切の渡し・柴又",
-      "series": "河川敷（No.36～41）",
-      "workStatus": "research_needed",
-      "legacy": {
-        "geometryUrl": "data/routes/no-41.geojson",
-        "walkingDistanceM": 6067,
-        "repeatedGeometryPct": 8.5,
-        "repeatedGeometryM": 517,
-        "maxWaypointToShapeM": 112,
-        "repeatedWaypoints": [
-          [
-            7,
-            9
-          ]
-        ],
-        "gateResult": "OK"
-      },
-      "existingNewVariants": [],
-      "coordinateReview": "not_started",
-      "sourceResearch": "not_started",
-      "historicalRoutingStrategies": [],
-      "transportHints": [],
-      "possibleDistanceFiller": true,
-      "retraceReview": null,
-      "priorityScore": 74,
-      "issues": [
-        "repeated_waypoint",
-        "waypoint_off_shape",
-        "retraced_geometry_over_100m",
-        "possible_distance_filler"
-      ],
-      "checklist": [
-        "公式の地域・施設資料を収集し、確認日を記録",
-        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
-        "駅の出入口・施設の入口・横断・通行条件を照合",
-        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
-        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
-        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
-        "旧経路との差分・採用理由・未確認事項を記録"
-      ]
-    },
-    {
       "id": "S2",
       "title": "多摩川・浅川合流（豊田南口〜日野用水堰〜立川）水辺フラット",
       "series": "制作主専用修行案（個人用・最大8km）",
@@ -1632,9 +1668,9 @@
     },
     {
       "id": "No.38",
-      "title": "多摩川/浅川 万願寺ふれあい橋",
+      "title": "多摩川と浅川 万願寺の渡し場",
       "series": "河川敷（No.36～41）",
-      "workStatus": "research_needed",
+      "workStatus": "partial_rebuild",
       "legacy": {
         "geometryUrl": "data/routes/no-38.geojson",
         "walkingDistanceM": 5629,
@@ -1649,9 +1685,20 @@
         ],
         "gateResult": "OK"
       },
-      "existingNewVariants": [],
+      "existingNewVariants": [
+        {
+          "variant": "standard",
+          "status": "routed",
+          "distanceM": 4260
+        },
+        {
+          "variant": "rainy",
+          "status": "researched",
+          "distanceM": null
+        }
+      ],
       "coordinateReview": "not_started",
-      "sourceResearch": "not_started",
+      "sourceResearch": "source_research_in_progress",
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": true,
@@ -2197,9 +2244,9 @@
     },
     {
       "id": "No.42",
-      "title": "横浜 女神橋・大さん橋",
+      "title": "横浜 大さん橋とみなとみらい",
       "series": "ベイエリア橋（No.42～45）",
-      "workStatus": "research_needed",
+      "workStatus": "partial_rebuild",
       "legacy": {
         "geometryUrl": "data/routes/no-42.geojson",
         "walkingDistanceM": 6346,
@@ -2214,9 +2261,20 @@
         ],
         "gateResult": "OK"
       },
-      "existingNewVariants": [],
+      "existingNewVariants": [
+        {
+          "variant": "standard",
+          "status": "routed",
+          "distanceM": 4220
+        },
+        {
+          "variant": "rainy",
+          "status": "researched",
+          "distanceM": null
+        }
+      ],
       "coordinateReview": "not_started",
-      "sourceResearch": "not_started",
+      "sourceResearch": "source_research_in_progress",
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": true,
@@ -4525,9 +4583,9 @@
     },
     {
       "id": "No.37",
-      "title": "多摩川 多摩水道橋・登戸",
+      "title": "多摩川 二子橋から登戸",
       "series": "河川敷（No.36～41）",
-      "workStatus": "research_needed",
+      "workStatus": "partial_rebuild",
       "legacy": {
         "geometryUrl": "data/routes/no-37.geojson",
         "walkingDistanceM": 6812,
@@ -4537,9 +4595,20 @@
         "repeatedWaypoints": [],
         "gateResult": "OK"
       },
-      "existingNewVariants": [],
+      "existingNewVariants": [
+        {
+          "variant": "standard",
+          "status": "routed",
+          "distanceM": 6879
+        },
+        {
+          "variant": "rainy",
+          "status": "researched",
+          "distanceM": null
+        }
+      ],
       "coordinateReview": "not_started",
-      "sourceResearch": "not_started",
+      "sourceResearch": "source_research_in_progress",
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": false,
