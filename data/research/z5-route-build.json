@@ -1,31 +1,20 @@
 {
-  "calculatedAt": "2026-11-16T14:05:16.836Z",
+  "calculatedAt": "2026-11-16T14:41:00.189Z",
   "engine": "valhalla-pedestrian",
   "variants": {
     "standard": {
       "label": "standard",
-      "distanceM": 4303,
-      "engineDistanceM": 4292,
-      "repeatedGeometryM": 97,
-      "repeatedGeometryPct": 2.3,
+      "distanceM": 2085,
+      "engineDistanceM": 2081,
+      "repeatedGeometryM": 22,
+      "repeatedGeometryPct": 1,
       "legKm": [
-        1.21,
-        0.52,
-        1.7,
-        0.87
+        1.2,
+        0.87,
+        0.01
       ],
       "geometryUrl": "data/routes/z5-standard.geojson",
       "stops": [
-        {
-          "id": "toyama_st",
-          "label": "富山駅",
-          "coord": [
-            36.7016902,
-            137.213037
-          ],
-          "source": "OSM tram_stop 富山駅",
-          "offsetM": 0
-        },
         {
           "id": "toyama_jo",
           "label": "富山城址",
@@ -37,26 +26,6 @@
           "offsetM": 0
         },
         {
-          "id": "kencho_mae",
-          "label": "県庁前",
-          "coord": [
-            36.695684,
-            137.2096868
-          ],
-          "source": "OSM tram_stop 県庁前",
-          "offsetM": 0
-        },
-        {
-          "id": "kankei_park",
-          "label": "環水公園",
-          "coord": [
-            36.7078621,
-            137.213589
-          ],
-          "source": "TOPIC: 環水公園。OSMの正確な点は地図レビュー待ち",
-          "offsetM": 0
-        },
-        {
           "id": "toyama_st",
           "label": "富山駅",
           "coord": [
@@ -64,6 +33,26 @@
             137.213037
           ],
           "source": "OSM tram_stop 富山駅",
+          "offsetM": 0
+        },
+        {
+          "id": "kankei_spring",
+          "label": "泉と滝の広場",
+          "coord": [
+            36.7078144,
+            137.2137337
+          ],
+          "source": "OSM node 泉と滝の広場",
+          "offsetM": 0
+        },
+        {
+          "id": "kankei_park",
+          "label": "富岩運河環水公園",
+          "coord": [
+            36.7078621,
+            137.213589
+          ],
+          "source": "OSM 富岩運河環水公園（利用者提供の地図で天門橋・泉と滝の位置を確認）",
           "offsetM": 0
         }
       ]

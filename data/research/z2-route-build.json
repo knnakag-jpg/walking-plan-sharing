@@ -1,18 +1,18 @@
 {
-  "calculatedAt": "2026-11-16T14:03:27.448Z",
+  "calculatedAt": "2026-11-16T14:34:53.242Z",
   "engine": "valhalla-pedestrian",
   "variants": {
     "standard": {
       "label": "standard",
-      "distanceM": 4026,
-      "engineDistanceM": 4029,
-      "repeatedGeometryM": 280,
-      "repeatedGeometryPct": 7,
+      "distanceM": 3738,
+      "engineDistanceM": 3740,
+      "repeatedGeometryM": 227,
+      "repeatedGeometryPct": 6.1,
       "legKm": [
         0.66,
         1.44,
-        1.41,
-        0.52
+        0.7,
+        0.94
       ],
       "geometryUrl": "data/routes/z2-standard.geojson",
       "stops": [
@@ -47,13 +47,13 @@
           "offsetM": 7
         },
         {
-          "id": "harborland",
-          "label": "神戸ハーバーランド",
+          "id": "mosaic_mae",
+          "label": "ハーバーランド（モザイク前）",
           "coord": [
-            34.6781076,
-            135.1801814
+            34.6813952,
+            135.1841253
           ],
-          "source": "OSM attraction 神戸ハーバーランド",
+          "source": "OSM node 6033546386 ハーバーランド(モザイク前); 利用者提供の地図でモザイク・はね橋の位置を確認",
           "offsetM": 0
         },
         {

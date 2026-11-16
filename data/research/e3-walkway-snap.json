@@ -22,5 +22,13 @@
   ],
   "movedM": 4,
   "wayId": 42744327
+ },
+ "hamamatsu_jo_iri": {
+  "snapped": [
+   34.7129503,
+   137.7275634
+  ],
+  "movedM": 5,
+  "wayId": 363704708
  }
 }

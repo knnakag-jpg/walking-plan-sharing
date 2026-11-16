@@ -11,7 +11,8 @@ const komoike = P('komoike', '菰池公園', 35.12542, 138.91586, 'OSM park 菰�
 
 // E3 浜松：浜松駅→浜松城→遠鉄百貨店方面→新浜松駅。
 const hamamatsuSt = P('hamamatsu_st', '浜松駅', 34.70528, 137.73356, 'OSM node 浜松駅');
-const hamamatsuJo = P('hamamatsu_jo', '浜松城（浜松城公園）', 34.71207, 137.72279, 'OSM 浜松城公園前交番の近くの公園; 城の点は地図レビュー待ち');
+const hamamatsuJo = P('hamamatsu_jo', '浜松城跡（天守閣）', 34.71174, 137.72507, 'OSM information 浜松城跡; 利用者提供の地図で天守閣と市役所の位置を確認');
+const hamamatsuJoIri = P('hamamatsu_jo_iri', '浜松城公園入口', 34.71299, 137.72758, 'OSM node 2569338403 浜松城公園入口（東側の入口）');
 const shinHamamatsu = P('shin_hamamatsu', '新浜松駅', 34.7035, 137.7359, 'OSM node JR浜松駅東（新浜松駅の近く）; 駅の正確な点は地図レビュー待ち');
 
 // Z2 神戸：三宮駅→旧居留地→神戸港（中突堤）→ハーバーランド→神戸駅。
@@ -19,6 +20,7 @@ const sannomiya = P('sannomiya', '神戸三宮駅', 34.69316, 135.19286, 'OSM st
 const motomachi = P('motomachi', '元町駅', 34.68957, 135.18715, 'OSM station 元町');
 const chutottei = P('chutottei', '中突堤旅客ターミナル', 34.68009, 135.18854, 'OSM ferry_terminal 中突堤旅客ターミナル');
 const harborland = P('harborland', '神戸ハーバーランド', 34.67851, 135.18031, 'OSM attraction 神戸ハーバーランド');
+const mosaicMae = P('mosaic_mae', 'ハーバーランド（モザイク前）', 34.68149, 135.18413, 'OSM node 6033546386 ハーバーランド(モザイク前); 利用者提供の地図でモザイク・はね橋の位置を確認');
 const kobeSt = P('kobe_st', '神戸駅', 34.67929, 135.17828, 'OSM station 神戸');
 
 // Z3 福岡：博多駅→中洲川端→天神→大濠公園。
@@ -30,15 +32,16 @@ const ohori = P('ohori', '大濠公園', 33.59018, 130.37722, 'OSM node 大濠�
 // Z5 富山：富山駅→富山城址→環水公園→富山駅。
 const toyamaSt = P('toyama_st', '富山駅', 36.70158, 137.21294, 'OSM tram_stop 富山駅');
 const toyamaJo = P('toyama_jo', '富山城址', 36.69267, 137.21111, 'OSM information 富山城の石垣について（城址公園内）');
-const kankeiPark = P('kankei_park', '環水公園', 36.708, 137.2135, 'TOPIC: 環水公園。OSMの正確な点は地図レビュー待ち');
+const kankeiPark = P('kankei_park', '富岩運河環水公園', 36.70967, 137.2126, 'OSM 富岩運河環水公園（利用者提供の地図で天門橋・泉と滝の位置を確認）');
+const kankeiSpring = P('kankei_spring', '泉と滝の広場', 36.70798, 137.21374, 'OSM node 泉と滝の広場');
 const kenhchoMae = P('kencho_mae', '県庁前', 36.69568, 137.20974, 'OSM tram_stop 県庁前');
 
 const jobs = {
   E1: { courseId: 'E1', slug: 'e1', variants: { standard: [mishimaSt, rakuju, shirataki, mishimaTaisha, mishimaTamachi] } },
-  E3: { courseId: 'E3', slug: 'e3', variants: { standard: [hamamatsuSt, hamamatsuJo, shinHamamatsu] } },
-  Z2: { courseId: 'Z2', slug: 'z2', variants: { standard: [sannomiya, motomachi, chutottei, harborland, kobeSt] } },
+  E3: { courseId: 'E3', slug: 'e3', variants: { standard: [hamamatsuSt, hamamatsuJoIri, hamamatsuJo, shinHamamatsu] } },
+  Z2: { courseId: 'Z2', slug: 'z2', variants: { standard: [sannomiya, motomachi, chutottei, mosaicMae, kobeSt] } },
   Z3: { courseId: 'Z3', slug: 'z3', variants: { standard: [hakataSt, nakasu, tenjin, ohori] } },
-  Z5: { courseId: 'Z5', slug: 'z5', variants: { standard: [toyamaSt, toyamaJo, kenhchoMae, kankeiPark, toyamaSt] } },
+  Z5: { courseId: 'Z5', slug: 'z5', variants: { standard: [toyamaJo, toyamaSt, kankeiSpring, kankeiPark] } },
 };
 const only = new Set(process.argv.slice(2));
 for (const [key, job] of Object.entries(jobs)) {
