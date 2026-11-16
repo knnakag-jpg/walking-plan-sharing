@@ -1,0 +1,43 @@
+{
+  "id": "No.46",
+  "title": "夢の島熱帯植物館から葛西臨海水族園",
+  "stage": "source_research_in_progress",
+  "checkedAt": "2026-11-16",
+  "evidence": [
+    {
+      "type": "community",
+      "title": "OpenStreetMap（新木場駅・夢の島熱帯植物館・葛西臨海水族園・葛西臨海公園駅）",
+      "url": "https://www.openstreetmap.org/",
+      "checkedAt": "2026-11-16",
+      "supports": "駅・橋・公園・施設の名称ノードの座標。入口ではない。"
+    },
+    {
+      "type": "community",
+      "title": "旧資料 No.46（先行ページ index.html）",
+      "url": null,
+      "checkedAt": "2026-11-16",
+      "supports": "旧案の立ち寄り先。"
+    }
+  ],
+  "trials": [
+    {
+      "n": 1,
+      "variant": "A 新規（OSMの駅・地点）",
+      "result": "6.24km・反復835m",
+      "finding": "夢の島熱帯植物館の出入りで約543m、葛西臨海水族園の入口と駅の間で約292m（計約835m）。両施設の入口が園路の奥にあり、同じ道を戻る形と推定。地図で未確認。距離合わせではない。"
+    }
+  ],
+  "files": [
+    "scripts/lib-rebuild.mjs",
+    "scripts/build-group8.mjs",
+    "data/curated/no-46.json",
+    "data/research/no-46-adopted-build.json"
+  ],
+  "openQuestions": [
+    "夢の島大橋・荒川河口橋の座標",
+    "葛西臨海公園の鳥類園の入口と園路",
+    "大観覧車の位置",
+    "葛西臨海水族園の営業状況（建替え工事の有無）"
+  ],
+  "decision": "2026-11-16 新Aを計算（6.24km・反復835m）。夢の島大橋・荒川河口橋・鳥類園・大観覧車は名称ノードがなく含めていない。"
+}

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T12:44:35.412Z",
+  "generatedAt": "2026-11-16T12:46:27.703Z",
   "interpretation": "Mechanical triage only. Source and map review required before adopting any new route.",
   "records": [
     {
@@ -3866,9 +3866,9 @@
     },
     {
       "id": "No.46",
-      "title": "夢の島熱帯植物館〜葛西臨海水族園",
+      "title": "夢の島熱帯植物館から葛西臨海水族園",
       "series": "V4湾岸追加（No.46）",
-      "workStatus": "research_needed",
+      "workStatus": "partial_rebuild",
       "legacy": {
         "geometryUrl": "data/routes/no-46.geojson",
         "walkingDistanceM": 8025,
@@ -3878,9 +3878,20 @@
         "repeatedWaypoints": [],
         "gateResult": "OK"
       },
-      "existingNewVariants": [],
+      "existingNewVariants": [
+        {
+          "variant": "standard",
+          "status": "routed",
+          "distanceM": 6239
+        },
+        {
+          "variant": "rainy",
+          "status": "researched",
+          "distanceM": null
+        }
+      ],
       "coordinateReview": "not_started",
-      "sourceResearch": "not_started",
+      "sourceResearch": "source_research_in_progress",
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": false,

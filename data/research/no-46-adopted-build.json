@@ -1,0 +1,57 @@
+{
+  "generatedAt": "2026-11-16T12:41:10.511Z",
+  "method": "Valhalla pedestrian; exact geometry edge repeat is only a screening clue",
+  "results": [
+    {
+      "variant": "standard",
+      "distanceM": 6239,
+      "engineDistanceM": 6239,
+      "repeatedGeometryM": 835,
+      "repeatedGeometryPct": 13.4,
+      "waypoints": [
+        {
+          "id": "shinkiba",
+          "label": "新木場駅",
+          "coord": [
+            35.6458523,
+            139.8269657
+          ],
+          "source": "OSM 新木場 station"
+        },
+        {
+          "id": "nettaikan",
+          "label": "東京都夢の島熱帯植物館",
+          "coord": [
+            35.6511219,
+            139.8294159
+          ],
+          "source": "OSM garden 東京都夢の島熱帯植物館"
+        },
+        {
+          "id": "kasai_aquarium",
+          "label": "葛西臨海水族園",
+          "coord": [
+            35.6409459,
+            139.8618897
+          ],
+          "source": "OSM aquarium 葛西臨海水族園"
+        },
+        {
+          "id": "kasai_st",
+          "label": "葛西臨海公園駅",
+          "coord": [
+            35.6441556,
+            139.8615771
+          ],
+          "source": "OSM station 葛西臨海公園"
+        }
+      ],
+      "legDistancesKm": [
+        1.05,
+        4.65,
+        0.54
+      ],
+      "geometryUrl": "data/routes/no-46-standard.geojson"
+    }
+  ]
+}
