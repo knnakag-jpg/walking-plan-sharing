@@ -1,0 +1,42 @@
+{
+ "teleport": {
+  "snapped": [
+   35.6268665,
+   139.7798162
+  ],
+  "movedM": 4,
+  "wayId": 332617478
+ },
+ "yume_no_ohashi": {
+  "snapped": [
+   35.6275595,
+   139.7822771
+  ],
+  "movedM": 4,
+  "wayId": 507953316
+ },
+ "harumi_ohashi": {
+  "snapped": [
+   35.6480338,
+   139.7892679
+  ],
+  "movedM": 0,
+  "wayId": 23990056
+ },
+ "toyosu_park": {
+  "snapped": [
+   35.6531584,
+   139.7925946
+  ],
+  "movedM": 43,
+  "wayId": 443612973
+ },
+ "toyosu_st": {
+  "snapped": [
+   35.6544293,
+   139.7958876
+  ],
+  "movedM": 0,
+  "wayId": 670080591
+ }
+}

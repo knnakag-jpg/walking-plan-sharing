@@ -1,0 +1,57 @@
+{
+  "generatedAt": "2026-11-16T12:37:52.776Z",
+  "method": "Valhalla pedestrian; exact geometry edge repeat is only a screening clue",
+  "results": [
+    {
+      "variant": "standard",
+      "distanceM": 3814,
+      "engineDistanceM": 3810,
+      "repeatedGeometryM": 1647,
+      "repeatedGeometryPct": 43.2,
+      "waypoints": [
+        {
+          "id": "kisarazu_st",
+          "label": "木更津駅西口",
+          "coord": [
+            35.3811934,
+            139.9252189
+          ],
+          "source": "OSM node 木更津駅西口"
+        },
+        {
+          "id": "toriizaki",
+          "label": "鳥居崎海浜公園",
+          "coord": [
+            35.3814591,
+            139.9138819
+          ],
+          "source": "OSM park 鳥居崎海浜公園"
+        },
+        {
+          "id": "nakano_shima_ohashi",
+          "label": "中の島大橋",
+          "coord": [
+            35.38366,
+            139.91263
+          ],
+          "source": "OSM node 55683492 中の島大橋"
+        },
+        {
+          "id": "kisarazu_st",
+          "label": "木更津駅西口",
+          "coord": [
+            35.3811934,
+            139.9252189
+          ],
+          "source": "OSM node 木更津駅西口"
+        }
+      ],
+      "legDistancesKm": [
+        1.65,
+        0.67,
+        1.49
+      ],
+      "geometryUrl": "data/routes/no-45-standard.geojson"
+    }
+  ]
+}

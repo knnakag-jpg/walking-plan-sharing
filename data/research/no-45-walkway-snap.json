@@ -1,0 +1,21 @@
+{
+ "kisarazu_st": {
+  "snapped": [
+   35.3811934,
+   139.9252189
+  ],
+  "movedM": 5,
+  "wayId": 952501552
+ },
+ "toriizaki": {
+  "snapped": [
+   35.3814591,
+   139.9138819
+  ],
+  "movedM": 7,
+  "wayId": 1041882639
+ },
+ "nakano_shima_ohashi": {
+  "snapped": null
+ }
+}

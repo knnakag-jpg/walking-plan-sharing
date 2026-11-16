@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T12:08:30.784Z",
+  "generatedAt": "2026-11-16T12:44:35.412Z",
   "interpretation": "Mechanical triage only. Source and map review required before adopting any new route.",
   "records": [
     {
@@ -427,7 +427,7 @@
       "id": "No.44",
       "title": "川崎・羽田 多摩川スカイブリッジ",
       "series": "ベイエリア橋（No.42～45）",
-      "workStatus": "research_needed",
+      "workStatus": "partial_rebuild",
       "legacy": {
         "geometryUrl": "data/routes/no-44.geojson",
         "walkingDistanceM": 6117,
@@ -442,9 +442,20 @@
         ],
         "gateResult": "OK"
       },
-      "existingNewVariants": [],
+      "existingNewVariants": [
+        {
+          "variant": "standard",
+          "status": "routed",
+          "distanceM": 5559
+        },
+        {
+          "variant": "rainy",
+          "status": "researched",
+          "distanceM": null
+        }
+      ],
       "coordinateReview": "not_started",
-      "sourceResearch": "not_started",
+      "sourceResearch": "source_research_in_progress",
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": true,
@@ -1830,9 +1841,9 @@
     },
     {
       "id": "No.48",
-      "title": "両国〜浅草〜スカイツリー",
+      "title": "両国から浅草・スカイツリー",
       "series": "V4-B/Cグルメ（No.47〜52）",
-      "workStatus": "research_needed",
+      "workStatus": "partial_rebuild",
       "legacy": {
         "geometryUrl": "data/routes/no-48.geojson",
         "walkingDistanceM": 7021,
@@ -1847,9 +1858,20 @@
         ],
         "gateResult": "OK"
       },
-      "existingNewVariants": [],
+      "existingNewVariants": [
+        {
+          "variant": "standard",
+          "status": "routed",
+          "distanceM": 3927
+        },
+        {
+          "variant": "rainy",
+          "status": "researched",
+          "distanceM": null
+        }
+      ],
       "coordinateReview": "not_started",
-      "sourceResearch": "not_started",
+      "sourceResearch": "source_research_in_progress",
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": true,
@@ -2609,7 +2631,7 @@
       "id": "No.45",
       "title": "木更津 中の島大橋",
       "series": "ベイエリア橋（No.42～45）",
-      "workStatus": "research_needed",
+      "workStatus": "partial_rebuild",
       "legacy": {
         "geometryUrl": "data/routes/no-45.geojson",
         "walkingDistanceM": 6219,
@@ -2619,9 +2641,20 @@
         "repeatedWaypoints": [],
         "gateResult": "OK"
       },
-      "existingNewVariants": [],
+      "existingNewVariants": [
+        {
+          "variant": "standard",
+          "status": "routed",
+          "distanceM": 3814
+        },
+        {
+          "variant": "rainy",
+          "status": "researched",
+          "distanceM": null
+        }
+      ],
       "coordinateReview": "not_started",
-      "sourceResearch": "not_started",
+      "sourceResearch": "source_research_in_progress",
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": false,
@@ -3366,9 +3399,9 @@
     },
     {
       "id": "No.43",
-      "title": "東京 夢の大橋・豊洲",
+      "title": "東京 夢の大橋と豊洲",
       "series": "ベイエリア橋（No.42～45）",
-      "workStatus": "research_needed",
+      "workStatus": "partial_rebuild",
       "legacy": {
         "geometryUrl": "data/routes/no-43.geojson",
         "walkingDistanceM": 6671,
@@ -3378,9 +3411,20 @@
         "repeatedWaypoints": [],
         "gateResult": "OK"
       },
-      "existingNewVariants": [],
+      "existingNewVariants": [
+        {
+          "variant": "standard",
+          "status": "routed",
+          "distanceM": 4904
+        },
+        {
+          "variant": "rainy",
+          "status": "researched",
+          "distanceM": null
+        }
+      ],
       "coordinateReview": "not_started",
-      "sourceResearch": "not_started",
+      "sourceResearch": "source_research_in_progress",
       "historicalRoutingStrategies": [
         {
           "oldLabel": "A",

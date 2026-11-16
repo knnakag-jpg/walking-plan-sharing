@@ -1,0 +1,72 @@
+{
+  "calculatedAt": "2026-11-16T12:35:47.300Z",
+  "engine": "valhalla-pedestrian",
+  "variants": {
+    "standard": {
+      "label": "standard",
+      "distanceM": 4904,
+      "engineDistanceM": 4904,
+      "repeatedGeometryM": 28,
+      "repeatedGeometryPct": 0.6,
+      "legKm": [
+        0.27,
+        3.41,
+        0.75,
+        0.47
+      ],
+      "geometryUrl": "data/routes/no-43-standard.geojson",
+      "stops": [
+        {
+          "id": "teleport",
+          "label": "東京テレポート駅前",
+          "coord": [
+            35.6268665,
+            139.7798162
+          ],
+          "source": "OSM node 東京テレポート駅前",
+          "offsetM": 9
+        },
+        {
+          "id": "yume_no_ohashi",
+          "label": "夢の大橋",
+          "coord": [
+            35.6275595,
+            139.7822771
+          ],
+          "source": "OSM memorial 夢の大橋 田中賞受賞記念",
+          "offsetM": 7
+        },
+        {
+          "id": "harumi_ohashi",
+          "label": "晴海大橋南詰",
+          "coord": [
+            35.6480338,
+            139.7892679
+          ],
+          "source": "OSM node 晴海大橋南詰",
+          "offsetM": 0
+        },
+        {
+          "id": "toyosu_park",
+          "label": "豊洲公園",
+          "coord": [
+            35.6531584,
+            139.7925946
+          ],
+          "source": "OSM park 豊洲公園",
+          "offsetM": 0
+        },
+        {
+          "id": "toyosu_st",
+          "label": "豊洲駅",
+          "coord": [
+            35.6544293,
+            139.7958876
+          ],
+          "source": "OSM subway_entrance 豊洲駅",
+          "offsetM": 0
+        }
+      ]
+    }
+  }
+}

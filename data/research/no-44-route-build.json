@@ -1,0 +1,72 @@
+{
+  "calculatedAt": "2026-11-16T12:40:54.073Z",
+  "engine": "valhalla-pedestrian",
+  "variants": {
+    "standard": {
+      "label": "standard",
+      "distanceM": 5559,
+      "engineDistanceM": 5562,
+      "repeatedGeometryM": 474,
+      "repeatedGeometryPct": 8.5,
+      "legKm": [
+        1.69,
+        0.49,
+        1.01,
+        2.37
+      ],
+      "geometryUrl": "data/routes/no-44-standard.geojson",
+      "stops": [
+        {
+          "id": "kojimashinden",
+          "label": "小島新田駅",
+          "coord": [
+            35.5347495,
+            139.7480467
+          ],
+          "source": "OSM station 小島新田",
+          "offsetM": 0
+        },
+        {
+          "id": "sky_bridge_s2",
+          "label": "多摩川スカイブリッジ南",
+          "coord": [
+            35.54045,
+            139.76095
+          ],
+          "source": "OSM node 819656082 多摩川スカイブリッジ（南端）",
+          "offsetM": 7
+        },
+        {
+          "id": "sky_bridge_n2",
+          "label": "多摩川スカイブリッジ北",
+          "coord": [
+            35.5442496,
+            139.7633023
+          ],
+          "source": "OSM node 7654141396 多摩川スカイブリッジ北",
+          "offsetM": 7
+        },
+        {
+          "id": "tenkubashi_st",
+          "label": "天空橋駅",
+          "coord": [
+            35.5480731,
+            139.7546938
+          ],
+          "source": "OSM station 天空橋",
+          "offsetM": 2
+        },
+        {
+          "id": "haneda_t3b",
+          "label": "羽田空港第3ターミナル駅",
+          "coord": [
+            35.543874,
+            139.7686203
+          ],
+          "source": "OSM station 羽田空港第3ターミナル",
+          "offsetM": 0
+        }
+      ]
+    }
+  }
+}

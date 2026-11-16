@@ -1,0 +1,61 @@
+{
+  "id": "No.48",
+  "title": "両国から浅草・スカイツリー",
+  "stage": "source_research_in_progress",
+  "checkedAt": "2026-11-16",
+  "evidence": [
+    {
+      "type": "community",
+      "title": "OpenStreetMap（吾妻橋・東京スカイツリー・押上駅・両国駅付近・浅草寺付近）",
+      "url": "https://www.openstreetmap.org/",
+      "checkedAt": "2026-11-16",
+      "supports": "駅・橋・公園・施設の名称ノードの座標。入口ではない。"
+    },
+    {
+      "type": "community",
+      "title": "旧資料 No.48（先行ページ index.html）",
+      "url": null,
+      "checkedAt": "2026-11-16",
+      "supports": "旧案の立ち寄り先。押上三丁目方面の往復延伸は採用していない。"
+    }
+  ],
+  "trials": [
+    {
+      "n": 1,
+      "variant": "A 新規（OSMの駅・地点）",
+      "result": "3.93km・反復57m",
+      "finding": "計算上の重なりは約57m（隅田公園付近）。"
+    },
+    {
+      "n": 2,
+      "variant": "A 新規（OSMの駅・地点）",
+      "result": "3.93km・反復57m",
+      "finding": "計算上の重なりは約57m（隅田公園付近）。"
+    },
+    {
+      "n": 3,
+      "variant": "A 新規（OSMの駅・地点）",
+      "result": "3.93km・反復57m",
+      "finding": "計算上の重なりは約57m（隅田公園付近）。"
+    },
+    {
+      "n": 4,
+      "variant": "A 新規（OSMの駅・地点）",
+      "result": "3.93km・反復57m",
+      "finding": "計算上の重なりは約57m（隅田公園付近）。"
+    }
+  ],
+  "files": [
+    "scripts/lib-rebuild.mjs",
+    "scripts/build-group8.mjs",
+    "data/curated/no-48.json",
+    "data/research/no-48-adopted-build.json"
+  ],
+  "openQuestions": [
+    "両国駅・浅草寺・隅田公園の座標",
+    "隅田川テラスの通行条件",
+    "吾妻橋の歩道",
+    "スカイツリーの展望デッキの入口"
+  ],
+  "decision": "2026-11-16 新Aを計算（3.93km・反復57m）。両国駅・浅草寺・隅田公園は名称ノードがなく概略の点を使用。"
+}

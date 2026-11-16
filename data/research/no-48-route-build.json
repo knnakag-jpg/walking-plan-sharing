@@ -1,0 +1,83 @@
+{
+  "calculatedAt": "2026-11-16T12:40:38.461Z",
+  "engine": "valhalla-pedestrian",
+  "variants": {
+    "standard": {
+      "label": "standard",
+      "distanceM": 3927,
+      "engineDistanceM": 3931,
+      "repeatedGeometryM": 57,
+      "repeatedGeometryPct": 1.4,
+      "legKm": [
+        1.18,
+        0.58,
+        0.43,
+        1.32,
+        0.42
+      ],
+      "geometryUrl": "data/routes/no-48-standard.geojson",
+      "stops": [
+        {
+          "id": "ryogoku_st",
+          "label": "両国駅",
+          "coord": [
+            35.7019062,
+            139.7975814
+          ],
+          "source": "OSM 両国 station; 駅の正確な点は地図レビュー待ち",
+          "offsetM": 0
+        },
+        {
+          "id": "azuma_bashi",
+          "label": "吾妻橋",
+          "coord": [
+            35.7106996,
+            139.797744
+          ],
+          "source": "OSM node 1691781635 吾妻橋",
+          "offsetM": 0
+        },
+        {
+          "id": "sensoji",
+          "label": "浅草寺",
+          "coord": [
+            35.7147238,
+            139.7964791
+          ],
+          "source": "OSM 浅草寺; 正確な点は地図レビュー待ち",
+          "offsetM": 0
+        },
+        {
+          "id": "sumida_park",
+          "label": "隅田公園",
+          "coord": [
+            35.7136117,
+            139.8006052
+          ],
+          "source": "TOPIC: 隅田公園。OSMの点は地図レビュー待ち",
+          "offsetM": 0
+        },
+        {
+          "id": "skytree",
+          "label": "東京スカイツリー",
+          "coord": [
+            35.7099073,
+            139.8105325
+          ],
+          "source": "OSM attraction 東京スカイツリー",
+          "offsetM": 0
+        },
+        {
+          "id": "oshiage",
+          "label": "押上駅",
+          "coord": [
+            35.7106482,
+            139.8127296
+          ],
+          "source": "OSM station 押上",
+          "offsetM": 0
+        }
+      ]
+    }
+  }
+}

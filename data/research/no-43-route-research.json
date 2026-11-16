@@ -1,0 +1,67 @@
+{
+  "id": "No.43",
+  "title": "東京 夢の大橋と豊洲",
+  "stage": "source_research_in_progress",
+  "checkedAt": "2026-11-16",
+  "evidence": [
+    {
+      "type": "community",
+      "title": "OpenStreetMap（東京テレポート駅前・夢の大橋・晴海大橋南詰・豊洲公園・豊洲駅）",
+      "url": "https://www.openstreetmap.org/",
+      "checkedAt": "2026-11-16",
+      "supports": "駅・橋・公園・施設の名称ノードの座標。入口ではない。"
+    },
+    {
+      "type": "community",
+      "title": "旧資料 No.43（先行ページ index.html）",
+      "url": null,
+      "checkedAt": "2026-11-16",
+      "supports": "旧案の立ち寄り先。晴海大橋までの往復は採用していない。"
+    }
+  ],
+  "trials": [
+    {
+      "n": 1,
+      "variant": "A 新規（OSMの駅・地点）",
+      "result": "4.90km・反復28m",
+      "finding": "計算上の重なりは約28m（豊洲公園付近）。"
+    },
+    {
+      "n": 2,
+      "variant": "A 新規（OSMの駅・地点）",
+      "result": "4.90km・反復28m",
+      "finding": "計算上の重なりは約28m（豊洲公園付近）。"
+    },
+    {
+      "n": 3,
+      "variant": "A 新規（OSMの駅・地点）",
+      "result": "4.90km・反復28m",
+      "finding": "計算上の重なりは約28m（豊洲公園付近）。"
+    },
+    {
+      "n": 4,
+      "variant": "A 新規（OSMの駅・地点）",
+      "result": "4.90km・反復28m",
+      "finding": "計算上の重なりは約28m（豊洲公園付近）。"
+    },
+    {
+      "n": 5,
+      "variant": "A 新規（OSMの駅・地点）",
+      "result": "4.90km・反復28m",
+      "finding": "計算上の重なりは約28m（豊洲公園付近）。"
+    }
+  ],
+  "files": [
+    "scripts/lib-rebuild.mjs",
+    "scripts/build-group8.mjs",
+    "data/curated/no-43.json",
+    "data/research/no-43-adopted-build.json"
+  ],
+  "openQuestions": [
+    "晴海大橋の歩道が徒歩で通れるか",
+    "千客万来・豊洲ぐるり公園の座標",
+    "夢の大橋の歩行者動線",
+    "豊洲公園から豊洲駅への道"
+  ],
+  "decision": "2026-11-16 新Aを計算（4.47km・反復28m）。晴海大橋への往復は不採用。"
+}

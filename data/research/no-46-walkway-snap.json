@@ -1,0 +1,42 @@
+{
+ "shinkiba": {
+  "snapped": [
+   35.6458523,
+   139.8269657
+  ],
+  "movedM": 6,
+  "wayId": 664128319
+ },
+ "nettaikan": {
+  "snapped": [
+   35.6511219,
+   139.8294159
+  ],
+  "movedM": 24,
+  "wayId": 1467973201
+ },
+ "yumenoshima_midori": {
+  "snapped": [
+   35.6473001,
+   139.8236364
+  ],
+  "movedM": 9,
+  "wayId": 491081623
+ },
+ "kasai_aquarium": {
+  "snapped": [
+   35.6409459,
+   139.8618897
+  ],
+  "movedM": 19,
+  "wayId": 614186095
+ },
+ "kasai_st": {
+  "snapped": [
+   35.6441556,
+   139.8615771
+  ],
+  "movedM": 28,
+  "wayId": 693987766
+ }
+}

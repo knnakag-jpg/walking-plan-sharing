@@ -1,0 +1,45 @@
+{
+ "kojimashinden": {
+  "snapped": [
+   35.5347495,
+   139.7480467
+  ],
+  "movedM": 13,
+  "wayId": 1082920211
+ },
+ "sky_bridge_s2": {
+  "snapped": null
+ },
+ "sky_bridge_n2": {
+  "snapped": [
+   35.5442496,
+   139.7633023
+  ],
+  "movedM": 0,
+  "wayId": 820461488
+ },
+ "tenkubashi_st": {
+  "snapped": [
+   35.5480731,
+   139.7546938
+  ],
+  "movedM": 4,
+  "wayId": 1039536034
+ },
+ "deck": {
+  "snapped": [
+   35.5452745,
+   139.7694786
+  ],
+  "movedM": 5,
+  "wayId": 678184560
+ },
+ "haneda_t3b": {
+  "snapped": [
+   35.543874,
+   139.7686203
+  ],
+  "movedM": 3,
+  "wayId": 677916966
+ }
+}

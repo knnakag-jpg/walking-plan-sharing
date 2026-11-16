@@ -1,0 +1,75 @@
+{
+  "id": "No.43",
+  "buildFile": "data/research/no-43-adopted-build.json",
+  "title": "東京 夢の大橋と豊洲",
+  "summary": "東京テレポート駅から夢の大橋を渡り、晴海大橋南詰から豊洲公園を経て豊洲駅へ抜ける駅間。旧案の晴海大橋までの往復（1.38km）は採らず、晴海大橋は南詰を通過するだけにした。",
+  "themes": [
+    "橋",
+    "運河",
+    "公園",
+    "湾岸"
+  ],
+  "routeReasons": {
+    "standard": "東京テレポート駅前から夢の大橋、晴海大橋南詰、豊洲公園を経て豊洲駅へ。計算上4.47km。千客万来は名称ノードがなく、旧案の順序からは外した。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
+    "extended": "B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。"
+  },
+  "distanceExceptions": {
+    "standard": "4.47km。実在の地点だけで組んだため5〜6kmに届かない。旧案の晴海大橋への往復は距離合わせになるため採らない。"
+  },
+  "retraceExceptions": {
+    "standard": "計算上の重なりは約28m（豊洲公園付近）。"
+  },
+  "rainy": {
+    "verificationStatus": "researched",
+    "summary": "雨の日は豊洲駅直結の商業施設と市場前駅の屋根のある通路を中心にする案。",
+    "segments": [
+      {
+        "kind": "walk_outdoor",
+        "from": "東京テレポート駅",
+        "to": "夢の大橋",
+        "distanceM": null,
+        "note": "屋根なし。傘が必要。"
+      },
+      {
+        "kind": "walk_indoor",
+        "from": "豊洲駅",
+        "to": "商業施設の館内",
+        "distanceM": null,
+        "note": "館内の連続性は未確認。"
+      },
+      {
+        "kind": "rail",
+        "from": "豊洲駅",
+        "to": "東京テレポート駅",
+        "distanceM": null,
+        "note": "ゆりかもめ。"
+      }
+    ],
+    "conditions": [
+      "晴海大橋の歩道の通行条件は未確認。",
+      "運河沿いの風は強い。"
+    ]
+  },
+  "evidence": [
+    {
+      "type": "community",
+      "title": "OpenStreetMap（東京テレポート駅前・夢の大橋・晴海大橋南詰・豊洲公園・豊洲駅）",
+      "url": "https://www.openstreetmap.org/",
+      "checkedAt": "2026-11-16",
+      "supports": "駅・橋・公園・施設の名称ノードの座標。入口ではない。"
+    },
+    {
+      "type": "community",
+      "title": "旧資料 No.43（先行ページ index.html）",
+      "url": null,
+      "checkedAt": "2026-11-16",
+      "supports": "旧案の立ち寄り先。晴海大橋までの往復は採用していない。"
+    }
+  ],
+  "openQuestions": [
+    "晴海大橋の歩道が徒歩で通れるか",
+    "千客万来・豊洲ぐるり公園の座標",
+    "夢の大橋の歩行者動線",
+    "豊洲公園から豊洲駅への道"
+  ]
+}

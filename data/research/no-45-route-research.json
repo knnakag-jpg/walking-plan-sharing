@@ -1,0 +1,66 @@
+{
+  "id": "No.45",
+  "title": "木更津 中の島大橋",
+  "stage": "source_research_in_progress",
+  "checkedAt": "2026-11-16",
+  "evidence": [
+    {
+      "type": "community",
+      "title": "OpenStreetMap（木更津駅西口・鳥居崎海浜公園・中の島大橋）",
+      "url": "https://www.openstreetmap.org/",
+      "checkedAt": "2026-11-16",
+      "supports": "駅・橋・公園・施設の名称ノードの座標。入口ではない。"
+    },
+    {
+      "type": "community",
+      "title": "旧資料 No.45（先行ページ index.html）",
+      "url": null,
+      "checkedAt": "2026-11-16",
+      "supports": "旧案の立ち寄り先。"
+    }
+  ],
+  "trials": [
+    {
+      "n": 1,
+      "variant": "A 新規（OSMの駅・地点）",
+      "result": "3.81km・反復1647m",
+      "finding": "中の島大橋で約413mと約523m、駅へ戻る区間で約711m（計約1,647m）。島へ渡る橋は渡って戻る必要があり、往復は避けられない。距離合わせではない。"
+    },
+    {
+      "n": 2,
+      "variant": "A 新規（OSMの駅・地点）",
+      "result": "3.81km・反復1647m",
+      "finding": "中の島大橋で約413mと約523m、駅へ戻る区間で約711m（計約1,647m）。島へ渡る橋は渡って戻る必要があり、往復は避けられない。距離合わせではない。"
+    },
+    {
+      "n": 3,
+      "variant": "A 新規（OSMの駅・地点）",
+      "result": "3.81km・反復1647m",
+      "finding": "中の島大橋で約413mと約523m、駅へ戻る区間で約711m（計約1,647m）。島へ渡る橋は渡って戻る必要があり、往復は避けられない。距離合わせではない。"
+    },
+    {
+      "n": 4,
+      "variant": "A 新規（OSMの駅・地点）",
+      "result": "3.81km・反復1647m",
+      "finding": "中の島大橋で約413mと約523m、駅へ戻る区間で約711m（計約1,647m）。島へ渡る橋は渡って戻る必要があり、往復は避けられない。距離合わせではない。"
+    },
+    {
+      "n": 5,
+      "variant": "A 新規（OSMの駅・地点）",
+      "result": "3.81km・反復1647m",
+      "finding": "中の島大橋で約413mと約523m、駅へ戻る区間で約711m（計約1,647m）。島へ渡る橋は渡って戻る必要があり、往復は避けられない。距離合わせではない。"
+    }
+  ],
+  "files": [
+    "scripts/lib-rebuild.mjs",
+    "scripts/build-group8.mjs",
+    "data/curated/no-45.json",
+    "data/research/no-45-adopted-build.json"
+  ],
+  "openQuestions": [
+    "中の島公園・木更津港旧灯台の座標",
+    "中の島大橋の歩道と強風時の規制",
+    "鳥居崎海浜公園と駅の間の道"
+  ],
+  "decision": "2026-11-16 新Aを計算（3.44km・反復1,647m）。島への橋の往復は避けられないため retraceException に記載。"
+}

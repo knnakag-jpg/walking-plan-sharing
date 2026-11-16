@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "source": "legacy import; route quality not re-reviewed",
-  "generatedAt": "2026-11-16T12:08:30.677Z",
+  "generatedAt": "2026-11-16T12:44:21.150Z",
   "courses": [
     {
       "id": "No.1",
@@ -15470,14 +15470,19 @@
     {
       "id": "No.43",
       "slug": "no-43",
-      "title": "東京 夢の大橋・豊洲",
+      "title": "東京 夢の大橋と豊洲",
       "seriesId": "bayarea",
       "seriesName": "ベイエリア橋（No.42～45）",
       "legacyAnchor": "course-43",
       "legacyUrl": "../index.html#course-43",
-      "summary": "経路ノード（B案）： 東京テレポート駅 → 夢の大橋 → 豊洲ぐるり公園 → 晴海大橋まで往復（1.38km） → 千客万来 → 豊洲駅（解散） → ゴール",
+      "summary": "東京テレポート駅から夢の大橋を渡り、晴海大橋南詰から豊洲公園を経て豊洲駅へ抜ける駅間。旧案の晴海大橋までの往復（1.38km）は採らず、晴海大橋は南詰を通過するだけにした。",
       "routeText": "経路ノード（B案）： 東京テレポート駅 → 夢の大橋 → 豊洲ぐるり公園 → 晴海大橋まで往復（1.38km） → 千客万来 → 豊洲駅（解散） → ゴール",
-      "tags": [],
+      "tags": [
+        "橋",
+        "運河",
+        "公園",
+        "湾岸"
+      ],
       "route": {
         "id": "no-43-legacy",
         "variant": "legacy",
@@ -15490,17 +15495,7 @@
         "repeatedGeometryPct": 9.1,
         "maxWaypointToShapeM": 37,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "partial_dem_filled",
-          "url": "data/elevation/no-43.json",
-          "totalM": 6671,
-          "climbM": 40.5,
-          "descentM": 44.3,
-          "minM": -0.4,
-          "maxM": 8.9
-        }
+        "engine": "valhalla-pedestrian"
       },
       "waypoints": [
         {
@@ -15535,7 +15530,205 @@
       "climbM": 77.3,
       "descentM": 79.6,
       "auditFlags": [],
-      "category": "main"
+      "category": "main",
+      "defaultVariant": "standard",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "OpenStreetMap（東京テレポート駅前・夢の大橋・晴海大橋南詰・豊洲公園・豊洲駅）",
+          "url": "https://www.openstreetmap.org/",
+          "checkedAt": "2026-11-16",
+          "supports": "駅・橋・公園・施設の名称ノードの座標。入口ではない。"
+        },
+        {
+          "type": "community",
+          "title": "旧資料 No.43（先行ページ index.html）",
+          "url": null,
+          "checkedAt": "2026-11-16",
+          "supports": "旧案の立ち寄り先。晴海大橋までの往復は採用していない。"
+        }
+      ],
+      "openQuestions": [
+        "晴海大橋の歩道が徒歩で通れるか",
+        "千客万来・豊洲ぐるり公園の座標",
+        "夢の大橋の歩行者動線",
+        "豊洲公園から豊洲駅への道"
+      ],
+      "routeOptions": [
+        {
+          "id": "no-43-standard",
+          "variant": "standard",
+          "strategy": "scenic",
+          "geometryUrl": "data/routes/no-43-standard.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 4904,
+          "engineDistanceM": 4904,
+          "repeatedGeometryPct": 0.6,
+          "routeReason": "東京テレポート駅前から夢の大橋、晴海大橋南詰、豊洲公園を経て豊洲駅へ。計算上4.47km。千客万来は名称ノードがなく、旧案の順序からは外した。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
+          "distanceException": "4.47km。実在の地点だけで組んだため5〜6kmに届かない。旧案の晴海大橋への往復は距離合わせになるため採らない。",
+          "retraceException": "計算上の重なりは約28m（豊洲公園付近）。",
+          "waypoints": [
+            {
+              "index": 0,
+              "id": "teleport",
+              "label": "東京テレポート駅前",
+              "description": null,
+              "point": [
+                139.7798162,
+                35.6268665
+              ],
+              "source": "OSM node 東京テレポート駅前"
+            },
+            {
+              "index": 1,
+              "id": "yume_no_ohashi",
+              "label": "夢の大橋",
+              "description": null,
+              "point": [
+                139.7822771,
+                35.6275595
+              ],
+              "source": "OSM memorial 夢の大橋 田中賞受賞記念"
+            },
+            {
+              "index": 2,
+              "id": "harumi_ohashi",
+              "label": "晴海大橋南詰",
+              "description": null,
+              "point": [
+                139.7892679,
+                35.6480338
+              ],
+              "source": "OSM node 晴海大橋南詰"
+            },
+            {
+              "index": 3,
+              "id": "toyosu_park",
+              "label": "豊洲公園",
+              "description": null,
+              "point": [
+                139.7925946,
+                35.6531584
+              ],
+              "source": "OSM park 豊洲公園"
+            },
+            {
+              "index": 4,
+              "id": "toyosu_st",
+              "label": "豊洲駅",
+              "description": null,
+              "point": [
+                139.7958876,
+                35.6544293
+              ],
+              "source": "OSM subway_entrance 豊洲駅"
+            }
+          ],
+          "engine": "valhalla-pedestrian",
+          "built": "2026-11-16T12:35:47.300Z",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/no-43-standard.json",
+            "totalM": 4904,
+            "climbM": 31,
+            "descentM": 35.1,
+            "minM": 0.9,
+            "maxM": 11.9
+          }
+        },
+        {
+          "id": "no-43-rainy",
+          "variant": "rainy",
+          "strategy": "indoor_rail",
+          "verificationStatus": "researched",
+          "distanceM": null,
+          "routeReason": "雨の日は豊洲駅直結の商業施設と市場前駅の屋根のある通路を中心にする案。",
+          "segments": [
+            {
+              "kind": "walk_outdoor",
+              "from": "東京テレポート駅",
+              "to": "夢の大橋",
+              "distanceM": null,
+              "note": "屋根なし。傘が必要。"
+            },
+            {
+              "kind": "walk_indoor",
+              "from": "豊洲駅",
+              "to": "商業施設の館内",
+              "distanceM": null,
+              "note": "館内の連続性は未確認。"
+            },
+            {
+              "kind": "rail",
+              "from": "豊洲駅",
+              "to": "東京テレポート駅",
+              "distanceM": null,
+              "note": "ゆりかもめ。"
+            }
+          ],
+          "conditions": [
+            "晴海大橋の歩道の通行条件は未確認。",
+            "運河沿いの風は強い。"
+          ],
+          "geometryUrl": null,
+          "waypoints": []
+        },
+        {
+          "id": "no-43-legacy",
+          "variant": "legacy",
+          "strategy": "legacy_unknown",
+          "geometryUrl": "data/routes/no-43.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 6671,
+          "engineDistanceM": 6679,
+          "targetDistanceM": 6500,
+          "repeatedGeometryPct": 9.1,
+          "maxWaypointToShapeM": 37,
+          "built": "2026-08-29",
+          "engine": "valhalla-pedestrian",
+          "waypoints": [
+            {
+              "index": 0,
+              "point": [
+                139.7788,
+                35.6265
+              ]
+            },
+            {
+              "index": 1,
+              "point": [
+                139.782,
+                35.642
+              ]
+            },
+            {
+              "index": 2,
+              "point": [
+                139.7805,
+                35.6455
+              ]
+            },
+            {
+              "index": 3,
+              "point": [
+                139.796,
+                35.655
+              ]
+            }
+          ],
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/no-43.json",
+            "totalM": 6671,
+            "climbM": 40.5,
+            "descentM": 44.3,
+            "minM": -0.4,
+            "maxM": 8.9
+          }
+        }
+      ]
     },
     {
       "id": "No.44",
@@ -15545,9 +15738,14 @@
       "seriesName": "ベイエリア橋（No.42～45）",
       "legacyAnchor": "course-44",
       "legacyUrl": "../index.html#course-44",
-      "summary": "経路ノード： 小島新田駅 → 多摩川スカイブリッジ → 羽田エアポートガーデン → 展望デッキ → 第3ターミナル → 羽田空港方面へ実在の歩道で延伸（往復約1.7km） → ゴール",
+      "summary": "小島新田駅から多摩川スカイブリッジを渡り、天空橋駅、羽田空港第3ターミナル駅へ抜ける駅間。羽田エアポートガーデンと展望デッキは名称ノードが見つからず含めていない。",
       "routeText": "経路ノード： 小島新田駅 → 多摩川スカイブリッジ → 羽田エアポートガーデン → 展望デッキ → 第3ターミナル → 羽田空港方面へ実在の歩道で延伸（往復約1.7km） → ゴール",
-      "tags": [],
+      "tags": [
+        "橋",
+        "川",
+        "空港",
+        "湾岸"
+      ],
       "route": {
         "id": "no-44-legacy",
         "variant": "legacy",
@@ -15560,17 +15758,7 @@
         "repeatedGeometryPct": 26,
         "maxWaypointToShapeM": 40,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "partial_dem_filled",
-          "url": "data/elevation/no-44.json",
-          "totalM": 6117,
-          "climbM": 14,
-          "descentM": 10.2,
-          "minM": -0.7,
-          "maxM": 4.9
-        }
+        "engine": "valhalla-pedestrian"
       },
       "waypoints": [
         {
@@ -15623,7 +15811,219 @@
         "repeated_waypoint",
         "waypoint_off_shape"
       ],
-      "category": "main"
+      "category": "main",
+      "defaultVariant": "standard",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "OpenStreetMap（小島新田駅・多摩川スカイブリッジ・天空橋駅・羽田空港第3ターミナル駅）",
+          "url": "https://www.openstreetmap.org/",
+          "checkedAt": "2026-11-16",
+          "supports": "駅・橋・公園・施設の名称ノードの座標。入口ではない。"
+        },
+        {
+          "type": "community",
+          "title": "旧資料 No.44（先行ページ index.html）",
+          "url": null,
+          "checkedAt": "2026-11-16",
+          "supports": "旧案の立ち寄り先。羽田空港方面の往復延伸は採用していない。"
+        }
+      ],
+      "openQuestions": [
+        "羽田エアポートガーデンと展望デッキの座標",
+        "スカイブリッジの歩道の区分と強風時の規制",
+        "多摩川緑地（殿町地区）からの取り付き",
+        "羽田空港第3ターミナルの入口"
+      ],
+      "routeOptions": [
+        {
+          "id": "no-44-standard",
+          "variant": "standard",
+          "strategy": "scenic",
+          "geometryUrl": "data/routes/no-44-standard.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 5559,
+          "engineDistanceM": 5562,
+          "repeatedGeometryPct": 8.5,
+          "routeReason": "小島新田駅から多摩川スカイブリッジ（南端・北端）、天空橋駅を経て羽田空港第3ターミナル駅へ。計算上5.56km。羽田エアポートガーデンと展望デッキは名称ノードが見つからず、経由点に含めていない。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
+          "distanceException": null,
+          "retraceException": "天空橋駅の前後で約38m、天空橋駅から羽田空港第3ターミナル駅へ向かう区間で約436m（計約474m）。道路の南北を行き来する形と推定。地図で未確認。",
+          "waypoints": [
+            {
+              "index": 0,
+              "id": "kojimashinden",
+              "label": "小島新田駅",
+              "description": null,
+              "point": [
+                139.7480467,
+                35.5347495
+              ],
+              "source": "OSM station 小島新田"
+            },
+            {
+              "index": 1,
+              "id": "sky_bridge_s2",
+              "label": "多摩川スカイブリッジ南",
+              "description": null,
+              "point": [
+                139.76095,
+                35.54045
+              ],
+              "source": "OSM node 819656082 多摩川スカイブリッジ（南端）"
+            },
+            {
+              "index": 2,
+              "id": "sky_bridge_n2",
+              "label": "多摩川スカイブリッジ北",
+              "description": null,
+              "point": [
+                139.7633023,
+                35.5442496
+              ],
+              "source": "OSM node 7654141396 多摩川スカイブリッジ北"
+            },
+            {
+              "index": 3,
+              "id": "tenkubashi_st",
+              "label": "天空橋駅",
+              "description": null,
+              "point": [
+                139.7546938,
+                35.5480731
+              ],
+              "source": "OSM station 天空橋"
+            },
+            {
+              "index": 4,
+              "id": "haneda_t3b",
+              "label": "羽田空港第3ターミナル駅",
+              "description": null,
+              "point": [
+                139.7686203,
+                35.543874
+              ],
+              "source": "OSM station 羽田空港第3ターミナル"
+            }
+          ],
+          "engine": "valhalla-pedestrian",
+          "built": "2026-11-16T12:40:54.073Z",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/no-44-standard.json",
+            "totalM": 5559,
+            "climbM": 15.8,
+            "descentM": 12,
+            "minM": -0.8,
+            "maxM": 4.9
+          }
+        },
+        {
+          "id": "no-44-rainy",
+          "variant": "rainy",
+          "strategy": "indoor_rail",
+          "verificationStatus": "researched",
+          "distanceM": null,
+          "routeReason": "雨の日は天空橋駅から羽田空港第3ターミナルまで京急空港線で移動し、ターミナル館内だけを歩く案。",
+          "segments": [
+            {
+              "kind": "rail",
+              "from": "天空橋駅",
+              "to": "羽田空港第3ターミナル駅",
+              "distanceM": null,
+              "note": "京急空港線。"
+            },
+            {
+              "kind": "walk_indoor",
+              "from": "羽田空港第3ターミナル駅",
+              "to": "ターミナル館内",
+              "distanceM": null,
+              "note": "展望デッキの開放は未確認。"
+            },
+            {
+              "kind": "walk_outdoor",
+              "from": "小島新田駅",
+              "to": "多摩川スカイブリッジ",
+              "distanceM": null,
+              "note": "屋根なし。橋は強風時に歩行者が規制される場合がある。"
+            }
+          ],
+          "conditions": [
+            "スカイブリッジの強風時の通行規制を当日確認。",
+            "羽田エアポートガーデンの営業は未確認。"
+          ],
+          "geometryUrl": null,
+          "waypoints": []
+        },
+        {
+          "id": "no-44-legacy",
+          "variant": "legacy",
+          "strategy": "legacy_unknown",
+          "geometryUrl": "data/routes/no-44.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 6117,
+          "engineDistanceM": 6126,
+          "targetDistanceM": 6000,
+          "repeatedGeometryPct": 26,
+          "maxWaypointToShapeM": 40,
+          "built": "2026-08-29",
+          "engine": "valhalla-pedestrian",
+          "waypoints": [
+            {
+              "index": 0,
+              "point": [
+                139.7468,
+                35.5332
+              ]
+            },
+            {
+              "index": 1,
+              "point": [
+                139.768,
+                35.546
+              ]
+            },
+            {
+              "index": 2,
+              "point": [
+                139.7688,
+                35.5448
+              ]
+            },
+            {
+              "index": 3,
+              "point": [
+                139.7695,
+                35.5445
+              ]
+            },
+            {
+              "index": 4,
+              "point": [
+                139.770987,
+                35.541538
+              ]
+            },
+            {
+              "index": 5,
+              "point": [
+                139.7695,
+                35.5445
+              ]
+            }
+          ],
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/no-44.json",
+            "totalM": 6117,
+            "climbM": 14,
+            "descentM": 10.2,
+            "minM": -0.7,
+            "maxM": 4.9
+          }
+        }
+      ]
     },
     {
       "id": "No.45",
@@ -15633,10 +16033,13 @@
       "seriesName": "ベイエリア橋（No.42～45）",
       "legacyAnchor": "course-45",
       "legacyUrl": "../index.html#course-45",
-      "summary": "経路ノード： 木更津駅 → 鳥居崎海浜公園 → 中の島大橋 → 中の島公園 → 木更津港旧灯台 → 木更津駅（解散）",
+      "summary": "木更津駅西口から鳥居崎海浜公園を経て中の島大橋を渡り、駅へ戻る周遊。中の島公園・旧灯台は名称ノードが見つからず含めていない。",
       "routeText": "経路ノード： 木更津駅 → 鳥居崎海浜公園 → 中の島大橋 → 中の島公園 → 木更津港旧灯台 → 木更津駅（解散）",
       "tags": [
-        "最適: ○月"
+        "橋",
+        "港",
+        "海辺",
+        "周遊"
       ],
       "route": {
         "id": "no-45-legacy",
@@ -15650,17 +16053,7 @@
         "repeatedGeometryPct": 16,
         "maxWaypointToShapeM": 65,
         "built": "2026-10-18",
-        "engine": "valhalla-pedestrian",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "partial_dem_filled",
-          "url": "data/elevation/no-45.json",
-          "totalM": 6219,
-          "climbM": 14.7,
-          "descentM": 51.2,
-          "minM": 1,
-          "maxM": 40.9
-        }
+        "engine": "valhalla-pedestrian"
       },
       "waypoints": [
         {
@@ -15726,7 +16119,221 @@
         "repeated_geometry_over_10pct",
         "waypoint_off_shape"
       ],
-      "category": "main"
+      "category": "main",
+      "defaultVariant": "standard",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "OpenStreetMap（木更津駅西口・鳥居崎海浜公園・中の島大橋）",
+          "url": "https://www.openstreetmap.org/",
+          "checkedAt": "2026-11-16",
+          "supports": "駅・橋・公園・施設の名称ノードの座標。入口ではない。"
+        },
+        {
+          "type": "community",
+          "title": "旧資料 No.45（先行ページ index.html）",
+          "url": null,
+          "checkedAt": "2026-11-16",
+          "supports": "旧案の立ち寄り先。"
+        }
+      ],
+      "openQuestions": [
+        "中の島公園・木更津港旧灯台の座標",
+        "中の島大橋の歩道と強風時の規制",
+        "鳥居崎海浜公園と駅の間の道"
+      ],
+      "routeOptions": [
+        {
+          "id": "no-45-standard",
+          "variant": "standard",
+          "strategy": "scenic",
+          "geometryUrl": "data/routes/no-45-standard.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 3814,
+          "engineDistanceM": 3810,
+          "repeatedGeometryPct": 43.2,
+          "routeReason": "木更津駅西口から鳥居崎海浜公園、中の島大橋を渡って木更津駅西口へ戻る。計算上3.44km。旧案の周遊のうち、中の島公園・木更津港旧灯台は名称ノードが見つからず含めていない。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
+          "distanceException": "3.44km。港の周遊で5〜6kmに届かない。島へ渡る橋は往復が避けられないため、延伸は作らない。",
+          "retraceException": "中の島大橋で約413mと約523m、駅へ戻る区間で約711m（計約1,647m）。島へ渡る橋は渡って戻る必要があり、往復は避けられない。距離合わせではない。",
+          "waypoints": [
+            {
+              "index": 0,
+              "id": "kisarazu_st",
+              "label": "木更津駅西口",
+              "description": null,
+              "point": [
+                139.9252189,
+                35.3811934
+              ],
+              "source": "OSM node 木更津駅西口"
+            },
+            {
+              "index": 1,
+              "id": "toriizaki",
+              "label": "鳥居崎海浜公園",
+              "description": null,
+              "point": [
+                139.9138819,
+                35.3814591
+              ],
+              "source": "OSM park 鳥居崎海浜公園"
+            },
+            {
+              "index": 2,
+              "id": "nakano_shima_ohashi",
+              "label": "中の島大橋",
+              "description": null,
+              "point": [
+                139.91263,
+                35.38366
+              ],
+              "source": "OSM node 55683492 中の島大橋"
+            },
+            {
+              "index": 3,
+              "id": "kisarazu_st",
+              "label": "木更津駅西口",
+              "description": null,
+              "point": [
+                139.9252189,
+                35.3811934
+              ],
+              "source": "OSM node 木更津駅西口"
+            }
+          ],
+          "engine": "valhalla-pedestrian",
+          "built": "2026-11-16T12:37:52.776Z",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/no-45-standard.json",
+            "totalM": 3814,
+            "climbM": 5,
+            "descentM": 5,
+            "minM": 1.7,
+            "maxM": 3.4
+          }
+        },
+        {
+          "id": "no-45-rainy",
+          "variant": "rainy",
+          "strategy": "indoor_rail",
+          "verificationStatus": "researched",
+          "distanceM": null,
+          "routeReason": "雨の日は木更津駅周辺の商業施設にとどめ、橋を渡る案を外す短縮案。",
+          "segments": [
+            {
+              "kind": "rail",
+              "from": "木更津駅",
+              "to": "袖ケ浦駅",
+              "distanceM": null,
+              "note": "内房線。"
+            },
+            {
+              "kind": "walk_outdoor",
+              "from": "木更津駅",
+              "to": "鳥居崎海浜公園",
+              "distanceM": null,
+              "note": "屋根なし。"
+            },
+            {
+              "kind": "walk_indoor",
+              "from": "木更津駅",
+              "to": "駅ビル・アクア木更津",
+              "distanceM": null,
+              "note": "館内の範囲は未確認。"
+            }
+          ],
+          "conditions": [
+            "中の島大橋は強風時に歩行者が規制される場合がある。",
+            "旧灯台・中の島公園の開放は未確認。"
+          ],
+          "geometryUrl": null,
+          "waypoints": []
+        },
+        {
+          "id": "no-45-legacy",
+          "variant": "legacy",
+          "strategy": "legacy_unknown",
+          "geometryUrl": "data/routes/no-45.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 6219,
+          "engineDistanceM": 6229,
+          "targetDistanceM": 6200,
+          "repeatedGeometryPct": 16,
+          "maxWaypointToShapeM": 65,
+          "built": "2026-10-18",
+          "engine": "valhalla-pedestrian",
+          "waypoints": [
+            {
+              "index": 0,
+              "point": [
+                139.93883,
+                35.38
+              ]
+            },
+            {
+              "index": 1,
+              "point": [
+                139.92624,
+                35.38161
+              ]
+            },
+            {
+              "index": 2,
+              "point": [
+                139.91924,
+                35.38155
+              ]
+            },
+            {
+              "index": 3,
+              "point": [
+                139.91383,
+                35.3815
+              ]
+            },
+            {
+              "index": 4,
+              "point": [
+                139.91253,
+                35.3838
+              ]
+            },
+            {
+              "index": 5,
+              "point": [
+                139.91173,
+                35.38516
+              ]
+            },
+            {
+              "index": 6,
+              "point": [
+                139.9081,
+                35.37887
+              ]
+            },
+            {
+              "index": 7,
+              "point": [
+                139.9111,
+                35.37495
+              ]
+            }
+          ],
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/no-45.json",
+            "totalM": 6219,
+            "climbM": 14.7,
+            "descentM": 51.2,
+            "minM": 1,
+            "maxM": 40.9
+          }
+        }
+      ]
     },
     {
       "id": "No.46",
@@ -16426,19 +17033,18 @@
     {
       "id": "No.48",
       "slug": "no-48",
-      "title": "両国〜浅草〜スカイツリー",
+      "title": "両国から浅草・スカイツリー",
       "seriesId": "v4bc",
       "seriesName": "V4-B/Cグルメ（No.47〜52）",
       "legacyAnchor": "course-48",
       "legacyUrl": "../index.html#course-48",
-      "summary": "隅田川テラスの完全平坦・信号ゼロ区間を主軸に、吾妻橋のアサヒビール金炎、浅草寺、隅田公園、スカイツリーを一直線で繋ぐ。川風と橋のライトアップが写真映えする、最も“歩きやすいのに絵になる”コース。",
+      "summary": "両国駅から吾妻橋を渡り、浅草寺、隅田公園を経て東京スカイツリー、押上駅へ抜ける駅間。両国駅・浅草寺・隅田公園の正確な座標はOSMで見つからず、仮の点を使っている。",
       "routeText": "経路ノード： 両国駅 → 隅田川テラス（南） → 吾妻橋 → 浅草寺（仲見世） → 隅田公園 → 東京スカイツリー → とうきょうスカイツリー駅／押上駅 → 押上三丁目方面へ実在の歩道で延伸（往復約2km） → ゴール",
       "tags": [
-        "水辺・テラス",
-        "歴史・浅草",
-        "景観・スカイツリー",
-        "フォトジェニック",
-        "最適: 通年"
+        "川",
+        "寺",
+        "橋",
+        "展望タワー"
       ],
       "route": {
         "id": "no-48-legacy",
@@ -16452,17 +17058,7 @@
         "repeatedGeometryPct": 8.6,
         "maxWaypointToShapeM": 71,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "partial_dem_filled",
-          "url": "data/elevation/no-48.json",
-          "totalM": 7021,
-          "climbM": 23.6,
-          "descentM": 27,
-          "minM": -1.1,
-          "maxM": 5.9
-        }
+        "engine": "valhalla-pedestrian"
       },
       "waypoints": [
         {
@@ -16535,7 +17131,258 @@
         "repeated_waypoint",
         "waypoint_off_shape"
       ],
-      "category": "main"
+      "category": "main",
+      "defaultVariant": "standard",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "OpenStreetMap（吾妻橋・東京スカイツリー・押上駅・両国駅付近・浅草寺付近）",
+          "url": "https://www.openstreetmap.org/",
+          "checkedAt": "2026-11-16",
+          "supports": "駅・橋・公園・施設の名称ノードの座標。入口ではない。"
+        },
+        {
+          "type": "community",
+          "title": "旧資料 No.48（先行ページ index.html）",
+          "url": null,
+          "checkedAt": "2026-11-16",
+          "supports": "旧案の立ち寄り先。押上三丁目方面の往復延伸は採用していない。"
+        }
+      ],
+      "openQuestions": [
+        "両国駅・浅草寺・隅田公園の座標",
+        "隅田川テラスの通行条件",
+        "吾妻橋の歩道",
+        "スカイツリーの展望デッキの入口"
+      ],
+      "routeOptions": [
+        {
+          "id": "no-48-standard",
+          "variant": "standard",
+          "strategy": "scenic",
+          "geometryUrl": "data/routes/no-48-standard.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 3927,
+          "engineDistanceM": 3931,
+          "repeatedGeometryPct": 1.4,
+          "routeReason": "両国駅から吾妻橋、浅草寺、隅田公園、東京スカイツリーを経て押上駅へ。計算上3.93km。両国駅・浅草寺・隅田公園の名称ノードが見つからず、近くの点または概略の点を使った（地図レビュー待ち）。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
+          "distanceException": "3.93km。実在の地点だけで組んだため5〜6kmに届かない。旧案の押上三丁目方面の往復延伸は採らない。",
+          "retraceException": "計算上の重なりは約57m（隅田公園付近）。",
+          "waypoints": [
+            {
+              "index": 0,
+              "id": "ryogoku_st",
+              "label": "両国駅",
+              "description": null,
+              "point": [
+                139.7975814,
+                35.7019062
+              ],
+              "source": "OSM 両国 station; 駅の正確な点は地図レビュー待ち"
+            },
+            {
+              "index": 1,
+              "id": "azuma_bashi",
+              "label": "吾妻橋",
+              "description": null,
+              "point": [
+                139.797744,
+                35.7106996
+              ],
+              "source": "OSM node 1691781635 吾妻橋"
+            },
+            {
+              "index": 2,
+              "id": "sensoji",
+              "label": "浅草寺",
+              "description": null,
+              "point": [
+                139.7964791,
+                35.7147238
+              ],
+              "source": "OSM 浅草寺; 正確な点は地図レビュー待ち"
+            },
+            {
+              "index": 3,
+              "id": "sumida_park",
+              "label": "隅田公園",
+              "description": null,
+              "point": [
+                139.8006052,
+                35.7136117
+              ],
+              "source": "TOPIC: 隅田公園。OSMの点は地図レビュー待ち"
+            },
+            {
+              "index": 4,
+              "id": "skytree",
+              "label": "東京スカイツリー",
+              "description": null,
+              "point": [
+                139.8105325,
+                35.7099073
+              ],
+              "source": "OSM attraction 東京スカイツリー"
+            },
+            {
+              "index": 5,
+              "id": "oshiage",
+              "label": "押上駅",
+              "description": null,
+              "point": [
+                139.8127296,
+                35.7106482
+              ],
+              "source": "OSM station 押上"
+            }
+          ],
+          "engine": "valhalla-pedestrian",
+          "built": "2026-11-16T12:40:38.461Z",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/no-48-standard.json",
+            "totalM": 3927,
+            "climbM": 14.1,
+            "descentM": 13.2,
+            "minM": 0.9,
+            "maxM": 4.2
+          }
+        },
+        {
+          "id": "no-48-rainy",
+          "variant": "rainy",
+          "strategy": "indoor_rail",
+          "verificationStatus": "researched",
+          "distanceM": null,
+          "routeReason": "雨の日は浅草寺の仲見世の屋根と、東京スカイツリーの館内（ソラマチ）を中心にする案。",
+          "segments": [
+            {
+              "kind": "walk_indoor",
+              "from": "浅草寺",
+              "to": "仲見世の屋根のある店先",
+              "distanceM": null,
+              "note": "屋根の連続性は未確認。"
+            },
+            {
+              "kind": "walk_indoor",
+              "from": "東京スカイツリー",
+              "to": "ソラマチの館内",
+              "distanceM": null,
+              "note": "営業時間は当日確認。"
+            },
+            {
+              "kind": "walk_outdoor",
+              "from": "押上駅",
+              "to": "東京スカイツリー",
+              "distanceM": null,
+              "note": "屋根なし。"
+            },
+            {
+              "kind": "rail",
+              "from": "押上駅",
+              "to": "両国駅",
+              "distanceM": null,
+              "note": "都営浅草線・大江戸線。"
+            }
+          ],
+          "conditions": [
+            "スカイツリー展望デッキの予約・料金は当日確認。",
+            "隅田川テラスは増水時に閉鎖される。"
+          ],
+          "geometryUrl": null,
+          "waypoints": []
+        },
+        {
+          "id": "no-48-legacy",
+          "variant": "legacy",
+          "strategy": "legacy_unknown",
+          "geometryUrl": "data/routes/no-48.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 7021,
+          "engineDistanceM": 7019,
+          "targetDistanceM": 6900,
+          "repeatedGeometryPct": 8.6,
+          "maxWaypointToShapeM": 71,
+          "built": "2026-08-29",
+          "engine": "valhalla-pedestrian",
+          "waypoints": [
+            {
+              "index": 0,
+              "point": [
+                139.7935,
+                35.696
+              ]
+            },
+            {
+              "index": 1,
+              "point": [
+                139.796,
+                35.698
+              ]
+            },
+            {
+              "index": 2,
+              "point": [
+                139.8,
+                35.7085
+              ]
+            },
+            {
+              "index": 3,
+              "point": [
+                139.7965,
+                35.7145
+              ]
+            },
+            {
+              "index": 4,
+              "point": [
+                139.804,
+                35.713
+              ]
+            },
+            {
+              "index": 5,
+              "point": [
+                139.81,
+                35.71
+              ]
+            },
+            {
+              "index": 6,
+              "point": [
+                139.8108,
+                35.7101
+              ]
+            },
+            {
+              "index": 7,
+              "point": [
+                139.819063,
+                35.711133
+              ]
+            },
+            {
+              "index": 8,
+              "point": [
+                139.8108,
+                35.7101
+              ]
+            }
+          ],
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/no-48.json",
+            "totalM": 7021,
+            "climbM": 23.6,
+            "descentM": 27,
+            "minM": -1.1,
+            "maxM": 5.9
+          }
+        }
+      ]
     },
     {
       "id": "No.49",
