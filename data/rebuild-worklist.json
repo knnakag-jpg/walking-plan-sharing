@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T13:21:00.210Z",
+  "generatedAt": "2026-11-16T13:43:28.588Z",
   "interpretation": "Mechanical triage only. Source and map review required before adopting any new route.",
   "records": [
     {
@@ -2808,9 +2808,9 @@
     },
     {
       "id": "No.56",
-      "title": "東京駅・皇居外周〜日本橋",
+      "title": "東京駅・皇居外周から日本橋",
       "series": "V5追加 8km詳細（No.56〜59）",
-      "workStatus": "research_needed",
+      "workStatus": "partial_rebuild",
       "legacy": {
         "geometryUrl": "data/routes/no-56.geojson",
         "walkingDistanceM": 7987,
@@ -2825,9 +2825,20 @@
         ],
         "gateResult": "OK"
       },
-      "existingNewVariants": [],
+      "existingNewVariants": [
+        {
+          "variant": "standard",
+          "status": "routed",
+          "distanceM": 6627
+        },
+        {
+          "variant": "rainy",
+          "status": "researched",
+          "distanceM": null
+        }
+      ],
       "coordinateReview": "not_started",
-      "sourceResearch": "not_started",
+      "sourceResearch": "source_research_in_progress",
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": true,
@@ -3369,9 +3380,9 @@
     },
     {
       "id": "No.55",
-      "title": "小金井公園〜野川 桜堤",
+      "title": "小金井公園と野川の桜",
       "series": "V4春限定（No.53〜55）",
-      "workStatus": "research_needed",
+      "workStatus": "partial_rebuild",
       "legacy": {
         "geometryUrl": "data/routes/no-55.geojson",
         "walkingDistanceM": 6425,
@@ -3381,9 +3392,20 @@
         "repeatedWaypoints": [],
         "gateResult": "OK"
       },
-      "existingNewVariants": [],
+      "existingNewVariants": [
+        {
+          "variant": "standard",
+          "status": "routed",
+          "distanceM": 3817
+        },
+        {
+          "variant": "rainy",
+          "status": "researched",
+          "distanceM": null
+        }
+      ],
       "coordinateReview": "not_started",
-      "sourceResearch": "not_started",
+      "sourceResearch": "source_research_in_progress",
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": false,
@@ -3591,9 +3613,9 @@
     },
     {
       "id": "No.58",
-      "title": "原宿〜表参道〜六本木ヒルズ",
+      "title": "原宿から表参道・六本木",
       "series": "V5追加 8km詳細（No.56〜59）",
-      "workStatus": "research_needed",
+      "workStatus": "partial_rebuild",
       "legacy": {
         "geometryUrl": "data/routes/no-58.geojson",
         "walkingDistanceM": 8022,
@@ -3608,9 +3630,20 @@
         ],
         "gateResult": "OK"
       },
-      "existingNewVariants": [],
+      "existingNewVariants": [
+        {
+          "variant": "standard",
+          "status": "routed",
+          "distanceM": 5841
+        },
+        {
+          "variant": "rainy",
+          "status": "researched",
+          "distanceM": null
+        }
+      ],
       "coordinateReview": "not_started",
-      "sourceResearch": "not_started",
+      "sourceResearch": "source_research_in_progress",
       "historicalRoutingStrategies": [
         {
           "oldLabel": "A",
@@ -4179,9 +4212,9 @@
     },
     {
       "id": "No.57",
-      "title": "両国〜浅草〜谷中〜上野",
+      "title": "両国から浅草・上野",
       "series": "V5追加 8km詳細（No.56〜59）",
-      "workStatus": "research_needed",
+      "workStatus": "partial_rebuild",
       "legacy": {
         "geometryUrl": "data/routes/no-57.geojson",
         "walkingDistanceM": 7870,
@@ -4191,9 +4224,20 @@
         "repeatedWaypoints": [],
         "gateResult": "OK"
       },
-      "existingNewVariants": [],
+      "existingNewVariants": [
+        {
+          "variant": "standard",
+          "status": "routed",
+          "distanceM": 4954
+        },
+        {
+          "variant": "rainy",
+          "status": "researched",
+          "distanceM": null
+        }
+      ],
       "coordinateReview": "not_started",
-      "sourceResearch": "not_started",
+      "sourceResearch": "source_research_in_progress",
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": false,
@@ -4670,9 +4714,9 @@
     },
     {
       "id": "No.59",
-      "title": "立川〜国立〜国分寺 はけ",
+      "title": "立川から国立・国分寺のはけ",
       "series": "V5追加 8km詳細（No.56〜59）",
-      "workStatus": "research_needed",
+      "workStatus": "partial_rebuild",
       "legacy": {
         "geometryUrl": "data/routes/no-59.geojson",
         "walkingDistanceM": 7157,
@@ -4682,9 +4726,20 @@
         "repeatedWaypoints": [],
         "gateResult": "OK"
       },
-      "existingNewVariants": [],
+      "existingNewVariants": [
+        {
+          "variant": "standard",
+          "status": "routed",
+          "distanceM": 6806
+        },
+        {
+          "variant": "rainy",
+          "status": "researched",
+          "distanceM": null
+        }
+      ],
       "coordinateReview": "not_started",
-      "sourceResearch": "not_started",
+      "sourceResearch": "source_research_in_progress",
       "historicalRoutingStrategies": [],
       "transportHints": [],
       "possibleDistanceFiller": false,

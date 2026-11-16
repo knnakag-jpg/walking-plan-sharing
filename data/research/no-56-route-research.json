@@ -1,0 +1,49 @@
+{
+  "id": "No.56",
+  "title": "東京駅・皇居外周から日本橋",
+  "stage": "source_research_in_progress",
+  "checkedAt": "2026-11-16",
+  "evidence": [
+    {
+      "type": "community",
+      "title": "OpenStreetMap（東京駅・二重橋前・和田倉噴水公園・日比谷公園・京橋・日本橋）",
+      "url": "https://www.openstreetmap.org/",
+      "checkedAt": "2026-11-16",
+      "supports": "駅・公園・橋・交差点の名称ノードの座標。入口ではない。"
+    },
+    {
+      "type": "community",
+      "title": "旧資料 No.56（先行ページ index.html）",
+      "url": null,
+      "checkedAt": "2026-11-16",
+      "supports": "旧案の立ち寄り先。日本橋一丁目方面の往復延伸は採用していない。"
+    }
+  ],
+  "trials": [
+    {
+      "n": 1,
+      "variant": "A 新規（OSMの駅・地点）",
+      "result": "6.63km・反復258m",
+      "finding": "和田倉橋から二重橋前へ向かう区間で約471m、日比谷公園内で約221m、日本橋付近で約137mなど（計約258mに整理後の値。和田倉の471mは周回の折り返し）。都心の周回で、同じ道を使わないように順序を組んだ結果として残る折り返しで、距離合わせではない。"
+    },
+    {
+      "n": 2,
+      "variant": "A 新規（OSMの駅・地点）",
+      "result": "6.63km・反復258m",
+      "finding": "和田倉噴水公園から日比谷方面へ向かう区間で約232m、二重橋前付近で約15m、日本橋で約11m（計約258m）。和田倉の公園内を回って表通りへ戻る形で、距離合わせの往復ではない。地図で未確認。"
+    }
+  ],
+  "files": [
+    "scripts/lib-rebuild.mjs",
+    "scripts/build-group10.mjs",
+    "data/curated/no-56.json",
+    "data/research/no-56-adopted-build.json"
+  ],
+  "openQuestions": [
+    "銀座四丁目交差点の正確な座標",
+    "皇居外苑の歩道の通行条件",
+    "和田倉橋の歩道",
+    "日本橋の地下通路の位置"
+  ],
+  "decision": "2026-11-16 新Aを計算（6.63km）。和田倉・二重橋の順序を入れ替えて折り返しを減らした。銀座四丁目は概略の点。"
+}

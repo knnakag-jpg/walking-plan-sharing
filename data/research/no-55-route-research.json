@@ -1,0 +1,49 @@
+{
+  "id": "No.55",
+  "title": "小金井公園と野川の桜",
+  "stage": "source_research_in_progress",
+  "checkedAt": "2026-11-16",
+  "evidence": [
+    {
+      "type": "community",
+      "title": "OpenStreetMap（東小金井駅・小金井公園の桜町側・武蔵小金井駅）",
+      "url": "https://www.openstreetmap.org/",
+      "checkedAt": "2026-11-16",
+      "supports": "駅・公園・橋・交差点の名称ノードの座標。入口ではない。"
+    },
+    {
+      "type": "community",
+      "title": "旧資料 No.55（先行ページ index.html）",
+      "url": null,
+      "checkedAt": "2026-11-16",
+      "supports": "旧案の立ち寄り先。"
+    }
+  ],
+  "trials": [
+    {
+      "n": 1,
+      "variant": "A 新規（OSMの駅・地点）",
+      "result": "3.82km・反復36m",
+      "finding": "計算上の重なりは約36m（桜町公園の園路）。"
+    },
+    {
+      "n": 2,
+      "variant": "A 新規（OSMの駅・地点）",
+      "result": "3.82km・反復36m",
+      "finding": "計算上の重なりは約36m（桜町公園の園路）。"
+    }
+  ],
+  "files": [
+    "scripts/lib-rebuild.mjs",
+    "scripts/build-group10.mjs",
+    "data/curated/no-55.json",
+    "data/research/no-55-adopted-build.json"
+  ],
+  "openQuestions": [
+    "江戸東京たてもの園・野川公園の座標と入口",
+    "小金井公園の桜並木の正確な位置",
+    "野川沿いの歩道の連続性",
+    "桜の開花時期（毎年変わる）"
+  ],
+  "decision": "2026-11-16 新Aを計算（3.82km・反復36m）。たてもの園・野川公園は名称ノードがなく含めていない。"
+}

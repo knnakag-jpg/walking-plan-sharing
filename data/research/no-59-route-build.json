@@ -1,0 +1,61 @@
+{
+  "calculatedAt": "2026-11-16T13:42:09.061Z",
+  "engine": "valhalla-pedestrian",
+  "variants": {
+    "standard": {
+      "label": "standard",
+      "distanceM": 6806,
+      "engineDistanceM": 6812,
+      "repeatedGeometryM": 51,
+      "repeatedGeometryPct": 0.7,
+      "legKm": [
+        3.47,
+        2.59,
+        0.75
+      ],
+      "geometryUrl": "data/routes/no-59-standard.geojson",
+      "stops": [
+        {
+          "id": "tachikawa_kita",
+          "label": "立川北駅",
+          "coord": [
+            35.6994751,
+            139.4124988
+          ],
+          "source": "OSM station 立川北",
+          "offsetM": 0
+        },
+        {
+          "id": "kunitachi_n",
+          "label": "国立駅 北口",
+          "coord": [
+            35.6994899,
+            139.4462781
+          ],
+          "source": "OSM node 国立駅北口",
+          "offsetM": 0
+        },
+        {
+          "id": "hake",
+          "label": "国分寺崖線「はけ」",
+          "coord": [
+            35.7031327,
+            139.4700396
+          ],
+          "source": "TOPIC: はけの遊歩道。OSMの正確な位置は地図レビュー待ち",
+          "offsetM": 0
+        },
+        {
+          "id": "nishi_kokubunji",
+          "label": "西国分寺駅",
+          "coord": [
+            35.6997971,
+            139.4659763
+          ],
+          "source": "OSM station 西国分寺",
+          "offsetM": 0
+        }
+      ]
+    }
+  }
+}

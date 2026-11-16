@@ -1,0 +1,49 @@
+{
+  "id": "No.57",
+  "title": "両国から浅草・上野",
+  "stage": "source_research_in_progress",
+  "checkedAt": "2026-11-16",
+  "evidence": [
+    {
+      "type": "community",
+      "title": "OpenStreetMap（両国駅西口・厩橋・上野駅）",
+      "url": "https://www.openstreetmap.org/",
+      "checkedAt": "2026-11-16",
+      "supports": "駅・公園・橋・交差点の名称ノードの座標。入口ではない。"
+    },
+    {
+      "type": "community",
+      "title": "旧資料 No.57（先行ページ index.html）",
+      "url": null,
+      "checkedAt": "2026-11-16",
+      "supports": "旧案の立ち寄り先。谷中霊園中央園路は含めていない。"
+    }
+  ],
+  "trials": [
+    {
+      "n": 1,
+      "variant": "A 新規（OSMの駅・地点）",
+      "result": "4.95km・反復91m",
+      "finding": "厩橋の西詰と東詰の間で約91m（橋の取り付き）。橋を渡るための短い重なりで、距離合わせではない。"
+    },
+    {
+      "n": 2,
+      "variant": "A 新規（OSMの駅・地点）",
+      "result": "4.95km・反復91m",
+      "finding": "厩橋の西詰と東詰の間で約91m（橋の取り付き）。橋を渡るための短い重なりで、距離合わせではない。"
+    }
+  ],
+  "files": [
+    "scripts/lib-rebuild.mjs",
+    "scripts/build-group10.mjs",
+    "data/curated/no-57.json",
+    "data/research/no-57-adopted-build.json"
+  ],
+  "openQuestions": [
+    "雷門・浅草寺・隅田川テラス・蔵前橋・谷中霊園の正確な座標",
+    "厩橋の歩道",
+    "上野桜木の位置",
+    "上野公園への入口"
+  ],
+  "decision": "2026-11-16 新Aを計算（4.95km・反復91m）。雷門・浅草寺は概略の点、谷中霊園は名称ノードがなく外した。"
+}

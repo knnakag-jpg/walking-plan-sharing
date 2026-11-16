@@ -1,0 +1,47 @@
+{
+  "generatedAt": "2026-11-16T13:42:00.173Z",
+  "method": "Valhalla pedestrian; exact geometry edge repeat is only a screening clue",
+  "results": [
+    {
+      "variant": "standard",
+      "distanceM": 3817,
+      "engineDistanceM": 3817,
+      "repeatedGeometryM": 36,
+      "repeatedGeometryPct": 1,
+      "waypoints": [
+        {
+          "id": "higashi_koganei",
+          "label": "東小金井駅入口",
+          "coord": [
+            35.6974768,
+            139.5242159
+          ],
+          "source": "OSM node 1321483777 東小金井駅入口"
+        },
+        {
+          "id": "koganei_park",
+          "label": "小金井公園（桜）",
+          "coord": [
+            35.709549,
+            139.5090763
+          ],
+          "source": "OSM park 桜町公園（小金井公園の桜並木側）; 公園全体の点は地図レビュー待ち"
+        },
+        {
+          "id": "musashi_koganei2",
+          "label": "武蔵小金井駅",
+          "coord": [
+            35.7013945,
+            139.5057814
+          ],
+          "source": "OSM node 2147464096 武蔵小金井駅"
+        }
+      ],
+      "legDistancesKm": [
+        2.6,
+        1.22
+      ],
+      "geometryUrl": "data/routes/no-55-standard.geojson"
+    }
+  ]
+}

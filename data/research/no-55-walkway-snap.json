@@ -1,0 +1,34 @@
+{
+ "higashi_koganei": {
+  "snapped": [
+   35.6974768,
+   139.5242159
+  ],
+  "movedM": 1,
+  "wayId": 146351618
+ },
+ "koganei_park": {
+  "snapped": [
+   35.709549,
+   139.5090763
+  ],
+  "movedM": 33,
+  "wayId": 146351007
+ },
+ "nogawa_park": {
+  "snapped": [
+   35.6921658,
+   139.518771
+  ],
+  "movedM": 5,
+  "wayId": 277816855
+ },
+ "musashi_koganei2": {
+  "snapped": [
+   35.7013945,
+   139.5057814
+  ],
+  "movedM": 7,
+  "wayId": 328870252
+ }
+}

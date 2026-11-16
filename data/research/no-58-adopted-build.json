@@ -1,0 +1,77 @@
+{
+  "generatedAt": "2026-11-16T13:41:00.571Z",
+  "method": "Valhalla pedestrian; exact geometry edge repeat is only a screening clue",
+  "results": [
+    {
+      "variant": "standard",
+      "distanceM": 5841,
+      "engineDistanceM": 5843,
+      "repeatedGeometryM": 0,
+      "repeatedGeometryPct": 0,
+      "waypoints": [
+        {
+          "id": "harajuku",
+          "label": "原宿駅",
+          "coord": [
+            35.6701663,
+            139.7024373
+          ],
+          "source": "OSM station 原宿"
+        },
+        {
+          "id": "meiji_jingu_mae",
+          "label": "明治神宮前〈原宿〉駅",
+          "coord": [
+            35.6689633,
+            139.7044932
+          ],
+          "source": "OSM station 明治神宮前〈原宿〉"
+        },
+        {
+          "id": "omotesando",
+          "label": "表参道駅",
+          "coord": [
+            35.6658182,
+            139.7128848
+          ],
+          "source": "OSM 表参道駅"
+        },
+        {
+          "id": "aoyama",
+          "label": "青山学院（青山キャンパス前）",
+          "coord": [
+            35.6673713,
+            139.7187153
+          ],
+          "source": "OSM place_of_worship 青山教会（青山学院前の通り沿い）; 学院の点は地図レビュー待ち"
+        },
+        {
+          "id": "azabu_juban",
+          "label": "麻布十番駅",
+          "coord": [
+            35.6552164,
+            139.7371301
+          ],
+          "source": "OSM station 麻布十番"
+        },
+        {
+          "id": "roppongi2",
+          "label": "六本木駅",
+          "coord": [
+            35.663315,
+            139.7327813
+          ],
+          "source": "OSM subway_entrance 六本木"
+        }
+      ],
+      "legDistancesKm": [
+        0.27,
+        0.9,
+        0.74,
+        2.69,
+        1.25
+      ],
+      "geometryUrl": "data/routes/no-58-standard.geojson"
+    }
+  ]
+}

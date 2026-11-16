@@ -1,0 +1,105 @@
+{
+  "calculatedAt": "2026-11-16T13:42:02.897Z",
+  "engine": "valhalla-pedestrian",
+  "variants": {
+    "standard": {
+      "label": "standard",
+      "distanceM": 6627,
+      "engineDistanceM": 6628,
+      "repeatedGeometryM": 258,
+      "repeatedGeometryPct": 3.9,
+      "legKm": [
+        0.66,
+        0.98,
+        1.46,
+        1.14,
+        0.45,
+        1.01,
+        0.94
+      ],
+      "geometryUrl": "data/routes/no-56-standard.geojson",
+      "stops": [
+        {
+          "id": "tokyo_st",
+          "label": "東京駅 丸の内中央口",
+          "coord": [
+            35.6815845,
+            139.7660203
+          ],
+          "source": "OSM train_station_entrance 丸の内中央口",
+          "offsetM": 0
+        },
+        {
+          "id": "nijubashi_mae",
+          "label": "二重橋前〈丸の内〉駅",
+          "coord": [
+            35.6798594,
+            139.7616264
+          ],
+          "source": "OSM stop 二重橋前",
+          "offsetM": 0
+        },
+        {
+          "id": "kokyo_gaien",
+          "label": "皇居外苑（和田倉方面）",
+          "coord": [
+            35.6833717,
+            139.7612987
+          ],
+          "source": "OSM park 和田倉噴水公園",
+          "offsetM": 0
+        },
+        {
+          "id": "hibiya_park",
+          "label": "日比谷公園",
+          "coord": [
+            35.6737364,
+            139.7560389
+          ],
+          "source": "OSM park 日比谷公園",
+          "offsetM": 0
+        },
+        {
+          "id": "ginza4",
+          "label": "銀座四丁目交差点",
+          "coord": [
+            35.6740911,
+            139.765134
+          ],
+          "source": "TOPIC: 銀座四丁目交差点。OSMの正確な点は地図レビュー待ち",
+          "offsetM": 3
+        },
+        {
+          "id": "kyobashi",
+          "label": "京橋の親柱",
+          "coord": [
+            35.6749199,
+            139.7687724
+          ],
+          "source": "OSM information 京橋の親柱",
+          "offsetM": 0
+        },
+        {
+          "id": "nihonbashi2",
+          "label": "日本橋（橋）",
+          "coord": [
+            35.6825677,
+            139.7737674
+          ],
+          "source": "OSM node 日本橋（橋）",
+          "offsetM": 0
+        },
+        {
+          "id": "tokyo_st",
+          "label": "東京駅 丸の内中央口",
+          "coord": [
+            35.6815845,
+            139.7660203
+          ],
+          "source": "OSM train_station_entrance 丸の内中央口",
+          "offsetM": 0
+        }
+      ]
+    }
+  }
+}

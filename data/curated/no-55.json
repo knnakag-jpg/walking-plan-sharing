@@ -1,0 +1,74 @@
+{
+  "id": "No.55",
+  "buildFile": "data/research/no-55-adopted-build.json",
+  "title": "小金井公園と野川の桜",
+  "summary": "東小金井駅から小金井公園の桜並木（桜町側）を歩き、武蔵小金井駅へ抜ける短い駅間。江戸東京たてもの園と野川公園は名称ノードが見つからず経由点に含めていない。",
+  "themes": [
+    "桜",
+    "公園",
+    "春限定"
+  ],
+  "routeReasons": {
+    "standard": "東小金井駅から小金井公園の桜町側、武蔵小金井駅へ。計算上3.82km。江戸東京たてもの園と野川公園は名称ノードが見つからず、座標を作らずに含めていない。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
+    "extended": "B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。"
+  },
+  "distanceExceptions": {
+    "standard": "3.82km。実在の地点だけで組んだため5〜6kmに届かない。延伸は作らない。"
+  },
+  "retraceExceptions": {
+    "standard": "計算上の重なりは約36m（桜町公園の園路）。"
+  },
+  "rainy": {
+    "verificationStatus": "researched",
+    "summary": "雨の日は公園の桜並木を短く歩くだけの短縮案。桜の開花は年により変わる。",
+    "segments": [
+      {
+        "kind": "walk_outdoor",
+        "from": "東小金井駅",
+        "to": "小金井公園",
+        "distanceM": null,
+        "note": "屋根なし。傘が必要。"
+      },
+      {
+        "kind": "walk_indoor",
+        "from": "武蔵小金井駅",
+        "to": "駅ビル・商業施設",
+        "distanceM": null,
+        "note": "営業時間は当日確認。"
+      },
+      {
+        "kind": "rail",
+        "from": "武蔵小金井駅",
+        "to": "東小金井駅",
+        "distanceM": null,
+        "note": "鉄道で戻る場合。運賃・所要は当日確認。"
+      }
+    ],
+    "conditions": [
+      "営業時間・休館日は当日確認。",
+      "屋外の路面は雨天で濡れやすい。"
+    ]
+  },
+  "evidence": [
+    {
+      "type": "community",
+      "title": "OpenStreetMap（東小金井駅・小金井公園の桜町側・武蔵小金井駅）",
+      "url": "https://www.openstreetmap.org/",
+      "checkedAt": "2026-11-16",
+      "supports": "駅・公園・橋・交差点の名称ノードの座標。入口ではない。"
+    },
+    {
+      "type": "community",
+      "title": "旧資料 No.55（先行ページ index.html）",
+      "url": null,
+      "checkedAt": "2026-11-16",
+      "supports": "旧案の立ち寄り先。"
+    }
+  ],
+  "openQuestions": [
+    "江戸東京たてもの園・野川公園の座標と入口",
+    "小金井公園の桜並木の正確な位置",
+    "野川沿いの歩道の連続性",
+    "桜の開花時期（毎年変わる）"
+  ]
+}

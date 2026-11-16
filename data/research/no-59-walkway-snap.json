@@ -1,0 +1,42 @@
+{
+ "tachikawa_kita": {
+  "snapped": [
+   35.6994751,
+   139.4124988
+  ],
+  "movedM": 6,
+  "wayId": 128769714
+ },
+ "kunitachi_n": {
+  "snapped": [
+   35.6994899,
+   139.4462781
+  ],
+  "movedM": 3,
+  "wayId": 853660640
+ },
+ "nishi_kokubunji": {
+  "snapped": [
+   35.6997971,
+   139.4659763
+  ],
+  "movedM": 11,
+  "wayId": 184905822
+ },
+ "hake": {
+  "snapped": [
+   35.7031327,
+   139.4700396
+  ],
+  "movedM": 15,
+  "wayId": 239952538
+ },
+ "kokubunji_st": {
+  "snapped": [
+   35.700182,
+   139.466037
+  ],
+  "movedM": 7,
+  "wayId": 226934311
+ }
+}

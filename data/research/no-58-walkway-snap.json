@@ -1,0 +1,50 @@
+{
+ "harajuku": {
+  "snapped": [
+   35.6701663,
+   139.7024373
+  ],
+  "movedM": 5,
+  "wayId": 823006852
+ },
+ "meiji_jingu_mae": {
+  "snapped": [
+   35.6689633,
+   139.7044932
+  ],
+  "movedM": 12,
+  "wayId": 41521096
+ },
+ "omotesando": {
+  "snapped": [
+   35.6658182,
+   139.7128848
+  ],
+  "movedM": 3,
+  "wayId": 269846479
+ },
+ "aoyama": {
+  "snapped": [
+   35.6673713,
+   139.7187153
+  ],
+  "movedM": 13,
+  "wayId": 92339122
+ },
+ "azabu_juban": {
+  "snapped": [
+   35.6552164,
+   139.7371301
+  ],
+  "movedM": 4,
+  "wayId": 682309446
+ },
+ "roppongi2": {
+  "snapped": [
+   35.663315,
+   139.7327813
+  ],
+  "movedM": 1,
+  "wayId": 1083392170
+ }
+}

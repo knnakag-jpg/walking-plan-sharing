@@ -1,0 +1,75 @@
+{
+  "id": "No.59",
+  "buildFile": "data/research/no-59-adopted-build.json",
+  "title": "立川から国立・国分寺のはけ",
+  "summary": "立川北駅から国立駅北口、国分寺崖線「はけ」を経て西国分寺駅へ抜ける駅間。大学通りとさくら通りは名称ノードが見つからず経由点に含めていない。",
+  "themes": [
+    "坂道",
+    "崖線",
+    "学園都市",
+    "並木"
+  ],
+  "routeReasons": {
+    "standard": "立川北駅から国立駅北口、国分寺崖線「はけ」を経て西国分寺駅へ。計算上6.81km。大学通り・さくら通り・はけの遊歩道は名称ノードが見つからず、はけは概略の点を使った（地図レビュー待ち）。国分寺駅は西国分寺駅とほぼ同じ位置のため終点は西国分寺駅にした。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
+    "extended": "B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。"
+  },
+  "distanceExceptions": {
+    "standard": "6.81km。5〜6kmを超えるが、駅と崖線を結んだ自然な駅間で、切り詰めはしない。"
+  },
+  "retraceExceptions": {
+    "standard": "計算上の重なりは約51m（西国分寺駅付近）。"
+  },
+  "rainy": {
+    "verificationStatus": "researched",
+    "summary": "雨の日は国立駅前の商店街だけを歩く短縮案。「はけ」の遊歩道は雨天で滑りやすい。",
+    "segments": [
+      {
+        "kind": "walk_outdoor",
+        "from": "立川北駅",
+        "to": "国立駅",
+        "distanceM": null,
+        "note": "屋根なし。傘が必要。"
+      },
+      {
+        "kind": "walk_indoor",
+        "from": "国立駅",
+        "to": "駅ビル・商店街",
+        "distanceM": null,
+        "note": "営業時間は当日確認。"
+      },
+      {
+        "kind": "rail",
+        "from": "西国分寺駅",
+        "to": "立川北駅",
+        "distanceM": null,
+        "note": "鉄道で戻る場合。運賃・所要は当日確認。"
+      }
+    ],
+    "conditions": [
+      "営業時間・休館日は当日確認。",
+      "屋外の路面は雨天で濡れやすい。"
+    ]
+  },
+  "evidence": [
+    {
+      "type": "community",
+      "title": "OpenStreetMap（立川北駅・国立駅北口・西国分寺駅・国分寺駅付近）",
+      "url": "https://www.openstreetmap.org/",
+      "checkedAt": "2026-11-16",
+      "supports": "駅・公園・橋・交差点の名称ノードの座標。入口ではない。"
+    },
+    {
+      "type": "community",
+      "title": "旧資料 No.59（先行ページ index.html）",
+      "url": null,
+      "checkedAt": "2026-11-16",
+      "supports": "旧案の立ち寄り先。"
+    }
+  ],
+  "openQuestions": [
+    "はけ遊歩道の位置と通行条件",
+    "大学通り・さくら通りの歩道",
+    "国立駅から西国分寺駅への経路",
+    "国分寺駅の位置（西国分寺駅との関係）"
+  ]
+}

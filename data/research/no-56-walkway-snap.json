@@ -1,0 +1,66 @@
+{
+ "tokyo_st": {
+  "snapped": [
+   35.6815845,
+   139.7660203
+  ],
+  "movedM": 1,
+  "wayId": 1313727713
+ },
+ "kokyo_gaien": {
+  "snapped": [
+   35.6833717,
+   139.7612987
+  ],
+  "movedM": 2,
+  "wayId": 572510209
+ },
+ "nijubashi_mae": {
+  "snapped": [
+   35.6798594,
+   139.7616264
+  ],
+  "movedM": 53,
+  "wayId": 474593056
+ },
+ "hibiya_park": {
+  "snapped": [
+   35.6737364,
+   139.7560389
+  ],
+  "movedM": 13,
+  "wayId": 556407068
+ },
+ "ginza4": {
+  "snapped": [
+   35.6740911,
+   139.765134
+  ],
+  "movedM": 10,
+  "wayId": 391694490
+ },
+ "kyobashi": {
+  "snapped": [
+   35.6749199,
+   139.7687724
+  ],
+  "movedM": 7,
+  "wayId": 522764995
+ },
+ "nihonbashi2": {
+  "snapped": [
+   35.6825677,
+   139.7737674
+  ],
+  "movedM": 0,
+  "wayId": 163198815
+ },
+ "nihonbashi_st": {
+  "snapped": [
+   35.6817562,
+   139.775834
+  ],
+  "movedM": 8,
+  "wayId": 666649338
+ }
+}

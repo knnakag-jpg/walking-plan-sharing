@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "source": "legacy import; route quality not re-reviewed",
-  "generatedAt": "2026-11-16T13:21:00.102Z",
+  "generatedAt": "2026-11-16T13:43:28.498Z",
   "courses": [
     {
       "id": "No.1",
@@ -19470,19 +19470,17 @@
     {
       "id": "No.55",
       "slug": "no-55",
-      "title": "小金井公園〜野川 桜堤",
+      "title": "小金井公園と野川の桜",
       "seriesId": "v4haru",
       "seriesName": "V4春限定（No.53〜55）",
       "legacyAnchor": "course-55",
       "legacyUrl": "../index.html#course-55",
-      "summary": "都内最大級の桜名所・小金井公園（約1,700本）の桜堤と、江戸東京たてもの園の歴史建築、野川の桜並木を結ぶ春限定フラットコース。芝生と桜の下で椅子休憩が取りやすく、膝に優しいまま花見を満喫できる。",
+      "summary": "東小金井駅から小金井公園の桜並木（桜町側）を歩き、武蔵小金井駅へ抜ける短い駅間。江戸東京たてもの園と野川公園は名称ノードが見つからず経由点に含めていない。",
       "routeText": "経路ノード： 東小金井駅 → 小金井公園（桜並木） → 江戸東京たてもの園 → 野川公園 → 野川沿い → 武蔵小金井駅 → ゴール",
       "tags": [
-        "桜・桜堤",
-        "公園・芝生",
-        "歴史建築",
-        "フォトジェニック",
-        "最適: 春3-4月/秋"
+        "桜",
+        "公園",
+        "春限定"
       ],
       "route": {
         "id": "no-55-legacy",
@@ -19496,17 +19494,7 @@
         "repeatedGeometryPct": 12.7,
         "maxWaypointToShapeM": 32,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "partial_dem_filled",
-          "url": "data/elevation/no-55.json",
-          "totalM": 6425,
-          "climbM": 26.1,
-          "descentM": 22.4,
-          "minM": 63.3,
-          "maxM": 72.3
-        }
+        "engine": "valhalla-pedestrian"
       },
       "waypoints": [
         {
@@ -19550,7 +19538,190 @@
       "auditFlags": [
         "repeated_geometry_over_10pct"
       ],
-      "category": "main"
+      "category": "main",
+      "defaultVariant": "standard",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "OpenStreetMap（東小金井駅・小金井公園の桜町側・武蔵小金井駅）",
+          "url": "https://www.openstreetmap.org/",
+          "checkedAt": "2026-11-16",
+          "supports": "駅・公園・橋・交差点の名称ノードの座標。入口ではない。"
+        },
+        {
+          "type": "community",
+          "title": "旧資料 No.55（先行ページ index.html）",
+          "url": null,
+          "checkedAt": "2026-11-16",
+          "supports": "旧案の立ち寄り先。"
+        }
+      ],
+      "openQuestions": [
+        "江戸東京たてもの園・野川公園の座標と入口",
+        "小金井公園の桜並木の正確な位置",
+        "野川沿いの歩道の連続性",
+        "桜の開花時期（毎年変わる）"
+      ],
+      "routeOptions": [
+        {
+          "id": "no-55-standard",
+          "variant": "standard",
+          "strategy": "scenic",
+          "geometryUrl": "data/routes/no-55-standard.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 3817,
+          "engineDistanceM": 3817,
+          "repeatedGeometryPct": 1,
+          "routeReason": "東小金井駅から小金井公園の桜町側、武蔵小金井駅へ。計算上3.82km。江戸東京たてもの園と野川公園は名称ノードが見つからず、座標を作らずに含めていない。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
+          "distanceException": "3.82km。実在の地点だけで組んだため5〜6kmに届かない。延伸は作らない。",
+          "retraceException": "計算上の重なりは約36m（桜町公園の園路）。",
+          "waypoints": [
+            {
+              "index": 0,
+              "id": "higashi_koganei",
+              "label": "東小金井駅入口",
+              "description": null,
+              "point": [
+                139.5242159,
+                35.6974768
+              ],
+              "source": "OSM node 1321483777 東小金井駅入口"
+            },
+            {
+              "index": 1,
+              "id": "koganei_park",
+              "label": "小金井公園（桜）",
+              "description": null,
+              "point": [
+                139.5090763,
+                35.709549
+              ],
+              "source": "OSM park 桜町公園（小金井公園の桜並木側）; 公園全体の点は地図レビュー待ち"
+            },
+            {
+              "index": 2,
+              "id": "musashi_koganei2",
+              "label": "武蔵小金井駅",
+              "description": null,
+              "point": [
+                139.5057814,
+                35.7013945
+              ],
+              "source": "OSM node 2147464096 武蔵小金井駅"
+            }
+          ],
+          "engine": "valhalla-pedestrian",
+          "built": "2026-11-16T13:42:00.173Z",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "dem",
+            "url": "data/elevation/no-55-standard.json",
+            "totalM": 3817,
+            "climbM": 15.6,
+            "descentM": 10.1,
+            "minM": 63.3,
+            "maxM": 71.1
+          }
+        },
+        {
+          "id": "no-55-rainy",
+          "variant": "rainy",
+          "strategy": "indoor_rail",
+          "verificationStatus": "researched",
+          "distanceM": null,
+          "routeReason": "雨の日は公園の桜並木を短く歩くだけの短縮案。桜の開花は年により変わる。",
+          "segments": [
+            {
+              "kind": "walk_outdoor",
+              "from": "東小金井駅",
+              "to": "小金井公園",
+              "distanceM": null,
+              "note": "屋根なし。傘が必要。"
+            },
+            {
+              "kind": "walk_indoor",
+              "from": "武蔵小金井駅",
+              "to": "駅ビル・商業施設",
+              "distanceM": null,
+              "note": "営業時間は当日確認。"
+            },
+            {
+              "kind": "rail",
+              "from": "武蔵小金井駅",
+              "to": "東小金井駅",
+              "distanceM": null,
+              "note": "鉄道で戻る場合。運賃・所要は当日確認。"
+            }
+          ],
+          "conditions": [
+            "営業時間・休館日は当日確認。",
+            "屋外の路面は雨天で濡れやすい。"
+          ],
+          "geometryUrl": null,
+          "waypoints": []
+        },
+        {
+          "id": "no-55-legacy",
+          "variant": "legacy",
+          "strategy": "legacy_unknown",
+          "geometryUrl": "data/routes/no-55.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 6425,
+          "engineDistanceM": 6432,
+          "targetDistanceM": 6900,
+          "repeatedGeometryPct": 12.7,
+          "maxWaypointToShapeM": 32,
+          "built": "2026-08-29",
+          "engine": "valhalla-pedestrian",
+          "waypoints": [
+            {
+              "index": 0,
+              "point": [
+                139.52,
+                35.7
+              ]
+            },
+            {
+              "index": 1,
+              "point": [
+                139.5105,
+                35.7165
+              ]
+            },
+            {
+              "index": 2,
+              "point": [
+                139.512,
+                35.7155
+              ]
+            },
+            {
+              "index": 3,
+              "point": [
+                139.505,
+                35.698
+              ]
+            },
+            {
+              "index": 4,
+              "point": [
+                139.506,
+                35.7015
+              ]
+            }
+          ],
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/no-55.json",
+            "totalM": 6425,
+            "climbM": 26.1,
+            "descentM": 22.4,
+            "minM": 63.3,
+            "maxM": 72.3
+          }
+        }
+      ]
     },
     {
       "id": "S1",
@@ -21887,19 +22058,18 @@
     {
       "id": "No.56",
       "slug": "no-56",
-      "title": "東京駅・皇居外周〜日本橋",
+      "title": "東京駅・皇居外周から日本橋",
       "seriesId": "v5_8km",
       "seriesName": "V5追加 8km詳細（No.56〜59）",
       "legacyAnchor": "course-56",
       "legacyUrl": "../index.html#course-56",
-      "summary": "経路ノード： 東京駅 丸の内北口 → 行幸通り → 和田倉門交差点 → 内堀通り → 二重橋前交差点 → 日比谷通り → 日比谷交差点 → 晴海通り → 銀座四丁目交差点 → 中央通り → 京橋交差点 → 日本橋 → 永代通り → 大手町 → 東京駅 日本橋口 → 日本橋一丁目方面へ実在の歩道で延伸（往復約1.1km） → ゴール",
+      "summary": "東京駅丸の内から二重橋前、和田倉、日比谷公園、銀座四丁目、京橋、日本橋を回って東京駅へ戻る都心の周回。銀座四丁目交差点の正確な座標はOSMで見つからず概略の点を使っている。",
       "routeText": "経路ノード： 東京駅 丸の内北口 → 行幸通り → 和田倉門交差点 → 内堀通り → 二重橋前交差点 → 日比谷通り → 日比谷交差点 → 晴海通り → 銀座四丁目交差点 → 中央通り → 京橋交差点 → 日本橋 → 永代通り → 大手町 → 東京駅 日本橋口 → 日本橋一丁目方面へ実在の歩道で延伸（往復約1.1km） → ゴール",
       "tags": [
-        "歴史・城郭",
-        "テック・先端建築",
-        "フォトジェニック景観",
-        "自然・庭園",
-        "ガジェット・オーディオ"
+        "都心",
+        "皇居",
+        "橋",
+        "街並み"
       ],
       "route": {
         "id": "no-56-legacy",
@@ -21913,17 +22083,7 @@
         "repeatedGeometryPct": 2.8,
         "maxWaypointToShapeM": 13,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "partial_dem_filled",
-          "url": "data/elevation/no-56.json",
-          "totalM": 7987,
-          "climbM": 12.3,
-          "descentM": 12.4,
-          "minM": 1.9,
-          "maxM": 4.7
-        }
+        "engine": "valhalla-pedestrian"
       },
       "waypoints": [
         {
@@ -22009,24 +22169,303 @@
       "auditFlags": [
         "repeated_waypoint"
       ],
-      "category": "main"
+      "category": "main",
+      "defaultVariant": "standard",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "OpenStreetMap（東京駅・二重橋前・和田倉噴水公園・日比谷公園・京橋・日本橋）",
+          "url": "https://www.openstreetmap.org/",
+          "checkedAt": "2026-11-16",
+          "supports": "駅・公園・橋・交差点の名称ノードの座標。入口ではない。"
+        },
+        {
+          "type": "community",
+          "title": "旧資料 No.56（先行ページ index.html）",
+          "url": null,
+          "checkedAt": "2026-11-16",
+          "supports": "旧案の立ち寄り先。日本橋一丁目方面の往復延伸は採用していない。"
+        }
+      ],
+      "openQuestions": [
+        "銀座四丁目交差点の正確な座標",
+        "皇居外苑の歩道の通行条件",
+        "和田倉橋の歩道",
+        "日本橋の地下通路の位置"
+      ],
+      "routeOptions": [
+        {
+          "id": "no-56-standard",
+          "variant": "standard",
+          "strategy": "scenic",
+          "geometryUrl": "data/routes/no-56-standard.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 6627,
+          "engineDistanceM": 6628,
+          "repeatedGeometryPct": 3.9,
+          "routeReason": "東京駅丸の内中央口から二重橋前駅、皇居外苑（和田倉）、日比谷公園、銀座四丁目交差点、京橋の親柱、日本橋（橋）を経て東京駅へ戻る。計算上6.63km。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
+          "distanceException": "6.63km。実在の立ち寄り先だけで組んだため5〜6kmの範囲外。延伸は作らない。",
+          "retraceException": "和田倉噴水公園から日比谷方面へ向かう区間で約232m、二重橋前付近で約15m、日本橋で約11m（計約258m）。和田倉の公園内を回って表通りへ戻る形で、距離合わせの往復ではない。地図で未確認。",
+          "waypoints": [
+            {
+              "index": 0,
+              "id": "tokyo_st",
+              "label": "東京駅 丸の内中央口",
+              "description": null,
+              "point": [
+                139.7660203,
+                35.6815845
+              ],
+              "source": "OSM train_station_entrance 丸の内中央口"
+            },
+            {
+              "index": 1,
+              "id": "nijubashi_mae",
+              "label": "二重橋前〈丸の内〉駅",
+              "description": null,
+              "point": [
+                139.7616264,
+                35.6798594
+              ],
+              "source": "OSM stop 二重橋前"
+            },
+            {
+              "index": 2,
+              "id": "kokyo_gaien",
+              "label": "皇居外苑（和田倉方面）",
+              "description": null,
+              "point": [
+                139.7612987,
+                35.6833717
+              ],
+              "source": "OSM park 和田倉噴水公園"
+            },
+            {
+              "index": 3,
+              "id": "hibiya_park",
+              "label": "日比谷公園",
+              "description": null,
+              "point": [
+                139.7560389,
+                35.6737364
+              ],
+              "source": "OSM park 日比谷公園"
+            },
+            {
+              "index": 4,
+              "id": "ginza4",
+              "label": "銀座四丁目交差点",
+              "description": null,
+              "point": [
+                139.765134,
+                35.6740911
+              ],
+              "source": "TOPIC: 銀座四丁目交差点。OSMの正確な点は地図レビュー待ち"
+            },
+            {
+              "index": 5,
+              "id": "kyobashi",
+              "label": "京橋の親柱",
+              "description": null,
+              "point": [
+                139.7687724,
+                35.6749199
+              ],
+              "source": "OSM information 京橋の親柱"
+            },
+            {
+              "index": 6,
+              "id": "nihonbashi2",
+              "label": "日本橋（橋）",
+              "description": null,
+              "point": [
+                139.7737674,
+                35.6825677
+              ],
+              "source": "OSM node 日本橋（橋）"
+            },
+            {
+              "index": 7,
+              "id": "tokyo_st",
+              "label": "東京駅 丸の内中央口",
+              "description": null,
+              "point": [
+                139.7660203,
+                35.6815845
+              ],
+              "source": "OSM train_station_entrance 丸の内中央口"
+            }
+          ],
+          "engine": "valhalla-pedestrian",
+          "built": "2026-11-16T13:42:02.897Z",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/no-56-standard.json",
+            "totalM": 6627,
+            "climbM": 11.2,
+            "descentM": 11,
+            "minM": 1.9,
+            "maxM": 4.7
+          }
+        },
+        {
+          "id": "no-56-rainy",
+          "variant": "rainy",
+          "strategy": "indoor_rail",
+          "verificationStatus": "researched",
+          "distanceM": null,
+          "routeReason": "雨の日は東京駅の駅ビルと日本橋の地下通路（案内文のみ）を中心にする短縮案。地下通路の座標は取れていない。",
+          "segments": [
+            {
+              "kind": "walk_outdoor",
+              "from": "東京駅",
+              "to": "皇居外苑",
+              "distanceM": null,
+              "note": "屋根なし。傘が必要。"
+            },
+            {
+              "kind": "walk_indoor",
+              "from": "東京駅",
+              "to": "駅ビル・グランルーフの館内",
+              "distanceM": null,
+              "note": "館内の範囲は未確認。"
+            },
+            {
+              "kind": "rail",
+              "from": "東京駅",
+              "to": "東京駅",
+              "distanceM": null,
+              "note": "鉄道で戻る場合。運賃・所要は当日確認。"
+            }
+          ],
+          "conditions": [
+            "営業時間・休館日は当日確認。",
+            "屋外の路面は雨天で濡れやすい。"
+          ],
+          "geometryUrl": null,
+          "waypoints": []
+        },
+        {
+          "id": "no-56-legacy",
+          "variant": "legacy",
+          "strategy": "legacy_unknown",
+          "geometryUrl": "data/routes/no-56.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 7987,
+          "engineDistanceM": 7989,
+          "targetDistanceM": 8000,
+          "repeatedGeometryPct": 2.8,
+          "maxWaypointToShapeM": 13,
+          "built": "2026-08-29",
+          "engine": "valhalla-pedestrian",
+          "waypoints": [
+            {
+              "index": 0,
+              "point": [
+                139.76645,
+                35.68221
+              ]
+            },
+            {
+              "index": 1,
+              "point": [
+                139.76221,
+                35.68242
+              ]
+            },
+            {
+              "index": 2,
+              "point": [
+                139.75774,
+                35.67953
+              ]
+            },
+            {
+              "index": 3,
+              "point": [
+                139.75632,
+                35.67404
+              ]
+            },
+            {
+              "index": 4,
+              "point": [
+                139.76504,
+                35.67122
+              ]
+            },
+            {
+              "index": 5,
+              "point": [
+                139.7717,
+                35.67588
+              ]
+            },
+            {
+              "index": 6,
+              "point": [
+                139.77309,
+                35.68126
+              ]
+            },
+            {
+              "index": 7,
+              "point": [
+                139.76266,
+                35.68402
+              ]
+            },
+            {
+              "index": 8,
+              "point": [
+                139.76891,
+                35.68379
+              ]
+            },
+            {
+              "index": 9,
+              "point": [
+                139.773998,
+                35.683603
+              ]
+            },
+            {
+              "index": 10,
+              "point": [
+                139.76891,
+                35.68379
+              ]
+            }
+          ],
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/no-56.json",
+            "totalM": 7987,
+            "climbM": 12.3,
+            "descentM": 12.4,
+            "minM": 1.9,
+            "maxM": 4.7
+          }
+        }
+      ]
     },
     {
       "id": "No.57",
       "slug": "no-57",
-      "title": "両国〜浅草〜谷中〜上野",
+      "title": "両国から浅草・上野",
       "seriesId": "v5_8km",
       "seriesName": "V5追加 8km詳細（No.56〜59）",
       "legacyAnchor": "course-57",
       "legacyUrl": "../index.html#course-57",
-      "summary": "経路ノード： 両国駅 東口 → 清澄通り → 隅田川テラス（南岸） → 蔵前橋交差点 → 厩橋交差点 → 浅草通り → 雷門交差点 → 浅草寺 → 言問通り → 谷中霊園中央園路 → 上野桜木 → 上野公園 → 上野駅 公園口 → ゴール",
+      "summary": "両国駅西口から厩橋を渡り、雷門、浅草寺を経て上野駅へ抜ける駅間。雷門と浅草寺は名称ノードが見つからず概略の点、谷中霊園は含めていない。",
       "routeText": "経路ノード： 両国駅 東口 → 清澄通り → 隅田川テラス（南岸） → 蔵前橋交差点 → 厩橋交差点 → 浅草通り → 雷門交差点 → 浅草寺 → 言問通り → 谷中霊園中央園路 → 上野桜木 → 上野公園 → 上野駅 公園口 → ゴール",
       "tags": [
-        "歴史・城郭",
-        "自然・庭園",
-        "美術・工芸",
-        "フォトジェニック景観",
-        "港湾・船舶"
+        "川",
+        "寺",
+        "下町",
+        "公園"
       ],
       "route": {
         "id": "no-57-legacy",
@@ -22040,17 +22479,7 @@
         "repeatedGeometryPct": 3.5,
         "maxWaypointToShapeM": 35,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "partial_dem_filled",
-          "url": "data/elevation/no-57.json",
-          "totalM": 7870,
-          "climbM": 53.5,
-          "descentM": 44.3,
-          "minM": 0.9,
-          "maxM": 18.8
-        }
+        "engine": "valhalla-pedestrian"
       },
       "waypoints": [
         {
@@ -22113,24 +22542,260 @@
       "climbM": 99.2,
       "descentM": 90,
       "auditFlags": [],
-      "category": "main"
+      "category": "main",
+      "defaultVariant": "standard",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "OpenStreetMap（両国駅西口・厩橋・上野駅）",
+          "url": "https://www.openstreetmap.org/",
+          "checkedAt": "2026-11-16",
+          "supports": "駅・公園・橋・交差点の名称ノードの座標。入口ではない。"
+        },
+        {
+          "type": "community",
+          "title": "旧資料 No.57（先行ページ index.html）",
+          "url": null,
+          "checkedAt": "2026-11-16",
+          "supports": "旧案の立ち寄り先。谷中霊園中央園路は含めていない。"
+        }
+      ],
+      "openQuestions": [
+        "雷門・浅草寺・隅田川テラス・蔵前橋・谷中霊園の正確な座標",
+        "厩橋の歩道",
+        "上野桜木の位置",
+        "上野公園への入口"
+      ],
+      "routeOptions": [
+        {
+          "id": "no-57-standard",
+          "variant": "standard",
+          "strategy": "scenic",
+          "geometryUrl": "data/routes/no-57-standard.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 4954,
+          "engineDistanceM": 4957,
+          "repeatedGeometryPct": 1.8,
+          "routeReason": "両国駅西口から厩橋（西詰・東詰）、雷門、浅草寺を経て上野駅へ。計算上4.95km。雷門・浅草寺・谷中霊園の正確な点がなく、概略の点を使うか外した（地図レビュー待ち）。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
+          "distanceException": "4.95km。実在の地点だけで組んだため5〜6kmに届かない。延伸は作らない。",
+          "retraceException": "厩橋の西詰と東詰の間で約91m（橋の取り付き）。橋を渡るための短い重なりで、距離合わせではない。",
+          "waypoints": [
+            {
+              "index": 0,
+              "id": "ryogoku_w",
+              "label": "両国駅 西口",
+              "description": null,
+              "point": [
+                139.7919378,
+                35.6966898
+              ],
+              "source": "OSM node 両国駅西口"
+            },
+            {
+              "index": 1,
+              "id": "uma_bashi",
+              "label": "厩橋（西詰）",
+              "description": null,
+              "point": [
+                139.793299,
+                35.7052119
+              ],
+              "source": "OSM node 344100421 厩橋"
+            },
+            {
+              "index": 2,
+              "id": "uma_bashi_e",
+              "label": "厩橋（東詰）",
+              "description": null,
+              "point": [
+                139.796172,
+                35.703956
+              ],
+              "source": "OSM node 344201116 厩橋東詰"
+            },
+            {
+              "index": 3,
+              "id": "kaminarimon",
+              "label": "雷門",
+              "description": null,
+              "point": [
+                139.7963051,
+                35.7109299
+              ],
+              "source": "TOPIC: 雷門。OSMの正確な点は地図レビュー待ち"
+            },
+            {
+              "index": 4,
+              "id": "sensoji",
+              "label": "浅草寺",
+              "description": null,
+              "point": [
+                139.7964791,
+                35.7147238
+              ],
+              "source": "TOPIC: 浅草寺。OSMの正確な点は地図レビュー待ち"
+            },
+            {
+              "index": 5,
+              "id": "ueno_st",
+              "label": "上野駅",
+              "description": null,
+              "point": [
+                139.7781957,
+                35.712167
+              ],
+              "source": "OSM node 上野駅"
+            }
+          ],
+          "engine": "valhalla-pedestrian",
+          "built": "2026-11-16T13:42:33.476Z",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/no-57-standard.json",
+            "totalM": 4954,
+            "climbM": 19.2,
+            "descentM": 18.6,
+            "minM": 1.4,
+            "maxM": 5.2
+          }
+        },
+        {
+          "id": "no-57-rainy",
+          "variant": "rainy",
+          "strategy": "indoor_rail",
+          "verificationStatus": "researched",
+          "distanceM": null,
+          "routeReason": "雨の日は上野駅と浅草の仲見世の屋根のある区間を中心にする短縮案。",
+          "segments": [
+            {
+              "kind": "walk_outdoor",
+              "from": "両国駅",
+              "to": "厩橋",
+              "distanceM": null,
+              "note": "屋根なし。傘が必要。"
+            },
+            {
+              "kind": "walk_indoor",
+              "from": "上野駅",
+              "to": "駅ビル・アメ横のアーケード",
+              "distanceM": null,
+              "note": "アーケードの範囲は未確認。"
+            },
+            {
+              "kind": "rail",
+              "from": "上野駅",
+              "to": "両国駅",
+              "distanceM": null,
+              "note": "鉄道で戻る場合。運賃・所要は当日確認。"
+            }
+          ],
+          "conditions": [
+            "営業時間・休館日は当日確認。",
+            "屋外の路面は雨天で濡れやすい。"
+          ],
+          "geometryUrl": null,
+          "waypoints": []
+        },
+        {
+          "id": "no-57-legacy",
+          "variant": "legacy",
+          "strategy": "legacy_unknown",
+          "geometryUrl": "data/routes/no-57.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 7870,
+          "engineDistanceM": 7877,
+          "targetDistanceM": 8000,
+          "repeatedGeometryPct": 3.5,
+          "maxWaypointToShapeM": 35,
+          "built": "2026-08-29",
+          "engine": "valhalla-pedestrian",
+          "waypoints": [
+            {
+              "index": 0,
+              "point": [
+                139.79402,
+                35.69565
+              ]
+            },
+            {
+              "index": 1,
+              "point": [
+                139.79349,
+                35.70094
+              ]
+            },
+            {
+              "index": 2,
+              "point": [
+                139.79516,
+                35.70438
+              ]
+            },
+            {
+              "index": 3,
+              "point": [
+                139.79637,
+                35.71113
+              ]
+            },
+            {
+              "index": 4,
+              "point": [
+                139.79553,
+                35.7134
+              ]
+            },
+            {
+              "index": 5,
+              "point": [
+                139.77379,
+                35.7215
+              ]
+            },
+            {
+              "index": 6,
+              "point": [
+                139.77393,
+                35.71402
+              ]
+            },
+            {
+              "index": 7,
+              "point": [
+                139.77712,
+                35.71404
+              ]
+            }
+          ],
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/no-57.json",
+            "totalM": 7870,
+            "climbM": 53.5,
+            "descentM": 44.3,
+            "minM": 0.9,
+            "maxM": 18.8
+          }
+        }
+      ]
     },
     {
       "id": "No.58",
       "slug": "no-58",
-      "title": "原宿〜表参道〜六本木ヒルズ",
+      "title": "原宿から表参道・六本木",
       "seriesId": "v5_8km",
       "seriesName": "V5追加 8km詳細（No.56〜59）",
       "legacyAnchor": "course-58",
       "legacyUrl": "../index.html#course-58",
-      "summary": "経路ノード（B案）： 原宿駅 表参道口 → 明治通り → 神宮前交差点 → 表参道 → 青山通り（青山学院前） → 外苑西通り → 六本木通り → 六本木交差点 → けやき坂 → 六本木ヒルズ（最後に回す） → 麻布十番方面 → 来た道を戻って六本木駅（解散） → ゴール",
+      "summary": "原宿駅から明治神宮前、表参道駅、青山学院前、麻布十番を通って六本木駅へ抜ける駅間。けやき坂と六本木ヒルズは名称ノードが見つからず含めていない。",
       "routeText": "経路ノード（B案）： 原宿駅 表参道口 → 明治通り → 神宮前交差点 → 表参道 → 青山通り（青山学院前） → 外苑西通り → 六本木通り → 六本木交差点 → けやき坂 → 六本木ヒルズ（最後に回す） → 麻布十番方面 → 来た道を戻って六本木駅（解散） → ゴール",
       "tags": [
-        "自然・庭園",
-        "テック・先端建築",
-        "美術・工芸",
-        "フォトジェニック景観",
-        "ガジェット・オーディオ"
+        "街並み",
+        "並木",
+        "アート",
+        "坂道"
       ],
       "route": {
         "id": "no-58-legacy",
@@ -22144,17 +22809,7 @@
         "repeatedGeometryPct": 5,
         "maxWaypointToShapeM": 19,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "dem",
-          "url": "data/elevation/no-58.json",
-          "totalM": 8022,
-          "climbM": 90.3,
-          "descentM": 88.6,
-          "minM": 6.3,
-          "maxM": 34.3
-        }
+        "engine": "valhalla-pedestrian"
       },
       "waypoints": [
         {
@@ -22226,24 +22881,267 @@
       "auditFlags": [
         "repeated_waypoint"
       ],
-      "category": "main"
+      "category": "main",
+      "defaultVariant": "standard",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "OpenStreetMap（原宿駅・明治神宮前駅・表参道駅・青山学院前・麻布十番駅・六本木駅）",
+          "url": "https://www.openstreetmap.org/",
+          "checkedAt": "2026-11-16",
+          "supports": "駅・公園・橋・交差点の名称ノードの座標。入口ではない。"
+        },
+        {
+          "type": "community",
+          "title": "旧資料 No.58（先行ページ index.html）",
+          "url": null,
+          "checkedAt": "2026-11-16",
+          "supports": "旧案の立ち寄り先。けやき坂・六本木ヒルズは含めていない。"
+        }
+      ],
+      "openQuestions": [
+        "けやき坂・六本木ヒルズの座標",
+        "青山学院の正確な位置",
+        "表参道の並木の歩道",
+        "六本木交差点の横断"
+      ],
+      "routeOptions": [
+        {
+          "id": "no-58-standard",
+          "variant": "standard",
+          "strategy": "scenic",
+          "geometryUrl": "data/routes/no-58-standard.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 5841,
+          "engineDistanceM": 5843,
+          "repeatedGeometryPct": 0,
+          "routeReason": "原宿駅から明治神宮前駅、表参道駅、青山学院前、麻布十番駅を経て六本木駅へ。計算上5.84km。けやき坂と六本木ヒルズは名称ノードが見つからず含めていない。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
+          "distanceException": null,
+          "retraceException": "計算上の重なりは0m。",
+          "waypoints": [
+            {
+              "index": 0,
+              "id": "harajuku",
+              "label": "原宿駅",
+              "description": null,
+              "point": [
+                139.7024373,
+                35.6701663
+              ],
+              "source": "OSM station 原宿"
+            },
+            {
+              "index": 1,
+              "id": "meiji_jingu_mae",
+              "label": "明治神宮前〈原宿〉駅",
+              "description": null,
+              "point": [
+                139.7044932,
+                35.6689633
+              ],
+              "source": "OSM station 明治神宮前〈原宿〉"
+            },
+            {
+              "index": 2,
+              "id": "omotesando",
+              "label": "表参道駅",
+              "description": null,
+              "point": [
+                139.7128848,
+                35.6658182
+              ],
+              "source": "OSM 表参道駅"
+            },
+            {
+              "index": 3,
+              "id": "aoyama",
+              "label": "青山学院（青山キャンパス前）",
+              "description": null,
+              "point": [
+                139.7187153,
+                35.6673713
+              ],
+              "source": "OSM place_of_worship 青山教会（青山学院前の通り沿い）; 学院の点は地図レビュー待ち"
+            },
+            {
+              "index": 4,
+              "id": "azabu_juban",
+              "label": "麻布十番駅",
+              "description": null,
+              "point": [
+                139.7371301,
+                35.6552164
+              ],
+              "source": "OSM station 麻布十番"
+            },
+            {
+              "index": 5,
+              "id": "roppongi2",
+              "label": "六本木駅",
+              "description": null,
+              "point": [
+                139.7327813,
+                35.663315
+              ],
+              "source": "OSM subway_entrance 六本木"
+            }
+          ],
+          "engine": "valhalla-pedestrian",
+          "built": "2026-11-16T13:41:00.571Z",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "dem",
+            "url": "data/elevation/no-58-standard.json",
+            "totalM": 5841,
+            "climbM": 63.7,
+            "descentM": 62.3,
+            "minM": 4.3,
+            "maxM": 33.6
+          }
+        },
+        {
+          "id": "no-58-rainy",
+          "variant": "rainy",
+          "strategy": "indoor_rail",
+          "verificationStatus": "researched",
+          "distanceM": null,
+          "routeReason": "雨の日は表参道ヒルズと六本木ヒルズの館内を中心にする案。",
+          "segments": [
+            {
+              "kind": "walk_outdoor",
+              "from": "原宿駅",
+              "to": "表参道",
+              "distanceM": null,
+              "note": "屋根なし。傘が必要。"
+            },
+            {
+              "kind": "walk_indoor",
+              "from": "表参道",
+              "to": "表参道ヒルズの館内",
+              "distanceM": null,
+              "note": "館内の範囲は未確認。"
+            },
+            {
+              "kind": "rail",
+              "from": "六本木駅",
+              "to": "原宿駅",
+              "distanceM": null,
+              "note": "鉄道で戻る場合。運賃・所要は当日確認。"
+            }
+          ],
+          "conditions": [
+            "営業時間・休館日は当日確認。",
+            "屋外の路面は雨天で濡れやすい。"
+          ],
+          "geometryUrl": null,
+          "waypoints": []
+        },
+        {
+          "id": "no-58-legacy",
+          "variant": "legacy",
+          "strategy": "legacy_unknown",
+          "geometryUrl": "data/routes/no-58.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 8022,
+          "engineDistanceM": 8022,
+          "targetDistanceM": 7900,
+          "repeatedGeometryPct": 5,
+          "maxWaypointToShapeM": 19,
+          "built": "2026-08-29",
+          "engine": "valhalla-pedestrian",
+          "waypoints": [
+            {
+              "index": 0,
+              "point": [
+                139.70241,
+                35.6705
+              ]
+            },
+            {
+              "index": 1,
+              "point": [
+                139.70728,
+                35.6692
+              ]
+            },
+            {
+              "index": 2,
+              "point": [
+                139.71254,
+                35.66516
+              ]
+            },
+            {
+              "index": 3,
+              "point": [
+                139.71042,
+                35.66057
+              ]
+            },
+            {
+              "index": 4,
+              "point": [
+                139.72959,
+                35.66044
+              ]
+            },
+            {
+              "index": 5,
+              "point": [
+                139.73612,
+                35.65645
+              ]
+            },
+            {
+              "index": 6,
+              "point": [
+                139.73277,
+                35.66364
+              ]
+            },
+            {
+              "index": 7,
+              "point": [
+                139.730564,
+                35.668374
+              ]
+            },
+            {
+              "index": 8,
+              "point": [
+                139.73277,
+                35.66364
+              ]
+            }
+          ],
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "dem",
+            "url": "data/elevation/no-58.json",
+            "totalM": 8022,
+            "climbM": 90.3,
+            "descentM": 88.6,
+            "minM": 6.3,
+            "maxM": 34.3
+          }
+        }
+      ]
     },
     {
       "id": "No.59",
       "slug": "no-59",
-      "title": "立川〜国立〜国分寺 はけ",
+      "title": "立川から国立・国分寺のはけ",
       "seriesId": "v5_8km",
       "seriesName": "V5追加 8km詳細（No.56〜59）",
       "legacyAnchor": "course-59",
       "legacyUrl": "../index.html#course-59",
-      "summary": "経路ノード： 立川駅 北口 → 立川通り → 柴崎町交差点 → 大学通り → 国立駅 南口 → さくら通り → 国分寺街道 → 恋ヶ窪交差点 → 国分寺崖線「はけ」遊歩道 → 国分寺駅 → ゴール",
+      "summary": "立川北駅から国立駅北口、国分寺崖線「はけ」を経て西国分寺駅へ抜ける駅間。大学通りとさくら通りは名称ノードが見つからず経由点に含めていない。",
       "routeText": "経路ノード： 立川駅 北口 → 立川通り → 柴崎町交差点 → 大学通り → 国立駅 南口 → さくら通り → 国分寺街道 → 恋ヶ窪交差点 → 国分寺崖線「はけ」遊歩道 → 国分寺駅 → ゴール",
       "tags": [
-        "自然・庭園",
-        "鉄道",
-        "歴史・城郭",
-        "フォトジェニック景観",
-        "馬事・スポーツ"
+        "坂道",
+        "崖線",
+        "学園都市",
+        "並木"
       ],
       "route": {
         "id": "no-59-legacy",
@@ -22257,17 +23155,7 @@
         "repeatedGeometryPct": 0,
         "maxWaypointToShapeM": 14,
         "built": "2026-08-29",
-        "engine": "valhalla-pedestrian",
-        "elevation": {
-          "source": "gsi_dem5a",
-          "status": "dem",
-          "url": "data/elevation/no-59.json",
-          "totalM": 7157,
-          "climbM": 37.3,
-          "descentM": 51.8,
-          "minM": 60.4,
-          "maxM": 84.1
-        }
+        "engine": "valhalla-pedestrian"
       },
       "waypoints": [
         {
@@ -22302,7 +23190,194 @@
       "climbM": 78.4,
       "descentM": 91.2,
       "auditFlags": [],
-      "category": "main"
+      "category": "main",
+      "defaultVariant": "standard",
+      "evidence": [
+        {
+          "type": "community",
+          "title": "OpenStreetMap（立川北駅・国立駅北口・西国分寺駅・国分寺駅付近）",
+          "url": "https://www.openstreetmap.org/",
+          "checkedAt": "2026-11-16",
+          "supports": "駅・公園・橋・交差点の名称ノードの座標。入口ではない。"
+        },
+        {
+          "type": "community",
+          "title": "旧資料 No.59（先行ページ index.html）",
+          "url": null,
+          "checkedAt": "2026-11-16",
+          "supports": "旧案の立ち寄り先。"
+        }
+      ],
+      "openQuestions": [
+        "はけ遊歩道の位置と通行条件",
+        "大学通り・さくら通りの歩道",
+        "国立駅から西国分寺駅への経路",
+        "国分寺駅の位置（西国分寺駅との関係）"
+      ],
+      "routeOptions": [
+        {
+          "id": "no-59-standard",
+          "variant": "standard",
+          "strategy": "scenic",
+          "geometryUrl": "data/routes/no-59-standard.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 6806,
+          "engineDistanceM": 6812,
+          "repeatedGeometryPct": 0.7,
+          "routeReason": "立川北駅から国立駅北口、国分寺崖線「はけ」を経て西国分寺駅へ。計算上6.81km。大学通り・さくら通り・はけの遊歩道は名称ノードが見つからず、はけは概略の点を使った（地図レビュー待ち）。国分寺駅は西国分寺駅とほぼ同じ位置のため終点は西国分寺駅にした。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
+          "distanceException": "6.81km。5〜6kmを超えるが、駅と崖線を結んだ自然な駅間で、切り詰めはしない。",
+          "retraceException": "計算上の重なりは約51m（西国分寺駅付近）。",
+          "waypoints": [
+            {
+              "index": 0,
+              "id": "tachikawa_kita",
+              "label": "立川北駅",
+              "description": null,
+              "point": [
+                139.4124988,
+                35.6994751
+              ],
+              "source": "OSM station 立川北"
+            },
+            {
+              "index": 1,
+              "id": "kunitachi_n",
+              "label": "国立駅 北口",
+              "description": null,
+              "point": [
+                139.4462781,
+                35.6994899
+              ],
+              "source": "OSM node 国立駅北口"
+            },
+            {
+              "index": 2,
+              "id": "hake",
+              "label": "国分寺崖線「はけ」",
+              "description": null,
+              "point": [
+                139.4700396,
+                35.7031327
+              ],
+              "source": "TOPIC: はけの遊歩道。OSMの正確な位置は地図レビュー待ち"
+            },
+            {
+              "index": 3,
+              "id": "nishi_kokubunji",
+              "label": "西国分寺駅",
+              "description": null,
+              "point": [
+                139.4659763,
+                35.6997971
+              ],
+              "source": "OSM station 西国分寺"
+            }
+          ],
+          "engine": "valhalla-pedestrian",
+          "built": "2026-11-16T13:42:09.061Z",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "dem",
+            "url": "data/elevation/no-59-standard.json",
+            "totalM": 6806,
+            "climbM": 34.1,
+            "descentM": 44.1,
+            "minM": 69.2,
+            "maxM": 86.2
+          }
+        },
+        {
+          "id": "no-59-rainy",
+          "variant": "rainy",
+          "strategy": "indoor_rail",
+          "verificationStatus": "researched",
+          "distanceM": null,
+          "routeReason": "雨の日は国立駅前の商店街だけを歩く短縮案。「はけ」の遊歩道は雨天で滑りやすい。",
+          "segments": [
+            {
+              "kind": "walk_outdoor",
+              "from": "立川北駅",
+              "to": "国立駅",
+              "distanceM": null,
+              "note": "屋根なし。傘が必要。"
+            },
+            {
+              "kind": "walk_indoor",
+              "from": "国立駅",
+              "to": "駅ビル・商店街",
+              "distanceM": null,
+              "note": "営業時間は当日確認。"
+            },
+            {
+              "kind": "rail",
+              "from": "西国分寺駅",
+              "to": "立川北駅",
+              "distanceM": null,
+              "note": "鉄道で戻る場合。運賃・所要は当日確認。"
+            }
+          ],
+          "conditions": [
+            "営業時間・休館日は当日確認。",
+            "屋外の路面は雨天で濡れやすい。"
+          ],
+          "geometryUrl": null,
+          "waypoints": []
+        },
+        {
+          "id": "no-59-legacy",
+          "variant": "legacy",
+          "strategy": "legacy_unknown",
+          "geometryUrl": "data/routes/no-59.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 7157,
+          "engineDistanceM": 7168,
+          "targetDistanceM": 7000,
+          "repeatedGeometryPct": 0,
+          "maxWaypointToShapeM": 14,
+          "built": "2026-08-29",
+          "engine": "valhalla-pedestrian",
+          "waypoints": [
+            {
+              "index": 0,
+              "point": [
+                139.41344,
+                35.6987
+              ]
+            },
+            {
+              "index": 1,
+              "point": [
+                139.44701,
+                35.69844
+              ]
+            },
+            {
+              "index": 2,
+              "point": [
+                139.4682,
+                35.69963
+              ]
+            },
+            {
+              "index": 3,
+              "point": [
+                139.48031,
+                35.70024
+              ]
+            }
+          ],
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "dem",
+            "url": "data/elevation/no-59.json",
+            "totalM": 7157,
+            "climbM": 37.3,
+            "descentM": 51.8,
+            "minM": 60.4,
+            "maxM": 84.1
+          }
+        }
+      ]
     },
     {
       "id": "G-1128",

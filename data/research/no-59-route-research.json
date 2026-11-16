@@ -1,0 +1,49 @@
+{
+  "id": "No.59",
+  "title": "立川から国立・国分寺のはけ",
+  "stage": "source_research_in_progress",
+  "checkedAt": "2026-11-16",
+  "evidence": [
+    {
+      "type": "community",
+      "title": "OpenStreetMap（立川北駅・国立駅北口・西国分寺駅・国分寺駅付近）",
+      "url": "https://www.openstreetmap.org/",
+      "checkedAt": "2026-11-16",
+      "supports": "駅・公園・橋・交差点の名称ノードの座標。入口ではない。"
+    },
+    {
+      "type": "community",
+      "title": "旧資料 No.59（先行ページ index.html）",
+      "url": null,
+      "checkedAt": "2026-11-16",
+      "supports": "旧案の立ち寄り先。"
+    }
+  ],
+  "trials": [
+    {
+      "n": 1,
+      "variant": "A 新規（OSMの駅・地点）",
+      "result": "6.81km・反復51m",
+      "finding": "計算上の重なりは約51m（西国分寺駅付近）。"
+    },
+    {
+      "n": 2,
+      "variant": "A 新規（OSMの駅・地点）",
+      "result": "6.81km・反復51m",
+      "finding": "計算上の重なりは約51m（西国分寺駅付近）。"
+    }
+  ],
+  "files": [
+    "scripts/lib-rebuild.mjs",
+    "scripts/build-group10.mjs",
+    "data/curated/no-59.json",
+    "data/research/no-59-adopted-build.json"
+  ],
+  "openQuestions": [
+    "はけ遊歩道の位置と通行条件",
+    "大学通り・さくら通りの歩道",
+    "国立駅から西国分寺駅への経路",
+    "国分寺駅の位置（西国分寺駅との関係）"
+  ],
+  "decision": "2026-11-16 新Aを計算（6.81km・反復51m）。はけは概略の点、大学通り・さくら通りは名称ノードがなく含めていない。"
+}

@@ -1,0 +1,77 @@
+{
+  "generatedAt": "2026-11-16T13:42:33.476Z",
+  "method": "Valhalla pedestrian; exact geometry edge repeat is only a screening clue",
+  "results": [
+    {
+      "variant": "standard",
+      "distanceM": 4954,
+      "engineDistanceM": 4957,
+      "repeatedGeometryM": 91,
+      "repeatedGeometryPct": 1.8,
+      "waypoints": [
+        {
+          "id": "ryogoku_w",
+          "label": "両国駅 西口",
+          "coord": [
+            35.6966898,
+            139.7919378
+          ],
+          "source": "OSM node 両国駅西口"
+        },
+        {
+          "id": "uma_bashi",
+          "label": "厩橋（西詰）",
+          "coord": [
+            35.7052119,
+            139.793299
+          ],
+          "source": "OSM node 344100421 厩橋"
+        },
+        {
+          "id": "uma_bashi_e",
+          "label": "厩橋（東詰）",
+          "coord": [
+            35.703956,
+            139.796172
+          ],
+          "source": "OSM node 344201116 厩橋東詰"
+        },
+        {
+          "id": "kaminarimon",
+          "label": "雷門",
+          "coord": [
+            35.7109299,
+            139.7963051
+          ],
+          "source": "TOPIC: 雷門。OSMの正確な点は地図レビュー待ち"
+        },
+        {
+          "id": "sensoji",
+          "label": "浅草寺",
+          "coord": [
+            35.7147238,
+            139.7964791
+          ],
+          "source": "TOPIC: 浅草寺。OSMの正確な点は地図レビュー待ち"
+        },
+        {
+          "id": "ueno_st",
+          "label": "上野駅",
+          "coord": [
+            35.712167,
+            139.7781957
+          ],
+          "source": "OSM node 上野駅"
+        }
+      ],
+      "legDistancesKm": [
+        1.18,
+        0.3,
+        0.98,
+        0.47,
+        2.03
+      ],
+      "geometryUrl": "data/routes/no-57-standard.geojson"
+    }
+  ]
+}
