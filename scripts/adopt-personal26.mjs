@@ -36,6 +36,27 @@ for (const course of PERS) {
   course.openQuestions = [...new Set([...(course.openQuestions || []), '立ち寄り先の入口・通行条件を地図と現地で照合', '太陽の向きと時間帯の計算'])];
   course.evidence = [...(course.evidence || []), { type: 'community', title: 'OpenStreetMap（名称付き地点）', url: 'https://www.openstreetmap.org/', checkedAt: '2026-11-16', supports: '駅・公園・寺社の名称ノードの座標。入口ではない。' }];
 }
+// 公園など面の地点は、ピンが歩道の形状から40m超離れることがある（E1 柿田川公園）。その場合だけ形状上の最寄り点へ寄せ、経路理由に記す。
+for (const course of PERS) for (const route of course.routeOptions) {
+  if (route.variant !== 'standard' || !route.waypoints?.length) continue;
+  const line = JSON.parse(fs.readFileSync(path.join(root, route.geometryUrl), 'utf8')).geometry.coordinates;
+  const moved = [];
+  for (const w of route.waypoints) {
+    let best = null;
+    for (const [lon, lat] of line) { const d = Math.hypot((lon - w.point[0]) * 91000, (lat - w.point[1]) * 111000); if (!best || d < best.d) best = { d, lon, lat }; }
+    if (best.d > 35) { w.point = [best.lon, best.lat]; moved.push((w.label || w.id) + '(' + Math.round(best.d) + 'm)'); }
+  }
+  if (moved.length) route.routeReason += ' 面の地点は歩道の最寄り点へ寄せた: ' + moved.join('、') + '。';
+}
+// build-atlas-data は adopt の前に走るので、新案の標高要約はここで付ける（標高系列は build-route-elevation.mjs --only=<slug>-standard で作る）。
+const routeElevation = rd('data/research/route-elevation.json').routes;
+for (const course of PERS) for (const route of course.routeOptions) {
+  if (route.elevation || !route.geometryUrl) continue;
+  const slug = route.geometryUrl.split('/').pop().replace(/.geojson$/, '');
+  const profile = routeElevation[slug];
+  if (!profile?.gradients?.length) throw new Error(slug + ': no DEM gradient data (run build-route-elevation.mjs --only=' + slug + ')');
+  route.elevation = { source: 'gsi_dem5a', status: profile.status, url: 'data/elevation/' + slug + '.json', totalM: profile.totalM, climbM: profile.climbM, descentM: profile.descentM, minM: profile.minM, maxM: profile.maxM };
+}
 wr('data/catalog.json', cat);
 console.log(result.join(' | '));
 console.log('personal', PERS.length, 'main+category', cat.courses.filter((c) => c.category !== 'personal').length);

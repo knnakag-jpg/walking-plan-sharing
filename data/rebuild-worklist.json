@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-17T12:44:42.342Z",
+  "generatedAt": "2026-11-17T21:22:57.525Z",
   "interpretation": "Mechanical triage only. Source and map review required before adopting any new route.",
   "records": [
     {
@@ -676,7 +676,7 @@
       "id": "E1",
       "title": "三島・源兵衛川と三嶋大社",
       "series": "個人散歩（遠征検討 E）",
-      "workStatus": "research_needed",
+      "workStatus": "partial_rebuild",
       "legacy": {
         "geometryUrl": "data/routes/e1.geojson",
         "walkingDistanceM": 6513,
@@ -691,7 +691,13 @@
         ],
         "gateResult": "OK"
       },
-      "existingNewVariants": [],
+      "existingNewVariants": [
+        {
+          "variant": "standard",
+          "status": "routed",
+          "distanceM": 7671
+        }
+      ],
       "coordinateReview": "not_started",
       "sourceResearch": "not_started",
       "historicalRoutingStrategies": [],
@@ -775,7 +781,7 @@
       "id": "S1",
       "title": "玉川上水・仙川緑道（三鷹〜武蔵境〜東小金井）水辺と並木",
       "series": "個人散歩（修行案 S）",
-      "workStatus": "research_needed",
+      "workStatus": "partial_rebuild",
       "legacy": {
         "geometryUrl": "data/routes/s1.geojson",
         "walkingDistanceM": 7109,
@@ -790,7 +796,13 @@
         ],
         "gateResult": "OK"
       },
-      "existingNewVariants": [],
+      "existingNewVariants": [
+        {
+          "variant": "standard",
+          "status": "routed",
+          "distanceM": 8954
+        }
+      ],
       "coordinateReview": "not_started",
       "sourceResearch": "not_started",
       "historicalRoutingStrategies": [],
@@ -819,7 +831,7 @@
       "id": "Z5",
       "title": "富山・環水公園と立山連峰",
       "series": "個人散歩（全国 Z）",
-      "workStatus": "research_needed",
+      "workStatus": "partial_rebuild",
       "legacy": {
         "geometryUrl": "data/routes/z5.geojson",
         "walkingDistanceM": 6976,
@@ -838,7 +850,13 @@
         ],
         "gateResult": "OK"
       },
-      "existingNewVariants": [],
+      "existingNewVariants": [
+        {
+          "variant": "standard",
+          "status": "routed",
+          "distanceM": 5513
+        }
+      ],
       "coordinateReview": "not_started",
       "sourceResearch": "not_started",
       "historicalRoutingStrategies": [],
@@ -1164,7 +1182,7 @@
       "id": "S6",
       "title": "青梅街道・中野〜荻窪レトロ商店街（中野〜荻窪）",
       "series": "個人散歩（修行案 S）",
-      "workStatus": "research_needed",
+      "workStatus": "partial_rebuild",
       "legacy": {
         "geometryUrl": "data/routes/s6.geojson",
         "walkingDistanceM": 6779,
@@ -1179,7 +1197,13 @@
         ],
         "gateResult": "OK"
       },
-      "existingNewVariants": [],
+      "existingNewVariants": [
+        {
+          "variant": "standard",
+          "status": "routed",
+          "distanceM": 9401
+        }
+      ],
       "coordinateReview": "not_started",
       "sourceResearch": "not_started",
       "historicalRoutingStrategies": [],
@@ -1208,7 +1232,7 @@
       "id": "E3",
       "title": "浜松・遠鉄と浜松城",
       "series": "個人散歩（遠征検討 E）",
-      "workStatus": "research_needed",
+      "workStatus": "partial_rebuild",
       "legacy": {
         "geometryUrl": "data/routes/e3.geojson",
         "walkingDistanceM": 6802,
@@ -1223,7 +1247,13 @@
         ],
         "gateResult": "OK"
       },
-      "existingNewVariants": [],
+      "existingNewVariants": [
+        {
+          "variant": "standard",
+          "status": "routed",
+          "distanceM": 7060
+        }
+      ],
       "coordinateReview": "not_started",
       "sourceResearch": "not_started",
       "historicalRoutingStrategies": [],
@@ -1609,7 +1639,7 @@
       "id": "Z3",
       "title": "福岡・博多〜天神〜大濠公園",
       "series": "個人散歩（全国 Z）",
-      "workStatus": "research_needed",
+      "workStatus": "partial_rebuild",
       "legacy": {
         "geometryUrl": "data/routes/z3.geojson",
         "walkingDistanceM": 7312,
@@ -1624,7 +1654,13 @@
         ],
         "gateResult": "OK"
       },
-      "existingNewVariants": [],
+      "existingNewVariants": [
+        {
+          "variant": "standard",
+          "status": "routed",
+          "distanceM": 6776
+        }
+      ],
       "coordinateReview": "not_started",
       "sourceResearch": "not_started",
       "historicalRoutingStrategies": [],
@@ -2554,7 +2590,7 @@
       "id": "Z2",
       "title": "神戸・三宮〜ハーバーランド港夜景",
       "series": "個人散歩（全国 Z）",
-      "workStatus": "research_needed",
+      "workStatus": "partial_rebuild",
       "legacy": {
         "geometryUrl": "data/routes/z2.geojson",
         "walkingDistanceM": 6940,
@@ -2569,7 +2605,13 @@
         ],
         "gateResult": "OK"
       },
-      "existingNewVariants": [],
+      "existingNewVariants": [
+        {
+          "variant": "standard",
+          "status": "routed",
+          "distanceM": 5972
+        }
+      ],
       "coordinateReview": "not_started",
       "sourceResearch": "not_started",
       "historicalRoutingStrategies": [],
@@ -4626,7 +4668,7 @@
       "id": "S13",
       "title": "旭が丘→湯殿川・浅川→高幡不動",
       "series": "個人散歩（修行案 S）",
-      "workStatus": "research_needed",
+      "workStatus": "partial_rebuild",
       "legacy": {
         "geometryUrl": "data/routes/s13.geojson",
         "walkingDistanceM": 8698,
@@ -4636,7 +4678,13 @@
         "repeatedWaypoints": [],
         "gateResult": "OK"
       },
-      "existingNewVariants": [],
+      "existingNewVariants": [
+        {
+          "variant": "standard",
+          "status": "routed",
+          "distanceM": 5573
+        }
+      ],
       "coordinateReview": "not_started",
       "sourceResearch": "not_started",
       "historicalRoutingStrategies": [],
