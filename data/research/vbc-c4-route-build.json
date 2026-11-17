@@ -1,0 +1,83 @@
+{
+  "calculatedAt": "2026-11-17T11:56:40.567Z",
+  "engine": "valhalla-pedestrian",
+  "variants": {
+    "standard": {
+      "label": "standard",
+      "distanceM": 5087,
+      "engineDistanceM": 5090,
+      "repeatedGeometryM": 620,
+      "repeatedGeometryPct": 12.2,
+      "legKm": [
+        0.5,
+        0.62,
+        1.34,
+        1.29,
+        1.35
+      ],
+      "geometryUrl": "data/routes/vbc-c4-standard.geojson",
+      "stops": [
+        {
+          "id": "rekimin",
+          "label": "立川市歴史民俗資料館",
+          "coord": [
+            35.6968238,
+            139.3902795
+          ],
+          "source": "OSM museum 立川市歴史民俗資料館",
+          "offsetM": 0
+        },
+        {
+          "id": "fujimi",
+          "label": "富士見公園",
+          "coord": [
+            35.6969018,
+            139.39503
+          ],
+          "source": "OSM park 富士見公園",
+          "offsetM": 0
+        },
+        {
+          "id": "sengen",
+          "label": "浅間神社",
+          "coord": [
+            35.7018928,
+            139.3966618
+          ],
+          "source": "OSM place_of_worship 浅間神社",
+          "offsetM": 0
+        },
+        {
+          "id": "shinnyoen",
+          "label": "真如苑 真澄寺",
+          "coord": [
+            35.6965633,
+            139.4048696
+          ],
+          "source": "OSM place_of_worship 真如苑 真澄寺",
+          "offsetM": 0
+        },
+        {
+          "id": "showa_kinenkan",
+          "label": "昭和天皇記念館",
+          "coord": [
+            35.7033521,
+            139.4078733
+          ],
+          "source": "OSM museum 昭和天皇記念館",
+          "offsetM": 0
+        },
+        {
+          "id": "kyokuchi",
+          "label": "国立極地研究所 南極・北極科学館",
+          "coord": [
+            35.7116139,
+            139.4092469
+          ],
+          "source": "OSM museum 南極・北極科学館",
+          "offsetM": 0
+        }
+      ]
+    }
+  }
+}

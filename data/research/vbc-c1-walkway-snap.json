@@ -1,0 +1,42 @@
+{
+ "kaihin": {
+  "snapped": [
+   35.6486546,
+   140.0415385
+  ],
+  "movedM": 2,
+  "wayId": 1112452998
+ },
+ "makuhari_chuo": {
+  "snapped": [
+   35.6472165,
+   140.0444451
+  ],
+  "movedM": 39,
+  "wayId": 207838520
+ },
+ "marines": {
+  "snapped": [
+   35.6466538,
+   140.0310141
+  ],
+  "movedM": 21,
+  "wayId": 696360989
+ },
+ "hamada": {
+  "snapped": [
+   35.6577029,
+   140.0316628
+  ],
+  "movedM": 32,
+  "wayId": 173048199
+ },
+ "makuhari_ryokuchi": {
+  "snapped": [
+   35.6611454,
+   140.0303471
+  ],
+  "movedM": 21,
+  "wayId": 762014195
+ }
+}

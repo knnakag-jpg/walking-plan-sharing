@@ -162,6 +162,20 @@ function courses() {
       rows.push({ courseId: course.id, routeId: route.id, variant: route.variant, slug, geometryUrl: route.geometryUrl });
     }
   }
+  // 新しく組み直した curated の経路は、catalog に載る前でも標高を計算できるようにする。
+  const curatedRoot = path.join(root, 'data/curated');
+  if (fs.existsSync(curatedRoot)) for (const name of fs.readdirSync(curatedRoot).filter((n) => n.endsWith('.json'))) {
+    const curated = JSON.parse(fs.readFileSync(path.join(curatedRoot, name), 'utf8'));
+    const build = JSON.parse(fs.readFileSync(path.join(root, curated.buildFile), 'utf8'));
+    const list = build.results || Object.entries(build.variants).map(([variant, value]) => ({ variant, ...value }));
+    for (const item of list) {
+      if (!item.geometryUrl) continue;
+      const slug = path.basename(item.geometryUrl, '.geojson');
+      if (ONLY && !ONLY.has(slug)) continue;
+      if (rows.some((row) => row.slug === slug)) continue;
+      rows.push({ courseId: curated.id, routeId: `${slug}`, variant: item.variant, slug, geometryUrl: item.geometryUrl });
+    }
+  }
   const personalRoot = path.join(root, 'data/personal');
   if (fs.existsSync(personalRoot)) for (const name of fs.readdirSync(personalRoot).filter((n) => n.endsWith('.json'))) {
     const spec = JSON.parse(fs.readFileSync(path.join(personalRoot, name), 'utf8'));

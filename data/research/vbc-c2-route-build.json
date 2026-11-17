@@ -1,0 +1,83 @@
+{
+  "calculatedAt": "2026-11-17T11:53:40.038Z",
+  "engine": "valhalla-pedestrian",
+  "variants": {
+    "standard": {
+      "label": "standard",
+      "distanceM": 5570,
+      "engineDistanceM": 5578,
+      "repeatedGeometryM": 182,
+      "repeatedGeometryPct": 3.3,
+      "legKm": [
+        0.82,
+        0.53,
+        3.25,
+        0.79,
+        0.19
+      ],
+      "geometryUrl": "data/routes/vbc-c2-standard.geojson",
+      "stops": [
+        {
+          "id": "minamimachida",
+          "label": "南町田グランベリーパーク駅",
+          "coord": [
+            35.5119181,
+            139.4706053
+          ],
+          "source": "TOPIC: 南町田グランベリーパーク駅。OSMの名称ノードは地図レビュー待ち",
+          "offsetM": 0
+        },
+        {
+          "id": "yasaka",
+          "label": "八坂神社",
+          "coord": [
+            35.5161577,
+            139.4665186
+          ],
+          "source": "OSM place_of_worship 八坂神社",
+          "offsetM": 0
+        },
+        {
+          "id": "joraku",
+          "label": "常楽寺",
+          "coord": [
+            35.5203506,
+            139.4647527
+          ],
+          "source": "OSM place_of_worship 常楽寺",
+          "offsetM": 0
+        },
+        {
+          "id": "tennosha",
+          "label": "天王社",
+          "coord": [
+            35.5221951,
+            139.4910465
+          ],
+          "source": "OSM place_of_worship 天王社",
+          "offsetM": 0
+        },
+        {
+          "id": "fukusen",
+          "label": "福泉寺",
+          "coord": [
+            35.526075,
+            139.493663
+          ],
+          "source": "OSM place_of_worship 福泉寺",
+          "offsetM": 0
+        },
+        {
+          "id": "osk",
+          "label": "長津田 王子神社",
+          "coord": [
+            35.5272524,
+            139.4943237
+          ],
+          "source": "OSM place_of_worship 長津田 王子神社",
+          "offsetM": 0
+        }
+      ]
+    }
+  }
+}

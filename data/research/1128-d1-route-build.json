@@ -1,0 +1,105 @@
+{
+  "calculatedAt": "2026-11-17T11:56:43.757Z",
+  "engine": "valhalla-pedestrian",
+  "variants": {
+    "standard": {
+      "label": "standard",
+      "distanceM": 3048,
+      "engineDistanceM": 3049,
+      "repeatedGeometryM": 354,
+      "repeatedGeometryPct": 11.6,
+      "legKm": [
+        0.25,
+        0.92,
+        0.38,
+        0.4,
+        0.26,
+        0.45,
+        0.39
+      ],
+      "geometryUrl": "data/routes/1128-d1-standard.geojson",
+      "stops": [
+        {
+          "id": "ichibamae",
+          "label": "市場前駅",
+          "coord": [
+            35.6455531,
+            139.7856933
+          ],
+          "source": "OSM station 市場前",
+          "offsetM": 0
+        },
+        {
+          "id": "tokinokane",
+          "label": "時の鐘",
+          "coord": [
+            35.645746,
+            139.7838217
+          ],
+          "source": "OSM attraction 時の鐘",
+          "offsetM": 0
+        },
+        {
+          "id": "tsukimidai",
+          "label": "月見台",
+          "coord": [
+            35.6465192,
+            139.7911267
+          ],
+          "source": "OSM viewpoint 月見台",
+          "offsetM": 0
+        },
+        {
+          "id": "shintoyosu",
+          "label": "新豊洲駅",
+          "coord": [
+            35.6489148,
+            139.790156
+          ],
+          "source": "OSM station 新豊洲",
+          "offsetM": 0
+        },
+        {
+          "id": "gas",
+          "label": "がすてなーに ガスの科学館",
+          "coord": [
+            35.6516254,
+            139.7923126
+          ],
+          "source": "OSM museum がすてなーに",
+          "offsetM": 4
+        },
+        {
+          "id": "toyosu_park",
+          "label": "豊洲公園",
+          "coord": [
+            35.6531584,
+            139.7925946
+          ],
+          "source": "OSM park 豊洲公園",
+          "offsetM": 0
+        },
+        {
+          "id": "lalaport",
+          "label": "アーバンドックららぽーと豊洲",
+          "coord": [
+            35.6546204,
+            139.793711
+          ],
+          "source": "OSM アーバンドックららぽーと豊洲",
+          "offsetM": 0
+        },
+        {
+          "id": "toyosu_st",
+          "label": "豊洲駅前",
+          "coord": [
+            35.654691,
+            139.7965638
+          ],
+          "source": "OSM 豊洲駅前",
+          "offsetM": 0
+        }
+      ]
+    }
+  }
+}

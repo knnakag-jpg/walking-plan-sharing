@@ -1,0 +1,94 @@
+{
+  "calculatedAt": "2026-11-17T11:51:15.689Z",
+  "engine": "valhalla-pedestrian",
+  "variants": {
+    "standard": {
+      "label": "standard",
+      "distanceM": 4632,
+      "engineDistanceM": 4638,
+      "repeatedGeometryM": 57,
+      "repeatedGeometryPct": 1.2,
+      "legKm": [
+        0.39,
+        1,
+        0.51,
+        0.22,
+        0.98,
+        1.54
+      ],
+      "geometryUrl": "data/routes/1128-d4-standard.geojson",
+      "stops": [
+        {
+          "id": "sakuragicho",
+          "label": "桜木町駅",
+          "coord": [
+            35.4497939,
+            139.6329148
+          ],
+          "source": "OSM 桜木町駅入口",
+          "offsetM": 0
+        },
+        {
+          "id": "minato_museum",
+          "label": "横浜みなと博物館",
+          "coord": [
+            35.4527014,
+            139.6326603
+          ],
+          "source": "OSM museum 横浜みなと博物館",
+          "offsetM": 0
+        },
+        {
+          "id": "akarenga",
+          "label": "赤レンガ倉庫",
+          "coord": [
+            35.4518491,
+            139.641932
+          ],
+          "source": "OSM 赤レンガ倉庫",
+          "offsetM": 0
+        },
+        {
+          "id": "zounohana",
+          "label": "象の鼻パーク",
+          "coord": [
+            35.4481125,
+            139.6436893
+          ],
+          "source": "OSM 象の鼻パーク",
+          "offsetM": 3
+        },
+        {
+          "id": "newspark",
+          "label": "日本新聞博物館",
+          "coord": [
+            35.4465794,
+            139.6427135
+          ],
+          "source": "OSM museum ニュースパーク",
+          "offsetM": 4
+        },
+        {
+          "id": "bashamichi",
+          "label": "馬車道",
+          "coord": [
+            35.4462298,
+            139.6350151
+          ],
+          "source": "OSM 馬車道",
+          "offsetM": 0
+        },
+        {
+          "id": "nogeyama",
+          "label": "野毛山公園展望台",
+          "coord": [
+            35.4449692,
+            139.6231716
+          ],
+          "source": "OSM viewpoint のげやまこうえんてんぼうだい",
+          "offsetM": 0
+        }
+      ]
+    }
+  }
+}

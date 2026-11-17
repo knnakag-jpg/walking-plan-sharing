@@ -1,0 +1,58 @@
+{
+ "sakuragicho": {
+  "snapped": [
+   35.4497939,
+   139.6329148
+  ],
+  "movedM": 1,
+  "wayId": 1214872046
+ },
+ "minato_museum": {
+  "snapped": [
+   35.4527014,
+   139.6326603
+  ],
+  "movedM": 3,
+  "wayId": 35983471
+ },
+ "akarenga": {
+  "snapped": [
+   35.4518491,
+   139.641932
+  ],
+  "movedM": 0,
+  "wayId": 25944235
+ },
+ "zounohana": {
+  "snapped": [
+   35.4481125,
+   139.6436893
+  ],
+  "movedM": 4,
+  "wayId": 411769862
+ },
+ "newspark": {
+  "snapped": [
+   35.4465794,
+   139.6427135
+  ],
+  "movedM": 26,
+  "wayId": 919776932
+ },
+ "bashamichi": {
+  "snapped": [
+   35.4462298,
+   139.6350151
+  ],
+  "movedM": 0,
+  "wayId": 26642987
+ },
+ "nogeyama": {
+  "snapped": [
+   35.4449692,
+   139.6231716
+  ],
+  "movedM": 9,
+  "wayId": 220990334
+ }
+}

@@ -1,0 +1,116 @@
+{
+  "calculatedAt": "2026-11-17T12:00:32.594Z",
+  "engine": "valhalla-pedestrian",
+  "variants": {
+    "standard": {
+      "label": "standard",
+      "distanceM": 5954,
+      "engineDistanceM": 5955,
+      "repeatedGeometryM": 589,
+      "repeatedGeometryPct": 9.9,
+      "legKm": [
+        0.5,
+        0.36,
+        0.23,
+        1.02,
+        0.11,
+        1.26,
+        0.98,
+        1.5
+      ],
+      "geometryUrl": "data/routes/g-1128-standard.geojson",
+      "stops": [
+        {
+          "id": "gw",
+          "label": "高輪ゲートウェイ駅",
+          "coord": [
+            35.6354334,
+            139.7407461
+          ],
+          "source": "OSM station 高輪ゲートウェイ",
+          "offsetM": 0
+        },
+        {
+          "id": "sengakuji_st",
+          "label": "泉岳寺駅",
+          "coord": [
+            35.6387114,
+            139.739953
+          ],
+          "source": "OSM station 泉岳寺",
+          "offsetM": 0
+        },
+        {
+          "id": "sengakuji_park",
+          "label": "泉岳寺児童遊園",
+          "coord": [
+            35.6372664,
+            139.737567
+          ],
+          "source": "OSM park 泉岳寺児童遊園",
+          "offsetM": 3
+        },
+        {
+          "id": "sengakuji",
+          "label": "泉岳寺",
+          "coord": [
+            35.6373336,
+            139.7364364
+          ],
+          "source": "OSM place_of_worship 泉岳寺",
+          "offsetM": 0
+        },
+        {
+          "id": "takanawa_koen",
+          "label": "高輪公園",
+          "coord": [
+            35.6333017,
+            139.7356791
+          ],
+          "source": "OSM park 高輪公園",
+          "offsetM": 0
+        },
+        {
+          "id": "tozenji",
+          "label": "東禅寺",
+          "coord": [
+            35.6339502,
+            139.7347296
+          ],
+          "source": "OSM place_of_worship 東禅寺",
+          "offsetM": 0
+        },
+        {
+          "id": "hatakeyama",
+          "label": "荏原 畠山美術館",
+          "coord": [
+            35.6319835,
+            139.7271842
+          ],
+          "source": "OSM museum 荏原 畠山美術館",
+          "offsetM": 0
+        },
+        {
+          "id": "butsuryu",
+          "label": "物流博物館",
+          "coord": [
+            35.6292104,
+            139.7321837
+          ],
+          "source": "OSM museum 物流博物館",
+          "offsetM": 0
+        },
+        {
+          "id": "shinagawa_central",
+          "label": "品川セントラルガーデン",
+          "coord": [
+            35.6262826,
+            139.7410243
+          ],
+          "source": "OSM park 品川セントラルガーデン",
+          "offsetM": 0
+        }
+      ]
+    }
+  }
+}

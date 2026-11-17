@@ -1,0 +1,116 @@
+{
+  "calculatedAt": "2026-11-17T11:35:31.046Z",
+  "engine": "valhalla-pedestrian",
+  "variants": {
+    "standard": {
+      "label": "standard",
+      "distanceM": 4195,
+      "engineDistanceM": 4196,
+      "repeatedGeometryM": 428,
+      "repeatedGeometryPct": 10.2,
+      "legKm": [
+        0.84,
+        0.15,
+        0.13,
+        0.57,
+        0.29,
+        0.89,
+        0.93,
+        0.39
+      ],
+      "geometryUrl": "data/routes/1128-d5-standard.geojson",
+      "stops": [
+        {
+          "id": "ichigaya",
+          "label": "市ヶ谷見附",
+          "coord": [
+            35.6914418,
+            139.7362007
+          ],
+          "source": "OSM ruins 市ヶ谷見附",
+          "offsetM": 0
+        },
+        {
+          "id": "yasukuni_minami",
+          "label": "靖国神社南門",
+          "coord": [
+            35.693373,
+            139.7438633
+          ],
+          "source": "OSM 靖国神社南門",
+          "offsetM": 0
+        },
+        {
+          "id": "yasukuni",
+          "label": "靖国神社",
+          "coord": [
+            35.6940062,
+            139.7452548
+          ],
+          "source": "OSM 靖国神社",
+          "offsetM": 0
+        },
+        {
+          "id": "kudan_sakaue",
+          "label": "九段坂上",
+          "coord": [
+            35.6943047,
+            139.7465573
+          ],
+          "source": "OSM 九段坂上",
+          "offsetM": 0
+        },
+        {
+          "id": "showakan",
+          "label": "昭和館",
+          "coord": [
+            35.6952359,
+            139.7509108
+          ],
+          "source": "OSM museum 昭和館",
+          "offsetM": 0
+        },
+        {
+          "id": "kudanshita",
+          "label": "九段下",
+          "coord": [
+            35.6953916,
+            139.7513489
+          ],
+          "source": "OSM 九段下",
+          "offsetM": 0
+        },
+        {
+          "id": "chidorigafuchi",
+          "label": "千鳥ヶ淵戦没者墓苑",
+          "coord": [
+            35.6906138,
+            139.7466703
+          ],
+          "source": "OSM 千鳥ヶ淵戦没者墓苑管理事務所",
+          "offsetM": 0
+        },
+        {
+          "id": "camera",
+          "label": "日本カメラ博物館",
+          "coord": [
+            35.6861663,
+            139.7431045
+          ],
+          "source": "OSM museum 日本カメラ博物館",
+          "offsetM": 0
+        },
+        {
+          "id": "hanzomon",
+          "label": "半蔵門",
+          "coord": [
+            35.6839191,
+            139.7442219
+          ],
+          "source": "OSM 半蔵門",
+          "offsetM": 0
+        }
+      ]
+    }
+  }
+}

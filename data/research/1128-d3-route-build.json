@@ -1,0 +1,116 @@
+{
+  "calculatedAt": "2026-11-17T11:34:30.891Z",
+  "engine": "valhalla-pedestrian",
+  "variants": {
+    "standard": {
+      "label": "standard",
+      "distanceM": 4118,
+      "engineDistanceM": 4122,
+      "repeatedGeometryM": 249,
+      "repeatedGeometryPct": 6,
+      "legKm": [
+        0.16,
+        0.4,
+        0.38,
+        0.98,
+        0.51,
+        0.6,
+        0.39,
+        0.7
+      ],
+      "geometryUrl": "data/routes/1128-d3-standard.geojson",
+      "stops": [
+        {
+          "id": "tokyo_marunouchi",
+          "label": "東京駅丸の内北口",
+          "coord": [
+            35.682728,
+            139.7659894
+          ],
+          "source": "OSM node 東京駅丸の内北口",
+          "offsetM": 5
+        },
+        {
+          "id": "station_gallery",
+          "label": "東京ステーションギャラリー",
+          "coord": [
+            35.6824499,
+            139.7664729
+          ],
+          "source": "OSM museum 東京ステーションギャラリー",
+          "offsetM": 0
+        },
+        {
+          "id": "intermediatheque",
+          "label": "インターメディアテク",
+          "coord": [
+            35.6799978,
+            139.7645844
+          ],
+          "source": "OSM museum インターメディアテク",
+          "offsetM": 0
+        },
+        {
+          "id": "mitsuo",
+          "label": "相田みつを美術館",
+          "coord": [
+            35.6774978,
+            139.7646281
+          ],
+          "source": "OSM museum 相田みつを美術館",
+          "offsetM": 0
+        },
+        {
+          "id": "artizon",
+          "label": "アーティゾン美術館",
+          "coord": [
+            35.6787621,
+            139.772493
+          ],
+          "source": "OSM museum アーティゾン美術館",
+          "offsetM": 0
+        },
+        {
+          "id": "nihombashi",
+          "label": "日本橋",
+          "coord": [
+            35.6825677,
+            139.7737674
+          ],
+          "source": "OSM 日本橋",
+          "offsetM": 0
+        },
+        {
+          "id": "fukutoku",
+          "label": "福徳神社",
+          "coord": [
+            35.687207,
+            139.7742935
+          ],
+          "source": "OSM place_of_worship 福徳神社",
+          "offsetM": 0
+        },
+        {
+          "id": "mitsui_museum",
+          "label": "三井記念美術館",
+          "coord": [
+            35.6865114,
+            139.7728674
+          ],
+          "source": "OSM museum 三井記念美術館",
+          "offsetM": 0
+        },
+        {
+          "id": "tokyo_nihombashi",
+          "label": "東京駅日本橋口",
+          "coord": [
+            35.6837789,
+            139.7688637
+          ],
+          "source": "OSM node 東京駅日本橋口",
+          "offsetM": 0
+        }
+      ]
+    }
+  }
+}

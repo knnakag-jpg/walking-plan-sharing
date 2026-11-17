@@ -1,0 +1,82 @@
+{
+ "gw": {
+  "snapped": [
+   35.6354334,
+   139.7407461
+  ],
+  "movedM": 9,
+  "wayId": 1427528392
+ },
+ "sengakuji_st": {
+  "snapped": [
+   35.6387114,
+   139.739953
+  ],
+  "movedM": 6,
+  "wayId": 176742157
+ },
+ "sengakuji_park": {
+  "snapped": [
+   35.6372664,
+   139.737567
+  ],
+  "movedM": 42,
+  "wayId": 216687957
+ },
+ "sengakuji": {
+  "snapped": [
+   35.6373336,
+   139.7364364
+  ],
+  "movedM": 34,
+  "wayId": 856207783
+ },
+ "takanawa_koen": {
+  "snapped": [
+   35.6333017,
+   139.7356791
+  ],
+  "movedM": 35,
+  "wayId": 1351690619
+ },
+ "tozenji": {
+  "snapped": [
+   35.6339502,
+   139.7347296
+  ],
+  "movedM": 44,
+  "wayId": 218671442
+ },
+ "shinagawa_central": {
+  "snapped": [
+   35.6262826,
+   139.7410243
+  ],
+  "movedM": 32,
+  "wayId": 156677192
+ },
+ "okido": {
+  "snapped": [
+   35.6393734,
+   139.7405762
+  ],
+  "movedM": 8,
+  "wayId": 571530917
+ },
+ "hatakeyama": {
+  "snapped": [
+   35.6319835,
+   139.7271842
+  ],
+  "movedM": 36,
+  "wayId": 91584491
+ },
+ "butsuryu": {
+  "snapped": [
+   35.6292104,
+   139.7321837
+  ],
+  "movedM": 17,
+  "wayId": 36851174
+ }
+}

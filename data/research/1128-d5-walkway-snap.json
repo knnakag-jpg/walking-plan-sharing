@@ -1,0 +1,90 @@
+{
+ "ichigaya": {
+  "snapped": [
+   35.6914418,
+   139.7362007
+  ],
+  "movedM": 2,
+  "wayId": 668661956
+ },
+ "yasukuni_minami": {
+  "snapped": [
+   35.693373,
+   139.7438633
+  ],
+  "movedM": 0,
+  "wayId": 30968652
+ },
+ "yasukuni": {
+  "snapped": [
+   35.6940062,
+   139.7452548
+  ],
+  "movedM": 1,
+  "wayId": 34906594
+ },
+ "kudan_sakaue": {
+  "snapped": [
+   35.6943047,
+   139.7465573
+  ],
+  "movedM": 1,
+  "wayId": 98855700
+ },
+ "kudanshita": {
+  "snapped": [
+   35.6953916,
+   139.7513489
+  ],
+  "movedM": 0,
+  "wayId": 92206642
+ },
+ "chidorigafuchi": {
+  "snapped": [
+   35.6906138,
+   139.7466703
+  ],
+  "movedM": 5,
+  "wayId": 144970079
+ },
+ "hanzomon": {
+  "snapped": [
+   35.6839191,
+   139.7442219
+  ],
+  "movedM": 0,
+  "wayId": 669490942
+ },
+ "kameoka": {
+  "snapped": [
+   35.6926521,
+   139.7336409
+  ],
+  "movedM": 12,
+  "wayId": 1008797000
+ },
+ "senshu": {
+  "snapped": [
+   35.6928556,
+   139.7461651
+  ],
+  "movedM": 54,
+  "wayId": 230779677
+ },
+ "showakan": {
+  "snapped": [
+   35.6952359,
+   139.7509108
+  ],
+  "movedM": 14,
+  "wayId": 665177186
+ },
+ "camera": {
+  "snapped": [
+   35.6861663,
+   139.7431045
+  ],
+  "movedM": 26,
+  "wayId": 30521130
+ }
+}

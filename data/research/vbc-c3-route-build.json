@@ -1,0 +1,94 @@
+{
+  "calculatedAt": "2026-11-17T11:54:56.584Z",
+  "engine": "valhalla-pedestrian",
+  "variants": {
+    "standard": {
+      "label": "standard",
+      "distanceM": 3665,
+      "engineDistanceM": 3666,
+      "repeatedGeometryM": 219,
+      "repeatedGeometryPct": 6,
+      "legKm": [
+        1,
+        0.26,
+        0.67,
+        0.2,
+        0.51,
+        1.04
+      ],
+      "geometryUrl": "data/routes/vbc-c3-standard.geojson",
+      "stops": [
+        {
+          "id": "oimachi",
+          "label": "大井町駅",
+          "coord": [
+            35.6076573,
+            139.7344034
+          ],
+          "source": "TOPIC: 大井町駅。OSMの名称ノードは地図レビュー待ち",
+          "offsetM": 0
+        },
+        {
+          "id": "saiwai",
+          "label": "幸稲荷神社",
+          "coord": [
+            35.6075072,
+            139.7436736
+          ],
+          "source": "OSM place_of_worship 幸稲荷神社",
+          "offsetM": 0
+        },
+        {
+          "id": "seiun",
+          "label": "青雲稲荷神社",
+          "coord": [
+            35.605937,
+            139.7431918
+          ],
+          "source": "OSM place_of_worship 青雲稲荷神社",
+          "offsetM": 0
+        },
+        {
+          "id": "inari",
+          "label": "稲荷神社",
+          "coord": [
+            35.6014337,
+            139.7408395
+          ],
+          "source": "OSM place_of_worship 稲荷神社",
+          "offsetM": 0
+        },
+        {
+          "id": "reiun",
+          "label": "嶺雲寺",
+          "coord": [
+            35.6005236,
+            139.7407773
+          ],
+          "source": "OSM place_of_worship 嶺雲寺",
+          "offsetM": 0
+        },
+        {
+          "id": "itsukushima",
+          "label": "厳島神社",
+          "coord": [
+            35.5974928,
+            139.7389557
+          ],
+          "source": "OSM place_of_worship 厳島神社",
+          "offsetM": 0
+        },
+        {
+          "id": "raigoin",
+          "label": "来迎院",
+          "coord": [
+            35.5958416,
+            139.7309019
+          ],
+          "source": "OSM place_of_worship 来迎院",
+          "offsetM": 0
+        }
+      ]
+    }
+  }
+}

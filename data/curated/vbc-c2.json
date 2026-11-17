@@ -1,0 +1,67 @@
+{
+  "id": "VBC-C2",
+  "buildFile": "data/research/vbc-c2-route-build.json",
+  "title": "C-2 南町田〜長津田",
+  "summary": "南町田グランベリーパーク駅から八坂神社、常楽寺、天王社、福泉寺、長津田の王子神社へ。グランベリーパーク自体は名称ノードが取れず経由点には含めていない。",
+  "themes": [
+    "公園",
+    "寺社"
+  ],
+  "routeReasons": {
+    "standard": "南町田グランベリーパーク駅から八坂神社、常楽寺、天王社、福泉寺、長津田の王子神社へ。グランベリーパーク自体は名称ノードが取れず経由点には含めていない。 計算上5.57km。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
+    "extended": "B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。"
+  },
+  "distanceExceptions": {},
+  "retraceExceptions": {},
+  "rainy": {
+    "verificationStatus": "researched",
+    "summary": "雨の日はグランベリーパークの屋内を中心にする。",
+    "segments": [
+      {
+        "kind": "walk_outdoor",
+        "from": "南町田グランベリーパーク駅",
+        "to": "長津田 王子神社",
+        "distanceM": null,
+        "note": "屋根なし。傘が必要。"
+      },
+      {
+        "kind": "walk_indoor",
+        "from": "グランベリーパーク（屋内）",
+        "to": "グランベリーパーク（屋内）",
+        "distanceM": null,
+        "note": "営業時間・通行は当日確認。"
+      },
+      {
+        "kind": "rail",
+        "from": "長津田 王子神社",
+        "to": "南町田グランベリーパーク駅",
+        "distanceM": null,
+        "note": "鉄道で戻る場合。運賃・所要は当日確認。"
+      }
+    ],
+    "conditions": [
+      "営業時間・休館日は当日確認。",
+      "屋外の路面は雨天で濡れやすい。"
+    ]
+  },
+  "evidence": [
+    {
+      "type": "community",
+      "title": "OpenStreetMap（名称付き地点）",
+      "url": "https://www.openstreetmap.org/",
+      "checkedAt": "2026-11-17",
+      "supports": "駅・公園・寺社・博物館の名称ノードの座標。入口ではない。"
+    },
+    {
+      "type": "community",
+      "title": "旧資料 VBC-C2（先行ページ index.html）",
+      "url": null,
+      "checkedAt": "2026-11-17",
+      "supports": "旧案の立ち寄り先と時期。"
+    }
+  ],
+  "openQuestions": [
+    "グランベリーパーク内の経路",
+    "寺社の入口と参拝時間"
+  ]
+}

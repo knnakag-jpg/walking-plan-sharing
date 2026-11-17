@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T14:59:22.418Z",
+  "generatedAt": "2026-11-17T12:02:20.904Z",
   "interpretation": "Mechanical triage only. Source and map review required before adopting any new route.",
   "records": [
     {
@@ -255,9 +255,9 @@
     },
     {
       "id": "G-Rain",
-      "title": "G 雨天版：高輪GW屋内回遊",
+      "title": "G 雨天版：高輪ゲートウェイ〜品川",
       "series": "バリエーションB/C（新規追加）",
-      "workStatus": "research_needed",
+      "workStatus": "partial_rebuild",
       "legacy": {
         "geometryUrl": "data/routes/g-rain.geojson",
         "walkingDistanceM": 1054,
@@ -272,7 +272,18 @@
         ],
         "gateResult": "OK"
       },
-      "existingNewVariants": [],
+      "existingNewVariants": [
+        {
+          "variant": "standard",
+          "status": "routed",
+          "distanceM": 1766
+        },
+        {
+          "variant": "rainy",
+          "status": "researched",
+          "distanceM": null
+        }
+      ],
       "coordinateReview": "not_started",
       "sourceResearch": "not_started",
       "historicalRoutingStrategies": [
@@ -2132,52 +2143,6 @@
       ]
     },
     {
-      "id": "1128-D3",
-      "title": "D-3 東京駅→日本橋 地下＋丸の内イルミ",
-      "series": "バリエーションB/C（新規追加）",
-      "workStatus": "research_needed",
-      "legacy": {
-        "geometryUrl": "data/routes/1128-d3.geojson",
-        "walkingDistanceM": 5731,
-        "repeatedGeometryPct": 11.9,
-        "repeatedGeometryM": 684,
-        "maxWaypointToShapeM": 22,
-        "repeatedWaypoints": [
-          [
-            0,
-            7
-          ]
-        ],
-        "gateResult": "OK"
-      },
-      "existingNewVariants": [],
-      "coordinateReview": "not_started",
-      "sourceResearch": "not_started",
-      "historicalRoutingStrategies": [],
-      "transportHints": [
-        "indoor_candidate"
-      ],
-      "possibleDistanceFiller": false,
-      "retraceReview": null,
-      "priorityScore": 58,
-      "issues": [
-        "repeated_geometry_over_10pct",
-        "repeated_waypoint",
-        "retraced_geometry_over_100m",
-        "transport_or_indoor_leg_separation"
-      ],
-      "checklist": [
-        "公式の地域・施設資料を収集し、確認日を記録",
-        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
-        "駅の出入口・施設の入口・横断・通行条件を照合",
-        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
-        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
-        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
-        "旧経路との差分・採用理由・未確認事項を記録"
-      ]
-    },
-    {
       "id": "No.47",
       "title": "清澄白河から両国・亀戸へ",
       "series": "V4-B/Cグルメ（No.47〜52）",
@@ -2862,9 +2827,9 @@
     },
     {
       "id": "G-1128",
-      "title": "G 11/28版：高輪GW→泉岳寺→品川→インターシティ夜景",
+      "title": "G 11/28版：高輪ゲートウェイ→泉岳寺→御殿山→品川",
       "series": "バリエーションB/C（新規追加）",
-      "workStatus": "research_needed",
+      "workStatus": "partial_rebuild",
       "legacy": {
         "geometryUrl": "data/routes/g-1128.geojson",
         "walkingDistanceM": 5475,
@@ -2874,7 +2839,18 @@
         "repeatedWaypoints": [],
         "gateResult": "OK"
       },
-      "existingNewVariants": [],
+      "existingNewVariants": [
+        {
+          "variant": "standard",
+          "status": "routed",
+          "distanceM": 5954
+        },
+        {
+          "variant": "rainy",
+          "status": "researched",
+          "distanceM": null
+        }
+      ],
       "coordinateReview": "not_started",
       "sourceResearch": "not_started",
       "historicalRoutingStrategies": [
@@ -3165,6 +3141,60 @@
       ]
     },
     {
+      "id": "1128-D3",
+      "title": "D-3 東京駅→日本橋",
+      "series": "バリエーションB/C（新規追加）",
+      "workStatus": "partial_rebuild",
+      "legacy": {
+        "geometryUrl": "data/routes/1128-d3.geojson",
+        "walkingDistanceM": 5731,
+        "repeatedGeometryPct": 11.9,
+        "repeatedGeometryM": 684,
+        "maxWaypointToShapeM": 22,
+        "repeatedWaypoints": [
+          [
+            0,
+            7
+          ]
+        ],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [
+        {
+          "variant": "standard",
+          "status": "routed",
+          "distanceM": 4118
+        },
+        {
+          "variant": "rainy",
+          "status": "researched",
+          "distanceM": null
+        }
+      ],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [],
+      "possibleDistanceFiller": false,
+      "retraceReview": null,
+      "priorityScore": 38,
+      "issues": [
+        "repeated_geometry_over_10pct",
+        "repeated_waypoint",
+        "retraced_geometry_over_100m"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
       "id": "S3",
       "title": "昭和記念公園・あけぼの口〜日本庭園〜みんなの原っぱ縦断",
       "series": "個人散歩（修行案 S）",
@@ -3203,9 +3233,9 @@
     },
     {
       "id": "VBC-C3",
-      "title": "C-3 大井町 OIMACHI TRACKS〜しながわ中央公園〜品川シーサイド",
+      "title": "C-3 大井町周辺の寺社",
       "series": "バリエーションB/C（新規追加）",
-      "workStatus": "research_needed",
+      "workStatus": "partial_rebuild",
       "legacy": {
         "geometryUrl": "data/routes/vbc-c3.geojson",
         "walkingDistanceM": 3215,
@@ -3215,7 +3245,18 @@
         "repeatedWaypoints": [],
         "gateResult": "OK"
       },
-      "existingNewVariants": [],
+      "existingNewVariants": [
+        {
+          "variant": "standard",
+          "status": "routed",
+          "distanceM": 3665
+        },
+        {
+          "variant": "rainy",
+          "status": "researched",
+          "distanceM": null
+        }
+      ],
       "coordinateReview": "not_started",
       "sourceResearch": "not_started",
       "historicalRoutingStrategies": [],
@@ -3240,9 +3281,9 @@
     },
     {
       "id": "VBC-C5",
-      "title": "C-5 裏参道・学園通り 国立〜谷保",
+      "title": "C-5 国立〜谷保",
       "series": "バリエーションB/C（新規追加）",
-      "workStatus": "research_needed",
+      "workStatus": "partial_rebuild",
       "legacy": {
         "geometryUrl": "data/routes/vbc-c5.geojson",
         "walkingDistanceM": 2871,
@@ -3252,7 +3293,18 @@
         "repeatedWaypoints": [],
         "gateResult": "OK"
       },
-      "existingNewVariants": [],
+      "existingNewVariants": [
+        {
+          "variant": "standard",
+          "status": "routed",
+          "distanceM": 4660
+        },
+        {
+          "variant": "rainy",
+          "status": "researched",
+          "distanceM": null
+        }
+      ],
       "coordinateReview": "not_started",
       "sourceResearch": "not_started",
       "historicalRoutingStrategies": [],
@@ -3428,9 +3480,9 @@
     },
     {
       "id": "1128-D1",
-      "title": "D-1 新豊洲×有明ガーデン",
+      "title": "D-1 新豊洲・豊洲",
       "series": "バリエーションB/C（新規追加）",
-      "workStatus": "research_needed",
+      "workStatus": "partial_rebuild",
       "legacy": {
         "geometryUrl": "data/routes/1128-d1.geojson",
         "walkingDistanceM": 5637,
@@ -3440,7 +3492,18 @@
         "repeatedWaypoints": [],
         "gateResult": "OK"
       },
-      "existingNewVariants": [],
+      "existingNewVariants": [
+        {
+          "variant": "standard",
+          "status": "routed",
+          "distanceM": 3048
+        },
+        {
+          "variant": "rainy",
+          "status": "researched",
+          "distanceM": null
+        }
+      ],
       "coordinateReview": "not_started",
       "sourceResearch": "not_started",
       "historicalRoutingStrategies": [],
@@ -3766,9 +3829,9 @@
     },
     {
       "id": "1128-D5",
-      "title": "D-5 市ヶ谷→靖国→九段→千鳥ヶ淵→半蔵門 上り型",
+      "title": "D-5 市ヶ谷〜九段〜半蔵門",
       "series": "バリエーションB/C（新規追加）",
-      "workStatus": "research_needed",
+      "workStatus": "partial_rebuild",
       "legacy": {
         "geometryUrl": "data/routes/1128-d5.geojson",
         "walkingDistanceM": 8493,
@@ -3778,7 +3841,18 @@
         "repeatedWaypoints": [],
         "gateResult": "OK"
       },
-      "existingNewVariants": [],
+      "existingNewVariants": [
+        {
+          "variant": "standard",
+          "status": "routed",
+          "distanceM": 4195
+        },
+        {
+          "variant": "rainy",
+          "status": "researched",
+          "distanceM": null
+        }
+      ],
       "coordinateReview": "not_started",
       "sourceResearch": "not_started",
       "historicalRoutingStrategies": [],
@@ -3991,9 +4065,9 @@
     },
     {
       "id": "VBC-C1",
-      "title": "C-1 幕張新都心（海浜幕張→イオンモール→ペデストリアンデッキ）",
+      "title": "C-1 幕張海浜公園",
       "series": "バリエーションB/C（新規追加）",
-      "workStatus": "research_needed",
+      "workStatus": "partial_rebuild",
       "legacy": {
         "geometryUrl": "data/routes/vbc-c1.geojson",
         "walkingDistanceM": 5602,
@@ -4003,7 +4077,18 @@
         "repeatedWaypoints": [],
         "gateResult": "OK"
       },
-      "existingNewVariants": [],
+      "existingNewVariants": [
+        {
+          "variant": "standard",
+          "status": "routed",
+          "distanceM": 4901
+        },
+        {
+          "variant": "rainy",
+          "status": "researched",
+          "distanceM": null
+        }
+      ],
       "coordinateReview": "not_started",
       "sourceResearch": "not_started",
       "historicalRoutingStrategies": [],
@@ -4076,9 +4161,9 @@
     },
     {
       "id": "1128-D2",
-      "title": "D-2 神宮外苑いちょう並木",
+      "title": "D-2 神宮外苑・青山",
       "series": "バリエーションB/C（新規追加）",
-      "workStatus": "research_needed",
+      "workStatus": "partial_rebuild",
       "legacy": {
         "geometryUrl": "data/routes/1128-d2.geojson",
         "walkingDistanceM": 6115,
@@ -4088,7 +4173,18 @@
         "repeatedWaypoints": [],
         "gateResult": "OK"
       },
-      "existingNewVariants": [],
+      "existingNewVariants": [
+        {
+          "variant": "standard",
+          "status": "routed",
+          "distanceM": 4473
+        },
+        {
+          "variant": "rainy",
+          "status": "researched",
+          "distanceM": null
+        }
+      ],
       "coordinateReview": "not_started",
       "sourceResearch": "not_started",
       "historicalRoutingStrategies": [
@@ -4306,9 +4402,9 @@
     },
     {
       "id": "1128-D4",
-      "title": "D-4 横浜 上り優先版（桜木町→赤レンガ→馬車道→野毛山→伊勢山）",
+      "title": "D-4 横浜 桜木町〜野毛山",
       "series": "バリエーションB/C（新規追加）",
-      "workStatus": "research_needed",
+      "workStatus": "partial_rebuild",
       "legacy": {
         "geometryUrl": "data/routes/1128-d4.geojson",
         "walkingDistanceM": 6197,
@@ -4318,7 +4414,18 @@
         "repeatedWaypoints": [],
         "gateResult": "OK"
       },
-      "existingNewVariants": [],
+      "existingNewVariants": [
+        {
+          "variant": "standard",
+          "status": "routed",
+          "distanceM": 4632
+        },
+        {
+          "variant": "rainy",
+          "status": "researched",
+          "distanceM": null
+        }
+      ],
       "coordinateReview": "not_started",
       "sourceResearch": "not_started",
       "historicalRoutingStrategies": [],
@@ -4596,9 +4703,9 @@
     },
     {
       "id": "VBC-C2",
-      "title": "C-2 南町田グランベリーパーク",
+      "title": "C-2 南町田〜長津田",
       "series": "バリエーションB/C（新規追加）",
-      "workStatus": "research_needed",
+      "workStatus": "partial_rebuild",
       "legacy": {
         "geometryUrl": "data/routes/vbc-c2.geojson",
         "walkingDistanceM": 7051,
@@ -4608,7 +4715,18 @@
         "repeatedWaypoints": [],
         "gateResult": "OK"
       },
-      "existingNewVariants": [],
+      "existingNewVariants": [
+        {
+          "variant": "standard",
+          "status": "routed",
+          "distanceM": 5570
+        },
+        {
+          "variant": "rainy",
+          "status": "researched",
+          "distanceM": null
+        }
+      ],
       "coordinateReview": "not_started",
       "sourceResearch": "not_started",
       "historicalRoutingStrategies": [],
@@ -4804,9 +4922,9 @@
     },
     {
       "id": "VBC-C4",
-      "title": "C-4 立川 昭和記念公園 砂川口ルート（EV利用版）",
+      "title": "C-4 立川・国立",
       "series": "バリエーションB/C（新規追加）",
-      "workStatus": "research_needed",
+      "workStatus": "partial_rebuild",
       "legacy": {
         "geometryUrl": "data/routes/vbc-c4.geojson",
         "walkingDistanceM": 6052,
@@ -4816,7 +4934,18 @@
         "repeatedWaypoints": [],
         "gateResult": "OK"
       },
-      "existingNewVariants": [],
+      "existingNewVariants": [
+        {
+          "variant": "standard",
+          "status": "routed",
+          "distanceM": 5087
+        },
+        {
+          "variant": "rainy",
+          "status": "researched",
+          "distanceM": null
+        }
+      ],
       "coordinateReview": "not_started",
       "sourceResearch": "not_started",
       "historicalRoutingStrategies": [],

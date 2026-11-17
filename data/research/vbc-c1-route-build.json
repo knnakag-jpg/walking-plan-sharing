@@ -1,0 +1,72 @@
+{
+  "calculatedAt": "2026-11-17T11:52:29.171Z",
+  "engine": "valhalla-pedestrian",
+  "variants": {
+    "standard": {
+      "label": "standard",
+      "distanceM": 4901,
+      "engineDistanceM": 4906,
+      "repeatedGeometryM": 345,
+      "repeatedGeometryPct": 7,
+      "legKm": [
+        0.45,
+        1.79,
+        1.64,
+        1.02
+      ],
+      "geometryUrl": "data/routes/vbc-c1-standard.geojson",
+      "stops": [
+        {
+          "id": "kaihin",
+          "label": "海浜幕張駅",
+          "coord": [
+            35.6486546,
+            140.0415385
+          ],
+          "source": "TOPIC: 海浜幕張駅。OSMの名称ノードは地図レビュー待ち",
+          "offsetM": 0
+        },
+        {
+          "id": "makuhari_chuo",
+          "label": "県立幕張海浜公園（中央地区）",
+          "coord": [
+            35.6472165,
+            140.0444451
+          ],
+          "source": "OSM park 県立幕張海浜公園（中央地区）",
+          "offsetM": 0
+        },
+        {
+          "id": "marines",
+          "label": "マリーンズ・ミュージアム",
+          "coord": [
+            35.6466538,
+            140.0310141
+          ],
+          "source": "OSM museum マリーンズ・ミュージアム",
+          "offsetM": 0
+        },
+        {
+          "id": "hamada",
+          "label": "浜田公園",
+          "coord": [
+            35.6577029,
+            140.0316628
+          ],
+          "source": "OSM park 浜田公園",
+          "offsetM": 0
+        },
+        {
+          "id": "makuhari_ryokuchi",
+          "label": "幕張海浜緑地",
+          "coord": [
+            35.6611454,
+            140.0303471
+          ],
+          "source": "OSM park 幕張海浜緑地",
+          "offsetM": 0
+        }
+      ]
+    }
+  }
+}

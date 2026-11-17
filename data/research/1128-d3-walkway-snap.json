@@ -1,0 +1,98 @@
+{
+ "tokyo_marunouchi": {
+  "snapped": [
+   35.682728,
+   139.7659894
+  ],
+  "movedM": 0,
+  "wayId": 958539574
+ },
+ "tokyo_nihombashi": {
+  "snapped": [
+   35.6837789,
+   139.7688637
+  ],
+  "movedM": 4,
+  "wayId": 695976471
+ },
+ "uogashi": {
+  "snapped": [
+   35.6843916,
+   139.7748193
+  ],
+  "movedM": 6,
+  "wayId": 666706652
+ },
+ "nihombashi": {
+  "snapped": [
+   35.6825677,
+   139.7737674
+  ],
+  "movedM": 0,
+  "wayId": 163198815
+ },
+ "coredo": {
+  "snapped": [
+   35.6825109,
+   139.7743553
+  ],
+  "movedM": 22,
+  "wayId": 690458396
+ },
+ "mitsukoshi": {
+  "snapped": [
+   35.6852015,
+   139.7734657
+  ],
+  "movedM": 45,
+  "wayId": 92219077
+ },
+ "station_gallery": {
+  "snapped": [
+   35.6824499,
+   139.7664729
+  ],
+  "movedM": 3,
+  "wayId": 1548099756
+ },
+ "intermediatheque": {
+  "snapped": [
+   35.6799978,
+   139.7645844
+  ],
+  "movedM": 6,
+  "wayId": 1353875974
+ },
+ "mitsuo": {
+  "snapped": [
+   35.6774978,
+   139.7646281
+  ],
+  "movedM": 11,
+  "wayId": 1354417710
+ },
+ "artizon": {
+  "snapped": [
+   35.6787621,
+   139.772493
+  ],
+  "movedM": 33,
+  "wayId": 1315891087
+ },
+ "fukutoku": {
+  "snapped": [
+   35.687207,
+   139.7742935
+  ],
+  "movedM": 12,
+  "wayId": 629051411
+ },
+ "mitsui_museum": {
+  "snapped": [
+   35.6865114,
+   139.7728674
+  ],
+  "movedM": 41,
+  "wayId": 1068491703
+ }
+}

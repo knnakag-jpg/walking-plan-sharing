@@ -1,0 +1,50 @@
+{
+  "calculatedAt": "2026-11-17T12:02:05.818Z",
+  "engine": "valhalla-pedestrian",
+  "variants": {
+    "standard": {
+      "label": "standard",
+      "distanceM": 1766,
+      "engineDistanceM": 1767,
+      "repeatedGeometryM": 120,
+      "repeatedGeometryPct": 6.8,
+      "legKm": [
+        0.5,
+        1.27
+      ],
+      "geometryUrl": "data/routes/g-rain-standard.geojson",
+      "stops": [
+        {
+          "id": "gw",
+          "label": "高輪ゲートウェイ駅",
+          "coord": [
+            35.6354334,
+            139.7407461
+          ],
+          "source": "OSM station 高輪ゲートウェイ",
+          "offsetM": 0
+        },
+        {
+          "id": "sengakuji_st",
+          "label": "泉岳寺駅",
+          "coord": [
+            35.6387114,
+            139.739953
+          ],
+          "source": "OSM station 泉岳寺",
+          "offsetM": 0
+        },
+        {
+          "id": "shinagawa_st",
+          "label": "品川駅",
+          "coord": [
+            35.6282922,
+            139.7380153
+          ],
+          "source": "OSM station 品川",
+          "offsetM": 0
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "calculatedAt": "2026-11-17T11:56:27.247Z",
+  "engine": "valhalla-pedestrian",
+  "variants": {
+    "standard": {
+      "label": "standard",
+      "distanceM": 4660,
+      "engineDistanceM": 4661,
+      "repeatedGeometryM": 21,
+      "repeatedGeometryPct": 0.5,
+      "legKm": [
+        0.55,
+        0.35,
+        0.66,
+        0.84,
+        1.71,
+        0.54
+      ],
+      "geometryUrl": "data/routes/vbc-c5-standard.geojson",
+      "stops": [
+        {
+          "id": "hatakenbo",
+          "label": "くにたち はたけんぼ",
+          "coord": [
+            35.6767519,
+            139.4451673
+          ],
+          "source": "OSM viewpoint くにたち はたけんぼ",
+          "offsetM": 0
+        },
+        {
+          "id": "yabo_tenman",
+          "label": "谷保天満宮",
+          "coord": [
+            35.6795595,
+            139.4446098
+          ],
+          "source": "OSM place_of_worship 谷保天満宮",
+          "offsetM": 0
+        },
+        {
+          "id": "yaboroji",
+          "label": "やぼろじ",
+          "coord": [
+            35.6789979,
+            139.4476379
+          ],
+          "source": "OSM viewpoint やぼろじ",
+          "offsetM": 0
+        },
+        {
+          "id": "yabo1",
+          "label": "谷保第一公園",
+          "coord": [
+            35.682842,
+            139.4492364
+          ],
+          "source": "OSM park 谷保第一公園",
+          "offsetM": 0
+        },
+        {
+          "id": "yabo3",
+          "label": "谷保第三公園",
+          "coord": [
+            35.6862031,
+            139.4437611
+          ],
+          "source": "OSM park 谷保第三公園",
+          "offsetM": 0
+        },
+        {
+          "id": "tamashin",
+          "label": "たましん歴史・美術館",
+          "coord": [
+            35.6982133,
+            139.4462324
+          ],
+          "source": "OSM museum たましん歴史・美術館",
+          "offsetM": 0
+        },
+        {
+          "id": "keizen",
+          "label": "慶善寺",
+          "coord": [
+            35.6955304,
+            139.4508003
+          ],
+          "source": "OSM place_of_worship 慶善寺",
+          "offsetM": 0
+        }
+      ]
+    }
+  }
+}

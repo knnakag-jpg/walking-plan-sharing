@@ -1,0 +1,94 @@
+{
+  "calculatedAt": "2026-11-17T11:40:29.220Z",
+  "engine": "valhalla-pedestrian",
+  "variants": {
+    "standard": {
+      "label": "standard",
+      "distanceM": 4473,
+      "engineDistanceM": 4476,
+      "repeatedGeometryM": 50,
+      "repeatedGeometryPct": 1.1,
+      "legKm": [
+        1.36,
+        0.27,
+        0.73,
+        0.58,
+        0.34,
+        1.2
+      ],
+      "geometryUrl": "data/routes/1128-d2-standard.geojson",
+      "stops": [
+        {
+          "id": "shinanomachi",
+          "label": "信濃町",
+          "coord": [
+            35.6816873,
+            139.7195655
+          ],
+          "source": "OSM 信濃町",
+          "offsetM": 0
+        },
+        {
+          "id": "rugby",
+          "label": "秩父宮ラグビー場前",
+          "coord": [
+            35.6724414,
+            139.7167879
+          ],
+          "source": "OSM ラグビー場前",
+          "offsetM": 0
+        },
+        {
+          "id": "gaienmae",
+          "label": "外苑前",
+          "coord": [
+            35.6700465,
+            139.7169766
+          ],
+          "source": "OSM 外苑前",
+          "offsetM": 0
+        },
+        {
+          "id": "aoyama1",
+          "label": "青山一丁目",
+          "coord": [
+            35.6726873,
+            139.7240058
+          ],
+          "source": "OSM 青山一丁目",
+          "offsetM": 0
+        },
+        {
+          "id": "sogetsu",
+          "label": "草月美術館",
+          "coord": [
+            35.6740204,
+            139.7295858
+          ],
+          "source": "OSM museum 草月美術館",
+          "offsetM": 0
+        },
+        {
+          "id": "toraya",
+          "label": "虎屋ギャラリー",
+          "coord": [
+            35.6753144,
+            139.7324021
+          ],
+          "source": "OSM museum 虎屋ギャラリー",
+          "offsetM": 0
+        },
+        {
+          "id": "geihinkan",
+          "label": "迎賓館赤坂離宮 西門",
+          "coord": [
+            35.6818921,
+            139.7275705
+          ],
+          "source": "OSM 迎賓館赤坂離宮 西門（参観入口）",
+          "offsetM": 2
+        }
+      ]
+    }
+  }
+}

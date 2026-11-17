@@ -1,0 +1,117 @@
+// V4/VBC の 12 件を、OSM の名称付き地点だけで一筆書きに組み直す（A案）。座標は Overpass で名称ノードを確認したものだけ。
+import { P, buildCourse } from './lib-rebuild.mjs';
+
+const jobs = {
+  'G-1128': { courseId: 'G-1128', slug: 'g-1128', variants: { standard: [
+    P('gw', '高輪ゲートウェイ駅', 35.6354, 139.74066, 'OSM station 高輪ゲートウェイ'),
+    P('sengakuji_st', '泉岳寺駅', 35.63867, 139.74, 'OSM station 泉岳寺'),
+    P('sengakuji_park', '泉岳寺児童遊園', 35.63734, 139.73802, 'OSM park 泉岳寺児童遊園'),
+    P('sengakuji', '泉岳寺', 35.6374, 139.73607, 'OSM place_of_worship 泉岳寺'),
+    P('takanawa_koen', '高輪公園', 35.633, 139.7358, 'OSM park 高輪公園'),
+    P('tozenji', '東禅寺', 35.63413, 139.73516, 'OSM place_of_worship 東禅寺'),
+    P('hatakeyama', '荏原 畠山美術館', 35.63224, 139.72694, 'OSM museum 荏原 畠山美術館'),
+    P('butsuryu', '物流博物館', 35.6291, 139.73232, 'OSM museum 物流博物館'),
+    P('shinagawa_central', '品川セントラルガーデン', 35.62641, 139.74134, 'OSM park 品川セントラルガーデン'),
+  ] } },
+  '1128-D3': { courseId: '1128-D3', slug: '1128-d3', variants: { standard: [
+    P('tokyo_marunouchi', '東京駅丸の内北口', 35.68273, 139.76599, 'OSM node 東京駅丸の内北口'),
+    P('station_gallery', '東京ステーションギャラリー', 35.68243, 139.76649, 'OSM museum 東京ステーションギャラリー'),
+    P('intermediatheque', 'インターメディアテク', 35.68003, 139.76453, 'OSM museum インターメディアテク'),
+    P('mitsuo', '相田みつを美術館', 35.67746, 139.76452, 'OSM museum 相田みつを美術館'),
+    P('artizon', 'アーティゾン美術館', 35.67875, 139.77213, 'OSM museum アーティゾン美術館'),
+    P('nihombashi', '日本橋', 35.68257, 139.77377, 'OSM 日本橋'),
+    P('fukutoku', '福徳神社', 35.68722, 139.77442, 'OSM place_of_worship 福徳神社'),
+    P('mitsui_museum', '三井記念美術館', 35.68684, 139.77307, 'OSM museum 三井記念美術館'),
+    P('tokyo_nihombashi', '東京駅日本橋口', 35.68379, 139.76891, 'OSM node 東京駅日本橋口'),
+  ] } },
+  '1128-D5': { courseId: '1128-D5', slug: '1128-d5', variants: { standard: [
+    P('ichigaya', '市ヶ谷見附', 35.69142, 139.7362, 'OSM ruins 市ヶ谷見附'),
+    P('yasukuni_minami', '靖国神社南門', 35.69337, 139.74386, 'OSM 靖国神社南門'),
+    P('yasukuni', '靖国神社', 35.69401, 139.74525, 'OSM 靖国神社'),
+    P('kudan_sakaue', '九段坂上', 35.6943, 139.74656, 'OSM 九段坂上'),
+    P('showakan', '昭和館', 35.69511, 139.75091, 'OSM museum 昭和館'),
+    P('kudanshita', '九段下', 35.69539, 139.75135, 'OSM 九段下'),
+    P('chidorigafuchi', '千鳥ヶ淵戦没者墓苑', 35.69063, 139.74662, 'OSM 千鳥ヶ淵戦没者墓苑管理事務所'),
+    P('camera', '日本カメラ博物館', 35.68606, 139.74285, 'OSM museum 日本カメラ博物館'),
+    P('hanzomon', '半蔵門', 35.68392, 139.74422, 'OSM 半蔵門'),
+  ] } },
+  '1128-D1': { courseId: '1128-D1', slug: '1128-d1', variants: { standard: [
+    P('ichibamae', '市場前駅', 35.64576, 139.78578, 'OSM station 市場前'),
+    P('tokinokane', '時の鐘', 35.6456, 139.78369, 'OSM attraction 時の鐘'),
+    P('tsukimidai', '月見台', 35.6467, 139.79119, 'OSM viewpoint 月見台'),
+    P('shintoyosu', '新豊洲駅', 35.64875, 139.79019, 'OSM station 新豊洲'),
+    P('gas', 'がすてなーに ガスの科学館', 35.65171, 139.79199, 'OSM museum がすてなーに'),
+    P('toyosu_park', '豊洲公園', 35.65351, 139.7928, 'OSM park 豊洲公園'),
+    P('lalaport', 'アーバンドックららぽーと豊洲', 35.65456, 139.79392, 'OSM アーバンドックららぽーと豊洲'),
+    P('toyosu_st', '豊洲駅前', 35.65469, 139.79656, 'OSM 豊洲駅前'),
+  ] } },
+  '1128-D2': { courseId: '1128-D2', slug: '1128-d2', variants: { standard: [
+    P('shinanomachi', '信濃町', 35.68169, 139.71957, 'OSM 信濃町'),
+    P('rugby', '秩父宮ラグビー場前', 35.67244, 139.71679, 'OSM ラグビー場前'),
+    P('gaienmae', '外苑前', 35.67005, 139.71698, 'OSM 外苑前'),
+    P('aoyama1', '青山一丁目', 35.67269, 139.72401, 'OSM 青山一丁目'),
+    P('sogetsu', '草月美術館', 35.67408, 139.72931, 'OSM museum 草月美術館'),
+    P('toraya', '虎屋ギャラリー', 35.67524, 139.73259, 'OSM museum 虎屋ギャラリー'),
+    P('geihinkan', '迎賓館赤坂離宮 西門', 35.68189, 139.72757, 'OSM 迎賓館赤坂離宮 西門（参観入口）'),
+  ] } },
+  '1128-D4': { courseId: '1128-D4', slug: '1128-d4', variants: { standard: [
+    P('sakuragicho', '桜木町駅', 35.44979, 139.63291, 'OSM 桜木町駅入口'),
+    P('minato_museum', '横浜みなと博物館', 35.45271, 139.63263, 'OSM museum 横浜みなと博物館'),
+    P('akarenga', '赤レンガ倉庫', 35.45185, 139.64193, 'OSM 赤レンガ倉庫'),
+    P('zounohana', '象の鼻パーク', 35.44814, 139.64371, 'OSM 象の鼻パーク'),
+    P('newspark', '日本新聞博物館', 35.44635, 139.6427, 'OSM museum ニュースパーク'),
+    P('bashamichi', '馬車道', 35.44623, 139.63502, 'OSM 馬車道'),
+    P('nogeyama', '野毛山公園展望台', 35.44499, 139.62327, 'OSM viewpoint のげやまこうえんてんぼうだい'),
+  ] } },
+  'VBC-C1': { courseId: 'VBC-C1', slug: 'vbc-c1', variants: { standard: [
+    P('kaihin', '海浜幕張駅', 35.64867, 140.04155, 'TOPIC: 海浜幕張駅。OSMの名称ノードは地図レビュー待ち'),
+    P('makuhari_chuo', '県立幕張海浜公園（中央地区）', 35.64692, 140.04422, 'OSM park 県立幕張海浜公園（中央地区）'),
+    P('marines', 'マリーンズ・ミュージアム', 35.64651, 140.03117, 'OSM museum マリーンズ・ミュージアム'),
+    P('hamada', '浜田公園', 35.65787, 140.03195, 'OSM park 浜田公園'),
+    P('makuhari_ryokuchi', '幕張海浜緑地', 35.66097, 140.03043, 'OSM park 幕張海浜緑地'),
+  ] } },
+  'VBC-C2': { courseId: 'VBC-C2', slug: 'vbc-c2', variants: { standard: [
+    P('minamimachida', '南町田グランベリーパーク駅', 35.51187, 139.47057, 'TOPIC: 南町田グランベリーパーク駅。OSMの名称ノードは地図レビュー待ち'),
+    P('yasaka', '八坂神社', 35.51624, 139.46673, 'OSM place_of_worship 八坂神社'),
+    P('joraku', '常楽寺', 35.52034, 139.4646, 'OSM place_of_worship 常楽寺'),
+    P('tennosha', '天王社', 35.52228, 139.491, 'OSM place_of_worship 天王社'),
+    P('fukusen', '福泉寺', 35.52599, 139.49371, 'OSM place_of_worship 福泉寺'),
+    P('osk', '長津田 王子神社', 35.52735, 139.4943, 'OSM place_of_worship 長津田 王子神社'),
+  ] } },
+  'VBC-C3': { courseId: 'VBC-C3', slug: 'vbc-c3', variants: { standard: [
+    P('oimachi', '大井町駅', 35.60765, 139.73432, 'TOPIC: 大井町駅。OSMの名称ノードは地図レビュー待ち'),
+    P('saiwai', '幸稲荷神社', 35.60745, 139.74377, 'OSM place_of_worship 幸稲荷神社'),
+    P('seiun', '青雲稲荷神社', 35.60591, 139.74307, 'OSM place_of_worship 青雲稲荷神社'),
+    P('inari', '稲荷神社', 35.60138, 139.74087, 'OSM place_of_worship 稲荷神社'),
+    P('reiun', '嶺雲寺', 35.60056, 139.74067, 'OSM place_of_worship 嶺雲寺'),
+    P('itsukushima', '厳島神社', 35.59755, 139.73906, 'OSM place_of_worship 厳島神社'),
+    P('raigoin', '来迎院', 35.59583, 139.73077, 'OSM place_of_worship 来迎院'),
+  ] } },
+  'VBC-C4': { courseId: 'VBC-C4', slug: 'vbc-c4', variants: { standard: [
+    P('rekimin', '立川市歴史民俗資料館', 35.69695, 139.38993, 'OSM museum 立川市歴史民俗資料館'),
+    P('fujimi', '富士見公園', 35.69677, 139.39485, 'OSM park 富士見公園'),
+    P('sengen', '浅間神社', 35.70163, 139.39634, 'OSM place_of_worship 浅間神社'),
+    P('shinnyoen', '真如苑 真澄寺', 35.69629, 139.40486, 'OSM place_of_worship 真如苑 真澄寺'),
+    P('showa_kinenkan', '昭和天皇記念館', 35.70333, 139.40786, 'OSM museum 昭和天皇記念館'),
+    P('kyokuchi', '国立極地研究所 南極・北極科学館', 35.7118, 139.40944, 'OSM museum 南極・北極科学館'),
+  ] } },
+  'VBC-C5': { courseId: 'VBC-C5', slug: 'vbc-c5', variants: { standard: [
+    P('hatakenbo', 'くにたち はたけんぼ', 35.67665, 139.44506, 'OSM viewpoint くにたち はたけんぼ'),
+    P('yabo_tenman', '谷保天満宮', 35.67974, 139.44419, 'OSM place_of_worship 谷保天満宮'),
+    P('yaboroji', 'やぼろじ', 35.67909, 139.44761, 'OSM viewpoint やぼろじ'),
+    P('yabo1', '谷保第一公園', 35.68281, 139.44898, 'OSM park 谷保第一公園'),
+    P('yabo3', '谷保第三公園', 35.68567, 139.44381, 'OSM park 谷保第三公園'),
+    P('tamashin', 'たましん歴史・美術館', 35.69803, 139.44621, 'OSM museum たましん歴史・美術館'),
+    P('keizen', '慶善寺', 35.69562, 139.45075, 'OSM place_of_worship 慶善寺'),
+  ] } },
+  'G-Rain': { courseId: 'G-Rain', slug: 'g-rain', variants: { standard: [
+    P('gw', '高輪ゲートウェイ駅', 35.6354, 139.74066, 'OSM station 高輪ゲートウェイ'),
+    P('sengakuji_st', '泉岳寺駅', 35.63867, 139.74, 'OSM station 泉岳寺'),
+    P('shinagawa_st', '品川駅', 35.62806, 139.73801, 'OSM station 品川'),
+  ] } },
+};
+const only = new Set(process.argv.slice(2));
+for (const [key, job] of Object.entries(jobs)) {
+  if (only.size && !only.has(key)) continue;
+  await buildCourse(job);
+}
