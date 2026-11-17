@@ -1,17 +1,21 @@
 {
-  "calculatedAt": "2026-11-16T14:50:43.366Z",
+  "calculatedAt": "2026-11-17T10:57:53.965Z",
   "engine": "valhalla-pedestrian",
   "variants": {
     "standard": {
       "label": "standard",
-      "distanceM": 4625,
-      "engineDistanceM": 4628,
-      "repeatedGeometryM": 0,
-      "repeatedGeometryPct": 0,
+      "distanceM": 9401,
+      "engineDistanceM": 9398,
+      "repeatedGeometryM": 374,
+      "repeatedGeometryPct": 4,
       "legKm": [
-        1.65,
-        1.39,
-        1.59
+        1,
+        0.92,
+        1.26,
+        1.52,
+        1.79,
+        1.77,
+        1.15
       ],
       "geometryUrl": "data/routes/s6-standard.geojson",
       "stops": [
@@ -26,33 +30,73 @@
           "offsetM": 3
         },
         {
-          "id": "koenji",
-          "label": "高円寺駅北口",
+          "id": "chuo_nishi",
+          "label": "中野区立中央西公園",
           "coord": [
-            35.7055277,
-            139.6496639
+            35.6990854,
+            139.6635677
           ],
-          "source": "OSM node 高円寺駅北口",
+          "source": "OSM park 中野区立中央西公園",
           "offsetM": 0
         },
         {
-          "id": "asagaya",
-          "label": "阿佐ヶ谷駅北口",
+          "id": "sanshi",
+          "label": "蚕糸の森公園",
           "coord": [
-            35.7050875,
-            139.6366424
+            35.6971278,
+            139.6563767
           ],
-          "source": "OSM node 阿佐ヶ谷駅北口",
+          "source": "OSM park 蚕糸の森公園",
           "offsetM": 0
         },
         {
-          "id": "ogikubo",
-          "label": "荻窪駅北口",
+          "id": "shin_koenji",
+          "label": "杉並区立新高円寺公園",
           "coord": [
-            35.7051607,
-            139.6213438
+            35.699263,
+            139.6453465
           ],
-          "source": "OSM node 荻窪駅北口",
+          "source": "OSM park 杉並区立新高円寺公園",
+          "offsetM": 0
+        },
+        {
+          "id": "koenji_kita",
+          "label": "高円寺北二公園",
+          "coord": [
+            35.7070299,
+            139.6529092
+          ],
+          "source": "OSM park 高円寺北二公園",
+          "offsetM": 0
+        },
+        {
+          "id": "shinmeigu",
+          "label": "阿佐谷神明宮",
+          "coord": [
+            35.7072646,
+            139.6369978
+          ],
+          "source": "OSM place_of_worship 阿佐谷神明宮",
+          "offsetM": 0
+        },
+        {
+          "id": "ootaguro",
+          "label": "大田黒公園",
+          "coord": [
+            35.7009081,
+            139.624684
+          ],
+          "source": "OSM park 大田黒公園",
+          "offsetM": 0
+        },
+        {
+          "id": "amanuma",
+          "label": "天沼弁天池公園",
+          "coord": [
+            35.7085322,
+            139.6214629
+          ],
+          "source": "OSM park 天沼弁天池公園",
           "offsetM": 0
         }
       ]

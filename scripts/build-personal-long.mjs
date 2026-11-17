@@ -58,7 +58,44 @@ const asakawaPark = P('asakawa_park', '浅川スポーツ公園', 35.66786, 139.
 const takahataFudoS = P('takahata_fudo_s', '高幡不動尊', 35.66222, 139.41088, 'OSM place_of_worship 高幡不動尊');
 const takahataStS = P('takahata_st_s', '高幡不動駅', 35.66142, 139.41519, 'OSM node 高幡不動駅');
 
+// S6 中野〜荻窪：中野駅→中野区立中央西公園→新高円寺公園→蚕糸の森公園→高円寺北二公園→阿佐谷神明宮→天沼弁天池公園→大田黒公園→荻窪駅。
+const nakano = P('nakano_s', '中野駅', 35.70583, 139.66546, 'OSM node 中野駅');
+const chuoNishi = P('chuo_nishi', '中野区立中央西公園', 35.69928, 139.66379, 'OSM park 中野区立中央西公園');
+const shinKoenji = P('shin_koenji', '杉並区立新高円寺公園', 35.69913, 139.64555, 'OSM park 杉並区立新高円寺公園');
+const sanshi = P('sanshi', '蚕糸の森公園', 35.69706, 139.65671, 'OSM park 蚕糸の森公園');
+const koenjiKita = P('koenji_kita', '高円寺北二公園', 35.70695, 139.6527, 'OSM park 高円寺北二公園');
+const shinmeigu = P('shinmeigu', '阿佐谷神明宮', 35.70722, 139.63699, 'OSM place_of_worship 阿佐谷神明宮');
+const amanuma = P('amanuma', '天沼弁天池公園', 35.70853, 139.62153, 'OSM park 天沼弁天池公園');
+const ootaguro = P('ootaguro', '大田黒公園', 35.70086, 139.6247, 'OSM park 大田黒公園');
+const ogikuboLong = P('ogikubo_long', '荻窪駅', 35.70518, 139.62126, 'OSM node 荻窪駅北口');
+
+// S1 玉川上水：三鷹駅→三鷹市美術ギャラリー→あけぼのふれあい公園 水源の森→境南中央公園→武蔵境駅→武蔵野ふるさと歴史館→梶野公園→東小金井駅→武蔵小金井駅。
+const mitaka = P('mitaka_s', '三鷹駅', 35.70272, 139.56093, 'OSM station 三鷹');
+const musashisakai = P('musashisakai', '武蔵境駅', 35.70195, 139.54405, 'OSM station 武蔵境');
+const higashiKoganei = P('higashi_koganei_s', '東小金井駅', 35.69748, 139.52422, 'OSM node 東小金井駅入口');
+const musashiKoganei = P('musashi_koganei_s', '武蔵小金井駅', 35.70145, 139.50581, 'OSM node 武蔵小金井駅');
+const mitakaG =P('mitaka_gallery', '三鷹市美術ギャラリー', 35.70174, 139.56088, 'OSM museum 三鷹市美術ギャラリー');
+const akebono = P('akebono', 'あけぼのふれあい公園 水源の森', 35.69739, 139.55251, 'OSM park あけぼのふれあい公園 水源の森');
+const kyonanChuo = P('kyonan_chuo', '境南中央公園', 35.69921, 139.53641, 'OSM park 境南中央公園');
+const furosato = P('furosato', '武蔵野ふるさと歴史館', 35.70234, 139.53468, 'OSM museum 武蔵野ふるさと歴史館');
+const ajisai = P('ajisai', '武蔵野市立あじさい公園', 35.70572, 139.53665, 'TOPIC: あじさい公園。OSMの名称ノードは地図レビュー待ち');
+const kajino = P('kajino', '梶野公園', 35.70313, 139.52646, 'OSM park 梶野公園');
+
+// Z3 福岡：博多駅→楽水園→博多町家ふるさと館→櫛田神社飾り山笠→川端商店街→中洲屋台→福岡アジア美術館→福岡県立美術館→新天町商店街→大濠公園。
+const rakusuien = P('rakusuien', '樂水園', 33.58655, 130.41327, 'OSM attraction 樂水園');
+const machiya = P('machiya', '博多町家ふるさと館', 33.59365, 130.41151, 'OSM museum 博多町家鄉土館');
+const kushida = P('kushida', '櫛田神社（飾り山笠）', 33.59282, 130.41058, 'OSM attraction 櫛田神社飾り山笠');
+const kawabata = P('kawabata', '川端商店街', 33.59255, 130.41023, 'OSM attraction 川端商店街');
+const nakasuYatai = P('nakasu_yatai', '中洲屋台', 33.59139, 130.40706, 'OSM attraction 中洲屋台');
+const asiaBijutsu = P('asia_bijutsu', '福岡アジア美術館', 33.59497, 130.40582, 'OSM museum 福岡アジア美術館');
+const kenBijutsu = P('ken_bijutsu', '福岡県立美術館', 33.59727, 130.39873, 'OSM museum 福岡県立美術館');
+const shintencho = P('shintencho', '新天町商店街', 33.59019, 130.39745, 'OSM attraction 新天町商店街');
+const ohori = P('ohori', '大濠公園', 33.59018, 130.37722, 'OSM node 大濠公園');
+
 const jobs = {
+  S6: { courseId: 'S6', slug: 's6', variants: { standard: [nakano, chuoNishi, sanshi, shinKoenji, koenjiKita, shinmeigu, ootaguro, amanuma] } },
+  S1: { courseId: 'S1', slug: 's1', variants: { standard: [mitaka, mitakaG, akebono, musashisakai, furosato, kyonanChuo, ajisai, musashiKoganei] } },
+  Z3: { courseId: 'Z3', slug: 'z3', variants: { standard: [rakusuien, machiya, kushida, kawabata, nakasuYatai, asiaBijutsu, kenBijutsu, shintencho, ohori] } },
   E1: { courseId: 'E1', slug: 'e1', variants: { standard: [mishimaSt, kakita, sano, mishimaTaisha, komoike, shirataki, rakuju, mishimaStEnd] } },
   E3: { courseId: 'E3', slug: 'e3', variants: { standard: [hamamatsuSt, gakki, jouIri, jo, bijutsu, mabuchi, hamamatsuStEnd] } },
   Z2: { courseId: 'Z2', slug: 'z2', variants: { standard: [sannomiya, ikuta, suwa, hanakuma, kakyo, chutottei, mosaicMae, kobeSt] } },

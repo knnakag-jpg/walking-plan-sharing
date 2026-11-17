@@ -30,5 +30,69 @@
   ],
   "movedM": 8,
   "wayId": 133229243
+ },
+ "chuo_nishi": {
+  "snapped": [
+   35.6990854,
+   139.6635677
+  ],
+  "movedM": 30,
+  "wayId": 77040192
+ },
+ "sanshi": {
+  "snapped": [
+   35.6971278,
+   139.6563767
+  ],
+  "movedM": 31,
+  "wayId": 329620829
+ },
+ "shin_koenji": {
+  "snapped": [
+   35.699263,
+   139.6453465
+  ],
+  "movedM": 24,
+  "wayId": 37560183
+ },
+ "koenji_kita": {
+  "snapped": [
+   35.7070299,
+   139.6529092
+  ],
+  "movedM": 21,
+  "wayId": 75890349
+ },
+ "shinmeigu": {
+  "snapped": [
+   35.7072646,
+   139.6369978
+  ],
+  "movedM": 5,
+  "wayId": 308989961
+ },
+ "amanuma": {
+  "snapped": [
+   35.7085322,
+   139.6214629
+  ],
+  "movedM": 6,
+  "wayId": 135126692
+ },
+ "ootaguro": {
+  "snapped": [
+   35.7009081,
+   139.624684
+  ],
+  "movedM": 6,
+  "wayId": 1341542831
+ },
+ "ogikubo_long": {
+  "snapped": [
+   35.7051607,
+   139.6213438
+  ],
+  "movedM": 8,
+  "wayId": 133229243
  }
 }

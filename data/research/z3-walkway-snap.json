@@ -30,5 +30,69 @@
   ],
   "movedM": 1,
   "wayId": 43105229
+ },
+ "rakusuien": {
+  "snapped": [
+   33.5862842,
+   130.4132301
+  ],
+  "movedM": 30,
+  "wayId": 734470518
+ },
+ "machiya": {
+  "snapped": [
+   33.5935643,
+   130.4114961
+  ],
+  "movedM": 10,
+  "wayId": 175150525
+ },
+ "kushida": {
+  "snapped": [
+   33.5927546,
+   130.4105785
+  ],
+  "movedM": 7,
+  "wayId": 611204873
+ },
+ "kawabata": {
+  "snapped": [
+   33.5925387,
+   130.4102548
+  ],
+  "movedM": 3,
+  "wayId": 169674145
+ },
+ "nakasu_yatai": {
+  "snapped": [
+   33.5913915,
+   130.4070418
+  ],
+  "movedM": 2,
+  "wayId": 46872322
+ },
+ "asia_bijutsu": {
+  "snapped": [
+   33.5948699,
+   130.4062094
+  ],
+  "movedM": 38,
+  "wayId": 1446456436
+ },
+ "ken_bijutsu": {
+  "snapped": [
+   33.5972771,
+   130.3990882
+  ],
+  "movedM": 33,
+  "wayId": 1379439256
+ },
+ "shintencho": {
+  "snapped": [
+   33.5903305,
+   130.3974505
+  ],
+  "movedM": 16,
+  "wayId": 95487285
  }
 }

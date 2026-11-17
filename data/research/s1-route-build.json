@@ -1,17 +1,21 @@
 {
-  "calculatedAt": "2026-11-16T14:49:57.415Z",
+  "calculatedAt": "2026-11-17T10:59:42.301Z",
   "engine": "valhalla-pedestrian",
   "variants": {
     "standard": {
       "label": "standard",
-      "distanceM": 5851,
-      "engineDistanceM": 5856,
-      "repeatedGeometryM": 0,
-      "repeatedGeometryPct": 0,
+      "distanceM": 8954,
+      "engineDistanceM": 8965,
+      "repeatedGeometryM": 421,
+      "repeatedGeometryPct": 4.7,
       "legKm": [
-        1.69,
-        2.25,
-        1.91
+        0.46,
+        1.33,
+        1.22,
+        0.96,
+        0.57,
+        1.11,
+        3.33
       ],
       "geometryUrl": "data/routes/s1-standard.geojson",
       "stops": [
@@ -26,6 +30,26 @@
           "offsetM": 7
         },
         {
+          "id": "mitaka_gallery",
+          "label": "三鷹市美術ギャラリー",
+          "coord": [
+            35.7016706,
+            139.5609537
+          ],
+          "source": "OSM museum 三鷹市美術ギャラリー",
+          "offsetM": 0
+        },
+        {
+          "id": "akebono",
+          "label": "あけぼのふれあい公園 水源の森",
+          "coord": [
+            35.6973335,
+            139.5527438
+          ],
+          "source": "OSM park あけぼのふれあい公園 水源の森",
+          "offsetM": 0
+        },
+        {
           "id": "musashisakai",
           "label": "武蔵境駅",
           "coord": [
@@ -36,13 +60,33 @@
           "offsetM": 0
         },
         {
-          "id": "higashi_koganei_s",
-          "label": "東小金井駅",
+          "id": "furosato",
+          "label": "武蔵野ふるさと歴史館",
           "coord": [
-            35.6974768,
-            139.5242159
+            35.7024971,
+            139.5348012
           ],
-          "source": "OSM node 東小金井駅入口",
+          "source": "OSM museum 武蔵野ふるさと歴史館",
+          "offsetM": 0
+        },
+        {
+          "id": "kyonan_chuo",
+          "label": "境南中央公園",
+          "coord": [
+            35.6989869,
+            139.5361959
+          ],
+          "source": "OSM park 境南中央公園",
+          "offsetM": 0
+        },
+        {
+          "id": "ajisai",
+          "label": "武蔵野市立あじさい公園",
+          "coord": [
+            35.7057803,
+            139.5367033
+          ],
+          "source": "TOPIC: あじさい公園。OSMの名称ノードは地図レビュー待ち",
           "offsetM": 0
         },
         {

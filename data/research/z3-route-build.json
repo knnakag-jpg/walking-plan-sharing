@@ -1,49 +1,104 @@
 {
-  "calculatedAt": "2026-11-16T14:08:47.725Z",
+  "calculatedAt": "2026-11-17T10:58:00.149Z",
   "engine": "valhalla-pedestrian",
   "variants": {
     "standard": {
       "label": "standard",
-      "distanceM": 4280,
-      "engineDistanceM": 4279,
-      "repeatedGeometryM": 55,
-      "repeatedGeometryPct": 1.3,
+      "distanceM": 6776,
+      "engineDistanceM": 6772,
+      "repeatedGeometryM": 96,
+      "repeatedGeometryPct": 1.4,
       "legKm": [
-        1.06,
-        1.02,
-        2.19
+        1.17,
+        0.35,
+        0.05,
+        0.49,
+        0.58,
+        1.05,
+        1,
+        2.08
       ],
       "geometryUrl": "data/routes/z3-standard.geojson",
       "stops": [
         {
-          "id": "hakata_st",
-          "label": "博多駅",
+          "id": "rakusuien",
+          "label": "樂水園",
           "coord": [
-            33.5900426,
-            130.399804
+            33.5862842,
+            130.4132301
           ],
-          "source": "OSM 博多 station; 正確な点は地図レビュー待ち",
+          "source": "OSM attraction 樂水園",
+          "offsetM": 3
+        },
+        {
+          "id": "machiya",
+          "label": "博多町家ふるさと館",
+          "coord": [
+            33.5935643,
+            130.4114961
+          ],
+          "source": "OSM museum 博多町家鄉土館",
           "offsetM": 0
         },
         {
-          "id": "nakasu",
-          "label": "中洲川端駅",
+          "id": "kushida",
+          "label": "櫛田神社（飾り山笠）",
           "coord": [
-            33.594691,
-            130.4063973
+            33.5927546,
+            130.4105785
           ],
-          "source": "OSM station 中洲川端",
-          "offsetM": 4
+          "source": "OSM attraction 櫛田神社飾り山笠",
+          "offsetM": 0
         },
         {
-          "id": "tenjin",
-          "label": "天神駅",
+          "id": "kawabata",
+          "label": "川端商店街",
           "coord": [
-            33.5912384,
-            130.3986384
+            33.5925387,
+            130.4102548
           ],
-          "source": "OSM station 天神",
-          "offsetM": 4
+          "source": "OSM attraction 川端商店街",
+          "offsetM": 0
+        },
+        {
+          "id": "nakasu_yatai",
+          "label": "中洲屋台",
+          "coord": [
+            33.5913915,
+            130.4070418
+          ],
+          "source": "OSM attraction 中洲屋台",
+          "offsetM": 0
+        },
+        {
+          "id": "asia_bijutsu",
+          "label": "福岡アジア美術館",
+          "coord": [
+            33.5948699,
+            130.4062094
+          ],
+          "source": "OSM museum 福岡アジア美術館",
+          "offsetM": 0
+        },
+        {
+          "id": "ken_bijutsu",
+          "label": "福岡県立美術館",
+          "coord": [
+            33.5972771,
+            130.3990882
+          ],
+          "source": "OSM museum 福岡県立美術館",
+          "offsetM": 0
+        },
+        {
+          "id": "shintencho",
+          "label": "新天町商店街",
+          "coord": [
+            33.5903305,
+            130.3974505
+          ],
+          "source": "OSM attraction 新天町商店街",
+          "offsetM": 0
         },
         {
           "id": "ohori",
