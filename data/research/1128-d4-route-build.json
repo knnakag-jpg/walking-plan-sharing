@@ -1,19 +1,21 @@
 {
-  "calculatedAt": "2026-11-17T11:51:15.689Z",
+  "calculatedAt": "2026-11-17T12:41:55.994Z",
   "engine": "valhalla-pedestrian",
   "variants": {
     "standard": {
       "label": "standard",
-      "distanceM": 4632,
-      "engineDistanceM": 4638,
-      "repeatedGeometryM": 57,
-      "repeatedGeometryPct": 1.2,
+      "distanceM": 5047,
+      "engineDistanceM": 5053,
+      "repeatedGeometryM": 158,
+      "repeatedGeometryPct": 3.1,
       "legKm": [
         0.39,
-        1,
+        0.95,
+        0.44,
         0.51,
         0.22,
-        0.98,
+        0.1,
+        0.91,
         1.54
       ],
       "geometryUrl": "data/routes/1128-d4-standard.geojson",
@@ -36,6 +38,16 @@
             139.6326603
           ],
           "source": "OSM museum 横浜みなと博物館",
+          "offsetM": 0
+        },
+        {
+          "id": "x4",
+          "label": "北仲通北第三公園",
+          "coord": [
+            35.4520835,
+            139.6382899
+          ],
+          "source": "OSM park 北仲通北第三公園",
           "offsetM": 0
         },
         {
@@ -67,6 +79,16 @@
           ],
           "source": "OSM museum ニュースパーク",
           "offsetM": 4
+        },
+        {
+          "id": "x2",
+          "label": "横浜地方裁判所旧庁舎事務棟",
+          "coord": [
+            35.4463837,
+            139.6419381
+          ],
+          "source": "OSM building 横浜地方裁判所旧庁舎事務棟",
+          "offsetM": 0
         },
         {
           "id": "bashamichi",

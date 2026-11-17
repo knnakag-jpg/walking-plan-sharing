@@ -1,22 +1,26 @@
 {
-  "calculatedAt": "2026-11-17T11:34:30.891Z",
+  "calculatedAt": "2026-11-17T12:41:05.494Z",
   "engine": "valhalla-pedestrian",
   "variants": {
     "standard": {
       "label": "standard",
-      "distanceM": 4118,
-      "engineDistanceM": 4122,
-      "repeatedGeometryM": 249,
-      "repeatedGeometryPct": 6,
+      "distanceM": 6632,
+      "engineDistanceM": 6632,
+      "repeatedGeometryM": 317,
+      "repeatedGeometryPct": 4.8,
       "legKm": [
         0.16,
         0.4,
         0.38,
         0.98,
-        0.51,
-        0.6,
+        0.89,
+        1.04,
+        0.26,
+        0.38,
         0.39,
-        0.7
+        0.23,
+        0.86,
+        0.66
       ],
       "geometryUrl": "data/routes/1128-d3-standard.geojson",
       "stops": [
@@ -71,6 +75,16 @@
           "offsetM": 0
         },
         {
+          "id": "x7",
+          "label": "日本橋さくら通り",
+          "coord": [
+            35.6811701,
+            139.7649204
+          ],
+          "source": "OSM monument 日本橋さくら通り",
+          "offsetM": 0
+        },
+        {
           "id": "nihombashi",
           "label": "日本橋",
           "coord": [
@@ -78,6 +92,16 @@
             139.7737674
           ],
           "source": "OSM 日本橋",
+          "offsetM": 0
+        },
+        {
+          "id": "x2",
+          "label": "花の広場",
+          "coord": [
+            35.6844594,
+            139.7743307
+          ],
+          "source": "OSM park 花の広場",
           "offsetM": 0
         },
         {
@@ -98,6 +122,26 @@
             139.7728674
           ],
           "source": "OSM museum 三井記念美術館",
+          "offsetM": 0
+        },
+        {
+          "id": "x1",
+          "label": "日本銀行金融研究所貨幣博物館",
+          "coord": [
+            35.6854525,
+            139.7714109
+          ],
+          "source": "OSM museum 日本銀行金融研究所貨幣博物館",
+          "offsetM": 0
+        },
+        {
+          "id": "x12",
+          "label": "常盤橋公園",
+          "coord": [
+            35.6801828,
+            139.7718476
+          ],
+          "source": "OSM park 常盤橋公園",
           "offsetM": 0
         },
         {

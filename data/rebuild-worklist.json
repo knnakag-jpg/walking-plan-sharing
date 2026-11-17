@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-17T12:02:20.904Z",
+  "generatedAt": "2026-11-17T12:44:42.342Z",
   "interpretation": "Mechanical triage only. Source and map review required before adopting any new route.",
   "records": [
     {
@@ -3163,7 +3163,7 @@
         {
           "variant": "standard",
           "status": "routed",
-          "distanceM": 4118
+          "distanceM": 6632
         },
         {
           "variant": "rainy",
@@ -3496,7 +3496,7 @@
         {
           "variant": "standard",
           "status": "routed",
-          "distanceM": 3048
+          "distanceM": 3752
         },
         {
           "variant": "rainy",
@@ -4177,7 +4177,7 @@
         {
           "variant": "standard",
           "status": "routed",
-          "distanceM": 4473
+          "distanceM": 6102
         },
         {
           "variant": "rainy",
@@ -4418,7 +4418,7 @@
         {
           "variant": "standard",
           "status": "routed",
-          "distanceM": 4632
+          "distanceM": 5047
         },
         {
           "variant": "rainy",
