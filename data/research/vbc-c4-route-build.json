@@ -1,18 +1,21 @@
 {
-  "calculatedAt": "2026-11-17T11:56:40.567Z",
+  "calculatedAt": "2026-11-18T12:30:49.257Z",
   "engine": "valhalla-pedestrian",
   "variants": {
     "standard": {
       "label": "standard",
-      "distanceM": 5087,
-      "engineDistanceM": 5090,
-      "repeatedGeometryM": 620,
-      "repeatedGeometryPct": 12.2,
+      "distanceM": 6308,
+      "engineDistanceM": 6322,
+      "repeatedGeometryM": 555,
+      "repeatedGeometryPct": 8.8,
       "legKm": [
         0.5,
-        0.62,
+        0.34,
+        0.88,
         1.34,
-        1.29,
+        0.21,
+        0.24,
+        1.47,
         1.35
       ],
       "geometryUrl": "data/routes/vbc-c4-standard.geojson",
@@ -38,6 +41,16 @@
           "offsetM": 0
         },
         {
+          "id": "x8",
+          "label": "富士見第二公園",
+          "coord": [
+            35.6957821,
+            139.3970081
+          ],
+          "source": "OSM park 富士見第二公園",
+          "offsetM": 31
+        },
+        {
           "id": "sengen",
           "label": "浅間神社",
           "coord": [
@@ -55,6 +68,26 @@
             139.4048696
           ],
           "source": "OSM place_of_worship 真如苑 真澄寺",
+          "offsetM": 0
+        },
+        {
+          "id": "x4",
+          "label": "真如苑 慧燈院",
+          "coord": [
+            35.6957628,
+            139.4045791
+          ],
+          "source": "OSM place_of_worship 真如苑 慧燈院",
+          "offsetM": 0
+        },
+        {
+          "id": "x3",
+          "label": "諏訪の森公園",
+          "coord": [
+            35.6963475,
+            139.4062118
+          ],
+          "source": "OSM park 諏訪の森公園",
           "offsetM": 0
         },
         {

@@ -1,13 +1,13 @@
 {
-  "calculatedAt": "2026-11-17T12:00:32.594Z",
+  "calculatedAt": "2026-11-18T12:53:08.786Z",
   "engine": "valhalla-pedestrian",
   "variants": {
     "standard": {
       "label": "standard",
-      "distanceM": 5954,
-      "engineDistanceM": 5955,
-      "repeatedGeometryM": 589,
-      "repeatedGeometryPct": 9.9,
+      "distanceM": 6208,
+      "engineDistanceM": 6211,
+      "repeatedGeometryM": 476,
+      "repeatedGeometryPct": 7.7,
       "legKm": [
         0.5,
         0.36,
@@ -15,7 +15,8 @@
         1.02,
         0.11,
         1.26,
-        0.98,
+        0.57,
+        0.66,
         1.5
       ],
       "geometryUrl": "data/routes/g-1128-standard.geojson",
@@ -88,6 +89,16 @@
             139.7271842
           ],
           "source": "OSM museum 荏原 畠山美術館",
+          "offsetM": 0
+        },
+        {
+          "id": "x7",
+          "label": "本立寺",
+          "coord": [
+            35.6295047,
+            139.7296611
+          ],
+          "source": "OSM place_of_worship 本立寺",
           "offsetM": 0
         },
         {

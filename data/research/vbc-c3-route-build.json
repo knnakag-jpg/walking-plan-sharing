@@ -1,20 +1,28 @@
 {
-  "calculatedAt": "2026-11-17T11:54:56.584Z",
+  "calculatedAt": "2026-11-18T12:02:21.021Z",
   "engine": "valhalla-pedestrian",
   "variants": {
     "standard": {
       "label": "standard",
-      "distanceM": 3665,
-      "engineDistanceM": 3666,
-      "repeatedGeometryM": 219,
-      "repeatedGeometryPct": 6,
+      "distanceM": 4706,
+      "engineDistanceM": 4707,
+      "repeatedGeometryM": 368,
+      "repeatedGeometryPct": 7.8,
       "legKm": [
-        1,
-        0.26,
-        0.67,
+        0.75,
+        0.22,
+        0.36,
+        0.29,
+        0.25,
+        0.21,
+        0.25,
+        0.48,
         0.2,
-        0.51,
-        1.04
+        0.42,
+        0.23,
+        0.1,
+        0.74,
+        0.22
       ],
       "geometryUrl": "data/routes/vbc-c3-standard.geojson",
       "stops": [
@@ -29,6 +37,36 @@
           "offsetM": 0
         },
         {
+          "id": "x14",
+          "label": "南品川さくら公園",
+          "coord": [
+            35.6100375,
+            139.7400645
+          ],
+          "source": "OSM park 南品川さくら公園",
+          "offsetM": 0
+        },
+        {
+          "id": "x13",
+          "label": "南品川広場公園",
+          "coord": [
+            35.6092157,
+            139.7400738
+          ],
+          "source": "OSM park 南品川広場公園",
+          "offsetM": 0
+        },
+        {
+          "id": "x4",
+          "label": "海晏寺",
+          "coord": [
+            35.6080055,
+            139.7424843
+          ],
+          "source": "OSM place_of_worship 海晏寺",
+          "offsetM": 0
+        },
+        {
           "id": "saiwai",
           "label": "幸稲荷神社",
           "coord": [
@@ -39,6 +77,16 @@
           "offsetM": 0
         },
         {
+          "id": "x10",
+          "label": "泊船寺",
+          "coord": [
+            35.6063197,
+            139.742483
+          ],
+          "source": "OSM place_of_worship 泊船寺",
+          "offsetM": 0
+        },
+        {
           "id": "seiun",
           "label": "青雲稲荷神社",
           "coord": [
@@ -46,6 +94,16 @@
             139.7431918
           ],
           "source": "OSM place_of_worship 青雲稲荷神社",
+          "offsetM": 0
+        },
+        {
+          "id": "x3",
+          "label": "八幡神社",
+          "coord": [
+            35.6046329,
+            139.7424605
+          ],
+          "source": "OSM place_of_worship 八幡神社",
           "offsetM": 0
         },
         {
@@ -69,6 +127,16 @@
           "offsetM": 0
         },
         {
+          "id": "x1",
+          "label": "仲町稲荷神社",
+          "coord": [
+            35.5980221,
+            139.7392885
+          ],
+          "source": "OSM place_of_worship 仲町稲荷神社",
+          "offsetM": 0
+        },
+        {
           "id": "itsukushima",
           "label": "厳島神社",
           "coord": [
@@ -77,6 +145,26 @@
           ],
           "source": "OSM place_of_worship 厳島神社",
           "offsetM": 0
+        },
+        {
+          "id": "x6",
+          "label": "南稲荷神社",
+          "coord": [
+            35.5971995,
+            139.7386289
+          ],
+          "source": "OSM place_of_worship 南稲荷神社",
+          "offsetM": 0
+        },
+        {
+          "id": "x8",
+          "label": "水神社",
+          "coord": [
+            35.5956153,
+            139.7329764
+          ],
+          "source": "OSM place_of_worship 水神社",
+          "offsetM": 4
         },
         {
           "id": "raigoin",

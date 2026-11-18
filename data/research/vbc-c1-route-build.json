@@ -1,17 +1,20 @@
 {
-  "calculatedAt": "2026-11-17T11:52:29.171Z",
+  "calculatedAt": "2026-11-18T12:19:49.051Z",
   "engine": "valhalla-pedestrian",
   "variants": {
     "standard": {
       "label": "standard",
-      "distanceM": 4901,
-      "engineDistanceM": 4906,
-      "repeatedGeometryM": 345,
-      "repeatedGeometryPct": 7,
+      "distanceM": 6154,
+      "engineDistanceM": 6156,
+      "repeatedGeometryM": 304,
+      "repeatedGeometryPct": 4.9,
       "legKm": [
         0.45,
-        1.79,
-        1.64,
+        0.72,
+        0.66,
+        0.92,
+        1.03,
+        1.35,
         1.02
       ],
       "geometryUrl": "data/routes/vbc-c1-standard.geojson",
@@ -37,6 +40,26 @@
           "offsetM": 0
         },
         {
+          "id": "x3",
+          "label": "県立幕張海浜公園 (Cブロック)",
+          "coord": [
+            35.6434067,
+            140.0394376
+          ],
+          "source": "OSM park 県立幕張海浜公園 (Cブロック)",
+          "offsetM": 27
+        },
+        {
+          "id": "x4",
+          "label": "県立幕張海浜公園 (D・E・Fブロック)",
+          "coord": [
+            35.6415584,
+            140.0346255
+          ],
+          "source": "OSM park 県立幕張海浜公園 (D・E・Fブロック)",
+          "offsetM": 0
+        },
+        {
           "id": "marines",
           "label": "マリーンズ・ミュージアム",
           "coord": [
@@ -44,6 +67,16 @@
             140.0310141
           ],
           "source": "OSM museum マリーンズ・ミュージアム",
+          "offsetM": 0
+        },
+        {
+          "id": "x1",
+          "label": "豊砂公園",
+          "coord": [
+            35.6531467,
+            140.0295644
+          ],
+          "source": "OSM park 豊砂公園",
           "offsetM": 0
         },
         {

@@ -1,20 +1,24 @@
 {
-  "calculatedAt": "2026-11-17T11:56:27.247Z",
+  "calculatedAt": "2026-11-18T12:14:02.721Z",
   "engine": "valhalla-pedestrian",
   "variants": {
     "standard": {
       "label": "standard",
-      "distanceM": 4660,
-      "engineDistanceM": 4661,
-      "repeatedGeometryM": 21,
-      "repeatedGeometryPct": 0.5,
+      "distanceM": 6110,
+      "engineDistanceM": 6107,
+      "repeatedGeometryM": 327,
+      "repeatedGeometryPct": 5.4,
       "legKm": [
         0.55,
         0.35,
-        0.66,
-        0.84,
+        0.73,
+        0.38,
+        0.5,
+        0.58,
         1.71,
-        0.54
+        0.13,
+        0.41,
+        0.78
       ],
       "geometryUrl": "data/routes/vbc-c5-standard.geojson",
       "stops": [
@@ -49,6 +53,16 @@
           "offsetM": 0
         },
         {
+          "id": "x4",
+          "label": "大道北公園",
+          "coord": [
+            35.6818665,
+            139.4517843
+          ],
+          "source": "OSM park 大道北公園",
+          "offsetM": 0
+        },
+        {
           "id": "yabo1",
           "label": "谷保第一公園",
           "coord": [
@@ -56,6 +70,16 @@
             139.4492364
           ],
           "source": "OSM park 谷保第一公園",
+          "offsetM": 0
+        },
+        {
+          "id": "x3",
+          "label": "谷保第二公園",
+          "coord": [
+            35.6826326,
+            139.4449159
+          ],
+          "source": "OSM park 谷保第二公園",
           "offsetM": 0
         },
         {
@@ -76,6 +100,26 @@
             139.4462324
           ],
           "source": "OSM museum たましん歴史・美術館",
+          "offsetM": 0
+        },
+        {
+          "id": "x2",
+          "label": "旧国立駅舎",
+          "coord": [
+            35.6989145,
+            139.4468002
+          ],
+          "source": "OSM building 旧国立駅舎",
+          "offsetM": 0
+        },
+        {
+          "id": "x5",
+          "label": "北第一遊園",
+          "coord": [
+            35.7003169,
+            139.4496463
+          ],
+          "source": "OSM park 北第一遊園",
           "offsetM": 0
         },
         {

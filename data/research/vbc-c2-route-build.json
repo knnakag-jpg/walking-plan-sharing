@@ -1,17 +1,18 @@
 {
-  "calculatedAt": "2026-11-17T11:53:40.038Z",
+  "calculatedAt": "2026-11-18T12:21:30.946Z",
   "engine": "valhalla-pedestrian",
   "variants": {
     "standard": {
       "label": "standard",
-      "distanceM": 5570,
-      "engineDistanceM": 5578,
+      "distanceM": 6013,
+      "engineDistanceM": 6018,
       "repeatedGeometryM": 182,
-      "repeatedGeometryPct": 3.3,
+      "repeatedGeometryPct": 3,
       "legKm": [
         0.82,
         0.53,
-        3.25,
+        2.45,
+        1.24,
         0.79,
         0.19
       ],
@@ -45,6 +46,16 @@
             139.4647527
           ],
           "source": "OSM place_of_worship 常楽寺",
+          "offsetM": 0
+        },
+        {
+          "id": "x1",
+          "label": "つくし野ながぐつ児童公園",
+          "coord": [
+            35.5219533,
+            139.4846162
+          ],
+          "source": "OSM park つくし野ながぐつ児童公園",
           "offsetM": 0
         },
         {

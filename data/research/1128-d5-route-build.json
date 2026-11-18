@@ -1,20 +1,24 @@
 {
-  "calculatedAt": "2026-11-17T11:35:31.046Z",
+  "calculatedAt": "2026-11-18T12:44:49.456Z",
   "engine": "valhalla-pedestrian",
   "variants": {
     "standard": {
       "label": "standard",
-      "distanceM": 4195,
-      "engineDistanceM": 4196,
-      "repeatedGeometryM": 428,
-      "repeatedGeometryPct": 10.2,
+      "distanceM": 6637,
+      "engineDistanceM": 6634,
+      "repeatedGeometryM": 562,
+      "repeatedGeometryPct": 8.5,
       "legKm": [
-        0.84,
-        0.15,
+        0.64,
+        0.65,
+        0.16,
         0.13,
-        0.57,
+        0.13,
+        0.67,
+        0.48,
         0.29,
-        0.89,
+        1,
+        1.16,
         0.93,
         0.39
       ],
@@ -31,6 +35,16 @@
           "offsetM": 0
         },
         {
+          "id": "x9",
+          "label": "東郷公園",
+          "coord": [
+            35.6902874,
+            139.740143
+          ],
+          "source": "OSM park 東郷公園",
+          "offsetM": 0
+        },
+        {
           "id": "yasukuni_minami",
           "label": "靖国神社南門",
           "coord": [
@@ -39,6 +53,16 @@
           ],
           "source": "OSM 靖国神社南門",
           "offsetM": 0
+        },
+        {
+          "id": "x3",
+          "label": "さざれ石",
+          "coord": [
+            35.6944085,
+            139.7442876
+          ],
+          "source": "OSM monument さざれ石",
+          "offsetM": 8
         },
         {
           "id": "yasukuni",
@@ -61,6 +85,16 @@
           "offsetM": 0
         },
         {
+          "id": "x13",
+          "label": "しょうけい館",
+          "coord": [
+            35.6971409,
+            139.7509602
+          ],
+          "source": "OSM museum しょうけい館",
+          "offsetM": 0
+        },
+        {
           "id": "showakan",
           "label": "昭和館",
           "coord": [
@@ -78,6 +112,16 @@
             139.7513489
           ],
           "source": "OSM 九段下",
+          "offsetM": 0
+        },
+        {
+          "id": "x14",
+          "label": "旧近衛師団司令部",
+          "coord": [
+            35.6894953,
+            139.7505379
+          ],
+          "source": "OSM building 旧近衛師団司令部",
           "offsetM": 0
         },
         {

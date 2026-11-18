@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-17T21:22:57.525Z",
+  "generatedAt": "2026-11-18T12:55:39.212Z",
   "interpretation": "Mechanical triage only. Source and map review required before adopting any new route.",
   "records": [
     {
@@ -2238,6 +2238,57 @@
       ]
     },
     {
+      "id": "VBC-C3",
+      "title": "C-3 大井町周辺の寺社",
+      "series": "バリエーションB/C（新規追加）",
+      "workStatus": "partial_rebuild",
+      "legacy": {
+        "geometryUrl": "data/routes/vbc-c3.geojson",
+        "walkingDistanceM": 3215,
+        "repeatedGeometryPct": 17.8,
+        "repeatedGeometryM": 574,
+        "maxWaypointToShapeM": 8,
+        "repeatedWaypoints": [],
+        "gateResult": "OK"
+      },
+      "existingNewVariants": [
+        {
+          "variant": "standard",
+          "status": "routed",
+          "distanceM": 4706
+        },
+        {
+          "variant": "rainy",
+          "status": "researched",
+          "distanceM": null
+        }
+      ],
+      "coordinateReview": "not_started",
+      "sourceResearch": "not_started",
+      "historicalRoutingStrategies": [],
+      "transportHints": [
+        "water_transport"
+      ],
+      "possibleDistanceFiller": false,
+      "retraceReview": null,
+      "priorityScore": 57,
+      "issues": [
+        "repeated_geometry_over_10pct",
+        "retraced_geometry_over_100m",
+        "transport_or_indoor_leg_separation"
+      ],
+      "checklist": [
+        "公式の地域・施設資料を収集し、確認日を記録",
+        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
+        "駅の出入口・施設の入口・横断・通行条件を照合",
+        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
+        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
+        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
+        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
+        "旧経路との差分・採用理由・未確認事項を記録"
+      ]
+    },
+    {
       "id": "No.11",
       "title": "豊洲 千客万来と晴海・勝どきの水辺",
       "series": "本編 A～Z（No.1～26）",
@@ -2885,7 +2936,7 @@
         {
           "variant": "standard",
           "status": "routed",
-          "distanceM": 5954
+          "distanceM": 6208
         },
         {
           "variant": "rainy",
@@ -3274,54 +3325,6 @@
       ]
     },
     {
-      "id": "VBC-C3",
-      "title": "C-3 大井町周辺の寺社",
-      "series": "バリエーションB/C（新規追加）",
-      "workStatus": "partial_rebuild",
-      "legacy": {
-        "geometryUrl": "data/routes/vbc-c3.geojson",
-        "walkingDistanceM": 3215,
-        "repeatedGeometryPct": 17.8,
-        "repeatedGeometryM": 574,
-        "maxWaypointToShapeM": 8,
-        "repeatedWaypoints": [],
-        "gateResult": "OK"
-      },
-      "existingNewVariants": [
-        {
-          "variant": "standard",
-          "status": "routed",
-          "distanceM": 3665
-        },
-        {
-          "variant": "rainy",
-          "status": "researched",
-          "distanceM": null
-        }
-      ],
-      "coordinateReview": "not_started",
-      "sourceResearch": "not_started",
-      "historicalRoutingStrategies": [],
-      "transportHints": [],
-      "possibleDistanceFiller": false,
-      "retraceReview": null,
-      "priorityScore": 37,
-      "issues": [
-        "repeated_geometry_over_10pct",
-        "retraced_geometry_over_100m"
-      ],
-      "checklist": [
-        "公式の地域・施設資料を収集し、確認日を記録",
-        "現地歩行記録と写真付き資料で景観道路・歩く方向を調査",
-        "駅の出入口・施設の入口・横断・通行条件を照合",
-        "A 5〜6 km と B 7〜8 km の自然な駅間経路を設計。適切な経路が無ければ例外理由を記録",
-        "C の屋外徒歩・屋内徒歩・鉄道等を分離し、開館・料金・休館を確認",
-        "徒歩ネットワークから GeoJSON を生成し、同じ道路をなぞらない一筆書きか確認。避けられない往復は理由を記録",
-        "景観・安全・坂道・休憩・トイレ・離脱・アクセスを地図レビュー",
-        "旧経路との差分・採用理由・未確認事項を記録"
-      ]
-    },
-    {
       "id": "VBC-C5",
       "title": "C-5 国立〜谷保",
       "series": "バリエーションB/C（新規追加）",
@@ -3339,7 +3342,7 @@
         {
           "variant": "standard",
           "status": "routed",
-          "distanceM": 4660
+          "distanceM": 6110
         },
         {
           "variant": "rainy",
@@ -3887,7 +3890,7 @@
         {
           "variant": "standard",
           "status": "routed",
-          "distanceM": 4195
+          "distanceM": 6637
         },
         {
           "variant": "rainy",
@@ -4123,7 +4126,7 @@
         {
           "variant": "standard",
           "status": "routed",
-          "distanceM": 4901
+          "distanceM": 6154
         },
         {
           "variant": "rainy",
@@ -4767,7 +4770,7 @@
         {
           "variant": "standard",
           "status": "routed",
-          "distanceM": 5570
+          "distanceM": 6013
         },
         {
           "variant": "rainy",
@@ -4986,7 +4989,7 @@
         {
           "variant": "standard",
           "status": "routed",
-          "distanceM": 5087
+          "distanceM": 6308
         },
         {
           "variant": "rainy",
