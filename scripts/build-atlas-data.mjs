@@ -201,6 +201,20 @@ if (fs.existsSync(personalRoot)) for (const filename of fs.readdirSync(personalR
   added.evidence = [{ type: 'community', title: 'OpenStreetMap（名称付き地点）', url: 'https://www.openstreetmap.org/', checkedAt: '2026-11-16', supports: '駅・展望・公園の名称ノードの座標。入口ではない。' }];
   added.openQuestions = ['各地点の入口・通行条件を地図と現地で照合', '撮影の太陽の向きと時間帯', '宿の候補（駅徒歩10分以内・鍵付完全個室）'];
 }
+// 旧資料に無い本編の追加コース（旧経路を持たない）は data/added-main/<slug>.json から。先行ページには載せず、アトラス専用。
+const addedMainRoot = path.join(root, 'data/added-main');
+if (fs.existsSync(addedMainRoot)) for (const filename of fs.readdirSync(addedMainRoot).filter((name) => name.endsWith('.json')).sort()) {
+  const spec = JSON.parse(fs.readFileSync(path.join(addedMainRoot, filename), 'utf8'));
+  const std = JSON.parse(fs.readFileSync(path.join(root, spec.buildFile), 'utf8')).variants.standard;
+  courses.push({
+    id: spec.id, slug: spec.slug, title: spec.title, seriesId: spec.seriesId, seriesName: spec.seriesName, category: 'main', addedMain: true,
+    legacyAnchor: `course-${spec.id}`, legacyUrl: null, summary: spec.summary,
+    routeText: '経路ノード： ' + std.stops.map((stop) => stop.label).join(' → '), routeTextSource: 'osm_named_points', tags: spec.tags,
+    route: { id: `${spec.slug}-standard`, variant: 'standard', strategy: 'scenic', geometryUrl: std.geometryUrl, verificationStatus: 'routed', distanceM: std.distanceM, engineDistanceM: std.engineDistanceM, repeatedGeometryPct: std.repeatedGeometryPct },
+    waypoints: std.stops.map((stop, index) => ({ index, id: stop.id, label: stop.label, point: [stop.coord[1], stop.coord[0]], source: stop.source })),
+    climbM: null, descentM: null, auditFlags: [],
+  });
+}
 const curatedRoot = path.join(root, 'data/curated');
 for (const filename of fs.readdirSync(curatedRoot).filter((name) => name.endsWith('.json'))) {
   const curated = JSON.parse(fs.readFileSync(path.join(curatedRoot, filename), 'utf8'));
@@ -236,7 +250,7 @@ for (const filename of fs.readdirSync(curatedRoot).filter((name) => name.endsWit
       };
     }),
     { id: `${target.slug}-rainy`, variant: 'rainy', strategy: 'indoor_rail', verificationStatus: curated.rainy.verificationStatus, distanceM: null, routeReason: curated.rainy.summary, segments: curated.rainy.segments, conditions: curated.rainy.conditions, geometryUrl: null, waypoints: [] },
-    { ...target.route, waypoints: target.waypoints },
+    ...(target.addedMain ? [] : [{ ...target.route, waypoints: target.waypoints }]),
   ];
 }
 const reviewRoot = path.join(root, 'data/reviews');

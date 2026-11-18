@@ -1,0 +1,74 @@
+{
+ "shirokane_takanawa": {
+  "snapped": [
+   35.6429696,
+   139.7341838
+  ],
+  "movedM": 3,
+  "wayId": 664646721
+ },
+ "matsushimaya": {
+  "snapped": [
+   35.6405671,
+   139.7374637
+  ],
+  "movedM": 4,
+  "wayId": 225764696
+ },
+ "gankaiji": {
+  "snapped": [
+   35.6455445,
+   139.7399856
+  ],
+  "movedM": 8,
+  "wayId": 1058293577
+ },
+ "kamezuka": {
+  "snapped": [
+   35.6435425,
+   139.7404615
+  ],
+  "movedM": 7,
+  "wayId": 216624974
+ },
+ "mon_takanawa": {
+  "snapped": [
+   35.6398721,
+   139.7413324
+  ],
+  "movedM": 27,
+  "wayId": 1552004033
+ },
+ "newoman_luftbaum": {
+  "snapped": [
+   35.6364047,
+   139.7405528
+  ],
+  "movedM": 25,
+  "wayId": 1302871663
+ },
+ "takanawa_gw": {
+  "snapped": [
+   35.6355017,
+   139.7406647
+  ],
+  "movedM": 4,
+  "wayId": 1424520963
+ },
+ "shibaura_futo": {
+  "snapped": [
+   35.6417259,
+   139.7577715
+  ],
+  "movedM": 4,
+  "wayId": 671327133
+ },
+ "mita_saka_board": {
+  "snapped": [
+   35.6454791,
+   139.7420171
+  ],
+  "movedM": 3,
+  "wayId": 128508144
+ }
+}

@@ -1,0 +1,10 @@
+{
+  "id": "1128-G2",
+  "slug": "1128-g2",
+  "title": "G-2 高輪・三田の寺町と高輪ゲートウェイシティ",
+  "seriesId": "vbc",
+  "seriesName": "バリエーションB/C（新規追加）",
+  "tags": ["和菓子", "寺町", "再開発", "夕景"],
+  "summary": "白金高輪駅から松島屋、三田の寺町（願海寺）と亀塚公園を経て、MoN Takanawa・NEWoMan 高輪の庭と展望、高輪ゲートウェイ駅、芝浦ふ頭駅へ。",
+  "buildFile": "data/research/1128-g2-route-build.json"
+}

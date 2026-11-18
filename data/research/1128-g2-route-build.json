@@ -1,0 +1,105 @@
+{
+  "calculatedAt": "2026-11-18T13:31:38.041Z",
+  "engine": "valhalla-pedestrian",
+  "variants": {
+    "standard": {
+      "label": "standard",
+      "distanceM": 6541,
+      "engineDistanceM": 6547,
+      "repeatedGeometryM": 778,
+      "repeatedGeometryPct": 11.9,
+      "legKm": [
+        0.68,
+        0.79,
+        0.53,
+        0.79,
+        0.56,
+        0.12,
+        3.07
+      ],
+      "geometryUrl": "data/routes/1128-g2-standard.geojson",
+      "stops": [
+        {
+          "id": "shirokane_takanawa",
+          "label": "白金高輪駅",
+          "coord": [
+            35.6429696,
+            139.7341838
+          ],
+          "source": "OSM node 2179133140 station",
+          "offsetM": 0
+        },
+        {
+          "id": "matsushimaya",
+          "label": "松島屋",
+          "coord": [
+            35.6405671,
+            139.7374637
+          ],
+          "source": "OSM node 2345184604 confectionery",
+          "offsetM": 1
+        },
+        {
+          "id": "gankaiji",
+          "label": "願海寺",
+          "coord": [
+            35.6455445,
+            139.7399856
+          ],
+          "source": "OSM node 1755267526 place_of_worship",
+          "offsetM": 0
+        },
+        {
+          "id": "kamezuka",
+          "label": "亀塚公園",
+          "coord": [
+            35.6435425,
+            139.7404615
+          ],
+          "source": "OSM node 6126527703 亀塚公園",
+          "offsetM": 0
+        },
+        {
+          "id": "mon_takanawa",
+          "label": "MoN Takanawa",
+          "coord": [
+            35.6398721,
+            139.7413324
+          ],
+          "source": "OSM node MoN（高輪ゲートウェイシティ）。入口は地図で要確認",
+          "offsetM": 0
+        },
+        {
+          "id": "newoman_luftbaum",
+          "label": "NEWoMan高輪 LUFTBAUM",
+          "coord": [
+            35.6364047,
+            139.7405528
+          ],
+          "source": "OSM node NEWoMan高輪 LUFTBAUM",
+          "offsetM": 0
+        },
+        {
+          "id": "takanawa_gw",
+          "label": "高輪ゲートウェイ駅",
+          "coord": [
+            35.6355017,
+            139.7406647
+          ],
+          "source": "OSM way 781446220 高輪ゲートウェイ",
+          "offsetM": 0
+        },
+        {
+          "id": "shibaura_futo",
+          "label": "芝浦ふ頭駅",
+          "coord": [
+            35.6417259,
+            139.7577715
+          ],
+          "source": "OSM node 3349961081 station",
+          "offsetM": 0
+        }
+      ]
+    }
+  }
+}

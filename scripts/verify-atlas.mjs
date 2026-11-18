@@ -18,7 +18,7 @@ const assert = (condition, message) => { if (!condition) errors.push(message); }
 const same = (a, b) => fs.existsSync(path.join(root, b)) && crypto.createHash('sha256').update(read(a)).digest('hex') === crypto.createHash('sha256').update(read(b)).digest('hex');
 assert(same('data/catalog.json', 'atlas/data/catalog.json'), 'published catalog differs from source');
 assert(same('data/route-audit.json', 'atlas/data/route-audit.json'), 'published audit differs from source');
-const legacyCourses = data.courses.filter((course) => course.seriesId !== 'personal');
+const legacyCourses = data.courses.filter((course) => course.seriesId !== 'personal' && !course.addedMain);
 assert(legacyCourses.length === 97, 'catalog must contain all 97 legacy records (personal excluded)');
 assert(new Set(data.courses.map((course) => course.id)).size === data.courses.length, 'catalog IDs must be unique');
 assert(worklist.records.length === 97 && new Set(worklist.records.map((record) => record.id)).size === 97, 'rebuild worklist must contain 97 unique records');
