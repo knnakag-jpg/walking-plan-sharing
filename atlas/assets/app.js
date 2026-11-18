@@ -13,7 +13,7 @@ const statusText = (status) => ({ idea: 'アイデア', researched: '資料調�
 const localKey = { favorites: 'walking-atlas-favorites-v1', compare: 'walking-atlas-compare-v1', theme: 'walking-atlas-theme-v1', walk: 'walking-atlas-walk-v1' };
 const saved = (key, fallback) => { try { return JSON.parse(localStorage.getItem(key)) ?? fallback; } catch { return fallback; } };
 const save = (key, value) => { try { localStorage.setItem(key, JSON.stringify(value)); } catch { /* private mode still supports in-memory use */ } };
-const state = { courses: [], byId: new Map(), view: 'discover', selectedId: null, variantById: {}, feature: null, model: null, line: null, callouts: null, finalLead: '', elevationCache: new Map(), routeCache: new Map(), map: null, routeLayer: null, markerLayer: null, locationLayer: null, playback: null, startRing: null, reveal: null, sourceRect: null, lastCardRect: {}, showMarkers: true, routeRequest: 0, favorites: new Set(saved(localKey.favorites, [])), comparison: saved(localKey.compare, []), walkProgress: saved(localKey.walk, {}), profile: 'solo', theme: saved(localKey.theme, 'light'), search: '', category: 'main', series: 'all', distance: 'all', favoritesOnly: false };
+const state = { courses: [], byId: new Map(), view: 'discover', selectedId: null, variantById: {}, feature: null, model: null, line: null, callouts: null, finalLead: '', elevationCache: new Map(), routeCache: new Map(), map: null, routeLayer: null, markerLayer: null, locationLayer: null, playback: null, startRing: null, reveal: null, sourceRect: null, lastCardRect: {}, showMarkers: true, routeRequest: 0, favorites: new Set(saved(localKey.favorites, [])), comparison: saved(localKey.compare, []), walkProgress: saved(localKey.walk, {}), profile: 'group', theme: saved(localKey.theme, 'light'), search: '', category: 'main', series: 'all', distance: 'all', favoritesOnly: false };
 const prefersReducedMotion = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
 const activeRoute = (course) => course?.routeOptions?.find((route) => route.variant === (state.variantById[course.id] || course.defaultVariant)) || course?.route;
 const routeWaypoints = (course, route) => route?.waypoints || course.waypoints;
@@ -505,6 +505,8 @@ async function selectCourse(id, { updateHash = true } = {}) {
   const route = activeRoute(course);
   state.selectedId = id;
   renderList(); renderSelected();
+  // スマホでは一覧が地図の下に続く。選んだらすぐ経路を見られるよう、地図を画面上端へ戻す。
+  if (updateHash && window.matchMedia('(max-width:760px)').matches) window.scrollTo({ top: 0, behavior: 'smooth' });
   if (updateHash) history.replaceState(null, '', `#${course.legacyAnchor}`);
   const request = ++state.routeRequest;
   $('#map-status').textContent = `${variantLabel(route.variant)}を読み込み中…`;
