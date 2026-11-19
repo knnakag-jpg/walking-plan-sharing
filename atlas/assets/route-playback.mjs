@@ -34,7 +34,7 @@ export function playbackStops(waypoints, coordinates, cumulative) {
     const found = nearestRoutePoint(waypoint.point, coordinates, cumulative, afterM);
     if (!found || found.offsetM > 40) return [];
     afterM = found.atM + 5;
-    return [{ ...found, curated: Boolean(waypoint.description), label: waypoint.label || `旧資料の経由点 ${index + 1}`, description: waypoint.description || (waypoint.label ? 'この地点付近を通る計算経路です。施設の入口と通行条件は未確認です。' : '旧資料の経由点です。地点名と施設入口は再調査中です。') }];
+    return [{ ...found, index, curated: Boolean(waypoint.description), label: waypoint.label || `旧資料の経由点 ${index + 1}`, description: waypoint.description || waypoint.detail || (waypoint.label ? 'この地点付近を通る計算経路です。施設の入口と通行条件は未確認です。' : '旧資料の経由点です。地点名と施設入口は再調査中です。') }];
   });
 }
 

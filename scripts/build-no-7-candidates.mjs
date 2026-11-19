@@ -17,9 +17,12 @@ const aomonoSt = P('aomono_st', '青物横丁駅', 35.61024, 139.74315, 'OSM nod
 const shibauraStation = P('shibaura_st', '芝浦ふ頭駅', 35.64173, 139.75777, 'OSM node 31252846 芝浦ふ頭');
 const daiba = P('daiba', '台場（橋の台場側入口方面）', 35.63494, 139.76868, 'OSM node 31236584 台場; レインボーブリッジの台場口（スロープ・階段）の位置は利用者提供の情報で台場公園のすぐ横、座標は要確認');
 const odaibaKaihin = P('odaiba_kaihin', 'お台場海浜公園駅前', 35.6294, 139.7747, 'OSM bus_stop お台場海浜公園駅前; station exit needs map review');
+const anchorage = P('rb_shibaura', 'レインボーブリッジ遊歩道 芝浦側入口', 35.63786, 139.75903, 'OSM node 14110794001 レインボーブリッジ遊歩道 芝浦側（芝浦アンカレイジ。エレベーターで上がる）; 営業9:00〜21:00（冬季は10:00〜18:00）・月1回休館は要確認');
+const southMid = P('rb_south_mid', 'レインボーブリッジ サウスルート', 35.6347, 139.76932, 'OSM way 508040811 サウスルート（遊歩道。OSMでは芝浦→台場の一方向。ゆりかもめの線路は歩けないため遊歩道上の点を経由させる）');
+const southEnd = P('rb_south_end', 'レインボーブリッジ遊歩道 台場側出口', 35.63601, 139.77491, 'OSM way 508040811 サウスルートの台場側の端（台場公園のすぐ横）');
 const variants = {
   standard: { points: [takanawaGw, sengakujiSt, okido, shinagawaHigh, shinagawaSt, yatsuyama, kitaShinagawa, shinagawaJinja, aomonoSt], label: 'A 高輪ゲートウェイ→泉岳寺駅→高輪大木戸→品川→北品川→品川神社→青物横丁駅' },
-  extended: { points: [takanawaGw, shinagawaSt, shibauraStation, daiba, odaibaKaihin], label: 'B 高輪ゲートウェイ→品川→芝浦ふ頭→台場→お台場海浜公園駅前' },
+  extended: { points: [takanawaGw, shinagawaSt, shibauraStation, anchorage, southMid, southEnd, odaibaKaihin], label: 'B 高輪ゲートウェイ→品川→芝浦ふ頭→遊歩道芝浦側入口→サウスルート→台場側出口→お台場海浜公園駅前' },
 };
 const WALKWAY = 'footway|path|pedestrian|living_street|residential|service|steps|tertiary|unclassified|track|cycleway|secondary|primary';
 const rad = (n) => n * Math.PI / 180;

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "source": "legacy import; route quality not re-reviewed",
-  "generatedAt": "2026-11-19T11:20:21.615Z",
+  "generatedAt": "2026-11-19T11:53:56.099Z",
   "courses": [
     {
       "id": "No.1",
@@ -2532,7 +2532,7 @@
           "name": "レインボーブリッジのノース／サウスルート",
           "theme": "橋と海辺の景観",
           "direction": "芝浦：北（都心側）→台場、南（湾岸側）→台場",
-          "reviewStatus": "利用者提供の情報で徒歩可（無料）。冬季10:00〜18:00（最終入場17:30）、夏季9:00〜21:00。毎月第3月曜（祝日なら翌日）と年末年始（12/29〜31）は閉鎖。荒天・イベント時も通行止め。三脚禁止、トイレは芝浦側のみ。台場口の正確な座標は要確認",
+          "reviewStatus": "利用者提供の情報で徒歩可（無料）。冬季10:00〜18:00（最終入場17:30）、夏季9:00〜21:00。毎月第3月曜（祝日なら翌日）と年末年始（12/29〜31）は閉鎖。荒天・イベント時も通行止め。三脚禁止、トイレは芝浦側のみ。渡る向きはOSMの一方通行表記に合わせてサウスルート（芝浦→台場）にした",
           "evidenceTitle": "利用者提供の通行情報"
         },
         {
@@ -2666,7 +2666,7 @@
             }
           ],
           "engine": "valhalla-pedestrian",
-          "built": "2026-11-15T13:11:46.202Z",
+          "built": "2026-11-19T11:51:58.673Z",
           "elevation": {
             "source": "gsi_dem5a",
             "status": "partial_dem_filled",
@@ -2684,12 +2684,12 @@
           "strategy": "scenic",
           "geometryUrl": "data/routes/no-7-extended.geojson",
           "verificationStatus": "routed",
-          "distanceM": 9114,
-          "engineDistanceM": 9118,
-          "repeatedGeometryPct": 0.9,
-          "routeReason": "Aの高輪ゲートウェイから品川駅へ下り、芝浦ふ頭駅からレインボーブリッジへ入る。芝浦側入口は芝浦アンカレイジで、駅から徒歩約5分。橋はノース／サウスどちらかを選んでお台場側（台場口）へ渡り、お台場海浜公園駅前へ下る。計算上9.11km。距離は7〜8kmを超える。",
-          "distanceException": "9.11km。7〜8kmの目標を超えるが、芝浦ふ頭から台場までを実在の橋の歩道でつないだ結果で、短縮のための中途半端な切り詰めはしない。",
-          "retraceException": "品川駅の南北の通り抜けで約56m、芝浦ふ頭駅前で約27m（計約83m）。駅の反対側へ出るための短い往復。",
+          "distanceM": 7478,
+          "engineDistanceM": 7481,
+          "repeatedGeometryPct": 0.7,
+          "routeReason": "Aの高輪ゲートウェイから品川駅へ下り、芝浦ふ頭駅からレインボーブリッジへ入る。芝浦側入口は芝浦アンカレイジで、駅から徒歩約5分。エレベーターで遊歩道へ上がり、サウスルート（OSMでは芝浦→台場の一方向）で台場側の出口（台場公園のすぐ横）へ渡り、お台場海浜公園駅前へ下る。ゆりかもめの線路とループ橋は歩けないため、遊歩道の入口と橋上の点を経由点にしている。計算上7.48km。",
+          "distanceException": null,
+          "retraceException": "品川駅の南北の通り抜けで約56m。駅の反対側へ出るための短い往復。",
           "waypoints": [
             {
               "index": 0,
@@ -2726,17 +2726,39 @@
             },
             {
               "index": 3,
-              "id": "daiba",
-              "label": "台場（橋の台場側入口方面）",
+              "id": "rb_shibaura",
+              "label": "レインボーブリッジ遊歩道 芝浦側入口",
               "description": null,
               "point": [
-                139.7686928,
-                35.6349662
+                139.7590644,
+                35.6378894
               ],
-              "source": "OSM node 31236584 台場; レインボーブリッジの台場口（スロープ・階段）の位置は利用者提供の情報で台場公園のすぐ横、座標は要確認"
+              "source": "OSM node 14110794001 レインボーブリッジ遊歩道 芝浦側（芝浦アンカレイジ。エレベーターで上がる）; 営業9:00〜21:00（冬季は10:00〜18:00）・月1回休館は要確認"
             },
             {
               "index": 4,
+              "id": "rb_south_mid",
+              "label": "レインボーブリッジ サウスルート",
+              "description": null,
+              "point": [
+                139.7693171,
+                35.6347046
+              ],
+              "source": "OSM way 508040811 サウスルート（遊歩道。OSMでは芝浦→台場の一方向。ゆりかもめの線路は歩けないため遊歩道上の点を経由させる）"
+            },
+            {
+              "index": 5,
+              "id": "rb_south_end",
+              "label": "レインボーブリッジ遊歩道 台場側出口",
+              "description": null,
+              "point": [
+                139.7749136,
+                35.6360121
+              ],
+              "source": "OSM way 508040811 サウスルートの台場側の端（台場公園のすぐ横）"
+            },
+            {
+              "index": 6,
               "id": "odaiba_kaihin",
               "label": "お台場海浜公園駅前",
               "description": null,
@@ -2748,16 +2770,16 @@
             }
           ],
           "engine": "valhalla-pedestrian",
-          "built": "2026-11-15T13:11:46.202Z",
+          "built": "2026-11-19T11:51:58.673Z",
           "elevation": {
             "source": "gsi_dem5a",
             "status": "partial_dem_filled",
             "url": "data/elevation/no-7-extended.json",
-            "totalM": 9114,
-            "climbM": 23.4,
-            "descentM": 22.9,
+            "totalM": 7478,
+            "climbM": 18.5,
+            "descentM": 18.3,
             "minM": 1.6,
-            "maxM": 6.5
+            "maxM": 5.7
           }
         },
         {

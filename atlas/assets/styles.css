@@ -151,3 +151,4 @@ h2{font-size:clamp(1.6rem,2.5vw,2.5rem);letter-spacing:-.035em}
 }
 
 .personal-plan{margin:12px 0 0;display:grid;gap:6px;font-size:.86rem}.personal-plan div{display:grid;grid-template-columns:6.5em 1fr;gap:8px}.personal-plan dt{font-weight:700;color:var(--muted,#555)}.personal-plan dd{margin:0}
+.terrain-legend{transition:opacity .2s}.map-popup-open .terrain-legend{opacity:0;pointer-events:none}

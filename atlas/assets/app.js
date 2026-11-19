@@ -16,7 +16,51 @@ const save = (key, value) => { try { localStorage.setItem(key, JSON.stringify(va
 const state = { courses: [], byId: new Map(), view: 'discover', selectedId: null, variantById: {}, feature: null, model: null, line: null, callouts: null, finalLead: '', elevationCache: new Map(), routeCache: new Map(), map: null, routeLayer: null, markerLayer: null, locationLayer: null, playback: null, startRing: null, reveal: null, sourceRect: null, lastCardRect: {}, showMarkers: true, routeRequest: 0, favorites: new Set(saved(localKey.favorites, [])), comparison: saved(localKey.compare, []), walkProgress: saved(localKey.walk, {}), profile: 'group', theme: saved(localKey.theme, 'light'), search: '', category: 'main', series: 'all', distance: 'all', favoritesOnly: false };
 const prefersReducedMotion = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
 const activeRoute = (course) => course?.routeOptions?.find((route) => route.variant === (state.variantById[course.id] || course.defaultVariant)) || course?.route;
-const routeWaypoints = (course, route) => route?.waypoints || course.waypoints;
+// ---- 地点の説明: 名称・種別・メモ（出典の注記）を具体的に出す ----
+const STOP_KINDS = [
+  [/station|駅(（|$)/, '駅'], [/place_of_worship|神社|稲荷|八幡|宮$|寺$|院$|観音|大権現/, '寺社'],
+  [/museum|gallery|美術館|博物館|資料館|歴史館|科学館|展示館|記念館/, '博物館・展示施設'],
+  [/park|garden|公園|庭園|遊園|緑地/, '公園・庭園'], [/memorial|monument|historic|ruins|跡$|碑$|塚$|発祥の地/, '史跡・記念碑'],
+  [/viewpoint|展望|月見台/, '眺望地点'], [/artwork|attraction/, '見どころ'], [/confectionery|cafe|restaurant|shop/, '店'],
+];
+const stopKind = (w) => { const text = `${w.source || ''} ${w.label || ''}`; return STOP_KINDS.find(([re]) => re.test(text))?.[1] || null; };
+function stopNotes(source) {
+  if (!source) return [];
+  const notes = [...source.matchAll(/（([^）]+)）/g)].map((m) => m[1]);
+  for (const part of source.split(/[;；。]/).slice(1)) { const t = part.trim(); if (t && /[ぁ-んァ-ン一-龥]/.test(t) && !/OSM|TOPIC|node|ノード/.test(t)) notes.push(t); }
+  return [...new Set(notes)];
+}
+function stopDetail(w) {
+  const kind = stopKind(w); const notes = stopNotes(w.source);
+  if (!kind && !notes.length) return null;
+  return [kind ? `種別：${kind}` : null, ...notes].filter(Boolean).join('。') + '。';
+}
+const roughDistance = (m) => m < 1000 ? `約${Math.max(50, Math.round(m / 50) * 50)} m` : `約${(m / 1000).toFixed(1)} km`;
+function stopProgress(stops, i) {
+  if (!stops?.[i] || !Number.isFinite(stops[i].atM)) return '';
+  const next = stops[i + 1];
+  return [i === 0 ? '出発地点' : `起点から${roughDistance(stops[i].atM)}`, next ? `次の地点まで${roughDistance(next.atM - stops[i].atM)}` : '到着地点'].join('・');
+}
+// 旧経路の点には名前がない。同じコースの新経路で 120 m 以内に名前付きの点があれば、その名前を借りる。
+const nearM = (a, b) => Math.hypot((a[0] - b[0]) * 90500, (a[1] - b[1]) * 111000);
+const waypointCache = new WeakMap();
+function routeWaypoints(course, route) {
+  const base = route?.waypoints || course.waypoints;
+  if (!Array.isArray(base)) return base;
+  if (waypointCache.has(base)) return waypointCache.get(base);
+  const named = (course.routeOptions || []).filter((o) => o.variant !== 'legacy').flatMap((o) => o.waypoints || []).filter((w) => w.label && w.point);
+  const out = base.map((w) => {
+    let label = w.label; let source = w.source; let borrowed = false;
+    if (!label && w.point) {
+      const best = named.map((n) => ({ n, d: nearM(n.point, w.point) })).sort((a, b) => a.d - b.d)[0];
+      if (best && best.d <= 120) { label = best.n.label; source = best.n.source; borrowed = true; }
+    }
+    const detail = stopDetail({ ...w, label, source });
+    return { ...w, label, source, detail: borrowed ? `${detail || ''}新経路の同名地点から推定した名前です。` : detail };
+  });
+  waypointCache.set(base, out);
+  return out;
+}
 
 function visibleCourses() {
   const query = state.search.trim().toLocaleLowerCase('ja');
@@ -96,6 +140,8 @@ function initMap() {
   if (!window.L) { $('#map-fallback').hidden = false; $('#map-status').textContent = '地図ライブラリを読み込めません'; return; }
   try {
     state.map = L.map('map', { zoomControl: false, scrollWheelZoom: false }).setView([35.69, 139.76], 11);
+    // 吹き出しが開いている間は勾配の凡例を隠す（上部に出た吹き出しと重なるため）。
+    state.map.on('popupopen', () => document.body.classList.add('map-popup-open')).on('popupclose', () => document.body.classList.remove('map-popup-open'));
     L.control.zoom({ position: 'bottomright' }).addTo(state.map);
     const tiles = L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/std/{z}/{x}/{y}.png', { maxZoom: 18, attribution: '<a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank" rel="noopener">地理院タイル</a>' }).addTo(state.map);
     let tileErrors = 0;
@@ -403,8 +449,8 @@ function finishReveal(reveal) {
   $('#map-status').textContent = `${variantLabel(route.variant)}・${routeDistanceLabel(course, route)}／地図・現地レビュー待ち。地点を押すと説明を読めます。${model.terrain ? '色は上り＝赤・下り＝青。' : ''}`;
 }
 
-function checkpointContent(label, description, number, total) {
-  return `<div class="checkpoint-popup"><strong>${escapeHtml(label)}</strong><p>${escapeHtml(description)}</p><small>チェックポイント ${number} / ${total}・計算線上の目安</small></div>`;
+function checkpointContent(label, description, number, total, progress = '') {
+  return `<div class="checkpoint-popup"><strong>${escapeHtml(label)}</strong><p>${escapeHtml(description)}</p><small>${number} / ${total}${progress ? `・${escapeHtml(progress)}` : ''}・距離は計算線上の目安</small></div>`;
 }
 function stopRouteAnimation() {
   clearCallouts();
@@ -447,7 +493,7 @@ function animateRoute() {
       progressM = Math.min(totalM, progressM + elapsed * speedMperMs);
       if (stops[nextStop] && progressM >= stops[nextStop].atM) {
         const stop = stops[nextStop]; progressM = stop.atM;
-        L.popup({ autoClose: true, closeButton: false, className: 'checkpoint-bubble', offset: [0, -12] }).setLatLng([stop.point[1], stop.point[0]]).setContent(checkpointContent(stop.label, stop.description, nextStop + 1, stops.length)).openOn(state.map);
+        L.popup({ autoClose: true, closeButton: false, className: 'checkpoint-bubble', offset: [0, -12] }).setLatLng([stop.point[1], stop.point[0]]).setContent(checkpointContent(stop.label, stop.description, nextStop + 1, stops.length, stopProgress(stops, nextStop))).openOn(state.map);
         $('#map-status').textContent = `${nextStop + 1}/${stops.length} ${stop.label}・経路プレビュー`;
         pauseUntil = time + 2200; nextStop++;
       }
@@ -470,7 +516,11 @@ function drawMarkers(course, route) {
     const marker = L.circleMarker([waypoint.point[1], waypoint.point[0]], { radius: index === 0 || last ? 7 : 5, color: '#fff', weight: 2, fillColor: index === 0 ? '#246c55' : last ? '#bf795e' : '#516c64', fillOpacity: 1 });
     const label = waypoint.label || (index === 0 ? '旧経路の起点' : last ? '旧経路の終点' : `旧資料の経由点 ${index + 1}`);
     marker.bindTooltip(label);
-    marker.bindPopup(checkpointContent(label, waypoint.description || (waypoint.label ? 'この地点付近を通る計算経路です。施設の入口と通行条件は未確認です。' : '旧資料の経由点です。地点名と施設入口は再調査中です。'), index + 1, waypoints.length));
+    marker.bindPopup(() => {
+      const model = state.model; const stops = model?.coordinates ? playbackStops(waypoints, model.coordinates, model.cumulative) : [];
+      const at = stops.findIndex((stop) => stop.index === index);
+      return checkpointContent(label, waypoint.description || waypoint.detail || (waypoint.label ? 'この地点付近を通る計算経路です。施設の入口と通行条件は未確認です。' : '旧資料の経由点です。地点名と施設入口は再調査中です。'), index + 1, waypoints.length, at >= 0 ? stopProgress(stops, at) : '');
+    }, { className: 'checkpoint-bubble' });
     marker.addTo(state.markerLayer);
   });
 }

@@ -102,5 +102,29 @@
   ],
   "movedM": 8,
   "wayId": 659293976
+ },
+ "rb_shibaura": {
+  "snapped": [
+   35.6378894,
+   139.7590644
+  ],
+  "movedM": 5,
+  "wayId": 319209548
+ },
+ "rb_south_mid": {
+  "snapped": [
+   35.6347046,
+   139.7693171
+  ],
+  "movedM": 1,
+  "wayId": 508040811
+ },
+ "rb_south_end": {
+  "snapped": [
+   35.6360121,
+   139.7749136
+  ],
+  "movedM": 0,
+  "wayId": 159191282
  }
 }
