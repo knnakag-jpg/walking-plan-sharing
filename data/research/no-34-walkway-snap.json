@@ -46,5 +46,109 @@
   ],
   "movedM": 1,
   "wayId": 199152193
+ },
+ "southern_terrace": {
+  "snapped": [
+   35.6873318,
+   139.7003644
+  ],
+  "movedM": 10,
+  "wayId": 157165825
+ },
+ "tocho": {
+  "snapped": [
+   35.6900694,
+   139.6915747
+  ],
+  "movedM": 18,
+  "wayId": 583899279
+ },
+ "chuo_park": {
+  "snapped": [
+   35.6890844,
+   139.6893399
+  ],
+  "movedM": 7,
+  "wayId": 54044194
+ },
+ "juniso": {
+  "snapped": [
+   35.6902704,
+   139.688285
+  ],
+  "movedM": 5,
+  "wayId": 95937725
+ },
+ "tochomae": {
+  "snapped": [
+   35.6905895,
+   139.6927521
+  ],
+  "movedM": 6,
+  "wayId": 662688298
+ },
+ "nishishinjuku_st": {
+  "snapped": [
+   35.694418,
+   139.6928014
+  ],
+  "movedM": 3,
+  "wayId": 684171127
+ },
+ "higashinakano": {
+  "snapped": [
+   35.7074569,
+   139.6832204
+  ],
+  "movedM": 12,
+  "wayId": 64884545
+ },
+ "ochiai": {
+  "snapped": [
+   35.7106449,
+   139.6859071
+  ],
+  "movedM": 2,
+  "wayId": 27089228
+ },
+ "seseragi": {
+  "snapped": [
+   35.7146596,
+   139.6943453
+  ],
+  "movedM": 4,
+  "wayId": 470868357
+ },
+ "shimoochiai": {
+  "snapped": [
+   35.7158126,
+   139.6953883
+  ],
+  "movedM": 7,
+  "wayId": 882638674
+ },
+ "omokagebashi": {
+  "snapped": [
+   35.7129345,
+   139.714241
+  ],
+  "movedM": 1,
+  "wayId": 101969189
+ },
+ "kansenen": {
+  "snapped": [
+   35.7116978,
+   139.7160444
+  ],
+  "movedM": 4,
+  "wayId": 1452794464
+ },
+ "waseda": {
+  "snapped": [
+   35.7057823,
+   139.7210146
+  ],
+  "movedM": 16,
+  "wayId": 389635747
  }
 }

@@ -1,17 +1,21 @@
 {
-  "calculatedAt": "2026-11-15T21:27:21.659Z",
+  "calculatedAt": "2026-11-19T13:10:53.223Z",
   "engine": "valhalla-pedestrian",
   "variants": {
     "standard": {
       "label": "standard",
-      "distanceM": 1600,
-      "engineDistanceM": 1600,
-      "repeatedGeometryM": 259,
-      "repeatedGeometryPct": 16.2,
+      "distanceM": 4795,
+      "engineDistanceM": 4793,
+      "repeatedGeometryM": 953,
+      "repeatedGeometryPct": 19.9,
       "legKm": [
-        0.43,
+        0.63,
+        1.04,
         0.97,
-        0.2
+        0.17,
+        0.35,
+        1.09,
+        0.56
       ],
       "geometryUrl": "data/routes/no-20-standard.geojson",
       "stops": [
@@ -26,13 +30,23 @@
           "offsetM": 0
         },
         {
+          "id": "futako_park",
+          "label": "二子玉川公園",
+          "coord": [
+            35.6084038,
+            139.6316674
+          ],
+          "source": "OSM way 233044925 二子玉川公園 park",
+          "offsetM": 0
+        },
+        {
           "id": "hyogojima",
           "label": "兵庫島公園",
           "coord": [
             35.6117733,
             139.6241269
           ],
-          "source": "OSM information 兵庫島公園案内図",
+          "source": "OSM way 1128004532 兵庫島公園 park",
           "offsetM": 0
         },
         {
@@ -46,6 +60,16 @@
           "offsetM": 0
         },
         {
+          "id": "futako_jinja",
+          "label": "二子神社",
+          "coord": [
+            35.6087794,
+            139.621676
+          ],
+          "source": "OSM way 310920949 二子神社（岡本かの子文学碑）",
+          "offsetM": 0
+        },
+        {
           "id": "futako_shinchi",
           "label": "二子新地駅",
           "coord": [
@@ -53,6 +77,26 @@
             139.6225383
           ],
           "source": "OSM station 二子新地",
+          "offsetM": 0
+        },
+        {
+          "id": "oyama_kaido",
+          "label": "大山街道ふるさと館",
+          "coord": [
+            35.6032494,
+            139.6128575
+          ],
+          "source": "OSM node 3379278628 大山街道ふるさと館 museum",
+          "offsetM": 0
+        },
+        {
+          "id": "musashi_mizonokuchi",
+          "label": "武蔵溝ノ口駅（溝の口駅）",
+          "coord": [
+            35.5998743,
+            139.6105353
+          ],
+          "source": "OSM node 266084776 溝の口 station; 南武線は武蔵溝ノ口駅",
           "offsetM": 0
         }
       ]

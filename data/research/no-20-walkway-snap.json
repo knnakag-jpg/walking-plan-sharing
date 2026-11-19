@@ -46,5 +46,29 @@
   ],
   "movedM": 11,
   "wayId": 759442201
+ },
+ "futako_jinja": {
+  "snapped": [
+   35.6087794,
+   139.621676
+  ],
+  "movedM": 20,
+  "wayId": 878610522
+ },
+ "oyama_kaido": {
+  "snapped": [
+   35.6032494,
+   139.6128575
+  ],
+  "movedM": 14,
+  "wayId": 27885908
+ },
+ "musashi_mizonokuchi": {
+  "snapped": [
+   35.5998743,
+   139.6105353
+  ],
+  "movedM": 7,
+  "wayId": 1254248999
  }
 }

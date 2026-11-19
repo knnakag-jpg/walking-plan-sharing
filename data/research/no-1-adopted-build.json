@@ -1,0 +1,98 @@
+{
+  "generatedAt": "2026-11-19T13:11:03.292Z",
+  "engine": "valhalla-pedestrian",
+  "method": "Valhalla pedestrian",
+  "results": [
+    {
+      "variant": "standard",
+      "distanceM": 3968,
+      "engineDistanceM": 3971,
+      "repeatedGeometryM": 259,
+      "repeatedGeometryPct": 6.5,
+      "geometryUrl": "data/routes/no-1-standard.geojson",
+      "waypoints": [
+        {
+          "id": "tokyo_marunouchi",
+          "label": "東京駅（丸の内中央口）",
+          "coord": [
+            35.6815023,
+            139.7646024
+          ],
+          "source": "OSM node 1588249065 東京駅中央口"
+        },
+        {
+          "id": "wadakura",
+          "label": "和田倉噴水公園",
+          "coord": [
+            35.6833717,
+            139.7612987
+          ],
+          "source": "OSM way 576315885 和田倉噴水公園 park"
+        },
+        {
+          "id": "otemon",
+          "label": "大手門",
+          "coord": [
+            35.6860559,
+            139.7601925
+          ],
+          "source": "OSM node city_gate 大手門"
+        },
+        {
+          "id": "honmaru",
+          "label": "本丸大芝生",
+          "coord": [
+            35.6866338,
+            139.7556735
+          ],
+          "source": "OSM relation 本丸大芝生"
+        },
+        {
+          "id": "tenshudai",
+          "label": "天守台",
+          "coord": [
+            35.6882734,
+            139.754397
+          ],
+          "source": "OSM node 天守台 ruins"
+        },
+        {
+          "id": "kitanogibashi",
+          "label": "北桔橋門",
+          "coord": [
+            35.6888641,
+            139.7540372
+          ],
+          "source": "OSM node 北桔橋門 city_gate"
+        },
+        {
+          "id": "kagakukan",
+          "label": "科学技術館",
+          "coord": [
+            35.6913004,
+            139.7526659
+          ],
+          "source": "OSM node 科学技術館 museum"
+        },
+        {
+          "id": "budokan",
+          "label": "日本武道館",
+          "coord": [
+            35.6937941,
+            139.7500431
+          ],
+          "source": "OSM node 日本武道館 sports_centre"
+        },
+        {
+          "id": "kudanshita",
+          "label": "九段下駅",
+          "coord": [
+            35.6953916,
+            139.7513489
+          ],
+          "source": "OSM node 420129860 九段下"
+        }
+      ]
+    }
+  ]
+}

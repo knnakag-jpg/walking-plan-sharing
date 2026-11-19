@@ -1,21 +1,51 @@
 {
-  "calculatedAt": "2026-11-15T13:44:26.526Z",
+  "calculatedAt": "2026-11-19T13:10:43.605Z",
   "engine": "valhalla-pedestrian",
   "variants": {
     "standard": {
       "label": "standard",
-      "distanceM": 8475,
-      "engineDistanceM": 8485,
-      "repeatedGeometryM": 1983,
-      "repeatedGeometryPct": 23.4,
+      "distanceM": 4109,
+      "engineDistanceM": 4115,
+      "repeatedGeometryM": 400,
+      "repeatedGeometryPct": 9.7,
       "legKm": [
-        1.4,
+        0.36,
         0.29,
-        2.54,
-        4.25
+        1.12,
+        2.35
       ],
       "geometryUrl": "data/routes/no-4-standard.geojson",
       "stops": [
+        {
+          "id": "tenbodai_oka",
+          "label": "展望の丘（武蔵野の森公園）",
+          "coord": [
+            35.6777335,
+            139.526789
+          ],
+          "source": "OSM node 展望の丘 viewpoint（武蔵野の森公園の北地区。滑走路を見下ろす）",
+          "offsetM": 0
+        },
+        {
+          "id": "hida_kyubo",
+          "label": "大沢1号掩体壕",
+          "coord": [
+            35.6765319,
+            139.5283657
+          ],
+          "source": "OSM way 342758957 大沢1号掩体壕 attraction",
+          "offsetM": 0
+        },
+        {
+          "id": "hida_kyubo2",
+          "label": "大沢2号掩体壕",
+          "coord": [
+            35.6777005,
+            139.5275297
+          ],
+          "source": "OSM way 342759365 大沢2号掩体壕 attraction",
+          "offsetM": 0
+        },
         {
           "id": "tama_st",
           "label": "多磨駅",
@@ -27,43 +57,13 @@
           "offsetM": 2
         },
         {
-          "id": "hida_kyubo",
-          "label": "大沢1号掩体壕",
+          "id": "tobita_st",
+          "label": "飛田給駅",
           "coord": [
-            35.6765319,
-            139.5283657
+            35.6600512,
+            139.5235626
           ],
-          "source": "OSM node 大沢1号掩体壕 attraction",
-          "offsetM": 0
-        },
-        {
-          "id": "hida_kyubo2",
-          "label": "大沢2号掩体壕",
-          "coord": [
-            35.6777005,
-            139.5275297
-          ],
-          "source": "OSM node 大沢2号掩体壕 attraction",
-          "offsetM": 0
-        },
-        {
-          "id": "musashino_park",
-          "label": "武蔵野の森公園",
-          "coord": [
-            35.671524,
-            139.5276743
-          ],
-          "source": "OSM way 武蔵野の森公園 park",
-          "offsetM": 0
-        },
-        {
-          "id": "ajinomoto",
-          "label": "味の素スタジアム前（交差点）",
-          "coord": [
-            35.66363,
-            139.5244
-          ],
-          "source": "OSM node 9003529380 traffic_signals 味の素スタジアム前; スタジアムの中心は経路から約128m離れているため交差点を経由点にした",
+          "source": "OSM node 281417962 飛田給 station",
           "offsetM": 0
         }
       ]

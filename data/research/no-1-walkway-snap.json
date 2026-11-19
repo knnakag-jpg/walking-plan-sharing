@@ -102,5 +102,21 @@
   ],
   "movedM": 2,
   "wayId": 572510209
+ },
+ "tokyo_marunouchi": {
+  "snapped": [
+   35.6815023,
+   139.7646024
+  ],
+  "movedM": 0,
+  "wayId": 145405919
+ },
+ "kudanshita": {
+  "snapped": [
+   35.6953916,
+   139.7513489
+  ],
+  "movedM": 0,
+  "wayId": 92206642
  }
 }

@@ -1,13 +1,15 @@
 {
-  "generatedAt": "2026-11-15T22:08:45.895Z",
-  "method": "Valhalla pedestrian; exact geometry edge repeat is only a screening clue",
+  "generatedAt": "2026-11-19T13:11:03.297Z",
+  "engine": "valhalla-pedestrian",
+  "method": "Valhalla pedestrian",
   "results": [
     {
       "variant": "standard",
-      "distanceM": 2202,
-      "engineDistanceM": 2198,
-      "repeatedGeometryM": 179,
-      "repeatedGeometryPct": 8.1,
+      "distanceM": 6732,
+      "engineDistanceM": 6736,
+      "repeatedGeometryM": 204,
+      "repeatedGeometryPct": 3,
+      "geometryUrl": "data/routes/no-35-standard.geojson",
       "waypoints": [
         {
           "id": "ikebukuro",
@@ -19,59 +21,78 @@
           "source": "OSM station 池袋"
         },
         {
-          "id": "ikebukuro_east",
-          "label": "池袋駅東口",
+          "id": "ikebukuro_ohashi",
+          "label": "池袋大橋",
           "coord": [
-            35.7299522,
-            139.7123601
+            35.7339782,
+            139.7136561
           ],
-          "source": "OSM node 池袋駅東口"
+          "source": "OSM way 77161715 池袋大橋"
         },
         {
-          "id": "sunshine_mae",
-          "label": "サンシャイン前",
+          "id": "honcho_park",
+          "label": "池袋本町公園",
           "coord": [
-            35.7293627,
-            139.716797
+            35.7394428,
+            139.7135197
           ],
-          "source": "OSM node サンシャイン前"
+          "source": "OSM way 184539005 池袋本町公園 park"
         },
         {
-          "id": "sunshine_aquarium",
-          "label": "サンシャイン国際水族館",
+          "id": "hikawa",
+          "label": "池袋氷川神社",
           "coord": [
-            35.7294473,
-            139.7203118
+            35.7435971,
+            139.7112394
           ],
-          "source": "OSM aquarium サンシャイン国際水族館"
+          "source": "OSM node 2360061576 氷川神社 place_of_worship"
         },
         {
-          "id": "hi_ikebukuro_park",
-          "label": "東池袋中央公園",
+          "id": "shimoitabashi",
+          "label": "下板橋駅",
           "coord": [
-            35.7302539,
-            139.718812
+            35.7451571,
+            139.7152503
           ],
-          "source": "OSM park 東池袋中央公園"
+          "source": "OSM node 7864238181 下板橋 station"
         },
         {
-          "id": "higashi_ikebukuro_st",
+          "id": "kitaikebukuro",
+          "label": "北池袋駅",
+          "coord": [
+            35.7408891,
+            139.7166239
+          ],
+          "source": "OSM node 7863114045 北池袋 station"
+        },
+        {
+          "id": "kamiike_lib",
+          "label": "上池袋図書館",
+          "coord": [
+            35.7386317,
+            139.7171536
+          ],
+          "source": "OSM node 1420798080 豊島区立上池袋図書館"
+        },
+        {
+          "id": "kamiike_east",
+          "label": "上池袋東公園",
+          "coord": [
+            35.7362876,
+            139.7219353
+          ],
+          "source": "OSM way 544868590 上池袋東公園"
+        },
+        {
+          "id": "higashiikebukuro",
           "label": "東池袋駅",
           "coord": [
-            35.726097,
-            139.7189511
+            35.7256741,
+            139.7193639
           ],
-          "source": "OSM platform 東池袋"
+          "source": "OSM node 1926376079 東池袋 station"
         }
-      ],
-      "legDistancesKm": [
-        0.23,
-        0.57,
-        0.46,
-        0.18,
-        0.75
-      ],
-      "geometryUrl": "data/routes/no-35-standard.geojson"
+      ]
     }
   ]
 }

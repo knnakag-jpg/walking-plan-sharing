@@ -46,5 +46,45 @@
   ],
   "movedM": 0,
   "wayId": 1083720946
+ },
+ "akasaka_mitsuke": {
+  "snapped": [
+   35.6763739,
+   139.7375498
+  ],
+  "movedM": 6,
+  "wayId": 893187205
+ },
+ "toyokawa_inari": {
+  "snapped": [
+   35.67693,
+   139.7329687
+  ],
+  "movedM": 48,
+  "wayId": 40969738
+ },
+ "imoaraizaka": {
+  "snapped": [
+   35.6607618,
+   139.7328048
+  ],
+  "movedM": 23,
+  "wayId": 1496142808
+ },
+ "azabujuban": {
+  "snapped": [
+   35.6565003,
+   139.7361786
+  ],
+  "movedM": 2,
+  "wayId": 693371487
+ },
+ "akabanebashi": {
+  "snapped": [
+   35.655099,
+   139.7438224
+  ],
+  "movedM": 16,
+  "wayId": 850121371
  }
 }

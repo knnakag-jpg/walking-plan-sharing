@@ -90,5 +90,53 @@
   "movedM": 28,
   "wayId": 474600366,
   "highway": "footway"
+ },
+ "atago": {
+  "snapped": [
+   35.6646441,
+   139.7494577
+  ],
+  "movedM": 0,
+  "wayId": 150861348
+ },
+ "toranomon": {
+  "snapped": [
+   35.6702654,
+   139.7501926
+  ],
+  "movedM": 15,
+  "wayId": 583384292
+ },
+ "hibiya_park": {
+  "snapped": [
+   35.6737364,
+   139.7560389
+  ],
+  "movedM": 13,
+  "wayId": 556407068
+ },
+ "sakuradamon": {
+  "snapped": [
+   35.6772905,
+   139.7506533
+  ],
+  "movedM": 0,
+  "wayId": 661469200
+ },
+ "kokyo_gaien": {
+  "snapped": [
+   35.6799462,
+   139.7573094
+  ],
+  "movedM": 4,
+  "wayId": 691006207
+ },
+ "nijubashimae": {
+  "snapped": [
+   35.6794319,
+   139.7576795
+  ],
+  "movedM": 0,
+  "wayId": 387312967
  }
 }

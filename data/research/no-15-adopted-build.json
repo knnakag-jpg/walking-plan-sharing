@@ -1,13 +1,15 @@
 {
-  "generatedAt": "2026-11-15T21:09:55.851Z",
-  "method": "Valhalla pedestrian; exact geometry edge repeat is only a screening clue",
+  "generatedAt": "2026-11-19T13:11:03.295Z",
+  "engine": "valhalla-pedestrian",
+  "method": "Valhalla pedestrian",
   "results": [
     {
       "variant": "standard",
-      "distanceM": 2483,
-      "engineDistanceM": 2487,
-      "repeatedGeometryM": 5,
-      "repeatedGeometryPct": 0.2,
+      "distanceM": 5014,
+      "engineDistanceM": 5027,
+      "repeatedGeometryM": 175,
+      "repeatedGeometryPct": 3.5,
+      "geometryUrl": "data/routes/no-15-standard.geojson",
       "waypoints": [
         {
           "id": "tennozu",
@@ -43,7 +45,7 @@
             35.621899,
             139.7413704
           ],
-          "source": "OSM 品川浦（周辺）"
+          "source": "OSM 品川浦"
         },
         {
           "id": "kita_shinagawa_st",
@@ -52,26 +54,45 @@
             35.6223254,
             139.7393885
           ],
-          "source": "OSM way 157576289 北品川駅"
+          "source": "OSM station 北品川"
         },
         {
-          "id": "shinbaba",
-          "label": "新馬場駅",
+          "id": "ebara_jinja",
+          "label": "荏原神社",
           "coord": [
-            35.6177816,
-            139.7412356
+            35.6169814,
+            139.7435067
           ],
-          "source": "OSM 新馬場駅 北口"
+          "source": "OSM way 325692055 荏原神社 place_of_worship"
+        },
+        {
+          "id": "kaizoji",
+          "label": "海蔵寺",
+          "coord": [
+            35.6136883,
+            139.7408177
+          ],
+          "source": "OSM way 617894886 海蔵寺 place_of_worship"
+        },
+        {
+          "id": "honsenji",
+          "label": "品川寺",
+          "coord": [
+            35.60949,
+            139.7438538
+          ],
+          "source": "OSM way 97685855 品川寺 place_of_worship（江戸六地蔵）"
+        },
+        {
+          "id": "samezu_st",
+          "label": "鮫洲駅",
+          "coord": [
+            35.6050759,
+            139.7422245
+          ],
+          "source": "OSM node 2550872520 鮫洲 station"
         }
-      ],
-      "legDistancesKm": [
-        0.5,
-        0.67,
-        0.4,
-        0.35,
-        0.57
-      ],
-      "geometryUrl": "data/routes/no-15-standard.geojson"
+      ]
     }
   ]
 }

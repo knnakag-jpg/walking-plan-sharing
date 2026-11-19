@@ -1,0 +1,62 @@
+{
+  "generatedAt": "2026-11-19T13:11:03.294Z",
+  "engine": "valhalla-pedestrian",
+  "method": "Valhalla pedestrian",
+  "results": [
+    {
+      "variant": "standard",
+      "distanceM": 4109,
+      "engineDistanceM": 4115,
+      "repeatedGeometryM": 400,
+      "repeatedGeometryPct": 9.7,
+      "geometryUrl": "data/routes/no-4-standard.geojson",
+      "waypoints": [
+        {
+          "id": "tenbodai_oka",
+          "label": "展望の丘（武蔵野の森公園）",
+          "coord": [
+            35.6777335,
+            139.526789
+          ],
+          "source": "OSM node 展望の丘 viewpoint（武蔵野の森公園の北地区。滑走路を見下ろす）"
+        },
+        {
+          "id": "hida_kyubo",
+          "label": "大沢1号掩体壕",
+          "coord": [
+            35.6765319,
+            139.5283657
+          ],
+          "source": "OSM way 342758957 大沢1号掩体壕 attraction"
+        },
+        {
+          "id": "hida_kyubo2",
+          "label": "大沢2号掩体壕",
+          "coord": [
+            35.6777005,
+            139.5275297
+          ],
+          "source": "OSM way 342759365 大沢2号掩体壕 attraction"
+        },
+        {
+          "id": "tama_st",
+          "label": "多磨駅",
+          "coord": [
+            35.6765361,
+            139.5169524
+          ],
+          "source": "OSM node 多磨 station"
+        },
+        {
+          "id": "tobita_st",
+          "label": "飛田給駅",
+          "coord": [
+            35.6600512,
+            139.5235626
+          ],
+          "source": "OSM node 281417962 飛田給 station"
+        }
+      ]
+    }
+  ]
+}

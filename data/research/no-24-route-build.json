@@ -1,60 +1,43 @@
 {
-  "calculatedAt": "2026-11-15T21:26:18.805Z",
+  "calculatedAt": "2026-11-19T13:10:55.170Z",
   "engine": "valhalla-pedestrian",
   "variants": {
     "standard": {
       "label": "standard",
-      "distanceM": 2271,
-      "engineDistanceM": 2280,
-      "repeatedGeometryM": 128,
-      "repeatedGeometryPct": 5.7,
+      "distanceM": 6282,
+      "engineDistanceM": 6293,
+      "repeatedGeometryM": 778,
+      "repeatedGeometryPct": 12.4,
       "legKm": [
-        0.62,
-        0.12,
+        0.6,
+        1.63,
+        0.7,
         0.26,
-        0.76,
-        0.52
+        0.12,
+        0.92,
+        1.11,
+        0.96
       ],
       "geometryUrl": "data/routes/no-24-standard.geojson",
       "stops": [
         {
-          "id": "roppongi",
-          "label": "六本木駅",
+          "id": "akasaka_mitsuke",
+          "label": "赤坂見附駅",
           "coord": [
-            35.663315,
-            139.7327813
+            35.6763739,
+            139.7375498
           ],
-          "source": "OSM subway_entrance 六本木",
+          "source": "OSM node 6179550652 赤坂見附 station",
           "offsetM": 0
         },
         {
-          "id": "suntory",
-          "label": "サントリー美術館",
+          "id": "toyokawa_inari",
+          "label": "豊川稲荷東京別院",
           "coord": [
-            35.6666887,
-            139.7303007
+            35.67693,
+            139.7329687
           ],
-          "source": "OSM museum サントリー美術館",
-          "offsetM": 0
-        },
-        {
-          "id": "dsign",
-          "label": "21_21 DESIGN SIGHT",
-          "coord": [
-            35.6673905,
-            139.7304686
-          ],
-          "source": "OSM museum 21_21 Design Sight",
-          "offsetM": 0
-        },
-        {
-          "id": "hinokicho",
-          "label": "檜町公園",
-          "coord": [
-            35.6668572,
-            139.7326161
-          ],
-          "source": "OSM park 檜町公園",
+          "source": "OSM way 145127482 豊川稲荷東京別院 place_of_worship",
           "offsetM": 0
         },
         {
@@ -68,14 +51,64 @@
           "offsetM": 0
         },
         {
-          "id": "nogizaka",
-          "label": "乃木坂駅",
+          "id": "hinokicho",
+          "label": "檜町公園",
           "coord": [
-            35.665617,
-            139.7249
+            35.6668572,
+            139.7326161
           ],
-          "source": "OSM subway_entrance 乃木坂駅",
-          "offsetM": 5
+          "source": "OSM park 檜町公園",
+          "offsetM": 0
+        },
+        {
+          "id": "dsign",
+          "label": "21_21 DESIGN SIGHT",
+          "coord": [
+            35.6673905,
+            139.7304686
+          ],
+          "source": "OSM museum 21_21 Design Sight",
+          "offsetM": 0
+        },
+        {
+          "id": "suntory",
+          "label": "サントリー美術館",
+          "coord": [
+            35.6666887,
+            139.7303007
+          ],
+          "source": "OSM museum サントリー美術館（東京ミッドタウン）",
+          "offsetM": 0
+        },
+        {
+          "id": "imoaraizaka",
+          "label": "芋洗坂",
+          "coord": [
+            35.6607618,
+            139.7328048
+          ],
+          "source": "OSM way 257224643 芋洗坂",
+          "offsetM": 0
+        },
+        {
+          "id": "azabujuban",
+          "label": "麻布十番駅",
+          "coord": [
+            35.6565003,
+            139.7361786
+          ],
+          "source": "OSM node 6511944763 麻布十番 station（麻布十番商店街）",
+          "offsetM": 0
+        },
+        {
+          "id": "akabanebashi",
+          "label": "赤羽橋駅",
+          "coord": [
+            35.655099,
+            139.7438224
+          ],
+          "source": "OSM node 7777248485 赤羽橋 station",
+          "offsetM": 3
         }
       ]
     }

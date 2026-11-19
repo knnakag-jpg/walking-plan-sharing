@@ -1,18 +1,21 @@
 {
-  "calculatedAt": "2026-11-15T21:27:18.946Z",
+  "calculatedAt": "2026-11-19T13:10:51.155Z",
   "engine": "valhalla-pedestrian",
   "variants": {
     "standard": {
       "label": "standard",
-      "distanceM": 3212,
-      "engineDistanceM": 3216,
-      "repeatedGeometryM": 272,
-      "repeatedGeometryPct": 8.5,
+      "distanceM": 5963,
+      "engineDistanceM": 5966,
+      "repeatedGeometryM": 471,
+      "repeatedGeometryPct": 7.9,
       "legKm": [
         0.72,
         0.64,
         1.12,
-        0.74
+        0.74,
+        1.06,
+        0.78,
+        0.92
       ],
       "geometryUrl": "data/routes/no-19-standard.geojson",
       "stops": [
@@ -63,7 +66,37 @@
             35.6727267,
             139.724119
           ],
-          "source": "OSM stop 青山一丁目",
+          "source": "OSM node 6284888995 青山一丁目 station",
+          "offsetM": 0
+        },
+        {
+          "id": "aoyama_reien",
+          "label": "青山霊園",
+          "coord": [
+            35.6657873,
+            139.7214215
+          ],
+          "source": "OSM way 37721897 青山霊園（園内の通路を抜ける）",
+          "offsetM": 0
+        },
+        {
+          "id": "nact",
+          "label": "国立新美術館",
+          "coord": [
+            35.6646568,
+            139.7266531
+          ],
+          "source": "OSM way 103425086 国立新美術館 museum",
+          "offsetM": 0
+        },
+        {
+          "id": "roppongi",
+          "label": "六本木駅",
+          "coord": [
+            35.662934,
+            139.7313883
+          ],
+          "source": "OSM node 7786715975 六本木 station",
           "offsetM": 0
         }
       ]

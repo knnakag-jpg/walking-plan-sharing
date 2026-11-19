@@ -1,19 +1,21 @@
 {
-  "calculatedAt": "2026-11-15T22:08:11.927Z",
+  "calculatedAt": "2026-11-19T13:10:57.254Z",
   "engine": "valhalla-pedestrian",
   "variants": {
     "standard": {
       "label": "standard",
-      "distanceM": 2612,
-      "engineDistanceM": 2618,
-      "repeatedGeometryM": 92,
-      "repeatedGeometryPct": 3.5,
+      "distanceM": 3951,
+      "engineDistanceM": 3950,
+      "repeatedGeometryM": 701,
+      "repeatedGeometryPct": 17.8,
       "legKm": [
-        0.68,
-        0.3,
+        0.5,
+        1.3,
+        0.29,
+        0.22,
         0.53,
-        0.75,
-        0.36
+        0.81,
+        0.3
       ],
       "geometryUrl": "data/routes/no-34-standard.geojson",
       "stops": [
@@ -28,6 +30,56 @@
           "offsetM": 11
         },
         {
+          "id": "southern_terrace",
+          "label": "新宿サザンテラス",
+          "coord": [
+            35.6873318,
+            139.7003644
+          ],
+          "source": "OSM way 157165825 新宿サザンテラス（Suicaのペンギン広場）",
+          "offsetM": 5
+        },
+        {
+          "id": "tocho",
+          "label": "東京都庁（展望室）",
+          "coord": [
+            35.6900694,
+            139.6915747
+          ],
+          "source": "OSM node 2388566136 東京都庁展望室 北 viewpoint",
+          "offsetM": 0
+        },
+        {
+          "id": "chuo_park",
+          "label": "新宿中央公園",
+          "coord": [
+            35.6890844,
+            139.6893399
+          ],
+          "source": "OSM relation 13272644 新宿中央公園 park",
+          "offsetM": 0
+        },
+        {
+          "id": "juniso",
+          "label": "十二社熊野神社",
+          "coord": [
+            35.6902704,
+            139.688285
+          ],
+          "source": "OSM way 95937718 十二社熊野神社 place_of_worship",
+          "offsetM": 0
+        },
+        {
+          "id": "tochomae",
+          "label": "都庁前駅",
+          "coord": [
+            35.6905895,
+            139.6927521
+          ],
+          "source": "OSM node 6203591949 都庁前 station",
+          "offsetM": 0
+        },
+        {
           "id": "shinjuku_eye",
           "label": "新宿の目",
           "coord": [
@@ -39,42 +91,111 @@
         },
         {
           "id": "shinjuku_nishi",
-          "label": "新宿西口ロータリー入口",
+          "label": "新宿西口",
           "coord": [
             35.6922211,
             139.6983867
           ],
-          "source": "OSM node 新宿西口ロータリー入口",
+          "source": "OSM node 2389826102 新宿西口 station",
+          "offsetM": 0
+        }
+      ]
+    },
+    "extended": {
+      "label": "extended",
+      "distanceM": 7205,
+      "engineDistanceM": 7208,
+      "repeatedGeometryM": 98,
+      "repeatedGeometryPct": 1.4,
+      "legKm": [
+        2.26,
+        0.48,
+        1.09,
+        0.24,
+        1.94,
+        0.27,
+        0.93
+      ],
+      "geometryUrl": "data/routes/no-34-extended.geojson",
+      "stops": [
+        {
+          "id": "nishishinjuku_st",
+          "label": "西新宿駅",
+          "coord": [
+            35.694418,
+            139.6928014
+          ],
+          "source": "OSM node 7786715968 西新宿 station",
           "offsetM": 0
         },
         {
-          "id": "nishi_shinjuku1",
-          "label": "西新宿一丁目",
+          "id": "higashinakano",
+          "label": "東中野駅",
           "coord": [
-            35.688652,
-            139.6989409
+            35.7074569,
+            139.6832204
           ],
-          "source": "OSM node 西新宿一丁目",
-          "offsetM": 1
-        },
-        {
-          "id": "shinjuku_east",
-          "label": "新宿駅東口",
-          "coord": [
-            35.6922507,
-            139.7017709
-          ],
-          "source": "OSM node 新宿駅東口",
+          "source": "OSM node 7791605892 東中野 station（神田川沿い）",
           "offsetM": 0
         },
         {
-          "id": "shinjuku3",
-          "label": "新宿三丁目",
+          "id": "ochiai",
+          "label": "落合駅",
           "coord": [
-            35.6908841,
-            139.7048359
+            35.7106449,
+            139.6859071
           ],
-          "source": "OSM node 新宿三丁目",
+          "source": "OSM node 1950328487 落合 station",
+          "offsetM": 0
+        },
+        {
+          "id": "seseragi",
+          "label": "せせらぎの里公苑",
+          "coord": [
+            35.7146596,
+            139.6943453
+          ],
+          "source": "OSM way 150776263 せせらぎの里公苑 park",
+          "offsetM": 0
+        },
+        {
+          "id": "shimoochiai",
+          "label": "下落合駅",
+          "coord": [
+            35.7158126,
+            139.6953883
+          ],
+          "source": "OSM node 7430368356 下落合 station",
+          "offsetM": 0
+        },
+        {
+          "id": "omokagebashi",
+          "label": "面影橋",
+          "coord": [
+            35.7129345,
+            139.714241
+          ],
+          "source": "OSM node 1093725456 面影橋",
+          "offsetM": 0
+        },
+        {
+          "id": "kansenen",
+          "label": "甘泉園公園",
+          "coord": [
+            35.7116978,
+            139.7160444
+          ],
+          "source": "OSM way 94093773 甘泉園公園 park",
+          "offsetM": 0
+        },
+        {
+          "id": "waseda",
+          "label": "早稲田駅",
+          "coord": [
+            35.7057823,
+            139.7210146
+          ],
+          "source": "OSM node 5408225235 早稲田 station",
           "offsetM": 0
         }
       ]

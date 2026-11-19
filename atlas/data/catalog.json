@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "source": "legacy import; route quality not re-reviewed",
-  "generatedAt": "2026-11-19T11:53:56.099Z",
+  "generatedAt": "2026-11-19T13:16:11.928Z",
   "courses": [
     {
       "id": "No.1",
@@ -11,7 +11,7 @@
       "seriesName": "本編 A～Z（No.1～26）",
       "legacyAnchor": "course-1",
       "legacyUrl": "../index.html#course-1",
-      "summary": "大手門から皇居東御苑の本丸・天守台を歩き、北桔橋門から北の丸公園の科学技術館・日本武道館前を通って竹橋駅へ。旧案の平川門への戻りと日本橋方面への往復延伸は採らない。",
+      "summary": "東京駅の丸の内中央口から和田倉噴水公園を抜けて大手門へ上がり、皇居東御苑の本丸・天守台を歩き、北桔橋門から北の丸公園の科学技術館・日本武道館前を通って九段下駅へ抜ける。旧案の竹橋駅への折り返しは取らない。",
       "routeText": "経路ノード： 大手門 → 三の丸尚蔵館 → 二の丸庭園（平坦） → 本丸大芝生（緩い登り） → 天守台下（登らず外周） → 北桔橋門 → 平川門 → 北の丸公園（科学技術館・日本武道館前・中池周辺、平坦に周遊） → 竹橋駅（新終着。丸の内・東京駅方面へ続ける場合は選択可） → 日本橋本石町一丁目方面へ実在の歩道で延伸（往復約2.8km） → ゴール",
       "tags": [
         "御苑",
@@ -140,8 +140,9 @@
       "openQuestions": [
         "三の丸尚蔵館・二の丸庭園を回る順路（天守台へ戻らずに回れるか）",
         "皇居東御苑の開園日と開園時間（宮内庁公式）",
-        "和田倉噴水公園から東京駅への地下通路",
-        "北桔橋門から北の丸公園への通り抜け"
+        "和田倉噴水公園から大手門までの歩道と信号",
+        "東京駅丸の内中央口から和田倉噴水公園までの経路",
+        "北桔橋門から九段下駅までの歩道"
       ],
       "routeOptions": [
         {
@@ -150,15 +151,37 @@
           "strategy": "scenic",
           "geometryUrl": "data/routes/no-1-standard.geojson",
           "verificationStatus": "routed",
-          "distanceM": 5741,
-          "engineDistanceM": 5748,
-          "repeatedGeometryPct": 9.8,
-          "routeReason": "大手門から本丸大芝生、天守台、北桔橋門を経て北の丸公園へ入り、科学技術館と日本武道館の前を通り、平川門の外側から和田倉噴水公園を回って竹橋駅へ下る。計算上5.74km。三の丸尚蔵館と二の丸庭園は御苑の南東寄りに並び、天守台へ向かうと南へ戻ることになるため含めていない（入口の位置は地図レビュー待ち）。 B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
+          "distanceM": 3968,
+          "engineDistanceM": 3971,
+          "repeatedGeometryPct": 6.5,
+          "routeReason": "東京駅（丸の内中央口）から和田倉噴水公園を経て大手門へ入り、本丸大芝生・天守台・北桔橋門を回って北の丸公園へ出、科学技術館と日本武道館の前を通り、靖国通り沿いに九段下駅へ抜ける。計算上3.97km。旧案は大手門から始めて和田倉噴水公園へ下り、竹橋駅へ戻る形で、竹橋への往復が不要になるよう東京駅を起点に組み替えた。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
           "distanceException": null,
-          "retraceException": "本丸大芝生と天守台を結ぶ園路で約117mと約47m、北の丸公園の入口（北桔橋門）付近で約54m、和田倉噴水公園の園路で約345mが重なる（計約562m）。園内の行き止まりの園路と、和田倉公園の池の周回路を戻る形で、地図で未確認。距離合わせの往復ではない。",
+          "retraceException": "御苑の入口（大手門）から本丸へ入る園路と、北桔橋門から北の丸公園へ抜ける園路で短い重なりが計約259m。門は一方通行ではなく、園路の分かれ目へ戻る形で、距離合わせの往復ではない。地図で未確認。",
           "waypoints": [
             {
               "index": 0,
+              "id": "tokyo_marunouchi",
+              "label": "東京駅（丸の内中央口）",
+              "description": null,
+              "point": [
+                139.7646024,
+                35.6815023
+              ],
+              "source": "OSM node 1588249065 東京駅中央口"
+            },
+            {
+              "index": 1,
+              "id": "wadakura",
+              "label": "和田倉噴水公園",
+              "description": null,
+              "point": [
+                139.7612987,
+                35.6833717
+              ],
+              "source": "OSM way 576315885 和田倉噴水公園 park"
+            },
+            {
+              "index": 2,
               "id": "otemon",
               "label": "大手門",
               "description": null,
@@ -169,7 +192,7 @@
               "source": "OSM node city_gate 大手門"
             },
             {
-              "index": 1,
+              "index": 3,
               "id": "honmaru",
               "label": "本丸大芝生",
               "description": null,
@@ -180,7 +203,7 @@
               "source": "OSM relation 本丸大芝生"
             },
             {
-              "index": 2,
+              "index": 4,
               "id": "tenshudai",
               "label": "天守台",
               "description": null,
@@ -191,7 +214,7 @@
               "source": "OSM node 天守台 ruins"
             },
             {
-              "index": 3,
+              "index": 5,
               "id": "kitanogibashi",
               "label": "北桔橋門",
               "description": null,
@@ -202,7 +225,7 @@
               "source": "OSM node 北桔橋門 city_gate"
             },
             {
-              "index": 4,
+              "index": 6,
               "id": "kagakukan",
               "label": "科学技術館",
               "description": null,
@@ -213,7 +236,7 @@
               "source": "OSM node 科学技術館 museum"
             },
             {
-              "index": 5,
+              "index": 7,
               "id": "budokan",
               "label": "日本武道館",
               "description": null,
@@ -224,50 +247,28 @@
               "source": "OSM node 日本武道館 sports_centre"
             },
             {
-              "index": 6,
-              "id": "hirakawa_signal",
-              "label": "平川門（交差点）",
-              "description": null,
-              "point": [
-                139.7588238,
-                35.6902816
-              ],
-              "source": "OSM node 243828110 traffic_signals 平川門; 御苑の平川門の外側"
-            },
-            {
-              "index": 7,
-              "id": "wadakura",
-              "label": "和田倉噴水公園",
-              "description": null,
-              "point": [
-                139.7612987,
-                35.6833717
-              ],
-              "source": "OSM node 和田倉噴水公園 park"
-            },
-            {
               "index": 8,
-              "id": "takebashi",
-              "label": "竹橋駅",
+              "id": "kudanshita",
+              "label": "九段下駅",
               "description": null,
               "point": [
-                139.7586934,
-                35.6902074
+                139.7513489,
+                35.6953916
               ],
-              "source": "OSM node 竹橋 station"
+              "source": "OSM node 420129860 九段下"
             }
           ],
           "engine": "valhalla-pedestrian",
-          "built": "2026-11-15T13:32:18.084Z",
+          "built": "2026-11-19T13:10:40.610Z",
           "elevation": {
             "source": "gsi_dem5a",
             "status": "partial_dem_filled",
             "url": "data/elevation/no-1-standard.json",
-            "totalM": 5741,
-            "climbM": 43.8,
-            "descentM": 43.7,
-            "minM": 2.2,
-            "maxM": 27.4
+            "totalM": 3968,
+            "climbM": 40.7,
+            "descentM": 36.9,
+            "minM": 2.5,
+            "maxM": 27.2
           }
         },
         {
@@ -276,7 +277,7 @@
           "strategy": "indoor_rail",
           "verificationStatus": "researched",
           "distanceM": null,
-          "routeReason": "雨の日は三の丸尚蔵館（館内展示）と和田倉噴水公園の屋根下を中心にする案。屋外は大手町・竹橋の駅と館の間だけにする。館内の連続歩行距離は未計測。",
+          "routeReason": "雨の日は和田倉噴水公園の屋根下と東京駅の地下を中心にし、御苑の見学は雨が弱い時間に短く回る案。館内の連続歩行距離は未計測。",
           "segments": [
             {
               "kind": "walk_outdoor",
@@ -1229,7 +1230,7 @@
       "seriesName": "本編 A～Z（No.1～26）",
       "legacyAnchor": "course-4",
       "legacyUrl": "../index.html#course-4",
-      "summary": "多磨駅から大沢1号掩体壕、2号掩体壕、武蔵野の森公園を通り、調布飛行場ターミナルを経て味の素スタジアムへ下る。往復が多い案で、掩体壕と展望の丘が行き止まりの園路の先にある。",
+      "summary": "武蔵野の森公園の展望の丘から滑走路と掩体壕を見下ろし、大沢1号・2号掩体壕を回って多磨駅へ、味の素スタジアムを経て飛田給駅へ抜ける。旧案の武蔵野の森公園は、公園の中心ではなく滑走路を見下ろす展望の丘を使う。",
       "routeText": "経路ノード： 中央線側の駅（バス乗車） → 武蔵野の森公園 展望の丘 → 大沢2号掩体壕（または1号） → 調布飛行場ターミナル周辺 → 味の素スタジアム外周 → 飛田給駅 または 多磨駅 → 飛田給二丁目方面へ実在の歩道で延伸（往復約1.1km） → ゴール",
       "tags": [
         "飛行場",
@@ -1328,10 +1329,10 @@
         }
       ],
       "openQuestions": [
-        "掩体壕から展望の丘へ戻らずに行ける園路があるか",
-        "調布飛行場のターミナルと滑走路沿いの歩道の通行条件",
-        "味の素スタジアムの外周通路の開放状況",
-        "旧案の「中央線側の駅（バス乗車）」の始点をどこにするか"
+        "展望の丘から掩体壕への畑の中の道",
+        "調布飛行場の滑走路周辺の立入規制（掩体壕の入口）",
+        "大沢1号・2号掩体壕の公開状況",
+        "味の素スタジアムのイベント時の混雑"
       ],
       "routeOptions": [
         {
@@ -1340,23 +1341,23 @@
           "strategy": "scenic",
           "geometryUrl": "data/routes/no-4-standard.geojson",
           "verificationStatus": "routed",
-          "distanceM": 8475,
-          "engineDistanceM": 8485,
-          "repeatedGeometryPct": 23.4,
-          "routeReason": "多磨駅から大沢1号掩体壕、大沢2号掩体壕、武蔵野の森公園、調布飛行場ターミナルを経て味の素スタジアムへ。計算上7.99km。掩体壕が行き止まりの園路の先にあり、展望の丘を足すと往復がさらに増えるため外した。 B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
-          "distanceException": "7.99km。7〜8kmの範囲に収まった。",
-          "retraceException": "掩体壕への園路で約331m、武蔵野の森公園から調布飛行場を回る区間で約1,652m（計約1,983m）。行き止まりの園路と、空港の周回・ターミナルへの出入りによる往復と推定。地図で未確認。距離合わせの往復ではないが、再検討の余地が大きい。",
+          "distanceM": 4109,
+          "engineDistanceM": 4115,
+          "repeatedGeometryPct": 9.7,
+          "routeReason": "武蔵野の森公園の北地区にある展望の丘（滑走路を見下ろせる）から畑の中の道を下り、大沢1号・2号掩体壕を回って多磨駅へ、味の素スタジアム脇から飛田給駅へ抜ける。計算上4.11km。旧案の「武蔵野の森公園」は公園の中心で、調布飛行場の滑走路の上に来ていたため、公園の北寄りの展望の丘に直した。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
+          "distanceException": "4.11km。実在の名称付き地点だけで組んだため5〜6kmに届かない。周辺の追加できる地点は使い切り、距離合わせの延伸は作らない。",
+          "retraceException": null,
           "waypoints": [
             {
               "index": 0,
-              "id": "tama_st",
-              "label": "多磨駅",
+              "id": "tenbodai_oka",
+              "label": "展望の丘（武蔵野の森公園）",
               "description": null,
               "point": [
-                139.5169524,
-                35.6765361
+                139.526789,
+                35.6777335
               ],
-              "source": "OSM node 多磨 station"
+              "source": "OSM node 展望の丘 viewpoint（武蔵野の森公園の北地区。滑走路を見下ろす）"
             },
             {
               "index": 1,
@@ -1367,7 +1368,7 @@
                 139.5283657,
                 35.6765319
               ],
-              "source": "OSM node 大沢1号掩体壕 attraction"
+              "source": "OSM way 342758957 大沢1号掩体壕 attraction"
             },
             {
               "index": 2,
@@ -1378,41 +1379,41 @@
                 139.5275297,
                 35.6777005
               ],
-              "source": "OSM node 大沢2号掩体壕 attraction"
+              "source": "OSM way 342759365 大沢2号掩体壕 attraction"
             },
             {
               "index": 3,
-              "id": "musashino_park",
-              "label": "武蔵野の森公園",
+              "id": "tama_st",
+              "label": "多磨駅",
               "description": null,
               "point": [
-                139.5276743,
-                35.671524
+                139.5169524,
+                35.6765361
               ],
-              "source": "OSM way 武蔵野の森公園 park"
+              "source": "OSM node 多磨 station"
             },
             {
               "index": 4,
-              "id": "ajinomoto",
-              "label": "味の素スタジアム前（交差点）",
+              "id": "tobita_st",
+              "label": "飛田給駅",
               "description": null,
               "point": [
-                139.5244,
-                35.66363
+                139.5235626,
+                35.6600512
               ],
-              "source": "OSM node 9003529380 traffic_signals 味の素スタジアム前; スタジアムの中心は経路から約128m離れているため交差点を経由点にした"
+              "source": "OSM node 281417962 飛田給 station"
             }
           ],
           "engine": "valhalla-pedestrian",
-          "built": "2026-11-15T13:44:26.526Z",
+          "built": "2026-11-19T13:10:43.605Z",
           "elevation": {
             "source": "gsi_dem5a",
             "status": "dem",
             "url": "data/elevation/no-4-standard.json",
-            "totalM": 8475,
-            "climbM": 13.5,
-            "descentM": 16.7,
-            "minM": 40.7,
+            "totalM": 4109,
+            "climbM": 9.5,
+            "descentM": 11.6,
+            "minM": 40.8,
             "maxM": 47.7
           }
         },
@@ -3514,7 +3515,7 @@
       "seriesName": "本編 A～Z（No.1～26）",
       "legacyAnchor": "course-9",
       "legacyUrl": "../index.html#course-9",
-      "summary": "ケーブル清滝駅からケーブルカーを利用する前提の案（線形は徒歩経路に含めない）。山上駅から薬王院・山頂を歩き、蛇滝口へ下りて高尾山口駅へ。山道の通行条件は未確認。",
+      "summary": "ケーブルカーで山上の高尾山駅まで上がり（乗車区間は徒歩距離に含めない）、たこ杉・浄心門・薬王院を歩いて山頂へ。どっちみち歩くならと稲荷山コースで清滝駅まで下り、高尾山口駅で終わる。同じ道を往復しない。",
       "routeText": "経路ノード（B案）： ケーブル清滝駅 → ケーブルカー（山上駅） → 薬王院（山門手前） → 山上 → 薬王院を経て蛇滝口へ → 高尾山口駅（解散） → ゴール",
       "tags": [
         "山",
@@ -3577,10 +3578,10 @@
       "evidence": [
         {
           "type": "community",
-          "title": "OpenStreetMap（高尾登山ケーブル・薬王院・山頂・蛇滝口・高尾山口駅）",
+          "title": "OpenStreetMap（高尾登山ケーブル・たこ杉・浄心門・薬王院・山頂・稲荷山コース）",
           "url": "https://www.openstreetmap.org/",
-          "checkedAt": "2026-11-15",
-          "supports": "ケーブルカーと寺社・地点の名称ノードの座標。入口ではない。"
+          "checkedAt": "2026-11-19",
+          "supports": "ケーブルカー・参道・稲荷山コース（relation 7165825）の名称付き要素の座標。"
         },
         {
           "type": "community",
@@ -3592,9 +3593,10 @@
       ],
       "openQuestions": [
         "ケーブルカーの営業時間・料金・運行状況（公式）",
-        "薬王院から山頂への登山道の通行条件",
-        "蛇滝口から高尾山口駅への下り（蛇滝線歩道）の通行条件",
-        "山頂の三角点の正確な位置"
+        "稲荷山コースの下りの勾配と階段の状態",
+        "薬王院の参拝時間",
+        "山頂の三角点の正確な位置",
+        "稲荷山コースの途中にトイレがあるか"
       ],
       "routeOptions": [
         {
@@ -3603,26 +3605,15 @@
           "strategy": "scenic",
           "geometryUrl": "data/routes/no-9-standard.geojson",
           "verificationStatus": "routed",
-          "distanceM": 10386,
-          "engineDistanceM": 10392,
-          "repeatedGeometryPct": 5.7,
-          "routeReason": "ケーブル清滝駅から山上駅まではケーブルカー、そこから薬王院、高尾山頂、蛇滝口を経て高尾山口駅へ下る。計算上10.39km（鉄道・ケーブルカー以外の徒歩部分）。旧案の「山上→薬王院→蛇滝口→高尾山口駅」の順をそのまま使った。山道の通行条件とケーブルカーの営業は未確認。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
-          "distanceException": "10.39km。7〜8kmを超えるが、薬王院・山頂・蛇滝口をすべて含めた結果で、距離を削るための短縮はしない。",
-          "retraceException": "ケーブル清滝駅から山上駅までの登りで約493m（ケーブルカーの線形と並行する参道を往復する形と推定）、薬王院の境内で約102m（計約595m）。地図で未確認。なお、この案はケーブルカーを利用する前提で徒歩経路が本来の山道と一致するか未確認。",
+          "distanceM": 8099,
+          "engineDistanceM": 8099,
+          "repeatedGeometryPct": 0.3,
+          "routeReason": "清滝駅からケーブルカーで高尾山駅（山上）へ上がり、たこ杉・浄心門・薬王院を経て山頂へ。帰りは同じ参道を戻らず、稲荷山コース（尾根の自然研究路）を下って清滝駅へ出て、高尾山口駅で終わる。計算上8.10km（ケーブルカーの乗車区間は含めない）。旧案はケーブルカーを往復してから1号路を上り、山頂から蛇滝口へ下って高尾山口駅へ出ていた。B（山麓から歩いて上がる案）は、清滝駅から金比羅台・稲荷山コースを上がる案も計算したが、1号路の参道と重なる区間が多く、ケーブルカー往復を外す意味が薄いため作らない。",
+          "distanceException": null,
+          "retraceException": "山頂から稲荷山コースへ入る地点と清滝駅前で計約24m。分かれ目の確認と駅前の出入りで、距離合わせの往復ではない。地図で未確認。",
           "waypoints": [
             {
               "index": 0,
-              "id": "cable_shitakiyo",
-              "label": "高尾登山ケーブル 清滝駅",
-              "description": null,
-              "point": [
-                139.2668737,
-                35.6310796
-              ],
-              "source": "OSM node 清滝（ケーブル下駅）"
-            },
-            {
-              "index": 1,
               "id": "cable_sanjo",
               "label": "高尾登山ケーブル 高尾山駅（山上）",
               "description": null,
@@ -3630,10 +3621,32 @@
                 139.261813,
                 35.6305265
               ],
-              "source": "OSM node 高尾登山ケーブル（山上）"
+              "source": "OSM node 高尾登山ケーブル（山上）; 清滝駅からはケーブルカーで上がる（乗車区間は徒歩距離に含めない）"
+            },
+            {
+              "index": 1,
+              "id": "takosugi",
+              "label": "たこ杉",
+              "description": null,
+              "point": [
+                139.254369,
+                35.63021
+              ],
+              "source": "OSM node 944867687 たこ杉"
             },
             {
               "index": 2,
+              "id": "joshinmon",
+              "label": "浄心門",
+              "description": null,
+              "point": [
+                139.2531334,
+                35.6298652
+              ],
+              "source": "OSM node 9187097305 浄心門"
+            },
+            {
+              "index": 3,
               "id": "yakuoin",
               "label": "高尾山薬王院",
               "description": null,
@@ -3644,29 +3657,51 @@
               "source": "OSM node 高尾山薬王院 place_of_worship"
             },
             {
-              "index": 3,
-              "id": "sancho",
-              "label": "高尾山頂",
-              "description": null,
-              "point": [
-                139.2500453,
-                35.62575
-              ],
-              "source": "OSM information 高尾山頂; 三角点の正確な位置は地図レビュー待ち"
-            },
-            {
               "index": 4,
-              "id": "jaguchi",
-              "label": "蛇滝口",
+              "id": "summit",
+              "label": "高尾山頂（599m）",
               "description": null,
               "point": [
-                139.2582307,
-                35.6391818
+                139.243712,
+                35.6252275
               ],
-              "source": "OSM node 2963604825 蛇滝口"
+              "source": "OSM node 675449030 高尾山 peak"
             },
             {
               "index": 5,
+              "id": "inari_mid",
+              "label": "稲荷山コース（中腹）",
+              "description": null,
+              "point": [
+                139.2524789,
+                35.6226905
+              ],
+              "source": "OSM way 1350892707 稲荷山コース（relation 7165825）"
+            },
+            {
+              "index": 6,
+              "id": "inari_low",
+              "label": "稲荷山コース（稲荷山の下）",
+              "description": null,
+              "point": [
+                139.2594756,
+                35.6274422
+              ],
+              "source": "OSM way 1350892711 稲荷山コース（relation 7165825）"
+            },
+            {
+              "index": 7,
+              "id": "cable_shitakiyo",
+              "label": "高尾登山ケーブル 清滝駅",
+              "description": null,
+              "point": [
+                139.2668737,
+                35.6310796
+              ],
+              "source": "OSM node 清滝（ケーブル下駅）"
+            },
+            {
+              "index": 8,
               "id": "takao_sanguchi",
               "label": "高尾山口駅",
               "description": null,
@@ -3678,16 +3713,16 @@
             }
           ],
           "engine": "valhalla-pedestrian",
-          "built": "2026-11-15T14:00:01.332Z",
+          "built": "2026-11-19T13:10:45.420Z",
           "elevation": {
             "source": "gsi_dem5a",
-            "status": "partial_dem_filled",
+            "status": "dem",
             "url": "data/elevation/no-9-standard.json",
-            "totalM": 10386,
-            "climbM": 454.8,
-            "descentM": 465.2,
-            "minM": 179.1,
-            "maxM": 570.6
+            "totalM": 8099,
+            "climbM": 455.7,
+            "descentM": 495.7,
+            "minM": 190.3,
+            "maxM": 597.8
           }
         },
         {
@@ -5786,7 +5821,7 @@
       "seriesName": "本編 A～Z（No.1～26）",
       "legacyAnchor": "course-15",
       "legacyUrl": "../index.html#course-15",
-      "summary": "天王洲アイル駅から天王洲公園、運河沿いの天王洲橋を経て、品川浦の北品川舟だまり、北品川駅、新馬場駅へ抜ける短い駅間。運河沿いの歩道・ボードウォークの位置は地図で未確認。",
+      "summary": "天王洲アイル駅から運河沿いの公園を回り、品川浦の舟だまりから北品川へ。旧東海道の荏原神社・海蔵寺を経て江戸六地蔵の品川寺へ南下し、鮫洲駅で終わる。",
       "routeText": "経路ノード： 天王洲アイル駅 → ボードウォーク（運河一周） → 倉庫改装ギャラリー群 → 壁画エリア → 昼食（水上/運河沿いレストラン） → 運河沿い遊歩道 → 品川浦・北品川舟だまり（屋形船の係留地） → 北品川駅 → 広町一丁目方面へ実在の歩道で延伸（往復約2.8km） → ゴール",
       "tags": [
         "水辺",
@@ -5890,10 +5925,9 @@
         }
       ],
       "openQuestions": [
-        "天王洲運河沿いのボードウォークの歩道の位置",
-        "倉庫改装ギャラリー・壁画エリアの座標（OSMに名称ノードなし）",
-        "品川浦の舟だまりの岸の歩行可否",
-        "天王洲アイル駅の出口"
+        "荏原神社・海蔵寺・品川寺の参拝時間",
+        "旧東海道の歩道の幅と自転車の通行",
+        "天王洲から品川浦への橋の渡り方"
       ],
       "routeOptions": [
         {
@@ -5902,12 +5936,12 @@
           "strategy": "scenic",
           "geometryUrl": "data/routes/no-15-standard.geojson",
           "verificationStatus": "routed",
-          "distanceM": 2483,
-          "engineDistanceM": 2487,
-          "repeatedGeometryPct": 0.2,
-          "routeReason": "天王洲アイル駅から天王洲公園、天王洲橋、品川浦（北品川舟だまり）、北品川駅を経て新馬場駅へ。計算上2.48km。天王洲運河沿いのボードウォークは名称ノードが見つかったが、歩道としては経由せず、運河沿いの道路を通った。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
-          "distanceException": "2.48km。駅間の短い案で5〜6kmに届かない。延伸は作らない。",
-          "retraceException": "計算上の重なりは約5m。",
+          "distanceM": 5014,
+          "engineDistanceM": 5027,
+          "repeatedGeometryPct": 3.5,
+          "routeReason": "天王洲アイル駅から天王洲公園、天王洲橋を回って品川浦（北品川舟だまり）へ出て、北品川駅前から旧東海道を南へ。荏原神社、海蔵寺、品川寺（江戸六地蔵）を経て鮫洲駅で終わる。計算上5.01km。旧案は新馬場駅で終わっていたが、旧東海道の寺社が続くので鮫洲まで延ばした。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
+          "distanceException": "5.01km。実在の名称付き地点だけで組んだため5〜6kmに近い値で、追加できる地点は使い切り、距離合わせの延伸は作らない。",
+          "retraceException": null,
           "waypoints": [
             {
               "index": 0,
@@ -5951,7 +5985,7 @@
                 139.7413704,
                 35.621899
               ],
-              "source": "OSM 品川浦（周辺）"
+              "source": "OSM 品川浦"
             },
             {
               "index": 4,
@@ -5962,29 +5996,62 @@
                 139.7393885,
                 35.6223254
               ],
-              "source": "OSM way 157576289 北品川駅"
+              "source": "OSM station 北品川"
             },
             {
               "index": 5,
-              "id": "shinbaba",
-              "label": "新馬場駅",
+              "id": "ebara_jinja",
+              "label": "荏原神社",
               "description": null,
               "point": [
-                139.7412356,
-                35.6177816
+                139.7435067,
+                35.6169814
               ],
-              "source": "OSM 新馬場駅 北口"
+              "source": "OSM way 325692055 荏原神社 place_of_worship"
+            },
+            {
+              "index": 6,
+              "id": "kaizoji",
+              "label": "海蔵寺",
+              "description": null,
+              "point": [
+                139.7408177,
+                35.6136883
+              ],
+              "source": "OSM way 617894886 海蔵寺 place_of_worship"
+            },
+            {
+              "index": 7,
+              "id": "honsenji",
+              "label": "品川寺",
+              "description": null,
+              "point": [
+                139.7438538,
+                35.60949
+              ],
+              "source": "OSM way 97685855 品川寺 place_of_worship（江戸六地蔵）"
+            },
+            {
+              "index": 8,
+              "id": "samezu_st",
+              "label": "鮫洲駅",
+              "description": null,
+              "point": [
+                139.7422245,
+                35.6050759
+              ],
+              "source": "OSM node 2550872520 鮫洲 station"
             }
           ],
           "engine": "valhalla-pedestrian",
-          "built": "2026-11-15T21:09:55.851Z",
+          "built": "2026-11-19T13:10:47.224Z",
           "elevation": {
             "source": "gsi_dem5a",
             "status": "partial_dem_filled",
             "url": "data/elevation/no-15-standard.json",
-            "totalM": 2483,
-            "climbM": 11.4,
-            "descentM": 10,
+            "totalM": 5014,
+            "climbM": 17.8,
+            "descentM": 17.4,
             "minM": 1.9,
             "maxM": 8.4
           }
@@ -6462,7 +6529,7 @@
       "seriesName": "本編 A～Z（No.1～26）",
       "legacyAnchor": "course-17",
       "legacyUrl": "../index.html#course-17",
-      "summary": "神谷町駅から東京タワーの足元、増上寺、芝公園の緑を歩く短い駅間ワンウェイ。Bは愛宕神社まで上がって虎ノ門ヒルズ駅へ抜ける。旧案の「エリア方面へ延伸（往復約3.6km）」は座標を作る必要があるため採用しない。",
+      "summary": "神谷町から東京タワー・増上寺・芝公園を回り、愛宕神社の出世の石段を上って虎ノ門・日比谷公園へ。桜田門から皇居外苑を回り、東京駅前の地下鉄駅（二重橋前）で終わる。",
       "routeText": "経路ノード： 神谷町駅 → 麻布台ヒルズ 中央広場 → 森ビル デジタルアートミュージアム → 昼食 → （EV／ES主体で）東京タワー方向へ → 芝公園（平坦部） → 芝生広場（平坦部を軽く周遊） → 芝公園駅／御成門駅 → 芝公園・増上寺方面方面へ実在の歩道で延伸（往復約3.6km） → ゴール",
       "tags": [
         "タワー",
@@ -6570,10 +6637,10 @@
         }
       ],
       "openQuestions": [
-        "麻布台ヒルズ中央広場・デジタルアートミュージアムの入口座標（OSMに名称ノードなし）",
-        "増上寺前から御成門の297m往復は御成門経由のためと確定（外すと1.60km・重なり0mの試作になる）。どの立ち寄り先を残すか決める",
-        "愛宕神社の石段を通る経路か、一般の歩道かの確認",
-        "東京タワー展望台の入場条件（Aは外観のみ）"
+        "愛宕神社の石段の勾配と通行（祭事時の規制）",
+        "愛宕神社から虎ノ門駅への下り",
+        "桜田門から皇居外苑への通り抜け",
+        "二重橋前駅の地上への出口"
       ],
       "routeOptions": [
         {
@@ -6582,12 +6649,12 @@
           "strategy": "scenic",
           "geometryUrl": "data/routes/no-17-standard.geojson",
           "verificationStatus": "routed",
-          "distanceM": 2562,
-          "engineDistanceM": 2562,
-          "repeatedGeometryPct": 14.8,
-          "routeReason": "神谷町駅から東京タワー前、増上寺前、御成門、芝公園を通り芝公園駅へ。計算上2.56km。増上寺の参道から御成門交差点の点へ北上し、同じ道を南へ戻って芝公園へ入る形で約300mを往復する（利用者提供の地図と経路座標で確認）。麻布台ヒルズ内の入口の座標が取れないため、麻布台ヒルズの立ち寄りは含めていない。5〜6kmには大きく届かない。",
-          "distanceException": "2.56km。実在の立ち寄り先だけで組んだため5〜6kmに届かない。旧案の往復延伸（座標を作る必要がある）は採用しない。",
-          "retraceException": "御成門交差点の経由点へ増上寺の参道から北上し、同じ道を南へ戻って芝公園へ入る約297mと、芝公園内から駅への約82m（計約380m）。御成門を立ち寄り先に含めたことによる必要な往復で、地図（利用者提供）と経路座標で確認した。距離合わせではない。御成門を外すと1.60km・重なり0mになる（試作のみ、不採用）。",
+          "distanceM": 6693,
+          "engineDistanceM": 6696,
+          "repeatedGeometryPct": 11.3,
+          "routeReason": "神谷町の交差点から東京タワー前、増上寺前、芝公園（園内）を歩き、愛宕神社の石段を上って虎ノ門駅を経由。日比谷公園から桜田門へ回り、皇居外苑を通って二重橋前駅で終わる。計算上6.69km。旧案は神谷町から芝公園駅へ下るだけの2.5kmで、東京駅周辺へ歩いて抜ける形に組み替えた。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
+          "distanceException": null,
+          "retraceException": "愛宕神社の石段と芝公園の園路の出入りで計約755m。神社は坂の上にあり、上って下りる形で、距離合わせの往復ではない。地図で未確認。",
           "waypoints": [
             {
               "index": 0,
@@ -6624,100 +6691,7 @@
             },
             {
               "index": 3,
-              "id": "onarimon",
-              "label": "御成門（交差点）",
-              "description": null,
-              "point": [
-                139.7515109,
-                35.6609616
-              ],
-              "source": "OSM node 281679484 traffic_signals"
-            },
-            {
-              "index": 4,
               "id": "shiba_park",
-              "label": "芝公園（園内）",
-              "description": null,
-              "point": [
-                139.7501717,
-                35.6556362
-              ],
-              "source": "OSM way 745301120 park centre"
-            },
-            {
-              "index": 5,
-              "id": "shiba_st",
-              "label": "芝公園駅",
-              "description": null,
-              "point": [
-                139.7499008,
-                35.6541549
-              ],
-              "source": "OSM node 6233834712 station"
-            }
-          ],
-          "engine": "valhalla-pedestrian",
-          "built": "2026-11-15T02:35:29.106Z",
-          "elevation": {
-            "source": "gsi_dem5a",
-            "status": "dem",
-            "url": "data/elevation/no-17-standard.json",
-            "totalM": 2562,
-            "climbM": 19.1,
-            "descentM": 24.6,
-            "minM": 2.9,
-            "maxM": 25.4
-          }
-        },
-        {
-          "id": "no-17-extended",
-          "variant": "extended",
-          "strategy": "scenic",
-          "geometryUrl": "data/routes/no-17-extended.geojson",
-          "verificationStatus": "routed",
-          "distanceM": 3266,
-          "engineDistanceM": 3260,
-          "repeatedGeometryPct": 3.9,
-          "routeReason": "神谷町駅から東京タワー前、増上寺前、芝公園の園内を通り、愛宕神社へ上って虎ノ門ヒルズ駅へ抜ける。計算上3.27km。愛宕神社の階段（出世の石段）を通るかは未確認。7〜8kmには届かないが延伸は作らない。",
-          "distanceException": "3.27km。実在の立ち寄り先だけで組んだため7〜8kmに届かない。延伸は作らない。",
-          "retraceException": "芝公園内で約58mと約60mの短い重なり（計約126m）。園内の歩道の分岐戻りと推定。地図で未確認。",
-          "waypoints": [
-            {
-              "index": 0,
-              "id": "kamiyacho_cross",
-              "label": "神谷町（交差点）",
-              "description": null,
-              "point": [
-                139.7453255,
-                35.663177
-              ],
-              "source": "OSM node 251857299 traffic_signals 神谷町"
-            },
-            {
-              "index": 1,
-              "id": "tower_road",
-              "label": "東京タワー前（交差点）",
-              "description": null,
-              "point": [
-                139.7469936,
-                35.6584587
-              ],
-              "source": "OSM node 1637283659 traffic_signals 東京タワー前"
-            },
-            {
-              "index": 2,
-              "id": "zojoji",
-              "label": "増上寺前",
-              "description": null,
-              "point": [
-                139.750308,
-                35.6572265
-              ],
-              "source": "OSM node 337024823"
-            },
-            {
-              "index": 3,
-              "id": "shiba_park2",
               "label": "芝公園（園内）",
               "description": null,
               "point": [
@@ -6735,29 +6709,73 @@
                 139.7494577,
                 35.6646441
               ],
-              "source": "OSM node 4740994270 愛宕神社"
+              "source": "OSM node 4740994270 愛宕神社（出世の石段）"
             },
             {
               "index": 5,
-              "id": "toranomon_hills",
-              "label": "虎ノ門ヒルズ駅",
+              "id": "toranomon",
+              "label": "虎ノ門駅",
               "description": null,
               "point": [
-                139.7477064,
-                35.6674782
+                139.7501926,
+                35.6702654
               ],
-              "source": "OSM node 7786715973 station"
+              "source": "OSM node 7786715969 虎ノ門 station"
+            },
+            {
+              "index": 6,
+              "id": "hibiya_park",
+              "label": "日比谷公園",
+              "description": null,
+              "point": [
+                139.7560389,
+                35.6737364
+              ],
+              "source": "OSM way 145408909 日比谷公園 park"
+            },
+            {
+              "index": 7,
+              "id": "sakuradamon",
+              "label": "桜田門",
+              "description": null,
+              "point": [
+                139.7506533,
+                35.6772905
+              ],
+              "source": "OSM way 661469200 桜田門"
+            },
+            {
+              "index": 8,
+              "id": "kokyo_gaien",
+              "label": "皇居外苑（二重橋前）",
+              "description": null,
+              "point": [
+                139.7573094,
+                35.6799462
+              ],
+              "source": "OSM way 675408602 皇居外苑 park"
+            },
+            {
+              "index": 9,
+              "id": "nijubashimae",
+              "label": "二重橋前駅",
+              "description": null,
+              "point": [
+                139.7576795,
+                35.6794319
+              ],
+              "source": "OSM node 1588249051 二重橋前"
             }
           ],
           "engine": "valhalla-pedestrian",
-          "built": "2026-11-15T12:36:46.285Z",
+          "built": "2026-11-19T13:10:49.056Z",
           "elevation": {
             "source": "gsi_dem5a",
-            "status": "dem",
-            "url": "data/elevation/no-17-extended.json",
-            "totalM": 3266,
-            "climbM": 21.7,
-            "descentM": 24.9,
+            "status": "partial_dem_filled",
+            "url": "data/elevation/no-17-standard.json",
+            "totalM": 6693,
+            "climbM": 30.8,
+            "descentM": 35.4,
             "minM": 2.8,
             "maxM": 25.4
           }
@@ -7245,7 +7263,7 @@
       "seriesName": "本編 A～Z（No.1～26）",
       "legacyAnchor": "course-19",
       "legacyUrl": "../index.html#course-19",
-      "summary": "信濃町駅から国立競技場、聖徳記念絵画館を回り、いちょう並木の絵画館前通りを南下して外苑前駅、青山一丁目駅へ抜ける駅間。旧案の六本木七丁目方面への往復延伸と昼食は採らない。",
+      "summary": "信濃町から国立競技場・絵画館・外苑前を回り、青山一丁目から青山霊園の通路を抜けて国立新美術館へ。六本木駅で終わる。",
       "routeText": "経路ノード： 信濃町駅 → 明治神宮外苑 いちょう並木 → 聖徳記念絵画館（外観／館内） → 国立競技場 外周・空中散歩道 → 千駄ヶ谷 → 昼食 → 神宮外苑〜権田原 → 権田原交差点 → 迎賓館前（外周の平坦な公道） → 青山一丁目駅 → 六本木七丁目方面へ実在の歩道で延伸（往復約4.1km） → ゴール",
       "tags": [
         "公園",
@@ -7357,10 +7375,10 @@
         }
       ],
       "openQuestions": [
-        "国立競技場の外周の空中散歩道の開放状況",
-        "絵画館前通りの歩行者区分とイベント時の規制",
-        "外苑前駅から青山一丁目駅までの歩道",
-        "神宮外苑の再開発に伴う工事・通行規制の有無"
+        "青山霊園の園内通路の開放時間",
+        "国立新美術館の休館日",
+        "国立競技場のイベント時の混雑",
+        "六本木駅の出口"
       ],
       "routeOptions": [
         {
@@ -7369,12 +7387,12 @@
           "strategy": "scenic",
           "geometryUrl": "data/routes/no-19-standard.geojson",
           "verificationStatus": "routed",
-          "distanceM": 3212,
-          "engineDistanceM": 3216,
-          "repeatedGeometryPct": 8.5,
-          "routeReason": "信濃町駅から国立競技場、明治神宮聖徳記念絵画館、いちょう並木（絵画館前通り）、外苑前駅、青山一丁目駅へ。計算上3.21km。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
-          "distanceException": "3.21km。実在の立ち寄り先だけで組んだため5〜6kmの範囲外。延伸は作らない。",
-          "retraceException": "国立競技場から絵画館へ向かう区間で約246m、絵画館前で約21mが重なる（計約272m）。競技場の周回路と絵画館前の広場を行き来する形と推定。地図で未確認。",
+          "distanceM": 5963,
+          "engineDistanceM": 5966,
+          "repeatedGeometryPct": 7.9,
+          "routeReason": "信濃町駅から国立競技場駅、明治神宮聖徳記念絵画館、外苑前駅を通り、青山一丁目駅から青山霊園の園内の通路を抜けて国立新美術館へ出て、六本木駅で終わる。計算上5.96km。旧案は青山一丁目駅で終わっていたが、青山霊園と国立新美術館を挟んで六本木へ抜ける形に延ばした。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
+          "distanceException": null,
+          "retraceException": null,
           "waypoints": [
             {
               "index": 0,
@@ -7429,19 +7447,52 @@
                 139.724119,
                 35.6727267
               ],
-              "source": "OSM stop 青山一丁目"
+              "source": "OSM node 6284888995 青山一丁目 station"
+            },
+            {
+              "index": 5,
+              "id": "aoyama_reien",
+              "label": "青山霊園",
+              "description": null,
+              "point": [
+                139.7214215,
+                35.6657873
+              ],
+              "source": "OSM way 37721897 青山霊園（園内の通路を抜ける）"
+            },
+            {
+              "index": 6,
+              "id": "nact",
+              "label": "国立新美術館",
+              "description": null,
+              "point": [
+                139.7266531,
+                35.6646568
+              ],
+              "source": "OSM way 103425086 国立新美術館 museum"
+            },
+            {
+              "index": 7,
+              "id": "roppongi",
+              "label": "六本木駅",
+              "description": null,
+              "point": [
+                139.7313883,
+                35.662934
+              ],
+              "source": "OSM node 7786715975 六本木 station"
             }
           ],
           "engine": "valhalla-pedestrian",
-          "built": "2026-11-15T21:27:18.946Z",
+          "built": "2026-11-19T13:10:51.155Z",
           "elevation": {
             "source": "gsi_dem5a",
             "status": "dem",
             "url": "data/elevation/no-19-standard.json",
-            "totalM": 3212,
-            "climbM": 16.3,
-            "descentM": 18.3,
-            "minM": 29,
+            "totalM": 5963,
+            "climbM": 49.3,
+            "descentM": 52.7,
+            "minM": 21.5,
             "maxM": 34.9
           }
         },
@@ -7581,7 +7632,7 @@
       "seriesName": "本編 A～Z（No.1～26）",
       "legacyAnchor": "course-20",
       "legacyUrl": "../index.html#course-20",
-      "summary": "二子玉川駅から兵庫島公園、二子橋を渡って二子新地駅へ抜ける短い駅間。旧案の多摩川左岸遊歩道の上流往復は座標を作る必要があるため採らない。",
+      "summary": "二子玉川駅から兵庫島公園・二子橋・二子新地をたどり、大山街道ふるさと館を経て溝の口（武蔵溝ノ口）駅へ。多摩川の水辺から大山街道に上がる。",
       "routeText": "経路ノード： 二子玉川駅 → 商業街区 屋上庭園 → 兵庫島公園 → 多摩川左岸遊歩道 → 昼食（駅直結） → 多摩川左岸遊歩道をさらに上流（二子橋方面）へ → 二子橋・多摩堤通り沿い → 二子玉川駅（解散）",
       "tags": [
         "川",
@@ -7683,9 +7734,10 @@
         }
       ],
       "openQuestions": [
-        "多摩川左岸遊歩道の位置と二子橋下の通行条件",
-        "兵庫島公園の入口と島内の園路",
-        "二子橋の歩道の幅と自転車との区分"
+        "二子玉川公園へ下る坂の勾配",
+        "鳥居から二子玉川公園へ戻る園路",
+        "大山街道の歩道",
+        "二子神社の参拝時間"
       ],
       "routeOptions": [
         {
@@ -7694,10 +7746,10 @@
           "strategy": "scenic",
           "geometryUrl": "data/routes/no-20-standard.geojson",
           "verificationStatus": "routed",
-          "distanceM": 1600,
-          "engineDistanceM": 1600,
-          "repeatedGeometryPct": 16.2,
-          "routeReason": "二子玉川駅から兵庫島公園、二子橋を通り、多摩川を渡って二子新地駅へ。計算上1.60km。多摩川左岸遊歩道の位置は未確認のため、経由点に含めていない。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
+          "distanceM": 4795,
+          "engineDistanceM": 4793,
+          "repeatedGeometryPct": 19.9,
+          "routeReason": "二子玉川駅から二子玉川公園へ下って多摩川の水辺を回り、兵庫島公園、二子橋、二子神社（岡本かの子文学碑）、二子新地駅を経て、大山街道ふるさと館へ上り、溝の口駅（南武線は武蔵溝ノ口駅）で終わる。計算上4.79km。旧案は二子新地駅で終わっていた1.6km。延ばす向きは下流の矢向・鹿島田方面も試したが、海老取川の渡りで行き止まりになり迂回が長くなるため、歩道が続く上流の溝の口へ向けた。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
           "distanceException": "1.60km。橋を渡る短い駅間で5〜6kmに届かない。旧案の上流往復は距離合わせになるため採らない。",
           "retraceException": "兵庫島公園付近で約170m、約90m（計約259m）。島へ渡る橋と駅側の園路を行き来する形と推定。地図で未確認。",
           "waypoints": [
@@ -7714,6 +7766,17 @@
             },
             {
               "index": 1,
+              "id": "futako_park",
+              "label": "二子玉川公園",
+              "description": null,
+              "point": [
+                139.6316674,
+                35.6084038
+              ],
+              "source": "OSM way 233044925 二子玉川公園 park"
+            },
+            {
+              "index": 2,
               "id": "hyogojima",
               "label": "兵庫島公園",
               "description": null,
@@ -7721,10 +7784,10 @@
                 139.6241269,
                 35.6117733
               ],
-              "source": "OSM information 兵庫島公園案内図"
+              "source": "OSM way 1128004532 兵庫島公園 park"
             },
             {
-              "index": 2,
+              "index": 3,
               "id": "futakobashi",
               "label": "二子橋",
               "description": null,
@@ -7735,7 +7798,18 @@
               "source": "OSM node 297176384 二子橋"
             },
             {
-              "index": 3,
+              "index": 4,
+              "id": "futako_jinja",
+              "label": "二子神社",
+              "description": null,
+              "point": [
+                139.621676,
+                35.6087794
+              ],
+              "source": "OSM way 310920949 二子神社（岡本かの子文学碑）"
+            },
+            {
+              "index": 5,
               "id": "futako_shinchi",
               "label": "二子新地駅",
               "description": null,
@@ -7744,19 +7818,41 @@
                 35.6071352
               ],
               "source": "OSM station 二子新地"
+            },
+            {
+              "index": 6,
+              "id": "oyama_kaido",
+              "label": "大山街道ふるさと館",
+              "description": null,
+              "point": [
+                139.6128575,
+                35.6032494
+              ],
+              "source": "OSM node 3379278628 大山街道ふるさと館 museum"
+            },
+            {
+              "index": 7,
+              "id": "musashi_mizonokuchi",
+              "label": "武蔵溝ノ口駅（溝の口駅）",
+              "description": null,
+              "point": [
+                139.6105353,
+                35.5998743
+              ],
+              "source": "OSM node 266084776 溝の口 station; 南武線は武蔵溝ノ口駅"
             }
           ],
           "engine": "valhalla-pedestrian",
-          "built": "2026-11-15T21:27:21.659Z",
+          "built": "2026-11-19T13:10:53.223Z",
           "elevation": {
             "source": "gsi_dem5a",
             "status": "partial_dem_filled",
             "url": "data/elevation/no-20-standard.json",
-            "totalM": 1600,
-            "climbM": 19.4,
-            "descentM": 20.3,
-            "minM": 5.8,
-            "maxM": 16.3
+            "totalM": 4795,
+            "climbM": 26.9,
+            "descentM": 26.3,
+            "minM": 6,
+            "maxM": 16.8
           }
         },
         {
@@ -9063,7 +9159,7 @@
       "seriesName": "本編 A～Z（No.1～26）",
       "legacyAnchor": "course-24",
       "legacyUrl": "../index.html#course-24",
-      "summary": "六本木駅からサントリー美術館、21_21 DESIGN SIGHT、檜町公園、乃木神社を経て乃木坂駅へ抜ける短い駅間。館内見学と昼食を前提にした旧案の工程は採らず、屋外の通過だけを計算した。",
+      "summary": "赤坂見附から豊川稲荷・乃木神社を回り、東京ミッドタウンの檜町公園・21_21 DESIGN SIGHT・サントリー美術館へ。六本木から芋洗坂を下って麻布十番商店街を抜け、赤羽橋駅で終わる。",
       "routeText": "経路ノード： 六本木駅／乃木坂駅 → 東京ミッドタウン ガレリア → 21_21 DESIGN SIGHT → サントリー美術館（会期次第） → 昼食 → ミッドタウン・ガーデン → 檜町公園（平坦園路） → 乃木神社（参道の平坦部） → 六本木駅／乃木坂駅（解散）",
       "tags": [
         "美術",
@@ -9182,10 +9278,10 @@
         }
       ],
       "openQuestions": [
-        "東京ミッドタウン ガレリアの屋内動線と開館時間",
-        "檜町公園の入口",
-        "乃木神社の参道の入口",
-        "21_21 DESIGN SIGHTの会期と入場条件"
+        "東京ミッドタウンの館内の通り抜け（営業時間）",
+        "檜町公園とサントリー美術館の間の経路",
+        "芋洗坂の勾配",
+        "麻布十番商店街の歩道"
       ],
       "routeOptions": [
         {
@@ -9194,45 +9290,45 @@
           "strategy": "scenic",
           "geometryUrl": "data/routes/no-24-standard.geojson",
           "verificationStatus": "routed",
-          "distanceM": 2271,
-          "engineDistanceM": 2280,
-          "repeatedGeometryPct": 5.7,
-          "routeReason": "六本木駅からサントリー美術館、21_21 DESIGN SIGHT、檜町公園、乃木神社を経て乃木坂駅へ。計算上2.27km。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
-          "distanceException": "2.27km。徒歩の短い駅間で5〜6kmに届かない。延伸は作らない。",
-          "retraceException": "乃木神社付近で約81m、檜町公園付近で約40m、21_21 DESIGN SIGHT前で約7m（計約128m）。施設の出入口が道路側へ戻る形と推定。地図で未確認。",
+          "distanceM": 6282,
+          "engineDistanceM": 6293,
+          "repeatedGeometryPct": 12.4,
+          "routeReason": "赤坂見附駅から豊川稲荷東京別院、乃木神社を回り、東京ミッドタウンへ入って檜町公園、21_21 DESIGN SIGHT、サントリー美術館を歩く。六本木駅前から芋洗坂を下り、麻布十番商店街を通って赤羽橋駅で終わる。計算上6.28km。旧案は六本木駅を起点に乃木坂駅で終わる2.3kmで、赤坂見附から赤羽橋へ抜ける長めの周回に組み替えた。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
+          "distanceException": null,
+          "retraceException": "東京ミッドタウンの入口から檜町公園・サントリー美術館へ入る区間で計約778m。建物内の通り抜けができるかは未確認で、地図で未確認。",
           "waypoints": [
             {
               "index": 0,
-              "id": "roppongi",
-              "label": "六本木駅",
+              "id": "akasaka_mitsuke",
+              "label": "赤坂見附駅",
               "description": null,
               "point": [
-                139.7327813,
-                35.663315
+                139.7375498,
+                35.6763739
               ],
-              "source": "OSM subway_entrance 六本木"
+              "source": "OSM node 6179550652 赤坂見附 station"
             },
             {
               "index": 1,
-              "id": "suntory",
-              "label": "サントリー美術館",
+              "id": "toyokawa_inari",
+              "label": "豊川稲荷東京別院",
               "description": null,
               "point": [
-                139.7303007,
-                35.6666887
+                139.7329687,
+                35.67693
               ],
-              "source": "OSM museum サントリー美術館"
+              "source": "OSM way 145127482 豊川稲荷東京別院 place_of_worship"
             },
             {
               "index": 2,
-              "id": "dsign",
-              "label": "21_21 DESIGN SIGHT",
+              "id": "nogi",
+              "label": "乃木神社",
               "description": null,
               "point": [
-                139.7304686,
-                35.6673905
+                139.7280207,
+                35.6685988
               ],
-              "source": "OSM museum 21_21 Design Sight"
+              "source": "OSM place_of_worship 乃木神社"
             },
             {
               "index": 3,
@@ -9247,38 +9343,71 @@
             },
             {
               "index": 4,
-              "id": "nogi",
-              "label": "乃木神社",
+              "id": "dsign",
+              "label": "21_21 DESIGN SIGHT",
               "description": null,
               "point": [
-                139.7280207,
-                35.6685988
+                139.7304686,
+                35.6673905
               ],
-              "source": "OSM place_of_worship 乃木神社"
+              "source": "OSM museum 21_21 Design Sight"
             },
             {
               "index": 5,
-              "id": "nogizaka",
-              "label": "乃木坂駅",
+              "id": "suntory",
+              "label": "サントリー美術館",
               "description": null,
               "point": [
-                139.7249,
-                35.665617
+                139.7303007,
+                35.6666887
               ],
-              "source": "OSM subway_entrance 乃木坂駅"
+              "source": "OSM museum サントリー美術館（東京ミッドタウン）"
+            },
+            {
+              "index": 6,
+              "id": "imoaraizaka",
+              "label": "芋洗坂",
+              "description": null,
+              "point": [
+                139.7328048,
+                35.6607618
+              ],
+              "source": "OSM way 257224643 芋洗坂"
+            },
+            {
+              "index": 7,
+              "id": "azabujuban",
+              "label": "麻布十番駅",
+              "description": null,
+              "point": [
+                139.7361786,
+                35.6565003
+              ],
+              "source": "OSM node 6511944763 麻布十番 station（麻布十番商店街）"
+            },
+            {
+              "index": 8,
+              "id": "akabanebashi",
+              "label": "赤羽橋駅",
+              "description": null,
+              "point": [
+                139.7438224,
+                35.655099
+              ],
+              "source": "OSM node 7777248485 赤羽橋 station"
             }
           ],
           "engine": "valhalla-pedestrian",
-          "built": "2026-11-15T21:26:18.805Z",
+          "built": "2026-11-19T13:10:55.170Z",
           "elevation": {
             "source": "gsi_dem5a",
             "status": "dem",
             "url": "data/elevation/no-24-standard.json",
-            "totalM": 2271,
-            "climbM": 31.7,
-            "descentM": 38.5,
-            "minM": 14.9,
-            "maxM": 32.1
+            "totalM": 6282,
+            "climbM": 58.8,
+            "descentM": 63.1,
+            "minM": 3.8,
+            "maxM": 31
           }
         },
         {
@@ -12682,7 +12811,7 @@
       "seriesName": "地下ダンジョン（No.33～35）",
       "legacyAnchor": "course-34",
       "legacyUrl": "../index.html#course-34",
-      "summary": "新宿駅南口から新宿の目、西口ロータリー、西新宿一丁目、東口、新宿三丁目を結ぶ地上の周回。旧案の地下周回は、地下通路の座標はOSMにないため経路には含めていない（地上の駅・施設の前を通る徒歩経路のみ）。",
+      "summary": "新宿駅南口からサザンテラス・東京都庁の展望室・新宿中央公園・都庁前を回り、新宿西口で終わる地上の周回。B は神田川沿いを上って東中野・落合・せせらぎの里・下落合を経由し、面影橋から甘泉園公園を通って早稲田駅へ抜ける長めの案。",
       "routeText": "経路ノード（B案）： 新宿駅 東口 → メトロプロムナード → サブナード → 南口 → 新宿の目 → 地下東西自由通路 → 西口・京王モール → 西新宿（解散） → ゴール",
       "tags": [
         "駅",
@@ -12815,10 +12944,10 @@
         }
       ],
       "openQuestions": [
-        "新宿駅の地下通路の座標（OSMにない）",
-        "サブナード・京王モールの屋内動線",
-        "新宿の目の位置",
-        "新宿西口ロータリーの歩行者動線"
+        "東京都庁展望室の営業日（平日・土日）",
+        "十二社熊野神社から都庁前駅への経路",
+        "神田川沿いの歩道の幅（B）",
+        "甘泉園公園の開園時間（B）"
       ],
       "routeOptions": [
         {
@@ -12827,12 +12956,12 @@
           "strategy": "scenic",
           "geometryUrl": "data/routes/no-34-standard.geojson",
           "verificationStatus": "routed",
-          "distanceM": 2612,
-          "engineDistanceM": 2618,
-          "repeatedGeometryPct": 3.5,
-          "routeReason": "新宿駅南口から新宿の目（アート）、新宿西口ロータリー、西新宿一丁目、新宿駅東口、新宿三丁目へ。計算上2.61km。地下通路の座標はOSMにないため経路には含めていない（地上の駅・施設の前を通る徒歩経路のみ）。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
-          "distanceException": "2.61km。地上の駅・施設を結ぶ案で5〜6kmに届かない。地下通路の座標を作る延伸は採らない。",
-          "retraceException": "西新宿一丁目付近で約67m、他に約23mの短い重なり（計約92m）。交差点の横断で生じる往復と推定。",
+          "distanceM": 3951,
+          "engineDistanceM": 3950,
+          "repeatedGeometryPct": 17.8,
+          "routeReason": "新宿駅南口から新宿サザンテラスを歩き、東京都庁の展望室前を経て新宿中央公園、十二社熊野神社、都庁前駅、新宿の目を通り、新宿西口で終わる。計算上3.95km。",
+          "distanceException": "3.95km。地上の施設を結んだAは5〜6kmに届かない。長く歩く場合はB（7.20km、神田川沿いから早稲田駅へ）を使う。地下通路の座標を作る延伸は採らない。",
+          "retraceException": "新宿駅南口からサザンテラスを経て都庁方面へ入る区間で約701m。駅前の行き止まりと建物の間を回る形で、距離合わせの往復ではない。地図で未確認。",
           "waypoints": [
             {
               "index": 0,
@@ -12847,6 +12976,61 @@
             },
             {
               "index": 1,
+              "id": "southern_terrace",
+              "label": "新宿サザンテラス",
+              "description": null,
+              "point": [
+                139.7003644,
+                35.6873318
+              ],
+              "source": "OSM way 157165825 新宿サザンテラス（Suicaのペンギン広場）"
+            },
+            {
+              "index": 2,
+              "id": "tocho",
+              "label": "東京都庁（展望室）",
+              "description": null,
+              "point": [
+                139.6915747,
+                35.6900694
+              ],
+              "source": "OSM node 2388566136 東京都庁展望室 北 viewpoint"
+            },
+            {
+              "index": 3,
+              "id": "chuo_park",
+              "label": "新宿中央公園",
+              "description": null,
+              "point": [
+                139.6893399,
+                35.6890844
+              ],
+              "source": "OSM relation 13272644 新宿中央公園 park"
+            },
+            {
+              "index": 4,
+              "id": "juniso",
+              "label": "十二社熊野神社",
+              "description": null,
+              "point": [
+                139.688285,
+                35.6902704
+              ],
+              "source": "OSM way 95937718 十二社熊野神社 place_of_worship"
+            },
+            {
+              "index": 5,
+              "id": "tochomae",
+              "label": "都庁前駅",
+              "description": null,
+              "point": [
+                139.6927521,
+                35.6905895
+              ],
+              "source": "OSM node 6203591949 都庁前 station"
+            },
+            {
+              "index": 6,
               "id": "shinjuku_eye",
               "label": "新宿の目",
               "description": null,
@@ -12857,61 +13041,143 @@
               "source": "OSM artwork 新宿の目"
             },
             {
-              "index": 2,
+              "index": 7,
               "id": "shinjuku_nishi",
-              "label": "新宿西口ロータリー入口",
+              "label": "新宿西口",
               "description": null,
               "point": [
                 139.6983867,
                 35.6922211
               ],
-              "source": "OSM node 新宿西口ロータリー入口"
-            },
-            {
-              "index": 3,
-              "id": "nishi_shinjuku1",
-              "label": "西新宿一丁目",
-              "description": null,
-              "point": [
-                139.6989409,
-                35.688652
-              ],
-              "source": "OSM node 西新宿一丁目"
-            },
-            {
-              "index": 4,
-              "id": "shinjuku_east",
-              "label": "新宿駅東口",
-              "description": null,
-              "point": [
-                139.7017709,
-                35.6922507
-              ],
-              "source": "OSM node 新宿駅東口"
-            },
-            {
-              "index": 5,
-              "id": "shinjuku3",
-              "label": "新宿三丁目",
-              "description": null,
-              "point": [
-                139.7048359,
-                35.6908841
-              ],
-              "source": "OSM node 新宿三丁目"
+              "source": "OSM node 2389826102 新宿西口 station"
             }
           ],
           "engine": "valhalla-pedestrian",
-          "built": "2026-11-15T22:08:11.927Z",
+          "built": "2026-11-19T13:10:57.254Z",
           "elevation": {
             "source": "gsi_dem5a",
             "status": "dem",
             "url": "data/elevation/no-34-standard.json",
-            "totalM": 2612,
-            "climbM": 14.5,
-            "descentM": 13.5,
-            "minM": 35.6,
-            "maxM": 43
+            "totalM": 3951,
+            "climbM": 35.3,
+            "descentM": 32.7,
+            "minM": 32.5,
+            "maxM": 41.8
+          }
+        },
+        {
+          "id": "no-34-extended",
+          "variant": "extended",
+          "strategy": "scenic",
+          "geometryUrl": "data/routes/no-34-extended.geojson",
+          "verificationStatus": "routed",
+          "distanceM": 7205,
+          "engineDistanceM": 7208,
+          "repeatedGeometryPct": 1.4,
+          "routeReason": "新宿の西側から神田川沿いに上り、東中野駅、落合駅、せせらぎの里公苑、下落合駅を経て、面影橋から甘泉園公園を通り、早稲田駅で終わるAの延長案。計算上7.20km。Aの地点（新宿駅南口・都庁・中央公園など）は経由しない。",
+          "distanceException": null,
+          "retraceException": null,
+          "waypoints": [
+            {
+              "index": 0,
+              "id": "nishishinjuku_st",
+              "label": "西新宿駅",
+              "description": null,
+              "point": [
+                139.6928014,
+                35.694418
+              ],
+              "source": "OSM node 7786715968 西新宿 station"
+            },
+            {
+              "index": 1,
+              "id": "higashinakano",
+              "label": "東中野駅",
+              "description": null,
+              "point": [
+                139.6832204,
+                35.7074569
+              ],
+              "source": "OSM node 7791605892 東中野 station（神田川沿い）"
+            },
+            {
+              "index": 2,
+              "id": "ochiai",
+              "label": "落合駅",
+              "description": null,
+              "point": [
+                139.6859071,
+                35.7106449
+              ],
+              "source": "OSM node 1950328487 落合 station"
+            },
+            {
+              "index": 3,
+              "id": "seseragi",
+              "label": "せせらぎの里公苑",
+              "description": null,
+              "point": [
+                139.6943453,
+                35.7146596
+              ],
+              "source": "OSM way 150776263 せせらぎの里公苑 park"
+            },
+            {
+              "index": 4,
+              "id": "shimoochiai",
+              "label": "下落合駅",
+              "description": null,
+              "point": [
+                139.6953883,
+                35.7158126
+              ],
+              "source": "OSM node 7430368356 下落合 station"
+            },
+            {
+              "index": 5,
+              "id": "omokagebashi",
+              "label": "面影橋",
+              "description": null,
+              "point": [
+                139.714241,
+                35.7129345
+              ],
+              "source": "OSM node 1093725456 面影橋"
+            },
+            {
+              "index": 6,
+              "id": "kansenen",
+              "label": "甘泉園公園",
+              "description": null,
+              "point": [
+                139.7160444,
+                35.7116978
+              ],
+              "source": "OSM way 94093773 甘泉園公園 park"
+            },
+            {
+              "index": 7,
+              "id": "waseda",
+              "label": "早稲田駅",
+              "description": null,
+              "point": [
+                139.7210146,
+                35.7057823
+              ],
+              "source": "OSM node 5408225235 早稲田 station"
+            }
+          ],
+          "engine": "valhalla-pedestrian",
+          "built": "2026-11-19T13:10:57.254Z",
+          "elevation": {
+            "source": "gsi_dem5a",
+            "status": "partial_dem_filled",
+            "url": "data/elevation/no-34-extended.json",
+            "totalM": 7205,
+            "climbM": 38.6,
+            "descentM": 62.1,
+            "minM": 8.6,
+            "maxM": 37.6
           }
         },
         {
@@ -13071,7 +13337,7 @@
       "seriesName": "地下ダンジョン（No.33～35）",
       "legacyAnchor": "course-35",
       "legacyUrl": "../index.html#course-35",
-      "summary": "池袋駅から駅東口、サンシャイン前、サンシャイン国際水族館、東池袋中央公園、東池袋駅を結ぶ地上の周回。旧案の地下周回は、地下通路の座標はOSMにないため経路には含めていない（地上の駅・施設の前を通る徒歩経路のみ）。",
+      "summary": "池袋駅から池袋大橋を渡って北池袋・池袋本町公園・池袋氷川神社へ回り、下板橋駅を経て上池袋の図書館・上池袋東公園を通り、東池袋駅へ戻る大回り。",
       "routeText": "経路ノード： Echika池袋 → いけふくろう → ISP → ダイヤゲート池袋 → サンシャインシティ → 豊島区役所 → 大塚駅前（地上短区間） → ISP → みたけ通り方面へ実在の歩道で延伸（往復約1.7km） → ゴール",
       "tags": [
         "駅",
@@ -13183,10 +13449,10 @@
         }
       ],
       "openQuestions": [
-        "池袋駅の地下通路の座標（OSMにない）",
-        "いけふくろう・豊島区役所・ダイヤゲート池袋の位置",
-        "サンシャインシティの屋内動線",
-        "大塚駅前の地上短区間"
+        "池袋大橋から池袋本町への歩道",
+        "池袋氷川神社の参拝時間",
+        "上池袋図書館の開館日",
+        "東池袋駅の出口"
       ],
       "routeOptions": [
         {
@@ -13195,12 +13461,12 @@
           "strategy": "scenic",
           "geometryUrl": "data/routes/no-35-standard.geojson",
           "verificationStatus": "routed",
-          "distanceM": 2202,
-          "engineDistanceM": 2198,
-          "repeatedGeometryPct": 8.1,
-          "routeReason": "池袋駅から駅東口、サンシャイン前、サンシャイン国際水族館、東池袋中央公園、東池袋駅へ。計算上2.20km。地下通路の座標はOSMにないため経路には含めていない（地上の駅・施設の前を通る徒歩経路のみ）。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
-          "distanceException": "2.20km。地上の駅・施設を結ぶ案で5〜6kmに届かない。地下通路の座標を作る延伸は採らない。",
-          "retraceException": "サンシャイン国際水族館から東池袋中央公園へ向かう区間で約117m、他に約62mの短い重なり（計約179m）。施設の出入口と公園の入口を行き来する形と推定。地図で未確認。",
+          "distanceM": 6732,
+          "engineDistanceM": 6736,
+          "repeatedGeometryPct": 3,
+          "routeReason": "池袋駅から池袋大橋を渡り、池袋本町公園、池袋氷川神社、下板橋駅、北池袋駅、上池袋図書館、上池袋東公園を回って東池袋駅で終わる。計算上6.73km。旧案は池袋駅からサンシャイン方面へ下る2.2kmで、駅の北側を大きく回る案に組み替えた。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
+          "distanceException": null,
+          "retraceException": null,
           "waypoints": [
             {
               "index": 0,
@@ -13215,71 +13481,104 @@
             },
             {
               "index": 1,
-              "id": "ikebukuro_east",
-              "label": "池袋駅東口",
+              "id": "ikebukuro_ohashi",
+              "label": "池袋大橋",
               "description": null,
               "point": [
-                139.7123601,
-                35.7299522
+                139.7136561,
+                35.7339782
               ],
-              "source": "OSM node 池袋駅東口"
+              "source": "OSM way 77161715 池袋大橋"
             },
             {
               "index": 2,
-              "id": "sunshine_mae",
-              "label": "サンシャイン前",
+              "id": "honcho_park",
+              "label": "池袋本町公園",
               "description": null,
               "point": [
-                139.716797,
-                35.7293627
+                139.7135197,
+                35.7394428
               ],
-              "source": "OSM node サンシャイン前"
+              "source": "OSM way 184539005 池袋本町公園 park"
             },
             {
               "index": 3,
-              "id": "sunshine_aquarium",
-              "label": "サンシャイン国際水族館",
+              "id": "hikawa",
+              "label": "池袋氷川神社",
               "description": null,
               "point": [
-                139.7203118,
-                35.7294473
+                139.7112394,
+                35.7435971
               ],
-              "source": "OSM aquarium サンシャイン国際水族館"
+              "source": "OSM node 2360061576 氷川神社 place_of_worship"
             },
             {
               "index": 4,
-              "id": "hi_ikebukuro_park",
-              "label": "東池袋中央公園",
+              "id": "shimoitabashi",
+              "label": "下板橋駅",
               "description": null,
               "point": [
-                139.718812,
-                35.7302539
+                139.7152503,
+                35.7451571
               ],
-              "source": "OSM park 東池袋中央公園"
+              "source": "OSM node 7864238181 下板橋 station"
             },
             {
               "index": 5,
-              "id": "higashi_ikebukuro_st",
+              "id": "kitaikebukuro",
+              "label": "北池袋駅",
+              "description": null,
+              "point": [
+                139.7166239,
+                35.7408891
+              ],
+              "source": "OSM node 7863114045 北池袋 station"
+            },
+            {
+              "index": 6,
+              "id": "kamiike_lib",
+              "label": "上池袋図書館",
+              "description": null,
+              "point": [
+                139.7171536,
+                35.7386317
+              ],
+              "source": "OSM node 1420798080 豊島区立上池袋図書館"
+            },
+            {
+              "index": 7,
+              "id": "kamiike_east",
+              "label": "上池袋東公園",
+              "description": null,
+              "point": [
+                139.7219353,
+                35.7362876
+              ],
+              "source": "OSM way 544868590 上池袋東公園"
+            },
+            {
+              "index": 8,
+              "id": "higashiikebukuro",
               "label": "東池袋駅",
               "description": null,
               "point": [
-                139.7189511,
-                35.726097
+                139.7193639,
+                35.7256741
               ],
-              "source": "OSM platform 東池袋"
+              "source": "OSM node 1926376079 東池袋 station"
             }
           ],
           "engine": "valhalla-pedestrian",
-          "built": "2026-11-15T22:08:45.895Z",
+          "built": "2026-11-19T13:11:01.387Z",
           "elevation": {
             "source": "gsi_dem5a",
             "status": "dem",
             "url": "data/elevation/no-35-standard.json",
-            "totalM": 2202,
-            "climbM": 3.6,
-            "descentM": 8.4,
-            "minM": 27.8,
-            "maxM": 32.6
+            "totalM": 6732,
+            "climbM": 39.7,
+            "descentM": 44.5,
+            "minM": 23.3,
+            "maxM": 35.3
           }
         },
         {
@@ -19833,112 +20132,6 @@
       "category": "personal",
       "routeOptions": [
         {
-          "id": "s1-standard",
-          "variant": "standard",
-          "strategy": "personal_one_stroke",
-          "geometryUrl": "data/routes/s1-standard.geojson",
-          "verificationStatus": "routed",
-          "distanceM": 8954,
-          "engineDistanceM": 8965,
-          "repeatedGeometryPct": 4.7,
-          "routeReason": "実在の駅・公園・寺社の名称ノードだけで組み直した個人散歩の案。",
-          "retraceException": null,
-          "waypoints": [
-            {
-              "index": 0,
-              "id": "mitaka_s",
-              "label": "三鷹駅",
-              "point": [
-                139.5609186,
-                35.7029768
-              ],
-              "source": "OSM station 三鷹"
-            },
-            {
-              "index": 1,
-              "id": "mitaka_gallery",
-              "label": "三鷹市美術ギャラリー",
-              "point": [
-                139.5609537,
-                35.7016706
-              ],
-              "source": "OSM museum 三鷹市美術ギャラリー"
-            },
-            {
-              "index": 2,
-              "id": "akebono",
-              "label": "あけぼのふれあい公園 水源の森",
-              "point": [
-                139.5527438,
-                35.6973335
-              ],
-              "source": "OSM park あけぼのふれあい公園 水源の森"
-            },
-            {
-              "index": 3,
-              "id": "musashisakai",
-              "label": "武蔵境駅",
-              "point": [
-                139.5441355,
-                35.701749
-              ],
-              "source": "OSM station 武蔵境"
-            },
-            {
-              "index": 4,
-              "id": "furosato",
-              "label": "武蔵野ふるさと歴史館",
-              "point": [
-                139.5348012,
-                35.7024971
-              ],
-              "source": "OSM museum 武蔵野ふるさと歴史館"
-            },
-            {
-              "index": 5,
-              "id": "kyonan_chuo",
-              "label": "境南中央公園",
-              "point": [
-                139.5361959,
-                35.6989869
-              ],
-              "source": "OSM park 境南中央公園"
-            },
-            {
-              "index": 6,
-              "id": "ajisai",
-              "label": "武蔵野市立あじさい公園",
-              "point": [
-                139.5367033,
-                35.7057803
-              ],
-              "source": "TOPIC: あじさい公園。OSMの名称ノードは地図レビュー待ち"
-            },
-            {
-              "index": 7,
-              "id": "musashi_koganei_s",
-              "label": "武蔵小金井駅",
-              "point": [
-                139.5057814,
-                35.7013945
-              ],
-              "source": "OSM node 武蔵小金井駅"
-            }
-          ],
-          "engine": "valhalla-pedestrian",
-          "built": "2026-11-17",
-          "elevation": {
-            "source": "gsi_dem5a",
-            "status": "dem",
-            "url": "data/elevation/s1-standard.json",
-            "totalM": 8954,
-            "climbM": 22.9,
-            "descentM": 13.1,
-            "minM": 56.3,
-            "maxM": 68.8
-          }
-        },
-        {
           "id": "s1-legacy",
           "variant": "legacy",
           "strategy": "legacy_unknown",
@@ -19964,7 +20157,7 @@
           }
         }
       ],
-      "defaultVariant": "standard",
+      "defaultVariant": "legacy",
       "evidence": [
         {
           "type": "community",
@@ -19972,33 +20165,13 @@
           "url": null,
           "checkedAt": "2026-11-16",
           "supports": "旧案の立ち寄り先。座標と距離は計算済みの旧経路で、その後の再調査はしていない。"
-        },
-        {
-          "type": "community",
-          "title": "OpenStreetMap（名称付き地点）",
-          "url": "https://www.openstreetmap.org/",
-          "checkedAt": "2026-11-16",
-          "supports": "駅・公園・寺社の名称ノードの座標。入口ではない。"
         }
       ],
       "openQuestions": [
         "立ち寄り先の入口・通行条件を地図と現地で照合",
         "同じ線をなぞる区間の理由を確認",
         "太陽の向きと時間帯の計算"
-      ],
-      "personalPlan": {
-        "mode": "station_to_station",
-        "hub": null,
-        "photo": "太陽の向きと時間帯は未計算。",
-        "transit": "鉄道＋徒歩（レンタカーなし）。",
-        "lodging": {
-          "policy": "ビジネスホテルまたは快活CLUBのナイト12時間パック（鍵付完全個室・100V電源・CPAP可）を駅徒歩10分以内で。",
-          "hub": null,
-          "status": "未予約",
-          "luggage": "CPAPと着替えは拠点駅のコインロッカーへ。"
-        },
-        "food": "コンビニ。地域限定商品は未調査。"
-      }
+      ]
     },
     {
       "id": "S2",
@@ -20121,33 +20294,13 @@
           "url": null,
           "checkedAt": "2026-11-16",
           "supports": "旧案の立ち寄り先。座標と距離は計算済みの旧経路で、その後の再調査はしていない。"
-        },
-        {
-          "type": "community",
-          "title": "OpenStreetMap（名称付き地点）",
-          "url": "https://www.openstreetmap.org/",
-          "checkedAt": "2026-11-16",
-          "supports": "駅・公園・寺社の名称ノードの座標。入口ではない。"
         }
       ],
       "openQuestions": [
         "立ち寄り先の入口・通行条件を地図と現地で照合",
         "同じ線をなぞる区間の理由を確認",
         "太陽の向きと時間帯の計算"
-      ],
-      "personalPlan": {
-        "mode": "station_to_station",
-        "hub": null,
-        "photo": "太陽の向きと時間帯は未計算。",
-        "transit": "鉄道＋徒歩（レンタカーなし）。",
-        "lodging": {
-          "policy": "ビジネスホテルまたは快活CLUBのナイト12時間パック（鍵付完全個室・100V電源・CPAP可）を駅徒歩10分以内で。",
-          "hub": null,
-          "status": "未予約",
-          "luggage": "CPAPと着替えは拠点駅のコインロッカーへ。"
-        },
-        "food": "コンビニ。地域限定商品は未調査。"
-      }
+      ]
     },
     {
       "id": "S3",
@@ -20255,33 +20408,13 @@
           "url": null,
           "checkedAt": "2026-11-16",
           "supports": "旧案の立ち寄り先。座標と距離は計算済みの旧経路で、その後の再調査はしていない。"
-        },
-        {
-          "type": "community",
-          "title": "OpenStreetMap（名称付き地点）",
-          "url": "https://www.openstreetmap.org/",
-          "checkedAt": "2026-11-16",
-          "supports": "駅・公園・寺社の名称ノードの座標。入口ではない。"
         }
       ],
       "openQuestions": [
         "立ち寄り先の入口・通行条件を地図と現地で照合",
         "同じ線をなぞる区間の理由を確認",
         "太陽の向きと時間帯の計算"
-      ],
-      "personalPlan": {
-        "mode": "station_to_station",
-        "hub": null,
-        "photo": "太陽の向きと時間帯は未計算。",
-        "transit": "鉄道＋徒歩（レンタカーなし）。",
-        "lodging": {
-          "policy": "ビジネスホテルまたは快活CLUBのナイト12時間パック（鍵付完全個室・100V電源・CPAP可）を駅徒歩10分以内で。",
-          "hub": null,
-          "status": "未予約",
-          "luggage": "CPAPと着替えは拠点駅のコインロッカーへ。"
-        },
-        "food": "コンビニ。地域限定商品は未調査。"
-      }
+      ]
     },
     {
       "id": "S4",
@@ -20397,33 +20530,13 @@
           "url": null,
           "checkedAt": "2026-11-16",
           "supports": "旧案の立ち寄り先。座標と距離は計算済みの旧経路で、その後の再調査はしていない。"
-        },
-        {
-          "type": "community",
-          "title": "OpenStreetMap（名称付き地点）",
-          "url": "https://www.openstreetmap.org/",
-          "checkedAt": "2026-11-16",
-          "supports": "駅・公園・寺社の名称ノードの座標。入口ではない。"
         }
       ],
       "openQuestions": [
         "立ち寄り先の入口・通行条件を地図と現地で照合",
         "同じ線をなぞる区間の理由を確認",
         "太陽の向きと時間帯の計算"
-      ],
-      "personalPlan": {
-        "mode": "station_to_station",
-        "hub": null,
-        "photo": "太陽の向きと時間帯は未計算。",
-        "transit": "鉄道＋徒歩（レンタカーなし）。",
-        "lodging": {
-          "policy": "ビジネスホテルまたは快活CLUBのナイト12時間パック（鍵付完全個室・100V電源・CPAP可）を駅徒歩10分以内で。",
-          "hub": null,
-          "status": "未予約",
-          "luggage": "CPAPと着替えは拠点駅のコインロッカーへ。"
-        },
-        "food": "コンビニ。地域限定商品は未調査。"
-      }
+      ]
     },
     {
       "id": "S5",
@@ -20554,33 +20667,13 @@
           "url": null,
           "checkedAt": "2026-11-16",
           "supports": "旧案の立ち寄り先。座標と距離は計算済みの旧経路で、その後の再調査はしていない。"
-        },
-        {
-          "type": "community",
-          "title": "OpenStreetMap（名称付き地点）",
-          "url": "https://www.openstreetmap.org/",
-          "checkedAt": "2026-11-16",
-          "supports": "駅・公園・寺社の名称ノードの座標。入口ではない。"
         }
       ],
       "openQuestions": [
         "立ち寄り先の入口・通行条件を地図と現地で照合",
         "同じ線をなぞる区間の理由を確認",
         "太陽の向きと時間帯の計算"
-      ],
-      "personalPlan": {
-        "mode": "station_to_station",
-        "hub": null,
-        "photo": "太陽の向きと時間帯は未計算。",
-        "transit": "鉄道＋徒歩（レンタカーなし）。",
-        "lodging": {
-          "policy": "ビジネスホテルまたは快活CLUBのナイト12時間パック（鍵付完全個室・100V電源・CPAP可）を駅徒歩10分以内で。",
-          "hub": null,
-          "status": "未予約",
-          "luggage": "CPAPと着替えは拠点駅のコインロッカーへ。"
-        },
-        "food": "コンビニ。地域限定商品は未調査。"
-      }
+      ]
     },
     {
       "id": "S6",
@@ -20663,112 +20756,6 @@
       "category": "personal",
       "routeOptions": [
         {
-          "id": "s6-standard",
-          "variant": "standard",
-          "strategy": "personal_one_stroke",
-          "geometryUrl": "data/routes/s6-standard.geojson",
-          "verificationStatus": "routed",
-          "distanceM": 9401,
-          "engineDistanceM": 9398,
-          "repeatedGeometryPct": 4,
-          "routeReason": "実在の駅・公園・寺社の名称ノードだけで組み直した個人散歩の案。",
-          "retraceException": null,
-          "waypoints": [
-            {
-              "index": 0,
-              "id": "nakano_s",
-              "label": "中野駅",
-              "point": [
-                139.6655563,
-                35.7058704
-              ],
-              "source": "OSM node 中野駅"
-            },
-            {
-              "index": 1,
-              "id": "chuo_nishi",
-              "label": "中野区立中央西公園",
-              "point": [
-                139.6635677,
-                35.6990854
-              ],
-              "source": "OSM park 中野区立中央西公園"
-            },
-            {
-              "index": 2,
-              "id": "sanshi",
-              "label": "蚕糸の森公園",
-              "point": [
-                139.6563767,
-                35.6971278
-              ],
-              "source": "OSM park 蚕糸の森公園"
-            },
-            {
-              "index": 3,
-              "id": "shin_koenji",
-              "label": "杉並区立新高円寺公園",
-              "point": [
-                139.6453465,
-                35.699263
-              ],
-              "source": "OSM park 杉並区立新高円寺公園"
-            },
-            {
-              "index": 4,
-              "id": "koenji_kita",
-              "label": "高円寺北二公園",
-              "point": [
-                139.6529092,
-                35.7070299
-              ],
-              "source": "OSM park 高円寺北二公園"
-            },
-            {
-              "index": 5,
-              "id": "shinmeigu",
-              "label": "阿佐谷神明宮",
-              "point": [
-                139.6369978,
-                35.7072646
-              ],
-              "source": "OSM place_of_worship 阿佐谷神明宮"
-            },
-            {
-              "index": 6,
-              "id": "ootaguro",
-              "label": "大田黒公園",
-              "point": [
-                139.624684,
-                35.7009081
-              ],
-              "source": "OSM park 大田黒公園"
-            },
-            {
-              "index": 7,
-              "id": "amanuma",
-              "label": "天沼弁天池公園",
-              "point": [
-                139.6214629,
-                35.7085322
-              ],
-              "source": "OSM park 天沼弁天池公園"
-            }
-          ],
-          "engine": "valhalla-pedestrian",
-          "built": "2026-11-17",
-          "elevation": {
-            "source": "gsi_dem5a",
-            "status": "dem",
-            "url": "data/elevation/s6-standard.json",
-            "totalM": 9401,
-            "climbM": 46.6,
-            "descentM": 40.9,
-            "minM": 30.9,
-            "maxM": 47
-          }
-        },
-        {
           "id": "s6-legacy",
           "variant": "legacy",
           "strategy": "legacy_unknown",
@@ -20794,7 +20781,7 @@
           }
         }
       ],
-      "defaultVariant": "standard",
+      "defaultVariant": "legacy",
       "evidence": [
         {
           "type": "community",
@@ -20802,33 +20789,13 @@
           "url": null,
           "checkedAt": "2026-11-16",
           "supports": "旧案の立ち寄り先。座標と距離は計算済みの旧経路で、その後の再調査はしていない。"
-        },
-        {
-          "type": "community",
-          "title": "OpenStreetMap（名称付き地点）",
-          "url": "https://www.openstreetmap.org/",
-          "checkedAt": "2026-11-16",
-          "supports": "駅・公園・寺社の名称ノードの座標。入口ではない。"
         }
       ],
       "openQuestions": [
         "立ち寄り先の入口・通行条件を地図と現地で照合",
         "同じ線をなぞる区間の理由を確認",
         "太陽の向きと時間帯の計算"
-      ],
-      "personalPlan": {
-        "mode": "station_to_station",
-        "hub": null,
-        "photo": "太陽の向きと時間帯は未計算。",
-        "transit": "鉄道＋徒歩（レンタカーなし）。",
-        "lodging": {
-          "policy": "ビジネスホテルまたは快活CLUBのナイト12時間パック（鍵付完全個室・100V電源・CPAP可）を駅徒歩10分以内で。",
-          "hub": null,
-          "status": "未予約",
-          "luggage": "CPAPと着替えは拠点駅のコインロッカーへ。"
-        },
-        "food": "コンビニ。地域限定商品は未調査。"
-      }
+      ]
     },
     {
       "id": "S7",
@@ -20958,33 +20925,13 @@
           "url": null,
           "checkedAt": "2026-11-16",
           "supports": "旧案の立ち寄り先。座標と距離は計算済みの旧経路で、その後の再調査はしていない。"
-        },
-        {
-          "type": "community",
-          "title": "OpenStreetMap（名称付き地点）",
-          "url": "https://www.openstreetmap.org/",
-          "checkedAt": "2026-11-16",
-          "supports": "駅・公園・寺社の名称ノードの座標。入口ではない。"
         }
       ],
       "openQuestions": [
         "立ち寄り先の入口・通行条件を地図と現地で照合",
         "同じ線をなぞる区間の理由を確認",
         "太陽の向きと時間帯の計算"
-      ],
-      "personalPlan": {
-        "mode": "station_to_station",
-        "hub": null,
-        "photo": "太陽の向きと時間帯は未計算。",
-        "transit": "鉄道＋徒歩（レンタカーなし）。",
-        "lodging": {
-          "policy": "ビジネスホテルまたは快活CLUBのナイト12時間パック（鍵付完全個室・100V電源・CPAP可）を駅徒歩10分以内で。",
-          "hub": null,
-          "status": "未予約",
-          "luggage": "CPAPと着替えは拠点駅のコインロッカーへ。"
-        },
-        "food": "コンビニ。地域限定商品は未調査。"
-      }
+      ]
     },
     {
       "id": "S8",
@@ -21085,33 +21032,13 @@
           "url": null,
           "checkedAt": "2026-11-16",
           "supports": "旧案の立ち寄り先。座標と距離は計算済みの旧経路で、その後の再調査はしていない。"
-        },
-        {
-          "type": "community",
-          "title": "OpenStreetMap（名称付き地点）",
-          "url": "https://www.openstreetmap.org/",
-          "checkedAt": "2026-11-16",
-          "supports": "駅・公園・寺社の名称ノードの座標。入口ではない。"
         }
       ],
       "openQuestions": [
         "立ち寄り先の入口・通行条件を地図と現地で照合",
         "同じ線をなぞる区間の理由を確認",
         "太陽の向きと時間帯の計算"
-      ],
-      "personalPlan": {
-        "mode": "station_to_station",
-        "hub": null,
-        "photo": "太陽の向きと時間帯は未計算。",
-        "transit": "鉄道＋徒歩（レンタカーなし）。",
-        "lodging": {
-          "policy": "ビジネスホテルまたは快活CLUBのナイト12時間パック（鍵付完全個室・100V電源・CPAP可）を駅徒歩10分以内で。",
-          "hub": null,
-          "status": "未予約",
-          "luggage": "CPAPと着替えは拠点駅のコインロッカーへ。"
-        },
-        "food": "コンビニ。地域限定商品は未調査。"
-      }
+      ]
     },
     {
       "id": "S9",
@@ -21236,33 +21163,13 @@
           "url": null,
           "checkedAt": "2026-11-16",
           "supports": "旧案の立ち寄り先。座標と距離は計算済みの旧経路で、その後の再調査はしていない。"
-        },
-        {
-          "type": "community",
-          "title": "OpenStreetMap（名称付き地点）",
-          "url": "https://www.openstreetmap.org/",
-          "checkedAt": "2026-11-16",
-          "supports": "駅・公園・寺社の名称ノードの座標。入口ではない。"
         }
       ],
       "openQuestions": [
         "立ち寄り先の入口・通行条件を地図と現地で照合",
         "同じ線をなぞる区間の理由を確認",
         "太陽の向きと時間帯の計算"
-      ],
-      "personalPlan": {
-        "mode": "station_to_station",
-        "hub": null,
-        "photo": "太陽の向きと時間帯は未計算。",
-        "transit": "鉄道＋徒歩（レンタカーなし）。",
-        "lodging": {
-          "policy": "ビジネスホテルまたは快活CLUBのナイト12時間パック（鍵付完全個室・100V電源・CPAP可）を駅徒歩10分以内で。",
-          "hub": null,
-          "status": "未予約",
-          "luggage": "CPAPと着替えは拠点駅のコインロッカーへ。"
-        },
-        "food": "コンビニ。地域限定商品は未調査。"
-      }
+      ]
     },
     {
       "id": "S10",
@@ -21364,33 +21271,13 @@
           "url": null,
           "checkedAt": "2026-11-16",
           "supports": "旧案の立ち寄り先。座標と距離は計算済みの旧経路で、その後の再調査はしていない。"
-        },
-        {
-          "type": "community",
-          "title": "OpenStreetMap（名称付き地点）",
-          "url": "https://www.openstreetmap.org/",
-          "checkedAt": "2026-11-16",
-          "supports": "駅・公園・寺社の名称ノードの座標。入口ではない。"
         }
       ],
       "openQuestions": [
         "立ち寄り先の入口・通行条件を地図と現地で照合",
         "同じ線をなぞる区間の理由を確認",
         "太陽の向きと時間帯の計算"
-      ],
-      "personalPlan": {
-        "mode": "station_to_station",
-        "hub": null,
-        "photo": "太陽の向きと時間帯は未計算。",
-        "transit": "鉄道＋徒歩（レンタカーなし）。",
-        "lodging": {
-          "policy": "ビジネスホテルまたは快活CLUBのナイト12時間パック（鍵付完全個室・100V電源・CPAP可）を駅徒歩10分以内で。",
-          "hub": null,
-          "status": "未予約",
-          "luggage": "CPAPと着替えは拠点駅のコインロッカーへ。"
-        },
-        "food": "コンビニ。地域限定商品は未調査。"
-      }
+      ]
     },
     {
       "id": "S11",
@@ -21514,33 +21401,13 @@
           "url": null,
           "checkedAt": "2026-11-16",
           "supports": "旧案の立ち寄り先。座標と距離は計算済みの旧経路で、その後の再調査はしていない。"
-        },
-        {
-          "type": "community",
-          "title": "OpenStreetMap（名称付き地点）",
-          "url": "https://www.openstreetmap.org/",
-          "checkedAt": "2026-11-16",
-          "supports": "駅・公園・寺社の名称ノードの座標。入口ではない。"
         }
       ],
       "openQuestions": [
         "立ち寄り先の入口・通行条件を地図と現地で照合",
         "同じ線をなぞる区間の理由を確認",
         "太陽の向きと時間帯の計算"
-      ],
-      "personalPlan": {
-        "mode": "station_to_station",
-        "hub": null,
-        "photo": "太陽の向きと時間帯は未計算。",
-        "transit": "鉄道＋徒歩（レンタカーなし）。",
-        "lodging": {
-          "policy": "ビジネスホテルまたは快活CLUBのナイト12時間パック（鍵付完全個室・100V電源・CPAP可）を駅徒歩10分以内で。",
-          "hub": null,
-          "status": "未予約",
-          "luggage": "CPAPと着替えは拠点駅のコインロッカーへ。"
-        },
-        "food": "コンビニ。地域限定商品は未調査。"
-      }
+      ]
     },
     {
       "id": "S12",
@@ -21656,33 +21523,13 @@
           "url": null,
           "checkedAt": "2026-11-16",
           "supports": "旧案の立ち寄り先。座標と距離は計算済みの旧経路で、その後の再調査はしていない。"
-        },
-        {
-          "type": "community",
-          "title": "OpenStreetMap（名称付き地点）",
-          "url": "https://www.openstreetmap.org/",
-          "checkedAt": "2026-11-16",
-          "supports": "駅・公園・寺社の名称ノードの座標。入口ではない。"
         }
       ],
       "openQuestions": [
         "立ち寄り先の入口・通行条件を地図と現地で照合",
         "同じ線をなぞる区間の理由を確認",
         "太陽の向きと時間帯の計算"
-      ],
-      "personalPlan": {
-        "mode": "station_to_station",
-        "hub": null,
-        "photo": "太陽の向きと時間帯は未計算。",
-        "transit": "鉄道＋徒歩（レンタカーなし）。",
-        "lodging": {
-          "policy": "ビジネスホテルまたは快活CLUBのナイト12時間パック（鍵付完全個室・100V電源・CPAP可）を駅徒歩10分以内で。",
-          "hub": null,
-          "status": "未予約",
-          "luggage": "CPAPと着替えは拠点駅のコインロッカーへ。"
-        },
-        "food": "コンビニ。地域限定商品は未調査。"
-      }
+      ]
     },
     {
       "id": "S13",
@@ -21756,115 +21603,6 @@
       "category": "personal",
       "routeOptions": [
         {
-          "id": "s13-standard",
-          "variant": "standard",
-          "strategy": "personal_one_stroke",
-          "geometryUrl": "data/routes/s13-standard.geojson",
-          "verificationStatus": "routed",
-          "distanceM": 5573,
-          "engineDistanceM": 5582,
-          "repeatedGeometryPct": 12.8,
-          "routeReason": "実在の駅・公園・寺社の名称ノードだけで組み直した個人散歩の案。",
-          "retraceException": {
-            "reason": "石田寺（土方歳三の墓所）は行き止まりの一本道で、入口まで往復が必要。",
-            "repeatedM": 713
-          },
-          "waypoints": [
-            {
-              "index": 0,
-              "id": "manganji",
-              "label": "万願寺駅",
-              "point": [
-                139.4192068,
-                35.6702239
-              ],
-              "source": "OSM node 万願寺駅"
-            },
-            {
-              "index": 1,
-              "id": "hijikata_museum",
-              "label": "土方歳三資料館",
-              "point": [
-                139.4198184,
-                35.6696071
-              ],
-              "source": "OSM museum 土方歳三資料館"
-            },
-            {
-              "index": 2,
-              "id": "sekidenji",
-              "label": "石田寺",
-              "point": [
-                139.424127,
-                35.6682375
-              ],
-              "source": "OSM place_of_worship 石田寺"
-            },
-            {
-              "index": 3,
-              "id": "asakawa_park",
-              "label": "浅川スポーツ公園",
-              "point": [
-                139.4129949,
-                35.6672452
-              ],
-              "source": "OSM sports_centre 浅川スポーツ公園"
-            },
-            {
-              "index": 4,
-              "id": "muramae",
-              "label": "村前公園",
-              "point": [
-                139.4050373,
-                35.6666572
-              ],
-              "source": "OSM park 村前公園"
-            },
-            {
-              "index": 5,
-              "id": "takahata_fudo_s",
-              "label": "高幡不動尊",
-              "point": [
-                139.411006,
-                35.6623658
-              ],
-              "source": "OSM place_of_worship 高幡不動尊"
-            },
-            {
-              "index": 6,
-              "id": "misawa",
-              "label": "三澤八幡神社",
-              "point": [
-                139.418846,
-                35.6584957
-              ],
-              "source": "OSM place_of_worship 三澤八幡神社"
-            },
-            {
-              "index": 7,
-              "id": "takahata_st_s",
-              "label": "高幡不動駅",
-              "point": [
-                139.4151319,
-                35.6612263
-              ],
-              "source": "OSM node 高幡不動駅"
-            }
-          ],
-          "engine": "valhalla-pedestrian",
-          "built": "2026-11-16",
-          "elevation": {
-            "source": "gsi_dem5a",
-            "status": "partial_dem_filled",
-            "url": "data/elevation/s13-standard.json",
-            "totalM": 5573,
-            "climbM": 31.5,
-            "descentM": 28.1,
-            "minM": 61.7,
-            "maxM": 76.3
-          }
-        },
-        {
           "id": "s13-legacy",
           "variant": "legacy",
           "strategy": "legacy_unknown",
@@ -21890,7 +21628,7 @@
           }
         }
       ],
-      "defaultVariant": "standard",
+      "defaultVariant": "legacy",
       "evidence": [
         {
           "type": "community",
@@ -21898,33 +21636,13 @@
           "url": null,
           "checkedAt": "2026-11-16",
           "supports": "旧案の立ち寄り先。座標と距離は計算済みの旧経路で、その後の再調査はしていない。"
-        },
-        {
-          "type": "community",
-          "title": "OpenStreetMap（名称付き地点）",
-          "url": "https://www.openstreetmap.org/",
-          "checkedAt": "2026-11-16",
-          "supports": "駅・公園・寺社の名称ノードの座標。入口ではない。"
         }
       ],
       "openQuestions": [
         "立ち寄り先の入口・通行条件を地図と現地で照合",
         "同じ線をなぞる区間の理由を確認",
         "太陽の向きと時間帯の計算"
-      ],
-      "personalPlan": {
-        "mode": "station_to_station",
-        "hub": null,
-        "photo": "太陽の向きと時間帯は未計算。",
-        "transit": "鉄道＋徒歩（レンタカーなし）。",
-        "lodging": {
-          "policy": "ビジネスホテルまたは快活CLUBのナイト12時間パック（鍵付完全個室・100V電源・CPAP可）を駅徒歩10分以内で。",
-          "hub": null,
-          "status": "未予約",
-          "luggage": "CPAPと着替えは拠点駅のコインロッカーへ。"
-        },
-        "food": "コンビニ。地域限定商品は未調査。"
-      }
+      ]
     },
     {
       "id": "E1",
@@ -22008,112 +21726,6 @@
       "category": "personal",
       "routeOptions": [
         {
-          "id": "e1-standard",
-          "variant": "standard",
-          "strategy": "personal_one_stroke",
-          "geometryUrl": "data/routes/e1-standard.geojson",
-          "verificationStatus": "routed",
-          "distanceM": 7671,
-          "engineDistanceM": 7674,
-          "repeatedGeometryPct": 1.8,
-          "routeReason": "実在の駅・公園・寺社の名称ノードだけで組み直した個人散歩の案。 面の地点は歩道の最寄り点へ寄せた: 柿田川公園(54m)。",
-          "retraceException": null,
-          "waypoints": [
-            {
-              "index": 0,
-              "id": "mishima_st",
-              "label": "三島駅",
-              "point": [
-                138.9109651,
-                35.1254155
-              ],
-              "source": "OSM station 三島"
-            },
-            {
-              "index": 1,
-              "id": "kakita",
-              "label": "柿田川公園",
-              "point": [
-                138.901213,
-                35.107959
-              ],
-              "source": "OSM park 柿田川公園"
-            },
-            {
-              "index": 2,
-              "id": "sano",
-              "label": "佐野美術館",
-              "point": [
-                138.915844,
-                35.1147363
-              ],
-              "source": "OSM museum 佐野美術館"
-            },
-            {
-              "index": 3,
-              "id": "mishima_taisha",
-              "label": "三嶋大社",
-              "point": [
-                138.9197264,
-                35.1212772
-              ],
-              "source": "OSM museum 三嶋大社宝物館"
-            },
-            {
-              "index": 4,
-              "id": "komoike",
-              "label": "菰池公園",
-              "point": [
-                138.9160482,
-                35.1255333
-              ],
-              "source": "OSM park 菰池公園"
-            },
-            {
-              "index": 5,
-              "id": "shirataki",
-              "label": "白滝公園",
-              "point": [
-                138.9144425,
-                35.1227253
-              ],
-              "source": "OSM node 白滝公園"
-            },
-            {
-              "index": 6,
-              "id": "rakuju",
-              "label": "楽寿園",
-              "point": [
-                138.9110879,
-                35.1249331
-              ],
-              "source": "OSM park 三島市立公園 楽寿園"
-            },
-            {
-              "index": 7,
-              "id": "mishima_st_end",
-              "label": "三島駅（戻り）",
-              "point": [
-                138.9109651,
-                35.1254155
-              ],
-              "source": "OSM station 三島"
-            }
-          ],
-          "engine": "valhalla-pedestrian",
-          "built": "2026-11-16",
-          "elevation": {
-            "source": "gsi_dem5a",
-            "status": "partial_dem_filled",
-            "url": "data/elevation/e1-standard.json",
-            "totalM": 7671,
-            "climbM": 34.9,
-            "descentM": 34.9,
-            "minM": 18,
-            "maxM": 40.6
-          }
-        },
-        {
           "id": "e1-legacy",
           "variant": "legacy",
           "strategy": "legacy_unknown",
@@ -22139,7 +21751,7 @@
           }
         }
       ],
-      "defaultVariant": "standard",
+      "defaultVariant": "legacy",
       "evidence": [
         {
           "type": "community",
@@ -22147,33 +21759,13 @@
           "url": null,
           "checkedAt": "2026-11-16",
           "supports": "旧案の立ち寄り先。座標と距離は計算済みの旧経路で、その後の再調査はしていない。"
-        },
-        {
-          "type": "community",
-          "title": "OpenStreetMap（名称付き地点）",
-          "url": "https://www.openstreetmap.org/",
-          "checkedAt": "2026-11-16",
-          "supports": "駅・公園・寺社の名称ノードの座標。入口ではない。"
         }
       ],
       "openQuestions": [
         "立ち寄り先の入口・通行条件を地図と現地で照合",
         "同じ線をなぞる区間の理由を確認",
         "太陽の向きと時間帯の計算"
-      ],
-      "personalPlan": {
-        "mode": "station_to_station",
-        "hub": null,
-        "photo": "太陽の向きと時間帯は未計算。",
-        "transit": "鉄道＋徒歩（レンタカーなし）。",
-        "lodging": {
-          "policy": "ビジネスホテルまたは快活CLUBのナイト12時間パック（鍵付完全個室・100V電源・CPAP可）を駅徒歩10分以内で。",
-          "hub": null,
-          "status": "未予約",
-          "luggage": "CPAPと着替えは拠点駅のコインロッカーへ。"
-        },
-        "food": "コンビニ。地域限定商品は未調査。"
-      }
+      ]
     },
     {
       "id": "E2",
@@ -22267,33 +21859,13 @@
           "url": null,
           "checkedAt": "2026-11-16",
           "supports": "旧案の立ち寄り先。座標と距離は計算済みの旧経路で、その後の再調査はしていない。"
-        },
-        {
-          "type": "community",
-          "title": "OpenStreetMap（名称付き地点）",
-          "url": "https://www.openstreetmap.org/",
-          "checkedAt": "2026-11-16",
-          "supports": "駅・公園・寺社の名称ノードの座標。入口ではない。"
         }
       ],
       "openQuestions": [
         "立ち寄り先の入口・通行条件を地図と現地で照合",
         "同じ線をなぞる区間の理由を確認",
         "太陽の向きと時間帯の計算"
-      ],
-      "personalPlan": {
-        "mode": "station_to_station",
-        "hub": null,
-        "photo": "太陽の向きと時間帯は未計算。",
-        "transit": "鉄道＋徒歩（レンタカーなし）。",
-        "lodging": {
-          "policy": "ビジネスホテルまたは快活CLUBのナイト12時間パック（鍵付完全個室・100V電源・CPAP可）を駅徒歩10分以内で。",
-          "hub": null,
-          "status": "未予約",
-          "luggage": "CPAPと着替えは拠点駅のコインロッカーへ。"
-        },
-        "food": "コンビニ。地域限定商品は未調査。"
-      }
+      ]
     },
     {
       "id": "E3",
@@ -22376,102 +21948,6 @@
       "category": "personal",
       "routeOptions": [
         {
-          "id": "e3-standard",
-          "variant": "standard",
-          "strategy": "personal_one_stroke",
-          "geometryUrl": "data/routes/e3-standard.geojson",
-          "verificationStatus": "routed",
-          "distanceM": 7060,
-          "engineDistanceM": 7067,
-          "repeatedGeometryPct": 2.7,
-          "routeReason": "実在の駅・公園・寺社の名称ノードだけで組み直した個人散歩の案。",
-          "retraceException": null,
-          "waypoints": [
-            {
-              "index": 0,
-              "id": "hamamatsu_st",
-              "label": "浜松駅",
-              "point": [
-                137.7334896,
-                34.705402
-              ],
-              "source": "OSM node 浜松駅"
-            },
-            {
-              "index": 1,
-              "id": "gakki",
-              "label": "浜松市楽器博物館",
-              "point": [
-                137.7385572,
-                34.706443
-              ],
-              "source": "OSM museum 浜松市楽器博物館"
-            },
-            {
-              "index": 2,
-              "id": "hamamatsu_jo_iri",
-              "label": "浜松城公園入口",
-              "point": [
-                137.7275634,
-                34.7129503
-              ],
-              "source": "OSM node 2569338403 浜松城公園入口（東側の入口）"
-            },
-            {
-              "index": 3,
-              "id": "hamamatsu_jo",
-              "label": "浜松城跡（天守閣）",
-              "point": [
-                137.7227348,
-                34.7119755
-              ],
-              "source": "OSM information 浜松城跡"
-            },
-            {
-              "index": 4,
-              "id": "hamamatsu_bijutsu",
-              "label": "浜松市美術館",
-              "point": [
-                137.7239316,
-                34.7119018
-              ],
-              "source": "OSM gallery 浜松市美術館"
-            },
-            {
-              "index": 5,
-              "id": "mabuchi",
-              "label": "賀茂真淵記念館",
-              "point": [
-                137.7161879,
-                34.700965
-              ],
-              "source": "OSM museum 賀茂真淵記念館"
-            },
-            {
-              "index": 6,
-              "id": "hamamatsu_st_end",
-              "label": "浜松駅（戻り）",
-              "point": [
-                137.7334896,
-                34.705402
-              ],
-              "source": "OSM node 浜松駅"
-            }
-          ],
-          "engine": "valhalla-pedestrian",
-          "built": "2026-11-16",
-          "elevation": {
-            "source": "gsi_dem5a",
-            "status": "dem",
-            "url": "data/elevation/e3-standard.json",
-            "totalM": 7060,
-            "climbM": 51.5,
-            "descentM": 51.5,
-            "minM": 3.9,
-            "maxM": 31.6
-          }
-        },
-        {
           "id": "e3-legacy",
           "variant": "legacy",
           "strategy": "legacy_unknown",
@@ -22497,7 +21973,7 @@
           }
         }
       ],
-      "defaultVariant": "standard",
+      "defaultVariant": "legacy",
       "evidence": [
         {
           "type": "community",
@@ -22505,33 +21981,13 @@
           "url": null,
           "checkedAt": "2026-11-16",
           "supports": "旧案の立ち寄り先。座標と距離は計算済みの旧経路で、その後の再調査はしていない。"
-        },
-        {
-          "type": "community",
-          "title": "OpenStreetMap（名称付き地点）",
-          "url": "https://www.openstreetmap.org/",
-          "checkedAt": "2026-11-16",
-          "supports": "駅・公園・寺社の名称ノードの座標。入口ではない。"
         }
       ],
       "openQuestions": [
         "立ち寄り先の入口・通行条件を地図と現地で照合",
         "同じ線をなぞる区間の理由を確認",
         "太陽の向きと時間帯の計算"
-      ],
-      "personalPlan": {
-        "mode": "station_to_station",
-        "hub": null,
-        "photo": "太陽の向きと時間帯は未計算。",
-        "transit": "鉄道＋徒歩（レンタカーなし）。",
-        "lodging": {
-          "policy": "ビジネスホテルまたは快活CLUBのナイト12時間パック（鍵付完全個室・100V電源・CPAP可）を駅徒歩10分以内で。",
-          "hub": null,
-          "status": "未予約",
-          "luggage": "CPAPと着替えは拠点駅のコインロッカーへ。"
-        },
-        "food": "コンビニ。地域限定商品は未調査。"
-      }
+      ]
     },
     {
       "id": "E4",
@@ -22637,33 +22093,13 @@
           "url": null,
           "checkedAt": "2026-11-16",
           "supports": "旧案の立ち寄り先。座標と距離は計算済みの旧経路で、その後の再調査はしていない。"
-        },
-        {
-          "type": "community",
-          "title": "OpenStreetMap（名称付き地点）",
-          "url": "https://www.openstreetmap.org/",
-          "checkedAt": "2026-11-16",
-          "supports": "駅・公園・寺社の名称ノードの座標。入口ではない。"
         }
       ],
       "openQuestions": [
         "立ち寄り先の入口・通行条件を地図と現地で照合",
         "同じ線をなぞる区間の理由を確認",
         "太陽の向きと時間帯の計算"
-      ],
-      "personalPlan": {
-        "mode": "station_to_station",
-        "hub": null,
-        "photo": "太陽の向きと時間帯は未計算。",
-        "transit": "鉄道＋徒歩（レンタカーなし）。",
-        "lodging": {
-          "policy": "ビジネスホテルまたは快活CLUBのナイト12時間パック（鍵付完全個室・100V電源・CPAP可）を駅徒歩10分以内で。",
-          "hub": null,
-          "status": "未予約",
-          "luggage": "CPAPと着替えは拠点駅のコインロッカーへ。"
-        },
-        "food": "コンビニ。地域限定商品は未調査。"
-      }
+      ]
     },
     {
       "id": "E5",
@@ -22780,33 +22216,13 @@
           "url": null,
           "checkedAt": "2026-11-16",
           "supports": "旧案の立ち寄り先。座標と距離は計算済みの旧経路で、その後の再調査はしていない。"
-        },
-        {
-          "type": "community",
-          "title": "OpenStreetMap（名称付き地点）",
-          "url": "https://www.openstreetmap.org/",
-          "checkedAt": "2026-11-16",
-          "supports": "駅・公園・寺社の名称ノードの座標。入口ではない。"
         }
       ],
       "openQuestions": [
         "立ち寄り先の入口・通行条件を地図と現地で照合",
         "同じ線をなぞる区間の理由を確認",
         "太陽の向きと時間帯の計算"
-      ],
-      "personalPlan": {
-        "mode": "station_to_station",
-        "hub": null,
-        "photo": "太陽の向きと時間帯は未計算。",
-        "transit": "鉄道＋徒歩（レンタカーなし）。",
-        "lodging": {
-          "policy": "ビジネスホテルまたは快活CLUBのナイト12時間パック（鍵付完全個室・100V電源・CPAP可）を駅徒歩10分以内で。",
-          "hub": null,
-          "status": "未予約",
-          "luggage": "CPAPと着替えは拠点駅のコインロッカーへ。"
-        },
-        "food": "コンビニ。地域限定商品は未調査。"
-      }
+      ]
     },
     {
       "id": "Z1",
@@ -22922,33 +22338,13 @@
           "url": null,
           "checkedAt": "2026-11-16",
           "supports": "旧案の立ち寄り先。座標と距離は計算済みの旧経路で、その後の再調査はしていない。"
-        },
-        {
-          "type": "community",
-          "title": "OpenStreetMap（名称付き地点）",
-          "url": "https://www.openstreetmap.org/",
-          "checkedAt": "2026-11-16",
-          "supports": "駅・公園・寺社の名称ノードの座標。入口ではない。"
         }
       ],
       "openQuestions": [
         "立ち寄り先の入口・通行条件を地図と現地で照合",
         "同じ線をなぞる区間の理由を確認",
         "太陽の向きと時間帯の計算"
-      ],
-      "personalPlan": {
-        "mode": "station_to_station",
-        "hub": null,
-        "photo": "太陽の向きと時間帯は未計算。",
-        "transit": "鉄道＋徒歩（レンタカーなし）。",
-        "lodging": {
-          "policy": "ビジネスホテルまたは快活CLUBのナイト12時間パック（鍵付完全個室・100V電源・CPAP可）を駅徒歩10分以内で。",
-          "hub": null,
-          "status": "未予約",
-          "luggage": "CPAPと着替えは拠点駅のコインロッカーへ。"
-        },
-        "food": "コンビニ。地域限定商品は未調査。"
-      }
+      ]
     },
     {
       "id": "Z2",
@@ -23031,112 +22427,6 @@
       "category": "personal",
       "routeOptions": [
         {
-          "id": "z2-standard",
-          "variant": "standard",
-          "strategy": "personal_one_stroke",
-          "geometryUrl": "data/routes/z2-standard.geojson",
-          "verificationStatus": "routed",
-          "distanceM": 5972,
-          "engineDistanceM": 5972,
-          "repeatedGeometryPct": 6.3,
-          "routeReason": "実在の駅・公園・寺社の名称ノードだけで組み直した個人散歩の案。",
-          "retraceException": null,
-          "waypoints": [
-            {
-              "index": 0,
-              "id": "sannomiya",
-              "label": "神戸三宮駅",
-              "point": [
-                135.192671,
-                34.6932523
-              ],
-              "source": "OSM station 神戸三宮"
-            },
-            {
-              "index": 1,
-              "id": "ikuta",
-              "label": "生田宮",
-              "point": [
-                135.1908857,
-                34.6942333
-              ],
-              "source": "OSM yes 生田宮"
-            },
-            {
-              "index": 2,
-              "id": "suwa",
-              "label": "諏訪神社",
-              "point": [
-                135.1798395,
-                34.6964036
-              ],
-              "source": "OSM place_of_worship 諏訪神社"
-            },
-            {
-              "index": 3,
-              "id": "hanakuma",
-              "label": "花隈厳島神社",
-              "point": [
-                135.1820545,
-                34.6885525
-              ],
-              "source": "OSM place_of_worship 花隈厳島神社"
-            },
-            {
-              "index": 4,
-              "id": "kakyo",
-              "label": "神戸華僑歴史博物館",
-              "point": [
-                135.1873469,
-                34.6859156
-              ],
-              "source": "OSM museum 神戸華僑歴史博物館"
-            },
-            {
-              "index": 5,
-              "id": "chutottei",
-              "label": "中突堤旅客ターミナル",
-              "point": [
-                135.1881514,
-                34.6799903
-              ],
-              "source": "OSM ferry_terminal 中突堤旅客ターミナル"
-            },
-            {
-              "index": 6,
-              "id": "mosaic_mae",
-              "label": "ハーバーランド（モザイク前）",
-              "point": [
-                135.1841253,
-                34.6813952
-              ],
-              "source": "OSM node 6033546386 ハーバーランド(モザイク前)"
-            },
-            {
-              "index": 7,
-              "id": "kobe_st",
-              "label": "神戸駅",
-              "point": [
-                135.1784971,
-                34.6792281
-              ],
-              "source": "OSM station 神戸"
-            }
-          ],
-          "engine": "valhalla-pedestrian",
-          "built": "2026-11-16",
-          "elevation": {
-            "source": "gsi_dem5a",
-            "status": "dem",
-            "url": "data/elevation/z2-standard.json",
-            "totalM": 5972,
-            "climbM": 101.1,
-            "descentM": 109.5,
-            "minM": 1.4,
-            "maxM": 99.6
-          }
-        },
-        {
           "id": "z2-legacy",
           "variant": "legacy",
           "strategy": "legacy_unknown",
@@ -23162,7 +22452,7 @@
           }
         }
       ],
-      "defaultVariant": "standard",
+      "defaultVariant": "legacy",
       "evidence": [
         {
           "type": "community",
@@ -23170,33 +22460,13 @@
           "url": null,
           "checkedAt": "2026-11-16",
           "supports": "旧案の立ち寄り先。座標と距離は計算済みの旧経路で、その後の再調査はしていない。"
-        },
-        {
-          "type": "community",
-          "title": "OpenStreetMap（名称付き地点）",
-          "url": "https://www.openstreetmap.org/",
-          "checkedAt": "2026-11-16",
-          "supports": "駅・公園・寺社の名称ノードの座標。入口ではない。"
         }
       ],
       "openQuestions": [
         "立ち寄り先の入口・通行条件を地図と現地で照合",
         "同じ線をなぞる区間の理由を確認",
         "太陽の向きと時間帯の計算"
-      ],
-      "personalPlan": {
-        "mode": "station_to_station",
-        "hub": null,
-        "photo": "太陽の向きと時間帯は未計算。",
-        "transit": "鉄道＋徒歩（レンタカーなし）。",
-        "lodging": {
-          "policy": "ビジネスホテルまたは快活CLUBのナイト12時間パック（鍵付完全個室・100V電源・CPAP可）を駅徒歩10分以内で。",
-          "hub": null,
-          "status": "未予約",
-          "luggage": "CPAPと着替えは拠点駅のコインロッカーへ。"
-        },
-        "food": "コンビニ。地域限定商品は未調査。"
-      }
+      ]
     },
     {
       "id": "Z3",
@@ -23280,122 +22550,6 @@
       "category": "personal",
       "routeOptions": [
         {
-          "id": "z3-standard",
-          "variant": "standard",
-          "strategy": "personal_one_stroke",
-          "geometryUrl": "data/routes/z3-standard.geojson",
-          "verificationStatus": "routed",
-          "distanceM": 6776,
-          "engineDistanceM": 6772,
-          "repeatedGeometryPct": 1.4,
-          "routeReason": "実在の駅・公園・寺社の名称ノードだけで組み直した個人散歩の案。",
-          "retraceException": null,
-          "waypoints": [
-            {
-              "index": 0,
-              "id": "rakusuien",
-              "label": "樂水園",
-              "point": [
-                130.4132301,
-                33.5862842
-              ],
-              "source": "OSM attraction 樂水園"
-            },
-            {
-              "index": 1,
-              "id": "machiya",
-              "label": "博多町家ふるさと館",
-              "point": [
-                130.4114961,
-                33.5935643
-              ],
-              "source": "OSM museum 博多町家鄉土館"
-            },
-            {
-              "index": 2,
-              "id": "kushida",
-              "label": "櫛田神社（飾り山笠）",
-              "point": [
-                130.4105785,
-                33.5927546
-              ],
-              "source": "OSM attraction 櫛田神社飾り山笠"
-            },
-            {
-              "index": 3,
-              "id": "kawabata",
-              "label": "川端商店街",
-              "point": [
-                130.4102548,
-                33.5925387
-              ],
-              "source": "OSM attraction 川端商店街"
-            },
-            {
-              "index": 4,
-              "id": "nakasu_yatai",
-              "label": "中洲屋台",
-              "point": [
-                130.4070418,
-                33.5913915
-              ],
-              "source": "OSM attraction 中洲屋台"
-            },
-            {
-              "index": 5,
-              "id": "asia_bijutsu",
-              "label": "福岡アジア美術館",
-              "point": [
-                130.4062094,
-                33.5948699
-              ],
-              "source": "OSM museum 福岡アジア美術館"
-            },
-            {
-              "index": 6,
-              "id": "ken_bijutsu",
-              "label": "福岡県立美術館",
-              "point": [
-                130.3990882,
-                33.5972771
-              ],
-              "source": "OSM museum 福岡県立美術館"
-            },
-            {
-              "index": 7,
-              "id": "shintencho",
-              "label": "新天町商店街",
-              "point": [
-                130.3974505,
-                33.5903305
-              ],
-              "source": "OSM attraction 新天町商店街"
-            },
-            {
-              "index": 8,
-              "id": "ohori",
-              "label": "大濠公園",
-              "point": [
-                130.3772225,
-                33.5901753
-              ],
-              "source": "OSM node 大濠公園"
-            }
-          ],
-          "engine": "valhalla-pedestrian",
-          "built": "2026-11-17",
-          "elevation": {
-            "source": "gsi_dem5a",
-            "status": "partial_dem_filled",
-            "url": "data/elevation/z3-standard.json",
-            "totalM": 6776,
-            "climbM": 16.7,
-            "descentM": 17.3,
-            "minM": 2.2,
-            "maxM": 5.7
-          }
-        },
-        {
           "id": "z3-legacy",
           "variant": "legacy",
           "strategy": "legacy_unknown",
@@ -23421,7 +22575,7 @@
           }
         }
       ],
-      "defaultVariant": "standard",
+      "defaultVariant": "legacy",
       "evidence": [
         {
           "type": "community",
@@ -23429,33 +22583,13 @@
           "url": null,
           "checkedAt": "2026-11-16",
           "supports": "旧案の立ち寄り先。座標と距離は計算済みの旧経路で、その後の再調査はしていない。"
-        },
-        {
-          "type": "community",
-          "title": "OpenStreetMap（名称付き地点）",
-          "url": "https://www.openstreetmap.org/",
-          "checkedAt": "2026-11-16",
-          "supports": "駅・公園・寺社の名称ノードの座標。入口ではない。"
         }
       ],
       "openQuestions": [
         "立ち寄り先の入口・通行条件を地図と現地で照合",
         "同じ線をなぞる区間の理由を確認",
         "太陽の向きと時間帯の計算"
-      ],
-      "personalPlan": {
-        "mode": "station_to_station",
-        "hub": null,
-        "photo": "太陽の向きと時間帯は未計算。",
-        "transit": "鉄道＋徒歩（レンタカーなし）。",
-        "lodging": {
-          "policy": "ビジネスホテルまたは快活CLUBのナイト12時間パック（鍵付完全個室・100V電源・CPAP可）を駅徒歩10分以内で。",
-          "hub": null,
-          "status": "未予約",
-          "luggage": "CPAPと着替えは拠点駅のコインロッカーへ。"
-        },
-        "food": "コンビニ。地域限定商品は未調査。"
-      }
+      ]
     },
     {
       "id": "Z4",
@@ -23571,33 +22705,13 @@
           "url": null,
           "checkedAt": "2026-11-16",
           "supports": "旧案の立ち寄り先。座標と距離は計算済みの旧経路で、その後の再調査はしていない。"
-        },
-        {
-          "type": "community",
-          "title": "OpenStreetMap（名称付き地点）",
-          "url": "https://www.openstreetmap.org/",
-          "checkedAt": "2026-11-16",
-          "supports": "駅・公園・寺社の名称ノードの座標。入口ではない。"
         }
       ],
       "openQuestions": [
         "立ち寄り先の入口・通行条件を地図と現地で照合",
         "同じ線をなぞる区間の理由を確認",
         "太陽の向きと時間帯の計算"
-      ],
-      "personalPlan": {
-        "mode": "station_to_station",
-        "hub": null,
-        "photo": "太陽の向きと時間帯は未計算。",
-        "transit": "鉄道＋徒歩（レンタカーなし）。",
-        "lodging": {
-          "policy": "ビジネスホテルまたは快活CLUBのナイト12時間パック（鍵付完全個室・100V電源・CPAP可）を駅徒歩10分以内で。",
-          "hub": null,
-          "status": "未予約",
-          "luggage": "CPAPと着替えは拠点駅のコインロッカーへ。"
-        },
-        "food": "コンビニ。地域限定商品は未調査。"
-      }
+      ]
     },
     {
       "id": "Z5",
@@ -23688,115 +22802,6 @@
       "category": "personal",
       "routeOptions": [
         {
-          "id": "z5-standard",
-          "variant": "standard",
-          "strategy": "personal_one_stroke",
-          "geometryUrl": "data/routes/z5-standard.geojson",
-          "verificationStatus": "routed",
-          "distanceM": 5513,
-          "engineDistanceM": 5503,
-          "repeatedGeometryPct": 12.5,
-          "routeReason": "実在の駅・公園・寺社の名称ノードだけで組み直した個人散歩の案。",
-          "retraceException": {
-            "reason": "松川べりの橋の取り付け道が一本しかなく、城址入口と泉と滝の広場の前後で同じ道を戻る。",
-            "repeatedM": 689
-          },
-          "waypoints": [
-            {
-              "index": 0,
-              "id": "toyama_st",
-              "label": "富山駅",
-              "point": [
-                137.213037,
-                36.7016902
-              ],
-              "source": "OSM tram_stop 富山駅"
-            },
-            {
-              "index": 1,
-              "id": "kyoiku",
-              "label": "富山県教育記念館",
-              "point": [
-                137.2172714,
-                36.6977649
-              ],
-              "source": "OSM museum 富山県教育記念館"
-            },
-            {
-              "index": 2,
-              "id": "rakusui",
-              "label": "楽翠亭美術館",
-              "point": [
-                137.2169262,
-                36.7061807
-              ],
-              "source": "OSM museum 楽翠亭美術館"
-            },
-            {
-              "index": 3,
-              "id": "kankei_spring",
-              "label": "泉と滝の広場",
-              "point": [
-                137.2137337,
-                36.7078144
-              ],
-              "source": "OSM node 泉と滝の広場"
-            },
-            {
-              "index": 4,
-              "id": "kankei_park",
-              "label": "富岩運河環水公園",
-              "point": [
-                137.213589,
-                36.7078621
-              ],
-              "source": "OSM 富岩運河環水公園"
-            },
-            {
-              "index": 5,
-              "id": "matsukawa",
-              "label": "松川遊覧船乗降場",
-              "point": [
-                137.2126836,
-                36.6945703
-              ],
-              "source": "OSM viewpoint 松川遊覧船乗降場"
-            },
-            {
-              "index": 6,
-              "id": "toyama_jo",
-              "label": "富山城址",
-              "point": [
-                137.2110967,
-                36.6927027
-              ],
-              "source": "OSM information 富山城の石垣について（城址公園内）"
-            },
-            {
-              "index": 7,
-              "id": "toyama_glass",
-              "label": "富山市ガラス美術館",
-              "point": [
-                137.2146965,
-                36.688054
-              ],
-              "source": "OSM museum 富山市ガラス美術館"
-            }
-          ],
-          "engine": "valhalla-pedestrian",
-          "built": "2026-11-16",
-          "elevation": {
-            "source": "gsi_dem5a",
-            "status": "partial_dem_filled",
-            "url": "data/elevation/z5-standard.json",
-            "totalM": 5513,
-            "climbM": 22.1,
-            "descentM": 18.8,
-            "minM": 3.3,
-            "maxM": 10.6
-          }
-        },
-        {
           "id": "z5-legacy",
           "variant": "legacy",
           "strategy": "legacy_unknown",
@@ -23822,7 +22827,7 @@
           }
         }
       ],
-      "defaultVariant": "standard",
+      "defaultVariant": "legacy",
       "evidence": [
         {
           "type": "community",
@@ -23830,33 +22835,13 @@
           "url": null,
           "checkedAt": "2026-11-16",
           "supports": "旧案の立ち寄り先。座標と距離は計算済みの旧経路で、その後の再調査はしていない。"
-        },
-        {
-          "type": "community",
-          "title": "OpenStreetMap（名称付き地点）",
-          "url": "https://www.openstreetmap.org/",
-          "checkedAt": "2026-11-16",
-          "supports": "駅・公園・寺社の名称ノードの座標。入口ではない。"
         }
       ],
       "openQuestions": [
         "立ち寄り先の入口・通行条件を地図と現地で照合",
         "同じ線をなぞる区間の理由を確認",
         "太陽の向きと時間帯の計算"
-      ],
-      "personalPlan": {
-        "mode": "station_to_station",
-        "hub": null,
-        "photo": "太陽の向きと時間帯は未計算。",
-        "transit": "鉄道＋徒歩（レンタカーなし）。",
-        "lodging": {
-          "policy": "ビジネスホテルまたは快活CLUBのナイト12時間パック（鍵付完全個室・100V電源・CPAP可）を駅徒歩10分以内で。",
-          "hub": null,
-          "status": "未予約",
-          "luggage": "CPAPと着替えは拠点駅のコインロッカーへ。"
-        },
-        "food": "コンビニ。地域限定商品は未調査。"
-      }
+      ]
     },
     {
       "id": "Z6",
@@ -23971,33 +22956,13 @@
           "url": null,
           "checkedAt": "2026-11-16",
           "supports": "旧案の立ち寄り先。座標と距離は計算済みの旧経路で、その後の再調査はしていない。"
-        },
-        {
-          "type": "community",
-          "title": "OpenStreetMap（名称付き地点）",
-          "url": "https://www.openstreetmap.org/",
-          "checkedAt": "2026-11-16",
-          "supports": "駅・公園・寺社の名称ノードの座標。入口ではない。"
         }
       ],
       "openQuestions": [
         "立ち寄り先の入口・通行条件を地図と現地で照合",
         "同じ線をなぞる区間の理由を確認",
         "太陽の向きと時間帯の計算"
-      ],
-      "personalPlan": {
-        "mode": "station_to_station",
-        "hub": null,
-        "photo": "太陽の向きと時間帯は未計算。",
-        "transit": "鉄道＋徒歩（レンタカーなし）。",
-        "lodging": {
-          "policy": "ビジネスホテルまたは快活CLUBのナイト12時間パック（鍵付完全個室・100V電源・CPAP可）を駅徒歩10分以内で。",
-          "hub": null,
-          "status": "未予約",
-          "luggage": "CPAPと着替えは拠点駅のコインロッカーへ。"
-        },
-        "food": "コンビニ。地域限定商品は未調査。"
-      }
+      ]
     },
     {
       "id": "Z7",
@@ -24113,33 +23078,13 @@
           "url": null,
           "checkedAt": "2026-11-16",
           "supports": "旧案の立ち寄り先。座標と距離は計算済みの旧経路で、その後の再調査はしていない。"
-        },
-        {
-          "type": "community",
-          "title": "OpenStreetMap（名称付き地点）",
-          "url": "https://www.openstreetmap.org/",
-          "checkedAt": "2026-11-16",
-          "supports": "駅・公園・寺社の名称ノードの座標。入口ではない。"
         }
       ],
       "openQuestions": [
         "立ち寄り先の入口・通行条件を地図と現地で照合",
         "同じ線をなぞる区間の理由を確認",
         "太陽の向きと時間帯の計算"
-      ],
-      "personalPlan": {
-        "mode": "station_to_station",
-        "hub": null,
-        "photo": "太陽の向きと時間帯は未計算。",
-        "transit": "鉄道＋徒歩（レンタカーなし）。",
-        "lodging": {
-          "policy": "ビジネスホテルまたは快活CLUBのナイト12時間パック（鍵付完全個室・100V電源・CPAP可）を駅徒歩10分以内で。",
-          "hub": null,
-          "status": "未予約",
-          "luggage": "CPAPと着替えは拠点駅のコインロッカーへ。"
-        },
-        "food": "コンビニ。地域限定商品は未調査。"
-      }
+      ]
     },
     {
       "id": "Z8",
@@ -24255,33 +23200,13 @@
           "url": null,
           "checkedAt": "2026-11-16",
           "supports": "旧案の立ち寄り先。座標と距離は計算済みの旧経路で、その後の再調査はしていない。"
-        },
-        {
-          "type": "community",
-          "title": "OpenStreetMap（名称付き地点）",
-          "url": "https://www.openstreetmap.org/",
-          "checkedAt": "2026-11-16",
-          "supports": "駅・公園・寺社の名称ノードの座標。入口ではない。"
         }
       ],
       "openQuestions": [
         "立ち寄り先の入口・通行条件を地図と現地で照合",
         "同じ線をなぞる区間の理由を確認",
         "太陽の向きと時間帯の計算"
-      ],
-      "personalPlan": {
-        "mode": "station_to_station",
-        "hub": null,
-        "photo": "太陽の向きと時間帯は未計算。",
-        "transit": "鉄道＋徒歩（レンタカーなし）。",
-        "lodging": {
-          "policy": "ビジネスホテルまたは快活CLUBのナイト12時間パック（鍵付完全個室・100V電源・CPAP可）を駅徒歩10分以内で。",
-          "hub": null,
-          "status": "未予約",
-          "luggage": "CPAPと着替えは拠点駅のコインロッカーへ。"
-        },
-        "food": "コンビニ。地域限定商品は未調査。"
-      }
+      ]
     },
     {
       "id": "No.56",

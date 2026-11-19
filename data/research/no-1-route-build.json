@@ -1,25 +1,45 @@
 {
-  "calculatedAt": "2026-11-15T13:32:18.084Z",
+  "calculatedAt": "2026-11-19T13:10:40.610Z",
   "engine": "valhalla-pedestrian",
   "variants": {
     "standard": {
       "label": "standard",
-      "distanceM": 5741,
-      "engineDistanceM": 5748,
-      "repeatedGeometryM": 562,
-      "repeatedGeometryPct": 9.8,
+      "distanceM": 3968,
+      "engineDistanceM": 3971,
+      "repeatedGeometryM": 259,
+      "repeatedGeometryPct": 6.5,
       "legKm": [
+        0.7,
+        0.5,
         0.7,
         0.33,
         0.32,
         0.41,
         0.54,
-        1.35,
-        1.06,
-        1.05
+        0.48
       ],
       "geometryUrl": "data/routes/no-1-standard.geojson",
       "stops": [
+        {
+          "id": "tokyo_marunouchi",
+          "label": "東京駅（丸の内中央口）",
+          "coord": [
+            35.6815023,
+            139.7646024
+          ],
+          "source": "OSM node 1588249065 東京駅中央口",
+          "offsetM": 0
+        },
+        {
+          "id": "wadakura",
+          "label": "和田倉噴水公園",
+          "coord": [
+            35.6833717,
+            139.7612987
+          ],
+          "source": "OSM way 576315885 和田倉噴水公園 park",
+          "offsetM": 0
+        },
         {
           "id": "otemon",
           "label": "大手門",
@@ -81,33 +101,13 @@
           "offsetM": 0
         },
         {
-          "id": "hirakawa_signal",
-          "label": "平川門（交差点）",
+          "id": "kudanshita",
+          "label": "九段下駅",
           "coord": [
-            35.6902816,
-            139.7588238
+            35.6953916,
+            139.7513489
           ],
-          "source": "OSM node 243828110 traffic_signals 平川門; 御苑の平川門の外側",
-          "offsetM": 0
-        },
-        {
-          "id": "wadakura",
-          "label": "和田倉噴水公園",
-          "coord": [
-            35.6833717,
-            139.7612987
-          ],
-          "source": "OSM node 和田倉噴水公園 park",
-          "offsetM": 0
-        },
-        {
-          "id": "takebashi",
-          "label": "竹橋駅",
-          "coord": [
-            35.6902074,
-            139.7586934
-          ],
-          "source": "OSM node 竹橋 station",
+          "source": "OSM node 420129860 九段下",
           "offsetM": 0
         }
       ]

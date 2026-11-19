@@ -130,7 +130,7 @@ for (const course of data.courses.filter((item) => item.routeOptions)) {
   assert(a, `${course.id}: A option missing`);
   if (!b) {
     // Aだけの採用は、Bを作らない理由を routeReason に書いてある場合に限る。
-    assert(/B（7〜8kmの延長案）|実在の座標で同じ道を使わずに延ばせる/.test(a?.routeReason || ''), `${course.id}: B missing without a stated reason`);
+    assert(/B（7〜8kmの延長案）|B（山麓から歩いて上がる案）|実在の座標で同じ道を使わずに延ばせる/.test(a?.routeReason || ''), `${course.id}: B missing without a stated reason`);
     assert(c?.distanceM == null && c?.segments?.some((leg) => leg.kind === 'walk_indoor') && c?.segments?.some((leg) => leg.kind === 'walk_outdoor'), `${course.id}: rainy indoor/outdoor split missing`);
     assert(course.evidence?.length >= 2 && course.openQuestions?.length, `${course.id}: research evidence or open questions missing`);
     continue;

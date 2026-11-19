@@ -46,5 +46,69 @@
   ],
   "movedM": 6,
   "wayId": 275891362
+ },
+ "ikebukuro_ohashi": {
+  "snapped": [
+   35.7339782,
+   139.7136561
+  ],
+  "movedM": 15,
+  "wayId": 525102999
+ },
+ "honcho_park": {
+  "snapped": [
+   35.7394428,
+   139.7135197
+  ],
+  "movedM": 34,
+  "wayId": 101530590
+ },
+ "hikawa": {
+  "snapped": [
+   35.7435971,
+   139.7112394
+  ],
+  "movedM": 12,
+  "wayId": 183666646
+ },
+ "shimoitabashi": {
+  "snapped": [
+   35.7451571,
+   139.7152503
+  ],
+  "movedM": 23,
+  "wayId": 147437198
+ },
+ "kitaikebukuro": {
+  "snapped": [
+   35.7408891,
+   139.7166239
+  ],
+  "movedM": 21,
+  "wayId": 183831604
+ },
+ "kamiike_lib": {
+  "snapped": [
+   35.7386317,
+   139.7171536
+  ],
+  "movedM": 16,
+  "wayId": 244663650
+ },
+ "kamiike_east": {
+  "snapped": [
+   35.7362876,
+   139.7219353
+  ],
+  "movedM": 39,
+  "wayId": 101530348
+ },
+ "higashiikebukuro": {
+  "snapped": [
+   35.7256741,
+   139.7193639
+  ],
+  "movedM": 6,
+  "wayId": 670324026
  }
 }

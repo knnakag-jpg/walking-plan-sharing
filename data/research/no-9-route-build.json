@@ -1,32 +1,25 @@
 {
-  "calculatedAt": "2026-11-15T14:00:01.332Z",
+  "calculatedAt": "2026-11-19T13:10:45.420Z",
   "engine": "valhalla-pedestrian",
   "variants": {
     "standard": {
       "label": "standard",
-      "distanceM": 10386,
-      "engineDistanceM": 10392,
-      "repeatedGeometryM": 595,
-      "repeatedGeometryPct": 5.7,
+      "distanceM": 8099,
+      "engineDistanceM": 8099,
+      "repeatedGeometryM": 24,
+      "repeatedGeometryPct": 0.3,
       "legKm": [
-        0.51,
-        3.62,
-        0.06,
-        3.93,
-        2.28
+        2.66,
+        0.12,
+        0.83,
+        0.73,
+        1.29,
+        0.97,
+        1.12,
+        0.37
       ],
       "geometryUrl": "data/routes/no-9-standard.geojson",
       "stops": [
-        {
-          "id": "cable_shitakiyo",
-          "label": "高尾登山ケーブル 清滝駅",
-          "coord": [
-            35.6310796,
-            139.2668737
-          ],
-          "source": "OSM node 清滝（ケーブル下駅）",
-          "offsetM": 0
-        },
         {
           "id": "cable_sanjo",
           "label": "高尾登山ケーブル 高尾山駅（山上）",
@@ -34,8 +27,28 @@
             35.6305265,
             139.261813
           ],
-          "source": "OSM node 高尾登山ケーブル（山上）",
+          "source": "OSM node 高尾登山ケーブル（山上）; 清滝駅からはケーブルカーで上がる（乗車区間は徒歩距離に含めない）",
           "offsetM": 0
+        },
+        {
+          "id": "takosugi",
+          "label": "たこ杉",
+          "coord": [
+            35.63021,
+            139.254369
+          ],
+          "source": "OSM node 944867687 たこ杉",
+          "offsetM": 0
+        },
+        {
+          "id": "joshinmon",
+          "label": "浄心門",
+          "coord": [
+            35.6298652,
+            139.2531334
+          ],
+          "source": "OSM node 9187097305 浄心門",
+          "offsetM": 4
         },
         {
           "id": "yakuoin",
@@ -48,24 +61,44 @@
           "offsetM": 0
         },
         {
-          "id": "sancho",
-          "label": "高尾山頂",
+          "id": "summit",
+          "label": "高尾山頂（599m）",
           "coord": [
-            35.62575,
-            139.2500453
+            35.6252275,
+            139.243712
           ],
-          "source": "OSM information 高尾山頂; 三角点の正確な位置は地図レビュー待ち",
+          "source": "OSM node 675449030 高尾山 peak",
+          "offsetM": 4
+        },
+        {
+          "id": "inari_mid",
+          "label": "稲荷山コース（中腹）",
+          "coord": [
+            35.6226905,
+            139.2524789
+          ],
+          "source": "OSM way 1350892707 稲荷山コース（relation 7165825）",
           "offsetM": 0
         },
         {
-          "id": "jaguchi",
-          "label": "蛇滝口",
+          "id": "inari_low",
+          "label": "稲荷山コース（稲荷山の下）",
           "coord": [
-            35.6391818,
-            139.2582307
+            35.6274422,
+            139.2594756
           ],
-          "source": "OSM node 2963604825 蛇滝口",
+          "source": "OSM way 1350892711 稲荷山コース（relation 7165825）",
           "offsetM": 0
+        },
+        {
+          "id": "cable_shitakiyo",
+          "label": "高尾登山ケーブル 清滝駅",
+          "coord": [
+            35.6310796,
+            139.2668737
+          ],
+          "source": "OSM node 清滝（ケーブル下駅）",
+          "offsetM": 7
         },
         {
           "id": "takao_sanguchi",
