@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T13:11:03.297Z",
+  "generatedAt": "2026-11-19T13:52:50.979Z",
   "engine": "valhalla-pedestrian",
   "method": "Valhalla pedestrian",
   "results": [
@@ -76,12 +76,12 @@
         },
         {
           "id": "shinjuku_nishi",
-          "label": "新宿西口",
+          "label": "新宿西口駅",
           "coord": [
             35.6922211,
             139.6983867
           ],
-          "source": "OSM node 2389826102 新宿西口 station"
+          "source": "OSM node 2389826102 新宿西口 station（都営大江戸線）"
         }
       ]
     },

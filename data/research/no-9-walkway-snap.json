@@ -7,14 +7,6 @@
   "movedM": 10,
   "wayId": 1426472153
  },
- "cable_sanjo": {
-  "snapped": [
-   35.6305265,
-   139.261813
-  ],
-  "movedM": 70,
-  "wayId": 443284435
- },
  "yakuoin": {
   "snapped": [
    35.626096,
@@ -94,5 +86,13 @@
   ],
   "movedM": 3,
   "wayId": 55946315
+ },
+ "cable_sanjo": {
+  "snapped": [
+   35.63028,
+   139.25535
+  ],
+  "movedM": 44,
+  "wayId": 80957726
  }
 }

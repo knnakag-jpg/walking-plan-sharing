@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-11-19T13:11:03.295Z",
+  "generatedAt": "2026-11-19T13:59:01.869Z",
   "engine": "valhalla-pedestrian",
   "method": "Valhalla pedestrian",
   "results": [
     {
       "variant": "standard",
-      "distanceM": 8099,
-      "engineDistanceM": 8099,
-      "repeatedGeometryM": 24,
+      "distanceM": 5537,
+      "engineDistanceM": 5534,
+      "repeatedGeometryM": 17,
       "repeatedGeometryPct": 0.3,
       "geometryUrl": "data/routes/no-9-standard.geojson",
       "waypoints": [
@@ -15,10 +15,10 @@
           "id": "cable_sanjo",
           "label": "高尾登山ケーブル 高尾山駅（山上）",
           "coord": [
-            35.6305265,
-            139.261813
+            35.63028,
+            139.25535
           ],
-          "source": "OSM node 高尾登山ケーブル（山上）; 清滝駅からはケーブルカーで上がる（乗車区間は徒歩距離に含めない）"
+          "source": "OSM node 9903823695 高尾山 stop_position（ケーブル路線 relation 10939593 の山上側の停車位置）。駅の建物と麓への出口は地図で要確認。清滝駅からはケーブルカーで上がる（乗車区間は徒歩距離に含めない）"
         },
         {
           "id": "takosugi",
