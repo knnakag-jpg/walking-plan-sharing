@@ -194,6 +194,15 @@
         }
       ],
       "traceScope": "Valhalla map matching; not an independent field inspection"
+    },
+    {
+      "slug": "no-17",
+      "variant": "standard",
+      "distanceM": 6168,
+      "repeatedGeometryM": 0,
+      "traceConfidence": 1,
+      "matchedBridge": [],
+      "traceScope": "Valhalla map matching; not an independent field inspection"
     }
   ]
 }

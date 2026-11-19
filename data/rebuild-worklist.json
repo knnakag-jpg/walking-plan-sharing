@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T21:32:06.336Z",
+  "generatedAt": "2026-11-19T21:37:29.422Z",
   "interpretation": "Mechanical triage only. Source and map review required before adopting any new route.",
   "records": [
     {
@@ -379,7 +379,7 @@
     },
     {
       "id": "No.17",
-      "title": "東京タワーと芝公園・愛宕",
+      "title": "麻布台ヒルズ・東京タワーから日比谷へ",
       "series": "本編 A～Z（No.1～26）",
       "workStatus": "partial_rebuild",
       "legacy": {
@@ -400,7 +400,7 @@
         {
           "variant": "standard",
           "status": "routed",
-          "distanceM": 6693
+          "distanceM": 6168
         },
         {
           "variant": "rainy",

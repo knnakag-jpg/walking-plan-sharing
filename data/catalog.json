@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "source": "legacy import; route quality not re-reviewed",
-  "generatedAt": "2026-11-19T21:32:05.558Z",
+  "generatedAt": "2026-11-19T21:37:28.670Z",
   "courses": [
     {
       "id": "No.1",
@@ -6524,12 +6524,12 @@
     {
       "id": "No.17",
       "slug": "no-17",
-      "title": "東京タワーと芝公園・愛宕",
+      "title": "麻布台ヒルズ・東京タワーから日比谷へ",
       "seriesId": "main",
       "seriesName": "本編 A～Z（No.1～26）",
       "legacyAnchor": "course-17",
       "legacyUrl": "../index.html#course-17",
-      "summary": "神谷町から東京タワー・増上寺・芝公園を回り、愛宕神社の出世の石段を上って虎ノ門・日比谷公園へ。桜田門から皇居外苑を回り、東京駅前の地下鉄駅（二重橋前）で終わる。",
+      "summary": "神谷町駅付近から麻布台ヒルズ東側、東京タワー前、増上寺門前を通り、日比谷方面を経て東京駅へ抜ける。",
       "routeText": "経路ノード： 神谷町駅 → 麻布台ヒルズ 中央広場 → 森ビル デジタルアートミュージアム → 昼食 → （EV／ES主体で）東京タワー方向へ → 芝公園（平坦部） → 芝生広場（平坦部を軽く周遊） → 芝公園駅／御成門駅 → 芝公園・増上寺方面方面へ実在の歩道で延伸（往復約3.6km） → ゴール",
       "tags": [
         "タワー",
@@ -6622,25 +6622,18 @@
       ],
       "scenicSegments": [
         {
-          "name": "東京タワーの足元から増上寺",
-          "theme": "タワーと寺院の対比",
-          "direction": "神谷町から南へ",
-          "reviewStatus": "候補・歩道と入口を地図で照合待ち",
-          "evidenceTitle": "OpenStreetMap"
-        },
-        {
-          "name": "愛宕神社の石段",
-          "theme": "都心の高台と階段",
-          "direction": "芝公園から北へ",
-          "reviewStatus": "候補・石段を通る経路か地図で照合待ち",
+          "name": "麻布台と東京タワーの沿道",
+          "theme": "街並みとタワー",
+          "direction": "神谷町から芝公園方面",
+          "reviewStatus": "候補・見え方を地図で照合待ち",
           "evidenceTitle": "OpenStreetMap"
         }
       ],
       "openQuestions": [
-        "愛宕神社の石段の勾配と通行（祭事時の規制）",
-        "愛宕神社から虎ノ門駅への下り",
-        "桜田門から皇居外苑への通り抜け",
-        "二重橋前駅の地上への出口"
+        "神谷町駅・東京駅の出入口と横断",
+        "麻布台ヒルズ東側から広場への入口",
+        "東京タワー・増上寺付近の歩道と景観",
+        "日比谷公園周辺の園路と休憩場所"
       ],
       "routeOptions": [
         {
@@ -6649,134 +6642,101 @@
           "strategy": "scenic",
           "geometryUrl": "data/routes/no-17-standard.geojson",
           "verificationStatus": "routed",
-          "distanceM": 6693,
-          "engineDistanceM": 6696,
-          "repeatedGeometryPct": 11.3,
-          "routeReason": "神谷町の交差点から東京タワー前、増上寺前、芝公園（園内）を歩き、愛宕神社の石段を上って虎ノ門駅を経由。日比谷公園から桜田門へ回り、皇居外苑を通って二重橋前駅で終わる。計算上6.69km。旧案は神谷町から芝公園駅へ下るだけの2.5kmで、東京駅周辺へ歩いて抜ける形に組み替えた。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
-          "distanceException": "6.69km。実在の地点を結んだ結果として5〜6kmをわずかに超えるが、6〜7kmの歩行の目安には入る。距離合わせの削除はしない。",
-          "retraceException": "桜田門付近約356m、皇居外苑付近約149m、虎ノ門駅付近約123mの回合わせで計約755m。大きな通りに沿って同じ歩道を短く戻る形（皇居の堀沿いの環状の歩道で、外側と内側を回る）で、距離合わせの往復ではない。地図で未確認。",
+          "distanceM": 6168,
+          "engineDistanceM": 6181,
+          "repeatedGeometryPct": 0,
+          "routeReason": "神谷町駅付近から麻布台ヒルズ東側の歩道、東京タワー前、増上寺門前、芝公園駅付近、日比谷公園付近を経て東京駅丸の内中央口付近へ。計算上約6.17km。施設の中には入らず、沿道からの景色を楽しむ案。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
+          "distanceException": "約6.17km。4〜8kmの範囲。",
+          "retraceException": "丸めた保存線の形状上の重複は0m。道路の同一性と現地の通行は未確認。",
           "waypoints": [
             {
               "index": 0,
-              "id": "kamiyacho_cross",
-              "label": "神谷町（交差点）",
+              "id": "kamiyacho",
+              "label": "神谷町駅付近",
               "description": null,
               "point": [
-                139.7453255,
-                35.663177
+                139.7455302,
+                35.6632143
               ],
-              "source": "OSM node 251857299 traffic_signals 神谷町"
+              "source": "OSM node 4685178037 地下鉄出入口"
             },
             {
               "index": 1,
-              "id": "tower_road",
-              "label": "東京タワー前（交差点）",
+              "id": "azabudai",
+              "label": "麻布台ヒルズ東側の歩道",
               "description": null,
               "point": [
-                139.7469936,
-                35.6584587
+                139.741505,
+                35.661703
               ],
-              "source": "OSM node 1637283659 traffic_signals 東京タワー前"
+              "source": "OSM way 1228777078 付近の徒歩計算線。広場入口は未確認"
             },
             {
               "index": 2,
-              "id": "zojoji",
-              "label": "増上寺前",
+              "id": "tower",
+              "label": "東京タワー前の歩道付近",
               "description": null,
               "point": [
-                139.750308,
-                35.6572265
+                139.745761,
+                35.65897
               ],
-              "source": "OSM node 337024823"
+              "source": "OSM relation 4247312 付近の徒歩計算線"
             },
             {
               "index": 3,
-              "id": "shiba_park",
-              "label": "芝公園（園内）",
+              "id": "zojoji",
+              "label": "増上寺門前付近",
               "description": null,
               "point": [
-                139.7501717,
-                35.6556362
+                139.748091,
+                35.657087
               ],
-              "source": "OSM way 745301120 park centre"
+              "source": "OSM way 744348814 付近の徒歩計算線"
             },
             {
               "index": 4,
-              "id": "atago",
-              "label": "愛宕神社",
+              "id": "shibakoen",
+              "label": "芝公園駅付近",
               "description": null,
               "point": [
-                139.7494577,
-                35.6646441
+                139.750142,
+                35.655298
               ],
-              "source": "OSM node 4740994270 愛宕神社（出世の石段）"
+              "source": "OSM node 2144966779 地下鉄出入口"
             },
             {
               "index": 5,
-              "id": "toranomon",
-              "label": "虎ノ門駅",
+              "id": "hibiya",
+              "label": "日比谷公園付近",
               "description": null,
               "point": [
-                139.7501926,
-                35.6702654
+                139.75618,
+                35.67371
               ],
-              "source": "OSM node 7786715969 虎ノ門 station"
+              "source": "OSM way 145408909 日比谷公園。園路と出入口は未確認"
             },
             {
               "index": 6,
-              "id": "hibiya_park",
-              "label": "日比谷公園",
+              "id": "tokyo",
+              "label": "東京駅丸の内中央口付近",
               "description": null,
               "point": [
-                139.7560389,
-                35.6737364
+                139.7646024,
+                35.6815023
               ],
-              "source": "OSM way 145408909 日比谷公園 park"
-            },
-            {
-              "index": 7,
-              "id": "sakuradamon",
-              "label": "桜田門",
-              "description": null,
-              "point": [
-                139.7506533,
-                35.6772905
-              ],
-              "source": "OSM way 661469200 桜田門"
-            },
-            {
-              "index": 8,
-              "id": "kokyo_gaien",
-              "label": "皇居外苑（二重橋前）",
-              "description": null,
-              "point": [
-                139.7573094,
-                35.6799462
-              ],
-              "source": "OSM way 675408602 皇居外苑 park"
-            },
-            {
-              "index": 9,
-              "id": "nijubashimae",
-              "label": "二重橋前駅",
-              "description": null,
-              "point": [
-                139.7576795,
-                35.6794319
-              ],
-              "source": "OSM node 1588249051 二重橋前"
+              "source": "OSM node 1588249065 東京駅中央口付近"
             }
           ],
           "engine": "valhalla-pedestrian",
-          "built": "2026-11-19T13:10:49.056Z",
+          "built": "2026-11-19T21:37:18.018Z",
           "elevation": {
             "source": "gsi_dem5a",
-            "status": "partial_dem_filled",
+            "status": "dem",
             "url": "data/elevation/no-17-standard.json",
-            "totalM": 6693,
-            "climbM": 30.8,
-            "descentM": 35.4,
-            "minM": 2.8,
+            "totalM": 6168,
+            "climbM": 36,
+            "descentM": 41.9,
+            "minM": 1.8,
             "maxM": 25.4
           }
         },

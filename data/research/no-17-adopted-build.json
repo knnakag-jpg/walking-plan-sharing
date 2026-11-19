@@ -1,105 +1,78 @@
 {
-  "generatedAt": "2026-11-19T13:11:03.295Z",
+  "generatedAt": "2026-11-19T21:37:18.018Z",
   "engine": "valhalla-pedestrian",
-  "method": "Valhalla pedestrian",
+  "method": "through points; OSM sidewalk and Valhalla map matching; map and field review outstanding",
   "results": [
     {
       "variant": "standard",
-      "distanceM": 6693,
-      "engineDistanceM": 6696,
-      "repeatedGeometryM": 755,
-      "repeatedGeometryPct": 11.3,
       "geometryUrl": "data/routes/no-17-standard.geojson",
+      "distanceM": 6168,
+      "engineDistanceM": 6181,
+      "repeatedGeometryM": 0,
+      "repeatedGeometryPct": 0,
       "waypoints": [
         {
-          "id": "kamiyacho_cross",
-          "label": "神谷町（交差点）",
+          "id": "kamiyacho",
+          "label": "神谷町駅付近",
           "coord": [
-            35.663177,
-            139.7453255
+            35.6632143,
+            139.7455302
           ],
-          "source": "OSM node 251857299 traffic_signals 神谷町"
+          "source": "OSM node 4685178037 地下鉄出入口"
         },
         {
-          "id": "tower_road",
-          "label": "東京タワー前（交差点）",
+          "id": "azabudai",
+          "label": "麻布台ヒルズ東側の歩道",
           "coord": [
-            35.6584587,
-            139.7469936
+            35.661703,
+            139.741505
           ],
-          "source": "OSM node 1637283659 traffic_signals 東京タワー前"
+          "source": "OSM way 1228777078 付近の徒歩計算線。広場入口は未確認"
+        },
+        {
+          "id": "tower",
+          "label": "東京タワー前の歩道付近",
+          "coord": [
+            35.65897,
+            139.745761
+          ],
+          "source": "OSM relation 4247312 付近の徒歩計算線"
         },
         {
           "id": "zojoji",
-          "label": "増上寺前",
+          "label": "増上寺門前付近",
           "coord": [
-            35.6572265,
-            139.750308
+            35.657087,
+            139.748091
           ],
-          "source": "OSM node 337024823"
+          "source": "OSM way 744348814 付近の徒歩計算線"
         },
         {
-          "id": "shiba_park",
-          "label": "芝公園（園内）",
+          "id": "shibakoen",
+          "label": "芝公園駅付近",
           "coord": [
-            35.6556362,
-            139.7501717
+            35.655298,
+            139.750142
           ],
-          "source": "OSM way 745301120 park centre"
+          "source": "OSM node 2144966779 地下鉄出入口"
         },
         {
-          "id": "atago",
-          "label": "愛宕神社",
+          "id": "hibiya",
+          "label": "日比谷公園付近",
           "coord": [
-            35.6646441,
-            139.7494577
+            35.67371,
+            139.75618
           ],
-          "source": "OSM node 4740994270 愛宕神社（出世の石段）"
+          "source": "OSM way 145408909 日比谷公園。園路と出入口は未確認"
         },
         {
-          "id": "toranomon",
-          "label": "虎ノ門駅",
+          "id": "tokyo",
+          "label": "東京駅丸の内中央口付近",
           "coord": [
-            35.6702654,
-            139.7501926
+            35.6815023,
+            139.7646024
           ],
-          "source": "OSM node 7786715969 虎ノ門 station"
-        },
-        {
-          "id": "hibiya_park",
-          "label": "日比谷公園",
-          "coord": [
-            35.6737364,
-            139.7560389
-          ],
-          "source": "OSM way 145408909 日比谷公園 park"
-        },
-        {
-          "id": "sakuradamon",
-          "label": "桜田門",
-          "coord": [
-            35.6772905,
-            139.7506533
-          ],
-          "source": "OSM way 661469200 桜田門"
-        },
-        {
-          "id": "kokyo_gaien",
-          "label": "皇居外苑（二重橋前）",
-          "coord": [
-            35.6799462,
-            139.7573094
-          ],
-          "source": "OSM way 675408602 皇居外苑 park"
-        },
-        {
-          "id": "nijubashimae",
-          "label": "二重橋前駅",
-          "coord": [
-            35.6794319,
-            139.7576795
-          ],
-          "source": "OSM node 1588249051 二重橋前"
+          "source": "OSM node 1588249065 東京駅中央口付近"
         }
       ]
     }
