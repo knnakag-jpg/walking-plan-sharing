@@ -1,204 +1,60 @@
 {
-  "generatedAt": "2026-11-15T12:52:55.089Z",
-  "method": "Valhalla pedestrian; exact geometry edge repeat is only a screening clue",
+  "generatedAt": "2026-11-19T21:45:39.678Z",
+  "engine": "valhalla-pedestrian",
+  "method": "through waypoints; OSM footway and Valhalla map matching; field review outstanding",
   "results": [
     {
       "variant": "standard",
-      "distanceM": 3030,
-      "engineDistanceM": 3013,
-      "repeatedGeometryM": 180,
-      "repeatedGeometryPct": 5.9,
+      "geometryUrl": "data/routes/no-8-standard.geojson",
+      "distanceM": 4214,
+      "engineDistanceM": 4224,
+      "repeatedGeometryM": 0,
+      "repeatedGeometryPct": 0,
       "waypoints": [
         {
-          "id": "ueno_station",
+          "id": "ueno",
           "label": "上野駅公園口付近",
           "coord": [
             35.7129181,
             139.7767401
           ],
-          "source": "OSM node 3259272053 train_station_entrance; exit name needs confirmation"
+          "source": "OSM node 3259272053 駅出入口付近"
         },
         {
-          "id": "bunka_kaikan",
-          "label": "東京文化会館（外観のみ・休館中）",
+          "id": "shinobazu",
+          "label": "不忍池南側の園路",
           "coord": [
-            35.7145818,
-            139.7755385
+            35.7100681,
+            139.7723308
           ],
-          "source": "OSM relation 5419119 centre; closed for renovation from 2026-05-07 per t-bunka.jp"
+          "source": "OSM way 364032628 の園路"
         },
         {
-          "id": "nmwa",
-          "label": "国立西洋美術館付近",
+          "id": "museum",
+          "label": "東京国立博物館前付近",
           "coord": [
-            35.7154078,
-            139.7755999
+            35.7173317,
+            139.7757249
           ],
-          "source": "OSM way 203960903 centre; entrance needs confirmation"
+          "source": "OSM node 2295385013 博物館前バス停付近"
         },
         {
-          "id": "kahaku",
-          "label": "国立科学博物館付近",
-          "coord": [
-            35.7159654,
-            139.7767511
-          ],
-          "source": "OSM way 203960902 centre; entrance needs confirmation"
-        },
-        {
-          "id": "tnm",
-          "label": "東京国立博物館付近",
-          "coord": [
-            35.7189955,
-            139.7757872
-          ],
-          "source": "OSM way 33439660 centre; 正門 location not confirmed (tnm.jp does not state it)"
-        },
-        {
-          "id": "yanaka_gate",
-          "label": "谷中霊園の入口付近（公衆トイレ脇）",
+          "id": "yanaka",
+          "label": "谷中霊園入口付近",
           "coord": [
             35.7227303,
             139.7702893
           ],
-          "source": "OSM node 14156023120; entrance location is the toilet, needs map review"
-        },
-        {
-          "id": "gojuto_ato",
-          "label": "谷中五重塔跡地",
-          "coord": [
-            35.7250931,
-            139.7707971
-          ],
-          "source": "OSM node 4218532821 (官公庁表記: 天王寺五重塔の跡)"
-        },
-        {
-          "id": "tennoji",
-          "label": "天王寺付近",
-          "coord": [
-            35.7264991,
-            139.7711984
-          ],
-          "source": "OSM way 1367250759 centre"
-        },
-        {
-          "id": "nippori",
-          "label": "日暮里駅南改札口付近",
-          "coord": [
-            35.7277902,
-            139.7717116
-          ],
-          "source": "OSM node 7040915508 train_station_entrance"
-        }
-      ],
-      "legDistancesKm": [
-        0.33,
-        0.1,
-        0.26,
-        0.54,
-        1.02,
-        0.3,
-        0.22,
-        0.25
-      ],
-      "geometryUrl": "data/routes/no-8-standard.geojson"
-    },
-    {
-      "variant": "extended",
-      "distanceM": 4473,
-      "engineDistanceM": 4460,
-      "repeatedGeometryM": 513,
-      "repeatedGeometryPct": 11.5,
-      "waypoints": [
-        {
-          "id": "ueno_station",
-          "label": "上野駅公園口付近",
-          "coord": [
-            35.7129181,
-            139.7767401
-          ],
-          "source": "OSM node 3259272053 train_station_entrance; exit name needs confirmation"
-        },
-        {
-          "id": "saigo",
-          "label": "西郷隆盛像付近",
-          "coord": [
-            35.7118535,
-            139.7741041
-          ],
-          "source": "OSM way 138585434"
-        },
-        {
-          "id": "nmwa",
-          "label": "国立西洋美術館付近",
-          "coord": [
-            35.7154078,
-            139.7755999
-          ],
-          "source": "OSM way 203960903 centre; entrance needs confirmation"
-        },
-        {
-          "id": "kahaku",
-          "label": "国立科学博物館付近",
-          "coord": [
-            35.7159654,
-            139.7767511
-          ],
-          "source": "OSM way 203960902 centre; entrance needs confirmation"
-        },
-        {
-          "id": "tnm",
-          "label": "東京国立博物館付近",
-          "coord": [
-            35.7189955,
-            139.7757872
-          ],
-          "source": "OSM way 33439660 centre; 正門 location not confirmed (tnm.jp does not state it)"
-        },
-        {
-          "id": "yanaka_gate",
-          "label": "谷中霊園の入口付近（公衆トイレ脇）",
-          "coord": [
-            35.7227303,
-            139.7702893
-          ],
-          "source": "OSM node 14156023120; entrance location is the toilet, needs map review"
-        },
-        {
-          "id": "gojuto_ato",
-          "label": "谷中五重塔跡地",
-          "coord": [
-            35.7250931,
-            139.7707971
-          ],
-          "source": "OSM node 4218532821 (官公庁表記: 天王寺五重塔の跡)"
-        },
-        {
-          "id": "tennoji",
-          "label": "天王寺付近",
-          "coord": [
-            35.7264991,
-            139.7711984
-          ],
-          "source": "OSM way 1367250759 centre"
-        },
-        {
-          "id": "asakura",
-          "label": "朝倉彫塑館付近",
-          "coord": [
-            35.7266433,
-            139.768698
-          ],
-          "source": "OSM way 209190478 centre; opening days not checked"
+          "source": "OSM node 14156023120 公衆トイレ脇"
         },
         {
           "id": "yuyake",
-          "label": "夕焼けだんだん",
+          "label": "夕焼けだんだん付近",
           "coord": [
             35.7276407,
             139.7673409
           ],
-          "source": "OSM way 340/733 steps 夕焼けだんだん (w433... via name); steps, not step-free"
+          "source": "OSM 夕焼けだんだん付近の歩道"
         },
         {
           "id": "nippori",
@@ -207,22 +63,73 @@
             35.7277902,
             139.7717116
           ],
-          "source": "OSM node 7040915508 train_station_entrance"
+          "source": "OSM node 7040915508 駅入口付近"
         }
-      ],
-      "legDistancesKm": [
-        0.42,
-        0.55,
-        0.26,
-        0.54,
-        1.02,
-        0.3,
-        0.22,
-        0.29,
-        0.33,
-        0.54
-      ],
-      "geometryUrl": "data/routes/no-8-extended.geojson"
+      ]
+    },
+    {
+      "variant": "extended",
+      "geometryUrl": "data/routes/no-8-extended.geojson",
+      "distanceM": 4356,
+      "engineDistanceM": 4363,
+      "repeatedGeometryM": 0,
+      "repeatedGeometryPct": 0,
+      "waypoints": [
+        {
+          "id": "ueno",
+          "label": "上野駅公園口付近",
+          "coord": [
+            35.7129181,
+            139.7767401
+          ],
+          "source": "OSM node 3259272053 駅出入口付近"
+        },
+        {
+          "id": "shinobazu",
+          "label": "不忍池南側の園路",
+          "coord": [
+            35.7100681,
+            139.7723308
+          ],
+          "source": "OSM way 364032628 の園路"
+        },
+        {
+          "id": "museum",
+          "label": "東京国立博物館前付近",
+          "coord": [
+            35.7173317,
+            139.7757249
+          ],
+          "source": "OSM node 2295385013 博物館前バス停付近"
+        },
+        {
+          "id": "yanaka",
+          "label": "谷中霊園入口付近",
+          "coord": [
+            35.7227303,
+            139.7702893
+          ],
+          "source": "OSM node 14156023120 公衆トイレ脇"
+        },
+        {
+          "id": "yuyake",
+          "label": "夕焼けだんだん付近",
+          "coord": [
+            35.7276407,
+            139.7673409
+          ],
+          "source": "OSM 夕焼けだんだん付近の歩道"
+        },
+        {
+          "id": "nishinippori",
+          "label": "西日暮里駅付近",
+          "coord": [
+            35.732723,
+            139.7679577
+          ],
+          "source": "OSM node 6365256092 地下鉄入口付近"
+        }
+      ]
     }
   ]
 }

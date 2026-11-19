@@ -203,6 +203,166 @@
       "traceConfidence": 1,
       "matchedBridge": [],
       "traceScope": "Valhalla map matching; not an independent field inspection"
+    },
+    {
+      "slug": "no-8",
+      "variant": "standard",
+      "distanceM": 4214,
+      "repeatedGeometryM": 0,
+      "traceConfidence": 1,
+      "matchedBridge": [
+        {
+          "wayId": 507712452,
+          "use": "footway",
+          "lengthKm": 0.028
+        },
+        {
+          "wayId": 507712452,
+          "use": "footway",
+          "lengthKm": 0.006
+        },
+        {
+          "wayId": 507721868,
+          "use": "footway",
+          "lengthKm": 0.014
+        },
+        {
+          "wayId": 507721869,
+          "use": "escalator",
+          "lengthKm": 0.017
+        },
+        {
+          "wayId": 507721870,
+          "use": "footway",
+          "lengthKm": 0.023
+        },
+        {
+          "wayId": 507714745,
+          "use": "footway",
+          "lengthKm": 0.005
+        },
+        {
+          "wayId": 507714745,
+          "use": "footway",
+          "lengthKm": 0.005
+        },
+        {
+          "wayId": 507714745,
+          "use": "footway",
+          "lengthKm": 0.006
+        },
+        {
+          "wayId": 507714748,
+          "use": "footway",
+          "lengthKm": 0.007
+        },
+        {
+          "wayId": 507714748,
+          "use": "footway",
+          "lengthKm": 0.01
+        },
+        {
+          "wayId": 332630472,
+          "use": "steps",
+          "lengthKm": 0.026
+        },
+        {
+          "wayId": 1015365431,
+          "use": "footway",
+          "lengthKm": 0.051
+        },
+        {
+          "wayId": 170810840,
+          "use": "road",
+          "lengthKm": 0.028
+        },
+        {
+          "wayId": 1015365433,
+          "use": "road",
+          "lengthKm": 0.015
+        },
+        {
+          "wayId": 237654362,
+          "use": "steps",
+          "lengthKm": 0.015
+        },
+        {
+          "wayId": 170810818,
+          "use": "footway",
+          "lengthKm": 0.002
+        },
+        {
+          "wayId": 1082813811,
+          "use": "footway",
+          "lengthKm": 0.006
+        }
+      ],
+      "traceScope": "Valhalla map matching; not an independent field inspection"
+    },
+    {
+      "slug": "no-8",
+      "variant": "extended",
+      "distanceM": 4356,
+      "repeatedGeometryM": 0,
+      "traceConfidence": 1,
+      "matchedBridge": [
+        {
+          "wayId": 507712452,
+          "use": "footway",
+          "lengthKm": 0.028
+        },
+        {
+          "wayId": 507712452,
+          "use": "footway",
+          "lengthKm": 0.006
+        },
+        {
+          "wayId": 507721868,
+          "use": "footway",
+          "lengthKm": 0.014
+        },
+        {
+          "wayId": 507721869,
+          "use": "escalator",
+          "lengthKm": 0.017
+        },
+        {
+          "wayId": 507721870,
+          "use": "footway",
+          "lengthKm": 0.023
+        },
+        {
+          "wayId": 507714745,
+          "use": "footway",
+          "lengthKm": 0.005
+        },
+        {
+          "wayId": 507714745,
+          "use": "footway",
+          "lengthKm": 0.005
+        },
+        {
+          "wayId": 507714745,
+          "use": "footway",
+          "lengthKm": 0.006
+        },
+        {
+          "wayId": 507714748,
+          "use": "footway",
+          "lengthKm": 0.007
+        },
+        {
+          "wayId": 507714748,
+          "use": "footway",
+          "lengthKm": 0.01
+        },
+        {
+          "wayId": 332630472,
+          "use": "steps",
+          "lengthKm": 0.026
+        }
+      ],
+      "traceScope": "Valhalla map matching; not an independent field inspection"
     }
   ]
 }
