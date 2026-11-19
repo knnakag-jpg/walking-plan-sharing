@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-11-19T13:11:03.297Z",
+  "generatedAt": "2026-11-19T22:10:27.019Z",
   "engine": "valhalla-pedestrian",
-  "method": "Valhalla pedestrian",
+  "method": "through waypoints; OSM and Valhalla map matching; map and field review outstanding",
   "results": [
     {
       "variant": "standard",
-      "distanceM": 6282,
-      "engineDistanceM": 6293,
-      "repeatedGeometryM": 778,
-      "repeatedGeometryPct": 12.4,
       "geometryUrl": "data/routes/no-24-standard.geojson",
+      "distanceM": 4523,
+      "engineDistanceM": 4527,
+      "repeatedGeometryM": 0,
+      "repeatedGeometryPct": 0,
       "waypoints": [
         {
           "id": "akasaka_mitsuke",
-          "label": "赤坂見附駅",
+          "label": "赤坂見附駅付近",
           "coord": [
             35.6763739,
             139.7375498
@@ -30,15 +30,6 @@
           "source": "OSM way 145127482 豊川稲荷東京別院 place_of_worship"
         },
         {
-          "id": "nogi",
-          "label": "乃木神社",
-          "coord": [
-            35.6685988,
-            139.7280207
-          ],
-          "source": "OSM place_of_worship 乃木神社"
-        },
-        {
           "id": "hinokicho",
           "label": "檜町公園",
           "coord": [
@@ -46,24 +37,6 @@
             139.7326161
           ],
           "source": "OSM park 檜町公園"
-        },
-        {
-          "id": "dsign",
-          "label": "21_21 DESIGN SIGHT",
-          "coord": [
-            35.6673905,
-            139.7304686
-          ],
-          "source": "OSM museum 21_21 Design Sight"
-        },
-        {
-          "id": "suntory",
-          "label": "サントリー美術館",
-          "coord": [
-            35.6666887,
-            139.7303007
-          ],
-          "source": "OSM museum サントリー美術館（東京ミッドタウン）"
         },
         {
           "id": "imoaraizaka",
@@ -75,17 +48,8 @@
           "source": "OSM way 257224643 芋洗坂"
         },
         {
-          "id": "azabujuban",
-          "label": "麻布十番駅",
-          "coord": [
-            35.6565003,
-            139.7361786
-          ],
-          "source": "OSM node 6511944763 麻布十番 station（麻布十番商店街）"
-        },
-        {
           "id": "akabanebashi",
-          "label": "赤羽橋駅",
+          "label": "赤羽橋駅付近",
           "coord": [
             35.655099,
             139.7438224

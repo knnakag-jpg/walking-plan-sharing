@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T21:51:47.038Z",
+  "generatedAt": "2026-11-19T22:10:43.754Z",
   "interpretation": "Mechanical triage only. Source and map review required before adopting any new route.",
   "records": [
     {
@@ -3333,7 +3333,7 @@
     },
     {
       "id": "No.24",
-      "title": "東京ミッドタウンと檜町公園",
+      "title": "赤坂・檜町公園から麻布へ",
       "series": "本編 A～Z（No.1～26）",
       "workStatus": "partial_rebuild",
       "legacy": {
@@ -3354,7 +3354,7 @@
         {
           "variant": "standard",
           "status": "routed",
-          "distanceM": 6282
+          "distanceM": 4523
         },
         {
           "variant": "rainy",

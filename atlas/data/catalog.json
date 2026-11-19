@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "source": "legacy import; route quality not re-reviewed",
-  "generatedAt": "2026-11-19T21:51:46.299Z",
+  "generatedAt": "2026-11-19T22:10:42.971Z",
   "courses": [
     {
       "id": "No.1",
@@ -8996,12 +8996,12 @@
     {
       "id": "No.24",
       "slug": "no-24",
-      "title": "東京ミッドタウンと檜町公園",
+      "title": "赤坂・檜町公園から麻布へ",
       "seriesId": "main",
       "seriesName": "本編 A～Z（No.1～26）",
       "legacyAnchor": "course-24",
       "legacyUrl": "../index.html#course-24",
-      "summary": "赤坂見附から豊川稲荷・乃木神社を回り、東京ミッドタウンの檜町公園・21_21 DESIGN SIGHT・サントリー美術館へ。六本木から芋洗坂を下って麻布十番商店街を抜け、赤羽橋駅で終わる。",
+      "summary": "赤坂見附駅付近から豊川稲荷、檜町公園、芋洗坂を経て赤羽橋駅付近へ抜ける。",
       "routeText": "経路ノード： 六本木駅／乃木坂駅 → 東京ミッドタウン ガレリア → 21_21 DESIGN SIGHT → サントリー美術館（会期次第） → 昼食 → ミッドタウン・ガーデン → 檜町公園（平坦園路） → 乃木神社（参道の平坦部） → 六本木駅／乃木坂駅（解散）",
       "tags": [
         "美術",
@@ -9120,10 +9120,10 @@
         }
       ],
       "openQuestions": [
-        "東京ミッドタウンの館内の通り抜け（営業時間）",
-        "檜町公園とサントリー美術館の間の経路",
-        "芋洗坂の勾配",
-        "麻布十番商店街の歩道"
+        "赤坂見附駅・赤羽橋駅の出入口",
+        "豊川稲荷・檜町公園の入口と歩行可能な園路",
+        "芋洗坂の勾配と横断",
+        "美術館などへ立ち寄る場合の追加距離・開館日"
       ],
       "routeOptions": [
         {
@@ -9132,17 +9132,17 @@
           "strategy": "scenic",
           "geometryUrl": "data/routes/no-24-standard.geojson",
           "verificationStatus": "routed",
-          "distanceM": 6282,
-          "engineDistanceM": 6293,
-          "repeatedGeometryPct": 12.4,
-          "routeReason": "赤坂見附駅から豊川稲荷東京別院、乃木神社を回り、東京ミッドタウンへ入って檜町公園、21_21 DESIGN SIGHT、サントリー美術館を歩く。六本木駅前から芋洗坂を下り、麻布十番商店街を通って赤羽橋駅で終わる。計算上6.28km。旧案は六本木駅を起点に乃木坂駅で終わる2.3kmで、赤坂見附から赤羽橋へ抜ける長めの周回に組み替えた。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
-          "distanceException": "6.28km。実在の地点を結んだ結果として5〜6kmをやや超えるが、6〜7kmの歩行の目安には入る。距離合わせの削除はしない。",
-          "retraceException": "計約778m（乃木神社付近約233m、ミッドタウン〜六本木付近約300m、麻布十番駅付近約248m）。神社の参道の出入り、ミッドタウンの建物の間を回る園路、商店街の曲がり角で、距離合わせの往復ではない。地図で未確認。",
+          "distanceM": 4523,
+          "engineDistanceM": 4527,
+          "repeatedGeometryPct": 0,
+          "routeReason": "赤坂見附駅付近から豊川稲荷付近、檜町公園付近、芋洗坂を経て赤羽橋駅付近へ。計算上約4.52km。サントリー美術館・21_21 DESIGN SIGHT・乃木神社への入場や建物内の見学は本線に含まず、立ち寄る場合は別に距離と時間を確認する。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
+          "distanceException": "約4.52km。4〜8kmの範囲で、旧A目標5〜6kmには届かない。",
+          "retraceException": "丸めた保存線の形状上の重複は0m。道路の同一性と現地通行は未確認。",
           "waypoints": [
             {
               "index": 0,
               "id": "akasaka_mitsuke",
-              "label": "赤坂見附駅",
+              "label": "赤坂見附駅付近",
               "description": null,
               "point": [
                 139.7375498,
@@ -9163,17 +9163,6 @@
             },
             {
               "index": 2,
-              "id": "nogi",
-              "label": "乃木神社",
-              "description": null,
-              "point": [
-                139.7280207,
-                35.6685988
-              ],
-              "source": "OSM place_of_worship 乃木神社"
-            },
-            {
-              "index": 3,
               "id": "hinokicho",
               "label": "檜町公園",
               "description": null,
@@ -9184,29 +9173,7 @@
               "source": "OSM park 檜町公園"
             },
             {
-              "index": 4,
-              "id": "dsign",
-              "label": "21_21 DESIGN SIGHT",
-              "description": null,
-              "point": [
-                139.7304686,
-                35.6673905
-              ],
-              "source": "OSM museum 21_21 Design Sight"
-            },
-            {
-              "index": 5,
-              "id": "suntory",
-              "label": "サントリー美術館",
-              "description": null,
-              "point": [
-                139.7303007,
-                35.6666887
-              ],
-              "source": "OSM museum サントリー美術館（東京ミッドタウン）"
-            },
-            {
-              "index": 6,
+              "index": 3,
               "id": "imoaraizaka",
               "label": "芋洗坂",
               "description": null,
@@ -9217,20 +9184,9 @@
               "source": "OSM way 257224643 芋洗坂"
             },
             {
-              "index": 7,
-              "id": "azabujuban",
-              "label": "麻布十番駅",
-              "description": null,
-              "point": [
-                139.7361786,
-                35.6565003
-              ],
-              "source": "OSM node 6511944763 麻布十番 station（麻布十番商店街）"
-            },
-            {
-              "index": 8,
+              "index": 4,
               "id": "akabanebashi",
-              "label": "赤羽橋駅",
+              "label": "赤羽橋駅付近",
               "description": null,
               "point": [
                 139.7438224,
@@ -9240,16 +9196,16 @@
             }
           ],
           "engine": "valhalla-pedestrian",
-          "built": "2026-11-19T13:10:55.170Z",
+          "built": "2026-11-19T22:10:27.019Z",
           "elevation": {
             "source": "gsi_dem5a",
             "status": "dem",
             "url": "data/elevation/no-24-standard.json",
-            "totalM": 6282,
-            "climbM": 58.8,
-            "descentM": 63.1,
-            "minM": 3.8,
-            "maxM": 31
+            "totalM": 4523,
+            "climbM": 41.6,
+            "descentM": 45.9,
+            "minM": 3.9,
+            "maxM": 31.1
           }
         },
         {
