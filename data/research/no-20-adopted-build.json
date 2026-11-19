@@ -1,16 +1,34 @@
 {
-  "generatedAt": "2026-11-19T21:26:23.804Z",
+  "generatedAt": "2026-11-19T21:48:23.699Z",
   "engine": "valhalla-pedestrian",
-  "method": "through waypoints; map-matched road types screened",
+  "method": "through points; OSM footway and Valhalla map matching; map and field review outstanding",
   "results": [
     {
       "variant": "standard",
       "geometryUrl": "data/routes/no-20-standard.geojson",
-      "distanceM": 4340,
-      "engineDistanceM": 4348,
-      "repeatedGeometryM": 188,
-      "repeatedGeometryPct": 4.3,
+      "distanceM": 5052,
+      "engineDistanceM": 5058,
+      "repeatedGeometryM": 0,
+      "repeatedGeometryPct": 0,
       "waypoints": [
+        {
+          "id": "kaminoge",
+          "label": "上野毛駅付近",
+          "coord": [
+            35.61204,
+            139.63892
+          ],
+          "source": "OSM node 266085673 駅。出入口は未確認"
+        },
+        {
+          "id": "futako_park",
+          "label": "二子玉川公園付近",
+          "coord": [
+            35.6084038,
+            139.6316674
+          ],
+          "source": "OSM way 233044925 に近い歩道"
+        },
         {
           "id": "futakotamagawa",
           "label": "二子玉川駅付近",
@@ -19,24 +37,6 @@
             139.6268107
           ],
           "source": "OSM 二子玉川駅付近の歩道"
-        },
-        {
-          "id": "hyogobashi",
-          "label": "兵庫橋",
-          "coord": [
-            35.6111591,
-            139.6249399
-          ],
-          "source": "OSM way 1551426164 歩行者・自転車橋"
-        },
-        {
-          "id": "hyogojima",
-          "label": "兵庫島公園の園路",
-          "coord": [
-            35.6114807,
-            139.6237619
-          ],
-          "source": "OSM way 47377098 付近の園路"
         },
         {
           "id": "shin_futako_north",
@@ -72,7 +72,7 @@
             35.6038824,
             139.6004567
           ],
-          "source": "OSM node 2738954712 駅。出入口は要確認"
+          "source": "OSM node 2738954712 駅。出入口は未確認"
         }
       ]
     }

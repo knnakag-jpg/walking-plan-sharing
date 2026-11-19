@@ -8,74 +8,9 @@
   ],
   "limitations": [
     "OSM network and map matching do not confirm temporary closures, entrances, crossings or on-site conditions.",
-    "No.20 retains a park-area retrace."
+    "No.20 Hyogojima is an optional visit outside the route; access and additional distance remain unchecked."
   ],
   "results": [
-    {
-      "slug": "no-20",
-      "variant": "standard",
-      "distanceM": 4340,
-      "repeatedGeometryM": 188,
-      "traceConfidence": 1,
-      "matchedBridge": [
-        {
-          "wayId": 1551426164,
-          "use": "cycleway",
-          "lengthKm": 0.036
-        },
-        {
-          "wayId": 1551426164,
-          "use": "cycleway",
-          "lengthKm": 0.036
-        },
-        {
-          "wayId": 310920947,
-          "use": "footway",
-          "lengthKm": 0.029
-        },
-        {
-          "wayId": 310920947,
-          "use": "footway",
-          "lengthKm": 0.217
-        },
-        {
-          "wayId": 310920947,
-          "use": "footway",
-          "lengthKm": 0.433
-        },
-        {
-          "wayId": 876570905,
-          "use": "steps",
-          "lengthKm": 0.011
-        },
-        {
-          "wayId": 876570904,
-          "use": "steps",
-          "lengthKm": 0.022
-        },
-        {
-          "wayId": 735042305,
-          "use": "steps",
-          "lengthKm": 0.016
-        },
-        {
-          "wayId": 204923975,
-          "use": "road",
-          "lengthKm": 0.006
-        },
-        {
-          "wayId": 1455624763,
-          "use": "footway",
-          "lengthKm": 0.017
-        },
-        {
-          "wayId": 1088955954,
-          "use": "footway",
-          "lengthKm": 0.012
-        }
-      ],
-      "traceScope": "Valhalla map matching; not an independent field inspection"
-    },
     {
       "slug": "no-23",
       "variant": "standard",
@@ -360,6 +295,71 @@
           "wayId": 332630472,
           "use": "steps",
           "lengthKm": 0.026
+        }
+      ],
+      "traceScope": "Valhalla map matching; not an independent field inspection"
+    },
+    {
+      "slug": "no-20",
+      "variant": "standard",
+      "distanceM": 5052,
+      "repeatedGeometryM": 0,
+      "traceConfidence": 1,
+      "matchedBridge": [
+        {
+          "wayId": 176743937,
+          "use": "road",
+          "lengthKm": 0.022
+        },
+        {
+          "wayId": 218094833,
+          "use": "road",
+          "lengthKm": 0.007
+        },
+        {
+          "wayId": 310920947,
+          "use": "footway",
+          "lengthKm": 0.029
+        },
+        {
+          "wayId": 310920947,
+          "use": "footway",
+          "lengthKm": 0.217
+        },
+        {
+          "wayId": 310920947,
+          "use": "footway",
+          "lengthKm": 0.433
+        },
+        {
+          "wayId": 876570905,
+          "use": "steps",
+          "lengthKm": 0.011
+        },
+        {
+          "wayId": 876570904,
+          "use": "steps",
+          "lengthKm": 0.022
+        },
+        {
+          "wayId": 735042305,
+          "use": "steps",
+          "lengthKm": 0.016
+        },
+        {
+          "wayId": 204923975,
+          "use": "road",
+          "lengthKm": 0.006
+        },
+        {
+          "wayId": 1455624763,
+          "use": "footway",
+          "lengthKm": 0.017
+        },
+        {
+          "wayId": 1088955954,
+          "use": "footway",
+          "lengthKm": 0.012
         }
       ],
       "traceScope": "Valhalla map matching; not an independent field inspection"

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "source": "legacy import; route quality not re-reviewed",
-  "generatedAt": "2026-11-19T21:45:51.919Z",
+  "generatedAt": "2026-11-19T21:48:33.769Z",
   "courses": [
     {
       "id": "No.1",
@@ -7503,7 +7503,7 @@
       "seriesName": "本編 A～Z（No.1～26）",
       "legacyAnchor": "course-20",
       "legacyUrl": "../index.html#course-20",
-      "summary": "二子玉川駅付近から兵庫島公園、新二子橋の歩道と大山街道を経て津田山駅へ抜ける。兵庫島では園路に重なりが残る。",
+      "summary": "上野毛駅付近から二子玉川公園・二子玉川駅、新二子橋の歩道と大山街道を経て津田山駅へ抜ける。",
       "routeText": "経路ノード： 二子玉川駅 → 商業街区 屋上庭園 → 兵庫島公園 → 多摩川左岸遊歩道 → 昼食（駅直結） → 多摩川左岸遊歩道をさらに上流（二子橋方面）へ → 二子橋・多摩堤通り沿い → 二子玉川駅（解散）",
       "tags": [
         "川",
@@ -7612,8 +7612,9 @@
         }
       ],
       "openQuestions": [
-        "二子玉川駅と津田山駅の出入口",
-        "兵庫島公園の園路接続と約188mの重複",
+        "上野毛駅と津田山駅の出入口",
+        "二子玉川公園の園路と駅からの接続",
+        "兵庫島公園への立ち寄りと往復距離",
         "新二子橋の歩道の出入口と横断。計算線には階段が含まれる",
         "大山街道の歩道とふるさと館の開館状況"
       ],
@@ -7624,15 +7625,37 @@
           "strategy": "scenic",
           "geometryUrl": "data/routes/no-20-standard.geojson",
           "verificationStatus": "routed",
-          "distanceM": 4340,
-          "engineDistanceM": 4348,
-          "repeatedGeometryPct": 4.3,
-          "routeReason": "二子玉川駅付近から兵庫橋を渡り兵庫島公園へ。新二子橋の歩道で多摩川を渡り、大山街道ふるさと館付近から津田山駅へ抜ける計算線は約4.34km。兵庫島付近に約188mの重なりが残る。橋と園路の実際の出入口、通行条件は要確認。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
-          "distanceException": "約4.34km。水辺と駅間を結ぶ案で、5〜6kmの旧目標には届かない。",
-          "retraceException": "兵庫島公園周辺に形状上約188mの重複が残る。園路の別の出入口と通り抜けを引き続き確認する。",
+          "distanceM": 5052,
+          "engineDistanceM": 5058,
+          "repeatedGeometryPct": 0,
+          "routeReason": "上野毛駅付近から二子玉川公園付近、二子玉川駅付近、新二子橋の歩道と大山街道ふるさと館付近を経て津田山駅へ。計算上約5.05km。兵庫島公園の園内は本線に含まない。立ち寄る場合は往復を別に考え、距離と時間を追加する。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
+          "distanceException": "約5.05km。4〜8kmの範囲。",
+          "retraceException": "丸めた保存線の形状上の重複は0m。兵庫島公園を訪れる場合は本線とは別に往復が必要な可能性がある。",
           "waypoints": [
             {
               "index": 0,
+              "id": "kaminoge",
+              "label": "上野毛駅付近",
+              "description": null,
+              "point": [
+                139.63892,
+                35.61204
+              ],
+              "source": "OSM node 266085673 駅。出入口は未確認"
+            },
+            {
+              "index": 1,
+              "id": "futako_park",
+              "label": "二子玉川公園付近",
+              "description": null,
+              "point": [
+                139.6316674,
+                35.6084038
+              ],
+              "source": "OSM way 233044925 に近い歩道"
+            },
+            {
+              "index": 2,
               "id": "futakotamagawa",
               "label": "二子玉川駅付近",
               "description": null,
@@ -7641,28 +7664,6 @@
                 35.6119741
               ],
               "source": "OSM 二子玉川駅付近の歩道"
-            },
-            {
-              "index": 1,
-              "id": "hyogobashi",
-              "label": "兵庫橋",
-              "description": null,
-              "point": [
-                139.6249399,
-                35.6111591
-              ],
-              "source": "OSM way 1551426164 歩行者・自転車橋"
-            },
-            {
-              "index": 2,
-              "id": "hyogojima",
-              "label": "兵庫島公園の園路",
-              "description": null,
-              "point": [
-                139.6237619,
-                35.6114807
-              ],
-              "source": "OSM way 47377098 付近の園路"
             },
             {
               "index": 3,
@@ -7706,20 +7707,20 @@
                 139.6004567,
                 35.6038824
               ],
-              "source": "OSM node 2738954712 駅。出入口は要確認"
+              "source": "OSM node 2738954712 駅。出入口は未確認"
             }
           ],
           "engine": "valhalla-pedestrian",
-          "built": "2026-11-19T21:26:23.796Z",
+          "built": "2026-11-19T21:48:23.699Z",
           "elevation": {
             "source": "gsi_dem5a",
             "status": "partial_dem_filled",
             "url": "data/elevation/no-20-standard.json",
-            "totalM": 4340,
-            "climbM": 30.2,
-            "descentM": 29.4,
-            "minM": 6.2,
-            "maxM": 15.2
+            "totalM": 5052,
+            "climbM": 32.9,
+            "descentM": 48,
+            "minM": 6,
+            "maxM": 34.8
           }
         },
         {
