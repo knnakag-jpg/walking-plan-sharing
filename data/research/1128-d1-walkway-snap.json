@@ -174,5 +174,45 @@
   ],
   "movedM": 21,
   "wayId": 31237867
+ },
+ "hashirayama": {
+  "snapped": [
+   35.6621548,
+   139.7804756
+  ],
+  "movedM": 6,
+  "wayId": 23704718
+ },
+ "tsukishima_kannon": {
+  "snapped": [
+   35.6633739,
+   139.7811877
+  ],
+  "movedM": 22,
+  "wayId": 131110294
+ },
+ "ishikawajima": {
+  "snapped": [
+   35.6688416,
+   139.7827411
+  ],
+  "movedM": 5,
+  "wayId": 508041943
+ },
+ "tsukuda_machikado": {
+  "snapped": [
+   35.6678098,
+   139.7821635
+  ],
+  "movedM": 5,
+  "wayId": 507860759
+ },
+ "tsukishima_st": {
+  "snapped": [
+   35.6642111,
+   139.7845417
+  ],
+  "movedM": 7,
+  "wayId": 670513403
  }
 }

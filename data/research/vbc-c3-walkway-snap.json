@@ -166,5 +166,45 @@
   ],
   "movedM": 8,
   "wayId": 126938737
+ },
+ "shinagawa_rekishikan": {
+  "snapped": [
+   35.5968862,
+   139.7303115
+  ],
+  "movedM": 28,
+  "wayId": 114259130
+ },
+ "omori_kaizuka": {
+  "snapped": [
+   35.5932758,
+   139.73018
+  ],
+  "movedM": 7,
+  "wayId": 561939442
+ },
+ "daikyoji": {
+  "snapped": [
+   35.5920485,
+   139.7364933
+  ],
+  "movedM": 19,
+  "wayId": 663055984
+ },
+ "iwai": {
+  "snapped": [
+   35.5850169,
+   139.7352819
+  ],
+  "movedM": 34,
+  "wayId": 230404605
+ },
+ "omorikaigan": {
+  "snapped": [
+   35.5876078,
+   139.7352584
+  ],
+  "movedM": 16,
+  "wayId": 126905147
  }
 }

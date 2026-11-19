@@ -1,13 +1,13 @@
 {
-  "calculatedAt": "2026-11-18T12:02:21.021Z",
+  "calculatedAt": "2026-11-19T11:18:06.322Z",
   "engine": "valhalla-pedestrian",
   "variants": {
     "standard": {
       "label": "standard",
-      "distanceM": 4706,
-      "engineDistanceM": 4707,
-      "repeatedGeometryM": 368,
-      "repeatedGeometryPct": 7.8,
+      "distanceM": 6772,
+      "engineDistanceM": 6775,
+      "repeatedGeometryM": 509,
+      "repeatedGeometryPct": 7.5,
       "legKm": [
         0.75,
         0.22,
@@ -22,7 +22,11 @@
         0.23,
         0.1,
         0.74,
-        0.22
+        0.22,
+        0.18,
+        0.5,
+        0.83,
+        0.56
       ],
       "geometryUrl": "data/routes/vbc-c3-standard.geojson",
       "stops": [
@@ -174,6 +178,46 @@
             139.7309019
           ],
           "source": "OSM place_of_worship 来迎院",
+          "offsetM": 0
+        },
+        {
+          "id": "shinagawa_rekishikan",
+          "label": "品川区立品川歴史館",
+          "coord": [
+            35.5968862,
+            139.7303115
+          ],
+          "source": "OSM museum 品川区立品川歴史館",
+          "offsetM": 0
+        },
+        {
+          "id": "omori_kaizuka",
+          "label": "大森貝塚遺跡庭園",
+          "coord": [
+            35.5932758,
+            139.73018
+          ],
+          "source": "OSM park 大森貝塚遺跡庭園",
+          "offsetM": 5
+        },
+        {
+          "id": "daikyoji",
+          "label": "鈴森山大経寺",
+          "coord": [
+            35.5920485,
+            139.7364933
+          ],
+          "source": "OSM place_of_worship 鈴森山大経寺（鈴ヶ森刑場跡）",
+          "offsetM": 0
+        },
+        {
+          "id": "omorikaigan",
+          "label": "大森海岸駅",
+          "coord": [
+            35.5876078,
+            139.7352584
+          ],
+          "source": "OSM station 大森海岸",
           "offsetM": 0
         }
       ]

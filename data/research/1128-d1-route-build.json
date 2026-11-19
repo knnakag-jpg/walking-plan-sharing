@@ -1,13 +1,13 @@
 {
-  "calculatedAt": "2026-11-18T12:32:30.905Z",
+  "calculatedAt": "2026-11-19T11:18:11.102Z",
   "engine": "valhalla-pedestrian",
   "variants": {
     "standard": {
       "label": "standard",
-      "distanceM": 3752,
-      "engineDistanceM": 3753,
+      "distanceM": 6340,
+      "engineDistanceM": 6338,
       "repeatedGeometryM": 356,
-      "repeatedGeometryPct": 9.5,
+      "repeatedGeometryPct": 5.6,
       "legKm": [
         0.25,
         0.92,
@@ -17,7 +17,9 @@
         0.32,
         0.12,
         0.45,
-        0.39
+        2.32,
+        0.2,
+        0.45
       ],
       "geometryUrl": "data/routes/1128-d1-standard.geojson",
       "stops": [
@@ -112,13 +114,33 @@
           "offsetM": 0
         },
         {
-          "id": "toyosu_st",
-          "label": "豊洲駅前",
+          "id": "hashirayama",
+          "label": "柏山稲荷神社",
           "coord": [
-            35.654691,
-            139.7965638
+            35.6621548,
+            139.7804756
           ],
-          "source": "OSM 豊洲駅前",
+          "source": "OSM place_of_worship 柏山稲荷神社",
+          "offsetM": 0
+        },
+        {
+          "id": "tsukishima_kannon",
+          "label": "月島観音",
+          "coord": [
+            35.6633739,
+            139.7811877
+          ],
+          "source": "OSM place_of_worship 月島観音",
+          "offsetM": 0
+        },
+        {
+          "id": "tsukishima_st",
+          "label": "月島駅",
+          "coord": [
+            35.6642111,
+            139.7845417
+          ],
+          "source": "OSM station 月島",
           "offsetM": 0
         }
       ]
