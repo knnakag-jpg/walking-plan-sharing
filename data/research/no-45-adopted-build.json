@@ -1,57 +1,53 @@
 {
-  "generatedAt": "2026-11-16T12:37:52.776Z",
-  "method": "Valhalla pedestrian; exact geometry edge repeat is only a screening clue",
+  "generatedAt": "2026-11-19T21:51:36.143Z",
+  "engine": "valhalla-pedestrian",
+  "method": "through waypoints; OSM and Valhalla map matching; map and field review outstanding",
   "results": [
     {
       "variant": "standard",
-      "distanceM": 3814,
-      "engineDistanceM": 3810,
-      "repeatedGeometryM": 1647,
-      "repeatedGeometryPct": 43.2,
+      "geometryUrl": "data/routes/no-45-standard.geojson",
+      "distanceM": 4593,
+      "engineDistanceM": 4595,
+      "repeatedGeometryM": 0,
+      "repeatedGeometryPct": 0,
       "waypoints": [
         {
-          "id": "kisarazu_st",
-          "label": "木更津駅西口",
+          "id": "kisarazu_west",
+          "label": "木更津駅西口付近",
           "coord": [
             35.3811934,
             139.9252189
           ],
-          "source": "OSM node 木更津駅西口"
+          "source": "OSM 木更津駅西口付近の歩道"
         },
         {
           "id": "toriizaki",
-          "label": "鳥居崎海浜公園",
+          "label": "鳥居崎海浜公園前",
           "coord": [
-            35.3814591,
-            139.9138819
+            35.38127,
+            139.91613
           ],
-          "source": "OSM park 鳥居崎海浜公園"
+          "source": "OSM node 10003331484 鳥居崎海浜公園前バス停"
         },
         {
-          "id": "nakano_shima_ohashi",
-          "label": "中の島大橋",
+          "id": "traffic_park",
+          "label": "木更津市交通公園付近",
           "coord": [
-            35.38366,
-            139.91263
+            35.39042,
+            139.91887
           ],
-          "source": "OSM node 55683492 中の島大橋"
+          "source": "OSM way 849393925 公園付近。入口は未確認"
         },
         {
-          "id": "kisarazu_st",
-          "label": "木更津駅西口",
+          "id": "kisarazu_east",
+          "label": "木更津駅東口付近",
           "coord": [
-            35.3811934,
-            139.9252189
+            35.38174,
+            139.92693
           ],
-          "source": "OSM node 木更津駅西口"
+          "source": "OSM node 1989200712 駅東口付近"
         }
-      ],
-      "legDistancesKm": [
-        1.65,
-        0.67,
-        1.49
-      ],
-      "geometryUrl": "data/routes/no-45-standard.geojson"
+      ]
     }
   ]
 }

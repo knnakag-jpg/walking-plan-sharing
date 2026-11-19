@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "source": "legacy import; route quality not re-reviewed",
-  "generatedAt": "2026-11-19T21:48:33.769Z",
+  "generatedAt": "2026-11-19T21:51:46.299Z",
   "courses": [
     {
       "id": "No.1",
@@ -16191,12 +16191,12 @@
     {
       "id": "No.45",
       "slug": "no-45",
-      "title": "木更津 中の島大橋",
+      "title": "木更津港と鳥居崎",
       "seriesId": "bayarea",
       "seriesName": "ベイエリア橋（No.42～45）",
       "legacyAnchor": "course-45",
       "legacyUrl": "../index.html#course-45",
-      "summary": "木更津駅西口から鳥居崎海浜公園と中の島大橋方面を回る案。橋は工事による全面通行止め期間中で、歩ける代替経路を調査する。",
+      "summary": "木更津駅西口付近から鳥居崎海浜公園前と交通公園付近を通り、木更津駅東口付近へ戻る周回。",
       "routeText": "経路ノード： 木更津駅 → 鳥居崎海浜公園 → 中の島大橋 → 中の島公園 → 木更津港旧灯台 → 木更津駅（解散）",
       "tags": [
         "橋",
@@ -16308,9 +16308,10 @@
         }
       ],
       "openQuestions": [
-        "中の島公園・木更津港旧灯台の座標",
-        "中の島大橋の歩道と強風時の規制",
-        "鳥居崎海浜公園と駅の間の道"
+        "木更津駅の東西の出入口",
+        "鳥居崎海浜公園前と海辺へ入る園路",
+        "交通公園の入口と休憩場所",
+        "中の島大橋の工事終了日と再開"
       ],
       "routeOptions": [
         {
@@ -16319,68 +16320,68 @@
           "strategy": "scenic",
           "geometryUrl": "data/routes/no-45-standard.geojson",
           "verificationStatus": "routed",
-          "distanceM": 3814,
-          "engineDistanceM": 3810,
-          "repeatedGeometryPct": 43.2,
-          "routeReason": "木更津駅西口から鳥居崎海浜公園と中の島大橋方面を回る計算線は約3.81km。2026年11月17日から2027年2月19日まで橋が全面通行止めの予定のため、橋を渡る計画は利用できない。海辺と駅を別の道でつなぐ代替案は調査中。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
-          "distanceException": "計算線は約3.81km。現在、橋は通行止めのため歩ける距離として使えない。",
-          "retraceException": "中の島大橋で約413mと約523m、駅へ戻る区間で約711m（計約1,647m）。島へ渡る橋は渡って戻る必要があり、往復は避けられない。距離合わせではない。",
+          "distanceM": 4593,
+          "engineDistanceM": 4595,
+          "repeatedGeometryPct": 0,
+          "routeReason": "木更津駅西口付近から鳥居崎海浜公園前、木更津市交通公園付近を通り、木更津駅東口付近へ戻る約4.59km。中の島大橋は工事のため通らない。公園の入口、港沿いの歩道と横断を確認する。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
+          "distanceException": "約4.59km。4〜8kmの範囲で、旧A目標5〜6kmには届かない。",
+          "retraceException": "丸めた保存線の形状上の重複は0m。道路の同一性と現地の通行は未確認。",
           "waypoints": [
             {
               "index": 0,
-              "id": "kisarazu_st",
-              "label": "木更津駅西口",
+              "id": "kisarazu_west",
+              "label": "木更津駅西口付近",
               "description": null,
               "point": [
                 139.9252189,
                 35.3811934
               ],
-              "source": "OSM node 木更津駅西口"
+              "source": "OSM 木更津駅西口付近の歩道"
             },
             {
               "index": 1,
               "id": "toriizaki",
-              "label": "鳥居崎海浜公園",
+              "label": "鳥居崎海浜公園前",
               "description": null,
               "point": [
-                139.9138819,
-                35.3814591
+                139.91613,
+                35.38127
               ],
-              "source": "OSM park 鳥居崎海浜公園"
+              "source": "OSM node 10003331484 鳥居崎海浜公園前バス停"
             },
             {
               "index": 2,
-              "id": "nakano_shima_ohashi",
-              "label": "中の島大橋",
+              "id": "traffic_park",
+              "label": "木更津市交通公園付近",
               "description": null,
               "point": [
-                139.91263,
-                35.38366
+                139.91887,
+                35.39042
               ],
-              "source": "OSM node 55683492 中の島大橋"
+              "source": "OSM way 849393925 公園付近。入口は未確認"
             },
             {
               "index": 3,
-              "id": "kisarazu_st",
-              "label": "木更津駅西口",
+              "id": "kisarazu_east",
+              "label": "木更津駅東口付近",
               "description": null,
               "point": [
-                139.9252189,
-                35.3811934
+                139.92693,
+                35.38174
               ],
-              "source": "OSM node 木更津駅西口"
+              "source": "OSM node 1989200712 駅東口付近"
             }
           ],
           "engine": "valhalla-pedestrian",
-          "built": "2026-11-16T12:37:52.776Z",
+          "built": "2026-11-19T21:51:36.143Z",
           "elevation": {
             "source": "gsi_dem5a",
             "status": "partial_dem_filled",
             "url": "data/elevation/no-45-standard.json",
-            "totalM": 3814,
-            "climbM": 5,
-            "descentM": 5,
-            "minM": 1.7,
+            "totalM": 4593,
+            "climbM": 6.3,
+            "descentM": 6.1,
+            "minM": 1.6,
             "maxM": 3.4
           }
         },
@@ -16504,7 +16505,7 @@
           }
         }
       ],
-      "publicWarning": "中の島大橋は工事のため2026年11月17日から2027年2月19日まで全面通行止めの予定です。橋を渡る経路は期間中歩けません。工事状況と再開日を木更津市の案内で確認してください。"
+      "publicWarning": "中の島大橋は工事のため2026年11月17日から2027年2月19日まで全面通行止めの予定です。現在の徒歩案は橋を通りません。工事状況と再開日を木更津市の案内で確認してください。"
     },
     {
       "id": "No.46",

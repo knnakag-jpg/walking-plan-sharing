@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T21:48:34.521Z",
+  "generatedAt": "2026-11-19T21:51:47.038Z",
   "interpretation": "Mechanical triage only. Source and map review required before adopting any new route.",
   "records": [
     {
@@ -2684,7 +2684,7 @@
     },
     {
       "id": "No.45",
-      "title": "木更津 中の島大橋",
+      "title": "木更津港と鳥居崎",
       "series": "ベイエリア橋（No.42～45）",
       "workStatus": "partial_rebuild",
       "legacy": {
@@ -2700,7 +2700,7 @@
         {
           "variant": "standard",
           "status": "routed",
-          "distanceM": 3814
+          "distanceM": 4593
         },
         {
           "variant": "rainy",
