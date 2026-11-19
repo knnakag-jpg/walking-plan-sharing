@@ -111,7 +111,7 @@ const jobs = {
   'no-15': { courseId: 'No.15', slug: 'no-15', variants: { standard: [S.tennozu, S.tennozuPark, S.tennozuBashi, S.shinabaura, S.kitaShinagawaSt, S.ebaraJinja, S.kaizoji, S.honsenji, S.samezuSt] } },
   'no-17': { courseId: 'No.17', slug: 'no-17', variants: { standard: [S.kamiyachoCross, S.towerRoad, S.zojoji, S.shibaPark, S.atago, S.toranomon, S.hibiyaPark, S.sakuradamon, S.kokyoGaien, S.nijubashimae] } },
   'no-19': { courseId: 'No.19', slug: 'no-19', variants: { standard: [S.shinanomachi, S.kokuritsu, S.kaigakan, S.gaienmae, S.aoyama1, S.aoyamaReien, S.nact, S.roppongiSt] } },
-  'no-20': { courseId: 'No.20', slug: 'no-20', variants: { standard: [S.futakotamagawa, S.futakoPark, S.hyogojima, S.futakobashi, S.futakoJinja, S.futakoShinchi, S.oyamaKaido, S.mizonokuchi] } },
+  'no-20': { courseId: 'No.20', slug: 'no-20', variants: { standard: [S.futakoPark, S.futakotamagawa, S.hyogojima, S.futakoShinchi, S.oyamaKaido, S.mizonokuchi] } },
   'no-24': { courseId: 'No.24', slug: 'no-24', variants: { standard: [S.akasakaMitsuke, S.toyokawaInari, S.nogi, S.hinokicho, S.dsign, S.suntory, S.imoaraizaka, S.azabujuban, S.akabanebashi] } },
   'no-34': { courseId: 'No.34', slug: 'no-34', variants: {
     standard: [S.shinjukuSouth, S.southernTerrace, S.tocho, S.chuoPark, S.juniso, S.tochomae, S.shinjukuEye, S.shinjukuNishi],

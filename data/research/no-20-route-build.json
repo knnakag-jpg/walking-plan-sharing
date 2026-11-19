@@ -1,34 +1,22 @@
 {
-  "calculatedAt": "2026-11-19T13:10:53.223Z",
+  "calculatedAt": "2026-11-19T13:27:21.359Z",
   "engine": "valhalla-pedestrian",
   "variants": {
     "standard": {
       "label": "standard",
-      "distanceM": 4795,
-      "engineDistanceM": 4793,
-      "repeatedGeometryM": 953,
-      "repeatedGeometryPct": 19.9,
+      "distanceM": 3874,
+      "engineDistanceM": 3874,
+      "repeatedGeometryM": 358,
+      "repeatedGeometryPct": 9.3,
       "legKm": [
         0.63,
-        1.04,
-        0.97,
-        0.17,
-        0.35,
+        0.43,
+        1.17,
         1.09,
         0.56
       ],
       "geometryUrl": "data/routes/no-20-standard.geojson",
       "stops": [
-        {
-          "id": "futakotamagawa",
-          "label": "二子玉川駅",
-          "coord": [
-            35.6119741,
-            139.6268107
-          ],
-          "source": "OSM station 二子玉川",
-          "offsetM": 0
-        },
         {
           "id": "futako_park",
           "label": "二子玉川公園",
@@ -40,6 +28,16 @@
           "offsetM": 0
         },
         {
+          "id": "futakotamagawa",
+          "label": "二子玉川駅",
+          "coord": [
+            35.6119741,
+            139.6268107
+          ],
+          "source": "OSM station 二子玉川",
+          "offsetM": 0
+        },
+        {
           "id": "hyogojima",
           "label": "兵庫島公園",
           "coord": [
@@ -47,26 +45,6 @@
             139.6241269
           ],
           "source": "OSM way 1128004532 兵庫島公園 park",
-          "offsetM": 0
-        },
-        {
-          "id": "futakobashi",
-          "label": "二子橋",
-          "coord": [
-            35.6080081,
-            139.6232503
-          ],
-          "source": "OSM node 297176384 二子橋",
-          "offsetM": 0
-        },
-        {
-          "id": "futako_jinja",
-          "label": "二子神社",
-          "coord": [
-            35.6087794,
-            139.621676
-          ],
-          "source": "OSM way 310920949 二子神社（岡本かの子文学碑）",
           "offsetM": 0
         },
         {

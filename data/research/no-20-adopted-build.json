@@ -1,25 +1,16 @@
 {
-  "generatedAt": "2026-11-19T13:11:03.296Z",
+  "generatedAt": "2026-11-19T13:27:24.457Z",
   "engine": "valhalla-pedestrian",
   "method": "Valhalla pedestrian",
   "results": [
     {
       "variant": "standard",
-      "distanceM": 4795,
-      "engineDistanceM": 4793,
-      "repeatedGeometryM": 953,
-      "repeatedGeometryPct": 19.9,
+      "distanceM": 3874,
+      "engineDistanceM": 3874,
+      "repeatedGeometryM": 358,
+      "repeatedGeometryPct": 9.3,
       "geometryUrl": "data/routes/no-20-standard.geojson",
       "waypoints": [
-        {
-          "id": "futakotamagawa",
-          "label": "二子玉川駅",
-          "coord": [
-            35.6119741,
-            139.6268107
-          ],
-          "source": "OSM station 二子玉川"
-        },
         {
           "id": "futako_park",
           "label": "二子玉川公園",
@@ -30,6 +21,15 @@
           "source": "OSM way 233044925 二子玉川公園 park"
         },
         {
+          "id": "futakotamagawa",
+          "label": "二子玉川駅",
+          "coord": [
+            35.6119741,
+            139.6268107
+          ],
+          "source": "OSM station 二子玉川"
+        },
+        {
           "id": "hyogojima",
           "label": "兵庫島公園",
           "coord": [
@@ -37,24 +37,6 @@
             139.6241269
           ],
           "source": "OSM way 1128004532 兵庫島公園 park"
-        },
-        {
-          "id": "futakobashi",
-          "label": "二子橋",
-          "coord": [
-            35.6080081,
-            139.6232503
-          ],
-          "source": "OSM node 297176384 二子橋"
-        },
-        {
-          "id": "futako_jinja",
-          "label": "二子神社",
-          "coord": [
-            35.6087794,
-            139.621676
-          ],
-          "source": "OSM way 310920949 二子神社（岡本かの子文学碑）"
         },
         {
           "id": "futako_shinchi",
