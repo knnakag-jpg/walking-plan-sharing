@@ -1,0 +1,199 @@
+{
+  "checkedAt": "2026-11-20",
+  "sources": [
+    "https://www.openstreetmap.org/way/653039558",
+    "https://www.ktr.mlit.go.jp/syuto/syuto00474.html",
+    "https://www.tokyo-park.or.jp/park/kasairinkai/index.html",
+    "https://www.yumenoshima.jp/park/map"
+  ],
+  "limitations": [
+    "OSM network and map matching do not confirm temporary closures, entrances, crossings or on-site conditions.",
+    "No.20 retains a park-area retrace."
+  ],
+  "results": [
+    {
+      "slug": "no-20",
+      "variant": "standard",
+      "distanceM": 4340,
+      "repeatedGeometryM": 188,
+      "traceConfidence": 1,
+      "matchedBridge": [
+        {
+          "wayId": 1551426164,
+          "use": "cycleway",
+          "lengthKm": 0.036
+        },
+        {
+          "wayId": 1551426164,
+          "use": "cycleway",
+          "lengthKm": 0.036
+        },
+        {
+          "wayId": 310920947,
+          "use": "footway",
+          "lengthKm": 0.029
+        },
+        {
+          "wayId": 310920947,
+          "use": "footway",
+          "lengthKm": 0.217
+        },
+        {
+          "wayId": 310920947,
+          "use": "footway",
+          "lengthKm": 0.433
+        },
+        {
+          "wayId": 876570905,
+          "use": "steps",
+          "lengthKm": 0.011
+        },
+        {
+          "wayId": 876570904,
+          "use": "steps",
+          "lengthKm": 0.022
+        },
+        {
+          "wayId": 735042305,
+          "use": "steps",
+          "lengthKm": 0.016
+        },
+        {
+          "wayId": 204923975,
+          "use": "road",
+          "lengthKm": 0.006
+        },
+        {
+          "wayId": 1455624763,
+          "use": "footway",
+          "lengthKm": 0.017
+        },
+        {
+          "wayId": 1088955954,
+          "use": "footway",
+          "lengthKm": 0.012
+        }
+      ],
+      "traceScope": "Valhalla map matching; not an independent field inspection"
+    },
+    {
+      "slug": "no-23",
+      "variant": "standard",
+      "distanceM": 4396,
+      "repeatedGeometryM": 0,
+      "traceConfidence": 1,
+      "matchedBridge": [],
+      "traceScope": "Valhalla map matching; not an independent field inspection"
+    },
+    {
+      "slug": "no-23",
+      "variant": "extended",
+      "distanceM": 6612,
+      "repeatedGeometryM": 9,
+      "traceConfidence": 1,
+      "matchedBridge": [
+        {
+          "wayId": 296602169,
+          "use": "footway",
+          "lengthKm": 0.015
+        },
+        {
+          "wayId": 296602175,
+          "use": "footway",
+          "lengthKm": 0.003
+        },
+        {
+          "wayId": 296602172,
+          "use": "steps",
+          "lengthKm": 0.015
+        },
+        {
+          "wayId": 296602166,
+          "use": "footway",
+          "lengthKm": 0.003
+        },
+        {
+          "wayId": 296602166,
+          "use": "footway",
+          "lengthKm": 0.049
+        },
+        {
+          "wayId": 296602166,
+          "use": "footway",
+          "lengthKm": 0.098
+        },
+        {
+          "wayId": 296602166,
+          "use": "footway",
+          "lengthKm": 0.123
+        },
+        {
+          "wayId": 296602166,
+          "use": "footway",
+          "lengthKm": 0.112
+        }
+      ],
+      "traceScope": "Valhalla map matching; not an independent field inspection"
+    },
+    {
+      "slug": "no-46",
+      "variant": "standard",
+      "distanceM": 6284,
+      "repeatedGeometryM": 66,
+      "traceConfidence": 1,
+      "matchedBridge": [
+        {
+          "wayId": 782375127,
+          "use": "footway",
+          "lengthKm": 0.013
+        },
+        {
+          "wayId": 653039558,
+          "use": "footway",
+          "lengthKm": 1.137
+        },
+        {
+          "wayId": 172354493,
+          "use": "footway",
+          "lengthKm": 0.051
+        },
+        {
+          "wayId": 653039557,
+          "use": "footway",
+          "lengthKm": 0.047
+        },
+        {
+          "wayId": 172354489,
+          "use": "steps",
+          "lengthKm": 0.012
+        },
+        {
+          "wayId": 172354492,
+          "use": "steps",
+          "lengthKm": 0.019
+        },
+        {
+          "wayId": 172354462,
+          "use": "footway",
+          "lengthKm": 0.006
+        },
+        {
+          "wayId": 172354462,
+          "use": "footway",
+          "lengthKm": 0.006
+        },
+        {
+          "wayId": 156492934,
+          "use": "path",
+          "lengthKm": 0.111
+        },
+        {
+          "wayId": 156492934,
+          "use": "path",
+          "lengthKm": 0.039
+        }
+      ],
+      "traceScope": "Valhalla map matching; not an independent field inspection"
+    }
+  ]
+}

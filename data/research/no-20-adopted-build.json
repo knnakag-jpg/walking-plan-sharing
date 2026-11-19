@@ -1,69 +1,78 @@
 {
-  "generatedAt": "2026-11-19T13:27:24.457Z",
+  "generatedAt": "2026-11-19T21:26:23.804Z",
   "engine": "valhalla-pedestrian",
-  "method": "Valhalla pedestrian",
+  "method": "through waypoints; map-matched road types screened",
   "results": [
     {
       "variant": "standard",
-      "distanceM": 3874,
-      "engineDistanceM": 3874,
-      "repeatedGeometryM": 358,
-      "repeatedGeometryPct": 9.3,
       "geometryUrl": "data/routes/no-20-standard.geojson",
+      "distanceM": 4340,
+      "engineDistanceM": 4348,
+      "repeatedGeometryM": 188,
+      "repeatedGeometryPct": 4.3,
       "waypoints": [
         {
-          "id": "futako_park",
-          "label": "二子玉川公園",
-          "coord": [
-            35.6084038,
-            139.6316674
-          ],
-          "source": "OSM way 233044925 二子玉川公園 park"
-        },
-        {
           "id": "futakotamagawa",
-          "label": "二子玉川駅",
+          "label": "二子玉川駅付近",
           "coord": [
             35.6119741,
             139.6268107
           ],
-          "source": "OSM station 二子玉川"
+          "source": "OSM 二子玉川駅付近の歩道"
+        },
+        {
+          "id": "hyogobashi",
+          "label": "兵庫橋",
+          "coord": [
+            35.6111591,
+            139.6249399
+          ],
+          "source": "OSM way 1551426164 歩行者・自転車橋"
         },
         {
           "id": "hyogojima",
-          "label": "兵庫島公園",
+          "label": "兵庫島公園の園路",
           "coord": [
-            35.6117733,
-            139.6241269
+            35.6114807,
+            139.6237619
           ],
-          "source": "OSM way 1128004532 兵庫島公園 park"
+          "source": "OSM way 47377098 付近の園路"
         },
         {
-          "id": "futako_shinchi",
-          "label": "二子新地駅",
+          "id": "shin_futako_north",
+          "label": "新二子橋の歩道・北側",
           "coord": [
-            35.6071352,
-            139.6225383
+            35.6121411,
+            139.6224907
           ],
-          "source": "OSM station 二子新地"
+          "source": "OSM way 310920947 歩道"
+        },
+        {
+          "id": "shin_futako_south",
+          "label": "新二子橋の歩道・南側",
+          "coord": [
+            35.6098837,
+            139.6185546
+          ],
+          "source": "OSM way 310920947 歩道"
         },
         {
           "id": "oyama_kaido",
-          "label": "大山街道ふるさと館",
+          "label": "大山街道ふるさと館付近",
           "coord": [
             35.6032494,
             139.6128575
           ],
-          "source": "OSM node 3379278628 大山街道ふるさと館 museum"
+          "source": "OSM node 3379278628 付近の歩道"
         },
         {
-          "id": "musashi_mizonokuchi",
-          "label": "武蔵溝ノ口駅（溝の口駅）",
+          "id": "tsudayama",
+          "label": "津田山駅付近",
           "coord": [
-            35.5998743,
-            139.6105353
+            35.6038824,
+            139.6004567
           ],
-          "source": "OSM node 266084776 溝の口 station; 南武線は武蔵溝ノ口駅"
+          "source": "OSM node 2738954712 駅。出入口は要確認"
         }
       ]
     }

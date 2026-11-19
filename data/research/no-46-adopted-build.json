@@ -1,57 +1,89 @@
 {
-  "generatedAt": "2026-11-16T12:41:10.511Z",
-  "method": "Valhalla pedestrian; exact geometry edge repeat is only a screening clue",
+  "generatedAt": "2026-11-19T21:26:23.805Z",
+  "engine": "valhalla-pedestrian",
+  "method": "through waypoints; map-matched road types screened",
   "results": [
     {
       "variant": "standard",
-      "distanceM": 6239,
-      "engineDistanceM": 6239,
-      "repeatedGeometryM": 835,
-      "repeatedGeometryPct": 13.4,
+      "geometryUrl": "data/routes/no-46-standard.geojson",
+      "distanceM": 6284,
+      "engineDistanceM": 6291,
+      "repeatedGeometryM": 66,
+      "repeatedGeometryPct": 1.1,
       "waypoints": [
         {
           "id": "shinkiba",
-          "label": "新木場駅",
+          "label": "新木場駅付近",
           "coord": [
             35.6458523,
             139.8269657
           ],
-          "source": "OSM 新木場 station"
+          "source": "OSM 新木場駅付近の歩道"
         },
         {
-          "id": "nettaikan",
-          "label": "東京都夢の島熱帯植物館",
+          "id": "yumenoshima_west",
+          "label": "夢の島公園西側の園路",
           "coord": [
-            35.6511219,
-            139.8294159
+            35.650261,
+            139.825762
           ],
-          "source": "OSM garden 東京都夢の島熱帯植物館"
+          "source": "既存の徒歩計算線上の園路候補"
         },
         {
-          "id": "kasai_aquarium",
-          "label": "葛西臨海水族園",
+          "id": "yumenoshima_east",
+          "label": "夢の島公園東側の園路",
           "coord": [
-            35.6409459,
-            139.8618897
+            35.64805,
+            139.831141
           ],
-          "source": "OSM aquarium 葛西臨海水族園"
+          "source": "既存の徒歩計算線上の園路候補"
         },
         {
-          "id": "kasai_st",
-          "label": "葛西臨海公園駅",
+          "id": "bridge_west",
+          "label": "荒川河口橋の歩道・西側",
           "coord": [
-            35.6441556,
-            139.8615771
+            35.6476672,
+            139.842905
           ],
-          "source": "OSM station 葛西臨海公園"
+          "source": "OSM node 1832649668 footway"
+        },
+        {
+          "id": "bridge_east",
+          "label": "荒川河口橋の歩道・東側",
+          "coord": [
+            35.6471372,
+            139.8517065
+          ],
+          "source": "OSM node 1832649665 footway"
+        },
+        {
+          "id": "crystal",
+          "label": "クリスタルビュー北側",
+          "coord": [
+            35.641733,
+            139.860002
+          ],
+          "source": "OSM way 161731857 近くの園路"
+        },
+        {
+          "id": "aquarium_east",
+          "label": "水族園東側",
+          "coord": [
+            35.641914,
+            139.863135
+          ],
+          "source": "OSM way 191044572 東側の園路。入園は別行動"
+        },
+        {
+          "id": "kasai",
+          "label": "葛西臨海公園駅付近",
+          "coord": [
+            35.6438204,
+            139.8626288
+          ],
+          "source": "OSM node 7249081833 駅付近。改札への接続は要確認"
         }
-      ],
-      "legDistancesKm": [
-        1.05,
-        4.65,
-        0.54
-      ],
-      "geometryUrl": "data/routes/no-46-standard.geojson"
+      ]
     }
   ]
 }

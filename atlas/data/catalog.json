@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "source": "legacy import; route quality not re-reviewed",
-  "generatedAt": "2026-11-19T13:59:27.188Z",
+  "generatedAt": "2026-11-19T21:32:05.558Z",
   "courses": [
     {
       "id": "No.1",
@@ -7632,7 +7632,7 @@
       "seriesName": "本編 A～Z（No.1～26）",
       "legacyAnchor": "course-20",
       "legacyUrl": "../index.html#course-20",
-      "summary": "二子玉川公園から二子玉川駅・兵庫島公園へ戻り、二子新地駅から大山街道を上って溝の口（武蔵溝ノ口）駅へ。多摩川の水辺から大山街道に上がる。",
+      "summary": "二子玉川駅付近から兵庫島公園、新二子橋の歩道と大山街道を経て津田山駅へ抜ける。兵庫島では園路に重なりが残る。",
       "routeText": "経路ノード： 二子玉川駅 → 商業街区 屋上庭園 → 兵庫島公園 → 多摩川左岸遊歩道 → 昼食（駅直結） → 多摩川左岸遊歩道をさらに上流（二子橋方面）へ → 二子橋・多摩堤通り沿い → 二子玉川駅（解散）",
       "tags": [
         "川",
@@ -7719,6 +7719,13 @@
       "defaultVariant": "standard",
       "evidence": [
         {
+          "type": "official",
+          "title": "大山街道ふるさと館",
+          "url": "https://www.furusatokan.info/",
+          "checkedAt": "2026-11-20",
+          "supports": "大山街道の資料館の案内。開館日は要確認。"
+        },
+        {
           "type": "community",
           "title": "OpenStreetMap（二子玉川駅・兵庫島公園・二子橋・二子新地駅）",
           "url": "https://www.openstreetmap.org/",
@@ -7734,10 +7741,10 @@
         }
       ],
       "openQuestions": [
-        "二子玉川公園へ下る坂の勾配",
-        "二子玉川駅前から兵庫島公園への経路",
-        "大山街道の歩道",
-        "二子新地の踏切の渡り方"
+        "二子玉川駅と津田山駅の出入口",
+        "兵庫島公園の園路接続と約188mの重複",
+        "新二子橋の歩道の出入口と横断。計算線には階段が含まれる",
+        "大山街道の歩道とふるさと館の開館状況"
       ],
       "routeOptions": [
         {
@@ -7746,91 +7753,102 @@
           "strategy": "scenic",
           "geometryUrl": "data/routes/no-20-standard.geojson",
           "verificationStatus": "routed",
-          "distanceM": 3874,
-          "engineDistanceM": 3874,
-          "repeatedGeometryPct": 9.3,
-          "routeReason": "二子玉川駅の南の二子玉川公園から二子玉川駅前へ戻り、兵庫島公園、二子新地駅を経て、大山街道ふるさと館へ上り、溝の口駅（南武線は武蔵溝ノ口駅）で終わる。計算上3.87km。旧案は二子新地駅で終わっていた1.6km。二子玉川公園は駅の南東の台地にあり、駅前と兵庫島は北西の川沿いにある。どの順に並べても、公園から駅前または兵庫島へ戻る区間と、二子新地の踏切前後の入り直しで約10%の重なりが出るため、重なりが最も小さい並び（公園→駅→兵庫島→二子新地→溝の口）を採った。下流の矢向・鹿島田方面へ延ばす案は、海老取川の渡りで行き止まりになり迂回が長くなるため採らない。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
-          "distanceException": "3.87km。実在の名称付き地点だけで組んだため5〜6kmに届かない。周辺の追加できる地点は使い切り、距離合わせの延伸は作らない。",
-          "retraceException": "約358m（兵庫島側約170mと約90m、二子新地駅側約99m）。兵庫島公園と二子神社を回る園路の出入りと、二子新地の踏切の前後で線路の反対側へ渡る区間。二子玉川公園から駅前へ下る最初の区間は一筆書きで、往復はない。距離合わせではない。地図で未確認。",
+          "distanceM": 4340,
+          "engineDistanceM": 4348,
+          "repeatedGeometryPct": 4.3,
+          "routeReason": "二子玉川駅付近から兵庫橋を渡り兵庫島公園へ。新二子橋の歩道で多摩川を渡り、大山街道ふるさと館付近から津田山駅へ抜ける計算線は約4.34km。兵庫島付近に約188mの重なりが残る。橋と園路の実際の出入口、通行条件は要確認。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
+          "distanceException": "約4.34km。水辺と駅間を結ぶ案で、5〜6kmの旧目標には届かない。",
+          "retraceException": "兵庫島公園周辺に形状上約188mの重複が残る。園路の別の出入口と通り抜けを引き続き確認する。",
           "waypoints": [
             {
               "index": 0,
-              "id": "futako_park",
-              "label": "二子玉川公園",
-              "description": null,
-              "point": [
-                139.6316674,
-                35.6084038
-              ],
-              "source": "OSM way 233044925 二子玉川公園 park"
-            },
-            {
-              "index": 1,
               "id": "futakotamagawa",
-              "label": "二子玉川駅",
+              "label": "二子玉川駅付近",
               "description": null,
               "point": [
                 139.6268107,
                 35.6119741
               ],
-              "source": "OSM station 二子玉川"
+              "source": "OSM 二子玉川駅付近の歩道"
+            },
+            {
+              "index": 1,
+              "id": "hyogobashi",
+              "label": "兵庫橋",
+              "description": null,
+              "point": [
+                139.6249399,
+                35.6111591
+              ],
+              "source": "OSM way 1551426164 歩行者・自転車橋"
             },
             {
               "index": 2,
               "id": "hyogojima",
-              "label": "兵庫島公園",
+              "label": "兵庫島公園の園路",
               "description": null,
               "point": [
-                139.6241269,
-                35.6117733
+                139.6237619,
+                35.6114807
               ],
-              "source": "OSM way 1128004532 兵庫島公園 park"
+              "source": "OSM way 47377098 付近の園路"
             },
             {
               "index": 3,
-              "id": "futako_shinchi",
-              "label": "二子新地駅",
+              "id": "shin_futako_north",
+              "label": "新二子橋の歩道・北側",
               "description": null,
               "point": [
-                139.6225383,
-                35.6071352
+                139.6224907,
+                35.6121411
               ],
-              "source": "OSM station 二子新地"
+              "source": "OSM way 310920947 歩道"
             },
             {
               "index": 4,
+              "id": "shin_futako_south",
+              "label": "新二子橋の歩道・南側",
+              "description": null,
+              "point": [
+                139.6185546,
+                35.6098837
+              ],
+              "source": "OSM way 310920947 歩道"
+            },
+            {
+              "index": 5,
               "id": "oyama_kaido",
-              "label": "大山街道ふるさと館",
+              "label": "大山街道ふるさと館付近",
               "description": null,
               "point": [
                 139.6128575,
                 35.6032494
               ],
-              "source": "OSM node 3379278628 大山街道ふるさと館 museum"
+              "source": "OSM node 3379278628 付近の歩道"
             },
             {
-              "index": 5,
-              "id": "musashi_mizonokuchi",
-              "label": "武蔵溝ノ口駅（溝の口駅）",
+              "index": 6,
+              "id": "tsudayama",
+              "label": "津田山駅付近",
               "description": null,
               "point": [
-                139.6105353,
-                35.5998743
+                139.6004567,
+                35.6038824
               ],
-              "source": "OSM node 266084776 溝の口 station; 南武線は武蔵溝ノ口駅"
+              "source": "OSM node 2738954712 駅。出入口は要確認"
             }
           ],
           "engine": "valhalla-pedestrian",
-          "built": "2026-11-19T13:27:21.359Z",
+          "built": "2026-11-19T21:26:23.796Z",
           "elevation": {
             "source": "gsi_dem5a",
             "status": "partial_dem_filled",
             "url": "data/elevation/no-20-standard.json",
-            "totalM": 3874,
-            "climbM": 23.5,
-            "descentM": 22.8,
-            "minM": 6,
-            "maxM": 16.2
+            "totalM": 4340,
+            "climbM": 30.2,
+            "descentM": 29.4,
+            "minM": 6.2,
+            "maxM": 15.2
           }
         },
         {
@@ -8695,7 +8713,7 @@
       "seriesName": "本編 A～Z（No.1～26）",
       "legacyAnchor": "course-23",
       "legacyUrl": "../index.html#course-23",
-      "summary": "葛西臨海公園駅から大観覧車、汐風の広場、クリスタルビュー、水族園、鳥類園をめぐる駅発着の周回（A）と、鳥類園から葛西駅へ抜ける案（B）。旧案の総合レクリエーション公園への往復延伸は座標を作る必要があるため採用しない。",
+      "summary": "葛西臨海公園駅付近から観覧車・クリスタルビュー・水族園東側を通り、葛西駅へ向かうAと浦安駅へ抜けるB。",
       "routeText": "経路ノード： 葛西臨海公園駅 → 大観覧車 → 汐風の広場 → 西なぎさ（橋を渡る／平坦） → 昼食 → 水族施設 → クリスタルビュー（展望施設・EVあり） → 鳥類園・汽水池遊歩道（総合レクリエーション公園方面） → 葛西臨海公園駅（解散）",
       "tags": [
         "海辺",
@@ -8769,6 +8787,13 @@
       "defaultVariant": "standard",
       "evidence": [
         {
+          "type": "official",
+          "title": "東京都公園協会 葛西臨海公園",
+          "url": "https://www.tokyo-park.or.jp/park/kasairinkai/index.html",
+          "checkedAt": "2026-11-20",
+          "supports": "園内マップと施設の案内。"
+        },
+        {
           "type": "community",
           "title": "旧資料 No.23（先行ページ index.html）",
           "url": null,
@@ -8792,18 +8817,18 @@
           "evidenceTitle": "OpenStreetMap"
         },
         {
-          "name": "鳥類園の汽水池",
-          "theme": "野鳥と水辺",
-          "direction": "園の北東へ",
-          "reviewStatus": "候補・観察舎への園路を地図で照合待ち",
+          "name": "水族園東側",
+          "theme": "公園の緑と海辺",
+          "direction": "北へ葛西駅方面",
+          "reviewStatus": "園路・見え方を地図で照合待ち",
           "evidenceTitle": "OpenStreetMap"
         }
       ],
       "openQuestions": [
-        "西なぎさ（橋を渡る園路）の入口と通行条件。ピンが経路から約218m離れている",
-        "西なぎさ・鳥類園・水族園の園路網を地図で確認し、駅へ戻らずに回れるルートがあるか",
-        "水族園の営業状況（建替え工事の有無）",
-        "Bの終点（葛西駅）までの歩道の連続性"
+        "公園内の園路・出入口と駅の改札への接続",
+        "環七通りの歩道と横断",
+        "水族園・観覧車の営業状況",
+        "Bの葛西駅から浦安駅への歩道と橋。計算線には階段が含まれる"
       ],
       "routeOptions": [
         {
@@ -8812,102 +8837,80 @@
           "strategy": "scenic",
           "geometryUrl": "data/routes/no-23-standard.geojson",
           "verificationStatus": "routed",
-          "distanceM": 4591,
-          "engineDistanceM": 4591,
-          "repeatedGeometryPct": 19.7,
-          "routeReason": "葛西臨海公園駅から大観覧車、汐風の広場、クリスタルビュー、水族園、鳥類園を通り駅へ戻る周回。計算上4.59km。園内の見どころは行き止まりの園路の先にあり、同じ道の戻りが約900m出る。西なぎさのピンは経路から約218m離れていて経路は通らない可能性があるため、経由点から外した。",
-          "distanceException": "4.59km。実在の立ち寄り先だけで組んだため5〜6kmに届かない。総合レクリエーション公園への延伸は座標を作る必要があるため採用しない。",
-          "retraceException": "西なぎさ方向からの戻り約323m、海浜側から駅方向へ約250m、鳥類園から駅方向へ約287m（計約905m）。園内の見どころが行き止まりの園路の先にあるため、同じ道を戻る必要がある往復と推定。地図・現地で未確認で、距離合わせの往復ではない。",
+          "distanceM": 4396,
+          "engineDistanceM": 4402,
+          "repeatedGeometryPct": 0,
+          "routeReason": "葛西臨海公園駅付近から観覧車付近、クリスタルビュー北側と水族園東側を通り、葛西駅へ抜ける約4.40km。施設への入場や西なぎさ、鳥類園への立ち寄りは本線に含めない。",
+          "distanceException": "約4.40km。駅間を自然につなぐため旧目標の5kmに届かない。",
+          "retraceException": "保存線の丸めた線分に重複なし。道路の同一性と園路は現地未確認。",
           "waypoints": [
             {
               "index": 0,
-              "id": "kasai_station",
-              "label": "葛西臨海公園駅",
+              "id": "kasai_start",
+              "label": "葛西臨海公園駅付近",
               "description": null,
               "point": [
-                139.8625617,
-                35.6437184
+                139.8616,
+                35.6443
               ],
-              "source": "OSM node 7249081833"
+              "source": "OSM node 11040588549 駅西側付近。改札への接続は要確認"
             },
             {
               "index": 1,
               "id": "ferris",
-              "label": "ダイヤと花の大観覧車",
+              "label": "大観覧車付近",
               "description": null,
               "point": [
-                139.8574158,
-                35.6440594
+                139.8572504,
+                35.6439404
               ],
-              "source": "OSM way 161931777 centre"
+              "source": "OSM way 161931777 近くの園路"
             },
             {
               "index": 2,
-              "id": "shiokaze",
-              "label": "汐風の広場",
+              "id": "crystal",
+              "label": "クリスタルビュー北側",
               "description": null,
               "point": [
-                139.8566863,
-                35.6409859
+                139.860002,
+                35.641733
               ],
-              "source": "OSM way 693987764 centre"
+              "source": "OSM way 161731857 近くの園路"
             },
             {
               "index": 3,
-              "id": "crystal",
-              "label": "クリスタルビュー",
+              "id": "aquarium_east",
+              "label": "水族園東側",
               "description": null,
               "point": [
-                139.8594499,
-                35.6407092
+                139.863135,
+                35.641914
               ],
-              "source": "OSM way 161731857 centre"
+              "source": "OSM way 191044572 東側の園路。入園は別行動"
             },
             {
               "index": 4,
-              "id": "aquarium",
-              "label": "葛西臨海水族園",
+              "id": "kasai_station",
+              "label": "葛西駅付近",
               "description": null,
               "point": [
-                139.8618897,
-                35.6409459
+                139.8728131,
+                35.6635975
               ],
-              "source": "OSM way 191044572 centre"
-            },
-            {
-              "index": 5,
-              "id": "bird",
-              "label": "鳥類園ウォッチングセンター",
-              "description": null,
-              "point": [
-                139.8654187,
-                35.6399744
-              ],
-              "source": "OSM way 156492882 centre"
-            },
-            {
-              "index": 6,
-              "id": "kasai_station_back",
-              "label": "葛西臨海公園駅（戻り）",
-              "description": null,
-              "point": [
-                139.8625617,
-                35.6437184
-              ],
-              "source": "OSM node 7249081833"
+              "source": "OSM node 1923746881 最寄り出口は要確認"
             }
           ],
           "engine": "valhalla-pedestrian",
-          "built": "2026-11-15T02:41:23.422Z",
+          "built": "2026-11-19T21:26:23.799Z",
           "elevation": {
             "source": "gsi_dem5a",
-            "status": "partial_dem_filled",
+            "status": "dem",
             "url": "data/elevation/no-23-standard.json",
-            "totalM": 4591,
-            "climbM": 41.8,
-            "descentM": 41.8,
-            "minM": 0.7,
-            "maxM": 13.9
+            "totalM": 4396,
+            "climbM": 18.4,
+            "descentM": 22.9,
+            "minM": -1,
+            "maxM": 10.2
           }
         },
         {
@@ -8916,102 +8919,91 @@
           "strategy": "scenic",
           "geometryUrl": "data/routes/no-23-extended.geojson",
           "verificationStatus": "routed",
-          "distanceM": 6759,
-          "engineDistanceM": 6767,
-          "repeatedGeometryPct": 13.1,
-          "routeReason": "同じ見どころを巡り、鳥類園から北へ葛西駅へ抜ける。計算上6.76km。終点が葛西駅（地下鉄東西線）に変わる。西なぎさは経由点から外しているので、鳥類園から先の経路を地図で確認する必要がある。",
-          "distanceException": "6.76km。7〜8kmに届かない。鳥類園から葛西駅へ抜ける実在の経路だけで組み、延伸は作らない。",
-          "retraceException": "Aと同様に西なぎさ方向からの戻り約323m、海浜側から約250m、鳥類園方向約287m（計約888m）。園内の見どころが行き止まりの園路の先にあるため。未確認。",
+          "distanceM": 6612,
+          "engineDistanceM": 6620,
+          "repeatedGeometryPct": 0.1,
+          "routeReason": "Aの流れで葛西駅付近を経て浦安駅へ抜ける約6.61km。旧Bにあった園内の大きな往復を取り除いた。",
+          "distanceException": "約6.61km。旧目標の7kmには届かないが、4〜8kmの範囲に収まる。",
+          "retraceException": "保存線の丸めた線分に約9mの重複。道路の同一性と園路は現地未確認。",
           "waypoints": [
             {
               "index": 0,
-              "id": "kasai_station",
-              "label": "葛西臨海公園駅",
+              "id": "kasai_start",
+              "label": "葛西臨海公園駅付近",
               "description": null,
               "point": [
-                139.8625617,
-                35.6437184
+                139.8616,
+                35.6443
               ],
-              "source": "OSM node 7249081833"
+              "source": "OSM node 11040588549 駅西側付近。改札への接続は要確認"
             },
             {
               "index": 1,
               "id": "ferris",
-              "label": "ダイヤと花の大観覧車",
+              "label": "大観覧車付近",
               "description": null,
               "point": [
-                139.8574158,
-                35.6440594
+                139.8572504,
+                35.6439404
               ],
-              "source": "OSM way 161931777 centre"
+              "source": "OSM way 161931777 近くの園路"
             },
             {
               "index": 2,
-              "id": "shiokaze",
-              "label": "汐風の広場",
+              "id": "crystal",
+              "label": "クリスタルビュー北側",
               "description": null,
               "point": [
-                139.8566863,
-                35.6409859
+                139.860002,
+                35.641733
               ],
-              "source": "OSM way 693987764 centre"
+              "source": "OSM way 161731857 近くの園路"
             },
             {
               "index": 3,
-              "id": "crystal",
-              "label": "クリスタルビュー",
+              "id": "aquarium_east",
+              "label": "水族園東側",
               "description": null,
               "point": [
-                139.8594499,
-                35.6407092
+                139.863135,
+                35.641914
               ],
-              "source": "OSM way 161731857 centre"
+              "source": "OSM way 191044572 東側の園路。入園は別行動"
             },
             {
               "index": 4,
-              "id": "aquarium",
-              "label": "葛西臨海水族園",
-              "description": null,
-              "point": [
-                139.8618897,
-                35.6409459
-              ],
-              "source": "OSM way 191044572 centre"
-            },
-            {
-              "index": 5,
-              "id": "bird",
-              "label": "鳥類園ウォッチングセンター",
-              "description": null,
-              "point": [
-                139.8654187,
-                35.6399744
-              ],
-              "source": "OSM way 156492882 centre"
-            },
-            {
-              "index": 6,
-              "id": "kasai_st",
-              "label": "葛西駅",
+              "id": "kasai_station",
+              "label": "葛西駅付近",
               "description": null,
               "point": [
                 139.8728131,
                 35.6635975
               ],
-              "source": "OSM node 1923746881 station"
+              "source": "OSM node 1923746881 最寄り出口は要確認"
+            },
+            {
+              "index": 5,
+              "id": "urayasu",
+              "label": "浦安駅付近",
+              "description": null,
+              "point": [
+                139.8928,
+                35.66568
+              ],
+              "source": "OSM node 14382642501 地下鉄出入口"
             }
           ],
           "engine": "valhalla-pedestrian",
-          "built": "2026-11-15T12:35:53.735Z",
+          "built": "2026-11-19T21:26:23.802Z",
           "elevation": {
             "source": "gsi_dem5a",
             "status": "partial_dem_filled",
             "url": "data/elevation/no-23-extended.json",
-            "totalM": 6759,
-            "climbM": 44.9,
-            "descentM": 48.8,
+            "totalM": 6612,
+            "climbM": 18.6,
+            "descentM": 23.7,
             "minM": -1,
-            "maxM": 13.9
+            "maxM": 10.2
           }
         },
         {
@@ -16332,7 +16324,7 @@
       "seriesName": "ベイエリア橋（No.42～45）",
       "legacyAnchor": "course-45",
       "legacyUrl": "../index.html#course-45",
-      "summary": "木更津駅西口から鳥居崎海浜公園を経て中の島大橋を渡り、駅へ戻る周遊。中の島公園・旧灯台は名称ノードが見つからず含めていない。",
+      "summary": "木更津駅西口から鳥居崎海浜公園と中の島大橋方面を回る案。橋は工事による全面通行止め期間中で、歩ける代替経路を調査する。",
       "routeText": "経路ノード： 木更津駅 → 鳥居崎海浜公園 → 中の島大橋 → 中の島公園 → 木更津港旧灯台 → 木更津駅（解散）",
       "tags": [
         "橋",
@@ -16422,6 +16414,13 @@
       "defaultVariant": "standard",
       "evidence": [
         {
+          "type": "official",
+          "title": "木更津市 中の島大橋の通行止め",
+          "url": "https://www.city.kisarazu.lg.jp/soshiki/toshiseibi/shigaichiseibi/1/park/2597.html",
+          "checkedAt": "2026-11-20",
+          "supports": "2026年11月17日から2027年2月19日まで全面通行止めの予定。"
+        },
+        {
           "type": "community",
           "title": "OpenStreetMap（木更津駅西口・鳥居崎海浜公園・中の島大橋）",
           "url": "https://www.openstreetmap.org/",
@@ -16451,8 +16450,8 @@
           "distanceM": 3814,
           "engineDistanceM": 3810,
           "repeatedGeometryPct": 43.2,
-          "routeReason": "木更津駅西口から鳥居崎海浜公園、中の島大橋を渡って木更津駅西口へ戻る。計算上3.44km。旧案の周遊のうち、中の島公園・木更津港旧灯台は名称ノードが見つからず含めていない。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
-          "distanceException": "3.44km。港の周遊で5〜6kmに届かない。島へ渡る橋は往復が避けられないため、延伸は作らない。",
+          "routeReason": "木更津駅西口から鳥居崎海浜公園と中の島大橋方面を回る計算線は約3.81km。2026年11月17日から2027年2月19日まで橋が全面通行止めの予定のため、橋を渡る計画は利用できない。海辺と駅を別の道でつなぐ代替案は調査中。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
+          "distanceException": "計算線は約3.81km。現在、橋は通行止めのため歩ける距離として使えない。",
           "retraceException": "中の島大橋で約413mと約523m、駅へ戻る区間で約711m（計約1,647m）。島へ渡る橋は渡って戻る必要があり、往復は避けられない。距離合わせではない。",
           "waypoints": [
             {
@@ -16632,17 +16631,18 @@
             "maxM": 40.9
           }
         }
-      ]
+      ],
+      "publicWarning": "中の島大橋は工事のため2026年11月17日から2027年2月19日まで全面通行止めの予定です。橋を渡る経路は期間中歩けません。工事状況と再開日を木更津市の案内で確認してください。"
     },
     {
       "id": "No.46",
       "slug": "no-46",
-      "title": "夢の島熱帯植物館から葛西臨海水族園",
+      "title": "夢の島から葛西・荒川河口橋の歩道",
       "seriesId": "v4bay",
       "seriesName": "V4湾岸追加（No.46）",
       "legacyAnchor": "course-46",
       "legacyUrl": "../index.html#course-46",
-      "summary": "新木場駅から東京都夢の島熱帯植物館、葛西臨海水族園を経て葛西臨海公園駅へ抜ける駅間。夢の島大橋・荒川河口橋・鳥類園・大観覧車は名称ノードが見つからず含めていない。",
+      "summary": "新木場駅付近から夢の島公園、荒川河口橋の歩道、葛西臨海公園を経て葛西臨海公園駅へ抜ける。",
       "routeText": "経路ノード： 新木場駅 → 夢の島熱帯植物館 → 夢の島公園 → 夢の島大橋東詰 → 荒川河口橋 → 葛西臨海公園 鳥類園（汽水池） → 葛西臨海水族園 → 大観覧車 → 葛西臨海公園駅（解散）",
       "tags": [
         "植物園",
@@ -16696,6 +16696,13 @@
       "defaultVariant": "standard",
       "evidence": [
         {
+          "type": "official",
+          "title": "国土交通省 荒川河口橋歩道橋",
+          "url": "https://www.ktr.mlit.go.jp/syuto/syuto00474.html",
+          "checkedAt": "2026-11-20",
+          "supports": "荒川河口橋の海側の歩道橋の開通案内。"
+        },
+        {
           "type": "community",
           "title": "OpenStreetMap（新木場駅・夢の島熱帯植物館・葛西臨海水族園・葛西臨海公園駅）",
           "url": "https://www.openstreetmap.org/",
@@ -16711,10 +16718,10 @@
         }
       ],
       "openQuestions": [
-        "夢の島大橋・荒川河口橋の座標",
-        "葛西臨海公園の鳥類園の入口と園路",
-        "大観覧車の位置",
-        "葛西臨海水族園の営業状況（建替え工事の有無）"
+        "荒川河口橋の歩道の出入口と横断。計算線には階段が含まれる",
+        "夢の島公園の園路と植物館への立ち寄り",
+        "葛西臨海公園内の園路と駅の出入口",
+        "葛西臨海水族園の営業状況"
       ],
       "routeOptions": [
         {
@@ -16723,68 +16730,112 @@
           "strategy": "scenic",
           "geometryUrl": "data/routes/no-46-standard.geojson",
           "verificationStatus": "routed",
-          "distanceM": 6239,
-          "engineDistanceM": 6239,
-          "repeatedGeometryPct": 13.4,
-          "routeReason": "新木場駅から東京都夢の島熱帯植物館、葛西臨海水族園を経て葛西臨海公園駅へ。計算上6.24km。夢の島大橋・荒川河口橋・鳥類園・大観覧車は名称ノードが見つからず、座標を作らずに含めていない。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
-          "distanceException": "6.24km。5〜6kmを少し超えるが、実在の立ち寄り先を結んだ結果で、切り詰めはしない。",
-          "retraceException": "夢の島熱帯植物館の出入りで約543m、葛西臨海水族園の入口と駅の間で約292m（計約835m）。両施設の入口が園路の奥にあり、同じ道を戻る形と推定。地図で未確認。距離合わせではない。",
+          "distanceM": 6284,
+          "engineDistanceM": 6291,
+          "repeatedGeometryPct": 1.1,
+          "routeReason": "新木場駅付近から夢の島公園を通り、荒川河口橋の歩道を渡ってクリスタルビュー北側と水族園東側を経て葛西臨海公園駅へ。計算上約6.28km。植物館・水族園への入館は本線に含めず、別の立ち寄りとして所要時間を確認する。B（7〜8kmの延長案）は、実在の座標で同じ道を使わずに延ばせる立ち寄り先を確認できていないため作らない。",
+          "distanceException": "約6.28km。4〜8kmの範囲に収まる。",
+          "retraceException": "保存線の丸めた線分で約66mの重複。橋上はOSMの歩道に照合したが、現地の通行と接続は未確認。",
           "waypoints": [
             {
               "index": 0,
               "id": "shinkiba",
-              "label": "新木場駅",
+              "label": "新木場駅付近",
               "description": null,
               "point": [
                 139.8269657,
                 35.6458523
               ],
-              "source": "OSM 新木場 station"
+              "source": "OSM 新木場駅付近の歩道"
             },
             {
               "index": 1,
-              "id": "nettaikan",
-              "label": "東京都夢の島熱帯植物館",
+              "id": "yumenoshima_west",
+              "label": "夢の島公園西側の園路",
               "description": null,
               "point": [
-                139.8294159,
-                35.6511219
+                139.825762,
+                35.650261
               ],
-              "source": "OSM garden 東京都夢の島熱帯植物館"
+              "source": "既存の徒歩計算線上の園路候補"
             },
             {
               "index": 2,
-              "id": "kasai_aquarium",
-              "label": "葛西臨海水族園",
+              "id": "yumenoshima_east",
+              "label": "夢の島公園東側の園路",
               "description": null,
               "point": [
-                139.8618897,
-                35.6409459
+                139.831141,
+                35.64805
               ],
-              "source": "OSM aquarium 葛西臨海水族園"
+              "source": "既存の徒歩計算線上の園路候補"
             },
             {
               "index": 3,
-              "id": "kasai_st",
-              "label": "葛西臨海公園駅",
+              "id": "bridge_west",
+              "label": "荒川河口橋の歩道・西側",
               "description": null,
               "point": [
-                139.8615771,
-                35.6441556
+                139.842905,
+                35.6476672
               ],
-              "source": "OSM station 葛西臨海公園"
+              "source": "OSM node 1832649668 footway"
+            },
+            {
+              "index": 4,
+              "id": "bridge_east",
+              "label": "荒川河口橋の歩道・東側",
+              "description": null,
+              "point": [
+                139.8517065,
+                35.6471372
+              ],
+              "source": "OSM node 1832649665 footway"
+            },
+            {
+              "index": 5,
+              "id": "crystal",
+              "label": "クリスタルビュー北側",
+              "description": null,
+              "point": [
+                139.860002,
+                35.641733
+              ],
+              "source": "OSM way 161731857 近くの園路"
+            },
+            {
+              "index": 6,
+              "id": "aquarium_east",
+              "label": "水族園東側",
+              "description": null,
+              "point": [
+                139.863135,
+                35.641914
+              ],
+              "source": "OSM way 191044572 東側の園路。入園は別行動"
+            },
+            {
+              "index": 7,
+              "id": "kasai",
+              "label": "葛西臨海公園駅付近",
+              "description": null,
+              "point": [
+                139.8626288,
+                35.6438204
+              ],
+              "source": "OSM node 7249081833 駅付近。改札への接続は要確認"
             }
           ],
           "engine": "valhalla-pedestrian",
-          "built": "2026-11-16T12:41:10.511Z",
+          "built": "2026-11-19T21:26:23.804Z",
           "elevation": {
             "source": "gsi_dem5a",
             "status": "partial_dem_filled",
             "url": "data/elevation/no-46-standard.json",
-            "totalM": 6239,
-            "climbM": 27.5,
-            "descentM": 28,
-            "minM": 0.4,
+            "totalM": 6284,
+            "climbM": 34.9,
+            "descentM": 35.6,
+            "minM": 0.3,
             "maxM": 10.3
           }
         },

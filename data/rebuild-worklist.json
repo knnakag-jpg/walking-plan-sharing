@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T13:59:02.919Z",
+  "generatedAt": "2026-11-19T21:32:06.336Z",
   "interpretation": "Mechanical triage only. Source and map review required before adopting any new route.",
   "records": [
     {
@@ -2492,12 +2492,12 @@
         {
           "variant": "standard",
           "status": "routed",
-          "distanceM": 4591
+          "distanceM": 4396
         },
         {
           "variant": "extended",
           "status": "routed",
-          "distanceM": 6759
+          "distanceM": 6612
         },
         {
           "variant": "rainy",
@@ -3942,7 +3942,7 @@
         {
           "variant": "standard",
           "status": "routed",
-          "distanceM": 3874
+          "distanceM": 4340
         },
         {
           "variant": "rainy",
@@ -4020,7 +4020,7 @@
     },
     {
       "id": "No.46",
-      "title": "夢の島熱帯植物館から葛西臨海水族園",
+      "title": "夢の島から葛西・荒川河口橋の歩道",
       "series": "V4湾岸追加（No.46）",
       "workStatus": "partial_rebuild",
       "legacy": {
@@ -4036,7 +4036,7 @@
         {
           "variant": "standard",
           "status": "routed",
-          "distanceM": 6239
+          "distanceM": 6284
         },
         {
           "variant": "rainy",
